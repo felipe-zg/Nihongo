@@ -1,25 +1,39 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { DaysOfTheMonth, Deck, Kanji, KanjiYDC, Periods, WordsYDC, YDCWords4th, YDCWords5th } from './pages';
+import { NativeBaseProvider } from "native-base";
+import Accordion from './components/Accordion/Accordion';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <NativeBaseProvider>
+      <div className="App">
+        <Accordion title='Kanji YDC'>
+          <KanjiYDC />
+        </Accordion>
+        <Accordion title='Words YDC'>
+          <WordsYDC />
+        </Accordion>
+        <Accordion title='Potential form'>
+          <Deck />
+        </Accordion>
+        <Accordion title='Kanji'>
+          <Kanji />
+        </Accordion>
+        <Accordion title='Days Of The Month'>
+          <DaysOfTheMonth />
+        </Accordion>
+        <Accordion title='Periods'>
+          <Periods />
+        </Accordion>
+        <Accordion title='Words 4th'>
+          <YDCWords4th />
+        </Accordion>
+        <Accordion title='Words 5th'>
+          <YDCWords5th />
+        </Accordion>
+      </div>
+    </NativeBaseProvider>
   );
 }
 
