@@ -23,6 +23,8 @@ type Props = {
   availableLessons: number[];
   lessons: number[];
   handleLessonChange(lesson: number): void;
+  showKana: boolean;
+  handleToggleShowKana(): void;
 };
 
 const Words: React.FC<Props> = ({ 
@@ -30,6 +32,8 @@ const Words: React.FC<Props> = ({
   availableLessons,
   lessons,
   handleLessonChange,
+  showKana,
+  handleToggleShowKana,
 }) => {
   const [currentDeckPosition, setCurrentDeckPosition] = React.useState(0);
   const [isFlipped, setIsFlipped] = React.useState(false);
@@ -81,7 +85,7 @@ const Words: React.FC<Props> = ({
           <Text color={getTextColorByWordType(currentItem.type)}>{currentItem.word}</Text>
         </Heading>
         <br/>
-        <Text fontSize="3xl" color={isFlipped ? "blue.700" : "transparent"}>
+        <Text fontSize="3xl" color={isFlipped || showKana ? "blue.700" : "transparent"}>
           {currentItem.kana}
         </Text>
         <Text fontSize="xm" color={isFlipped ? "gray.500" : "transparent"}>
@@ -122,7 +126,13 @@ const Words: React.FC<Props> = ({
             </span>
           ))}
         </span>
+        <br/>
       </div>
+      <br/><br/>
+      <span>
+        <label>Show kana: &nbsp;&nbsp;</label>
+        <input type="checkbox" checked={showKana} onChange={handleToggleShowKana} />
+      </span>
     </div>
   )
 };

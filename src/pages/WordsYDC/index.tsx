@@ -22,6 +22,7 @@ const WORDS_MAP = {
 
 const KanjiPage = () => {
   const [deckItems, setDeckItems] = React.useState<Array<WordYDC>>(Object.values(WORDS_MAP).flat());
+  const [showKana, setShowKana] = React.useState<boolean>(true);
   const availableLessons = Object.keys(WORDS_MAP).map(Number);
   const [lessons, setLessons] = React.useState<number[]>(availableLessons);
 
@@ -53,6 +54,10 @@ const KanjiPage = () => {
     setDeckItems(newDeckItems);
   }
 
+  function toggleShowKana(): void {
+    setShowKana(prev => !prev);
+  }
+
   React.useEffect(() => {
     updateDeckItemsByLessons();
   // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -64,6 +69,8 @@ const KanjiPage = () => {
       availableLessons={availableLessons}
       lessons={lessons}
       handleLessonChange={handleLessonChange}
+      showKana={showKana}
+      handleToggleShowKana={toggleShowKana}
     />
   )
 };
