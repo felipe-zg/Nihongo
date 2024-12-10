@@ -1,7 +1,8 @@
-import { Box, Button, Center, Heading, HStack, Text } from "native-base";
+import { Box, Button, Center, Heading, HStack, Select, Text } from "native-base";
 import React from "react";
 import { useScreenWidth } from "../../hooks";
 import { LargeScreenWordDetails, SmallScreenWordDetails } from "./components";
+import { getOptionsStep5 } from "../../helpers";
 
 function getTextColorByWordType(wordType: WordType) {
   switch(wordType) {
@@ -36,6 +37,7 @@ const Words: React.FC<Props> = ({
   handleToggleShowKana,
 }) => {
   const [currentDeckPosition, setCurrentDeckPosition] = React.useState(0);
+  const [currentQuantity, setCurrentQuantity] = React.useState(deckItems.length);
   const [isFlipped, setIsFlipped] = React.useState(false);
   const screenWidth = useScreenWidth();
 
@@ -65,7 +67,7 @@ const Words: React.FC<Props> = ({
     setCurrentDeckPosition(0);
   }
 
-  if(endReached) {
+  if(endReached || currentDeckPosition >= currentQuantity) {
     //Restart mode
     restart();
     return <></>
@@ -133,6 +135,20 @@ const Words: React.FC<Props> = ({
         <label>Show kana: &nbsp;&nbsp;</label>
         <input type="checkbox" checked={showKana} onChange={handleToggleShowKana} />
       </span>
+      <br/><br/>
+      <Center>
+        <Box width={{ base: "100%", md: "60%" }}>
+          <Select
+            selectedValue={String(currentQuantity)}
+            minWidth={200}
+            onValueChange={(itemValue) => setCurrentQuantity(Number(itemValue))}
+          >
+            {getOptionsStep5(deckItems.length).map((option) => (
+              <Select.Item key={option} label={`${option}`} value={String(option)} />
+            ))}
+          </Select>
+        </Box>
+      </Center>
     </div>
   )
 };
