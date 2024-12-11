@@ -3,6 +3,7 @@ import React from "react";
 import { useScreenWidth } from "../../hooks";
 import { LargeScreenWordDetails, SmallScreenWordDetails } from "./components";
 import { getOptionsStep5 } from "../../helpers";
+import CheckboxDropdown from "../../components/CheckboxDropdown/CheckboxDropdown";
 
 function getTextColorByWordType(wordType: WordType) {
   switch(wordType) {
@@ -115,21 +116,6 @@ const Words: React.FC<Props> = ({
         </Box>
       </Center>
       <br/><br/>
-      <div style={{display: 'flex', padding: '0px 32px'}}>
-        <span>Lessons: &nbsp;&nbsp;
-          {availableLessons.map((lesson) => (
-            <span>
-              <input
-                type="checkbox"
-                checked={lessons.includes(lesson)}
-                onChange={() => handleLessonChange(lesson)}
-              />
-              <label>{lesson}&nbsp;&nbsp;</label>
-            </span>
-          ))}
-        </span>
-        <br/>
-      </div>
       <br/><br/>
       <span>
         <label>Show kana: &nbsp;&nbsp;</label>
@@ -147,6 +133,17 @@ const Words: React.FC<Props> = ({
               <Select.Item key={option} label={`${option}`} value={String(option)} />
             ))}
           </Select>
+        </Box>
+      </Center>
+      <br/><br/>
+      <Center>
+        <Box width={{ base: "100%", md: "60%" }}>
+        <CheckboxDropdown
+          options={availableLessons}
+          selectedOptions={lessons}
+          onOptionChange={handleLessonChange}
+          label="Select Lessons"
+        />
         </Box>
       </Center>
     </div>
