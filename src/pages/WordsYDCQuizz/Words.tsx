@@ -53,6 +53,7 @@ const Words: React.FC<Props> = ({
       }
       setShouldValidate(false);
       setIsFlipped(false);
+      setAnswer('');
       setCurrentDeckPosition((prev) => prev + 1);
     }
   };
