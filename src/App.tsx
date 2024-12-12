@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { DaysOfTheMonth, Deck, Kanji, KanjiYDC, Periods, WordsYDC, YDCWords4th, YDCWords5th } from './pages';
+import { DaysOfTheMonth, Deck, Kanji, KanjiYDC, Periods, WordsYDC, WordsYDCQuizz, YDCWords4th, YDCWords5th } from './pages';
 import { NativeBaseProvider } from "native-base";
 import Accordion from './components/Accordion/Accordion';
 
@@ -13,6 +13,9 @@ function App() {
         </Accordion>
         <Accordion title='Words YDC'>
           <WordsYDC />
+        </Accordion>
+        <Accordion title='Words YDC Quizz'>
+          <WordsYDCQuizz />
         </Accordion>
         <Accordion title='Potential form'>
           <Deck />
