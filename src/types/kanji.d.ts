@@ -27,6 +27,8 @@ declare type WordWithExample = Word & {
   exampleMeaning: string;
 };
 
+declare type KanjiYDCMode = 'table' | 'carousel' | 'quizz';
+
 declare type KanjiYDC = {
   kanji: string;
   onyomi: string[];
