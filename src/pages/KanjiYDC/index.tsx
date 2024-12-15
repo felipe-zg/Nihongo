@@ -26,6 +26,7 @@ const KanjiPage = () => {
   const availableLessons = Object.keys(KANJI_MAP).map(Number);
   const [lessons, setLessons] = React.useState<number[]>(availableLessons);
   const [mode, setMode] = React.useState<KanjiYDCMode>("carousel");
+  const [shuffle, setShuffle] = React.useState<boolean>(true);
 
   function handleOnlyMainExamplesEnabled() {
     setOnlyMainExamplesEnabled(!onlyMainExamplesEnabled);
@@ -50,12 +51,21 @@ const KanjiPage = () => {
     }
   }
 
-  function updateDeckItemsByLessons() {
+  function updateDeckItemsByLessons(): Array<KanjiYDC> {
     const newDeckItems = Object.keys(KANJI_MAP)
       .filter((lesson) => lessons.includes(Number(lesson)))
       .map((lesson) => KANJI_MAP[Number(lesson) as keyof typeof KANJI_MAP])
-      .flat()
-      .sort(() => Math.random() - 0.5);
+      .flat();
+    return newDeckItems;
+  }
+
+  function updateDeckItemsAndShuffle() {
+    const newDeckItems = updateDeckItemsByLessons().sort(() => Math.random() - 0.5);
+    setDeckItems(newDeckItems);
+  }
+
+  function updateDeckItems() {
+    const newDeckItems = updateDeckItemsByLessons();
     setDeckItems(newDeckItems);
   }
 
@@ -63,10 +73,18 @@ const KanjiPage = () => {
     setMode(mode);
   };
 
+  function handleShuffleChange() {
+    setShuffle(!shuffle);
+  };
+
   React.useEffect(() => {
-    updateDeckItemsByLessons();
+    if(shuffle) {
+      updateDeckItemsAndShuffle();
+    } else {
+      updateDeckItems();
+    }
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [lessons]);
+  }, [lessons, shuffle]);
 
   return (
     <Kanji 
@@ -78,6 +96,8 @@ const KanjiPage = () => {
       handleLessonChange={handleLessonChange}
       mode={mode}
       handleModeChange={handleModeChange}
+      shuffle={shuffle}
+      handleShuffleChange={handleShuffleChange}
     />
   )
 };

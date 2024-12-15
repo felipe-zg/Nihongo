@@ -17,6 +17,8 @@ type Props = {
   handleLessonChange(lesson: number): void;
   mode: KanjiYDCMode;
   handleModeChange(mode: KanjiYDCMode): void;
+  shuffle: boolean;
+  handleShuffleChange(): void;
 };
 
 const Kanji: React.FC<Props> = ({ 
@@ -28,6 +30,8 @@ const Kanji: React.FC<Props> = ({
   handleLessonChange,
   mode,
   handleModeChange,
+  shuffle,
+  handleShuffleChange,
 }) => {
   const [currentDeckPosition, setCurrentDeckPosition] = React.useState(0);
   const [isFlipped, setIsFlipped] = React.useState(false);
@@ -133,6 +137,17 @@ const Kanji: React.FC<Props> = ({
             isChecked={onlyMainExamplesEnabled}
           />
           <Text color="emerald.500">Only main examples</Text>
+        </HStack>
+      </Box>
+      <Box paddingLeft={5}>
+        <HStack space={2}>
+          <Switch
+            value={shuffle}
+            onValueChange={handleShuffleChange}
+            colorScheme="emerald"
+            isChecked={shuffle}
+          />
+          <Text color="emerald.500">Shuffle</Text>
         </HStack>
       </Box>
     </Box>
