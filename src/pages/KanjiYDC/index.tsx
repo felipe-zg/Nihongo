@@ -6,6 +6,8 @@ import {
   KANJI_YDC_LESSON_6,
   KANJI_YDC_LESSON_7,
   KANJI_YDC_LESSON_8,
+  KANJI_YDC_LESSON_9,
+  KANJI_YDC_LESSON_10,
 } from "../../consts";
 
 const KANJI_MAP = {
@@ -14,14 +16,16 @@ const KANJI_MAP = {
   6: KANJI_YDC_LESSON_6,
   7: KANJI_YDC_LESSON_7,
   8: KANJI_YDC_LESSON_8,
+  9: KANJI_YDC_LESSON_9,
+  10: KANJI_YDC_LESSON_10,
 }
 
 const KanjiPage = () => {
   const [deckItems, setDeckItems] = React.useState<Array<KanjiYDC>>(Object.values(KANJI_MAP).flat());
   const [onlyMainExamplesEnabled, setOnlyMainExamplesEnabled] = React.useState(true);
-  const [lessons, setLessons] = React.useState<number[]>([4, 5, 6]);
-  const [mode, setMode] = React.useState<KanjiYDCMode>("carousel");
   const availableLessons = Object.keys(KANJI_MAP).map(Number);
+  const [lessons, setLessons] = React.useState<number[]>(availableLessons);
+  const [mode, setMode] = React.useState<KanjiYDCMode>("carousel");
 
   function handleOnlyMainExamplesEnabled() {
     setOnlyMainExamplesEnabled(!onlyMainExamplesEnabled);
