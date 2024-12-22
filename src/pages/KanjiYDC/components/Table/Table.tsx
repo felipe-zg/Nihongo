@@ -1,5 +1,6 @@
 import React from "react";
-import { Box, HStack, Text, VStack } from "native-base";
+import { Box, HStack, Pressable, Text, VStack } from "native-base";
+import { speak } from "../../../../helpers";
 
 interface Props {
   data: KanjiYDCExample[];
@@ -37,9 +38,11 @@ const Table: React.FC<Props> = ({ data, onlyMainExamplesEnabled }) => {
               alignItems="center"
             >
               <Box flex={1} alignItems="center">
-                <Text color={example.type === "main" ? "red.500" : "gray.500"}>
-                  {example.reading}
-                </Text>
+                <Pressable onPress={() => speak(example.reading)}>
+                  <Text color={example.type === "main" ? "red.500" : "gray.500"}>
+                    {example.reading}
+                  </Text>
+                </Pressable>
               </Box>
               <Box flex={1} alignItems="center">
                 <Text color={example.type === "main" ? "red.500" : "gray.500"}>
