@@ -12,6 +12,7 @@ export * from './lesson11.const';
 export * from './lesson12.const';
 export * from './lesson13.const';
 export * from './lesson14.const';
+export * from './lesson15.const';
 export * from './lesson16.const';
 export * from './lesson17.const';
 export * from './lesson18.const';
