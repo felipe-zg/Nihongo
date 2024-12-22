@@ -55,9 +55,11 @@ const Table: React.FC<Props> = ({ data, onlyMainExamplesEnabled }) => {
                 </Text>
               </Box>
               <Box flex={1} alignItems="center">
+              <Pressable onPress={() => speak(example.sentence)}>
                 <Text color={example.type === "main" ? "red.500" : "gray.500"}>
                   {example.sentence}
                 </Text>
+              </Pressable>
               </Box>
             </HStack>
           )
