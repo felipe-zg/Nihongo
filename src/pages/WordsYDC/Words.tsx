@@ -1,8 +1,8 @@
-import { Box, Button, Center, Heading, HStack, Select, Text } from "native-base";
+import { Box, Button, Center, Heading, HStack, Pressable, Select, Text } from "native-base";
 import React from "react";
 import { useScreenWidth } from "../../hooks";
 import { LargeScreenWordDetails, SmallScreenWordDetails } from "./components";
-import { getOptionsStep5 } from "../../helpers";
+import { getOptionsStep5, speak } from "../../helpers";
 import CheckboxDropdown from "../../components/CheckboxDropdown/CheckboxDropdown";
 
 function getTextColorByWordType(wordType: WordType) {
@@ -84,9 +84,11 @@ const Words: React.FC<Props> = ({
       <Center>
         <Text color="emerald.500">{`${currentDeckPosition + 1}/${deckItems.length}`}</Text>
         <br/><br/><br/>
-        <Heading size="4xl">
-          <Text color={getTextColorByWordType(currentItem.type)}>{currentItem.word}</Text>
-        </Heading>
+        <Pressable onPress={() => speak(currentItem.word)}>
+          <Heading size="4xl">
+            <Text color={getTextColorByWordType(currentItem.type)}>{currentItem.word}</Text>
+          </Heading>
+        </Pressable>
         <br/>
         <Text fontSize="3xl" color={isFlipped || showKana ? "blue.700" : "transparent"}>
           {currentItem.kana}

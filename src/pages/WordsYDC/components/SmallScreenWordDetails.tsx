@@ -1,5 +1,6 @@
-import { Box, Text, VStack } from "native-base";
 import React from "react";
+import { Box, Pressable, Text, VStack } from "native-base";
+import { speak } from "../../../helpers";
 
 type Props = {
   word: WordYDC;
@@ -15,9 +16,11 @@ const SmallScreenWordDetails: React.FC<Props> = ({ word }) => {
             </Text>
           </Box>
           <Box flex={1} alignItems="center">
-            <Text color={"gray.500"}>
-              {word.example}
-            </Text>
+            <Pressable onPress={() => speak(word.example)}>
+              <Text color={"gray.500"}>
+                {word.example}
+              </Text>
+            </Pressable>
           </Box>
           <Box flex={1} alignItems="center">
             <Text color={"gray.500"}>
