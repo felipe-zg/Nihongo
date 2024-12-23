@@ -102,6 +102,8 @@ const Words: React.FC<Props> = ({
             ? <SmallScreenWordDetails word={currentItem} /> 
             : <LargeScreenWordDetails word={currentItem} />
           }
+          <br/>
+          <Text fontSize="sm" color="red.500">{currentItem.details}</Text>
         </div>
         <br/>
         <br/>
