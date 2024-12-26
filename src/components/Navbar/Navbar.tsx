@@ -20,6 +20,7 @@ const Navbar = () => {
   const getLinkStyle = (isActive: boolean) => ({
     color: isActive ? 'white' : 'white',
     fontWeight: isActive ? 'bold' : 'normal',
+    textDecorationLine: 'none',
   });
 
   const Menu = () => (
@@ -27,7 +28,7 @@ const Navbar = () => {
         {routes.map((route) => (
           <NavLink key={route.path} to={route.path}>
             {({ isActive }) => (
-              <Button variant="ghost" _text={getLinkStyle(isActive)}>
+              <Button variant="ghost" _text={getLinkStyle(isActive)} backgroundColor={isActive ? 'darkBlue.800' : 'darkBlue.900'}>
                 {route.name}
               </Button>
             )}
@@ -39,7 +40,7 @@ const Navbar = () => {
   return screenWidth < 900 ? (
     <>
       {isOpen && (
-        <Box bg="darkblue.900" px="4" py="3" width="100%" height="100%">
+        <Box bg="darkBlue.900" px="4" py="3" width="100%" height="100%">
           <Menu />
         </Box>
       )}
@@ -50,7 +51,7 @@ const Navbar = () => {
       )}
     </>
   ) : (
-    <Box bg="darkblue.900" px="4" py="3" width="15%" height="100%">
+    <Box bg="darkBlue.900" px="4" py="3" width="15%" height="100%">
       <Menu />
     </Box>
   );
