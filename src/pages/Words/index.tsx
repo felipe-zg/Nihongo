@@ -51,7 +51,7 @@ const WORDS_MAP = {
 };
 
 const KanjiPage = () => {
-  const [deckItems, setDeckItems] = React.useState<Array<WordYDC>>(Object.values(WORDS_MAP).flat());
+  const [deckItems, setDeckItems] = React.useState<Array<Word>>(Object.values(WORDS_MAP).flat());
   const [showKana, setShowKana] = React.useState<boolean>(true);
   const availableLessons = Object.keys(WORDS_MAP).map(Number);
   const [lessons, setLessons] = React.useState<number[]>(availableLessons);

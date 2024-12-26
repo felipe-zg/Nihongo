@@ -20,8 +20,8 @@ const WORDS_MAP = {
   22: WORD_YDC_LESSON_22,
 };
 
-const KanjiPage = () => {
-  const [deckItems, setDeckItems] = React.useState<Array<WordYDC>>(Object.values(WORDS_MAP).flat());
+const WordsQuizz = () => {
+  const [deckItems, setDeckItems] = React.useState<Array<Word>>(Object.values(WORDS_MAP).flat());
   const availableLessons = Object.keys(WORDS_MAP).map(Number);
   const [lessons, setLessons] = React.useState<number[]>(availableLessons);
 
@@ -68,4 +68,4 @@ const KanjiPage = () => {
   )
 };
 
-export default KanjiPage;
+export default WordsQuizz;

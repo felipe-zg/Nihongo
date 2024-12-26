@@ -1,4 +1,4 @@
-export const WORD_YDC_LESSON_10: Array<WordYDC> = [
+export const WORD_YDC_LESSON_10: Array<Word> = [
   {
     word: '象',
     kana: 'ぞう',

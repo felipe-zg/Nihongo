@@ -1,4 +1,4 @@
-export const lesson13: Word[] = [
+export const lesson13: TWord[] = [
   {
     id: 1,
     word: "持ってくる",
@@ -8,7 +8,7 @@ export const lesson13: Word[] = [
   },
 ]
 
-export const deck1: Word[] = [
+export const deck1: TWord[] = [
   {
     id: 1,
     word: "一",
@@ -172,7 +172,7 @@ export const deck1: Word[] = [
   }
 ];
 
-export const deck2: Word[] = [
+export const deck2: TWord[] = [
   {
     id: 24,
     word: "学生",

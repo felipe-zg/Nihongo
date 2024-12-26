@@ -1,4 +1,4 @@
-declare type Potential = Word & {
+declare type Potential = TWord & {
   te: string;
   tai: string;
   formal: Tense,

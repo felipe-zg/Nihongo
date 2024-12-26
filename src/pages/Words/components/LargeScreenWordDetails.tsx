@@ -3,7 +3,7 @@ import { Box, HStack, Pressable, Text, VStack } from "native-base";
 import { speak } from "../../../helpers";
 
 type Props = {
-  word: WordYDC;
+  word: Word;
 };
 
 const LargeScreenWordDetails: React.FC<Props> = ({ word }) => {

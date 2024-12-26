@@ -1,4 +1,4 @@
-export const words4th: Array<Word | WordWithExample> = [
+export const words4th: Array<TWord | WordWithExample> = [
   {
     id: 1,
     word: '起きる',
@@ -148,7 +148,7 @@ export const words4th: Array<Word | WordWithExample> = [
   },
 ];
 
-export const words5th: Array<Word | WordWithExample> = [
+export const words5th: Array<TWord | WordWithExample> = [
   {
     id: 1,
     word: '飛行機',
