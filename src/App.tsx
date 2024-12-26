@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { DaysOfTheMonth, Deck, KanjiYDC, Periods, WordsYDC, WordsYDCQuizz} from './pages';
+import { DaysOfTheMonth, Deck, KanjiYDC, Periods, Words, WordsYDCQuizz} from './pages';
 import { Box, HStack, NativeBaseProvider } from "native-base";
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Navbar } from './components';
@@ -15,7 +15,7 @@ function App() {
           <Routes>
             <Route path="/" element={<DaysOfTheMonth />} />
             <Route path="/kanji" element={<KanjiYDC />} />
-            <Route path="/words" element={<WordsYDC />} />
+            <Route path="/words" element={<Words />} />
             <Route path="/periods" element={<Periods />} />
             <Route path="/days-of-the-month" element={<DaysOfTheMonth />} />
             <Route path="/words-quizz" element={<WordsYDCQuizz />} />

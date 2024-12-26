@@ -21,7 +21,7 @@ function getTextColorByWordType(wordType: WordType) {
 }
 
 type Props = {
-  deckItems: WordYDC[];
+  deckItems: Word[];
   availableLessons: number[];
   lessons: number[];
   handleLessonChange(lesson: number): void;

@@ -13,7 +13,7 @@ declare type KanjiWithExample = Kanji & {
   exampleMeaning: string;
 };
 
-declare type Word = {
+declare type TWord = {
   id: number;
   word: string;
   reading: string;
@@ -21,7 +21,7 @@ declare type Word = {
   level: number;
 };
 
-declare type WordWithExample = Word & {
+declare type WordWithExample = TWord & {
   example: string;
   exampleReading: string;
   exampleMeaning: string;

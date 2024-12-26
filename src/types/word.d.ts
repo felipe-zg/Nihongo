@@ -11,7 +11,7 @@ declare type WordType = 'る Verb'
   | 'CONJUNCTION'
   | 'PARTICLE';
 
-declare type WordYDC = {
+declare type Word = {
   word: string;
   kana: string;
   meaning: string[];
