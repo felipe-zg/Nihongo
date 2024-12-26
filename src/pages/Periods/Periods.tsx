@@ -78,7 +78,7 @@ const Periods: React.FC<Props> = ({ deckItems }) => {
   }
 
   return (
-    <div>
+    <Box backgroundColor="gray.50" padding={5} minHeight={"100vh"}>
       <Center>
         <Text color="emerald.500">{`${currentDeckPosition + 1}/${deckItems.length - 1}`}</Text>
         <br/><br/><br/>
@@ -141,7 +141,7 @@ const Periods: React.FC<Props> = ({ deckItems }) => {
           <Button width="full" onPress={handleNext}>Next</Button>
         </Box>
       </Center>
-    </div>
+    </Box>
   )
 };
 

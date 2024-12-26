@@ -88,7 +88,7 @@ const Words: React.FC<Props> = ({
   }, [shouldValidate]);
 
   return (
-    <div>
+    <Box backgroundColor="gray.50" padding={5} minHeight={"100vh"}>
       <Center>
         <Text color="emerald.500">{`${currentDeckPosition + 1}/${deckItems.length}`}</Text>
         <br/><br/><br/>
@@ -142,7 +142,7 @@ const Words: React.FC<Props> = ({
         />
         </Box>
       </Center>
-    </div>
+    </Box>
   )
 };
 
