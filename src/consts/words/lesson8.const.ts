@@ -105,7 +105,7 @@ export const WORD_YDC_LESSON_8: Array<Word> = [
   },
   {
     word: '濃い',
-    kana: 'あかるい',
+    kana: 'こい',
     meaning: ['Dark (color)', 'Strong (flavor)'],
     example: '濃いコーヒー\n濃い緑',
     exampleMeaning: 'Strong coffee\nDark green',
