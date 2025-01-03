@@ -6,7 +6,8 @@ import { useScreenWidth } from '../../hooks';
 const routes = [
   { name: 'Home', path: '/' },
   { name: 'Kanji', path: '/kanji' },
-  { name: 'Words', path: '/words' },
+  { name: 'Words (YDC)', path: '/words-ydc' },
+  { name: 'Words (genki)', path: '/words-genki' },
   { name: 'Periods', path: '/periods' },
   { name: 'Days of the month', path: '/days-of-the-month' },
   { name: 'Potential form', path: '/potential-form' },
@@ -20,15 +21,14 @@ const Navbar = () => {
   const getLinkStyle = (isActive: boolean) => ({
     color: isActive ? 'white' : 'white',
     fontWeight: isActive ? 'bold' : 'normal',
-    textDecorationLine: 'none',
   });
 
   const Menu = () => (
-    <VStack space={4} justifyContent="center">
+    <VStack space={4} height="100vh" justifyItems="flex-start" >
         {routes.map((route) => (
-          <NavLink key={route.path} to={route.path}>
+          <NavLink key={route.path} to={route.path} style={{ textDecoration: 'none', }}>
             {({ isActive }) => (
-              <Button variant="ghost" _text={getLinkStyle(isActive)} backgroundColor={isActive ? 'darkBlue.800' : 'darkBlue.900'}>
+              <Button variant="ghost" _text={getLinkStyle(isActive)}>
                 {route.name}
               </Button>
             )}

@@ -15,7 +15,8 @@ function App() {
           <Routes>
             <Route path="/" element={<DaysOfTheMonth />} />
             <Route path="/kanji" element={<KanjiYDC />} />
-            <Route path="/words" element={<Words />} />
+            <Route path="/words-ydc" element={<Words source='YDC' />} />
+            <Route path="/words-genki" element={<Words source='GENKI' />} />
             <Route path="/periods" element={<Periods />} />
             <Route path="/days-of-the-month" element={<DaysOfTheMonth />} />
             <Route path="/words-quizz" element={<WordsYDCQuizz />} />

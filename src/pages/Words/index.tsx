@@ -1,11 +1,21 @@
 import React from "react";
 import Words from "./Words";
-import { WORDS_OBJECT } from "../../consts";
+import { GENKI_WORDS_OBJECT, WORDS_OBJECT } from "../../consts";
 
-const KanjiPage = () => {
-  const [deckItems, setDeckItems] = React.useState<Array<Word>>(Object.values(WORDS_OBJECT).flat());
+type Props = {
+  source: 'YDC' | 'GENKI';
+};
+
+const WORDS_MAP = {
+  YDC: WORDS_OBJECT,
+  GENKI: GENKI_WORDS_OBJECT,
+}
+
+const KanjiPage: React.FC<Props> = ({ source }) => {
+  const WORDS = WORDS_MAP[source];
+  const [deckItems, setDeckItems] = React.useState<Array<Word>>(Object.values(WORDS).flat());
   const [showKana, setShowKana] = React.useState<boolean>(true);
-  const availableLessons = Object.keys(WORDS_OBJECT).map(Number);
+  const availableLessons = Object.keys(WORDS).map(Number);
   const [lessons, setLessons] = React.useState<number[]>(availableLessons);
 
   function addLesson(lesson: number) {
@@ -28,9 +38,9 @@ const KanjiPage = () => {
   }
 
   function updateDeckItemsByLessons() {
-    const newDeckItems = Object.keys(WORDS_OBJECT)
+    const newDeckItems = Object.keys(WORDS)
       .filter((lesson) => lessons.includes(Number(lesson)))
-      .map((lesson) => WORDS_OBJECT[Number(lesson) as keyof typeof WORDS_OBJECT])
+      .map((lesson) => WORDS[Number(lesson) as keyof typeof WORDS])
       .flat()
       .sort(() => Math.random() - 0.5);
     setDeckItems(newDeckItems);
