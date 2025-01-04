@@ -9,8 +9,9 @@ import {
   KANJI_YDC_LESSON_9,
   KANJI_YDC_LESSON_10,
 } from "../../consts";
+import { KANJI_GENKI_OBJECT } from "../../consts/kanji";
 
-const KANJI_MAP = {
+const KANJI_YDC_OBJECT = {
   4: KANJI_YDC_LESSON_4,
   5: KANJI_YDC_LESSON_5,
   6: KANJI_YDC_LESSON_6,
@@ -20,10 +21,20 @@ const KANJI_MAP = {
   10: KANJI_YDC_LESSON_10,
 }
 
-const KanjiPage = () => {
-  const [deckItems, setDeckItems] = React.useState<Array<KanjiYDC>>(Object.values(KANJI_MAP).flat());
+type Props = {
+  source: 'GENKI' | 'YDC';
+};
+
+const KANJI_MAP = {
+  YDC: KANJI_YDC_OBJECT,
+  GENKI: KANJI_GENKI_OBJECT,
+}
+
+const KanjiPage: React.FC<Props> = ({ source }) => {
+  const KANJI = KANJI_MAP[source];
+  const [deckItems, setDeckItems] = React.useState<Array<KanjiYDC>>(Object.values(KANJI).flat());
   const [onlyMainExamplesEnabled, setOnlyMainExamplesEnabled] = React.useState(true);
-  const availableLessons = Object.keys(KANJI_MAP).map(Number);
+  const availableLessons = Object.keys(KANJI).map(Number);
   const [lessons, setLessons] = React.useState<number[]>(availableLessons);
   const [mode, setMode] = React.useState<KanjiYDCMode>("carousel");
   const [shuffle, setShuffle] = React.useState<boolean>(true);
@@ -52,9 +63,9 @@ const KanjiPage = () => {
   }
 
   function updateDeckItemsByLessons(): Array<KanjiYDC> {
-    const newDeckItems = Object.keys(KANJI_MAP)
+    const newDeckItems = Object.keys(KANJI)
       .filter((lesson) => lessons.includes(Number(lesson)))
-      .map((lesson) => KANJI_MAP[Number(lesson) as keyof typeof KANJI_MAP])
+      .map((lesson) => KANJI[Number(lesson) as keyof typeof KANJI])
       .flat();
     return newDeckItems;
   }

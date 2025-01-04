@@ -5,9 +5,10 @@ import { useScreenWidth } from '../../hooks';
 
 const routes = [
   { name: 'Home', path: '/' },
-  { name: 'Kanji', path: '/kanji' },
+  { name: 'Kanji (YDC)', path: '/kanji-ydc' },
+  { name: 'Kanji (Genki)', path: '/kanji-genki' },
   { name: 'Words (YDC)', path: '/words-ydc' },
-  { name: 'Words (genki)', path: '/words-genki' },
+  { name: 'Words (Genki)', path: '/words-genki' },
   { name: 'Periods', path: '/periods' },
   { name: 'Days of the month', path: '/days-of-the-month' },
   { name: 'Potential form', path: '/potential-form' },
