@@ -1,25 +1,6 @@
 import React from "react";
 import Kanji from "./Kanji";
-import { 
-  KANJI_YDC_LESSON_4,
-  KANJI_YDC_LESSON_5,
-  KANJI_YDC_LESSON_6,
-  KANJI_YDC_LESSON_7,
-  KANJI_YDC_LESSON_8,
-  KANJI_YDC_LESSON_9,
-  KANJI_YDC_LESSON_10,
-} from "../../consts";
-import { KANJI_GENKI_OBJECT } from "../../consts/kanji";
-
-const KANJI_YDC_OBJECT = {
-  4: KANJI_YDC_LESSON_4,
-  5: KANJI_YDC_LESSON_5,
-  6: KANJI_YDC_LESSON_6,
-  7: KANJI_YDC_LESSON_7,
-  8: KANJI_YDC_LESSON_8,
-  9: KANJI_YDC_LESSON_9,
-  10: KANJI_YDC_LESSON_10,
-}
+import { KANJI_GENKI_OBJECT, KANJI_YDC_OBJECT } from "../../consts";
 
 type Props = {
   source: 'GENKI' | 'YDC';
