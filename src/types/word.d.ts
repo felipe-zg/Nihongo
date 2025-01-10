@@ -9,7 +9,9 @@ declare type WordType = 'る Verb'
   | 'CONDITION' 
   | 'PHRASE'
   | 'CONJUNCTION'
-  | 'PARTICLE';
+  | 'SUFFIX'
+  | 'PARTICLE'
+  | 'COUNTER';
 
 declare type Word = {
   word: string;
