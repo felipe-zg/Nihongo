@@ -3,7 +3,7 @@ import Words from "./Words";
 import { GENKI_WORDS_OBJECT, WORDS_OBJECT } from "../../consts";
 
 type Props = {
-  source: 'YDC' | 'GENKI';
+  source: TSource;
 };
 
 const WORDS_MAP = {

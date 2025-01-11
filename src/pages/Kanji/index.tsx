@@ -3,7 +3,7 @@ import Kanji from "./Kanji";
 import { KANJI_GENKI_OBJECT, KANJI_YDC_OBJECT } from "../../consts";
 
 type Props = {
-  source: 'GENKI' | 'YDC';
+  source: TSource;
 };
 
 const KANJI_MAP = {
