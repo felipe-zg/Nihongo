@@ -1,4 +1,4 @@
-import { WORDS_GENKI_LESSON_13, WORDS_GENKI_LESSON_14 } from "./genki";
+import { WORDS_GENKI_LESSON_13, WORDS_GENKI_LESSON_14, WORDS_GENKI_LESSON_15 } from "./genki";
 import { WORD_YDC_LESSON_1 } from "./lesson1.const";
 import { WORD_YDC_LESSON_10 } from "./lesson10.const";
 import { WORD_YDC_LESSON_11 } from "./lesson11.const";
@@ -50,4 +50,5 @@ export const WORDS_OBJECT = {
 export const GENKI_WORDS_OBJECT = {
   13: WORDS_GENKI_LESSON_13,
   14: WORDS_GENKI_LESSON_14,
+  15: WORDS_GENKI_LESSON_15,
 };
