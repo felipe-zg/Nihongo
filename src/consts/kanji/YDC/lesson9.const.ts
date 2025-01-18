@@ -580,14 +580,14 @@ export const KANJI_YDC_LESSON_9: Array<KanjiYDC> = [
         kana: 'しんぱいする',
         meaning: ['To worry'],
         sentence: '心配しないといけないよ。',
-        type: 'secondary',
+        type: 'main',
       },
       {
         reading: '中心',
         kana: 'ちゅうしん',
         meaning: ['Center'],
         sentence: '中心に立ってください。',
-        type: 'secondary',
+        type: 'main',
       },
       {
         reading: '熱心な',
@@ -779,7 +779,7 @@ export const KANJI_YDC_LESSON_9: Array<KanjiYDC> = [
         kana: 'ぜんたい',
         meaning: ['Whole', 'Entirety'],
         sentence: '全体を見てください。',
-        type: 'secondary',
+        type: 'main',
       },
       {
         reading: '団体',

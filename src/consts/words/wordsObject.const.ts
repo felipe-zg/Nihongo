@@ -14,6 +14,9 @@ import { WORD_YDC_LESSON_2 } from "./lesson2.const";
 import { WORD_YDC_LESSON_20 } from "./lesson20.const";
 import { WORD_YDC_LESSON_21 } from "./lesson21.const";
 import { WORD_YDC_LESSON_22 } from "./lesson22.const";
+import { WORD_YDC_LESSON_23 } from "./lesson23.const";
+import { WORD_YDC_LESSON_24 } from "./lesson24.const";
+import { WORD_YDC_LESSON_25 } from "./lesson25.const";
 import { WORD_YDC_LESSON_3 } from "./lesson3.const";
 import { WORD_YDC_LESSON_4 } from "./lesson4.const";
 import { WORD_YDC_LESSON_5 } from "./lesson5.const";
@@ -45,6 +48,9 @@ export const WORDS_OBJECT = {
   20: WORD_YDC_LESSON_20,
   21: WORD_YDC_LESSON_21,
   22: WORD_YDC_LESSON_22,
+  23: WORD_YDC_LESSON_23,
+  24: WORD_YDC_LESSON_24,
+  25: WORD_YDC_LESSON_25,
 };
 
 export const GENKI_WORDS_OBJECT = {

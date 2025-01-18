@@ -20,4 +20,7 @@ export * from './lesson19.const';
 export * from './lesson20.const';
 export * from './lesson21.const';
 export * from './lesson22.const';
+export * from './lesson23.const';
+export * from './lesson24.const';
+export * from './lesson25.const';
 export * from './wordsObject.const';
