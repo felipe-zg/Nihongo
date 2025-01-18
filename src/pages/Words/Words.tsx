@@ -1,4 +1,4 @@
-import { Box, Button, Center, Heading, HStack, Pressable, Select, Text } from "native-base";
+import { Box, Button, Center, Heading, HStack, Pressable, Select, Switch, Text } from "native-base";
 import React from "react";
 import { useScreenWidth } from "../../hooks";
 import { LargeScreenWordDetails, SmallScreenWordDetails } from "./components";
@@ -121,10 +121,17 @@ const Words: React.FC<Props> = ({
       </Center>
       <br/><br/>
       <br/><br/>
-      <span>
-        <label>Show kana: &nbsp;&nbsp;</label>
-        <input type="checkbox" checked={showKana} onChange={handleToggleShowKana} />
-      </span>
+      <Box paddingLeft={5}>
+        <HStack space={2}>
+          <Switch
+            value={showKana}
+            onValueChange={handleToggleShowKana}
+            colorScheme="emerald"
+            isChecked={showKana}
+          />
+          <Text color="emerald.500">Show kana</Text>
+        </HStack>
+      </Box>
       <br/><br/>
       <Center>
         <Box width={{ base: "100%", md: "60%" }}>
