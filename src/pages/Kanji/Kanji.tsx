@@ -60,12 +60,13 @@ const Kanji: React.FC<Props> = ({
     setIsFlipped(!isFlipped);
   }
 
+  function restart() {
+    setCurrentDeckPosition(0);
+  }
+
   if(endReached) {
-    return (
-      <Heading size="3xl">
-        <Text color="emerald.500">END</Text>
-      </Heading>
-    )
+    restart();
+    return <></>
   }
 
   return (
