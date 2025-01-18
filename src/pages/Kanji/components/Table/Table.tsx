@@ -14,54 +14,55 @@ const Table: React.FC<Props> = ({ data, onlyMainExamplesEnabled }) => {
       {/* Table Header */}
       <HStack justifyContent="space-between" bg="gray.200" p={2} alignItems="center">
         <Box flex={1} alignItems="center">
-          <Text bold>Reading</Text>
-        </Box>
-        <Box flex={1} alignItems="center">
-          <Text bold>Kana</Text>
-        </Box>
-        <Box flex={1} alignItems="center">
-          <Text bold>Meaning</Text>
-        </Box>
-        <Box flex={1} alignItems="center">
-          <Text bold>Sentence</Text>
+          <Text bold>Examples</Text>
         </Box>
       </HStack>
       {/* Table Body */}
       <VStack>
         {data.map((example, index) =>
           onlyMainExamplesEnabled && example.type !== "main" ? null : (
-            <HStack
-              key={index}
-              justifyContent="space-between"
-              p={2}
-              bg={index % 2 === 0 ? "gray.100" : "white"}
-              alignItems="center"
-            >
-              <Box flex={1} alignItems="center">
-                <Pressable onPress={() => speak(example.reading)}>
+            <>
+              <HStack
+                key={index}
+                justifyContent="space-between"
+                p={2}
+                bg={index % 2 === 0 ? "gray.100" : "white"}
+                alignItems="center"
+              >
+                <Box flex={1} alignItems="center">
+                  <Pressable onPress={() => speak(example.reading)}>
+                    <Text color={example.type === "main" ? "red.500" : "gray.500"}>
+                      {example.reading}
+                    </Text>
+                  </Pressable>
+                </Box>
+                <Box flex={1} alignItems="center">
                   <Text color={example.type === "main" ? "red.500" : "gray.500"}>
-                    {example.reading}
+                    {example.kana}
+                  </Text>
+                </Box>
+              </HStack>
+              <HStack
+                key={index}
+                justifyContent="space-between"
+                p={2}
+                bg={index % 2 === 0 ? "gray.100" : "white"}
+                alignItems="center"
+              >
+                <Box flex={1} alignItems="center">
+                  <Text color={example.type === "main" ? "red.500" : "gray.500"}>
+                    {example.meaning.join(", ")}
+                  </Text>
+                </Box>
+                <Box flex={1} alignItems="center">
+                <Pressable onPress={() => speak(example.sentence)}>
+                  <Text color={example.type === "main" ? "red.500" : "gray.500"}>
+                    {example.sentence}
                   </Text>
                 </Pressable>
-              </Box>
-              <Box flex={1} alignItems="center">
-                <Text color={example.type === "main" ? "red.500" : "gray.500"}>
-                  {example.kana}
-                </Text>
-              </Box>
-              <Box flex={1} alignItems="center">
-                <Text color={example.type === "main" ? "red.500" : "gray.500"}>
-                  {example.meaning.join(", ")}
-                </Text>
-              </Box>
-              <Box flex={1} alignItems="center">
-              <Pressable onPress={() => speak(example.sentence)}>
-                <Text color={example.type === "main" ? "red.500" : "gray.500"}>
-                  {example.sentence}
-                </Text>
-              </Pressable>
-              </Box>
-            </HStack>
+                </Box>
+              </HStack>
+            </>
           )
         )}
       </VStack>
