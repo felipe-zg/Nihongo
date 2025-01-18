@@ -1,29 +1,38 @@
-import { WORDS_GENKI_LESSON_13, WORDS_GENKI_LESSON_14, WORDS_GENKI_LESSON_15, WORDS_GENKI_LESSON_16 } from "./genki";
-import { WORD_YDC_LESSON_1 } from "./lesson1.const";
-import { WORD_YDC_LESSON_10 } from "./lesson10.const";
-import { WORD_YDC_LESSON_11 } from "./lesson11.const";
-import { WORD_YDC_LESSON_12 } from "./lesson12.const";
-import { WORD_YDC_LESSON_13 } from "./lesson13.const";
-import { WORD_YDC_LESSON_14 } from "./lesson14.const";
-import { WORD_YDC_LESSON_15 } from "./lesson15.const";
-import { WORD_YDC_LESSON_16 } from "./lesson16.const";
-import { WORD_YDC_LESSON_17 } from "./lesson17.const";
-import { WORD_YDC_LESSON_18 } from "./lesson18.const";
-import { WORD_YDC_LESSON_19 } from "./lesson19.const";
-import { WORD_YDC_LESSON_2 } from "./lesson2.const";
-import { WORD_YDC_LESSON_20 } from "./lesson20.const";
-import { WORD_YDC_LESSON_21 } from "./lesson21.const";
-import { WORD_YDC_LESSON_22 } from "./lesson22.const";
-import { WORD_YDC_LESSON_23 } from "./lesson23.const";
-import { WORD_YDC_LESSON_24 } from "./lesson24.const";
-import { WORD_YDC_LESSON_25 } from "./lesson25.const";
-import { WORD_YDC_LESSON_3 } from "./lesson3.const";
-import { WORD_YDC_LESSON_4 } from "./lesson4.const";
-import { WORD_YDC_LESSON_5 } from "./lesson5.const";
-import { WORD_YDC_LESSON_6 } from "./lesson6.const";
-import { WORD_YDC_LESSON_7 } from "./lesson7.const";
-import { WORD_YDC_LESSON_8 } from "./lesson8.const";
-import { WORD_YDC_LESSON_9 } from "./lesson9.const";
+import { 
+  WORDS_GENKI_LESSON_13,
+  WORDS_GENKI_LESSON_14,
+  WORDS_GENKI_LESSON_15,
+  WORDS_GENKI_LESSON_16
+} from "./genki";
+
+import { 
+  WORD_YDC_LESSON_1,
+  WORD_YDC_LESSON_2,
+  WORD_YDC_LESSON_3,
+  WORD_YDC_LESSON_4,
+  WORD_YDC_LESSON_5,
+  WORD_YDC_LESSON_6,
+  WORD_YDC_LESSON_7,
+  WORD_YDC_LESSON_8,
+  WORD_YDC_LESSON_9,
+  WORD_YDC_LESSON_10,
+  WORD_YDC_LESSON_11,
+  WORD_YDC_LESSON_12,
+  WORD_YDC_LESSON_13,
+  WORD_YDC_LESSON_14,
+  WORD_YDC_LESSON_15,
+  WORD_YDC_LESSON_16,
+  WORD_YDC_LESSON_17,
+  WORD_YDC_LESSON_18,
+  WORD_YDC_LESSON_19,
+  WORD_YDC_LESSON_20,
+  WORD_YDC_LESSON_21,
+  WORD_YDC_LESSON_22,
+  WORD_YDC_LESSON_23,
+  WORD_YDC_LESSON_24,
+  WORD_YDC_LESSON_25
+} from "./YDC";
+
 
 export const WORDS_OBJECT = {
   1: WORD_YDC_LESSON_1,
