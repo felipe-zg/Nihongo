@@ -17,10 +17,10 @@ export async function loadVoices(): Promise<SpeechSynthesisVoice[]> {
 }
 
 export async function speak(word: string): Promise<void> {
-  if(!window.speechSynthesis) {
-    alert("Your browser doesn't support speech synthesis.");
-    return;
-  }
+  // if(!window.speechSynthesis) {
+  //   alert("Your browser doesn't support speech synthesis.");
+  //   return;
+  // }
   
   const voices = await loadVoices();
   const utterance = new SpeechSynthesisUtterance(word);
