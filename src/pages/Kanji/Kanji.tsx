@@ -5,6 +5,7 @@ import CheckboxDropdown from "../../components/CheckboxDropdown/CheckboxDropdown
 import { useScreenWidth } from "../../hooks";
 import Table from "./components/Table/Table";
 import { KanjiReadingTable } from "./components";
+import MemoryMode from "./components/MemoryMode/MemoryMode";
 
 const modes: KanjiYDCMode[] = ['table', 'carousel', 'quizz'];
 
@@ -19,6 +20,8 @@ type Props = {
   handleModeChange(mode: KanjiYDCMode): void;
   shuffle: boolean;
   handleShuffleChange(): void;
+  memoryMode: boolean;
+  handleMemoryModeChange(): void;
 };
 
 const Kanji: React.FC<Props> = ({ 
@@ -32,6 +35,8 @@ const Kanji: React.FC<Props> = ({
   handleModeChange,
   shuffle,
   handleShuffleChange,
+  memoryMode,
+  handleMemoryModeChange,
 }) => {
   const [currentDeckPosition, setCurrentDeckPosition] = React.useState(0);
   const [isFlipped, setIsFlipped] = React.useState(false);
@@ -71,32 +76,41 @@ const Kanji: React.FC<Props> = ({
 
   return (
     <Box backgroundColor="gray.50" padding={5} minHeight={"100vh"}>
-      <Center>
-        <Text color="emerald.500">{`${currentDeckPosition + 1}/${deckItems.length}`}</Text>
-        <br/><br/><br/>
-        <Heading size="4xl">
-          <Text color="emerald.500">{currentItem.kanji}</Text>
-        </Heading>
-        <br/>
-        <KanjiReadingTable 
-          onyomi={currentItem.onyomi} 
-          kunyomi={currentItem.kunyomi} 
-          meaning={currentItem.meaning}
-          display={isFlipped}
-        />
-        <br/>
-        <div style={{opacity: `${isFlipped ? 1 : 0}`, display: 'flex', flexDirection: 'column', width: screenWidth > 500 ? '50%' : '100%'}}>
-          {mode === "table" && <Table data={currentItem.examples} onlyMainExamplesEnabled={onlyMainExamplesEnabled} />}
-          {mode === "carousel" && <Carousel data={currentItem.examples} onlyMainExamplesEnabled={onlyMainExamplesEnabled} />}
-        </div>
-        <br/>
-        <br/>
-        <Box width={{ base: "100%", md: "60%" }}>
-          <HStack space={3} justifyContent="center">
-            <Button width="1/2" opacity={isFlipped ? 0 : 100} disabled={isFlipped} onPress={handleFlip}>Flip</Button>
-          </HStack>
-        </Box>
-      </Center>
+      {memoryMode ? (
+        <Center>
+           <Text color="emerald.500">{`${currentDeckPosition + 1}/${deckItems.length}`}</Text>
+           <br/><br/><br/>
+          <MemoryMode data={currentItem.examples} onlyMainExamplesEnabled={onlyMainExamplesEnabled} />
+        </Center>
+      ): (
+        <Center>
+          <Text color="emerald.500">{`${currentDeckPosition + 1}/${deckItems.length}`}</Text>
+          <br/><br/><br/>
+          <Heading size="4xl">
+            <Text color="emerald.500">{currentItem.kanji}</Text>
+          </Heading>
+          <br/>
+          <KanjiReadingTable 
+            onyomi={currentItem.onyomi} 
+            kunyomi={currentItem.kunyomi} 
+            meaning={currentItem.meaning}
+            display={isFlipped}
+          />
+          <br/>
+          <div style={{opacity: `${isFlipped ? 1 : 0}`, display: 'flex', flexDirection: 'column', width: screenWidth > 500 ? '50%' : '100%'}}>
+            {mode === "table" && <Table data={currentItem.examples} onlyMainExamplesEnabled={onlyMainExamplesEnabled} />}
+            {mode === "carousel" && <Carousel data={currentItem.examples} onlyMainExamplesEnabled={onlyMainExamplesEnabled} />}
+          </div>
+          <br/>
+          <br/>
+          <Box width={{ base: "100%", md: "60%" }}>
+            <HStack space={3} justifyContent="center">
+              <Button width="1/2" opacity={isFlipped ? 0 : 100} disabled={isFlipped} onPress={handleFlip}>Flip</Button>
+            </HStack>
+          </Box>
+        </Center>
+      )}
+      
       <Center>
         <br/><br/>
         <Box width={{ base: "100%", md: "60%" }}>
@@ -149,6 +163,17 @@ const Kanji: React.FC<Props> = ({
             isChecked={shuffle}
           />
           <Text color="emerald.500">Shuffle</Text>
+        </HStack>
+      </Box>
+      <Box paddingLeft={5}>
+        <HStack space={2}>
+          <Switch
+            value={memoryMode}
+            onValueChange={handleMemoryModeChange}
+            colorScheme="emerald"
+            isChecked={memoryMode}
+          />
+          <Text color="emerald.500">Memory Mode</Text>
         </HStack>
       </Box>
     </Box>
