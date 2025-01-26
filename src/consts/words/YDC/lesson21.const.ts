@@ -27,8 +27,8 @@ export const WORD_YDC_LESSON_21: Array<Word> = [
     word: '役に立つ',
     kana: 'やくにたつ',
     meaning: ['To be useful', 'To be helpful'],
-    example: '誰のアドバイスは役に立った。',
-    exampleMeaning: 'I take a shower every morning.',
+    example: '彼のアドバイスは役に立った。',
+    exampleMeaning: 'His advice was helpful.',
     type: 'う Verb'
   },
   {

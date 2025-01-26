@@ -81,7 +81,7 @@ export const WORD_YDC_LESSON_24: Array<Word> = [
     word: 'お菓子',
     kana: 'おかし',
     meaning: ['Sweets', 'Snacks'],
-    example: `お菓子を食べるのが好きです。\nお菓子を食べるのがすきです。`,
+    example: `お菓子を食べるのが好きです。`,
     exampleMeaning: 'I like eating sweets.',
     type: 'NOUN',
     details: 'refers to any food consumed outside of regular meals, for enjoyment rather than nutrition.',
