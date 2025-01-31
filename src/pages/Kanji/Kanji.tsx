@@ -51,6 +51,10 @@ const Kanji: React.FC<Props> = ({
 
   const handleNext = () => {
     if (!endReached) {
+      if (memoryMode) {
+        setCurrentDeckPosition((prev) => prev + 1);
+        return;
+      }
       if(!isFlipped) {
         setIsFlipped(true);
         return;
@@ -80,7 +84,7 @@ const Kanji: React.FC<Props> = ({
         <Center>
            <Text color="emerald.500">{`${currentDeckPosition + 1}/${deckItems.length}`}</Text>
            <br/><br/><br/>
-          <MemoryMode data={currentItem.examples} onlyMainExamplesEnabled={onlyMainExamplesEnabled} />
+          <MemoryMode kanji={currentItem.meaning} data={currentItem.examples} onlyMainExamplesEnabled={onlyMainExamplesEnabled} />
         </Center>
       ): (
         <Center>

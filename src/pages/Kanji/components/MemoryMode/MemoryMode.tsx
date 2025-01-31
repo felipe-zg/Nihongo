@@ -2,11 +2,12 @@ import React, { useMemo, useState } from "react";
 import { Box, Center, Heading, HStack, Pressable, Text, VStack } from "native-base";
 
 interface Props {
+  kanji: string | string[];
   data: KanjiYDCExample[];
   onlyMainExamplesEnabled: boolean;
 }
 
-const MemoryMode: React.FC<Props> = ({ data, onlyMainExamplesEnabled }) => {
+const MemoryMode: React.FC<Props> = ({ kanji, data, onlyMainExamplesEnabled }) => {
   const [flippedExamplesIndex, setFlippedExamplesIndex] = useState<number[]>([]);
 
   const examples = useMemo(() => {
@@ -18,7 +19,7 @@ const MemoryMode: React.FC<Props> = ({ data, onlyMainExamplesEnabled }) => {
 
   return (
     <Center width={{ base: "60%" }}>
-      <Heading color="emerald.500">Memorize Mode</Heading>
+      <Heading color="emerald.500">{typeof kanji === 'string' ? kanji : kanji.join(',')}</Heading>
       <br/><br/>
       <Box width={{ base: "100%" }}>
         {/* Table Header */}
