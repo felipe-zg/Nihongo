@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from "react";
+import React, { forwardRef, useImperativeHandle, useMemo, useState } from "react";
 import { Box, Center, Heading, HStack, Pressable, Text, VStack } from "native-base";
 
 interface Props {
@@ -7,20 +7,31 @@ interface Props {
   onlyMainExamplesEnabled: boolean;
 }
 
-const MemoryMode: React.FC<Props> = ({ kanji, data, onlyMainExamplesEnabled }) => {
+const MemoryMode = forwardRef<MemoryModeRef, Props>(({ kanji, data, onlyMainExamplesEnabled }, ref) => {
   const [flippedExamplesIndex, setFlippedExamplesIndex] = useState<number[]>([]);
 
   const examples = useMemo(() => {
     const filtered = onlyMainExamplesEnabled
       ? data.filter((item) => item?.type === "main")
       : data;
-    return filtered.length > 0 ? filtered : [{ reading: "", kana: "", meaning: [], sentence: "", type: "" }];
+    return filtered.length > 0
+      ? filtered
+      : [{ reading: "", kana: "", meaning: [], sentence: "", type: "" }];
   }, [data, onlyMainExamplesEnabled]);
+
+  useImperativeHandle(ref, () => ({
+    handleNext() {
+      setFlippedExamplesIndex([]);
+    },
+  }));
 
   return (
     <Center width={{ base: "60%" }}>
-      <Heading color="emerald.500">{typeof kanji === 'string' ? kanji : kanji.join(',')}</Heading>
-      <br/><br/>
+      <Heading color="emerald.500">
+        {typeof kanji === "string" ? kanji : kanji.join(",")}
+      </Heading>
+      <br />
+      <br />
       <Box width={{ base: "100%" }}>
         {/* Table Header */}
         <HStack justifyContent="space-between" bg="gray.200" p={2} alignItems="center">
@@ -38,18 +49,17 @@ const MemoryMode: React.FC<Props> = ({ kanji, data, onlyMainExamplesEnabled }) =
         <VStack>
           {examples.map((example, index) => {
             if (onlyMainExamplesEnabled && example.type !== "main") return null;
-            let flipped = flippedExamplesIndex.includes(index);
+            const flipped = flippedExamplesIndex.includes(index);
             return (
-              <Pressable onPress={() => {
-                setFlippedExamplesIndex((prev) => {
-                  if (prev.includes(index)) {
-                    return prev.filter((i) => i !== index);
-                  }
-                  return [...prev, index];
-                });
-              }}>
+              <Pressable
+                key={index}
+                onPress={() =>
+                  setFlippedExamplesIndex((prev) =>
+                    prev.includes(index) ? prev.filter((i) => i !== index) : [...prev, index]
+                  )
+                }
+              >
                 <HStack
-                  key={index}
                   justifyContent="space-between"
                   p={2}
                   bg={index % 2 === 0 ? "gray.100" : "white"}
@@ -61,27 +71,23 @@ const MemoryMode: React.FC<Props> = ({ kanji, data, onlyMainExamplesEnabled }) =
                     </Text>
                   </Box>
                   <Box flex={1} alignItems="center">
-                    <Text fontSize="4xl" color={example.type === "main" ? "red.500" : "gray.500"}>
-                      { flipped && example.reading}
+                    <Text fontSize="xl" color={example.type === "main" ? "red.500" : "gray.500"}>
+                      {flipped && example.reading}
                     </Text>
                   </Box>
                   <Box flex={1} alignItems="center">
-                    <Pressable onPress={() => { flipped = !flipped }}>
-                      <Text fontSize="xl" color={example.type === "main" ? "red.500" : "gray.500"}>
-                        { flipped && example.kana}
-                      </Text>
-                    </Pressable>
+                    <Text fontSize="xl" color={example.type === "main" ? "red.500" : "gray.500"}>
+                      {flipped && example.kana}
+                    </Text>
                   </Box>
                 </HStack>
               </Pressable>
             );
-          }
-            
-          )}
+          })}
         </VStack>
       </Box>
     </Center>
   );
-};
+});
 
 export default MemoryMode;

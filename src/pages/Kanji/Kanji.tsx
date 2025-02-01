@@ -1,5 +1,5 @@
 import { Box, Button, Center, Heading, HStack, Select, Switch, Text } from "native-base";
-import React from "react";
+import React, { useRef } from "react";
 import Carousel from "./components/Carousel/Carousel";
 import CheckboxDropdown from "../../components/CheckboxDropdown/CheckboxDropdown";
 import { useScreenWidth } from "../../hooks";
@@ -41,6 +41,7 @@ const Kanji: React.FC<Props> = ({
   const [currentDeckPosition, setCurrentDeckPosition] = React.useState(0);
   const [isFlipped, setIsFlipped] = React.useState(false);
   const screenWidth = useScreenWidth();
+  const memoryModeRef = useRef<MemoryModeRef>(null);
 
   const currentItem = React.useMemo(() => deckItems[currentDeckPosition], [
     currentDeckPosition,
@@ -53,6 +54,7 @@ const Kanji: React.FC<Props> = ({
     if (!endReached) {
       if (memoryMode) {
         setCurrentDeckPosition((prev) => prev + 1);
+        memoryModeRef.current?.handleNext();
         return;
       }
       if(!isFlipped) {
@@ -84,7 +86,7 @@ const Kanji: React.FC<Props> = ({
         <Center>
            <Text color="emerald.500">{`${currentDeckPosition + 1}/${deckItems.length}`}</Text>
            <br/><br/><br/>
-          <MemoryMode kanji={currentItem.meaning} data={currentItem.examples} onlyMainExamplesEnabled={onlyMainExamplesEnabled} />
+          <MemoryMode ref={memoryModeRef} kanji={currentItem.meaning} data={currentItem.examples} onlyMainExamplesEnabled={onlyMainExamplesEnabled} />
         </Center>
       ): (
         <Center>
