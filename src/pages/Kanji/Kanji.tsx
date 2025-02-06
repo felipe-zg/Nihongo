@@ -6,6 +6,7 @@ import { useScreenWidth } from "../../hooks";
 import Table from "./components/Table/Table";
 import { KanjiReadingTable } from "./components";
 import MemoryMode from "./components/MemoryMode/MemoryMode";
+import ExamplesMode from "./components/ExamplesMode/ExamplesMode";
 
 const modes: KanjiYDCMode[] = ['table', 'carousel', 'quizz'];
 
@@ -22,6 +23,8 @@ type Props = {
   handleShuffleChange(): void;
   memoryMode: boolean;
   handleMemoryModeChange(): void;
+  examplesMode: boolean;
+  handleExamplesModeChange(): void;
 };
 
 const Kanji: React.FC<Props> = ({ 
@@ -37,6 +40,8 @@ const Kanji: React.FC<Props> = ({
   handleShuffleChange,
   memoryMode,
   handleMemoryModeChange,
+  examplesMode,
+  handleExamplesModeChange,
 }) => {
   const [currentDeckPosition, setCurrentDeckPosition] = React.useState(0);
   const [isFlipped, setIsFlipped] = React.useState(false);
@@ -82,13 +87,20 @@ const Kanji: React.FC<Props> = ({
 
   return (
     <Box backgroundColor="gray.50" padding={5} minHeight={"100vh"}>
-      {memoryMode ? (
+      {memoryMode && (
         <Center>
-           <Text color="emerald.500">{`${currentDeckPosition + 1}/${deckItems.length}`}</Text>
-           <br/><br/><br/>
+          <Text color="emerald.500">{`${currentDeckPosition + 1}/${deckItems.length}`}</Text>
+          <br/><br/><br/>
           <MemoryMode ref={memoryModeRef} kanji={currentItem.meaning} data={currentItem.examples} onlyMainExamplesEnabled={onlyMainExamplesEnabled} />
         </Center>
-      ): (
+      )}
+      {examplesMode && (
+        <Center>
+          <ExamplesMode data={deckItems.map(item => item.examples).flat()} onlyMainExamplesEnabled={onlyMainExamplesEnabled} />
+        </Center>
+      )}
+
+      {!examplesMode && !memoryMode && (
         <Center>
           <Text color="emerald.500">{`${currentDeckPosition + 1}/${deckItems.length}`}</Text>
           <br/><br/><br/>
@@ -117,26 +129,30 @@ const Kanji: React.FC<Props> = ({
         </Center>
       )}
       
-      <Center>
-        <br/><br/>
-        <Box width={{ base: "100%", md: "60%" }}>
-          <Button width="full" onPress={handleNext}>Next</Button>
-        </Box>
-      </Center>
-      <Center>
-        <br/><br/>
-        <Box width={{ base: "100%", md: "60%" }}>
-          <Select
-            selectedValue={String(mode)}
-            minWidth={200}
-            onValueChange={(itemValue) => handleModeChange(itemValue as KanjiYDCMode)}
-          >
-            {modes.map((mode) => (
-              <Select.Item key={mode} value={mode} label={mode} />
-            ))}
-          </Select>
-        </Box>
-      </Center>
+      {!examplesMode && (
+        <>
+          <Center>
+            <br/><br/>
+            <Box width={{ base: "100%", md: "60%" }}>
+              <Button width="full" onPress={handleNext}>Next</Button>
+            </Box>
+          </Center>
+          <Center>
+            <br/><br/>
+            <Box width={{ base: "100%", md: "60%" }}>
+              <Select
+                selectedValue={String(mode)}
+                minWidth={200}
+                onValueChange={(itemValue) => handleModeChange(itemValue as KanjiYDCMode)}
+              >
+                {modes.map((mode) => (
+                  <Select.Item key={mode} value={mode} label={mode} />
+                ))}
+              </Select>
+            </Box>
+          </Center>
+        </>
+      )}
       <Center>
         <br/><br/>
         <Box width={{ base: "100%", md: "60%" }}>
@@ -180,6 +196,17 @@ const Kanji: React.FC<Props> = ({
             isChecked={memoryMode}
           />
           <Text color="emerald.500">Memory Mode</Text>
+        </HStack>
+      </Box>
+      <Box paddingLeft={5}>
+        <HStack space={2}>
+          <Switch
+            value={examplesMode}
+            onValueChange={handleExamplesModeChange}
+            colorScheme="emerald"
+            isChecked={examplesMode}
+          />
+          <Text color="emerald.500">Examples Mode</Text>
         </HStack>
       </Box>
     </Box>

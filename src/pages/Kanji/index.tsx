@@ -20,6 +20,7 @@ const KanjiPage: React.FC<Props> = ({ source }) => {
   const [mode, setMode] = React.useState<KanjiYDCMode>("carousel");
   const [shuffle, setShuffle] = React.useState<boolean>(true);
   const [memoryMode, setMemoryMode] = React.useState<boolean>(false);
+  const [examplesMode, setExamplesMode] = React.useState<boolean>(false);
 
   function handleOnlyMainExamplesEnabled() {
     setOnlyMainExamplesEnabled(!onlyMainExamplesEnabled);
@@ -71,7 +72,13 @@ const KanjiPage: React.FC<Props> = ({ source }) => {
   };
 
   function handleMemoryModeChange() {
+    setExamplesMode(false);
     setMemoryMode(!memoryMode);
+  };
+
+  function handleExamplesModeChange() {
+    setMemoryMode(false);
+    setExamplesMode(!examplesMode);
   };
 
   React.useEffect(() => {
@@ -97,6 +104,8 @@ const KanjiPage: React.FC<Props> = ({ source }) => {
       handleShuffleChange={handleShuffleChange}
       memoryMode={memoryMode}
       handleMemoryModeChange={handleMemoryModeChange}
+      examplesMode={examplesMode}
+      handleExamplesModeChange={handleExamplesModeChange}
     />
   )
 };
