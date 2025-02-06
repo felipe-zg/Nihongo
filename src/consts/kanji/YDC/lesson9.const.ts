@@ -616,7 +616,7 @@ export const KANJI_YDC_LESSON_9: Array<KanjiYDC> = [
     kanji: '手',
     onyomi: ['しゅ'],
     kunyomi: ['て', 'た'],
-    meaning: ['Year'],
+    meaning: ['Hand'],
     examples: [
       {
         reading: '手',
