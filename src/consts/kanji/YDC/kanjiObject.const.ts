@@ -6,6 +6,7 @@ import { KANJI_YDC_LESSON_8 } from "./lesson8.const";
 import { KANJI_YDC_LESSON_9 } from "./lesson9.const";
 import { KANJI_YDC_LESSON_10 } from "./lesson10.const";
 import { KANJI_YDC_LESSON_11 } from "./lesson11.const";
+import { KANJI_YDC_LESSON_12 } from "./lesson12.const";
 
 export const KANJI_YDC_OBJECT = {
   4: KANJI_YDC_LESSON_4,
@@ -16,4 +17,5 @@ export const KANJI_YDC_OBJECT = {
   9: KANJI_YDC_LESSON_9,
   10: KANJI_YDC_LESSON_10,
   11: KANJI_YDC_LESSON_11,
+  12: KANJI_YDC_LESSON_12,
 }
