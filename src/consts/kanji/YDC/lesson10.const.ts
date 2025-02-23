@@ -180,7 +180,7 @@ export const KANJI_YDC_LESSON_10: Array<KanjiYDC> = [
   {
     kanji: '森',
     onyomi: ['しん'],
-    kunyomi: ['おんな'],
+    kunyomi: ['もり'],
     meaning: ['Forest'],
     examples: [
       {

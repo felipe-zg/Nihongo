@@ -7,4 +7,5 @@ export * from './lesson9.const';
 export * from './lesson10.const';
 export * from './lesson11.const';
 export * from './lesson12.const';
+export * from './lesson13.const';
 export * from './kanjiObject.const';
