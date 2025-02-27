@@ -28,9 +28,7 @@ export async function speak(word: string): Promise<void> {
 
   if(japaneseVoice) {
     utterance.voice = japaneseVoice;
-  } else {
-    alert("No Japanese voice found. Default voice will be used.");
-  };
+  }
 
   window.speechSynthesis.speak(utterance);
 }
