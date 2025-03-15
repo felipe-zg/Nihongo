@@ -1,19 +1,19 @@
 import React from "react";
 import { Box, Checkbox, VStack, Text, Pressable } from "native-base";
 
-type CheckboxDropdownProps = {
-  options: number[];
-  selectedOptions: number[];
-  onOptionChange: (option: number) => void;
+type CheckboxDropdownProps<T> = {
+  options: T[];
+  selectedOptions: T[];
+  onOptionChange: (option: T) => void;
   label: string;
 };
 
-const CheckboxDropdown: React.FC<CheckboxDropdownProps> = ({
+const CheckboxDropdown = <T extends React.Key>({
   options,
   selectedOptions,
   onOptionChange,
   label,
-}) => {
+}: CheckboxDropdownProps<T>) => {
   const [isOpen, setIsOpen] = React.useState(false);
 
   const toggleDropdown = () => setIsOpen((prev) => !prev);
@@ -49,7 +49,7 @@ const CheckboxDropdown: React.FC<CheckboxDropdownProps> = ({
                 isChecked={selectedOptions.includes(option)}
                 onChange={() => onOptionChange(option)}
               >
-                <Text>{option}</Text>
+                <Text>{typeof option === "object" ? JSON.stringify(option) : String(option)}</Text>
               </Checkbox>
             ))}
           </VStack>
