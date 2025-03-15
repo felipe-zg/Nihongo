@@ -4,7 +4,7 @@ import { Box, Button, HamburgerIcon, VStack } from 'native-base';
 import { useScreenWidth } from '../../hooks';
 
 const routes = [
-  { name: 'Home', path: '/' },
+  { name: 'Levels', path: '/' },
   { name: 'Kanji (YDC)', path: '/kanji-ydc' },
   { name: 'Kanji (Genki)', path: '/kanji-genki' },
   { name: 'Words (YDC)', path: '/words-ydc' },
