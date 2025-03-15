@@ -5,3 +5,4 @@ export { default as WordsYDCQuizz } from "./WordsYDCQuizz";
 export { default as DaysOfTheMonth } from "./DaysOfTheMonth";
 export { default as Periods } from "./Periods";
 export { default as Verbs } from "./Verbs";
+export { default as Levels } from "./Levels";
