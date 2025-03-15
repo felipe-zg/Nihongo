@@ -7,3 +7,4 @@ export * from './daysOfTheMonth.const';
 export * from './period.const';
 export * from './words';
 export * from './Verbs/verbs.const';
+export * from './levels';
