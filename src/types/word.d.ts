@@ -16,9 +16,9 @@ declare type WordType = 'る Verb'
 declare type Word = {
   word: string;
   kana: string;
-  meaning: string[];
-  example: string;
-  exampleMeaning: string;
+  meaning: string | string[];
+  example: string | string[];
+  exampleMeaning: string | string[];
   type: WordType
   details?: string;
 }

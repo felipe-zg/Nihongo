@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, HStack, Pressable, Text, VStack } from "native-base";
-import { speak } from "../../../helpers";
+import { arrayToString, speak } from "../../../helpers";
 
 type Props = {
   word: Word;
@@ -30,11 +30,11 @@ const LargeScreenWordDetails: React.FC<Props> = ({ word }) => {
         >
           <Box flex={1} alignItems="center">
             <Text color={"gray.500"}>
-              {word.meaning.join(", ")}
+              {arrayToString(word.meaning)}
             </Text>
           </Box>
           <Box flex={1} alignItems="center">
-            <Pressable onPress={() => speak(word.example)}>
+            <Pressable onPress={() => speak(arrayToString(word.example))}>
               <Text color={"gray.500"}>
                 {word.example}
               </Text>

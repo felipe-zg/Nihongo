@@ -1,6 +1,6 @@
 import { Box, Button, Center, Heading, Input, Select, Text } from "native-base";
 import React from "react";
-import { getOptionsStep5 } from "../../helpers";
+import { arrayToString, getOptionsStep5 } from "../../helpers";
 import CheckboxDropdown from "../../components/CheckboxDropdown/CheckboxDropdown";
 
 function getTextColorByWordType(wordType: WordType) {
@@ -93,7 +93,7 @@ const Words: React.FC<Props> = ({
         <Text color="emerald.500">{`${currentDeckPosition + 1}/${deckItems.length}`}</Text>
         <br/><br/><br/>
         <Heading size="xl">
-          <Text color={getTextColorByWordType(currentItem.type)}>{currentItem.meaning.join(',   ')}</Text>
+          <Text color={getTextColorByWordType(currentItem.type)}>{arrayToString(currentItem.meaning)}</Text>
         </Heading>
         <br/>
         <Heading size="lg">
