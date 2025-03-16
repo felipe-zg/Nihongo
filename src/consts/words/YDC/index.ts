@@ -25,3 +25,8 @@ export * from './lesson24.const';
 export * from './lesson25.const';
 export * from './lesson26.const';
 export * from './lesson27.const';
+export * from './lesson31.const';
+export * from './lesson32.const';
+export * from './lesson33.const';
+export * from './lesson34.const';
+export * from './lesson35.const';
