@@ -6,3 +6,10 @@ export function getOptionsStep5(length: number): number[] {
   options.push(length);
   return options;
 };
+
+export function arrayToString(text: string | string[], separator = ','): string {
+  if (Array.isArray(text)) {
+    return text.join(separator);
+  }
+  return text;
+}
