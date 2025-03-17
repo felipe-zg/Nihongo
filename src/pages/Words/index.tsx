@@ -15,8 +15,9 @@ const KanjiPage: React.FC<Props> = ({ source }) => {
   const WORDS = WORDS_MAP[source];
   const [deckItems, setDeckItems] = React.useState<Array<Word>>(Object.values(WORDS).flat());
   const [showKana, setShowKana] = React.useState<boolean>(true);
+  const [shuffle, setShuffle] = React.useState<boolean>(false);
   const availableLessons = Object.keys(WORDS).map(Number);
-  const [lessons, setLessons] = React.useState<number[]>(availableLessons);
+  const [lessons, setLessons] = React.useState<number[]>([1]);
 
   function addLesson(lesson: number) {
     setLessons([...lessons, lesson]);
@@ -42,7 +43,16 @@ const KanjiPage: React.FC<Props> = ({ source }) => {
       .filter((lesson) => lessons.includes(Number(lesson)))
       .map((lesson) => WORDS[Number(lesson) as keyof typeof WORDS])
       .flat()
-      .sort(() => Math.random() - 0.5);
+    return newDeckItems;
+  }
+
+  function updateDeckItemsAndShuffle() {
+    const newDeckItems = updateDeckItemsByLessons().sort(() => Math.random() - 0.5);
+    setDeckItems(newDeckItems);
+  }
+
+  function updateDeckItems() {
+    const newDeckItems = updateDeckItemsByLessons();
     setDeckItems(newDeckItems);
   }
 
@@ -50,10 +60,18 @@ const KanjiPage: React.FC<Props> = ({ source }) => {
     setShowKana(prev => !prev);
   }
 
+  function handleShuffleChange(): void {
+    setShuffle(prev => !prev);
+  }
+
   React.useEffect(() => {
-    updateDeckItemsByLessons();
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [lessons]);
+      if(shuffle) {
+        updateDeckItemsAndShuffle();
+      } else {
+        updateDeckItems();
+      }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [lessons, shuffle]);
 
   return (
     <Words 
@@ -63,6 +81,8 @@ const KanjiPage: React.FC<Props> = ({ source }) => {
       handleLessonChange={handleLessonChange}
       showKana={showKana}
       handleToggleShowKana={toggleShowKana}
+      shuffle={shuffle}
+      handleShuffleChange={handleShuffleChange}
     />
   )
 };

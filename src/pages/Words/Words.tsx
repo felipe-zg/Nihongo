@@ -27,6 +27,8 @@ type Props = {
   handleLessonChange(lesson: number): void;
   showKana: boolean;
   handleToggleShowKana(): void;
+  shuffle: boolean;
+  handleShuffleChange(): void;
 };
 
 const Words: React.FC<Props> = ({ 
@@ -36,6 +38,8 @@ const Words: React.FC<Props> = ({
   handleLessonChange,
   showKana,
   handleToggleShowKana,
+  shuffle,
+  handleShuffleChange
 }) => {
   const [currentDeckPosition, setCurrentDeckPosition] = React.useState(0);
   const [currentQuantity, setCurrentQuantity] = React.useState(deckItems.length);
@@ -130,6 +134,17 @@ const Words: React.FC<Props> = ({
             isChecked={showKana}
           />
           <Text color="emerald.500">Show kana</Text>
+        </HStack>
+      </Box>
+      <Box paddingLeft={5}>
+        <HStack space={2}>
+          <Switch
+            value={shuffle}
+            onValueChange={handleShuffleChange}
+            colorScheme="emerald"
+            isChecked={shuffle}
+          />
+          <Text color="emerald.500">Shuffle</Text>
         </HStack>
       </Box>
       <br/><br/>
