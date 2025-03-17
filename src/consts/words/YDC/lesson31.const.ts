@@ -44,8 +44,8 @@ export const WORD_YDC_LESSON_31: Array<Word> = [
     kana: 'きゅうけいする',
     meaning: 'To take a break',
     type: 'IRREGULAR',
-    example: '休憩をとる。',
-    exampleMeaning: 'Take a break.'
+    example: '仕事の合間に休憩する。',
+    exampleMeaning: 'Take a break between work.'
   },
   {
     word: '連休',
