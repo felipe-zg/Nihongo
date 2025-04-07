@@ -30,3 +30,4 @@ export * from './lesson32.const';
 export * from './lesson33.const';
 export * from './lesson34.const';
 export * from './lesson35.const';
+export * from './lesson36.const';
