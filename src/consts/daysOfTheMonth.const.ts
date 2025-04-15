@@ -8,7 +8,7 @@ export const daysOfTheMonth: DayOfTheMonth[] = [
   { id: 7, day: '7日', reading: 'なのか' },
   { id: 8, day: '8日', reading: 'ようか' },
   { id: 9, day: '9日', reading: 'ここのか' },
-  { id: 10, day: '10日', reading: 'とうか' },
+  { id: 10, day: '10日', reading: 'とおか' },
   { id: 11, day: '11日', reading: 'じゅういちにち' },
   { id: 12, day: '12日', reading: 'じゅうににち' },
   { id: 13, day: '13日', reading: 'じゅうさんにち' },
