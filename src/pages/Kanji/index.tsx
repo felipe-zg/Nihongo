@@ -16,7 +16,7 @@ const KanjiPage: React.FC<Props> = ({ source }) => {
   const [deckItems, setDeckItems] = React.useState<Array<KanjiYDC>>(Object.values(KANJI).flat());
   const [onlyMainExamplesEnabled, setOnlyMainExamplesEnabled] = React.useState(true);
   const availableLessons = Object.keys(KANJI).map(Number);
-  const [lessons, setLessons] = React.useState<number[]>(availableLessons);
+  const [lessons, setLessons] = React.useState<number[]>([availableLessons.length + 3]); //TODO: Remove +3 after adding lessons 1-3
   const [mode, setMode] = React.useState<KanjiYDCMode>("carousel");
   const [shuffle, setShuffle] = React.useState<boolean>(true);
   const [memoryMode, setMemoryMode] = React.useState<boolean>(false);
