@@ -4,6 +4,7 @@ import { DaysOfTheMonth, Deck, Kanji, Levels, Periods, Verbs, Words, WordsYDCQui
 import { Box, HStack, NativeBaseProvider } from "native-base";
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Navbar } from './components';
+import Materials from './pages/Materials/Materials';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
             <Route path="/words-quizz" element={<WordsYDCQuizz />} />
             <Route path="/potential-form" element={<Deck />} />
             <Route path="/verbs" element={<Verbs />} />
+            <Route path="/lessons" element={<Materials />} />
           </Routes>
         </Box>
       </HStack>

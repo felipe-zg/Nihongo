@@ -14,6 +14,7 @@ const routes = [
   { name: 'Potential form', path: '/potential-form' },
   { name: 'Words quizz', path: '/words-quizz' },
   { name: 'Verbs', path: '/verbs' },
+  { name: 'Lessons', path: '/lessons' },
 ]
 
 const Navbar = () => {
