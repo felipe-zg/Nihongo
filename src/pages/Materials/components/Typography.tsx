@@ -1,4 +1,4 @@
-import { Box, HStack, VStack, Text } from "native-base";
+import { Box, HStack, VStack, Text, useBreakpointValue } from "native-base";
 
 export const NewWords = ({ words }: { words: { kanji: string, kana: string, meaning: string }[] }) => (
   <VStack justifyContent="space-between" borderColor={"gray.200"} borderWidth={1} borderRadius="md" marginTop={2} marginBottom={4}>
@@ -33,18 +33,24 @@ export const Word = ({ kanji, kana, meaning }: { kanji?: string, kana: string, m
   </HStack>
 );
 
-export const Phrase = ({ children, litMeaning, altMeaning }: { children: React.ReactNode, litMeaning: string, altMeaning?: string }) => (
-  <HStack justifyContent="space-between" marginTop={1} marginBottom={1}>
-    <Box flex={1}>
-      <Text fontSize="md">
-        {children}
-      </Text>
-    </Box>
-    <Box flex={1}>
-      <Text fontSize="xs" color="teal.500">{litMeaning}</Text>
-    </Box>
-    <Box flex={1}>
-      <Text fontSize="xs" color="lime.500">{altMeaning ?? ''}</Text>
-    </Box>
-  </HStack>
-);
+export const Phrase = ({ children, litMeaning, altMeaning }: { children: React.ReactNode, litMeaning: string, altMeaning?: string }) => {
+  const Stack = useBreakpointValue({
+    base: VStack,
+    md: HStack,
+  });
+  return (
+    <Stack justifyContent="space-between" marginTop={1} marginBottom={1}>
+      <Box flex={1}>
+        <Text fontSize="md">
+          {children}
+        </Text>
+      </Box>
+      <Box flex={1}>
+        <Text fontSize="xs" color="teal.500">{litMeaning}</Text>
+      </Box>
+      <Box flex={1}>
+        <Text fontSize="xs" color="lime.500">{altMeaning ?? ""}</Text>
+      </Box>
+    </Stack>
+  );
+}
