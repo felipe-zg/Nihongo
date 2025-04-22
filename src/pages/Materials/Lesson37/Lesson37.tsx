@@ -12,14 +12,18 @@ const Lesson37: React.FC = () => {
       <Heading size="md" mb={5} color={"blue.500"}>
         Passive voice
       </Heading>
-      <Text fontSize="md" mb={5}>
-        る Verbs → Drop <ColoredText.Red>る</ColoredText.Red> and add <ColoredText.Green>られる</ColoredText.Green>
+      <Text fontSize={{base: "md", sm: "sm"}} mb={5}>
+        <ColoredText.Primary>る Verbs </ColoredText.Primary>
+        → Drop <ColoredText.Red>る</ColoredText.Red> and add <ColoredText.Green>られる</ColoredText.Green>
         <br />
-        う Verbs → Go up 2 hiragana lines (う → あ ) and add <ColoredText.Green>れる</ColoredText.Green>
+        <ColoredText.Primary>う Verbs </ColoredText.Primary>
+        → Go up 2 hiragana lines (う → あ ) and add <ColoredText.Green>れる</ColoredText.Green>
         <br />
-        する → <ColoredText.Green>される</ColoredText.Green>
+        <ColoredText.Primary>する </ColoredText.Primary>
+        → <ColoredText.Green>される</ColoredText.Green>
         <br />
-        来る → <ColoredText.Green>来られる</ColoredText.Green> (こられる)
+        <ColoredText.Primary>来る </ColoredText.Primary>
+        → <ColoredText.Green>来られる</ColoredText.Green> (こられる)
       </Text>
 
       <Text fontSize="sm" mb={5} textAlign="justify">
@@ -85,9 +89,24 @@ const Lesson37: React.FC = () => {
       </Text>
 
       <Box padding={5} marginBottom={5}  borderRadius="md" borderWidth={1} borderColor="primary.200">
-        <Text fontSize="xs">- When using the passive voice we replace the particle は with に. (Doer に)</Text>
-        <Text fontSize="xs">- We don't need to add the word "upset" or "mad" because the passive voice already implies that.</Text>
-        <Text fontSize="xs">- We don't need to use 私は because the passive voice is always the speaker's perspective.</Text>
+        <ul>
+          <li>
+            <Text fontSize="xs">
+              When using the passive voice we replace the particle は with に. (Doer に)
+            </Text>
+          </li>
+          <li>
+            <Text fontSize="xs">
+              We don't need to add the word "upset" or "mad" because the passive voice already implies that.
+            </Text>
+          </li>
+          <li>
+            <Text fontSize="xs">
+              We don't need to use 私は because the passive voice is always the speaker's perspective.
+            </Text>
+          </li>
+
+        </ul>
         <Divider marginTop={2} marginBottom={2} />
         <Phrase litMeaning="Akira took a picture of me">
           <ColoredText.Primary>アキラ</ColoredText.Primary><ColoredText.Red>は</ColoredText.Red>私の写真を
@@ -196,8 +215,8 @@ const Lesson37: React.FC = () => {
         the speaker or listener is in relation to what the positional noun indicates
       </Text>
       <HStack 
-        marginTop={2}
-        marginBottom={2}
+        my={2}
+        p={2}
         width={{base: "100%", md: "50%"}}
         alignItems="center"
         borderRadius="md" borderWidth={1} borderColor="primary.200"
