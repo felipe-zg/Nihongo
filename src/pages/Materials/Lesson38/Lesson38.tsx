@@ -1,14 +1,11 @@
-import { Box, Divider, Heading, HStack, Text, VStack } from "native-base";
+import { Box, Divider, HStack, Text, VStack } from "native-base";
 import { Text as ColoredText, Phrase } from "../components";
 import React from "react";
 
 const Lesson38: React.FC = () => {
 
   return (
-    <Box backgroundColor="gray.50" padding={5} minHeight={"100vh"}>
-      <Heading size="lg" mb={5} textAlign="center">
-        Lesson 38
-      </Heading>
+    <Box backgroundColor="gray.50" minHeight={"100vh"}>
       <Text mb={5}>
         We use the plain form of verbs and adjectives attached to the particle の to nominalize them 
         (transform them into nouns), and therefore form various elements of a sentence.

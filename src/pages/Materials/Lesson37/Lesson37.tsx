@@ -5,7 +5,7 @@ import React from "react";
 const Lesson37: React.FC = () => {
 
   return (
-    <Box backgroundColor="gray.50" padding={5} minHeight={"100vh"}>
+    <Box backgroundColor="gray.50" minHeight={"100vh"}>
       <Heading size="md" mb={5} color={"blue.500"}>
         Passive voice
       </Heading>
