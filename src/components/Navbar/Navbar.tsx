@@ -7,6 +7,7 @@ const routes = [
   { name: 'Levels', path: '/' },
   { name: 'Kanji (YDC)', path: '/kanji-ydc' },
   { name: 'Kanji (Genki)', path: '/kanji-genki' },
+  { name: 'Kanji practice', path: '/kanji-practice' },
   { name: 'Words (YDC)', path: '/words-ydc' },
   { name: 'Words (Genki)', path: '/words-genki' },
   { name: 'Periods', path: '/periods' },
