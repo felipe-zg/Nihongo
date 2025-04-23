@@ -6,9 +6,6 @@ const Lesson37: React.FC = () => {
 
   return (
     <Box backgroundColor="gray.50" padding={5} minHeight={"100vh"}>
-      <Heading size="lg" mb={5} textAlign="center">
-        Lesson 37
-      </Heading>
       <Heading size="md" mb={5} color={"blue.500"}>
         Passive voice
       </Heading>

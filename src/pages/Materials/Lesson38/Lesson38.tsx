@@ -9,9 +9,6 @@ const Lesson38: React.FC = () => {
       <Heading size="lg" mb={5} textAlign="center">
         Lesson 38
       </Heading>
-      <Heading size="md" mb={5} color={"blue.500"}>
-        の as a nominalizer
-      </Heading>
       <Text mb={5}>
         We use the plain form of verbs and adjectives attached to the particle の to nominalize them 
         (transform them into nouns), and therefore form various elements of a sentence.
