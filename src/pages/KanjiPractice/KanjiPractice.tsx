@@ -1,8 +1,9 @@
 import { Box, HStack, Pressable, Select, Text, VStack } from "native-base";
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const Word = ({ meaning, kana, kanji }: { meaning: string, kana: string, kanji: string }) => {
-  const [isFliped, setIsFliped] = React.useState(false);
+  const [isFliped, setIsFliped] = useState(false);
+  const[ word ] = useState({ meaning, kana, kanji });
   const [status, setStatus] = React.useState<"unset" | "correct" | "wrong">("unset");
 
   //TODO: Use this background after implementing status logic
@@ -16,6 +17,10 @@ const Word = ({ meaning, kana, kanji }: { meaning: string, kana: string, kanji: 
     return isFliped ? "gray.100" : "white.200";
   }, [isFliped]);
 
+  useEffect(() => {
+    setIsFliped(false);
+  }, [meaning, kana, kanji]);
+
   return (
     <HStack
       flex={1}
@@ -26,13 +31,13 @@ const Word = ({ meaning, kana, kanji }: { meaning: string, kana: string, kanji: 
       borderBottomWidth={1}
     >
       <Box flex={2}>
-        <Text fontSize={{base: "xs", md: "lg"}} color="gray.600">{meaning}</Text>
+        <Text fontSize={{base: "xs", md: "lg"}} color="gray.600">{word.meaning}</Text>
       </Box>
       <Box flex={1}>
-        <Text fontSize="md" color={isFliped ? "purple.400" : "transparent"}>{kanji}</Text>
+        <Text fontSize="md" color={isFliped ? "purple.400" : "transparent"}>{word.kanji}</Text>
       </Box>
       <Box flex={1}>
-        <Text fontSize={{base: "xs", md: "lg"}} color={isFliped ? "primary.500" : "transparent"}>{kana}</Text>
+        <Text fontSize={{base: "xs", md: "lg"}} color={isFliped ? "primary.500" : "transparent"}>{word.kana}</Text>
       </Box>
       <Pressable
         onPress={() => {
