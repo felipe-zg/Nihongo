@@ -53,7 +53,7 @@ type Props = {
   lesson: number;
   availableLessons: number[];
   handleModeChange(lesson: number): void;
-  items: {kanji: string; kana: string; meaning: string;}[];
+  items: KanjiYDCExample[];
 };
 
 const KanjiPractice: React.FC<Props> = ({lesson, availableLessons, handleModeChange, items}) => {
@@ -78,7 +78,7 @@ const KanjiPractice: React.FC<Props> = ({lesson, availableLessons, handleModeCha
             </Box>
           </HStack>
           {items.map((word, index) => (
-            <Word key={index} kanji={word.kanji} kana={word.kana} meaning={word.meaning} />
+            <Word key={index} kanji={word.reading} kana={word.kana} meaning={word.meaning.join(", ")} />
           ))}
         </VStack>
     </Box>
