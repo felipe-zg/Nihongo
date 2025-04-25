@@ -1,4 +1,4 @@
-import { Box, HStack, Pressable, Select, Text, VStack } from "native-base";
+import { Box, Center, HStack, Pressable, Select, Text, VStack } from "native-base";
 import React, { useEffect, useState } from "react";
 
 const Word = ({ meaning, kana, kanji }: { meaning: string, kana: string, kanji: string }) => {
@@ -65,17 +65,18 @@ const KanjiPractice: React.FC<Props> = ({lesson, availableLessons, handleModeCha
 
   return (
     <Box backgroundColor="gray.50" padding={5} minHeight={"100vh"}>
-      <Select
-        selectedValue={String(1)}
-        minWidth={200}
-        onValueChange={(itemValue) => handleModeChange(Number(itemValue))}
-        accessibilityLabel="Select Lesson"
-        placeholder="Select Lesson"
-      >
-        {availableLessons.map((l) => (
-          <Select.Item key={l} value={String(l)} label={String(l)} />
-        ))}
-      </Select>
+      <Center>
+        <Select
+          selectedValue={String(1)}
+          onValueChange={(itemValue) => handleModeChange(Number(itemValue))}
+          accessibilityLabel="Select Lesson"
+          placeholder="Select Lesson"
+        >
+          {availableLessons.map((l) => (
+            <Select.Item key={l} value={String(l)} label={String(l)} />
+          ))}
+        </Select>
+      </Center>
       <VStack justifyContent="space-between" borderColor={"gray.200"} borderWidth={1} borderRadius="md" marginTop={2} marginBottom={4}>
           <HStack flex={1} alignItems="center" bg={"primary.100"} paddingTop={1} paddingBottom={1}>
             <Box flex={1} alignItems="center">
