@@ -1,15 +1,16 @@
 import React from "react";
-import { Lesson37, Lesson38, Lesson39 } from ".";
+import { Lesson37, Lesson38, Lesson39, Lesson40 } from ".";
 import { Box, Heading, Select } from "native-base";
 
 const lessonPages: Record<number, React.FC> = {
   37: Lesson37,
   38: Lesson38,
   39: Lesson39,
+  40: Lesson40,
 };
 
 const Materials: React.FC = () => {
-  const availableLessons = [37, 38, 39];
+  const availableLessons = Object.keys(lessonPages).map(Number);
   const [selectedLesson, setSelectedLesson] = React.useState(availableLessons[0]);
   const lessonName = `Lesson ${selectedLesson}`;
 
