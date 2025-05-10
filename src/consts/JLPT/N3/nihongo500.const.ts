@@ -292,4 +292,96 @@ export const NIHONGO_500_N3: Nihongo500N3[] = [
       Is this example, 「５０人集まるだろう」 means "Probably 50 people will gather".\n
     `
   },
+  {
+    kanji: "参る",
+    kana: "まいる",
+    meaning: "To go / to come (humble)",
+    example: "まもなく電車が参ります。危ないですから、黄色い線まで下がってお待ちください。",
+    exampleMeaning: "The train will arrive shortly. Please wait behind the yellow line as it is dangerous.",
+    parts: [
+      {
+        kanji: "下がって",
+        kana: "さがって",
+        meaning: "To step back / to lower",
+      },
+      {
+        kanji: "黄色い",
+        kana: "きいろい",
+        meaning: "Yellow",
+      },
+      {
+        kanji: "線",
+        kana: "せん",
+        meaning: "Line",
+      },
+    ],
+    notes: `
+      参ります (まいります) is the humble form of 行く (いく) and 来る (くる), meaning "to go" or "to come".\n
+      It is used to show respect or humility when referring to one's own actions.\n
+      In this context, it is used in a formal announcement about the arrival of a train.\n
+    `,
+  },
+  {
+    kanji: "謝る",
+    kana: "あやまる",
+    meaning: "To apologize",
+    example: "遅れてしまったので、先生に謝りました。",
+    exampleMeaning: "I apologized to the teacher because I was late.",
+  },
+  {
+    kanji: "怒る",
+    kana: "おこる",
+    meaning: "To get angry",
+    example: "父は私が嘘をついたことで怒りました。",
+    exampleMeaning: "My father got angry because I told a lie.",
+    parts: [
+      {
+        kanji: "嘘",
+        kana: "うそ",
+        meaning: "Lie",
+      },
+    ],
+  },
+  {
+    kanji: "所々",
+    kana: "ところどころ",
+    meaning: "Here and there / in some places",
+    example: "試験はできた？\nうん、所々わからなかったけど、だいたいできたよ。",
+    exampleMeaning: "Did you do well on the exam?\nYeah, I didn't understand some parts, but I did well overall.",
+  },
+  {
+    kanji: "全て",
+    kana: "すべて",
+    meaning: "All / everything",
+    example: "このプロジェクトは全て私一人でやりました。",
+    exampleMeaning: "I did this project all by myself.",
+  },
+  {
+    kanji: "まあまあ",
+    kana: "まあまあ",
+    meaning: "So-so / not bad",
+    example: "試験の結果はまあまあでした。",
+    exampleMeaning: "The results of the exam were so-so.",
+  },
+  {
+    kanji: "次々に",
+    kana: "つぎつぎに",
+    meaning: "One after another",
+    example: "新しいアイデアが次々に思い浮かびました。",
+    exampleMeaning: "New ideas came to mind one after another.",
+    parts: [
+      {
+        kanji: "思い浮かぶ",
+        kana: "おもいうかぶ",
+        meaning: "To come to mind / to recall",
+      },
+    ],
+  },
+  {
+    kanji: "だいたい",
+    kana: "だいたい",
+    meaning: "Generally / roughly / almost",
+    example: "この仕事はだいたい終わりました。",
+    exampleMeaning: "I have roughly finished this work.",
+  },
 ]
