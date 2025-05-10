@@ -50,7 +50,7 @@ const Nihongo500: React.FC<Props> = ({
   }
 
   const Commands = () => (
-    <HStack>
+    <HStack alignItems="center" mt="auto">
       <HStack flex={1}>
         <Box display={screenWidth > 500 ? "flex" : "none"}>
           <HStack space={2}>
@@ -86,7 +86,6 @@ const Nihongo500: React.FC<Props> = ({
 
   return (
     <Box backgroundColor="gray.50" padding={5} minHeight={"100vh"}>
-      <Commands />
       <Center>
         <br/>
         <Heading size="2xl">
@@ -111,10 +110,11 @@ const Nihongo500: React.FC<Props> = ({
       </Center>
       {currentItem.parts && isFlipped && <NewWords words={currentItem.parts} />}
       {currentItem.notes && currentItem.notes.split("\n").map((note) => (
-        <Text fontSize="xs" color={isFlipped ? "gray.500" : "transparent"}>
-          {note}
+        <Text textAlign="left" fontSize="xs" color={isFlipped ? "gray.500" : "transparent"}>
+          {note.trim()}
         </Text>
       ))}
+      <Commands />
     </Box>
   )
 };

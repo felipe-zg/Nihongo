@@ -97,4 +97,115 @@ export const NIHONGO_500_N3: Nihongo500N3[] = [
       違い (ちがい) is a noun meaning "difference" or "discrepancy".\n
     `,
   },
+  {
+    kanji: "向こう",
+    kana: "むこう",
+    meaning: "Over there / the other side",
+    example: "川の向こうにきれいな公園があります。",
+    exampleMeaning: "There is a beautiful park on the other side of the river.",
+    notes: `
+      向こう (むこう) can refer to "the other side" or "over there".\n
+      向かう (むかう) is a verb meaning "to face" or "to head towards".\n
+      向かい (むかい) is a noun meaning "opposite" or "across from".\n
+    `
+  },
+  {
+    kanji: "和室",
+    kana: "わしつ",
+    meaning: "Japanese-style room",
+    example: "旅館に泊まったとき、初めて和室に寝ました。",
+    exampleMeaning: "When I stayed at a ryokan, I slept in a Japanese-style room for the first time.",
+    parts: [
+      {
+        kanji: "旅館",
+        kana: "りょかん",
+        meaning: "Japanese inn",
+      },
+    ],
+  },
+  {
+    kanji: "結果",
+    kana: "けっか",
+    meaning: "Result",
+    example: "一生懸命勉強した結果、試験に合格できました。",
+    exampleMeaning: "As a result of studying hard, I was able to pass the exam.",
+    parts: [
+      {
+        kanji: "一生懸命",
+        kana: "いっしょうけんめい",
+        meaning: "With all one's might / with great effort",
+      },
+      {
+        kanji: "試験",
+        kana: "しけん",
+        meaning: "Exam",
+      },
+      {
+        kanji: "合格",
+        kana: "ごうかく",
+        meaning: "Pass (an exam)",
+      },
+    ],
+  },
+  {
+    kanji: "果物",
+    kana: "くだもの",
+    meaning: "Fruit",
+    example: "毎朝、朝ごはんに果物を食べるようにしています。",
+    exampleMeaning: "I try to eat fruit for breakfast every morning.",
+  },
+  {
+    kanji: "お菓子",
+    kana: "おかし",
+    meaning: "Sweets / snacks",
+    example: "子どものころは、毎日お菓子を食べるのが楽しみでした。",
+    exampleMeaning: "When I was a child, I looked forward to eating sweets every day.",
+    parts: [
+      {
+        kanji: "ころ",
+        kana: "ころ",
+        meaning: "Time / period",
+      },
+    ],
+  },
+  {
+    kanji: "迎える",
+    kana: "むかえる",
+    meaning: "To welcome (Someone) / to greet",
+    example: "駅まで友だちを迎えに行きます。",
+    exampleMeaning: "I will go to the station to pick up my friend.",
+  },
+  {
+    kanji: "届く",
+    kana: "とどく",
+    meaning: "To reach / to arrive",
+    example: "注文した本が昨日やっと届きました。",
+    exampleMeaning: "The book I ordered finally arrived yesterday.",
+  },
+  {
+    kanji: "間に合う",
+    kana: "まにあう",
+    meaning: "To be on time / to be in time",
+    example: "急いで駅に向かったので、電車に間に合いました。",
+    exampleMeaning: "I hurried to the station, so I made it in time for the train.",
+  },
+  {
+    kanji: "授業",
+    kana: "じゅぎょう",
+    meaning: "Class / lesson",
+    example: "明日の授業は9時から始まります。",
+    exampleMeaning: "Tomorrow's class starts at 9 o'clock.",
+  },
+  {
+    kanji: "写真を撮っちゃいけないんだよ",
+    kana: "しゃしんをとっちゃいけないんだよ",
+    meaning: "You must not take pictures",
+    example: "ここは写真を撮っちゃいけないんだよ。",
+    exampleMeaning: "You must not take pictures here.",
+    notes: `
+      ちゃいけない (ちゃいけない) is a colloquial contraction of てはいけない (てはいけない), which means "must not" or "should not".\n
+      The て form plus は contracts to ちゃ, and the いけない part remains unchanged.\n
+      撮ってはいけません -> 撮っちゃいけない\n
+    `
+  },
 ]

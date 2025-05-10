@@ -4,7 +4,7 @@ import { NIHONGO_500_N3 } from "../../../consts";
 
 const Nihongo500N3Page: React.FC = () => {
   const [deckItems] = React.useState<Array<Nihongo500N3>>(NIHONGO_500_N3);
-  const [shuffle, setShuffle] = React.useState<boolean>(true);
+  const [shuffle, setShuffle] = React.useState<boolean>(false);
   const [showKana, setShowKana] = React.useState<boolean>(false);
 
 
