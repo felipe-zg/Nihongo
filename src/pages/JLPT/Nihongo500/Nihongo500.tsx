@@ -92,7 +92,7 @@ const Nihongo500: React.FC<Props> = ({
           <Text color="primary.500">{currentItem.kanji}</Text>
         </Heading>
         <br/>
-        <Text fontSize="xl" color={isFlipped ? "fuchsia.500" : "transparent"}>
+        <Text fontSize="xl" color={isFlipped || showKana ? "fuchsia.500" : "transparent"}>
           {currentItem.kana}
         </Text>
         <Text fontSize="md" color={isFlipped ? "fuchsia.500" : "transparent"}>
