@@ -18,7 +18,7 @@ export const WORD_YDC_LESSON_32: Array<Word> = [
   {
     word: '失敗する',
     kana: 'しっぱいする',
-    meaning: 'To fail (an exam)',
+    meaning: 'To fail',
     type: 'IRREGULAR',
     example: '試験に失敗してしまった。',
     exampleMeaning: 'I failed the exam.'

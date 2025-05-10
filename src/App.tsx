@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { DaysOfTheMonth, Deck, Kanji, KanjiPractice, Levels, Periods, Verbs, Words, WordsYDCQuizz} from './pages';
+import { DaysOfTheMonth, Deck, Kanji, KanjiPractice, Levels, Nihongo500N3, Periods, Verbs, Words, WordsYDCQuizz} from './pages';
 import { Box, HStack, NativeBaseProvider } from "native-base";
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Navbar } from './components';
@@ -26,6 +26,7 @@ function App() {
             <Route path="/potential-form" element={<Deck />} />
             <Route path="/verbs" element={<Verbs />} />
             <Route path="/lessons" element={<Materials />} />
+            <Route path="/JLPT/N3" element={<Nihongo500N3 />} />
           </Routes>
         </Box>
       </HStack>
