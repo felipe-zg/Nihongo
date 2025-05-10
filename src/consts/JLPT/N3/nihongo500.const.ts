@@ -208,4 +208,88 @@ export const NIHONGO_500_N3: Nihongo500N3[] = [
       撮ってはいけません -> 撮っちゃいけない\n
     `
   },
+  {
+    kanji: "運ぶ",
+    kana: "はこぶ",
+    meaning: "To carry / to transport",
+    example: "重い箱を部屋まで運ぶのを手伝ってもらえますか？",
+    exampleMeaning: "Can you help me carry this heavy box to the room?",
+  },
+  {
+    kanji: "全部食べちゃおうか？",
+    kana: "ぜんぶたべちゃおうか？",
+    meaning: "Shall we eat it all?",
+    example: "全部食べちゃおうか？",
+    exampleMeaning: "Shall we eat it all?",
+    notes: `
+      しまう is a verb that indicates the completion of an action\n
+      しまおう is the volitional form of しまう (しまう), which expresses the intention to do something.\n
+      Verb て + しまう (しまう) indicates that the action is completed or done.\n
+      Verb て + しまおう (しまおう) is the volitional form, suggesting a plan or intention to do something.\n
+      in casual speech てしまう is contracted to ちゃう, and it volitional form てしまおう is contracted to ちゃおう.\n
+    `
+  },
+  {
+    kanji: "明日の分、とっとこうよ。",
+    kana: "あしたのぶん、とっとこうよ。",
+    meaning: "Let's save some for tomorrow.",
+    example: "明日の分、とっとこうよ。",
+    exampleMeaning: "Let's save some for tomorrow.",
+    notes: `
+      とっておく uses the verb とる with the おく(Do something in advance) and it means "to save" or "to keep for later".\n
+      とっておこう is the volitional form of とっておく, suggesting the intention to save or keep something for later.\n
+      In casual speech, とっておく is often contracted to とっとく, and the volitional form とっておこう is contracted to とっとこう.\n
+    `
+  },
+  {
+    kanji: "信号",
+    kana: "しんごう",
+    meaning: "Traffic light",
+    example: "信号が青になるまで待ってから渡りましょう。",
+    exampleMeaning: "Let's wait until the traffic light turns green before crossing.",
+    parts: [
+      {
+        kanji: "渡る",
+        kana: "わたる",
+        meaning: "To cross",
+      },
+    ],
+  },
+  {
+    kanji: "信じる",
+    kana: "しんじる",
+    meaning: "To believe",
+    example: "友だちの言葉を信じて、待つことにしました。",
+    exampleMeaning: "I decided to believe my friend's words and wait.",
+  },
+  {
+    kanji: "曲がる",
+    kana: "まがる",
+    meaning: "To turn",
+    example: "次の角を右に曲がると、郵便局があります。",
+    exampleMeaning: "If you turn right at the next corner, there is a post office.",
+    parts: [
+      {
+        kanji: "角",
+        kana: "かど",
+        meaning: "Corner",
+      },
+    ],
+    notes: `
+      曲がる (まがる) is an intransitive verb meaning "to turn" or "to bend".\n
+      曲げる (まげる) is a transitive verb meaning "to bend" or "to twist".\n
+    `
+  },
+  {
+    kanji: "。。。だろうと思う",
+    kana: "。。。だろうとおもう",
+    meaning: "I think probably...",
+    example: "パーティーに５０人集まるだろうと思う",
+    exampleMeaning: "I think about 50 people will gather at the party.",
+    notes: `
+      だろう is a casual or plain form of でしょう, which expresses probability,supposition, or guess. 
+      ("probably", "I suppose", "I think it will be")\n
+      Is this example, 「５０人集まるだろう」 means "Probably 50 people will gather".\n
+    `
+  },
 ]
