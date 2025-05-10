@@ -384,4 +384,107 @@ export const NIHONGO_500_N3: Nihongo500N3[] = [
     example: "この仕事はだいたい終わりました。",
     exampleMeaning: "I have roughly finished this work.",
   },
+  {
+    kanji: "簡単",
+    kana: "かんたん",
+    meaning: "Simple / easy",
+    example: "この問題はとても簡単だったので、すぐに解けました。",
+    exampleMeaning: "This problem was very simple, so I solved it quickly.",
+    parts: [
+      {
+        kanji: "解ける",
+        kana: "とける",
+        meaning: "To be solved / to be answered",
+      },
+    ],
+  },
+  {
+    kanji: "得意な",
+    kana: "とくいな",
+    meaning: "Good at / skilled in",
+    example: "弟は数学が得意なので、よく私に教えてくれます。",
+    exampleMeaning: "My younger brother is good at math, so he often teaches me.",
+    parts: [
+      {
+        kanji: "数学",
+        kana: "すうがく",
+        meaning: "Mathematics",
+      },
+    ],
+  },
+  {
+    kanji: "上等な",
+    kana: "じょうとうな",
+    meaning: "Superior / excellent",
+    example: "これは上等なワインなので、大事なお客様に出します。",
+    exampleMeaning: "This is an excellent wine, so I will serve it to important customers.",
+  },
+  {
+    kanji: "雑誌",
+    kana: "ざっし",
+    meaning: "Magazine",
+    example: "毎月、新しい雑誌を買うのが楽しみです。",
+    exampleMeaning: "I look forward to buying a new magazine every month.",
+  },
+  {
+    kanji: "辞書",
+    kana: "じしょ",
+    meaning: "Dictionary",
+    example: "日本語の辞書を使って、意味を調べました。",
+    exampleMeaning: "I used a Japanese dictionary to look up the meaning.",
+  },
+  {
+    kanji: "辞める",
+    kana: "やめる",
+    meaning: "To quit / to stop",
+    example: "その仕事は自分に合わなかったので、辞めることにしました。",
+    exampleMeaning: "I decided to quit that job because it didn't suit me.",
+  },
+  {
+    kanji: "空く",
+    kana: "あく",
+    meaning: "To become empty / to be vacant",
+    example: "席が空いたら、すぐに座ってください。",
+    exampleMeaning: "Please sit down as soon as a seat becomes available.",
+  },
+  {
+    kanji: "残る",
+    kana: "のこる",
+    meaning: "To remain / to be left",
+    example: "会議が終わった後、重要なポイントが心に残りました。",
+    exampleMeaning: "After the meeting, important points remained in my mind.",
+    parts: [
+      {
+        kanji: "重要",
+        kana: "じゅうよう",
+        meaning: "Important",
+      },
+    ],
+  },
+  {
+    kanji: "すく",
+    kana: "すく",
+    meaning: "Not crowded / full",
+    example: "この時間は電車がすいているので、座れます。",
+    exampleMeaning: "The train is not crowded at this time, so I can sit down.",
+  },
+  {
+    kanji: "余る",
+    kana: "あまる",
+    meaning: "To be left over / to remain",
+    example: "パーティーの食べ物が余ったので、持って帰ってもいいですか？",
+    exampleMeaning: "Since there are leftovers from the party, can I take some home?",
+    parts: [
+      {
+        kanji: "持って帰る",
+        kana: "もってかえる",
+        meaning: "To take home",
+      },
+    ],
+    notes: `
+      余る (あまる) is an intransitive verb meaning "to be left over" or "to remain".\n
+      We can use the causative form  余らせる (あまらせる), meaning "to leave over" or 
+      "to let remain" as a transitive pair\n
+      `,
+  },
 ]
