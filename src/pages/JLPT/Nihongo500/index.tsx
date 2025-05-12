@@ -3,7 +3,7 @@ import Nihongo500 from "./Nihongo500";
 import { NIHONGO_500_N3 } from "../../../consts";
 
 const Nihongo500N3Page: React.FC = () => {
-  const [deckItems] = React.useState<Array<Nihongo500N3>>(NIHONGO_500_N3);
+  const [deckItems, setDeckItems] = React.useState<Array<Nihongo500N3>>(NIHONGO_500_N3);
   const [shuffle, setShuffle] = React.useState<boolean>(false);
   const [showKana, setShowKana] = React.useState<boolean>(false);
 
@@ -16,14 +16,15 @@ const Nihongo500N3Page: React.FC = () => {
     setShowKana(!showKana);
   };
 
-  // React.useEffect(() => {
-  //   if(shuffle) {
-  //     updateDeckItemsAndShuffle();
-  //   } else {
-  //     updateDeckItems();
-  //   }
-  // // eslint-disable-next-line react-hooks/exhaustive-deps
-  // }, [lessons, shuffle]);
+  React.useEffect(() => {
+    if(shuffle) {
+      const shuffledDeck = [...NIHONGO_500_N3].sort(() => Math.random() - 0.5);
+      setDeckItems(shuffledDeck);
+    } else {
+      setDeckItems(NIHONGO_500_N3);
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [shuffle]);
 
   return (
     <Nihongo500 

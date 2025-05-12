@@ -44,6 +44,12 @@ const Nihongo500: React.FC<Props> = ({
     setCurrentDeckPosition(0);
   }
 
+  function _handleShuffleChange() {
+    setCurrentDeckPosition(0);
+    setIsFlipped(false);
+    handleShuffleChange();
+  };
+
   if(endReached) {
     restart();
     return <></>
@@ -68,7 +74,7 @@ const Nihongo500: React.FC<Props> = ({
             <Text color="emerald.500">Shuffle</Text>
             <Switch
               value={shuffle}
-              onValueChange={handleShuffleChange}
+              onValueChange={_handleShuffleChange}
               colorScheme="emerald"
               isChecked={shuffle}
             />
