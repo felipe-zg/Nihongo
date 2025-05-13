@@ -24,12 +24,19 @@ const Primary = ({ children }: { children: React.ReactNode }) => (
   </NativeBaseText>
 );
 
-const Text = {
+const Yellow = ({ children }: { children: React.ReactNode }) => (
+  <NativeBaseText color="yellow.400" fontWeight="bold">
+    {children}
+  </NativeBaseText>
+);
+
+const ColoredText = {
   Green,
   Red,
   Pink,
   Primary,
+  Yellow,
 };
 
-export default Text;
-export type TextType = keyof typeof Text;
+export default ColoredText;
+export type TextType = keyof typeof ColoredText;
