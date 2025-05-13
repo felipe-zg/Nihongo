@@ -738,4 +738,21 @@ export const NIHONGO_500_N3: Nihongo500N3[] = [
       },
     ],
   },
+  {
+    kanji: "実は",
+    kana: "じつは",
+    meaning: "Actually / to tell the truth",
+    example: "実は、来月日本に引っ越すことになりました。",
+    exampleMeaning: "Actually, I've decided to move to Japan next month.",
+    parts: [
+      {
+        kanji: "引っ越す",
+        kana: "ひっこす",
+        meaning: "To move (to a new place)",
+      },
+    ],
+    notes: `
+      ことになりました is a phrase used to indicate that a decision has been made or a situation has been established.\n
+    `
+  },
 ]
