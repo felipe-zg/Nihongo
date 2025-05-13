@@ -56,7 +56,7 @@ const Nihongo500: React.FC<Props> = ({
   }
 
   const Commands = () => (
-    <HStack alignItems="center" mt="auto">
+    <HStack alignItems="center" mt="auto" mb={20}>
       <HStack flex={1}>
         <Box display={screenWidth > 500 ? "flex" : "none"}>
           <HStack space={2}>
