@@ -1,4 +1,4 @@
-import { Box, Button, Center, Heading, HStack, Switch, Text } from "native-base";
+import { Box, Button, Center, Heading, HStack, Switch, Text, useBreakpointValue } from "native-base";
 import React from "react";
 import { useScreenWidth } from "../../../hooks";
 import { NewWords } from "../../../components";
@@ -21,6 +21,10 @@ const Nihongo500: React.FC<Props> = ({
   const [currentDeckPosition, setCurrentDeckPosition] = React.useState(0);
   const [isFlipped, setIsFlipped] = React.useState(false);
   const screenWidth = useScreenWidth();
+  const commandsMarginBottom = useBreakpointValue({
+    base: 30,
+    md: 0,
+  });
 
   const currentItem = React.useMemo(() => deckItems[currentDeckPosition], [
     currentDeckPosition,
@@ -56,7 +60,7 @@ const Nihongo500: React.FC<Props> = ({
   }
 
   const Commands = () => (
-    <HStack alignItems="center" mt="auto" mb={20}>
+    <HStack alignItems="center" mt="auto" mb={commandsMarginBottom}>
       <HStack flex={1}>
         <Box display={screenWidth > 500 ? "flex" : "none"}>
           <HStack space={2}>
