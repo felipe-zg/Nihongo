@@ -487,4 +487,255 @@ export const NIHONGO_500_N3: Nihongo500N3[] = [
       "to let remain" as a transitive pair\n
       `,
   },
+  {
+    kanji: "港の絵",
+    kana: "みなとのえ",
+    meaning: "Picture of the port",
+    example: "子どもたちは学校の課題で港の絵を描きました。",
+    exampleMeaning: "The children drew a picture of the port for their school project.",
+    parts: [
+      {
+        kanji: "課題",
+        kana: "かだい",
+        meaning: "Assignment / project",
+      },
+    ],
+  },
+  {
+    kanji: "空港",
+    kana: "くうこう",
+    meaning: "Airport",
+    example: "友だちを迎えに空港まで行きました。",
+    exampleMeaning: "I went to the airport to pick up my friend.",
+    parts: [
+      {
+        kanji: "迎え",
+        kana: "むかえ",
+        meaning: "Pick up / welcome",
+      },
+    ],
+  },
+  {
+    kanji: "後ほど",
+    kana: "のちほど",
+    meaning: "Later / afterwards",
+    example: "詳しいことは後ほどメールでお知らせします。",
+    exampleMeaning: "I will inform you of the details by email later.",
+    parts: [
+      {
+        kanji: "詳しい",
+        kana: "くわしい",
+        meaning: "Detailed / specific",
+      },
+    ],
+    notes: `
+      お知らせします (おしらせします) is a polite version of the verb 知らせる (しらせる), which means "to inform" or "to notify".\n
+    `,
+  },
+  {
+    kanji: "暫く",
+    kana: "しばらく",
+    meaning: "For a while / for some time",
+    example: "暫く日本に住む予定です。",
+    exampleMeaning: "I plan to live in Japan for a while.",
+  },
+  {
+    kanji: "遅れる",
+    kana: "おくれる",
+    meaning: "To be late / to be delayed",
+    example: "電車が事故で遅れました。",
+    exampleMeaning: "The train was delayed due to an accident.",
+  },
+  {
+    kanji: "遅い",
+    kana: "おそい",
+    meaning: "Slow / late",
+    example: "彼のタイピングは少し遅いです。",
+    exampleMeaning: "His typing is a bit slow.",
+  },
+  {
+    kanji: "あちこち",
+    kana: "あちこち",
+    meaning: "Here and there / everywhere",
+    example: "休みの日に東京をあちこち歩き回りました。",
+    exampleMeaning: "I walked around Tokyo here and there on my day off.",
+    notes: `
+      歩き回ります (あるきまわります) is a verb meaning "to walk around" or "to stroll around".\n
+      体のあちこちが痛い (からだのあちこちがいたい) means "my whole body hurts".\n
+    `,
+  },
+  {
+    kanji: "痛い",
+    kana: "いたい",
+    meaning: "Painful / sore",
+    example: "運動をしすぎて、次の日は体のあちこちが痛かったです。",
+    exampleMeaning: "I exercised too much, and the next day my whole body hurt.",
+  },
+  {
+    kanji: "卒業式",
+    kana: "そつぎょうしき",
+    meaning: "Graduation ceremony",
+    example: "来週、妹の卒業式に出席します。",
+    exampleMeaning: "I will attend my sister's graduation ceremony next week.",
+    parts: [
+      {
+        kanji: "妹",
+        kana: "いもうと",
+        meaning: "Younger sister",
+      },
+      {
+        kanji: "出席(する）",
+        kana: "しゅっせき(する）",
+        meaning: "Attendance / to attend",
+      },
+    ],
+  },
+  {
+    kanji: "卒業する",
+    kana: "そつぎょうする",
+    meaning: "To graduate",
+    example: "私は去年、大学を卒業しました。",
+    exampleMeaning: "I graduated from university last year.",
+  },
+  {
+    kanji: "飛び出す",
+    kana: "とびだす",
+    meaning: "To jump out / to dash out",
+    example: "子どもが急に道に飛び出してきて、びっくりしました。",
+    exampleMeaning: "A child suddenly jumped out into the road, and I was surprised.",
+    parts: [
+      {
+        kanji: "急に",
+        kana: "きゅうに",
+        meaning: "Suddenly",
+      },
+    ],
+    notes: `
+      飛び出してきて (とびだしてきて) is a compound verb that combines 飛び出す (とびだす) and 来る (くる).\n
+      It indicates that the action of jumping out is directed towards the speaker or the observer.\n
+    `
+  },
+  {
+    kanji: "紹介する",
+    kana: "しょうかいする",
+    meaning: "To introduce",
+    example: "先生に友だちを紹介しました。",
+    exampleMeaning: "I introduced my friend to the teacher.",
+  },
+  {
+    kanji: "詳しい",
+    kana: "くわしい",
+    meaning: "Detailed / specific",
+    example: "もっと詳しい説明をお願いします。",
+    exampleMeaning: "Please give me a more detailed explanation.",
+  },
+  {
+    kanji: "険しい",
+    kana: "けわしい",
+    meaning: "Steep / Harsh",
+    example: "この山道はとても険しくて、登るのが大変です。",
+    exampleMeaning: "This mountain path is very steep, and it's hard to climb.",
+    parts: [
+      {
+        kanji: "登る",
+        kana: "のぼる",
+        meaning: "To climb",
+      },
+      {
+        kanji: "大変",
+        kana: "たいへん",
+        meaning: "Difficult / hard",
+      },
+    ],
+  },
+  {
+    kanji: "無駄",
+    kana: "むだ",
+    meaning: "Waste / useless",
+    example: "無駄な時間を過ごさないように、計画を立てましょう。",
+    exampleMeaning: "Let's make a plan so that we don't waste time.",
+    parts: [
+      {
+        kanji: "過ごす",
+        kana: "すごす",
+        meaning: "To spend (time)",
+      },
+      {
+        kanji: "計画",
+        kana: "けいかく",
+        meaning: "Plan",
+      },
+      {
+        kanji: "立てます",
+        kana: "たてます",
+        meaning: "To make / to set up",
+      },
+    ],
+    notes: `
+      お金の無駄 (おかねのむだ) means "waste of money".\n
+    `,
+  },
+  {
+    kanji: "緊張する",
+    kana: "きんちょうする",
+    meaning: "To be nervous",
+    example: "試験の前に緊張して、手が震えました。",
+    exampleMeaning: "I was so nervous before the exam that my hands shook.",
+    parts: [
+      {
+        kanji: "震える",
+        kana: "ふるえる",
+        meaning: "To shake / to tremble",
+      },
+    ],
+  },
+  {
+    kanji: "落ち着く",
+    kana: "おちつく",
+    meaning: "To calm down",
+    example: "試験が終わって、やっと落ち着きました。",
+    exampleMeaning: "I finally calmed down after the exam was over.",
+  },
+  {
+    kanji: "思いつく",
+    kana: "おもいつく",
+    meaning: "To come up with (an idea)",
+    example: "新しいアイデアを思いついて、みんなに伝えました。",
+    exampleMeaning: "I came up with a new idea and communicated it to everyone.",
+  },
+  {
+    kanji: "張り切る",
+    kana: "はりきる",
+    meaning: "To be enthusiastic / to be eager",
+    example: "新しいプロジェクトが始まったので、みんな張り切っています。",
+    exampleMeaning: "Everyone is enthusiastic because a new project has started.",
+  },
+  {
+    kanji: "見直す",
+    kana: "みなおす",
+    meaning: "To review / to reconsider / To have another look",
+    example: "レポートを提出する前に、もう一度見直してみてください。",
+    exampleMeaning: "Please review it once more before submitting the report.",
+    parts: [
+      {
+        kanji: "提出する",
+        kana: "ていしゅつする",
+        meaning: "To submit",
+      },
+    ],
+  },
+  {
+    kanji: "楽屋",
+    kana: "がくや",
+    meaning: "Dressing room / backstage",
+    example: "コンサートの前に、アーティストは楽屋で準備をしています。",
+    exampleMeaning: "Before the concert, the artist is preparing in the dressing room.",
+    parts: [
+      {
+        kanji: "準備する",
+        kana: "じゅんびする",
+        meaning: "To prepare",
+      },
+    ],
+  },
 ]
