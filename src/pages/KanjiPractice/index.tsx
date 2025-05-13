@@ -15,6 +15,7 @@ import {
   KANJI_YDC_LESSON_15,
   KANJI_YDC_LESSON_16,
   KANJI_YDC_LESSON_17,
+  KANJI_YDC_LESSON_18,
 } from "../../consts";
 
 const filterKanjiItems = (kanjiLessonObj: Array<KanjiYDC>): KanjiYDCExample[] => {
@@ -44,12 +45,16 @@ const wordsList: Record<number, KanjiYDCExample[]> = {
   15: filterKanjiItems(KANJI_YDC_LESSON_15),
   16: filterKanjiItems(KANJI_YDC_LESSON_16),
   17: filterKanjiItems(KANJI_YDC_LESSON_17),
+  18: filterKanjiItems(KANJI_YDC_LESSON_18),
 };
 
 const KanjiPracticePage: React.FC = () => {
   const availableLessons = Object.keys(wordsList).map(Number);
   const [selectedLesson, setSelectedLesson] = React.useState(availableLessons[0]);
-  const words = wordsList[selectedLesson];
+
+  const words = React.useMemo(() => {
+    return wordsList[selectedLesson];
+  }, [selectedLesson]);
 
   return (
     <KanjiPractice

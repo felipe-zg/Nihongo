@@ -83,9 +83,12 @@ const KanjiPractice: React.FC<Props> = ({lesson, availableLessons, handleModeCha
               <Text>Lesson {lesson}</Text>
             </Box>
           </HStack>
-          {items.map((word, index) => (
-            <Word key={index} kanji={word.reading} kana={word.kana} meaning={word.meaning.join(", ")} />
-          ))}
+          {items.map((word) => {
+            const { reading, kana, meaning } = word;
+            return(
+              <Word key={reading + Math.random()} kanji={reading} kana={kana} meaning={meaning.join(", ")} />
+            );
+          })}
         </VStack>
     </Box>
   )
