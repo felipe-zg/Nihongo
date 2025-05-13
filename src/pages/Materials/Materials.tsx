@@ -1,8 +1,9 @@
 import React from "react";
-import { Lesson37, Lesson38, Lesson39, Lesson40 } from ".";
+import { Lesson36, Lesson37, Lesson38, Lesson39, Lesson40 } from ".";
 import { Box, Heading, Select } from "native-base";
 
 const lessonPages: Record<number, React.FC> = {
+  36: Lesson36,
   37: Lesson37,
   38: Lesson38,
   39: Lesson39,
