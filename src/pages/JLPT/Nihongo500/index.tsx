@@ -5,15 +5,15 @@ import { NIHONGO_500_N3 } from "../../../consts";
 const Nihongo500N3Page: React.FC = () => {
   const [deckItems, setDeckItems] = React.useState<Array<Nihongo500N3>>(NIHONGO_500_N3);
   const [shuffle, setShuffle] = React.useState<boolean>(false);
-  const [showKana, setShowKana] = React.useState<boolean>(false);
+  const [chanllengeMode, setChallengeMode] = React.useState<boolean>(false);
 
 
   function handleShuffleChange() {
     setShuffle(!shuffle);
   };
 
-  function handleShowKanaChange() {
-    setShowKana(!showKana);
+  function handleChallengeModeChange() {
+    setChallengeMode(!chanllengeMode);
   };
 
   React.useEffect(() => {
@@ -31,8 +31,8 @@ const Nihongo500N3Page: React.FC = () => {
       deckItems={deckItems}
       shuffle={shuffle}
       handleShuffleChange={handleShuffleChange}
-      showKana={showKana}
-      handleShowKanaChange={handleShowKanaChange}
+      challengeMode={chanllengeMode}
+      handleChallengeModeChange={handleChallengeModeChange}
     />
   )
 };

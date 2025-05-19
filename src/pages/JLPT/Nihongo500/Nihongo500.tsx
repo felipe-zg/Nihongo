@@ -1,20 +1,21 @@
-import { Box, Button, Center, Heading, HStack, Switch, Text } from "native-base";
+import { Box, Button, Center, Heading, HStack, Pressable, Switch, Text } from "native-base";
 import React from "react";
 import { useScreenWidth } from "../../../hooks";
 import { NewWords } from "../../../components";
+import { speak } from "../../../helpers";
 
 type Props = {
   deckItems: Nihongo500N3[];
-  showKana: boolean;
-  handleShowKanaChange(): void;
+  challengeMode: boolean;
+  handleChallengeModeChange(): void;
   shuffle: boolean;
   handleShuffleChange(): void;
 };
 
 const Nihongo500: React.FC<Props> = ({ 
   deckItems, 
-  showKana,
-  handleShowKanaChange,
+  challengeMode,
+  handleChallengeModeChange,
   shuffle,
   handleShuffleChange,
 }) => {
@@ -60,12 +61,12 @@ const Nihongo500: React.FC<Props> = ({
       <HStack flex={1}>
         <Box display={screenWidth > 500 ? "flex" : "none"}>
           <HStack space={2}>
-            <Text color="emerald.500">Show Kana</Text>
+            <Text color="emerald.500">Challenge</Text>
             <Switch
-              value={showKana}
-              onValueChange={handleShowKanaChange}
+              value={challengeMode}
+              onValueChange={handleChallengeModeChange}
               colorScheme="emerald"
-              isChecked={showKana}
+              isChecked={challengeMode}
             />
           </HStack>
         </Box>
@@ -95,20 +96,22 @@ const Nihongo500: React.FC<Props> = ({
       <Center>
         <br/>
         <Heading size="2xl">
-          <Text color="primary.500">{currentItem.kanji}</Text>
+          <Text color="primary.500">{challengeMode ? currentItem.meaning : currentItem.kanji}</Text>
         </Heading>
         <br/>
-        <Text fontSize="xl" color={isFlipped || showKana ? "fuchsia.500" : "transparent"}>
+        <Text fontSize="xl" color={isFlipped ? "fuchsia.500" : "transparent"}>
           {currentItem.kana}
         </Text>
         <Text fontSize="md" color={isFlipped ? "fuchsia.500" : "transparent"}>
-          {currentItem.meaning}
+          {challengeMode ? currentItem.kanji : currentItem.meaning}
         </Text>
         <br/>
         <Box>
-          <Text fontSize="lg" color={isFlipped ? "teal.500" : "transparent"}>
-            {currentItem.example}
-          </Text>
+          <Pressable onPress={() => speak(currentItem.example)}>
+            <Text fontSize="lg" color={isFlipped ? "teal.500" : "transparent"}>
+              {currentItem.example} 
+            </Text>
+          </Pressable>
           <Text fontSize="xs" color={isFlipped ? "teal.500" : "transparent"} mb={5}>
             {currentItem.exampleMeaning}
           </Text>
