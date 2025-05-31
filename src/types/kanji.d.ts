@@ -42,5 +42,5 @@ declare type KanjiYDCExample = {
   kana: string;
   meaning: string[];
   sentence: string;
-  type: 'main' | 'secondary';
+  type: 'main' | 'secondary' | 'YDC_main';
 }
