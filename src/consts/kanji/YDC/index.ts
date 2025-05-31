@@ -13,4 +13,5 @@ export * from './lesson15.const';
 export * from './lesson16.const';
 export * from './lesson17.const';
 export * from './lesson18.const';
+export * from './lesson19.const';
 export * from './kanjiObject.const';
