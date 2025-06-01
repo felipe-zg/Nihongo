@@ -15,7 +15,7 @@ const Carousel: React.FC<Props> = ({ data, onlyMainExamplesEnabled }) => {
 
   const examples = useMemo(() => {
     const filtered = onlyMainExamplesEnabled
-      ? data.filter((item) => item?.type === "main")
+      ? data.filter((item) => item?.type === "YDC_main" || item?.type === "main")
       : data;
     return filtered.length > 0 ? filtered : [{ reading: "", kana: "", meaning: [], sentence: "", type: "" }];
   }, [data, onlyMainExamplesEnabled]);
@@ -41,6 +41,17 @@ const Carousel: React.FC<Props> = ({ data, onlyMainExamplesEnabled }) => {
     onSwipedRight: prevSlide,
     trackMouse: true,
   });
+
+  const getColor = (type: string) => {
+    switch (type) {
+      case "YDC_main":
+        return "red.500";
+      case "main":
+        return "cyan.500";
+      default:
+        return "gray.500";
+    }
+  };
 
   useEffect(() => {
     setCurrentIndex(0);
@@ -80,7 +91,7 @@ const Carousel: React.FC<Props> = ({ data, onlyMainExamplesEnabled }) => {
                 <Text
                   fontSize="3xl"
                   fontWeight="bold"
-                  color={examples[currentIndex]?.type === "main" ? "red.500" : "gray.500"}
+                  color={getColor(examples[currentIndex]?.type)}
                 >
                   {examples[currentIndex]?.reading}
                 </Text>

@@ -9,6 +9,17 @@ interface Props {
 
 const Table: React.FC<Props> = ({ data, onlyMainExamplesEnabled }) => {
 
+  const getColor = (type: string) => {
+    switch (type) {
+      case "YDC_main":
+        return "red.500";
+      case "main":
+        return "cyan.500";
+      default:
+        return "gray.500";
+    }
+  };
+
   return (
     <Box>
       {/* Table Header */}
@@ -20,7 +31,7 @@ const Table: React.FC<Props> = ({ data, onlyMainExamplesEnabled }) => {
       {/* Table Body */}
       <VStack>
         {data.map((example, index) =>
-          onlyMainExamplesEnabled && example.type !== "main" ? null : (
+          onlyMainExamplesEnabled && (example.type !== "YDC_main" && example.type !== "main") ? null : (
             <>
               <HStack
                 key={index}
@@ -31,13 +42,13 @@ const Table: React.FC<Props> = ({ data, onlyMainExamplesEnabled }) => {
               >
                 <Box flex={1} alignItems="center">
                   <Pressable onPress={() => speak(example.reading)}>
-                    <Text color={example.type === "main" ? "red.500" : "gray.500"}>
+                    <Text color={getColor(example.type)}>
                       {example.reading}
                     </Text>
                   </Pressable>
                 </Box>
                 <Box flex={1} alignItems="center">
-                  <Text color={example.type === "main" ? "red.500" : "gray.500"}>
+                  <Text color={getColor(example.type)}>
                     {example.kana}
                   </Text>
                 </Box>
@@ -50,13 +61,13 @@ const Table: React.FC<Props> = ({ data, onlyMainExamplesEnabled }) => {
                 alignItems="center"
               >
                 <Box flex={1} alignItems="center">
-                  <Text color={example.type === "main" ? "red.500" : "gray.500"}>
+                  <Text color={getColor(example.type)}>
                     {example.meaning.join(", ")}
                   </Text>
                 </Box>
                 <Box flex={1} alignItems="center">
                 <Pressable onPress={() => speak(example.sentence)}>
-                  <Text color={example.type === "main" ? "red.500" : "gray.500"}>
+                  <Text color={getColor(example.type)}>
                     {example.sentence}
                   </Text>
                 </Pressable>
