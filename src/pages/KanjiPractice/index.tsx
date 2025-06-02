@@ -16,13 +16,18 @@ import {
   KANJI_YDC_LESSON_16,
   KANJI_YDC_LESSON_17,
   KANJI_YDC_LESSON_18,
+  KANJI_YDC_LESSON_19,
+  KANJI_YDC_LESSON_20,
+  KANJI_YDC_LESSON_21,
 } from "../../consts";
 
-const filterKanjiItems = (kanjiLessonObj: Array<KanjiYDC>): KanjiYDCExample[] => {
+type KanjiType = 'YDC_main' | 'main';
+
+const filterKanjiItems = (kanjiLessonObj: Array<KanjiYDC>, type: KanjiType): KanjiYDCExample[] => {
   let examples: KanjiYDCExample[] = [];
   kanjiLessonObj.forEach((item) => {
     item.examples.forEach((example) => {
-      if(example.type === "main") {
+      if(example.type === type) {
         examples.push(example);
       }
     });
@@ -30,37 +35,44 @@ const filterKanjiItems = (kanjiLessonObj: Array<KanjiYDC>): KanjiYDCExample[] =>
   return examples;
 }
 
-const wordsList: Record<number, KanjiYDCExample[]> = {
-  4: filterKanjiItems(KANJI_YDC_LESSON_4),
-  5: filterKanjiItems(KANJI_YDC_LESSON_5),
-  6: filterKanjiItems(KANJI_YDC_LESSON_6),
-  7: filterKanjiItems(KANJI_YDC_LESSON_7),
-  8: filterKanjiItems(KANJI_YDC_LESSON_8),
-  9: filterKanjiItems(KANJI_YDC_LESSON_9),
-  10: filterKanjiItems(KANJI_YDC_LESSON_10),
-  11: filterKanjiItems(KANJI_YDC_LESSON_11),
-  12: filterKanjiItems(KANJI_YDC_LESSON_12),
-  13: filterKanjiItems(KANJI_YDC_LESSON_13),
-  14: filterKanjiItems(KANJI_YDC_LESSON_14),
-  15: filterKanjiItems(KANJI_YDC_LESSON_15),
-  16: filterKanjiItems(KANJI_YDC_LESSON_16),
-  17: filterKanjiItems(KANJI_YDC_LESSON_17),
-  18: filterKanjiItems(KANJI_YDC_LESSON_18),
-};
-
 const KanjiPracticePage: React.FC = () => {
+  const [type, setType] = React.useState<KanjiType>("YDC_main");
+  const wordsList: Record<number, KanjiYDCExample[]> = React.useMemo(() => {
+    return {
+      4: filterKanjiItems(KANJI_YDC_LESSON_4, type),
+      5: filterKanjiItems(KANJI_YDC_LESSON_5, type),
+      6: filterKanjiItems(KANJI_YDC_LESSON_6, type),
+      7: filterKanjiItems(KANJI_YDC_LESSON_7, type),
+      8: filterKanjiItems(KANJI_YDC_LESSON_8, type),
+      9: filterKanjiItems(KANJI_YDC_LESSON_9, type),
+      10: filterKanjiItems(KANJI_YDC_LESSON_10, type),
+      11: filterKanjiItems(KANJI_YDC_LESSON_11, type),
+      12: filterKanjiItems(KANJI_YDC_LESSON_12, type),
+      13: filterKanjiItems(KANJI_YDC_LESSON_13, type),
+      14: filterKanjiItems(KANJI_YDC_LESSON_14, type),
+      15: filterKanjiItems(KANJI_YDC_LESSON_15, type),
+      16: filterKanjiItems(KANJI_YDC_LESSON_16, type),
+      17: filterKanjiItems(KANJI_YDC_LESSON_17, type),
+      18: filterKanjiItems(KANJI_YDC_LESSON_18, type),
+      19: filterKanjiItems(KANJI_YDC_LESSON_19, type),
+      20: filterKanjiItems(KANJI_YDC_LESSON_20, type),
+      21: filterKanjiItems(KANJI_YDC_LESSON_21, type)
+    };
+  }, [type]);
   const availableLessons = Object.keys(wordsList).map(Number);
   const [selectedLesson, setSelectedLesson] = React.useState(availableLessons[0]);
 
   const words = React.useMemo(() => {
     return wordsList[selectedLesson];
-  }, [selectedLesson]);
+  }, [selectedLesson, wordsList]);
 
   return (
     <KanjiPractice
       lesson={selectedLesson}
       availableLessons={availableLessons}
       handleModeChange={setSelectedLesson}
+      type={type}
+      handleTypeChange={setType}
       items={words}
     />
   )

@@ -1,4 +1,4 @@
-import { Box, Center, HStack, Pressable, Select, Text, VStack } from "native-base";
+import { Box, Center, HStack, Pressable, Select, Text, useBreakpointValue, VStack } from "native-base";
 import React, { useEffect, useState } from "react";
 
 const Word = ({ meaning, kana, kanji }: { meaning: string, kana: string, kanji: string }) => {
@@ -58,25 +58,44 @@ type Props = {
   lesson: number;
   availableLessons: number[];
   handleModeChange(lesson: number): void;
+  type: "YDC_main" | "main";
+  handleTypeChange(type: "YDC_main" | "main"): void;
   items: KanjiYDCExample[];
 };
 
-const KanjiPractice: React.FC<Props> = ({lesson, availableLessons, handleModeChange, items}) => {
+const KanjiPractice: React.FC<Props> = ({lesson, availableLessons, handleModeChange, type, handleTypeChange, items}) => {
+  const SelectInputStack = useBreakpointValue({
+    base: VStack,
+    md: HStack,
+  });
 
   return (
     <Box backgroundColor="gray.50" padding={5} minHeight={"100vh"}>
-      <Center>
-        <Select
-          selectedValue={String(1)}
-          onValueChange={(itemValue) => handleModeChange(Number(itemValue))}
-          accessibilityLabel="Select Lesson"
-          placeholder="Select Lesson"
-        >
-          {availableLessons.map((l) => (
-            <Select.Item key={l} value={String(l)} label={String(l)} />
-          ))}
-        </Select>
-      </Center>
+      <SelectInputStack>
+        <Center>
+          <Select
+            selectedValue={String(1)}
+            onValueChange={(itemValue) => handleModeChange(Number(itemValue))}
+            accessibilityLabel="Select Lesson"
+            placeholder="Select Lesson"
+          >
+            {availableLessons.map((l) => (
+              <Select.Item key={l} value={String(l)} label={String(l)} />
+            ))}
+          </Select>
+        </Center>
+        <Center mt={{base: 2, md: 0}} ml={{base: 0, md: 2}}>
+          <Select
+            selectedValue={type}
+            onValueChange={(itemValue) => handleTypeChange(itemValue as "YDC_main" | "main")}
+            accessibilityLabel="Select type"
+            placeholder="Select Type"
+          >
+            <Select.Item value="YDC_main" label="YDC Main" />
+            <Select.Item value="main" label="Main" />
+          </Select>
+        </Center>
+      </SelectInputStack>
       <VStack justifyContent="space-between" borderColor={"gray.200"} borderWidth={1} borderRadius="md" marginTop={2} marginBottom={4}>
           <HStack flex={1} alignItems="center" bg={"primary.100"} paddingTop={1} paddingBottom={1}>
             <Box flex={1} alignItems="center">
