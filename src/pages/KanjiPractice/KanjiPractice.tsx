@@ -1,7 +1,7 @@
-import { Box, Center, HStack, Pressable, Select, Text, useBreakpointValue, VStack } from "native-base";
+import { Box, Center, HStack, Modal, Pressable, Select, Text, useBreakpointValue, VStack } from "native-base";
 import React, { useEffect, useState } from "react";
 
-const Word = ({ meaning, kana, kanji }: { meaning: string, kana: string, kanji: string }) => {
+const Word = ({ meaning, kana, kanji, onOpenPopup }: { meaning: string, kana: string, kanji: string, onOpenPopup: () => void; }) => {
   const [isFliped, setIsFliped] = useState(false);
   const[ word ] = useState({ meaning, kana, kanji });
   const [status, setStatus] = React.useState<"unset" | "correct" | "wrong">("unset");
@@ -30,26 +30,15 @@ const Word = ({ meaning, kana, kanji }: { meaning: string, kana: string, kanji: 
       borderBottomColor={"gray.200"}
       borderBottomWidth={1}
     >
-      <Box flex={2}>
-        <Text fontSize={{base: "xs", md: "lg"}} color="gray.600">{word.meaning}</Text>
-      </Box>
-      <Box flex={1}>
-        <Text fontSize="md" color={isFliped ? "purple.400" : "transparent"}>{word.kanji}</Text>
-      </Box>
-      <Box flex={1}>
-        <Text fontSize={{base: "xs", md: "lg"}} color={isFliped ? "primary.500" : "transparent"}>{word.kana}</Text>
-      </Box>
       <Pressable
-        onPress={() => {
-          setIsFliped(!isFliped);
-          setStatus("unset");
-        }}
+        flex={2}
+        onPress={onOpenPopup}
         onLongPress={() => {
           setStatus(status === "correct" ? "unset" : "correct");
         }}
-        >
-          <Text fontSize={"xs"} color={isFliped ? "red.400" : "green.500"}>{isFliped ? "❌" : "✔️"}</Text>
-        </Pressable>
+      >
+        <Text fontSize={{base: "xl", md: "lg"}} color="gray.600">{word.meaning}</Text>
+      </Pressable>
     </HStack>
   );
 }
@@ -68,9 +57,25 @@ const KanjiPractice: React.FC<Props> = ({lesson, availableLessons, handleModeCha
     base: VStack,
     md: HStack,
   });
+  const [selectedWord, setSelectedWord] = useState<null | KanjiYDCExample>(null);
 
   return (
     <Box backgroundColor="gray.50" padding={5} minHeight={"100vh"}>
+      {selectedWord && (
+        <Modal isOpen={!!selectedWord} onClose={() => setSelectedWord(null)}>
+          <Modal.Content>
+            <Modal.CloseButton />
+            <Modal.Body>
+              {selectedWord ? (
+                <Center>
+                  <Text fontSize="4xl" color="purple.400">{selectedWord.reading}</Text>
+                  <Text fontSize="3xl" color="primary.500">{selectedWord.kana}</Text>
+                </Center>
+              ) : null}
+            </Modal.Body>
+          </Modal.Content>
+        </Modal>
+      )}
       <SelectInputStack>
         <Center>
           <Select
@@ -96,7 +101,15 @@ const KanjiPractice: React.FC<Props> = ({lesson, availableLessons, handleModeCha
           </Select>
         </Center>
       </SelectInputStack>
-      <VStack justifyContent="space-between" borderColor={"gray.200"} borderWidth={1} borderRadius="md" marginTop={2} marginBottom={4}>
+      <VStack
+        justifyContent="space-between"
+        borderColor={"gray.200"}
+        borderWidth={1}
+        borderRadius="md"
+        marginTop={2}
+        marginBottom={4}
+        overflowY="scroll"
+      >
           <HStack flex={1} alignItems="center" bg={"primary.100"} paddingTop={1} paddingBottom={1}>
             <Box flex={1} alignItems="center">
               <Text>Lesson {lesson}</Text>
@@ -105,7 +118,13 @@ const KanjiPractice: React.FC<Props> = ({lesson, availableLessons, handleModeCha
           {items.map((word) => {
             const { reading, kana, meaning } = word;
             return(
-              <Word key={reading + Math.random()} kanji={reading} kana={kana} meaning={meaning.join(", ")} />
+              <Word 
+                key={reading + Math.random()}
+                kanji={reading}
+                kana={kana}
+                meaning={meaning.join(", ")} 
+                onOpenPopup={() => setSelectedWord(word)}
+              />
             );
           })}
         </VStack>
