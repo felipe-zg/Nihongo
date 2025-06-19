@@ -61,17 +61,22 @@ const KanjiPractice: React.FC<Props> = ({lesson, availableLessons, handleModeCha
 
   return (
     <Box backgroundColor="gray.50" padding={5} minHeight={"100vh"}>
-      <Modal isOpen={!!selectedWord} onClose={() => setSelectedWord(null)}>
-        <Modal.Content>
-          <Modal.CloseButton />
-          <Modal.Body>
-            <Center>
-              <Text fontSize="6xl" color="purple.400">{selectedWord?.reading}</Text>
-              <Text fontSize="2xl" color="primary.500">{selectedWord?.kana}</Text>
-            </Center>
-          </Modal.Body>
-        </Modal.Content>
-      </Modal>
+      {selectedWord && (
+        <Box position="absolute" top={0} left={0} right={0} bottom={0} backgroundColor="rgba(0, 0, 0, 0.5)" zIndex={1}>
+          <Modal isOpen={!!selectedWord} onClose={() => setSelectedWord(null)}>
+            <Modal.Content>
+              <Modal.CloseButton />
+              <Modal.Body>
+                <Center>
+                  <Text fontSize="6xl" color="purple.400">{selectedWord?.reading}</Text>
+                  <Text fontSize="2xl" color="primary.500">{selectedWord?.kana}</Text>
+                </Center>
+              </Modal.Body>
+            </Modal.Content>
+          </Modal>
+        </Box>
+      )}
+      
       <SelectInputStack>
         <Center>
           <Select
