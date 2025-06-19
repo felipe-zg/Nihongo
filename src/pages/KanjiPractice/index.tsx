@@ -19,6 +19,9 @@ import {
   KANJI_YDC_LESSON_19,
   KANJI_YDC_LESSON_20,
   KANJI_YDC_LESSON_21,
+  KANJI_YDC_LESSON_22,
+  KANJI_YDC_LESSON_23,
+  KANJI_YDC_LESSON_24,
 } from "../../consts";
 
 type KanjiType = 'YDC_main' | 'main';
@@ -54,7 +57,10 @@ let wordsList = (type: KanjiType = 'YDC_main'): Record<number, KanjiYDCExample[]
     18: filterKanjiItems(KANJI_YDC_LESSON_18, type),
     19: filterKanjiItems(KANJI_YDC_LESSON_19, type),
     20: filterKanjiItems(KANJI_YDC_LESSON_20, type),
-    21: filterKanjiItems(KANJI_YDC_LESSON_21, type)
+    21: filterKanjiItems(KANJI_YDC_LESSON_21, type),
+    22: filterKanjiItems(KANJI_YDC_LESSON_22, type),
+    23: filterKanjiItems(KANJI_YDC_LESSON_23, type),
+    24: filterKanjiItems(KANJI_YDC_LESSON_24, type),
   };
 };
 
