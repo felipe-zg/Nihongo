@@ -65,7 +65,7 @@ const MemoryMode = forwardRef<MemoryModeRef, Props>(({ kanji, data, onlyMainExam
                   bg={index % 2 === 0 ? "gray.100" : "white"}
                   alignItems="center"
                 >
-                  <Box flex={1} alignItems="center">
+                  <Box flex={1} alignItems="left">
                     <Text fontSize="xl" color={example.type === "main" || example.type === "YDC_main" ? "red.500" : "gray.500"}>
                       {example.meaning.join(", ")}
                     </Text>
