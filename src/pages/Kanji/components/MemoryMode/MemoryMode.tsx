@@ -12,7 +12,7 @@ const MemoryMode = forwardRef<MemoryModeRef, Props>(({ kanji, data, onlyMainExam
 
   const examples = useMemo(() => {
     const filtered = onlyMainExamplesEnabled
-      ? data.filter((item) => item?.type === "main")
+      ? data.filter((item) => item?.type === "main" || item?.type === "YDC_main")
       : data;
     return filtered.length > 0
       ? filtered
@@ -66,17 +66,17 @@ const MemoryMode = forwardRef<MemoryModeRef, Props>(({ kanji, data, onlyMainExam
                   alignItems="center"
                 >
                   <Box flex={1} alignItems="center">
-                    <Text fontSize="xl" color={example.type === "main" ? "red.500" : "gray.500"}>
+                    <Text fontSize="xl" color={example.type === "main" || example.type === "YDC_main" ? "red.500" : "gray.500"}>
                       {example.meaning.join(", ")}
                     </Text>
                   </Box>
                   <Box flex={1} alignItems="center">
-                    <Text fontSize="xl" color={example.type === "main" ? "red.500" : "gray.500"}>
+                    <Text fontSize="xl" color={example.type === "main" || example.type === "YDC_main" ? "red.500" : "gray.500"}>
                       {flipped && example.reading}
                     </Text>
                   </Box>
                   <Box flex={1} alignItems="center">
-                    <Text fontSize="xl" color={example.type === "main" ? "red.500" : "gray.500"}>
+                    <Text fontSize="xl" color={example.type === "main" || example.type === "YDC_main" ? "red.500" : "gray.500"}>
                       {flipped && example.kana}
                     </Text>
                   </Box>
