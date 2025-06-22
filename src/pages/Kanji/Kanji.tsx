@@ -80,6 +80,10 @@ const Kanji: React.FC<Props> = ({
     setCurrentDeckPosition(0);
   }
 
+  const openPrintPage = (shuffle = false) => {
+    window.open(`/kanji-print?lessons=${lessons}&shuffle=${shuffle}`, "_blank")?.focus();
+  };
+
   if(endReached) {
     restart();
     return <></>
@@ -209,6 +213,14 @@ const Kanji: React.FC<Props> = ({
           <Text color="emerald.500">Examples Mode</Text>
         </HStack>
       </Box>
+      <HStack mt={5}>
+        <Box width={120} mr={5}>
+          <Button width="full" onPress={() => openPrintPage()}>Print</Button>
+        </Box>
+        <Box width={120}>
+          <Button width="full" onPress={() => openPrintPage(true)}>Print shuffled</Button>
+        </Box>
+      </HStack>
     </Box>
   )
 };
