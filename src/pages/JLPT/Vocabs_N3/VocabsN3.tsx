@@ -53,8 +53,16 @@ const VocabsN3: React.FC<Props> = ({ vocabList }) => {
   const [quantitySeen, setQuantitySeen] = useState(1);
   const [shuffled, setShuffled] = useState(false);
 
+  const updateCardsCounter = () => {
+    if (quantitySeen < vocabList.length) {
+      setQuantitySeen((prev) => prev + 1);
+    } else {
+      setQuantitySeen(1);
+    }
+  };
+
   const getNextIndex = () => {
-    setQuantitySeen((prev) => prev + 1);
+    updateCardsCounter();
     if (shuffled) {
       return getWeightedIndex(vocabList, scores);
     } else {
