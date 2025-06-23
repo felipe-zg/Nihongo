@@ -22,5 +22,5 @@ declare type TVocabN3 = {
   example?: string;
   exampleReading?: string;
   exampleMeaning?: string;
-  type: TVocabN3Type;
+  type: TVocabN3Type[];
 };

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Box, Divider, Text } from "native-base";
+import { Box, Divider, HStack, Text } from "native-base";
 import "./FlipCard.css";
 
 type Props = {
@@ -53,9 +53,13 @@ const FlipCard: React.FC<Props> = ({ vocab }) => {
             {vocab.exampleReading}
           </Text>
           <Text mt={1}>{vocab.exampleMeaning}</Text>
-          <Box borderColor={getColorByType(vocab.type)} borderWidth={1} py={1} px={4} borderRadius="md" mt={2}>
-            <Text color={getColorByType(vocab.type)}>{vocab.type}</Text>
-          </Box>
+          <HStack mt={2} justifyContent={"space-around"} minWidth={"00%"}>
+            {vocab.type.map((type, index) => (
+              <Box borderColor={getColorByType(type)} borderWidth={1} mx={1} py={1} px={4} borderRadius="md">
+                <Text color={getColorByType(type)}>{type}</Text>
+              </Box>
+            ))}
+          </HStack>
         </div>
       </div>
     </div>
