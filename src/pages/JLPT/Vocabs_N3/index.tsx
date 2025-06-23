@@ -1,62 +1,7 @@
 import React from "react";
 import VocabsN3 from "./VocabsN3";
+import { VOCABS_N3 } from "../../../consts";
 
-const VOCABS_N3: TVocabN3[] = [
-  {
-    word: "挨拶",
-    reading: "あいさつ",
-    meaning: "greeting",
-    example: "朝の挨拶をする。",
-    exampleReading: "あさのあいさつをする。",
-    exampleMeaning: "to greet in the morning",
-    type: "noun"
-  },
-  {
-    word: "間",
-    reading: "あいだ",
-    meaning: "between, interval",
-    example: "二つの家の間に公園がある。",
-    exampleReading: "ふたつのいえのあいだにこうえんがある。",
-    exampleMeaning: "There is a park between the two houses.",
-    type: "noun"
-  },
-  {
-    word: "相手",
-    reading: "あいて",
-    meaning: "partner, opponent",
-    example: "試合の相手は強い。",
-    exampleReading: "しあいのあいてはつよい。",
-    exampleMeaning: "The opponent in the match is strong.",
-    type: "noun"
-  },
-  {
-    word: "青",
-    reading: "あお",
-    meaning: "blue, green",
-    example: "空が青い。",
-    exampleReading: "そらがあおい。",
-    exampleMeaning: "The sky is blue.",
-    type: "noun"
-  },
-  {
-    word: "赤ちゃん",
-    reading: "あかちゃん",
-    meaning: "baby",
-    example: "赤ちゃんが泣いている。",
-    exampleReading: "あかちゃんがないている。",
-    exampleMeaning: "The baby is crying.",
-    type: "noun"
-  },
-  {
-    word: "明るい",
-    reading: "あかるい",
-    meaning: "bright, cheerful",
-    example: "部屋が明るい。",
-    exampleReading: "へやがあかるい。",
-    exampleMeaning: "The room is bright.",
-    type: "い adjective"
-  },
-];
 
 const VocabsN3Page: React.FC = () => {
 
