@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { DaysOfTheMonth, Deck, Kanji, KanjiPractice, KanjiPrint, Levels, Nihongo500N3, Periods, Verbs, Words, WordsYDCQuizz } from './pages';
+import { DaysOfTheMonth, Deck, Kanji, KanjiPractice, KanjiPrint, Levels, Nihongo500N3, Periods, Verbs, VocabsN3, Words, WordsYDCQuizz } from './pages';
 import { Box, HStack, NativeBaseProvider } from "native-base";
 import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom';
 import { Navbar } from './components';
@@ -39,6 +39,7 @@ function AppContent() {
           <Route path="/verbs" element={<Verbs />} />
           <Route path="/lessons" element={<Materials />} />
           <Route path="/JLPT/N3" element={<Nihongo500N3 />} />
+          <Route path="/JLPT/vocabs/N3" element={<VocabsN3 />} />
         </Routes>
       </Box>
     </HStack>

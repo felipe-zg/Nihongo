@@ -17,6 +17,7 @@ const routes = [
   { name: 'Verbs', path: '/verbs' },
   { name: 'Lessons', path: '/lessons' },
   { name: 'JLPT', path: '/JLPT/N3' },
+  { name: 'JLPT Vocabs', path: '/JLPT/vocabs/N3' },
 ]
 
 const Navbar = () => {
