@@ -1,15 +1,6 @@
 import React from "react";
 import VocabsN3 from "./VocabsN3";
 
-type TVocabN3 = {
-  word: string;
-  reading: string;
-  meaning: string;
-  example?: string;
-  exampleReading?: string;
-  exampleMeaning?: string;
-}
-
 const VOCABS_N3: TVocabN3[] = [
   {
     word: "挨拶",
@@ -17,7 +8,8 @@ const VOCABS_N3: TVocabN3[] = [
     meaning: "greeting",
     example: "朝の挨拶をする。",
     exampleReading: "あさのあいさつをする。",
-    exampleMeaning: "to greet in the morning"
+    exampleMeaning: "to greet in the morning",
+    type: "noun"
   },
   {
     word: "間",
@@ -25,7 +17,8 @@ const VOCABS_N3: TVocabN3[] = [
     meaning: "between, interval",
     example: "二つの家の間に公園がある。",
     exampleReading: "ふたつのいえのあいだにこうえんがある。",
-    exampleMeaning: "There is a park between the two houses."
+    exampleMeaning: "There is a park between the two houses.",
+    type: "noun"
   },
   {
     word: "相手",
@@ -33,7 +26,8 @@ const VOCABS_N3: TVocabN3[] = [
     meaning: "partner, opponent",
     example: "試合の相手は強い。",
     exampleReading: "しあいのあいてはつよい。",
-    exampleMeaning: "The opponent in the match is strong."
+    exampleMeaning: "The opponent in the match is strong.",
+    type: "noun"
   },
   {
     word: "青",
@@ -41,7 +35,8 @@ const VOCABS_N3: TVocabN3[] = [
     meaning: "blue, green",
     example: "空が青い。",
     exampleReading: "そらがあおい。",
-    exampleMeaning: "The sky is blue."
+    exampleMeaning: "The sky is blue.",
+    type: "noun"
   },
   {
     word: "赤ちゃん",
@@ -49,7 +44,8 @@ const VOCABS_N3: TVocabN3[] = [
     meaning: "baby",
     example: "赤ちゃんが泣いている。",
     exampleReading: "あかちゃんがないている。",
-    exampleMeaning: "The baby is crying."
+    exampleMeaning: "The baby is crying.",
+    type: "noun"
   },
   {
     word: "明るい",
@@ -57,7 +53,8 @@ const VOCABS_N3: TVocabN3[] = [
     meaning: "bright, cheerful",
     example: "部屋が明るい。",
     exampleReading: "へやがあかるい。",
-    exampleMeaning: "The room is bright."
+    exampleMeaning: "The room is bright.",
+    type: "い adjective"
   },
 ];
 

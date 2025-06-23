@@ -2,15 +2,6 @@ import React, { useEffect, useState } from "react";
 import { Box, Button, Switch, HStack, Text } from "native-base";
 import FlipCard from "./components/FlipCard";
 
-type TVocabN3 = {
-  word: string;
-  reading: string;
-  meaning: string;
-  example?: string;
-  exampleReading?: string;
-  exampleMeaning?: string;
-};
-
 type Props = {
   vocabList: TVocabN3[];
 };
@@ -39,7 +30,7 @@ const VocabsN3: React.FC<Props> = ({ vocabList }) => {
   };
 
   return (
-    <Box alignItems="center" mt={10}>
+    <Box alignItems="center" mt={70}>
       <FlipCard vocab={cardList[index]} />
       <Text mt={4} color="gray.500">
         {index + 1} / {cardList.length}
