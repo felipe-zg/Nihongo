@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Box, Divider, Text } from "native-base";
 import "./FlipCard.css";
 
@@ -27,6 +27,10 @@ function getColorByType(type: TVocabN3Type): string {
 
 const FlipCard: React.FC<Props> = ({ vocab }) => {
   const [flipped, setFlipped] = useState(false);
+
+  useEffect(() => {
+    setFlipped(false);
+  }, [vocab]);
 
   return (
     <div className="card-container" onClick={() => setFlipped(!flipped)}>
