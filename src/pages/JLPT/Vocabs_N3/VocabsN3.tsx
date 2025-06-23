@@ -50,9 +50,11 @@ const getWeightedIndex = (list: TVocabN3[], scores: Record<string, number>) => {
 const VocabsN3: React.FC<Props> = ({ vocabList }) => {
   const [scores, setScores] = useState<Record<string, number>>(() => loadScores());
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [quantitySeen, setQuantitySeen] = useState(1);
   const [shuffled, setShuffled] = useState(false);
 
   const getNextIndex = () => {
+    setQuantitySeen((prev) => prev + 1);
     if (shuffled) {
       return getWeightedIndex(vocabList, scores);
     } else {
@@ -86,6 +88,7 @@ const VocabsN3: React.FC<Props> = ({ vocabList }) => {
     } else {
       setCurrentIndex(0);
     }
+    setQuantitySeen(1);
   }, [scores, shuffled, vocabList]);
 
   const currentCard = vocabList[currentIndex];
@@ -94,6 +97,7 @@ const VocabsN3: React.FC<Props> = ({ vocabList }) => {
     <Box alignItems="center" mt={70}>
       <Text fontSize={"xl"} bold color={"white"}>JLPT N3</Text>
       <FlipCard vocab={currentCard} />
+      <Text color={"gray.300"}>{quantitySeen}/{vocabList.length}</Text>
       {shuffled ? (
         <HStack mt={12} paddingX={8} justifyContent={"space-between"} width="100%">
           <Button
