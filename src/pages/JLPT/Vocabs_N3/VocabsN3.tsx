@@ -92,6 +92,7 @@ const VocabsN3: React.FC<Props> = ({ vocabList }) => {
 
   return (
     <Box alignItems="center" mt={70}>
+      <Text fontSize={"xl"} bold color={"white"}>JLPT N3</Text>
       <FlipCard vocab={currentCard} />
       {shuffled ? (
         <HStack mt={12} paddingX={8} justifyContent={"space-between"} width="100%">
