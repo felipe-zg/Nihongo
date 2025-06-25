@@ -135,7 +135,7 @@ export const VOCABS_N3: TVocabN3[] = [
     type: ["noun", "adverb"]
   },
   {
-    word: "不満(な)",
+    word: "不満",
     reading: "ふまん",
     meaning: "dissatisfaction, discontent",
     example: "給料に不満がある。",
@@ -144,7 +144,7 @@ export const VOCABS_N3: TVocabN3[] = [
     type: ["な adjective", "noun"]
   },
   {
-    word: "不足(な)",
+    word: "不足",
     reading: "ふそく",
     meaning: "insufficiency, shortage",
     example: "時間が不足している。",
