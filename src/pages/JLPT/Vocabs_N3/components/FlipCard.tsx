@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, {
+  useImperativeHandle,
+  useState,
+  forwardRef
+} from "react";
 import { Box, Divider, HStack, Text } from "native-base";
 import "./FlipCard.css";
-
-type Props = {
-  vocab: TVocabN3;
-};
 
 function getColorByType(type: TVocabN3Type): string {
   switch (type) {
@@ -23,14 +23,26 @@ function getColorByType(type: TVocabN3Type): string {
     default:
       return "gray.500";
   }
+}
+
+type Props = {
+  vocab: TVocabN3;
 };
 
-const FlipCard: React.FC<Props> = ({ vocab }) => {
+export type FlipCardHandle = {
+  flip: () => void;
+  unflip: () => void;
+  isFlipped: () => boolean;
+};
+
+const FlipCard = forwardRef<FlipCardHandle, Props>(({ vocab }, ref) => {
   const [flipped, setFlipped] = useState(false);
 
-  useEffect(() => {
-    setFlipped(false);
-  }, [vocab]);
+  useImperativeHandle(ref, () => ({
+    flip: () => setFlipped(true),
+    unflip: () => setFlipped(false),
+    isFlipped: () => flipped,
+  }));
 
   return (
     <div className="card-container" onClick={() => setFlipped(!flipped)}>
@@ -53,9 +65,17 @@ const FlipCard: React.FC<Props> = ({ vocab }) => {
             {vocab.exampleReading}
           </Text>
           <Text mt={1}>{vocab.exampleMeaning}</Text>
-          <HStack mt={2} justifyContent={"space-around"} minWidth={"00%"}>
+          <HStack mt={2} justifyContent={"space-around"} minWidth={"100%"}>
             {vocab.type.map((type, index) => (
-              <Box borderColor={getColorByType(type)} borderWidth={1} mx={1} py={1} px={4} borderRadius="md">
+              <Box
+                key={index}
+                borderColor={getColorByType(type)}
+                borderWidth={1}
+                mx={1}
+                py={1}
+                px={4}
+                borderRadius="md"
+              >
                 <Text color={getColorByType(type)}>{type}</Text>
               </Box>
             ))}
@@ -64,6 +84,6 @@ const FlipCard: React.FC<Props> = ({ vocab }) => {
       </div>
     </div>
   );
-};
+});
 
 export default FlipCard;

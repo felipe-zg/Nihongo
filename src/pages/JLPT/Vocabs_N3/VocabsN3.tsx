@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Box, Button, Switch, HStack, Text } from "native-base";
-import FlipCard from "./components/FlipCard";
+import FlipCard, { FlipCardHandle } from "./components/FlipCard";
 
 type Props = {
   vocabList: TVocabN3[];
@@ -52,6 +52,7 @@ const VocabsN3: React.FC<Props> = ({ vocabList }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [quantitySeen, setQuantitySeen] = useState(1);
   const [shuffled, setShuffled] = useState(false);
+  const flipCardRef = useRef<FlipCardHandle>(null);
 
   const updateCardsCounter = () => {
     if (quantitySeen < vocabList.length) {
@@ -71,23 +72,47 @@ const VocabsN3: React.FC<Props> = ({ vocabList }) => {
   };
 
   const handleNext = () => {
-    setCurrentIndex(getNextIndex());
+    if (!flipCardRef.current?.isFlipped()) {
+      flipCardRef.current?.flip();
+      return;
+    } else {
+      flipCardRef.current?.unflip();
+    }
+    setTimeout(() => {
+      setCurrentIndex(getNextIndex());
+    }, 200);
   };
 
-  const handleKnow = () => {
-    const word = vocabList[currentIndex].word;
-    const newScores = { ...scores, [word]: (scores[word] ?? 0) + 1 };
+  const updateScores = (newScores: Record<string, number>) => {
     setScores(newScores);
     saveScores(newScores);
-    setCurrentIndex(getNextIndex());
+    setTimeout(() => {
+      setCurrentIndex(getNextIndex());
+    }, 200);
+  }
+
+  const handleKnow = () => {
+    if (!flipCardRef.current?.isFlipped()) {
+      flipCardRef.current?.flip();
+      return;
+    } else {
+      flipCardRef.current?.unflip();
+    }
+    const word = vocabList[currentIndex].word;
+    const newScores = { ...scores, [word]: (scores[word] ?? 0) + 1 };
+    updateScores(newScores);
   };
 
   const handleDontKnow = () => {
+    if (!flipCardRef.current?.isFlipped()) {
+      flipCardRef.current?.flip();
+      return;
+    } else {
+      flipCardRef.current?.unflip();
+    }
     const word = vocabList[currentIndex].word;
     const newScores = { ...scores, [word]: Math.max(0, (scores[word] ?? 0) - 1) };
-    setScores(newScores);
-    saveScores(newScores);
-    setCurrentIndex(getNextIndex());
+    updateScores(newScores);
   };
 
   useEffect(() => {
@@ -104,7 +129,7 @@ const VocabsN3: React.FC<Props> = ({ vocabList }) => {
   return (
     <Box alignItems="center" mt={70}>
       <Text fontSize={"xl"} bold color={"white"}>JLPT N3</Text>
-      <FlipCard vocab={currentCard} />
+      <FlipCard ref={flipCardRef} vocab={currentCard} />
       <Text color={"gray.300"}>{quantitySeen}/{vocabList.length}</Text>
       {shuffled ? (
         <HStack mt={12} paddingX={8} justifyContent={"space-between"} width="100%">
