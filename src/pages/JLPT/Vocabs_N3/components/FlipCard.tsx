@@ -58,14 +58,14 @@ const FlipCard = forwardRef<FlipCardHandle, Props>(({ vocab }, ref) => {
           </Text>
           <Text mt={2}>{vocab.meaning}</Text>
           <Divider my={4} />
-          <Text fontStyle="italic" fontSize="xl">
+          <Text fontSize="2xl">
             {vocab.example}
           </Text>
           <Text fontSize="sm" color="gray.500">
             {vocab.exampleReading}
           </Text>
           <Text mt={1}>{vocab.exampleMeaning}</Text>
-          <HStack mt={2} justifyContent={"space-around"} minWidth={"100%"}>
+          <HStack mt={2}>
             {vocab.type.map((type, index) => (
               <Box
                 key={index}
