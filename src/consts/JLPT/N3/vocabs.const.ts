@@ -530,5 +530,905 @@ export const VOCABS_N3: TVocabN3[] = [
     exampleMeaning: "to shout loudly",
     type: ["う verb"]
   },
+  { 
+    word: "同僚",
+    reading: "どうりょう",
+    meaning: "colleague, coworker",
+    example: "同僚とランチを食べる。",
+    exampleReading: "どうりょうとランチをたべる。",
+    exampleMeaning: "to have lunch with a colleague",
+    type: ["noun"]
+  },
+  { 
+    word: "味方",
+    reading: "みかた",
+    meaning: "ally, supporter, friend",
+    example: "彼は私の味方だ。",
+    exampleReading: "かれはわたしのみかただ。",
+    exampleMeaning: "He is my ally.",
+    type: ["noun"]
+  },
+  { 
+    word: "品",
+    reading: "しな",
+    meaning: "goods, item, product",
+    example: "店で新しい品を買う。",
+    exampleReading: "みせであたらしいしなをかう。",
+    exampleMeaning: "to buy new items at the store",
+    type: ["noun"]
+  },
+  { 
+    word: "ただ",
+    reading: "ただ",
+    meaning: "free, only, just",
+    example: "このサービスはただだ。",
+    exampleReading: "このサービスはただだ。",
+    exampleMeaning: "This service is free.",
+    type: ["adverb", "noun"]
+  },
+  { 
+    word: "商品",
+    reading: "しょうひん",
+    meaning: "goods, merchandise, product",
+    example: "新しい商品が入荷した。",
+    exampleReading: "あたらしいしょうひんがにゅうかした。",
+    exampleMeaning: "New products have arrived.",
+    type: ["noun"]
+  },
+  { 
+    word: "国民",
+    reading: "こくみん",
+    meaning: "citizen, people of a country",
+    example: "国民の権利を守る。",
+    exampleReading: "こくみんのけんりをまもる。",
+    exampleMeaning: "to protect the rights of citizens",
+    type: ["noun"]
+  },
+  { 
+    word: "地域",
+    reading: "ちいき",
+    meaning: "area, region",
+    example: "この地域は治安が良い。",
+    exampleReading: "このちいきはちあんがよい。",
+    exampleMeaning: "This area has good security.",
+    type: ["noun"]
+  },
+  { 
+    word: "地方",
+    reading: "ちほう",
+    meaning: "local, region, district",
+    example: "地方の特産品を買う。",
+    exampleReading: "ちほうのとくさんひんをかう。",
+    exampleMeaning: "to buy local specialties",
+    type: ["noun"]
+  },
+  { 
+    word: "報告",
+    reading: "ほうこく",
+    meaning: "report, information",
+    example: "会議で報告をする。",
+    exampleReading: "かいぎでほうこくをする。",
+    exampleMeaning: "to give a report in the meeting",
+    type: ["noun", "する verb"]
+  },
+  { 
+    word: "変更",
+    reading: "へんこう",
+    meaning: "change, modification",
+    example: "予定を変更する。",
+    exampleReading: "よていをへんこうする。",
+    exampleMeaning: "to change the schedule",
+    type: ["noun", "する verb"]
+  },
+  { 
+    word: "夜中",
+    reading: "よなか",
+    meaning: "midnight, middle of the night",
+    example: "夜中に目が覚める。",
+    exampleReading: "よなかにめがさめる。",
+    exampleMeaning: "to wake up in the middle of the night",
+    type: ["noun"]
+  },
+  { 
+    word: "夢中",
+    reading: "むちゅう",
+    meaning: "absorbed, engrossed, obsessed with",
+    example: "ゲームに夢中になる。",
+    exampleReading: "ゲームにむちゅうになる。",
+    exampleMeaning: "to be absorbed in a game",
+    type: ["noun", "な adjective"]
+  },
+  { 
+    word: "大統領",
+    reading: "だいとうりょう",
+    meaning: "president (of a country)",
+    example: "アメリカの大統領が訪日した。",
+    exampleReading: "アメリカのだいとうりょうがほうにちした。",
+    exampleMeaning: "The President of the United States visited Japan.",
+    type: ["noun"]
+  },
+  { 
+    word: "太陽",
+    reading: "たいよう",
+    meaning: "sun",
+    example: "太陽が昇る。",
+    exampleReading: "たいようがのぼる。",
+    exampleMeaning: "The sun rises.",
+    type: ["noun"]
+  },
+  { 
+    word: "失う",
+    reading: "うしなう",
+    meaning: "to lose, to part with",
+    example: "大切なものを失う。",
+    exampleReading: "たいせつなものをうしなう。",
+    exampleMeaning: "to lose something precious",
+    type: ["う verb"]
+  },
+  { 
+    word: "契約",
+    reading: "けいやく",
+    meaning: "contract, agreement",
+    example: "新しい契約を結ぶ。",
+    exampleReading: "あたらしいけいやくをむすぶ。",
+    exampleMeaning: "to conclude a new contract",
+    type: ["noun", "する verb"]
+  },
+  { 
+    word: "奥",
+    reading: "おく",
+    meaning: "interior, depths, inner part",
+    example: "部屋の奥に何かある。",
+    exampleReading: "へやのおくになにかある。",
+    exampleMeaning: "There is something in the depths of the room.",
+    type: ["noun"]
+  },
+  { 
+    word: "好み",
+    reading: "このみ",
+    meaning: "liking, taste, preference",
+    example: "自分の好みに合った服を選ぶ。",
+    exampleReading: "じぶんのこのみにあったふくをえらぶ。",
+    exampleMeaning: "to choose clothes that match one's taste",
+    type: ["noun"]
+  },
+  { 
+    word: "委員",
+    reading: "いいん",
+    meaning: "committee member, commissioner",
+    example: "委員会の委員として参加する。",
+    exampleReading: "いいんかいのいいんとしてさんかする。",
+    exampleMeaning: "to participate as a committee member",
+    type: ["noun"]
+  },
+  { 
+    word: "嫌う",
+    reading: "きらう",
+    meaning: "to dislike, to hate",
+    example: "彼は嘘を嫌う。",
+    exampleReading: "かれはうそをきらう。",
+    exampleMeaning: "He dislikes lies.",
+    type: ["う verb"]
+  },
+  { 
+    word: "孫",
+    reading: "まご",
+    meaning: "grandchild",
+    example: "祖父は孫を可愛がる。",
+    exampleReading: "そふはまごをかわいがる。",
+    exampleMeaning: "The grandfather dotes on his grandchild.",
+    type: ["noun"]
+  },
+  { 
+    word: "守る",
+    reading: "まもる",
+    meaning: "to protect, to guard, to keep",
+    example: "法律を守る。",
+    exampleReading: "ほうりつをまもる。",
+    exampleMeaning: "to obey the law",
+    type: ["う verb"]
+  },
+  { 
+    word: "完成",
+    reading: "かんせい",
+    meaning: "completion, accomplishment",
+    example: "プロジェクトが完成した。",
+    exampleReading: "プロジェクトがかんせいした。",
+    exampleMeaning: "The project has been completed.",
+    type: ["noun", "する verb"]
+  },
+  { 
+    word: "実際",
+    reading: "じっさい",
+    meaning: "actual, reality, practical",
+    example: "実際にやってみる。",
+    exampleReading: "じっさいにやってみる。",
+    exampleMeaning: "to try it in practice",
+    type: ["noun", "adverb"]
+  },
+  { 
+    word: "家事",
+    reading: "かじ",
+    meaning: "housework, household chores",
+    example: "毎日家事をする。",
+    exampleReading: "まいにちかじをする。",
+    exampleMeaning: "to do household chores every day",
+    type: ["noun", "する verb"]
+  },
+  { 
+    word: "家賃",
+    reading: "やちん",
+    meaning: "rent (for a house or apartment)",
+    example: "家賃を払う。",
+    exampleReading: "やちんをはらう。",
+    exampleMeaning: "to pay the rent",
+    type: ["noun"]
+  },
+  { 
+    word: "宿泊",
+    reading: "しゅくはく",
+    meaning: "accommodation, lodging",
+    example: "ホテルに宿泊する。",
+    exampleReading: "ホテルにしゅくはくする。",
+    exampleMeaning: "to stay at a hotel",
+    type: ["noun", "する verb"]
+  },
+  { 
+    word: "就職",
+    reading: "しゅうしょく",
+    meaning: "employment, getting a job",
+    example: "就職活動を始める。",
+    exampleReading: "しゅうしょくかつどうをはじめる。",
+    exampleMeaning: "to start job hunting",
+    type: ["noun", "する verb"]
+  },
+  { 
+    word: "希望",
+    reading: "きぼう",
+    meaning: "hope, wish, desire",
+    example: "新しい仕事に希望を持つ。",
+    exampleReading: "あたらしいしごとにきぼうをもつ。",
+    exampleMeaning: "to have hope for a new job",
+    type: ["noun", "する verb"]
+  },
+  { 
+    word: "常識",
+    reading: "じょうしき",
+    meaning: "common sense, general knowledge",
+    example: "常識を持って行動する。",
+    exampleReading: "じょうしきをもってこうどうする。",
+    exampleMeaning: "to act with common sense",
+    type: ["noun"]
+  },
+  { 
+    word: "幅",
+    reading: "はば",
+    meaning: "width, breadth, range",
+    example: "道路の幅が広い。",
+    exampleReading: "どうろのはばがひろい。",
+    exampleMeaning: "The road is wide.",
+    type: ["noun"]
+  },
+  { 
+    word: "平和",
+    reading: "へいわ",
+    meaning: "peace, harmony",
+    example: "世界の平和を願う。",
+    exampleReading: "せかいのへいわをねがう。",
+    exampleMeaning: "to wish for world peace",
+    type: ["noun", "な adjective"]
+  },
+  { 
+    word: "平均",
+    reading: "へいきん",
+    meaning: "average, mean, equilibrium, balance",
+    example: "クラスの平均点を計算する。",
+    exampleReading: "クラスのへいきんてんをけいさんする。",
+    exampleMeaning: "to calculate the average score of the class",
+    type: ["noun", "する verb"]
+  },
+  { 
+    word: "年月",
+    reading: "ねんげつ・としつき",
+    meaning: "years and months, time",
+    example: "年月が経つのは早い。",
+    exampleReading: "ねんげつがたつのははやい。",
+    exampleMeaning: "Time passes quickly.",
+    type: ["noun"]
+  },
+  { 
+    word: "年齢",
+    reading: "ねんれい",
+    meaning: "age, years old",
+    example: "年齢を聞かれるのは嫌だ。",
+    exampleReading: "ねんれいをきかれるのはいやだ。",
+    exampleMeaning: "I dislike being asked my age.",
+    type: ["noun"]
+  },
+  { 
+    word: "広がる",
+    reading: "ひろがる",
+    meaning: "to spread, to expand",
+    example: "花が広がる。",
+    exampleReading: "はながひろがる。",
+    exampleMeaning: "The flowers spread out.",
+    type: ["う verb"]
+  },
+  { 
+    word: "建設",
+    reading: "けんせつ",
+    meaning: "construction, building",
+    example: "新しいビルの建設が始まる。",
+    exampleReading: "あたらしいビルのけんせつがはじまる。",
+    exampleMeaning: "The construction of the new building begins.",
+    type: ["noun", "する verb"]
+  },
+  { 
+    word: "影響",
+    reading: "えいきょう",
+    meaning: "influence, effect",
+    example: "環境問題が経済に影響を与える。",
+    exampleReading: "かんきょうもんだいがけいざいにえいきょうをあたえる。",
+    exampleMeaning: "Environmental issues influence the economy.",
+    type: ["noun", "する verb"]
+  },
+  { 
+    word: "役",
+    reading: "やく",
+    meaning: "role, part, duty, service",
+    example: "映画で重要な役を演じる。",
+    exampleReading: "えいがでじゅうようなやくをえんじる。",
+    exampleMeaning: "to play an important role in a movie",
+    type: ["noun", "する verb"]
+  },
+  { 
+    word: "得る",
+    reading: "える",
+    meaning: "to obtain, to get, to acquire",
+    example: "知識を得るために勉強する。",
+    exampleReading: "ちしきをえるためにべんきょうする。",
+    exampleMeaning: "to study to acquire knowledge",
+    type: ["る verb"]
+  },
+  { 
+    word: "得意",
+    reading: "とくい",
+    meaning: "one's strong point, pride, skill",
+    example: "数学が得意だ。",
+    exampleReading: "すうがくがとくいだ。",
+    exampleMeaning: "I am good at mathematics.",
+    type: ["な adjective", "noun"]
+  },
+  { 
+    word: "徹夜",
+    reading: "てつや",
+    meaning: "all night, staying up all night",
+    example: "徹夜で勉強する。",
+    exampleReading: "てつやでべんきょうする。",
+    exampleMeaning: "to study all night",
+    type: ["noun", "する verb"]
+  },
+  { 
+    word: "快適",
+    reading: "かいてき",
+    meaning: "comfortable, pleasant",
+    example: "このソファは快適だ。",
+    exampleReading: "このソファはかいてきだ。",
+    exampleMeaning: "This sofa is comfortable.",
+    type: ["な adjective", "noun"]
+  },
+  { 
+    word: "急に",
+    reading: "きゅうに",
+    meaning: "suddenly, abruptly",
+    example: "急に雨が降り出した。",
+    exampleReading: "きゅうにあめがふりだした。",
+    exampleMeaning: "It suddenly started to rain.",
+    type: ["adverb"]
+  },
+  { 
+    word: "性格",
+    reading: "せいかく",
+    meaning: "character, personality",
+    example: "彼の性格は明るい。",
+    exampleReading: "かれのせいかくはあかるい。",
+    exampleMeaning: "His personality is cheerful.",
+    type: ["noun"]
+  },
+  { 
+    word: "悩む",
+    reading: "なやむ",
+    meaning: "to be troubled, to worry, to be uncertain",
+    example: "将来のことで悩む。",
+    exampleReading: "しょうらいのことでなやむ。",
+    exampleMeaning: "to worry about the future",
+    type: ["う verb"]
+  },
+  { 
+    word: "悪口",
+    reading: "わるぐち・あっこう",
+    meaning: "badmouthing, slander, insult、badmouthing",
+    example: "人の悪口を言わない。",
+    exampleReading: "ひとのわるぐちをいわない。",
+    exampleMeaning: "I don't speak ill of others.",
+    type: ["noun"]
+  },
+  { 
+    word: "情報",
+    reading: "じょうほう",
+    meaning: "information, news",
+    example: "最新の情報を得る。",
+    exampleReading: "さいしんのじょうほうをえる。",
+    exampleMeaning: "to obtain the latest information",
+    type: ["noun"]
+  },
+  { 
+    word: "想像",
+    reading: "そうぞう",
+    meaning: "imagination, guess, conception",
+    example: "未来のことを想像する。",
+    exampleReading: "みらいのことをそうぞうする。",
+    exampleMeaning: "to imagine the future",
+    type: ["noun", "する verb"]
+  },
+  { 
+    word: "愛情",
+    reading: "あいじょう",
+    meaning: "affection, love, emotion",
+    example: "親の愛情を感じる。",
+    exampleReading: "おやのあいじょうをかんじる。",
+    exampleMeaning: "to feel a parent's love",
+    type: ["noun"]
+  },
+  { 
+    word: "感謝",
+    reading: "かんしゃ",
+    meaning: "gratitude, appreciation",
+    example: "助けてくれた人に感謝する。",
+    exampleReading: "たすけてくれたひとにかんしゃする。",
+    exampleMeaning: "to express gratitude to the person who helped",
+    type: ["noun", "する verb"]
+  },
+  { 
+    word: "態度",
+    reading: "たいど",
+    meaning: "attitude, manner, behavior",
+    example: "彼の態度が気に入らない。",
+    exampleReading: "かれのたいどがきにいらない。",
+    exampleMeaning: "I don't like his attitude.",
+    type: ["noun"]
+  },
+  { 
+    word: "成功",
+    reading: "せいこう",
+    meaning: "success, achievement",
+    example: "プロジェクトが成功した。",
+    exampleReading: "プロジェクトがせいこうした。",
+    exampleMeaning: "The project was successful.",
+    type: ["noun", "する verb"]
+  },
+  { 
+    word: "成績",
+    reading: "せいせき",
+    meaning: "grades, results, performance",
+    example: "試験の成績が良かった。",
+    exampleReading: "しけんのせいせきがよかった。",
+    exampleMeaning: "I got good results on the exam.",
+    type: ["noun"]
+  },
+  { 
+    word: "戻す",
+    reading: "もどす",
+    meaning: "to return, to put back, to restore",
+    example: "本を元の場所に戻す。",
+    exampleReading: "ほんをもとのばしょにもどす。",
+    exampleMeaning: "to return the book to its original place",
+    type: ["う verb"]
+  },
+  { 
+    word: "手伝い",
+    reading: "てつだい",
+    meaning: "help, assistance",
+    example: "友達の手伝いをする。",
+    exampleReading: "ともだちのてつだいをする。",
+    exampleMeaning: "to help a friend",
+    type: ["noun", "する verb"]
+  },
+  { 
+    word: "手術",
+    reading: "しゅじゅつ",
+    meaning: "surgery, operation",
+    example: "手術を受ける。",
+    exampleReading: "しゅじゅつをうける。",
+    exampleMeaning: "to undergo surgery",
+    type: ["noun", "する verb"]
+  },
+  { 
+    word: "投票",
+    reading: "とうひょう",
+    meaning: "vote, voting",
+    example: "選挙で投票する。",
+    exampleReading: "せんきょでとうひょうする。",
+    exampleMeaning: "to vote in an election",
+    type: ["noun", "する verb"]
+  },
+  { 
+    word: "抜ける",
+    reading: "ぬける",
+    meaning: "to come out, to fall out, to be omitted",
+    example: "髪の毛が抜ける。",
+    exampleReading: "かみのけがぬける。",
+    exampleMeaning: "Hair falls out.",
+    type: ["る verb"]
+  },
+  { 
+    word: "抱く",
+    reading: "だく・いだく",
+    meaning: "to hold, to embrace, to harbor (feelings), to hug",
+    example: "赤ちゃんを抱く。",
+    exampleReading: "あかちゃんをだく。",
+    exampleMeaning: "to hold a baby",
+    type: ["う verb"]
+  },
+  { 
+    word: "指導",
+    reading: "しどう",
+    meaning: "guidance, leadership, coaching",
+    example: "先生が学生を指導する。",
+    exampleReading: "せんせいががくせいをしどうする。",
+    exampleMeaning: "The teacher guides the students.",
+    type: ["noun", "する verb"]
+  },
+  { 
+    word: "描く",
+    reading: "えがく・かく",
+    meaning: "to draw, to paint, to depict",
+    example: "風景を描く。",
+    exampleReading: "ふうけいをえがく。",
+    exampleMeaning: "to draw a landscape",
+    type: ["う verb"]
+  },
+  { 
+    word: "援助",
+    reading: "えんじょ",
+    meaning: "assistance, support, aid",
+    example: "被災地に援助を送る。",
+    exampleReading: "ひさいちにえんじょをおくる。",
+    exampleMeaning: "to send aid to the disaster area",
+    type: ["noun", "する verb"]
+  },
+  { 
+    word: "操作",
+    reading: "そうさ",
+    meaning: "operation, manipulation, control, management",
+    example: "コンピューターを操作する。",
+    exampleReading: "コンピューターをそうさする。",
+    exampleMeaning: "to operate a computer",
+    type: ["noun", "する verb"]
+  },
+  { 
+    word: "支払う",
+    reading: "しはらう",
+    meaning: "to pay, to settle (a bill)",
+    example: "代金を支払う。",
+    exampleReading: "だいきんをしはらう。",
+    exampleMeaning: "to pay the bill",
+    type: ["う verb"]
+  },
+  { 
+    word: "攻撃",
+    reading: "こうげき",
+    meaning: "attack, assault, offense",
+    example: "敵を攻撃する。",
+    exampleReading: "てきをこうげきする。",
+    exampleMeaning: "to attack the enemy",
+    type: ["noun", "する verb"]
+  },
+  { 
+    word: "故郷",
+    reading: "ふるさと・こきょう",
+    meaning: "hometown, birthplace",
+    example: "故郷に帰る。",
+    exampleReading: "ふるさとにかえる。",
+    exampleMeaning: "to return to my hometown",
+    type: ["noun"]
+  },
+  { 
+    word: "教師",
+    reading: "きょうし",
+    meaning: "teacher, instructor",
+    example: "彼は優秀な教師だ。",
+    exampleReading: "かれはゆうしゅうなきょうしだ。",
+    exampleMeaning: "He is an excellent teacher.",
+    type: ["noun"]
+  },
+  { 
+    word: "数",
+    reading: "かず",
+    meaning: "number, amount, count",
+    example: "数を数える。",
+    exampleReading: "かずをかぞえる。",
+    exampleMeaning: "to count numbers",
+    type: ["noun", "する verb"]
+  },
+  { 
+    word: "数",
+    reading: "すう",
+    meaning: "number, numeral, figure, several; a few",
+    example: "数を計算する。",
+    exampleReading: "すうをけいさんする。",
+    exampleMeaning: "to calculate numbers",
+    type: ["noun"]
+  },
+  { 
+    word: "数える",
+    reading: "かぞえる",
+    meaning: "to count, to enumerate",
+    example: "指で数える。",
+    exampleReading: "ゆびでかぞえる。",
+    exampleMeaning: "to count on fingers",
+    type: ["る verb"]
+  },
+  { 
+    word: "文句",
+    reading: "もんく",
+    meaning: "complaint, objection, phrase",
+    example: "文句を言うのはやめてください。",
+    exampleReading: "もんくをいうのはやめてください。",
+    exampleMeaning: "Please stop complaining.",
+    type: ["noun"]
+  },
+  { 
+    word: "断る",
+    reading: "ことわる",
+    meaning: "to refuse, to decline, to reject",
+    example: "誘いを断る。",
+    exampleReading: "さそいをことわる。",
+    exampleMeaning: "to decline an invitation",
+    type: ["う verb"]
+  },
+  { 
+    word: "新鮮",
+    reading: "しんせん",
+    meaning: "fresh, new, original",
+    example: "新鮮な野菜を食べる。",
+    exampleReading: "しんせんなやさいをたべる。",
+    exampleMeaning: "to eat fresh vegetables",
+    type: ["な adjective", "noun"]
+  },
+  { 
+    word: "方々",
+    reading: "かたがた",
+    meaning: "people, persons, gentlemen, ladies",
+    example: "方々にご迷惑をおかけしました。",
+    exampleReading: "かたがたにごめいわくをおかけしました。",
+    exampleMeaning: "I apologize for the inconvenience caused to everyone.",
+    type: ["noun"]
+  },
+  { 
+    word: "方法",
+    reading: "ほうほう",
+    meaning: "method, way, means",
+    example: "問題を解決する方法を考える。",
+    exampleReading: "もんだいをかいけつするほうほうをかんがえる。",
+    exampleMeaning: "to think of a way to solve the problem",
+    type: ["noun"]
+  },
+  { 
+    word: "時期",
+    reading: "じき",
+    meaning: "time, period, season",
+    example: "旅行の時期を決める。",
+    exampleReading: "りょこうのじきをきめる。",
+    exampleMeaning: "to decide the time for the trip",
+    type: ["noun"]
+  },
+  { 
+    word: "最高",
+    reading: "さいこう",
+    meaning: "highest, supreme, best",
+    example: "彼は最高のパフォーマンスを見せた。",
+    exampleReading: "かれはさいこうのパフォーマンスをみせた。",
+    exampleMeaning: "He gave the best performance.",
+    type: ["な adjective", "noun"]
+  },
+  { 
+    word: "期待",
+    reading: "きたい",
+    meaning: "expectation, anticipation, hope",
+    example: "新しいプロジェクトに期待する。",
+    exampleReading: "あたらしいプロジェクトにきたいする。",
+    exampleMeaning: "to have high expectations for the new project",
+    type: ["noun", "する verb"]
+  },
+  { 
+    word: "条件",
+    reading: "じょうけん",
+    meaning: "condition, requirement, term",
+    example: "契約の条件を確認する。",
+    exampleReading: "けいやくのじょうけんをかくにんする。",
+    exampleMeaning: "to confirm the terms of the contract",
+    type: ["noun"]
+  },
+  { 
+    word: "栄養",
+    reading: "えいよう",
+    meaning: "nutrition, nourishment",
+    example: "バランスの取れた栄養を摂る。",
+    exampleReading: "バランスのとれたえいようをとる。",
+    exampleMeaning: "to take a balanced diet",
+    type: ["noun"]
+  },
+  { 
+    word: "根",
+    reading: "ね",
+    meaning: "root (of a plant, toothm hair), origin, basis",
+    example: "木の根が地面に広がる。",
+    exampleReading: "きのねがじめんにひろがる。",
+    exampleMeaning: "The roots of the tree spread in the ground.",
+    type: ["noun"]
+  },
+  { 
+    word: "検査",
+    reading: "けんさ",
+    meaning: "inspection, examination, test",
+    example: "健康診断で検査を受ける。",
+    exampleReading: "けんこうしんだんでけんさをうける。",
+    exampleMeaning: "to undergo an examination in a health check-up",
+    type: ["noun", "する verb"]
+  },
+  { 
+    word: "極",
+    reading: "きょく",
+    meaning: "pole, extreme, utmost",
+    example: "極寒の地に住む。",
+    exampleReading: "きょっかんのちにすむ。",
+    exampleMeaning: "to live in a place of extreme cold",
+    type: ["noun"]
+  },
+  { 
+    word: "様子",
+    reading: "ようす",
+    meaning: "state, appearance, condition",
+    example: "彼の様子がおかしい。",
+    exampleReading: "かれのようすがおかしい。",
+    exampleMeaning: "He seems to be in a strange condition.",
+    type: ["noun"]
+  },
+  { 
+    word: "機嫌",
+    reading: "きげん",
+    meaning: "mood, temper, spirits",
+    example: "彼女の機嫌が良い。",
+    exampleReading: "かのじょのきげんがよい。",
+    exampleMeaning: "She is in a good mood.",
+    type: ["noun", "な adjective"]
+  },
+  { 
+    word: "機能",
+    reading: "きのう",
+    meaning: "function, feature, capability",
+    example: "このアプリの機能は便利だ。",
+    exampleReading: "このアプリのきのうはべんりだ。",
+    exampleMeaning: "The features of this app are convenient.",
+    type: ["noun", "する verb"]
+  },
+  { 
+    word: "欠席",
+    reading: "けっせき",
+    meaning: "absence, non-attendance",
+    example: "会議を欠席する。",
+    exampleReading: "かいぎをけっせきする。",
+    exampleMeaning: "to be absent from the meeting",
+    type: ["noun", "する verb"]
+  },
+  { 
+    word: "歌手",
+    reading: "かしゅ",
+    meaning: "singer, vocalist",
+    example: "彼は有名な歌手だ。",
+    exampleReading: "かれはゆうめいなかしゅだ。",
+    exampleMeaning: "He is a famous singer.",
+    type: ["noun"]
+  },
+  { 
+    word: "正直",
+    reading: "しょうじき",
+    meaning: "honesty, integrity, truthfulness",
+    example: "正直に答える。",
+    exampleReading: "しょうじきにこたえる。",
+    exampleMeaning: "to answer honestly",
+    type: ["な adjective", "noun"]
+  },
+  { 
+    word: "正確",
+    reading: "せいかく",
+    meaning: "accuracy, precision, correctness",
+    example: "正確な情報を提供する。",
+    exampleReading: "せいかくなじょうほうをていきょうする。",
+    exampleMeaning: "to provide accurate information",
+    type: ["な adjective", "noun"]
+  },
+  { 
+    word: "残り",
+    reading: "のこり",
+    meaning: "remainder, leftover, balance",
+    example: "食べ物の残りを冷蔵庫に入れる。",
+    exampleReading: "たべものののこりをれいぞうこにいれる。",
+    exampleMeaning: "to put the leftover food in the refrigerator",
+    type: ["noun",]
+  },
+  { 
+    word: "気に入る",
+    reading: "きにいる",
+    meaning: "to like, to be pleased with",
+    example: "この服が気に入った。",
+    exampleReading: "このふくがきにいった。",
+    exampleMeaning: "I liked this clothes.",
+    type: ["expression"]
+  },
+  { 
+    word: "気候",
+    reading: "きこう",
+    meaning: "climate, weather",
+    example: "この地域の気候は温暖だ。",
+    exampleReading: "このちいきのきこうはおんだんだ。",
+    exampleMeaning: "The climate of this area is mild.",
+    type: ["noun"]
+  },
+  { 
+    word: "決心",
+    reading: "けっしん",
+    meaning: "determination, resolution, decision",
+    example: "新しい目標を決心する。",
+    exampleReading: "あたらしいもくひょうをけっしんする。",
+    exampleMeaning: "to make a new goal",
+    type: ["noun", "する verb"]
+  },
+  { 
+    word: "泥",
+    reading: "どろ",
+    meaning: "mud, dirt, soil",
+    example: "泥で靴が汚れる。",
+    exampleReading: "どろでくつがよごれる。",
+    exampleMeaning: "The shoes get dirty with mud.",
+    type: ["noun"]
+  },
+  { 
+    word: "注ぐ",
+    reading: "そそぐ",
+    meaning: "to pour (in a container), to water (plants), to flow into (a river)",
+    example: "お茶を注ぐ。",
+    exampleReading: "おちゃをそそぐ。",
+    exampleMeaning: "to pour tea",
+    type: ["う verb"]
+  },
+  { 
+    word: "注文",
+    reading: "ちゅうもん",
+    meaning: "order, request, subscription",
+    example: "レストランで注文する。",
+    exampleReading: "レストランでちゅうもんする。",
+    exampleMeaning: "to place an order at the restaurant",
+    type: ["noun", "する verb"]
+  },
+  { 
+    word: "流行",
+    reading: "りゅうこう",
+    meaning: "fashion, trend, vogue",
+    example: "この服は流行している。",
+    exampleReading: "このふくはりゅうこうしている。",
+    exampleMeaning: "This clothing is in fashion.",
+    type: ["noun", "する verb"]
+  },
+  { 
+    word: "涙",
+    reading: "なみだ",
+    meaning: "tears, weeping",
+    example: "感動して涙が出た。",
+    exampleReading: "かんどうしてなみだがでた。",
+    exampleMeaning: "I was moved to tears.",
+    type: ["noun"]
+  },
   
 ];
