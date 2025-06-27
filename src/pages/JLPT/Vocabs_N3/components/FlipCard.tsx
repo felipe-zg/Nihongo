@@ -47,7 +47,7 @@ const FlipCard = forwardRef<FlipCardHandle, Props>(({ vocab }, ref) => {
   return (
     <div className="card-container" onClick={() => setFlipped(!flipped)}>
       <div className={`card ${flipped ? "flipped" : ""}`}>
-        <div className="card-face card-front">
+        <div className="card-face card-front" style={{backgroundColor: vocab._JLPT ? "#ffbeab" : "#fff"}}>
           <Text fontSize="7xl">
             {vocab.word}
           </Text>
