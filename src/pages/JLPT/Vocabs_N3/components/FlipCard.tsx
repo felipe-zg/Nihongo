@@ -80,6 +80,11 @@ const FlipCard = forwardRef<FlipCardHandle, Props>(({ vocab }, ref) => {
               </Box>
             ))}
           </HStack>
+          {vocab.info && (
+            <Text mt={4} fontSize={{base: "2xs", md: "sm"}} color="gray.600" textAlign={"justify"}>
+              {vocab.info}
+            </Text>
+          )}
         </div>
       </div>
     </div>

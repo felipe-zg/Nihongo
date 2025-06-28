@@ -24,4 +24,5 @@ declare type TVocabN3 = {
   exampleMeaning?: string;
   type: TVocabN3Type[];
   _JLPT?: boolean;
+  info?: string;
 };

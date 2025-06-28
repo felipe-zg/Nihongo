@@ -1,8 +1,15 @@
 .card-container {
   perspective: 1000px;
   width: 90vw;
-  height: 280px;
+  height: 320px;
   margin: 2rem auto;
+}
+
+@media (min-width: 900px) {
+  .card-container {
+    width: 50vw;
+    height: 380px;
+  }
 }
 
 .card {
