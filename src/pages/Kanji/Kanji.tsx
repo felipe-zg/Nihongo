@@ -81,7 +81,7 @@ const Kanji: React.FC<Props> = ({
   }
 
   const openPrintPage = (shuffle = false) => {
-    window.open(`/kanji-print?lessons=${lessons}&shuffle=${shuffle}`, "_blank")?.focus();
+    window.open(`/printable/kanji-print?lessons=${lessons}&shuffle=${shuffle}`, "_blank")?.focus();
   };
 
   if(endReached) {

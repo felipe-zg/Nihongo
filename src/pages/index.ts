@@ -8,5 +8,6 @@ export { default as Verbs } from "./Verbs";
 export { default as Levels } from "./Levels";
 export { default as KanjiPractice } from "./KanjiPractice";
 export { default as KanjiPrint } from "./KanjiPrint";
+export { default as JLPTVocabsPrint } from "./Printable/JLPT/JLPTVocabsPrint";
 export { default as Nihongo500N3 } from "./JLPT/Nihongo500";
 export { default as VocabsN3 } from "./JLPT/Vocabs_N3";

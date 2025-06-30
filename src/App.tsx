@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { DaysOfTheMonth, Deck, Kanji, KanjiPractice, KanjiPrint, Levels, Nihongo500N3, Periods, Verbs, VocabsN3, Words, WordsYDCQuizz } from './pages';
+import { DaysOfTheMonth, Deck, JLPTVocabsPrint, Kanji, KanjiPractice, KanjiPrint, Levels, Nihongo500N3, Periods, Verbs, VocabsN3, Words, WordsYDCQuizz } from './pages';
 import { Box, HStack, NativeBaseProvider } from "native-base";
 import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom';
 import { Navbar } from './components';
@@ -18,7 +18,7 @@ function App() {
 
 function AppContent() {
   const location = useLocation();
-  const isKanjiPrintPage = location.pathname === "/kanji-print";
+  const isKanjiPrintPage = location.pathname.startsWith("/printable");
 
   return (
     <HStack width="100%">
@@ -29,7 +29,7 @@ function AppContent() {
           <Route path="/kanji-ydc" element={<Kanji source='YDC' />} />
           <Route path="/kanji-genki" element={<Kanji source='GENKI' />} />
           <Route path="/kanji-practice" element={<KanjiPractice />} />
-          <Route path="/kanji-print" element={<KanjiPrint />} />
+          <Route path="/printable/kanji-print" element={<KanjiPrint />} />
           <Route path="/words-ydc" element={<Words source='YDC' />} />
           <Route path="/words-genki" element={<Words source='GENKI' />} />
           <Route path="/periods" element={<Periods />} />
@@ -40,6 +40,7 @@ function AppContent() {
           <Route path="/lessons" element={<Materials />} />
           <Route path="/JLPT/N3" element={<Nihongo500N3 />} />
           <Route path="/JLPT/vocabs/N3" element={<VocabsN3 />} />
+          <Route path="/printable/JLPT/vocabs/N3" element={<JLPTVocabsPrint />} />
         </Routes>
       </Box>
     </HStack>

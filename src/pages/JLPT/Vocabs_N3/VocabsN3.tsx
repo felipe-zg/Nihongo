@@ -47,6 +47,10 @@ const getWeightedIndex = (list: TVocabN3[], scores: Record<string, number>) => {
   return 0;
 };
 
+const openPrintPage = (shuffle = false) => {
+  window.open(`/printable/JLPT/vocabs/N3?fromIndex=${0}&toIndex=${29}&shuffle=${shuffle}`, "_blank")?.focus();
+};
+
 const VocabsN3: React.FC<Props> = ({ vocabList }) => {
   const [scores, setScores] = useState<Record<string, number>>(() => loadScores());
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -162,6 +166,14 @@ const VocabsN3: React.FC<Props> = ({ vocabList }) => {
       <HStack alignItems="center" space={3} mb={6} width={"100%"} justifyContent="left" pl={4} pr={4} mt={16}>
         <Text color={"white"}>Spaced repetition</Text>
         <Switch isChecked={shuffled} onToggle={() => setShuffled(!shuffled)} />
+      </HStack>
+      <HStack mt={5} width="100%" px={4}>
+        <Box width={120} mr={5}>
+          <Button width="full" onPress={() => openPrintPage()}>Print</Button>
+        </Box>
+        <Box width={120}>
+          <Button width="full" onPress={() => openPrintPage(true)}>Print shuffled</Button>
+        </Box>
       </HStack>
     </Box>
   );
