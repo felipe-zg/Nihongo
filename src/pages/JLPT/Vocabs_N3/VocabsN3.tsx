@@ -1,5 +1,5 @@
-import React, { useEffect, useRef, useState } from "react";
-import { Box, Button, Switch, HStack, Text } from "native-base";
+import React, { useEffect, useMemo, useRef, useState } from "react";
+import { Box, Button, Switch, HStack, Text, Select } from "native-base";
 import FlipCard, { FlipCardHandle } from "./components/FlipCard";
 
 type Props = {
@@ -47,19 +47,26 @@ const getWeightedIndex = (list: TVocabN3[], scores: Record<string, number>) => {
   return 0;
 };
 
-const openPrintPage = (shuffle = false) => {
-  window.open(`/printable/JLPT/vocabs/N3?fromIndex=${0}&toIndex=${29}&shuffle=${shuffle}`, "_blank")?.focus();
-};
-
 const VocabsN3: React.FC<Props> = ({ vocabList }) => {
   const [scores, setScores] = useState<Record<string, number>>(() => loadScores());
   const [currentIndex, setCurrentIndex] = useState(0);
   const [quantitySeen, setQuantitySeen] = useState(1);
   const [shuffled, setShuffled] = useState(false);
+  const [startIndex, setStartIndex] = useState(0);
+  const [endIndex, setEndIndex] = useState(30);
   const flipCardRef = useRef<FlipCardHandle>(null);
 
+  const openPrintPage = (shuffle = false) => {
+    window.open(`/printable/JLPT/vocabs/N3?fromIndex=${startIndex}&toIndex=${endIndex}&shuffle=${shuffle}`, "_blank")?.focus();
+  };
+
+  const filteredVocabList = useMemo(() => {
+    if (startIndex === 0 && endIndex === 0) return vocabList;
+    return vocabList.slice(startIndex, endIndex + 1);
+  }, [vocabList, startIndex, endIndex]);
+
   const updateCardsCounter = () => {
-    if (quantitySeen < vocabList.length) {
+    if (quantitySeen < filteredVocabList.length) {
       setQuantitySeen((prev) => prev + 1);
     } else {
       setQuantitySeen(1);
@@ -69,9 +76,9 @@ const VocabsN3: React.FC<Props> = ({ vocabList }) => {
   const getNextIndex = () => {
     updateCardsCounter();
     if (shuffled) {
-      return getWeightedIndex(vocabList, scores);
+      return getWeightedIndex(filteredVocabList, scores);
     } else {
-      return (currentIndex + 1) % vocabList.length;
+      return (currentIndex + 1) % filteredVocabList.length;
     }
   };
 
@@ -102,7 +109,7 @@ const VocabsN3: React.FC<Props> = ({ vocabList }) => {
     } else {
       flipCardRef.current?.unflip();
     }
-    const word = vocabList[currentIndex].word;
+    const word = filteredVocabList[currentIndex].word;
     const newScores = { ...scores, [word]: (scores[word] ?? 0) + 1 };
     updateScores(newScores);
   };
@@ -114,27 +121,30 @@ const VocabsN3: React.FC<Props> = ({ vocabList }) => {
     } else {
       flipCardRef.current?.unflip();
     }
-    const word = vocabList[currentIndex].word;
+    const word = filteredVocabList[currentIndex].word;
     const newScores = { ...scores, [word]: Math.max(0, (scores[word] ?? 0) - 1) };
     updateScores(newScores);
   };
 
   useEffect(() => {
+    if (filteredVocabList.length === 0) return;
     if (shuffled) {
-      setCurrentIndex(getWeightedIndex(vocabList, scores));
+      setCurrentIndex(getWeightedIndex(filteredVocabList, scores));
     } else {
       setCurrentIndex(0);
     }
     setQuantitySeen(1);
-  }, [scores, shuffled, vocabList]);
+  }, [scores, shuffled, filteredVocabList, startIndex, endIndex]);
 
-  const currentCard = vocabList[currentIndex];
+  const currentCard = filteredVocabList[currentIndex];
 
   return (
     <Box alignItems="center" mt={70}>
       <Text fontSize={"xl"} bold color={"white"}>JLPT N3</Text>
-      <FlipCard ref={flipCardRef} vocab={currentCard} />
-      <Text color={"gray.300"}>{quantitySeen}/{vocabList.length}</Text>
+      {filteredVocabList.length > 0 && (
+        <FlipCard ref={flipCardRef} vocab={currentCard} />
+      )}
+      <Text color={"gray.300"}>{quantitySeen}/{filteredVocabList.length}</Text>
       {shuffled ? (
         <HStack mt={12} paddingX={8} justifyContent={"space-between"} width="100%">
           <Button
@@ -173,6 +183,32 @@ const VocabsN3: React.FC<Props> = ({ vocabList }) => {
         </Box>
         <Box width={120}>
           <Button width="full" onPress={() => openPrintPage(true)}>Print shuffled</Button>
+        </Box>
+      </HStack>
+      <HStack mt={5} width="100%" px={4}>
+        <Box width={120} mr={5}>
+          <Select
+            selectedValue={startIndex.toString()}
+            onValueChange={(value) => setStartIndex(parseInt(value))}
+            placeholder="From"
+            backgroundColor={"white"}
+          >
+            {Array.from({ length: vocabList.length }, (_, i) => (
+              <Select.Item key={i} label={`${i + 1}`} value={i.toString()} />
+            ))}
+          </Select>
+        </Box>
+        <Box width={120} mr={5}>
+          <Select
+            selectedValue={endIndex.toString()}
+            onValueChange={(value) => setEndIndex(parseInt(value))}
+            placeholder="To"
+            backgroundColor={"white"}
+          >
+            {Array.from({ length: vocabList.length - startIndex }, (_, i) => (
+              <Select.Item key={i + startIndex} label={`${i + startIndex + 1}`} value={(i + startIndex).toString()} />
+            ))}
+          </Select>
         </Box>
       </HStack>
     </Box>
