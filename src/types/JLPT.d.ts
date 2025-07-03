@@ -14,7 +14,7 @@ declare type Nihongo500N3 = {
   notes?: string;
 };
 
-declare type TVocabN3Type = "noun" | "る verb" | "う verb" | "する verb" | "い adjective" | "な adjective" | "adverb" | "expression";
+declare type TVocabN3Type = "noun" | "る verb" | "う verb" | "する verb" | "い adjective" | "な adjective" | "adverb" | "expression" | "conjunction";
 declare type TVocabN3 = {
   word: string;
   reading: string;
