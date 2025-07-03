@@ -56,6 +56,20 @@ const VocabsN3: React.FC<Props> = ({ vocabList }) => {
   const [endIndex, setEndIndex] = useState(30);
   const flipCardRef = useRef<FlipCardHandle>(null);
 
+  const handleStartIndexChange = (value: number) => {
+    if (endIndex <= value) {
+      setEndIndex(value + 1);
+    }
+    setStartIndex(value);
+  };
+
+  const handleEndIndexChange = (value: number) => {
+    if (value < startIndex) {
+      setStartIndex(value);
+    }
+    setEndIndex(value);
+  };
+
   const openPrintPage = (shuffle = false) => {
     window.open(`/printable/JLPT/vocabs/N3?fromIndex=${startIndex}&toIndex=${endIndex}&shuffle=${shuffle}`, "_blank")?.focus();
   };
@@ -189,7 +203,7 @@ const VocabsN3: React.FC<Props> = ({ vocabList }) => {
         <Box width={120} mr={5}>
           <Select
             selectedValue={startIndex.toString()}
-            onValueChange={(value) => setStartIndex(parseInt(value))}
+            onValueChange={(value) => handleStartIndexChange(parseInt(value))}
             placeholder="From"
             backgroundColor={"white"}
           >
@@ -201,7 +215,7 @@ const VocabsN3: React.FC<Props> = ({ vocabList }) => {
         <Box width={120} mr={5}>
           <Select
             selectedValue={endIndex.toString()}
-            onValueChange={(value) => setEndIndex(parseInt(value))}
+            onValueChange={(value) => handleEndIndexChange(parseInt(value))}
             placeholder="To"
             backgroundColor={"white"}
           >

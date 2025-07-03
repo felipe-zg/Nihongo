@@ -634,6 +634,7 @@ export const VOCABS_N3: TVocabN3[] = [
     exampleReading: "しごとがかんりょうした。",
     exampleMeaning: "The work has been completed.",
     type: ["noun", "する verb"],
+    _JLPT: true,
   },
   {
     word: "成功",
