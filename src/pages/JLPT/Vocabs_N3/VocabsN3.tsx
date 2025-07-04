@@ -51,7 +51,7 @@ const VocabsN3: React.FC<Props> = ({ vocabList }) => {
   const [scores, setScores] = useState<Record<string, number>>(() => loadScores());
   const [currentIndex, setCurrentIndex] = useState(0);
   const [quantitySeen, setQuantitySeen] = useState(1);
-  const [shuffled, setShuffled] = useState(false);
+  const [spacedRepetition, setSpacedRepetition] = useState(false);
   const [startIndex, setStartIndex] = useState(0);
   const [endIndex, setEndIndex] = useState(30);
   const flipCardRef = useRef<FlipCardHandle>(null);
@@ -70,8 +70,8 @@ const VocabsN3: React.FC<Props> = ({ vocabList }) => {
     setEndIndex(value);
   };
 
-  const openPrintPage = (shuffle = false) => {
-    window.open(`/printable/JLPT/vocabs/N3?fromIndex=${startIndex}&toIndex=${endIndex}&shuffle=${shuffle}`, "_blank")?.focus();
+  const openPrintPage = (printKanji = false) => {
+    window.open(`/printable/JLPT/vocabs/N3?fromIndex=${startIndex}&toIndex=${endIndex}&shuffle=${spacedRepetition}&printKanji=${printKanji}`, "_blank")?.focus();
   };
 
   const filteredVocabList = useMemo(() => {
@@ -89,7 +89,7 @@ const VocabsN3: React.FC<Props> = ({ vocabList }) => {
 
   const getNextIndex = () => {
     updateCardsCounter();
-    if (shuffled) {
+    if (spacedRepetition) {
       return getWeightedIndex(filteredVocabList, scores);
     } else {
       return (currentIndex + 1) % filteredVocabList.length;
@@ -142,13 +142,13 @@ const VocabsN3: React.FC<Props> = ({ vocabList }) => {
 
   useEffect(() => {
     if (filteredVocabList.length === 0) return;
-    if (shuffled) {
+    if (spacedRepetition) {
       setCurrentIndex(getWeightedIndex(filteredVocabList, scores));
     } else {
       setCurrentIndex(0);
     }
     setQuantitySeen(1);
-  }, [scores, shuffled, filteredVocabList, startIndex, endIndex]);
+  }, [scores, spacedRepetition, filteredVocabList, startIndex, endIndex]);
 
   const currentCard = filteredVocabList[currentIndex];
 
@@ -159,7 +159,7 @@ const VocabsN3: React.FC<Props> = ({ vocabList }) => {
         <FlipCard ref={flipCardRef} vocab={currentCard} />
       )}
       <Text color={"gray.300"}>{quantitySeen}/{filteredVocabList.length}</Text>
-      {shuffled ? (
+      {spacedRepetition ? (
         <HStack mt={12} paddingX={8} justifyContent={"space-between"} width="100%">
           <Button
             width={"40%"}
@@ -189,14 +189,14 @@ const VocabsN3: React.FC<Props> = ({ vocabList }) => {
       )}
       <HStack alignItems="center" space={3} mb={6} width={"100%"} justifyContent="left" pl={4} pr={4} mt={16}>
         <Text color={"white"}>Spaced repetition</Text>
-        <Switch isChecked={shuffled} onToggle={() => setShuffled(!shuffled)} />
+        <Switch isChecked={spacedRepetition} onToggle={() => setSpacedRepetition(!spacedRepetition)} />
       </HStack>
       <HStack mt={5} width="100%" px={4}>
         <Box width={120} mr={5}>
           <Button width="full" onPress={() => openPrintPage()}>Print</Button>
         </Box>
         <Box width={120}>
-          <Button width="full" onPress={() => openPrintPage(true)}>Print shuffled</Button>
+          <Button width="full" onPress={() => openPrintPage(true)}>Print Kanji</Button>
         </Box>
       </HStack>
       <HStack mt={5} width="100%" px={4}>

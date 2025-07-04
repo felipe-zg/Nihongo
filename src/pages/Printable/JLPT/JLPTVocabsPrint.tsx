@@ -7,6 +7,7 @@ const JLPTVocabsPrint: React.FC = () => {
   const [searchParams] = useSearchParams();
   const fromIndexParam = searchParams.get("fromIndex")!;
   const toIndexParam = searchParams.get("toIndex")!;
+  const printKanjiParam = searchParams.get("printKanji")!;
   const shuffleParam = searchParams.get("shuffle") === "true";
 
   const fromIndex = parseInt(fromIndexParam, 10);
@@ -23,7 +24,13 @@ const JLPTVocabsPrint: React.FC = () => {
       <tr key={`row-${i}`}>
         {row.map((ex, idx) => (
           <React.Fragment key={idx}>
-            <td>{ex.meaning.split(',')[0]}</td>
+            <td>
+              {printKanjiParam === "true" ? (
+                <span style={{ fontSize: "1.8em" }}>{ex.word}</span>
+              ) : (
+                <span>{ex.meaning.split(',')[0]}</span>
+              )}
+            </td>
             <td></td>
           </React.Fragment>
         ))}
