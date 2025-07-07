@@ -4,24 +4,11 @@ import { Box, Button, HamburgerIcon, VStack } from 'native-base';
 import { useScreenWidth } from '../../hooks';
 
 const routes = [
-  { name: 'Levels', path: '/' },
-  { name: 'Kanji (YDC)', path: '/kanji-ydc' },
-  { name: 'Kanji (Genki)', path: '/kanji-genki' },
-  { name: 'Kanji practice', path: '/kanji-practice' },
-  { name: 'Words (YDC)', path: '/words-ydc' },
-  { name: 'Words (Genki)', path: '/words-genki' },
-  { name: 'Periods', path: '/periods' },
-  { name: 'Days of the month', path: '/days-of-the-month' },
-  { name: 'Potential form', path: '/potential-form' },
-  { name: 'Words quizz', path: '/words-quizz' },
-  { name: 'Verbs', path: '/verbs' },
-  { name: 'Lessons', path: '/lessons' },
-  { name: 'JLPT', path: '/JLPT/N3' },
-  { name: 'JLPT Vocabs', path: '/JLPT/vocabs/N3' },
-  { name: 'Music', path: '/music/leina/nostalgia' },
+  { name: 'Home', path: '/' },
+  { name: 'Nostalgia', path: '/music/leina/nostalgia' },
 ]
 
-const Navbar = () => {
+const MusicNavbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
   const screenWidth = useScreenWidth();
 
@@ -64,4 +51,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default MusicNavbar;

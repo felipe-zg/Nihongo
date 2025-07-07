@@ -3,8 +3,9 @@ import './App.css';
 import { DaysOfTheMonth, Deck, JLPTVocabsPrint, Kanji, KanjiPractice, KanjiPrint, Levels, Nihongo500N3, Periods, Verbs, VocabsN3, Words, WordsYDCQuizz } from './pages';
 import { Box, HStack, NativeBaseProvider } from "native-base";
 import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom';
-import { Navbar } from './components';
+import { MusicNavbar, Navbar } from './components';
 import Materials from './pages/Materials/Materials';
+import Nostalgia from './pages/Music/Leina/Nostalgia/Nostalgia';
 
 function App() {
   return (
@@ -19,10 +20,11 @@ function App() {
 function AppContent() {
   const location = useLocation();
   const isKanjiPrintPage = location.pathname.startsWith("/printable");
+  const AppNavbar = location.pathname.startsWith("/music") ? MusicNavbar : Navbar;
 
   return (
     <HStack width="100%">
-      {!isKanjiPrintPage && <Navbar />}
+      {!isKanjiPrintPage && <AppNavbar />}
       <Box flex="1" height="100%">
         <Routes>
           <Route path="/" element={<Levels />} />
@@ -41,6 +43,7 @@ function AppContent() {
           <Route path="/JLPT/N3" element={<Nihongo500N3 />} />
           <Route path="/JLPT/vocabs/N3" element={<VocabsN3 />} />
           <Route path="/printable/JLPT/vocabs/N3" element={<JLPTVocabsPrint />} />
+          <Route path="/music/leina/nostalgia" element={<Nostalgia />} />
         </Routes>
       </Box>
     </HStack>
