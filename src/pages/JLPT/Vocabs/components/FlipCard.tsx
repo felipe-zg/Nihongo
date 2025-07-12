@@ -6,7 +6,7 @@ import React, {
 import { Box, Divider, HStack, Text } from "native-base";
 import "./FlipCard.css";
 
-function getColorByType(type: TVocabN3Type): string {
+function getColorByType(type: TVocabJLPTType): string {
   switch (type) {
     case "noun":
       return "green.500";
@@ -26,7 +26,7 @@ function getColorByType(type: TVocabN3Type): string {
 }
 
 type Props = {
-  vocab: TVocabN3;
+  vocab: TVocabJLPT;
 };
 
 export type FlipCardHandle = {
@@ -84,6 +84,22 @@ const FlipCard = forwardRef<FlipCardHandle, Props>(({ vocab }, ref) => {
             <Text mt={4} fontSize={{base: "2xs", md: "sm"}} color="gray.600" textAlign={"justify"}>
               {vocab.info}
             </Text>
+          )}
+          {vocab.extra && (
+            <Box>
+              {vocab.extra.map((extra, index) => (
+                <HStack mt={2}>
+                  <Box borderColor="red.500" borderRadius={5} borderWidth={1} mr={2}>
+                    <Text color="red.500" fontSize={{base: "2xs", md: "sm"}} fontWeight="bold" px={2}>
+                      {extra.charAt(0)}
+                    </Text>
+                  </Box>
+                  <Text key={index} fontSize={{base: "2xs", md: "sm"}} color="gray.800" textAlign={"justify"}>
+                    {extra.slice(2)}
+                  </Text>
+                </HStack>
+              ))}
+            </Box>
           )}
         </div>
       </div>

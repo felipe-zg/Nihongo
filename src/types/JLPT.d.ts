@@ -14,15 +14,16 @@ declare type Nihongo500N3 = {
   notes?: string;
 };
 
-declare type TVocabN3Type = "noun" | "る verb" | "う verb" | "する verb" | "い adjective" | "な adjective" | "adverb" | "expression" | "conjunction";
-declare type TVocabN3 = {
+declare type TVocabJLPTType = "noun" | "る verb" | "う verb" | "する verb" | "い adjective" | "な adjective" | "adverb" | "expression" | "conjunction";
+declare type TVocabJLPT = {
   word: string;
   reading: string;
   meaning: string;
   example?: string;
   exampleReading?: string;
   exampleMeaning?: string;
-  type: TVocabN3Type[];
+  type: TVocabJLPTType[];
   _JLPT?: boolean;
   info?: string;
+  extra?: string[];
 };

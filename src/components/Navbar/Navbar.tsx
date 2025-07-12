@@ -17,7 +17,8 @@ const routes = [
   { name: 'Verbs', path: '/verbs' },
   { name: 'Lessons', path: '/lessons' },
   { name: 'JLPT', path: '/JLPT/N3' },
-  { name: 'JLPT Vocabs', path: '/JLPT/vocabs/N3' },
+  { name: 'JLPT Vocabs N3', path: '/JLPT/vocabs?level=N3' },
+  { name: 'JLPT Vocabs N2', path: '/JLPT/vocabs?level=N2' },
   { name: 'Music', path: '/music/leina/nostalgia' },
 ]
 

@@ -10,4 +10,4 @@ export { default as KanjiPractice } from "./KanjiPractice";
 export { default as KanjiPrint } from "./KanjiPrint";
 export { default as JLPTVocabsPrint } from "./Printable/JLPT/JLPTVocabsPrint";
 export { default as Nihongo500N3 } from "./JLPT/Nihongo500";
-export { default as VocabsN3 } from "./JLPT/Vocabs_N3";
+export { default as VocabsJLPT } from "./JLPT/Vocabs";

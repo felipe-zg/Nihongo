@@ -3,10 +3,11 @@ import { Box, Button, Switch, HStack, Text, Select } from "native-base";
 import FlipCard, { FlipCardHandle } from "./components/FlipCard";
 
 type Props = {
-  vocabList: TVocabN3[];
+  vocabList: TVocabJLPT[];
+  level?: "N3" | "N2";
 };
 
-// const shuffleArray = (arr: TVocabN3[]) => {
+// const shuffleArray = (arr: TVocabJLPT[]) => {
 //   const copy = [...arr];
 //   for (let i = copy.length - 1; i > 0; i--) {
 //     const j = Math.floor(Math.random() * (i + 1));
@@ -30,7 +31,7 @@ const saveScores = (scores: Record<string, number>) => {
   localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(scores));
 };
 
-const getWeightedIndex = (list: TVocabN3[], scores: Record<string, number>) => {
+const getWeightedIndex = (list: TVocabJLPT[], scores: Record<string, number>) => {
   const weights = list.map((item) => {
     const score = scores[item.word] ?? 0;
     return Math.max(1, 10 - score); // Lower score = higher chance (10 = max known)
@@ -47,7 +48,7 @@ const getWeightedIndex = (list: TVocabN3[], scores: Record<string, number>) => {
   return 0;
 };
 
-const VocabsN3: React.FC<Props> = ({ vocabList }) => {
+const VocabsJLPT: React.FC<Props> = ({ vocabList, level }) => {
   const [scores, setScores] = useState<Record<string, number>>(() => loadScores());
   const [currentIndex, setCurrentIndex] = useState(0);
   const [quantitySeen, setQuantitySeen] = useState(1);
@@ -154,7 +155,7 @@ const VocabsN3: React.FC<Props> = ({ vocabList }) => {
 
   return (
     <Box alignItems="center" mt={70}>
-      <Text fontSize={"xl"} bold color={"white"}>JLPT N3</Text>
+      <Text fontSize={"xl"} bold color={"white"}>JLPT {level}</Text>
       {filteredVocabList.length > 0 && (
         <FlipCard ref={flipCardRef} vocab={currentCard} />
       )}
@@ -229,4 +230,4 @@ const VocabsN3: React.FC<Props> = ({ vocabList }) => {
   );
 };
 
-export default VocabsN3;
+export default VocabsJLPT;

@@ -1,4 +1,4 @@
-export const VOCABS_N3: TVocabN3[] = [
+export const VOCABS_N3: TVocabJLPT[] = [
   //
   // From past JLPT exams
   //
