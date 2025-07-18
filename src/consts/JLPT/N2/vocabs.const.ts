@@ -40,7 +40,7 @@ export const VOCABS_N2: TVocabJLPT[] = [
     type: ["adverb"],
     _JLPT: true,
     info: "Used to express a deep or thorough feeling about something. Particle と is often used with it.",
-    extra: ["+ しみじみ deeply", ""],
+    extra: ["+ しみじみ deeply"],
   },
   {
     word: "養う",

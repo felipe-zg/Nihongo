@@ -48,7 +48,7 @@ const FlipCard = forwardRef<FlipCardHandle, Props>(({ vocab }, ref) => {
     <div className="card-container" onClick={() => setFlipped(!flipped)}>
       <div className={`card ${flipped ? "flipped" : ""}`}>
         <div className="card-face card-front" style={{backgroundColor: vocab._JLPT ? "#ffbeab" : "#fff"}}>
-          <Text fontSize="7xl">
+          <Text fontSize={vocab.word.length > 4 ? "5xl" : "7xl"}>
             {vocab.word}
           </Text>
         </div>
@@ -58,13 +58,13 @@ const FlipCard = forwardRef<FlipCardHandle, Props>(({ vocab }, ref) => {
           </Text>
           <Text mt={2}>{vocab.meaning}</Text>
           <Divider my={4} />
-          <Text fontSize="2xl">
+          <Text fontSize="xl" textAlign={"center"}>
             {vocab.example}
           </Text>
-          <Text fontSize="sm" color="gray.500">
+          <Text mt={2} fontSize="sm" color="gray.500" textAlign={"center"}>
             {vocab.exampleReading}
           </Text>
-          <Text mt={1}>{vocab.exampleMeaning}</Text>
+          <Text mt={2} textAlign={"center"}>{vocab.exampleMeaning}</Text>
           <HStack mt={2}>
             {vocab.type.map((type, index) => (
               <Box
@@ -86,7 +86,7 @@ const FlipCard = forwardRef<FlipCardHandle, Props>(({ vocab }, ref) => {
             </Text>
           )}
           {vocab.extra && (
-            <Box>
+            <Box mt={2}>
               {vocab.extra.map((extra, index) => (
                 <HStack mt={2}>
                   <Box borderColor="red.500" borderRadius={5} borderWidth={1} mr={2}>

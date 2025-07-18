@@ -154,7 +154,7 @@ const VocabsJLPT: React.FC<Props> = ({ vocabList, level }) => {
   const currentCard = filteredVocabList[currentIndex];
 
   return (
-    <Box alignItems="center" mt={70}>
+    <Box alignItems="center" mt={10}>
       <Text fontSize={"xl"} bold color={"white"}>JLPT {level}</Text>
       {filteredVocabList.length > 0 && (
         <FlipCard ref={flipCardRef} vocab={currentCard} />
