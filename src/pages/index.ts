@@ -11,3 +11,4 @@ export { default as KanjiPrint } from "./KanjiPrint";
 export { default as JLPTVocabsPrint } from "./Printable/JLPT/JLPTVocabsPrint";
 export { default as Nihongo500N3 } from "./JLPT/Nihongo500";
 export { default as VocabsJLPT } from "./JLPT/Vocabs";
+export { default as GrammarJLPTN2 } from "./JLPT/Grammar/N2";
