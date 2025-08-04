@@ -27,3 +27,11 @@ declare type TVocabJLPT = {
   info?: string;
   extra?: string[];
 };
+
+declare type JLPTExercise = {
+  id: number;
+  content: string[];
+  options: string[];
+  answer: string;
+  comment?: string;
+}
