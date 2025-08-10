@@ -24,6 +24,9 @@ import {
   KANJI_YDC_LESSON_22,
   KANJI_YDC_LESSON_23,
   KANJI_YDC_LESSON_24,
+  KANJI_YDC_LESSON_26,
+  KANJI_YDC_LESSON_25,
+  KANJI_YDC_LESSON_27,
 } from "../../consts";
 
 const items: Record<number, KanjiYDC[]> = {
@@ -48,6 +51,9 @@ const items: Record<number, KanjiYDC[]> = {
   22: KANJI_YDC_LESSON_22,
   23: KANJI_YDC_LESSON_23,
   24: KANJI_YDC_LESSON_24,
+  25: KANJI_YDC_LESSON_25,
+  26: KANJI_YDC_LESSON_26,
+  27: KANJI_YDC_LESSON_27,
 };
 
 function shuffleArray<T>(array: T[]): T[] {
@@ -67,6 +73,41 @@ const KanjiPrint: React.FC = () => {
     .split(",")
     .map((num) => parseInt(num, 10))
     .filter((key) => !isNaN(key) && items[key]);
+
+  let allExamples: KanjiYDCExample[] = [];
+
+  lessonKeys.forEach((lessonNum) => {
+    let examples = items[lessonNum].flatMap((kanji) => kanji.examples).filter((ex) => ex.type === "YDC_main");
+    allExamples = allExamples.concat(examples);
+  });
+
+  if (shuffleParam) {
+    allExamples = shuffleArray(allExamples);
+  }
+
+  const rows: React.ReactNode[] = [];
+
+  for (let i = 0; i < allExamples.length; i += 4) {
+    const row = allExamples.slice(i, i + 4);
+    rows.push(
+      <tr key={`row-${i}`}>
+        {row.map((ex, idx) => (
+          <React.Fragment key={idx}>
+            <td><Text bold>{ex.kana}</Text></td>
+            <td></td>
+          </React.Fragment>
+        ))}
+        {/* Fill empty cells if less than 4 entries */}
+        {row.length < 4 &&
+          Array.from({ length: 4 - row.length }).map((_, j) => (
+            <React.Fragment key={`empty-${j}`}>
+              <td></td>
+              <td></td>
+            </React.Fragment>
+          ))}
+      </tr>
+    );
+  }
 
   return (
     <Box padding="1cm">
@@ -88,56 +129,13 @@ const KanjiPrint: React.FC = () => {
           page-break-inside: avoid;
           break-inside: avoid;
         }
-        @media print {
-          .lesson-break {
-            page-break-before: always;
-            break-before: page;
-          }
-        }
       `}</style>
 
-      {lessonKeys.map((lessonNum) => {
-        let examples = items[lessonNum].flatMap((kanji) => kanji.examples);
-        if (shuffleParam) {
-          examples = shuffleArray(examples);
-        }
-
-
-        // Build rows of 3 meaning/box pairs = 6 cells per row
-        const rows: React.ReactNode[] = [];
-        for (let i = 0; i < examples.length; i += 3) {
-          const row = examples.slice(i, i + 3);
-          rows.push(
-            <tr key={`row-${i}`}>
-              {row.map((ex, idx) => (
-                <React.Fragment key={idx}>
-                  <td>{ex.meaning[0]}</td>
-                  <td></td>
-                </React.Fragment>
-              ))}
-              {/* Fill empty cells if less than 3 entries */}
-              {row.length < 3 &&
-                Array.from({ length: 3 - row.length }).map((_, j) => (
-                  <React.Fragment key={`empty-${j}`}>
-                    <td></td>
-                    <td></td>
-                  </React.Fragment>
-                ))}
-            </tr>
-          );
-        }
-
-        return (
-          <div key={lessonNum} className={lessonNum !== lessonKeys[0] ? "lesson-break" : ""} style={{ marginBottom: "2cm" }}>
-            <Text fontSize="md" fontWeight="bold" mb={4}>
-              Lesson {lessonNum}
-            </Text>
-            <table>
-              <tbody>{rows}</tbody>
-            </table>
-          </div>
-        );
-      })}
+      <table> 
+        <tbody>
+          {rows}
+        </tbody>
+      </table>
     </Box>
   );
 };
