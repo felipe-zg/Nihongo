@@ -110,7 +110,7 @@ const KanjiPrint: React.FC = () => {
   }
 
   return (
-    <Box padding="1cm">
+    <Box px="1cm">
       <style>{`
         table {
           width: 100%;
