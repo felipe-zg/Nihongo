@@ -119,6 +119,11 @@ const MiniStory: React.FC<MiniStoryProps> = ({
         <Text textAlign={"justify"}>{translation}</Text>
       </Box>
 
+      <Box m={4}>
+        <Text>Page: {story.page}</Text>
+        <Text>Topic: {story.topic}</Text>
+      </Box>
+
     </Box>
   )
 };

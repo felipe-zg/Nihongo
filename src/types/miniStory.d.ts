@@ -8,17 +8,12 @@ declare type MiniStoryDialogue = {
   dialogue: string;
 }
 
-declare enum MiniStoryTopic {
-  FOOD = '食事',
-  HOUSE_WORK = '家事',
-}
-
 declare type MiniStory = {
   id: string;
   rubyStory: MiniStoryDialogue[];
   rubyWords: MiniStoryWord[];
   translation: string;
   audio: string;
-  topic: MiniStoryTopic;
+  topic: string;
   page: number;
 }

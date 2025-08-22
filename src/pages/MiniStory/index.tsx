@@ -4,7 +4,7 @@ import { MINI_STORY_N2, MINI_STORY_N3 } from "../../consts/MiniStory";
 
 const MiniStoryPage: React.FC = () => {
   const [selectedStory, setSelectedStory] = React.useState<string>("1");
-  const [selectedLevel, setSelectedLevel] = React.useState<'N2' | 'N3'>("N2");
+  const [selectedLevel, setSelectedLevel] = React.useState<'N2' | 'N3'>("N3");
 
   const story = useMemo(() => {
     if(selectedLevel === "N2")
