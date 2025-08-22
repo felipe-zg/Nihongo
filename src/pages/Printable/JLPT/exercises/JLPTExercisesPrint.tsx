@@ -1,10 +1,21 @@
 import React, { useEffect } from "react";
 import { Box, HStack } from "native-base";
-// import { useSearchParams } from "react-router-dom";
-import { JLPT_N2_GRAMMAR_EXERCISES } from "../../../../consts";
+import { useSearchParams } from "react-router-dom";
+import { JLPT_N2_GRAMMAR_EXERCISES, JLPT_N2_MOJI_EXERCISES } from "../../../../consts";
 import { parseRuby } from "../../../../utils/music/rubyParser";
 
-const JLPTGrammarExercisesPrint: React.FC = () => {
+const JLPTExercisesPrint: React.FC = () => {
+  const [searchParams] = useSearchParams();
+  const typeParam = searchParams.get("type");
+  const exerciseType: 'grammar' | 'moji' = typeParam === 'grammar' || typeParam === 'moji' ? typeParam : 'grammar';
+
+  let exerciseList: JLPTExercise[] = [];
+  if (exerciseType === 'grammar') {
+    exerciseList = JLPT_N2_GRAMMAR_EXERCISES;
+  } else if (exerciseType === 'moji') {
+    exerciseList = JLPT_N2_MOJI_EXERCISES;
+  }
+
   useEffect(() => {
     const timeout = setTimeout(() => {
       window.print();
@@ -79,6 +90,8 @@ const JLPTGrammarExercisesPrint: React.FC = () => {
     );
   };
 
+  let textDecorationStatus = 'none';
+
   return (
     <Box px="1cm">
       <style>{`
@@ -93,8 +106,8 @@ const JLPTGrammarExercisesPrint: React.FC = () => {
           }
         }
       `}</style>
-      {JLPT_N2_GRAMMAR_EXERCISES.map((ex, index) => {
-        const parts = parseRuby(ex.content.join('_____'));
+      {exerciseList.map((ex, index) => {
+        const parts = parseRuby(ex.content.join(ex.moji ? `<${ex.moji}>` : '_____'));
         const answer = parseRuby(ex.answer);
         const formattedAnswer = `${ex.id}) ` + answer.map(a =>
           a.furigana
@@ -105,11 +118,21 @@ const JLPTGrammarExercisesPrint: React.FC = () => {
         return (
         <div key={index} className="lesson-break">
           <h2>{ex.id}) &nbsp;&nbsp;
-            {parts.map((part, partIndex) => (
-              <span key={partIndex}>
-                {part.furigana ? <ruby>{part.kanji}<rt>{part.furigana}</rt></ruby> : part.kanji}
-              </span>
-            ))}
+            {parts.map((part, partIndex) => {
+              if (part.kanji === '<') {
+                textDecorationStatus = 'underline';
+                return null;
+              }
+              if (part.kanji === '>') {
+                textDecorationStatus = 'none';
+                return null;
+              }
+              return (
+                <span key={partIndex} style={{ textDecoration: textDecorationStatus }}>
+                  {part.furigana ? <ruby>{part.kanji}<rt>{part.furigana}</rt></ruby> : part.kanji}
+                </span>
+              );
+            })}
           </h2>
           <OptionsTable options={ex.options} />
         </div>
@@ -120,4 +143,4 @@ const JLPTGrammarExercisesPrint: React.FC = () => {
   );
 };
 
-export default JLPTGrammarExercisesPrint;
+export default JLPTExercisesPrint;

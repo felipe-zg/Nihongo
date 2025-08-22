@@ -1,10 +1,10 @@
 import React from "react";
-import JLPTGrammarExercisesPrint from "./JLPTGrammarExercisesPrint";
+import JLPTExercisesPrint from "./JLPTExercisesPrint";
 
-const JLPTGrammarExercisesPrintPage: React.FC = () => {
+const JLPTExercisesPrintPage: React.FC = () => {
   return (
-    <JLPTGrammarExercisesPrint />
+    <JLPTExercisesPrint />
   );
 };
 
-export default JLPTGrammarExercisesPrintPage;
+export default JLPTExercisesPrintPage;
