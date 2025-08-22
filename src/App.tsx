@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { DaysOfTheMonth, Deck, GrammarJLPTN2, JLPTGrammarExercisesPrint, JLPTVocabsPrint, Kanji, KanjiPractice, KanjiPrint, Levels, Nihongo500N3, Periods, Verbs, VocabsJLPT, Words, WordsYDCQuizz } from './pages';
+import { DaysOfTheMonth, Deck, GrammarJLPTN2, JLPTExercisesPrint, JLPTVocabsPrint, Kanji, KanjiPractice, KanjiPrint, Levels, MiniStory, Nihongo500N3, Periods, Verbs, VocabsJLPT, Words, WordsYDCQuizz } from './pages';
 import { Box, HStack, NativeBaseProvider } from "native-base";
 import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom';
 import { MusicNavbar, Navbar } from './components';
@@ -44,8 +44,9 @@ function AppContent() {
           <Route path="/JLPT/vocabs" element={<VocabsJLPT />} />
           <Route path="/JLPT/grammar/N2" element={<GrammarJLPTN2 />} />
           <Route path="/printable/JLPT/vocabs/N3" element={<JLPTVocabsPrint />} />
-          <Route path="/printable/JLPT/exercises/grammar" element={<JLPTGrammarExercisesPrint />} />
+          <Route path="/printable/JLPT/exercises" element={<JLPTExercisesPrint />} />
           <Route path="/music/leina/nostalgia" element={<Nostalgia />} />
+          <Route path="/ministory" element={<MiniStory />} />
         </Routes>
       </Box>
     </HStack>
