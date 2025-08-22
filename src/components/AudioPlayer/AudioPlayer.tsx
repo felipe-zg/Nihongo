@@ -1,4 +1,4 @@
-import { Button } from 'native-base';
+import { Button, HStack } from 'native-base';
 import React, { useEffect, useRef, useState } from 'react';
 
 const AudioPlayer = ({ level, fileName }: { level: 'N2' | 'N3'; fileName: string }) => {
@@ -13,7 +13,14 @@ const AudioPlayer = ({ level, fileName }: { level: 'N2' | 'N3'; fileName: string
     audioRef.current?.pause();
   };
 
-  const handleAudioPress = () => {
+  const restartAudio = () => {
+    if (audioRef.current) {
+      audioRef.current.currentTime = 0;
+    }
+    playAudio();
+  };
+
+  const handleAudioPause = () => {
     if (audioRef.current?.paused) {
       playAudio();
     } else {
@@ -38,16 +45,23 @@ const AudioPlayer = ({ level, fileName }: { level: 'N2' | 'N3'; fileName: string
   }, []);
 
   return (
-    <div>
+    <HStack>
       <audio ref={audioRef} src={`/audio/ministory/${level}/${fileName}`} />
       <Button 
         variant="outline" 
         colorScheme={isPaused ? "primary" : "secondary"} 
-        onPress={handleAudioPress}
+        onPress={restartAudio}
       >
         ⏸▶︎ •၊၊||၊|။|||| |
       </Button>
-    </div>
+      <Button 
+        variant="outline" 
+        colorScheme={"primary"} 
+        onPress={handleAudioPause}
+      >
+        {isPaused ? '▶︎' : '⏸'}
+      </Button>
+    </HStack>
   );
 };
 
