@@ -13,4 +13,5 @@ declare type MiniStory = {
   rubyStory: MiniStoryDialogue[];
   rubyWords: MiniStoryWord[];
   translation: string;
+  audio: string;
 }

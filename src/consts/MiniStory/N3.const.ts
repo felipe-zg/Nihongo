@@ -1,6 +1,6 @@
 export const MINI_STORY_N3: Record<string, MiniStory> = {
-  "1.1": {
-    id: "1.1",
+  "1": {
+    id: "1",
     rubyStory: [
       {
         character: "A",
@@ -49,10 +49,11 @@ export const MINI_STORY_N3: Record<string, MiniStory> = {
         english: "fresh"
       },
     ],
-    translation: `A: I heard that you should eat fruit for breakfast, but peeling it is a hassle.\nB: Then canned food would be fine, wouldn't it?\nA: But isn't fresh fruit better?`
+    translation: `A: I heard that you should eat fruit for breakfast, but peeling it is a hassle.\nB: Then canned food would be fine, wouldn't it?\nA: But isn't fresh fruit better?`,
+    audio: "T1.mp3"
   },
-  "1.2": {
-    id: "1.2",
+  "2": {
+    id: "2",
     rubyStory: [
       {
         character: "T",
@@ -101,6 +102,7 @@ export const MINI_STORY_N3: Record<string, MiniStory> = {
         english: "fresh"
       },
     ],
-    translation: `A: I heard that you should eat fruit for breakfast, but peeling it is a hassle.\nB: Then canned food would be fine, wouldn't it?\nA: But isn't fresh fruit better?`
+    translation: `A: I heard that you should eat fruit for breakfast, but peeling it is a hassle.\nB: Then canned food would be fine, wouldn't it?\nA: But isn't fresh fruit better?`,
+    audio: "T2.mp3"
   },
 };
