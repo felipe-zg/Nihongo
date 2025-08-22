@@ -2,14 +2,19 @@ import React from "react";
 import { Box, Divider, Heading, HStack, Select, Switch, Text} from "native-base";
 import { parseRuby } from "../../utils/music/rubyParser";
 import { MINI_STORY_N3 } from "../../consts/MiniStory";
+import { AudioPlayer } from "../../components";
 
 type MiniStoryProps = {
   story: MiniStory;
   selectedStory: string;
   onStoryChange: (id: string) => void;
+  selectedLevel: 'N2' | 'N3';
+  onLevelChange: (level: 'N2' | 'N3') => void;
 }
 
-const MiniStory: React.FC<MiniStoryProps> = ({ story, selectedStory, onStoryChange }) => {
+const MiniStory: React.FC<MiniStoryProps> = ({ 
+  story, selectedStory, onStoryChange, selectedLevel, onLevelChange 
+}) => {
   const [isHidden, setIsHidden] = React.useState(true);
   const { rubyStory, rubyWords, translation } = story;
 
@@ -38,7 +43,7 @@ const MiniStory: React.FC<MiniStoryProps> = ({ story, selectedStory, onStoryChan
     return (
       <HStack>
         <Box flex={1} alignItems={"center"} justifyContent={"flex-start"} mt={1}>
-          <p style={{ fontSize: "1.3rem",  marginTop: "0.5rem", marginBottom: "0.5rem", lineHeight: "2rem"}}>{rubypart.character}:</p>
+          {rubypart.character !== "" && <p style={{ fontSize: "1.3rem",  marginTop: "0.5rem", marginBottom: "0.5rem", lineHeight: "2rem"}}>{rubypart.character}:</p>}
         </Box>
         <Box flex={11} key={index}>
           <p style={{ fontSize: "1.3rem", marginTop: "0.5rem", marginBottom: "0.5rem", lineHeight: "2rem"}} dangerouslySetInnerHTML={{ __html: formattedDialogue }}  />
@@ -80,16 +85,24 @@ const MiniStory: React.FC<MiniStoryProps> = ({ story, selectedStory, onStoryChan
       <Box m={4} borderWidth={1} borderColor="red.400" borderRadius="md" p={2}>
         {words}
       </Box>
-      <Box m={4} borderWidth={1} borderColor="cyan.400" borderRadius="md" p={2}>
-        {translation}
-      </Box>
+      
       <HStack mx={4} my={5} justifyContent={"space-between"}>
-        <Select selectedValue={selectedStory} onValueChange={(itemValue) => onStoryChange(itemValue)}>
-          <Select.Item label="-- Select a story --" value="" />
-          {Object.keys(MINI_STORY_N3).map((key) => (
-            <Select.Item key={key} label={key} value={key} />
-          ))}
-        </Select>
+        <Box width={"25%"}>
+          <Select selectedValue={selectedStory} onValueChange={(itemValue) => onStoryChange(itemValue)}>
+            <Select.Item label="-- Select a story --" value="" />
+            {Object.keys(MINI_STORY_N3).map((key) => (
+              <Select.Item key={key} label={key} value={key} />
+            ))}
+          </Select>
+        </Box>
+        <Box width={"25%"}>
+          <Select size="sm" selectedValue={selectedLevel} onValueChange={(itemValue) => onLevelChange(itemValue as 'N2' | 'N3')}>
+            <Select.Item label="-- Select a level --" value="" />
+            <Select.Item label="N2" value="N2" />
+            <Select.Item label="N3" value="N3" />
+          </Select>
+        </Box>
+        <AudioPlayer level={selectedLevel} fileName={story.audio} />
         <Box paddingLeft={5}>
           <HStack space={2}>
             <Switch
@@ -101,6 +114,11 @@ const MiniStory: React.FC<MiniStoryProps> = ({ story, selectedStory, onStoryChan
           </HStack>
         </Box>
       </HStack>
+
+      <Box m={4} borderWidth={1} borderColor="cyan.400" borderRadius="md" p={2}>
+        <Text textAlign={"justify"}>{translation}</Text>
+      </Box>
+
     </Box>
   )
 };
