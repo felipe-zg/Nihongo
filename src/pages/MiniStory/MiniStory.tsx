@@ -15,7 +15,7 @@ type MiniStoryProps = {
 const MiniStory: React.FC<MiniStoryProps> = ({ 
   story, selectedStory, onStoryChange, selectedLevel, onLevelChange 
 }) => {
-  const [isHidden, setIsHidden] = React.useState(true);
+  const [isHidden, setIsHidden] = React.useState(false);
   const { rubyStory, rubyWords, translation } = story;
 
   const storyParts = rubyStory.map((rubypart, index) => {
