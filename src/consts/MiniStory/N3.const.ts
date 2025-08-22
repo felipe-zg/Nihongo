@@ -50,7 +50,9 @@ export const MINI_STORY_N3: Record<string, MiniStory> = {
       },
     ],
     translation: `A: I heard that you should eat fruit for breakfast, but peeling it is a hassle.\nB: Then canned food would be fine, wouldn't it?\nA: But isn't fresh fruit better?`,
-    audio: "T1.mp3"
+    audio: "T1.mp3",
+    topic: MiniStoryTopic.FOOD,
+    page: 14,
   },
   "2": {
     id: "2",
@@ -103,6 +105,8 @@ export const MINI_STORY_N3: Record<string, MiniStory> = {
       },
     ],
     translation: `A: I heard that you should eat fruit for breakfast, but peeling it is a hassle.\nB: Then canned food would be fine, wouldn't it?\nA: But isn't fresh fruit better?`,
-    audio: "T2.mp3"
+    audio: "T2.mp3",
+    topic: MiniStoryTopic.FOOD,
+    page: 14,
   },
 };

@@ -30,7 +30,9 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
       },
     ],
     translation: `A: I heard that the creative cuisine restaurant by the station that we went to last week is closing.\nB: What? That restaurant was great—it had a menu for people with food allergies.\nA: Yeah. There are lots of franchise family restaurants near the station, and it's probably difficult for a smaller restaurant to compete with such large places.`,
-    audio: "T1.mp3"
+    audio: "T1.mp3",
+    topic: MiniStoryTopic.FOOD,
+    page: 14,
   },
   "2": {
     id: "2",
@@ -75,6 +77,8 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
       },
     ],
     translation: `Japanese rice varies in grain size, sweetness, and texture, depending on the variety. Small 300 gram packs are available, so it's a good idea to try different varieties. When storing rice, its important to wrap it in single portions in plastic wrap while it's still warm. After they cool, wrap them in aluminum foil and put them in the freezer to freeze them while they are still full of flavor.`,
-    audio: "T2.mp3"
+    audio: "T2.mp3",
+    topic: MiniStoryTopic.FOOD,
+    page: 14,
   },
 };
