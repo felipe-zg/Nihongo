@@ -1,32 +1,94 @@
 import React from "react";
-import { Box, Divider, Heading, Text} from "native-base";
+import { Box, Divider, Heading, HStack, Text} from "native-base";
 import { ColoredText, NewWords, Phrase } from "../../../../components";
 
 type GrammarTableProps = {
   grammarPoint: string;
-  litMeaning: string;
-  Example: React.ReactNode;
+  example: {
+    litMeaning: string;
+    Example: React.ReactNode;
+  }[];
 };
 
-function GrammarTable({ grammarPoint, litMeaning, Example }: GrammarTableProps) {
+function GrammarTable({ grammarPoint, example }: GrammarTableProps) {
   return (
-    <Box borderWidth={1} borderColor="pink.400" borderRadius={5} p={3} mb={5}>
+    <Box borderWidth={1} borderColor="pink.400" borderRadius={5} p={3} mb={4}>
       <Box borderBottomWidth={1} borderColor="pink.400" mb={2}>
         <Text fontSize="sm" mb={2} textAlign="justify">
           {grammarPoint}
         </Text>
       </Box>
-      <Phrase litMeaning={litMeaning}>
-        {Example}
-      </Phrase>
+      {example.map(({litMeaning, Example}) => (
+        <Phrase litMeaning={litMeaning}>
+          {Example}
+        </Phrase>
+      ))}
     </Box>
   );
 }
 
-function GrammarTitle({ title }: { title: string}) {
+function GrammarPoint({ title, meaning, equivalents }: { title: string, meaning: string, equivalents?: string[] }) {
   return (
-    <Box p={1} mt={5} borderWidth={1} borderRadius={5} mb={2} borderColor="pink.400" alignSelf="flex-start">
-      <ColoredText.Primary>{title}</ColoredText.Primary>
+    <Box borderWidth={1} borderRadius={5} borderColor="red.400" mb={2}>
+      <Box py={1} px={2} alignItems={"center"}>
+        <ColoredText.Primary>{title}</ColoredText.Primary>
+      </Box>
+      <Box py={1} px={2} borderTopWidth={1} borderBottomWidth={1} borderColor="red.400">
+        <Text>
+          <ColoredText.Red>
+            意味:&nbsp;
+          </ColoredText.Red>
+          <Text fontSize="sm" color="black.500">{meaning}</Text>
+        </Text>
+      </Box>
+      <Box p={1} alignSelf="flex-start">
+        <HStack alignItems="center" justifyContent="space-between" alignContent="flex-start">
+          <Box px={2}>
+            <ColoredText.Red>=</ColoredText.Red>
+          </Box>
+          <Divider orientation="vertical" thickness="1" bg="red.400" height={6} mr={2} />
+          <Box px={2}>
+            {equivalents && equivalents.length > 0 ? (
+              <ColoredText.Red>{equivalents.join(", ")}</ColoredText.Red>
+            ) : (
+              <ColoredText.Red>None</ColoredText.Red>
+            )}
+
+          </Box>
+        </HStack>
+      </Box>
+    </Box>
+  );
+}
+
+function GrammarTest({ tests }: { tests: string[] }) {
+  return (
+    <Box borderWidth={1} borderColor="primary.400" borderRadius={5} borderTopWidth={0} borderTopRadius={0} p={3} mb={5}>
+      {tests.map((test, index) => (
+        <Text key={index} fontSize="sm" mb={2} color="pink.500">
+          {test}
+        </Text>
+      ))}
+    </Box>
+  );
+}
+
+function DoubleDivider({ color = "gray.500", variant = "solid" }: { color?: string, variant?: "solid" | "dashed" }) {
+  return (
+    <Box my={5}>
+      <Box
+        borderBottomWidth={1}
+        borderBottomColor={color}
+        borderStyle={variant}
+        width="100%"
+        mb={1}
+      />
+      <Box
+        borderBottomWidth={1}
+        borderBottomColor={color}
+        borderStyle={variant}
+        width="100%"
+      />
     </Box>
   );
 }
@@ -35,6 +97,112 @@ const GrammarN2: React.FC = () => {
 
   return (
     <Box backgroundColor="gray.50" minHeight={"100vh"} px={5} py={5}>
+      <Heading size="md" mt={5} mb={2} textAlign="center" color={"pink.400"}>
+        ぎっしり
+      </Heading>
+
+      <GrammarPoint title="〜 ぎっしり 〜" meaning="ある場所に、物がたくさん入っていること、他に入れません。" equivalents={["いっぱい"]} />
+      <GrammarTable 
+        grammarPoint="To be packed, to be full, to be tightly filled"
+        example={[
+          {
+            litMeaning: "The bookshelf is packed with books",
+            Example: <>本棚に本が<ColoredText.Pink>ぎっしり</ColoredText.Pink>詰まっている。</>
+          },
+          {
+            litMeaning: "The bento box is packed with rice",
+            Example: <>お弁当箱にお米が<ColoredText.Pink>ぎっしり</ColoredText.Pink>（と）入っている。</>
+          },
+        ]}
+      />
+      <GrammarTest tests={[
+        "新しい本を入れるスペースがありません。",
+        "新しい本を入れることできない。",
+      ]} />
+
+      <NewWords words={[
+        { kanji: "本棚", kana: "ほんだな", meaning: "Bookshelf" },
+        { kanji: "詰まる", kana: "つまる", meaning: "To be packed, to be full" },
+      ]} />
+
+      <DoubleDivider color="red.400" variant="dashed" />
+      {/* ============================================ */}
+      {/* ============================================ */}
+      {/* ============================================ */}
+
+      <Heading size="md" mt={5} mb={2} textAlign="center" color={"pink.400"}>
+        ぎらぎら
+      </Heading>
+
+      <GrammarPoint title="〜 ぎらぎら 〜" meaning="光が強くてまぶしい様子。" equivalents={["きらきら"]} />
+      <GrammarTable
+        grammarPoint="To glitter, to sparkle"
+        example={[
+          {
+            litMeaning: "The sun is shining brightly",
+            Example: <>太陽が<ColoredText.Pink>ぎらぎら</ColoredText.Pink>と照っている。</>
+          },
+        ]}
+      />
+
+      <NewWords words={[
+        { kanji: "太陽", kana: "たいよう", meaning: "Sun" },
+        { kanji: "照っている", kana: "てっている", meaning: "Shining" },
+      ]} />
+
+      <Text><ColoredText.Red>ぎらぎら</ColoredText.Red> glaring, blazing, dazzling (unpleasant)</Text>
+      <Text><ColoredText.Primary>きらきら</ColoredText.Primary> glittering, sparkling, twinkling (pleasant)</Text>
+
+      <DoubleDivider color="red.400" variant="dashed" />
+      {/* ============================================ */}
+      {/* ============================================ */}
+      {/* ============================================ */}
+
+      <Heading size="md" mt={5} mb={2} textAlign="center" color={"pink.400"}>
+        びっしょり
+      </Heading>
+
+      <GrammarPoint title="〜 びっしょり 〜" meaning="水で濡れている様子。" equivalents={["びしょびしょ"]} />
+      <GrammarTable
+        grammarPoint="To be soaked, to be drenched"
+        example={[
+          {
+            litMeaning: "I got soaked in the rain",
+            Example: <>雨に濡れてしまって、服が<ColoredText.Pink>びっしょり</ColoredText.Pink>だ。</>
+          },
+        ]}
+      />
+
+      <NewWords words={[
+        { kanji: "濡れる", kana: "ぬれる", meaning: "To get wet" },
+      ]} />
+
+      <DoubleDivider color="red.400" variant="dashed" />
+      {/* ============================================ */}
+      {/* ============================================ */}
+      {/* ============================================ */}
+
+      <Heading size="md" mt={5} mb={2} textAlign="center" color={"pink.400"}>
+        じっくり
+      </Heading>
+
+      <GrammarPoint title="〜 じっくり 〜" meaning="じっくりと考える、じっくりと聞くなど、時間をかけて丁寧に行う様子。" equivalents={["しっかり"]} />
+      <GrammarTable
+        grammarPoint="To do something carefully, thoroughly, or with concentration"
+        example={[
+          {
+            litMeaning: "Warye-san listened to my story carefully",
+            Example: <>ワレヤさんは私の話を<ColoredText.Pink>じっくり</ColoredText.Pink>聞いてくれた。</>
+          },
+        ]}
+      />
+
+      <DoubleDivider color="red.400" variant="dashed" />
+      {/* ============================================ */}
+      {/* ============================================ */}
+      {/* ============================================ */}
+
+{/* 
       <Heading size="md" mt={5} mb={2} textAlign="center" color={"pink.400"}>
         〜もの
       </Heading>
@@ -64,7 +232,6 @@ const GrammarN2: React.FC = () => {
         litMeaning="Success doesn't come right away (easily)"
         Example={<>成功はすぐには訪れない<ColoredText.Pink>というものだ。</ColoredText.Pink></>}
       />
-
       <NewWords words={[
         { kanji: "成功", kana: "せいこう", meaning: "Success" },
         { kanji: "訪れる", kana: "おとずれる", meaning: "To come, to visit" },
@@ -84,7 +251,6 @@ const GrammarN2: React.FC = () => {
         litMeaning="My daughter's wedding has a special feeling to it"
         Example={<>娘の結婚式は込み上げてくる<ColoredText.Pink>ものがある。</ColoredText.Pink></>}
       />
-
       <NewWords words={[
         { kanji: "娘", kana: "むすめ", meaning: "Daughter" },
         { kanji: "込み上げる", kana: "こみあげる", meaning: "To well up, to surge up" },
@@ -103,7 +269,6 @@ const GrammarN2: React.FC = () => {
         litMeaning="If I could pass without studying, I would be sleeping right now"
         Example={<>勉強せずに合格できる<ColoredText.Pink>ものなら</ColoredText.Pink>今頃寝ているよ。</>}
       />
-
       <NewWords words={[
         { kanji: "今頃", kana: "いまごろ", meaning: "Around now" },
       ]} />
@@ -114,7 +279,6 @@ const GrammarN2: React.FC = () => {
         litMeaning="I would never eat vegetables"
         Example={<>野菜なんて食べてやる<ColoredText.Pink>ものか。</ColoredText.Pink></>}
       />
-
       <NewWords words={[
         { kanji: "なんて", kana: "なんて", meaning: "Such a thing as" },
       ]} />
@@ -125,7 +289,6 @@ const GrammarN2: React.FC = () => {
         litMeaning="I discovered what is believed to be a tiger bite mark"
         Example={<>トラが噛んだ<ColoredText.Pink>〜ものと思われる</ColoredText.Pink>痕を発見した。</>}
       />
-
       <NewWords words={[
         { kanji: "トラ", kana: "とら", meaning: "Tiger" },
         { kanji: "噛んだ", kana: "かんだ", meaning: "Bit" },
@@ -134,9 +297,9 @@ const GrammarN2: React.FC = () => {
 
     {/*      
       * 〜こと 
-    */}
+    
 
-      <Heading size="md" mt={5} mb={2} textAlign="center" color={"pink.400"}>
+    <Heading size="md" mt={5} mb={2} textAlign="center" color={"pink.400"}>
         〜こと
       </Heading>
 
@@ -146,12 +309,99 @@ const GrammarN2: React.FC = () => {
         litMeaning="Fortunately, there was no life-threatening condition"
         Example={<>幸運な<ColoredText.Pink>ことに</ColoredText.Pink>、命に別状はなかった。</>}
       />
-
       <NewWords words={[
         { kanji: "幸運", kana: "こううん", meaning: "Good luck, fortune" },
         { kanji: "命", kana: "いのち", meaning: "Life" },
         { kanji: "別状", kana: "べつじょう", meaning: "Serious condition, trouble" },
       ]} />
+
+      <GrammarTitle title="〜ことにする" />
+      <GrammarTable 
+        grammarPoint="Pretend to be, decide to do, make up your mind to do"
+        litMeaning="I'll pretend I don't have a boyfriend to participate in the group date."
+        Example={<>彼氏はいない<ColoredText.Pink>ことにして</ColoredText.Pink>合コンに参加する。</>}
+      />
+      <NewWords words={[
+        { kanji: "合コン", kana: "ごうこん", meaning: "Group date" },
+        { kanji: "参加", kana: "さんか", meaning: "To participate" },
+      ]} />
+
+      <GrammarTitle title="〜ことか" />
+      <GrammarTable 
+        grammarPoint="Express strong emotion, surprise, or admiration"
+        litMeaning="I can't believe how happy I was to receive a letter from you."
+        Example={<>君からもらった手紙はどんなに嬉しかった<ColoredText.Pink>ことか。</ColoredText.Pink></>}
+      />
+      <NewWords words={[
+        { kanji: "どんなに", kana: "どんなに", meaning: "No matter how" },
+      ]} />
+
+      <GrammarTitle title="〜ことから" />
+      <GrammarTable 
+        grammarPoint="Express a reason, cause, or origin of something (like から)"
+        litMeaning="Because Hello Kitty is popular, you can see it all over the world."
+        Example={<>ハローキティは人気である<ColoredText.Pink>ことから</ColoredText.Pink>世界中で見ることができる。</>}
+      />
+      <NewWords words={[
+        { kanji: "人気である", kana: "にんきである", meaning: "To be popular" },
+      ]} />
+
+      <GrammarTitle title="〜のことだから" />
+      <GrammarTable 
+        grammarPoint="Describe someone based on their personality or usual behavior"
+        litMeaning="Since he is a kind teacher, he probably won't get angry even if you don't do your homework."
+        Example={<>優しい先生<ColoredText.Pink>のことだから</ColoredText.Pink>宿題をしなくても怒られないだろう。</>}
+      />
+
+      <GrammarTitle title="〜ことなく" />
+      <Text fontSize="sm" textAlign="left">
+        <ColoredText.Red>Action you don't do </ColoredText.Red><ColoredText.Pink> ことなく </ColoredText.Pink><ColoredText.Primary>Action you do</ColoredText.Primary>
+      </Text>
+      <GrammarTable 
+        grammarPoint="Express an action without doing something else"
+        litMeaning="I study without taking a break to pass the JLPT exam."
+        Example={
+          <>JLPT試験に合格するために、 <ColoredText.Red>休む</ColoredText.Red>
+          <ColoredText.Pink>ことなく</ColoredText.Pink><ColoredText.Primary>勉強する。</ColoredText.Primary></>
+        }
+      />
+
+      <GrammarTitle title="〜ないことには" />
+      <GrammarTable 
+        grammarPoint="Express a condition that must be met. ( Without doing X, you can't do Y )"
+        litMeaning="You can't know if it's delicious without trying it."
+        Example={<>食べてみ<ColoredText.Pink>ないことには</ColoredText.Pink>、美味しいかはわからない。</>}
+      />
+
+      <GrammarTitle title="〜ないことはない" />
+      <GrammarTable 
+        grammarPoint="It's mot that you can't do something, but rather that you don't want to do it."
+        litMeaning="It's not that I can't eat natto, I just don't like it."
+        Example={<>納豆は食べれ<ColoredText.Pink>ないことはない</ColoredText.Pink>が、苦手である。</>}
+      />
+
+      <GrammarTitle title="〜ことは〜が" />
+      <GrammarTable 
+        grammarPoint="It's true that ~, but ~ / I can do it, but ~"
+        litMeaning="Sure I received a present, but I wasn't very happy about it."
+        Example={<>プレゼントをもらった<ColoredText.Pink>ことは</ColoredText.Pink>
+        もらった<ColoredText.Pink>が</ColoredText.Pink>、あまり嬉しくなかった。</>}
+      /> */}
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

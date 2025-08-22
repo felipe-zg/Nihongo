@@ -71,9 +71,9 @@ const VocabsJLPT: React.FC<Props> = ({ vocabList, level }) => {
     setEndIndex(value);
   };
 
-  const openPrintPage = (printKanji = false, grammar = false) => {
-    if (grammar) {
-      window.open("/printable/JLPT/exercises/grammar", "_blank")?.focus();
+  const openPrintPage = (printKanji = false, exercise?: 'grammar' | 'moji') => {
+    if (exercise) {
+      window.open(`/printable/JLPT/exercises?type=${exercise}`, "_blank")?.focus();
       return;
     }
     window.open(`/printable/JLPT/vocabs/N3?fromIndex=${startIndex}&toIndex=${endIndex}&shuffle=${spacedRepetition}&printKanji=${printKanji}`, "_blank")?.focus();
@@ -206,7 +206,10 @@ const VocabsJLPT: React.FC<Props> = ({ vocabList, level }) => {
       </HStack>
       <HStack mt={5} width="100%" px={4}>
         <Box width={120} mr={5}>
-          <Button width="full" onPress={() => openPrintPage(false, true)}>文法練習</Button>
+          <Button width="full" onPress={() => openPrintPage(false, 'grammar')}>文法練習</Button>
+        </Box>
+        <Box width={120} mr={5}>
+          <Button width="full" onPress={() => openPrintPage(false, 'moji')}>文字練習</Button>
         </Box>
       </HStack>
       <HStack mt={5} width="100%" px={4}>

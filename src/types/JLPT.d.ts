@@ -31,6 +31,7 @@ declare type TVocabJLPT = {
 declare type JLPTExercise = {
   id: number;
   content: string[];
+  moji?: string; // For moji exercises
   options: string[];
   answer: string;
   comment?: string;
