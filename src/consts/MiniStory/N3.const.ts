@@ -248,7 +248,7 @@ export const MINI_STORY_N3: Record<string, MiniStory> = {
     rubyStory: [
       {
         character: "A",
-        dialogue: " あ、その肉、早く<くっくり返{かえ}して>。。これもこれも。",
+        dialogue: " あ、その肉、早く<ひっくり返{かえ}して>。。これもこれも。",
       },
       {
         character: "B",
@@ -289,5 +289,157 @@ export const MINI_STORY_N3: Record<string, MiniStory> = {
     audio: "T6.mp3",
     topic: MiniStoryTopics.FOOD,
     page: 17,
+  },
+  "7": {
+    id: "7",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "この店のラーメンはとても味{あじ}が<濃{こ}く>、スープの<表{ひょう}面{めん}>には<油{あぶら}>が浮{う}いている。しかし、<のり>とご飯と一緒に食べるとうまい。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "濃{こ}い",
+        english: "thick, rich, strong (flavor)"
+      },
+      {
+        kanji: "薄{うす}い",
+        english: "thin, weak (flavor)"
+      },
+      {
+        kanji: "表{ひょう}面{めん}",
+        english: "surface"
+      },
+      {
+        kanji: "油{あぶら}",
+        english: "oil"
+      },
+      {
+        kanji: "サラダ油{あぶら}",
+        english: "salad oil"
+      },
+      {
+        kanji: "のり",
+        english: "seaweed"
+      },
+    ],
+    translation: `The ramen in this shop has a very strong taste, and oil floats on the surface of the soup. However, it is good to eat it with seaweed and rice.`,
+    audio: "T7.mp3",
+    topic: MiniStoryTopics.FOOD,
+    page: 18,
+  },
+  "8": {
+    id: "8",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "納{なっ}豆{とう}は<匂{にお}い>を<嫌{いや}がる>人{ひと}も多{おお}いですが、慣{な}れると<平{へい}気{き}に>なります。<ねばねばして>いますが、<腐{くさ}って>いるわけではないですよ",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "匂{にお}い／臭{にお}い",
+        english: "smell / odor"
+      },
+      {
+        kanji: "匂{にお}う／臭{にお}う",
+        english: "to smell / to stink"
+      },
+      {
+        kanji: "嫌{いや}がる",
+        english: "to dislike"
+      },
+      {
+        kanji: "平{へい}気{き}な",
+        english: "calm, unconcerned"
+      },
+      {
+        kanji: "ねばねば［する］",
+        english: "to be sticky"
+      },
+      {
+        kanji: "腐{くさ}る",
+        english: "to rot"
+      },
+    ],
+    translation: `Many people don't like the smell of natto, but once you get used to it, you'll be fine. It's sticky, but it's not rotten.`,
+    audio: "T8.mp3",
+    topic: MiniStoryTopics.FOOD,
+    page: 18,
+  },
+  "9": {
+    id: "9",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<ドレッシング>を作るのは簡単だ。オリーブ<オイル>と<酢{す}>をよく<混{ま}ぜて>、好{この}みで塩{しお}・<こしょう>を入{い}れる。これでサラダをおいしく食べられる。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "ドレッシング",
+        english: "dressing"
+      },
+      {
+        kanji: "オイル",
+        english: "oil"
+      },
+      {
+        kanji: "酢{す}",
+        english: "vinegar"
+      },
+      {
+        kanji: "混{ま}ぜる",
+        english: "to mix"
+      },
+      {
+        kanji: "混{ま}ざる",
+        english: "to be mixed"
+      },
+      {
+        kanji: "こしょう",
+        english: "pepper"
+      },
+    ],
+    translation: `Making a dressing is easy. Mix olive oil and vinegar thoroughly and add salt and pepper as you like. Now you can eat the great-tasting salad.`,
+    audio: "T9.mp3",
+    topic: MiniStoryTopics.FOOD,
+    page: 19,
+  },
+  "10": {
+    id: "10",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<腹{はら}>が痛い。<レバー>を<生{なま}>で食べたのが原{げん}因{いん}だろうか。<それとも>貝{かい}だろうか。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "腹{はら}",
+        english: "stomach"
+      },
+      {
+        kanji: "レバー",
+        english: "liver"
+      },
+      {
+        kanji: "生{なま}",
+        english: "raw"
+      },
+      {
+        kanji: "それとも",
+        english: "or"
+      },
+      {
+        kanji: "貝{かい}",
+        english: "shellfish"
+      },
+    ],
+    translation: `I have a stomachache. Is it because I ate some liver raw? Or was it the shellfish?`,
+    audio: "T10.mp3",
+    topic: MiniStoryTopics.FOOD,
+    page: 19,
   },
 };
