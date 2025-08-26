@@ -42,9 +42,11 @@ const MiniStory: React.FC<MiniStoryProps> = ({
     ).join('');
     return (
       <HStack>
-        <Box flex={1} alignItems={"center"} justifyContent={"flex-start"} mt={1}>
-          {rubypart.character !== "" && <p style={{ fontSize: "1.3rem",  marginTop: "0.5rem", marginBottom: "0.5rem", lineHeight: "2rem"}}>{rubypart.character}:</p>}
-        </Box>
+        {rubypart.character !== "" && (
+          <Box flex={1} alignItems={"center"} justifyContent={"flex-start"} mt={1}>
+            <p style={{ fontSize: "1.3rem",  marginTop: "0.5rem", marginBottom: "0.5rem", lineHeight: "2rem"}}>{rubypart.character}:</p>
+          </Box>
+        )}
         <Box flex={11} key={index}>
           <p style={{ fontSize: "1.3rem", marginTop: "0.5rem", marginBottom: "0.5rem", lineHeight: "2rem"}} dangerouslySetInnerHTML={{ __html: formattedDialogue }}  />
         </Box>
