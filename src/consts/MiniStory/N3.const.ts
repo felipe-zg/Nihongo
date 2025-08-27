@@ -442,4 +442,109 @@ export const MINI_STORY_N3: Record<string, MiniStory> = {
     topic: MiniStoryTopics.FOOD,
     page: 19,
   },
+  "11": {
+    id: "11",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "最{さい}近{きん}暑{あつ}すぎて、<食{しょく}欲{よく}>がないんだよねえ。<さっぱりした>ものが食べたい。冷{つめ}たい<そば>にしようかな。",
+      },
+      {
+        character: "B",
+        dialogue: "あ、なんか<酸{す}っぱい>ものもいいらしいよ。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "食{しょく}欲{よく}",
+        english: "appetite"
+      },
+      {
+        kanji: "さっぱり［する］",
+        english: "to be refreshing・refresh"
+      },
+      {
+        kanji: "そば",
+        english: "soba"
+      },
+      {
+        kanji: "うどん",
+        english: "udon"
+      },
+      {
+        kanji: "酸{す}っぱい",
+        english: "sour"
+      },
+    ],
+    translation: `A: It's been too hot lately, and I have no appetite. I want to eat refreshing food. Maybe I should make some cold soba.\nB: Oh, something sour is good too, I hear.`,
+    audio: "T11.mp3",
+    topic: MiniStoryTopics.FOOD,
+    page: 20,
+  },
+  "12": {
+    id: "12",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<ワイン>は温{おん}度{ど}の<管{かん}理{り}>が重{じゅう}要{よう}だ。気{き}をつけないと、すぐに<ぬるく>なってしまう。ぬるいワインはおいしくない。また、ワインを飲{の}む前{まえ}にグラスを<回{まわ}す>と、香{かお}りがよくなる。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "ワイン",
+        english: "wine"
+      },
+      {
+        kanji: "管{かん}理{り}［する］",
+        english: "management ・ to manage"
+      },
+      {
+        kanji: "ぬるい",
+        english: "lukewarm"
+      },
+      {
+        kanji: "回{まわ}す",
+        english: "to turn"
+      },
+    ],
+    translation: `With wine, it is important to control the temperature. If you're not careful, it will become lukewarm. Lukewarm wine is not delicious. Also, if you turn the glass before drinking wine, the aroma will improve.`,
+    audio: "T12.mp3",
+    topic: MiniStoryTopics.FOOD,
+    page: 20,
+  },
+  "13": {
+    id: "13",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<カップル>用{よう}の<ストロー>というものがある。<片{かた}方{ほう}>は普{ふ}通{つう}のストローだが、もう片{かた}方{ほう}は2つに分{わ}かれていて、2{ふ}人{たり}が同{どう}時{じ}に飲{の}むことができる。途{と}中{ちゅう}が<ハート>の形{かたち}になっていることもある。使{つか}ってみたいが、<人{ひと}前{まえ}>で使{つか}うのは恥{は}ずかしい。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "カップル",
+        english: "couple"
+      },
+      {
+        kanji: "ストロー",
+        english: "straw"
+      },
+      {
+        kanji: "片{かた}方{ほう}",
+        english: "one side"
+      },
+      {
+        kanji: "ハート",
+        english: "heart"
+      },
+      {
+        kanji: "人{ひと}前{まえ}",
+        english: "public"
+      },
+    ],
+    translation: `There is a straw made specifically for couples. On one end, it is a normal straw, but the other is divided into two straws, so two people can drink at the same time. The middle may be in the form of a heart. I want to try using it, but it would be embarrassing using it in front ofpeople.`,
+    audio: "T13.mp3",
+    topic: MiniStoryTopics.FOOD,
+    page: 21,
+  },
 };
