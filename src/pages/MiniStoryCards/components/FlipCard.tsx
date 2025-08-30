@@ -41,7 +41,7 @@ const FlipCard = forwardRef<FlipCardHandle, Props>(({ vocab }, ref) => {
     <div className="card-container" onClick={() => setFlipped(!flipped)}>
       <div className={`card ${flipped ? "flipped" : ""}`}>
         <div className="card-face card-front" style={{backgroundColor:"#ffbeab"}}>
-          <Text fontSize={vocab.kanji.length > 4 ? "5xl" : "7xl"}>
+          <Text fontSize={vocab.kanji.length > 12 ? "5xl" : "7xl"}>
             <Text>{formattedKanji(vocab.kanji, true)}</Text>
           </Text>
         </div>
