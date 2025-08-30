@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Divider, Heading, HStack, Select, Switch, Text} from "native-base";
+import { Box, Button, Divider, Heading, HStack, Select, Switch, Text} from "native-base";
 import { parseRuby } from "../../utils/music/rubyParser";
 import { MINI_STORY_N3 } from "../../consts/MiniStory";
 import { AudioPlayer } from "../../components";
@@ -76,6 +76,10 @@ const MiniStory: React.FC<MiniStoryProps> = ({
     )
   });
 
+  function goToCardsDeck() {
+    window.location.href = `/ministory-cards?level=${selectedLevel}`;
+  };
+
   return (
     <Box backgroundColor="gray.50">
       <Heading size="lg" mt={10} mb={5} textAlign="center" color={"pink.400"}>
@@ -125,6 +129,10 @@ const MiniStory: React.FC<MiniStoryProps> = ({
         <Text>Page: {story.page}</Text>
         <Text>Topic: {story.topic}</Text>
       </Box>
+
+      <Button mb={10} mx={4} colorScheme="red" onPress={goToCardsDeck}>
+        Cards deck
+      </Button>
 
     </Box>
   )
