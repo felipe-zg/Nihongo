@@ -46,10 +46,10 @@ const FlipCard = forwardRef<FlipCardHandle, Props>(({ vocab }, ref) => {
           </Text>
         </div>
         <div className="card-face card-back">
-          <Text fontSize="2xl">
+          <Text fontSize="7xl">
             {formattedKanji(vocab.kanji)}
           </Text>
-          <Text fontSize="2xl" fontWeight="bold">
+          <Text fontSize="3xl" fontWeight="bold">
             {vocab.english}
           </Text>
         </div>
