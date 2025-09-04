@@ -547,4 +547,148 @@ export const MINI_STORY_N3: Record<string, MiniStory> = {
     topic: MiniStoryTopics.FOOD,
     page: 21,
   },
+  "28": {
+    id: "28",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "大きくて深{ふか}い<フライパン>は、材{ざい}料{りょう}を嫌{や}くだけでなく、<ゆでたり>、<鶏{に}たり>するのにも使える。ゆでる場合には、<ふた>があるとよい。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "フライパン",
+        english: "frying pan"
+      },
+      {
+        kanji: "ゆでる",
+        english: "to boil"
+      },
+      {
+        kanji: "煮{に}る",
+        english: "cook・simmer"
+      },
+      {
+        kanji: "煮{に}える",
+        english: "to be cooked"
+      },
+      {
+        kanji: "ふた",
+        english: "lid"
+      },
+    ],
+    translation: `A large and deep frying pan can be used to not only grill ingredients, but also to boil or cook things. When boiling something, it is best to have a lid.`,
+    audio: "T28.mp3",
+    topic: MiniStoryTopics.FOOD,
+    page: 34,
+  },
+  "29": {
+    id: "29",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<湯{ゆ}のみ>や<まな板{いた}>についた汚{よご}れは、 水{みず}で<流{なが}す>だけでは、なかなか取{と}れない。1時間ほど漂{ひょう}白{はく}剤{ざい}に<浸{つ}けて>おくと、<ぴかぴか>になる。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "湯{ゆ}のみ",
+        english: "teacup"
+      },
+      {
+        kanji: "まな板{いた}",
+        english: "cutting board"
+      },
+      {
+        kanji: "汚{よご}れ",
+        english: "dirt"
+      },
+      {
+        kanji: "流{なが}す",
+        english: "to wash away・to flush"
+      },
+      {
+        kanji: "浸{つ}ける",
+        english: "to soak・immerse"
+      },
+      {
+        kanji: "ぴかぴかな",
+        english: "sparkling・shiny"
+      },
+    ],
+    translation: `Dirt stuck on things like teacups and cutting boards is not easy to wash avay with only water. If you immerse them in bleach for an hour, they'll be sparkling clean.`,
+    audio: "T29.mp3",
+    topic: MiniStoryTopics.FOOD,
+    page: 34,
+  },
+  "30": {
+    id: "30",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "使った<食{しょっ}器{き}>は、洗{あら}ってから、<シンク>の上{うえ}の<戸{と}棚{だな}>に<戻{もど}して>ください。<ポット>はまたすぐに使うので、<しまわなくて>いいです。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "食{しょっ}器{き}",
+        english: "tableware"
+      },
+      {
+        kanji: "シンク",
+        english: "sink"
+      },
+      {
+        kanji: "流{なが}し",
+        english: "sink"
+      },
+      {
+        kanji: "戸{と}棚{だな}",
+        english: "Cabinet"
+      },
+      {
+        kanji: "戻{もど}す",
+        english: "to return"
+      },
+      {
+        kanji: "ポット",
+        english: "pot"
+      },
+      {
+        kanji: "しまう",
+        english: "to put away"
+      },
+    ],
+    translation: `Wash your used tableware and return it to the cabinet on the sink. Since the pots will be used again soon, you don't have to put them away.`,
+    audio: "T30.mp3",
+    topic: MiniStoryTopics.FOOD,
+    page: 35,
+  },
+  "31": {
+    id: "31",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<ほこり>は部{へ}屋{や}の隅{すみ}にたまります。床{ゆか}をよく掃{そう}除{じ}しましょう",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "ほこり",
+        english: "dust"
+      },
+      {
+        kanji: "隅{すみ}",
+        english: "corner"
+      },
+      {
+        kanji: "床{ゆか}",
+        english: "floor"
+      },
+    ],
+    translation: ``,
+    audio: "T31.mp3",
+    topic: MiniStoryTopics.FOOD,
+    page: 35,
+  },
 };
