@@ -669,7 +669,7 @@ export const MINI_STORY_N3: Record<string, MiniStory> = {
     rubyStory: [
       {
         character: "",
-        dialogue: "<ほこり>は部{へ}屋{や}の隅{すみ}にたまります。床{ゆか}をよく掃{そう}除{じ}しましょう",
+        dialogue: "<ほこり>は部{へ}屋{や}の<隅{すみ}>にたまります。<床{ゆか}>をよく掃{そう}除{じ}しましょう",
       },
     ],
     rubyWords: [
