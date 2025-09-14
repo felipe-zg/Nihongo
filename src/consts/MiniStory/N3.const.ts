@@ -1052,162 +1052,156 @@ export const MINI_STORY_N3: Record<string, MiniStory> = {
     topic: MiniStoryTopics.HOUSE_WORK,
     page: 39,
   },
-  // "xxxx": {
-  //   id: "xxxx",
-  //   rubyStory: [
-  //     {
-  //       character: "",
-  //       dialogue: "xxx",
-  //     },
-  //   ],
-  //   rubyWords: [
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //   ],
-  //   translation: ``,
-  //   audio: "T31.mp3",
-  //   topic: MiniStoryTopics.HOUSE_WORK,
-  //   page: 100000,
-  // },
-  // "xxxx": {
-  //   id: "xxxx",
-  //   rubyStory: [
-  //     {
-  //       character: "",
-  //       dialogue: "xxx",
-  //     },
-  //   ],
-  //   rubyWords: [
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //   ],
-  //   translation: ``,
-  //   audio: "T31.mp3",
-  //   topic: MiniStoryTopics.HOUSE_WORK,
-  //   page: 100000,
-  // },
-  // "xxxx": {
-  //   id: "xxxx",
-  //   rubyStory: [
-  //     {
-  //       character: "",
-  //       dialogue: "xxx",
-  //     },
-  //   ],
-  //   rubyWords: [
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //   ],
-  //   translation: ``,
-  //   audio: "T31.mp3",
-  //   topic: MiniStoryTopics.HOUSE_WORK,
-  //   page: 100000,
-  // },
-  // "xxxx": {
-  //   id: "xxxx",
-  //   rubyStory: [
-  //     {
-  //       character: "",
-  //       dialogue: "xxx",
-  //     },
-  //   ],
-  //   rubyWords: [
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //   ],
-  //   translation: ``,
-  //   audio: "T31.mp3",
-  //   topic: MiniStoryTopics.HOUSE_WORK,
-  //   page: 100000,
-  // },
+  "40": {
+    id: "40",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<冷{ひ}やして>おいたビールを冷{れい}蔵{ぞう}庫{こ}から<取{と}り出{だ}し>、飲みながらゆっくり食{しょく}事{じ}をする。これが私の<休{きゅう}日{じつ}>の<喜び{よろこ}び>です。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "冷{ひ}やす",
+        english: "to cool",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+      {
+        kanji: "取{と}り出{だ}す",
+        english: "to take out",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+      {
+        kanji: "休{きゅう}日{び}",
+        english: "holiday",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "喜び{よろこ}び",
+        english: "joy",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `Taking out a chilled beer from the refrigerator and slowly eating a meal while drinking. This is my holiday joy.`,
+    audio: "T40.mp3",
+    topic: MiniStoryTopics.HOUSE_WORK,
+    page: 40,
+  },
+  "41": {
+    id: "41",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<コインランドリー>は、家の洗濯機には入らないような大{おお}きな<カーペット>なども洗{あら}ったり、<乾{かん}燥{そう}させたり>できるので、大{たい}変{へん}便{べん}利{り}だ。<欠{けっ}点{てん}>は、コインランドリーまで大きなカーペットを持{も}って行くのが大変だということだ。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "コインランドリー",
+        english: "coin laundromat",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "カーペット",
+        english: "carpet",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "乾{かん}燥{そう}［する］",
+        english: "Drying・To dry",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+      {
+        kanji: "欠{けっ}点{てん}",
+        english: "Disadvantage",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `Coin laundromats are very convenient because things like large carpets that can't fit in household washing machines can be washed or dried there. The disadvantage is that it's difficult to bring a large carpet all the way to the coin laundromat.`,
+    audio: "T41.mp3",
+    topic: MiniStoryTopics.HOUSE_WORK,
+    page: 40,
+  },
+  "42": {
+    id: "42",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "私の<得{とく}意{い}な>料理はステーキだ。<少{しょう}々{しょう}><適{てき}当{とう}な>味{あじ}付{つ}けでも、硬{かた}くならないように焼{や}けば、<オーケー>だ。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "得{とく}意{い}な",
+        english: "good at",
+        type: MiniStoryWordType.ADJECTIVE_NA
+      },
+      {
+        kanji: "少{しょう}々{しょう}",
+        english: "somewhat・a little",
+        type: MiniStoryWordType.ADVERB
+      },
+      {
+        kanji: "適{てき}当{とう}な",
+        english: "appropriate・Careless",
+        type: MiniStoryWordType.ADJECTIVE_NA
+      },
+      {
+        kanji: "オーケー",
+        english: "okay",
+        type: MiniStoryWordType.OTHER
+      },
+    ],
+    translation: `The dish I'm best at cooking is steak. Even with somewhat careless seasoning, it'll be okay so long as its cooked so as not to be too tough.`,
+    audio: "T42.mp3",
+    topic: MiniStoryTopics.HOUSE_WORK,
+    page: 41,
+  },
+  "43": {
+    id: "43",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "夫{おっと}の趣{しゅ}味{み}は料{りょう}理{り}だ。「料{りょう}理{り}は<化{か}学{がく}>だ」と言{い}っていて、調{ちょう}味{み}料{りょう}を<加{くわ}える><順{じゅん}番{ばん}>も気{き}にしている。<包{ほう}丁{ちょう}>の使{つか}い方{かた}もとてもうまいし、料{りょう}理{り}家{か}の<記{き}事{じ}>もいつお熱{ねっ}心{しん}に読{よ}んでいる。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "化{か}学{がく}",
+        english: "chemistry",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "加{くわ}える",
+        english: "to add",
+        type: MiniStoryWordType.ICHIDAN_TRANSITIVE
+      },
+      {
+        kanji: "加{くわ}わる",
+        english: "to be added",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE
+      },
+      {
+        kanji: "順{じゅん}番{ばん}",
+        english: "order",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "包{ほう}丁{ちょう}",
+        english: "kitchen knife",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "記{き}事{じ}",
+        english: "article",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `My husband's hobby is cooking. He says, "Cooking is chemistry", and even pays attention to the order in which seasonings are added. He's really good at using kitchen knives, and he always reads articles about cooking enthusiastically."`,
+    audio: "T43.mp3",
+    topic: MiniStoryTopics.HOUSE_WORK,
+    page: 41,
+  },
   // "xxxx": {
   //   id: "xxxx",
   //   rubyStory: [
