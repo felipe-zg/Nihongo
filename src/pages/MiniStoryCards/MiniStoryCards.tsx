@@ -11,7 +11,7 @@ type Props = {
 const MiniStoryCards: React.FC<Props> = ({ vocabList, level }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [startIndex, setStartIndex] = useState(0);
-  const [endIndex, setEndIndex] = useState(30);
+  const [endIndex, setEndIndex] = useState(vocabList.length - 1);
   const flipCardRef = useRef<FlipCardHandle>(null);
 
   const handleStartIndexChange = (value: number) => {
@@ -84,6 +84,7 @@ const MiniStoryCards: React.FC<Props> = ({ vocabList, level }) => {
   return (
     <Box alignItems="center" mt={10}>
       <Text fontSize={"xl"} bold color={"white"}>JLPT {level}</Text>
+      <Text color="pink.500">{`${currentIndex + 1}/${filteredVocabList.length}`}</Text>
       {filteredVocabList.length > 0 && (
         <FlipCard ref={flipCardRef} vocab={currentCard} />
       )}
