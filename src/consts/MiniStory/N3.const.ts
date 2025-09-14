@@ -879,162 +879,179 @@ export const MINI_STORY_N3: Record<string, MiniStory> = {
     topic: MiniStoryTopics.HOUSE_WORK,
     page: 37,
   },
-  // "xxxx": {
-  //   id: "xxxx",
-  //   rubyStory: [
-  //     {
-  //       character: "",
-  //       dialogue: "xxx",
-  //     },
-  //   ],
-  //   rubyWords: [
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //   ],
-  //   translation: ``,
-  //   audio: "T31.mp3",
-  //   topic: MiniStoryTopics.HOUSE_WORK,
-  //   page: 100000,
-  // },
-  // "xxxx": {
-  //   id: "xxxx",
-  //   rubyStory: [
-  //     {
-  //       character: "",
-  //       dialogue: "xxx",
-  //     },
-  //   ],
-  //   rubyWords: [
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //   ],
-  //   translation: ``,
-  //   audio: "T31.mp3",
-  //   topic: MiniStoryTopics.HOUSE_WORK,
-  //   page: 100000,
-  // },
-  // "xxxx": {
-  //   id: "xxxx",
-  //   rubyStory: [
-  //     {
-  //       character: "",
-  //       dialogue: "xxx",
-  //     },
-  //   ],
-  //   rubyWords: [
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //   ],
-  //   translation: ``,
-  //   audio: "T31.mp3",
-  //   topic: MiniStoryTopics.HOUSE_WORK,
-  //   page: 100000,
-  // },
-  // "xxxx": {
-  //   id: "xxxx",
-  //   rubyStory: [
-  //     {
-  //       character: "",
-  //       dialogue: "xxx",
-  //     },
-  //   ],
-  //   rubyWords: [
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //   ],
-  //   translation: ``,
-  //   audio: "T31.mp3",
-  //   topic: MiniStoryTopics.HOUSE_WORK,
-  //   page: 100000,
-  // },
+  "36": {
+    id: "36",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "古{ふる}くなった<タオル>は<雑{ぞう}巾{きん}>にします。タオルをミシンで<縫{ぬ}って>もいいし、<針{はり}>と糸{いと}を使って自分で縫{ぬ}ってもいいです。雑{ぞう}巾{きん}は、床{ゆか}を<拭{ふ}く>ときなどに使うことができます。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "タオル",
+        english: "towel",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "雑{ぞう}巾{きん}",
+        english: "dishcloth",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "縫{ぬ}う",
+        english: "to sew",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+      {
+        kanji: "針{はり}",
+        english: "needle",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "拭{ふ}く",
+        english: "to wipe",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+    ],
+    translation: `I use old towels as rags. You can sew the towels with a sewing machine, or you can sew them by yourself using a needle and thread. These rags can be used to wipe the floor.`,
+    audio: "T36.mp3",
+    topic: MiniStoryTopics.HOUSE_WORK,
+    page: 38,
+  },
+  "37": {
+    id: "37",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "仕事が忙しくて、<不{ふ}規{き}則{そく}な>生{せい}活{かつ}が続{つづ}いた、食{しょく}事{じ}は<インスタント食{しょく}品{ひん}>ばかりで、部{っへ}屋{や}も<散{ち}らかった>ままだ。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "不{ふ}規{き}則{そく}な",
+        english: "irregular",
+        type: MiniStoryWordType.ADJECTIVE_NA
+      },
+      {
+        kanji: "インスタント食{しょく}品{ひん}",
+        english: "instant food",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "散{ち}らかる",
+        english: "to be scattered",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE
+      },
+      {
+        kanji: "散{ち}らかす",
+        english: "to scatter",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+    ],
+    translation: ``,
+    audio: "T37.mp3",
+    topic: MiniStoryTopics.HOUSE_WORK,
+    page: 38,
+  },
+  "38": {
+    id: "38",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "みそ汁{しろ}の作{つく}り方{かた}は簡{かん}単{たん}です。だしを取{と}って、<材{ざい}料{りょう}>を入{い}れて煮{に}ます。最{さい}後{ご}に<おたま>でみそを<溶{と}いたら><でき上{あ}がり>です。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "材{ざい}料{りょう}",
+        english: "ingredients・materials",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "おたま",
+        english: "ladle",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "溶く",
+        english: "to melt・to dissolve",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+      {
+        kanji: "でき上{あ}がり",
+        english: "finished・completed",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "でき上{あ}がる",
+        english: "to be finished・to be completed",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE
+      },
+    ],
+    translation: `Making miso soup is easy. Take the stock, add the ingredients and then cook it. Lastly, dissolve the miso using a ladle, and it's finished.`,
+    audio: "T38.mp3",
+    topic: MiniStoryTopics.HOUSE_WORK,
+    page: 39,
+  },
+  "39": {
+    id: "39",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "少{すこ}し体{からだ}が<だるい>から、今からちょっと<昼{ひる}寝{ね}>するよ。",
+      },
+      {
+        character: "B",
+        dialogue: "アルバイトはどうするの？",
+      },
+      {
+        character: "A",
+        dialogue: "それは行くから、3時に起{お}こしてくれない？",
+      },
+      {
+        character: "B",
+        dialogue: "分かった。",
+      },
+      {
+        character: "A",
+        dialogue: "<ちゃんと>起こしてね。",
+      },
+      {
+        character: "",
+        dialogue: "xxx",
+      },
+      {
+        character: "",
+        dialogue: "xxx",
+      },
+      {
+        character: "",
+        dialogue: "xxx",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "だるい",
+        english: "sluggish",
+        type: MiniStoryWordType.ADJECTIVE_I
+      },
+      {
+        kanji: "昼{ひる}寝{ね}［する］",
+        english: "to take a nap",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+      {
+        kanji: "ちゃんと",
+        english: "properly",
+        type: MiniStoryWordType.ADVERB
+      },
+    ],
+    translation: `A: I'm feeling a little sluggish, so I'm going to take a short nap now.\nB: What are you going to do about your part-time job?\nA: I'll be going, so could you wake me up at 3 o'clock?\nB: Okay.\nA: Be sure to wake me up properly.`,
+    audio: "T39.mp3",
+    topic: MiniStoryTopics.HOUSE_WORK,
+    page: 39,
+  },
   // "xxxx": {
   //   id: "xxxx",
   //   rubyStory: [
