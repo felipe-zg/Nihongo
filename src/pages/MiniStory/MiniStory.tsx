@@ -16,6 +16,7 @@ const MiniStory: React.FC<MiniStoryProps> = ({
   story, selectedStory, onStoryChange, selectedLevel, onLevelChange 
 }) => {
   const [isHidden, setIsHidden] = React.useState(false);
+  const [isLargeLetter, setIsLargeLetter] = React.useState(false);
   const { rubyStory, rubyWords, translation } = story;
 
   const storyParts = rubyStory.map((rubypart, index) => {
@@ -40,15 +41,16 @@ const MiniStory: React.FC<MiniStoryProps> = ({
           </span>`;
     }
     ).join('');
+    const fontSize = isLargeLetter ? '2rem' : '1.3rem';
     return (
       <HStack>
         {rubypart.character !== "" && (
           <Box flex={1} alignItems={"center"} justifyContent={"flex-start"} mt={1}>
-            <p style={{ fontSize: "1.3rem",  marginTop: "0.5rem", marginBottom: "0.5rem", lineHeight: "2rem"}}>{rubypart.character}:</p>
+            <p style={{ fontSize: fontSize,  marginTop: "0.5rem", marginBottom: "0.5rem", lineHeight: "2rem"}}>{rubypart.character}:</p>
           </Box>
         )}
         <Box flex={11} key={index}>
-          <p style={{ fontSize: "1.3rem", marginTop: "0.5rem", marginBottom: "0.5rem", lineHeight: "2rem"}} dangerouslySetInnerHTML={{ __html: formattedDialogue }}  />
+          <p style={{ fontSize: fontSize, marginTop: "0.5rem", marginBottom: "0.5rem", lineHeight: "2rem"}} dangerouslySetInnerHTML={{ __html: formattedDialogue }}  />
         </Box>
       </HStack>
     )
@@ -67,8 +69,11 @@ const MiniStory: React.FC<MiniStoryProps> = ({
           <Box flex={1}>
             <p dangerouslySetInnerHTML={{ __html: formattedWords }} />
           </Box>
-          <Box  flex={2} justifyContent={"center"}>
+          <Box  flex={4} justifyContent={"center"}>
             <p style={{ color: isHidden ? "white" : "red" }}>{rubypart.english}</p>
+          </Box>
+          <Box  flex={1} justifyContent={"center"}>
+            <p style={{ color: "#3b3b3b"}}>{rubypart.type}</p>
           </Box>
         </HStack>
         <Divider />
@@ -85,6 +90,16 @@ const MiniStory: React.FC<MiniStoryProps> = ({
       <Heading size="lg" mt={10} mb={5} textAlign="center" color={"pink.400"}>
         ミニストーリー
       </Heading>
+      <Box paddingLeft={5}>
+        <HStack space={2}>
+          <Switch
+            onValueChange={(val) => setIsLargeLetter(val)}
+            colorScheme="red"
+            isChecked={isLargeLetter}
+          />
+          <Text color="red.500">Large letters</Text>
+        </HStack>
+      </Box>
       <Box m={4} borderWidth={1} borderColor="red.400" borderRadius="md" p={2}>
         {storyParts}
       </Box>
