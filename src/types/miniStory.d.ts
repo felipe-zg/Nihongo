@@ -1,6 +1,7 @@
 declare type MiniStoryWord = {
   kanji: string;
   english: string;
+  type?: MiniStoryWordType | MiniStoryWordType[];
 }
 
 declare type MiniStoryDialogue = {

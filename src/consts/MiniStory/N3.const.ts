@@ -3,6 +3,23 @@ const MiniStoryTopics = {
   HOUSE_WORK: '家事',
 } as const;
 
+// type MiniStoryTopic = typeof MiniStoryTopics[keyof typeof MiniStoryTopics];
+
+const MiniStoryWordType = {
+  GODAN_INTRANSITIVE: '動1自',
+  ICHIDAN_INTRANSITIVE: '動2自',
+  IRREGULAR_INTRANSITIVE: '動3自',
+  GODAN_TRANSITIVE: '動1他',
+  ICHIDAN_TRANSITIVE: '動2他',
+  IRREGULAR_TRANSITIVE: '動3他',
+  ADJECTIVE_NA: 'ナ形',
+  ADJECTIVE_I: 'イ形',
+  ADVERB: '副',
+  NOUN: '名',
+  EXPRESSION: '表現',
+  OTHER: 'その他',
+} as const;
+
 export const MINI_STORY_N3: Record<string, MiniStory> = {
   "1": {
     id: "1",
@@ -691,4 +708,565 @@ export const MINI_STORY_N3: Record<string, MiniStory> = {
     topic: MiniStoryTopics.FOOD,
     page: 35,
   },
+  "32": {
+    id: "32",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<一{ひ}人{とり}暮{ぐ}らし>を始めたばかりなので、家の中はまだ全{ぜん}然{ぜん}<片{かた}付{づ}いて>いない。早{はや}く必{ひつ}要{よう}な<家{か}具{ぐ}>を揃{そろ}えて、<家{か}事{じ}>にも慣{な}れたいと思う。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "一{ひ}人{とり}暮{ぐ}らし",
+        english: "living alone",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "片{かた}付{づ}く",
+        english: "to tidy up",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE
+      },
+      {
+        kanji: "家{か}具{ぐ}",
+        english: "furniture",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "家{か}事{じ}",
+        english: "housework",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `Since I just started living alone, I haven't cleaned up my home at all yet. I want to hurry up and get all the furniture I need and get used to doing housework.`,
+    audio: "T32.mp3",
+    topic: MiniStoryTopics.HOUSE_WORK,
+    page: 36,
+  },
+  "33": {
+    id: "33",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "忙{いそが}しそうだから、何{なに}か手{て}伝{つだ}おうか？",
+      },
+      {
+        character: "B",
+        dialogue: "ありがとう。じゃあ、部{へ}屋{や}の<後{あと}片{かた}付{づ}け>をしてくれない？",
+      },
+      {
+        character: "A",
+        dialogue: "うん、子どもが<出{だ}した>おもちゃを片{かた}付{づ}けるよ。",
+      },
+      {
+        character: "B",
+        dialogue: "その後{あと}、玄{げん}関{かん}を<掃{は}いて>くれたらうれしいな。",
+      },
+      {
+        character: "A",
+        dialogue: "わかった。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "手{て}伝{つだ}う",
+        english: "to help",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+      {
+        kanji: "後{あと}片{かた}付{づ}け［する］",
+        english: "cleaning up after・Clean up after",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.ICHIDAN_INTRANSITIVE ]
+      },
+      {
+        kanji: "出{だ}す",
+        english: "to put out",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+      {
+        kanji: "掃{は}く",
+        english: "to sweep",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+    ],
+    translation: `A: You look busy, so is there anything I can do to help?\nB: Thank you. Then, can you clean up this room after we're done?\nA: Yeah, I'll clean up the toys our kid took out.\nB: Also, I'd appreciate it if you could sweep the entrance.\nA: Okay.`,
+    audio: "T33.mp3",
+    topic: MiniStoryTopics.HOUSE_WORK,
+    page: 36,
+  },
+  "34": {
+    id: "34",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "私の趣{しゅ}味{み}は洗{せん}濯{たく}です。<洗{せん}濯{たく}物{もの}>を<干{ほ}す>ときは、、濃{こ}い色{いろ}の服{ふく}は<裏{うら}返{がえ}して>干{ほ}すと色{いろ}が落{お}ちません。<乾{かわ}いた>洗濯物は、日{ひ}が暮{く}れるまでに取{と}り込{こ}みましょう。太{たい}陽{よう}の匂{に}いのする洗濯物を<畳{たた}む>のは幸{しあわ}せです。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "洗{せん}濯{たく}物{もの}",
+        english: "laundry",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "干{ほ}す",
+        english: "to dry",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+      {
+        kanji: "裏{うら}返{がえ}す",
+        english: "to turn inside out・to turn over",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+      {
+        kanji: "乾{かわ}く",
+        english: "to be dried",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE
+      },
+      {
+        kanji: "乾{かわ}かす",
+        english: "to dry (clothes)",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+      {
+        kanji: "畳{たた}む",
+        english: "to fold",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+    ],
+    translation: `My hobby is doing laundry. When hanging out the laundry to dry, I turn my dark-colored clothes inside-out so the colors don't run. Be sure to take in dry laundry by the time the sun goes down. Folding laundry that smells the sun makes mne happy.`,
+    audio: "T34.mp3",
+    topic: MiniStoryTopics.HOUSE_WORK,
+    page: 37,
+  },
+  "35": {
+    id: "35",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<掃{そう}除{じ}用{よう}具{ぐ}>は<まとめて><洗{せん}面{めん}所{じょ}>に置{お}いてあります。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "掃{そう}除{じ}用{よう}具{ぐ}",
+        english: "cleaning supplies",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "用{よう}具{ぐ}",
+        english: "Equipment・Tool",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "まとめる",
+        english: "to put together・to summarize",
+        type: MiniStoryWordType.ICHIDAN_TRANSITIVE
+      },
+      {
+        kanji: "まとまる",
+        english: "to be put together・to be summarized",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE
+      },
+      {
+        kanji: "洗{せん}面{めん}所{じょ}",
+        english: "washroom",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `Cleaning equipment is all stored together in the washroom`,
+    audio: "T35.mp3",
+    topic: MiniStoryTopics.HOUSE_WORK,
+    page: 37,
+  },
+  // "xxxx": {
+  //   id: "xxxx",
+  //   rubyStory: [
+  //     {
+  //       character: "",
+  //       dialogue: "xxx",
+  //     },
+  //   ],
+  //   rubyWords: [
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //   ],
+  //   translation: ``,
+  //   audio: "T31.mp3",
+  //   topic: MiniStoryTopics.HOUSE_WORK,
+  //   page: 100000,
+  // },
+  // "xxxx": {
+  //   id: "xxxx",
+  //   rubyStory: [
+  //     {
+  //       character: "",
+  //       dialogue: "xxx",
+  //     },
+  //   ],
+  //   rubyWords: [
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //   ],
+  //   translation: ``,
+  //   audio: "T31.mp3",
+  //   topic: MiniStoryTopics.HOUSE_WORK,
+  //   page: 100000,
+  // },
+  // "xxxx": {
+  //   id: "xxxx",
+  //   rubyStory: [
+  //     {
+  //       character: "",
+  //       dialogue: "xxx",
+  //     },
+  //   ],
+  //   rubyWords: [
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //   ],
+  //   translation: ``,
+  //   audio: "T31.mp3",
+  //   topic: MiniStoryTopics.HOUSE_WORK,
+  //   page: 100000,
+  // },
+  // "xxxx": {
+  //   id: "xxxx",
+  //   rubyStory: [
+  //     {
+  //       character: "",
+  //       dialogue: "xxx",
+  //     },
+  //   ],
+  //   rubyWords: [
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //   ],
+  //   translation: ``,
+  //   audio: "T31.mp3",
+  //   topic: MiniStoryTopics.HOUSE_WORK,
+  //   page: 100000,
+  // },
+  // "xxxx": {
+  //   id: "xxxx",
+  //   rubyStory: [
+  //     {
+  //       character: "",
+  //       dialogue: "xxx",
+  //     },
+  //   ],
+  //   rubyWords: [
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //   ],
+  //   translation: ``,
+  //   audio: "T31.mp3",
+  //   topic: MiniStoryTopics.HOUSE_WORK,
+  //   page: 100000,
+  // },
+  // "xxxx": {
+  //   id: "xxxx",
+  //   rubyStory: [
+  //     {
+  //       character: "",
+  //       dialogue: "xxx",
+  //     },
+  //   ],
+  //   rubyWords: [
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //   ],
+  //   translation: ``,
+  //   audio: "T31.mp3",
+  //   topic: MiniStoryTopics.HOUSE_WORK,
+  //   page: 100000,
+  // },
+  // "xxxx": {
+  //   id: "xxxx",
+  //   rubyStory: [
+  //     {
+  //       character: "",
+  //       dialogue: "xxx",
+  //     },
+  //   ],
+  //   rubyWords: [
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //   ],
+  //   translation: ``,
+  //   audio: "T31.mp3",
+  //   topic: MiniStoryTopics.HOUSE_WORK,
+  //   page: 100000,
+  // },
+  // "xxxx": {
+  //   id: "xxxx",
+  //   rubyStory: [
+  //     {
+  //       character: "",
+  //       dialogue: "xxx",
+  //     },
+  //   ],
+  //   rubyWords: [
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //   ],
+  //   translation: ``,
+  //   audio: "T31.mp3",
+  //   topic: MiniStoryTopics.HOUSE_WORK,
+  //   page: 100000,
+  // },
+  // "xxxx": {
+  //   id: "xxxx",
+  //   rubyStory: [
+  //     {
+  //       character: "",
+  //       dialogue: "xxx",
+  //     },
+  //   ],
+  //   rubyWords: [
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //   ],
+  //   translation: ``,
+  //   audio: "T31.mp3",
+  //   topic: MiniStoryTopics.HOUSE_WORK,
+  //   page: 100000,
+  // },
+  // "xxxx": {
+  //   id: "xxxx",
+  //   rubyStory: [
+  //     {
+  //       character: "",
+  //       dialogue: "xxx",
+  //     },
+  //   ],
+  //   rubyWords: [
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //   ],
+  //   translation: ``,
+  //   audio: "T31.mp3",
+  //   topic: MiniStoryTopics.HOUSE_WORK,
+  //   page: 100000,
+  // },
 };
