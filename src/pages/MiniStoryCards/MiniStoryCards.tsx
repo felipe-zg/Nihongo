@@ -28,46 +28,21 @@ const MiniStoryCards: React.FC<Props> = ({ vocabList, level }) => {
     setEndIndex(value);
   };
 
-  const filteredVocabList = useMemo(() => {
+  let filteredVocabList = useMemo(() => {
     if (startIndex === 0 && endIndex === 0) return vocabList;
     return vocabList.slice(startIndex, endIndex + 1);
   }, [vocabList, startIndex, endIndex]);
 
-  // const updateCardsCounter = () => {
-  //   if (quantitySeen < filteredVocabList.length) {
-  //     setQuantitySeen((prev) => prev + 1);
-  //   } else {
-  //     setQuantitySeen(1);
-  //   }
-  // };
-
-  // const getNextIndex = () => {
-  //   updateCardsCounter();
-  //   if (spacedRepetition) {
-  //     return getWeightedIndex(filteredVocabList, scores);
-  //   } else {
-  //     return (currentIndex + 1) % filteredVocabList.length;
-  //   }
-  // };
-
-  // const handleNext = () => {
-  //   if (!flipCardRef.current?.isFlipped()) {
-  //     flipCardRef.current?.flip();
-  //     return;
-  //   } else {
-  //     flipCardRef.current?.unflip();
-  //   }
-  //   setTimeout(() => {
-  //     setCurrentIndex(getNextIndex());
-  //   }, 200);
-  // };
-
-
-  // useEffect(() => {
-  //   if (filteredVocabList.length === 0) return;
-  // }, []);
-
   const currentCard = filteredVocabList[currentIndex];
+
+  function shuffleCards() {
+    for (let i = filteredVocabList.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [filteredVocabList[i], filteredVocabList[j]] = [filteredVocabList[j], filteredVocabList[i]];
+    }
+    setCurrentIndex(0);
+    flipCardRef.current?.unflip();
+  }
 
   function handleNext() {
     if (!flipCardRef.current?.isFlipped()) {
@@ -121,6 +96,7 @@ const MiniStoryCards: React.FC<Props> = ({ vocabList, level }) => {
             ))}
           </Select>
         </Box>
+        <button onClick={shuffleCards}>⇄</button>
       </HStack>
     </Box>
   );
