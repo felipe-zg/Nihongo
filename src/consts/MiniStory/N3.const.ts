@@ -17,6 +17,8 @@ const MiniStoryWordType = {
   ADVERB: '副',
   NOUN: '名',
   EXPRESSION: '表現',
+  SUFFIX: '接尾',
+  CLAUSE: '句',
   OTHER: 'その他',
 } as const;
 
@@ -1223,7 +1225,7 @@ export const MINI_STORY_N3: Record<string, MiniStory> = {
       },
       {
         kanji: "担{たん}当{とう}［する］",
-        english: "to be in charge of",
+        english: "being in charge of・to be in charge of",
         type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE]
       },
       {
@@ -1332,123 +1334,142 @@ export const MINI_STORY_N3: Record<string, MiniStory> = {
     topic: MiniStoryTopics.HOUSE_WORK,
     page: 43,
   },
-  // "xxxx": {
-  //   id: "xxxx",
-  //   rubyStory: [
-  //     {
-  //       character: "",
-  //       dialogue: "xxx",
-  //     },
-  //   ],
-  //   rubyWords: [
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //   ],
-  //   translation: ``,
-  //   audio: "T31.mp3",
-  //   topic: MiniStoryTopics.HOUSE_WORK,
-  //   page: 100000,
-  // },
-  // "xxxx": {
-  //   id: "xxxx",
-  //   rubyStory: [
-  //     {
-  //       character: "",
-  //       dialogue: "xxx",
-  //     },
-  //   ],
-  //   rubyWords: [
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //   ],
-  //   translation: ``,
-  //   audio: "T31.mp3",
-  //   topic: MiniStoryTopics.HOUSE_WORK,
-  //   page: 100000,
-  // },
-  // "xxxx": {
-  //   id: "xxxx",
-  //   rubyStory: [
-  //     {
-  //       character: "",
-  //       dialogue: "xxx",
-  //     },
-  //   ],
-  //   rubyWords: [
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //   ],
-  //   translation: ``,
-  //   audio: "T31.mp3",
-  //   topic: MiniStoryTopics.HOUSE_WORK,
-  //   page: 100000,
-  // },
+  "47": {
+    id: "47",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: " 日{に}本{ほん}<製{せい}>の<炊{すい}飯{はん}器{き}>って海{かい}外{がい}でも人{にん}気{き}があるらしいね。",
+      },
+      {
+        character: "B",
+        dialogue: "お米{こめ}がおいしく炊{た}けるからね。それに、料理もできるんだよ。材料{ざいりょう}を入れてボタンを押{お}すだけで、<自{じ}動{どう}>でできる。",
+      },
+      {
+        character: "A",
+        dialogue: "へー、そうなんだ。",
+      },
+      {
+        character: "B",
+        dialogue: "忙しい<主{しゅ}婦{ふ}>には助{たす}かるよね。海外の人に何か<贈{おく}る>なら炊{すい}飯{はん}器{き}だね！",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "～製{}せい}",
+        english: "made in ~",
+        type: MiniStoryWordType.SUFFIX
+      },
+      {
+        kanji: "炊{すい}飯{はん}器{き}",
+        english: "rice cooker",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "自{じ}動{どう}",
+        english: "automatic",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "自{じ}動{どう}的{てき}な",
+        english: "automatic",
+        type: MiniStoryWordType.ADJECTIVE_NA
+      },
+      {
+        kanji: "主{しゅ}婦{ふ}",
+        english: "housewife",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "主{しゅ}夫{ふ}",
+        english: "househusband",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "贈{おく}る",
+        english: "to give (as a gift)",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+      {
+        kanji: "贈{おく}り物{もの}",
+        english: "gift",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `A: Japanese rice cookers seems to be popular overseas.\nB: That's because you can cook delicious rice. Besides, you can cook with them too. You just put the ingredients and press the button and it does it automatically.\nA: Wow, really?\nB: It's a big help for busy housewives. If you want to give a gift to someone overseas, make it a rice cooker.`,
+    audio: "T47.mp3",
+    topic: MiniStoryTopics.HOUSE_WORK,
+    page: 44,
+  },
+  "48": {
+    id: "48",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "ワイシャツを<インク>で<汚{よご}して>しまったので、<慌{あわ}てて><洗{せん}剤{ざい}>をつけて洗{あら}った。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "インク",
+        english: "ink",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "汚{よご}す",
+        english: "to stain・to make dirty",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+      {
+        kanji: "慌{あわ}てる",
+        english: "to panic",
+        type: MiniStoryWordType.ICHIDAN_INTRANSITIVE
+      },
+      {
+        kanji: "洗{せん}剤{ざい}",
+        english: "detergent",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `I got ink on my dress shirt, so I hurriedly rubbed detergent on it and washed i`,
+    audio: "T48.mp3",
+    topic: MiniStoryTopics.HOUSE_WORK,
+    page: 45,
+  },
+  "49": {
+    id: "49",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "昨目、息子が学校でけがをしてしまって、先生が家まで連れて帰ってきてくださったんです。だから、「ぜひ<お上{あ}がりください>」って言ったんだけど「<お構{かま}いなく>」って遠{えん}慮{りょ}されてしまって。",
+      },
+      {
+        character: "B",
+        dialogue: "今{いま}は、装生は生{せい}徒{と}の家{いえ}にほとんど入{はい}らないよね。それに<賛{さん}成{せい}する>人も反{はん}対{たい}する人もいるけどね。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "お上{あ}がりください",
+        english: "Please come in.",
+        type: MiniStoryWordType.CLAUSE
+      },
+      {
+        kanji: "お構{かま}いなく",
+        english: "Please don't worry about me.",
+        type: MiniStoryWordType.CLAUSE
+      },
+      {
+        kanji: "賛{さん}成{せい}［する］",
+        english: "agreement・to agree",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE]
+      },
+    ],
+    translation: `A: Yesterday, my son was injured at school, and his teacher brought him back to our house. So I said, "Please come inside, but the teacher refused, saying, "Please don't worry about me"\nB: Nowadays, teachers rarely enter to students homes. Some people agree with this, and some people don't.`,
+    audio: "T49.mp3",
+    topic: MiniStoryTopics.HOUSE_WORK,
+    page: 45,
+  },
   // "xxxx": {
   //   id: "xxxx",
   //   rubyStory: [
