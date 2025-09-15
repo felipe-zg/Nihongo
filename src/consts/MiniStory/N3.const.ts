@@ -19,6 +19,7 @@ const MiniStoryWordType = {
   EXPRESSION: '表現',
   SUFFIX: '接尾',
   CLAUSE: '句',
+  CONNECTION: '接続',
   OTHER: 'その他',
 } as const;
 
@@ -1470,162 +1471,206 @@ export const MINI_STORY_N3: Record<string, MiniStory> = {
     topic: MiniStoryTopics.HOUSE_WORK,
     page: 45,
   },
-  // "xxxx": {
-  //   id: "xxxx",
-  //   rubyStory: [
-  //     {
-  //       character: "",
-  //       dialogue: "xxx",
-  //     },
-  //   ],
-  //   rubyWords: [
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //   ],
-  //   translation: ``,
-  //   audio: "T31.mp3",
-  //   topic: MiniStoryTopics.HOUSE_WORK,
-  //   page: 100000,
-  // },
-  // "xxxx": {
-  //   id: "xxxx",
-  //   rubyStory: [
-  //     {
-  //       character: "",
-  //       dialogue: "xxx",
-  //     },
-  //   ],
-  //   rubyWords: [
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //   ],
-  //   translation: ``,
-  //   audio: "T31.mp3",
-  //   topic: MiniStoryTopics.HOUSE_WORK,
-  //   page: 100000,
-  // },
-  // "xxxx": {
-  //   id: "xxxx",
-  //   rubyStory: [
-  //     {
-  //       character: "",
-  //       dialogue: "xxx",
-  //     },
-  //   ],
-  //   rubyWords: [
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //   ],
-  //   translation: ``,
-  //   audio: "T31.mp3",
-  //   topic: MiniStoryTopics.HOUSE_WORK,
-  //   page: 100000,
-  // },
-  // "xxxx": {
-  //   id: "xxxx",
-  //   rubyStory: [
-  //     {
-  //       character: "",
-  //       dialogue: "xxx",
-  //     },
-  //   ],
-  //   rubyWords: [
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //   ],
-  //   translation: ``,
-  //   audio: "T31.mp3",
-  //   topic: MiniStoryTopics.HOUSE_WORK,
-  //   page: 100000,
-  // },
+  "50": {
+    id: "50",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<おととい>飲んだワインの<瓶{びん}>がとてもきれいだったので、<内{うち}側{がわ}>をきれいに洗{あら}って、花{か}瓶{びん}として使うことにした。下{した}にきれいなレースを<敷{し}く>と、とてもいい雰{ふん}囲{い}気{き}になった。我{わ}が家{や}は<年{ねん}中{じゅう}>花{はな}を生{い}けているため、花{か}瓶{びん}がたくさん必{ひつ}要{よう}だ。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "おととい",
+        english: "the day before yesterday",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.ADVERB ]
+      },
+      {
+        kanji: "瓶{びん}",
+        english: "bottle",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "内{うち}側{がわ}",
+        english: "inside",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "外{そと}側{がわ}",
+        english: "outside",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "敷{し}く",
+        english: "to lay (something) down",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+      {
+        kanji: "年{ねん}中{じゅう}",
+        english: "year-round",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `The bottle of the wine I drank the day before yesterday was very beautiful, so I washed the inside clean and used it as a vase. I laid a beautiful lace cloth below it and it really improved the atmosphere. Because my house is full of flowers year-round, I need a lot of vases.`,
+    audio: "T50.mp3",
+    topic: MiniStoryTopics.HOUSE_WORK,
+    page: 46,
+  },
+  "51": {
+    id: "51",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "野{や}菜{さい}炒{いた}めを作るコツは、火{ひ}が通{とお}りにくい材{ざい}料{りょう}だけ中{ちゅう}火{び}で炒{いた}め、少{すこ}しやわらかくなったら火{ひ}を<弱{よわ}め>、他{ほか}の野{や}菜{さい}を足{た}して、<そのまま>弱{よわ}火{び}で炒{いた}めることだ。<すると>、しゃきっとした野{や}菜{さい}炒{いた}めができるはずだ。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "〜炒{いた}め",
+        english: "stir-fry・fried",
+        type: MiniStoryWordType.SUFFIX
+      },
+      {
+        kanji: "炒{いた}める",
+        english: "to stir-fry",
+        type: MiniStoryWordType.ICHIDAN_TRANSITIVE
+      },
+      {
+        kanji: "弱{よわ}める",
+        english: "to weaken",
+        type: MiniStoryWordType.ICHIDAN_TRANSITIVE
+      },
+      {
+        kanji: "弱{よわ}まる",
+        english: "to weaken",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE
+      },
+      {
+        kanji: "そのまま",
+        english: "as it is",
+        type: MiniStoryWordType.ADVERB
+      },
+      {
+        kanji: "すると",
+        english: "and so・then",
+        type: MiniStoryWordType.CONNECTION
+      },
+    ],
+    translation: `The trick to making stir-fried vegetables is using medium heat for hard-to-cook ingredients and swiching to low heat once they sofien a little, then adding other vegetables, and continuing to cook it on low heat. Then, you should be able to make crispy stir-fried vegetables.`,
+    audio: "T51.mp3",
+    topic: MiniStoryTopics.HOUSE_WORK,
+    page: 46,
+  },
+  "52": {
+    id: "52",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "＜母{はは}親{おや}から子{こ}どもへのメモ書{が}き＞ 昨日の夕{ゆう}ご飯{はん}の<残{のこ}り>が<紺{こん}色{いろ}>のお皿{さら}に入{はい}っているから、それをお昼{ひる}に食{た}べてね。<レンジ>で1分ほど<温{あたた}めて>ください。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "残り{のこ}り",
+        english: "leftovers・remaining",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "紺{こん}色{いろ}",
+        english: "indigo・Deep blue",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "（電{でん}子{し}）レンジ",
+        english: "microwave",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "温{あたた}める",
+        english: "to warm (something) up",
+        type: MiniStoryWordType.ICHIDAN_TRANSITIVE
+      },
+      {
+        kanji: "温まる",
+        english: "to warm (up)",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE
+      },
+    ],
+    translation: `A memo from a mother to her child: "The leftovers from yesterday's dinner is in the indigo dish, so eat it for lunch. Please warm it up for about one minute in the microwave.`,
+    audio: "T52.mp3",
+    topic: MiniStoryTopics.HOUSE_WORK,
+    page: 47,
+  },
+  "53": {
+    id: "53",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "この<袋{ふくろ}>に入{はい}っている緑{みどり}色{いろ}の粉{こな}、何？",
+      },
+      {
+        character: "B",
+        dialogue: "ケールっていう野{や}菜{さい}を、粉{こな}にしたものよ。",
+      },
+      {
+        character: "A",
+        dialogue: "ああ、健{けん}康{こう}にいいやつだね。",
+      },
+      {
+        character: "B",
+        dialogue: "そうそう。お湯{ゆ}に<溶{と}かして>飲むの。粉{こな}を<固{かた}めて>作った錠{じょう}剤{ざい}もあるよ。",
+      },
+      {
+        character: "A",
+        dialogue: "ちょっと飲んでみたいな。",
+      },
+      {
+        character: "B",
+        dialogue: "今ちょうどわかしたお湯{ゆ}が<>やかん>に入{はい}っているから、作ってあげるよ。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "袋{ふくろ}",
+        english: "bag",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "買{か}い物{もの}袋{ぶくろ}",
+        english: "shopping bag",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "溶{と}かす",
+        english: "to dissolve",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+      {
+        kanji: "溶{と}ける",
+        english: "to dissolve",
+        type: MiniStoryWordType.ICHIDAN_INTRANSITIVE
+      },
+      {
+        kanji: "固{かた}める",
+        english: "to harden",
+        type: MiniStoryWordType.ICHIDAN_TRANSITIVE
+      },
+      {
+        kanji: "固{かた}まる",
+        english: "to harden",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE
+      },
+      {
+        kanji: "やかん",
+        english: "kettle",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `A: What's this green powder in this bag?\nB: It's a powder made from a vegetable called kale.\nA: Oh, it's good for health, isn't it?\nB: Yeah. You dissolve it in hot water and drink it. There are also tablets made from this powder.\nA: I want to try drinking a little.\nB: There's still some hot water in the kettle I just put on, so I'll make you some.`,
+    audio: "T53.mp3",
+    topic: MiniStoryTopics.HOUSE_WORK,
+    page: 48,
+  },
   // "xxxx": {
   //   id: "xxxx",
   //   rubyStory: [
