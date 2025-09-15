@@ -567,6 +567,572 @@ export const MINI_STORY_N3: Record<string, MiniStory> = {
     topic: MiniStoryTopics.FOOD,
     page: 21,
   },
+  "14": {
+    id: "14",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "<忘{ぼう}年{ねん}会{かい}>の店{みせ}、「梅{うめ}の花{はな}」はどうかな？",
+      },
+      {
+        character: "B",
+        dialogue: "え、どこですか。",
+      },
+      {
+        character: "A",
+        dialogue: "知らない？駅の北{きた}<口{ぐち}>にある居{い}酒{ざか}屋{や}。",
+      },
+      {
+        character: "B",
+        dialogue: "分かりました。<押{お}さえます>。。<乾{かん}杯{ぱい}>のあいさつは部{ぶ}長{ちょう}にお願{ねが}いするつもりです。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "忘{ぼう}年{ねん}会{かい}",
+        english: "year-end party",
+        type: MiniStoryWordType.NOUN,
+      },
+      {
+        kanji: "新{しん}年{ねん}会{かい}",
+        english: "New Year's party",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "～口{ぐち}",
+        english: "~entrance/exit",
+        type: MiniStoryWordType.SUFFIX
+      },
+      {
+        kanji: "押さえる",
+        english: "to make a reservation・hold down",
+        type: MiniStoryWordType.ICHIDAN_TRANSITIVE
+      },
+      {
+        kanji: "乾{かん}杯{ぱい}［する］",
+        english: "toast・to toast",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE]
+      },
+    ],
+    translation: `A: How about having our year-end party at that restaurant called Ume no Hana?\nB: Where is it?\nA: You don't know? It's a pub at the north exit of the station.\nB: I got it. I'll make a reservation. I plan on asking the department chief to give a toast.`,
+    audio: "T14.mp3",
+    topic: MiniStoryTopics.FOOD,
+    page: 22,
+  },
+  "15": {
+    id: "15",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "先{せん}輩{はい}の<送{そう}別{べつ}会{かい}>が、高{たか}そうな<西{せい}洋{よう}>料{りょう}理{り}<店{てん}>で開{ひら}かれた。テーブルにたくさんの食{しょっ}器{き}と<ナプキン>が置{お}かれていて、見るだけで緊{きん}張{ちょう}してしまった。見たことがない<ごちそう>だったが、緊{きん}張{ちょう}しすぎて全部食べられず、<もったいなかった>。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "送{そう}別{べつ}会{かい}",
+        english: "farewell party",
+        type: MiniStoryWordType.NOUN,
+      },
+      {
+        kanji: "西{せい}洋{よう}",
+        english: "Western",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "～店{てん}",
+        english: "store/shop",
+        type: MiniStoryWordType.SUFFIX
+      },
+      {
+        kanji: "ナプキン",
+        english: "napkin",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "ごちそう",
+        english: "feast",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "ごちそうする",
+        english: "to feast",
+        type: MiniStoryWordType.IRREGULAR_TRANSITIVE
+      },
+      {
+        kanji: "もったいない",
+        english: "wasteful",
+        type: MiniStoryWordType.ADJECTIVE_I
+      },
+    ],
+    translation: `A farewell party for our senior was held at an expensive-looking Western-style restaurant. There were a lot of tableware and napkins on the table, and I got nervous just from looking at them. It was a feast like I had never seen before, but I was too nervous to eat everything, which was a waste.`,
+    audio: "T15.mp3",
+    topic: MiniStoryTopics.FOOD,
+    page: 22,
+  },
+  "16": {
+    id: "16",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<ガム>は、<栄{えい}養{よう}>がほとんどないが、虫{むし}歯{ば}の予{よ}防{ぼう}や集{しゅう}中{ちゅう}力{りょく}を高{たか}める効{こう}果{か}があり、毎日かんでいる人も多い。。しかし、<ポイ捨{す}て>が問{もん}題{だい}になる。外{がい}出{しゅつ}するときは、<包{つつ}み紙{がみ}>を忘れないようにしたい。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "ガム",
+        english: "gum",
+        type: MiniStoryWordType.NOUN,
+      },
+      {
+        kanji: "栄{えい}養{よう}",
+        english: "nutrition",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "ポイ捨{す}て［する］",
+        english: "littering・to litter・to throw away carelessly",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE]
+      },
+      {
+        kanji: "包{つつ}み紙{がみ}",
+        english: "wrapping paper",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `Gum has little nutrition, but it has the effect of preventing cavities and increasing concentration, and many people chew it every day. However, littering is a problem. When going out, try not to forget to bring wrapping paper.`,
+    audio: "T16.mp3",
+    topic: MiniStoryTopics.FOOD,
+    page: 23,
+  },
+  // "xxxx": {
+  //   id: "xxxx",
+  //   rubyStory: [
+  //     {
+  //       character: "",
+  //       dialogue: "xxx",
+  //     },
+  //   ],
+  //   rubyWords: [
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //   ],
+  //   translation: ``,
+  //   audio: "T31.mp3",
+  //   topic: MiniStoryTopics.FOOD,
+  //   page: 100000,
+  // },
+  // "xxxx": {
+  //   id: "xxxx",
+  //   rubyStory: [
+  //     {
+  //       character: "",
+  //       dialogue: "xxx",
+  //     },
+  //   ],
+  //   rubyWords: [
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //   ],
+  //   translation: ``,
+  //   audio: "T31.mp3",
+  //   topic: MiniStoryTopics.FOOD,
+  //   page: 100000,
+  // },
+  // "xxxx": {
+  //   id: "xxxx",
+  //   rubyStory: [
+  //     {
+  //       character: "",
+  //       dialogue: "xxx",
+  //     },
+  //   ],
+  //   rubyWords: [
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //   ],
+  //   translation: ``,
+  //   audio: "T31.mp3",
+  //   topic: MiniStoryTopics.FOOD,
+  //   page: 100000,
+  // },
+  // "xxxx": {
+  //   id: "xxxx",
+  //   rubyStory: [
+  //     {
+  //       character: "",
+  //       dialogue: "xxx",
+  //     },
+  //   ],
+  //   rubyWords: [
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //   ],
+  //   translation: ``,
+  //   audio: "T31.mp3",
+  //   topic: MiniStoryTopics.FOOD,
+  //   page: 100000,
+  // },
+  // "xxxx": {
+  //   id: "xxxx",
+  //   rubyStory: [
+  //     {
+  //       character: "",
+  //       dialogue: "xxx",
+  //     },
+  //   ],
+  //   rubyWords: [
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //   ],
+  //   translation: ``,
+  //   audio: "T31.mp3",
+  //   topic: MiniStoryTopics.FOOD,
+  //   page: 100000,
+  // },
+  // "xxxx": {
+  //   id: "xxxx",
+  //   rubyStory: [
+  //     {
+  //       character: "",
+  //       dialogue: "xxx",
+  //     },
+  //   ],
+  //   rubyWords: [
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //   ],
+  //   translation: ``,
+  //   audio: "T31.mp3",
+  //   topic: MiniStoryTopics.FOOD,
+  //   page: 100000,
+  // },
+  // "xxxx": {
+  //   id: "xxxx",
+  //   rubyStory: [
+  //     {
+  //       character: "",
+  //       dialogue: "xxx",
+  //     },
+  //   ],
+  //   rubyWords: [
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //   ],
+  //   translation: ``,
+  //   audio: "T31.mp3",
+  //   topic: MiniStoryTopics.FOOD,
+  //   page: 100000,
+  // },
+  // "xxxx": {
+  //   id: "xxxx",
+  //   rubyStory: [
+  //     {
+  //       character: "",
+  //       dialogue: "xxx",
+  //     },
+  //   ],
+  //   rubyWords: [
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //   ],
+  //   translation: ``,
+  //   audio: "T31.mp3",
+  //   topic: MiniStoryTopics.FOOD,
+  //   page: 100000,
+  // },
+  // "xxxx": {
+  //   id: "xxxx",
+  //   rubyStory: [
+  //     {
+  //       character: "",
+  //       dialogue: "xxx",
+  //     },
+  //   ],
+  //   rubyWords: [
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //   ],
+  //   translation: ``,
+  //   audio: "T31.mp3",
+  //   topic: MiniStoryTopics.FOOD,
+  //   page: 100000,
+  // },
+  // "xxxx": {
+  //   id: "xxxx",
+  //   rubyStory: [
+  //     {
+  //       character: "",
+  //       dialogue: "xxx",
+  //     },
+  //   ],
+  //   rubyWords: [
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //   ],
+  //   translation: ``,
+  //   audio: "T31.mp3",
+  //   topic: MiniStoryTopics.FOOD,
+  //   page: 100000,
+  // },
+  // "xxxx": {
+  //   id: "xxxx",
+  //   rubyStory: [
+  //     {
+  //       character: "",
+  //       dialogue: "xxx",
+  //     },
+  //   ],
+  //   rubyWords: [
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //     {
+  //       kanji: "xxx",
+  //       english: "xxx"
+  //     },
+  //   ],
+  //   translation: ``,
+  //   audio: "T31.mp3",
+  //   topic: MiniStoryTopics.FOOD,
+  //   page: 100000,
+  // },
   "28": {
     id: "28",
     rubyStory: [
@@ -1671,316 +2237,4 @@ export const MINI_STORY_N3: Record<string, MiniStory> = {
     topic: MiniStoryTopics.HOUSE_WORK,
     page: 48,
   },
-  // "xxxx": {
-  //   id: "xxxx",
-  //   rubyStory: [
-  //     {
-  //       character: "",
-  //       dialogue: "xxx",
-  //     },
-  //   ],
-  //   rubyWords: [
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //   ],
-  //   translation: ``,
-  //   audio: "T31.mp3",
-  //   topic: MiniStoryTopics.HOUSE_WORK,
-  //   page: 100000,
-  // },
-  // "xxxx": {
-  //   id: "xxxx",
-  //   rubyStory: [
-  //     {
-  //       character: "",
-  //       dialogue: "xxx",
-  //     },
-  //   ],
-  //   rubyWords: [
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //   ],
-  //   translation: ``,
-  //   audio: "T31.mp3",
-  //   topic: MiniStoryTopics.HOUSE_WORK,
-  //   page: 100000,
-  // },
-  // "xxxx": {
-  //   id: "xxxx",
-  //   rubyStory: [
-  //     {
-  //       character: "",
-  //       dialogue: "xxx",
-  //     },
-  //   ],
-  //   rubyWords: [
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //   ],
-  //   translation: ``,
-  //   audio: "T31.mp3",
-  //   topic: MiniStoryTopics.HOUSE_WORK,
-  //   page: 100000,
-  // },
-  // "xxxx": {
-  //   id: "xxxx",
-  //   rubyStory: [
-  //     {
-  //       character: "",
-  //       dialogue: "xxx",
-  //     },
-  //   ],
-  //   rubyWords: [
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //   ],
-  //   translation: ``,
-  //   audio: "T31.mp3",
-  //   topic: MiniStoryTopics.HOUSE_WORK,
-  //   page: 100000,
-  // },
-  // "xxxx": {
-  //   id: "xxxx",
-  //   rubyStory: [
-  //     {
-  //       character: "",
-  //       dialogue: "xxx",
-  //     },
-  //   ],
-  //   rubyWords: [
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //   ],
-  //   translation: ``,
-  //   audio: "T31.mp3",
-  //   topic: MiniStoryTopics.HOUSE_WORK,
-  //   page: 100000,
-  // },
-  // "xxxx": {
-  //   id: "xxxx",
-  //   rubyStory: [
-  //     {
-  //       character: "",
-  //       dialogue: "xxx",
-  //     },
-  //   ],
-  //   rubyWords: [
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //   ],
-  //   translation: ``,
-  //   audio: "T31.mp3",
-  //   topic: MiniStoryTopics.HOUSE_WORK,
-  //   page: 100000,
-  // },
-  // "xxxx": {
-  //   id: "xxxx",
-  //   rubyStory: [
-  //     {
-  //       character: "",
-  //       dialogue: "xxx",
-  //     },
-  //   ],
-  //   rubyWords: [
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //   ],
-  //   translation: ``,
-  //   audio: "T31.mp3",
-  //   topic: MiniStoryTopics.HOUSE_WORK,
-  //   page: 100000,
-  // },
-  // "xxxx": {
-  //   id: "xxxx",
-  //   rubyStory: [
-  //     {
-  //       character: "",
-  //       dialogue: "xxx",
-  //     },
-  //   ],
-  //   rubyWords: [
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //   ],
-  //   translation: ``,
-  //   audio: "T31.mp3",
-  //   topic: MiniStoryTopics.HOUSE_WORK,
-  //   page: 100000,
-  // },
 };
