@@ -599,7 +599,7 @@ export const MINI_STORY_N3: Record<string, MiniStory> = {
     ],
     translation: `A large and deep frying pan can be used to not only grill ingredients, but also to boil or cook things. When boiling something, it is best to have a lid.`,
     audio: "T28.mp3",
-    topic: MiniStoryTopics.FOOD,
+    topic: MiniStoryTopics.HOUSE_WORK,
     page: 34,
   },
   "29": {
@@ -638,7 +638,7 @@ export const MINI_STORY_N3: Record<string, MiniStory> = {
     ],
     translation: `Dirt stuck on things like teacups and cutting boards is not easy to wash avay with only water. If you immerse them in bleach for an hour, they'll be sparkling clean.`,
     audio: "T29.mp3",
-    topic: MiniStoryTopics.FOOD,
+    topic: MiniStoryTopics.HOUSE_WORK,
     page: 34,
   },
   "30": {
@@ -681,7 +681,7 @@ export const MINI_STORY_N3: Record<string, MiniStory> = {
     ],
     translation: `Wash your used tableware and return it to the cabinet on the sink. Since the pots will be used again soon, you don't have to put them away.`,
     audio: "T30.mp3",
-    topic: MiniStoryTopics.FOOD,
+    topic: MiniStoryTopics.HOUSE_WORK,
     page: 35,
   },
   "31": {
@@ -708,7 +708,7 @@ export const MINI_STORY_N3: Record<string, MiniStory> = {
     ],
     translation: ``,
     audio: "T31.mp3",
-    topic: MiniStoryTopics.FOOD,
+    topic: MiniStoryTopics.HOUSE_WORK,
     page: 35,
   },
   "32": {
