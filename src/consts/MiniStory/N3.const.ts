@@ -1543,7 +1543,7 @@ export const MINI_STORY_N3: Record<string, MiniStory> = {
         type: MiniStoryWordType.NOUN
       },
       {
-        kanji: "溶く",
+        kanji: "溶{と}く",
         english: "to melt・to dissolve",
         type: MiniStoryWordType.GODAN_TRANSITIVE
       },
@@ -1626,7 +1626,7 @@ export const MINI_STORY_N3: Record<string, MiniStory> = {
     rubyStory: [
       {
         character: "",
-        dialogue: "<冷{ひ}やして>おいたビールを冷{れい}蔵{ぞう}庫{こ}から<取{と}り出{だ}し>、飲みながらゆっくり食{しょく}事{じ}をする。これが私の<休{きゅう}日{じつ}>の<喜び{よろこ}び>です。",
+        dialogue: "<冷{ひ}やして>おいたビールを冷{れい}蔵{ぞう}庫{こ}から<取{と}り出{だ}し>、飲みながらゆっくり食{しょく}事{じ}をする。これが私の<休{きゅう}日{じつ}>の<喜{よろこ}び>です。",
       },
     ],
     rubyWords: [
@@ -1646,7 +1646,7 @@ export const MINI_STORY_N3: Record<string, MiniStory> = {
         type: MiniStoryWordType.NOUN
       },
       {
-        kanji: "喜び{よろこ}び",
+        kanji: "喜{よろこ}び",
         english: "joy",
         type: MiniStoryWordType.NOUN
       },
@@ -1923,7 +1923,7 @@ export const MINI_STORY_N3: Record<string, MiniStory> = {
     ],
     rubyWords: [
       {
-        kanji: "～製{}せい}",
+        kanji: "～製{せい}",
         english: "made in ~",
         type: MiniStoryWordType.SUFFIX
       },
@@ -2137,7 +2137,7 @@ export const MINI_STORY_N3: Record<string, MiniStory> = {
     ],
     rubyWords: [
       {
-        kanji: "残り{のこ}り",
+        kanji: "残{のこ}り",
         english: "leftovers・remaining",
         type: MiniStoryWordType.NOUN
       },
