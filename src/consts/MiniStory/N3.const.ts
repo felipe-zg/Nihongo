@@ -704,435 +704,530 @@ export const MINI_STORY_N3: Record<string, MiniStory> = {
     topic: MiniStoryTopics.FOOD,
     page: 23,
   },
-  // "xxxx": {
-  //   id: "xxxx",
-  //   rubyStory: [
-  //     {
-  //       character: "",
-  //       dialogue: "xxx",
-  //     },
-  //   ],
-  //   rubyWords: [
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //   ],
-  //   translation: ``,
-  //   audio: "T31.mp3",
-  //   topic: MiniStoryTopics.FOOD,
-  //   page: 100000,
-  // },
-  // "xxxx": {
-  //   id: "xxxx",
-  //   rubyStory: [
-  //     {
-  //       character: "",
-  //       dialogue: "xxx",
-  //     },
-  //   ],
-  //   rubyWords: [
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //   ],
-  //   translation: ``,
-  //   audio: "T31.mp3",
-  //   topic: MiniStoryTopics.FOOD,
-  //   page: 100000,
-  // },
-  // "xxxx": {
-  //   id: "xxxx",
-  //   rubyStory: [
-  //     {
-  //       character: "",
-  //       dialogue: "xxx",
-  //     },
-  //   ],
-  //   rubyWords: [
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //   ],
-  //   translation: ``,
-  //   audio: "T31.mp3",
-  //   topic: MiniStoryTopics.FOOD,
-  //   page: 100000,
-  // },
-  // "xxxx": {
-  //   id: "xxxx",
-  //   rubyStory: [
-  //     {
-  //       character: "",
-  //       dialogue: "xxx",
-  //     },
-  //   ],
-  //   rubyWords: [
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //   ],
-  //   translation: ``,
-  //   audio: "T31.mp3",
-  //   topic: MiniStoryTopics.FOOD,
-  //   page: 100000,
-  // },
-  // "xxxx": {
-  //   id: "xxxx",
-  //   rubyStory: [
-  //     {
-  //       character: "",
-  //       dialogue: "xxx",
-  //     },
-  //   ],
-  //   rubyWords: [
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //   ],
-  //   translation: ``,
-  //   audio: "T31.mp3",
-  //   topic: MiniStoryTopics.FOOD,
-  //   page: 100000,
-  // },
-  // "xxxx": {
-  //   id: "xxxx",
-  //   rubyStory: [
-  //     {
-  //       character: "",
-  //       dialogue: "xxx",
-  //     },
-  //   ],
-  //   rubyWords: [
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //   ],
-  //   translation: ``,
-  //   audio: "T31.mp3",
-  //   topic: MiniStoryTopics.FOOD,
-  //   page: 100000,
-  // },
-  // "xxxx": {
-  //   id: "xxxx",
-  //   rubyStory: [
-  //     {
-  //       character: "",
-  //       dialogue: "xxx",
-  //     },
-  //   ],
-  //   rubyWords: [
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //   ],
-  //   translation: ``,
-  //   audio: "T31.mp3",
-  //   topic: MiniStoryTopics.FOOD,
-  //   page: 100000,
-  // },
-  // "xxxx": {
-  //   id: "xxxx",
-  //   rubyStory: [
-  //     {
-  //       character: "",
-  //       dialogue: "xxx",
-  //     },
-  //   ],
-  //   rubyWords: [
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //   ],
-  //   translation: ``,
-  //   audio: "T31.mp3",
-  //   topic: MiniStoryTopics.FOOD,
-  //   page: 100000,
-  // },
-  // "xxxx": {
-  //   id: "xxxx",
-  //   rubyStory: [
-  //     {
-  //       character: "",
-  //       dialogue: "xxx",
-  //     },
-  //   ],
-  //   rubyWords: [
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //   ],
-  //   translation: ``,
-  //   audio: "T31.mp3",
-  //   topic: MiniStoryTopics.FOOD,
-  //   page: 100000,
-  // },
-  // "xxxx": {
-  //   id: "xxxx",
-  //   rubyStory: [
-  //     {
-  //       character: "",
-  //       dialogue: "xxx",
-  //     },
-  //   ],
-  //   rubyWords: [
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //   ],
-  //   translation: ``,
-  //   audio: "T31.mp3",
-  //   topic: MiniStoryTopics.FOOD,
-  //   page: 100000,
-  // },
-  // "xxxx": {
-  //   id: "xxxx",
-  //   rubyStory: [
-  //     {
-  //       character: "",
-  //       dialogue: "xxx",
-  //     },
-  //   ],
-  //   rubyWords: [
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //     {
-  //       kanji: "xxx",
-  //       english: "xxx"
-  //     },
-  //   ],
-  //   translation: ``,
-  //   audio: "T31.mp3",
-  //   topic: MiniStoryTopics.FOOD,
-  //   page: 100000,
-  // },
+  "xxxx": {
+    id: "xxxx",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "xxx",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "xxx",
+        english: "xxx"
+      },
+      {
+        kanji: "xxx",
+        english: "xxx"
+      },
+      {
+        kanji: "xxx",
+        english: "xxx"
+      },
+      {
+        kanji: "xxx",
+        english: "xxx"
+      },
+      {
+        kanji: "xxx",
+        english: "xxx"
+      },
+      {
+        kanji: "xxx",
+        english: "xxx"
+      },
+    ],
+    translation: ``,
+    audio: "T31.mp3",
+    topic: MiniStoryTopics.FOOD,
+    page: 100000,
+  },
+  "17x": {
+    id: "17x",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "xxx",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "飲{の}み会{かい}",
+        english: "drinking party",
+        type: MiniStoryWordType.NOUN,
+      },
+      {
+        kanji: "割{わ}り勘{かん} [する］",
+        english: "to split the bill",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE]
+      },
+      {
+        kanji: "酔{よ}う",
+        english: "to get drunk・become intoxicated",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.GODAN_INTRANSITIVE]
+      },
+      {
+        kanji: "翌{よく}日{じつ}",
+        english: "the next day",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: ``,
+    audio: "T17.mp3",
+    topic: MiniStoryTopics.FOOD,
+    page: 24,
+  },
+  "18x": {
+    id: "18x",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "xxx",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "評{ひょう}判{ばん}",
+        english: "reputation",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "本{ほん}店{てん}",
+        english: "main store",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "本{ほん}社{しゃ}",
+        english: "Main office/headquarters",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "わざわざ",
+        english: "take the trouble・to go out of one's way to do something",
+        type: MiniStoryWordType.ADVERB
+      },
+      {
+        kanji: "細{ほそ}長{なが}い",
+        english: "long and narrow",
+        type: MiniStoryWordType.ADJECTIVE_I
+      },
+      {
+        kanji: "行{ぎょう}列{れつ}",
+        english: "line・queue・ranks",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: ``,
+    audio: "T18.mp3",
+    topic: MiniStoryTopics.FOOD,
+    page: 24,
+  },
+  "19x": {
+    id: "19x",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "xxx",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "食{しょく}品{ひん}",
+        english: "food products",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "產{さん}地{ち}",
+        english: "production area",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "基{き}本{ほん}的{てき}な",
+        english: "basic",
+        type: MiniStoryWordType.ADJECTIVE_NA
+      },
+      {
+        kanji: "基{き}本{ほん}",
+        english: "basics",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "国{こく}産{さん}",
+        english: "domestically produced product",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "品{ひん}質{しつ}",
+        english: "quality",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "～産{さん}",
+        english: "~produced in・~made in・~from",
+        type: MiniStoryWordType.SUFFIX
+      },
+      {
+        kanji: "ラベル",
+        english: "label",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: ``,
+    audio: "T19.mp3",
+    topic: MiniStoryTopics.FOOD,
+    page: 25,
+  },
+  "20x": {
+    id: "20x",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "xxx",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "スイーツ",
+        english: "sweets/desserts",
+        type: MiniStoryWordType.NOUN,
+      },
+      {
+        kanji: "クリーム",
+        english: "cream",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "幸{しあわ}せな",
+        english: "happy",
+        type: MiniStoryWordType.ADJECTIVE_NA
+      },
+      {
+        kanji: "売{う}り切{き}れる",
+        english: "to be sold out",
+        type: MiniStoryWordType.ICHIDAN_INTRANSITIVE
+      },
+      {
+        kanji: "売{う}り切{き}れ",
+        english: "sold out",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "おやつ",
+        english: "snack",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: ``,
+    audio: "T20.mp3",
+    topic: MiniStoryTopics.FOOD,
+    page: 26,
+  },
+  "21x": {
+    id: "21x",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "xxx",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "方{かた}",
+        english: "person",
+        type: MiniStoryWordType.NOUN,
+      },
+      {
+        kanji: "ランチ",
+        english: "lunch",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "モーニング",
+        english: "morning",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "ディナー",
+        english: "dinner",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "おごる",
+        english: "to treat (someone to a meal)",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+      {
+        kanji: "機{き}会{かい}",
+        english: "opportunity",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "鍋{なべ}",
+        english: "hot pot",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "会{かい}",
+        english: "party/gathering",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: ``,
+    audio: "T21.mp3",
+    topic: MiniStoryTopics.FOOD,
+    page: 26,
+  },
+  "22x": {
+    id: "22x",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "xxx",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "餅{もち}",
+        english: "rice cake",
+        type: MiniStoryWordType.NOUN,
+      },
+      {
+        kanji: "蒸{む}す",
+        english: "to steam",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+      {
+        kanji: "あんこ",
+        english: "sweet red bean paste",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "くるむ",
+        english: "to wrap",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+      {
+        kanji: "炊{た}く",
+        english: "to cook (rice)",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+    ],
+    translation: ``,
+    audio: "T22.mp3",
+    topic: MiniStoryTopics.FOOD,
+    page: 27,
+  },
+  "23x": {
+    id: "23x",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "xxx",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "ノンアルコール",
+        english: "non-alcoholic",
+        type: MiniStoryWordType.NOUN,
+      },
+      {
+        kanji: "肝{かん}臓{ぞう}",
+        english: "liver",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "飲{いん}酒{しゅ}［する］",
+        english: "to drink alcohol",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE]
+      },
+    ],
+    translation: ``,
+    audio: "T23.mp3",
+    topic: MiniStoryTopics.FOOD,
+    page: 28,
+  },
+  "24x": {
+    id: "24x",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "xxx",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "調{ちょう}味{み}料{りょう}",
+        english: "seasoning",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "海{かい}水{すい}",
+        english: "seawater",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "舌{した}",
+        english: "tongue",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "なめる",
+        english: "to lick",
+        type: MiniStoryWordType.ICHIDAN_TRANSITIVE
+      },
+      {
+        kanji: "塩{しお}辛{から}い",
+        english: "salty",
+        type: MiniStoryWordType.ADJECTIVE_I
+      },
+      {
+        kanji: "しょっぱい",
+        english: "salty",
+        type: MiniStoryWordType.ADJECTIVE_I
+      },
+    ],
+    translation: ``,
+    audio: "T24.mp3",
+    topic: MiniStoryTopics.FOOD,
+    page: 28,
+  },
+  "25x": {
+    id: "25x",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "xxx",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "（お）そうざい",
+        english: "side dish",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "済{す}ませる",
+        english: "to be done/settle (a meal, etc.)",
+        type: MiniStoryWordType.ICHIDAN_TRANSITIVE
+      },
+      {
+        kanji: "済{す}む",
+        english: "to be settled/to be finished",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE
+      },
+      {
+        kanji: "外{かい}食{しょく}［する］",
+        english: "to eat out",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE]
+      },
+      {
+        kanji: "記{き}念{ねん}日{び}",
+        english: "anniversary",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "記{き}念{ねん}［する］",
+        english: "commemoration・to commemorate",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE]
+      },
+      {
+        kanji: "ぜいたく［する］",
+        english: "luxury・to do something luxurious",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE]
+      },
+    ],
+    translation: ``,
+    audio: "T25.mp3",
+    topic: MiniStoryTopics.FOOD,
+    page: 29,
+  },
+  "26x": {
+    id: "26x",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "xxx",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "全{ぜん}力{りょく}",
+        english: "full power/with all one's strength",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "ぺこぺこな",
+        english: "hungry (stomach growling)",
+        type: MiniStoryWordType.ADJECTIVE_NA
+      },
+      {
+        kanji: "丼{どんぶり}",
+        english: "rice bowl",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "～杯{ぱい}",
+        english: "Items (counter for bowls of food or cups of drink)",
+        type: MiniStoryWordType.SUFFIX
+      },
+      {
+        kanji: "おかわり［する］",
+        english: "refill・to have seconds/ to have another drink",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE]
+      },
+    ],
+    translation: ``,
+    audio: "T26.mp3",
+    topic: MiniStoryTopics.FOOD,
+    page: 29,
+  },
+  "27x": {
+    id: "27x",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "xxx",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "小{こ}麦{むぎ}",
+        english: "wheat",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "小{こ}麦{むぎ}粉{こ}",
+        english: "wheat flour",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "トウモロコシ",
+        english: "corn",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "粉{こな}",
+        english: "powder",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "麺{めん}",
+        english: "noodles",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "パスタ",
+        english: "pasta",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: ``,
+    audio: "T27.mp3",
+    topic: MiniStoryTopics.FOOD,
+    page: 30,
+  },
   "28": {
     id: "28",
     rubyStory: [
