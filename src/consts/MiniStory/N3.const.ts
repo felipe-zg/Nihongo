@@ -704,45 +704,6 @@ export const MINI_STORY_N3: Record<string, MiniStory> = {
     topic: MiniStoryTopics.FOOD,
     page: 23,
   },
-  "xxxx": {
-    id: "xxxx",
-    rubyStory: [
-      {
-        character: "",
-        dialogue: "xxx",
-      },
-    ],
-    rubyWords: [
-      {
-        kanji: "xxx",
-        english: "xxx"
-      },
-      {
-        kanji: "xxx",
-        english: "xxx"
-      },
-      {
-        kanji: "xxx",
-        english: "xxx"
-      },
-      {
-        kanji: "xxx",
-        english: "xxx"
-      },
-      {
-        kanji: "xxx",
-        english: "xxx"
-      },
-      {
-        kanji: "xxx",
-        english: "xxx"
-      },
-    ],
-    translation: ``,
-    audio: "T31.mp3",
-    topic: MiniStoryTopics.FOOD,
-    page: 100000,
-  },
   "17x": {
     id: "17x",
     rubyStory: [
@@ -1680,18 +1641,6 @@ export const MINI_STORY_N3: Record<string, MiniStory> = {
       {
         character: "A",
         dialogue: "<ちゃんと>起こしてね。",
-      },
-      {
-        character: "",
-        dialogue: "xxx",
-      },
-      {
-        character: "",
-        dialogue: "xxx",
-      },
-      {
-        character: "",
-        dialogue: "xxx",
       },
     ],
     rubyWords: [
