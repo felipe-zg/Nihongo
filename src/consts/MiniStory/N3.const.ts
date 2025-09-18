@@ -1,4 +1,4 @@
-const MiniStoryTopics = {
+export const MiniStoryTopics = {
   FOOD: '食事',
   HOUSE_WORK: '家事',
 } as const;
