@@ -1,7 +1,7 @@
 import React from "react";
-import { Box, Button, Divider, Heading, HStack, Select, Switch, Text} from "native-base";
+import { Box, Button, Divider, Heading, HStack, Select, Stack, Switch, Text} from "native-base";
 import { parseRuby } from "../../utils/music/rubyParser";
-import { MINI_STORY_N3 } from "../../consts/MiniStory";
+import { MiniStoryTopics } from "../../consts/MiniStory";
 import { AudioPlayer } from "../../components";
 
 type MiniStoryProps = {
@@ -10,10 +10,13 @@ type MiniStoryProps = {
   onStoryChange: (id: string) => void;
   selectedLevel: 'N2' | 'N3';
   onLevelChange: (level: 'N2' | 'N3') => void;
+  selectedTopic: keyof typeof MiniStoryTopics | "";
+  onTopicChange: (topic: keyof typeof MiniStoryTopics | "") => void;
+  availableStories: string[];
 }
 
 const MiniStory: React.FC<MiniStoryProps> = ({ 
-  story, selectedStory, onStoryChange, selectedLevel, onLevelChange 
+  story, selectedStory, onStoryChange, selectedLevel, onLevelChange, selectedTopic, onTopicChange, availableStories
 }) => {
   const [isHidden, setIsHidden] = React.useState(false);
   const [isLargeLetter, setIsLargeLetter] = React.useState(false);
@@ -82,7 +85,7 @@ const MiniStory: React.FC<MiniStoryProps> = ({
   });
 
   function goToCardsDeck() {
-    window.location.href = `/ministory-cards?level=${selectedLevel}`;
+    window.location.href = `/ministory-cards?level=${selectedLevel}&topic=${selectedTopic}`;
   };
 
   return (
@@ -108,21 +111,6 @@ const MiniStory: React.FC<MiniStoryProps> = ({
       </Box>
       
       <HStack mx={4} my={5} justifyContent={"space-between"}>
-        <Box width={"25%"}>
-          <Select selectedValue={selectedStory} onValueChange={(itemValue) => onStoryChange(itemValue)}>
-            <Select.Item label="-- Select a story --" value="" />
-            {Object.keys(MINI_STORY_N3).map((key) => (
-              <Select.Item key={key} label={key} value={key} />
-            ))}
-          </Select>
-        </Box>
-        <Box width={"25%"}>
-          <Select size="sm" selectedValue={selectedLevel} onValueChange={(itemValue) => onLevelChange(itemValue as 'N2' | 'N3')}>
-            <Select.Item label="-- Select a level --" value="" />
-            <Select.Item label="N2" value="N2" />
-            <Select.Item label="N3" value="N3" />
-          </Select>
-        </Box>
         <AudioPlayer level={selectedLevel} fileName={story.audio} />
         <Box paddingLeft={5}>
           <HStack space={2}>
@@ -144,6 +132,40 @@ const MiniStory: React.FC<MiniStoryProps> = ({
         <Text>Page: {story.page}</Text>
         <Text>Topic: {story.topic}</Text>
       </Box>
+
+      <Stack
+        mx={4}
+        my={5}
+        space={4}
+        direction={{ base: "column", md: "row" }} // column on small, row on medium+
+      >
+        <Box>
+          <Text color="pink.400">Story:</Text>
+          <Select selectedValue={selectedStory} onValueChange={(itemValue) => onStoryChange(itemValue)}>
+            <Select.Item label="-- Select a story --" value="" />
+            {availableStories.map((key) => (
+              <Select.Item key={key} label={key} value={key} />
+            ))}
+          </Select>
+        </Box>
+        <Box>
+          <Text color="pink.400">Level:</Text>
+          <Select size="sm" selectedValue={selectedLevel} onValueChange={(itemValue) => onLevelChange(itemValue as 'N2' | 'N3')}>
+            <Select.Item label="-- Select a level --" value="" />
+            <Select.Item label="N2" value="N2" />
+            <Select.Item label="N3" value="N3" />
+          </Select>
+        </Box>
+        <Box>
+          <Text color="pink.400">Topic:</Text>
+          <Select size="sm" selectedValue={selectedTopic} onValueChange={(itemValue) => onTopicChange(itemValue as keyof typeof MiniStoryTopics)}>
+            <Select.Item label="-- Select a topic --" value="" />
+            {Object.entries(MiniStoryTopics).map(([key, value]) => (
+              <Select.Item key={key} label={value} value={value} />
+            ))}
+          </Select>
+        </Box>
+      </Stack>
 
       <Button mb={10} mx={4} colorScheme="red" onPress={goToCardsDeck}>
         Cards deck
