@@ -141,7 +141,7 @@ const MiniStory: React.FC<MiniStoryProps> = ({
         mx={4}
         my={5}
         space={4}
-        direction={{ base: "column", md: "row" }} // column on small, row on medium+
+        direction={{ base: "column", md: "row" }}
       >
         <Box>
           <Text color="pink.400">Story:</Text>
@@ -171,13 +171,21 @@ const MiniStory: React.FC<MiniStoryProps> = ({
         </Box>
       </Stack>
 
-      <Button mb={10} mx={4} colorScheme="red" onPress={goToCardsDeck}>
-        Cards deck
-      </Button>
+      <Stack
+        mx={4}
+        my={5}
+        space={4}
+        direction={{ base: "column", md: "row" }}
+      >
+        <Button variant="outline" colorScheme="primary" onPress={goToCardsDeck}>
+          Cards deck
+        </Button>
 
-      <Button mb={10} mx={4} colorScheme="red" onPress={goToAudioFiles}>
-        Audio files
-      </Button>
+        <Button variant="outline" colorScheme="secondary" onPress={goToAudioFiles}>
+          Audio files
+        </Button>
+      </Stack>
+
 
     </Box>
   )
