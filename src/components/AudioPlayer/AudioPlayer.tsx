@@ -58,6 +58,7 @@ const AudioPlayer = ({ level, fileName }: { level: 'N2' | 'N3'; fileName: string
         variant="outline" 
         colorScheme={"primary"} 
         onPress={handleAudioPause}
+        ml={2}
       >
         {isPaused ? '▶︎' : '⏸'}
       </Button>
