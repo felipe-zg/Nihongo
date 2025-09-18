@@ -15,3 +15,4 @@ export { default as VocabsJLPT } from "./JLPT/Vocabs";
 export { default as GrammarJLPTN2 } from "./JLPT/Grammar/N2";
 export { default as MiniStory } from "./MiniStory";
 export { default as MiniStoryCards } from "./MiniStoryCards";
+export { default as MiniStoryAudioPlayer } from "./MiniStoryAudioPlayer";

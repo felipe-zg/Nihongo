@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { DaysOfTheMonth, Deck, GrammarJLPTN2, JLPTExercisesPrint, JLPTVocabsPrint, Kanji, KanjiPractice, KanjiPrint, Levels, MiniStory, MiniStoryCards, Nihongo500N3, Periods, Verbs, VocabsJLPT, Words, WordsYDCQuizz } from './pages';
+import { DaysOfTheMonth, Deck, GrammarJLPTN2, JLPTExercisesPrint, JLPTVocabsPrint, Kanji, KanjiPractice, KanjiPrint, Levels, MiniStory, MiniStoryAudioPlayer, MiniStoryCards, Nihongo500N3, Periods, Verbs, VocabsJLPT, Words, WordsYDCQuizz } from './pages';
 import { Box, HStack, NativeBaseProvider } from "native-base";
 import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom';
 import { MusicNavbar, Navbar } from './components';
@@ -48,6 +48,7 @@ function AppContent() {
           <Route path="/music/leina/nostalgia" element={<Nostalgia />} />
           <Route path="/ministory" element={<MiniStory />} />
           <Route path="/ministory-cards" element={<MiniStoryCards />} />
+          <Route path="/ministory-audioplayer" element={<MiniStoryAudioPlayer />} />
         </Routes>
       </Box>
     </HStack>

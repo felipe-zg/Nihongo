@@ -88,6 +88,10 @@ const MiniStory: React.FC<MiniStoryProps> = ({
     window.location.href = `/ministory-cards?level=${selectedLevel}&topic=${selectedTopic}`;
   };
 
+  function goToAudioFiles() {
+    window.location.href = `/ministory-audioplayer?level=${selectedLevel}`;
+  };
+
   return (
     <Box backgroundColor="gray.50">
       <Heading size="lg" mt={10} mb={5} textAlign="center" color={"pink.400"}>
@@ -169,6 +173,10 @@ const MiniStory: React.FC<MiniStoryProps> = ({
 
       <Button mb={10} mx={4} colorScheme="red" onPress={goToCardsDeck}>
         Cards deck
+      </Button>
+
+      <Button mb={10} mx={4} colorScheme="red" onPress={goToAudioFiles}>
+        Audio files
       </Button>
 
     </Box>
