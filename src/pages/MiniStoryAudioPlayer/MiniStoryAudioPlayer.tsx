@@ -52,7 +52,7 @@ export default function MiniStoryAudioPlayer({ level }: { level: 'N2' | 'N3' }) 
   return (
     <Box p={4}>
       <Text mb={4} bold color={"pink.400"} alignSelf={"center"}>
-        Mini Story Audio Player - Level {level}
+        ミニストーリー {level}
       </Text>
       <FlatList
         data={tracks}
@@ -62,15 +62,15 @@ export default function MiniStoryAudioPlayer({ level }: { level: 'N2' | 'N3' }) 
             justifyContent="space-between"
             alignItems="center"
             borderBottomWidth={1}
-            borderColor="gray.200"
-            p={2}
+            borderColor="gray.800"
           >
-            <Text color={"pink.400"}>{item}</Text>
+            <Text color={"pink.400"}>{item.replace(".mp3", "")}</Text>
             <Button
               size="xs"
               variant="outline" 
               colorScheme={currentTrackIndex === index && isPlaying ? "secondary" : "primary"}
               onPress={() => playTrack(index)}
+              borderColor={"transparent"}
             >
               {currentTrackIndex === index && isPlaying ? '⏸' : '▶︎'}
             </Button>

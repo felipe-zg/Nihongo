@@ -114,9 +114,8 @@ const MiniStory: React.FC<MiniStoryProps> = ({
         {words}
       </Box>
       
-      <HStack mx={4} my={5} justifyContent={"space-between"}>
-        <AudioPlayer level={selectedLevel} fileName={story.audio} />
-        <Box paddingLeft={5}>
+      <HStack mx={4} my={5} justifyContent={"space-between"} alignItems={"center"} padding={2} borderRadius={5}>
+        <Box>
           <HStack space={2}>
             <Switch
               onValueChange={(val) => setIsHidden(!val)}
@@ -126,6 +125,7 @@ const MiniStory: React.FC<MiniStoryProps> = ({
             <Text color="red.500">Show</Text>
           </HStack>
         </Box>
+        <AudioPlayer level={selectedLevel} fileName={story.audio} />
       </HStack>
 
       <Box m={4} borderWidth={1} borderColor="cyan.400" borderRadius="md" p={2}>
@@ -173,7 +173,7 @@ const MiniStory: React.FC<MiniStoryProps> = ({
 
       <Stack
         mx={4}
-        my={5}
+        my={10}
         space={4}
         direction={{ base: "column", md: "row" }}
       >
@@ -185,8 +185,6 @@ const MiniStory: React.FC<MiniStoryProps> = ({
           Audio files
         </Button>
       </Stack>
-
-
     </Box>
   )
 };

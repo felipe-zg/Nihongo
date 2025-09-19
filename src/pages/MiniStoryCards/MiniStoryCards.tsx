@@ -12,6 +12,7 @@ const MiniStoryCards: React.FC<Props> = ({ vocabList, level }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [startIndex, setStartIndex] = useState(0);
   const [endIndex, setEndIndex] = useState(vocabList.length - 1);
+  const [isShuffled, setIsShuffled] = useState(false);
   const flipCardRef = useRef<FlipCardHandle>(null);
 
   const handleStartIndexChange = (value: number) => {
@@ -42,6 +43,7 @@ const MiniStoryCards: React.FC<Props> = ({ vocabList, level }) => {
     }
     setCurrentIndex(0);
     flipCardRef.current?.unflip();
+    setIsShuffled(true);
   }
 
   function handleNext() {
@@ -71,7 +73,7 @@ const MiniStoryCards: React.FC<Props> = ({ vocabList, level }) => {
         </Button>
       </HStack>
 
-      <HStack mt={5} width="100%" px={4}>
+      <HStack mt={10} width="100%" px={4}>
         <Box width={120} mr={5}>
           <Select
             selectedValue={startIndex.toString()}
@@ -96,7 +98,7 @@ const MiniStoryCards: React.FC<Props> = ({ vocabList, level }) => {
             ))}
           </Select>
         </Box>
-        <button onClick={shuffleCards}>⇄</button>
+        <button disabled={isShuffled} onClick={shuffleCards}>Shuffle ⇄</button>
       </HStack>
     </Box>
   );
