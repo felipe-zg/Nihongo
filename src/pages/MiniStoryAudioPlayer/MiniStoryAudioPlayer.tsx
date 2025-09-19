@@ -1,5 +1,5 @@
 import React, { useRef, useState, useEffect } from "react";
-import { Box, FlatList, Text, Button, HStack } from "native-base";
+import { Box, FlatList, Text, HStack, Pressable } from "native-base";
 
 const NUMBER_OF_TRACKS = { N2: 452, N3: 371 };
 
@@ -50,32 +50,35 @@ export default function MiniStoryAudioPlayer({ level }: { level: 'N2' | 'N3' }) 
   };
 
   return (
-    <Box p={4}>
+    <Box pt={6}>
       <Text mb={4} bold color={"pink.400"} alignSelf={"center"}>
         ミニストーリー {level}
       </Text>
       <FlatList
         data={tracks}
         keyExtractor={(item) => item}
-        renderItem={({ item, index }) => (
-          <HStack
-            justifyContent="space-between"
-            alignItems="center"
-            borderBottomWidth={1}
-            borderColor="gray.800"
-          >
-            <Text color={"pink.400"}>{item.replace(".mp3", "")}</Text>
-            <Button
-              size="xs"
-              variant="outline" 
-              colorScheme={currentTrackIndex === index && isPlaying ? "secondary" : "primary"}
-              onPress={() => playTrack(index)}
-              borderColor={"transparent"}
-            >
-              {currentTrackIndex === index && isPlaying ? '⏸' : '▶︎'}
-            </Button>
-          </HStack>
-        )}
+        renderItem={({ item, index }) => {
+          const isActive = currentTrackIndex === index && isPlaying;
+          return (
+            <Pressable onPress={() => playTrack(index)}>
+              <HStack
+                justifyContent="space-between"
+                alignItems="center"
+                borderBottomWidth={1}
+                borderColor="gray.800"
+                backgroundColor={isActive ? "gray.700" : "transparent"}
+                p={2}
+              >
+                <Text color={isActive ? "pink.400" : "primary.700"}>
+                  {item.replace(".mp3", "")}
+                </Text>
+                <Text color={isActive ? "pink.400" : "primary.700"}>
+                  {isActive ? '⏸' : '▶︎'}
+                </Text>
+              </HStack>
+            </Pressable>
+          );
+        }}
       />
     </Box>
   );
