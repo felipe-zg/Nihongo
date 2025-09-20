@@ -34,6 +34,36 @@ export default function MiniStoryAudioPlayer({ level }: { level: 'N2' | 'N3' }) 
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currentTrackIndex]);
 
+  const updateMediaSession = (index: number) => {
+    if ("mediaSession" in navigator) {
+      const trackName = tracks[index].replace(".mp3", "");
+      navigator.mediaSession.metadata = new MediaMetadata({
+        title: trackName,
+        artist: `MiniStory ${level}`,
+        album: `Level ${level}`,
+        artwork: [
+          { src: "/images/ministory.png", sizes: "512x512", type: "image/png" }, // replace with your image
+        ],
+      });
+
+      // Media control handlers
+      navigator.mediaSession.setActionHandler("play", () => {
+        audioRef.current?.play();
+        setIsPlaying(true);
+      });
+      navigator.mediaSession.setActionHandler("pause", () => {
+        audioRef.current?.pause();
+        setIsPlaying(false);
+      });
+      navigator.mediaSession.setActionHandler("previoustrack", () => {
+        if (index > 0) playTrack(index - 1);
+      });
+      navigator.mediaSession.setActionHandler("nexttrack", () => {
+        if (index < tracks.length - 1) playTrack(index + 1);
+      });
+    }
+  };
+
   const playTrack = (index: number) => {
     const audio = audioRef.current;
     if (!audio) return;
@@ -46,6 +76,7 @@ export default function MiniStoryAudioPlayer({ level }: { level: 'N2' | 'N3' }) 
       audio.play();
       setCurrentTrackIndex(index);
       setIsPlaying(true);
+      updateMediaSession(index);
     }
   };
 
