@@ -7,8 +7,8 @@ import "./FlipCard.css";
 
 
 type Props = {
-  CardFrontContent: React.ComponentType;
-  CardBackContent: React.ComponentType;
+  CardFrontContent: React.ReactNode;
+  CardBackContent: React.ReactNode;
 };
 
 export type FlipCardHandle = {
@@ -30,10 +30,10 @@ const FlipCard = forwardRef<FlipCardHandle, Props>(({ CardFrontContent, CardBack
     <div className="card-container" onClick={() => setFlipped(!flipped)}>
       <div className={`card ${flipped ? "flipped" : ""}`}>
         <div className="card-face card-front" style={{backgroundColor:"#ffbeab"}}>
-          <CardFrontContent />
+          {CardFrontContent}
         </div>
         <div className="card-face card-back">
-          <CardBackContent />
+          {CardBackContent}
         </div>
       </div>
     </div>
