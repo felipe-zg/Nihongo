@@ -16,3 +16,4 @@ export { default as GrammarJLPTN2 } from "./JLPT/Grammar/N2";
 export { default as MiniStory } from "./MiniStory";
 export { default as MiniStoryCards } from "./MiniStoryCards";
 export { default as MiniStoryAudioPlayer } from "./MiniStoryAudioPlayer";
+export { default as MojiGoiDeck } from "./MojiGoiDeck";

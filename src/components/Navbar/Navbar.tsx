@@ -22,6 +22,7 @@ const routes = [
   { name: 'JLPT Grammar N2', path: '/JLPT/grammar/N2' },
   { name: 'Music', path: '/music/leina/nostalgia' },
   { name: 'Mini Story', path: '/ministory' },
+  { name: '文字・語彙', path: '/moji-goi-deck' },
 ]
 
 const Navbar = () => {
