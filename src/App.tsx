@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { DaysOfTheMonth, Deck, GrammarJLPTN2, JLPTExercisesPrint, JLPTVocabsPrint, Kanji, KanjiPractice, KanjiPrint, Levels, MiniStory, MiniStoryAudioPlayer, MiniStoryCards, MojiGoiDeck, Nihongo500N3, Periods, Verbs, VocabsJLPT, Words, WordsYDCQuizz } from './pages';
+import { DaysOfTheMonth, Deck, GrammarJLPTN2, JLPTExercisesPrint, JLPTVocabsPrint, Kanji, KanjiPractice, KanjiPrint, Levels, MiniStory, MiniStoryAudioPlayer, MiniStoryCards, MojiGoiDeck, Nihongo500N3, NihongoNoMoriGrammar, Periods, Verbs, VocabsJLPT, Words, WordsYDCQuizz } from './pages';
 import { Box, HStack, NativeBaseProvider } from "native-base";
 import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom';
 import { MusicNavbar, Navbar } from './components';
@@ -50,6 +50,7 @@ function AppContent() {
           <Route path="/ministory-cards" element={<MiniStoryCards />} />
           <Route path="/ministory-audioplayer" element={<MiniStoryAudioPlayer />} />
           <Route path="/moji-goi-deck" element={<MojiGoiDeck />} />
+          <Route path="/grammar/nihongo-no-mori" element={<NihongoNoMoriGrammar />} />
         </Routes>
       </Box>
     </HStack>

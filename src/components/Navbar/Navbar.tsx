@@ -23,6 +23,7 @@ const routes = [
   { name: 'Music', path: '/music/leina/nostalgia' },
   { name: 'Mini Story', path: '/ministory' },
   { name: '文字・語彙', path: '/moji-goi-deck' },
+  { name: '日本語の森・文法', path: '/grammar/nihongo-no-mori' },
 ]
 
 const Navbar = () => {

@@ -17,3 +17,4 @@ export { default as MiniStory } from "./MiniStory";
 export { default as MiniStoryCards } from "./MiniStoryCards";
 export { default as MiniStoryAudioPlayer } from "./MiniStoryAudioPlayer";
 export { default as MojiGoiDeck } from "./MojiGoiDeck";
+export { default as NihongoNoMoriGrammar } from "./grammar/nihongoNoMori";

@@ -10,3 +10,4 @@ export * from './Verbs/verbs.const';
 export * from './levels';
 export * from './JLPT';
 export * from './moji_goi';
+export * from './grammar';
