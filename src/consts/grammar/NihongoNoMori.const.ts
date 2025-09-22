@@ -1,3 +1,8 @@
+export const GrammarEntryCategory = {
+  REASON_CAUSE: '理由・原因',
+  SITUATION_CHANGE: '状況・変化',
+} as const;
+
 export const NIHONGO_NO_MORI_GRAMMAR: GrammarEntry[] = [
   {
     id: 1,
@@ -17,7 +22,8 @@ export const NIHONGO_NO_MORI_GRAMMAR: GrammarEntry[] = [
         sentence: "道にあった石のせいで、転んでけがをしてしまった。",
         meaning: "I tripped and fell because of the stone in the road."
       }
-    ]
+    ],
+    category: GrammarEntryCategory.REASON_CAUSE
   },
   {
     id: 2,
@@ -32,6 +38,23 @@ export const NIHONGO_NO_MORI_GRAMMAR: GrammarEntry[] = [
         sentence: "先生が日本語を教えてくれたおかげで、試験に合格することができた。",
         meaning: "Thanks to the teacher teaching me Japanese, I was able to pass the exam."
       }
-    ]
+    ],
+    category: GrammarEntryCategory.REASON_CAUSE
+  },
+  {
+    id: 3,
+    grammar: "〜もの",
+    imi: "〜だから",
+    usage: {
+      form: [{ name: "普通形"}, {name: "名詞", connector: "な"}, {name: "な形容詞", connector: "な"}],
+      pattern: ["〜もの", "〜もん", "〜ものだから", "〜もので"]
+    },
+    examples: [
+      {
+        sentence: "苦手なものだからあまりやりたくありません。",
+        meaning: "I don't want to do it much because it's something I'm not good at."
+      }
+    ],
+    category: GrammarEntryCategory.REASON_CAUSE
   },
 ]

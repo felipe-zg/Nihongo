@@ -38,6 +38,9 @@ const NihongoNoMoriGrammar: React.FC<Props> = ({ grammarList }) => {
         <ContentBox>
           <Text fontSize={"lg"} color={"white"}>{currentItem.imi}</Text>
           <Text fontSize={"md"} italic color={"white"}>{currentItem.explanation}</Text>
+          <Box borderColor={"pink.500"} borderWidth={1} borderRadius={5} px={4} py={1} mt={2}>
+            <Text fontSize={"sm"} italic color={"white"}>{`${currentItem.category}`}</Text>
+          </Box>
         </ContentBox>
         <ContentBox>
           <HStack space={5} alignItems="center">

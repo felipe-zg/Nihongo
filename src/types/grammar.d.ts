@@ -12,4 +12,5 @@ declare type GrammarEntry = {
     meaning?: string;
   }[];
   extraInfo?: string;
+  category: typeof GrammarEntryCategory[keyof typeof GrammarEntryCategory];
 };
