@@ -10,6 +10,7 @@ declare type GrammarEntry = {
   examples: {
     sentence: string;
     meaning?: string;
+    point?: string;
   }[];
   extraInfo?: string;
   category: typeof GrammarEntryCategory[keyof typeof GrammarEntryCategory];

@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Button, HStack, Text } from "native-base";
+import { Box, Button, Divider, HStack, Text } from "native-base";
 
 type Props = {
   grammarList: GrammarEntry[];
@@ -37,7 +37,7 @@ const NihongoNoMoriGrammar: React.FC<Props> = ({ grammarList }) => {
       <Box opacity={showContent ? 1 : 0} alignItems={"center"} width={"100%"}>
         <ContentBox>
           <Text fontSize={"lg"} color={"white"}>{currentItem.imi}</Text>
-          <Text fontSize={"md"} italic color={"white"}>{currentItem.explanation}</Text>
+          <Text fontSize={"md"} italic color={"white"} textAlign={"center"}>{currentItem.explanation}</Text>
           <Box borderColor={"pink.500"} borderWidth={1} borderRadius={5} px={4} py={1} mt={2}>
             <Text fontSize={"sm"} italic color={"white"}>{`${currentItem.category}`}</Text>
           </Box>
@@ -70,12 +70,14 @@ const NihongoNoMoriGrammar: React.FC<Props> = ({ grammarList }) => {
             <Box key={index} mb={4} alignItems="center">
               <Text textAlign={"center"} color={"white"}>{example.sentence}</Text>
               {example.meaning && <Text italic textAlign={"center"} color={"white"} fontSize={"xs"}>{example.meaning}</Text>}
+              {example.point && <Text italic textAlign={"center"} color={"pink.400"} fontSize={"xs"}>{example.point}</Text>}
+              <Divider my={2} borderColor={"pink.500"} />
             </Box>
           ))}
         </ContentBox>
         {currentItem.extraInfo && (
           <ContentBox>
-            <Text fontSize={"sm"} color={"white"}>{currentItem.extraInfo}</Text>
+            <Text fontSize={"sm"} color={"pink.400"}>{currentItem.extraInfo}</Text>
           </ContentBox>
         )}
       </Box>
