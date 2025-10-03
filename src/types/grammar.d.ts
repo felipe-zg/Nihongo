@@ -1,3 +1,9 @@
+type GrammarEntryNewWord = {
+  kanji: string;
+  kana: string;
+  english: string;
+}
+
 declare type GrammarEntry = {
   id: number;
   grammar: string;
@@ -14,4 +20,5 @@ declare type GrammarEntry = {
   }[];
   extraInfo?: string;
   category: typeof GrammarEntryCategory[keyof typeof GrammarEntryCategory];
+  newWords?: GrammarEntryNewWord[];
 };
