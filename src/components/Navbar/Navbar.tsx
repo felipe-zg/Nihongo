@@ -4,6 +4,11 @@ import { Box, Button, HamburgerIcon, VStack } from 'native-base';
 import { useScreenWidth } from '../../hooks';
 
 const routes = [
+  { name: 'ミニストーリー', path: '/ministory' },
+  { name: '文字・語彙', path: '/moji-goi-deck' },
+  { name: '日本語の森・文法', path: '/grammar/nihongo-no-mori' },
+  { name: 'JLPT', path: '/JLPT/N3' },
+  { name: 'JLPT Vocabs N3', path: '/JLPT/vocabs?level=N3' },
   { name: 'Levels', path: '/' },
   { name: 'Kanji (YDC)', path: '/kanji-ydc' },
   { name: 'Kanji (Genki)', path: '/kanji-genki' },
@@ -16,14 +21,9 @@ const routes = [
   { name: 'Words quizz', path: '/words-quizz' },
   { name: 'Verbs', path: '/verbs' },
   { name: 'Lessons', path: '/lessons' },
-  { name: 'JLPT', path: '/JLPT/N3' },
-  { name: 'JLPT Vocabs N3', path: '/JLPT/vocabs?level=N3' },
   { name: 'JLPT Vocabs N2', path: '/JLPT/vocabs?level=N2' },
   { name: 'JLPT Grammar N2', path: '/JLPT/grammar/N2' },
   { name: 'Music', path: '/music/leina/nostalgia' },
-  { name: 'Mini Story', path: '/ministory' },
-  { name: '文字・語彙', path: '/moji-goi-deck' },
-  { name: '日本語の森・文法', path: '/grammar/nihongo-no-mori' },
 ]
 
 const Navbar = () => {
