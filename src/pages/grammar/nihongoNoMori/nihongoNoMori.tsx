@@ -80,6 +80,19 @@ const NihongoNoMoriGrammar: React.FC<Props> = ({ grammarList }) => {
             <Text fontSize={"sm"} color={"pink.400"}>{currentItem.extraInfo}</Text>
           </ContentBox>
         )}
+        {currentItem.newWords && (
+          <ContentBox>
+            <Box minWidth={{ base: "100%", md: "50%" }}>
+              {currentItem.newWords?.map((word, index) => (
+                <HStack key={index} width={"100%"}>
+                  <Text flex={1} color={"white"}>{word.kanji}</Text>
+                  <Text flex={2} color={"white"}>{word.kana}</Text>
+                  <Text flex={2} color={"white"}>{word.english}</Text>
+                </HStack>
+              ))}
+            </Box>
+          </ContentBox>
+        )}
       </Box>
       <Box width={"90%"} mt={"auto"}>
         <Button w={"full"} onPress={handleNext} mt={4} variant={showContent ? "solid" : "outline"} colorScheme="pink">{showContent ? "次へ" : "見る"}</Button>
