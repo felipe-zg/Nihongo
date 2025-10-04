@@ -1,6 +1,7 @@
 export const GrammarEntryCategory = {
   REASON_CAUSE: '理由・原因',
   SITUATION_CHANGE: '状況・変化',
+  POSITIONS_STANDARDS: '立場・基準',
 } as const;
 
 export const NIHONGO_NO_MORI_GRAMMAR: GrammarEntry[] = [
@@ -410,9 +411,11 @@ export const NIHONGO_NO_MORI_GRAMMAR: GrammarEntry[] = [
         {name: "V.ば ＋ V.る"},
         {name: "イ形容詞 ければ ＋ イ形容詞"},
         {name: "ナ形容詞・名詞 であれば ＋ ナ形容詞・名詞"},
-        {name: "名詞 なら ＋ 名詞"}
       ],
-      pattern: ["〜ほど", "〜であるほど", "〜であればあるほど"]
+      pattern: ["〜ほど", "〜であるほど"],
+      combinedForms: [
+        { first: "ナ形容詞・名詞", pattern: "〜であればあるほど"},
+      ],
     },
     examples: [
       {
@@ -517,6 +520,322 @@ export const NIHONGO_NO_MORI_GRAMMAR: GrammarEntry[] = [
       { kanji: "給料", kana: "きゅうりょう", english: "salary" },
       { kanji: "物価", kana: "ぶっか", english: "prices (of things)" },
       { kanji: "溜まる", kana: "たまる", english: "to accumulate" },
+    ]
+  },
+  {
+    id: 17,
+    grammar: "〜として",
+    imi: "〜の立場で",
+    usage: {
+      form: [{name: "名詞"}],
+      pattern: ["〜として"],
+      combinedForms: [
+        { first: "名詞1", pattern: "〜としての", second: "名詞2" },
+      ],
+    },
+    examples: [
+      {
+        sentence: "入学式では、新入生の代表として、みんなの前で話をした。",
+        meaning: "At the entrance ceremony, I spoke in front of everyone as the representative of the new students.",
+        point: "代表の立場で。。。"
+      },
+      {
+        sentence: "もう少し、大人としての行動を考えましょう。",
+        meaning: "Let's think a little more about our actions as adults.",
+      },
+      {
+        sentence: "コンビニの店長として、仕事は全部できるようになるべきだ。",
+        meaning: "As the store manager of the convenience store, I should be able to do all the work.",
+      },
+    ],
+    category: GrammarEntryCategory.POSITIONS_STANDARDS,
+    extraInfo: "立場＝＞ Position (e.g. as a student, as a teacher, as a parent...)",
+    newWords: [
+      { kanji: "行動", kana: "こうどう", english: "action" },
+      { kanji: "立場", kana: "たちば", english: "position" },
+      { kanji: "基準", kana: "きじゅん", english: "standard" },
+    ]
+  },
+  {
+    id: 18,
+    grammar: "〜にとって",
+    imi: "〜の立場から考えて",
+    explanation: "For that person in that position...",
+    usage: {
+      form: [{name: "名詞"}],
+      pattern: ["〜にとって"],
+      combinedForms: [
+        { first: "名詞1", pattern: "〜にとっての", second: "名詞2" },
+      ],
+    },
+    examples: [
+      {
+        sentence: "私にとって、英語を勉強することは楽しいことだ。",
+        meaning: "For me, studying English is a fun thing.",
+      },
+      {
+        sentence: "外国人にとって、漢字は難しいですよね。",
+        meaning: "For foreigners, kanji is difficult, isn't it?",
+      },
+      {
+        sentence: "私にとっての幸せとは、家族と一緒に過ごすこと。",
+        meaning: "For me, happiness is spending time with my family.",
+      },
+      {
+        sentence: "中村さんにとって、一番の楽しみは、孫と一緒にご飯を食べることだそうだ。",
+        meaning: "Mr. Nakamura said that for him the greatest joy is to eat with his grandchild.",
+      },
+      {
+        sentence: "どんな人にとっても生活しやすい国にすることを目標にしている。",
+        meaning: "The goal is to make the country easy to live in for everyone.",
+      },
+    ],
+    category: GrammarEntryCategory.POSITIONS_STANDARDS,
+    newWords: [
+      { kanji: "孫", kana: "まご", english: "grandchild" },
+      { kanji: "目標", kana: "もくひょう", english: "goal" },
+    ]
+  },
+  {
+    id: 19,
+    grammar: "〜に基づいて",
+    imi: "〜をもとにして",
+    explanation: '"Based on 〜"・"On the basis of 〜". It shows that something is created, decided, or done using X as a foundation/reference.',
+    usage: {
+      form: [{name: "名詞"}],
+      pattern: ["〜に基づいて"],
+      combinedForms: [
+        { first: "名詞1", pattern: "〜に基づく", second: "名詞2" },
+        { first: "名詞1", pattern: "〜に基づいた", second: "名詞2" },
+      ],
+    },
+    examples: [
+      {
+        sentence: "年の初めに決めた目標に基づいて計画を立てる。",
+        meaning: "I will make a plan based on the goals set at the beginning of the year.",
+      },
+      {
+        sentence: "この商品は、多くの人の意見に基づいて作られている。",
+        meaning: "This product is made based on the opinions of many people.",
+      },
+      {
+        sentence: "この映画は、実際にあった出来事に基づいて作られた。",
+        meaning: "This movie was made based on actual events.",
+      },
+    ],
+    category: GrammarEntryCategory.POSITIONS_STANDARDS,
+    newWords: [
+      { kanji: "基づく", kana: "もとづく", english: "to be based on" },
+      { kanji: "実際", kana: "じっさい", english: "actual" },
+    ]
+  },
+  {
+    id: 20,
+    grammar: "〜を中心に",
+    imi: "〜を基本に考えて",
+    explanation: 'Lit. With X as the center. "Mainly around X"・"Focusing on X"・"Centered on X"',
+    usage: {
+      form: [{name: "名詞"}],
+      pattern: ["〜を中心に (して)", "〜を中心として"]
+    },
+    examples: [
+      {
+        sentence: "インターネットを中心にして新しい言葉が広まる。",
+        meaning: "New words are spreading mainly around the Internet.",
+      },
+      {
+        sentence: "大学生を中心に人気がある。",
+        meaning: "It is popular mainly among university students.",
+      },
+      {
+        sentence: "若者を中心にして、古いカメラで写真を撮ることが流行っている。",
+        meaning: "Taking photos with old cameras is trending mainly among young people.",
+      },
+      {
+        sentence: "この地域の人々は、中学生を中心として町のゴミ拾いを行っている。",
+        meaning: "The people in this region are doing town clean-up activities with junior high school students as the main participants.",
+      },
+      {
+        sentence: "今夜は、西日本を中心に大雨になると予報されている。",
+        meaning: "It is forecasted that heavy rain will occur tonight, mainly in Western Japan.",
+      },
+    ],
+    category: GrammarEntryCategory.POSITIONS_STANDARDS,
+    newWords: [
+      { kanji: "中心", kana: "ちゅうしん", english: "center" },
+      { kanji: "流行る", kana: "はやる", english: "to be in fashion・popular" },
+      { kanji: "地域", kana: "ちいき", english: "region" },
+    ]
+  },
+  {
+    id: 21,
+    grammar: "〜とおり",
+    imi: "〜と同じように",
+    usage: {
+      form: [{name: "V.る・た"}, {name: "名詞", connector: "の"}],
+      pattern: ["〜とおり (に)", "〜どおり (に)"]
+    },
+    examples: [
+      {
+        sentence: "今日は予定どおりデートに行きます。",
+        meaning: "I will go on a date as planned today.",
+      },
+      {
+        sentence: "本に書いてあるとおりにやったのに上手くいかない。",
+        meaning: "I followed what was written in the book, but it didn't go well.",
+      },
+      {
+        sentence: "計画どおり進まないことはよくあることなので、心配しなくてもいいよ。",
+        meaning: "It's common for things not to go according to plan, so you don't have to worry.",
+      },
+      {
+        sentence: "母が教えてくれたとおりに作ってみたが、なかなか美味しく作ることができない。",
+        meaning: "I tried to make it as my mother taught me, but I couldn't make it delicious.",
+      },
+    ],
+    category: GrammarEntryCategory.POSITIONS_STANDARDS,
+    newWords: [
+      { kanji: "計画", kana: "けいかく", english: "plan" },
+      { kanji: "進む", kana: "すすむ", english: "to advance・proceed" },
+    ]
+  },
+  {
+    id: 22,
+    grammar: "〜という",
+    imi: "〜という名前の",
+    explanation: "知らないことを説明したり、教えてもらったりするときに使う。",
+    usage: {
+      combinedForms: [{ first: "名詞1", pattern: "という。っていう・って", second: "名詞2" }],
+    },
+    examples: [
+      {
+        sentence: "立川という街を知っていますか。",
+        meaning: "Do you know the city called Tachikawa?",
+      },
+      {
+        sentence: "佐藤さんっていう人を知っている？",
+        meaning: "Do you know a person named Sato?",
+      },
+      {
+        sentence: "日本語の森って会社を知っている？",
+        meaning: "Do you know the company called Nihongo no Mori?",
+      },
+      {
+        sentence: "私はトイプードルという種類の犬を飼っています。",
+        meaning: "I have a dog of the Toy Poodle breed.",
+      },
+      {
+        sentence: "隣に引っ越してきたかとうさんって人、知っている？",
+        meaning: "Do you know a person named Kato who moved in next door?",
+      },
+      {
+        sentence: "A:ひたちっていう駅に行きたいんですが、との電車に乗ればいいですか。\nB:ひたちですか？ 3番線の電車に乗ってください。",
+        meaning: "A: I want to go to a station called Hitachi. Which train should I take?\nB: Hitachi? Please take the train on platform 3.",
+      },
+    ],
+    category: GrammarEntryCategory.POSITIONS_STANDARDS,
+    extraInfo: "N1 -> なまえ ・ N2 -> もの",
+    newWords: [
+      { kanji: "種類", kana: "しゅるい", english: "type・kind" },
+    ]
+  },
+  {
+    id: 23,
+    grammar: "〜に対して ①",
+    imi: "〜に・〜を相手に",
+    explanation: 'に対して => "Toward・In response to・With regard to"\nに対する => "Regarding・About・Toward" noun\nIt marks the target of an action, attitude, opnion, or feeling. It can be concrete (toward a person) or abstract (toward an idea, issue, opnion).',
+    usage: {
+      form: [{name: "名詞"}],
+      pattern: ["〜に対して"],
+      combinedForms: [{ first: "名詞1", pattern: "に対する", second: "名詞2" }],
+    },
+    examples: [
+      {
+        sentence: "ニュースに対する意見。",
+        meaning: "Opinion regarding the news.",
+      },
+      {
+        sentence: "友達からの相談に対して何と答えようか考えている。",
+        meaning: "I'm thinking about how to respond to my friend's consultation(question).",
+      },
+      {
+        sentence: "中学生になった弟は、母に対してひどいことばかり言っている。",
+        meaning: "My younger brother, who has become a junior high school student, only says terrible things to our mother.",
+      },
+      {
+        sentence: "あなたの仕事に対する考え方を教えてください。",
+        meaning: "Please tell me your way of thinking (approach) regarding your work.",
+      },
+    ],
+    category: GrammarEntryCategory.POSITIONS_STANDARDS,
+    newWords: [
+      { kanji: "相談", kana: "そうだん", english: "consultation; discussion" },
+    ]
+  },
+  {
+    id: 24,
+    grammar: "〜について",
+    imi: "〜のことを",
+    explanation: "~のことを話す、考えると言うときに使う",
+    usage: {
+      form: [{name: "名詞"}],
+      pattern: ["〜について"]
+    },
+    examples: [
+      {
+        sentence: "父とおじさんたちが、野球の試合について話し合っている。",
+        meaning: "My father and uncles are discussing the baseball game.",
+      },
+      {
+        sentence: "彼は、日本の文化についてよく知っている人だ。",
+        meaning: "He is a person who knows a lot about Japanese culture.",
+      },
+      {
+        sentence: "故郷に帰ると、両親から一人暮らしの生活についてたくさんしつもんされた。",
+        meaning: "When I returned to my hometown, my parents asked me a lot about my life living alone.",
+      },
+    ],
+    category: GrammarEntryCategory.POSITIONS_STANDARDS,
+    newWords: [
+      { kanji: "野球", kana: "やきゅう", english: "baseball" },
+      { kanji: "試合", kana: "しあい", english: "game; match" },
+      { kanji: "故郷", kana: "こきょう", english: "hometown" },
+    ]
+  },
+  {
+    id: 25,
+    grammar: "〜に関して",
+    imi: "〜について",
+    usage: {
+      form: [{name: "名詞"}],
+      pattern: ["〜に関して"],
+      combinedForms: [
+        { first: "名詞1", pattern: "に関する・に関しての", second: "名詞2" },
+      ]
+    },
+    examples: [
+      {
+        sentence: "アフリカに行った目的は、文化に関する研究をするためだった。",
+        meaning: "The purpose of going to Africa was to conduct research related to culture.",
+      },
+      {
+        sentence: "その場にいた人から、事件に関しての話を聞き出した。",
+        meaning: "I heard a story about the incident from a person who was there.",
+      },
+      {
+        sentence: "植物に関して、父はかなり詳しい。",
+        meaning: "My father is quite knowledgeable about plants.",
+      },
+    ],
+    category: GrammarEntryCategory.POSITIONS_STANDARDS,
+    newWords: [
+      { kanji: "関する", kana: "かんする", english: "to be related to" },
+      { kanji: "目的", kana: "もくてき", english: "purpose" },
+      { kanji: "研究", kana: "けんきゅう", english: "research・study" },
+      { kanji: "事件", kana: "じけん", english: "incident" },
+      { kanji: "植物", kana: "しょくぶつ", english: "plant" },
+      { kanji: "詳しい", kana: "くわしい", english: "detailed・be well-informed" },
+      { kanji: "かなり", kana: "かなり", english: "considerably・fairly" },
     ]
   },
 ]
