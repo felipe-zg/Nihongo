@@ -12,7 +12,7 @@ export const NIHONGO_NO_MORI_GRAMMAR: GrammarEntry[] = [
     explanation: "ズボンに穴があく。",
     usage: {
       form: [{ name: "普通形"}, {name: "名詞", connector: "の"}, {name: "な形容詞", connector: "な"}],
-      pattern: ["〜せい (で・か・だ)"]
+      pattern: ["せい (で・か・だ)"]
     },
     examples: [
       {
@@ -32,7 +32,7 @@ export const NIHONGO_NO_MORI_GRAMMAR: GrammarEntry[] = [
     imi: "〜が原因で、良い結果になった",
     usage: {
       form: [{ name: "普通形"}, {name: "名詞", connector: "の"}, {name: "な形容詞", connector: "な"}],
-      pattern: ["〜おかげで (で・か・だ)"]
+      pattern: ["おかげ (で・か・だ)"]
     },
     examples: [
       {
@@ -48,7 +48,7 @@ export const NIHONGO_NO_MORI_GRAMMAR: GrammarEntry[] = [
     imi: "〜だから",
     usage: {
       form: [{ name: "普通形"}, {name: "名詞", connector: "な"}, {name: "な形容詞", connector: "な"}],
-      pattern: ["〜もの", "〜もん", "〜ものだから", "〜もので"]
+      pattern: ["もの", "もん", "ものだから", "もので"]
     },
     examples: [
       {
@@ -64,7 +64,7 @@ export const NIHONGO_NO_MORI_GRAMMAR: GrammarEntry[] = [
     imi: "〜なので",
     usage: {
       form: [{ name: "普通形"}, {name: "名詞", connector: "な"}, {name: "な形容詞", connector: "の"}],
-      pattern: ["〜ため", "〜ために", "〜ためだ"]
+      pattern: ["ため", "ために", "ためだ"]
     },
     examples: [
       {
@@ -94,7 +94,7 @@ export const NIHONGO_NO_MORI_GRAMMAR: GrammarEntry[] = [
     imi: "〜なので",
     usage: {
       form: [{ name: "普通形"}, {name: "名詞", connector: "な"}, {name: "な形容詞", connector: "な"}],
-      pattern: ["〜のだから", "〜のですから", "〜んだから", "〜んですから"]
+      pattern: ["のだから", "のですから", "んだから", "んですから"]
     },
     examples: [
       {
@@ -126,12 +126,12 @@ export const NIHONGO_NO_MORI_GRAMMAR: GrammarEntry[] = [
     usage: {
       form: [{ name: "た形"}, {name: "名詞"}],
       pattern: [
-        "〜ことをきっかけに", 
-        "〜ことがきっかけで",
-        "〜のをきっかけに", 
-        "〜のがきっかけで",
-        "〜をきっかけに", 
-        "〜がきっかけで",
+        "ことをきっかけに", 
+        "ことがきっかけで",
+        "のをきっかけに", 
+        "のがきっかけで",
+        "をきっかけに", 
+        "がきっかけで",
       ]
     },
     examples: [
@@ -170,7 +170,7 @@ export const NIHONGO_NO_MORI_GRAMMAR: GrammarEntry[] = [
     `,
     usage: {
       form: [{ name: "普通形"}, {name: "名詞", connector: "な"}, {name: "な形容詞", connector: "な"}],
-      pattern: ["〜わけだ"]
+      pattern: ["わけだ"]
     },
     examples: [
       {
@@ -198,7 +198,7 @@ export const NIHONGO_NO_MORI_GRAMMAR: GrammarEntry[] = [
     explanation: "それをしてからそのときから後ろはずっと同じ状態が続いている",
     usage: {
       form: [{ name: "テ形"}, {name: "名詞"}],
-      pattern: ["〜以来"]
+      pattern: ["以来"]
     },
     examples: [
       {
@@ -219,7 +219,7 @@ export const NIHONGO_NO_MORI_GRAMMAR: GrammarEntry[] = [
     imi: "〜が理由で",
     usage: {
       form: [{name: "名詞"}],
-      pattern: ["〜によって", "〜により"]
+      pattern: ["によって", "により"]
     },
     examples: [
       {
@@ -256,7 +256,7 @@ export const NIHONGO_NO_MORI_GRAMMAR: GrammarEntry[] = [
     explanation: "その状態がずっと続いている",
     usage: {
       form: [{name: "V.た形"}, {name: "V.ない形"}, {name: "イ形容詞"}, {name: "ナ形容詞", connector: "な"}, {name: "名詞", connector: "の"}],
-      pattern: ["〜まま"]
+      pattern: ["まま"]
     },
     examples: [
       {
@@ -293,7 +293,7 @@ export const NIHONGO_NO_MORI_GRAMMAR: GrammarEntry[] = [
     explanation: "2つのことを一緒にやるときに使う文法。",
     usage: {
       form: [{name: "V. ます STEM"}],
-      pattern: ["〜つつ"]
+      pattern: ["つつ"]
     },
     examples: [
       {
@@ -335,7 +335,7 @@ export const NIHONGO_NO_MORI_GRAMMAR: GrammarEntry[] = [
     explanation: "同じ時に何を変わる・何をする",
     usage: {
       form: [{name: "V.る形"}, {name: "名詞"}, {name: "名詞", connector: "である"}],
-      pattern: ["〜とともに"]
+      pattern: ["とともに"]
     },
     examples: [
       {
@@ -378,7 +378,7 @@ export const NIHONGO_NO_MORI_GRAMMAR: GrammarEntry[] = [
     explanation: "少しずつ何かが変化している様子を表す時に使う",
     usage: {
       form: [{name: "V. ます STEM"}],
-      pattern: ["〜つつめる"]
+      pattern: ["つつめる"]
     },
     examples: [
       {
@@ -412,7 +412,7 @@ export const NIHONGO_NO_MORI_GRAMMAR: GrammarEntry[] = [
         {name: "イ形容詞 ければ ＋ イ形容詞"},
         {name: "ナ形容詞・名詞 であれば ＋ ナ形容詞・名詞"},
       ],
-      pattern: ["〜ほど", "〜であるほど"],
+      pattern: ["ほど", "であるほど"],
       combinedForms: [
         { first: "ナ形容詞・名詞", pattern: "〜であればあるほど"},
       ],
@@ -458,7 +458,7 @@ export const NIHONGO_NO_MORI_GRAMMAR: GrammarEntry[] = [
     imi: "〜すると、だんだんと。。。も変わる",
     usage: {
       form: [{name: "V.る"}, {name: "名詞"}],
-      pattern: ["〜にしたがって"]
+      pattern: ["にしたがって"]
     },
     examples: [
       {
@@ -499,7 +499,7 @@ export const NIHONGO_NO_MORI_GRAMMAR: GrammarEntry[] = [
     explanation: "特に悪いこと - 悪くなる、よくならない",
     usage: {
       form: [{name: "V.る"}],
-      pattern: ["〜ばかり (で・だ)"]
+      pattern: ["ばかり (で・だ)"]
     },
     examples: [
       {
@@ -522,15 +522,16 @@ export const NIHONGO_NO_MORI_GRAMMAR: GrammarEntry[] = [
       { kanji: "溜まる", kana: "たまる", english: "to accumulate" },
     ]
   },
+  // SECTION 3 - GRAMMAR 17 - 25
   {
     id: 17,
     grammar: "〜として",
     imi: "〜の立場で",
     usage: {
       form: [{name: "名詞"}],
-      pattern: ["〜として"],
+      pattern: ["として"],
       combinedForms: [
-        { first: "名詞1", pattern: "〜としての", second: "名詞2" },
+        { first: "名詞1", pattern: "としての", second: "名詞2" },
       ],
     },
     examples: [
@@ -563,9 +564,9 @@ export const NIHONGO_NO_MORI_GRAMMAR: GrammarEntry[] = [
     explanation: "For that person in that position...",
     usage: {
       form: [{name: "名詞"}],
-      pattern: ["〜にとって"],
+      pattern: ["にとって"],
       combinedForms: [
-        { first: "名詞1", pattern: "〜にとっての", second: "名詞2" },
+        { first: "名詞1", pattern: "にとっての", second: "名詞2" },
       ],
     },
     examples: [
@@ -603,10 +604,10 @@ export const NIHONGO_NO_MORI_GRAMMAR: GrammarEntry[] = [
     explanation: '"Based on 〜"・"On the basis of 〜". It shows that something is created, decided, or done using X as a foundation/reference.',
     usage: {
       form: [{name: "名詞"}],
-      pattern: ["〜に基づいて"],
+      pattern: ["に基づいて"],
       combinedForms: [
-        { first: "名詞1", pattern: "〜に基づく", second: "名詞2" },
-        { first: "名詞1", pattern: "〜に基づいた", second: "名詞2" },
+        { first: "名詞1", pattern: "に基づく", second: "名詞2" },
+        { first: "名詞1", pattern: "に基づいた", second: "名詞2" },
       ],
     },
     examples: [
@@ -636,7 +637,7 @@ export const NIHONGO_NO_MORI_GRAMMAR: GrammarEntry[] = [
     explanation: 'Lit. With X as the center. "Mainly around X"・"Focusing on X"・"Centered on X"',
     usage: {
       form: [{name: "名詞"}],
-      pattern: ["〜を中心に (して)", "〜を中心として"]
+      pattern: ["を中心に (して)", "を中心として"]
     },
     examples: [
       {
@@ -673,7 +674,7 @@ export const NIHONGO_NO_MORI_GRAMMAR: GrammarEntry[] = [
     imi: "〜と同じように",
     usage: {
       form: [{name: "V.る・た"}, {name: "名詞", connector: "の"}],
-      pattern: ["〜とおり (に)", "〜どおり (に)"]
+      pattern: ["とおり (に)", "どおり (に)"]
     },
     examples: [
       {
@@ -746,7 +747,7 @@ export const NIHONGO_NO_MORI_GRAMMAR: GrammarEntry[] = [
     explanation: 'に対して => "Toward・In response to・With regard to"\nに対する => "Regarding・About・Toward" noun\nIt marks the target of an action, attitude, opnion, or feeling. It can be concrete (toward a person) or abstract (toward an idea, issue, opnion).',
     usage: {
       form: [{name: "名詞"}],
-      pattern: ["〜に対して"],
+      pattern: ["に対して"],
       combinedForms: [{ first: "名詞1", pattern: "に対する", second: "名詞2" }],
     },
     examples: [
@@ -779,7 +780,7 @@ export const NIHONGO_NO_MORI_GRAMMAR: GrammarEntry[] = [
     explanation: "~のことを話す、考えると言うときに使う",
     usage: {
       form: [{name: "名詞"}],
-      pattern: ["〜について"]
+      pattern: ["について"]
     },
     examples: [
       {
@@ -808,7 +809,7 @@ export const NIHONGO_NO_MORI_GRAMMAR: GrammarEntry[] = [
     imi: "〜について",
     usage: {
       form: [{name: "名詞"}],
-      pattern: ["〜に関して"],
+      pattern: ["に関して"],
       combinedForms: [
         { first: "名詞1", pattern: "に関する・に関しての", second: "名詞2" },
       ]
@@ -838,4 +839,5 @@ export const NIHONGO_NO_MORI_GRAMMAR: GrammarEntry[] = [
       { kanji: "かなり", kana: "かなり", english: "considerably・fairly" },
     ]
   },
+  // SECTION 3 - GRAMMAR 26 - 33
 ]
