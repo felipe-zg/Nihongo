@@ -100,7 +100,7 @@ const NihongoNoMoriGrammar: React.FC<Props> = ({ grammarList }) => {
         )}
         {currentItem.newWords && (
           <ContentBox>
-            <Box minWidth={{ base: "100%", md: "50%" }}>
+            <Box minWidth={{ base: "100%", lg: "50%" }}>
               {currentItem.newWords?.map((word, index) => (
                 <HStack key={index} width={"100%"}>
                   <Text flex={1} color={"white"}>{word.kanji}</Text>
