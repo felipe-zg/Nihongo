@@ -10,8 +10,9 @@ declare type GrammarEntry = {
   imi: string;
   explanation?: string;
   usage: {
-    form: { name: string; connector?: string }[];
-    pattern: string[];
+    form?: { name: string; connector?: string }[];
+    pattern?: string[];
+    combinedForms?: { first: string; pattern: string; second?: string }[]
   };
   examples: {
     sentence: string;
