@@ -112,7 +112,7 @@ const NihongoNoMoriGrammar: React.FC<Props> = ({ grammarList }) => {
           </ContentBox>
         )}
       </Box>
-      <Box width={"90%"} mt={"auto"}>
+      <Box width={"90%"} mt={"auto"} mb={35}>
         <Button w={"full"} onPress={handleNext} mt={4} variant={showContent ? "solid" : "outline"} colorScheme="pink">{showContent ? "次へ" : "見る"}</Button>
       </Box>
     </Box>
