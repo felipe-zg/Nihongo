@@ -3,6 +3,7 @@ export const GrammarEntryCategory = {
   SITUATION_CHANGE: '状況・変化',
   POSITIONS_STANDARDS: '立場・基準',
   ADVERSATIVE_NEGATIVE: '逆接・否定',
+  IMAGINATION_PREDICTION: '想像・予想',
 } as const;
 
 export const NIHONGO_NO_MORI_GRAMMAR: GrammarEntry[] = [
@@ -1120,6 +1121,162 @@ export const NIHONGO_NO_MORI_GRAMMAR: GrammarEntry[] = [
       { kanji: "絶対に", kana: "ぜったいに", english: "absolutely" },
     ],
   },
-  // SECTION 5 - GRAMMAR 34 - 47
+  // SECTION 5 - GRAMMAR 34 - 47 //TODO: Implement examples and explanations for chapter 5
   // SECTION 6 - GRAMMAR 48 - 53
+  {
+    id: 48,
+    grammar: "〜がる",
+    imi: "〜と感じているようだ。",
+    explanation: "話し手が感じていることではなく、他の人の気持ちや感情を表す。\nThis is a way of saying that you look at other people and think they're feeling X.",
+    usage: {
+      form: [{name: "イ形容詞", connector: "drop い"}, {name: "ナ形容詞", connector: "drop な"}],
+      pattern: ["がる"],
+    },
+    examples: [
+      {
+        sentence: "彼は私のことを怖がっているのか、目を合わせようともしない。",
+        meaning: "He seems scared of me, he won't even look me in the eye.",
+        point: "こわいと感じているようだという意味です",
+      },
+      {
+        sentence: "すずきさんが会社を辞めると聞いて、なんな残念がっていたよ。",
+        meaning: "When we heard that Mr. Suzuki was quitting the company, we felt very sorry.",
+      },
+      {
+        sentence: "娘の誕生日は、前から欲しがっていた人形をプレゼントしてあげよう。",
+        meaning: "For my daughter's birthday, I will give her the doll she has wanted for a long time.",
+      },
+    ],
+    category: GrammarEntryCategory.IMAGINATION_PREDICTION,
+    extraInfo: "他の人の様子を言うときに使う。",
+    newWords: [
+      { kanji: "怖い", kana: "こわい", english: "scary" },
+    ],
+  },
+  {
+    id: 49,
+    grammar: "〜ようとする",
+    imi: "〜を始める直前",
+    explanation: "それをまだやっていないいいんだけど、それをやる直前という意味です。\nJust about to do something・On the verge of doing something",
+    usage: {
+      form: [{name: "V. よう"}],
+      pattern: ["とする"],
+    },
+    examples: [
+      {
+        sentence: "4歳の息子は、ペットにえさをあげようとしている。",
+        meaning: "My 4-year-old son is about to feed the pet.",
+        point: "He is about to do it, but he hasn't done it yet.",
+      },
+      {
+        sentence: "仕事が終わって早く帰ろうとしたが、部長に声をかけられてしまった。",
+        meaning: "I finished work and was leaving early, but my boss called out to me.",
+        point: "I was about to leave, but something stopped me."
+      },
+      {
+        sentence: "学校から家に帰って、そのまま寝ようとした妹を起こした。",
+        meaning: "I woke up my sister, who was about to go to sleep, right after coming home from school.",
+        point: "She was about to do it, but I stopped her."
+      },
+    ],
+    category: GrammarEntryCategory.IMAGINATION_PREDICTION,
+    newWords: [
+      { kanji: "直前", kana: "ちょくぜん", english: "just before" },
+    ],
+  },
+  // Number 50 is そう part 1
+  {
+    id: 51,
+    grammar: "〜そう ②",
+    imi: "〜もう少しで～してしまう",
+    explanation: "まだそれをしていないんだけど、もうちょっとでそうなると言いたいときに使う。",
+    usage: {
+      form: [{name: "V. ます STEM"}],
+      pattern: ["そう"],
+    },
+    examples: [
+      {
+        sentence: "転びそうだった。",
+        meaning: "I almost fell down.",
+        point: "まだ転んでいないんだけど、もう少しで転んでしまうところだった。",
+      },
+      {
+        sentence: "携帯電話を見ながら歩いていたせいで、階段から落ちそうになった。",
+        meaning: "I almost fell down the stairs because I was looking at my phone while walking.",
+      },
+      {
+        sentence: "運転中に眠くなって、事故を起こしそうになったことがある。",
+        meaning: "I almost had an accident because I became sleepy while driving.",
+      },
+      {
+        sentence: "電車に乗っていた女性は、今にも泣きそうな顔をしていた。",
+        meaning: "The woman on the train looked like she was about to cry.",
+      },
+    ],
+    category: GrammarEntryCategory.IMAGINATION_PREDICTION,
+    newWords: [
+      { kanji: "階段", kana: "かいだん", english: "stairs" },
+      { kanji: "事故", kana: "じこ", english: "accident" },
+      { kanji: "女性", kana: "じょせい", english: "woman" },
+    ],
+  },
+  {
+    id: 52,
+    grammar: "〜だろう",
+    imi: "たぶん〜",
+    explanation: "～だろうと言うときは「絶対にこうだ！」とは言えないとき。\n「たぶんこうじゃないかな」と自分が思っているときに使う文法です。\n this patter is used when you can't say for sure that it's like this, but you think it probably is.",
+    usage: {
+      form: [{name: "普通形"}, {name: "形容詞"}, {name: "名詞"}],
+      pattern: ["だろう", "でしょう"],
+    },
+    examples: [
+      {
+        sentence: "薬を飲んでゆっくり休めば、すぐに熱は下がるだろう。",
+        meaning: "If you take the medicine and rest, your fever will probably go down soon.",
+      },
+      {
+        sentence: "道路が濡れているのは、夜中に雨が降ったからでしょう。",
+        meaning: "The road is wet probably because it rained in the middle of the night.",
+      },
+      {
+        sentence: "明日は雪が降るので、今日の夜はとても寒いだろう。",
+        meaning: "It will probably be very cold tonight because it will snow tomorrow.",
+      },
+    ],
+    category: GrammarEntryCategory.IMAGINATION_PREDICTION,
+    newWords: [
+      { kanji: "道路", kana: "どうろ", english: "road" },
+      { kanji: "濡れる", kana: "ぬれる", english: "to get wet" },
+      { kanji: "夜中", kana: "よなか", english: "middle of the night" },
+    ],
+    extraInfo: "たぶん ～ (だろう・でしょう) are often used together in the same sentence.",
+  },
+  {//TODO: Add example sentences
+    id: 53,
+    grammar: "〜みたい",
+    imi: "～に見える・～だと思う",
+    explanation: "意味①：これと同じように見えるというときに使う。\n意味②：何か物を見てこれを見えるというわけではなくて、その様子を見てこんな感じがするとか、こうだと思うと自分の考えたことを言うときに使う。",
+    usage: {
+      form: [{name: "普通形"}, {name: "形容詞"}, {name: "名詞"}],
+      pattern: ["みたい"],
+      combinedForms: [
+        { first: "名詞 ＋ まるで", pattern: "みたい"},
+      ]
+    },
+    examples: [
+      {
+        sentence: "xxxxxx",
+        meaning: "xxxxxx",
+      },
+      {
+        sentence: "xxxxxx",
+        meaning: "xxxxxx",
+      },
+      {
+        sentence: "xxxxxx",
+        meaning: "xxxxxx",
+      },
+    ],
+    category: GrammarEntryCategory.IMAGINATION_PREDICTION,
+  },
 ]
