@@ -2,6 +2,7 @@ export const MiniStoryTopics = {
   FOOD: '食事',
   HOUSE_WORK: '家事',
   SHOPPING: "買い物",
+  FASHION: "ファッション",
 } as const;
 
 // type MiniStoryTopic = typeof MiniStoryTopics[keyof typeof MiniStoryTopics];
@@ -2882,4 +2883,210 @@ export const MINI_STORY_N3: Record<string, MiniStory> = {
     topic: MiniStoryTopics.SHOPPING,
     page: 57,
   },
+  "69": {
+    id: "69",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "<髪{かみ}の毛{け}>伸{の}びたね。",
+      },
+      {
+        character: "B",
+        dialogue: "うん、ずっと<美{び}容{よう}院{いん}>行ってなくて。毎朝くしで<とかして><セットする>のも、毎晩<ドライヤー>で乾{かわ}かすのも大変！",
+      },
+      {
+        character: "A",
+        dialogue: "分かる！時間もかかるしね。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "髪{かみ}の毛{け}",
+        english: "hair",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "美{び}容{よう}院{いん}",
+        english: "beauty salon",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "床{とこ}屋{や}",
+        english: "barber shop",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "とかす",
+        english: "to comb",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+      {
+        kanji: "セット［する］",
+        english: "Set・to set (one's hair)",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "ドライヤー",
+        english: "hair dryer",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `A: Your hair got longer.\nB: Yeah, I haven't been to a beauty salon in long time. It's such a pain combing and putting it up every morning and drying it out with a dryer every night!\nA: I know what you mean! It takes so much time.`,
+    audio: "T69.mp3",
+    topic: MiniStoryTopics.FASHION,
+    page: 60,
+  },
+  "70": {
+    id: "70",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<眉{まゆ}毛{げ}>を少し<剃{そ}って>、<まつ毛{げ}>に<パーマ>をかけたら、まるで別{べつ}人{じん}のようになった。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "眉{まゆ}（毛{げ})",
+        english: "eyebrows",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "剃{そ}る",
+        english: "to shave",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+      {
+        kanji: "まつ毛{げ}",
+        english: "eyelashes",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "パーマ",
+        english: "perm",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `When I shave my eyebrows a little and perm my eyelashes, it's like I become another person.`,
+    audio: "T70.mp3",
+    topic: MiniStoryTopics.FASHION,
+    page: 60,
+  },
+  "71": {
+    id: "71",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "「ファッションに<正{せい}解{かい}>はない」って言うけど、どう思いますが。",
+      },
+      {
+        character: "B",
+        dialogue: "そうですね。私も若{わか}い頃{ころ}はファッション雑{ざっ}誌{し}を何{なん}冊{さつ}か買って<参{さん}考{こう}>にしながら、何が正{せい}解{かい}かを一{いっ}生{しょう}懸{けん}命{めい}探{さが}していました。でも今は、好{この}みも<体{たい}型{けい}>も人によって<それぞれ>なので、他の人の目を気にしすぐず、自{じ}由{ゆう}にしてほしいなと思っています。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "正{せい}解{かい}［する］",
+        english: "Correct answer・to answer correctly",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "参{さん}考{こう}",
+        english: "Reference",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "体{たい}型{けい}",
+        english: "Body type",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "それぞれ",
+        english: "Each・respectively",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.ADVERB ]
+      },
+    ],
+    translation: `A: They say, "there are no right answers in fashion," but what do you think?\nB: That's right. When I was younger, I used to buy and reference various fashion magazines and try my best to look for the right answers. But now, since preferences and body types differ from person to person, they try not to worry about the gaze of others too much and just want to be free.`,
+    audio: "T71.mp3",
+    topic: MiniStoryTopics.FASHION,
+    page: 61,
+  },
+  "72": {
+    id: "72",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<身{しん}長{ちょう}>が高いので、<シンプルな><スタイル>を心{こころ}がけている。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "身{しん}長{ちょう}",
+        english: "height",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "シンプルな",
+        english: "simple",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "スタイル",
+        english: "style",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `Since I'm tall, I make an effort to keep my style simple.`,
+    audio: "T72.mp3",
+    topic: MiniStoryTopics.FASHION,
+    page: 61,
+  },
+  // "xxxxxxxxx": {
+  //   id: "xxxxxxxxx",
+  //   rubyStory: [
+  //     {
+  //       character: "",
+  //       dialogue: "xxxxxxx",
+  //     },
+  //     {
+  //       character: "",
+  //       dialogue: "xxxxxxx",
+  //     },
+  //   ],
+  //   rubyWords: [
+  //     {
+  //       kanji: "xxxxx",
+  //       english: "xxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxx",
+  //       english: "xxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxx",
+  //       english: "xxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxx",
+  //       english: "xxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxx",
+  //       english: "xxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxx",
+  //       english: "xxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //   ],
+  //   translation: `xxxxxxxxxxxxxx`,
+  //   audio: "Txxx.mp3",
+  //   topic: MiniStoryTopics.FASHION,
+  //   page: 1000000000,
+  // },
 };
