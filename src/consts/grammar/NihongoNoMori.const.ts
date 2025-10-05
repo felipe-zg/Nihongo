@@ -2,6 +2,7 @@ export const GrammarEntryCategory = {
   REASON_CAUSE: '理由・原因',
   SITUATION_CHANGE: '状況・変化',
   POSITIONS_STANDARDS: '立場・基準',
+  ADVERSATIVE_NEGATIVE: '逆接・否定',
 } as const;
 
 export const NIHONGO_NO_MORI_GRAMMAR: GrammarEntry[] = [
@@ -840,4 +841,285 @@ export const NIHONGO_NO_MORI_GRAMMAR: GrammarEntry[] = [
     ]
   },
   // SECTION 3 - GRAMMAR 26 - 33
+  {
+    id: 26,
+    grammar: "〜わけではない",
+    imi: "はっきり～とは言えない",
+    explanation: "I'm not gonna say that...・It doesn't necessarily mean that...",
+    usage: {
+      form: [{name: "普通形"}, {name: "ナ形容詞", connector: "な"}, {name: "名詞", connector: "な"}],
+      pattern: ["わけではない", "わけじゃない"],
+    },
+    examples: [
+      {
+        sentence: "行きたくないわけではない。",
+        meaning: "It's not that I don't want to go.",
+      },
+      {
+        sentence: "寿司は嫌いなわけではないんですが、好きでもないです。",
+        meaning: "It's not that I dislike sushi, but I don't really like it either.",
+      },
+      {
+        sentence: "彼はいつも明るいけど悩みがないわけじゃないと思うよ。",
+        meaning: "I think he always seems cheerful, but that doesn't mean he doesn't have worries.",
+      },
+      {
+        sentence: "行けないわけではないんですが、到着がぎりぎりになると思います。",
+        meaning: "It's not that I can't go, but I think I'll arrive just in time.",
+      },
+    ],
+    category: GrammarEntryCategory.ADVERSATIVE_NEGATIVE,
+    newWords: [
+      { kanji: "悩み", kana: "なやみ", english: "worry・concern" },
+      { kanji: "到着", kana: "とうちゃく", english: "arrival" },
+    ]
+  },
+  {
+    id: 27,
+    grammar: "〜ながら",
+    imi: "〜けれども",
+    usage: {
+      form: [{name: "V. ます STEM"}, {name: "イ形容詞"}, {name: "ナ形容詞"}, {name: "名詞"}],
+      pattern: ["ながら（も）"],
+      combinedForms: [
+        { first: "ナ形容詞・名詞", pattern: "でありながら（も）"},
+      ]
+    },
+    examples: [
+      {
+        sentence: "貧しいながら幸せです。",
+        meaning: "I'm poor, but I'm happy.",
+      },
+      {
+        sentence: "初心者でありながら彼はとても上手だ。",
+        meaning: "Though he is a beginner, he is very good at it.",
+      },
+      {
+        sentence: "決意しながらもまだ迷っている。",
+        meaning: "I'm determined, but I'm still indecisive.",
+      },
+    ],
+    category: GrammarEntryCategory.ADVERSATIVE_NEGATIVE,
+    newWords: [
+      { kanji: "貧しい", kana: "まずしい", english: "poor" },
+      { kanji: "初心者", kana: "しょしんしゃ", english: "beginner" },
+      { kanji: "決意", kana: "けつい", english: "determination" },
+      { kanji: "迷っている", kana: "まよっている", english: "being lost; being indecisive" },
+    ]
+  },
+  {
+    id: 28,
+    grammar: "〜かわりに ①",
+    imi: "〜はいいところと、悪いところがある",
+    usage: {
+      form: [{name: "普通形"}, {name: "ナ形容詞"}, {name: "イ形容詞"}],
+      pattern: ["かわりに"],
+    },
+    examples: [
+      {
+        sentence: "楽をした代わりに不合格だった。",
+        meaning: "I took the easy way and ended up failing.",
+        point: "楽をした -> いいところ・ 不合格 -> 悪いところ",
+      },
+      {
+        sentence: "大変な代わりにお金がたくさんもらえる。",
+        meaning: "It's hard work, but in return, you get a lot of money.",
+        point: "大変 -> 悪いところ・ お金がたくさんもらえる -> いいところ",
+      },
+      {
+        sentence: "この薬は、効果がある代わりにとても苦いです。",
+        meaning: "This medicine is very bitter, but it is effective.",
+      },
+      {
+        sentence: "明日は仕事を休んでもいいですよ。その代わりに、来週の土曜日は出勤してください。",
+        meaning: "You can take tomorrow off work. However, please come in next Saturday.",
+      },
+      {
+        sentence: "明日はいつもより早く出勤する代わりに、早く帰れることになった。",
+        meaning: "Tomorrow I'll be able to go home earlier than usual in exchange for coming to work earlier than usual.",
+      },
+    ],
+    category: GrammarEntryCategory.ADVERSATIVE_NEGATIVE,
+    extraInfo: "名詞 + かわりに 使えない。",
+    newWords: [
+      { kanji: "効果", kana: "こうか", english: "effect" },
+      { kanji: "出勤", kana: "しゅっきん", english: "attendance at work" },
+    ],
+  },
+  {
+    id: 29,
+    grammar: "〜反面",
+    imi: "〜なところがあるが、反対に。。。",
+    explanation: "...on the other hand・...but on the other hand",
+    usage: {
+      form: [{name: "昔通形"},{name: "ナ形容詞", connector: "な・である"}, {name: "名詞", connector: "の・である"}],
+      pattern: ["反面"],
+    },
+    examples: [
+      {
+        sentence: "N3に合格するのは難しい反面、合格したらすごく嬉しい。",
+        meaning: "Passing N3 is hard, but on the other hand, if you pass it it's a great joy.",
+      },
+      {
+        sentence: "日本では、都会に住む若者が増えている反面、地方に住む若者は減っている。",
+        meaning: "In Japan, while the number of young people living in cities is increasing, the number of young people living in rural areas is decreasing.",
+      },
+      {
+        sentence: "この仕事は忙しくて大変である反面、人のためになるいい仕事だと思う。",
+        meaning: "This job is busy and hard, but on the other hand, I think it's a good job that helps people.",
+      },
+      {
+        sentence: "この家は広い反面、掃除をするのが大変だ。",
+        meaning: "This house is spacious, but on the other hand, it's hard to clean.",
+      },
+    ],
+    category: GrammarEntryCategory.ADVERSATIVE_NEGATIVE,
+    newWords: [
+      { kanji: "都会", kana: "とかい", english: "city" },
+      { kanji: "地方", kana: "ちほう", english: "countryside" },
+      { kanji: "減る", kana: "へる", english: "to decrease" },
+      { kanji: "掃除", kana: "そうじ", english: "cleaning" },
+    ],
+  },
+  {
+    id: 30,
+    grammar: "〜ようがない",
+    imi: "〜する方法がない",
+    usage: {
+      form: [{name: "V. ます STEM"}],
+      pattern: ["ようがない"],
+    },
+    examples: [
+      {
+        sentence: "説明しようがない。",
+        meaning: "There is no way to explain it.",
+        point: "説明する方法がない。",
+      },
+      {
+        sentence: "怒りようがない。",
+        meaning: "There is no way to get angry.",
+      },
+      {
+        sentence: "諦めようがない。",
+        meaning: "There is no way to give up.",
+        point: "諦めることができない。",
+      },
+      {
+        sentence: "携帯電話を水で濡らしてしまったら、もう直しようがない。",
+        meaning: "There is no way to fix it once the cell phone gets wet.",
+      },
+      {
+        sentence: "こんなに点数を入れられてしまっては、相手に勝ちようがない。",
+        meaning: "There is no way to win against the opponent once they have scored this many points.",
+      },
+      {
+        sentence: "何度教えても仕事を覚えないので、もう教えようがない。",
+        meaning: "No matter how many times I teach him, he never learns the job, so there is no way to teach him anymore.",
+        point: "教える方法がない。",
+      },
+    ],
+    category: GrammarEntryCategory.ADVERSATIVE_NEGATIVE,
+    newWords: [
+      { kanji: "点数", kana: "てんすう", english: "score; points" },
+    ]
+  },
+  {
+    id: 31,
+    grammar: "〜がたい",
+    imi: "〜するのが難しい",
+    usage: {
+      form: [{name: "V. ます STEM"}],
+      pattern: ["がたい"],
+    },
+    examples: [
+      {
+        sentence: "理解しがたい。",
+        meaning: "It's hard to understand.",
+        point: "理解するのが難しい。",
+      },
+      {
+        sentence: "あの優しい先生が大きな声で怒るなんて、信じがたい話だ。",
+        meaning: "It's hard to believe that the kind teacher would get angry in a loud voice.",
+      },
+      {
+        sentence: "受け入れがたい悲しいニュースが流れていた。",
+        meaning: "There was sad news that was hard to accept.",
+      },
+      {
+        sentence: "私にとって、うそをつかれることは許しがたいことである。",
+        meaning: "For me, being lied to is something that is hard to forgive.",
+      },
+    ],
+    category: GrammarEntryCategory.ADVERSATIVE_NEGATIVE,
+    newWords: [
+      { kanji: "理解", kana: "りかい", english: "understanding" },
+      { kanji: "受け入れる", kana: "うけいれる", english: "to accept" },
+      { kanji: "流れる", kana: "ながれる", english: "to flow・spread" },
+      { kanji: "許す", kana: "ゆるす", english: "to allow; to forgive" },
+    ]
+  },
+  {
+    id: 32,
+    grammar: "〜ずに",
+    imi: "〜しないで",
+    usage: {
+      form: [{name: "V. ない STEM"}],
+      pattern: ["ずに"],
+    },
+    examples: [
+      {
+        sentence: "財布を持たずに家を出てしまったので、急いで家に戻った。",
+        meaning: "I left the house without my wallet, so I hurried back home.",
+      },
+      {
+        sentence: "体調が悪いのであれば、今日は無理せずに帰ってください。",
+        meaning: "If you are not feeling well, please go home without overdoing it today.",
+      },
+      {
+        sentence: "旅行の前日に何も準備をせずに寝てしまい、集合時間に遅刻した。",
+        meaning: "I went to bed without preparing anything the day before the trip and was late for the meeting time.",
+      },
+    ],
+    extraInfo: "する -> せずに・ 来る -> 来ずに",
+    category: GrammarEntryCategory.ADVERSATIVE_NEGATIVE,
+    newWords: [
+      { kanji: "前日", kana: "ぜんじつ", english: "the previous day" },
+      { kanji: "集合時間", kana: "しゅうごうじかん", english: "meeting time" },
+      { kanji: "遅刻", kana: "ちこく", english: "tardiness; lateness" },
+    ]
+  },
+  {
+    id: 33,
+    grammar: "〜はずがない・わけがない",
+    imi: "絶対に～ない",
+    explanation: "はっきりとは分からないけど、そう信じている",
+    usage: {
+      form: [{name: "普通形"}, {name: "ナ形容詞", connector: "な"}, {name: "名詞", connector: "の"}],
+      pattern: ["はずがない", "わけがない"],
+    },
+    examples: [
+      {
+        sentence: "いつも正直な彼女が、うそをつくわけがない。",
+        meaning: "It's impossible for her, who is always honest, to lie.",
+        point: "絶対うそをつかない。",
+      },
+      {
+        sentence: "遊んでばかりいる弟が、東京大学に受かるはずがない。",
+        meaning: "It's impossible for my younger brother, who is always playing, to pass the entrance exam for the University of Tokyo.",
+        point: "絶対に受からない。"
+      },
+      {
+        sentence: "おんなにたくさん勉強したんだ。試験に落ちるわけがない。",
+        meaning: "It's impossible for her, who studied so much, to fail the exam.",
+        point: "絶対に落ちない。"
+      },
+    ],
+    category: GrammarEntryCategory.ADVERSATIVE_NEGATIVE,
+    newWords: [
+      { kanji: "正直な", kana: "しょうじきな", english: "honest" },
+      { kanji: "絶対に", kana: "ぜったいに", english: "absolutely" },
+    ],
+  },
+  // SECTION 5 - GRAMMAR 34 - 47
+  // SECTION 6 - GRAMMAR 48 - 53
 ]
