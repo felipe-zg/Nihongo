@@ -1,6 +1,7 @@
 export const MiniStoryTopics = {
   FOOD: '食事',
   HOUSE_WORK: '家事',
+  SHOPPING: "買い物",
 } as const;
 
 // type MiniStoryTopic = typeof MiniStoryTopics[keyof typeof MiniStoryTopics];
@@ -2280,5 +2281,605 @@ export const MINI_STORY_N3: Record<string, MiniStory> = {
     audio: "T53.mp3",
     topic: MiniStoryTopics.HOUSE_WORK,
     page: 48,
+  },
+  "54": {
+    id: "54",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<ドラッグストア>に人の<列{れつ}>ができていた、閉{へい}店{てん}するから、店{てん}内{ない}の商品が<定{てい}価{か}>の２<割{わり}引{びき}>から<半{はん}額{がく}>で買えるらしい。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "ドラッグストア",
+        english: "drugstore",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "薬{やっ}局{きょく}",
+        english: "pharmacy",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "列{れつ}",
+        english: "line・row",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "定{てい}価{か}",
+        english: "retail price",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "～割{わり}引{びき}",
+        english: "~discount, ~off",
+        type: MiniStoryWordType.SUFFIX
+      },
+      {
+        kanji: "半{はん}額{がく}",
+        english: "half price",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `There was a line of people at the drugstore. It's going to close, so it seems that products in the store can be purchased at a discount of 20 percent to half off of the list price.`,
+    audio: "T54.mp3",
+    topic: MiniStoryTopics.SHOPPING,
+    page: 50,
+  },
+  "55": {
+    id: "55",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "日本円に<両{りょう}替{がえ}>するときには、<金{きん}額{がく}>にかかわらず、手{て}数{すう}<料{りょう}>として<余{よ}分{ぶん}な>金{きん}額{がく}を<支{し}払{はら}わ>なければならない。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "両{りょう}替{がえ}［する］",
+        english: "to exchange (money)",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "金{きん}額{がく}",
+        english: "amount of money",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "～料{りょう}",
+        english: "fee",
+        type: MiniStoryWordType.SUFFIX
+      },
+      {
+        kanji: "手{て}数{すう}料{りょう}",
+        english: "handling fee・commission",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "余{よ}分{ぶん}な",
+        english: "extra",
+        type: MiniStoryWordType.ADJECTIVE_NA
+      },
+      {
+        kanji: "支{し}払{はら}う",
+        english: "to pay",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+      {
+        kanji: "支{し}払{はら}い",
+        english: "payment",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `When exchanging to Japanese yen, you have to pay an extra amount as a fee, regardless of the total amount of money.`,
+    audio: "T55.mp3",
+    topic: MiniStoryTopics.SHOPPING,
+    page: 50,
+  },
+  "56": {
+    id: "56",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<自{じ}動{どう}販{はん}売{ばい}機{き}>でジュースを買おうと思ったのに、<お札{さつ}>が使えなかった。小{こ}銭{ぜに}だとあと50円<足{た}りない>。諦{あきら}めて他{ほか}の自{じ}動{どう}販{はん}売{ばい}機{き}を探{さが}したが、１００００円<札{さつ}>が使えるのはなかった。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "自{じ}動{どう}販{はん}売{ばい}機{き}",
+        english: "vending machine",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "（お）札{さつ}",
+        english: "(Monetary) bill",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "足{た}りる",
+        english: "to be enough",
+        type: MiniStoryWordType.ICHIDAN_INTRANSITIVE
+      },
+      {
+        kanji: "～札{さつ}",
+        english: "bill・note",
+        type: MiniStoryWordType.SUFFIX
+      },
+    ],
+    translation: `I wanted to buy juice at a vending machine, but I couldn't use bills. If I have to only pay in change, I'll be 50 yen short. I gave up and looked for another vending machine, but there were none that take 10,000-yen bills.`,
+    audio: "T56.mp3",
+    topic: MiniStoryTopics.SHOPPING,
+    page: 51,
+  },
+  "57": {
+    id: "57",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "うちの大学には3つの<売{ばい}店{てん}>があります。そのうち、この売{ばい}店{てん}では教{きょう}科{か}書{しょ}の販{はん}売{ばい}もしています。注{ちゅう}文{もん}した教{きょう}科{か}書{しょ}の<代{だい}金{きん}>はこのレジで払{はら}うことができます。水{すい}曜{よう}日{び}は<定{てい}休{きゅう}日{び}>ですので、気{き}をつけてくださいね。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "売{ばい}店{てん}",
+        english: "shop・store",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "代{だい}金{きん}",
+        english: "payment・price",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "定{てい}休{きゅう}日{び}",
+        english: "regular holiday",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `My university has three stores. Among them, this shop also sells textbooks. The payment for the ordered textbooks can be made at this cash register. Wednesday is a regular holiday, so please be careful.`,
+    audio: "T57.mp3",
+    topic: MiniStoryTopics.SHOPPING,
+    page: 51,
+  },
+  "58": {
+    id: "58",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "<レシート>があれば返{へん}品{ぴん}できるんじゃないの？",
+      },
+      {
+        character: "B",
+        dialogue: "<ですから>、お客{きゃく}様{さま}、こちらは<特{とく}売{ばい}>品{ひん}のため、返{へん}品{ぴん}・交{こう}換{かん}ができません。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "レシート",
+        english: "receipt",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "ですから",
+        english: "therefore・as I said before",
+        type: MiniStoryWordType.CONNECTION
+      },
+      {
+        kanji: "特{とく}売{ばい}",
+        english: "Bargain sale",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `A: Can't I return it if I have a receipt?\nB: As I said before, this is a bargain product, so it can't be returned or exchanged.`,
+    audio: "T58.mp3",
+    topic: MiniStoryTopics.SHOPPING,
+    page: 52,
+  },
+  "59": {
+    id: "59",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "4月に社会人になったら、<きちんと>自分で将{しょう}来{らい}の計{けい}画{かく}を立{た}てて<貯{ちょ}金{きん}>するのよ。",
+      },
+      {
+        character: "B",
+        dialogue: "うん、大丈夫だよ、母さん。",
+      },
+      {
+        character: "A",
+        dialogue: "あと、<預{よ}金{きん}><通{つう}帳{ちょう}>と印{いん}鑑{かん}はなくさないように、しっかり自分で<管{かん}理{り}>してね。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "きちんと",
+        english: "properly・exactly",
+        type: MiniStoryWordType.ADVERB
+      },
+      {
+        kanji: "貯{ちょ}金{きん}［する］",
+        english: "savings・to save money",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "預{よ}金{きん}［する］",
+        english: "deposit・to deposit money",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "通{つう}帳{ちょう}",
+        english: "bankbook",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `A: Once you become a working adult in April, you will need to properly plan and save money on your own.\nB: Yeah, I'll be okay, Mom.\nA: Also, keep track of your bankbook and seal so you don't lose them.`,
+    audio: "T59.mp3",
+    topic: MiniStoryTopics.SHOPPING,
+    page: 52,
+  },
+  "60": {
+    id: "60",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "先{せん}月{げつ}の携{けい}帯{たい}<代{だい}>が10000円を超{こ}えて、せっかくバイトで<貯{た}めた>お金がほとんどなくなった。プランを変{か}えようかと思うが、携{けい}帯{たい}電{でん}話{わ}の<料{りょう}金{きん}>プランは複{ふく}雑{ざつ}すぎてどれが得{とく}なのかよく分からない。今{こん}月{げつ}は飲{の}み会{かい}ばかりで食{しょく}<費{ひ}>もかかるし、ピンチだ。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "～代{だい}",
+        english: "bill",
+        type: MiniStoryWordType.SUFFIX
+      },
+      {
+        kanji: "貯{た}める",
+        english: "to save (money)",
+        type: MiniStoryWordType.ICHIDAN_TRANSITIVE
+      },
+      {
+        kanji: "貯{た}まる",
+        english: "to be saved (money)",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE
+      },
+      {
+        kanji: "料{りょう}金{きん}",
+        english: "payment・charge",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "～費{ひ}",
+        english: "fee・cost",
+        type: MiniStoryWordType.SUFFIX
+      },
+    ],
+    translation: `Because my cell phone bill for last month was more than 10,000 yen, most of the money I saved up from my part-time job is now gone. I want to change my plan, but mobile phone payment plans are so complicated that I can't figure out which one is the better deal. I have a lot of drinking parties this month making my food bill high, so I'm in a pinch.`,
+    audio: "T60.mp3",
+    topic: MiniStoryTopics.SHOPPING,
+    page: 53,
+  },
+  "61": {
+    id: "61",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "今日は新{しん}聞{ぶん}の<集{しゅう}金{きん}>がある日{ひ}なので、<口{こう}座{ざ}>からお金を<下{お}ろして>準{じゅん}備{び}しておこう。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "集{しゅう}金{きん}［する］",
+        english: "collection (of money)・to collect (money)",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "口{こう}座{ざ}",
+        english: "bank account",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "下{お}ろす",
+        english: "to withdraw (money)",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+    ],
+    translation: `Today is the day they come to collect newspaper subscription fees, so I should withdraw some money from my account and get ready.`,
+    audio: "T61.mp3",
+    topic: MiniStoryTopics.SHOPPING,
+    page: 53,
+  },
+  "62": {
+    id: "62",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "3月までのプロジェクトだが、各{かく}<支{し}店{てん}>での<宣{せん}伝{でん}>活{かつ}動{どう}が思うように行かず、延{えん}長{ちょう}になりそうだ。<予{よ}算{さん}>を<繰{く}り越{こ}す>手{て}続{つづ}きをして、完{かん}成{せい}報{ほう}告{こく}会{かい}の予約の<取{と}り消{け}して>おかなければならない。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "支{し}店{てん}",
+        english: "branch (of a company)",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "支{し}社{しゃ}",
+        english: "branch office",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "宣{せん}伝{でん}［する］",
+        english: "advertising・to advertise",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "予{よ}算{さん}",
+        english: "budget",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "繰{く}り越{こ}す",
+        english: "to carry over (a budget)",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+      {
+        kanji: "越{こ}す",
+        english: "to exceed",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+      {
+        kanji: "取{と}り消{け}す",
+        english: "to cancel",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+    ],
+    translation: `I'm working on a project until March, but the advertising activity at each branch isn't going the way I had hoped, so it looks like the project might be extended. I have to file the paperwork to carry the budget over and cancel the reservation for the completion report meeting.`,
+    audio: "T62.mp3",
+    topic: MiniStoryTopics.SHOPPING,
+    page: 54,
+  },
+  "63": {
+    id: "63",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "若{わか}い頃{ころ}はお金がなくて苦{く}労{ろう}した。近{きん}所{じょ}の<八{や}百{お}屋{や}>でいらないキャベツを<段{だん}ボール>にいっぱいもらって、野{や}菜{さい}炒{いた}めばかり食べていた。でも<貧{まず}しい>分{ぶん}、人の優{やさ}しさにもたくさん触{ふ}れられたと思う。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "八{や}百{お}屋{や}",
+        english: "grocery store",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "段{だん}ボール",
+        english: "cardboard box",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "貧{まず}しい",
+        english: "poor",
+        type: MiniStoryWordType.ADJECTIVE_I
+      },
+    ],
+    translation: `When I was young, I had no money and had a hard time. I would get a cardboard box from the local grocery store that was full of cabbage they didn't need, and I would eat nothing but stir-fried vegetables. But as poor as I was, I was all the more affected by people's kindness.`,
+    audio: "T63.mp3",
+    topic: MiniStoryTopics.SHOPPING,
+    page: 54,
+  },
+  "64": {
+    id: "64",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<通{つう}販{はん}>で<ダイヤモンド>のネックレスを買った。定{てい}価{か}8万円のものが<セール>で5万円だったので<得{とく}した>気分だ。お金も<振{ふ}り込{こ}んだ>し、<配{はい}達{たつ}される>のが楽しみだ。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "通{つう}販{はん}",
+        english: "mail order",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "ダイヤモンド",
+        english: "diamond",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "セール",
+        english: "sale",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "得{とく}［する］",
+        english: "Bargain・to get a bargain",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+      {
+        kanji: "損{そん}［する］",
+        english: "Loss・to incur a loss",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+      {
+        kanji: "振{ふ}り込{こ}む",
+        english: "Send・deposit (a payment)",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+      {
+        kanji: "配{はい}達{たつ}［する］",
+        english: "Delivery・to deliver",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+    ],
+    translation: `I bought a diamond necklace by mail order. It feels like I got a bargain because it was on sale for 50,000 yen with a list price of 80,000 yen. I already sent the money, so I'm looking forward to getting the delivery.`,
+    audio: "T64.mp3",
+    topic: MiniStoryTopics.SHOPPING,
+    page: 55,
+  },
+  "65": {
+    id: "65",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<バーゲン>のシーズンが来た。高くて買えなかった服が<値{ね}下{さ}がり>していたら買うつもりだ。多{おお}めにお金を<引{き}き出{だ}して>おこう。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "バーゲン（セール）",
+        english: "bargain (sale)",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "値{ね}下{さ}がり［する］",
+        english: "price drop・to lower the price",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+      {
+        kanji: "値{ね}上{あ}がり［する］",
+        english: "price increase・to raise the price",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+      {
+        kanji: "值{ね}",
+        english: "value",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "引{き}き出{だ}す",
+        english: "get out・withdraw",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+    ],
+    translation: `Bargain's season has arrived. If they lower the prices, I'm going to buy all of the clothes that I couldn't get before because they were too expensive. I should withdraw a little extra money.`,
+    audio: "T65.mp3",
+    topic: MiniStoryTopics.SHOPPING,
+    page: 56,
+  },
+  "66": {
+    id: "66",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "<税{ぜい}込{こ}み>3500円です。",
+      },
+      {
+        character: "B",
+        dialogue: "カードで。",
+      },
+      {
+        character: "A",
+        dialogue: "お支{し}払{はら}い方{ほう}法{ほう}はいかがいたしましょうか。",
+      },
+      {
+        character: "B",
+        dialogue: "<1{いっ}回{かい}払{ばら}い>でお願いします。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "税{ぜい}込{こ}み",
+        english: "tax included",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "1{いっ}回{かい}払{ばら}い",
+        english: "one-instalment payment",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `A: Thats 3,500 yen including tax.\nB: By card.\nA: What payment method would you like?\nB: In one installment, please.`,
+    audio: "T66.mp3",
+    topic: MiniStoryTopics.SHOPPING,
+    page: 56,
+  },
+  "67": {
+    id: "67",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "すみません、<クレジットカード>って使えますか。",
+      },
+      {
+        character: "B",
+        dialogue: "申{もう}し訳{わけ}ございません。<現{げん}金{きん}>のみになっております",
+      },
+      {
+        character: "A",
+        dialogue: "そうですか。あ、<領{りょう}収{しゅう}書{しょ}>お願いします。",
+      },
+      {
+        character: "B",
+        dialogue: "かしこまりました。<レジ袋{ぶくろ}>はお付{つ}けしますか。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "クレジットカード",
+        english: "credit card",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "キャッシュカード",
+        english: "cash card",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "現{げん}金{きん}",
+        english: "cash",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "領{りょう}収{しゅう}書{しょ}",
+        english: "receipt",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "レジ袋{ぶくろ}",
+        english: "shopping bag",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `A: Excuse me, can I use a credit card?\nB: Sorry. We only accept cash.\nA: I see. Oh, please give me a receipt.\nB: Okay. Would you like a plastic bag?`,
+    audio: "T67.mp3",
+    topic: MiniStoryTopics.SHOPPING,
+    page: 57,
+  },
+  "68": {
+    id: "68",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "ねえねえ、これ、フリマアプリでいくらで<売{う}れる>と思う？",
+      },
+      {
+        character: "B",
+        dialogue: "商{しょう}品{ひん}代{だい}<プラス><送{そう}料{りょう}>で1000円なら買うかな。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "売{う}れる",
+        english: "sell・be sellable",
+        type: MiniStoryWordType.ICHIDAN_INTRANSITIVE
+      },
+      {
+        kanji: "プラス［する］",
+        english: "plus・to add",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "送{そう}料{りょう}",
+        english: "shipping cost",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `A: Hey, how much do you think I can sell this for on a flea market app?\nB: Someone might buy it for 1,000 yen icluding shipping.`,
+    audio: "T68.mp3",
+    topic: MiniStoryTopics.SHOPPING,
+    page: 57,
   },
 };
