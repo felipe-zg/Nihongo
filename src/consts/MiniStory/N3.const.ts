@@ -3,6 +3,7 @@ export const MiniStoryTopics = {
   HOUSE_WORK: '家事',
   SHOPPING: "買い物",
   FASHION: "ファッション",
+  SCHOOL: "学校",
 } as const;
 
 // type MiniStoryTopic = typeof MiniStoryTopics[keyof typeof MiniStoryTopics];
@@ -3040,53 +3041,119 @@ export const MINI_STORY_N3: Record<string, MiniStory> = {
     topic: MiniStoryTopics.FASHION,
     page: 61,
   },
-  // "xxxxxxxxx": {
-  //   id: "xxxxxxxxx",
-  //   rubyStory: [
-  //     {
-  //       character: "",
-  //       dialogue: "xxxxxxx",
-  //     },
-  //     {
-  //       character: "",
-  //       dialogue: "xxxxxxx",
-  //     },
-  //   ],
-  //   rubyWords: [
-  //     {
-  //       kanji: "xxxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.NOUN
-  //     },
-  //     {
-  //       kanji: "xxxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.NOUN
-  //     },
-  //     {
-  //       kanji: "xxxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.NOUN
-  //     },
-  //     {
-  //       kanji: "xxxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.NOUN
-  //     },
-  //     {
-  //       kanji: "xxxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.NOUN
-  //     },
-  //     {
-  //       kanji: "xxxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.NOUN
-  //     },
-  //   ],
-  //   translation: `xxxxxxxxxxxxxx`,
-  //   audio: "Txxx.mp3",
-  //   topic: MiniStoryTopics.FASHION,
-  //   page: 1000000000,
-  // },
+  "279": {
+    id: "279",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "日本の大学は「<前{ぜん}期{き}>」に15週、「<後{こう}期{き}>」に15週、<合{こう}計{けい}>30週{しゅう}授{じゅ}業{ぎょう}を行{おこな}うところが多いが、最近は3学{がっ}期{き}制{せい}やクオーター制{せい}の大学もある。たいてい1年生は忙しく、<時{じ}間{かん}割{わり}>を見ると朝から夕{ゆう}方{がた}まで授{じゅ}業{ぎょう}がたくさんある。しかし、4年生になると授{じゅ}業{ぎょう}は減{へ}る。授{じゅ}業{ぎょう}の内{ない}容{よう}は<シラバス>に載{の}っている。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "前{ぜん}期{き}",
+        english: "first semester",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "後{こう}期{き}",
+        english: "second semester",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "合{こう}計{けい}［する］",
+        english: "sum total・total",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "時{じ}間{かん}割{わり}",
+        english: "class schedule・timetable",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "シラバス",
+        english: "syllabus",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `Japan's universities have a total of 30 weeks of classes with 15 weeks in the first semester, and 15 weeks in the second semester, but there are also universities that have trimesters and quarters. Usually, first-year students are busy, and when you look at their schedules, they have many classes from morning to evening. However, once they become fourth-year students, the number of classes will decrease. The content of the classes is written on the syllabus.`,
+    audio: "T279.mp3",
+    topic: MiniStoryTopics.SCHOOL,
+    page: 198,
+  },
+  "280": {
+    id: "280",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "工{こう}事{じ}のために<掘{ほ}られて>いた少{ちい}さな穴{あな}に気{き}づかず、<こけて>しまった。そのとき、足{あし}を石{いし}に<ぶつけて>、けがをしてしまった。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "掘{ほ}る",
+        english: "to dig",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+      {
+        kanji: "こける",
+        english: "to trip and fall",
+        type: MiniStoryWordType.ICHIDAN_INTRANSITIVE
+      },
+      {
+        kanji: "ぶつける",
+        english: "to bump",
+        type: MiniStoryWordType.ICHIDAN_TRANSITIVE
+      },
+      {
+        kanji: "ぶつかる",
+        english: "bump into",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE
+      },
+    ],
+    translation: `I didn't notice a small hole that had been dug for construction, and I tripped it. At that moment, my foot bumped into a rock, and I injured myself`,
+    audio: "T280.mp3",
+    topic: MiniStoryTopics.SCHOOL,
+    page: 198,
+  },
+  "281": {
+    id: "281",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "今日のホームルームは、学{がっ}級{きゅう}<委{い}員{いん}>が<中{ちゅう}心{しん}>になって、<司{し}会{かい}>をしてくれた。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "委{い}員{いん}",
+        english: "committee member",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "委{い}員{いん}会{かい}",
+        english: "committee",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "中{しん}心{しん}",
+        english: "center",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "司{し}会{かい}",
+        english: "Moderating",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: " 司{し}会{かい}者{しゃ}",
+        english: "moderator",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `In today's homeroom, the class committee took the lead and acted as moderators.`,
+    audio: "T281.mp3",
+    topic: MiniStoryTopics.SCHOOL,
+    page: 199,
+  },
 };
