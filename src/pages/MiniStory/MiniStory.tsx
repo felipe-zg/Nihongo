@@ -13,10 +13,27 @@ type MiniStoryProps = {
   selectedTopic: keyof typeof MiniStoryTopics | "";
   onTopicChange: (topic: keyof typeof MiniStoryTopics | "") => void;
   availableStories: string[];
+  selectedStartPage: number;
+  onStartPageChange: (page: number) => void;
+  selectedEndPage: number;
+  onEndPageChange: (page: number) => void;
+  availablePages: number[];
 }
 
 const MiniStory: React.FC<MiniStoryProps> = ({ 
-  story, selectedStory, onStoryChange, selectedLevel, onLevelChange, selectedTopic, onTopicChange, availableStories
+  story,
+  selectedStory,
+  onStoryChange,
+  selectedLevel,
+  onLevelChange,
+  selectedTopic,
+  onTopicChange,
+  availableStories,
+  selectedStartPage,
+  onStartPageChange,
+  selectedEndPage,
+  onEndPageChange,
+  availablePages
 }) => {
   const [isHidden, setIsHidden] = React.useState(false);
   const [isLargeLetter, setIsLargeLetter] = React.useState(false);
@@ -170,6 +187,26 @@ const MiniStory: React.FC<MiniStoryProps> = ({
           </Select>
         </Box>
       </Stack>
+      <HStack px={4} space={4}>
+        <Box>
+          <Text color="pink.400">Start Page</Text>
+          <Select selectedValue={String(selectedStartPage)} onValueChange={(itemValue) => onStartPageChange(Number(itemValue))}>
+            <Select.Item label="-- Select a start page --" value="" />
+            {availablePages.map((key) => (
+              <Select.Item key={key} label={String(key)} value={String(key)} />
+            ))}
+          </Select>
+        </Box>
+        <Box>
+          <Text color="pink.400">End Page</Text>
+          <Select selectedValue={String(selectedEndPage)} onValueChange={(itemValue) => onEndPageChange(Number(itemValue))}>
+            <Select.Item label="-- Select an end page --" value="" />
+            {availablePages.map((key) => (
+              <Select.Item key={key} label={String(key)} value={String(key)} />
+            ))}
+          </Select>
+        </Box>
+      </HStack>
 
       <Stack
         mx={4}
