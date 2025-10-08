@@ -4,6 +4,7 @@ export const MiniStoryTopics = {
   SHOPPING: "買い物",
   FASHION: "ファッション",
   SCHOOL: "学校",
+  WORK: "仕事",
 } as const;
 
 // type MiniStoryTopic = typeof MiniStoryTopics[keyof typeof MiniStoryTopics];
@@ -3155,5 +3156,170 @@ export const MINI_STORY_N3: Record<string, MiniStory> = {
     audio: "T281.mp3",
     topic: MiniStoryTopics.SCHOOL,
     page: 199,
+  },
+  "282": {
+    id: "282",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "妹{いもうと}は<平{へい}日{じつ}>は<クリーニング>屋{や}、週末はホテルの<フロント>でアルバイトをしている。いつも<寝{ね}不{ぶ}足{そく}>で、なかなか体{からだ}を<休{やす}める>ことができない。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "平{へい}日{じつ}",
+        english: "weekday",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "クリーニング［する］",
+        english: "cleaning・to clean",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "フロント",
+        english: "front desk",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "寝{ね}不{ぶ}足{そく}な",
+        english: "sleep deprived",
+        type: MiniStoryWordType.ADJECTIVE_NA
+      },
+      {
+        kanji: "休{やす}める",
+        english: "rest",
+        type: MiniStoryWordType.ICHIDAN_TRANSITIVE
+      },
+    ],
+    translation: `My sister works at a cleaner's on weekdays and works part-time job at a hotel front desk on weekends. She is always sleep deprived and can never really rest her body.`,
+    audio: "T282.mp3",
+    topic: MiniStoryTopics.WORK,
+    page: 202,
+  },
+  "283": {
+    id: "283",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "子どもたちがなりたい<職{しょく}業{ぎょう}>について、かつては<エンジニア>が<上{じょう}位{い}>だった。しかし、最近の１<位{い}>は<意{い}外{がい}に>も<サラリーマン>である。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "職{しょく}業{ぎょう}",
+        english: "job・occupation",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "エンジニア",
+        english: "engineer`",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "上{じょう}位{い}",
+        english: "top・higher ranking",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "～位{い}",
+        english: "position (ranking)",
+        type: MiniStoryWordType.SUFFIX
+      },
+      {
+        kanji: "意{い}外{がい}な",
+        english: "surprising・unexpected",
+        type: MiniStoryWordType.ADJECTIVE_NA
+      },
+      {
+        kanji: "サラリーマン",
+        english: "salaryman・office worker",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `Being an engineer used to be the top among jobs children want to have. However nowadays, first place surprisingly goes to being an ofhce worker.`,
+    audio: "T283.mp3",
+    topic: MiniStoryTopics.WORK,
+    page: 202,
+  },
+  "284": {
+    id: "284",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "彼女は<先{せん}々{せん}月{げつ}>から仕事を始めたが、<研{けん}修{しゅう}><期{き}間{かん}>も<給{きゅう}料{りょう}>がもらえるらしい。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "先{せん}々{せん}月{げつ}",
+        english: "the month before last",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.ADVERB ]
+      },
+      {
+        kanji: "研{けん}修{しゅう}［する］",
+        english: "training・to train",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+      {
+        kanji: "期{き}間{かん}",
+        english: "period",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "給{きゅう}料{りょう}",
+        english: "salary",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `She started her job the month before last, and it seems she can get paid during their training period too.`,
+    audio: "T284.mp3",
+    topic: MiniStoryTopics.WORK,
+    page: 203,
+  },
+  "285": {
+    id: "285",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "新{しん}入{にゅう}<社{しゃ}員{いん}>には、いつも「<単{たん}純{じゅん}で><機{き}械{かい}的{てき}な><作{さ}業{ぎょう}>であっても、<繰{く}り返{かえ}す>ことが大切だ」という<アドバイス>を送{おく}っている。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "社{しゃ}員{いん}",
+        english: "employee",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "単{たん}純{じゅん}な",
+        english: "simple",
+        type: MiniStoryWordType.ADJECTIVE_NA
+      },
+      {
+        kanji: "機{き}械{かい}的{てき}な",
+        english: "mechanical",
+        type: MiniStoryWordType.ADJECTIVE_NA
+      },
+      {
+        kanji: "作{さ}業{ぎょう}［する］",
+        english: "work・to do work",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "繰{く}り返{かえ}す",
+        english: "to repeat",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+      {
+        kanji: "アドバイス［する］",
+        english: "advice・to give advice",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+    ],
+    translation: `I always send new employees the advice "It's important to repeat even simple, mechanical work.`,
+    audio: "T285.mp3",
+    topic: MiniStoryTopics.WORK,
+    page: 203,
   },
 };
