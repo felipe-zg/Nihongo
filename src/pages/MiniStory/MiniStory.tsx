@@ -102,7 +102,7 @@ const MiniStory: React.FC<MiniStoryProps> = ({
   });
 
   function goToCardsDeck() {
-    window.location.href = `/ministory-cards?level=${selectedLevel}&topic=${selectedTopic}`;
+    window.location.href = `/ministory-cards?level=${selectedLevel}&topic=${selectedTopic}&startPage=${selectedStartPage}&endPage=${selectedEndPage}&availablePages=${availablePages.join(",")}`;
   };
 
   function goToAudioFiles() {
