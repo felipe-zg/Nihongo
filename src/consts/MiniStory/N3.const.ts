@@ -21,6 +21,7 @@ const MiniStoryWordType = {
   ADVERB: '副',
   NOUN: '名',
   EXPRESSION: '表現',
+  PREFIX: '接頭',
   SUFFIX: '接尾',
   CLAUSE: '句',
   CONNECTION: '接続',
@@ -3321,5 +3322,170 @@ export const MINI_STORY_N3: Record<string, MiniStory> = {
     audio: "T285.mp3",
     topic: MiniStoryTopics.WORK,
     page: 203,
+  },
+  "286": {
+    id: "286",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<ガソリンスタンド>でのアルバイトは<きつく>、まったく座{すわ}ることができないので、<腰{こし}>を痛{いた}めてしまい、<半{はん}年{とし}>で辞{や}めてしまった。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "ガソリンスタンド",
+        english: "gas station",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "きつい",
+        english: "tight・tough",
+        type: MiniStoryWordType.ADJECTIVE_I
+      },
+      {
+        kanji: "腰{こし}",
+        english: "Back・lower back",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "半{はん}年{とし}",
+        english: "half a year",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `My part-time job at a gas station was hard and I couldn't get to sit at all, I hurt my back and quit in half a year.`,
+    audio: "T286.mp3",
+    topic: MiniStoryTopics.WORK,
+    page: 204,
+  },
+  "287": {
+    id: "287",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "店{てん}<長{ちょう}>の<態{たい}度{ど}>が悪{わる}く、<その上{うえ}>、<休{きゅう}憩{けい}>時{じ}間{かん}が短{みじか}い。無{む}理{り}を<承{しょう}知{ち}>の上で、<月{げつ}末{まつ}>に辞{や}めることを伝{つた}えたら、うまくいった。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "～長{ちょう}",
+        english: "manager",
+        type: MiniStoryWordType.SUFFIX
+      },
+      {
+        kanji: "態{たい}度{ど}",
+        english: "attitude",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "その上{うえ}",
+        english: "moreover・on top of that",
+        type: MiniStoryWordType.CONNECTION
+      },
+      {
+        kanji: "休{きゅう}憩{けい}［する］",
+        english: "break・to take a break",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+      {
+        kanji: "承{しょう}知{ち}［する］",
+        english: "Understanding・to acknowledge",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "月{げつ}末{まつ}",
+        english: "end of the month",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `The store manager has a bad attitude, and moreover, break times are short. After acknowledging that this isn't working, I communicated that I would be quitting at the end of the month and it went well.`,
+    audio: "T287.mp3",
+    topic: MiniStoryTopics.WORK,
+    page: 204,
+  },
+  "288": {
+    id: "288",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "ある<出{しゅっ}版{ぱん}社{しゃ}>の<副{ふく}>社{しゃ}長{ちょう}と<面{めん}接{せつ}する>ことになった。<特{とく}技{ぎ}>は<事{じ}務{む}>だとアピールしたら、見{み}事{ごと}に<受{う}かった>。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "出{しゅっ}版{ぱん}社{しゃ}",
+        english: "publisher company",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "出{しゅっ}版{ぱん}［する］",
+        english: "publishing・to publish",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "副{ふく}～",
+        english: "vice-・assistant-",
+        type: MiniStoryWordType.PREFIX
+      },
+      {
+        kanji: "面{めん}接{せつ}［する］",
+        english: "interview・to interview",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+      {
+        kanji: "特{とく}技{ぎ}",
+        english: "special skill",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "事{じ}務{む}",
+        english: "Office work",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "受{う}かる",
+        english: "to pass (an exam)",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE
+      },
+      {
+        kanji: "落{お}ちる",
+        english: "to fall・to drop",
+        type: MiniStoryWordType.ICHIDAN_INTRANSITIVE
+      },
+    ],
+    translation: `I had an interview with the vice president of a certain publishing company. I appealed to her by telling her that my special skill was office work, and it was wonderfully received`,
+    audio: "T288.mp3",
+    topic: MiniStoryTopics.WORK,
+    page: 205,
+  },
+  "289": {
+    id: "289",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "この月{つき}に<失{しつ}業{ぎょう}した>人{ひと}の<約{やく}>7<割{わり}>が新{しん}型{がた}コロナウイルスの影{えい}響{きょう}によるものである。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "失{しつ}業{ぎょう}［する］",
+        english: "to lose one's job・unemployment",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+      {
+        kanji: "約{やく}～",
+        english: "about・approximately",
+        type: MiniStoryWordType.PREFIX
+      },
+      {
+        kanji: "～割{わり}",
+        english: "Percent",
+        type: MiniStoryWordType.SUFFIX
+      },
+    ],
+    translation: `About 70 percent of the people who lost their job this month did so due to the influence of the novel coronavirus.`,
+    audio: "T289.mp3",
+    topic: MiniStoryTopics.WORK,
+    page: 205,
   },
 };
