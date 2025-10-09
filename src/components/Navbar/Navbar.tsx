@@ -7,6 +7,7 @@ const routes = [
   { name: 'ミニストーリー', path: '/ministory' },
   { name: '文字・語彙', path: '/moji-goi-deck' },
   { name: '日本語の森・文法', path: '/grammar/nihongo-no-mori' },
+  { name: '漢字 M2', path: '/kanji-m2' },
   { name: 'JLPT', path: '/JLPT/N3' },
   { name: 'JLPT Vocabs N3', path: '/JLPT/vocabs?level=N3' },
   { name: 'Levels', path: '/' },
