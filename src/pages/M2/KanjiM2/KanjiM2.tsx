@@ -15,14 +15,14 @@ const KanjiM2: React.FC<Props> = ({ wordsList }) => {
 
   return (
     <Box alignItems="center" mt={10}>
-      <HStack space={4} mb={6} alignItems="center" justifyContent={"space-between"} width="90%">
+      <HStack space={4} mb={6} alignItems="center" justifyContent={"space-between"} width="98%">
         <Text fontSize={"xl"} bold color={"white"}>漢字 M2</Text>
         <Button variant="outline" colorScheme="primary" onPress={goToCardsDeck}>
           Cards deck
         </Button>
       </HStack>
       {wordsList && Object.values(wordsList).map((kanjiItem) => (
-        <Box key={kanjiItem.id} borderWidth={1} borderColor="gray.300" borderRadius="md" p={4} mb={4} width="90%">
+        <Box key={kanjiItem.id} borderWidth={1} borderColor="gray.300" borderRadius="md" p={4} mb={4} width="98%">
           {/* Main Kanji Information */}
           <Text alignSelf={"center"} color={"orange.400"}>{kanjiItem.id}</Text>
           <HStack alignItems="center" space={4} mb={2}>
