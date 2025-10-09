@@ -44,3 +44,23 @@ declare type KanjiYDCExample = {
   sentence: string;
   type: 'main' | 'secondary' | 'YDC_main';
 }
+
+declare type TKanjiM2Words = {
+  word: string;
+  reading: string;
+  meaning: string;
+};
+
+declare type TKanjiM2WordsWithExample = TKanjiM2Words & {
+  exampleSentenceRuby: string;
+}
+
+declare type TKanjiM2 = {
+  id: number;
+  kanji: string;
+  kun: string[];
+  on: string[];
+  meanings: string[];
+  words: TKanjiM2WordsWithExample[];
+  otherWords: TKanjiM2Words[];
+};
