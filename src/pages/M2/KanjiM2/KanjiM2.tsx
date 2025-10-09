@@ -1,13 +1,25 @@
 import React from "react";
-import { Box, Button, HStack, Text, Divider } from "native-base";
+import { Box, Button, HStack, Text, Divider, Select } from "native-base";
 import { parseRuby } from "../../../utils/music/rubyParser";
 
 type Props = {
   wordsList: Record<number, TKanjiM2>;
+  selectedStartIndex: number;
+  onStartIndexChange: (index: number) => void;
+  selectedEndIndex: number;
+  onEndIndexChange: (index: number) => void;
+  availableIndexes: number[];
 };
 
 
-const KanjiM2: React.FC<Props> = ({ wordsList }) => {
+const KanjiM2: React.FC<Props> = ({
+  wordsList,
+  selectedStartIndex,
+  onStartIndexChange,
+  selectedEndIndex,
+  onEndIndexChange,
+  availableIndexes
+}) => {
 
   function goToCardsDeck() {
     window.location.href = `/kanji-m2-cards?wordsList=${JSON.stringify(wordsList)}`;
@@ -17,6 +29,26 @@ const KanjiM2: React.FC<Props> = ({ wordsList }) => {
     <Box alignItems="center" mt={10}>
       <HStack space={4} mb={6} alignItems="center" justifyContent={"space-between"} width="98%">
         <Text fontSize={"xl"} bold color={"white"}>漢字 M2</Text>
+        <HStack px={4} space={4}>
+          <Box>
+            <Text color="pink.400">First kanji</Text>
+            <Select color="white" selectedValue={String(selectedStartIndex)} onValueChange={(itemValue) => onStartIndexChange(Number(itemValue))}>
+              <Select.Item label="None" value="" />
+              {availableIndexes.map((key) => (
+                <Select.Item key={key} label={String(key)} value={String(key)} />
+              ))}
+            </Select>
+          </Box>
+          <Box>
+            <Text color="pink.400">Last kanji</Text>
+            <Select color="white" selectedValue={String(selectedEndIndex)} onValueChange={(itemValue) => onEndIndexChange(Number(itemValue))}>
+              <Select.Item label="None" value="" />
+              {availableIndexes.map((key) => (
+                <Select.Item key={key} label={String(key)} value={String(key)} />
+              ))}
+            </Select>
+          </Box>
+        </HStack>
         <Button variant="outline" colorScheme="primary" onPress={goToCardsDeck}>
           Cards deck
         </Button>
