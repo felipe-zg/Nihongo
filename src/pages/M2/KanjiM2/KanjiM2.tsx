@@ -22,7 +22,7 @@ const KanjiM2: React.FC<Props> = ({
 }) => {
 
   function goToCardsDeck() {
-    window.location.href = `/kanji-m2-cards?wordsList=${JSON.stringify(wordsList)}`;
+    window.location.href = `/kanji-m2-cards?startIndex=${selectedStartIndex}&endIndex=${selectedEndIndex}`;
   };
 
   return (

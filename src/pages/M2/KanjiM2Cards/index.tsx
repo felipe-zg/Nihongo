@@ -1,11 +1,14 @@
 import React from "react";
 import { useSearchParams } from "react-router-dom";
 import KanjiM2 from "./KanjiM2Cards";
+import M2_KANJI from "../../../consts/kanji/M2";
 
 const KanjiM2CardsPage: React.FC = () => {
   const [searchParams] = useSearchParams(); 
-  const wordsListParam : Record<number, TKanjiM2> = JSON.parse(searchParams.get("wordsList") || "{}");
-  const wordsList: TKanjiM2WordsWithExample[] = Object.values(wordsListParam)
+  const startIndexParam: number = Number(searchParams.get("startIndex")) || 0;
+  const endIndexParam: number = Number(searchParams.get("endIndex")) || 0;
+  const wordsList: TKanjiM2WordsWithExample[] = Object.values(M2_KANJI)
+    .filter(item => item.id >= startIndexParam && item.id <= endIndexParam)
     .flatMap(item => 
       item.words.concat(item.otherWords.map(word => ({...word, exampleSentenceRuby: ""})))
     );
