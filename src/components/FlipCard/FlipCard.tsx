@@ -29,10 +29,10 @@ const FlipCard = forwardRef<FlipCardHandle, Props>(({ CardFrontContent, CardBack
   return (
     <div className="card-container" onClick={() => setFlipped(!flipped)}>
       <div className={`card ${flipped ? "flipped" : ""}`}>
-        <div className="card-face card-front" style={{backgroundColor:"#ffbeab"}}>
+        <div className="card-face card-front" style={{backgroundColor:"#171736ff"}}>
           {CardFrontContent}
         </div>
-        <div className="card-face card-back">
+        <div className="card-face card-back" style={{backgroundColor:"#171736ff"}}>
           {CardBackContent}
         </div>
       </div>
