@@ -37,17 +37,17 @@ const Navbar = () => {
   });
 
   const Menu = () => (
-    <VStack space={4} height="100vh" justifyItems="flex-start" >
-        {routes.map((route) => (
-          <NavLink key={route.path} to={route.path} style={{ textDecoration: 'none', }}>
-            {({ isActive }) => (
-              <Button variant="ghost" _text={getLinkStyle(isActive)}>
-                {route.name}
-              </Button>
-            )}
-          </NavLink>
-        ))}
-      </VStack>
+    <VStack space={4} minHeight="100vh" justifyItems="flex-start" >
+      {routes.map((route) => (
+        <NavLink key={route.path} to={route.path} style={{ textDecoration: 'none', }}>
+          {({ isActive }) => (
+            <Button variant="ghost" _text={getLinkStyle(isActive)}>
+              {route.name}
+            </Button>
+          )}
+        </NavLink>
+      ))}
+    </VStack>
   );
 
   return screenWidth < 900 ? (
