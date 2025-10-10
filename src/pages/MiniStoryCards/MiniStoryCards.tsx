@@ -1,11 +1,22 @@
 import React, { useMemo, useRef, useState } from "react";
 import { Box, Button, HStack, Text, Select } from "native-base";
-import FlipCard, { FlipCardHandle } from "./components/FlipCard";
+import FlipCard, { FlipCardHandle } from "../../components/FlipCard/FlipCard";
+import { parseRuby } from "../../utils/music/rubyParser";
 
 type Props = {
   vocabList: { kanji: string; english: string }[];
   level?: "N3" | "N2";
 };
+
+function formattedKanji(kanji: string, hideFurigana = false) {
+  const parts = parseRuby(kanji);
+  const formattedDialogue = parts.map(a => {
+    const mainContent = a.furigana && !hideFurigana ? `<ruby>${a.kanji}<rt>${a.furigana}</rt></ruby>` : a.kanji;
+    return `<span>${mainContent}</span>`;
+  }
+  ).join('');
+  return <span dangerouslySetInnerHTML={{ __html: formattedDialogue }}  />
+}
 
 
 const MiniStoryCards: React.FC<Props> = ({ vocabList, level }) => {
@@ -63,7 +74,20 @@ const MiniStoryCards: React.FC<Props> = ({ vocabList, level }) => {
       <Text fontSize={"xl"} bold color={"white"}>JLPT {level}</Text>
       <Text color="pink.500">{`${currentIndex + 1}/${filteredVocabList.length}`}</Text>
       {filteredVocabList.length > 0 && (
-        <FlipCard ref={flipCardRef} vocab={currentCard} />
+        <FlipCard
+          ref={flipCardRef} 
+          CardFrontContent={<Text fontSize={"6xl"} color={"teal.500"}>
+            {formattedKanji(currentCard.kanji, true)}
+          </Text>}
+          CardBackContent={
+            <>
+              <Text fontSize={"xl"} color={"white"}>
+                {formattedKanji(currentCard.kanji)}
+              </Text>
+              <Text color={"primary.500"}>{currentCard.english}</Text>
+            </>
+          } 
+        />
       )}
 
       {/* <Text color={"gray.300"}>{quantitySeen}/{filteredVocabList.length}</Text> */}
