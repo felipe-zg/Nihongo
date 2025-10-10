@@ -8,9 +8,10 @@ type Props = {
   level?: "N3" | "N2";
 };
 
-function formattedKanji(kanji: string, hideFurigana = false) {
+function formattedKanji(kanji: string, hideFurigana = false, hideKanji = false) {
   const parts = parseRuby(kanji);
   const formattedDialogue = parts.map(a => {
+    if(hideKanji) return `<span>${a.furigana}</span>`;
     const mainContent = a.furigana && !hideFurigana ? `<ruby>${a.kanji}<rt>${a.furigana}</rt></ruby>` : a.kanji;
     return `<span>${mainContent}</span>`;
   }
@@ -81,10 +82,10 @@ const MiniStoryCards: React.FC<Props> = ({ vocabList, level }) => {
           </Text>}
           CardBackContent={
             <>
-              <Text fontSize={"xl"} color={"white"}>
-                {formattedKanji(currentCard.kanji)}
+              <Text fontSize={"5xl"} color={"white"}>
+                {formattedKanji(currentCard.kanji, false, true)}
               </Text>
-              <Text color={"primary.500"}>{currentCard.english}</Text>
+              <Text fontSize={"3xl"} color={"primary.500"}>{currentCard.english}</Text>
             </>
           } 
         />
