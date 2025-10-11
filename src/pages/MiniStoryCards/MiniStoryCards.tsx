@@ -11,7 +11,7 @@ type Props = {
 function formattedKanji(kanji: string, hideFurigana = false, hideKanji = false) {
   const parts = parseRuby(kanji);
   const formattedDialogue = parts.map(a => {
-    if(hideKanji) return `<span>${a.furigana}</span>`;
+    if(hideKanji && a.furigana) return `<span>${a.furigana}</span>`;
     const mainContent = a.furigana && !hideFurigana ? `<ruby>${a.kanji}<rt>${a.furigana}</rt></ruby>` : a.kanji;
     return `<span>${mainContent}</span>`;
   }
