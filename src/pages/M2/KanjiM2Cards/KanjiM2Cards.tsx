@@ -64,11 +64,11 @@ const KanjiM2Cards: React.FC<Props> = ({ wordsList }) => {
       {filteredWordsList.length > 0 && (
         <FlipCard 
           ref={flipCardRef} 
-          CardFrontContent={<Text fontSize={"6xl"} color={"teal.500"}>{currentCard.word}</Text>}
+          CardFrontContent={<Text fontSize={"6xl"} color={"teal.300"}>{currentCard.word}</Text>}
           CardBackContent={
             <>
-              <Text fontSize={"2xl"} color={"white"}>{currentCard.reading}</Text>
-              <Text fontSize={"xl"} color={"primary.500"}>{currentCard.meaning}</Text>
+              <Text fontSize={"5xl"} color={"white"}>{currentCard.reading}</Text>
+              <Text fontSize={"3xl"} color={"primary.500"}>{currentCard.meaning}</Text>
             </>
           } 
         />
