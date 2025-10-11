@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Button, HStack, Text, Divider, Select } from "native-base";
+import { Box, Button, HStack, Text, Divider, Select, Stack } from "native-base";
 import { parseRuby } from "../../../utils/music/rubyParser";
 
 type Props = {
@@ -27,9 +27,9 @@ const KanjiM2: React.FC<Props> = ({
 
   return (
     <Box alignItems="center" mt={10}>
-      <HStack space={4} mb={6} alignItems="center" justifyContent={"space-between"} width="98%">
+      <Stack space={4} mb={6} alignItems="center" justifyContent={"space-between"} width="98%" direction={{ base: "column", md: "row" }} >
         <Text fontSize={"xl"} bold color={"white"}>漢字 M2</Text>
-        <HStack px={4} space={4}>
+        <Stack px={4} space={4} direction={{ base: "column", sm: "row" }}>
           <Box>
             <Text color="pink.400">First kanji</Text>
             <Select color="white" selectedValue={String(selectedStartIndex)} onValueChange={(itemValue) => onStartIndexChange(Number(itemValue))}>
@@ -48,11 +48,11 @@ const KanjiM2: React.FC<Props> = ({
               ))}
             </Select>
           </Box>
-        </HStack>
-        <Button variant="outline" colorScheme="primary" onPress={goToCardsDeck}>
+        </Stack>
+        <Button width={{base: "full", md: "container"}} variant="outline" colorScheme="primary" onPress={goToCardsDeck}>
           Cards deck
         </Button>
-      </HStack>
+      </Stack>
       {wordsList && Object.values(wordsList).map((kanjiItem) => (
         <Box key={kanjiItem.id} borderWidth={1} borderColor="gray.300" borderRadius="md" p={4} mb={4} width="98%">
           {/* Main Kanji Information */}
