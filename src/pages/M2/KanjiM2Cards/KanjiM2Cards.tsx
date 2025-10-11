@@ -64,7 +64,7 @@ const KanjiM2Cards: React.FC<Props> = ({ wordsList }) => {
       {filteredWordsList.length > 0 && (
         <FlipCard 
           ref={flipCardRef} 
-          CardFrontContent={<Text fontSize={"6xl"} color={"teal.300"}>{currentCard.word}</Text>}
+          CardFrontContent={<Text fontSize={"6xl"} color={"teal.300"}>{currentCard.word.replace(/（.*?）/g, "")}</Text>}
           CardBackContent={
             <>
               <Text fontSize={"5xl"} color={"white"}>{currentCard.reading}</Text>

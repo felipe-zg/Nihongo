@@ -78,7 +78,7 @@ const MiniStoryCards: React.FC<Props> = ({ vocabList, level }) => {
         <FlipCard
           ref={flipCardRef} 
           CardFrontContent={<Text fontSize={"6xl"} color={"teal.500"}>
-            {formattedKanji(currentCard.kanji, true)}
+            {formattedKanji(currentCard.kanji.replace(/［.*?］/g, ""), true)}
           </Text>}
           CardBackContent={
             <>
