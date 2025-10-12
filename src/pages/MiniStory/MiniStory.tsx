@@ -41,24 +41,24 @@ const MiniStory: React.FC<MiniStoryProps> = ({
 
   const storyParts = rubyStory.map((rubypart, index) => {
     let color = 'black';
-    let textDecorationStatus = 'none';
     const parts = parseRuby(rubypart.dialogue);
     const formattedDialogue = parts.map(a => {
       if (a.kanji === '<') {
-        color = isHidden ? 'white' : 'red';
-        textDecorationStatus = 'none';
+        color = 'red';
         return null;
       }
       if (a.kanji === '>') {
         color = 'black';
-        textDecorationStatus = 'none';
         return null;
       }
 
-      const mainContent = a.furigana ? `<ruby>${a.kanji}<rt>${a.furigana}</rt></ruby>` : a.kanji;
-      return `<span style="text-decoration:${textDecorationStatus}; color:${color};">
-            ${mainContent}
-          </span>`;
+      const mainContent = a.furigana ? 
+        `<ruby style="color: ${color};">
+          ${a.kanji}
+          ${isHidden ? '' : '<rt>' + a.furigana + '</rt>'}
+        </ruby>` 
+      : a.kanji;
+      return `<span style="color: ${color};">${mainContent}</span>`;
     }
     ).join('');
     const fontSize = isLargeLetter ? '2rem' : '1.3rem';
@@ -139,7 +139,7 @@ const MiniStory: React.FC<MiniStoryProps> = ({
               colorScheme="red"
               isChecked={!isHidden}
             />
-            <Text color="red.500">Show</Text>
+            <Text color="red.500">Show furigana</Text>
           </HStack>
         </Box>
         <AudioPlayer level={selectedLevel} fileName={story.audio} />
