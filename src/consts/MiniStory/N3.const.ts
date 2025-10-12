@@ -3138,7 +3138,7 @@ export const MINI_STORY_N3: Record<string, MiniStory> = {
         type: MiniStoryWordType.NOUN
       },
       {
-        kanji: "中{しん}心{しん}",
+        kanji: "中{ちゅう}心{しん}",
         english: "center",
         type: MiniStoryWordType.NOUN
       },
