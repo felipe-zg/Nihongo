@@ -3488,4 +3488,164 @@ export const MINI_STORY_N3: Record<string, MiniStory> = {
     topic: MiniStoryTopics.WORK,
     page: 205,
   },
+  "290": {
+    id: "290",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "彼は<営{えい}業{ぎょう}>の仕事をしているが、扱{あつか}っている<商{しょう}品{ひん}>が<高{こう}級{きゅう}な>物のため、めったに売{う}れずに<苦{く}労{ろう}して>いる。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "営{えい}業{ぎょう}［する］",
+        english: "sales・do sales・to work in sales",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+      {
+        kanji: "商{しょう}品{ひん}",
+        english: "product・goods",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "高{こう}級{きゅう}な",
+        english: "high-class・luxury",
+        type: MiniStoryWordType.ADJECTIVE_NA
+      },
+      {
+        kanji: "苦{く}労{ろう}［する］",
+        english: "hardship・to struggle・to have a hard time",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+    ],
+    translation: `He is working in sales, but because the product being handled is high-class, he has a hard time and rarely make any sales.`,
+    audio: "T290.mp3",
+    topic: MiniStoryTopics.WORK,
+    page: 206,
+  },
+  "291": {
+    id: "291",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "新しい<職{しょく}場{ば}>は大変だと思うが、しっかり経験を<積{つ}んで>、<実{じつ}力{りょく}>をつけてもらいたい。<コミュニケーション>能{のう}力{りょく}が高い彼女なら、きっとできるはずだ。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "職{しょく}場{ば}",
+        english: "workplace",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "積{つ}む",
+        english: "gain・acquire (experience, skills)",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+      {
+        kanji: "積{つ}もる",
+        english: "accumulate・pile up",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE
+      },
+      {
+        kanji: "実{じつ}力{りょく}",
+        english: "Proficiency・ability",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "コミュニケーション",
+        english: "Communication",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `I'm sure her new workplace is tough, but I hope she will steadily gain experience and improve her proficiency. She is skilled at communication, so I'm sure she'll be able to do it.`,
+    audio: "T291.mp3",
+    topic: MiniStoryTopics.WORK,
+    page: 206,
+  },
+  "292": {
+    id: "292",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<パート>として働いているが、<時{じ}給{きゅう}>が<まあまあな>ので長{なが}く続{つづ}けられており、今月<末{まつ}>で5年になる。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "パート",
+        english: "part-timer・part-time job",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "時{じ}給{きゅう}",
+        english: "hourly wage",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "月{げっ}給{きゅう}",
+        english: "monthly salary",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "まあまあな",
+        english: "so-so・not bad・just okay",
+        type: MiniStoryWordType.ADJECTIVE_NA
+      },
+      {
+        kanji: "~末{まつ}",
+        english: "end of ~",
+        type: MiniStoryWordType.SUFFIX
+      },
+    ],
+    translation: `I work part-time, but my hourly wage is just okay, so I've been able to work there for a long time, and it will be five years at the end of this month.`,
+    audio: "T292.mp3",
+    topic: MiniStoryTopics.WORK,
+    page: 207,
+  },
+  "293": {
+    id: "293",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "今回の<イベント>は<会{かい}員{いん}><限{けん}定{てい}>なので、会{かい}員{いん}に<向{む}けた>参{さん}加{か}<マニュアル>を作{さく}成{せい}する必{ひつ}要{よう}がある。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "イベント",
+        english: "event",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "会{かい}員{いん}",
+        english: "member",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "限{けん}定{てい}［する］",
+        english: "limitation・to limit",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "向{む}ける",
+        english: "aim at・to direct toward",
+        type: MiniStoryWordType.ICHIDAN_TRANSITIVE
+      },
+      {
+        kanji: "向{む}く",
+        english: "to face・to turn toward",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE
+      },
+      {
+        kanji: "マニュアル",
+        english: "manual",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `Since this event is limited to members only, we need to create a participation manual for members.`,
+    audio: "T293.mp3",
+    topic: MiniStoryTopics.WORK,
+    page: 207,
+  },
 };
