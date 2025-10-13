@@ -22,7 +22,7 @@ const M2_KANJI: Record<number, TKanjiM2> = {
         word: "丸ごと",
         reading: "まるごと",
         meaning: "Whole・entirely",
-        exampleSentenceRuby: "ワニが大きい口で魚を丸ごと飲み込んで。",
+        exampleSentenceRuby: "ワニが大きい口で魚を丸ごと飲み込んだ。",
       },
     ],
     otherWords: [
