@@ -39,16 +39,19 @@ const MiniStory: React.FC<MiniStoryProps> = ({
   const [isLargeLetter, setIsLargeLetter] = React.useState(false);
   const { rubyStory, rubyWords, translation } = story;
 
+  const redColor = '#ee1313ff';
+  const whiteColor = '#fdf6f6ff';
+
   const storyParts = rubyStory.map((rubypart, index) => {
-    let color = 'black';
+    let color = whiteColor;
     const parts = parseRuby(rubypart.dialogue);
     const formattedDialogue = parts.map(a => {
       if (a.kanji === '<') {
-        color = 'red';
+        color = redColor;
         return null;
       }
       if (a.kanji === '>') {
-        color = 'black';
+        color = whiteColor;
         return null;
       }
 
@@ -66,7 +69,7 @@ const MiniStory: React.FC<MiniStoryProps> = ({
       <HStack>
         {rubypart.character !== "" && (
           <Box flex={1} alignItems={"center"} justifyContent={"flex-start"} mt={1}>
-            <p style={{ fontSize: fontSize,  marginTop: "0.5rem", marginBottom: "0.5rem", lineHeight: "2rem"}}>{rubypart.character}:</p>
+            <p style={{ color: "#ea84cdff", fontSize: fontSize,  marginTop: "0.5rem", marginBottom: "0.5rem", lineHeight: "2rem"}}>{rubypart.character}:</p>
           </Box>
         )}
         <Box flex={11} key={index}>
@@ -80,20 +83,22 @@ const MiniStory: React.FC<MiniStoryProps> = ({
     const parts = parseRuby(rubypart.kanji);
     const formattedWords = parts.map(a =>
       a.furigana
-        ? `<ruby>${a.kanji}<rt style="color: ${isHidden ? "white" : "red"};">${a.furigana}</rt></ruby>`
+        ? `<ruby>${a.kanji}<rt style="color: ${isHidden ? "transparent" : redColor};">${a.furigana}</rt></ruby>`
         : a.kanji
     ).join('');
     return (
       <>
         <HStack>
           <Box flex={1}>
-            <p dangerouslySetInnerHTML={{ __html: formattedWords }} />
+            <p style={{color: whiteColor}} dangerouslySetInnerHTML={{ __html: formattedWords }} />
           </Box>
           <Box  flex={4} justifyContent={"center"}>
-            <p style={{ color: isHidden ? "white" : "red" }}>{rubypart.english}</p>
+            <Text color={isHidden ? "transparent" : "red.600"}>{rubypart.english}</Text>
           </Box>
           <Box  flex={1} justifyContent={"center"}>
-            <p style={{ color: "#3b3b3b"}}>{rubypart.type}</p>
+            <Text color="primary.400">
+              {Array.isArray(rubypart.type) ? rubypart.type.join("・") : rubypart.type}
+            </Text>
           </Box>
         </HStack>
         <Divider />
@@ -110,7 +115,7 @@ const MiniStory: React.FC<MiniStoryProps> = ({
   };
 
   return (
-    <Box backgroundColor="gray.50">
+    <Box >
       <Heading size="lg" mt={10} mb={5} textAlign="center" color={"pink.400"}>
         ミニストーリー
       </Heading>
@@ -124,10 +129,10 @@ const MiniStory: React.FC<MiniStoryProps> = ({
           <Text color="red.500">Large letters</Text>
         </HStack>
       </Box>
-      <Box m={4} borderWidth={1} borderColor="red.400" borderRadius="md" p={2}>
+      <Box m={4} borderWidth={1} borderColor="pink.400" borderRadius="md" p={2}>
         {storyParts}
       </Box>
-      <Box m={4} borderWidth={1} borderColor="red.400" borderRadius="md" p={2}>
+      <Box m={4} borderWidth={1} borderColor="pink.400" borderRadius="md" p={2}>
         {words}
       </Box>
       
@@ -146,12 +151,12 @@ const MiniStory: React.FC<MiniStoryProps> = ({
       </HStack>
 
       <Box m={4} borderWidth={1} borderColor="cyan.400" borderRadius="md" p={2}>
-        <Text textAlign={"justify"}>{translation}</Text>
+        <Text color="white" textAlign={"justify"}>{translation}</Text>
       </Box>
 
       <Box m={4}>
-        <Text>Page: {story.page}</Text>
-        <Text>Topic: {story.topic}</Text>
+        <Text color="white">Page: {story.page}</Text>
+        <Text color="white">Topic: {story.topic}</Text>
       </Box>
 
       <Stack
@@ -162,7 +167,7 @@ const MiniStory: React.FC<MiniStoryProps> = ({
       >
         <Box>
           <Text color="pink.400">Story:</Text>
-          <Select selectedValue={selectedStory} onValueChange={(itemValue) => onStoryChange(itemValue)}>
+          <Select color={"white"} selectedValue={selectedStory} onValueChange={(itemValue) => onStoryChange(itemValue)}>
             <Select.Item label="-- Select a story --" value="" />
             {availableStories.map((key) => (
               <Select.Item key={key} label={key} value={key} />
@@ -171,7 +176,7 @@ const MiniStory: React.FC<MiniStoryProps> = ({
         </Box>
         <Box>
           <Text color="pink.400">Level:</Text>
-          <Select size="sm" selectedValue={selectedLevel} onValueChange={(itemValue) => onLevelChange(itemValue as 'N2' | 'N3')}>
+          <Select color={"white"} size="sm" selectedValue={selectedLevel} onValueChange={(itemValue) => onLevelChange(itemValue as 'N2' | 'N3')}>
             <Select.Item label="-- Select a level --" value="" />
             <Select.Item label="N2" value="N2" />
             <Select.Item label="N3" value="N3" />
@@ -179,7 +184,7 @@ const MiniStory: React.FC<MiniStoryProps> = ({
         </Box>
         <Box>
           <Text color="pink.400">Topic:</Text>
-          <Select size="sm" selectedValue={selectedTopic} onValueChange={(itemValue) => onTopicChange(itemValue as keyof typeof MiniStoryTopics)}>
+          <Select color={"white"} size="sm" selectedValue={selectedTopic} onValueChange={(itemValue) => onTopicChange(itemValue as keyof typeof MiniStoryTopics)}>
             <Select.Item label="-- Select a topic --" value="" />
             {Object.entries(MiniStoryTopics).map(([key, value]) => (
               <Select.Item key={key} label={value} value={value} />
@@ -190,7 +195,7 @@ const MiniStory: React.FC<MiniStoryProps> = ({
       <HStack px={4} space={4}>
         <Box>
           <Text color="pink.400">Start Page</Text>
-          <Select selectedValue={String(selectedStartPage)} onValueChange={(itemValue) => onStartPageChange(Number(itemValue))}>
+          <Select color={"white"} selectedValue={String(selectedStartPage)} onValueChange={(itemValue) => onStartPageChange(Number(itemValue))}>
             <Select.Item label="-- Select a start page --" value="" />
             {availablePages.map((key) => (
               <Select.Item key={key} label={String(key)} value={String(key)} />
@@ -199,7 +204,7 @@ const MiniStory: React.FC<MiniStoryProps> = ({
         </Box>
         <Box>
           <Text color="pink.400">End Page</Text>
-          <Select selectedValue={String(selectedEndPage)} onValueChange={(itemValue) => onEndPageChange(Number(itemValue))}>
+          <Select color={"white"} selectedValue={String(selectedEndPage)} onValueChange={(itemValue) => onEndPageChange(Number(itemValue))}>
             <Select.Item label="-- Select an end page --" value="" />
             {availablePages.map((key) => (
               <Select.Item key={key} label={String(key)} value={String(key)} />
