@@ -18,6 +18,7 @@ type MiniStoryProps = {
   selectedEndPage: number;
   onEndPageChange: (page: number) => void;
   availablePages: number[];
+  onNextStory: () => void;
 }
 
 const MiniStory: React.FC<MiniStoryProps> = ({ 
@@ -33,7 +34,8 @@ const MiniStory: React.FC<MiniStoryProps> = ({
   onStartPageChange,
   selectedEndPage,
   onEndPageChange,
-  availablePages
+  availablePages,
+  onNextStory
 }) => {
   const [isHidden, setIsHidden] = React.useState(false);
   const [isLargeLetter, setIsLargeLetter] = React.useState(false);
@@ -119,7 +121,7 @@ const MiniStory: React.FC<MiniStoryProps> = ({
       <Heading size="lg" mt={10} mb={5} textAlign="center" color={"pink.400"}>
         ミニストーリー
       </Heading>
-      <Box paddingLeft={5}>
+      <HStack px={5} justifyContent={"space-between"} alignItems={"center"}>
         <HStack space={2}>
           <Switch
             onValueChange={(val) => setIsLargeLetter(val)}
@@ -128,26 +130,25 @@ const MiniStory: React.FC<MiniStoryProps> = ({
           />
           <Text color="red.500">Large letters</Text>
         </HStack>
-      </Box>
+        <HStack space={2}>
+          <Switch
+            onValueChange={(val) => setIsHidden(!val)}
+            colorScheme="red"
+            isChecked={!isHidden}
+          />
+          <Text color="red.500">Show furigana</Text>
+        </HStack>
+      </HStack>
       <Box m={4} borderWidth={1} borderColor="pink.400" borderRadius="md" p={2}>
         {storyParts}
       </Box>
       <Box m={4} borderWidth={1} borderColor="pink.400" borderRadius="md" p={2}>
         {words}
       </Box>
-      
-      <HStack mx={4} my={5} justifyContent={"space-between"} alignItems={"center"} padding={2} borderRadius={5}>
-        <Box>
-          <HStack space={2}>
-            <Switch
-              onValueChange={(val) => setIsHidden(!val)}
-              colorScheme="red"
-              isChecked={!isHidden}
-            />
-            <Text color="red.500">Show furigana</Text>
-          </HStack>
-        </Box>
+
+      <HStack px={4} justifyContent={"space-between"} alignItems={"center"}>
         <AudioPlayer level={selectedLevel} fileName={story.audio} />
+        <Button size="sm" variant="outline" colorScheme="secondary" onPress={onNextStory}>Next story</Button>
       </HStack>
 
       <Box m={4} borderWidth={1} borderColor="cyan.400" borderRadius="md" p={2}>

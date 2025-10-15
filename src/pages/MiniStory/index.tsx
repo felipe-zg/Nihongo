@@ -45,6 +45,14 @@ const MiniStoryPage: React.FC = () => {
     setSelectedEndPage(page);
   }
 
+  function nextStory() {
+    if (availableStories.length === 0) return;
+    const currentIndex = availableStories.indexOf(selectedStory);
+    const nextIndex = (currentIndex + 1) % availableStories.length;
+    const nextStory = availableStories[nextIndex];
+    setSelectedStory(nextStory);
+  }
+
  useEffect(() => {
   const stories = selectedLevel === "N2" ? MINI_STORY_N2 : MINI_STORY_N3;
 
@@ -92,6 +100,7 @@ const MiniStoryPage: React.FC = () => {
       selectedEndPage={selectedEndPage}
       onEndPageChange={handleEndPageChange}
       availablePages={availablePages}
+      onNextStory={nextStory}
     />
   )
 };
