@@ -3648,4 +3648,289 @@ export const MINI_STORY_N3: Record<string, MiniStory> = {
     topic: MiniStoryTopics.WORK,
     page: 207,
   },
+  "294": {
+    id: "294",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "あの店は<新{しん}年{ねん}>とお盆{ぼん}のときに<混{こん}雑{ざつ}する>ので、半{はん}<期{き}>に一度<臨{りん}時{じ}>でアルバイトを<募{ぼ}集{しゅう}する。>",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "新{しん}年{ねん}",
+        english: "New Year",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "混{こん}雑{ざつ}［する］",
+        english: "congestion・to be crowded",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+      {
+        kanji: "～期{き}",
+        english: "period",
+        type: MiniStoryWordType.SUFFIX
+      },
+      {
+        kanji: "臨{りん}時{じ}",
+        english: "temporary",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "募{ぼ}集{しゅう}［する］",
+        english: "recruitment・to recruit",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+    ],
+    translation: `Since that store is crowded during the New Year and obon, they recruit once every half-year for temporary part-time workers.`,
+    audio: "T294.mp3",
+    topic: MiniStoryTopics.WORK,
+    page: 208,
+  },
+  "295": {
+    id: "295",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "運転手にとって周{まわ}りの人や車に気を<配{くば}り>、注意を<注{そそ}ぐ>ことは<義{ぎ}務{む}>である。事{じ}故{こ}を起{お}こしたら、<二{に}度{ど}と>ハンドルを<握{にぎ}れなく>なる。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "配{くば}る",
+        english: "to distribute",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+      {
+        kanji: "注{そそ}ぐ",
+        english: "take (care)・to pour",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+      {
+        kanji: "義{ぎ}務{む}",
+        english: "duty・obligation",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "二{に}度{ど}と",
+        english: "again・never again",
+        type: MiniStoryWordType.ADVERB
+      },
+      {
+        kanji: "握{にぎ}る",
+        english: "to grasp・to hold",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+    ],
+    translation: `As a driver, it is your duty to pay attention to the people and cars around you and be careful. If you get into an accident, you may never be able to take hold of the wheel again.`,
+    audio: "T295.mp3",
+    topic: MiniStoryTopics.WORK,
+    page: 208,
+  },
+  "296": {
+    id: "296",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "会社に<問{と}い合{あ}わせた>ところ、今日中{じゅう}に<速{そく}達{たつ}>で<履{り}歴{れき}書{しょ}>を<提{てい}出{しゅつ}>すれば大丈夫だった。時間がないので、<宛{あて}名{な}>などを書き忘れないようにしなければならない。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "問{と}い合{あ}わせる",
+        english: "to contact・to inquire・to ask about",
+        type: MiniStoryWordType.ICHIDAN_TRANSITIVE
+      },
+      {
+        kanji: "速{そく}達{たつ}",
+        english: "express (mail)",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "履{り}歴{れき}書{しょ}",
+        english: "resume・curriculum vitae (CV)",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "提{てい}出{しゅつ}［する］",
+        english: "submission・to submit",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "宛{あて}名{な}",
+        english: "addressee's name",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "宛{あて}先{さき}",
+        english: "addressee's address・destination",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `When I contacted the company, I was told that it would be okay if I submitted my resume by express within the day. Because there is no time, I have to be careful not to forget to write things like the name of the receiver.`,
+    audio: "T296.mp3",
+    topic: MiniStoryTopics.WORK,
+    page: 209,
+  },
+  "297": {
+    id: "297",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<指{し}定{てい}された>場所に<集{しゅう}合{ごう}>して、みんなで一緒に面{めん}接{せつ}会{かい}場{じょう}に行った。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "指{し}定{てい}［する］",
+        english: "specifying・to specify・to designate",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "指{し}定{てい}席{せき}",
+        english: "designated seat・reserved seat",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "集{しゅう}合{ごう}［する］",
+        english: "gathering・to gather",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+      {
+        kanji: "集{しゅう}合{ごう}場{ば}所{しょ}",
+        english: "gathering place・meeting place",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `We gathered at the specified place and went to the interview venue together.`,
+    audio: "T297.mp3",
+    topic: MiniStoryTopics.WORK,
+    page: 209,
+  },
+  "298": {
+    id: "298",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "国{こく}際{さい}会{かい}議{ぎ}<場{じょう}>でたまたま知り合いに会った。久しぶりだったので、<名{めい}刺{し}>を交{こう}換{かん}して、食{しょく}事{じ}会{かい}の日{にっ}程{てい}<調{ちょう}整{せい}>を行{おこな}った。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "～場{じょう}",
+        english: "place・location",
+        type: MiniStoryWordType.SUFFIX
+      },
+      {
+        kanji: "名{めい}刺{し}",
+        english: "business card",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "調{ちょう}整{せい}［する］",
+        english: "adjustment・to adjust",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+    ],
+    translation: `I happened to meet an acquaintance at the international conference center. It had been a while, so we exchanged business cards and arranged a date for a dinner party.`,
+    audio: "T298.mp3",
+    topic: MiniStoryTopics.WORK,
+    page: 210,
+  },
+  "299": {
+    id: "299",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "ハローワークで<工{こう}業{ぎょう}>、サービス業などの希{き}望{ぼう}<条{じょう}件{けん}>から<順{じゅん}>に質問された。良{よ}い仕事かどうかがなかなか<判{はん}断{だん}できなかった>。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "工{こう}業{ぎょう}",
+        english: "manufacturing industry",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "条{じょう}件{けん}",
+        english: "conditions・terms",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "順{じゅん}",
+        english: "order・sequence",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "判{はん}断{だん}［する］",
+        english: "judgment・decision・to judge・to decide",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+    ],
+    translation: `At the Public Employment Security Office, I was asked in order about the desired conditions for industries such as the manufacturing and service industries. I wasn't really able to judge whether it was a good job or not.`,
+    audio: "T299.mp3",
+    topic: MiniStoryTopics.WORK,
+    page: 210,
+  },
+  "300": {
+    id: "300",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "レストランで食事をして、<会{かい}計{けい}>のとき、レジの人の<名{な}札{ふだ}>を見ると高{こう}校{こう}時{じ}代{だい}の恋{こい}人{びと}だった。久しぶりに会って驚{おどろ}いたため、クレジットカードの<サイン>を間違えてしまった。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "会{かい}計{けい}",
+        english: "Check・bill",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "名{な}札{ふだ}",
+        english: "name tag",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "サイン［する］",
+        english: "signature・to sign",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+    ],
+    translation: `I was eating at a restaurant, and when it came time to pay the bill, I looked at the name tag of the person working the register, and they happened to be an old flame from high school. I was surprised to see them for the first time in so long, and I made a mistake signing my credit card receipt.`,
+    audio: "T300.mp3",
+    topic: MiniStoryTopics.WORK,
+    page: 211,
+  },
+  "301": {
+    id: "301",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "製{せい}造{ぞう}<業{ぎょう}>はどこも<経{けい}営{えい}>が厳{きび}しい。ある人の話では、<個{こ}人{じん}>経{けい}営{えい}の会社はもうからないらしい。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "～業{ぎょう}",
+        english: "industry",
+        type: MiniStoryWordType.SUFFIX
+      },
+      {
+        kanji: "経{けい}営{えい}［する］",
+        english: "management・to manage",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "個{こ}人{じん}",
+        english: "individual・private person",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `Every company is having trouble with sales in the manufacturing industry. I heard from one person that privately managed companies don't seem to make any money.`,
+    audio: "T301.mp3",
+    topic: MiniStoryTopics.WORK,
+    page: 211,
+  },
 };
