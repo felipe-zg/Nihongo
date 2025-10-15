@@ -50,7 +50,7 @@ const Navbar = () => {
     </VStack>
   );
 
-  return screenWidth < 900 ? (
+  return screenWidth < 1200 ? (
     <>
       {isOpen && (
         <Box bg="darkBlue.900" px="4" py="3" width="100%" height="100%">
