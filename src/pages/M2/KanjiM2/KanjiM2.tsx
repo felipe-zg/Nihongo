@@ -21,8 +21,8 @@ const KanjiM2: React.FC<Props> = ({
   availableIndexes
 }) => {
 
-  function goToCardsDeck() {
-    window.location.href = `/kanji-m2-cards?startIndex=${selectedStartIndex}&endIndex=${selectedEndIndex}`;
+  function goToCardsDeck(isAllCards: boolean = false) {
+    window.location.href = `/kanji-m2-cards?startIndex=${selectedStartIndex}&endIndex=${selectedEndIndex}&allCards=${isAllCards}`;
   };
 
   return (
@@ -49,9 +49,14 @@ const KanjiM2: React.FC<Props> = ({
             </Select>
           </Box>
         </Stack>
-        <Button width={{base: "full", md: "container"}} variant="outline" colorScheme="primary" onPress={goToCardsDeck}>
-          Cards deck
-        </Button>
+        <Stack space={4} direction={{ base: "column", md: "row" }} width={{base: "full", md: "container"}}>
+          <Button width={{base: "full", md: "container"}} variant="outline" colorScheme="primary" onPress={() => goToCardsDeck()}>
+            Main Cards deck
+          </Button>
+          <Button width={{base: "full", md: "container"}} variant="outline" colorScheme="primary" onPress={() => goToCardsDeck(true)}>
+            All Cards deck
+          </Button>
+        </Stack>
       </Stack>
       {wordsList && Object.values(wordsList).map((kanjiItem) => (
         <Box key={kanjiItem.id} borderWidth={1} borderColor="gray.300" borderRadius="md" p={4} mb={4} width="98%">
