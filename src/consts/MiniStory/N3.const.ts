@@ -3608,7 +3608,7 @@ export const MINI_STORY_N3: Record<string, MiniStory> = {
     rubyStory: [
       {
         character: "",
-        dialogue: "今回の<イベント>は<会{かい}員{いん}><限{けん}定{てい}>なので、会{かい}員{いん}に<向{む}けた>参{さん}加{か}<マニュアル>を作{さく}成{せい}する必{ひつ}要{よう}がある。",
+        dialogue: "今回の<イベント>は<会{かい}員{いん}><限{げん}定{てい}>なので、会{かい}員{いん}に<向{む}けた>参{さん}加{か}<マニュアル>を作{さく}成{せい}する必{ひつ}要{よう}がある。",
       },
     ],
     rubyWords: [
@@ -3623,7 +3623,7 @@ export const MINI_STORY_N3: Record<string, MiniStory> = {
         type: MiniStoryWordType.NOUN
       },
       {
-        kanji: "限{けん}定{てい}［する］",
+        kanji: "限{げん}定{てい}［する］",
         english: "limitation・to limit",
         type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
       },
