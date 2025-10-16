@@ -131,24 +131,24 @@ const MiniStory: React.FC<MiniStoryProps> = ({
           />
           <Text color="red.500">Large letters</Text>
         </HStack>
-        <HStack space={8}>
+        <Stack space={{ base: 2, md: 8 }} direction={{ base: "column", md: "row" }} alignItems="flex-end">
           <HStack space={2}>
+            <Text color="red.500">Show Kanji</Text>
             <Switch
               onValueChange={(val) => setIsKanjiHidden(!val)}
               colorScheme="red"
               isChecked={!isKanjiHidden}
             />
-            <Text color="red.500">Show Kanji</Text>
           </HStack>
           <HStack space={2}>
+            <Text color="red.500">Show furigana</Text>
             <Switch
               onValueChange={(val) => setIsFuriganaHidden(!val)}
               colorScheme="red"
               isChecked={!isFuriganaHidden}
             />
-            <Text color="red.500">Show furigana</Text>
           </HStack>
-        </HStack>
+        </Stack>
       </HStack>
       <Box m={4} borderWidth={1} borderColor="pink.400" borderRadius="md" p={2}>
         {storyParts}
