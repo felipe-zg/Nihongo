@@ -35,9 +35,10 @@ const MiniStory: React.FC<MiniStoryProps> = ({
   selectedEndPage,
   onEndPageChange,
   availablePages,
-  onNextStory
+  onNextStory,
 }) => {
-  const [isHidden, setIsHidden] = React.useState(false);
+  const [isFuriganaHidden, setIsFuriganaHidden] = React.useState(false);
+  const [isKanjiHidden, setIsKanjiHidden] = React.useState(false);
   const [isLargeLetter, setIsLargeLetter] = React.useState(false);
   const { rubyStory, rubyWords, translation } = story;
 
@@ -49,7 +50,7 @@ const MiniStory: React.FC<MiniStoryProps> = ({
     const parts = parseRuby(rubypart.dialogue);
     const formattedDialogue = parts.map(a => {
       if (a.kanji === '<') {
-        color = redColor;
+        color = isKanjiHidden ? "transparent" : redColor;
         return null;
       }
       if (a.kanji === '>') {
@@ -60,7 +61,7 @@ const MiniStory: React.FC<MiniStoryProps> = ({
       const mainContent = a.furigana ? 
         `<ruby style="color: ${color};">
           ${a.kanji}
-          ${isHidden ? '' : '<rt>' + a.furigana + '</rt>'}
+          ${isFuriganaHidden || isKanjiHidden ? '' : '<rt>' + a.furigana + '</rt>'}
         </ruby>` 
       : a.kanji;
       return `<span style="color: ${color};">${mainContent}</span>`;
@@ -75,7 +76,7 @@ const MiniStory: React.FC<MiniStoryProps> = ({
           </Box>
         )}
         <Box flex={11} key={index}>
-          <p style={{ fontSize: fontSize, marginTop: "0.5rem", marginBottom: "0.5rem", lineHeight: "2rem"}} dangerouslySetInnerHTML={{ __html: formattedDialogue }}  />
+          <p style={{ fontSize: fontSize, marginTop: "0.5rem", marginBottom: "0.5rem", lineHeight: isLargeLetter && (isFuriganaHidden || isKanjiHidden) ? "3rem" : "2rem"}} dangerouslySetInnerHTML={{ __html: formattedDialogue }}  />
         </Box>
       </HStack>
     )
@@ -85,7 +86,7 @@ const MiniStory: React.FC<MiniStoryProps> = ({
     const parts = parseRuby(rubypart.kanji);
     const formattedWords = parts.map(a =>
       a.furigana
-        ? `<ruby>${a.kanji}<rt style="color: ${isHidden ? "transparent" : redColor};">${a.furigana}</rt></ruby>`
+        ? `<ruby>${a.kanji}<rt style="color: ${isFuriganaHidden ? "transparent" : redColor};">${a.furigana}</rt></ruby>`
         : a.kanji
     ).join('');
     return (
@@ -95,7 +96,7 @@ const MiniStory: React.FC<MiniStoryProps> = ({
             <p style={{color: whiteColor}} dangerouslySetInnerHTML={{ __html: formattedWords }} />
           </Box>
           <Box  flex={4} justifyContent={"center"}>
-            <Text color={isHidden ? "transparent" : "red.600"}>{rubypart.english}</Text>
+            <Text color={isFuriganaHidden ? "transparent" : "red.600"}>{rubypart.english}</Text>
           </Box>
           <Box  flex={1} justifyContent={"center"}>
             <Text color="primary.400">
@@ -130,13 +131,23 @@ const MiniStory: React.FC<MiniStoryProps> = ({
           />
           <Text color="red.500">Large letters</Text>
         </HStack>
-        <HStack space={2}>
-          <Switch
-            onValueChange={(val) => setIsHidden(!val)}
-            colorScheme="red"
-            isChecked={!isHidden}
-          />
-          <Text color="red.500">Show furigana</Text>
+        <HStack space={8}>
+          <HStack space={2}>
+            <Switch
+              onValueChange={(val) => setIsKanjiHidden(!val)}
+              colorScheme="red"
+              isChecked={!isKanjiHidden}
+            />
+            <Text color="red.500">Show Kanji</Text>
+          </HStack>
+          <HStack space={2}>
+            <Switch
+              onValueChange={(val) => setIsFuriganaHidden(!val)}
+              colorScheme="red"
+              isChecked={!isFuriganaHidden}
+            />
+            <Text color="red.500">Show furigana</Text>
+          </HStack>
         </HStack>
       </HStack>
       <Box m={4} borderWidth={1} borderColor="pink.400" borderRadius="md" p={2}>
