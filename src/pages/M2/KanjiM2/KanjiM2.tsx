@@ -27,7 +27,7 @@ const KanjiM2: React.FC<Props> = ({
 
   return (
     <Box alignItems="center" mt={10}>
-      <Stack space={4} mb={6} alignItems="center" justifyContent={"space-between"} width="98%" direction={{ base: "column", md: "row" }} >
+      <Stack space={4} mb={6} alignItems="center" justifyContent={"space-between"} width="98%" direction={{ base: "column", lg: "row" }} >
         <Text fontSize={"xl"} bold color={"white"}>漢字 M2</Text>
         <Stack px={4} space={4} direction={{ base: "column", sm: "row" }}>
           <Box>
