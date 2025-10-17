@@ -14,6 +14,7 @@ const KanjiM2Cards: React.FC<Props> = ({ wordsList }) => {
   const [endIndex, setEndIndex] = useState(wordsList.length - 1);
   const [isShuffled, setIsShuffled] = useState(false);
   const [isCanvasOpen, setIsCanvasOpen] = useState(false);
+  const [isHiraganaMode, setIsHiraganaMode] = useState(false);
   const flipCardRef = useRef<FlipCardHandle>(null);
 
   const handleStartIndexChange = (value: number) => {
@@ -66,10 +67,10 @@ const KanjiM2Cards: React.FC<Props> = ({ wordsList }) => {
       {filteredWordsList.length > 0 && (
         <FlipCard 
           ref={flipCardRef} 
-          CardFrontContent={<Text fontSize={"6xl"} color={"teal.300"}>{currentCard.word.replace(/（.*?）/g, "")}</Text>}
+          CardFrontContent={<Text fontSize={"6xl"} color={"teal.300"}>{isHiraganaMode ? currentCard.reading : currentCard.word.replace(/（.*?）/g, "")}</Text>}
           CardBackContent={
             <>
-              <Text fontSize={"5xl"} color={"white"}>{currentCard.reading}</Text>
+              <Text fontSize={"5xl"} color={"white"}>{!isHiraganaMode ? currentCard.reading : currentCard.word.replace(/（.*?）/g, "")}</Text>
               <Text fontSize={"3xl"} color={"primary.500"}>{currentCard.meaning}</Text>
             </>
           } 
@@ -112,13 +113,23 @@ const KanjiM2Cards: React.FC<Props> = ({ wordsList }) => {
         </Box>
         <button disabled={isShuffled} onClick={shuffleCards}>Shuffle ⇄</button>
       </HStack>
-      <HStack width={{base: "90vw", md: "60vw"}} space={2} alignItems="center" my={6} alignSelf={"center"}>
-        <Switch
-          onValueChange={(val) => setIsCanvasOpen(val)}
-          colorScheme="red"
-          isChecked={isCanvasOpen}
-        />
-        <Text color="red.500">Show canvas</Text>
+      <HStack width={{base: "90vw", md: "60vw"}} space={2} justifyContent={"space-between"} my={6} alignSelf={"center"}>
+        <HStack space={2} alignItems="center">
+          <Switch
+            onValueChange={(val) => setIsCanvasOpen(val)}
+            colorScheme="red"
+            isChecked={isCanvasOpen}
+          />
+          <Text color="red.500">Show canvas</Text>
+        </HStack>
+        <HStack space={2} alignItems="center">
+          <Text color="red.500">Hiragana</Text>
+          <Switch
+            onValueChange={(val) => setIsHiraganaMode(val)}
+            colorScheme="red"
+            isChecked={isHiraganaMode}
+          />
+        </HStack>
       </HStack>
     </Box>
   );
