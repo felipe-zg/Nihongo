@@ -8,6 +8,9 @@ type Props = {
   wordsList: TKanjiM2Words[] | TKanjiM2WordsWithExample[];
 };
 
+// eslint-disable-next-line no-useless-escape
+const REGEX_WORD = /[（\(［\[][^）\)\]］]*[）\)\]］]/g;
+
 
 const KanjiM2Cards: React.FC<Props> = ({ wordsList }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -16,6 +19,7 @@ const KanjiM2Cards: React.FC<Props> = ({ wordsList }) => {
   const [isShuffled, setIsShuffled] = useState(false);
   const [isCanvasOpen, setIsCanvasOpen] = useState(false);
   const [isHiraganaMode, setIsHiraganaMode] = useState(false);
+  const [isShowAnswer, setIsShowAnswer] = useState(false);
   const flipCardRef = useRef<FlipCardHandle>(null);
   const canvasRef = useRef<HandwritingCanvasRef>(null);
 
@@ -50,7 +54,21 @@ const KanjiM2Cards: React.FC<Props> = ({ wordsList }) => {
     setIsShuffled(true);
   }
 
+  function handleNextOnCanvasMode() {
+    if (isShowAnswer) {
+        setIsShowAnswer(false);
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % filteredWordsList.length);
+        canvasRef.current?.reset();
+      } else {
+        setIsShowAnswer(true);
+      }
+  }
+
   function handleNext() {
+    if(isCanvasOpen) {
+      handleNextOnCanvasMode();
+      return;
+    }
     if (!flipCardRef.current?.isFlipped()) {
       flipCardRef.current?.flip();
       return;
@@ -65,24 +83,40 @@ const KanjiM2Cards: React.FC<Props> = ({ wordsList }) => {
     }, 200);
   }
 
+  function getCanvasMainText() {
+    let mainText = "";
+    if (isShowAnswer) {
+      mainText = isHiraganaMode ? currentCard.word.replace(REGEX_WORD, "") : currentCard.reading.replace(REGEX_WORD, "");
+    } else {
+      mainText = isHiraganaMode ? currentCard.reading.replace(REGEX_WORD, "") : currentCard.word.replace(REGEX_WORD, "");
+    }
+    return <Text fontSize={"5xl"} mb={2} color={isShowAnswer ? "pink.300" : "yellow.500"}>{mainText}</Text>;
+  }
+
+
   return (
     <Box alignItems="center" mt={10}>
       <Text fontSize={"xl"} bold color={"white"}>漢字</Text>
       <Text color="pink.500">{`${currentIndex + 1}/${filteredWordsList.length}`}</Text>
-      {filteredWordsList.length > 0 && (
+      {!isCanvasOpen && filteredWordsList.length > 0 && (
         <FlipCard 
           ref={flipCardRef} 
-          CardFrontContent={<Text fontSize={"6xl"} color={"teal.300"}>{isHiraganaMode ? currentCard.reading : currentCard.word.replace(/（.*?）/g, "")}</Text>}
+          CardFrontContent={<Text fontSize={"6xl"} color={"teal.300"}>{isHiraganaMode ? currentCard.reading : currentCard.word.replace(REGEX_WORD, "")}</Text>}
           CardBackContent={
             <>
-              <Text fontSize={"5xl"} color={"white"}>{!isHiraganaMode ? currentCard.reading : currentCard.word.replace(/（.*?）/g, "")}</Text>
+              <Text fontSize={"5xl"} color={"white"}>{!isHiraganaMode ? currentCard.reading : currentCard.word.replace(REGEX_WORD, "")}</Text>
               <Text fontSize={"3xl"} color={"primary.500"}>{currentCard.meaning}</Text>
             </>
           } 
         />
       )}
 
-      {isCanvasOpen && <HandwritingCanvas ref={canvasRef} />}
+      {isCanvasOpen && (
+        <Box alignItems={"center"}>
+          {getCanvasMainText()}
+          <HandwritingCanvas ref={canvasRef} />
+        </Box>
+      )}
 
       {/* <Text color={"gray.300"}>{quantitySeen}/{filteredVocabList.length}</Text> */}
       <HStack mt={12} width={{base: "90vw", lg: "60vw"}}>
