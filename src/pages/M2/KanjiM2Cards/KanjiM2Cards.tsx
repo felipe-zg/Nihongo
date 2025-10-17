@@ -2,6 +2,7 @@ import React, { useMemo, useRef, useState } from "react";
 import { Box, Button, HStack, Text, Select, Switch } from "native-base";
 import FlipCard, { FlipCardHandle } from "../../../components/FlipCard/FlipCard";
 import { HandwritingCanvas } from "../../../components";
+import { HandwritingCanvasRef } from "../../../components/HandWritingCanvas/HandWritingCanvas";
 
 type Props = {
   wordsList: TKanjiM2Words[] | TKanjiM2WordsWithExample[];
@@ -16,6 +17,7 @@ const KanjiM2Cards: React.FC<Props> = ({ wordsList }) => {
   const [isCanvasOpen, setIsCanvasOpen] = useState(false);
   const [isHiraganaMode, setIsHiraganaMode] = useState(false);
   const flipCardRef = useRef<FlipCardHandle>(null);
+  const canvasRef = useRef<HandwritingCanvasRef>(null);
 
   const handleStartIndexChange = (value: number) => {
     if (endIndex <= value) {
@@ -57,6 +59,9 @@ const KanjiM2Cards: React.FC<Props> = ({ wordsList }) => {
     }
     setTimeout(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % filteredWordsList.length);
+      if (isCanvasOpen) {
+        canvasRef.current?.reset();
+      }
     }, 200);
   }
 
@@ -77,7 +82,7 @@ const KanjiM2Cards: React.FC<Props> = ({ wordsList }) => {
         />
       )}
 
-      {isCanvasOpen && <HandwritingCanvas />}
+      {isCanvasOpen && <HandwritingCanvas ref={canvasRef} />}
 
       {/* <Text color={"gray.300"}>{quantitySeen}/{filteredVocabList.length}</Text> */}
       <HStack mt={12} width={{base: "90vw", md: "60vw"}}>
