@@ -1,10 +1,20 @@
 // components/HandwritingCanvas.tsx
 import { ReactSketchCanvas, ReactSketchCanvasRef } from "react-sketch-canvas";
 import { Box, Button, HStack, VStack } from "native-base";
-import { useRef } from "react";
+import { forwardRef, useImperativeHandle, useRef } from "react";
 
-export const HandwritingCanvas = () => {
+export type HandwritingCanvasRef = {
+  reset: () => void;
+};
+
+export const HandwritingCanvas = forwardRef<HandwritingCanvasRef>((_, ref) => {
   const canvasRef = useRef<ReactSketchCanvasRef>(null);
+
+  useImperativeHandle(ref, () => ({
+    reset: () => {
+      canvasRef.current?.resetCanvas();
+    },
+  }));
 
   const handleClear = () => {
     canvasRef.current?.clearCanvas();
@@ -40,4 +50,4 @@ export const HandwritingCanvas = () => {
 
     </VStack>
   );
-};
+});
