@@ -3043,6 +3043,1370 @@ export const MINI_STORY_N3: Record<string, MiniStory> = {
     topic: MiniStoryTopics.FASHION,
     page: 61,
   },
+  "xxxxx": {
+    id: "xxxxx",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "xxxxxxxxx",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "xxxxxxxxx",
+        english: "xxxxxxxxx",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "xxxxxxxxx",
+        english: "xxxxxxxxx",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "xxxxxxxxx",
+        english: "xxxxxxxxx",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "xxxxxxxxx",
+        english: "xxxxxxxxx",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "xxxxxxxxx",
+        english: "xxxxxxxxx",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "xxxxxxxxx",
+        english: "xxxxxxxxx",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `xxxxxxxxx`,
+    audio: "Txx.mp3",
+    topic: MiniStoryTopics.FASHION,
+    page: 61,
+  },
+  "73": {
+    id: "73",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "カラー<コンタクト>の<新{しん}><色{しょく}>をオンライン<ショップ>限{げん}定{てい}で売り出{だ}したところ、SNSで話{わ}題{だい}になって、注{ちゅう}文{もん}が何{なん}倍{ばい}にも増{ふ}えた。間{ま}もなく赤{あか}字{じ}から回{かい}復{ふく}するだろう。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "コンタクト(レンズ)",
+        english: "Contact (lens)",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "新{しん}～",
+        english: "New ～",
+        type: MiniStoryWordType.PREFIX
+      },
+      {
+        kanji: "〜色{しょく}",
+        english: "~ Color",
+        type: MiniStoryWordType.SUFFIX
+      },
+      {
+        kanji: "ショップ",
+        english: "Shop",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "赤{あか}字{じ}",
+        english: "Deficit・in the red",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: " 黒{くろ}字{じ}",
+        english: "Surplus・in the black",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `When a new color of the color contacts that was available only on our online shop went on sale, it became a topic on social media, and the number of orders increased several times over. It will soon be recovered from the deficit.`,
+    audio: "T73.mp3",
+    topic: MiniStoryTopics.FASHION,
+    page: 62,
+  },
+  "74": {
+    id: "74",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<革{かわ}>の<ベルト>や<ひも>でウエストを<マークする>ファッションが人気だ。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "革{かわ}",
+        english: "leather",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "ベルト",
+        english: "belt",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "ひも",
+        english: "cord・string",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "マーク［する］",
+        english: "Mark・to mark",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+    ],
+    translation: `Fashion styles that mark the waist with leather belts or cords are popular.`,
+    audio: "T74.mp3",
+    topic: MiniStoryTopics.FASHION,
+    page: 62,
+  },
+  // "75": {
+  //   id: "75",
+  //   rubyStory: [
+  //     {
+  //       character: "",
+  //       dialogue: "xxxxxxxxx",
+  //     },
+  //   ],
+  //   rubyWords: [
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //   ],
+  //   translation: `A: Have you been coming in sneakers recently?\nB: Yeah, and I stopped wearing stockings and have started wearing five-toed socks, and they're really comfortable!\nA: Really? Maybe I should try them too.`,
+  //   audio: "T75.mp3",
+  //   topic: MiniStoryTopics.FASHION,
+  //   page: 63,
+  // },
+  // "xxxxx": {
+  //   id: "xxxxx",
+  //   rubyStory: [
+  //     {
+  //       character: "",
+  //       dialogue: "xxxxxxxxx",
+  //     },
+  //   ],
+  //   rubyWords: [
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //   ],
+  //   translation: `xxxxxxxxx`,
+  //   audio: "Txx.mp3",
+  //   topic: MiniStoryTopics.FASHION,
+  //   page: 61,
+  // },
+  // "xxxxx": {
+  //   id: "xxxxx",
+  //   rubyStory: [
+  //     {
+  //       character: "",
+  //       dialogue: "xxxxxxxxx",
+  //     },
+  //   ],
+  //   rubyWords: [
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //   ],
+  //   translation: `xxxxxxxxx`,
+  //   audio: "Txx.mp3",
+  //   topic: MiniStoryTopics.FASHION,
+  //   page: 61,
+  // },
+  // "xxxxx": {
+  //   id: "xxxxx",
+  //   rubyStory: [
+  //     {
+  //       character: "",
+  //       dialogue: "xxxxxxxxx",
+  //     },
+  //   ],
+  //   rubyWords: [
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //   ],
+  //   translation: `xxxxxxxxx`,
+  //   audio: "Txx.mp3",
+  //   topic: MiniStoryTopics.FASHION,
+  //   page: 61,
+  // },
+  // "xxxxx": {
+  //   id: "xxxxx",
+  //   rubyStory: [
+  //     {
+  //       character: "",
+  //       dialogue: "xxxxxxxxx",
+  //     },
+  //   ],
+  //   rubyWords: [
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //   ],
+  //   translation: `xxxxxxxxx`,
+  //   audio: "Txx.mp3",
+  //   topic: MiniStoryTopics.FASHION,
+  //   page: 61,
+  // },
+  // "xxxxx": {
+  //   id: "xxxxx",
+  //   rubyStory: [
+  //     {
+  //       character: "",
+  //       dialogue: "xxxxxxxxx",
+  //     },
+  //   ],
+  //   rubyWords: [
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //   ],
+  //   translation: `xxxxxxxxx`,
+  //   audio: "Txx.mp3",
+  //   topic: MiniStoryTopics.FASHION,
+  //   page: 61,
+  // },
+  // "xxxxx": {
+  //   id: "xxxxx",
+  //   rubyStory: [
+  //     {
+  //       character: "",
+  //       dialogue: "xxxxxxxxx",
+  //     },
+  //   ],
+  //   rubyWords: [
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //   ],
+  //   translation: `xxxxxxxxx`,
+  //   audio: "Txx.mp3",
+  //   topic: MiniStoryTopics.FASHION,
+  //   page: 61,
+  // },
+  // "xxxxx": {
+  //   id: "xxxxx",
+  //   rubyStory: [
+  //     {
+  //       character: "",
+  //       dialogue: "xxxxxxxxx",
+  //     },
+  //   ],
+  //   rubyWords: [
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //   ],
+  //   translation: `xxxxxxxxx`,
+  //   audio: "Txx.mp3",
+  //   topic: MiniStoryTopics.FASHION,
+  //   page: 61,
+  // },
+  // "xxxxx": {
+  //   id: "xxxxx",
+  //   rubyStory: [
+  //     {
+  //       character: "",
+  //       dialogue: "xxxxxxxxx",
+  //     },
+  //   ],
+  //   rubyWords: [
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //   ],
+  //   translation: `xxxxxxxxx`,
+  //   audio: "Txx.mp3",
+  //   topic: MiniStoryTopics.FASHION,
+  //   page: 61,
+  // },
+  // "xxxxx": {
+  //   id: "xxxxx",
+  //   rubyStory: [
+  //     {
+  //       character: "",
+  //       dialogue: "xxxxxxxxx",
+  //     },
+  //   ],
+  //   rubyWords: [
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //   ],
+  //   translation: `xxxxxxxxx`,
+  //   audio: "Txx.mp3",
+  //   topic: MiniStoryTopics.FASHION,
+  //   page: 61,
+  // },
+  // "xxxxx": {
+  //   id: "xxxxx",
+  //   rubyStory: [
+  //     {
+  //       character: "",
+  //       dialogue: "xxxxxxxxx",
+  //     },
+  //   ],
+  //   rubyWords: [
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //   ],
+  //   translation: `xxxxxxxxx`,
+  //   audio: "Txx.mp3",
+  //   topic: MiniStoryTopics.FASHION,
+  //   page: 61,
+  // },
+  // "xxxxx": {
+  //   id: "xxxxx",
+  //   rubyStory: [
+  //     {
+  //       character: "",
+  //       dialogue: "xxxxxxxxx",
+  //     },
+  //   ],
+  //   rubyWords: [
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //   ],
+  //   translation: `xxxxxxxxx`,
+  //   audio: "Txx.mp3",
+  //   topic: MiniStoryTopics.FASHION,
+  //   page: 61,
+  // },
+  // "xxxxx": {
+  //   id: "xxxxx",
+  //   rubyStory: [
+  //     {
+  //       character: "",
+  //       dialogue: "xxxxxxxxx",
+  //     },
+  //   ],
+  //   rubyWords: [
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //   ],
+  //   translation: `xxxxxxxxx`,
+  //   audio: "Txx.mp3",
+  //   topic: MiniStoryTopics.FASHION,
+  //   page: 61,
+  // },
+  // "xxxxx": {
+  //   id: "xxxxx",
+  //   rubyStory: [
+  //     {
+  //       character: "",
+  //       dialogue: "xxxxxxxxx",
+  //     },
+  //   ],
+  //   rubyWords: [
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //   ],
+  //   translation: `xxxxxxxxx`,
+  //   audio: "Txx.mp3",
+  //   topic: MiniStoryTopics.FASHION,
+  //   page: 61,
+  // },
+  // "xxxxx": {
+  //   id: "xxxxx",
+  //   rubyStory: [
+  //     {
+  //       character: "",
+  //       dialogue: "xxxxxxxxx",
+  //     },
+  //   ],
+  //   rubyWords: [
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //   ],
+  //   translation: `xxxxxxxxx`,
+  //   audio: "Txx.mp3",
+  //   topic: MiniStoryTopics.FASHION,
+  //   page: 61,
+  // },
+  // "xxxxx": {
+  //   id: "xxxxx",
+  //   rubyStory: [
+  //     {
+  //       character: "",
+  //       dialogue: "xxxxxxxxx",
+  //     },
+  //   ],
+  //   rubyWords: [
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //   ],
+  //   translation: `xxxxxxxxx`,
+  //   audio: "Txx.mp3",
+  //   topic: MiniStoryTopics.FASHION,
+  //   page: 61,
+  // },
+  // "xxxxx": {
+  //   id: "xxxxx",
+  //   rubyStory: [
+  //     {
+  //       character: "",
+  //       dialogue: "xxxxxxxxx",
+  //     },
+  //   ],
+  //   rubyWords: [
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //   ],
+  //   translation: `xxxxxxxxx`,
+  //   audio: "Txx.mp3",
+  //   topic: MiniStoryTopics.FASHION,
+  //   page: 61,
+  // },
+  // "xxxxx": {
+  //   id: "xxxxx",
+  //   rubyStory: [
+  //     {
+  //       character: "",
+  //       dialogue: "xxxxxxxxx",
+  //     },
+  //   ],
+  //   rubyWords: [
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //   ],
+  //   translation: `xxxxxxxxx`,
+  //   audio: "Txx.mp3",
+  //   topic: MiniStoryTopics.FASHION,
+  //   page: 61,
+  // },
+  // "xxxxx": {
+  //   id: "xxxxx",
+  //   rubyStory: [
+  //     {
+  //       character: "",
+  //       dialogue: "xxxxxxxxx",
+  //     },
+  //   ],
+  //   rubyWords: [
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //   ],
+  //   translation: `xxxxxxxxx`,
+  //   audio: "Txx.mp3",
+  //   topic: MiniStoryTopics.FASHION,
+  //   page: 61,
+  // },
+  // "xxxxx": {
+  //   id: "xxxxx",
+  //   rubyStory: [
+  //     {
+  //       character: "",
+  //       dialogue: "xxxxxxxxx",
+  //     },
+  //   ],
+  //   rubyWords: [
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //   ],
+  //   translation: `xxxxxxxxx`,
+  //   audio: "Txx.mp3",
+  //   topic: MiniStoryTopics.FASHION,
+  //   page: 61,
+  // },
+  // "xxxxx": {
+  //   id: "xxxxx",
+  //   rubyStory: [
+  //     {
+  //       character: "",
+  //       dialogue: "xxxxxxxxx",
+  //     },
+  //   ],
+  //   rubyWords: [
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //   ],
+  //   translation: `xxxxxxxxx`,
+  //   audio: "Txx.mp3",
+  //   topic: MiniStoryTopics.FASHION,
+  //   page: 61,
+  // },
+  // "xxxxx": {
+  //   id: "xxxxx",
+  //   rubyStory: [
+  //     {
+  //       character: "",
+  //       dialogue: "xxxxxxxxx",
+  //     },
+  //   ],
+  //   rubyWords: [
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //   ],
+  //   translation: `xxxxxxxxx`,
+  //   audio: "Txx.mp3",
+  //   topic: MiniStoryTopics.FASHION,
+  //   page: 61,
+  // },
+  // "xxxxx": {
+  //   id: "xxxxx",
+  //   rubyStory: [
+  //     {
+  //       character: "",
+  //       dialogue: "xxxxxxxxx",
+  //     },
+  //   ],
+  //   rubyWords: [
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //   ],
+  //   translation: `xxxxxxxxx`,
+  //   audio: "Txx.mp3",
+  //   topic: MiniStoryTopics.FASHION,
+  //   page: 61,
+  // },
+  // "xxxxx": {
+  //   id: "xxxxx",
+  //   rubyStory: [
+  //     {
+  //       character: "",
+  //       dialogue: "xxxxxxxxx",
+  //     },
+  //   ],
+  //   rubyWords: [
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //   ],
+  //   translation: `xxxxxxxxx`,
+  //   audio: "Txx.mp3",
+  //   topic: MiniStoryTopics.FASHION,
+  //   page: 61,
+  // },
+  // "xxxxx": {
+  //   id: "xxxxx",
+  //   rubyStory: [
+  //     {
+  //       character: "",
+  //       dialogue: "xxxxxxxxx",
+  //     },
+  //   ],
+  //   rubyWords: [
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //   ],
+  //   translation: `xxxxxxxxx`,
+  //   audio: "Txx.mp3",
+  //   topic: MiniStoryTopics.FASHION,
+  //   page: 61,
+  // },
+  // "xxxxx": {
+  //   id: "xxxxx",
+  //   rubyStory: [
+  //     {
+  //       character: "",
+  //       dialogue: "xxxxxxxxx",
+  //     },
+  //   ],
+  //   rubyWords: [
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //   ],
+  //   translation: `xxxxxxxxx`,
+  //   audio: "Txx.mp3",
+  //   topic: MiniStoryTopics.FASHION,
+  //   page: 61,
+  // },
+  // "xxxxx": {
+  //   id: "xxxxx",
+  //   rubyStory: [
+  //     {
+  //       character: "",
+  //       dialogue: "xxxxxxxxx",
+  //     },
+  //   ],
+  //   rubyWords: [
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //     {
+  //       kanji: "xxxxxxxxx",
+  //       english: "xxxxxxxxx",
+  //       type: MiniStoryWordType.NOUN
+  //     },
+  //   ],
+  //   translation: `xxxxxxxxx`,
+  //   audio: "Txx.mp3",
+  //   topic: MiniStoryTopics.FASHION,
+  //   page: 61,
+  // },
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   "279": {
     id: "279",
     rubyStory: [
