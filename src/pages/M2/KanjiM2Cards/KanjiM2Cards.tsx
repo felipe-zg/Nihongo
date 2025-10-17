@@ -85,13 +85,13 @@ const KanjiM2Cards: React.FC<Props> = ({ wordsList }) => {
       {isCanvasOpen && <HandwritingCanvas ref={canvasRef} />}
 
       {/* <Text color={"gray.300"}>{quantitySeen}/{filteredVocabList.length}</Text> */}
-      <HStack mt={12} width={{base: "90vw", md: "60vw"}}>
+      <HStack mt={12} width={{base: "90vw", lg: "60vw"}}>
         <Button onPress={handleNext} width={"full"}>
             Next
         </Button>
       </HStack>
 
-      <HStack mt={10} width={{base: "90vw", md: "60vw"}}>
+      <HStack mt={10} width={{base: "90vw", lg: "60vw"}}>
         <Box width={120} mr={5}>
           <Select
             selectedValue={startIndex.toString()}
@@ -118,7 +118,7 @@ const KanjiM2Cards: React.FC<Props> = ({ wordsList }) => {
         </Box>
         <button disabled={isShuffled} onClick={shuffleCards}>Shuffle ⇄</button>
       </HStack>
-      <HStack width={{base: "90vw", md: "60vw"}} space={2} justifyContent={"space-between"} my={6} alignSelf={"center"}>
+      <HStack width={{base: "90vw", lg: "60vw"}} space={2} justifyContent={"space-between"} my={6} alignSelf={"center"}>
         <HStack space={2} alignItems="center">
           <Switch
             onValueChange={(val) => setIsCanvasOpen(val)}
