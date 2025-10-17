@@ -31,17 +31,30 @@ export const HandwritingCanvas = forwardRef<HandwritingCanvasRef>((_, ref) => {
         borderColor="gray.400"
         borderRadius="md"
         overflow="hidden"
-        width={{ base: "90vw", md: "50vw" }}
+        width={{ base: "90vw", lg: "50vw" }}
         height="300px"
       >
-        <ReactSketchCanvas
-          ref={canvasRef}
-          width={"100%"}
-          height="300px"
-          strokeWidth={4}
-          strokeColor="black"
-          canvasColor="#fff"
-        />
+        <div
+          style={{
+            userSelect: "none",
+            WebkitUserSelect: "none",
+            WebkitTouchCallout: "none",
+            touchAction: "none",
+            borderRadius: "8px",
+            width: "100%",
+            height: "100%",
+            overflow: "hidden",
+          }}
+        >
+          <ReactSketchCanvas
+            ref={canvasRef}
+            width={"100%"}
+            height="300px"
+            strokeWidth={4}
+            strokeColor="black"
+            canvasColor="#fff"
+          />
+        </div>
       </Box>
       <HStack width={"full"} space={2} justifyContent="space-between">
         <Button variant="outline" colorScheme={"pink"} flex="1" onPress={handleClear}>Clear</Button>
