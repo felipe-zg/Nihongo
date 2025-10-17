@@ -104,7 +104,7 @@ const MiniStory: React.FC<MiniStoryProps> = ({
             </Text>
           </Box>
         </HStack>
-        <Divider />
+        {index < rubyWords.length - 1 &&  <Divider />}
       </>
     )
   });
