@@ -1,6 +1,7 @@
 import React, { useMemo, useRef, useState } from "react";
-import { Box, Button, HStack, Text, Select } from "native-base";
+import { Box, Button, HStack, Text, Select, Switch } from "native-base";
 import FlipCard, { FlipCardHandle } from "../../../components/FlipCard/FlipCard";
+import { HandwritingCanvas } from "../../../components";
 
 type Props = {
   wordsList: TKanjiM2Words[] | TKanjiM2WordsWithExample[];
@@ -12,6 +13,7 @@ const KanjiM2Cards: React.FC<Props> = ({ wordsList }) => {
   const [startIndex, setStartIndex] = useState(0);
   const [endIndex, setEndIndex] = useState(wordsList.length - 1);
   const [isShuffled, setIsShuffled] = useState(false);
+  const [isCanvasOpen, setIsCanvasOpen] = useState(false);
   const flipCardRef = useRef<FlipCardHandle>(null);
 
   const handleStartIndexChange = (value: number) => {
@@ -74,14 +76,16 @@ const KanjiM2Cards: React.FC<Props> = ({ wordsList }) => {
         />
       )}
 
+      {isCanvasOpen && <HandwritingCanvas />}
+
       {/* <Text color={"gray.300"}>{quantitySeen}/{filteredVocabList.length}</Text> */}
-      <HStack mt={12} paddingX={8} space={4} width={"100%"}>
-        <Button onPress={handleNext} width={"100%"}>
+      <HStack mt={12} width={{base: "90vw", md: "60vw"}}>
+        <Button onPress={handleNext} width={"full"}>
             Next
         </Button>
       </HStack>
 
-      <HStack mt={10} width="100%" px={4}>
+      <HStack mt={10} width={{base: "90vw", md: "60vw"}}>
         <Box width={120} mr={5}>
           <Select
             selectedValue={startIndex.toString()}
@@ -107,6 +111,14 @@ const KanjiM2Cards: React.FC<Props> = ({ wordsList }) => {
           </Select>
         </Box>
         <button disabled={isShuffled} onClick={shuffleCards}>Shuffle ⇄</button>
+      </HStack>
+      <HStack width={{base: "90vw", md: "60vw"}} space={2} alignItems="center" my={6} alignSelf={"center"}>
+        <Switch
+          onValueChange={(val) => setIsCanvasOpen(val)}
+          colorScheme="red"
+          isChecked={isCanvasOpen}
+        />
+        <Text color="red.500">Show canvas</Text>
       </HStack>
     </Box>
   );
