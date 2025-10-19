@@ -6,6 +6,7 @@ export const MiniStoryTopics = {
   SCHOOL: "学校",
   WORK: "仕事",
   TECHNOLOGY: "テクノロジー",
+  LIFE: "人生",
 } as const;
 
 // type MiniStoryTopic = typeof MiniStoryTopics[keyof typeof MiniStoryTopics];
@@ -5570,5 +5571,465 @@ export const MINI_STORY_N3: Record<string, MiniStory> = {
     audio: "T301.mp3",
     topic: MiniStoryTopics.WORK,
     page: 211,
+  },
+  "302": {
+    id: "302",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "オフィスに誰もいないのは危ないから、<留{る}守{す}番{ばん}して>おいて。<正{しょう}午{ご}>までに戻{もど}ってくるから、それまでに部{へ}屋{や}の<整{せい}理{り}>もやっておいてね！",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "オフィス",
+        english: "office",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "留{る}守{す}番{ばん}［する］",
+        english: "To stay (home) house watching",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+      {
+        kanji: "正{しょう}午{ご}",
+        english: "noon",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "整{せい}理{り}［する］",
+        english: "organizing・to organize",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+    ],
+    translation: `It's dangerous if no one is in the office, so stay here. I'll be back by noon, so organize the rooms by then!`,
+    audio: "T302.mp3",
+    topic: MiniStoryTopics.WORK,
+    page: 212,
+  },
+  "303": {
+    id: "303",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<居{い}酒{ざか}屋{や}>の<キッチン>で働{はたら}いているが、<看{かん}板{ばん}>メニューを作ることを上{じょう}司{し}に<命{めい}令{れい}された>。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "居{い}酒{ざか}屋{や}",
+        english: "tavern・pub",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "キッチン",
+        english: "kitchen",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "看{かん}板{ばん}",
+        english: "signboard・signature (dish)",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "命{めい}令{れい}［する］",
+        english: "Command・to give commands",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+    ],
+    translation: `I worked in the kitchen of a tavern, and I was commanded to make a signature dish by my senior.`,
+    audio: "T303.mp3",
+    topic: MiniStoryTopics.WORK,
+    page: 212,
+  },
+  "304": {
+    id: "304",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "送{そう}別{べつ}会{かい}でビールを10本{ぽん}<注{ちゅう}文{もん}す>べきだったのに、間違えて10<ダース>注{ちゅう}文{もん}してしまった。<一{いち}時{じ}>はどうなるかと思ったが、いろんな人が<協{きょう}力{りょく}して>くれたおかげで、何{なん}とかなり<ほっとしている>。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "注{ちゅう}文{もん}［する］",
+        english: "order・to order",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "~ダース",
+        english: "~dozen",
+        type: MiniStoryWordType.SUFFIX
+      },
+      {
+        kanji: "一{いち}時{じ}",
+        english: "For a moment",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.ADVERB ]
+      },
+      {
+        kanji: "一{いち}時{じ}帰{き}国{こく}［する］",
+        english: "to temporarily return to one's home country",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE]
+      },
+      {
+        kanji: "協{きょう}力{りょく}［する］",
+        english: "cooperation・to cooperate",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE]
+      },
+      {
+        kanji: "ほっとする",
+        english: "to be relieved",
+        type: MiniStoryWordType.IRREGULAR_INTRANSITIVE
+      },
+    ],
+    translation: `Even though I should've ordered 10 beers at the farewell party, I made a mistake and ordered 10 dozen. For a moment, I didn't know what to do, but thanks to various people helping out, it worked out, so I was relieved.`,
+    audio: "T304.mp3",
+    topic: MiniStoryTopics.WORK,
+    page: 213,
+  },
+  "305": {
+    id: "305",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "私は<無{む}職{しょく}>で<独{どく}身{しん}>だ。<焦{あせ}ったり>、<不{ふ}安{あん}に>なったりすることもある。だが、<可{か}能{のう}な>限{かぎ}り、仕事も恋{れん}愛{あい}も<諦{あきら}めないで>がんばるつもりだ。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "無{む}職{しょく}",
+        english: "unemployed・jobless",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "独{どく}身{しん}",
+        english: "single (unmarried)",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "焦{あせ}る",
+        english: "To get impatient・to be in a hurry",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE
+      },
+      {
+        kanji: "不{ふ}安{あん}な",
+        english: "anxious・uneasy",
+        type: MiniStoryWordType.ADJECTIVE_NA
+      },
+      {
+        kanji: "可{か}能{のう}な",
+        english: "possible",
+        type: MiniStoryWordType.ADJECTIVE_NA
+      },
+      {
+        kanji: "不{ふ}可{か}能{のう}な",
+        english: "Impossible",
+        type: MiniStoryWordType.ADJECTIVE_NA
+      },
+      {
+        kanji: "可{か}能{のう}性{せい}",
+        english: "possibility",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "諦{あきら}める",
+        english: "To give up・to abandon",
+        type: MiniStoryWordType.ICHIDAN_TRANSITIVE
+      },
+    ],
+    translation: `I am unemployed and single. I sometimes get impatient or anxious. But I'm going to do my best without giving up on work or love as much as I can.`,
+    audio: "T305.mp3",
+    topic: MiniStoryTopics.LIFE,
+    page: 216,
+  },
+  "306": {
+    id: "306",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<孫{まご}>は<悩{なや}んで>いる人を助{たす}けるため、<弁{べん}護{ご}士{し}>になることを<目{め}指{ざ}して>いる。人の<倍{ばい}>は<努{ど}力{りょく}して>いる<様{よう}子{す}>だ。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "孫{まご}",
+        english: "grandchild",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "悩{なや}む",
+        english: "To worry",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+      {
+        kanji: " 悩{なや}み",
+        english: "worry・anxiety",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "弁{べん}護{ご}士{し}",
+        english: "lawyer",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "目{め}指{ざ}す",
+        english: "To aim for・to aspire to",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+      {
+        kanji: "倍{ばい}",
+        english: "double・twice",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "努{ど}力{りょく}［する］",
+        english: "Effort・to make an effort",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+      {
+        kanji: "様{よう}子{す}",
+        english: "appearance・condition",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `My grandson aims to be a lawyer to help those who are in trouble. He seems to be making double the effort of the average person.`,
+    audio: "T306.mp3",
+    topic: MiniStoryTopics.LIFE,
+    page: 216,
+  },
+  "307": {
+    id: "307",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<同{どう}僚{りょう}>は<素{す}敵{てき}な>女{じょ}性{せい}に<出{で}会{あ}い>、<真{しん}剣{けん}に><交{こう}際{さい}して>いる。<そのため>、まだ<キス>もしていないようだ。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "同{どう}僚{りょう}",
+        english: "colleague",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "素{す}敵{てき}な",
+        english: "nice・lovely・wonderful",
+        type: MiniStoryWordType.ADJECTIVE_NA
+      },
+      {
+        kanji: "出{で}会{あ}う",
+        english: "Meet",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE
+      },
+      {
+        kanji: "出{で}会{あ}い",
+        english: "Meeting・encounter",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "真{しん}剣{けん}な",
+        english: "Serious",
+        type: MiniStoryWordType.ADJECTIVE_NA
+      },
+      {
+        kanji: "交{こう}際{さい}［する］",
+        english: "Dating・To date",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+      {
+        kanji: "そのため",
+        english: "so・therefore",
+        type: MiniStoryWordType.CONJUNCTION
+      },
+      {
+        kanji: "キス［する］",
+        english: "Kiss・To kiss",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+    ],
+    translation: `My colleagues met a nice women, and they have started seriously dating. Therefore, it seems that they still haven't kissed.`,
+    audio: "T307.mp3",
+    topic: MiniStoryTopics.LIFE,
+    page: 217,
+  },
+  "308": {
+    id: "308",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "親{しん}友{ゆう}の<葬{そう}式{しき}>で、<ろうそく>を見つめながら、彼女がいないこれからの<人{じん}生{せい}>を<想{そう}像{ぞう}した>。<つらく>なった。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "葬{そう}式{しき}",
+        english: "funeral",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "ろうそく",
+        english: "candle",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "人{じん}生{せい}",
+        english: "life",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "想{そう}像{ぞう}［する］",
+        english: "imagination・to imagine",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "想{そう}像{ぞう}力{りょく}",
+        english: "imaginative power・imagination",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "つらい",
+        english: "Painful・hard・tough",
+        type: MiniStoryWordType.ADJECTIVE_I
+      },
+    ],
+    translation: `At my best friend's funeral, I imagined life without her from now on while staring at a candle. It was tough.`,
+    audio: "T308.mp3",
+    topic: MiniStoryTopics.LIFE,
+    page: 218,
+  },
+  "309": {
+    id: "309",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "両{りょう}親{しん}は<理{り}想{そう}的{てき}な><夫{ふう}婦{ふ}>だ。<お互{たが}いに><相{あい}手{て}>を大切にしている。母が父に<プロポーズした>らしい。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "理{り}想{そう}的{てき}な",
+        english: "Ideal",
+        type: MiniStoryWordType.ADJECTIVE_NA
+      },
+      {
+        kanji: "理{り}想{そう}",
+        english: "Ideal",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "夫{ふう}婦{ふ}",
+        english: "husband and wife・married couple",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "お互{たが}い（に）",
+        english: "each other",
+        type: MiniStoryWordType.ADVERB
+      },
+      {
+        kanji: "相{あい}手{て}",
+        english: "partner・opponent",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "プロポーズ［する］",
+        english: "Propose・To propose",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+    ],
+    translation: `My parents are an ideal couple. They value each other. It seems my mother proposed to my father.`,
+    audio: "T309.mp3",
+    topic: MiniStoryTopics.LIFE,
+    page: 218,
+  },
+  "310": {
+    id: "310",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<末{すえ}っ子{こ}>の娘{むすめ}は、<たとえ>結{けっ}婚{こん}しても<絶{ぜっ}対{たい}に><姓{せい}>は変{か}えたくないと言っている。<世{よ}の中{なか}>の<常{じょう}識{しき}>に<縛{しば}られ>たくないらしい。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "末{すえ}っ子{こ}",
+        english: "youngest child",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "たとえ",
+        english: "Even if・no matter",
+        type: MiniStoryWordType.ADVERB
+      },
+      {
+        kanji: "絶{ぜっ}対{たい}（に）",
+        english: "Definitely・absolutely",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.ADVERB ]
+      },
+      {
+        kanji: "姓{せい}",
+        english: "surname・family name",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "世{よ}の中{なか}",
+        english: "In the world・society",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "常{じょう}識{しき}",
+        english: "Common sense",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "縛{しば}る",
+        english: "To bind・to tie",
+        type: MiniStoryWordType.IRREGULAR_TRANSITIVE
+      },
+    ],
+    translation: `My youngest daughter says that even if she gets married, she definitely doesn't want to change her surname. It seems that she doesn't want to be tied down by the common thinking of the world.`,
+    audio: "T310.mp3",
+    topic: MiniStoryTopics.LIFE,
+    page: 219,
+  },
+  "311": {
+    id: "311",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<ある>友人は、<周{しゅう}囲{い}>の人に小さな<出{で}来{き}事{ごと}>を<大{おお}げさに>話すので、聞いていて<いらいらする>。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "ある",
+        english: "A certain",
+        type: MiniStoryWordType.OTHER
+      },
+      {
+        kanji: "周{しゅう}囲{い}",
+        english: "Surroundings",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "出{で}来{き}事{ごと}",
+        english: "Event・incident",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "大{おお}げさな",
+        english: "Exaggerated",
+        type: MiniStoryWordType.ADJECTIVE_NA
+      },
+      {
+        kanji: "いらいら［する］",
+        english: "Annoyance・to be annoyed",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+    ],
+    translation: `One of my friends always makes a big deal of things, and I get annoyed just listening,`,
+    audio: "T311.mp3",
+    topic: MiniStoryTopics.LIFE,
+    page: 219,
   },
 };
