@@ -5,6 +5,7 @@ export const MiniStoryTopics = {
   FASHION: "ファッション",
   SCHOOL: "学校",
   WORK: "仕事",
+  TECHNOLOGY: "テクノロジー",
 } as const;
 
 // type MiniStoryTopic = typeof MiniStoryTopics[keyof typeof MiniStoryTopics];
@@ -16,6 +17,7 @@ const MiniStoryWordType = {
   GODAN_TRANSITIVE: '動1他',
   ICHIDAN_TRANSITIVE: '動2他',
   IRREGULAR_TRANSITIVE: '動3他',
+  IRREGULAR_HYBRID: '動3自他',
   ADJECTIVE_NA: 'ナ形',
   ADJECTIVE_I: 'イ形',
   ADVERB: '副',
@@ -24,7 +26,7 @@ const MiniStoryWordType = {
   PREFIX: '接頭',
   SUFFIX: '接尾',
   CLAUSE: '句',
-  CONNECTION: '接続',
+  CONJUNCTION: '接続',
   OTHER: 'その他',
 } as const;
 
@@ -2168,7 +2170,7 @@ export const MINI_STORY_N3: Record<string, MiniStory> = {
       {
         kanji: "すると",
         english: "and so・then",
-        type: MiniStoryWordType.CONNECTION
+        type: MiniStoryWordType.CONJUNCTION
       },
     ],
     translation: `The trick to making stir-fried vegetables is using medium heat for hard-to-cook ingredients and swiching to low heat once they sofien a little, then adding other vegetables, and continuing to cook it on low heat. Then, you should be able to make crispy stir-fried vegetables.`,
@@ -2467,7 +2469,7 @@ export const MINI_STORY_N3: Record<string, MiniStory> = {
       {
         kanji: "ですから",
         english: "therefore・as I said before",
-        type: MiniStoryWordType.CONNECTION
+        type: MiniStoryWordType.CONJUNCTION
       },
       {
         kanji: "特{とく}売{ばい}",
@@ -3778,6 +3780,907 @@ export const MINI_STORY_N3: Record<string, MiniStory> = {
     topic: MiniStoryTopics.FASHION,
     page: 70,
   },
+  "89": {
+    id: "89",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "昨日スマホを落{お}としちゃって、<画{が}面{めん}><割{わ}れた>。<修{しゅう}理{り}>も無理だって。<ショック>だよー。",
+      },
+      {
+        character: "B",
+        dialogue: "え、<カバー>付{つ}けてなかったの？",
+      },
+      {
+        character: "A",
+        dialogue: "今度から付{つ}けるようにする。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "画{が}面{めん}",
+        english: "Screen",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "画{が}面{めん}共{きょう}有{ゆう}",
+        english: "Screen Sharing",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "割{わ}れる",
+        english: "To break",
+        type: MiniStoryWordType.ICHIDAN_INTRANSITIVE
+      },
+      {
+        kanji: "割{わ}る",
+        english: "To break",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+      {
+        kanji: "修{しゅう}理{り}［する］",
+        english: "Repair・to repair",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "ショック",
+        english: "Shock",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "カバー",
+        english: "Cover",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `A: Yesterday, I dropped my smartphone and broke the screen. They said it's impossible to repair. I'm in shock.\nB: What, didn't you put a cover on it?\nA: I'll be sure to put one on the next time.`,
+    audio: "T89.mp3",
+    topic: MiniStoryTopics.TECHNOLOGY,
+    page: 72,
+  },
+  "90": {
+    id: "90",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "化{か}学{がく}の<実{じっ}験{けん}>の授{じゅ}業{ぎょう}で、学生が<死{し}亡{ぼう}する>という事{じ}故{こ}があった。大きな<騒{さわ}ぎ>になった。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "実{じっ}験{けん}［する］",
+        english: "Experiment・to do an experiment",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "死{し}亡{ぼう}［する］",
+        english: "Death・to die",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+      {
+        kanji: "騒{さわ}ぎ",
+        english: "Uproar・commotion",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `There was an incident where a student died during a chemistry experiment in class. There was a big uproar about it.`,
+    audio: "T90.mp3",
+    topic: MiniStoryTopics.TECHNOLOGY,
+    page: 72,
+  },
+  "91": {
+    id: "91",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<資{し}料{りょう}>は以{い}下{か}の<アドレス>に<アップしました>ので、<ダウンロードして>ください。紙{かみ}の<資{し}料{りょう}>が欲しい人は、自分で<印{いん}刷{さつ}>してください。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "資{し}料{りょう}",
+        english: "Materials・Documents",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "アドレス",
+        english: "Address (URL・email)",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "アップ（ロード）［する］",
+        english: "Upload・to upload",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "ダウンロード［する］",
+        english: "Download・to download",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "印{いん}刷{さつ}［する］",
+        english: "Print・to print",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+    ],
+    translation: `The materials have been uploaded to the following address, so please download them. If you would like paper materials, please print them yourself.`,
+    audio: "T91.mp3",
+    topic: MiniStoryTopics.TECHNOLOGY,
+    page: 73,
+  },
+  "92": {
+    id: "92",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "「携{けい}帯{たい}電{でん}話{わ}」という名前だが、<主{おも}に>アプリを使っている。<通{つう}話{わ}する>とお金が<かかる>ので、友人との会話は<全{すべ}て>チャットを使っている。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "主{おも}に",
+        english: "Mainly",
+        type: MiniStoryWordType.ADVERB
+      },
+      {
+        kanji: "通{つう}話{わ}［する］",
+        english: "Call・to call",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+      {
+        kanji: "かかる",
+        english: "To take・cost (time, money, etc.)",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE
+      },
+      {
+        kanji: "全{すべ}て",
+        english: "All",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.ADVERB ]
+      },
+    ],
+    translation: `It may be called a "mobile phone" but I mainly use apps. Making calls costs money, so all of my conversations with friends are over chat apps.`,
+    audio: "T92.mp3",
+    topic: MiniStoryTopics.TECHNOLOGY,
+    page: 73,
+  },
+  "93": {
+    id: "93",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "私、<スケジュール>はスマホじゃなくて、<手{て}帳{ちょう}>で管{かん}理{り}してるな。自由に書{か}けるし。",
+      },
+      {
+        character: "B",
+        dialogue: "あ、私はそれもスマホでやってる。なんか<アイコン>で自由に<印{しるし}>つけられるから、<カラフルで>楽しいよ。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "スケジュール",
+        english: "Schedule",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "手{て}帳{ちょう}",
+        english: "Notebook・planner",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "アイコン",
+        english: "Icon",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "印{しるし}",
+        english: "Stamp・mark",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "カラフルな",
+        english: "Colorful",
+        type: MiniStoryWordType.ADJECTIVE_NA
+      },
+    ],
+    translation: `A: I manage my schedule in a notebook rather than on a smartphone. I can write freely.\nB: Oh, I do that with a smartphone too. It's colorful and fun because you can freely place stamps with an icon.`,
+    audio: "T93.mp3",
+    topic: MiniStoryTopics.TECHNOLOGY,
+    page: 74,
+  },
+  "94": {
+    id: "94",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "この<マイク>は<ピン>で服に止めて使います。この<スイッチ>を押すと<電{でん}源{げん}>が入{はい}ります。あとは普通に話せば、声がマイクに入{はい}ります。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "マイク",
+        english: "Microphone",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "ピン",
+        english: "Pin",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "スイッチ",
+        english: "Switch",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "電{でん}源{げん}",
+        english: "Power・Power supply",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `This microphone is a pin microphone and is attached to clothing. Press this switch to turn on the power. After that, just speak normally, and your voice will be picked up by the microphone.`,
+    audio: "T94.mp3",
+    topic: MiniStoryTopics.TECHNOLOGY,
+    page: 74,
+  },
+  "95": {
+    id: "95",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<待{ま}ち合{あ}わせ>の<日{にち}時{じ}>は以{い}下{か}の通{とお}りです。あと、場所は分かりにくいので、<マップ>で示{しめ}します。<リンク先{さき}>を見てください。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "待{ま}ち合{あ}わせ",
+        english: "Meeting",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "待{ま}ち合{あ}わせる",
+        english: "To meet・Have a meeting",
+        type: MiniStoryWordType.ICHIDAN_TRANSITIVE
+      },
+      {
+        kanji: "日{にち}時{じ}",
+        english: "Date and time",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "マップ",
+        english: "Map",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "リンク先{さき}",
+        english: "Link destination",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "リンク［する］",
+        english: "link・To link",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_HYBRID ]
+      },
+    ],
+    translation: `The date and time of the meeting is as follows. Also, the location is difficult to understand, so I will show it on a map. Please see the link.`,
+    audio: "T95.mp3",
+    topic: MiniStoryTopics.TECHNOLOGY,
+    page: 75,
+  },
+  "96": {
+    id: "96",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "あれ、ここ<電{でん}波{ぱ}>悪い？ なんか全{ぜん}然{ぜん}表{ひょう}示{じ}されないんだけど。",
+      },
+      {
+        character: "B",
+        dialogue: "ん？ こっちは問題ないけど。",
+      },
+      {
+        character: "A",
+        dialogue: "あ、しまった。今{こん}月{げつ}通{つう}信{しん}量{りょう}が多{おお}くて、<速{そく}度{ど}><制{せい}限{げん}>かかってたんだった。動{どう}画{が}見すぎたよ。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "電{でん}波{ぱ}",
+        english: "Radio waves・reception・signal",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "速{そく}度{ど}",
+        english: "Speed",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "制{せい}限{げん}［する］",
+        english: "Limit・Restriction・to limit",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+    ],
+    translation: `A: Huh, reception is bad here. Nothing is being displayed at all.\nB; What? I'm not having any problems.\nA: Oh, my mistake. I had a lot of communication traffic this month, and they put a speed limit on my phone. I watched too many videos.`,
+    audio: "T96.mp3",
+    topic: MiniStoryTopics.TECHNOLOGY,
+    page: 75,
+  },
+  "97": {
+    id: "97",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "あ、ごめん、もう<充{じゅう}電{でん}>切れそう。",
+      },
+      {
+        character: "B",
+        dialogue: "え、まだお昼だよ。そんなことある？",
+      },
+      {
+        character: "A",
+        dialogue: "いやー、夜に充{じゅう}電{でん}したつもりだったんだけど、<コンセント>から<ケーブル>が<抜{ぬ}けて>て。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "充{じゅう}電{でん}［する］",
+        english: "Charging・To charge",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "コンセント",
+        english: "Power outlet",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "ケーブル",
+        english: "Cable",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "抜{ぬ}ける",
+        english: "To come out・To be removed",
+        type: MiniStoryWordType.ICHIDAN_INTRANSITIVE
+      },
+      {
+        kanji: "抜{ぬ}く",
+        english: "To pull out・To unplug・To remove",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+    ],
+    translation: `A: Oh, I'm sorry, it looks like my battery is already about to run out.\nB: What? But it's only the afternoon. How is that possible?\nA: I meant to charge it (last) night, but the plug came out of the outlet.`,
+    audio: "T97.mp3",
+    topic: MiniStoryTopics.TECHNOLOGY,
+    page: 76,
+  },
+  "98": {
+    id: "98",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<容{よう}量{りょう}>がすぐになくなるので、<無{む}駄{だ}な><データ>や使わない<ファイル>はなるべく消{け}すようにしている。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "容{よう}量{りょう}",
+        english: "Capacity・Storage space",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "無{む}駄{だ}な",
+        english: "Useless・Wasteful・Unnecessary",
+        type: MiniStoryWordType.ADJECTIVE_NA
+      },
+      {
+        kanji: "データ",
+        english: "Data",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "ファイル",
+        english: "File",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `Since I (always) run out of storage space so quickly, I try to delete as much unneeded data and files as I can.`,
+    audio: "T98.mp3",
+    topic: MiniStoryTopics.TECHNOLOGY,
+    page: 76,
+  },
+  "99": {
+    id: "99",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<メールアドレス>を<聞{き}違{ちが}って>、他の人にメールを送{おく}らないように注意しないといけない。<うっかり><本{ほん}人{にん}>に<悪{わる}口{ぐち}>を書いたメールを送{おく}ったら、<最{さい}悪{あく}だ>。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "メールアドレス",
+        english: "Email address",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "間{ま}違{ちが}う",
+        english: "To make a mistake・to be mistaken",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+      {
+        kanji: "間{ま}違{ちが}い",
+        english: "Mistake・Error",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "うっかり",
+        english: "Carelessly・Inadvertently",
+        type: MiniStoryWordType.ADVERB
+      },
+      {
+        kanji: "本{ほん}人{にん}",
+        english: "The person in question・The actual person",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "悪{わる}口{ぐち}",
+        english: "Bad-mouthing・Slander",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "最{さい}悪{あく}な",
+        english: "The worst",
+        type: MiniStoryWordType.ADJECTIVE_NA
+      },
+    ],
+    translation: `You must be careful not to get email addresses wrong and send emails to other people. Carelessly sending an email bad-mouthing the actual person you're sending it to is the worst.`,
+    audio: "T99.mp3",
+    topic: MiniStoryTopics.TECHNOLOGY,
+    page: 77,
+  },
+  "100": {
+    id: "100",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "私のパソコンは<モニター>を2台{だい}<使{し}用{よう}して>いる。<さまざまな>アプリを<同{どう}時{じ}>に表{ひょう}示{じ}できるので、便{べん}利{り}だ。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "モニター",
+        english: "Monitor",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "使{し}用{よう}［する］",
+        english: "Usage・To use",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "さまざまな",
+        english: "Various・Different kinds of",
+        type: MiniStoryWordType.ADJECTIVE_NA
+      },
+      {
+        kanji: "同{どう}時{じ}",
+        english: "Simultaneously",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `My personal computer uses two monitors. It is convenient because I can view various apps simultaneously.`,
+    audio: "T100.mp3",
+    topic: MiniStoryTopics.TECHNOLOGY,
+    page: 77,
+  },
+  "101": {
+    id: "101",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "最近の<翻{ほん}訳{やく}>アプリは<音{おん}声{せい}>入{にゅう}力{りょく}で話した言葉を<次{つぎ}々{つぎ}と><訳{やく}して>くれる。しかも、よく使う表{ひょう}現{げん}は<保{ほ}存{ぞん}できる>。これで<無{む}料{りょう}>というのが言{しん}じられない。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "翻{ほん}訳{やく}［する］",
+        english: "Translation・To translate",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "音{おん}声{せい}",
+        english: "Voice",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "次{つぎ}々{つぎ}（と）",
+        english: "Continuously・One after another・In succession",
+        type: MiniStoryWordType.ADVERB
+      },
+      {
+        kanji: "訳{やく}す",
+        english: "To translate",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+      {
+        kanji: "訳{やく}",
+        english: "Translation",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "保{ほ}存{ぞん}［する］",
+        english: "Saving・To save",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "無{む}料{りょう}",
+        english: "Free of charge",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "有{ゆう}料{りょう}",
+        english: "Paid・Not free",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `Recent translation apps can continuously translate the words spoken into them. Moreover, often-used expressions can be saved. I can't believe something like this is free.`,
+    audio: "T101.mp3",
+    topic: MiniStoryTopics.TECHNOLOGY,
+    page: 78,
+  },
+  "102": {
+    id: "102",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "<パスワード>ってさ、<数{すう}字{じ}>があるものとか、<文{も}字{じ}>だけのものとかいろいろあって覚{おぼ}えるのが大変じゃない？ しかも<数{すう}回{かい}>間{ま}違{ちが}えたら、<ロックされる>し。",
+      },
+      {
+        character: "B",
+        dialogue: "<それなら>パスワード管{かん}理{り}アプリを<インストールする>といいよ。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "パスワード",
+        english: "Password",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "数{すう}字{じ}",
+        english: "Number",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "文{も}字{じ}",
+        english: "Character・Letter",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "数{すう}回{かい}",
+        english: "Number of times・Several times",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.ADVERB ]
+      },
+      {
+        kanji: "ロック［する］",
+        english: "Lock・To lock",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "それなら",
+        english: "In that case",
+        type: MiniStoryWordType.CONJUNCTION
+      },
+      {
+        kanji: "インストール［する］",
+        english: "Installation・To install",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+    ],
+    translation: `A: Isn't it really difficult to remember passwords when you've got some with numbers and some with only letters or something? What's more, if you get it wrong several times, your account will be locked.\nB: If that's the case, then you should install a password management app.`,
+    audio: "T102.mp3",
+    topic: MiniStoryTopics.TECHNOLOGY,
+    page: 78,
+  },
+  "103": {
+    id: "103",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "スマホを<替{か}えよう>と思って<カタログ>を見ているけど、<違{ちが}い>が分からない。<最{さい}新{しん}><型{がた}>は私には必要ないかな。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "替{か}える・代{か}える・換{か}える",
+        english: "To replace・change・exchange",
+        type: MiniStoryWordType.ICHIDAN_TRANSITIVE
+      },
+      {
+        kanji: "替{か}わる・代{か}わる・換{か}わる",
+        english: "To be replaced・be changed・be exchanged",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE
+      },
+      {
+        kanji: "カタログ",
+        english: "Catalog",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "違{ちが}い",
+        english: "Difference",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "最{さい}新{しん}",
+        english: "Latest",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "～型{がた}",
+        english: "Type・Model",
+        type: MiniStoryWordType.SUFFIX
+      },
+    ],
+    translation: `I want to get a new smartphone, so I'm looking at a catalog, but I can't tell the difference. I don't think I need the latest model.`,
+    audio: "T103.mp3",
+    topic: MiniStoryTopics.TECHNOLOGY,
+    page: 79,
+  },
+  "104": {
+    id: "104",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "この<円{えん}>グラフは、日本人がスマホを使って何をしているかを表{あらわ}したものである。<平{へい}均{きん}して>1日に4時間スマホを使っていて、その約{やく}50<パーセント>が<SNS>の利{り}用{よう}である。<ホームページ>や<ブログ>を見る時間は減{へ}ってきている。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "円{えん}",
+        english: "Circle",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "平{へい}均{きん}［する］",
+        english: "Average・To average",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "パーセント",
+        english: "Percent",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "SNS",
+        english: "Social Media",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "ホームページ",
+        english: "Home Page",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "ブログ",
+        english: "Blog",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `This pie chart shows what Japanese people do when using a smartphone. On average, people use their phones about four hours a day, and about 50 percent of that time is spent on social media. Time spent looking at home pages and blogs is decreasing.`,
+    audio: "T104.mp3",
+    topic: MiniStoryTopics.TECHNOLOGY,
+    page: 80,
+  },
+  "105": {
+    id: "105",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<検{けん}索{さく}>するときは、この<矢{や}印{じるし}>が書かれているところに文{も}字{じ}を入{い}れます。<ローマ字{じ}>でも検{けん}索{さく}できます。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "検{けん}索{さく}［する］",
+        english: "Search・To search",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "矢{や}印{じるし}",
+        english: "Arrow",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "ローマ字{じ}",
+        english: "Roman letters",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `When doing a search, put the characters in the place where this arrow is written. You can even search using Roman letters.`,
+    audio: "T105.mp3",
+    topic: MiniStoryTopics.TECHNOLOGY,
+    page: 80,
+  },
+  "106": {
+    id: "106",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<デジタル><技{ぎ}術{じゅつ}>の発{はっ}達{たつ}によって、スマートフォンで簡{かん}単{たん}に<録{ろく}音{おん}したり><撮{さつ}影{えい}したり>できるようになった。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "デジタル",
+        english: "Digital",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "アナログ",
+        english: "Analog",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "技{ぎ}術{じゅつ}",
+        english: "Technology",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "録{ろく}音{おん}［する］",
+        english: "Recording (sound)・To record (sound)",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "撮{さつ}影{えい}［する］",
+        english: "Shooting (video)・To shoot (video)",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+    ],
+    translation: `The development of digital technology has made it easy to record sound or video with smartphones.`,
+    audio: "T106.mp3",
+    topic: MiniStoryTopics.TECHNOLOGY,
+    page: 81,
+  },
+  "107": {
+    id: "107",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "今日は<祝{しゅく}日{じつ}>だったのに、<目{め}覚{ざ}まし>をいつも通{どお}りにセットしてしまい、朝の6時に<アラーム>が鳴{な}ってしまった。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "祝{しゅく}日{じつ}",
+        english: "Public holiday",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "目{め}覚{ざ}まし（時{ど}計{けい}）",
+        english: "Alarm clock",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "アラーム",
+        english: "Alarm",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `Even though today was a public holiday, I set my alarm in the morning as always, and the alarm went off at 6 o'clock in the morning.`,
+    audio: "T107.mp3",
+    topic: MiniStoryTopics.TECHNOLOGY,
+    page: 81,
+  },
+  "108": {
+    id: "108",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "<ウェブサイト>の<広{こう}告{こく}>って本当に嫌{きら}い。なんか画{が}面{めん}の<あちこち>に出{で}てきて、うっかり<クリックし>そうになる。",
+      },
+      {
+        character: "B",
+        dialogue: "そういう<工{く}夫{ふう}>はしてほしくないよね。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "ウェブサイト",
+        english: "Website",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "ウェブ",
+        english: "Web",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "広{こう}告{こく}",
+        english: "Advertisement",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "広{こう}告{こく}会{がい}社{しゃ}",
+        english: "Advertising company",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "あちこち",
+        english: "Everywhere・Here and there",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.ADVERB ]
+      },
+      {
+        kanji: "あちらこちら",
+        english: "Everywhere・Here and there (formal)",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.ADVERB ]
+      },
+      {
+        kanji: "クリック［する］",
+        english: "Clicking (on a link)・To click (on a link)",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "工{く}夫{ふう}［する］",
+        english: "Devising・To devise",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+    ],
+    translation: `A: I really hate advertisements on websites. They just pop up all over the screen, and I always almost carelessly click on them.\nB: I wish they wouldn't design them like that.`,
+    audio: "T108.mp3",
+    topic: MiniStoryTopics.TECHNOLOGY,
+    page: 82,
+  },
+  "109": {
+    id: "109",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "インストールするときに、一緒に変{へん}な<プログラム>も<追{つい}加{か}する>アプリがある。また、<勝{かっ}手{て}に><個{こ}人{じん}情{じょう}報{ほう}>を<送{そう}信{しん}する>アプリもあるので、インストール前には注意が必要だ。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "プログラム",
+        english: "Program",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "追{つい}加{か}［する］",
+        english: "Addition・To add",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "勝{かっ}手{て}な",
+        english: "Without permission・Unilateral",
+        type: MiniStoryWordType.ADJECTIVE_NA
+      },
+      {
+        kanji: "個{こ}人{じん}情{じょう}報{ほう}",
+        english: "Personal information",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "情{じょう}報{ほう}",
+        english: "Information",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "送{そう}信{しん}［する］",
+        english: "Sending/transmission (a message)・To send/transmit (a message)",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "受{じゅ}信{しん}［する］",
+        english: "Receiving (a message)・To receive (a message)",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+    ],
+    translation: `There are applications that also add strange programs without permission when installing them. In addition, there are also apps that send personal information without permission, so take care before installing them.`,
+    audio: "T109.mp3",
+    topic: MiniStoryTopics.TECHNOLOGY,
+    page: 82,
+  },
   "279": {
     id: "279",
     rubyStory: [
@@ -4115,7 +5018,7 @@ export const MINI_STORY_N3: Record<string, MiniStory> = {
       {
         kanji: "その上{うえ}",
         english: "moreover・on top of that",
-        type: MiniStoryWordType.CONNECTION
+        type: MiniStoryWordType.CONJUNCTION
       },
       {
         kanji: "休{きゅう}憩{けい}［する］",
