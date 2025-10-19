@@ -92,7 +92,7 @@ const MiniStory: React.FC<MiniStoryProps> = ({
     return (
       <>
         <HStack>
-          <Box flex={1}>
+          <Box flex={3}>
             <p style={{color: whiteColor}} dangerouslySetInnerHTML={{ __html: formattedWords }} />
           </Box>
           <Box  flex={4} justifyContent={"center"}>
