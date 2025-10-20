@@ -16,5 +16,10 @@
 }
 
 canvas {
+  user-select: none;
   touch-action: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -ms-touch-action: none;
+  pointer-events: all;
 }
