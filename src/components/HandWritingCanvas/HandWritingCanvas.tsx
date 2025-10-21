@@ -65,6 +65,7 @@ export const HandwritingCanvas = forwardRef<HandwritingCanvasRef>((_, ref) => {
           strokeWidth={4}
           strokeColor="black"
           canvasColor="#fff"
+          allowOnlyPointerType="true"
         />
       </div>
       <HStack width={"full"} space={2} justifyContent="space-between">
