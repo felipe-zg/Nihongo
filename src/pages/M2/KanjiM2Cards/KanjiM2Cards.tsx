@@ -1,8 +1,6 @@
 import React, { useMemo, useRef, useState } from "react";
 import { Box, Button, HStack, Text, Select, Switch } from "native-base";
 import FlipCard, { FlipCardHandle } from "../../../components/FlipCard/FlipCard";
-import { HandwritingCanvas } from "../../../components";
-import { HandwritingCanvasRef } from "../../../components/HandWritingCanvas/HandWritingCanvas";
 
 type Props = {
   wordsList: TKanjiM2Words[] | TKanjiM2WordsWithExample[];
@@ -17,11 +15,10 @@ const KanjiM2Cards: React.FC<Props> = ({ wordsList }) => {
   const [startIndex, setStartIndex] = useState(0);
   const [endIndex, setEndIndex] = useState(wordsList.length - 1);
   const [isShuffled, setIsShuffled] = useState(false);
-  const [isCanvasOpen, setIsCanvasOpen] = useState(false);
+  const [isChallengeMode, setIsChallengeMode] = useState(false);
   const [isHiraganaMode, setIsHiraganaMode] = useState(false);
   const [isShowAnswer, setIsShowAnswer] = useState(false);
   const flipCardRef = useRef<FlipCardHandle>(null);
-  const canvasRef = useRef<HandwritingCanvasRef>(null);
 
   const handleStartIndexChange = (value: number) => {
     if (endIndex <= value) {
@@ -37,7 +34,7 @@ const KanjiM2Cards: React.FC<Props> = ({ wordsList }) => {
     setEndIndex(value);
   };
 
-  let filteredWordsList = useMemo(() => {
+  let filteredWordsList: (TKanjiM2Words | TKanjiM2WordsWithExample)[] = useMemo(() => {
     if (startIndex === 0 && endIndex === 0) return wordsList;
     return wordsList.slice(startIndex, endIndex + 1);
   }, [wordsList, startIndex, endIndex]);
@@ -58,14 +55,13 @@ const KanjiM2Cards: React.FC<Props> = ({ wordsList }) => {
     if (isShowAnswer) {
         setIsShowAnswer(false);
         setCurrentIndex((prevIndex) => (prevIndex + 1) % filteredWordsList.length);
-        canvasRef.current?.reset();
       } else {
         setIsShowAnswer(true);
       }
   }
 
   function handleNext() {
-    if(isCanvasOpen) {
+    if(isChallengeMode) {
       handleNextOnCanvasMode();
       return;
     }
@@ -77,9 +73,6 @@ const KanjiM2Cards: React.FC<Props> = ({ wordsList }) => {
     }
     setTimeout(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % filteredWordsList.length);
-      if (isCanvasOpen) {
-        canvasRef.current?.reset();
-      }
     }, 200);
   }
 
@@ -90,7 +83,17 @@ const KanjiM2Cards: React.FC<Props> = ({ wordsList }) => {
     } else {
       mainText = isHiraganaMode ? currentCard.reading.replace(REGEX_WORD, "") : currentCard.word.replace(REGEX_WORD, "");
     }
-    return <Text fontSize={"5xl"} mb={2} color={isShowAnswer ? "pink.300" : "yellow.500"}>{mainText}</Text>;
+
+    return (
+      <Box borderColor={"amber.100"} borderWidth={1} mb={2} mt={30} p={1} borderRadius={5} width={"100%"} alignItems="center">
+        <Text fontSize={"5xl"} mb={2} color={isShowAnswer ? "pink.300" : "yellow.500"}>{mainText}</Text>
+        {'exampleSentenceRuby' in currentCard && (
+          <Text fontSize={"2xl"} color={"white"} textAlign={"center"}>
+            {currentCard.exampleSentenceRuby.replace(/\{.*?\}/g, "")}
+          </Text>
+        )}
+      </Box>
+    )
   }
 
 
@@ -98,7 +101,7 @@ const KanjiM2Cards: React.FC<Props> = ({ wordsList }) => {
     <Box alignItems="center" mt={10}>
       <Text fontSize={"xl"} bold color={"white"}>漢字</Text>
       <Text color="pink.500">{`${currentIndex + 1}/${filteredWordsList.length}`}</Text>
-      {!isCanvasOpen && filteredWordsList.length > 0 && (
+      {!isChallengeMode && filteredWordsList.length > 0 && (
         <FlipCard 
           ref={flipCardRef} 
           CardFrontContent={<Text fontSize={"6xl"} color={"teal.300"}>{isHiraganaMode ? currentCard.reading : currentCard.word.replace(REGEX_WORD, "")}</Text>}
@@ -111,10 +114,9 @@ const KanjiM2Cards: React.FC<Props> = ({ wordsList }) => {
         />
       )}
 
-      {isCanvasOpen && (
-        <Box alignItems={"center"}>
+      {isChallengeMode && (
+        <Box alignItems={"center"} width={{base: "90vw", lg: "60vw"}}>
           {getCanvasMainText()}
-          <HandwritingCanvas ref={canvasRef} />
         </Box>
       )}
 
@@ -155,11 +157,11 @@ const KanjiM2Cards: React.FC<Props> = ({ wordsList }) => {
       <HStack width={{base: "90vw", lg: "60vw"}} space={2} justifyContent={"space-between"} my={6} alignSelf={"center"}>
         <HStack space={2} alignItems="center">
           <Switch
-            onValueChange={(val) => setIsCanvasOpen(val)}
+            onValueChange={(val) => setIsChallengeMode(val)}
             colorScheme="red"
-            isChecked={isCanvasOpen}
+            isChecked={isChallengeMode}
           />
-          <Text color="red.500">Show canvas</Text>
+          <Text color="red.500">Challenge</Text>
         </HStack>
         <HStack space={2} alignItems="center">
           <Text color="red.500">Hiragana</Text>

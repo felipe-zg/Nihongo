@@ -8,7 +8,7 @@ const KanjiM2CardsPage: React.FC = () => {
   const startIndexParam: number = Number(searchParams.get("startIndex")) || 0;
   const endIndexParam: number = Number(searchParams.get("endIndex")) || 0;
   const isAllCardsParam: boolean = searchParams.get("allCards") === "true";
-  const wordsList: TKanjiM2WordsWithExample[] = Object.values(M2_KANJI)
+  const wordsList: TKanjiM2WordsWithExample[] | TKanjiM2Words[] = Object.values(M2_KANJI)
     .filter(item => item.id >= startIndexParam && item.id <= endIndexParam)
     .flatMap(item => 
       isAllCardsParam 
