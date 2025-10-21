@@ -21,5 +21,8 @@ canvas {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -ms-touch-action: none;
-  pointer-events: all;
+}
+
+body, html {
+  overflow: hidden;
 }

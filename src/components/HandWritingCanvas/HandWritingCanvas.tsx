@@ -17,15 +17,12 @@ export const HandwritingCanvas = forwardRef<HandwritingCanvasRef>((_, ref) => {
   const [currentStroke, setCurrentStroke] = useState<Stroke>([]);
   const ctxRef = useRef<CanvasRenderingContext2D | null>(null);
 
-  // Reset canvas
   useImperativeHandle(ref, () => ({
     reset: () => {
       setStrokes([]);
       setCurrentStroke([]);
       const ctx = ctxRef.current;
-      if (ctx) {
-        ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
-      }
+      if (ctx) ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
     },
   }));
 
@@ -34,23 +31,22 @@ export const HandwritingCanvas = forwardRef<HandwritingCanvasRef>((_, ref) => {
     if (!ctx) return;
 
     ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+    ctx.fillStyle = "black";
     ctx.lineJoin = "round";
     ctx.lineCap = "round";
-    ctx.fillStyle = "black";
 
     for (const stroke of allStrokes) {
-      const outlinePoints = getStroke(stroke, {
+      const outline = getStroke(stroke, {
         size: 4,
         thinning: 0.5,
         smoothing: 0.6,
         streamline: 0.4,
       });
-
-      if (outlinePoints.length > 1) {
+      if (outline.length > 1) {
         ctx.beginPath();
-        ctx.moveTo(outlinePoints[0][0], outlinePoints[0][1]);
-        for (let i = 1; i < outlinePoints.length; i++) {
-          ctx.lineTo(outlinePoints[i][0], outlinePoints[i][1]);
+        ctx.moveTo(outline[0][0], outline[0][1]);
+        for (let i = 1; i < outline.length; i++) {
+          ctx.lineTo(outline[i][0], outline[i][1]);
         }
         ctx.closePath();
         ctx.fill();
@@ -58,7 +54,6 @@ export const HandwritingCanvas = forwardRef<HandwritingCanvasRef>((_, ref) => {
     }
   };
 
-  // Handle pen input
   useEffect(() => {
     const canvas = canvasRef.current;
     if (!canvas) return;
@@ -66,38 +61,41 @@ export const HandwritingCanvas = forwardRef<HandwritingCanvasRef>((_, ref) => {
     if (!ctx) return;
     ctxRef.current = ctx;
 
+    // Resize & scale for Retina
     const resizeCanvas = () => {
       const { width, height } = canvas.getBoundingClientRect();
-      canvas.width = width * window.devicePixelRatio;
-      canvas.height = height * window.devicePixelRatio;
-      ctx.scale(window.devicePixelRatio, window.devicePixelRatio);
+      const dpr = window.devicePixelRatio || 1;
+      canvas.width = width * dpr;
+      canvas.height = height * dpr;
+      ctx.scale(dpr, dpr);
       drawStrokes(strokes);
     };
-
     resizeCanvas();
     window.addEventListener("resize", resizeCanvas);
 
     let isDrawing = false;
 
     const handlePointerDown = (e: PointerEvent) => {
-      if (e.pointerType !== "pen") return; // Ignore touch/mouse
+      e.preventDefault();
+      e.stopPropagation();
       isDrawing = true;
       const rect = canvas.getBoundingClientRect();
       const point: Point = [
         e.clientX - rect.left,
         e.clientY - rect.top,
-        e.pressure,
+        e.pressure || 0.5,
       ];
       setCurrentStroke([point]);
     };
 
     const handlePointerMove = (e: PointerEvent) => {
-      if (!isDrawing || e.pointerType !== "pen") return;
+      if (!isDrawing) return;
+      e.preventDefault();
       const rect = canvas.getBoundingClientRect();
       const point: Point = [
         e.clientX - rect.left,
         e.clientY - rect.top,
-        e.pressure,
+        e.pressure || 0.5,
       ];
       setCurrentStroke((prev) => {
         const newStroke = [...prev, point];
@@ -106,8 +104,9 @@ export const HandwritingCanvas = forwardRef<HandwritingCanvasRef>((_, ref) => {
       });
     };
 
-    const handlePointerUp = () => {
+    const handlePointerUp = (e: PointerEvent) => {
       if (!isDrawing) return;
+      e.preventDefault();
       isDrawing = false;
       setStrokes((prev) => {
         const updated = [...prev, currentStroke];
@@ -117,17 +116,18 @@ export const HandwritingCanvas = forwardRef<HandwritingCanvasRef>((_, ref) => {
       setCurrentStroke([]);
     };
 
-    canvas.addEventListener("pointerdown", handlePointerDown);
-    canvas.addEventListener("pointermove", handlePointerMove);
-    canvas.addEventListener("pointerup", handlePointerUp);
-    canvas.addEventListener("pointerleave", handlePointerUp);
+    canvas.style.touchAction = "none";
+    
+    canvas.addEventListener("pointerdown", handlePointerDown, { passive: false });
+    canvas.addEventListener("pointermove", handlePointerMove, { passive: false });
+    canvas.addEventListener("pointerup", handlePointerUp, { passive: false });
+    canvas.addEventListener("touchstart", (e) => e.preventDefault(), { passive: false });
 
     return () => {
       window.removeEventListener("resize", resizeCanvas);
       canvas.removeEventListener("pointerdown", handlePointerDown);
       canvas.removeEventListener("pointermove", handlePointerMove);
       canvas.removeEventListener("pointerup", handlePointerUp);
-      canvas.removeEventListener("pointerleave", handlePointerUp);
     };
   }, [strokes, currentStroke]);
 
@@ -146,13 +146,22 @@ export const HandwritingCanvas = forwardRef<HandwritingCanvasRef>((_, ref) => {
 
   return (
     <VStack alignItems="center">
-      <div className="canvasContainer" style={{ width: "100%", height: "300px" }}>
+      <div
+        className="canvasContainer"
+        style={{
+          width: "100%",
+          height: "300px",
+          touchAction: "none",
+          WebkitTouchCallout: "none",
+          WebkitUserSelect: "none",
+          userSelect: "none",
+        }}
+      >
         <canvas
           ref={canvasRef}
           style={{
             width: "100%",
             height: "100%",
-            touchAction: "none", // disables touch scrolling
             backgroundColor: "#fff",
             borderRadius: "8px",
           }}
