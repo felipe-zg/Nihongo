@@ -1,8 +1,13 @@
 // components/HandwritingCanvas.tsx
-import { useEffect, useRef, useState, forwardRef, useImperativeHandle } from "react";
+import React, {
+  forwardRef,
+  useEffect,
+  useImperativeHandle,
+  useRef,
+  useState,
+} from "react";
 import { Button, HStack, VStack } from "native-base";
 import getStroke from "perfect-freehand";
-import "./HandwritingCanvas.css";
 
 export type HandwritingCanvasRef = {
   reset: () => void;
@@ -11,138 +16,216 @@ export type HandwritingCanvasRef = {
 type Point = [number, number, number]; // [x, y, pressure]
 type Stroke = Point[];
 
-export const HandwritingCanvas = forwardRef<HandwritingCanvasRef>((_, ref) => {
-  const canvasRef = useRef<HTMLCanvasElement | null>(null);
-  const [strokes, setStrokes] = useState<Stroke[]>([]);
-  const [currentStroke, setCurrentStroke] = useState<Stroke>([]);
-  const ctxRef = useRef<CanvasRenderingContext2D | null>(null);
+const PERFECT_FREEHAND_OPTIONS = {
+  size: 6,
+  thinning: 0.5,
+  smoothing: 0.6,
+  streamline: 0.4,
+};
 
+const HandwritingCanvas = forwardRef<HandwritingCanvasRef>((_, ref) => {
+  const canvasRef = useRef<HTMLCanvasElement | null>(null);
+
+  // visible state for re-renders (so UI updates when undo/clear happen)
+  const [, setVersion] = useState(0);
+
+  // Refs to hold the actual stroke arrays so handlers don't close over stale values
+  const strokesRef = useRef<Stroke[]>([]);
+  const currentRef = useRef<Stroke>([]);
+  const isDrawingRef = useRef(false);
+
+  // small helper to trigger rerender when needed
+  const touch = () => setVersion((v) => v + 1);
+
+  // expose reset via imperative handle
   useImperativeHandle(ref, () => ({
     reset: () => {
-      setStrokes([]);
-      setCurrentStroke([]);
-      const ctx = ctxRef.current;
-      if (ctx) ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+      strokesRef.current = [];
+      currentRef.current = [];
+      clearCanvas();
+      touch();
     },
   }));
 
-  const drawStrokes = (allStrokes: Stroke[]) => {
-    const ctx = ctxRef.current;
+  // draw all strokes from refs onto canvas
+  const drawAll = () => {
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+    const ctx = canvas.getContext("2d");
     if (!ctx) return;
 
-    ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+    // clear full canvas (use canvas pixel size)
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
     ctx.fillStyle = "black";
     ctx.lineJoin = "round";
     ctx.lineCap = "round";
 
-    for (const stroke of allStrokes) {
-      const outline = getStroke(stroke, {
-        size: 4,
-        thinning: 0.5,
-        smoothing: 0.6,
-        streamline: 0.4,
-      });
-      if (outline.length > 1) {
-        ctx.beginPath();
-        ctx.moveTo(outline[0][0], outline[0][1]);
-        for (let i = 1; i < outline.length; i++) {
-          ctx.lineTo(outline[i][0], outline[i][1]);
-        }
-        ctx.closePath();
-        ctx.fill();
+    const all = [...strokesRef.current, currentRef.current];
+
+    for (const stroke of all) {
+      if (!stroke || stroke.length === 0) continue;
+      const path = getStroke(stroke, PERFECT_FREEHAND_OPTIONS);
+      if (!path || path.length < 1) continue;
+
+      ctx.beginPath();
+      ctx.moveTo(path[0][0], path[0][1]);
+      for (let i = 1; i < path.length; i++) {
+        const [x, y] = path[i];
+        ctx.lineTo(x, y);
       }
+      ctx.closePath();
+      ctx.fill();
     }
   };
 
+  const clearCanvas = () => {
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+    const ctx = canvas.getContext("2d");
+    if (!ctx) return;
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+  };
+
+  // set canvas size with DPR and ensure correct scaling
   useEffect(() => {
     const canvas = canvasRef.current;
     if (!canvas) return;
     const ctx = canvas.getContext("2d");
     if (!ctx) return;
-    ctxRef.current = ctx;
 
-    // Resize & scale for Retina
-    const resizeCanvas = () => {
-      const { width, height } = canvas.getBoundingClientRect();
-      const dpr = window.devicePixelRatio || 1;
-      canvas.width = width * dpr;
-      canvas.height = height * dpr;
-      ctx.scale(dpr, dpr);
-      drawStrokes(strokes);
+    const resize = () => {
+      const ratio = window.devicePixelRatio || 1;
+      const width = canvas.clientWidth;
+      const height = canvas.clientHeight;
+      canvas.width = Math.max(1, Math.floor(width * ratio));
+      canvas.height = Math.max(1, Math.floor(height * ratio));
+      // reset any transforms before scaling to avoid compounding
+      ctx.setTransform(1, 0, 0, 1, 0, 0);
+      ctx.scale(ratio, ratio);
+      drawAll();
     };
-    resizeCanvas();
-    window.addEventListener("resize", resizeCanvas);
 
-    let isDrawing = false;
+    window.addEventListener("resize", resize);
+    // initial resize
+    resize();
+
+    return () => window.removeEventListener("resize", resize);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  // helper: map pointer event coords to canvas coordinates (taking DPR and client rect into account)
+  const getRelativeCoords = (e: PointerEvent) => {
+    const canvas = canvasRef.current!;
+    const rect = canvas.getBoundingClientRect();
+    const ratio = window.devicePixelRatio || 1;
+
+    // normalized to canvas pixel grid, then divide by ratio to match scaled ctx
+    const x = ((e.clientX - rect.left) / rect.width) * canvas.width;
+    const y = ((e.clientY - rect.top) / rect.height) * canvas.height;
+
+    // convert back to CSS pixel coordinates used by ctx after ctx.scale(ratio, ratio)
+    return [x / ratio, y / ratio] as const;
+  };
+
+  // pointer handlers
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+
+    // ensure iPad/Chrome/Safari don't steal gestures
+    const style = canvas.style as CSSStyleDeclaration & {
+      msTouchAction?: string;
+      WebkitTouchCallout?: string;
+      WebkitUserSelect?: string;
+    };
+    style.touchAction = "none";
+    style.msTouchAction = "none";
+    style.WebkitTouchCallout = "none";
+    style.WebkitUserSelect = "none";
 
     const handlePointerDown = (e: PointerEvent) => {
+      // start drawing for primary button or any pen touch
+      // for pen or touch, browsers may set buttons differently; accept pointerdown start unconditionally
+      isDrawingRef.current = true;
+      canvas.setPointerCapture?.(e.pointerId); // optional: capture pointer
+      const [x, y] = getRelativeCoords(e);
+      currentRef.current = [[x, y, e.pressure ?? 0.5]];
+      drawAll();
+      touch();
       e.preventDefault();
       e.stopPropagation();
-      isDrawing = true;
-      const rect = canvas.getBoundingClientRect();
-      const point: Point = [
-        e.clientX - rect.left,
-        e.clientY - rect.top,
-        e.pressure || 0.5,
-      ];
-      setCurrentStroke([point]);
     };
 
     const handlePointerMove = (e: PointerEvent) => {
-      if (!isDrawing) return;
+      if (!isDrawingRef.current) return;
+      const [x, y] = getRelativeCoords(e);
+      currentRef.current = [...currentRef.current, [x, y, e.pressure ?? 0.5]];
+      drawAll();
+      // don't call touch() on every move (would hammer re-renders). We draw directly to canvas.
       e.preventDefault();
-      const rect = canvas.getBoundingClientRect();
-      const point: Point = [
-        e.clientX - rect.left,
-        e.clientY - rect.top,
-        e.pressure || 0.5,
-      ];
-      setCurrentStroke((prev) => {
-        const newStroke = [...prev, point];
-        drawStrokes([...strokes, newStroke]);
-        return newStroke;
-      });
+      e.stopPropagation();
     };
 
-    const handlePointerUp = (e: PointerEvent) => {
-      if (!isDrawing) return;
-      e.preventDefault();
-      isDrawing = false;
-      setStrokes((prev) => {
-        const updated = [...prev, currentStroke];
-        drawStrokes(updated);
-        return updated;
-      });
-      setCurrentStroke([]);
+    const finishStroke = (e?: PointerEvent) => {
+      if (!isDrawingRef.current) return;
+      isDrawingRef.current = false;
+      if (e && canvas.releasePointerCapture) {
+        try {
+          canvas.releasePointerCapture(e.pointerId);
+        } catch {
+          /* ignore */
+        }
+      }
+      // commit current stroke to strokesRef
+      if (currentRef.current.length > 0) {
+        strokesRef.current = [...strokesRef.current, currentRef.current];
+        currentRef.current = [];
+        drawAll();
+        touch(); // update UI for undo/clear
+      }
+      if (e) {
+        e.preventDefault();
+        e.stopPropagation();
+      }
     };
 
-    canvas.style.touchAction = "none";
-    
     canvas.addEventListener("pointerdown", handlePointerDown, { passive: false });
     canvas.addEventListener("pointermove", handlePointerMove, { passive: false });
-    canvas.addEventListener("pointerup", handlePointerUp, { passive: false });
-    canvas.addEventListener("touchstart", (e) => e.preventDefault(), { passive: false });
+    // use window pointerup to avoid missing pointerup when pointer leaves canvas
+    window.addEventListener("pointerup", finishStroke, { passive: false });
+    // pointercancel in some browsers
+    window.addEventListener("pointercancel", finishStroke, { passive: false });
 
     return () => {
-      window.removeEventListener("resize", resizeCanvas);
       canvas.removeEventListener("pointerdown", handlePointerDown);
       canvas.removeEventListener("pointermove", handlePointerMove);
-      canvas.removeEventListener("pointerup", handlePointerUp);
+      window.removeEventListener("pointerup", finishStroke);
+      window.removeEventListener("pointercancel", finishStroke);
     };
-  }, [strokes, currentStroke]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
+  // expose Undo and Clear handlers
   const handleClear = () => {
-    setStrokes([]);
-    setCurrentStroke([]);
-    const ctx = ctxRef.current;
-    if (ctx) ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+    strokesRef.current = [];
+    currentRef.current = [];
+    clearCanvas();
+    touch();
   };
 
   const handleUndo = () => {
-    const updated = strokes.slice(0, -1);
-    setStrokes(updated);
-    drawStrokes(updated);
+    strokesRef.current = strokesRef.current.slice(0, -1);
+    drawAll();
+    touch();
   };
+
+  // drawAll whenever strokes/current change in ref via some external call (we already draw inside handlers)
+  // but keep a small effect so if somebody updates refs externally we still render
+  useEffect(() => {
+    drawAll();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <VStack alignItems="center">
@@ -155,6 +238,8 @@ export const HandwritingCanvas = forwardRef<HandwritingCanvasRef>((_, ref) => {
           WebkitTouchCallout: "none",
           WebkitUserSelect: "none",
           userSelect: "none",
+          overflow: "hidden",
+          borderRadius: 8,
         }}
       >
         <canvas
@@ -163,11 +248,13 @@ export const HandwritingCanvas = forwardRef<HandwritingCanvasRef>((_, ref) => {
             width: "100%",
             height: "100%",
             backgroundColor: "#fff",
-            borderRadius: "8px",
+            borderRadius: 8,
+            display: "block",
           }}
         />
       </div>
-      <HStack width={"full"} space={2} justifyContent="space-between">
+
+      <HStack width={"full"} space={2} justifyContent="space-between" mt={3}>
         <Button variant="outline" colorScheme="pink" flex="1" onPress={handleClear}>
           Clear
         </Button>
@@ -178,3 +265,5 @@ export const HandwritingCanvas = forwardRef<HandwritingCanvasRef>((_, ref) => {
     </VStack>
   );
 });
+
+export default HandwritingCanvas;

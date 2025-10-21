@@ -5,5 +5,5 @@ export { default as CheckboxDropdown } from './CheckboxDropdown/CheckboxDropdown
 export { default as ColoredText } from './ColoredText';
 export { default as AudioPlayer } from './AudioPlayer/AudioPlayer';
 export { default as FlipCard } from './FlipCard/FlipCard';
-export { HandwritingCanvas } from './HandWritingCanvas/HandWritingCanvas';
+export { default as HandwritingCanvas } from './HandWritingCanvas/HandWritingCanvas';
 export * from './Typography';
