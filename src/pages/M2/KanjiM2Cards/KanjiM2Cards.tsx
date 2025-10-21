@@ -3,7 +3,6 @@ import { Box, Button, HStack, Text, Select, Switch } from "native-base";
 import FlipCard, { FlipCardHandle } from "../../../components/FlipCard/FlipCard";
 import { HandwritingCanvas } from "../../../components";
 import { HandwritingCanvasRef } from "../../../components/HandWritingCanvas/HandWritingCanvas";
-import "./KanjiM2Cards.css";
 
 type Props = {
   wordsList: TKanjiM2Words[] | TKanjiM2WordsWithExample[];
@@ -96,84 +95,82 @@ const KanjiM2Cards: React.FC<Props> = ({ wordsList }) => {
 
 
   return (
-    <div className="container">
-      <Box alignItems="center" mt={10}>
-        <Text fontSize={"xl"} bold color={"white"}>漢字</Text>
-        <Text color="pink.500">{`${currentIndex + 1}/${filteredWordsList.length}`}</Text>
-        {!isCanvasOpen && filteredWordsList.length > 0 && (
-          <FlipCard 
-            ref={flipCardRef} 
-            CardFrontContent={<Text fontSize={"6xl"} color={"teal.300"}>{isHiraganaMode ? currentCard.reading : currentCard.word.replace(REGEX_WORD, "")}</Text>}
-            CardBackContent={
-              <>
-                <Text fontSize={"5xl"} color={"white"}>{!isHiraganaMode ? currentCard.reading : currentCard.word.replace(REGEX_WORD, "")}</Text>
-                <Text fontSize={"3xl"} color={"primary.500"}>{currentCard.meaning}</Text>
-              </>
-            } 
+    <Box alignItems="center" mt={10}>
+      <Text fontSize={"xl"} bold color={"white"}>漢字</Text>
+      <Text color="pink.500">{`${currentIndex + 1}/${filteredWordsList.length}`}</Text>
+      {!isCanvasOpen && filteredWordsList.length > 0 && (
+        <FlipCard 
+          ref={flipCardRef} 
+          CardFrontContent={<Text fontSize={"6xl"} color={"teal.300"}>{isHiraganaMode ? currentCard.reading : currentCard.word.replace(REGEX_WORD, "")}</Text>}
+          CardBackContent={
+            <>
+              <Text fontSize={"5xl"} color={"white"}>{!isHiraganaMode ? currentCard.reading : currentCard.word.replace(REGEX_WORD, "")}</Text>
+              <Text fontSize={"3xl"} color={"primary.500"}>{currentCard.meaning}</Text>
+            </>
+          } 
+        />
+      )}
+
+      {isCanvasOpen && (
+        <Box alignItems={"center"}>
+          {getCanvasMainText()}
+          <HandwritingCanvas ref={canvasRef} />
+        </Box>
+      )}
+
+      {/* <Text color={"gray.300"}>{quantitySeen}/{filteredVocabList.length}</Text> */}
+      <HStack mt={12} width={{base: "90vw", lg: "60vw"}}>
+        <Button onPress={handleNext} width={"full"}>
+            Next
+        </Button>
+      </HStack>
+
+      <HStack mt={10} width={{base: "90vw", lg: "60vw"}}>
+        <Box width={120} mr={5}>
+          <Select
+            selectedValue={startIndex.toString()}
+            onValueChange={(value) => handleStartIndexChange(parseInt(value))}
+            placeholder="From"
+            backgroundColor={"white"}
+          >
+            {Array.from({ length: wordsList.length }, (_, i) => (
+              <Select.Item key={i} label={`${i + 1}`} value={i.toString()} />
+            ))}
+          </Select>
+        </Box>
+        <Box width={120} mr={5}>
+          <Select
+            selectedValue={endIndex.toString()}
+            onValueChange={(value) => handleEndIndexChange(parseInt(value))}
+            placeholder="To"
+            backgroundColor={"white"}
+          >
+            {Array.from({ length: wordsList.length - startIndex }, (_, i) => (
+              <Select.Item key={i + startIndex} label={`${i + startIndex + 1}`} value={(i + startIndex).toString()} />
+            ))}
+          </Select>
+        </Box>
+        <button disabled={isShuffled} onClick={shuffleCards}>Shuffle ⇄</button>
+      </HStack>
+      <HStack width={{base: "90vw", lg: "60vw"}} space={2} justifyContent={"space-between"} my={6} alignSelf={"center"}>
+        <HStack space={2} alignItems="center">
+          <Switch
+            onValueChange={(val) => setIsCanvasOpen(val)}
+            colorScheme="red"
+            isChecked={isCanvasOpen}
           />
-        )}
-
-        {isCanvasOpen && (
-          <Box alignItems={"center"}>
-            {getCanvasMainText()}
-            <HandwritingCanvas ref={canvasRef} />
-          </Box>
-        )}
-
-        {/* <Text color={"gray.300"}>{quantitySeen}/{filteredVocabList.length}</Text> */}
-        <HStack mt={12} width={{base: "90vw", lg: "60vw"}}>
-          <Button onPress={handleNext} width={"full"}>
-              Next
-          </Button>
+          <Text color="red.500">Show canvas</Text>
         </HStack>
-
-        <HStack mt={10} width={{base: "90vw", lg: "60vw"}}>
-          <Box width={120} mr={5}>
-            <Select
-              selectedValue={startIndex.toString()}
-              onValueChange={(value) => handleStartIndexChange(parseInt(value))}
-              placeholder="From"
-              backgroundColor={"white"}
-            >
-              {Array.from({ length: wordsList.length }, (_, i) => (
-                <Select.Item key={i} label={`${i + 1}`} value={i.toString()} />
-              ))}
-            </Select>
-          </Box>
-          <Box width={120} mr={5}>
-            <Select
-              selectedValue={endIndex.toString()}
-              onValueChange={(value) => handleEndIndexChange(parseInt(value))}
-              placeholder="To"
-              backgroundColor={"white"}
-            >
-              {Array.from({ length: wordsList.length - startIndex }, (_, i) => (
-                <Select.Item key={i + startIndex} label={`${i + startIndex + 1}`} value={(i + startIndex).toString()} />
-              ))}
-            </Select>
-          </Box>
-          <button disabled={isShuffled} onClick={shuffleCards}>Shuffle ⇄</button>
+        <HStack space={2} alignItems="center">
+          <Text color="red.500">Hiragana</Text>
+          <Switch
+            onValueChange={(val) => setIsHiraganaMode(val)}
+            colorScheme="red"
+            isChecked={isHiraganaMode}
+          />
         </HStack>
-        <HStack width={{base: "90vw", lg: "60vw"}} space={2} justifyContent={"space-between"} my={6} alignSelf={"center"}>
-          <HStack space={2} alignItems="center">
-            <Switch
-              onValueChange={(val) => setIsCanvasOpen(val)}
-              colorScheme="red"
-              isChecked={isCanvasOpen}
-            />
-            <Text color="red.500">Show canvas</Text>
-          </HStack>
-          <HStack space={2} alignItems="center">
-            <Text color="red.500">Hiragana</Text>
-            <Switch
-              onValueChange={(val) => setIsHiraganaMode(val)}
-              colorScheme="red"
-              isChecked={isHiraganaMode}
-            />
-          </HStack>
-        </HStack>
-      </Box>
-    </div>
+      </HStack>
+    </Box>
   );
 };
 
