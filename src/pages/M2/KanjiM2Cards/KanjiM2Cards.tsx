@@ -87,11 +87,6 @@ const KanjiM2Cards: React.FC<Props> = ({ wordsList }) => {
     return (
       <Box borderColor={"amber.100"} borderWidth={1} mb={2} mt={30} p={1} borderRadius={5} width={"100%"} alignItems="center">
         <Text fontSize={"5xl"} mb={2} color={isShowAnswer ? "pink.300" : "yellow.500"}>{mainText}</Text>
-        {'exampleSentenceRuby' in currentCard && (
-          <Text fontSize={"2xl"} color={"white"} textAlign={"center"}>
-            {currentCard.exampleSentenceRuby.replace(/\{.*?\}/g, "")}
-          </Text>
-        )}
       </Box>
     )
   }
