@@ -3,8 +3,10 @@ import { Box, Button, HStack, Text, Select } from "native-base";
 import FlipCard, { FlipCardHandle } from "../../components/FlipCard/FlipCard";
 import { parseRuby } from "../../utils/music/rubyParser";
 
+type Vocab = { kanji: string; english: string };
+
 type Props = {
-  vocabList: { kanji: string; english: string }[];
+  vocabList: Vocab[];
   level?: "N3" | "N2";
 };
 
@@ -25,6 +27,8 @@ const MiniStoryCards: React.FC<Props> = ({ vocabList, level }) => {
   const [startIndex, setStartIndex] = useState(0);
   const [endIndex, setEndIndex] = useState(vocabList.length - 1);
   const [isShuffled, setIsShuffled] = useState(false);
+  const [importantWords, setImportantWords] = useState<Vocab[]>([]);
+  const [canAddAsImportant, setCanAddAsImportant] = useState(true);
   const flipCardRef = useRef<FlipCardHandle>(null);
 
   const handleStartIndexChange = (value: number) => {
@@ -68,6 +72,30 @@ const MiniStoryCards: React.FC<Props> = ({ vocabList, level }) => {
     setTimeout(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % filteredVocabList.length);
     }, 200);
+    !canAddAsImportant && setCanAddAsImportant(true);
+  }
+
+  function downloadJSON(data: any, filename = "importantWords.json") {
+    const jsonStr = JSON.stringify(data, null, 2);
+    const blob = new Blob([jsonStr], { type: "application/json" });
+    const url = URL.createObjectURL(blob);
+
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = filename;
+    a.click();
+
+    URL.revokeObjectURL(url);
+  }
+
+  function markAsImportant(word: Vocab) {
+    setImportantWords((prevWords) => {
+      if (!prevWords.find(w => w.kanji === word.kanji && w.english === word.english)) {
+        return [...prevWords, word];
+      }
+      return prevWords;
+    });
+    setCanAddAsImportant(false);
   }
 
   return (
@@ -98,7 +126,7 @@ const MiniStoryCards: React.FC<Props> = ({ vocabList, level }) => {
         </Button>
       </HStack>
 
-      <HStack mt={10} width="100%" px={4}>
+      <HStack mt={10} width="95%" px={4}>
         <Box width={120} mr={5}>
           <Select
             selectedValue={startIndex.toString()}
@@ -124,6 +152,19 @@ const MiniStoryCards: React.FC<Props> = ({ vocabList, level }) => {
           </Select>
         </Box>
         <button disabled={isShuffled} onClick={shuffleCards}>Shuffle ⇄</button>
+      </HStack>
+      <HStack my={12} paddingX={8} space={4} width={"100%"}>
+        <Button
+          disabled={!canAddAsImportant}
+          colorScheme={canAddAsImportant ? "pink" : "gray"}
+          variant={"subtle"}
+          onPress={() => markAsImportant(currentCard)}
+        >
+            Mark as important
+        </Button>
+        <Button colorScheme={"red"} variant={"outline"} onPress={() => downloadJSON(importantWords)}>
+            Download file
+        </Button>
       </HStack>
     </Box>
   );
