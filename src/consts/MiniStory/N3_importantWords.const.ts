@@ -1,4 +1,4 @@
-// pages 14 - 45 of Mini Story N3
+// pages 14 - 60 of Mini Story N3
 export const N3_IMPORTANT_WORDS: { kanji: string; english: string }[] = [
   {
     kanji: "缶{かん}詰{づめ}",
@@ -551,5 +551,277 @@ export const N3_IMPORTANT_WORDS: { kanji: string; english: string }[] = [
   {
     kanji: "賛{さん}成{せい}［する］",
     english: "agreement・to agree",
+  },
+  {
+    kanji: "瓶{びん}",
+    english: "bottle",
+  },
+  {
+    kanji: "敷{し}く",
+    english: "to lay (something) down",
+  },
+  {
+    kanji: "〜炒{いた}め",
+    english: "stir-fry・fried",
+  },
+  {
+    kanji: "炒{いた}める",
+    english: "to stir-fry",
+  },
+  {
+    kanji: "すると",
+    english: "and so・then",
+  },
+  {
+    kanji: "紺{こん}色{いろ}",
+    english: "indigo・Deep blue",
+  },
+  {
+    kanji: "袋{ふくろ}",
+    english: "bag",
+  },
+  {
+    kanji: "溶{と}かす",
+    english: "to dissolve",
+  },
+  {
+    kanji: "溶{と}ける",
+    english: "to dissolve",
+  },
+  {
+    kanji: "固{かた}める",
+    english: "to harden",
+  },
+  {
+    kanji: "やかん",
+    english: "kettle",
+  },
+  {
+    kanji: "薬{やっ}局{きょく}",
+    english: "pharmacy",
+  },
+  {
+    kanji: "列{れつ}",
+    english: "line・row",
+  },
+  {
+    kanji: "定{てい}価{か}",
+    english: "retail price",
+  },
+  {
+    kanji: "～割{わり}引{びき}",
+    english: "~discount, ~off",
+  },
+  {
+    kanji: "半{はん}額{がく}",
+    english: "half price",
+  },
+  {
+    kanji: "両{りょう}替{がえ}［する］",
+    english: "to exchange (money)",
+  },
+  {
+    kanji: "金{きん}額{がく}",
+    english: "amount of money",
+  },
+  {
+    kanji: "～料{りょう}",
+    english: "fee",
+  },
+  {
+    kanji: "手{て}数{すう}料{りょう}",
+    english: "handling fee・commission",
+  },
+  {
+    kanji: "余{よ}分{ぶん}な",
+    english: "extra",
+  },
+  {
+    kanji: "自{じ}動{どう}販{はん}売{ばい}機{き}",
+    english: "vending machine",
+  },
+  {
+    kanji: "（お）札{さつ}",
+    english: "(Monetary) bill",
+  },
+  {
+    kanji: "～札{さつ}",
+    english: "bill・note",
+  },
+  {
+    kanji: "売{ばい}店{てん}",
+    english: "shop・store",
+  },
+  {
+    kanji: "代{だい}金{きん}",
+    english: "payment・price",
+  },
+  {
+    kanji: "定{てい}休{きゅう}日{び}",
+    english: "regular holiday",
+  },
+  {
+    kanji: "ですから",
+    english: "therefore・as I said before",
+  },
+  {
+    kanji: "特{とく}売{ばい}",
+    english: "Bargain sale",
+  },
+  {
+    kanji: "きちんと",
+    english: "properly・exactly",
+  },
+  {
+    kanji: "貯{ちょ}金{きん}［する］",
+    english: "savings・to save money",
+  },
+  {
+    kanji: "預{よ}金{きん}［する］",
+    english: "deposit・to deposit money",
+  },
+  {
+    kanji: "通{つう}帳{ちょう}",
+    english: "bankbook",
+  },
+  {
+    kanji: "～代{だい}",
+    english: "bill",
+  },
+  {
+    kanji: "貯{た}める",
+    english: "to save (money)",
+  },
+  {
+    kanji: "～費{ひ}",
+    english: "fee・cost",
+  },
+  {
+    kanji: "集{しゅう}金{きん}［する］",
+    english: "collection (of money)・to collect (money)",
+  },
+  {
+    kanji: "口{こう}座{ざ}",
+    english: "bank account",
+  },
+  {
+    kanji: "下{お}ろす",
+    english: "to withdraw (money)",
+  },
+  {
+    kanji: "支{し}店{てん}",
+    english: "branch (of a company)",
+  },
+  {
+    kanji: "支{し}社{しゃ}",
+    english: "branch office",
+  },
+  {
+    kanji: "宣{せん}伝{でん}［する］",
+    english: "advertising・to advertise",
+  },
+  {
+    kanji: "予{よ}算{さん}",
+    english: "budget",
+  },
+  {
+    kanji: "繰{く}り越{こ}す",
+    english: "to carry over (a budget)",
+  },
+  {
+    kanji: "越{こ}す",
+    english: "to exceed",
+  },
+  {
+    kanji: "取{と}り消{け}す",
+    english: "to cancel",
+  },
+  {
+    kanji: "八{や}百{お}屋{や}",
+    english: "grocery store",
+  },
+  {
+    kanji: "段{だん}ボール",
+    english: "cardboard box",
+  },
+  {
+    kanji: "貧{まず}しい",
+    english: "poor",
+  },
+  {
+    kanji: "通{つう}販{はん}",
+    english: "mail order",
+  },
+  {
+    kanji: "得{とく}［する］",
+    english: "Bargain・to get a bargain",
+  },
+  {
+    kanji: "損{そん}［する］",
+    english: "Loss・to incur a loss",
+  },
+  {
+    kanji: "振{ふ}り込{こ}む",
+    english: "Send・deposit (a payment)",
+  },
+  {
+    kanji: "配{はい}達{たつ}［する］",
+    english: "Delivery・to deliver",
+  },
+  {
+    kanji: "値{ね}下{さ}がり［する］",
+    english: "price drop・to lower the price",
+  },
+  {
+    kanji: "値{ね}上{あ}がり［する］",
+    english: "price increase・to raise the price",
+  },
+  {
+    kanji: "值{ね}",
+    english: "value",
+  },
+  {
+    kanji: "引{ひ}き出{だ}す",
+    english: "get out・withdraw",
+  },
+  {
+    kanji: "税{ぜい}込{こ}み",
+    english: "tax included",
+  },
+  {
+    kanji: "1{いっ}回{かい}払{ばら}い",
+    english: "one-instalment payment",
+  },
+  {
+    kanji: "領{りょう}収{しゅう}書{しょ}",
+    english: "receipt",
+  },
+  {
+    kanji: "送{そう}料{りょう}",
+    english: "shipping cost",
+  },
+  {
+    kanji: "髪{かみ}の毛{け}",
+    english: "hair",
+  },
+  {
+    kanji: "美{び}容{よう}院{いん}",
+    english: "beauty salon",
+  },
+  {
+    kanji: "床{とこ}屋{や}",
+    english: "barber shop",
+  },
+  {
+    kanji: "眉{まゆ}（毛{げ})",
+    english: "eyebrows",
+  },
+  {
+    kanji: "剃{そ}る",
+    english: "to shave",
+  },
+  {
+    kanji: "まつ毛{げ}",
+    english: "eyelashes",
   }
 ];
