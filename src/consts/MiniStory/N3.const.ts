@@ -7,6 +7,7 @@ export const MiniStoryTopics = {
   WORK: "仕事",
   TECHNOLOGY: "テクノロジー",
   LIFE: "人生",
+  TRENDS: "流行",
 } as const;
 
 // type MiniStoryTopic = typeof MiniStoryTopics[keyof typeof MiniStoryTopics];
@@ -2756,7 +2757,7 @@ export const MINI_STORY_N3: Record<string, MiniStory> = {
         type: MiniStoryWordType.NOUN
       },
       {
-        kanji: "引{き}き出{だ}す",
+        kanji: "引{ひ}き出{だ}す",
         english: "get out・withdraw",
         type: MiniStoryWordType.GODAN_TRANSITIVE
       },
@@ -3046,51 +3047,6 @@ export const MINI_STORY_N3: Record<string, MiniStory> = {
     topic: MiniStoryTopics.FASHION,
     page: 61,
   },
-  "xxxxx": {
-    id: "xxxxx",
-    rubyStory: [
-      {
-        character: "",
-        dialogue: "xxxxxxxxx",
-      },
-    ],
-    rubyWords: [
-      {
-        kanji: "xxxxxxxxx",
-        english: "xxxxxxxxx",
-        type: MiniStoryWordType.NOUN
-      },
-      {
-        kanji: "xxxxxxxxx",
-        english: "xxxxxxxxx",
-        type: MiniStoryWordType.NOUN
-      },
-      {
-        kanji: "xxxxxxxxx",
-        english: "xxxxxxxxx",
-        type: MiniStoryWordType.NOUN
-      },
-      {
-        kanji: "xxxxxxxxx",
-        english: "xxxxxxxxx",
-        type: MiniStoryWordType.NOUN
-      },
-      {
-        kanji: "xxxxxxxxx",
-        english: "xxxxxxxxx",
-        type: MiniStoryWordType.NOUN
-      },
-      {
-        kanji: "xxxxxxxxx",
-        english: "xxxxxxxxx",
-        type: MiniStoryWordType.NOUN
-      },
-    ],
-    translation: `xxxxxxxxx`,
-    audio: "Txx.mp3",
-    topic: MiniStoryTopics.FASHION,
-    page: 61,
-  },
   "73": {
     id: "73",
     rubyStory: [
@@ -3288,7 +3244,7 @@ export const MINI_STORY_N3: Record<string, MiniStory> = {
         type: MiniStoryWordType.NOUN
       },
       {
-        kanji: "～着（ちゃく）",
+        kanji: "～着{ちゃく}",
         english: "counter for clothing",
         type: MiniStoryWordType.SUFFIX
       },
@@ -4682,6 +4638,1191 @@ export const MINI_STORY_N3: Record<string, MiniStory> = {
     topic: MiniStoryTopics.TECHNOLOGY,
     page: 82,
   },
+  "110": {
+    id: "110",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "<チャット>の<通{つう}知{ち}>がどんどん来るのが気になるんだけど。大{たい}したことじゃないときもあるし。",
+      },
+      {
+        character: "B",
+        dialogue: "通{つう}知{ち}<停{てい}止{し}すれば>いいじゃん。名前のところ<長{なが}押{お}し>して。",
+      },
+      {
+        character: "A",
+        dialogue: "<なるほど>ー。みんなそうしてたんだ。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "チャット［する］",
+        english: "Chat・To chat",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+      {
+        kanji: "通{つう}知{ち}［する］",
+        english: "Notification・To notify",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "停{てい}止{し}［する］",
+        english: "Stopping・To stop",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "長{なが}押{お}し［する］",
+        english: "Long press・To long press",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "なるほど",
+        english: "I see・That makes sense",
+        type: MiniStoryWordType.CLAUSE
+      },
+    ],
+    translation: `A: I'm worried about these chat notifications that keep coming. Sometimes it's not even something important.\nB: You should turn off notifications. Press and hold on their name.\nA: I see. So that's what everyone does.`,
+    audio: "T110.mp3",
+    topic: MiniStoryTopics.TECHNOLOGY,
+    page: 83,
+  },
+  "111": {
+    id: "111",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "<マウス>がときどき動{うご}かなくなるんですよ。",
+      },
+      {
+        character: "B",
+        dialogue: "<無{む}線{せん}>のマウスだったらたぶん<電{でん}池{ち}>が切{き}れかけています。<交{こう}換{かん}すれば>直{なお}りますよ。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "マウス",
+        english: "Mouse (computer)",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "無{む}線{せん}",
+        english: "Wireless",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "有{ゆう}線{せん}",
+        english: "Wired",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "電{でん}池{ち}",
+        english: "Battery",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "乾{かん}電{でん}池{ち}",
+        english: "Dry battery・Dry cell",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "交{こう}換{かん}［する］",
+        english: "Replacement・To replace",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+    ],
+    translation: `A: My mouse stops moving sometimes.\nB: If it's a wireless mouse, the batteries are probably running out. If you replace them, it should work fine.`,
+    audio: "T111.mp3",
+    topic: MiniStoryTopics.TECHNOLOGY,
+    page: 84,
+  },
+  "112": {
+    id: "112",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "先{せん}日{じつ}、<落{お}とし物{もの}>をしたら、拾{ひろ}って届{とど}けてくれた人がいた。<神{かみ}様{さま}>みたいな人だと思った。私もこれから<他{た}人{にん}>に親{しん}切{せつ}にしよう。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "落{お}とし物{もの}",
+        english: "Dropping something・Lost item",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "神{かみ}様{さま}",
+        english: "God",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "神{かみ}",
+        english: "God",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "他{た}人{にん}",
+        english: "Other person・Stranger",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `The other day, I had a dropped something, and someone picked it up and delivered it to me. I thought that person was like a god. I will also try to help others from now on.`,
+    audio: "T112.mp3",
+    topic: MiniStoryTopics.TECHNOLOGY,
+    page: 84,
+  },
+  "113": {
+    id: "113",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "ある国の<一{いち}流{りゅう}>企{き}業{ぎょう}の<製{せい}品{ひん}>であっても、<中{なか}身{み}>の<部{ぶ}品{ひん}>は別{べつ}の国{くに}の小さな会社で<製{せい}造{ぞう}されて>いることがある。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "一{いち}流{りゅう}",
+        english: "First-class・Top-tier",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "製{せい}品{ひん}",
+        english: "Product",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "中{なか}身{み}",
+        english: "Contents・Inner・Inside",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "部{ぶ}品{ひん}",
+        english: "Part・Component",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "製{せい}造{ぞう}［する］",
+        english: "Manufacturing・To manufacture",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+    ],
+    translation: `Even though a product may be a leading company of one country, there are times when the parts inside are manufactured at small companies in another country.`,
+    audio: "T113.mp3",
+    topic: MiniStoryTopics.TECHNOLOGY,
+    page: 85,
+  },
+  "114": {
+    id: "114",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "文{も}字{じ}だけの<発{はつ}言{げん}>は<誤{ご}解{かい}される>ことも多い。だからこそ、親{しん}近{きん}<感{かん}>を表{あらわ}すために、<絵{え}文{も}字{じ}>や<スタンプ>が使{つか}われる。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "発{はつ}言{げん}［する］",
+        english: "Message・Transmission・To send a message",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "誤{ご}解{かい}［する］",
+        english: "Misunderstanding・To misunderstand",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "～感{かん}",
+        english: "Feeling of・Sense",
+        type: MiniStoryWordType.SUFFIX
+      },
+      {
+        kanji: "絵{え}文{も}字{じ}",
+        english: "Emoji",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "スタンプ",
+        english: "Stamp",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `Transmissions that only use letters are often misunderstood. So, in order to express a feeling of familiarity, things like emojis and stamps are used.`,
+    audio: "T114.mp3",
+    topic: MiniStoryTopics.TECHNOLOGY,
+    page: 85,
+  },
+  "115": {
+    id: "115",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "メールの<件{けん}名{めい}>、全{ぜん}然{ぜん}変{か}えない人がいるけど、許{ゆる}せないんだよね。",
+      },
+      {
+        character: "B",
+        dialogue: "え、でも、<返{へん}信{しん}>のときは変{か}えない。変{か}えたら失{しつ}礼{れい}じゃない？",
+      },
+      {
+        character: "A",
+        dialogue: "でも、返{へん}信{しん}や<転{てん}送{そう}>が繞{つづ}くと、記{き}号{ごう}が増{ふ}えて長{なが}くなるでしょ。<最{さい}大{だい}>20文{も}字{じ}ぐらいになるようにしてるな。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "件{けん}名{めい}",
+        english: "Subject (of an email)",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "返{へん}信{しん}［する］",
+        english: "Reply・To reply",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "転{てん}送{そう}［する］",
+        english: "Forwarding・To forward",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "最{さい}大{だい}",
+        english: "Maximum・Greatest",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "最{さい}小{しょう}",
+        english: "Minimum・Least",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `A: Isn't it unforgivable how there are some people who don't change the subjects of their email at all?\nB: But I don't change it when replying. Wouldn't it be rude if you did?\nA: But as it continues to be replied to or forwarded, the number of symbols increases, and the subject gets longer. I make sure it's never more than 20 characters.`,
+    audio: "T115.mp3",
+    topic: MiniStoryTopics.TECHNOLOGY,
+    page: 86,
+  },
+  "116": {
+    id: "116",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "紙{かみ}の<アルバム>の中{なか}の写{しゃ}真{しん}を<スキャンして>、インターネットに<移{うつ}した>。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "アルバム",
+        english: "Album",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "スキャン［する］",
+        english: "Scan・To scan",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "移{うつ}す",
+        english: "To transfer・To move",
+        type: MiniStoryWordType.IRREGULAR_TRANSITIVE
+      },
+      {
+        kanji: "移{うつ}る",
+        english: "To be transferred・To be moved",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE
+      },
+    ],
+    translation: `I scanned the pictures in my paper album and transferred them to the internet.`,
+    audio: "T116.mp3",
+    topic: MiniStoryTopics.TECHNOLOGY,
+    page: 86,
+  },
+  "117": {
+    id: "117",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "<アンケート>に答えたら回{かい}答{とう}<者{しゃ}>にプレゼントが当{あ}たるっていうの、あるでしょ。あれ、本当に当{あ}たるのかな。",
+      },
+      {
+        character: "B",
+        dialogue: "子どものとき、漫{まん}画{が}雑{ざっ}誌{し}のアンケートでスマホの<ケース>当{あ}たったことあるよ。1位{い}はゲーム<機{き}>だったけど、それは当{あ}たった人には会{あ}ったことないなあ。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "アンケート",
+        english: "Survey",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "～者{しゃ}",
+        english: "Respondent・Person who ～",
+        type: MiniStoryWordType.SUFFIX
+      },
+      {
+        kanji: "ケース",
+        english: "Case",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "～機{き}",
+        english: "Device・Machine that ～",
+        type: MiniStoryWordType.SUFFIX
+      },
+    ],
+    translation: `A: You know how there are surveys where you could win a present if you answer them? I wonder if you can really win anything.\nB: When I was a kid, I won a smartphone case from a survey in a manga magazine. First place was a game console, but I've never met anyone who's won one.`,
+    audio: "T117.mp3",
+    topic: MiniStoryTopics.TECHNOLOGY,
+    page: 87,
+  },
+  "118": {
+    id: "118",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "私の好きな<俳{はい}優{ゆう}>が初{はじ}めて<来{らい}日{にち}して><インタビューされて>いた。しかし、<記{き}者{しゃ}>の質{しつ}問{もん}のレベルが低{ひく}くて<がっかりした>。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "俳{はい}優{ゆう}",
+        english: "Actor",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "女{じょ}優{ゆう}",
+        english: "Actress",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "来{らい}日{にち}［する］",
+        english: "To come to Japan",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+      {
+        kanji: "インタビュー［する］",
+        english: "Interview・To interview",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "記{き}者{しゃ}",
+        english: "Reporter・Journalist",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "がっかりする",
+        english: "To be disappointed",
+        type: MiniStoryWordType.IRREGULAR_INTRANSITIVE
+      },
+    ],
+    translation: `My favorite actor came to Japan for the first time and was interviewed. However, I was disappointed at the low level of reporter's questions.`,
+    audio: "T118.mp3",
+    topic: MiniStoryTopics.TRENDS,
+    page: 90,
+  },
+  "119": {
+    id: "119",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "<リメイク><作{さく}品{ひん}>は、音{おん}楽{がく}は昔{むかし}のものを使ってほしい。",
+      },
+      {
+        character: "B",
+        dialogue: "分かる。<曲{きょく}>が<流{なが}れた>だけで、<懐{なつ}かしく>なって<涙{なみだ}>が出{で}そうになる。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "リメイク［する］",
+        english: "Remake・To remake",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "作{さく}品{ひん}",
+        english: "Work・Production",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "曲{きょく}",
+        english: "Song・Track",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "流{なが}れる",
+        english: "To flow",
+        type: MiniStoryWordType.ICHIDAN_INTRANSITIVE
+      },
+      {
+        kanji: "懐{なつ}かしい",
+        english: "Nostalgic",
+        type: MiniStoryWordType.ADJECTIVE_I
+      },
+      {
+        kanji: "涙{なみだ}",
+        english: "Tears",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `A: For works that are remakes, I want them to use the old music.\nB: I know what you mean. Just hearing the song being played will make it feel nostalgic and make you feel like crying.`,
+    audio: "T119.mp3",
+    topic: MiniStoryTopics.TRENDS,
+    page: 90,
+  },
+  "120": {
+    id: "120",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "最近のライトノベルは、まず<オンライン>の小{しょう}説{せつ}サイトに掲{けい}載{さい}され、それから本になることが多い。<タイトル>が長{なが}く、タイトルだけで<内{ない}容{よう}>が分かることが<共{きょう}通{つう}して>いる。本の<表{ひょう}紙{し}>にはかわいいキャラクターが描{えが}かれているが、タイトルのせいで見にくかったりする。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "オンライン",
+        english: "Online",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "タイトル",
+        english: "Title",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "題{だい}名{めい}",
+        english: "Title",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "題{だい}",
+        english: "Title",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "内{ない}容{よう}",
+        english: "Content",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "共{きょう}通{つう}［する］",
+        english: "Having in common・To have in common",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+      {
+        kanji: "表{ひょう}紙{し}",
+        english: "Cover (of a book)",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `Recent light novels are often first published on online novel sites and then become books. It is common that the titles are long, and you can figure out the content just by the title alone. Cute characters are drawn on the covers of the books, but they may difficult to see because of the title.`,
+    audio: "T120.mp3",
+    topic: MiniStoryTopics.TRENDS,
+    page: 91,
+  },
+  "121": {
+    id: "121",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "この前<勧{すす}めて>くれた<ドラマ>、<追{お}いついた>よ。",
+      },
+      {
+        character: "B",
+        dialogue: "え、もう？いつ教{おし}えたっけ。",
+      },
+      {
+        character: "A",
+        dialogue: "<先{せん}々{せん}週{しゅう}>だから、2週{かん}間{かん}で20話{わ}ぐらい見たかな。今{こん}夜{や}の話{はなし}は予{よ}約{やく}<済{ず}み>。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "勧{すす}める",
+        english: "To recommend",
+        type: MiniStoryWordType.ICHIDAN_TRANSITIVE
+      },
+      {
+        kanji: "おすすめ［する］",
+        english: "Recommendation・To recommend",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "ドラマ",
+        english: "Drama",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "追{お}いつく",
+        english: "To catch up",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE
+      },
+      {
+        kanji: "先{せん}々{せん}週{しゅう}",
+        english: "The week before last",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.ADVERB ]
+      },
+      {
+        kanji: "〜済{ず}み",
+        english: "Already finished ～",
+        type: MiniStoryWordType.SUFFIX
+      },
+    ],
+    translation: `A: I got caught up in that drama that recommended to me the other day.\nB: What? Already? When did I tell you about it again?\nA: The week before last, so I watched 20 episodes in about two weeks. Ive already set a reservation for tonights episode.`,
+    audio: "T121.mp3",
+    topic: MiniStoryTopics.TRENDS,
+    page: 92,
+  },
+  "122": {
+    id: "122",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "これ、私が小学生のときの<劇{げき}>のビデオです。",
+      },
+      {
+        character: "B",
+        dialogue: "え、どこに映{うつ}ってるの？",
+      },
+      {
+        character: "A",
+        dialogue: "ああ、木{き}の<手{て}前{まえ}>にいる、<リボン>をつけた子{こ}が私です。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "劇{げき}",
+        english: "Play",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "劇{げき}場{じょう}",
+        english: "Theater",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "手{て}前{まえ}",
+        english: "In front",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "リボン",
+        english: "Ribbon",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `A: This is a video of a play from when I was in elementary school.\nB: Oh, where are you?\nA: Umm, I'm the kid in front of the tree wearing a ribbon.`,
+    audio: "T122.mp3",
+    topic: MiniStoryTopics.TRENDS,
+    page: 92,
+  },
+  "123": {
+    id: "123",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "以{い}前{ぜん}はよく<レンタル>ビデオ店{てん}にビデオやDVDを借{か}りに行った。しかし、今はインターネットでレンタルすることができる。まず会{かい}員{いん}<登{とう}録{ろく}し>、それから好きな金{きん}額{がく}を<チャージする>。チャージした金{きん}額{がく}分{ぶん}、自由にレンタルすることができる。このやり方は一つの<発{はつ}明{めい}>だと思う。私はサイトを<お気{き}に入{い}り>に登{とう}録{ろく}している。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "レンタル［する］",
+        english: "Rental・To rent",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "登{とう}録{ろく}［する］",
+        english: "Registration・To register",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "チャージ［する］",
+        english: "Charge・To charge",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "発{はつ}明{めい}［する］",
+        english: "Invention・To invent",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "お気{き}に入{い}り",
+        english: "Favorite・Favorite thing",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `In the past, people rented videos and DVDs at rental video stores. But now, you can rent things on the internet. First, register as a member and then charge whatever amount you like. You can freely rent things with the charged amount. I think this method is one invention. I've registered the site to my favorites.`,
+    audio: "T123.mp3",
+    topic: MiniStoryTopics.TRENDS,
+    page: 93,
+  },
+  "124": {
+    id: "124",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "最{さい}初{しょ}はみんな、この<アニメ>を<仲{なか}良{よ}し>の女の子が変{へん}身{しん}して<戦{たたか}う>だけの話{はなし}だと思っていた。しかし、<第{だい}>3話{わ}で一人のキャラが<殺{ころ}され>、みんなショックを受{う}けた。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "アニメ（ーション）",
+        english: "Animation・Anime",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "仲{なか}良{よ}し",
+        english: "Close friend・Good friend",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "戦{たたか}う",
+        english: "To fight",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE
+      },
+      {
+        kanji: "戦{たたか}い",
+        english: "Fight・Battle",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "第{だい}～",
+        english: "No. ~・~th・~nd・~rd (used for numbering episodes, chapters, etc.)",
+        type: MiniStoryWordType.PREFIX
+      },
+      {
+        kanji: "殺{ころ}す",
+        english: "To kill",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+    ],
+    translation: `At first everyone thought that the anime was only about girls who were friends and would change form and fight. However, one character was killed in the third episode, and everyone was shocked.`,
+    audio: "T124.mp3",
+    topic: MiniStoryTopics.TRENDS,
+    page: 94,
+  },
+  "125": {
+    id: "125",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "この会社のアニメは、<前{ぜん}半{はん}>がどんな話{はなし}でも、<後{こう}半{はん}>は必ず<宇{う}宙{ちゅう}>に<飛{と}び出{だ}す>。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "前{ぜん}半{はん}",
+        english: "First half",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.ADVERB]
+      },
+      {
+        kanji: "後{こう}半{はん}",
+        english: "Second half",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.ADVERB]
+      },
+      {
+        kanji: "宇{う}宙{ちゅう}",
+        english: "Space (outer space)",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "飛{と}び出{だ}す",
+        english: "To jump out・To launch out",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+    ],
+    translation: `No matter what happens in the first half of the anime from that company, they always fly off to space in the second half.`,
+    audio: "T125.mp3",
+    topic: MiniStoryTopics.TRENDS,
+    page: 94,
+  },
+  "126": {
+    id: "126",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<少{しょう}年{ねん}>漫{まん}画{が}で何が<はやっている>かは、小{ちい}さな子どもたちを見れば分かる。彼{かれ}らはすぐに言葉や<技{わざ}>を<まね>するから。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "少{しょう}年{ねん}",
+        english: "Boy・Young boy",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "少{しょう}女{じょ}",
+        english: "Girl・Young girl",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "はやる",
+        english: "To be popular・To be in fashion",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE
+      },
+      {
+        kanji: "はやり",
+        english: "Trend・Fashion",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "技{わざ}",
+        english: "Technique・Skill",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "まね［する］",
+        english: "Imitation・To imitate",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+    ],
+    translation: `You can tell what young boy's comics are popular by looking at young children. This is because they immediately imitate their words and techniques.`,
+    audio: "T126.mp3",
+    topic: MiniStoryTopics.TRENDS,
+    page: 95,
+  },
+  "127": {
+    id: "127",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "<ミステリー>のドラマってだいたい<ハンサムな>役{やく}者{しゃ}が<犯{はん}人{にん}>だよな。",
+      },
+      {
+        character: "B",
+        dialogue: "<おい>、そんなこと言うのやめるよ。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "ミステリー",
+        english: "Mystery (genre)",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "ハンサムな",
+        english: "Handsome",
+        type: MiniStoryWordType.ADJECTIVE_NA
+      },
+      {
+        kanji: "犯{はん}人{にん}",
+        english: "Criminal",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "おい",
+        english: "Hey",
+        type: MiniStoryWordType.OTHER
+      },
+    ],
+    translation: `A: In mystery dramas, the criminal is usually the handsome actor, right?\nB: Hey, stop saying things like that.`,
+    audio: "T127.mp3",
+    topic: MiniStoryTopics.TRENDS,
+    page: 95,
+  },
+  "128": {
+    id: "128",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<恋{れん}愛{あい}>と<友{ゆう}情{じょう}>は、人{にん}間{げん}にとって最{もっと}も<重{じゅう}大{だい}な><テーマ>だ。だからこそ、歴{れき}史{し}の中{なか}でたくさんの<物{もの}語{がたり}>が作られてきた。現{げん}代{だい}の曲{きょく}の<歌{か}詞{し}>にも多{おお}く登{とう}場{じょう}する。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "恋{れん}愛{あい}［する］",
+        english: "Love・To love",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+      {
+        kanji: "友{ゆう}情{じょう}",
+        english: "Friendship",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "重{じゅう}大{だい}な",
+        english: "Serious・Significant",
+        type: MiniStoryWordType.ADJECTIVE_NA
+      },
+      {
+        kanji: "テーマ",
+        english: "Theme",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "物{もの}語{がたり}",
+        english: "Story・Tale",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "歌{か}詞{し}",
+        english: "Lyrics",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `Love and friendship are the most significant themes for humans. That's why there have been a lot of stories in history. Many appear in the lyrics of modern songs too.`,
+    audio: "T128.mp3",
+    topic: MiniStoryTopics.TRENDS,
+    page: 96,
+  },
+  "129": {
+    id: "129",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "この<作{さく}者{しゃ}>の漫{まん}画{が}は面{おも}白{しろ}いけど、<ところどころ>変{へん}だ。最{さい}初{しょ}女の子だったキャラが、<いつの間{ま}にか>男の子になっていた。ストーリーにも<波{なみ}>があり、<調{ちょう}子{し}>がいいときは読{よ}んでいて<どきどきする>が、調{ちょう}子{し}が悪{わる}いときは本当に面{おも}白{しろ}くない。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "作{さく}者{しゃ}",
+        english: "Author",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "ところどころ",
+        english: "Here and there・In various places",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.ADVERB]
+      },
+      {
+        kanji: "いつの間{ま}にか",
+        english: "At some point",
+        type: MiniStoryWordType.ADVERB
+      },
+      {
+        kanji: "波{なみ}",
+        english: "Wave",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "調{ちょう}子{し}",
+        english: "Condition・Tune",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "どきどき［する］",
+        english: "Exciting・To be excited",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+    ],
+    translation: `This author's manga are interesting, but there are some strange parts here and there. One character who was a girl at first at some point became a boy. There are waves in the story, and when the condition is good, I read it and get excited, but when it's not good, it's really uninteresting.`,
+    audio: "T129.mp3",
+    topic: MiniStoryTopics.TRENDS,
+    page: 96,
+  },
+  "130": {
+    id: "130",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "この映画は、<観{かん}客{きゃく}>に<カード>のプレゼントがあるから、4回{かい}見に行かないと。",
+      },
+      {
+        character: "B",
+        dialogue: "そんなに見たら<飽{あ}きない>？",
+      },
+      {
+        character: "A",
+        dialogue: "カードだけもらう人もいるけど、私は見る。最{さい}初{しょ}、<あれ？>って思ったところが、2回{かい}目{め}に見ると意味が分かったりするから。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "観{かん}客{きゃく}",
+        english: "Audience",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "カード",
+        english: "Card",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "飽{あ}きる",
+        english: "To get tired of",
+        type: MiniStoryWordType.ICHIDAN_INTRANSITIVE
+      },
+      {
+        kanji: "あれ？",
+        english: "Huh?",
+        type: MiniStoryWordType.OTHER
+      },
+    ],
+    translation: `A: This movie has a card present for the audience, so I have to go four times.\nB: Won't you get tired of watching it so much?\nA: Some people get only the cards, but I watch it. I can better understand some of the things that made me go "huh?" the first time I watched it when watching it for the second time.`,
+    audio: "T130.mp3",
+    topic: MiniStoryTopics.TRENDS,
+    page: 97,
+  },
+  "131": {
+    id: "131",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "私はアイドルには<少{すこ}しも>興味が<なかった>。しかし、友人に誘{さそ}われて、<コンサート>に行ってから、ファンになった。彼{かれ}らが<登{とう}場{じょう}した>ときの会{かい}場{じょう}の空{くう}気{き}は忘れられない。とても感{かん}動{どう}<的{てき}>で、終{お}わる頃{ころ}には泣{な}いていた。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "少{すこ}しも～ない",
+        english: "Not even a little・Not at all ~",
+        type: MiniStoryWordType.CLAUSE
+      },
+      {
+        kanji: "コンサート",
+        english: "Concert",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: " ライブ",
+        english: "Live (performance)",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "登{とう}場{じょう}［する］",
+        english: "Appearance・To appear・To make an appearance",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+      {
+        kanji: "〜的{てき}",
+        english: "〜ish",
+        type: MiniStoryWordType.SUFFIX
+      },
+    ],
+    translation: `I didn't used to be interested in idols at all. However, I was invited by a friend to a concert and have been a fan ever since. I'll never forget the vibe in the venue the moment they appeared. It was really moving, and I cried when it was over.`,
+    audio: "T131.mp3",
+    topic: MiniStoryTopics.TRENDS,
+    page: 98,
+  },
+  "132": {
+    id: "132",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "来週、私の好きな漫{まん}画{が}家{か}の最{さい}新{しん}<作{さく}>が<スタートします>。私は小さい頃{ころ}、<お小{こ}遣{づか}い>をためて、その人の全{ぜん}作{さく}品{ひん}を<そろえて>いました。新しい作品は、<過{か}去{こ}>の作品の<続{つづ}き>のストーリーです。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "～作{さく}",
+        english: "～Work",
+        type: MiniStoryWordType.SUFFIX
+      },
+      {
+        kanji: "スタート［する］",
+        english: "Start・To start",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+      {
+        kanji: "（お）小{こ}遣{づか}い",
+        english: "Pocket money",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "そろえる",
+        english: "To arrange together・To collect",
+        type: MiniStoryWordType.ICHIDAN_TRANSITIVE
+      },
+      {
+        kanji: "そろう",
+        english: "To be collected・To be arranged together",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE
+      },
+      {
+        kanji: "おそろい",
+        english: "Complete set・Matching set",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "過{か}去{こ}",
+        english: "Past",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "続{つづ}き",
+        english: "Continuation",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `Next week, the latest work from my favorite manga artist will be starting. When I was younger, I used to save up my pocket money, and I had collected all of their works. Their new work is a continuation of the story of their past work.`,
+    audio: "T132.mp3",
+    topic: MiniStoryTopics.TRENDS,
+    page: 98,
+  },
+  "133": {
+    id: "133",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "<展{てん}覧{らん}会{かい}>とか行ったことないんだよね。どれに行ったらいいか分からないし。",
+      },
+      {
+        character: "B",
+        dialogue: "最{さい}初{しょ}はなんでもいいんだよ。適{てき}当{とう}に行って、何{なに}かの絵{え}が<気{き}に入{い}ったら>、それを描{か}いた<画{が}家{か}>のことを調{しら}べる。そうしているうちにだんだん<詳{くわ}しく>なるよ。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "展{てん}覧{らん}会{かい}",
+        english: "Exhibition",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "気{き}に入{い}る",
+        english: "To like・To be pleased with",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+      {
+        kanji: "画{が}家{か}",
+        english: "Painter",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "詳{くわ}しい",
+        english: "Detailed・Knowledgeable",
+        type: MiniStoryWordType.ADJECTIVE_I
+      },
+    ],
+    translation: `A: I have never been to an exhibition. I wouldn't even know which one to go to.\nB: Anything is okay at first. Just go when you feel like it, and if you see a painting you like, check out the painter who painted it. You'll grow more knowledgeable as you do that.`,
+    audio: "T133.mp3",
+    topic: MiniStoryTopics.TRENDS,
+    page: 99,
+  },
+  "134": {
+    id: "134",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "コンサートのチケットは<夜{よ}中{なか}>に<発{はつ}売{ばい}された>のに、アクセスが<集{しゅう}中{ちゅう}し>、<たった>1分で売{う}り切{き}れた。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "夜{よ}中{なか}",
+        english: "Nighttime",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.ADVERB]
+      },
+      {
+        kanji: "発{はつ}売{ばい}［する］",
+        english: "Selling・To sell",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "新{しん}発{はつ}売{ばい}",
+        english: "Now on sale・Newly released",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "集{しゅう}中{ちゅう}［する］",
+        english: "Concentrating・To concentrate",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE]
+      },
+      {
+        kanji: "集{しゅう}中{ちゅう}力{りょく}",
+        english: "Concentration (ability to concentrate)",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "たった",
+        english: "Just・Only",
+        type: MiniStoryWordType.ADVERB
+      },
+    ],
+    translation: `The tickets for the concert went on sale during the night, but access was concentrated, and they sold out in just one minute.`,
+    audio: "T134.mp3",
+    topic: MiniStoryTopics.TRENDS,
+    page: 100,
+  },
+  "135": {
+    id: "135",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "これは、少{しょう}年{ねん}が妹{いもうと}を守{まも}るために、父{ちち}親{おや}である<王{おう}>を<倒{たお}す>物{もの}語{がたり}です。そのために、少{しょう}年{ねん}はいろいろな<犯{はん}罪{ざい}>も狙{おか}します。でも、<ラスト>は本当に感{かん}動{どう}的{てき}で、見{め}終{お}わったときは<拍{はく}手{しゅ}しました>。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "王{おう}",
+        english: "King",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "王{おう}様{さま}",
+        english: "King (honorific)",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "国{こく}王{おう}",
+        english: "King (of a country)",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "倒{たお}す",
+        english: "To defeat",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+      {
+        kanji: "犯{はん}罪{ざい}",
+        english: "Crime",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "ラスト",
+        english: "Ending・Finale",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "拍{はく}手{しゅ}［する］",
+        english: "Applause・Clap・To applaud",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+    ],
+    translation: `This is a story of a boy that defeats the king who is also his father to protect his sister. To that end, the boy also commits a variety of crimes. But the ending was really moving, and I clapped when it ended.`,
+    audio: "T135.mp3",
+    topic: MiniStoryTopics.TRENDS,
+    page: 100,
+  },
+  "136": {
+    id: "136",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "テレビを見ている人も参{さん}加{か}できる<クイズ>番{ばん}組{ぐみ}があった。私はいつも、スマホを<操{そう}作{さ}して>いる<途{と}中{ちゅう}>で<締{し}め切{き}られて>しまっていた。答{こた}えは全{ぜん}部{ぶ}分{わ}かっていて、もうちょっとで商{しょう}品{ひん}がもらえたのに、<惜{お}しかった>。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "クイズ",
+        english: "Quiz",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "操{そう}作{さ}［する］",
+        english: "Manipulation・To manipulate",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "途{と}中{ちゅう}",
+        english: "On the way・In the middle of",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.ADVERB]
+      },
+      {
+        kanji: "締{し}め切{き}る",
+        english: "To close (e.g. applications)",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+      {
+        kanji: "締{し}め切{き}り",
+        english: "Deadline",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "惜{お}しい",
+        english: "Frustrating・Regrettable・Unfortunate",
+        type: MiniStoryWordType.ADJECTIVE_I
+      },
+    ],
+    translation: `There were quiz programs where people watching on TV can participate too. They always ended while I was busy using my smartphone. I knew all of the answers, and I was almost able to get a prize, so it was frustrating.`,
+    audio: "T136.mp3",
+    topic: MiniStoryTopics.TRENDS,
+    page: 101,
+  },
   "279": {
     id: "279",
     rubyStory: [
@@ -5577,7 +6718,7 @@ export const MINI_STORY_N3: Record<string, MiniStory> = {
     rubyStory: [
       {
         character: "",
-        dialogue: "オフィスに誰もいないのは危ないから、<留{る}守{す}番{ばん}して>おいて。<正{しょう}午{ご}>までに戻{もど}ってくるから、それまでに部{へ}屋{や}の<整{せい}理{り}>もやっておいてね！",
+        dialogue: "<オフィス>に誰もいないのは危ないから、<留{る}守{す}番{ばん}して>おいて。<正{しょう}午{ご}>までに戻{もど}ってくるから、それまでに部{へ}屋{や}の<整{せい}理{り}>もやっておいてね！",
       },
     ],
     rubyWords: [
