@@ -1,5 +1,9 @@
-// pages 14 - 60 of Mini Story N3
+// pages 14 - 82 of Mini Story N3
 export const N3_IMPORTANT_WORDS: { kanji: string; english: string }[] = [
+  {
+    kanji: "回{かい}復{ふく}",
+    english: "recovery"
+  },
   {
     kanji: "缶{かん}詰{づめ}",
     english: "canned food"
@@ -823,5 +827,465 @@ export const N3_IMPORTANT_WORDS: { kanji: string; english: string }[] = [
   {
     kanji: "まつ毛{げ}",
     english: "eyelashes",
+  },
+  {
+    kanji: "正{せい}解{かい}［する］",
+    english: "Correct answer・to answer correctly",
+  },
+  {
+    kanji: "参{さん}考{こう}",
+    english: "Reference",
+  },
+  {
+    kanji: "体{たい}型{けい}",
+    english: "Body type",
+  },
+  {
+    kanji: "それぞれ",
+    english: "Each・respectively",
+  },
+  {
+    kanji: "身{しん}長{ちょう}",
+    english: "height",
+  },
+  {
+    kanji: "〜色{しょく}",
+    english: "~ Color",
+  },
+  {
+    kanji: "赤{あか}字{じ}",
+    english: "Deficit・in the red",
+  },
+  {
+    kanji: " 黒{くろ}字{じ}",
+    english: "Surplus・in the black",
+  },
+  {
+    kanji: "革{かわ}",
+    english: "leather",
+  },
+  {
+    kanji: "ひも",
+    english: "cord・string",
+  },
+  {
+    kanji: "試{ため}す",
+    english: "Try・to try",
+  },
+  {
+    kanji: "試{ため}し",
+    english: "Trial・test",
+  },
+  {
+    kanji: "毛{け}",
+    english: "Hair (body hair)",
+  },
+  {
+    kanji: "毛{け}糸{いと}",
+    english: "Wool (yarn)",
+  },
+  {
+    kanji: "濃{こ}い",
+    english: "Thick (color)・dense・strong",
+  },
+  {
+    kanji: "薄{うす}い",
+    english: "Thin (color)・light・weak",
+  },
+  {
+    kanji: "なんとなく",
+    english: "somehow・on a whim・for some reason",
+  },
+  {
+    kanji: "～着（ちゃく）",
+    english: "counter for clothing",
+  },
+  {
+    kanji: "自{じ}慢{まん}［する］",
+    english: "Pride・boast・to be proud of",
+  },
+  {
+    kanji: "お召{め}しになる",
+    english: "To wear (honorific)",
+  },
+  {
+    kanji: "布{ぬの}",
+    english: "Fabric・cloth",
+  },
+  {
+    kanji: "完{かん}成{せい}［する］",
+    english: "Completion・to complete",
+  },
+  {
+    kanji: "結{むす}ぶ",
+    english: "Tie・to tie",
+  },
+  {
+    kanji: "お嬢{じょう}さん",
+    english: "Young lady",
+  },
+  {
+    kanji: "雰{ふん}囲{い}気{き}",
+    english: "Atmosphere・vibe",
+  },
+  {
+    kanji: "似{に}合{あ}う",
+    english: "Look good on・to suit",
+  },
+  {
+    kanji: "上{じょう}下{げ}",
+    english: "Up and down (clothing)・top and bottom",
+  },
+  {
+    kanji: "左{さ}右{ゆう}",
+    english: "Left and right",
+  },
+  {
+    kanji: "前{ぜん}後{ご}",
+    english: "Before and after",
+  },
+  {
+    kanji: "ばらばらな",
+    english: "Not matching・Separate",
+  },
+  {
+    kanji: "流{りゅう}行{こう}［する］",
+    english: "Trend・to be in fashion",
+  },
+  {
+    kanji: "追{お}いかける",
+    english: "Follow・to chase after",
+  },
+  {
+    kanji: "身{み}に付{つ}ける",
+    english: "Put on oneself・to wear",
+  },
+  {
+    kanji: "場{ば}面{めん}",
+    english: "Scene・Situation・context",
+  },
+  {
+    kanji: "服{ふく}装{そう}",
+    english: "Outfit・clothing",
+  },
+  {
+    kanji: "～用{よう}",
+    english: "For ～",
+  },
+  {
+    kanji: "おしゃれな",
+    english: "Stylish",
+  },
+  {
+    kanji: "唇{くちびる}",
+    english: "Lips",
+  },
+  {
+    kanji: "口{くち}紅{べに}",
+    english: "Lipstick",
+  },
+  {
+    kanji: "きらきらする",
+    english: "Be sparkly・to sparkle",
+  },
+  {
+    kanji: "浮{う}く",
+    english: "Be out of place・to float",
+  },
+  {
+    kanji: "実{じつ}は",
+    english: "Actually",
+  },
+  {
+    kanji: "穴{あな}",
+    english: "Hole",
+  },
+  {
+    kanji: "個{こう}性{せい}的{てき}な",
+    english: "Unique",
+  },
+  {
+    kanji: "個{こう}性{せい}",
+    english: "Uniqueness・Individuality",
+  },
+  {
+    kanji: "着{つ}ける",
+    english: "To wear",
+  },
+  {
+    kanji: "制{せい}服{ふく}",
+    english: "Uniform",
+  },
+  {
+    kanji: "取{と}れる",
+    english: "To come off",
+  },
+  {
+    kanji: "付{つ}ける",
+    english: "To put on・to attach",
+  },
+  {
+    kanji: "袖{そで}",
+    english: "Sleeve",
+  },
+  {
+    kanji: "長{なが}袖{そで}",
+    english: "Long sleeves",
+  },
+  {
+    kanji: "半{はん}袖{そで}",
+    english: "Short sleeves",
+  },
+  {
+    kanji: "画{が}面{めん}",
+    english: "Screen",
+  },
+  {
+    kanji: "画{が}面{めん}共{きょう}有{ゆう}",
+    english: "Screen Sharing",
+  },
+  {
+    kanji: "修{しゅう}理{り}［する］",
+    english: "Repair・to repair",
+  },
+  {
+    kanji: "実{じっ}験{けん}［する］",
+    english: "Experiment・to do an experiment",
+  },
+  {
+    kanji: "死{し}亡{ぼう}［する］",
+    english: "Death・to die",
+  },
+  {
+    kanji: "騒{さわ}ぎ",
+    english: "Uproar・commotion",
+  },
+  {
+    kanji: "資{し}料{りょう}",
+    english: "Materials・Documents",
+  },
+  {
+    kanji: "印{いん}刷{さつ}［する］",
+    english: "Print・to print",
+  },
+  {
+    kanji: "主{おも}に",
+    english: "Mainly",
+  },
+  {
+    kanji: "通{つう}話{わ}［する］",
+    english: "Call・to call",
+  },
+  {
+    kanji: "手{て}帳{ちょう}",
+    english: "Notebook・planner",
+  },
+  {
+    kanji: "印{しるし}",
+    english: "Stamp・mark",
+  },
+  {
+    kanji: "電{でん}源{げん}",
+    english: "Power・Power supply",
+  },
+  {
+    kanji: "待{ま}ち合{あ}わせ",
+    english: "Meeting",
+  },
+  {
+    kanji: "日{にち}時{じ}",
+    english: "Date and time",
+  },
+  {
+    kanji: "リンク先{さき}",
+    english: "Link destination",
+  },
+  {
+    kanji: "電{でん}波{ぱ}",
+    english: "Radio waves・reception・signal",
+  },
+  {
+    kanji: "速{そく}度{ど}",
+    english: "Speed",
+  },
+  {
+    kanji: "制{せい}限{げん}［する］",
+    english: "Limit・Restriction・to limit",
+  },
+  {
+    kanji: "充{じゅう}電{でん}［する］",
+    english: "Charging・To charge",
+  },
+  {
+    kanji: "コンセント",
+    english: "Power outlet",
+  },
+  {
+    kanji: "抜{ぬ}ける",
+    english: "To come out・To be removed",
+  },
+  {
+    kanji: "抜{ぬ}く",
+    english: "To pull out・To unplug・To remove",
+  },
+  {
+    kanji: "容{よう}量{りょう}",
+    english: "Capacity・Storage space",
+  },
+  {
+    kanji: "無{む}駄{だ}な",
+    english: "Useless・Wasteful・Unnecessary",
+  },
+  {
+    kanji: "うっかり",
+    english: "Carelessly・Inadvertently",
+  },
+  {
+    kanji: "本{ほん}人{にん}",
+    english: "The person in question・The actual person",
+  },
+  {
+    kanji: "最{さい}悪{あく}な",
+    english: "The worst",
+  },
+  {
+    kanji: "使{し}用{よう}［する］",
+    english: "Usage・To use",
+  },
+  {
+    kanji: "さまざまな",
+    english: "Various・Different kinds of",
+  },
+  {
+    kanji: "翻{ほん}訳{やく}［する］",
+    english: "Translation・To translate",
+  },
+  {
+    kanji: "音{おん}声{せい}",
+    english: "Voice",
+  },
+  {
+    kanji: "次{つぎ}々{つぎ}（と）",
+    english: "Continuously・One after another・In succession",
+  },
+  {
+    kanji: "訳{やく}す",
+    english: "To translate",
+  },
+  {
+    kanji: "訳{やく}",
+    english: "Translation",
+  },
+  {
+    kanji: "保{ほ}存{ぞん}［する］",
+    english: "Saving・To save",
+  },
+  {
+    kanji: "有{ゆう}料{りょう}",
+    english: "Paid・Not free",
+  },
+  {
+    kanji: "数{すう}字{じ}",
+    english: "Number",
+  },
+  {
+    kanji: "数{すう}回{かい}",
+    english: "Number of times・Several times",
+  },
+  {
+    kanji: "それなら",
+    english: "In that case",
+  },
+  {
+    kanji: "替{か}える・代{か}える・換{か}える",
+    english: "To replace・change・exchange",
+  },
+  {
+    kanji: "替{か}わる・代{か}わる・換{か}わる",
+    english: "To be replaced・be changed・be exchanged",
+  },
+  {
+    kanji: "最{さい}新{しん}",
+    english: "Latest",
+  },
+  {
+    kanji: "～型{がた}",
+    english: "Type・Model",
+  },
+  {
+    kanji: "円{えん}",
+    english: "Circle",
+  },
+  {
+    kanji: "平{へい}均{きん}［する］",
+    english: "Average・To average",
+  },
+  {
+    kanji: "検{けん}索{さく}［する］",
+    english: "Search・To search",
+  },
+  {
+    kanji: "矢{や}印{じるし}",
+    english: "Arrow",
+  },
+  {
+    kanji: "技{ぎ}術{じゅつ}",
+    english: "Technology",
+  },
+  {
+    kanji: "録{ろく}音{おん}［する］",
+    english: "Recording (sound)・To record (sound)",
+  },
+  {
+    kanji: "撮{さつ}影{えい}［する］",
+    english: "Shooting (video)・To shoot (video)",
+  },
+  {
+    kanji: "祝{しゅく}日{じつ}",
+    english: "Public holiday",
+  },
+  {
+    kanji: "目{め}覚{ざ}まし（時{ど}計{けい}）",
+    english: "Alarm clock",
+  },
+  {
+    kanji: "広{こう}告{こく}",
+    english: "Advertisement",
+  },
+  {
+    kanji: "あちこち",
+    english: "Everywhere・Here and there",
+  },
+  {
+    kanji: "あちらこちら",
+    english: "Everywhere・Here and there (formal)",
+  },
+  {
+    kanji: "工{く}夫{ふう}［する］",
+    english: "Devising・To devise",
+  },
+  {
+    kanji: "追{つい}加{か}［する］",
+    english: "Addition・To add",
+  },
+  {
+    kanji: "勝{かっ}手{て}な",
+    english: "Without permission・Unilateral",
+  },
+  {
+    kanji: "個{こ}人{じん}情{じょう}報{ほう}",
+    english: "Personal information",
+  },
+  {
+    kanji: "情{じょう}報{ほう}",
+    english: "Information",
+  },
+  {
+    kanji: "送{そう}信{しん}［する］",
+    english: "Sending/transmission (a message)・To send/transmit (a message)",
+  },
+  {
+    kanji: "受{じゅ}信{しん}［する］",
+    english: "Receiving (a message)・To receive (a message)",
   }
 ];
