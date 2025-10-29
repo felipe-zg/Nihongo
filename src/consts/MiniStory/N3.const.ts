@@ -8,6 +8,9 @@ export const MiniStoryTopics = {
   TECHNOLOGY: "テクノロジー",
   LIFE: "人生",
   TRENDS: "流行",
+  SOCIAL_LIFE: "人づきあい",
+  SPORTS: "スポーツ",
+  ANIMALS: "動物",
 } as const;
 
 // type MiniStoryTopic = typeof MiniStoryTopics[keyof typeof MiniStoryTopics];
@@ -5822,6 +5825,2109 @@ export const MINI_STORY_N3: Record<string, MiniStory> = {
     audio: "T136.mp3",
     topic: MiniStoryTopics.TRENDS,
     page: 101,
+  },
+  "137": {
+    id: "137",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<久{ひさ}しぶりに>中国人の<友{ゆう}人{じん}>が来{らい}日{にち}した。<母{はは}親{おや}>が「<ようこそ>、<よくいらっしゃいました>」と言うと、友{ゆう}人{じん}は「<ご無{ぶ}沙{さ}汰{た}して>います」とあいさつした。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "久{ひさ}しぶりに",
+        english: "For the first time in a while",
+        type: MiniStoryWordType.ADVERB
+      },
+      {
+        kanji: "友{ゆう}人{じん}",
+        english: "Friend",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "母{はは}親{おや}",
+        english: "Mother",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "父{ちち}親{おや}",
+        english: "Father",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "ようこそ",
+        english: "Welcome",
+        type: MiniStoryWordType.CLAUSE
+      },
+      {
+        kanji: "よくいらっしゃいました",
+        english: "Thank you for coming",
+        type: MiniStoryWordType.CLAUSE
+      },
+      {
+        kanji: "ご無{ぶ}沙{さ}汰{た}［する］",
+        english: "Long silence・Not see/talk to each other for a while",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+    ],
+    translation: `A Chinese friend of mine came to Japan for the first time in a while. When my mother said, "Welcome, I'm glad you made it," my friend greeted her by saying, "Long time no see."`,
+    audio: "T137.mp3",
+    topic: MiniStoryTopics.SOCIAL_LIFE,
+    page: 104,
+  },
+  "138": {
+    id: "138",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "友人が中国へ帰るので、空{くう}港{こう}まで<見{み}送{おく}った>。<後{ご}日{じつ}>、友人から<小{こ}包{づつみ}>が届{とど}いた。<便{びん}箋{せん}>には、「<お世{せ}話{わ}になりました>。<どうか><お元{げん}気{き}で>」と書{か}かれていた。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "見{み}送{おく}る",
+        english: "See off・Send off",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+      {
+        kanji: "見{み}送{おく}り",
+        english: "See-off・Sending off",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "後{ご}日{じつ}",
+        english: "A few days later・Another day",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.ADVERB]
+      },
+      {
+        kanji: "小{こ}包{づつみ}",
+        english: "Parcel・Package",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "便{びん}箋{せん}",
+        english: "Letter paper・Writing paper",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "お世{せ}話{わ}になりました",
+        english: "Thank you for your help/assistance",
+        type: MiniStoryWordType.CLAUSE
+      },
+      {
+        kanji: "どうか",
+        english: "Please",
+        type: MiniStoryWordType.ADVERB
+      },
+      {
+        kanji: "お元{げん}気{き}で",
+        english: "Please take care",
+        type: MiniStoryWordType.CLAUSE
+      },
+    ],
+    translation: `My friend returned to China, so I saw him off to the airport. Later, a package arrived from my friend. The letter on it read "Thank you for looking after me. Please take care.".`,
+    audio: "T138.mp3",
+    topic: MiniStoryTopics.SOCIAL_LIFE,
+    page: 104,
+  },
+  "139": {
+    id: "139",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<親{しん}戚{せき}>の家を<訪{ほう}問{もん}したら>, <おじさん>がいた。あいさつをし、「<ところで>、<おばさん>は」と聞{き}くと、<別{べつ}々{べつ}に>暮{く}らしているらしい。<そういえば>、今{こ}年{とし}の<年{ねん}賀{が}状{じょう}>におばさんの名前がなかった。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "親{しん}戚{せき}",
+        english: "Relative",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "訪{ほう}問{もん}［する］",
+        english: "Visit・To visit",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "おじ（さん）",
+        english: "Uncle",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "ところで",
+        english: "By the way",
+        type: MiniStoryWordType.CONJUNCTION
+      },
+      {
+        kanji: "おば（さん）",
+        english: "Aunt",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "別{べつ}々{べつ}に",
+        english: "Separately",
+        type: MiniStoryWordType.ADVERB
+      },
+      {
+        kanji: "そういえば",
+        english: "Speaking of which",
+        type: MiniStoryWordType.CLAUSE
+      },
+      {
+        kanji: "年{ねん}賀{が}状{じょう}",
+        english: "New Year's card",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `I went to visit a relatives house, and my uncle was there. I greeted him and asked "By the way, where's my aunt?," and it seems that they're now living separately. Speaking of which, this Year's New Year's card didn't have my aunt's name on it.`,
+    audio: "T139.mp3",
+    topic: MiniStoryTopics.SOCIAL_LIFE,
+    page: 105,
+  },
+  "140": {
+    id: "140",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<長{ちょう}女{じょ}>は<生{なま}意{い}気{き}だ>が、<目{め}上{うえ}>の人に会うときちんと<おじぎする>。それが<長{ちょう}所{しょ}>だ。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "長{ちょう}女{じょ}",
+        english: "Eldest daughter",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "次{じ}女{じょ}",
+        english: "Second daughter",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "生{なま}意{い}気{き}な",
+        english: "Sassy・Cheeky",
+        type: MiniStoryWordType.ADJECTIVE_NA
+      },
+      {
+        kanji: "目{め}上{うえ}",
+        english: "Superior・Elder person",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "目{め}下{した}",
+        english: "Subordinate・Junior person",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "おじぎ［する］",
+        english: "Bow・To bow",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+      {
+        kanji: "長{ちょう}所{しょ}",
+        english: "Strength・Strong point",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "短{たん}所{しょ}",
+        english: "Weakness・Weak point",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `My eldest daughter is sassy, but when meeting older people, she bows. That's her strong point.`,
+    audio: "T140.mp3",
+    topic: MiniStoryTopics.SOCIAL_LIFE,
+    page: 106,
+  },
+  "141": {
+    id: "141",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "中学生の<姪{めい}>とは<仲{なか}>がいい。。日{ひ}が<暮{く}れたら>3年<ぶり>に<花{はな}火{び}>をしうと約{やく}束{そく}した。しかし、ライターを<切{き}らして>いて、できなかった。私は「<すまない>ね」と謝{あやま}った。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "姪{めい}",
+        english: "Niece",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "甥{おい}",
+        english: "Nephew",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "仲{なか}",
+        english: "Relationship",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "暮{く}れる",
+        english: "To get dark・To end",
+        type: MiniStoryWordType.ICHIDAN_INTRANSITIVE
+      },
+      {
+        kanji: "〜ぶり",
+        english: "In〜 (e.g. first time in 3 years)",
+        type: MiniStoryWordType.SUFFIX
+      },
+      {
+        kanji: "花{はな}火{び}",
+        english: "Fireworks",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "切{き}らす",
+        english: "To run out of",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+      {
+        kanji: "すまない",
+        english: "I'm sorry・Remorseful",
+        type: MiniStoryWordType.CLAUSE
+      },
+    ],
+    translation: `I'm close with my niece who is a junior high school student. When the sun went down, I promised to light some fireworks for the first time in three years. However, my lighter was empty and I couldn't light them. I told her I was sorry.`,
+    audio: "T141.mp3",
+    topic: MiniStoryTopics.SOCIAL_LIFE,
+    page: 106,
+  },
+  "142": {
+    id: "142",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "田中先生の研{けん}究{きゅう}室{しつ}を<ノックした>が、留{る}守{す}のようだ。今日は大学を<お休{やす}みになって>いるのかもしれない。<伝{でん}言{ごん}>メモに、「<お目{め}にかかって>、先生の本{ほん}を<拝{はい}見{けん}したい>と思っています。明日また<訪{たず}ねます>」と書{か}いた。<氏{し}名{めい}>を書{か}くのも忘れなかった。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "ノック［する］",
+        english: "Knock・To knock",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "お休{やす}みになる",
+        english: "To be absent",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE
+      },
+      {
+        kanji: "伝{でん}言{ごん}［する］",
+        english: "Message・To leave a message",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "お目{め}にかかる",
+        english: "To meet (humbly)",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE
+      },
+      {
+        kanji: "拝{はい}見{けん}［する］",
+        english: "Seeing・To see (humbly)",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "訪{たず}ねる",
+        english: "To visit",
+        type: MiniStoryWordType.ICHIDAN_TRANSITIVE
+      },
+      {
+        kanji: "氏{し}名{めい}",
+        english: "Name (full name)",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `I knocked (on the door of) Tanaka-sensei's laboratory, but it seemed that no one was there. He may be absent from university today. On a memo, I wrote, "I would like to meet with you and see your book. I will come by again tomorrow." I also did not forget to write my name.`,
+    audio: "T142.mp3",
+    topic: MiniStoryTopics.SOCIAL_LIFE,
+    page: 107,
+  },
+  "143": {
+    id: "143",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "彼は<信{しん}じられる><人{にん}間{げん}>だ。<秘{ひ}密{みつ}>を守{まも}り、<離{はな}れて>いても<頼{たの}み>を聞{き}いてくれる。彼はみんなから<尊{そん}敬{けい}されて>いる。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "信{しん}じる",
+        english: "To believe・To trust",
+        type: MiniStoryWordType.ICHIDAN_TRANSITIVE
+      },
+      {
+        kanji: "人{にん}間{げん}",
+        english: "Human being",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "秘{ひ}密{みつ}",
+        english: "Secret",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "離{はな}れる",
+        english: "To separate・To leave",
+        type: MiniStoryWordType.ICHIDAN_INTRANSITIVE
+      },
+      {
+        kanji: "頼{たの}み",
+        english: "Favor・Request",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "尊{そん}敬{けい}［する］",
+        english: "Respect・To respect",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+    ],
+    translation: `He is a person people trust. He keeps secrets and listens to your favors even when he's away. He is respected by everyone.`,
+    audio: "T143.mp3",
+    topic: MiniStoryTopics.SOCIAL_LIFE,
+    page: 108,
+  },
+  "144": {
+    id: "144",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<知{し}り合{あ}い>は、私の友人を<バーベキュー>に<誘{さそ}う><ついでに>、私を誘{さそ}った。私が「用{よう}事{じ}があって」と<断{ことわ}ったら>、グループチャットから<外{はず}された>。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "知{し}り合{あ}い",
+        english: "Acquaintance",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "知{し}り合{あ}う",
+        english: "To get to know someone",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE
+      },
+      {
+        kanji: "バーベキュー",
+        english: "Barbecue",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "誘{さそ}う",
+        english: "To invite",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+      {
+        kanji: "誘{さそ}い",
+        english: "Invitation",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "ついでに",
+        english: "At the same time・While you're at it",
+        type: MiniStoryWordType.ADVERB
+      },
+      {
+        kanji: "断{ことわ}る",
+        english: "To refuse",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+      {
+        kanji: "外{はず}す",
+        english: "To remove・To take off",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+    ],
+    translation: `An acquaintance invited my friend to barbecue and invited me as well. When I refused saying "I have some errands to do” I was removed from the group chat.`,
+    audio: "T144.mp3",
+    topic: MiniStoryTopics.SOCIAL_LIFE,
+    page: 108,
+  },
+  "145": {
+    id: "145",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<彼{かの}女{じょ}>は<デート>中{ちゅう}、ずっと<不{ふ}機{き}嫌{げん}で>、<話{はな}しかけても><黙{だま}って>いるので、全{ぜん}然{ぜん}<楽{たの}しめなかった>。その後{ご}、彼{かの}女{じょ}との関{かん}係{けい}は自{し}然{ぜん}と<切{き}れた>。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "彼{かの}女{じょ}",
+        english: "She・girlfriend",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "彼{かれ}（氏{し}）",
+        english: "He・boyfriend",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "デート［する］",
+        english: "Date・To date",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+      {
+        kanji: "不{ふ}機{き}嫌{げん}な",
+        english: "In a bad mood・Irritable",
+        type: MiniStoryWordType.ADJECTIVE_NA
+      },
+      {
+        kanji: "話{はな}しかける",
+        english: "To talk to someone",
+        type: MiniStoryWordType.ICHIDAN_INTRANSITIVE
+      },
+      {
+        kanji: "黙{だま}る",
+        english: "To be silent",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE
+      },
+      {
+        kanji: "楽{たの}しむ",
+        english: "To enjoy・To have fun",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+      {
+        kanji: "切{き}れる",
+        english: "To be ended・To be severed",
+        type: MiniStoryWordType.ICHIDAN_INTRANSITIVE
+      },
+    ],
+    translation: `During our date, she was in a bad mood the whole time, staying silent even when I tried to talk to her, so I wasn't able to enjoy it at all. After that, my relationship with her organically ended.`,
+    audio: "T145.mp3",
+    topic: MiniStoryTopics.SOCIAL_LIFE,
+    page: 109,
+  },
+  "146": {
+    id: "146",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<卓{たっ}球{きゅう}>の<団{だん}体{たい}><戦{せん}>が行{おこな}われて、中国が3<対{たい}>2で日本に勝{しょう}利{り}した。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "卓{たっ}球{きゅう}",
+        english: "Table tennis",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "団{だん}体{たい}",
+        english: "Team・Group",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "〜戦{せん}",
+        english: "Match・Game (suffix for competitions)",
+        type: MiniStoryWordType.SUFFIX
+      },
+      {
+        kanji: "〜対{たい}〜",
+        english: "Match-up・Versus (e.g. A vs B)",
+        type: MiniStoryWordType.SUFFIX
+      },
+    ],
+    translation: `A table tennis team competition was held, and China won over Japan 3 to 2.`,
+    audio: "T146.mp3",
+    topic: MiniStoryTopics.SPORTS,
+    page: 112,
+  },
+  "147": {
+    id: "147",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<オリンピック>の<開{かい}会{かい}>式{しき}の<入{にゅう}場{じょう}><券{けん}>が抽{ちゅう}選{せん}で<当{あ}たった>。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "オリンピック",
+        english: "Olympics",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "開{かい}会{かい}［する］",
+        english: "Opening ceremony・To have an opening ceremony",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "閉{へい}会{かい}［する］",
+        english: "Closing ceremony・To have a closing ceremony",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "入{にゅう}場{じょう}［する］",
+        english: "Entrance・To enter (a venue)",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+      {
+        kanji: "退{たい}場{じょう}［する］",
+        english: "Leaving・To leave (a venue)",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "券{けん}",
+        english: "Ticket",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "チケット",
+        english: "Ticket",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "当{あ}たる",
+        english: "To hit・To win (a lottery)",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE
+      },
+    ],
+    translation: `I won the lottery for tickets for the Olympic Opening Ceremony.`,
+    audio: "T147.mp3",
+    topic: MiniStoryTopics.SPORTS,
+    page: 112,
+  },
+  "148": {
+    id: "148",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "あの有名な水{すい}泳{えい}<選{せん}手{しゅ}>も、子供の頃{ころ}、<浅{あさ}い>川で<溺{おぼ}れた>ことがあるらしい。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "選{せん}手{しゅ}",
+        english: "Athlete・Player",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "浅{あさ}い",
+        english: "Shallow",
+        type: MiniStoryWordType.ADJECTIVE_I
+      },
+      {
+        kanji: "溺{おぼ}れる",
+        english: "To drown・To be lost in",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE
+      },
+    ],
+    translation: `Even that famous swimmer once (almost) drowned in a river as a child.`,
+    audio: "T148.mp3",
+    topic: MiniStoryTopics.SPORTS,
+    page: 113,
+  },
+  "149": {
+    id: "149",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<グラウンド>から<派{は}手{で}な><応{おう}援{えん}><歌{か}>や選{せん}手{しゅ}の<叫{さけ}ぶ>声{ごえ}が<盛{さか}んに>聞{き}こえてくる。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "グラウンド",
+        english: "Field (of play)・Ground",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "派{は}手{で}な",
+        english: "Loud・Flashy",
+        type: MiniStoryWordType.ADJECTIVE_NA
+      },
+      {
+        kanji: "応{おう}援{えん}［する］",
+        english: "Cheering・To cheer",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "～歌{か}",
+        english: "Song (suffix)",
+        type: MiniStoryWordType.SUFFIX
+      },
+      {
+        kanji: "叫{さけ}ぶ",
+        english: "To shout・To yell",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE
+      },
+      {
+        kanji: "盛{さか}んな",
+        english: "Frequent・Active・Energetic",
+        type: MiniStoryWordType.ADJECTIVE_NA
+      },
+    ],
+    translation: `From the field, loud cheers and the shouts of the players can be actively heard frequently.`,
+    audio: "T149.mp3",
+    topic: MiniStoryTopics.SPORTS,
+    page: 113,
+  },
+  "150": {
+    id: "150",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<マラソン><コース>の<両{りょう}側{がわ}>に<ロープ>が張{は}られ、道{どう}路{ろ}の<中{ちゅう}央{おう}>を走るようになっている。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "マラソン",
+        english: "Marathon",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "コース",
+        english: "Course・Route",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "両{りょう}側{がわ}",
+        english: "Both sides",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "ロープ",
+        english: "Rope",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "中{ちゅう}央{おう}",
+        english: "Center・Middle",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `Rope is put on both sides of the marathon course, and people are supposed to run in the center of the road.`,
+    audio: "T150.mp3",
+    topic: MiniStoryTopics.SPORTS,
+    page: 114,
+  },
+  "151": {
+    id: "151",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "どんなに<才{さい}能{のう}>がある選{せん}手{しゅ}でも、<トレーニング>を続{つづ}けなければ、<記{き}録{ろく}>を<伸{の}ばす>ことはできない。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "才{さい}能{のう}",
+        english: "Talent",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "トレーニング［する］",
+        english: "Training・To train",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+      {
+        kanji: "記{き}録{ろく}［する］",
+        english: "Record・To record",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "伸{の}ばす",
+        english: "To improve・To extend・To stretch",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+      {
+        kanji: "伸{の}びる",
+        english: "To be extended・To be stretched",
+        type: MiniStoryWordType.ICHIDAN_INTRANSITIVE
+      },
+    ],
+    translation: `No matter how talented athletes may be, if they do not continue training, they won't be able to improve their records.`,
+    audio: "T151.mp3",
+    topic: MiniStoryTopics.SPORTS,
+    page: 114,
+  },
+  "152": {
+    id: "152",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "サッカーの世{せ}界{かい}一{いち}を決{き}める<大{たい}会{かい}>がカリフォルニア<州{しゅう}>ロサンゼルスでで行{おこな}われていて、多くの人が<注{ちゅう}目{もく}して>いる。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "大{たい}会{かい}",
+        english: "Tournament",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "州{しゅう}",
+        english: "State (of the US)",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "注{ちゅう}目{もく}［する］",
+        english: "Attention・To pay attention",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+    ],
+    translation: `A tournament that determines the best in the world of soccer will be held in Los Angeles, California, and many people are paying attention to it.`,
+    audio: "T152.mp3",
+    topic: MiniStoryTopics.SPORTS,
+    page: 115,
+  },
+  "153": {
+    id: "153",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<オリンピック>で<体{たい}操{そう}>の日本<代{だい}表{ひょう}>が<金{きん}>、<銀{ぎん}>、銅{どう}の表{ひょう}彰{しょう}<台{だい}>を<独{どく}占{せん}した>。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "体{たい}操{そう}［する］",
+        english: "Gymnastics・To do gymnastics",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+      {
+        kanji: "代{だい}表{ひょう}［する］",
+        english: "Representation・To represent",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "金{きん}",
+        english: "Gold",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "金{きん}色{いろ}",
+        english: "Golden color",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "銀{ぎん}",
+        english: "Silver",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "銀{ぎん}色{いろ}",
+        english: "Silver color",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "〜台{だい}",
+        english: "〜Stand・Podium (suffix for ranking)",
+        type: MiniStoryWordType.SUFFIX
+      },
+      {
+        kanji: "独{どく}占{せん}［する］",
+        english: "Monopoly・To monopolize",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+    ],
+    translation: `The Japanese national representative in gymnastics at the Olympics monopolized the gold, silver and bronze podium.`,
+    audio: "T153.mp3",
+    topic: MiniStoryTopics.SPORTS,
+    page: 115,
+  },
+  "154": {
+    id: "154",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<体{たい}育{いく}>の授{じゅ}業{ぎょう}でバレーボールをやった。1<セット>目{め}は<点{てん}>を取{と}ることができたが、その後{あと}は一{いっ}方{ぽう}的{てき}に負{ま}けてしまた。試{し}合{あい}の後{ご}、<両{りょう}>チームが<握{あく}手{しゅ}>した。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "体{たい}育{いく}",
+        english: "Physical education",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "体{たい}育{いく}館{かん}",
+        english: "Gymnasium",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "〜セット",
+        english: "〜Set (suffix for sets in sports)",
+        type: MiniStoryWordType.SUFFIX
+      },
+      {
+        kanji: "点{てん}",
+        english: "Point",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "両{りょう}～",
+        english: "Both～",
+        type: MiniStoryWordType.PREFIX
+      },
+      {
+        kanji: "握{あく}手{しゅ}［する］",
+        english: "Handshake・To shake hands",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+    ],
+    translation: `We played volleyball in my physical education class. We scored some points in the first set, but after that, we lost one-sidedly. After the game, both teams shook hands.`,
+    audio: "T154.mp3",
+    topic: MiniStoryTopics.SPORTS,
+    page: 116,
+  },
+  "155": {
+    id: "155",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "雨で中止の場合でも、大{たい}会{かい}<当{とう}日{じつ}>にチケット代{だい}を<払{はら}い戻{もど}す>ことはできません。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "当{とう}日{じつ}",
+        english: "The actual day of",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.ADVERB]
+      },
+      {
+        kanji: "当{とう}日{じつ}券{けん}",
+        english: "Same-day ticket",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "払{はら}い戻{もど}す",
+        english: "To refund",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+    ],
+    translation: `Even in the event of cancellation due to rainy weather, you will not be able to get a refund for ticket fees on the day of the tournament.`,
+    audio: "T155.mp3",
+    topic: MiniStoryTopics.SPORTS,
+    page: 116,
+  },
+  "156": {
+    id: "156",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "球{きゅう}場{じょう}では多くの観{かん}客{きゃく}がグローブを手{て}に<はめ>、ホームランのボールを捕{と}ろうとしている。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "はめる",
+        english: "To fit (something) into (something)",
+        type: MiniStoryWordType.ICHIDAN_TRANSITIVE
+      },
+      {
+        kanji: "ボール",
+        english: "Ball",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "球{たま}",
+        english: "Ball",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "捕{と}る",
+        english: "To catch・To take",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+    ],
+    translation: `In the stadium, many spectators have gloves on their hands and are trying to catch home run balls.`,
+    audio: "T156.mp3",
+    topic: MiniStoryTopics.SPORTS,
+    page: 117,
+  },
+  "157": {
+    id: "157",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "マラソン選{せん}手{しゅ}が1<着{ちゃく}>で<ゴールする><姿{すがた}>を見て<感{かん}動{どう}した>。<たまたま><録{ろく}画{が}して>いたので何{なん}度{ど}も見た。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "～着{ちゃく}",
+        english: "～Place (suffix for ranking)",
+        type: MiniStoryWordType.SUFFIX
+      },
+      {
+        kanji: "ゴール［する］",
+        english: "Goal・To reach the goal",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE]
+      },
+      {
+        kanji: "姿{すがた}",
+        english: "Figure・Appearance",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "感{かん}動{どう}［する］",
+        english: "Emotion・To be moved",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE]
+      },
+      {
+        kanji: "たまたま",
+        english: "Just happened to・By chance",
+        type: MiniStoryWordType.ADVERB
+      },
+      {
+        kanji: "録{ろく}画{が}［する］",
+        english: "Recording・To record",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE]
+      },
+    ],
+    translation: `I was moved seeing the marathon runner cross the goal in first place. I just happened to record it, so I watched it again and again.`,
+    audio: "T157.mp3",
+    topic: MiniStoryTopics.SPORTS,
+    page: 117,
+  },
+  "158": {
+    id: "158",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "柔{じゅう}道{どう}の48キロ<級{きゅう}>の日本選手が試{し}合{あい}中{ちゅう}に<肩{かた}>を<負{ふ}傷{しょう}した>が、見{み}事{ごと}に金{きん}<メダル>を<獲{かく}得{とく}した>。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "～級{きゅう}",
+        english: "Class",
+        type: MiniStoryWordType.SUFFIX
+      },
+      {
+        kanji: "肩{かた}",
+        english: "Shoulder",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "負{ふ}傷{しょう}［する］",
+        english: "Injury・To be injured",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE]
+      },
+      {
+        kanji: "メダル",
+        english: "Medal",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "獲{かく}得{とく}［する］",
+        english: "Acquisition・To acquire",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE]
+      },
+    ],
+    translation: `Judo's 48 kg-class Japanese athlete injured their shoulders during the match but still impressively won a gold medal.`,
+    audio: "T158.mp3",
+    topic: MiniStoryTopics.SPORTS,
+    page: 118,
+  },
+  "159": {
+    id: "159",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "私は<ランニング>が<苦{にが}手{て}だ>。しかし<コーチ>が、ランニングの<効{こう}果{か}>は大きいと言ったので、走{はし}り続{つづ}けている。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "ランニング［する］",
+        english: "Running・To run",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE]
+      },
+      {
+        kanji: "苦{にが}手{て}な",
+        english: "Poor at・Weak in・Not good at",
+        type: MiniStoryWordType.ADJECTIVE_NA
+      },
+      {
+        kanji: "コーチ",
+        english: "Coach",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "効{こう}果{か}",
+        english: "Effect・Effectiveness",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `I'm no good at running. But my coach said that my running results were significant, so I keep running.`,
+    audio: "T159.mp3",
+    topic: MiniStoryTopics.SPORTS,
+    page: 118,
+  },
+  "160": {
+    id: "160",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "フリーキックの<天{てん}才{さい}>と呼{よ}ばれる選手がボールを<蹴{け}った>。右{みぎ}に大きく<曲{ま}げよう>としたが、<回{かい}転{てん}しなかった>ので、まっすぐ飛{と}んでいってしまった。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "天{てん}才{さい}",
+        english: "Genius",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "蹴{け}る",
+        english: "To kick",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+      {
+        kanji: "曲{ま}げる",
+        english: "To curve・To bend",
+        type: MiniStoryWordType.ICHIDAN_TRANSITIVE
+      },
+      {
+        kanji: "回{かい}転{てん}［する］",
+        english: "Rotation・To rotate",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE]
+      },
+    ],
+    translation: `The player called the free kick genius kicked the ball. She tried to curve the ball wide to the right, but the ball didn't spin, so it flew straight.`,
+    audio: "T160.mp3",
+    topic: MiniStoryTopics.SPORTS,
+    page: 119,
+  },
+  "161": {
+    id: "161",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "手{て}続{つづ}きに<ミス>があって、予{よ}算{さん}が<カットされて>しまい。<次{じ}回{かい}>の大{たい}会{かい}に<出{しゅつ}場{じょう}できなく>なってしまった。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "ミス［する］",
+        english: "Mistake・To make a mistake",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE]
+      },
+      {
+        kanji: "カット［する］",
+        english: "Cut・To cut",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE]
+      },
+      {
+        kanji: "次{じ}回{かい}",
+        english: "Next time",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "出{しゅつ}場{じょう}［する］",
+        english: "Participation・To participate",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE]
+      },
+    ],
+    translation: `As there was a mistake in the procedure, the budget was cut and I will now no longer be able to participate in the next tournament.`,
+    audio: "T161.mp3",
+    topic: MiniStoryTopics.SPORTS,
+    page: 119,
+  },
+  "162": {
+    id: "162",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<プロ>野{や}球{きゅう}では、7回{かい}をラッキー7{セブン}と呼{よ}ぶ。ラッキー7{セブン}の<攻{こう}撃{げき}>前{まえ}には、<ファン>は<風{ふう}船{せん}>を飛{と}ばしたり、<ビニール>傘{かさ}を使って応{おう}援{えん}したりする。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "プロ",
+        english: "Professional",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "攻{こう}撃{げき}［する］",
+        english: "Attack・To attack",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE]
+      },
+      {
+        kanji: "ファン",
+        english: "Fan",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "風{ふう}船{せん}",
+        english: "Balloon",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "ビニール",
+        english: "Vinyl",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "ビニール袋{ぶくろ}",
+        english: "Plastic bag",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `In professional baseball, the seventh inning is called lucky 7. Before their team goes to bat in the lucky 7, fans will do things like let loose balloons or cheer using vinyl umbrellas.`,
+    audio: "T162.mp3",
+    topic: MiniStoryTopics.SPORTS,
+    page: 120,
+  },
+  "163": {
+    id: "163",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<相{す}撲{もう}>は<ルール>が簡{かん}単{たん}だ。<それに><結{けっ}果{か}>が分かりやすいので、人気がある。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "相{す}撲{もう}",
+        english: "Sumo wrestling",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "ルール",
+        english: "Rules",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "それに",
+        english: "In addition",
+        type: MiniStoryWordType.CONJUNCTION
+      },
+      {
+        kanji: "結{けっ}果{か}",
+        english: "Result",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `The rules of sumo wrestling are simple. In addition, the results are easy to understand, so it's popular.`,
+    audio: "T163.mp3",
+    topic: MiniStoryTopics.SPORTS,
+    page: 120,
+  },
+  "164": {
+    id: "164",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "ポールを<追{お}った>選手同{どう}士{し}がかなりの<スピード>でぶつかった。ぶつかった脚{あし}はすぐに<動{うご}かさず>、<スプレー>をかけて冷{ひ}やし、様{よう}子{す}を見た。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "追{お}う",
+        english: "to chase",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+      {
+        kanji: "スピード",
+        english: "speed",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "動{うご}かす",
+        english: "to move",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+      {
+        kanji: "スプレー",
+        english: "spray",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `The players who were chasing the ball collided at a considerable speed. They kept their legs that had collided still, and they sprayed them to cool them and waited to see how things turned out.`,
+    audio: "T164.mp3",
+    topic: MiniStoryTopics.SPORTS,
+    page: 121,
+  },
+  "165": {
+    id: "165",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "全{まった}く<点{てん}数{すう}>が入{はい}らず、選手は汗{あせ}ばかり<かいて>いる。こんなときは<ベンチ>からの指{し}示{じ}が重{じゅう}要{よう}となる。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "点{てん}数{すう}",
+        english: "Score",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "かく",
+        english: "To perspire・To sweat",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+      {
+        kanji: "ベンチ",
+        english: "Bench",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `No one is scoring, and the players are covered in sweat. In cases like this, giving instructions from the bench is important.`,
+    audio: "T165.mp3",
+    topic: MiniStoryTopics.SPORTS,
+    page: 121,
+  },
+  "166": {
+    id: "166",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<リーダー>が<本{ほん}気{き}に>なった。<講{こう}習{しゅう}>に<申{もう}し込{こ}んで><競{きょう}争{そう}><力{りょく}>を高{たか}めようとしている。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "リーダー",
+        english: "Leader",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "本{ほん}気{き}な",
+        english: "Serious",
+        type: MiniStoryWordType.ADJECTIVE_NA
+      },
+      {
+        kanji: "講{こう}習{しゅう}",
+        english: "Lecture・Course",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "申{もう}し込{こ}む",
+        english: "To apply",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+      {
+        kanji: "申{もう}し込{こ}み",
+        english: "Application",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "競{きょう}争{そう}［する］",
+        english: "Competition・To compete",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+      {
+        kanji: "〜カ{りょく}",
+        english: "〜ability",
+        type: MiniStoryWordType.SUFFIX
+      },
+    ],
+    translation: `The leader became serious. She is applying for courses and trying to increase her competitiveness.`,
+    audio: "T166.mp3",
+    topic: MiniStoryTopics.SPORTS,
+    page: 122,
+  },
+  "167": {
+    id: "167",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "今回は予{よ}想{そう}が外{はず}れ、<優{ゆう}勝{しょう}した><チーム>を<当{あ}てる>ことができなかった。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "優{ゆう}勝{しょう}［する］",
+        english: "Victory・To win a championship",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "チーム",
+        english: "Team",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "当{あ}てる",
+        english: "To hit・To guess",
+        type: MiniStoryWordType.ICHIDAN_TRANSITIVE
+      },
+    ],
+    translation: `This time, my expectations were wrong, and I was unable to guess the winning team.`,
+    audio: "T167.mp3",
+    topic: MiniStoryTopics.SPORTS,
+    page: 122,
+  },
+  "168": {
+    id: "168",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<会{かい}費{ひ}>を支{し}払{はら}うことで、有{ゆう}名{めい}なサッカーチームのファン<クラブ>に<参{さん}加{か}する>ことができる。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "会{かい}費{ひ}",
+        english: "Membership fee",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "クラブ",
+        english: "Club",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "参{さん}加{か}［する］",
+        english: "Participation・To participate",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+    ],
+    translation: `By paying the membership fee, you can participate in the famous football team fan club.`,
+    audio: "T168.mp3",
+    topic: MiniStoryTopics.SPORTS,
+    page: 123,
+  },
+  "169": {
+    id: "169",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "この<金{きん}属{ぞく}>の棒{ぼう}は何をするためのものですか。",
+      },
+      {
+        character: "B",
+        dialogue: "ああ、これは動物の体{たい}重{じゅう}を<確{かく}認{にん}>するためのものですよ。",
+      },
+      {
+        character: "A",
+        dialogue: "へえ～、これで測{はか}るんですね。",
+      },
+      {
+        character: "B",
+        dialogue: "あとで園{えん}長{ちょう}に<許{きょ}可{か}>をもらったら、試{ため}しに使ってみましょうか。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "金{きん}属{ぞく}",
+        english: "Metal",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "確{かく}認{にん}［する］",
+        english: "Confirmation・To confirm",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "許{きょ}可{か}［する］",
+        english: "Permission・To permit",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+    ],
+    translation: `A: What does this metal pole do?\nB: Oh, this is to check the weight of animals.\nA: Wow, you measure that with this.\nB: If we get permission from the head of the zoo later, why don't we try using it?`,
+    audio: "T169.mp3",
+    topic: MiniStoryTopics.ANIMALS,
+    page: 126,
+  },
+  "170": {
+    id: "170",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "あのおじいさんは毎朝<釣{つ}り>に行く前に必ずこの公園に来て、7<羽{わ}>の鳩{はと}に<バケツ>いっぱいの<豆{まめ}>を<やる>ことを日{にっ}課{か}にしている。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "釣{つ}り",
+        english: "Fishing",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "釣{つ}る",
+        english: "To fish",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+      {
+        kanji: "～羽{わ}",
+        english: "Counter for birds",
+        type: MiniStoryWordType.SUFFIX
+      },
+      {
+        kanji: "バケツ",
+        english: "Bucket",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "豆{まめ}",
+        english: "Beans",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "やる",
+        english: "To do・To give (to pets, plants, etc.)",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+    ],
+    translation: `Every morning, that old man always comes to this park before going fishing, and his daily routine is to give seven pigeons a whole bucket of beans.`,
+    audio: "T170.mp3",
+    topic: MiniStoryTopics.ANIMALS,
+    page: 126,
+  },
+  "171": {
+    id: "171",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "小{しょう}動{どう}物{ぶつ}<館{かん}>が休{きゅう}館{かん}になってましたが、<なんで>でしょうかね。",
+      },
+      {
+        character: "B",
+        dialogue: "ああ、リスに続{つづ}いて、昨{さく}夜{や}、うさぎが死んでしまったみたいです。",
+      },
+      {
+        character: "A",
+        dialogue: "そうですか。みんなで<かわいがって>いたのに、残{ざん}念{ねん}ですね。つらいことは<重{かさ}なる>ものですね。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "～館{かん}",
+        english: "～Building",
+        type: MiniStoryWordType.SUFFIX
+      },
+      {
+        kanji: "なんで",
+        english: "Why",
+        type: MiniStoryWordType.ADVERB
+      },
+      {
+        kanji: "かわいがる",
+        english: "Adore・To be affectionate towards",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+      {
+        kanji: "重{かさ}なる",
+        english: "Overlap・To pile up・To happen one after another",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE
+      },
+      {
+        kanji: "重{かさ}ねる",
+        english: "To pile up・To stack",
+        type: MiniStoryWordType.ICHIDAN_TRANSITIVE
+      },
+    ],
+    translation: `A: The small animal building is closed, but I wonder why.\nB: Oh, I heard that a rabbit died last night followed by a squirrel.\nA: Really? That's a pity, since they were so adored by everyone. Bad things tend to happen one after the other.`,
+    audio: "T171.mp3",
+    topic: MiniStoryTopics.ANIMALS,
+    page: 127,
+  },
+  "172": {
+    id: "172",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "見て見て、あの<猿{さる}>、ちっちゃい<枕{まくら}>を<抱{だ}いて>る。",
+      },
+      {
+        character: "B",
+        dialogue: "そうそう、寝るときに枕{まくら}を使うから、「ピロー」って名前らしいよ。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "猿{さる}",
+        english: "Monkey",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "枕{まくら}",
+        english: "Pillow",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "抱{だ}く",
+        english: "To carry・To hold (in arms)",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+    ],
+    translation: `A: Look, look. That monkey is carrying a tiny pillow.\nB: Yeah, it uses a pillow when it goes to sleep, so they named it Pillow.`,
+    audio: "T172.mp3",
+    topic: MiniStoryTopics.ANIMALS,
+    page: 127,
+  },
+  "173": {
+    id: "173",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: " あの<からす>、ずっとあの<枝{えだ}>の上で<じっとして>いるね。",
+      },
+      {
+        character: "B",
+        dialogue: "ははは、あれ<本{ほん}物{もの}>じゃないよ。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "からす",
+        english: "Crow",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "枝{えだ}",
+        english: "Branch",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "じっとする",
+        english: "To sit still",
+        type: MiniStoryWordType.IRREGULAR_INTRANSITIVE
+      },
+      {
+        kanji: "本{ほん}物{もの}",
+        english: "Real thing",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `A: That crow has been sitting still on that branch for a while.\nB: Hahaha, it's not real.`,
+    audio: "T173.mp3",
+    topic: MiniStoryTopics.ANIMALS,
+    page: 128,
+  },
+  "174": {
+    id: "174",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "息{むす}子{こ}さん、<成{せい}長{ちょう}した>ね。そのうち、お父さんの背{せ}も<追{お}い越{こ}し>そうね。",
+      },
+      {
+        character: "B",
+        dialogue: "そうなの。ちょっと前までは子どもだったのに、そのうち就{しゅう}職{しょく}や結{けっ}婚{こん}で家{いえ}を出{で}る日{ひ}が来{く}るなんて、想{そう}像{ぞう}するだけで<過{おそ}ろしい>わ。",
+      },
+      {
+        character: "A",
+        dialogue: "あはは。<冗{じょう}談{だん}>でしょ。かわいい子には旅{たび}をさせろって言{い}うじゃない。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "成{せい}長{ちょう}［する］",
+        english: "Growth・To grow",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE]
+      },
+      {
+        kanji: "追{お}い越{こ}す",
+        english: "To be more than・Overtake",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+      {
+        kanji: "恐{おそ}ろしい",
+        english: "Terrible",
+        type: MiniStoryWordType.ADJECTIVE_I
+      },
+      {
+        kanji: "冗{じょう}談{だん}",
+        english: "Joke",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "ジョーク",
+        english: "Joke",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `A: Your son has grown. Pretty soon, he'll be even taller than his father.\nB: That's right. Though he was a child up until recently, now just thinking about the fact that he'll soon have to leave the house to find work and get married is terrifying.\nA: Ahaha. You're joking, right? Don't they say, if you love something, you have to let it go?`,
+    audio: "T174.mp3",
+    topic: MiniStoryTopics.ANIMALS,
+    page: 128,
+  },
+  "175": {
+    id: "175",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<生{せい}物{ぶつ}>の授{じゅ}業{ぎょう}で、<真{ま}っ赤{か}な>羽{はね}に黒{くろ}い<模{も}様{よう}>がある<虫{むし}>を観{かん}察{さつ}した。虫は苦手だったが、いろんな<特{とく}徴{ちょう}>をノートにまとめる作{さ}業{ぎょう}が面{おも}白{しろ}くて、いつの間{ま}にか好きに<なって>いた。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "生{せい}物{ぶつ}",
+        english: "Biology・Living things",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "真{ま}っ赤{か}な",
+        english: "Deep red",
+        type: MiniStoryWordType.ADJECTIVE_NA
+      },
+      {
+        kanji: "真{ま}っ青{さお}な",
+        english: "Deep blue",
+        type: MiniStoryWordType.ADJECTIVE_NA
+      },
+      {
+        kanji: "模{も}様{よう}",
+        english: "Pattern",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "水{みず}玉{たま}模{も}様{よう}",
+        english: "Polka dot pattern",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "虫{むし}",
+        english: "Insect",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "特{とく}徴{ちょう}",
+        english: "Characteristic",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "なる",
+        english: "To become",
+        type: MiniStoryWordType.IRREGULAR_INTRANSITIVE
+      },
+    ],
+    translation: `In biology class, we observed an insect that had deep red wings with a black pattern. I was no good with insects, but it was interesting to write down their various characteristics in our notes and I soon came to like them.`,
+    audio: "T175.mp3",
+    topic: MiniStoryTopics.ANIMALS,
+    page: 129,
+  },
+  "176": {
+    id: "176",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "私は<植{しょく}物{ぶつ}>を見るのは好きだが育{そだ}てるのは苦手だ。この間{あいだ}も、水をやるのを忘れてしまって、観{かん}葉{よう}植{しょく}物{ぶつ}がすっかり<枯{か}れて>しまった。<かわいそうな>ことをした。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "植{しょく}物{ぶつ}",
+        english: "Plant",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "枯{か}れる",
+        english: "To wither",
+        type: MiniStoryWordType.ICHIDAN_INTRANSITIVE
+      },
+      {
+        kanji: "かわいそうな",
+        english: "Poor thing・Pitiful",
+        type: MiniStoryWordType.ADJECTIVE_NA
+      },
+    ],
+    translation: `I like to look at plants, but I'm not good at raising them. Just a while back, I forgot to water my houseplant, and it completely withered away. That poor thing.`,
+    audio: "T176.mp3",
+    topic: MiniStoryTopics.ANIMALS,
+    page: 130,
+  },
+  "177": {
+    id: "177",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "動物を<飼{か}う>ことは<命{いのち}>を預{あず}かることである。最{さい}後{ご}まで<責{せき}任{にん}>を持って<育{そだ}て>ることができない人に動物を飼{か}う資{し}格{かく}はない。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "飼{か}う",
+        english: "To own (a pet)",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+      {
+        kanji: "命{いのち}",
+        english: "Life",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "責{せき}任{にん}",
+        english: "Responsibility",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "責{せき}任{にん}者{しゃ}",
+        english: "Person responsible",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "育{そだ}てる",
+        english: "To raise (a child/pet)",
+        type: MiniStoryWordType.ICHIDAN_TRANSITIVE
+      },
+      {
+        kanji: "育{そだ}つ",
+        english: "To be raised",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE
+      },
+    ],
+    translation: `Owning an animal means being responsible for a life. People who cannot responsibly raise one to the very end are not qualified to own an animal.`,
+    audio: "T177.mp3",
+    topic: MiniStoryTopics.ANIMALS,
+    page: 130,
+  },
+  "178": {
+    id: "178",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "日本は、世界の中でも<水{すい}族{ぞく}館{かん}>が多いことで有名だ。水{すい}族{ぞく}館{かん}ではたくさんの<種{しゅ}類{るい}>の魚{さかな}たちを見ることができるだけでなく、イルカのショーを見たり、ペンギンやサメに<餌{えさ}>をやることもできる。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "水{すい}族{ぞく}館{かん}",
+        english: "Aquarium",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "種{しゅ}類{るい}",
+        english: "Type・Kind",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "餌{えさ}",
+        english: "Feed",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `Japan is famous around the world for having many aquariums. At these aquariums, not only can you see many types of fish, but you can also watch dolphin shows and even feed penguins and sharks.`,
+    audio: "T178.mp3",
+    topic: MiniStoryTopics.ANIMALS,
+    page: 131,
+  },
+  "179": {
+    id: "179",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "わあ、部屋の中にカメムシがいる。",
+      },
+      {
+        character: "B",
+        dialogue: "つぶすと<臭{くさ}い>から、つぶさないように<ティッシュ>で<捕{つか}まえて>窓{まど}の外{そと}へ出{だ}して。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "臭{くさ}い",
+        english: "Stink・Odor",
+        type: MiniStoryWordType.ADJECTIVE_I
+      },
+      {
+        kanji: "ティッシュ（ペーパー）",
+        english: "Tissue (paper)",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "トイレットペーパー",
+        english: "Toilet paper",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "捕{つか}まえる",
+        english: "To catch",
+        type: MiniStoryWordType.ICHIDAN_TRANSITIVE
+      },
+      {
+        kanji: "捕{つか}まる",
+        english: "To be caught",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE
+      },
+    ],
+    translation: `A: Oh no, there's a stink bug in the room.\nB: Crushing it only makes it stink, so catch it with a tissue without crushing it and throw it out the window.`,
+    audio: "T179.mp3",
+    topic: MiniStoryTopics.ANIMALS,
+    page: 131,
+  },
+  "180": {
+    id: "180",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "どうしたんですか。大丈夫ですか。",
+      },
+      {
+        character: "B",
+        dialogue: "あ、すみません。<立{た}ち上{あ}がろう>とした<際{さい}>に、<突{とつ}然{ぜん}>目{め}の前が真{ま}っ暗{くら}になって……。",
+      },
+      {
+        character: "A",
+        dialogue: "えっと、まずはこの<平{たい}らな>ところに<そっと>座{すわ}ってください。ゆっくりでいいですよ。今、救{きゅう}急{きゅう}車{しゃ}呼{よ}びますね。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "立{た}ち上{あ}がる",
+        english: "To stand up",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE
+      },
+      {
+        kanji: "立{た}ち上{あ}げる",
+        english: "To build",
+        type: MiniStoryWordType.ICHIDAN_TRANSITIVE
+      },
+      {
+        kanji: "際{さい}",
+        english: "When・(In the) event・Occasion・Situation",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "突{とつ}然{ぜん}",
+        english: "Suddenly",
+        type: MiniStoryWordType.ADVERB
+      },
+      {
+        kanji: "平{たい}らな",
+        english: "Flat",
+        type: MiniStoryWordType.ADJECTIVE_NA
+      },
+      {
+        kanji: "そっと",
+        english: "Gently・Quietly",
+        type: MiniStoryWordType.ADVERB
+      },
+    ],
+    translation: `A: What happened? Are you okay?\nB: I'm sorry. I tried to stand up, and suddenly everything went black...\nA: Well, first please slowly sit down on this flat surface. Just take your time. I'll call an ambulance right now.`,
+    audio: "T180.mp3",
+    topic: MiniStoryTopics.ANIMALS,
+    page: 132,
+  },
+  "181": {
+    id: "181",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<天{てん}井{じょう}>にカビが<生{は}えて>いるのを<発{はっ}見{けん}して>、思{おも}わず大きな声を出{だ}してしまった。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "天{てん}井{じょう}",
+        english: "Ceiling",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "生{は}える",
+        english: "To grow",
+        type: MiniStoryWordType.ICHIDAN_INTRANSITIVE
+      },
+      {
+        kanji: "発{はっ}見{けん}［する］",
+        english: "To discover",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+    ],
+    translation: `I found mold on the ceiling, and unintentionally screamed loudly.`,
+    audio: "T181.mp3",
+    topic: MiniStoryTopics.ANIMALS,
+    page: 132,
+  },
+  "182": {
+    id: "182",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "隣{となり}の家の子は<おとなしい><性{せい}格{かく}>で、あまり<感{かん}情{じょう}的{てき}な>ところを見たことがない。だけど、私に気{き}がつくといつも<立{た}ち止{ど}まって><にっこりと>笑{わら}ってくれる。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "おとなしい",
+        english: "Gentle・Quiet",
+        type: MiniStoryWordType.ADJECTIVE_I
+      },
+      {
+        kanji: "性{せい}格{かく}",
+        english: "Personality",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "感{かん}情{じょう}的{てき}な",
+        english: "Emotional",
+        type: MiniStoryWordType.ADJECTIVE_NA
+      },
+      {
+        kanji: "感{かん}情{じょう}",
+        english: "Emotion",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "立{た}ち止{ど}まる",
+        english: "To stop (in place)",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE
+      },
+      {
+        kanji: "にっこり（と）",
+        english: "Sweetly・Grinningly・ With a smile",
+        type: MiniStoryWordType.ADVERB
+      },
+    ],
+    translation: `The child in the house next door has a gentle personality, and I haven't really seen them being that emotional. But whenever they notice me, they always stop and smile.`,
+    audio: "T182.mp3",
+    topic: MiniStoryTopics.ANIMALS,
+    page: 133,
+  },
+  "183": {
+    id: "183",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "見て見て。<象{ぞう}>の<親{おや}子{こ}>が鼻{はな}を合{あ}わせて遊{あそ}んでる。",
+      },
+      {
+        character: "B",
+        dialogue: "本当だ。自由に鼻{はな}を動{うご}かせるんだね。",
+      },
+      {
+        character: "A",
+        dialogue: "うん、象{ぞう}の鼻{はな}って<骨{ほね}>がないらしいよ。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "象{ぞう}",
+        english: "Elephant",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "親{おや}子{こ}",
+        english: "Parent and child",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "骨{ほね}",
+        english: "Bone",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `A: Look, look. Adult elephants and its child putting their noses together and playing.\nB: Oh, you're right. They can move their noses so freely,\nA: Yeah, I hear elephant's noses don't have any bones.`,
+    audio: "T183.mp3",
+    topic: MiniStoryTopics.ANIMALS,
+    page: 133,
+  },
+  "184": {
+    id: "184",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "毎朝、愛{あい}犬{けん}の毛{け}を<ブラシ>でとかして、<爪{つめ}>を切{き}っている。しっぽを<振{ふ}って>喜{よろこ}んでくれる姿{すがた}がとてもかわいく、<心{こころ}>が癒{いや}される。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "ブラシ",
+        english: "Brush",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "爪{つめ}",
+        english: "Nail",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "振{ふ}る",
+        english: "To wag・To shake",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+      {
+        kanji: "心{こころ}",
+        english: "Heart",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `Every morning, I brush my pet's dog hair with a brush and cut its nails. Seeing its tail wag in happiness is so cute, and it warms my heart.`,
+    audio: "T184.mp3",
+    topic: MiniStoryTopics.ANIMALS,
+    page: 134,
+  },
+  "185": {
+    id: "185",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<幼{よう}児{じ}>は集{しゅう}団{だん}生{せい}活{かつ}を通{とお}して、相手の気持ちを<理{り}解{かい}したり>、<仲{なか}間{ま}>を<助{たす}ける>ことを学{まな}ぶ。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "幼{よう}児{じ}",
+        english: "Toddler",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "理{り}解{かい}［する］",
+        english: "Understanding・To understand",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "仲{なか}間{ま}",
+        english: "Friend",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "助{たす}ける",
+        english: "To help・save",
+        type: MiniStoryWordType.ICHIDAN_TRANSITIVE
+      },
+      {
+        kanji: "助{たす}かる",
+        english: "To be helped・To be saved",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE
+      },
+    ],
+    translation: `Through communal living, toddlers learn to understand other people's feelings and how to help them.`,
+    audio: "T185.mp3",
+    topic: MiniStoryTopics.ANIMALS,
+    page: 134,
+  },
+  "186": {
+    id: "186",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "最近、犬{いぬ}を飼{か}いたいと思ってるんだけど。",
+      },
+      {
+        character: "B",
+        dialogue: "そうなんだ。<大{おお}型{がた}>犬{けん}と<小{こ}型{がた}>犬{けん}、どっち？",
+      },
+      {
+        character: "A",
+        dialogue: "うーん、育{そだ}てやすい方{ほう}がいいから小{こ}型{がた}犬{けん}かな。",
+      },
+      {
+        character: "B",
+        dialogue: "案{あん}外{がい}、<大{おお}型{がた}>犬{けん}の方{ほう}がおとなしくて育{そだ}てやく、小{こ}型{がた}犬{けん}の方{ほう}がよく<ほえる>らしいよ。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "大{おお}型{がた}",
+        english: "Large breed・Large size",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "小{こ}型{がた}",
+        english: "Small breed・Small size",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "ほえる",
+        english: "To bark",
+        type: MiniStoryWordType.ICHIDAN_INTRANSITIVE
+      },
+    ],
+    translation: `A: I've been thinking about getting a dog recently.\nB: Really? Which kind, a large dog or a small dog?\nA: Hmm, maybe a small dog since I prefer one that's easy to raise.\nB: Large dogs are actually surprisingly quieter and easy to raise, and I hear small dogs tend to bark more.`,
+    audio: "T186.mp3",
+    topic: MiniStoryTopics.ANIMALS,
+    page: 135,
   },
   "279": {
     id: "279",
