@@ -11,6 +11,7 @@ export const MiniStoryTopics = {
   SOCIAL_LIFE: "人づきあい",
   SPORTS: "スポーツ",
   ANIMALS: "動物",
+  CITIES: "市",
 } as const;
 
 // type MiniStoryTopic = typeof MiniStoryTopics[keyof typeof MiniStoryTopics];
@@ -7928,6 +7929,661 @@ export const MINI_STORY_N3: Record<string, MiniStory> = {
     audio: "T186.mp3",
     topic: MiniStoryTopics.ANIMALS,
     page: 135,
+  },
+  "187": {
+    id: "187",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "今住{す}んでいる<マンション>の<ベランダ>は南{みなみ}<向{む}き>で、<日{ひ}当{あ}たり>がいい。<和{わ}室{しつ}>だけではなく、<洋{よう}室{しつ}>も<立{りっ}派{ぱ}>だ。しかもエントランス<ホール>が広{ひろ}い。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "マンション",
+        english: "Apartment",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "ベランダ",
+        english: "Balcony",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "～向{む}き",
+        english: "Facing ~",
+        type: MiniStoryWordType.SUFFIX
+      },
+      {
+        kanji: "日{ひ}当{あ}たり",
+        english: "Sunlight exposure",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "和{わ}室{しつ}",
+        english: "Japanese-style room",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "洋{よう}室{しつ}",
+        english: "Western-style room",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "立{りっ}派{ぱ}な",
+        english: "Splendid",
+        type: MiniStoryWordType.ADJECTIVE_NA
+      },
+      {
+        kanji: "ホール",
+        english: "Hall",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `The balcony of the apartment I'm living in now is south facing and sunny. Both its Japanese-style room and Western-style room are splendid. Moreover, the entrance hall is spacious.`,
+    audio: "T187.mp3",
+    topic: MiniStoryTopics.CITIES,
+    page: 138,
+  },
+  "188": {
+    id: "188",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "家{いえ}の壁{かべ}の色{いろ}を<塗{ぬ}り>直{なお}し、<門{もん}>の<電{でん}球{きゅう}>を取{と}り替{か}えたら、明{あか}るくなった。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "塗{ぬ}る",
+        english: "To paint",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+      {
+        kanji: "門{もん}",
+        english: "Gate",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "電{でん}球{きゅう}",
+        english: "Light bulb",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `I repainted the walls of my house and changed the light bulbs at the gate and it got brighter.`,
+    audio: "T188.mp3",
+    topic: MiniStoryTopics.CITIES,
+    page: 138,
+  },
+  "189": {
+    id: "189",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<寮{りょう}>の<リビング>は狭{せま}く、<ソファー>を<斜{なな}め>にしか置{お}けない。しかし、<低{てい}><家{や}賃{ちん}>なので、<わがまま>は言{い}えない。<我{が}慢{まん}>するしかない。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "寮{りょう}",
+        english: "Dormitory",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "リビング",
+        english: "Living room",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "ソファー",
+        english: "Sofa",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "斜{なな}め",
+        english: "Diagonal",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "低{てい}～",
+        english: "Low ~",
+        type: MiniStoryWordType.PREFIX
+      },
+      {
+        kanji: "家{や}賃{ちん}",
+        english: "Rent",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "わがまま",
+        english: "Complaint・Selfishness",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "我{が}慢{まん}［する］",
+        english: "Endurance・Bear・To endure・To bear",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+    ],
+    translation: `The dorm living room is cramped and the sofa can only be arranged diagonally. However, it's low rent, so I can't complain. I've no choice but to bear it.`,
+    audio: "T189.mp3",
+    topic: MiniStoryTopics.CITIES,
+    page: 139,
+  },
+  "190": {
+    id: "190",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "この家は、大{たい}<都{と}市{し}>にも<地{ち}方{ほう}都{と}市{し}>にも<距{きょ}離{り}>が近{ちか}い。<最{さい}高{こう}>だ。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "都{と}市{し}",
+        english: "City",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "地{ち}方{ほう}都{と}市{し}",
+        english: "Local city",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "地{ち}方{ほう}",
+        english: "Region",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "距{きょ}離{り}",
+        english: "Distance",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "最{さい}高{こう}",
+        english: "Best",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `This house is close in distance to both a large city and the local cities, It's the best.`,
+    audio: "T190.mp3",
+    topic: MiniStoryTopics.CITIES,
+    page: 139,
+  },
+  "191": {
+    id: "191",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<出{しゅっ}勤{きん}>する途{と}中{ちゅう}、<踏{ふみ}切{きり}>の前{まえ}で車{くるま}が動{うご}かなくなった。近{ちか}くに<住{じゅう}民{みん}>はいない。<確{たし}か>、近{ちか}くに<消{しょう}防{ぼう}署{しょ}>があったはずだ。<のんびりして>はいられない。。行{い}ってみよう。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "出{しゅっ}勤{きん}［する］",
+        english: "Commuting to work・To commute to work",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "踏{ふみ}切{きり}",
+        english: "Railroad crossing",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "住{じゅう}民{みん}",
+        english: "Resident",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "確{たし}か",
+        english: "Sure・Certain",
+        type: MiniStoryWordType.ADVERB
+      },
+      {
+        kanji: "消{しょう}防{ぼう}署{しょ}",
+        english: "Fire station・Fire department",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "消{しょう}防{ぼう}車{しゃ}",
+        english: "Fire truck",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "消{しょう}防{ぼう}士{し}",
+        english: "Firefighter",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "のんびりする",
+        english: "To relax・Sit around・Take it easy",
+        type: MiniStoryWordType.IRREGULAR_INTRANSITIVE
+      },
+    ],
+    translation: `While commuting to work, my car stopped moving right in front of a railroad crossing. There are no residents nearby. I'm sure there was a fire station nearby. I can't just sit around. Let's go and see.`,
+    audio: "T191.mp3",
+    topic: MiniStoryTopics.CITIES,
+    page: 140,
+  },
+  "192": {
+    id: "192",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<向{む}かい>の<幼{よう}稚{ち}園{えん}>は<たびたび><工{こう}事{じ}>をする。うるさくて、休みの日も<リラックスして><過{す}ごせない>。早{はや}く<終{しゅう}了{りょう}>してほしい。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "向{む}かい",
+        english: "Opposite",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "幼{よう}稚{ち}園{えん}",
+        english: "Kindergarten",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "たびたび",
+        english: "Frequently",
+        type: MiniStoryWordType.ADVERB
+      },
+      {
+        kanji: "工{こう}事{じ}［する］",
+        english: "Construction・To undergo construction",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "工{こう}事{じ}現{げん}場{ば}",
+        english: "Construction site",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "リラックス［する］",
+        english: "Relaxation・To relax",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+      {
+        kanji: "過{す}ごす",
+        english: "To spend (time)",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+      {
+        kanji: "終{しゅう}了{りょう}［する］",
+        english: "End・To end・To finish",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+    ],
+    translation: `The kindergarten on the other side of the street frequently undergoes construction. It's so loud I can't even relax on my days off. I hope it ends soon`,
+    audio: "T192.mp3",
+    topic: MiniStoryTopics.CITIES,
+    page: 140,
+  },
+  "193": {
+    id: "193",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "この電車は発{はっ}車{しゃ}<時{じ}刻{こく}>を<過{す}ぎても>動{うご}かない。<落{お}ち着{つ}いて>よく見ると、<行{い}き先{さき}>も表{ひょう}示{じ}していないし、<ライト>も消{き}えている。<車{しゃ}庫{こ}>に行くのだろうか。なかなか<帰{き}宅{たく}できない>。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "時{じ}刻{こく}",
+        english: "Time (of departure/arrival)",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "時{じ}刻{こく}表{ひょう}",
+        english: "Timetable",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "過{す}ぎる",
+        english: "To pass・To exceed",
+        type: MiniStoryWordType.ICHIDAN_INTRANSITIVE
+      },
+      {
+        kanji: "落{お}ち着{つ}く",
+        english: "To calm down・To settle down",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE
+      },
+      {
+        kanji: "行{い}き先{さき}",
+        english: "Destination",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "ライト",
+        english: "Light",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "車{しゃ}庫{こ}",
+        english: "Depot",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "帰{き}宅{たく}［する］",
+        english: "Going home・To go home",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+    ],
+    translation: `This train isn't moving even though it's past its departure time. After calmly looking around, I noticed that the destination wasn't even displayed and the lights were off. It might be going to the depot. I'm having a hard time getting home.`,
+    audio: "T193.mp3",
+    topic: MiniStoryTopics.CITIES,
+    page: 141,
+  },
+  "194": {
+    id: "194",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<都{と}会{かい}><生{う}まれ>の私の夢{ゆめ}は、<いつか><土{と}地{ち}>を買{か}い、<畑{はたけ}>で近{きん}所{じょ}の人に分けられる<程{てい}度{ど}>の野{や}菜{さい}<または>果物を作ることだ。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "都{と}会{かい}",
+        english: "City・Urban area",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "〜生{う}まれ",
+        english: "~born",
+        type: MiniStoryWordType.SUFFIX
+      },
+      {
+        kanji: "いつか",
+        english: "Someday",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.ADVERB]
+      },
+      {
+        kanji: "土{と}地{ち}",
+        english: "Land・Soil",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "畑{はたけ}",
+        english: "Field・Farm",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "程{てい}度{ど}",
+        english: "Degree・Extent・Degree (of)",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "または",
+        english: "Or",
+        type: MiniStoryWordType.CONJUNCTION
+      },
+    ],
+    translation: `Having been born in the city, it's my dream to someday buy some land and raise enough vegetables or even fruit to share with the people living nearby.`,
+    audio: "T194.mp3",
+    topic: MiniStoryTopics.CITIES,
+    page: 142,
+  },
+  "195": {
+    id: "195",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "昨日の<大{おお}雪{ゆき}>のせいで、<首{しゅ}都{と}><高{こう}速{そく}道{どう}路{ろ}>の<出{で}入{い}口{ぐち}>で事{じ}故{こ}があった。<パトカー>や<救{きゅう}急{きゅう}車{しゃ}>が集{あつ}まっている。けが人{にん}がいないことを<願{ねが}う>。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "大{おお}雪{ゆき}",
+        english: "Heavy snow",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "首{しゅ}都{と}",
+        english: "Capital",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "高{こう}速{そく}道{どう}路{ろ}",
+        english: "Expressway・Highway",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "出{で}入{い}口{ぐち}",
+        english: "Entrance and exit",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "パトカー",
+        english: "Police car",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "救{きゅう}急{きゅう}車{しゃ}",
+        english: "Ambulance",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "願{ねが}う",
+        english: "Make a wish・To hope for",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+      {
+        kanji: "願{ねが}い",
+        english: "Wish・Hope",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `Yesterday's heavy snow caused an accident at the on-ramp of the Tokyo Metropolitan Expressway. Police cars and ambulances have gathered there. I hope no one is hurt.`,
+    audio: "T195.mp3",
+    topic: MiniStoryTopics.CITIES,
+    page: 142,
+  },
+  "196": {
+    id: "196",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "私が住{す}んでいる<団{だん}地{ち}>は<坂{さか}>の上{うえ}にある。<商{しょう}店{てん}街{がい}>がある<大{おお}通{どお}り>から<外{はず}れた>たところに<位{い}置{ち}して>いるので、子どもがよく<迷{まい}子{ご}>になる。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "団{だん}地{ち}",
+        english: "House complex・Apartment complex",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "坂{さか}",
+        english: "Slope・Hill",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "商{しょう}店{てん}街{がい}",
+        english: "Shopping district・Shopping street",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "商{しょう}店{てん}",
+        english: "Shop・Store",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "大{おお}通{どお}り",
+        english: "Main street・Boulevard",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "外{はず}れる",
+        english: "To come off・To be off",
+        type: MiniStoryWordType.ICHIDAN_TRANSITIVE
+      },
+      {
+        kanji: "位{い}置{ち}［する］",
+        english: "Position・Placement・To position・To place",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+      {
+        kanji: "迷{まい}子{ご}",
+        english: "Lost child・Stray child",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `The housing complex where I live is at the top of a slope. It's located some distance away from the bigger streets around the commercial district, so the children often get lost.`,
+    audio: "T196.mp3",
+    topic: MiniStoryTopics.CITIES,
+    page: 143,
+  },
+  "197": {
+    id: "197",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<郊{こう}外{がい}>に<暮{く}らす>と、<アクセス>が悪{わる}いという<イメージ>がある、しかし、実{じっ}際{さい}には地{ち}下{か}鉄{てつ}一{いっ}本{ぽん}で<通{つう}勤{きん}できる>。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "郊{こう}外{がい}",
+        english: "Suburbs",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "暮{く}らす",
+        english: "To live・To reside",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE
+      },
+      {
+        kanji: "暮{く}らし",
+        english: "Life・Living",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "アクセス［する］",
+        english: "Access・To access",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+      {
+        kanji: "イメージ［する］",
+        english: "Image・To imagine",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "通{つう}勤{きん}［する］",
+        english: "Commuting to work・To commute to work",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+    ],
+    translation: `People tend to imagine that living in the suburbs means having poor access, but I can actually commute to work with just one subway line.`,
+    audio: "T197.mp3",
+    topic: MiniStoryTopics.CITIES,
+    page: 144,
+  },
+  "198": {
+    id: "198",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "公園の<芝{し}生{ばふ}>に寝{ね}<転{ころ}がる>と、<土{つち}>の<香{かお}り>がした。<蚊{か}>がいたので、<扇{せん}子{す}>でたたいた。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "芝{し}生{ばふ}",
+        english: "Lawn・Grass",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "転{ころ}がる",
+        english: "To roll around・To roll over",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE
+      },
+      {
+        kanji: "転{ころ}がす",
+        english: "To roll something over・To turn something over",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+      {
+        kanji: "土{つち}",
+        english: "Soil・Dirt",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "香{かお}り",
+        english: "Fragrance・Aroma・Smell",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "蚊{か}",
+        english: "Mosquito",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "扇{せん}子{す}",
+        english: "Fan (folding)",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `When I laid out on the grass in the park, it smelled like soil. There was a mosquito, so I swatted it with a folding fan.`,
+    audio: "T198.mp3",
+    topic: MiniStoryTopics.CITIES,
+    page: 144,
+  },
+  "199": {
+    id: "199",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "私が生まれ育った場所の<地{ち}名{めい}>を言っても、誰も知らないだろう。<商{しょう}業{ぎょう}>が盛{さか}んな<街{まち}>で、いろいろな会社の事務<所{しょ}>がある。<住{じゅう}宅{たく}>地{ち}の中に大{おお}型{がた}スーパーがあるので、<食{しょく}料{りょう}品{ひん}>もすぐに買{か}えるし、有{ゆう}名{めい}な<書{しょ}店{てん}>もある。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "地{ち}名{めい}",
+        english: "Place name",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "商{しょう}業{ぎょう}",
+        english: "Commerce・Trade・Business",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "街{まち}",
+        english: "Town・City",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "～所{しょ}",
+        english: "~Place・~Location",
+        type: MiniStoryWordType.SUFFIX
+      },
+      {
+        kanji: "住{じゅう}宅{たく}",
+        english: "Housing・Residence",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "食{しょく}料{りょう}品{ひん}",
+        english: "Food products",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "食{しょく}料{りょう}",
+        english: "Food",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "書{しょ}店{てん}",
+        english: "Bookstore",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `Even if I tell people the name of the place where I was born and raised, no one would probably know it. It is a city with a lot of commerce, and there are offices of various companies. There is a large supermarket in the residential area, so food products can be purchased right away, and there is also a famous bookstore.`,
+    audio: "T199.mp3",
+    topic: MiniStoryTopics.CITIES,
+    page: 145,
   },
   "279": {
     id: "279",
