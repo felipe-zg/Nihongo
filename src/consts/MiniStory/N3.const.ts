@@ -10682,7 +10682,7 @@ export const MINI_STORY_N3: Record<string, MiniStory> = {
     ],
     translation: `I not only study for the civil service exam, but also take Japanese language teacher qualification courses sitting in the front row.`,
     audio: "T312.mp3",
-    topic: MiniStoryTopics.WEATHER,
+    topic: MiniStoryTopics.LIFE,
     page: 220,
   },
   "313": {
@@ -10727,7 +10727,7 @@ export const MINI_STORY_N3: Record<string, MiniStory> = {
     ],
     translation: `I went to Osaka on a business trip. Since I have new and important meetings in Osaka, I'm discussing extending the date of my return.`,
     audio: "T313.mp3",
-    topic: MiniStoryTopics.WEATHER,
+    topic: MiniStoryTopics.LIFE,
     page: 220,
   },
   "314": {
@@ -10777,7 +10777,7 @@ export const MINI_STORY_N3: Record<string, MiniStory> = {
     ],
     translation: `My cousin was dating a rich man. But when his company became difficult to run and he ran out of money, she dumped him.`,
     audio: "T314.mp3",
-    topic: MiniStoryTopics.WEATHER,
+    topic: MiniStoryTopics.LIFE,
     page: 221,
   },
 };
