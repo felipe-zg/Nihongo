@@ -10635,4 +10635,149 @@ export const MINI_STORY_N3: Record<string, MiniStory> = {
     topic: MiniStoryTopics.LIFE,
     page: 219,
   },
+  "312": {
+    id: "312",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<公{こう}務{む}員{いん}>試{し}験{けん}のために自分で勉強するだけではなく、日本語教{きょう}師{し}の<資{し}格{かく}><講{こう}座{ざ}>も<最{さい}>前{ぜん}列{れつ}で受{う}けている。<標{ひょう}準{じゅん}>的{てき}な問{もん}題{だい}は分かるが、難{むずか}しい問{もん}題{だい}が多い。なかなか<自{じ}信{しん}>が<付{つ}かない>。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "公{こう}務{む}員{いん}",
+        english: "Public servant・civil servant",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "資{し}格{かく}",
+        english: "Qualification",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "講{こう}座{ざ}",
+        english: "Course・Lecture",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "最{さい}～",
+        english: "~Most・~est",
+        type: MiniStoryWordType.PREFIX
+      },
+      {
+        kanji: "標{ひょう}準{じゅん}",
+        english: "Standard",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "自{じ}信{しん}",
+        english: "Self-confidence",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "付{つ}く",
+        english: "To be attached",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE
+      },
+    ],
+    translation: `I not only study for the civil service exam, but also take Japanese language teacher qualification courses sitting in the front row.`,
+    audio: "T312.mp3",
+    topic: MiniStoryTopics.WEATHER,
+    page: 220,
+  },
+  "313": {
+    id: "313",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<出{しゅっ}張{ちょう}>で大{おお}阪{さか}に行った。大{おお}阪{さか}で新{あたら}しく<重{じゅう}要{よう}>な会{かい}議{ぎ}が入{はい}ったので、戻{もど}る<日{ひ}にち>を<延{の}ばす><方{ほう}向{こう}>で話{はな}し合{あ}っている。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "出{しゅっ}張{ちょう}［する］",
+        english: "Business trip・to go on a business trip",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+      {
+        kanji: "重{じゅう}要{よう}な",
+        english: "Important",
+        type: MiniStoryWordType.ADJECTIVE_NA
+      },
+      {
+        kanji: "日{ひ}にち",
+        english: "Date",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "延{の}ばす",
+        english: "To extend",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+      {
+        kanji: "延{の}びる",
+        english: "To be extended",
+        type: MiniStoryWordType.ICHIDAN_INTRANSITIVE
+      },
+      {
+        kanji: "方{ほう}向{こう}",
+        english: "Direction",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `I went to Osaka on a business trip. Since I have new and important meetings in Osaka, I'm discussing extending the date of my return.`,
+    audio: "T313.mp3",
+    topic: MiniStoryTopics.WEATHER,
+    page: 220,
+  },
+  "314": {
+    id: "314",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<いとこ>は<お金{かね}持{も}ち>の男{だん}性{せい}と<付{つ}き合{あ}っていた>。<しかし>、彼{かれ}の会社の経{けい}営{えい}が<苦{くる}しく>なり、お金{かね}がなくなると、彼{かれ}を<振{ふ}った>。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "いとこ",
+        english: "Cousin",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "（お）金{かね}持{も}ち",
+        english: "Rich person",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "付{つ}き合{あ}う",
+        english: "To date・to go out with",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE
+      },
+      {
+        kanji: "しかし",
+        english: "However",
+        type: MiniStoryWordType.CONJUNCTION
+      },
+      {
+        kanji: "苦{くる}しい",
+        english: "Painful・difficult",
+        type: MiniStoryWordType.ADJECTIVE_I
+      },
+      {
+        kanji: "苦{くる}しむ",
+        english: "To suffer",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE
+      },
+      {
+        kanji: "振{ふ}る",
+        english: "To dump (someone)",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+    ],
+    translation: `My cousin was dating a rich man. But when his company became difficult to run and he ran out of money, she dumped him.`,
+    audio: "T314.mp3",
+    topic: MiniStoryTopics.WEATHER,
+    page: 221,
+  },
 };
