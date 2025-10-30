@@ -84,9 +84,18 @@ const KanjiM2Cards: React.FC<Props> = ({ wordsList }) => {
       mainText = isHiraganaMode ? currentCard.reading.replace(REGEX_WORD, "") : currentCard.word.replace(REGEX_WORD, "");
     }
 
+    let fontsize = "8xl";
+    if (mainText.length > 6) {
+      fontsize = "4xl";
+    } else if (mainText.length > 4) {
+      fontsize = "5xl";
+    } else if (mainText.length > 2) {
+      fontsize = "7xl";
+    }
+
     return (
       <Box borderColor={"amber.100"} borderWidth={1} mb={2} mt={30} p={1} borderRadius={5} width={"100%"} alignItems="center">
-        <Text fontSize={"7xl"} mb={2} color={isShowAnswer ? "pink.300" : "yellow.500"}>{mainText}</Text>
+        <Text fontSize={fontsize} mb={2} color={isShowAnswer ? "pink.300" : "yellow.500"}>{mainText}</Text>
       </Box>
     )
   }
