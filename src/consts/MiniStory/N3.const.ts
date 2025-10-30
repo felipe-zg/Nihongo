@@ -12,6 +12,7 @@ export const MiniStoryTopics = {
   SPORTS: "スポーツ",
   ANIMALS: "動物",
   CITIES: "市",
+  WEATHER: "天気",
 } as const;
 
 // type MiniStoryTopic = typeof MiniStoryTopics[keyof typeof MiniStoryTopics];
@@ -8584,6 +8585,705 @@ export const MINI_STORY_N3: Record<string, MiniStory> = {
     audio: "T199.mp3",
     topic: MiniStoryTopics.CITIES,
     page: 145,
+  },
+  "200": {
+    id: "200",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "天気<予{よ}報{ほう}>によると、<大{おお}雨{あめ}><注{ちゅう}意{い}報{ほう}>が出{で}ている。午{ご}後{ご}から<にわか雨{あめ}>が降るので、早{はや}めに<毛{もう}布{ふ}>と<シーツ>を取{と}り込{こ}まなければならない。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "予{よ}報{ほう}［する］",
+        english: "Forecast・To forecast",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "大{おお}雨{あめ}",
+        english: "Heavy rain",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "小{こ}雨{さめ}",
+        english: "Light rain",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "注{ちゅう}意{い}報{ほう}",
+        english: "Advisory",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "警{けい}報{ほう}",
+        english: "Alert・Warning",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "にわか雨{あめ}",
+        english: "shower (rain)",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "毛{もう}布{ふ}",
+        english: "Blanket",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "シーツ",
+        english: "Bed sheets",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `The weather forecast said that a heavy rain advisory is in effect. There could be sudden showers starting in the afternoon, so I have to bring in the blanket and sheets before that.`,
+    audio: "T200.mp3",
+    topic: MiniStoryTopics.WEATHER,
+    page: 148,
+  },
+  "201": {
+    id: "201",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<大{たい}陸{りく}>が<地{ち}球{きゅう}>の上{うえ}を<移{い}動{どう}して>、現{げん}在{ざい}の世{せ}界{かい}ができたという<説{せつ}>が1912年に発{はっ}表{ぴょう}された。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "大{たい}陸{りく}",
+        english: "Continent",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "地{ち}球{きゅう}",
+        english: "Earth",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "移{い}動{どう}［する］",
+        english: "Movement・To move",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "説{せつ}",
+        english: "Theory・Reason",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `The theory that our present world is result of the movement of the continents over the earth was presented in 1912.`,
+    audio: "T201.mp3",
+    topic: MiniStoryTopics.WEATHER,
+    page: 148,
+  },
+  "202": {
+    id: "202",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<海{かい}外{がい}>と<比{ひ}較{かく}して>、日本は<防{ぼう}災{さい}>の<意{い}識{しき}>が強{つよ}い。<梅{つ}雨{ゆ}>のシーズンだが、今年は大{おお}きな被{ひ}害{がい}が出{で}ないことを<祈{いの}って>いる。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "海{かい}外{がい}",
+        english: "Overseas",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "比{ひ}較{かく}［する］",
+        english: "Comparison・To compare",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "防{ぼう}災{さい}",
+        english: "Disaster prevention",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "意{い}識{しき}［する］",
+        english: "Awareness・Consciousness・To be aware of",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "梅{つ}雨{ゆ}",
+        english: "Rainy season",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "祈{いの}る",
+        english: "To pray",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+      {
+        kanji: "祈{いの}り",
+        english: "Prayer",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `Japan has a stronger awareness of disaster prevention in comparison to other countries. It is now the rainy season, and I pray that there will be no serious damage this year.`,
+    audio: "T202.mp3",
+    topic: MiniStoryTopics.WEATHER,
+    page: 149,
+  },
+  "203": {
+    id: "203",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "今日は<花{か}粉{ふん}>がたくさん飛{と}んでいる。目{め}が<かゆくて>、鼻{はな}もむずむずするので、<外{がい}出{しゅつ}>はやめておこう。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "花{か}粉{ふん}",
+        english: "Pollen",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "花{か}粉{ふん}症{しょう}",
+        english: "Hay fever",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "かゆい",
+        english: "Itchy",
+        type: MiniStoryWordType.ADJECTIVE_I
+      },
+      {
+        kanji: "外{がい}出{しゅつ}［する］",
+        english: "Going out・To go out",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+    ],
+    translation: `There's so much pollen in the air today. My eyes are itchy and my nose tickles, so I'm not going to leave the house.`,
+    audio: "T203.mp3",
+    topic: MiniStoryTopics.WEATHER,
+    page: 149,
+  },
+  "204": {
+    id: "204",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "台風が近{ちか}づいているので、大雨、<強{きょう}風{ふう}>、<洪{こう}水{ずい}>の被{ひ}害{がい}が心配である。<電{でん}柱{ちゅう}>が倒{たお}れて、突{とつ}然{ぜん}<停{てい}電{でん}したり>、<断{だん}水{すい}したり>するかもしれない。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "強{きょう}風{ふう}",
+        english: "Strong wind",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "洪{こう}水{ずい}",
+        english: "Flood",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "電{でん}柱{ちゅう}",
+        english: "Utility pole・Telephone pole",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "電{でん}線{せん}",
+        english: "Power line・Electrical wire",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "停{てい}電{でん}［する］",
+        english: "Blackout・Power outage・To have a blackout",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+      {
+        kanji: "断{だん}水{すい}［する］",
+        english: "Water outage・To have a water outage",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+    ],
+    translation: `A typhoon is approaching, so I'm worried about damage from heavy rain, strong wind, and flooding. There could be sudden power outages due to downed utility poles or the water could be cut off.`,
+    audio: "T204.mp3",
+    topic: MiniStoryTopics.WEATHER,
+    page: 150,
+  },
+  "205": {
+    id: "205",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "雨の日に<レインコート>を着{き}て自転車に乗っていたら、<タイヤ>が<滑{すべ}って><転{ころ}び>そうになったが、なんとか<無{ぶ}事{じ}だった>。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "レインコート",
+        english: "Raincoat",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "タイヤ",
+        english: "Tire",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "滑{すべ}る",
+        english: "To slip・To slide",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE
+      },
+      {
+        kanji: "転{ころ}ぶ",
+        english: "To fall down・To crash",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE
+      },
+      {
+        kanji: "無{ぶ}事{じ}な",
+        english: "Safe・Unharmed",
+        type: MiniStoryWordType.ADJECTIVE_NA
+      },
+    ],
+    translation: `I was wearing a raincoat as I rode my bike on a rainy day, the tires slipped and I almost crashed, but somehow made it through safe.`,
+    audio: "T205.mp3",
+    topic: MiniStoryTopics.WEATHER,
+    page: 150,
+  },
+  "206": {
+    id: "206",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "日本の夏{なつ}は<湿{しつ}度{ど}>が高く<蒸{む}し暑{あつ}い>。<クーラー>や<扇{せん}風{ぷう}機{き}>が使わなかったら、すぐにのどが<からからに>なり、<息{いき}>ができなくなる。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "湿{しつ}度{ど}",
+        english: "Humidity",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "蒸{む}し暑{あつ}い",
+        english: "Humid",
+        type: MiniStoryWordType.ADJECTIVE_I
+      },
+      {
+        kanji: "クーラー",
+        english: "Air conditioner・Cooler",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "扇{せん}風{ぷう}機{き}",
+        english: "Electric fan",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "からからな",
+        english: "Thirsty・Dry",
+        type: MiniStoryWordType.ADJECTIVE_NA
+      },
+      {
+        kanji: "息{いき}",
+        english: "Breath",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `With high humidity, summer in Japan is hot and muggy. Without air conditioning or a fan, you will find your throat so bone dry, you'll barely be able to breathe.`,
+    audio: "T206.mp3",
+    topic: MiniStoryTopics.WEATHER,
+    page: 151,
+  },
+  "207": {
+    id: "207",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "田{いな}舎{か}と<比{くら}べる>と、都{と}会{かい}は<コンクリート>に<囲{かこ}まれて>いるので、なかなか地{じ}面{めん}の<温{おん}度{ど}>が下{さ}がりにくい。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "比{くら}べる",
+        english: "To compare",
+        type: MiniStoryWordType.ICHIDAN_TRANSITIVE
+      },
+      {
+        kanji: "コンクリート",
+        english: "Concrete",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "囲{かこ}む",
+        english: "To surround",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+      {
+        kanji: "温{おん}度{ど}",
+        english: "Temperature",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "温{おん}度{ど}計{けい}",
+        english: "Thermometer",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `Compared to the countryside, the city is surrounded by concrete, so the temperature of the ground doesn't fall easily.`,
+    audio: "T207.mp3",
+    topic: MiniStoryTopics.WEATHER,
+    page: 151,
+  },
+  "208": {
+    id: "208",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<昨{さく}日{じつ}>、<震{しん}度{ど}>5強{きょう}の地{じ}震{しん}があり、かなり<揺{ゆ}れた>。<海{かい}岸{がん}>の近{ちか}くにいて、<今{いま}にも>津{つ}波{なみ}が来{き}そうだったので、<はだし>で走り、近{ちか}くの家{いえ}の<屋{や}根{ね}>の上{うえ}に逃{に}げた。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "昨{さく}日{じつ}",
+        english: "Yesterday",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.ADVERB]
+      },
+      {
+        kanji: "昨{さく}年{ねん}",
+        english: "Last year",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.ADVERB]
+      },
+      {
+        kanji: "震{しん}度{ど}",
+        english: "Seismic intensity",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "揺{ゆ}れる",
+        english: "To shake・To quake・To sway",
+        type: MiniStoryWordType.ICHIDAN_INTRANSITIVE
+      },
+      {
+        kanji: "海{かい}岸{がん}",
+        english: "Coast・Seashore",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "今{いま}にも",
+        english: "At any moment・Soon",
+        type: MiniStoryWordType.ADVERB
+      },
+      {
+        kanji: "はだし",
+        english: "Barefoot",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "屋{や}根{ね}",
+        english: "Roof",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `Yesterday, there was an earthquake that registered a strong 5 of the Japanese seismic intensity scale. It shook a fair amount. I was near the coast, and it seemed a tsunami could come at any moment, so I ran barefoot to the roof of a nearby house.`,
+    audio: "T208.mp3",
+    topic: MiniStoryTopics.WEATHER,
+    page: 152,
+  },
+  "209": {
+    id: "209",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "地{ち}球{きゅう}温{おん}暖{だん}<化{か}>の<影{えい}響{きょう}>で最{さい}近{きん}の<気{き}候{こう}>は<おかしい>。<森{しん}林{りん}>を切{き}りすぎたことは<無{む}関{かん}係{けい}で>はなく、いろんなバランスが<崩{くず}れて>いるのだろう。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "～化{か}",
+        english: "~Change",
+        type: MiniStoryWordType.SUFFIX
+      },
+      {
+        kanji: "影{えい}響{きょう}［する］",
+        english: "Influence・To influence",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+      {
+        kanji: "気{き}候{こう}",
+        english: "Weather・Climate",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "おかしい",
+        english: "Strange・Weird",
+        type: MiniStoryWordType.ADJECTIVE_I
+      },
+      {
+        kanji: "森{しん}林{りん}",
+        english: "Forest",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "無{む}関{かん}係{けい}な",
+        english: "Unrelated・Irrelevant",
+        type: MiniStoryWordType.ADJECTIVE_NA
+      },
+      {
+        kanji: "崩{くず}れる",
+        english: "To collapse・To crumble",
+        type: MiniStoryWordType.ICHIDAN_INTRANSITIVE
+      },
+      {
+        kanji: "崩{くず}す",
+        english: "To destroy・To ruin・To demolish",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+    ],
+    translation: `The weather has been impacted lately by global warming. The overcutting of forests is not unrelated to this and has lead to the collapse of various types of balance.`,
+    audio: "T209.mp3",
+    topic: MiniStoryTopics.WEATHER,
+    page: 152,
+  },
+  "210": {
+    id: "210",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "子供が初{はじ}めて<マフラー>を巻{ま}いたが、うまく巻{ま}けず、<けっこう><めちゃめちゃだった>。顔を見ると、悔{くや}しくて涙{なみだ}を<こぼして>いた。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "マフラー",
+        english: "Scarf",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "けっこう",
+        english: "Quite・Fairly",
+        type: MiniStoryWordType.ADVERB
+      },
+      {
+        kanji: "めちゃめちゃな",
+        english: "Messy・Disorderly",
+        type: MiniStoryWordType.ADJECTIVE_NA
+      },
+      {
+        kanji: "こぼす",
+        english: "To spill・To let slip",
+        type: MiniStoryWordType.ICHIDAN_TRANSITIVE
+      },
+      {
+        kanji: "こぼれる",
+        english: "To be spilled・To overflow",
+        type: MiniStoryWordType.ICHIDAN_INTRANSITIVE
+      },
+    ],
+    translation: `The child tried to put her scarf on herself for the first time, but wasn't able to do it well so it looked quite messy. Looking at her face, she looked frustrated and teary-eyed.`,
+    audio: "T210.mp3",
+    topic: MiniStoryTopics.WEATHER,
+    page: 153,
+  },
+  "211": {
+    id: "211",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<津{つ}波{なみ}>は<一{いっ}瞬{しゅん}>のうちに多{おお}くの命{いのち}を奪{うば}ってしまう。<被{ひ}害{がい}>を<防{ふせ}ぐ>ために、逃{に}げる場{ば}所{しょ}を<確{たし}かめて>おいた方{ほう}がいい。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "津{つ}波{なみ}",
+        english: "Tsunami",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "一{いっ}瞬{しゅん}",
+        english: "(For a) Moment・Instant",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.ADVERB]
+      },
+      {
+        kanji: "被{ひ}害{がい}",
+        english: "Damage・Harm",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "防{ふせ}ぐ",
+        english: "To prevent・To defend",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+      {
+        kanji: "確{たし}かめる",
+        english: "To confirm・To make sure",
+        type: MiniStoryWordType.ICHIDAN_TRANSITIVE
+      },
+    ],
+    translation: `A tsunami can extinguish many lives in the blink of an eye. You should confirm ahead of time where you will run to protect yourself in times of disaster.`,
+    audio: "T211.mp3",
+    topic: MiniStoryTopics.WEATHER,
+    page: 154,
+  },
+  "212": {
+    id: "212",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "ひどい雨で、服{ふく}が<濡{ぬ}れて>しまった。家に着{つ}いてからも、風{かぜ}はどんどん強{つよ}くなり、<雷{かみなり}>も鳴{な}りはじめた。窓{まど}ガラスがガタガタと<震{ふる}えている>。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "濡{ぬ}れる",
+        english: "To get wet",
+        type: MiniStoryWordType.ICHIDAN_INTRANSITIVE
+      },
+      {
+        kanji: "濡{ぬ}らす",
+        english: "To wet・To soak",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+      {
+        kanji: "雷{かみなり}",
+        english: "Thunder",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "震{ふる}える",
+        english: "To tremble・To shake・To shiver",
+        type: MiniStoryWordType.ICHIDAN_INTRANSITIVE
+      },
+    ],
+    translation: `My clothes got wet from the terrible rain. Even after I got home, the wind got stronger and stronger, and it started to thunder. The windowpane was rattling.`,
+    audio: "T212.mp3",
+    topic: MiniStoryTopics.WEATHER,
+    page: 154,
+  },
+  "213": {
+    id: "213",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "まだ<桜{さくら}>が<散{ち}り>つつある4{し}月{がつ}<上{じょう}旬{じゅん}>だが、<気{き}温{おん}>が25<度{ど}>もあるので、<汗{あせ}>がたくさん出{で}る。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "桜{さくら}",
+        english: "Cherry Blossom",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "散{ち}る",
+        english: "To fall (as in blossoms)・To scatter",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE
+      },
+      {
+        kanji: "上{じょう}旬{じゅん}",
+        english: "First ten days of the month",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "中{ちゅう}旬{じゅん}",
+        english: "Middle ten days of the month",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "下{げ}旬{じゅん}",
+        english: "Last ten days of the month",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "気{き}温{おん}",
+        english: "Temperature",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "～度{ど}",
+        english: "~Degrees (temperature)",
+        type: MiniStoryWordType.SUFFIX
+      },
+      {
+        kanji: "汗{あせ}",
+        english: "Sweat",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `Although it's only early April and the cherry blossoms are still falling, at 25 degrees already, I'm sweating a lot.`,
+    audio: "T213.mp3",
+    topic: MiniStoryTopics.WEATHER,
+    page: 155,
+  },
+  "214": {
+    id: "214",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "今日はとても寒{さむ}いので、外{そと}に置{お}いていた<旗{はた}>が<凍{こお}って>いる。でも、日{ひ}が<照{て}れば>、すぐに元{もと}に戻{もど}るだろう。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "旗{はた}",
+        english: "Flag",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "凍{こお}る",
+        english: "To freeze",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE
+      },
+      {
+        kanji: "照{て}る",
+        english: "To shine",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE
+      },
+    ],
+    translation: `Since it is very cold today, the flag that was placed outside is frozen. But once the sun shines on it, it will soon go back to the way it was.`,
+    audio: "T214.mp3",
+    topic: MiniStoryTopics.WEATHER,
+    page: 155,
+  },
+  "215": {
+    id: "215",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "旅{りょ}行{こう}に行くなら、<太{たい}陽{よう}>が<昇{のぼ}る>ところを楽{たの}しみたい。でも、夕{ゆう}日{ひ}が<沈{しず}む>ところもいいなあ。<一{いち}度{ど}に>両{りょう}方{ほう}は無{む}理{り}かな。",
+      },
+      {
+        character: "B",
+        dialogue: "景{け}色{しき}のいいところでテントを張{は}って、<キャンプする>ってのはどう？",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "太{たい}陽{よう}",
+        english: "Sun",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "昇{のぼ}る",
+        english: "To rise",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE
+      },
+      {
+        kanji: "沈{しず}む",
+        english: "To go down・To set (sun)",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE
+      },
+      {
+        kanji: "一{いち}度{ど}に",
+        english: "At once・Simultaneously・At the same time",
+        type: MiniStoryWordType.ADVERB
+      },
+      {
+        kanji: "キャンプ［する］",
+        english: "Camping・To camp",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+    ],
+    translation: `A: If I'm going on a trip, I want to enjoy the sunrise. But, I sunsets are nice too. I wonder if I can do both.\nB: Why don't you pitch a tent someplace with nice scenery and camp out?`,
+    audio: "T215.mp3",
+    topic: MiniStoryTopics.WEATHER,
+    page: 156,
   },
   "279": {
     id: "279",
