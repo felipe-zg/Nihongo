@@ -25,6 +25,7 @@ const routes = [
   { name: 'JLPT Vocabs N2', path: '/JLPT/vocabs?level=N2' },
   { name: 'JLPT Grammar N2', path: '/JLPT/grammar/N2' },
   { name: 'Music', path: '/music/leina/nostalgia' },
+  { name: 'Real Japanese Audio', path: '/audio/real-japanese' },
 ]
 
 const Navbar = () => {
