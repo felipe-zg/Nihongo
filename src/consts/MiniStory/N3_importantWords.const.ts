@@ -1,4 +1,4 @@
-// pages 14 - 82 of Mini Story N3
+// pages 14 - 120 of Mini Story N3
 export const N3_IMPORTANT_WORDS: { kanji: string; english: string }[] = [
   {
     kanji: "回{かい}復{ふく}",
@@ -1287,5 +1287,837 @@ export const N3_IMPORTANT_WORDS: { kanji: string; english: string }[] = [
   {
     kanji: "受{じゅ}信{しん}［する］",
     english: "Receiving (a message)・To receive (a message)",
+  },
+  {
+    kanji: "通{つう}知{ち}［する］",
+    english: "Notification・To notify"
+  },
+  {
+    kanji: "停{てい}止{し}［する］",
+    english: "Stopping・To stop"
+  },
+  {
+    kanji: "長{なが}押{お}し［する］",
+    english: "Long press・To long press"
+  },
+  {
+    kanji: "無{む}線{せん}",
+    english: "Wireless"
+  },
+  {
+    kanji: "有{ゆう}線{せん}",
+    english: "Wired"
+  },
+  {
+    kanji: "乾{かん}電{でん}池{ち}",
+    english: "Dry battery・Dry cell"
+  },
+  {
+    kanji: "交{こう}換{かん}［する］",
+    english: "Replacement・To replace"
+  },
+  {
+    kanji: "落{お}とし物{もの}",
+    english: "Dropping something・Lost item"
+  },
+  {
+    kanji: "神{かみ}様{さま}",
+    english: "God"
+  },
+  {
+    kanji: "他{た}人{にん}",
+    english: "Other person・Stranger"
+  },
+  {
+    kanji: "一{いち}流{りゅう}",
+    english: "First-class・Top-tier"
+  },
+  {
+    kanji: "製{せい}品{ひん}",
+    english: "Product"
+  },
+  {
+    kanji: "中{なか}身{み}",
+    english: "Contents・Inner・Inside"
+  },
+  {
+    kanji: "部{ぶ}品{ひん}",
+    english: "Part・Component"
+  },
+  {
+    kanji: "製{せい}造{ぞう}［する］",
+    english: "Manufacturing・To manufacture"
+  },
+  {
+    kanji: "発{はつ}言{げん}［する］",
+    english: "Message・Transmission・To send a message"
+  },
+  {
+    kanji: "誤{ご}解{かい}［する］",
+    english: "Misunderstanding・To misunderstand"
+  },
+  {
+    kanji: "～感{かん}",
+    english: "Feeling of・Sense"
+  },
+  {
+    kanji: "絵{え}文{も}字{じ}",
+    english: "Emoji"
+  },
+  {
+    kanji: "件{けん}名{めい}",
+    english: "Subject (of an email)"
+  },
+  {
+    kanji: "返{へん}信{しん}［する］",
+    english: "Reply・To reply"
+  },
+  {
+    kanji: "転{てん}送{そう}［する］",
+    english: "Forwarding・To forward"
+  },
+  {
+    kanji: "最{さい}大{だい}",
+    english: "Maximum・Greatest"
+  },
+  {
+    kanji: "最{さい}小{しょう}",
+    english: "Minimum・Least"
+  },
+  {
+    kanji: "移{うつ}す",
+    english: "To transfer・To move"
+  },
+  {
+    kanji: "移{うつ}る",
+    english: "To be transferred・To be moved"
+  },
+  {
+    kanji: "～機{き}",
+    english: "Device・Machine that ～"
+  },
+  {
+    kanji: "俳{はい}優{ゆう}",
+    english: "Actor"
+  },
+  {
+    kanji: "女{じょ}優{ゆう}",
+    english: "Actress"
+  },
+  {
+    kanji: "記{き}者{しゃ}",
+    english: "Reporter・Journalist"
+  },
+  {
+    kanji: "がっかりする",
+    english: "To be disappointed"
+  },
+  {
+    kanji: "作{さく}品{ひん}",
+    english: "Work・Production"
+  },
+  {
+    kanji: "曲{きょく}",
+    english: "Song・Track"
+  },
+  {
+    kanji: "流{なが}れる",
+    english: "To flow"
+  },
+  {
+    kanji: "懐{なつ}かしい",
+    english: "Nostalgic"
+  },
+  {
+    kanji: "涙{なみだ}",
+    english: "Tears"
+  },
+  {
+    kanji: "題{だい}名{めい}",
+    english: "Title"
+  },
+  {
+    kanji: "題{だい}",
+    english: "Title"
+  },
+  {
+    kanji: "内{ない}容{よう}",
+    english: "Content"
+  },
+  {
+    kanji: "共{きょう}通{つう}［する］",
+    english: "Having in common・To have in common"
+  },
+  {
+    kanji: "表{ひょう}紙{し}",
+    english: "Cover (of a book)"
+  },
+  {
+    kanji: "勧{すす}める",
+    english: "To recommend"
+  },
+  {
+    kanji: "追{お}いつく",
+    english: "To catch up"
+  },
+  {
+    kanji: "〜済{ず}み",
+    english: "Already finished ～"
+  },
+  {
+    kanji: "劇{げき}",
+    english: "Play"
+  },
+  {
+    kanji: "劇{げき}場{じょう}",
+    english: "Theater"
+  },
+  {
+    kanji: "手{て}前{まえ}",
+    english: "In front"
+  },
+  {
+    kanji: "登{とう}録{ろく}［する］",
+    english: "Registration・To register"
+  },
+  {
+    kanji: "発{はつ}明{めい}［する］",
+    english: "Invention・To invent"
+  },
+  {
+    kanji: "お気{き}に入{い}り",
+    english: "Favorite・Favorite thing"
+  },
+  {
+    kanji: "仲{なか}良{よ}し",
+    english: "Close friend・Good friend"
+  },
+  {
+    kanji: "戦{たたか}う",
+    english: "To fight"
+  },
+  {
+    kanji: "第{だい}～",
+    english: "No. ~・~th・~nd・~rd (used for numbering episodes, chapters, etc.)"
+  },
+  {
+    kanji: "殺{ころ}す",
+    english: "To kill"
+  },
+  {
+    kanji: "前{ぜん}半{はん}",
+    english: "First half"
+  },
+  {
+    kanji: "後{こう}半{はん}",
+    english: "Second half"
+  },
+  {
+    kanji: "宇{う}宙{ちゅう}",
+    english: "Space (outer space)"
+  },
+  {
+    kanji: "飛{と}び出{だ}す",
+    english: "To jump out・To launch out"
+  },
+  {
+    kanji: "はやる",
+    english: "To be popular・To be in fashion"
+  },
+  {
+    kanji: "技{わざ}",
+    english: "Technique・Skill"
+  },
+  {
+    kanji: "まね［する］",
+    english: "Imitation・To imitate"
+  },
+  {
+    kanji: "犯{はん}人{にん}",
+    english: "Criminal"
+  },
+  {
+    kanji: "恋{れん}愛{あい}［する］",
+    english: "Love・To love"
+  },
+  {
+    kanji: "友{ゆう}情{じょう}",
+    english: "Friendship"
+  },
+  {
+    kanji: "重{じゅう}大{だい}な",
+    english: "Serious・Significant"
+  },
+  {
+    kanji: "物{もの}語{がたり}",
+    english: "Story・Tale"
+  },
+  {
+    kanji: "歌{か}詞{し}",
+    english: "Lyrics"
+  },
+  {
+    kanji: "作{さく}者{しゃ}",
+    english: "Author"
+  },
+  {
+    kanji: "ところどころ",
+    english: "Here and there・In various places"
+  },
+  {
+    kanji: "いつの間{ま}にか",
+    english: "At some point"
+  },
+  {
+    kanji: "波{なみ}",
+    english: "Wave"
+  },
+  {
+    kanji: "調{ちょう}子{し}",
+    english: "Condition・Tune"
+  },
+  {
+    kanji: "どきどき［する］",
+    english: "Exciting・To be excited"
+  },
+  {
+    kanji: "観{かん}客{きゃく}",
+    english: "Audience"
+  },
+  {
+    kanji: "飽{あ}きる",
+    english: "To get tired of"
+  },
+  {
+    kanji: "少{すこ}しも～ない",
+    english: "Not even a little・Not at all ~"
+  },
+  {
+    kanji: "登{とう}場{じょう}［する］",
+    english: "Appearance・To appear・To make an appearance"
+  },
+  {
+    kanji: "～作{さく}",
+    english: "～Work"
+  },
+  {
+    kanji: "（お）小{こ}遣{づか}い",
+    english: "Pocket money"
+  },
+  {
+    kanji: "そろえる",
+    english: "To arrange together・To collect"
+  },
+  {
+    kanji: "そろう",
+    english: "To be collected・To be arranged together"
+  },
+  {
+    kanji: "おそろい",
+    english: "Complete set・Matching set"
+  },
+  {
+    kanji: "展{てん}覧{らん}会{かい}",
+    english: "Exhibition"
+  },
+  {
+    kanji: "気{き}に入{い}る",
+    english: "To like・To be pleased with"
+  },
+  {
+    kanji: "画{が}家{か}",
+    english: "Painter"
+  },
+  {
+    kanji: "詳{くわ}しい",
+    english: "Detailed・Knowledgeable"
+  },
+  {
+    kanji: "発{はつ}売{ばい}［する］",
+    english: "Selling・To sell"
+  },
+  {
+    kanji: "新{しん}発{はつ}売{ばい}",
+    english: "Now on sale・Newly released"
+  },
+  {
+    kanji: "集{しゅう}中{ちゅう}［する］",
+    english: "Concentrating・To concentrate"
+  },
+  {
+    kanji: "集{しゅう}中{ちゅう}力{りょく}",
+    english: "Concentration (ability to concentrate)"
+  },
+  {
+    kanji: "たった",
+    english: "Just・Only"
+  },
+  {
+    kanji: "王{おう}",
+    english: "King"
+  },
+  {
+    kanji: "国{こく}王{おう}",
+    english: "King (of a country)"
+  },
+  {
+    kanji: "倒{たお}す",
+    english: "To defeat"
+  },
+  {
+    kanji: "犯{はん}罪{ざい}",
+    english: "Crime"
+  },
+  {
+    kanji: "ラスト",
+    english: "Ending・Finale"
+  },
+  {
+    kanji: "拍{はく}手{しゅ}［する］",
+    english: "Applause・Clap・To applaud"
+  },
+  {
+    kanji: "操{そう}作{さ}［する］",
+    english: "Manipulation・To manipulate"
+  },
+  {
+    kanji: "途{と}中{ちゅう}",
+    english: "On the way・In the middle of"
+  },
+  {
+    kanji: "締{し}め切{き}る",
+    english: "To close (e.g. applications)"
+  },
+  {
+    kanji: "惜{お}しい",
+    english: "Frustrating・Regrettable・Unfortunate"
+  },
+  {
+    kanji: "よくいらっしゃいました",
+    english: "Thank you for coming"
+  },
+  {
+    kanji: "ご無{ぶ}沙{さ}汰{た}［する］",
+    english: "Long silence・Not see/talk to each other for a while"
+  },
+  {
+    kanji: "見{み}送{おく}る",
+    english: "See off・Send off"
+  },
+  {
+    kanji: "後{ご}日{じつ}",
+    english: "A few days later・Another day"
+  },
+  {
+    kanji: "小{こ}包{づつみ}",
+    english: "Parcel・Package"
+  },
+  {
+    kanji: "便{びん}箋{せん}",
+    english: "Letter paper・Writing paper"
+  },
+  {
+    kanji: "どうか",
+    english: "Please"
+  },
+  {
+    kanji: "親{しん}戚{せき}",
+    english: "Relative"
+  },
+  {
+    kanji: "訪{ほう}問{もん}［する］",
+    english: "Visit・To visit"
+  },
+  {
+    kanji: "そういえば",
+    english: "Speaking of which"
+  },
+  {
+    kanji: "年{ねん}賀{が}状{じょう}",
+    english: "New Year's card"
+  },
+  {
+    kanji: "長{ちょう}女{じょ}",
+    english: "Eldest daughter"
+  },
+  {
+    kanji: "次{じ}女{じょ}",
+    english: "Second daughter"
+  },
+  {
+    kanji: "生{なま}意{い}気{き}な",
+    english: "Sassy・Cheeky"
+  },
+  {
+    kanji: "目{め}上{うえ}",
+    english: "Superior・Elder person"
+  },
+  {
+    kanji: "おじぎ［する］",
+    english: "Bow・To bow"
+  },
+  {
+    kanji: "長{ちょう}所{しょ}",
+    english: "Strength・Strong point"
+  },
+  {
+    kanji: "短{たん}所{しょ}",
+    english: "Weakness・Weak point"
+  },
+  {
+    kanji: "姪{めい}",
+    english: "Niece"
+  },
+  {
+    kanji: "甥{おい}",
+    english: "Nephew"
+  },
+  {
+    kanji: "暮{く}れる",
+    english: "To get dark・To end"
+  },
+  {
+    kanji: "〜ぶり",
+    english: "In〜 (e.g. first time in 3 years)"
+  },
+  {
+    kanji: "切{き}らす",
+    english: "To run out of"
+  },
+  {
+    kanji: "すまない",
+    english: "I'm sorry・Remorseful"
+  },
+  {
+    kanji: "お休{やす}みになる",
+    english: "To be absent"
+  },
+  {
+    kanji: "伝{でん}言{ごん}［する］",
+    english: "Message・To leave a message"
+  },
+  {
+    kanji: "拝{はい}見{けん}［する］",
+    english: "Seeing・To see (humbly)"
+  },
+  {
+    kanji: "訪{たず}ねる",
+    english: "To visit"
+  },
+  {
+    kanji: "氏{し}名{めい}",
+    english: "Name (full name)"
+  },
+  {
+    kanji: "人{にん}間{げん}",
+    english: "Human being"
+  },
+  {
+    kanji: "秘{ひ}密{みつ}",
+    english: "Secret"
+  },
+  {
+    kanji: "離{はな}れる",
+    english: "To separate・To leave"
+  },
+  {
+    kanji: "頼{たの}み",
+    english: "Favor・Request"
+  },
+  {
+    kanji: "尊{そん}敬{けい}［する］",
+    english: "Respect・To respect"
+  },
+  {
+    kanji: "誘{さそ}う",
+    english: "To invite"
+  },
+  {
+    kanji: "ついでに",
+    english: "At the same time・While you're at it"
+  },
+  {
+    kanji: "断{ことわ}る",
+    english: "To refuse"
+  },
+  {
+    kanji: "外{はず}す",
+    english: "To remove・To take off"
+  },
+  {
+    kanji: "不{ふ}機{き}嫌{げん}な",
+    english: "In a bad mood・Irritable"
+  },
+  {
+    kanji: "話{はな}しかける",
+    english: "To talk to someone"
+  },
+  {
+    kanji: "黙{だま}る",
+    english: "To be silent"
+  },
+  {
+    kanji: "卓{たっ}球{きゅう}",
+    english: "Table tennis"
+  },
+  {
+    kanji: "団{だん}体{たい}",
+    english: "Team・Group"
+  },
+  {
+    kanji: "〜戦{せん}",
+    english: "Match・Game (suffix for competitions)"
+  },
+  {
+    kanji: "〜対{たい}〜",
+    english: "Match-up・Versus (e.g. A vs B)"
+  },
+  {
+    kanji: "開{かい}会{かい}［する］",
+    english: "Opening ceremony・To have an opening ceremony"
+  },
+  {
+    kanji: "閉{へい}会{かい}［する］",
+    english: "Closing ceremony・To have a closing ceremony"
+  },
+  {
+    kanji: "入{にゅう}場{じょう}［する］",
+    english: "Entrance・To enter (a venue)"
+  },
+  {
+    kanji: "退{たい}場{じょう}［する］",
+    english: "Leaving・To leave (a venue)"
+  },
+  {
+    kanji: "券{けん}",
+    english: "Ticket"
+  },
+  {
+    kanji: "当{あ}たる",
+    english: "To hit・To win (a lottery)"
+  },
+  {
+    kanji: "選{せん}手{しゅ}",
+    english: "Athlete・Player"
+  },
+  {
+    kanji: "浅{あさ}い",
+    english: "Shallow"
+  },
+  {
+    kanji: "溺{おぼ}れる",
+    english: "To drown・To be lost in"
+  },
+  {
+    kanji: "派{は}手{で}な",
+    english: "Loud・Flashy"
+  },
+  {
+    kanji: "応{おう}援{えん}［する］",
+    english: "Cheering・To cheer"
+  },
+  {
+    kanji: "～歌{か}",
+    english: "Song (suffix)"
+  },
+  {
+    kanji: "叫{さけ}ぶ",
+    english: "To shout・To yell"
+  },
+  {
+    kanji: "盛{さか}んな",
+    english: "Frequent・Active・Energetic"
+  },
+  {
+    kanji: "両{りょう}側{がわ}",
+    english: "Both sides"
+  },
+  {
+    kanji: "ロープ",
+    english: "Rope"
+  },
+  {
+    kanji: "中{ちゅう}央{おう}",
+    english: "Center・Middle"
+  },
+  {
+    kanji: "才{さい}能{のう}",
+    english: "Talent"
+  },
+  {
+    kanji: "記{き}録{ろく}［する］",
+    english: "Record・To record"
+  },
+  {
+    kanji: "伸{の}ばす",
+    english: "To improve・To extend・To stretch"
+  },
+  {
+    kanji: "伸{の}びる",
+    english: "To be extended・To be stretched"
+  },
+  {
+    kanji: "大{たい}会{かい}",
+    english: "Tournament"
+  },
+  {
+    kanji: "州{しゅう}",
+    english: "State (of the US)"
+  },
+  {
+    kanji: "注{ちゅう}目{もく}［する］",
+    english: "Attention・To pay attention"
+  },
+  {
+    kanji: "体{たい}操{そう}［する］",
+    english: "Gymnastics・To do gymnastics"
+  },
+  {
+    kanji: "代{だい}表{ひょう}［する］",
+    english: "Representation・To represent"
+  },
+  {
+    kanji: "銀{ぎん}",
+    english: "Silver"
+  },
+  {
+    kanji: "〜台{だい}",
+    english: "〜Stand・Podium (suffix for ranking)"
+  },
+  {
+    kanji: "独{どく}占{せん}［する］",
+    english: "Monopoly・To monopolize"
+  },
+  {
+    kanji: "体{たい}育{いく}",
+    english: "Physical education"
+  },
+  {
+    kanji: "体{たい}育{いく}館{かん}",
+    english: "Gymnasium"
+  },
+  {
+    kanji: "両{りょう}～",
+    english: "Both～"
+  },
+  {
+    kanji: "握{あく}手{しゅ}［する］",
+    english: "Handshake・To shake hands"
+  },
+  {
+    kanji: "当{とう}日{じつ}",
+    english: "The actual day of"
+  },
+  {
+    kanji: "当{とう}日{じつ}券{けん}",
+    english: "Same-day ticket"
+  },
+  {
+    kanji: "払{はら}い戻{もど}す",
+    english: "To refund"
+  },
+  {
+    kanji: "はめる",
+    english: "To fit (something) into (something)"
+  },
+  {
+    kanji: "球{たま}",
+    english: "Ball"
+  },
+  {
+    kanji: "捕{と}る",
+    english: "To catch・To take"
+  },
+  {
+    kanji: "～着{ちゃく}",
+    english: "～Place (suffix for ranking)"
+  },
+  {
+    kanji: "姿{すがた}",
+    english: "Figure・Appearance"
+  },
+  {
+    kanji: "感{かん}動{どう}［する］",
+    english: "Emotion・To be moved"
+  },
+  {
+    kanji: "たまたま",
+    english: "Just happened to・By chance"
+  },
+  {
+    kanji: "録{ろく}画{が}［する］",
+    english: "Recording・To record"
+  },
+  {
+    kanji: "～級{きゅう}",
+    english: "Class"
+  },
+  {
+    kanji: "肩{かた}",
+    english: "Shoulder"
+  },
+  {
+    kanji: "負{ふ}傷{しょう}［する］",
+    english: "Injury・To be injured"
+  },
+  {
+    kanji: "獲{かく}得{とく}［する］",
+    english: "Acquisition・To acquire"
+  },
+  {
+    kanji: "効{こう}果{か}",
+    english: "Effect・Effectiveness"
+  },
+  {
+    kanji: "天{てん}才{さい}",
+    english: "Genius"
+  },
+  {
+    kanji: "蹴{け}る",
+    english: "To kick"
+  },
+  {
+    kanji: "曲{ま}げる",
+    english: "To curve・To bend"
+  },
+  {
+    kanji: "回{かい}転{てん}［する］",
+    english: "Rotation・To rotate"
+  },
+  {
+    kanji: "ミス［する］",
+    english: "Mistake・To make a mistake"
+  },
+  {
+    kanji: "次{じ}回{かい}",
+    english: "Next time"
+  },
+  {
+    kanji: "出{しゅつ}場{じょう}［する］",
+    english: "Participation・To participate"
+  },
+  {
+    kanji: "攻{こう}撃{げき}［する］",
+    english: "Attack・To attack"
+  },
+  {
+    kanji: "風{ふう}船{せん}",
+    english: "Balloon"
+  },
+  {
+    kanji: "ビニール袋{ぶくろ}",
+    english: "Plastic bag"
+  },
+  {
+    kanji: "相{す}撲{もう}",
+    english: "Sumo wrestling"
+  },
+  {
+    kanji: "それに",
+    english: "In addition"
+  },
+  {
+    kanji: "結{けっ}果{か}",
+    english: "Result"
   }
 ];
