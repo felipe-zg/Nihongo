@@ -13,6 +13,7 @@ export const MiniStoryTopics = {
   ANIMALS: "動物",
   CITIES: "市",
   WEATHER: "天気",
+  TRAVEL: "旅行",
 } as const;
 
 // type MiniStoryTopic = typeof MiniStoryTopics[keyof typeof MiniStoryTopics];
@@ -9284,6 +9285,1296 @@ export const MINI_STORY_N3: Record<string, MiniStory> = {
     audio: "T215.mp3",
     topic: MiniStoryTopics.WEATHER,
     page: 156,
+  },
+  "216": {
+    id: "216",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "<ゴールデンウィーク>の<連{れん}休{きゅう}>はどこか行きますか。",
+      },
+      {
+        character: "B",
+        dialogue: "ああ、旅{りょ}行{こう}はしないで<日{ひ}帰{がえ}り>で<ピクニック>に行きます。",
+      },
+      {
+        character: "A",
+        dialogue: "登{と}山{ざん}ですか。",
+      },
+      {
+        character: "B",
+        dialogue: "そんな大{おお}げさなものじゃないです。<ただ>近{ちか}くの山{やま}を<ぶらぶらする>だけです。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "ゴールデンウィーク",
+        english: "Golden Week",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "連{れん}休{きゅう}",
+        english: "Long holiday",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "日{ひ}帰{がえ}り",
+        english: "Day trip",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "ピクニック",
+        english: "Picnic",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "登{と}山{ざん}［する］",
+        english: "Mountain climbing・To climb a mountain",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+      {
+        kanji: "ただ",
+        english: "Just・Only",
+        type: MiniStoryWordType.ADVERB
+      },
+      {
+        kanji: "ぶらぶらする",
+        english: "To hang around",
+        type: MiniStoryWordType.IRREGULAR_TRANSITIVE
+      },
+    ],
+    translation: `A: Are you going anywhere over the long holiday for Golden Week?\nB: Not really, I won't be traveling anywhere, just taking a day trip for a picnic.\nA: Are you going mountain climbing?\nB: That would be overstating it a bit. I'm just going to hang around in the mountains nearby.`,
+    audio: "T216.mp3",
+    topic: MiniStoryTopics.TRAVEL,
+    page: 158,
+  },
+  "217": {
+    id: "217",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "日本に<温{おん}泉{せん}>が多いのは、<火{か}山{ざん}>が多いからだ。温{おん}泉{せん}街{がい}はホテルでけでなく、伝{でん}統{とう}的{てき}な<旅{りょ}館{かん}>も多い。温{おん}泉{せん}は世{せ}界{かい}中{じゅう}の人{ひと}に人{にん}気{き}だが、<裸{はだか}>になったり、<肌{はだ}>を見られたりするのを恥{は}ずかしがる人{ひと}もいる。旅{りょ}館{かん}によっては部{へ}屋{や}に自分だけの温{おん}泉{せん}があるところもある。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "温{おん}泉{せん}",
+        english: "Hot spring",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "火{か}山{ざん}",
+        english: "Volcano",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "旅{りょ}館{かん}",
+        english: "Japanese inn",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "裸{はだか}",
+        english: "Naked",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "肌{はだ}",
+        english: "Skin",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `Japan has many hot springs because it has many volcanoes. Towns around hot springs include not only hotels, but also more traditional Japanese inns. Although hot springs are popular with people all around the world, there are those who are embarrassed by the idea of being naked or showing skin. Some traditional inns have hot springs baths for private use in their guest rooms.`,
+    audio: "T217.mp3",
+    topic: MiniStoryTopics.TRAVEL,
+    page: 158,
+  },
+  "218": {
+    id: "218",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "私は<芸{げい}術{じゅつ}>好きだ。旅{りょ}行{こう}に行{い}ったときは、よく<美{び}術{じゅつ}館{かん}>や<博{はく}物{ぶつ}館{かん}>に行く。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "芸{げい}術{じゅつ}",
+        english: "Art",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "美{び}術{じゅつ}館{かん}",
+        english: "Art museum",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "美{び}術{じゅつ}",
+        english: "Art",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "博{はく}物{ぶつ}館{かん}",
+        english: "Museum",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `I love art. I often visit art and other museums when I travel.`,
+    audio: "T218.mp3",
+    topic: MiniStoryTopics.TRAVEL,
+    page: 159,
+  },
+  "219": {
+    id: "219",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "「<間{ま}もなく>、<発{はっ}車{しゃ}します>」というアナウンスを聞いて、<ホーム>の電{でん}車{しゃ}に<飛{と}び込{こ}んだ>。<ところが>、その電{でん}車{しゃ}は特{とっ}急{きゅう}で、降{お}りる駅{えき}で<停{てい}車{しゃ}せず>、<通{つう}過{か}>してしまった。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "間{ま}もなく",
+        english: "Soon・Shortly",
+        type: MiniStoryWordType.ADVERB
+      },
+      {
+        kanji: "発{はっ}車{しゃ}［する］",
+        english: "Departure・To depart",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+      {
+        kanji: "ホーム",
+        english: "Platform (at train station)",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "プラットホーム",
+        english: "Platform (at train station)",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "飛{と}び込{こ}む",
+        english: "To jump in",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE
+      },
+      {
+        kanji: "ところが",
+        english: "However・But",
+        type: MiniStoryWordType.CONJUNCTION
+      },
+      {
+        kanji: "停{てい}車{しゃ}［する］",
+        english: "Stopping・To stop",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+      {
+        kanji: "通{つう}過{か}［する］",
+        english: "Passing・To pass",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+    ],
+    translation: `Hearing the conductor announce "We'll be departing soon," I jumped onto the train sitting at the platform. It turned out, however, that it was an express train and it went right past my station without stopping.`,
+    audio: "T219.mp3",
+    topic: MiniStoryTopics.TRAVEL,
+    page: 160,
+  },
+  "220": {
+    id: "220",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "すみません、バス乗{の}り場{ば}を探{さが}しているんですが。",
+      },
+      {
+        character: "B",
+        dialogue: "バス乗{の}り場{ば}は駅{えき}の反{はん}対{たい}側{がわ}ですね。ここを左{ひだり}に行{い}って、<突{つ}き当{あ}たり>を左{ひだり}に曲{ま}がって、<鉄{てつ}道{どう}>の<線{せん}路{ろ}>を<越{こ}えない>といといけません。",
+      },
+      {
+        character: "A",
+        dialogue: "<ええと>、最{さい}初{しょ}に左{ひだり}に行って、線{せん}路{ろ}を越{こ}えるんですか。",
+      },
+      {
+        character: "B",
+        dialogue: "私も途{と}中{ちゅう}まで行{い}くので、一{いっ}緒{しょ}に行きましょう。<ついて来{き}て>ください。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "突{つ}き当{あ}たり",
+        english: "End of the street・Dead end",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "鉄{てつ}道{どう}",
+        english: "Railroad",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "線{せん}路{ろ}",
+        english: "Railway track",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "越{こ}える",
+        english: "To cross",
+        type: MiniStoryWordType.ICHIDAN_TRANSITIVE
+      },
+      {
+        kanji: "ええと",
+        english: "Well...・umm...",
+        type: MiniStoryWordType.OTHER
+      },
+      {
+        kanji: "ついて来{く}る",
+        english: "To follow・To come along with",
+        type: MiniStoryWordType.IRREGULAR_INTRANSITIVE
+      },
+      {
+        kanji: "ついて行{い}く",
+        english: "To follow・To go along with",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE
+      },
+    ],
+    translation: `A: Excuse me, I'm looking for a bus stop.\nB: The bus platform is on the other side of the station. Go left here, then turn left at the end of the road, and you'll have to cross the railroad tracks.\nA: So, I go to the left first and then cross the tracks?\nB: I'll go part of the way, so let's go together. Please follow me.`,
+    audio: "T220.mp3",
+    topic: MiniStoryTopics.TRAVEL,
+    page: 160,
+  },
+  "221": {
+    id: "221",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "最{さい}近{きん}は飛{ひ}行{こう}機{き}でも、新{しん}幹{かん}線{せん}でも、スマートフォンで簡{かん}単{たん}に<日{ひ}付{づけ}>や<便{びん}>を<変{へん}更{こう}できる>。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "日{ひ}付{づけ}",
+        english: "Date",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "便{びん}",
+        english: "Service",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "変{へん}更{こう}［する］",
+        english: "Change・To change",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+    ],
+    translation: `These days it's easy to change travel information for planes or shinkansen trains using a smartphone, including dates and flights.`,
+    audio: "T221.mp3",
+    topic: MiniStoryTopics.TRAVEL,
+    page: 161,
+  },
+  "222": {
+    id: "222",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "海外に住んでいる友達がやってくるので、空{くう}港{こう}の<到{とう}着{ちゃく}><ロビー>まで<出{で}迎{むか}え>に行{い}った。飛{ひ}行{こう}機{き}の<トラブル>で2時間も遅{おく}れて心配した。会{あ}えたときは抱{だ}き合{あ}って喜{よろこ}んだ。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "到{とう}着{ちゃく}［する］",
+        english: "Arrival・To arrive",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+      {
+        kanji: "ロビー",
+        english: "Lobby",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "出{で}迎{むか}え",
+        english: "Meeting・Reception",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "トラブル",
+        english: "Trouble・Problem",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `My friend who lives abroad was arriving, so I went to pick them up at the arrival lobby of the airport. Their plane arrived two hours late due to some trouble, so I was worried. I hugged them with joy when I saw them.`,
+    audio: "T222.mp3",
+    topic: MiniStoryTopics.TRAVEL,
+    page: 162,
+  },
+  "223": {
+    id: "223",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "都{と}会{かい}に出{で}てきてから、<出{しゅっ}身{しん}地{ち}>の言{こと}葉{ば}が<通{つう}じない>ことがよくあった。。<方{ほう}言{げん}>だと思っていない言{こと}葉{ば}が、実{じつ}は方{ほう}言{げん}だと分{わ}かった",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "出{しゅっ}身{しん}地{ち}",
+        english: "Place of birth・Hometown・Where one is from",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "出{しゅっ}身{しん}",
+        english: "Origin",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "通{つう}じる",
+        english: "To be understood・To be comprehended",
+        type: MiniStoryWordType.ICHIDAN_INTRANSITIVE
+      },
+      {
+        kanji: "方{ほう}言{げん}",
+        english: "Dialect",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `Since moving to the city, I've often found that people can't always understand words that are used where I'm from. I found out that more words than I thought were actually limited to my own dialect.`,
+    audio: "T223.mp3",
+    topic: MiniStoryTopics.TRAVEL,
+    page: 162,
+  },
+  "224": {
+    id: "224",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "出{しゅっ}発{ぱつ}まで<あと>10分だよ。そろそろホームに行った方{ほう}がよくない？",
+      },
+      {
+        character: "B",
+        dialogue: "まだ10分もある、だよ。<待{まち}合{あい}室{しつ}>で休{きゅう}憩{けい}しようよ。",
+      },
+      {
+        character: "A",
+        dialogue: "あなたはいつもそう。それで<ぎりぎりに>なって慌{あわ}てるんだから。早{はや}くホームに行こうよ。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "あと",
+        english: "More・Left・Remaining",
+        type: MiniStoryWordType.ADVERB
+      },
+      {
+        kanji: "待{まち}合{あい}室{しつ}",
+        english: "Waiting room",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "ぎりぎりな",
+        english: "Grieved・Just in time・Barely made it",
+        type: MiniStoryWordType.ADJECTIVE_NA
+      },
+    ],
+    translation: `A: We have 10 minutes until the train leaves. Shouldn't we head toward the platform?\nB: You mean, we still have a whole 10 minutes. Let's take a break in the waiting room.\nA: You're always like this! Then everything gets left to the last minute and we have to rush. Let's get to the platform early.`,
+    audio: "T224.mp3",
+    topic: MiniStoryTopics.TRAVEL,
+    page: 163,
+  },
+  "225": {
+    id: "225",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<お盆{ぼん}>はたくさんの人が<ふるさと>に<向{む}かう>ため、<全{ぜん}国{こく}>の<道{どう}路{ろ}>が渋{じゅう}滞{たい}する。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "（お）盆{ぼん}",
+        english: "Obon (Japanese Buddhist festival to honor the spirits of one's ancestors)",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "ふるさと",
+        english: "Hometown",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "向{む}かう",
+        english: "To head to",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE
+      },
+      {
+        kanji: "全{ぜん}国{こく}",
+        english: "Nationwide・All over the country",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "道{どう}路{ろ}",
+        english: "Road",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `During Obon, many people head to their hometowns, so roads all over the country are crowded.`,
+    audio: "T225.mp3",
+    topic: MiniStoryTopics.TRAVEL,
+    page: 163,
+  },
+  "226": {
+    id: "226",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "先{せん}日{じつ}、山に<ドライブ>に行ったのだが、<レジャー><シーズン>だったので、帰{かえ}り道{みち}はすごく<渋{じゅう}滞{たい}>していた。<信{しん}号{ごう}>も全{ぜん}然{ぜん}変{か}わらなくて、イライラし、<疲{つか}れ>がたまってしまった。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "ドライブ［する］",
+        english: "Driving・To go for a drive",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "レジャー",
+        english: "Leisure",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "シーズン",
+        english: "Season",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "渋{じゅう}滞{たい}［する］",
+        english: "Traffic jam・To be in a traffic jam",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+      {
+        kanji: "信{しん}号{ごう}",
+        english: "Traffic light",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "疲{つか}れ",
+        english: "Fatigue・Tiredness",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `The other day, I went on a drive into the mountains, but because it's tourist season there was a lot of traffic on the way back. The traffic lights took forever to change, and it was frustrating, so it made me tired.`,
+    audio: "T226.mp3",
+    topic: MiniStoryTopics.TRAVEL,
+    page: 164,
+  },
+  "227": {
+    id: "227",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "そういえば、海外旅行はどうだったの？",
+      },
+      {
+        character: "B",
+        dialogue: "楽しかったよ。でも、最{さい}初{しょ}に行ったドイツは<時{じ}差{さ}ぼけ>がひどくて、<チェックインして>からずっとホテルの部屋にいて、全{ぜん}然{ぜん}<観{かん}光{こう}できなかった>。",
+      },
+      {
+        character: "A",
+        dialogue: "えー、<せっかく>行ったのに、もったいない。",
+      },
+      {
+        character: "B",
+        dialogue: "うん、もうちょっと長{なが}く<滞{たい}在{ざい}すれば>よかった",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "時{じ}差{さ}ぼけ",
+        english: "Jet lag",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "持{じ}差{さ}",
+        english: "Time difference",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "チェックイン［する］",
+        english: "Check in (to a hotel)・To check in (to a hotel)",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+      {
+        kanji: "チェックアウト［する］",
+        english: "Check out (of a hotel)・To check out (of a hotel)",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+      {
+        kanji: "観{かん}光{こう}［する］",
+        english: "Sightseeing・To go sightseeing",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "観{かん}光{こう}客{きゃく}",
+        english: "Sightseer・Tourist",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "せっかく",
+        english: "After ~ all of that・With much effort",
+        type: MiniStoryWordType.ADVERB
+      },
+      {
+        kanji: "滞{たい}在{ざい}［する］",
+        english: "Stay・To stay",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+    ],
+    translation: `A: Oh right, how was traveling abroad?\nB: It was fun. But when I first arrived in Germany, the jet lag was so bad that once I checked in, I stayed in my room the whole time and didn't get to see any of the sights.\nA: Oh no, what a waste after travelling all that way to get there!\nB: Yeah, I should have stayed a little while longer.`,
+    audio: "T227.mp3",
+    topic: MiniStoryTopics.TRAVEL,
+    page: 164,
+  },
+  "228": {
+    id: "228",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "夏{なつ}に<ビーチ>へ<海{かい}水{すい}浴{よく}>に行くことになった。<それで>、<水{みず}着{ぎ}>を買いに行った。<恋{こい}人{びと}>と一緒に行くので、<かなり>迷{まよ}った。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "ビーチ",
+        english: "Beach",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "海{かい}水{すい}浴{よく}",
+        english: "Sea bathing・Swimming in the sea",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "それで",
+        english: "So・Therefore",
+        type: MiniStoryWordType.CONJUNCTION
+      },
+      {
+        kanji: "水{みず}着{ぎ}",
+        english: "Swimsuit",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "恋{こい}人{びと}",
+        english: "Lover",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "かなり",
+        english: "Quite・Considerably",
+        type: MiniStoryWordType.ADVERB
+      },
+    ],
+    translation: `This summer, I decided to go sea water bathing at the beach, so I went to buy a swimsuit. I'm going to Bo with my lover, so I had quite a lot of trouble choosing one.`,
+    audio: "T228.mp3",
+    topic: MiniStoryTopics.TRAVEL,
+    page: 165,
+  },
+  "229": {
+    id: "229",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "この前東京に行ったとき、わざわざ金{かな}沢{ざわ}を<経{けい}由{ゆ}して>行ったんです。",
+      },
+      {
+        character: "B",
+        dialogue: "え、なんで？",
+      },
+      {
+        character: "A",
+        dialogue: "JRは、<目{もく}的{てき}>地{ち}までの途{と}中{ちゅう}の駅でも自由に<下{げ}車{しゃ}できる>んです。だから、途{と}中{ちゅう}下{げ}車{しゃ}して<城{しろ}>と<庭{てい}園{えん}>を<見{けん}物{ぶつ}しました>。あ、<私{し}鉄{てつ}>は途{と}中{ちゅう}下{げ}車{しゃ}できませんよ。JRだけです。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "経{けい}由{ゆ}［する］",
+        english: "Going via・To go via",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "目{もく}的{てき}",
+        english: "Purpose・Objective",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "下{げ}車{しゃ}［する］",
+        english: "Getting off (a train)・To get off (a train)",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "城{しろ}",
+        english: "Castle",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "庭{てい}園{えん}",
+        english: "Garden",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "見{けん}物{ぶつ}［する］",
+        english: "Sightseeing・To go sightseeing",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "私{し}鉄{てつ}",
+        english: "Private railway",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `A: Last time I went to Tokyo, I went out of my way to go through Kanazawa.\nB: Oh yeah? What for?\nA: With JR you can get off at any station along your travel route before you reach your destination. So I got off on the way and went to see the castle and some gardens. You can't do that on the private railway, only on JR.`,
+    audio: "T229.mp3",
+    topic: MiniStoryTopics.TRAVEL,
+    page: 166,
+  },
+  "230": {
+    id: "230",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<豊{ゆた}かな>国{くに}とよく言{い}われるが、それがどういうことなのか<正{せい}確{かく}に>言{い}うのは難{むずか}しい。例えば、ビルがたくさん<建{た}って>いれば豊{ゆた}かなのだろうか。GDPという<指{し}標{ひょう}>がよく使われ、これはその国{くに}で作られたものやサービスの合{ごう}計{けい}金{きん}額{がく}を<指{さ}す>。<物{ぶっ}価{か}>も考{かんが}える必要がある。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "豊{ゆた}かな",
+        english: "Rich・Wealthy",
+        type: MiniStoryWordType.ADJECTIVE_NA
+      },
+      {
+        kanji: "正{せい}確{かく}な",
+        english: "Precise・Accurate",
+        type: MiniStoryWordType.ADJECTIVE_NA
+      },
+      {
+        kanji: "建{た}つ",
+        english: "To be built・To stand (a building)",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE
+      },
+      {
+        kanji: "建{た}てる",
+        english: "To build",
+        type: MiniStoryWordType.ICHIDAN_TRANSITIVE
+      },
+      {
+        kanji: "指{し}標{ひょう}",
+        english: "Index・Indicator",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "指{さ}す",
+        english: "To point (at)・To indicate",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+      {
+        kanji: "物{ぶっ}価{か}",
+        english: "Prices of goods・Commodity prices",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `We hear a lot about "wealthy nations," but it's difficult to say precisely what that means. For example, is having many buildings what makes a country wealthy? One commonly-used index is GDP, which indicates the total monetary value of everything that was manufactured, services, and the like in that country. Prices also need to be considered`,
+    audio: "T230.mp3",
+    topic: MiniStoryTopics.TRAVEL,
+    page: 166,
+  },
+  "231": {
+    id: "231",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<税{ぜい}関{かん}>が<偽{にせ}物{もの}>の<宝{ほう}石{せき}>を見つけた。本{ほん}物{もの}に<そっくりで>、ちょっと見ただけでは分からない。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "税{ぜい}関{かん}",
+        english: "Customs",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "偽{にせ}物{もの}",
+        english: "Fake・Counterfeit",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "宝{ほう}石{せき}",
+        english: "Jewels・Jewelry",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "そっくりな",
+        english: "Just like・The splitting image of",
+        type: MiniStoryWordType.ADJECTIVE_NA
+      },
+    ],
+    translation: `Customs found fake jewels. It looks exactly like the real thing; you could hardly tell the difference with just a casual look.`,
+    audio: "T231.mp3",
+    topic: MiniStoryTopics.TRAVEL,
+    page: 167,
+  },
+  "232": {
+    id: "232",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "この前、<ボート>の<免{めん}許{きょ}>を取{と}ったんだ。",
+      },
+      {
+        character: "B",
+        dialogue: "え、すごい。みんなで乗{の}りたい。",
+      },
+      {
+        character: "A",
+        dialogue: "いや、釣{つ}り用{よう}の、小さな<エンジン>がついているだけの船{ふね}だよ。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "ボート",
+        english: "Boat",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "免{めん}許{きょ}",
+        english: "License",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "免{めん}許{きょ}証{しょう}",
+        english: "License",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "エンジン",
+        english: "Engine",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `A: I just got my boating license.\nB: Way to go. You going to take us all out?\nA: Well, see, my boat is just a fishing boat with a little engine.`,
+    audio: "T232.mp3",
+    topic: MiniStoryTopics.TRAVEL,
+    page: 168,
+  },
+  "233": {
+    id: "233",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "この<トンネル>は、東京<方{ほう}面{めん}>に行くときの<近{ちか}道{みち}>である。昔{むかし}は、<コーナー>が<連{れん}続{ぞく}する>山道を行く必要があった。<岩{いわ}>が落{お}ちている危{あぶ}ない道で、<片{かた}道{みち}>1時間もかかった。今は、20分で<往{おう}復{ふく}>できる。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "トンネル",
+        english: "Tunnel",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "～方{ほう}面{めん}",
+        english: "~Bound・Heading to~",
+        type: MiniStoryWordType.SUFFIX
+      },
+      {
+        kanji: "近{ちか}道{みち}［する］",
+        english: "Shortcut・To take a shortcut",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+      {
+        kanji: "コーナー",
+        english: "Corner・Curve",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "連{れん}続{ぞく}［する］",
+        english: "Continuous・To happen continuously",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+      {
+        kanji: "岩{いわ}",
+        english: "Rock",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "片{かた}道{みち}",
+        english: "One-way",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "往{おう}復{ふく}［する］",
+        english: "Round trip・To make a round trip",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+    ],
+    translation: `This tunnel is a shortcut when you're going to Tokyo. A long time ago, you had to take a road through the mountains that was just a continuous series of sharp curves. With fallen rocks adding to the road's danger, it used to take an hour one way. Now you can do the round trip in 20 minutes.`,
+    audio: "T233.mp3",
+    topic: MiniStoryTopics.TRAVEL,
+    page: 168,
+  },
+  "234": {
+    id: "234",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "高{こう}速{そく}道{どう}路{ろ}のサービスエリアは、昔{むかし}は<トラック>が<駐{ちゅう}車{しゃ}して>休{きゅう}憩{けい}するところというイメージだったが、今は買い物が楽しめ、<遊{ゆう}園{えん}地{ち}>があるところもある。<長{ちょう}>距{きょ}離{り}バスの<停{てい}留{りゅう}所{じょ}>もあるので、車がなくても行くことができる。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "トラック",
+        english: "Truck",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "駐{ちゅう}車{しゃ}［する］",
+        english: "Parking・To park",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: " 駐{ちゅう}車{しゃ}場{じょう}",
+        english: "Parking lot",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "遊{ゆう}園{えん}地{ち}",
+        english: "Amusement park",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "長{ちょう}～",
+        english: "Long ~",
+        type: MiniStoryWordType.PREFIX
+      },
+      {
+        kanji: "停{てい}留{りゅう}所{じょ}",
+        english: "Bus stop",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `Highway service areas were once seen as a place where trucks stop for rest, but now many of them have different options for shopping. Some even have amusement parks. Many also have bus stops for long-distance buses, so you can go even if you don't have a car.`,
+    audio: "T234.mp3",
+    topic: MiniStoryTopics.TRAVEL,
+    page: 169,
+  },
+  "235": {
+    id: "235",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "なんか横{よこ}浜{はま}<港{こう}>をクルーズ<船{せん}>で回{まわ}りながらディナーが食べられる<ツアー>があるらしいよ。",
+      },
+      {
+        character: "B",
+        dialogue: "へえ。でも前{まえ}から予{よ}約{やく}しないといけないんじゃないの。",
+      },
+      {
+        character: "A",
+        dialogue: "いや、<定{てい}員{いん}>が多いから、平{へい}日{じつ}なら<前{ぜん}日{じつ}>でもOKだったって。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "～港{こう}",
+        english: "Port・Harbor・Bay",
+        type: MiniStoryWordType.SUFFIX
+      },
+      {
+        kanji: "～船{せん}",
+        english: "Ship・Boat",
+        type: MiniStoryWordType.SUFFIX
+      },
+      {
+        kanji: "ツアー",
+        english: "Tour",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "定{てい}員{いん}",
+        english: "Capacity",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "前{ぜん}日{じつ}",
+        english: "The day before",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.ADVERB]
+      },
+    ],
+    translation: `A: Apparently they have a tour where you can get on a cruise ship and have dinner as it goes around Yokohama Bay.\nB: Do they? I'll bet you have to make a reservation in advance, don't you?\nA: No, I heard they have a large capacity on the ship that for weekdays, you can even make the reservation the day before.`,
+    audio: "T235.mp3",
+    topic: MiniStoryTopics.TRAVEL,
+    page: 170,
+  },
+  "236": {
+    id: "236",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "東{とう}海{かい}道{どう}新{しん}幹{かん}線{せん}の<自{じ}由{ゆう}席{せき}>は1号{ごう}<車{しゃ}>から3号{ごう}車{しゃ}までだ。東京<発{はつ}>の「のぞみ号{ごう}」の場合、前{まえ}の方{ほう}にある。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "自{じ}由{ゆう}席{せき}",
+        english: "Unreserved seat",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "～車{しゃ}",
+        english: "~Car",
+        type: MiniStoryWordType.SUFFIX
+      },
+      {
+        kanji: "～発{はつ}",
+        english: "~Departure・Departing from ~",
+        type: MiniStoryWordType.SUFFIX
+      },
+    ],
+    translation: `The Tokaido Shinkansen has unreserved seats from the first to third car. On the Nozomi departing from Tokyo, they are toward the front of the train.`,
+    audio: "T236.mp3",
+    topic: MiniStoryTopics.TRAVEL,
+    page: 170,
+  },
+  "237": {
+    id: "237",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<旅{たび}>をするときは、<すり>に気をつけないといけない。特{とく}に<市{いち}場{ば}>など、人が多い場所は注意が必要だ。カバンは体{からだ}の<正{しょう}面{めん}>で持{も}った方{ほう}がいい。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "旅{たび}［する］",
+        english: "Travel・To travel",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "すり",
+        english: "Pickpocketing",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "市{いち}場{ば}",
+        english: "Market",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "正{しょう}面{めん}",
+        english: "Front",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `When traveling, you have to be careful about pickpockets. You need to be especially cautious in markets or other crowded places. You should carry your bags toward the front of your body.`,
+    audio: "T237.mp3",
+    topic: MiniStoryTopics.TRAVEL,
+    page: 171,
+  },
+  "238": {
+    id: "238",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "たくさんの人を<乗{の}せた><モノレール>の<ブレーキ>が故{こ}障{しょう}し、駅の壁{かべ}にぶつかる事{じ}故{こ}が起{お}きた。駅では<サイレン>が鳴{な}り響{ひび}き、たくさんの人が<非{ひ}常{じょう}口{ぐち}>に集{あつ}まり、けが人{にん}が出{で}た。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "乗{の}せる",
+        english: "To board・To get on (a vehicle)",
+        type: MiniStoryWordType.ICHIDAN_TRANSITIVE
+      },
+      {
+        kanji: "モノレール",
+        english: "Monorail",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "ブレーキ",
+        english: "Brake",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "サイレン",
+        english: "Siren",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "非{ひ}常{じょう}口{ぐち}",
+        english: "Emergency exit",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `There was an accident involving the brakes failing on a monorail full of passengers where the monorail hit the wall of a station. The station sirens wailed and many people were gathered around the emergency exits. Some were injured.`,
+    audio: "T238.mp3",
+    topic: MiniStoryTopics.TRAVEL,
+    page: 171,
+  },
+  "239": {
+    id: "239",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "紙{かみ}の<乗{じょう}車{しゃ}券{けん}>の時{じ}代{だい}は、電車に乗った後{あと}、降{お}りる駅が決まっていた。先{さき}の駅まで<乗{の}り越{こ}した>ときは、専{せん}用{よう}の機{き}械{かい}に乗{じょう}車{しゃ}券{けん}とお金{かね}を入{い}れる必要があった。今はICカードなので、<タッチする>だけで、どの駅でも自由に降{お}りることができる。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "乗{じょう}車{しゃ}券{けん}",
+        english: "Train ticket",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "乗{じょう}車{しゃ}［する］",
+        english: "Riding・To ride (a train, bus, etc.)",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+      {
+        kanji: "乗{の}り越{こ}す",
+        english: "To ride past (one's destination)・To go beyond (one's destination)",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+      {
+        kanji: "タッチ［する］",
+        english: "Touch・To tap",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+    ],
+    translation: `Back when train tickets were all paper, once you got on, you had to get off at the station your ticket said. If you went past the station on your ticket, you would have to put your ticket and some money in a special machine for it. Now we have IC cards so all you have to do is tap it and you can get off at any station you want.`,
+    audio: "T239.mp3",
+    topic: MiniStoryTopics.TRAVEL,
+    page: 172,
+  },
+  "240": {
+    id: "240",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "一{いっ}回{かい}、<ロケット>に乗{の}って宇{う}宙{ちゅう}に行ってみたいって思{おも}わない？",
+      },
+      {
+        character: "B",
+        dialogue: "思{おも}わない。<だって>最{さい}初{しょ}はいいけど、絶{ぜっ}対{たい}<退{たい}屈{くつ}する>って。",
+      },
+      {
+        character: "A",
+        dialogue: "夢{ゆめ}がないなあ。何{なん}か乗{の}ってみたい乗{の}り物{もの}ってないの？",
+      },
+      {
+        character: "B",
+        dialogue: "<ヘリコプター>かな。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "ロケット",
+        english: "Rocket",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "だって",
+        english: "I mean・...Because",
+        type: MiniStoryWordType.CONJUNCTION
+      },
+      {
+        kanji: "退{たい}屈{くつ}［する］",
+        english: "Boredom・To be bored",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+      {
+        kanji: "ヘリコプター",
+        english: "Helicopter",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `A: Would you ever want to try getting in a rocket to go to space once?\nB: I wouldn't want to. I mean, it would be nice at first, but it would absolutely get boring.\nA: Not very ambitious of you. Isn't there something you've always wanted to take a ride on?\nB: Maybe a helicopter?`,
+    audio: "T240.mp3",
+    topic: MiniStoryTopics.TRAVEL,
+    page: 172,
+  },
+  "241": {
+    id: "241",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "大学の<サークル>のメンバーで、2{に}<泊{はく}>3{みっ}日{か}の卒業旅行に行くことになった。<ガイドブック>を見ながら<支{し}度{たく}して>いると、<期{き}待{たい}>が高{たか}まってきた。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "サークル",
+        english: "Circle (e.g. a club or group)",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "～泊{はく}",
+        english: "～Nights",
+        type: MiniStoryWordType.SUFFIX
+      },
+      {
+        kanji: "ガイドブック",
+        english: "Guidebook",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "ガイド［する］",
+        english: "Guidance・To guide",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "支{し}度{たく}［する］",
+        english: "Preparation・To prepare",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+      {
+        kanji: "期{き}待{たい}［する］",
+        english: "Expectation・To expect",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+    ],
+    translation: `I was planning to go on a graduation trip for two nights and three days with other members of a club I was in at university. I got more and more excited about it as I packed and prepared while looking through guidebooks at the same time.`,
+    audio: "T241.mp3",
+    topic: MiniStoryTopics.TRAVEL,
+    page: 173,
+  },
+  "242": {
+    id: "242",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "日本に来たときは、早く帰りたいと思っていたが、<帰{き}国{こく}>の日{ひ}が<近{ちか}づく>と、<次{し}第{だい}に>帰りたくないという気持ちが大きくなった。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "帰{き}国{こく}［する］",
+        english: "Returning home・To return home",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+      {
+        kanji: "近{ちか}づく",
+        english: "To draw near・To approach",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE
+      },
+      {
+        kanji: "次{し}第{だい}に",
+        english: "Gradually・In due course",
+        type: MiniStoryWordType.ADVERB
+      },
+    ],
+    translation: `When I first came to Japan, I couldn't wait to return home, but as the day I was to return drew nearer, the feeling of not wanting to go back home gradually came to outweigh it.`,
+    audio: "T242.mp3",
+    topic: MiniStoryTopics.TRAVEL,
+    page: 174,
+  },
+  "243": {
+    id: "243",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "この<草{くさ}>は蓬{よもぎ}といって、食べることができる。薬{くすり}の<原{げん}料{りょう}>にもなる。蓬{よもぎ}餅{もち}はスーパーでも売{う}っているので、<ぜひとも>一度食べてみてほしい。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "草{くさ}",
+        english: "Grass",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "原{げん}料{りょう}",
+        english: "Ingredient・Raw material",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "ぜひ（とも）",
+        english: "By all means・Certainly",
+        type: MiniStoryWordType.ADVERB
+      },
+    ],
+    translation: `This plant is called yomogi, and it is edible. It is also used as an ingredient in medicine. Yomogi-mochi is even sold in supermarkets, so I would like you to try it.`,
+    audio: "T243.mp3",
+    topic: MiniStoryTopics.TRAVEL,
+    page: 174,
+  },
+  "244": {
+    id: "244",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<深{しん}海{かい}>に住{す}む珍{めずら}しい魚{さかな}が、<偶{ぐう}然{ぜん}><網{あみ}>にかかることがある",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "深{しん}海{かい}",
+        english: "Deep sea",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "偶{ぐう}然{ぜん}",
+        english: "By chance・Accidentally",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.ADVERB]
+      },
+      {
+        kanji: "網{あみ}",
+        english: "Net",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "網{あみ}棚{だな}",
+        english: "Net shelf・Overhead luggage rack",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `Rare fish that live in the deep sea are sometimes caught in fishing nets by chance.`,
+    audio: "T244.mp3",
+    topic: MiniStoryTopics.TRAVEL,
+    page: 175,
+  },
+  "245": {
+    id: "245",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "このホテルは<全{ぜん}>世{せ}界{かい}にある、巨{きょ}大{だい}な<チェーン>だ。ほとんどの部{へ}屋{や}が<シングル>ルームという特{とく}徴{ちょう}がある。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "全{ぜん}～",
+        english: "All ~・Whole ~",
+        type: MiniStoryWordType.PREFIX
+      },
+      {
+        kanji: "チェーン",
+        english: "Chain (e.g. business)",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "シングル",
+        english: "Single (room)",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "ダブル",
+        english: "Double (room)",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "ツイン",
+        english: "Twin (room)",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `This hotel is part of a huge chain that's all over the world. One special characteristic of it is that most of its rooms are singles.`,
+    audio: "T245.mp3",
+    topic: MiniStoryTopics.TRAVEL,
+    page: 175,
   },
   "279": {
     id: "279",
