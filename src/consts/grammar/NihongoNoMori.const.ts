@@ -1292,6 +1292,208 @@ export const NIHONGO_NO_MORI_GRAMMAR: GrammarEntry[] = [
     ],
     extraInfo: "stationery (writing and office supplies such as pens, pencils, notebooks, erasers, rulers, scissors, etc.)",
   },
+  {
+    id: 39,
+    grammar: "〜ずにはいられない",
+    imi: "どうしても 〜 してしまう",
+    explanation: "それをしない状態ではいることができないつまり、どうしてもそれをしてしまうという意味です。\n This grammar pattern expresses an irresistible urge to do something.",
+    usage: {
+      form: [{name: "V. ない STEM"}],
+      pattern: ["ずにはいられない"],
+    },
+    examples: [
+      {
+        sentence: "驚かずにはいられない。",
+        meaning: "I can't help but be surprised.",
+        point: "どうしても驚いてしまう。・絶対に驚いてしまう。",
+      },
+      {
+        sentence: "気にせずにはいられない。",
+        point: "どうしても気にしてしまう。・絶対に気にしてしまう。",
+      },
+      {
+        sentence: "好きな作家の本が発売されると、買わずにはいられない。",
+        meaning: "I can't help but buy the book of my favorite author when it's released.",
+      },
+      {
+        sentence: "頑張っている人を見ると、応援せずにはいられない。",
+        meaning: "I can't help but cheer for people who are working hard.",
+      },
+      {
+        sentence: "暑くなってくると、夏の歌を聴かずにはいられない。",
+        meaning: "I can't help but listen to summer songs when it gets hot.",
+      },
+      {
+        sentence: "もう叫ばずにはいられないよ！",
+        meaning: "I can't help but shout!",
+      }
+    ],
+    category: GrammarEntryCategory.DEGREE_ENPHASIS_COMPARISON,
+    newWords: [
+      { kanji: "状態", kana: "じょうたい", english: "state・condition" },
+      { kanji: "応援", kana: "おうえん", english: "cheering・support" },
+      { kanji: "聴く", kana: "きく", english: "to listen" },
+    ],
+  },
+  {
+    id: 40,
+    grammar: "〜くらい 〜 はない",
+    imi: "〜がいちばん 〜 だ",
+    explanation: "これくらい同じ程度同じレベルのこういうものはないと言いたいときに使います。\nつまり同じレベルのものがないですから これが一番だという意味になります。\nThis pattern is used to express that there is nothing of the same level or degree as the mentioned thing, indicating that it is the best or most extreme.",
+    usage: {
+      form: [{name: "名詞 1"}],
+      pattern: ["くらい", "ぐらい"],
+      secondsForm: [{name: "名詞 2", connector: "はない"}],
+    },
+    examples: [
+      {
+        sentence: "日本語の勉強くらい楽しいことはないと思っています。",
+        meaning: "I don't think there's anything as fun as studying Japanese.",
+      },
+      {
+        sentence: "村上さんぐらいきれいな女性はどこを探してもいないだろう。",
+        meaning: "There's no one as beautiful as Ms. Murakami.",
+      },
+      {
+        sentence: "あの店くらいおいしいカレー屋さんは他にありません。",
+        meaning: "There's no curry shop as delicious as that one.",
+      },
+      {
+        sentence: "日本語の森くらい素晴らしいサービスはないなぁ。",
+        meaning: "There's no service as wonderful as Nihongo no Mori."
+      },
+      {
+        sentence: "彼ぐらい頭がいい人はいないい。",
+        meaning: "There's no one as smart as him."
+      }
+    ],
+    category: GrammarEntryCategory.DEGREE_ENPHASIS_COMPARISON,
+    newWords: [
+      { kanji: "素晴らしい", kana: "すばらしい", english: "wonderful" },
+    ],
+  },
+  {
+    id: 41,
+    grammar: "〜まで",
+    imi: "〜も",
+    explanation: "たくさんある、充分だということを強調して言う。\nこんなにたくさんあるとか十分あるということを強く言いたいときに使う文法です。\nThis grammar pattern is used to strongly express that there is a lot of something or that something is sufficient.",
+    usage: {
+      form: [{name: "名詞"}],
+      pattern: ["まで"],
+    },
+    examples: [
+      {
+        sentence: "料理が上手な彼女は、ケーキまで作ることができる。",
+        meaning: "She is so good at cooking that she can even make cakes.",
+      },
+      {
+        sentence: "日本語能力試験では、見て解く問題だけではなく聞いて解く問題まである。",
+        meaning: "In the JLPT, there are not only questions to be solved by reading but also questions to be solved by listening.",
+      },
+      {
+        sentence: "このレストランは料理がとてもおいしい。そのうえ、値段まで安い。",
+        meaning: "This restaurant's food is very delicious, and on top of that, the prices are reasonable.",
+      },
+      {
+        sentence: "こんな難しい漢字まで書けるんだよ！",
+        meaning: "He can even write such difficult kanji!",
+      }
+    ],
+    category: GrammarEntryCategory.DEGREE_ENPHASIS_COMPARISON,
+    newWords: [
+      { kanji: "日本語能力試験", kana: "にほんごのうりょくしけん", english: "Japanese Language Proficiency Test" },
+      { kanji: "値段", kana: "ねだん", english: "price" },
+      { kanji: "難しい", kana: "むずかしい", english: "difficult" },
+    ],
+  },
+  {
+    id: 42,
+    grammar: "〜ほど 〜 はない",
+    imi: "〜がいちばん 〜 だ",
+    explanation: "Same as 〜くらい〜はない\nこれくらい同じ程度同じレベルのこういうものはないと言いたいときに使います。\nつまり同じレベルのものがないですから これが一番だという意味になります。\nThis pattern is used to express that there is nothing of the same level or degree as the mentioned thing, indicating that it is the best or most extreme.",
+    usage: {
+      form: [{name: "名詞 1"}],
+      pattern: ["ほど"],
+      secondsForm: [{name: "名詞 2", connector: "はない"}],
+    },
+    examples: [
+      {
+        sentence: "彼女ほど絵が上手な人は、他にいません。",
+        meaning: "There's no one as good at painting as her.",
+      },
+      {
+        sentence: "日本では、富士山ほど高くて有名な山はない。",
+        meaning: "There's no mountain as high and famous as Mount Fuji.",
+      },
+      {
+        sentence: "ほど優しくて頼りになる人はいません。",
+        meaning: "There's no one as kind and reliable as him.",
+      },
+      {
+        sentence: "母の料理ほどおいしいものはない。",
+        meaning: "There's nothing as delicious as my mother's cooking.",
+      },
+      {
+        sentence: "りな先生ほどいい先生はいないなぁ。",
+        meaning: "There's no one as good a teacher as Ms. Rina."
+      },
+      {
+        sentence: "あなたほど自信満々な人もなかなかいないよね。",
+        meaning: "There's no one as confident as you."
+      }
+    ],
+    category: GrammarEntryCategory.DEGREE_ENPHASIS_COMPARISON,
+    newWords: [
+      { kanji: "富士山", kana: "ふじさん", english: "Mount Fuji" },
+      { kanji: "頼り", kana: "たより", english: "reliance" },
+      { kanji: "自信満々な", kana: "じしんまんまん", english: "confidence" },
+      { kanji: "満々", kana: "まんまん", english: "full" },
+    ],
+  },
+  {
+    id: 43,
+    grammar: "〜てしかたがない",
+    imi: "とても 〜 だ",
+    explanation: "気持ちを表す言葉と一緒に使ってとてもこう思うと自分の気持ちを強く言いたいときに使う文法です。\n自分がやりたいこととか 自分の気持ちを表す言葉と一緒に使ってその気持ちを強く言うときに使う文法です。\nThis grammar pattern is used to strongly express one's feelings when used together with words that express one's desires or feelings.",
+    usage: {
+      form: [{name: "普通形", connector: "テ"}, {name: "ナ形容詞", connector: "デ"}, {name: "イ形容詞", connector: "クテ"}, {name: "名詞", connector: "デ"}],
+      pattern: ["しかたがない", "しょうがない"],
+    },
+    examples: [
+      {
+        sentence: "外国に住んでいると、ときどき家族に会いたくてしょうがなくなる。",
+        meaning: "When you live abroad, sometimes you really miss your family.",
+      },
+      {
+        sentence: "あんなかっこいい彼と付き合えるなんて、友達がうらやましくてしかたがない。",
+        meaning: "I'm so envious of my friend for being able to date such a cool guy.",
+      },
+      {
+        sentence: "いらいらしているときは、ビールが飲みたくてしかたがなくなる。",
+        meaning: "When I'm irritated, I just want to drink beer so badly.",
+      },
+      {
+        sentence: "ぼくも君に会いたくてしかたがないよ。",
+        meaning: "I really want to see you too."
+      },
+      {
+        sentence: "遊びたくてしかたがない。",
+        point: "とっても遊びたい すごく遊びたいという気持ちを表しています。",
+      },
+      {
+        sentence: "残念でしかたがない。",
+        point: "とても残念だという気持ちを表しています。",
+      },
+      {
+        sentence: "楽しくてしょうがない。",
+        point: "とっても楽しい すごく楽しいという気持ちを表しています。",
+      }
+    ],
+    category: GrammarEntryCategory.DEGREE_ENPHASIS_COMPARISON,
+    newWords: [
+      { kanji: "うらやましい", kana: "うらやましい", english: "envious" },
+    ],
+  },
   // SECTION 6 - GRAMMAR 48 - 53
   {
     id: 48,
@@ -2078,4 +2280,9 @@ export const NIHONGO_NO_MORI_GRAMMAR: GrammarEntry[] = [
       { kanji: "訪問", kana: "ほうもん", english: "visit" },
     ],
   },
+  // SECTION 9 - GRAMMAR 71 - 77
+  // SECTION 10 - GRAMMAR 78 - 83
+  // SECTION 11 - GRAMMAR 84 - 89
+  // SECTION 12 - GRAMMAR 90 - 100
+  // SECTION 13 - GRAMMAR 101 - 110
 ]
