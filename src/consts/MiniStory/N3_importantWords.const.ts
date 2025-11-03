@@ -1,4 +1,4 @@
-// pages 14 - 120 of Mini Story N3
+// pages 14 - 175 of Mini Story N3
 export const N3_IMPORTANT_WORDS: { kanji: string; english: string }[] = [
   {
     kanji: "回{かい}復{ふく}",
@@ -2119,5 +2119,1405 @@ export const N3_IMPORTANT_WORDS: { kanji: string; english: string }[] = [
   {
     kanji: "結{けっ}果{か}",
     english: "Result"
+  },
+  {
+    kanji: "追{お}う",
+    english: "to chase"
+  },
+  {
+    kanji: "動{うご}かす",
+    english: "to move"
+  },
+  {
+    kanji: "点{てん}数{すう}",
+    english: "Score"
+  },
+  {
+    kanji: "かく",
+    english: "To perspire・To sweat"
+  },
+  {
+    kanji: "本{ほん}気{き}な",
+    english: "Serious"
+  },
+  {
+    kanji: "講{こう}習{しゅう}",
+    english: "Lecture・Course"
+  },
+  {
+    kanji: "申{もう}し込{こ}む",
+    english: "To apply"
+  },
+  {
+    kanji: "競{きょう}争{そう}［する］",
+    english: "Competition・To compete"
+  },
+  {
+    kanji: "〜カ{りょく}",
+    english: "〜ability"
+  },
+  {
+    kanji: "優{ゆう}勝{しょう}［する］",
+    english: "Victory・To win a championship"
+  },
+  {
+    kanji: "当{あ}てる",
+    english: "To hit・To guess"
+  },
+  {
+    kanji: "会{かい}費{ひ}",
+    english: "Membership fee"
+  },
+  {
+    kanji: "参{さん}加{か}［する］",
+    english: "Participation・To participate"
+  },
+  {
+    kanji: "金{きん}属{ぞく}",
+    english: "Metal"
+  },
+  {
+    kanji: "確{かく}認{にん}［する］",
+    english: "Confirmation・To confirm"
+  },
+  {
+    kanji: "許{きょ}可{か}［する］",
+    english: "Permission・To permit"
+  },
+  {
+    kanji: "釣{つ}り",
+    english: "Fishing"
+  },
+  {
+    kanji: "釣{つ}る",
+    english: "To fish"
+  },
+  {
+    kanji: "～羽{わ}",
+    english: "Counter for birds"
+  },
+  {
+    kanji: "～館{かん}",
+    english: "～Building"
+  },
+  {
+    kanji: "かわいがる",
+    english: "Adore・To be affectionate towards"
+  },
+  {
+    kanji: "重{かさ}なる",
+    english: "Overlap・To pile up・To happen one after another"
+  },
+  {
+    kanji: "重{かさ}ねる",
+    english: "To pile up・To stack"
+  },
+  {
+    kanji: "猿{さる}",
+    english: "Monkey"
+  },
+  {
+    kanji: "枕{まくら}",
+    english: "Pillow"
+  },
+  {
+    kanji: "抱{だ}く",
+    english: "To carry・To hold (in arms)"
+  },
+  {
+    kanji: "からす",
+    english: "Crow"
+  },
+  {
+    kanji: "枝{えだ}",
+    english: "Branch"
+  },
+  {
+    kanji: "じっとする",
+    english: "To sit still"
+  },
+  {
+    kanji: "本{ほん}物{もの}",
+    english: "Real thing"
+  },
+  {
+    kanji: "成{せい}長{ちょう}［する］",
+    english: "Growth・To grow"
+  },
+  {
+    kanji: "追{お}い越{こ}す",
+    english: "To be more than・Overtake"
+  },
+  {
+    kanji: "恐{おそ}ろしい",
+    english: "Terrible"
+  },
+  {
+    kanji: "冗{じょう}談{だん}",
+    english: "Joke"
+  },
+  {
+    kanji: "ジョーク",
+    english: "Joke"
+  },
+  {
+    kanji: "生{せい}物{ぶつ}",
+    english: "Biology・Living things"
+  },
+  {
+    kanji: "真{ま}っ赤{か}な",
+    english: "Deep red"
+  },
+  {
+    kanji: "真{ま}っ青{さお}な",
+    english: "Deep blue"
+  },
+  {
+    kanji: "模{も}様{よう}",
+    english: "Pattern"
+  },
+  {
+    kanji: "水{みず}玉{たま}模{も}様{よう}",
+    english: "Polka dot pattern"
+  },
+  {
+    kanji: "特{とく}徴{ちょう}",
+    english: "Characteristic"
+  },
+  {
+    kanji: "植{しょく}物{ぶつ}",
+    english: "Plant"
+  },
+  {
+    kanji: "枯{か}れる",
+    english: "To wither"
+  },
+  {
+    kanji: "飼{か}う",
+    english: "To own (a pet)"
+  },
+  {
+    kanji: "命{いのち}",
+    english: "Life"
+  },
+  {
+    kanji: "責{せき}任{にん}",
+    english: "Responsibility"
+  },
+  {
+    kanji: "責{せき}任{にん}者{しゃ}",
+    english: "Person responsible"
+  },
+  {
+    kanji: "水{すい}族{ぞく}館{かん}",
+    english: "Aquarium"
+  },
+  {
+    kanji: "種{しゅ}類{るい}",
+    english: "Type・Kind"
+  },
+  {
+    kanji: "餌{えさ}",
+    english: "Feed"
+  },
+  {
+    kanji: "臭{くさ}い",
+    english: "Stink・Odor"
+  },
+  {
+    kanji: "ティッシュ（ペーパー）",
+    english: "Tissue (paper)"
+  },
+  {
+    kanji: "捕{つか}まえる",
+    english: "To catch"
+  },
+  {
+    kanji: "捕{つか}まる",
+    english: "To be caught"
+  },
+  {
+    kanji: "立{た}ち上{あ}がる",
+    english: "To stand up"
+  },
+  {
+    kanji: "立{た}ち上{あ}げる",
+    english: "To build"
+  },
+  {
+    kanji: "際{さい}",
+    english: "When・(In the) event・Occasion・Situation"
+  },
+  {
+    kanji: "突{とつ}然{ぜん}",
+    english: "Suddenly"
+  },
+  {
+    kanji: "平{たい}らな",
+    english: "Flat"
+  },
+  {
+    kanji: "そっと",
+    english: "Gently・Quietly"
+  },
+  {
+    kanji: "天{てん}井{じょう}",
+    english: "Ceiling"
+  },
+  {
+    kanji: "生{は}える",
+    english: "To grow"
+  },
+  {
+    kanji: "発{はっ}見{けん}［する］",
+    english: "To discover"
+  },
+  {
+    kanji: "おとなしい",
+    english: "Gentle・Quiet"
+  },
+  {
+    kanji: "性{せい}格{かく}",
+    english: "Personality"
+  },
+  {
+    kanji: "感{かん}情{じょう}的{てき}な",
+    english: "Emotional"
+  },
+  {
+    kanji: "感{かん}情{じょう}",
+    english: "Emotion"
+  },
+  {
+    kanji: "立{た}ち止{ど}まる",
+    english: "To stop (in place)"
+  },
+  {
+    kanji: "にっこり（と）",
+    english: "Sweetly・Grinningly・ With a smile"
+  },
+  {
+    kanji: "象{ぞう}",
+    english: "Elephant"
+  },
+  {
+    kanji: "骨{ほね}",
+    english: "Bone"
+  },
+  {
+    kanji: "爪{つめ}",
+    english: "Nail"
+  },
+  {
+    kanji: "振{ふ}る",
+    english: "To wag・To shake"
+  },
+  {
+    kanji: "幼{よう}児{じ}",
+    english: "Toddler"
+  },
+  {
+    kanji: "理{り}解{かい}［する］",
+    english: "Understanding・To understand"
+  },
+  {
+    kanji: "仲{なか}間{ま}",
+    english: "Friend"
+  },
+  {
+    kanji: "大{おお}型{がた}",
+    english: "Large breed・Large size"
+  },
+  {
+    kanji: "小{こ}型{がた}",
+    english: "Small breed・Small size"
+  },
+  {
+    kanji: "ほえる",
+    english: "To bark"
+  },
+  {
+    kanji: "～向{む}き",
+    english: "Facing ~"
+  },
+  {
+    kanji: "日{ひ}当{あ}たり",
+    english: "Sunlight exposure"
+  },
+  {
+    kanji: "和{わ}室{しつ}",
+    english: "Japanese-style room"
+  },
+  {
+    kanji: "洋{よう}室{しつ}",
+    english: "Western-style room"
+  },
+  {
+    kanji: "立{りっ}派{ぱ}な",
+    english: "Splendid"
+  },
+  {
+    kanji: "塗{ぬ}る",
+    english: "To paint"
+  },
+  {
+    kanji: "門{もん}",
+    english: "Gate"
+  },
+  {
+    kanji: "電{でん}球{きゅう}",
+    english: "Light bulb"
+  },
+  {
+    kanji: "寮{りょう}",
+    english: "Dormitory"
+  },
+  {
+    kanji: "斜{なな}め",
+    english: "Diagonal"
+  },
+  {
+    kanji: "低{てい}～",
+    english: "Low ~"
+  },
+  {
+    kanji: "家{や}賃{ちん}",
+    english: "Rent"
+  },
+  {
+    kanji: "わがまま",
+    english: "Complaint・Selfishness"
+  },
+  {
+    kanji: "我{が}慢{まん}［する］",
+    english: "Endurance・Bear・To endure・To bear"
+  },
+  {
+    kanji: "都{と}市{し}",
+    english: "City"
+  },
+  {
+    kanji: "地{ち}方{ほう}都{と}市{し}",
+    english: "Local city"
+  },
+  {
+    kanji: "距{きょ}離{り}",
+    english: "Distance"
+  },
+  {
+    kanji: "最{さい}高{こう}",
+    english: "Best"
+  },
+  {
+    kanji: "出{しゅっ}勤{きん}［する］",
+    english: "Commuting to work・To commute to work"
+  },
+  {
+    kanji: "踏{ふみ}切{きり}",
+    english: "Railroad crossing"
+  },
+  {
+    kanji: "住{じゅう}民{みん}",
+    english: "Resident"
+  },
+  {
+    kanji: "確{たし}か",
+    english: "Sure・Certain"
+  },
+  {
+    kanji: "消{しょう}防{ぼう}署{しょ}",
+    english: "Fire station・Fire department"
+  },
+  {
+    kanji: "消{しょう}防{ぼう}車{しゃ}",
+    english: "Fire truck"
+  },
+  {
+    kanji: "消{しょう}防{ぼう}士{し}",
+    english: "Firefighter"
+  },
+  {
+    kanji: "のんびりする",
+    english: "To relax・Sit around・Take it easy"
+  },
+  {
+    kanji: "向{む}かい",
+    english: "Opposite"
+  },
+  {
+    kanji: "幼{よう}稚{ち}園{えん}",
+    english: "Kindergarten"
+  },
+  {
+    kanji: "たびたび",
+    english: "Frequently"
+  },
+  {
+    kanji: "工{こう}事{じ}［する］",
+    english: "Construction・To undergo construction"
+  },
+  {
+    kanji: "工{こう}事{じ}現{げん}場{ば}",
+    english: "Construction site"
+  },
+  {
+    kanji: "終{しゅう}了{りょう}［する］",
+    english: "End・To end・To finish"
+  },
+  {
+    kanji: "時{じ}刻{こく}",
+    english: "Time (of departure/arrival)"
+  },
+  {
+    kanji: "時{じ}刻{こく}表{ひょう}",
+    english: "Timetable"
+  },
+  {
+    kanji: "落{お}ち着{つ}く",
+    english: "To calm down・To settle down"
+  },
+  {
+    kanji: "行{い}き先{さき}",
+    english: "Destination"
+  },
+  {
+    kanji: "車{しゃ}庫{こ}",
+    english: "Depot"
+  },
+  {
+    kanji: "帰{き}宅{たく}［する］",
+    english: "Going home・To go home"
+  },
+  {
+    kanji: "都{と}会{かい}",
+    english: "City・Urban area"
+  },
+  {
+    kanji: "〜生{う}まれ",
+    english: "~born"
+  },
+  {
+    kanji: "土{と}地{ち}",
+    english: "Land・Soil"
+  },
+  {
+    kanji: "畑{はたけ}",
+    english: "Field・Farm"
+  },
+  {
+    kanji: "程{てい}度{ど}",
+    english: "Degree・Extent・Degree (of)"
+  },
+  {
+    kanji: "または",
+    english: "Or"
+  },
+  {
+    kanji: "首{しゅ}都{と}",
+    english: "Capital"
+  },
+  {
+    kanji: "高{こう}速{そく}道{どう}路{ろ}",
+    english: "Expressway・Highway"
+  },
+  {
+    kanji: "出{で}入{い}口{ぐち}",
+    english: "Entrance and exit"
+  },
+  {
+    kanji: "パトカー",
+    english: "Police car"
+  },
+  {
+    kanji: "救{きゅう}急{きゅう}車{しゃ}",
+    english: "Ambulance"
+  },
+  {
+    kanji: "願{ねが}う",
+    english: "Make a wish・To hope for"
+  },
+  {
+    kanji: "団{だん}地{ち}",
+    english: "House complex・Apartment complex"
+  },
+  {
+    kanji: "坂{さか}",
+    english: "Slope・Hill"
+  },
+  {
+    kanji: "商{しょう}店{てん}街{がい}",
+    english: "Shopping district・Shopping street"
+  },
+  {
+    kanji: "商{しょう}店{てん}",
+    english: "Shop・Store"
+  },
+  {
+    kanji: "大{おお}通{どお}り",
+    english: "Main street・Boulevard"
+  },
+  {
+    kanji: "外{はず}れる",
+    english: "To come off・To be off"
+  },
+  {
+    kanji: "位{い}置{ち}［する］",
+    english: "Position・Placement・To position・To place"
+  },
+  {
+    kanji: "迷{まい}子{ご}",
+    english: "Lost child・Stray child"
+  },
+  {
+    kanji: "郊{こう}外{がい}",
+    english: "Suburbs"
+  },
+  {
+    kanji: "暮{く}らす",
+    english: "To live・To reside"
+  },
+  {
+    kanji: "通{つう}勤{きん}［する］",
+    english: "Commuting to work・To commute to work"
+  },
+  {
+    kanji: "芝{し}生{ばふ}",
+    english: "Lawn・Grass"
+  },
+  {
+    kanji: "転{ころ}がる",
+    english: "To roll around・To roll over"
+  },
+  {
+    kanji: "転{ころ}がす",
+    english: "To roll something over・To turn something over"
+  },
+  {
+    kanji: "土{つち}",
+    english: "Soil・Dirt"
+  },
+  {
+    kanji: "香{かお}り",
+    english: "Fragrance・Aroma・Smell"
+  },
+  {
+    kanji: "蚊{か}",
+    english: "Mosquito"
+  },
+  {
+    kanji: "扇{せん}子{す}",
+    english: "Fan (folding)"
+  },
+  {
+    kanji: "地{ち}名{めい}",
+    english: "Place name"
+  },
+  {
+    kanji: "商{しょう}業{ぎょう}",
+    english: "Commerce・Trade・Business"
+  },
+  {
+    kanji: "街{まち}",
+    english: "Town・City"
+  },
+  {
+    kanji: "～所{しょ}",
+    english: "~Place・~Location"
+  },
+  {
+    kanji: "住{じゅう}宅{たく}",
+    english: "Housing・Residence"
+  },
+  {
+    kanji: "食{しょく}料{りょう}品{ひん}",
+    english: "Food products"
+  },
+  {
+    kanji: "書{しょ}店{てん}",
+    english: "Bookstore"
+  },
+  {
+    kanji: "予{よ}報{ほう}［する］",
+    english: "Forecast・To forecast"
+  },
+  {
+    kanji: "小{こ}雨{さめ}",
+    english: "Light rain"
+  },
+  {
+    kanji: "注{ちゅう}意{い}報{ほう}",
+    english: "Advisory"
+  },
+  {
+    kanji: "警{けい}報{ほう}",
+    english: "Alert・Warning"
+  },
+  {
+    kanji: "にわか雨{あめ}",
+    english: "shower (rain)"
+  },
+  {
+    kanji: "毛{もう}布{ふ}",
+    english: "Blanket"
+  },
+  {
+    kanji: "シーツ",
+    english: "Bed sheets"
+  },
+  {
+    kanji: "大{たい}陸{りく}",
+    english: "Continent"
+  },
+  {
+    kanji: "地{ち}球{きゅう}",
+    english: "Earth"
+  },
+  {
+    kanji: "移{い}動{どう}［する］",
+    english: "Movement・To move"
+  },
+  {
+    kanji: "説{せつ}",
+    english: "Theory・Reason"
+  },
+  {
+    kanji: "比{ひ}較{かく}［する］",
+    english: "Comparison・To compare"
+  },
+  {
+    kanji: "防{ぼう}災{さい}",
+    english: "Disaster prevention"
+  },
+  {
+    kanji: "意{い}識{しき}［する］",
+    english: "Awareness・Consciousness・To be aware of"
+  },
+  {
+    kanji: "梅{つ}雨{ゆ}",
+    english: "Rainy season"
+  },
+  {
+    kanji: "祈{いの}る",
+    english: "To pray"
+  },
+  {
+    kanji: "花{か}粉{ふん}",
+    english: "Pollen"
+  },
+  {
+    kanji: "花{か}粉{ふん}症{しょう}",
+    english: "Hay fever"
+  },
+  {
+    kanji: "かゆい",
+    english: "Itchy"
+  },
+  {
+    kanji: "外{がい}出{しゅつ}［する］",
+    english: "Going out・To go out"
+  },
+  {
+    kanji: "強{きょう}風{ふう}",
+    english: "Strong wind"
+  },
+  {
+    kanji: "洪{こう}水{ずい}",
+    english: "Flood"
+  },
+  {
+    kanji: "電{でん}柱{ちゅう}",
+    english: "Utility pole・Telephone pole"
+  },
+  {
+    kanji: "電{でん}線{せん}",
+    english: "Power line・Electrical wire"
+  },
+  {
+    kanji: "停{てい}電{でん}［する］",
+    english: "Blackout・Power outage・To have a blackout"
+  },
+  {
+    kanji: "断{だん}水{すい}［する］",
+    english: "Water outage・To have a water outage"
+  },
+  {
+    kanji: "滑{すべ}る",
+    english: "To slip・To slide"
+  },
+  {
+    kanji: "転{ころ}ぶ",
+    english: "To fall down・To crash"
+  },
+  {
+    kanji: "無{ぶ}事{じ}な",
+    english: "Safe・Unharmed"
+  },
+  {
+    kanji: "湿{しつ}度{ど}",
+    english: "Humidity"
+  },
+  {
+    kanji: "蒸{む}し暑{あつ}い",
+    english: "Humid"
+  },
+  {
+    kanji: "クーラー",
+    english: "Air conditioner・Cooler"
+  },
+  {
+    kanji: "扇{せん}風{ぷう}機{き}",
+    english: "Electric fan"
+  },
+  {
+    kanji: "からからな",
+    english: "Thirsty・Dry"
+  },
+  {
+    kanji: "息{いき}",
+    english: "Breath"
+  },
+  {
+    kanji: "比{くら}べる",
+    english: "To compare"
+  },
+  {
+    kanji: "囲{かこ}む",
+    english: "To surround"
+  },
+  {
+    kanji: "温{おん}度{ど}",
+    english: "Temperature"
+  },
+  {
+    kanji: "温{おん}度{ど}計{けい}",
+    english: "Thermometer"
+  },
+  {
+    kanji: "昨{さく}日{じつ}",
+    english: "Yesterday"
+  },
+  {
+    kanji: "昨{さく}年{ねん}",
+    english: "Last year"
+  },
+  {
+    kanji: "震{しん}度{ど}",
+    english: "Seismic intensity"
+  },
+  {
+    kanji: "揺{ゆ}れる",
+    english: "To shake・To quake・To sway"
+  },
+  {
+    kanji: "海{かい}岸{がん}",
+    english: "Coast・Seashore"
+  },
+  {
+    kanji: "今{いま}にも",
+    english: "At any moment・Soon"
+  },
+  {
+    kanji: "はだし",
+    english: "Barefoot"
+  },
+  {
+    kanji: "屋{や}根{ね}",
+    english: "Roof"
+  },
+  {
+    kanji: "～化{か}",
+    english: "~Change"
+  },
+  {
+    kanji: "影{えい}響{きょう}［する］",
+    english: "Influence・To influence"
+  },
+  {
+    kanji: "気{き}候{こう}",
+    english: "Weather・Climate"
+  },
+  {
+    kanji: "おかしい",
+    english: "Strange・Weird"
+  },
+  {
+    kanji: "森{しん}林{りん}",
+    english: "Forest"
+  },
+  {
+    kanji: "無{む}関{かん}係{けい}な",
+    english: "Unrelated・Irrelevant"
+  },
+  {
+    kanji: "崩{くず}れる",
+    english: "To collapse・To crumble"
+  },
+  {
+    kanji: "崩{くず}す",
+    english: "To destroy・To ruin・To demolish"
+  },
+  {
+    kanji: "マフラー",
+    english: "Scarf"
+  },
+  {
+    kanji: "けっこう",
+    english: "Quite・Fairly"
+  },
+  {
+    kanji: "めちゃめちゃな",
+    english: "Messy・Disorderly"
+  },
+  {
+    kanji: "こぼす",
+    english: "To spill・To let slip"
+  },
+  {
+    kanji: "こぼれる",
+    english: "To be spilled・To overflow"
+  },
+  {
+    kanji: "津{つ}波{なみ}",
+    english: "Tsunami"
+  },
+  {
+    kanji: "一{いっ}瞬{しゅん}",
+    english: "(For a) Moment・Instant"
+  },
+  {
+    kanji: "被{ひ}害{がい}",
+    english: "Damage・Harm"
+  },
+  {
+    kanji: "防{ふせ}ぐ",
+    english: "To prevent・To defend"
+  },
+  {
+    kanji: "確{たし}かめる",
+    english: "To confirm・To make sure"
+  },
+  {
+    kanji: "濡{ぬ}れる",
+    english: "To get wet"
+  },
+  {
+    kanji: "濡{ぬ}らす",
+    english: "To wet・To soak"
+  },
+  {
+    kanji: "雷{かみなり}",
+    english: "Thunder"
+  },
+  {
+    kanji: "震{ふる}える",
+    english: "To tremble・To shake・To shiver"
+  },
+  {
+    kanji: "桜{さくら}",
+    english: "Cherry Blossom"
+  },
+  {
+    kanji: "散{ち}る",
+    english: "To fall (as in blossoms)・To scatter"
+  },
+  {
+    kanji: "上{じょう}旬{じゅん}",
+    english: "First ten days of the month"
+  },
+  {
+    kanji: "中{ちゅう}旬{じゅん}",
+    english: "Middle ten days of the month"
+  },
+  {
+    kanji: "下{げ}旬{じゅん}",
+    english: "Last ten days of the month"
+  },
+  {
+    kanji: "気{き}温{おん}",
+    english: "Temperature"
+  },
+  {
+    kanji: "～度{ど}",
+    english: "~Degrees (temperature)"
+  },
+  {
+    kanji: "汗{あせ}",
+    english: "Sweat"
+  },
+  {
+    kanji: "旗{はた}",
+    english: "Flag"
+  },
+  {
+    kanji: "凍{こお}る",
+    english: "To freeze"
+  },
+  {
+    kanji: "照{て}る",
+    english: "To shine"
+  },
+  {
+    kanji: "太{たい}陽{よう}",
+    english: "Sun"
+  },
+  {
+    kanji: "昇{のぼ}る",
+    english: "To rise"
+  },
+  {
+    kanji: "沈{しず}む",
+    english: "To go down・To set (sun)"
+  },
+  {
+    kanji: "一{いち}度{ど}に",
+    english: "At once・Simultaneously・At the same time"
+  },
+  {
+    kanji: "連{れん}休{きゅう}",
+    english: "Long holiday"
+  },
+  {
+    kanji: "日{ひ}帰{がえ}り",
+    english: "Day trip"
+  },
+  {
+    kanji: "登{と}山{ざん}［する］",
+    english: "Mountain climbing・To climb a mountain"
+  },
+  {
+    kanji: "ただ",
+    english: "Just・Only"
+  },
+  {
+    kanji: "ぶらぶらする",
+    english: "To hang around"
+  },
+  {
+    kanji: "温{おん}泉{せん}",
+    english: "Hot spring"
+  },
+  {
+    kanji: "火{か}山{ざん}",
+    english: "Volcano"
+  },
+  {
+    kanji: "旅{りょ}館{かん}",
+    english: "Japanese inn"
+  },
+  {
+    kanji: "裸{はだか}",
+    english: "Naked"
+  },
+  {
+    kanji: "肌{はだ}",
+    english: "Skin"
+  },
+  {
+    kanji: "芸{げい}術{じゅつ}",
+    english: "Art"
+  },
+  {
+    kanji: "美{び}術{じゅつ}館{かん}",
+    english: "Art museum"
+  },
+  {
+    kanji: "美{び}術{じゅつ}",
+    english: "Art"
+  },
+  {
+    kanji: "博{はく}物{ぶつ}館{かん}",
+    english: "Museum"
+  },
+  {
+    kanji: "間{ま}もなく",
+    english: "Soon・Shortly"
+  },
+  {
+    kanji: "発{はっ}車{しゃ}［する］",
+    english: "Departure・To depart"
+  },
+  {
+    kanji: "飛{と}び込{こ}む",
+    english: "To jump in"
+  },
+  {
+    kanji: "ところが",
+    english: "However・But"
+  },
+  {
+    kanji: "停{てい}車{しゃ}［する］",
+    english: "Stopping・To stop"
+  },
+  {
+    kanji: "通{つう}過{か}［する］",
+    english: "Passing・To pass"
+  },
+  {
+    kanji: "突{つ}き当{あ}たり",
+    english: "End of the street・Dead end"
+  },
+  {
+    kanji: "鉄{てつ}道{どう}",
+    english: "Railroad"
+  },
+  {
+    kanji: "線{せん}路{ろ}",
+    english: "Railway track"
+  },
+  {
+    kanji: "越{こ}える",
+    english: "To cross"
+  },
+  {
+    kanji: "ついて来{く}る",
+    english: "To follow・To come along with"
+  },
+  {
+    kanji: "ついて行{い}く",
+    english: "To follow・To go along with"
+  },
+  {
+    kanji: "日{ひ}付{づけ}",
+    english: "Date"
+  },
+  {
+    kanji: "便{びん}",
+    english: "Service"
+  },
+  {
+    kanji: "変{へん}更{こう}［する］",
+    english: "Change・To change"
+  },
+  {
+    kanji: "到{とう}着{ちゃく}［する］",
+    english: "Arrival・To arrive"
+  },
+  {
+    kanji: "出{で}迎{むか}え",
+    english: "Meeting・Reception"
+  },
+  {
+    kanji: "出{しゅっ}身{しん}地{ち}",
+    english: "Place of birth・Hometown・Where one is from"
+  },
+  {
+    kanji: "出{しゅっ}身{しん}",
+    english: "Origin"
+  },
+  {
+    kanji: "通{つう}じる",
+    english: "To be understood・To be comprehended"
+  },
+  {
+    kanji: "方{ほう}言{げん}",
+    english: "Dialect"
+  },
+  {
+    kanji: "あと",
+    english: "More・Left・Remaining"
+  },
+  {
+    kanji: "待{まち}合{あい}室{しつ}",
+    english: "Waiting room"
+  },
+  {
+    kanji: "ぎりぎりな",
+    english: "Grieved・Just in time・Barely made it"
+  },
+  {
+    kanji: "（お）盆{ぼん}",
+    english: "Obon (Japanese Buddhist festival to honor the spirits of one's ancestors)"
+  },
+  {
+    kanji: "ふるさと",
+    english: "Hometown"
+  },
+  {
+    kanji: "向{む}かう",
+    english: "To head to"
+  },
+  {
+    kanji: "道{どう}路{ろ}",
+    english: "Road"
+  },
+  {
+    kanji: "渋{じゅう}滞{たい}［する］",
+    english: "Traffic jam・To be in a traffic jam"
+  },
+  {
+    kanji: "信{しん}号{ごう}",
+    english: "Traffic light"
+  },
+  {
+    kanji: "時{じ}差{さ}ぼけ",
+    english: "Jet lag"
+  },
+  {
+    kanji: "持{じ}差{さ}",
+    english: "Time difference"
+  },
+  {
+    kanji: "観{かん}光{こう}［する］",
+    english: "Sightseeing・To go sightseeing"
+  },
+  {
+    kanji: "観{かん}光{こう}客{きゃく}",
+    english: "Sightseer・Tourist"
+  },
+  {
+    kanji: "せっかく",
+    english: "After ~ all of that・With much effort"
+  },
+  {
+    kanji: "滞{たい}在{ざい}［する］",
+    english: "Stay・To stay"
+  },
+  {
+    kanji: "海{かい}水{すい}浴{よく}",
+    english: "Sea bathing・Swimming in the sea"
+  },
+  {
+    kanji: "それで",
+    english: "So・Therefore"
+  },
+  {
+    kanji: "水{みず}着{ぎ}",
+    english: "Swimsuit"
+  },
+  {
+    kanji: "恋{こい}人{びと}",
+    english: "Lover"
+  },
+  {
+    kanji: "かなり",
+    english: "Quite・Considerably"
+  },
+  {
+    kanji: "経{けい}由{ゆ}［する］",
+    english: "Going via・To go via"
+  },
+  {
+    kanji: "目{もく}的{てき}",
+    english: "Purpose・Objective"
+  },
+  {
+    kanji: "下{げ}車{しゃ}［する］",
+    english: "Getting off (a train)・To get off (a train)"
+  },
+  {
+    kanji: "城{しろ}",
+    english: "Castle"
+  },
+  {
+    kanji: "庭{てい}園{えん}",
+    english: "Garden"
+  },
+  {
+    kanji: "見{けん}物{ぶつ}［する］",
+    english: "Sightseeing・To go sightseeing"
+  },
+  {
+    kanji: "私{し}鉄{てつ}",
+    english: "Private railway"
+  },
+  {
+    kanji: "豊{ゆた}かな",
+    english: "Rich・Wealthy"
+  },
+  {
+    kanji: "正{せい}確{かく}な",
+    english: "Precise・Accurate"
+  },
+  {
+    kanji: "指{し}標{ひょう}",
+    english: "Index・Indicator"
+  },
+  {
+    kanji: "指{さ}す",
+    english: "To point (at)・To indicate"
+  },
+  {
+    kanji: "物{ぶっ}価{か}",
+    english: "Prices of goods・Commodity prices"
+  },
+  {
+    kanji: "税{ぜい}関{かん}",
+    english: "Customs"
+  },
+  {
+    kanji: "偽{にせ}物{もの}",
+    english: "Fake・Counterfeit"
+  },
+  {
+    kanji: "宝{ほう}石{せき}",
+    english: "Jewels・Jewelry"
+  },
+  {
+    kanji: "そっくりな",
+    english: "Just like・The splitting image of"
+  },
+  {
+    kanji: "免{めん}許{きょ}",
+    english: "License"
+  },
+  {
+    kanji: "免{めん}許{きょ}証{しょう}",
+    english: "License"
+  },
+  {
+    kanji: "～方{ほう}面{めん}",
+    english: "~Bound・Heading to~"
+  },
+  {
+    kanji: "近{ちか}道{みち}［する］",
+    english: "Shortcut・To take a shortcut"
+  },
+  {
+    kanji: "連{れん}続{ぞく}［する］",
+    english: "Continuous・To happen continuously"
+  },
+  {
+    kanji: "岩{いわ}",
+    english: "Rock"
+  },
+  {
+    kanji: "片{かた}道{みち}",
+    english: "One-way"
+  },
+  {
+    kanji: "往{おう}復{ふく}［する］",
+    english: "Round trip・To make a round trip"
+  },
+  {
+    kanji: "駐{ちゅう}車{しゃ}［する］",
+    english: "Parking・To park"
+  },
+  {
+    kanji: " 駐{ちゅう}車{しゃ}場{じょう}",
+    english: "Parking lot"
+  },
+  {
+    kanji: "遊{ゆう}園{えん}地{ち}",
+    english: "Amusement park"
+  },
+  {
+    kanji: "長{ちょう}～",
+    english: "Long ~"
+  },
+  {
+    kanji: "停{てい}留{りゅう}所{じょ}",
+    english: "Bus stop"
+  },
+  {
+    kanji: "～港{こう}",
+    english: "Port・Harbor・Bay"
+  },
+  {
+    kanji: "～船{せん}",
+    english: "Ship・Boat"
+  },
+  {
+    kanji: "定{てい}員{いん}",
+    english: "Capacity"
+  },
+  {
+    kanji: "前{ぜん}日{じつ}",
+    english: "The day before"
+  },
+  {
+    kanji: "自{じ}由{ゆう}席{せき}",
+    english: "Unreserved seat"
+  },
+  {
+    kanji: "～発{はつ}",
+    english: "~Departure・Departing from ~"
+  },
+  {
+    kanji: "すり",
+    english: "Pickpocketing"
+  },
+  {
+    kanji: "市{いち}場{ば}",
+    english: "Market"
+  },
+  {
+    kanji: "正{しょう}面{めん}",
+    english: "Front"
+  },
+  {
+    kanji: "乗{の}せる",
+    english: "To board・To get on (a vehicle)"
+  },
+  {
+    kanji: "非{ひ}常{じょう}口{ぐち}",
+    english: "Emergency exit"
+  },
+  {
+    kanji: "乗{じょう}車{しゃ}券{けん}",
+    english: "Train ticket"
+  },
+  {
+    kanji: "乗{じょう}車{しゃ}［する］",
+    english: "Riding・To ride (a train, bus, etc.)"
+  },
+  {
+    kanji: "乗{の}り越{こ}す",
+    english: "To ride past (one's destination)・To go beyond (one's destination)"
+  },
+  {
+    kanji: "だって",
+    english: "I mean・...Because"
+  },
+  {
+    kanji: "退{たい}屈{くつ}［する］",
+    english: "Boredom・To be bored"
+  },
+  {
+    kanji: "～泊{はく}",
+    english: "～Nights"
+  },
+  {
+    kanji: "支{し}度{たく}［する］",
+    english: "Preparation・To prepare"
+  },
+  {
+    kanji: "期{き}待{たい}［する］",
+    english: "Expectation・To expect"
+  },
+  {
+    kanji: "近{ちか}づく",
+    english: "To draw near・To approach"
+  },
+  {
+    kanji: "次{し}第{だい}に",
+    english: "Gradually・In due course"
+  },
+  {
+    kanji: "草{くさ}",
+    english: "Grass"
+  },
+  {
+    kanji: "原{げん}料{りょう}",
+    english: "Ingredient・Raw material"
+  },
+  {
+    kanji: "ぜひ（とも）",
+    english: "By all means・Certainly"
+  },
+  {
+    kanji: "深{しん}海{かい}",
+    english: "Deep sea"
+  },
+  {
+    kanji: "偶{ぐう}然{ぜん}",
+    english: "By chance・Accidentally"
+  },
+  {
+    kanji: "網{あみ}",
+    english: "Net"
+  },
+  {
+    kanji: "網{あみ}棚{だな}",
+    english: "Net shelf・Overhead luggage rack"
   }
 ];
