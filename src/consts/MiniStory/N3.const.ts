@@ -12071,4 +12071,149 @@ export const MINI_STORY_N3: Record<string, MiniStory> = {
     topic: MiniStoryTopics.LIFE,
     page: 221,
   },
+  "315": {
+    id: "315",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "＜メールの文{ぶん}章{しょう}＞ 山{やま}田{だ}さん、おはようございます。林{はやし}です。今日も暑{あつ}いですね。<さて>、先{せん}日{じつ}のパーティーでは<スピーチ>をして<くださり>、ありがとうございました。<感{かん}謝{しゃ}して>います。パーティーの<感{かん}想{そう}>も聞{き}かせてください。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "さて",
+        english: "Well・Now",
+        type: MiniStoryWordType.CONJUNCTION
+      },
+      {
+        kanji: "スピーチ［する］",
+        english: "Speech・to give a speech",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+      {
+        kanji: "くださる",
+        english: "Give (honorific)",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+      {
+        kanji: "感{かん}謝{しゃ}［する］",
+        english: "Gratitude・Appreciation・to express gratitude",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+      {
+        kanji: "感{かん}想{そう}",
+        english: "Impression・thoughts",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `‹Email text> Yamada-san, good morning. It's Hayashi. It is hot today too. Well, thank you for giving a speech for us the other party's party. I appreciate it. Please tell me your impression of the party.`,
+    audio: "T315.mp3",
+    topic: MiniStoryTopics.LIFE,
+    page: 222,
+  },
+  "316": {
+    id: "316",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<大{だい}学{がく}院{いん}>に<進{しん}学{がく}し>、<建{けん}築{ちく}>について勉{べん}強{きょう}したい。また、日本語の<レベル>を上{あ}げ、<ぺらぺらと>話{はな}せる<能{のう}力{りょく}>をつけたい。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "大{だい}学{がく}院{いん}",
+        english: "Graduate school",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "大{だい}学{がく}院{いん}生{せい}",
+        english: "Graduate student",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "進{しん}学{がく}［する］",
+        english: "To advance to a higher level of education",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+      {
+        kanji: "建{けん}築{ちく}［する］",
+        english: "Building・to build/architecture",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+      {
+        kanji: "レベル",
+        english: "Level",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "ぺらぺら（と）",
+        english: "Fluently",
+        type: MiniStoryWordType.ADVERB
+      },
+      {
+        kanji: "能{のう}力{りょく}",
+        english: "Ability",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `I would like to go to graduate school and study architecture. Also, I would like to improve my level of Japanese and have the ability to speak fluently.`,
+    audio: "T316.mp3",
+    topic: MiniStoryTopics.LIFE,
+    page: 222,
+  },
+  "317": {
+    id: "317",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "隣{となり}の家{いえ}の<姉{し}妹{まい}>は<歌{か}手{しゅ}>になりたいらしい。最{さい}近{きん}は<早{はや}起{お}きし>、<夢{む}中{ちゅう}で><楽{がっ}器{き}>を演{えん}奏{そう}している。うるさくて目{め}が<覚{さ}める>。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "姉{し}妹{まい}",
+        english: "Sisters",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "歌{か}手{しゅ}",
+        english: "Singer",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "タレント",
+        english: "Talent",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "早{はや}起{お}き［する］",
+        english: "Getting up early・to get up early",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+      {
+        kanji: "夢{む}中{ちゅう}な",
+        english: "Mindless・In a dream-like state",
+        type: MiniStoryWordType.ADJECTIVE_NA
+      },
+      {
+        kanji: "楽{がっ}器{き}",
+        english: "Instrument",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "覚{さ}める",
+        english: "To wake up",
+        type: MiniStoryWordType.ICHIDAN_INTRANSITIVE
+      },
+      {
+        kanji: "覚{さ}ます",
+        english: "To wake (someone) up",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+    ],
+    translation: `The sisters in the house next door seem to want to be singers. They recently get up early and mindlessly play instruments. It's so loud it wakes me up.`,
+    audio: "T317.mp3",
+    topic: MiniStoryTopics.LIFE,
+    page: 223,
+  },
 };
