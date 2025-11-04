@@ -7,6 +7,8 @@ export const GrammarEntryCategory = {
   DEGREE_ENPHASIS_COMPARISON: '程度・強調・比較',
   POINT_IN_TIME: '時・間',
   ASSUMPTIONS_CONDITIONS: '仮定・条件',
+  PURPOSE_METHOD_OPERATION: '目的・方法・動作',
+  RULES_ADVICE: 'ルール・アドバイス',
 } as const;
 
 export const NIHONGO_NO_MORI_GRAMMAR: GrammarEntry[] = [
@@ -2063,7 +2065,6 @@ export const NIHONGO_NO_MORI_GRAMMAR: GrammarEntry[] = [
     category: GrammarEntryCategory.POINT_IN_TIME,
     newWords: [
       { kanji: "新鮮な", kana: "しんせんな", english: "Fresh" },
-      { kanji: "xxxxxx", kana: "xxxxxx", english: "xxxxxx" },
     ],
     extraInfo: "V.た は使えない\n今のうちに (now, at the present time) is very often used in daily conversations.",
   },
@@ -2281,7 +2282,460 @@ export const NIHONGO_NO_MORI_GRAMMAR: GrammarEntry[] = [
     ],
   },
   // SECTION 9 - GRAMMAR 71 - 77
+  {
+    id: 71,
+    grammar: "〜ように ①",
+    imi: "～するために工夫をする",
+    explanation: "This grammar pattern is used to express that you make efforts or take measures in order to achieve a certain goal or outcome.",
+    usage: {
+      form: [{name: "V. る"}, {name: "V. ない"}, {name: "V. れる"}],
+      pattern: ["ように"],
+    },
+    examples: [
+      {
+        sentence: "うまく作れるように練習する。",
+        meaning: "I practice so that I can make it well.",
+      },
+      {
+        sentence: "待ち合わせの時間に遅れないように、いつも早めに家を出る。",
+        meaning: "I always leave home early so that I won't be late for appointments.",
+      },
+      {
+        sentence: "父さんが仕事に集中できるように、家族で協力しようね。",
+        meaning: "Let's cooperate as a family so that Dad can concentrate on his work.",
+      },
+      {
+        sentence: "息子が学校に間に合うように、毎朝起こしている。",
+        meaning: "I wake my son up every morning so that he can make it to school on time.",
+      },
+    ],
+    category: GrammarEntryCategory.PURPOSE_METHOD_OPERATION,
+    newWords: [
+      { kanji: "工夫", kana: "くふう", english: "devise" },
+      { kanji: "遅れる", kana: "おくれる", english: "to be late" },
+      { kanji: "集中", kana: "しゅうちゅう", english: "concentration" },
+      { kanji: "協力", kana: "きょうりょく", english: "cooperation" },
+    ],
+    extraInfo: "工夫 (くふう) means 'Creative way of doing something'・'Improvisation'・'Smart adjustment'・'Figure out a way'; It refers to putting effort into finding a good method, word around, or creative solution to do something.",
+  },
+  {
+    id: 72,
+    grammar: "〜には",
+    imi: "～するためには",
+    explanation: "This grammar pattern is used to express the necessary conditions or requirements for achieving a certain goal or outcome.",
+    usage: {
+      form: [{name: "V. る"}],
+      pattern: ["には"],
+    },
+    examples: [
+      {
+        sentence: "この山を登るにはお金がかかります。",
+        meaning: "It costs money to climb this mountain.",
+      },
+      {
+        sentence: "予約するには電話をしないといけない。",
+        meaning: "You have to call to make a reservation.",
+      },
+      {
+        sentence: "免許証の申請をするには、顔写真が必要です。",
+        meaning: "You need a photo for the driver's license application.",
+      },
+      {
+        sentence: "会社へ行くには、この長い坂道を登らなければならない。",
+        meaning: "To get to the company, you have to climb this long hill.",
+      },
+      {
+        sentence: "この商品を買うには、インターネットで予約をしなければなりません。",
+        meaning: "To buy this product, you must make a reservation on the Internet.",
+      },
+    ],
+    category: GrammarEntryCategory.PURPOSE_METHOD_OPERATION,
+    newWords: [
+      { kanji: "免許証", kana: "めんきょしょう", english: "driver's license" },
+      { kanji: "申請", kana: "しんせい", english: "application" },
+      { kanji: "坂道", kana: "さかみち", english: "hill・Slope" },
+    ],
+  },
+  {
+    id: 73,
+    grammar: "〜しかない",
+    imi: "～以外の方法がない (これだけだ)",
+    explanation: "This grammar pattern is used to express that there is no other option or method available except for the one mentioned.",
+    usage: {
+      form: [{name: "V. る"}],
+      pattern: ["しかない"],
+    },
+    examples: [
+      {
+        sentence: "我慢するしかない。",
+        meaning: "There's no choice but to endure.",
+        point: "他の方法がない。",
+      },
+      {
+        sentence: "こうなったら、諦めて他の方法を探すしかない。",
+        meaning: "If this happens, I have no choice but to give up and look for another way.",
+      },
+      {
+        sentence: "何回地図を見ても道がわからないので、誰かに聞くしかない。",
+        meaning: "No matter how many times I look at the map, I can't find the way, so I have no choice but to ask someone.",
+      },
+      {
+        sentence: "今から本気で勉強するしかない。",
+        meaning: "I have no choice but to study seriously from now on.",
+      },
+    ],
+    category: GrammarEntryCategory.PURPOSE_METHOD_OPERATION,
+    newWords: [
+      { kanji: "本気", kana: "ほんき", english: "seriousness" },
+    ],
+  },
+  {
+    id: 74,
+    grammar: "〜ほかない",
+    imi: "～以外の方法がない (これだけだ)",
+    explanation: "Same as 〜しかない, but more formal.\nThis grammar pattern is used to express that there is no other option or method available except for the one mentioned.",
+    usage: {
+      form: [{name: "V. る"}],
+      pattern: ["ほかない"],
+    },
+    examples: [
+      {
+        sentence: "注意するほかない。",
+        meaning: "You have to be careful.",
+      },
+      {
+        sentence: "スーパーまで来たのに財布を忘れてしまったので、何も買わず家に帰るほかなかった。",
+        meaning: "I came all the way to the supermarket, but I forgot my wallet, so I had no choice but to go home without buying anything.",
+      },
+      {
+        sentence: "けがで試合に出られなくて悔しいが、今は我慢するほかない。",
+        meaning: "I'm frustrated that I can't participate in the match due to my injury, but for now, I have no choice but to endure.",
+      },
+      {
+        sentence: "何度言ってもゲームをやめないなら、禁止するほかない。",
+        meaning: "No matter how many times I tell you won't stop playing the game, I have no choice but to ban it.",
+      },
+    ],
+    category: GrammarEntryCategory.PURPOSE_METHOD_OPERATION,
+    newWords: [
+      { kanji: "けが", kana: "けが", english: "injury" },
+      { kanji: "悔しい", kana: "くやしい", english: "frustrating" },
+      { kanji: "禁止", kana: "きんし", english: "prohibition・Restriction・Ban" },
+    ],
+    extraInfo: "ほかない is more formal than しかない and is often used in written language or formal speeches.\n In daily conversations, しかない is more commonly used.",
+  },
+  {
+    id: 75,
+    grammar: "〜によって③",
+    imi: "～の方法で",
+    explanation: "この方法を使って何かするって言いたときに使う。\nThis grammar pattern is used to indicate that something is done using a specific method or means.",
+    usage: {
+      form: [{name: "名詞"}],
+      pattern: ["によって"],
+    },
+    examples: [
+      {
+        sentence: "インターネットによって買い物をすることができます。",
+        meaning: "You can shop using the Internet.",
+      },
+      {
+        sentence: "話し合いによって決めます。",
+        meaning: "We will decide through discussion.",
+      },
+      {
+        sentence: "この国は、法律によって守られています。",
+        meaning: "This country is protected by law.",
+      },
+      {
+        sentence: "わからない言葉は、辞書を使うことによって調べることができる。",
+        meaning: "You can look up unfamiliar words using a dictionary.",
+      },
+      {
+        sentence: "試験の合格発表は、メールによって連絡がくるそうだ。",
+        meaning: "I heard that the results of the exam will be communicated via email.",
+        point: "メールという方法でって意味だ。",
+      },
+      {
+        sentence: "次の部長は、会議によって決定いたします。",
+        meaning: "The next department head will be decided through a meeting.",
+      },
+    ],
+    category: GrammarEntryCategory.PURPOSE_METHOD_OPERATION,
+    newWords: [
+      { kanji: "法律", kana: "ほうりつ", english: "law" },
+      { kanji: "辞書", kana: "じしょ", english: "dictionary" },
+      { kanji: "合格発表", kana: "ごうかくはっぴょう", english: "announcement of exam results" },
+      { kanji: "決定", kana: "けってい", english: "decision" },
+    ],
+  },
+  {
+    id: 76,
+    grammar: "〜なおす",
+    imi: "もう一度 ～ する",
+    explanation: "This grammar pattern is used to indicate that an action is being done again or corrected.",
+    usage: {
+      form: [{name: "V. ます STEM"}],
+      pattern: ["なおす"],
+    },
+    examples: [
+      {
+        sentence: "パソコンの故障で、昨日の仕事を全部やりなおすことになった。",
+        meaning: "Due to the computer malfunction, I had to redo all the work from yesterday.",
+      },
+      {
+        sentence: "パスポートを無くしてしまったので、作りなおすことにした。",
+        meaning: "I lost my passport, so I decided to remake it.",
+      },
+      {
+        sentence: "納得がいくまで、何度も書きなおそう。",
+        meaning: "Let's rewrite it as many times as necessary until we are satisfied.",
+      },
+      {
+        sentence: "宿題やりなおしだ。",
+        meaning: "I have to redo my homework.",
+      },
+    ],
+    category: GrammarEntryCategory.PURPOSE_METHOD_OPERATION,
+    newWords: [
+      { kanji: "故障", kana: "こしょう", english: "malfunction" },
+      { kanji: "無くす", kana: "なくす", english: "to lose" },
+      { kanji: "納得", kana: "なっとく", english: "convincing・satisfaction" },
+      { kanji: "宿題", kana: "しゅくだい", english: "homework" },
+    ],
+  },
+  {
+    id: 77,
+    grammar: "〜始める",
+    imi: "~するのを始める",
+    usage: {
+      form: [{name: "V. ます STEM"}],
+      pattern: ["始める"],
+    },
+    examples: [
+      {
+        sentence: "いずみさんが歌い始めると同時に、みんな踊り出した。",
+        meaning: "As soon as Izumi started singing, everyone began to dance.",
+      },
+      {
+        sentence: "今日は晴れると聞いていたのに、急に雨が降り始めた。",
+        meaning: "I heard it would be sunny today, but it suddenly started to rain.",
+      },
+      {
+        sentence: "彼は飛行機に乗ってすぐに寝始めた。",
+        meaning: "He fell asleep as soon as he got on the plane.",
+      },
+    ],
+    category: GrammarEntryCategory.PURPOSE_METHOD_OPERATION,
+    newWords: [
+      { kanji: "急", kana: "きゅう", english: "sudden・urgent" },
+      { kanji: "急に", kana: "きゅうに", english: "suddenly" },
+      { kanji: "飛行機", kana: "ひこうき", english: "airplane" },
+    ],
+  },
   // SECTION 10 - GRAMMAR 78 - 83
+  {
+    id: 78,
+    grammar: "〜ことになっている",
+    imi: "~することが決まっている",
+    explanation: "約束・ルール・制度などを説明するときによく使う。\nThis grammar is often used to explain promises, rules, systems, etc.",
+    usage: {
+      form: [{name: "V. る"}, {name: "V. ない"}, {name: "名詞", connector: "という"}],
+      pattern: ["ことになっている", "こととなっている"],
+    },
+    examples: [
+      {
+        sentence: "友達と家でゲームをすることになっている。",
+        meaning: "It has been decided that I will play games at home with my friends.",
+        point: "約束",
+      },
+      {
+        sentence: "うちの会社は残業しないこととなっています。",
+        meaning: "It has been decided that our company will not engage in overtime work.",
+        point: "ルール",
+      },
+      {
+        sentence: "3時に待ち合わせということになっている。",
+        meaning: "It has been decided that we will meet at 3 o'clock.",
+        point: "約束",
+      },
+      {
+        sentence: "週末は、友達の家に泊まりに行くことになっている。",
+        meaning: "It has been decided that I will go stay at my friend's house this weekend.",
+        point: "約束",
+      },
+      {
+        sentence: "日本では、19歳以下はお酒を飲めないこととなっている。",
+        meaning: "It has been decided that people under 19 years old cannot drink alcohol in Japan.",
+        point: "ルール",
+      },
+      {
+        sentence: "来年はタイで仕事をすることになっている。",
+        meaning: "It has been decided that I will work in Thailand next year.",
+      },
+    ],
+    category: GrammarEntryCategory.RULES_ADVICE,
+    newWords: [
+      { kanji: "約束", kana: "やくそく", english: "promise" },
+      { kanji: "制度", kana: "せいど", english: "system" },
+      { kanji: "残業", kana: "ざんぎょう", english: "overtime work" },
+      { kanji: "泊まる", kana: "とまる", english: "to stay overnight" },
+    ],
+  },
+  {
+    id: 79,
+    grammar: "〜なくちゃ",
+    imi: "～なくては",
+    explanation: "～しなければならない (must do something)\nThis grammar is a casual way of expressing obligation or necessity, similar to ～なければならない.",
+    usage: {
+      form: [{name: "V. ない"}, {name: "イ形容詞 くない"}, {name: "ナ形容詞 じゃない"}, {name: "名詞 じゃない"}],
+      pattern: ["(Drop last い) なくちゃ", "(Drop last い) なきゃ"],
+    },
+    examples: [
+      {
+        sentence: "勉強しなくちゃ！",
+        meaning: "I have to study!",
+      },
+      {
+        sentence: "今日勉強した単語は、忘れないように使わなくちゃ！",
+        meaning: "I have to use the words I studied today so I don't forget them!",
+      },
+      {
+        sentence: "寝坊した！急いでじゅんびしなきゃ。",
+        meaning: "I overslept! I have to hurry and get ready.",
+      },
+    ],
+    category: GrammarEntryCategory.RULES_ADVICE,
+    extraInfo: "～なくては is a more formal version of ～なくちゃ, often used in written language or formal speeches.\nIt has the same meaning as ～なければならない (must do something).",
+  },
+  {
+    id: 80,
+    grammar: "〜ことはない",
+    imi: "～する必要はない",
+    explanation: "これはしなくてもいいだ。\nThis grammar pattern is used to express that there is no need to do something.",
+    usage: {
+      form: [{name: "V. る"}],
+      pattern: ["ことはない"],
+    },
+    examples: [
+      {
+        sentence: "まだ時間があるから走ることはないですよ。",
+        meaning: "There's still time, so there's no need to run.",
+      },
+      {
+        sentence: "人参が嫌いなら、無理して食べることはないですよ。",
+        meaning: "If you don't like carrots, there's no need to force yourself to eat them.",
+      },
+      {
+        sentence: "何回でもチャンスはあるから、失敗しても諦めることはない。",
+        meaning: "There will always be chances, so there's no need to give up even if you fail.",
+      },
+      {
+        sentence: "出発時刻までまだ時間があるんだから、そんなに急ぐことはないよ。",
+        meaning: "There's still time until the departure time, so there's no need to hurry.",
+      },
+    ],
+    category: GrammarEntryCategory.RULES_ADVICE,
+    newWords: [
+      { kanji: "人参", kana: "にんじん", english: "carrot" },
+      { kanji: "出発時刻", kana: "しゅっぱつじこく", english: "departure time" },
+    ],
+  },
+  {
+    id: 81,
+    grammar: "〜べき",
+    imi: "～した方がいい",
+    explanation: "This grammar pattern is used to express that something should be done or is advisable.",
+    usage: {
+      form: [{name: "V. る"}],
+      pattern: ["べき" ],
+    },
+    examples: [
+      {
+        sentence: "食べ物があることは当たり前ではないから、大切にすべきだ。",
+        meaning: "Having food is not something to be taken for granted, so we should cherish it.",
+      },
+      {
+        sentence: "夜遅い時間に、女の子が一人で歩くべきではないよ。",
+        meaning: "Girls shouldn't walk alone late at night.",
+      },
+      {
+        sentence: "やりたいことは、何でもやってみるべきだ。",
+        meaning: "You should try doing anything you want.",
+      },
+    ],
+    category: GrammarEntryCategory.RULES_ADVICE,
+    newWords: [
+      { kanji: "当たり前", kana: "あたりまえ", english: "taken for granted" },
+      { kanji: "夜遅い", kana: "よるおそい", english: "late at night" },
+    ],
+    extraInfo: "する -> becomes するべき or is shortened to すべき",
+  },
+  {
+    id: 82,
+    grammar: "〜ように②",
+    imi: "～しなさい",
+    explanation: "This grammar pattern is used to give commands or instructions, often in a polite or indirect manner.\nするように → しなさい\nしないように → してはいけない",
+    usage: {
+      form: [{name: "V. る"}, {name: "V. ない"}],
+      pattern: ["ように"],
+    },
+    examples: [
+      {
+        sentence: "明日早く来るように。",
+        meaning: "Please come early tomorrow.",
+        point: "明日早く来なさい。",
+      },
+      {
+        sentence: "明日はピクニックに行くので、お弁当を持ってくるように。",
+        meaning: "Since we're going on a picnic tomorrow, please bring a lunch box.",
+      },
+      {
+        sentence: "ここは病院なので、大きな声を出さないように。",
+        meaning: "Please don't speak loudly here, as this is a hospital.",
+      },
+      {
+        sentence: "運動して汗まかいたら、必ず水を飲むように。",
+        meaning: "If you exercise and sweat, make sure to drink water.",
+      },
+    ],
+    category: GrammarEntryCategory.RULES_ADVICE,
+    extraInfo: "In daily conversations 〜しなさい is most used instead of 〜ように for giving instructions or commands.",
+  },
+  {
+    id: 83,
+    grammar: "〜こと",
+    imi: "～しなさい",
+    explanation: "Same as 〜ように, but more formal.\nThis grammar pattern is used to give commands or instructions, often in a formal or official context.\nすること → しなさい\nしないこと → してはいけない",
+    usage: {
+      form: [{name: "V. る"}, {name: "V. ない"}],
+      pattern: ["こと"],
+    },
+    examples: [
+      {
+        sentence: "静かにすること。",
+        meaning: "Please be quiet.",
+        point: "静かにしなさい。",
+      },
+      {
+        sentence: "社長の部屋に入るときは、必ずドアをノックすること。",
+        meaning: "When entering the president's office, be sure to knock on the door.",
+      },
+      {
+        sentence: "学校の中では、走らないこと。危ないですよ。",
+        meaning: "Don't run inside the school. It's dangerous.",
+      },
+      {
+        sentence: "家へ帰ったら手洗い・うがいをすること。",
+        meaning: "When you get home, be sure to wash your hands and gargle.",
+      },
+    ],
+    category: GrammarEntryCategory.RULES_ADVICE,
+    newWords: [
+      { kanji: "静かな", kana: "しずかな", english: "quiet" },
+      { kanji: "うがいをする", kana: "うがいをする", english: "to gargle" },
+    ],
+    extraInfo: "In daily conversations 〜しなさい is most used instead of 〜ように or 〜こと\nBut when comparing these 2, In daily conversations, 〜ように is more commonly used than 〜こと for giving instructions or commands.",
+  },
   // SECTION 11 - GRAMMAR 84 - 89
   // SECTION 12 - GRAMMAR 90 - 100
   // SECTION 13 - GRAMMAR 101 - 110
