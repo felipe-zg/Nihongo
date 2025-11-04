@@ -3,7 +3,6 @@ export const MiniStoryTopics = {
   HOUSE_WORK: '家事',
   SHOPPING: "買い物",
   FASHION: "ファッション",
-  SCHOOL: "学校",
   WORK: "仕事",
   TECHNOLOGY: "テクノロジー",
   LIFE: "人生",
@@ -14,6 +13,7 @@ export const MiniStoryTopics = {
   CITIES: "市",
   WEATHER: "天気",
   TRAVEL: "旅行",
+  SCHOOL: "学校",
 } as const;
 
 // type MiniStoryTopic = typeof MiniStoryTopics[keyof typeof MiniStoryTopics];
@@ -12215,5 +12215,150 @@ export const MINI_STORY_N3: Record<string, MiniStory> = {
     audio: "T317.mp3",
     topic: MiniStoryTopics.LIFE,
     page: 223,
+  },
+  "318": {
+    id: "318",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "大学生のとき、<貿{ぼう}易{えき}>を行{おこな}う多{た}<国{こく}籍{せき}><企{き}業{ぎょう}>への<就{しゅう}職{しょく}>を<希{き}望{ぼう}して>いた。今、<実{じっ}際{さい}に>働{はたら}いている。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "貿{ぼう}易{えき}［する］",
+        english: "Trade・to trade",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+      {
+        kanji: "国{こく}籍{せき}",
+        english: "Nationality・Country of citizenship",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "企{き}業{ぎょう}",
+        english: "Company・Enterprise",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "就{しゅう}職{しょく}［する］",
+        english: "Employment・to get a job",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+      {
+        kanji: "就{しゅう}職{しょく}活{かつ}動{どう}",
+        english: "Job hunting",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "希{き}望{ぼう}［する］",
+        english: "Hope・to hope",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "実{じっ}際{さい}（に）",
+        english: "Actually・In reality",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.ADVERB]
+      },
+    ],
+    translation: `When I was a university student, I wanted to find a job at a multinational company that works in trade. Now, I'm actually working at just such a place.`,
+    audio: "T318.mp3",
+    topic: MiniStoryTopics.LIFE,
+    page: 224,
+  },
+  "319": {
+    id: "319",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "妻{つま}は<年{とし}上{うえ}>の友{ゆう}人{じん}から、「私を<信{しん}用{よう}して><署{しょ}名{めい}して>ください」と何{なん}度{ど}も頼{たの}まれた。<素{す}直{なお}な>妻{つま}は<とうとう><はんこ>を押{お}してしまった。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "年{とし}上{うえ}",
+        english: "Older",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "年{とし}下{した}",
+        english: "Younger",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "信{しん}用{よう}［する］",
+        english: "Trust・to trust",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "署{しょ}名{めい}［する］",
+        english: "Signature・to sign",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "素{す}直{なお}な",
+        english: "Honest・Obedient",
+        type: MiniStoryWordType.ADJECTIVE_NA
+      },
+      {
+        kanji: "とうとう",
+        english: "Finally・At last",
+        type: MiniStoryWordType.ADVERB
+      },
+      {
+        kanji: "はんこ",
+        english: "Seal・Stamp",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `My wife was asked by an older friend, "please trust me and sign this" many times. My honest wife at last stamped her seal on it.`,
+    audio: "T319.mp3",
+    topic: MiniStoryTopics.LIFE,
+    page: 224,
+  },
+  "320": {
+    id: "320",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "年{ねん}金{きん}をもらうための<手{て}続{つづ}き>を教{おし}えてもらった。市{し}役{やく}所{しょ}の<窓{まど}口{ぐち}>で<受{う}け付{つ}けて>いて、<印{いん}鑑{かん}>と<保{ほ}険{けん}証{しょう}>が必要だそうだ。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "手{て}続{つづ}き［する］",
+        english: "Procedure・paperwork・to go through procedures/paperwork",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "窓{まど}口{ぐち}",
+        english: "Window (service counter)",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "受{う}け付{つ}ける",
+        english: "To accept・to receive",
+        type: MiniStoryWordType.ICHIDAN_TRANSITIVE
+      },
+      {
+        kanji: "印{いん}鑑{かん}",
+        english: "Seal・Stamp",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "保{ほ}険{けん}",
+        english: "Insurance",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "〜証{しょう}",
+        english: "~Card・~Certificate",
+        type: MiniStoryWordType.SUFFIX
+      },
+    ],
+    translation: `I was told about the paperwork to get a pension. It seems that it is accepted at the city hall window, and it seems that a seal and insurance card is needed.`,
+    audio: "T320.mp3",
+    topic: MiniStoryTopics.LIFE,
+    page: 225,
   },
 };
