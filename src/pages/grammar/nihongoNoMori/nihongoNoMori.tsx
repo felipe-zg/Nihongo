@@ -142,7 +142,7 @@ const NihongoNoMoriGrammar: React.FC<Props> = ({ grammarList }) => {
           <Box
             position="fixed"
             left={0}
-            top="50%"
+            top="35%"
             zIndex={100}
             style={{ transform: [{ translateY: -25 }] }}
           >
@@ -161,7 +161,7 @@ const NihongoNoMoriGrammar: React.FC<Props> = ({ grammarList }) => {
           <Box
             position="fixed"
             right={0}
-            top="50%"
+            top="35%"
             zIndex={100}
             style={{ transform: [{ translateY: -25 }] }}
           >
