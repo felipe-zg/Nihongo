@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Button, Divider, HStack, Text } from "native-base";
+import { Box, Button, Divider, HStack, Text, useBreakpointValue } from "native-base";
 
 type Props = {
   grammarList: GrammarEntry[];
@@ -17,6 +17,7 @@ const NihongoNoMoriGrammar: React.FC<Props> = ({ grammarList }) => {
   const [currentIndex, setCurrentIndex] = React.useState(0);
   const [showContent, setShowContent] = React.useState(false);
   const currentItem = grammarList[currentIndex];
+  const isMobile = useBreakpointValue({ base: true, md: false });
 
   function handleNext() {
     if(!showContent) {
@@ -25,6 +26,15 @@ const NihongoNoMoriGrammar: React.FC<Props> = ({ grammarList }) => {
     }
     setShowContent(false);
     setCurrentIndex((prevIndex) => (prevIndex + 1) % grammarList.length);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
+  function handlePrev() {
+    setShowContent(false);
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? grammarList.length - 1 : prevIndex - 1
+    );
+    window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
   return (
@@ -37,6 +47,7 @@ const NihongoNoMoriGrammar: React.FC<Props> = ({ grammarList }) => {
       <Box opacity={showContent ? 1 : 0} alignItems={"center"} width={"100%"}>
         <ContentBox>
           <Text fontSize={"lg"} color={"white"}>{currentItem.imi}</Text>
+          <Divider mt={2} bg="gray.500" thickness={0.5}/>
           <Text fontSize={"md"} italic color={"white"} textAlign={"center"}>{currentItem.explanation}</Text>
           <Box borderColor={"pink.500"} borderWidth={1} borderRadius={5} px={4} py={1} mt={2}>
             <Text fontSize={"sm"} italic color={"white"}>{`${currentItem.category}`}</Text>
@@ -64,11 +75,24 @@ const NihongoNoMoriGrammar: React.FC<Props> = ({ grammarList }) => {
                   <Text key={index} color={"primary.500"} bold>{pattern}</Text>
                 ))}
               </Box>
+              {currentItem.usage.secondsForm && (
+                <Box>
+                  {currentItem.usage.secondsForm?.map((form, index) => (
+                    <HStack key={index} space={10} justifyContent={"space-between"}>
+                      <Text color={"white"}>{form.name}</Text>
+                      {form.connector && <Text>
+                        <Text mr={5} color={"white"} fontSize={"xl"}> + </Text>
+                        <Text color={"primary.500"}>{form.connector}</Text>  
+                      </Text>}
+                    </HStack>
+                  ))}
+                </Box>
+              )}
             </HStack>
           )}
           {currentItem.usage.combinedForms && (
             <>
-            <Divider my={2} borderColor={"pink.500"} />
+            <Divider my={2} bg="gray.500" thickness={0.5}/>
             {currentItem.usage.combinedForms?.map((form, index) => (
               <HStack key={index} space={5} alignItems="center">
                 <Text key={index} color={"white"}>{form.first}</Text>
@@ -87,9 +111,9 @@ const NihongoNoMoriGrammar: React.FC<Props> = ({ grammarList }) => {
           {currentItem.examples.map((example, index) => (
             <Box key={index} mb={4} alignItems="center">
               <Text textAlign={"center"} color={"white"}>{example.sentence}</Text>
-              {example.meaning && <Text italic textAlign={"center"} color={"white"} fontSize={"xs"}>{example.meaning}</Text>}
+              {example.meaning && <Text italic textAlign={"center"} color={"primary.400"} fontSize={"xs"}>{example.meaning}</Text>}
               {example.point && <Text italic textAlign={"center"} color={"pink.400"} fontSize={"xs"}>{example.point}</Text>}
-              <Divider my={2} borderColor={"pink.500"} />
+              <Divider my={2} bg="gray.500" thickness={0.5}/>
             </Box>
           ))}
         </ContentBox>
@@ -103,8 +127,8 @@ const NihongoNoMoriGrammar: React.FC<Props> = ({ grammarList }) => {
             <Box minWidth={{ base: "100%", lg: "50%" }}>
               {currentItem.newWords?.map((word, index) => (
                 <HStack key={index} width={"100%"}>
-                  <Text flex={1} color={"white"}>{word.kanji}</Text>
-                  <Text flex={2} color={"white"}>{word.kana}</Text>
+                  <Text flex={1} color={"yellow.300"}>{word.kanji}</Text>
+                  <Text flex={2} color={"primary.400"}>{word.kana}</Text>
                   <Text flex={2} color={"white"}>{word.english}</Text>
                 </HStack>
               ))}
@@ -112,9 +136,52 @@ const NihongoNoMoriGrammar: React.FC<Props> = ({ grammarList }) => {
           </ContentBox>
         )}
       </Box>
-      <Box width={"90%"} mt={"auto"} mb={35}>
-        <Button w={"full"} onPress={handleNext} mt={4} variant={showContent ? "solid" : "outline"} colorScheme="pink">{showContent ? "次へ" : "見る"}</Button>
-      </Box>
+      {isMobile && (
+        /* --- Fixed Navigation Buttons --- */
+        <>
+          <Box
+            position="fixed"
+            left={0}
+            top="50%"
+            zIndex={100}
+            style={{ transform: [{ translateY: -25 }] }}
+          >
+            <Button
+              size="xs"
+              borderRadius="full"
+              colorScheme="pink"
+              variant="outline"
+              opacity={0.5}
+              onPress={handlePrev}
+            >
+              {"前"}
+            </Button>
+          </Box>
+
+          <Box
+            position="fixed"
+            right={0}
+            top="50%"
+            zIndex={100}
+            style={{ transform: [{ translateY: -25 }] }}
+          >
+            <Button
+              size="xs"
+              borderRadius="full"
+              colorScheme="pink"
+              opacity={0.5}
+              onPress={handleNext}
+            >
+              {showContent ? "次" : "見"}
+            </Button>
+          </Box>
+        </>
+      )}
+      {!isMobile && (
+        <Box width={"90%"} mt={"auto"} mb={35}>
+          <Button w={"full"} onPress={handleNext} mt={4} variant={showContent ? "solid" : "outline"} colorScheme="pink">{showContent ? "次へ" : "見る"}</Button>
+        </Box>
+      )}
     </Box>
   );
 };
