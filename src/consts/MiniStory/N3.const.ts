@@ -10576,6 +10576,241 @@ export const MINI_STORY_N3: Record<string, MiniStory> = {
     topic: MiniStoryTopics.TRAVEL,
     page: 175,
   },
+  "246": {
+    id: "246",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<理{り}科{か}>で<学{まな}ぶ>内{ない}容{よう}は、主{おも}に<物{ぶつ}理{り}>・化{か}学{がく}・生{せい}物{ぶつ}・地{ち}学{がく}に分{わ}けられる。また、社{しゃ}会{かい}で学{まな}ぶ内{ない}容{よう}は、<地{ち}理{り}>・歴{れき}史{し}・公{こう}民{みん}に分{わ}けられる。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "理{り}科{か}",
+        english: "Science",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "学{まな}ぶ",
+        english: "To learn・To study",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+      {
+        kanji: "物{ぶつ}理{り}",
+        english: "Physics",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "地{ち}理{り}",
+        english: "Geography",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `The topics studied in the sciences can be divided mainly into physics, chemistry, biology and geology. The topics studied in the social sciences can be divided into geography, history and social studies.`,
+    audio: "T246.mp3",
+    topic: MiniStoryTopics.SCHOOL,
+    page: 178,
+  },
+  "247": {
+    id: "247",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<足{た}し算{ざん}>と<引{ひ}き算{ざん}>は<算{さん}数{すう}>の基{き}本{ほん}だが、<かけ算{ざん}>もとても大{たい}切{せつ}だ。かけ算{ざん}が<すらすら>言{い}えないと、<割{わ}り算{ざん}>で苦{く}労{ろう}する。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "足{た}し算{ざん}",
+        english: "Addition",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "引{ひ}き算{ざん}",
+        english: "Subtraction",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "算{さん}数{すう}",
+        english: "Mathematics・Arithmetic",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "かけ算{ざん}",
+        english: "Multiplication",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "すらすら（と）",
+        english: "Smoothly",
+        type: MiniStoryWordType.ADVERB
+      },
+      {
+        kanji: "割{わ}り算{ざん}",
+        english: "Division",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `Addition and subtraction are the basis of arithmetic, but multiplication is also very important. If you can't recite multiplication smoothly, then you will struggle with division.`,
+    audio: "T247.mp3",
+    topic: MiniStoryTopics.SCHOOL,
+    page: 178,
+  },
+  "248": {
+    id: "248",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "子どもが学校を<早{そう}退{たい}したり><欠{けっ}席{せき}する>ときは、親{おや}が連{れん}絡{らく}<帳{ちょう}>や生{せい}徒{と}手{て}帳{ちょう}、欠{けっ}席{せき}<届{とどけ}>などに必{ひつ}要{よう}なことを書{か}いて学{がっ}校{こう}に連{れん}絡{らく}することなっている。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "早{そう}退{たい}［する］",
+        english: "Leaving early・To leave early",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "欠{けっ}席{せき}［する］",
+        english: "Absence・To be absent",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "〜帳{ちょう}",
+        english: "~book",
+        type: MiniStoryWordType.SUFFIX
+      },
+      {
+        kanji: "〜届{とどけ}",
+        english: "~form・~notification",
+        type: MiniStoryWordType.SUFFIX
+      },
+    ],
+    translation: `When a child leaves school early or will be absent, their parents must write an absence form and contact the school.`,
+    audio: "T248.mp3",
+    topic: MiniStoryTopics.SCHOOL,
+    page: 179,
+  },
+  "249": {
+    id: "249",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<寝{ね}坊{ぼう}して>しまった！このままじゃ<遅{ち}刻{こく}>だ。でも今日はテストがあるから、<サボれない>。早{はや}く準{じゅん}備{び}して学{がっ}校{こう}に行{い}かなくちゃ。電車の中で参{さん}考{こう}<晝{しょ}>を読{よ}んでおこう。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "寝{ね}坊{ぼう}［する］",
+        english: "Oversleeping・To oversleep",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+      {
+        kanji: "遅{ち}刻{こく}［する］",
+        english: "Tardiness・To be late",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "サボる",
+        english: "To skip class",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+      {
+        kanji: "～書{しょ}",
+        english: "Book",
+        type: MiniStoryWordType.SUFFIX
+      },
+    ],
+    translation: `I overslept! At this rate, I'll be late. But there is a test today, so I can't skip class. I have to hurry up and get ready and get to school. I'll read the reference book on the train.`,
+    audio: "T249.mp3",
+    topic: MiniStoryTopics.SCHOOL,
+    page: 179,
+  },
+  "250": {
+    id: "250",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "高{こう}校{こう}時{じ}代{だい}のテニス<部{ぶ}>の仲{なか}間{ま}は今でも<親{しん}友{ゆう}>だ。けんかもしたけど、翌{よく}日{じつ}には<仲{なか}直{なお}りした>。一緒に<ばかな>こともしたけど、厳{きび}しい練{れん}習{しゅう}を<ふらふらに>なるまでやった。今はお互{たが}い違{ちが}う学校に行っているけれど、<どんなに>離{はな}れていても親{しん}友{ゆう}だ。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "～部{ぶ}",
+        english: "~Club",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "親{しん}友{ゆう}",
+        english: "Best friend",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "仲{なか}直{なお}り［する］",
+        english: "Making up・To make up (after a fight)",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+      {
+        kanji: "ばかな",
+        english: "Stupid・Foolish",
+        type: MiniStoryWordType.ADJECTIVE_NA
+      },
+      {
+        kanji: "ふらふらな",
+        english: "Faint・Dizzy",
+        type: MiniStoryWordType.ADJECTIVE_NA
+      },
+      {
+        kanji: "どんなに",
+        english: "No matter how",
+        type: MiniStoryWordType.ADVERB
+      },
+    ],
+    translation: `I'm still close with my friends from my high school tennis club. We got into fights, but we made up the next day. We did some stupid things together, but we practiced hard until we were faint. Now, we go to different schools, but no matter how far away from each other we go, we're still close friends.`,
+    audio: "T250.mp3",
+    topic: MiniStoryTopics.SCHOOL,
+    page: 180,
+  },
+  "251": {
+    id: "251",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "中学生や高校生は毎日の荷物がとても多い。そのため、<ロッカー>にあまり使わない<教{きょう}科{か}書{しょ}>や体{たい}操{そう}服{ふく}などの<持{も}ち物{もの}>を置{お}いて帰{かえ}ることができる。ロッカーはダイヤル式{しき}の鍵{かぎ}があって、<生{せい}年{ねん}月{がっ}日{ぴ}>の数{すう}字{じ}を使ってはいけない。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "ロッカー",
+        english: "Locker",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "コインロッカー",
+        english: "Coin locker",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "教{きょう}科{か}書{しょ}",
+        english: "Textbook",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "持{も}ち物{もの}",
+        english: "Luggage・Belongings",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "生{せい}年{ねん}月{がっ}日{ぴ}",
+        english: "Date of Birth",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `Junior high school and high school students have a lot of daily luggage. So, they can leave things such as textbooks they don't use much and gym clothes in their lockers when they go home. The lockers have a dial-type lock, and students should not use their date of birth (for the combination）.`,
+    audio: "T251.mp3",
+    topic: MiniStoryTopics.SCHOOL,
+    page: 180,
+  },
   "279": {
     id: "279",
     rubyStory: [
