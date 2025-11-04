@@ -17,7 +17,7 @@ const NihongoNoMoriGrammar: React.FC<Props> = ({ grammarList }) => {
   const [currentIndex, setCurrentIndex] = React.useState(0);
   const [showContent, setShowContent] = React.useState(false);
   const currentItem = grammarList[currentIndex];
-  const isMobile = useBreakpointValue({ base: true, md: false });
+  const isMobile = useBreakpointValue({ base: true, lg: false });
 
   function handleNext() {
     if(!showContent) {
@@ -142,7 +142,7 @@ const NihongoNoMoriGrammar: React.FC<Props> = ({ grammarList }) => {
           <Box
             position="fixed"
             left={0}
-            top="35%"
+            top="75%"
             zIndex={100}
             style={{ transform: [{ translateY: -25 }] }}
           >
@@ -161,7 +161,7 @@ const NihongoNoMoriGrammar: React.FC<Props> = ({ grammarList }) => {
           <Box
             position="fixed"
             right={0}
-            top="35%"
+            top="75%"
             zIndex={100}
             style={{ transform: [{ translateY: -25 }] }}
           >
