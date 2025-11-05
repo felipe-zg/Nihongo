@@ -14,6 +14,7 @@ export const MiniStoryTopics = {
   WEATHER: "天気",
   TRAVEL: "旅行",
   SCHOOL: "学校",
+  HEALTH: "健康",
 } as const;
 
 // type MiniStoryTopic = typeof MiniStoryTopics[keyof typeof MiniStoryTopics];
@@ -12595,5 +12596,180 @@ export const MINI_STORY_N3: Record<string, MiniStory> = {
     audio: "T320.mp3",
     topic: MiniStoryTopics.LIFE,
     page: 225,
+  },
+  "321": {
+    id: "321",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "以{い}前{ぜん}は<完{かん}全{ぜん}な><治{ち}療{りょう}>法{ほう}はなかったが、<医{い}学{がく}>の<発{はっ}達{たつ}>によって、<がん>も治{なお}るようになってきた。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "完{かん}全{ぜん}な",
+        english: "Complete・Perfect",
+        type: MiniStoryWordType.ADJECTIVE_NA
+      },
+      {
+        kanji: "治{ち}療{りょう}［する］",
+        english: "Treatment・cure・to treat",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "医{い}学{がく}",
+        english: "Medicine",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "発{はっ}達{たつ}［する］",
+        english: "Development・to develop",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+      {
+        kanji: "がん",
+        english: "Cancer",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `Previously there was no cure, but with the development of medicine, cancer has now also become treatable.`,
+    audio: "T321.mp3",
+    topic: MiniStoryTopics.HEALTH,
+    page: 228,
+  },
+  "322": {
+    id: "322",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "2年前に日本に来たときは<ホームシック>になり、<ストレス>を感{かん}じて<睡{すい}眠{みん}不{ぶ}足{そく}>だった。しかし、今ではすっかり日本の生{せい}活{かつ}にも慣{な}れ、毎日<ぐっすりと>寝{ね}ている。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "ホームシック",
+        english: "Homesick",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "ストレス",
+        english: "Stress",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "睡{すい}眠{みん}不{ぶ}足{そく}",
+        english: "Sleep deprivation・lack of sleep",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "睡{すい}眠{みん}",
+        english: "Sleep",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "ぐっすり（と）",
+        english: "Soundly (asleep)",
+        type: MiniStoryWordType.ADVERB
+      },
+    ],
+    translation: `When I came to Japan two years ago, I became homesick, stressed and sleep deprived. However, I'm now completely accustomed to life in Japan and sleep soundly every day.`,
+    audio: "T322.mp3",
+    topic: MiniStoryTopics.HEALTH,
+    page: 228,
+  },
+  "323": {
+    id: "323",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<せき>と<くしゃみ>が出{で}るので、<体{たい}温{おん}><計{けい}>で熱{ねつ}を<測{はか}った>が、<平{へい}熱{ねつ}>だった。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "せき",
+        english: "Cough",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "くしゃみ",
+        english: "Sneeze",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "体{たい}温{おん}",
+        english: "Body temperature",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "～計{けい}",
+        english: "~meter",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "測{はか}る・計{はか}る・量{はか}る",
+        english: "To measure",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+      {
+        kanji: "平{へい}熱{ねつ}",
+        english: "Normal temperature",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "微{び}熱{ねつ}",
+        english: "Slight fever",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "高{こう}熱{ねつ}",
+        english: "High fever",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `I had a cough and sneeze, so I measured my fever with a thermometer, but it was normal.`,
+    audio: "T323.mp3",
+    topic: MiniStoryTopics.HEALTH,
+    page: 229,
+  },
+  "324": {
+    id: "324",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<頭{ず}痛{つう}>や<吐{は}き気{け}>がする。もしかしたら<新{しん}型{がた}コロナウイルス>に<感{かん}染{せん}した>かもしれない。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "頭{ず}痛{つう}",
+        english: "Headache",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "吐{は}き気{け}",
+        english: "Nausea",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "新{しん}型{がた}コロナウイルス",
+        english: "Novel coronavirus",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "ウイルス",
+        english: "Virus",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "感{かん}染{せん}［する］",
+        english: "Infection・to be infected",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+    ],
+    translation: `I have a headache and nausea. Maybe I was infected with the novel coronavirus.`,
+    audio: "T324.mp3",
+    topic: MiniStoryTopics.HEALTH,
+    page: 229,
   },
 };
