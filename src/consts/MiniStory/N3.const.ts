@@ -10812,6 +10812,151 @@ export const MINI_STORY_N3: Record<string, MiniStory> = {
     topic: MiniStoryTopics.SCHOOL,
     page: 180,
   },
+  "252": {
+    id: "252",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "春{はる}休{やす}みの宿{しゅく}題{だい}は、「<プラスチック>と環{かん}境{きょう}」というテーマの<レポート>です。<横{よこ}書{が}き>のレポート<用{よう}紙{し}>に、5枚{まい}以{い}上{じょう}書{か}いてください。最{さい}初{しょ}に<目{もく}次{じ}>もつけてください。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "プラスチック",
+        english: "Plastic",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "レポート",
+        english: "Report",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "横{よこ}書{が}き",
+        english: "Horizontal writing",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "縦{たて}書{が}き",
+        english: "Vertical writing",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "用{よう}紙{し}",
+        english: "Paper・Form",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "コピー用{よう}紙{し}",
+        english: "Copy paper",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "目{もく}次{じ}",
+        english: "Table of contents",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `Your spring break homework is to write a report on the subject of "plastic and the environment." Please write five or more pages on horizontal report paper. Please also first include a table of contents.`,
+    audio: "T252.mp3",
+    topic: MiniStoryTopics.SCHOOL,
+    page: 181,
+  },
+  "253": {
+    id: "253",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "私の子供が通{かよ}う幼{よう}稚{ち}園{えん}には<父{ふ}母{ぼ}>の会{かい}がある。やる人が少{すく}なくて、いつも<じゃんけん>で決{き}めている。今年、<思{おも}い切{き}って><引{ひ}き受{う}ける>ことにした。私は夏{なつ}祭{まつ}りの<係{かかり}>で、子供たちの夏{なつ}祭{まつ}りをお手{て}伝{つだ}いすることになった。楽しそうだ。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "父{ふ}母{ぼ}",
+        english: "Parents",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "じゃんけん［する］",
+        english: "Rock-paper-scissors・To play rock-paper-scissors",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+      {
+        kanji: "思{おも}い切{き}って",
+        english: "Decisively・With determination",
+        type: MiniStoryWordType.ADVERB
+      },
+      {
+        kanji: "引{ひ}き受{う}ける",
+        english: "To take on・To undertake",
+        type: MiniStoryWordType.ICHIDAN_TRANSITIVE
+      },
+      {
+        kanji: "係{かかり}",
+        english: "Duty・In charge of~",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `There is a parents' association at the kindergarten that my child attends. Only a few people participate, and things are always decided by rock-paper-scissors. This year, I resolved to take on some of the work. It's been decided that I will be in charge of the summer festival and help the children with it. It sounds fun.`,
+    audio: "T253.mp3",
+    topic: MiniStoryTopics.SCHOOL,
+    page: 182,
+  },
+  "254": {
+    id: "254",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "大学の留学<生{せい}><センター>には、留学生と日本人学生が交{こう}流{りゅう}する<グループ>がある。私はそのグループの<メンバー>だ。今日は来週の<活{かつ}動{どう}>の内{ない}容{よう}をみんなで<話{はな}し合{あ}った>。近{きん}所{じょ}の古{ふる}いお寺{てら}に<見{けん}学{がく}>に行くことになった。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "～生{せい}",
+        english: "Student",
+        type: MiniStoryWordType.SUFFIX
+      },
+      {
+        kanji: "センター",
+        english: "Center",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "グループ",
+        english: "Group",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "メンバー",
+        english: "Member",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "活{かつ}動{どう}［する］",
+        english: "Activity・To participate in an activity",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+      {
+        kanji: "話{はな}し合{あ}う",
+        english: "To discuss・To talk about together",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+      {
+        kanji: "話{はな}し合{あ}い",
+        english: "Discussion・Talk about together",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "見{けん}学{がく}［する］",
+        english: "Observation・View・To observe・To visit (a place for study)",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+    ],
+    translation: `The university's international student center has a group for international students and Japanese students to interact. I'm a member of that group. Today, we discussed our activities for next week. We are going to visit an old temple in the neighborhood.`,
+    audio: "T254.mp3",
+    topic: MiniStoryTopics.SCHOOL,
+    page: 182,
+  },
   "279": {
     id: "279",
     rubyStory: [
