@@ -1,4 +1,4 @@
-// pages 14 - 210 of Mini Story N3
+// pages 14 - 229 of Mini Story N3
 export const N3_IMPORTANT_WORDS: { kanji: string; english: string }[] = [
   {
     kanji: "快{かい}復{ふく}・回{かい}復{ふく}",
@@ -4427,5 +4427,449 @@ export const N3_IMPORTANT_WORDS: { kanji: string; english: string }[] = [
   {
     kanji: "判{はん}断{だん}［する］",
     english: "judgment・decision・to judge・to decide"
+  },
+  {
+    kanji: "名{な}札{ふだ}",
+    english: "name tag"
+  },
+  {
+    kanji: "～業{ぎょう}",
+    english: "industry"
+  },
+  {
+    kanji: "経{けい}営{えい}［する］",
+    english: "management・to manage"
+  },
+  {
+    kanji: "個{こ}人{じん}",
+    english: "individual・private person"
+  },
+  {
+    kanji: "留{る}守{す}番{ばん}［する］",
+    english: "To stay (home) house watching"
+  },
+  {
+    kanji: "正{しょう}午{ご}",
+    english: "noon"
+  },
+  {
+    kanji: "整{せい}理{り}［する］",
+    english: "organizing・to organize"
+  },
+  {
+    kanji: "居{い}酒{ざか}屋{や}",
+    english: "tavern・pub"
+  },
+  {
+    kanji: "看{かん}板{ばん}",
+    english: "signboard・signature (dish)"
+  },
+  {
+    kanji: "命{めい}令{れい}［する］",
+    english: "Command・to give commands"
+  },
+  {
+    kanji: "~ダース",
+    english: "~dozen"
+  },
+  {
+    kanji: "一{いち}時{じ}",
+    english: "For a moment"
+  },
+  {
+    kanji: "一{いち}時{じ}帰{き}国{こく}［する］",
+    english: "to temporarily return to one's home country"
+  },
+  {
+    kanji: "協{きょう}力{りょく}［する］",
+    english: "cooperation・to cooperate"
+  },
+  {
+    kanji: "ほっとする",
+    english: "to be relieved"
+  },
+  {
+    kanji: "無{む}職{しょく}",
+    english: "unemployed・jobless"
+  },
+  {
+    kanji: "独{どく}身{しん}",
+    english: "single (unmarried)"
+  },
+  {
+    kanji: "焦{あせ}る",
+    english: "To get impatient・to be in a hurry"
+  },
+  {
+    kanji: "不{ふ}安{あん}な",
+    english: "anxious・uneasy"
+  },
+  {
+    kanji: "可{か}能{のう}な",
+    english: "possible"
+  },
+  {
+    kanji: "不{ふ}可{か}能{のう}な",
+    english: "Impossible"
+  },
+  {
+    kanji: "可{か}能{のう}性{せい}",
+    english: "possibility"
+  },
+  {
+    kanji: "孫{まご}",
+    english: "grandchild"
+  },
+  {
+    kanji: "悩{なや}む",
+    english: "To worry"
+  },
+  {
+    kanji: "弁{べん}護{ご}士{し}",
+    english: "lawyer"
+  },
+  {
+    kanji: "目{め}指{ざ}す",
+    english: "To aim for・to aspire to"
+  },
+  {
+    kanji: "倍{ばい}",
+    english: "double・twice"
+  },
+  {
+    kanji: "努{ど}力{りょく}［する］",
+    english: "Effort・to make an effort"
+  },
+  {
+    kanji: "様{よう}子{す}",
+    english: "appearance・condition"
+  },
+  {
+    kanji: "同{どう}僚{りょう}",
+    english: "colleague"
+  },
+  {
+    kanji: "素{す}敵{てき}な",
+    english: "nice・lovely・wonderful"
+  },
+  {
+    kanji: "真{しん}剣{けん}な",
+    english: "Serious"
+  },
+  {
+    kanji: "交{こう}際{さい}［する］",
+    english: "Dating・To date"
+  },
+  {
+    kanji: "葬{そう}式{しき}",
+    english: "funeral"
+  },
+  {
+    kanji: "ろうそく",
+    english: "candle"
+  },
+  {
+    kanji: "想{そう}像{ぞう}［する］",
+    english: "imagination・to imagine"
+  },
+  {
+    kanji: "想{そう}像{ぞう}力{りょく}",
+    english: "imaginative power・imagination"
+  },
+  {
+    kanji: "つらい",
+    english: "Painful・hard・tough"
+  },
+  {
+    kanji: "理{り}想{そう}的{てき}な",
+    english: "Ideal"
+  },
+  {
+    kanji: "理{り}想{そう}",
+    english: "Ideal"
+  },
+  {
+    kanji: "夫{ふう}婦{ふ}",
+    english: "husband and wife・married couple"
+  },
+  {
+    kanji: "末{すえ}っ子{こ}",
+    english: "youngest child"
+  },
+  {
+    kanji: "たとえ",
+    english: "Even if・no matter"
+  },
+  {
+    kanji: "姓{せい}",
+    english: "surname・family name"
+  },
+  {
+    kanji: "常{じょう}識{しき}",
+    english: "Common sense"
+  },
+  {
+    kanji: "縛{しば}る",
+    english: "To bind・to tie"
+  },
+  {
+    kanji: "ある",
+    english: "A certain"
+  },
+  {
+    kanji: "周{しゅう}囲{い}",
+    english: "Surroundings"
+  },
+  {
+    kanji: "大{おお}げさな",
+    english: "Exaggerated"
+  },
+  {
+    kanji: "いらいら［する］",
+    english: "Annoyance・to be annoyed"
+  },
+  {
+    kanji: "公{こう}務{む}員{いん}",
+    english: "Public servant・civil servant"
+  },
+  {
+    kanji: "資{し}格{かく}",
+    english: "Qualification"
+  },
+  {
+    kanji: "講{こう}座{ざ}",
+    english: "Course・Lecture"
+  },
+  {
+    kanji: "標{ひょう}準{じゅん}",
+    english: "Standard"
+  },
+  {
+    kanji: "付{つ}く",
+    english: "To be attached"
+  },
+  {
+    kanji: "出{しゅっ}張{ちょう}［する］",
+    english: "Business trip・to go on a business trip"
+  },
+  {
+    kanji: "重{じゅう}要{よう}な",
+    english: "Important"
+  },
+  {
+    kanji: "日{ひ}にち",
+    english: "Date"
+  },
+  {
+    kanji: "延{の}ばす",
+    english: "To extend"
+  },
+  {
+    kanji: "延{の}びる",
+    english: "To be extended"
+  },
+  {
+    kanji: "方{ほう}向{こう}",
+    english: "Direction"
+  },
+  {
+    kanji: "いとこ",
+    english: "Cousin"
+  },
+  {
+    kanji: "しかし",
+    english: "However"
+  },
+  {
+    kanji: "振{ふ}る",
+    english: "To dump (someone)"
+  },
+  {
+    kanji: "さて",
+    english: "Well・Now"
+  },
+  {
+    kanji: "感{かん}謝{しゃ}［する］",
+    english: "Gratitude・Appreciation・to express gratitude"
+  },
+  {
+    kanji: "感{かん}想{そう}",
+    english: "Impression・thoughts"
+  },
+  {
+    kanji: "進{しん}学{がく}［する］",
+    english: "To advance to a higher level of education"
+  },
+  {
+    kanji: "建{けん}築{ちく}［する］",
+    english: "Building・to build/architecture"
+  },
+  {
+    kanji: "能{のう}力{りょく}",
+    english: "Ability"
+  },
+  {
+    kanji: "姉{し}妹{まい}",
+    english: "Sisters"
+  },
+  {
+    kanji: "夢{む}中{ちゅう}な",
+    english: "Mindless・In a dream-like state"
+  },
+  {
+    kanji: "楽{がっ}器{き}",
+    english: "Instrument"
+  },
+  {
+    kanji: "貿{ぼう}易{えき}［する］",
+    english: "Trade・to trade"
+  },
+  {
+    kanji: "国{こく}籍{せき}",
+    english: "Nationality・Country of citizenship"
+  },
+  {
+    kanji: "企{き}業{ぎょう}",
+    english: "Company・Enterprise"
+  },
+  {
+    kanji: "就{しゅう}職{しょく}［する］",
+    english: "Employment・to get a job"
+  },
+  {
+    kanji: "就{しゅう}職{しょく}活{かつ}動{どう}",
+    english: "Job hunting"
+  },
+  {
+    kanji: "希{き}望{ぼう}［する］",
+    english: "Hope・to hope"
+  },
+  {
+    kanji: "実{じっ}際{さい}（に）",
+    english: "Actually・In reality"
+  },
+  {
+    kanji: "年{とし}上{うえ}",
+    english: "Older"
+  },
+  {
+    kanji: "年{とし}下{した}",
+    english: "Younger"
+  },
+  {
+    kanji: "信{しん}用{よう}［する］",
+    english: "Trust・to trust"
+  },
+  {
+    kanji: "署{しょ}名{めい}［する］",
+    english: "Signature・to sign"
+  },
+  {
+    kanji: "素{す}直{なお}な",
+    english: "Honest・Obedient"
+  },
+  {
+    kanji: "とうとう",
+    english: "Finally・At last"
+  },
+  {
+    kanji: "はんこ",
+    english: "Seal・Stamp"
+  },
+  {
+    kanji: "手{て}続{つづ}き［する］",
+    english: "Procedure・paperwork・to go through procedures/paperwork"
+  },
+  {
+    kanji: "受{う}け付{つ}ける",
+    english: "To accept・to receive"
+  },
+  {
+    kanji: "印{いん}鑑{かん}",
+    english: "Seal・Stamp"
+  },
+  {
+    kanji: "保{ほ}険{けん}",
+    english: "Insurance"
+  },
+  {
+    kanji: "〜証{しょう}",
+    english: "~Card・~Certificate"
+  },
+  {
+    kanji: "完{かん}全{ぜん}な",
+    english: "Complete・Perfect"
+  },
+  {
+    kanji: "治{ち}療{りょう}［する］",
+    english: "Treatment・cure・to treat"
+  },
+  {
+    kanji: "医{い}学{がく}",
+    english: "Medicine"
+  },
+  {
+    kanji: "発{はっ}達{たつ}［する］",
+    english: "Development・to develop"
+  },
+  {
+    kanji: "がん",
+    english: "Cancer"
+  },
+  {
+    kanji: "睡{すい}眠{みん}不{ぶ}足{そく}",
+    english: "Sleep deprivation・lack of sleep"
+  },
+  {
+    kanji: "睡{すい}眠{みん}",
+    english: "Sleep"
+  },
+  {
+    kanji: "ぐっすり（と）",
+    english: "Soundly (asleep)"
+  },
+  {
+    kanji: "せき",
+    english: "Cough"
+  },
+  {
+    kanji: "くしゃみ",
+    english: "Sneeze"
+  },
+  {
+    kanji: "体{たい}温{おん}",
+    english: "Body temperature"
+  },
+  {
+    kanji: "測{はか}る・計{はか}る・量{はか}る",
+    english: "To measure"
+  },
+  {
+    kanji: "平{へい}熱{ねつ}",
+    english: "Normal temperature"
+  },
+  {
+    kanji: "微{び}熱{ねつ}",
+    english: "Slight fever"
+  },
+  {
+    kanji: "高{こう}熱{ねつ}",
+    english: "High fever"
+  },
+  {
+    kanji: "頭{ず}痛{つう}",
+    english: "Headache"
+  },
+  {
+    kanji: "吐{は}き気{け}",
+    english: "Nausea"
+  },
+  {
+    kanji: "新{しん}型{がた}コロナウイルス",
+    english: "Novel coronavirus"
+  },
+  {
+    kanji: "感{かん}染{せん}［する］",
+    english: "Infection・to be infected"
   }
 ];
