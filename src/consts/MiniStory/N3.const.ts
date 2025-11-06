@@ -10957,6 +10957,1073 @@ export const MINI_STORY_N3: Record<string, MiniStory> = {
     topic: MiniStoryTopics.SCHOOL,
     page: 182,
   },
+  "255": {
+    id: "255",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "テストで間違ったところに、大きな<ばつ>をつけられちゃったよ。<すっかり>勉強する気がなくなっちゃった・・・。",
+      },
+      {
+        character: "B",
+        dialogue: "そんなこと言わないで。最{さい}後{ご}にちゃんと<見{み}直{なお}した>？ここ、すごく簡単な計{けい}算{さん}ミスをしているよ。"
+      },
+      {
+        character: "A",
+        dialogue: "あ、本当だ。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "ばつ",
+        english: "Cross mark・X mark",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "すっかり",
+        english: "Completely・Totally",
+        type: MiniStoryWordType.ADVERB
+      },
+      {
+        kanji: "見{み}直{なお}す",
+        english: "To review・To look over again",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+    ],
+    translation: `A: Huge x's were drawn on the places I got wrong on the test. I've completely lost the will to study.\nB: Don't say that. Did you review it properly in the end? Look here, you made a really simple calculation mistake.\nA: Oh, youre right.`,
+    audio: "T255.mp3",
+    topic: MiniStoryTopics.SCHOOL,
+    page: 183,
+  },
+  "256": {
+    id: "256",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "私の兄{あに}は大学で物{ぶつ}理{り}<学{がく}>を<専{せん}攻{こう}して>いて、文{ぶん}学{がく}部{ぶ}の私とは<専{せん}門{もん}>が全{ぜん}然{ぜん}違{ちが}う。兄{あに}は朝{あさ}から晩{ばん}まで実{じっ}験{けん}<室{しつ}>にいる日{ひ}も多い。物{ぶつ}理{り}学{がく}に関{かん}する<知{ち}識{しき}>は<まるで><百{ひゃっ}科{か}事{じ}典{てん}>のようだ。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "～学{がく}",
+        english: "~Study・~Field",
+        type: MiniStoryWordType.SUFFIX
+      },
+      {
+        kanji: "専{せん}攻{こう}［する］",
+        english: "Major・To major in",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "専{せん}門{もん}",
+        english: "Specialty・Expertise",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "專{せん}門{もん}学{がっ}校{こう}",
+        english: "Vocational school",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "専{せん}門{もん}家{か}",
+        english: "Expert・Specialist",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "～室{しつ}",
+        english: "~Room",
+        type: MiniStoryWordType.SUFFIX
+      },
+      {
+        kanji: "知{ち}識{しき}",
+        english: "Knowledge",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "まるで",
+        english: "Just like・As if",
+        type: MiniStoryWordType.ADVERB
+      },
+      {
+        kanji: "百{ひゃっ}科{か}事{じ}典{てん}",
+        english: "Encyclopedia",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `My brother majored in physics at university, so his field of expertise is completely different from mine, as I was in the literary department. My brother spends many days in the laboratory from morning to night. His knowledge of physics is almost just like an encyclopedia.`,
+    audio: "T256.mp3",
+    topic: MiniStoryTopics.SCHOOL,
+    page: 184,
+  },
+  "257": {
+    id: "257",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "将{しょう}来{らい}<国{こく}際{さい}的{てき}な>仕事がしたいから、大学生の間{あいだ}に海外留学や<ホームステイ>に行きたいと思っているんだ。",
+      },
+      {
+        character: "B",
+        dialogue: "どんな所{ところ}に行きたいの？",
+      },
+      {
+        character: "A",
+        dialogue: "<クラスメート>にいろんな国{くに}の人がいる所{ところ}がいいな。最{さい}初{しょ}は言葉が伝{つた}わらなくて<悔{くや}しい>思いをするかもしれないけど。"
+      }
+    ],
+    rubyWords: [
+      {
+        kanji: "国{こく}際{さい}的{てき}な",
+        english: "International",
+        type: MiniStoryWordType.ADJECTIVE_NA
+      },
+      {
+        kanji: "ホームステイ［する］",
+        english: "Homestay・To do a homestay",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+      {
+        kanji: "クラスメート",
+        english: "Classmate",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "悔{くや}しい",
+        english: "Frustrating・Regrettable",
+        type: MiniStoryWordType.ADJECTIVE_I
+      },
+    ],
+    translation: `A: In the future, I want to have an international job, so I would like to study abroad or do a homestay while I'm a university student.\nB: What kind of place do you want to go to?\nA: A place that has classmates from various countries. Though at first, I may have a frustrating time not being able to communicate.`,
+    audio: "T257.mp3",
+    topic: MiniStoryTopics.SCHOOL,
+    page: 184,
+  },
+  "258": {
+    id: "258",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "もうすぐ試{し}験{けん}の<時{じ}期{き}>だね。",
+      },
+      {
+        character: "B",
+        dialogue: "今{こん}回{かい}は<成{せい}績{せき}>が悪{わる}い人には<補{ほ}習{しゅう}>があるって<先{せん}輩{ぱい}>が言{い}ってたよ。"
+      },
+      {
+        character: "A",
+        dialogue: "心配だな。問{もん}題{だい}<集{しゅう}>を<解{と}いて>たら大丈夫かな。"
+      }
+    ],
+    rubyWords: [
+      {
+        kanji: "時{じ}期{き}",
+        english: "Period・Time",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "成{せい}績{せき}",
+        english: "Grades・Results",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "補{ほ}習{しゅう}［する］",
+        english: "Supplementary lessons・To take supplementary lessons",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+      {
+        kanji: "先{せん}輩{ぱい}",
+        english: "Senior",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "後{こう}輩{はい}",
+        english: "Junior",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "～集{しゅう}",
+        english: "~book",
+        type: MiniStoryWordType.SUFFIX
+      },
+      {
+        kanji: "解{と}く",
+        english: "To solve",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+    ],
+    translation: `A: It's almost time for exams.\nB: I heard from a senior that this time, there'll be supplementary lessons for people with bad grades.\nA: That's worrisome. I wonder if I'll be okay solving some workbook questions.`,
+    audio: "T258.mp3",
+    topic: MiniStoryTopics.SCHOOL,
+    page: 185,
+  },
+  "259": {
+    id: "259",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "私は1年3<組{くみ}>だ。<担{たん}任{にん}>の山田先生はとてもいい先生で、いつも<にこにこして>いる。そして、クラスの生{せい}徒{と}<全{ぜん}員{いん}>の特{とく}徴{ちょう}をよく理{り}解{かい}して、丁{てい}寧{ねい}に<指{し}導{どう}して>くれる。先生が担{たん}当{とう}している<教{きょう}科{か}>は音{おん}楽{がく}だ。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "～組{くみ}",
+        english: "~class・`team",
+        type: MiniStoryWordType.SUFFIX
+      },
+      {
+        kanji: "担{たん}任{にん}［する］",
+        english: "Homeroom teacher・To be in charge of a class",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "にこにこする",
+        english: "To smile",
+        type: MiniStoryWordType.IRREGULAR_INTRANSITIVE
+      },
+      {
+        kanji: "全{ぜん}員{いん}",
+        english: "All members・Everyone",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.ADVERB]
+      },
+      {
+        kanji: "指{し}導{どう}［する］",
+        english: "Instruction・To instruct",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE]
+      },
+      {
+        kanji: "指{し}導{どう}者{しゃ}",
+        english: "Instructor・Teacher",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "教{きょう}科{か}",
+        english: "Subject (in school)",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `I am a first-year student in group 3. Our homeroom teacher, Yamada-sensei, is a very good teacher and is always smiling. And she also understand the characteristics of every student and instructs us with care. The subject she is in charge of is music.`,
+    audio: "T259.mp3",
+    topic: MiniStoryTopics.SCHOOL,
+    page: 186,
+  },
+  "260": {
+    id: "260",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<教{ちょう}師{し}>になるためには、教{きょう}育{いく}<実{じっ}習{しゅう}>に行かなければならない。私は<しあさって>から実{じっ}習{しゅう}が始{はじ}まるので、とても<緊{きん}張{ちょう}して>いる。担{たん}当{とう}する<学{がく}年{ねん}>は、2年生だ。図{と}書{しょ}館{かん}で、子どもたちの教{きょう}科{か}書{しょ}の<貸{か}し出{だ}し>をしているので、借{か}りてきた。今日から頑{がん}張{ば}って授{じゅ}業{ぎょう}の準{じゅん}備{び}をするつもりだ。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "教{きょう}師{し}",
+        english: "Teacher",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "教{きょう}授{じゅ}",
+        english: "Professor",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "実{じっ}習{しゅう}［する］",
+        english: "Training・To do training",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+      {
+        kanji: "しあさって",
+        english: "3 days from today",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.ADVERB]
+      },
+      {
+        kanji: "緊{きん}張{ちょう}［する］",
+        english: "Nervousness・To be nervous",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE]
+      },
+      {
+        kanji: "学{がく}年{ねん}",
+        english: "School year",
+        type: MiniStoryWordType.NOUN
+      },
+      { 
+        kanji: "貸{か}し出{だ}し",
+        english: "Loan・Lending",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `In order to become a teacher, we have to attend educational training. I start my training three days from today, so I'm really nervous. I'll be in charge of year-two. The library loans out children's textbooks, so I borrowed some. From today, I intended to do my best and prepare for my classes.`,
+    audio: "T260.mp3",
+    topic: MiniStoryTopics.SCHOOL,
+    page: 186,
+  },
+  "261": {
+    id: "261",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "子どもの<通{つう}学{がく}>路{ろ}には、大きな道{どう}路{ろ}がある。子どもたちは、道{どう}路{ろ}を渡{わた}らずに、<歩{ほ}道{どう}橋{きょう}>を使うように<指{し}示{じ}されて>いる。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "通{つう}学{がく}［する］",
+        english: "Commuting to school・To commute to school",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE]
+      },
+      {
+        kanji: "歩{ほ}道{どう}橋{きょう}",
+        english: "Pedestrian bridge",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "指{し}示{じ}［する］",
+        english: "Instruction・To instruct",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE]
+      },
+    ],
+    translation: `There is a big road that (some) children use when commuting to school. Children are instructed to use the pedestrian bridge and not just cross the road.`,
+    audio: "T261.mp3",
+    topic: MiniStoryTopics.SCHOOL,
+    page: 187,
+  },
+  "262": {
+    id: "262",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<いじめ>は、絶対に許{ゆる}されることではない。<たたいたり>、<引{ひ}っ張{ぱ}ったり>するだけではなく、言葉の暴{ぼう}力{りょく}もいじめである。友達の様{よう}子{す}に<疑{ぎ}問{もん}>を感{かん}じ、いじめかなと思ったら、すぐに相{そう}談{だん}してほしい。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "いじめ",
+        english: "Bullying",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "いじめる",
+        english: "To bully",
+        type: MiniStoryWordType.ICHIDAN_TRANSITIVE
+      },
+      {
+        kanji: "たたく",
+        english: "To hit",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+      {
+        kanji: "引{ひ}っ張{ぱ}る",
+        english: "To pull",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+      {
+        kanji: "疑{ぎ}問{もん}",
+        english: "Suspicion・Doubt・Question",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `Bullying is something that can absolutely not be allowed. Bullying includes not only things like hitting and pulling, but also verbal abuse. If you are concerned about how a friend is doing and have a feeling of suspicion that they may be being bullied, please consult us immediately.`,
+    audio: "T262.mp3",
+    topic: MiniStoryTopics.SCHOOL,
+    page: 188,
+  },
+  "263": {
+    id: "263",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "学校のルールを<破{やぶ}って>、テストで<カンニングした>学生がいたようだ。その<学{がっ}期{き}>のテストは全部０{れい}点{てん}になってしまったと聞いた。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "破{やぶ}る",
+        english: "To break",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+      {
+        kanji: "破{やぶ}れる",
+        english: "To be broken",
+        type: MiniStoryWordType.ICHIDAN_INTRANSITIVE
+      },
+      {
+        kanji: "カンニング［する］",
+        english: "Cheating (on a test)・To cheat (on a test)",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "学{がっ}期{き}",
+        english: "Semester",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `It seems that there was a student who broke the school rules and cheated on a test. I heard that they were given zeros on all of their tests for the semester.`,
+    audio: "T263.mp3",
+    topic: MiniStoryTopics.SCHOOL,
+    page: 188,
+  },
+  "264": {
+    id: "264",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "私は<読{どく}書{しょ}>が大好きで、学校でも好きな<科{か}目{もく}>は<国{こく}語{ご}>だ。<作{さっ}家{か}>になるのが夢{ゆめ}で、文{ぶん}章{しょう}の書{か}くための<レッスン>も受{う}けている。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "読{どく}書{しょ}［する］",
+        english: "Reading・To read",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE]
+      },
+      {
+        kanji: "科{か}目{もく}",
+        english: "Subject (in school)",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "国{こく}語{ご}",
+        english: "National language",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "作{さっ}家{か}",
+        english: "Writer・Author",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "レッスン［する］",
+        english: "Lesson・To take a lesson",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE]
+      },
+    ],
+    translation: `I love reading, and my favorite subjects in school is Japanese language. My dream is to become a writer. I'm also taking lessons on how to write literature.`,
+    audio: "T264.mp3",
+    topic: MiniStoryTopics.SCHOOL,
+    page: 189,
+  },
+  "265": {
+    id: "265",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "大学の<ゼミ>に3年生がたくさん入{はい}ってきてくれた。公園で3年生の<歓{かん}迎{げい}会{かい}>を開{ひら}く予定だったが、大雨のため、<延{えん}期{き}>になってしまった。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "ゼミ",
+        english: "Seminar",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "歓{かん}迎{げい}会{かい}",
+        english: "Welcome party",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "歓{かん}迎{げい}［する］",
+        english: "Welcomeing・To welcome",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "延{えん}期{き}［する］",
+        english: "Postponement・To postpone",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE]
+      },
+    ],
+    translation: `A lot of third-year students came into the university seminar. I was planning to have a welcome party for the third-years in the park, but because of heavy rain, it was postponed.`,
+    audio: "T265.mp3",
+    topic: MiniStoryTopics.SCHOOL,
+    page: 189,
+  },
+  "266": {
+    id: "266",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "日本の小学校には、<国{こく}立{りつ}>、<公{こう}立{りつ}>、<私{し}立{りつ}>などの種{しゅ}類{るい}がある。<大{だい}部{ぶ}分{ぶん}>は公{こう}立{りつ}である。<給{きゅう}食{しょく}>のある学校がほとんどで、子どもたちは給{きゅう}食{しょく}<当{とう}番{ばん}>などを通{とお}して、食{しょく}事{じ}のルールや栄{えい}養{よう}のある食{しょく}事{じ}の大{たい}切{せつ}さなどについて学{まな}ぶ。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "国{こく}立{りつ}",
+        english: "National",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "県{けん}立{りつ}",
+        english: "Prefectural",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "公{こう}立{りつ}",
+        english: "Public",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "私{し}立{りつ}",
+        english: "Private",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "大{だい}部{ぶ}分{ぶん}",
+        english: "Most",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "給{きゅう}食{しょく}",
+        english: "School lunch",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "当{とう}番{ばん}",
+        english: "Duty",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `There are various types of Japanese elementary schools, including national, public and private types. Most are public. Many of the schools provide lunch, and children learn about the importance of etiquette and nutritional meals through doing lunch duty.`,
+    audio: "T266.mp3",
+    topic: MiniStoryTopics.SCHOOL,
+    page: 190,
+  },
+  "267": {
+    id: "267",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "私は3つの大学を<受{じゅ}験{けん}した>。今日は第{だい}一{いち}志{し}望{ぼう}<校{こう}>の<合{ごう}格{かく}><発{はっ}表{ぴょう}>の日{ひ}だ。インターネットでも見られるが、<直{ちょく}接{せつ}><キャンパス>に発{はっ}表{ぴょう}を見に行くつもりだ。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "受{じゅ}験{けん}［する］",
+        english: "Taking an exam・To take an  exam",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE]
+      },
+      {
+        kanji: "受{じゅ}験{けん}生{せい}",
+        english: "Examinee・Test taker",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "～校{こう}",
+        english: "~School",
+        type: MiniStoryWordType.SUFFIX
+      },
+      {
+        kanji: "合{ごう}格{かく}［する］",
+        english: "Passing・To pass",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE]
+      },
+      {
+        kanji: "発{はっ}表{ぴょう}［する］",
+        english: "Presentation・To present",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE]
+      },
+      {
+        kanji: "直{ちょく}接{せつ}",
+        english: "Directly",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.ADVERB]
+      },
+      {
+        kanji: "キャンパス",
+        english: "Campus",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `I took entrance exams for three universities. Today is the day of the examination result announcements of my first-pick school. They can also be seen on the internet, but I will go to see the announcements directly on the campus.`,
+    audio: "T267.mp3",
+    topic: MiniStoryTopics.SCHOOL,
+    page: 190,
+  },
+  "268": {
+    id: "268",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "今日、<書{かき}留{とめ}>を<受{う}け取{と}った>。開{あ}けてみると、作{さく}文{ぶん}<コンクール>で<優{ゆう}秀{しゅう}だった>人に贈{おく}られる賞{しょう}金{きん}だった。その上、私の作{さく}文{ぶん}は、学校の<掲{けい}示{じ}板{ばん}>に貼{は}られているそうだ。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "書{かき}留{とめ}",
+        english: "Registered mail",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "受{う}け取{と}る",
+        english: "To receive",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+      {
+        kanji: "受{う}け取{と}り",
+        english: "Acceptance・Receipt",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "コンクール",
+        english: "Contest",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "優{ゆう}秀{しゅう}な",
+        english: "Excellent",
+        type: MiniStoryWordType.ADJECTIVE_NA
+      },
+      {
+        kanji: "揭{けい}示{じ}板{ばん}",
+        english: "Bulletin board",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "掲{けい}示{じ}［する］",
+        english: "Bulletin・To post a notice",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE]
+      },
+    ],
+    translation: `Today, I received registered mail. When I opened it, it was prize money given to people who were excellent in the essay contest. In addition, it seems that my essay has been posted on the school bulletin board.`,
+    audio: "T268.mp3",
+    topic: MiniStoryTopics.SCHOOL,
+    page: 191,
+  },
+  "269": {
+    id: "269",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "最近面{おも}白{しろ}い<文{ぶん}房{ぼう}具{ぐ}>を見つけた。折{お}りたためる<定{じょう}規{ぎ}>や、<筆{ふで}>のように書けるペンがあった。また、こすると消{き}えるペンもあったが、大切な<書{しょ}類{るい}>では使ってはいけないそうだ。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "文{ぶん}房{ぼう}具{ぐ}・文{ぶん}具{ぐ}",
+        english: "Stationery",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "定{じょう}規{ぎ}",
+        english: "Ruler",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "筆{ふで}",
+        english: "Brush pen",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "書{しょ}類{るい}",
+        english: "Document",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `Recently, I found some interesting stationery. There were things like a foldable ruler and a pen that writes like a brush. In addition, there was a pen that disappears when erased, but I heard that you should not use it on important documents.`,
+    audio: "T269.mp3",
+    topic: MiniStoryTopics.SCHOOL,
+    page: 192,
+  },
+  "270": {
+    id: "270",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "先生、雨の日に廊{ろう}下{か}を<ほうき>で掃{は}いたら、ほうきに<泥{どろ}>がついてしまいました。",
+      },
+      {
+        character: "B",
+        dialogue: "そのままで<構{かま}いません>。来週、掃{そう}除{じ}用{よう}具{ぐ}を洗{あら}う日がありますから。",
+      }
+    ],
+    rubyWords: [
+      {
+        kanji: "ほうき",
+        english: "Broom",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "泥{どろ}",
+        english: "Mud",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "構{かま}いません",
+        english: "It doesn't matter・No problem・I don't mind",
+        type: MiniStoryWordType.CLAUSE
+      },
+    ],
+    translation: `A: Teacher, I swept the hallway on a rainy day, and mud got on the broom.\nB: You can just leave it like that. Next week, there is a day when we'll wash the cleaning equipment.`,
+    audio: "T270.mp3",
+    topic: MiniStoryTopics.SCHOOL,
+    page: 192,
+  },
+  "271": {
+    id: "271",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "大学の日本語教{きょう}育{いく}学{がく}の<講{こう}義{ぎ}>で、日本語の<敬{けい}語{ご}>について学{まな}んだ。<初{しょ}級{きゅう}>の<学{がく}習{しゅう}>者{しゃ}にとって、敬{けい}語{ご}はとても難{むずか}しいそうだ。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "講{こう}義{ぎ}［する］",
+        english: "Lecture・To give a lecture",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "敬{けい}語{ご}",
+        english: "Honorific language",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "初{しょ}級{きゅう}",
+        english: "Beginner level",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "中{ちゅう}級{きゅう}",
+        english: "Intermediate level",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "上{じょう}級{きゅう}",
+        english: "Advanced level",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "学{がく}習{しゅう}［する］",
+        english: "Learning・Studying・To learn・To study",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+    ],
+    translation: `I learned about Japanese honorifics in a lecture on Japanese language education at my university. For beginner-level learners, honorifics seem to be very difficult.`,
+    audio: "T271.mp3",
+    topic: MiniStoryTopics.SCHOOL,
+    page: 193,
+  },
+  "272": {
+    id: "272",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "今日の世界<史{し}>の授{じゅ}業{ぎょう}は、先生がお休みで、<自{じ}習{しゅう}>になった。私はとても疲{つか}れていたので、<居{い}眠{ねむ}りして>しまって、配{くば}られたプリントには１<行{ぎょう}>も書{か}けなかった。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "～史{し}",
+        english: "~History",
+        type: MiniStoryWordType.SUFFIX
+      },
+      {
+        kanji: "自{じ}習{しゅう}［する］",
+        english: "Self-study・To study by oneself",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+      {
+        kanji: "居{い}眠{ねむ}り［する］",
+        english: "Nodding off・Dozing off",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+      {
+        kanji: "〜行{ぎょう}",
+        english: "~line",
+        type: MiniStoryWordType.SUFFIX
+      },
+    ],
+    translation: `In today's world history class, the teacher had taken the day off, and we had to do self-study. Because I was really tired, I nodded off and wasn't able to write a single line on the handout that we had been given.`,
+    audio: "T272.mp3",
+    topic: MiniStoryTopics.SCHOOL,
+    page: 193,
+  },
+  "273": {
+    id: "273",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "はい、教{きょう}科{か}書{しょ}を<閉{と}じて>ください。今から英{えい}語{ご}のテストの説{せつ}明{めい}をします。<上{か}線{せん}>が<引{ひ}かれた>英{えい}語{ご}の<文{ぶん}>の翻{ほん}訳{やく}を書{か}いてください。翻{ほん}訳{やく}文{ぶん}は、<解{かい}答{とう}用{よう}紙{し}>の<四{し}角{かく}>の中{なか}に書{か}いてください。では、試{し}験{けん}を<開{かい}始{し}します>。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "閉{と}じる",
+        english: "To close",
+        type: MiniStoryWordType.ICHIDAN_TRANSITIVE
+      },
+      {
+        kanji: "下{か}線{せん}",
+        english: "Underline",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "引{ひ}く",
+        english: "To pull",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+      {
+        kanji: "文{ぶん}",
+        english: "Sentence",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "単{たん}語{ご}",
+        english: "Word",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "解{かい}答{とう}用{よう}紙{し}",
+        english: "Answer sheet",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "解{かい}答{とう}［する］",
+        english: "Answer・To answer",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "四{し}角{かく}・四{し}角{かっ}形{けい}",
+        english: "Square (shape)",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "四{し}角{かく}い",
+        english: "Square-shaped",
+        type: MiniStoryWordType.ADJECTIVE_I
+      },
+      {
+        kanji: "開{かい}始{し}［する］",
+        english: "Start・To start",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+    ],
+    translation: `Okay, please close your textbooks. Now, I will explain about the English test. Write a translation of the underlined English sentences. Write your translations in the square on the answer sheet. Now, start the test.`,
+    audio: "T273.mp3",
+    topic: MiniStoryTopics.SCHOOL,
+    page: 194,
+  },
+  "274": {
+    id: "274",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "じゃあ、トマトの葉{は}っぱの<観{かん}察{さつ}>をしましょう。観{かん}察{さつ}したら、<プリント>に気{き}づいたことを書{か}いてください。<括{かっ}弧{こ}>の中{なか}に書{か}きましょう。<チャイム>が鳴{な}ったら、書{か}くのを<ストップして>、プリントを先生のところに持{も}ってきてくださいね。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "観{かん}察{さつ}［する］",
+        english: "Observation・To observe",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "プリント［する］",
+        english: "Printout・To print out",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "括{かっ}弧{こ}",
+        english: "Parentheses",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "チャイム",
+        english: "Chime",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "ストップ［する］",
+        english: "Stopping・To stop",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+    ],
+    translation: `Now, let's observe this tomato leaf. Once you do, write down what you noticed on the handout. Be sure to write inside the parentheses. When the chime rings, please stop writing and bring your handouts to me.`,
+    audio: "T274.mp3",
+    topic: MiniStoryTopics.SCHOOL,
+    page: 194,
+  },
+  "275": {
+    id: "275",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "私の家は大学までとても遠{とお}い。<学{がく}割{わり}>の定{てい}期{き}を買っているが、それでも高い。そのため、秋{あき}から<下{げ}宿{しゅく}>をすることにした。大学の<男{だん}子{し}>寮{りょう}が空{あ}いたからだ。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "学{がく}割{わり}・学{がく}生{せい}割{わり}引{びき}",
+        english: "Student discount",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "下{げ}宿{しゅく}",
+        english: "Boarding house",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "男{だん}子{し}",
+        english: "Boy",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "女{じょ}子{し}",
+        english: "Girl",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `My house is very far from my university. I buy a commuter pass with a student discount, but it's still expensive. So, I decided to live in a boarding house starting in the fall. This is because the female dormitory that the university has has a vacancy.`,
+    audio: "T275.mp3",
+    topic: MiniStoryTopics.SCHOOL,
+    page: 195,
+  },
+  "276": {
+    id: "276",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "大学の<授{じゅ}業{ぎょう}料{りょう}>が上{あ}がることに反{はん}対{たい}する学生たちの<集{あつ}まり>があった。このような<集{しゅう}会{かい}>がときどき開{ひら}かれているそうだ。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "授{じゅ}業{ぎょう}料{りょう}",
+        english: "Tuition fee",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "集{あつ}まり",
+        english: "Gathering",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "集{しゅう}会{かい}",
+        english: "Assembly・Conference",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `There was a gathering of students opposed to the university tuition fee increase. Apparently, such assemblies are sometimes held.`,
+    audio: "T276.mp3",
+    topic: MiniStoryTopics.SCHOOL,
+    page: 196,
+  },
+  "277": {
+    id: "277",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "教{きょう}師{し}は、子どもの<いたずら>を見つけたとき、どうするべきだと思いますか。クラス<全{ぜん}体{たい}>の前{まえ}で叱{しか}ると、次{つぎ}からいたずらを<隠{かく}す>ようになるかもしれません。じゃあ、どうしたらいいでしょう。みなさん、何{なに}か<思{おも}いつきます>か。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "いたずら［する］",
+        english: "Mischief・Prank・To play a trick",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+      {
+        kanji: "全{ぜん}体{たい}",
+        english: "Whole・Entire",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "隠{かく}す",
+        english: "To hide",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+      {
+        kanji: "隠{かく}れる",
+        english: "To hide oneself",
+        type: MiniStoryWordType.ICHIDAN_INTRANSITIVE
+      },
+      {
+        kanji: "思{おも}いつく",
+        english: "To think of (something)",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+    ],
+    translation: `What do you think teachers should do when they see children being mischievous? If they scold the children in front of the whole class, they may just try to hide it the next time. So, what should they do? Everyone, can you think of anything?`,
+    audio: "T277.mp3",
+    topic: MiniStoryTopics.SCHOOL,
+    page: 196,
+  },
+  "278": {
+    id: "278",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "小{しょう}学{がっ}校{こう}で<思{おも}い出{で}>に残{のこ}っている<行{ぎょう}事{じ}>って何{なに}？",
+      },
+      {
+        character: "B",
+        dialogue: "私は<遠{えん}足{そく}>。お弁当を作ってもらうのがうれしくて。"
+      },
+      {
+        character: "A",
+        dialogue: "へえ。私は運{うん}動{どう}会{かい}。",
+      },
+      {
+        character: "B",
+        dialogue: "あなたは運{うん}動{どう}会{かい}で<輝{かがや}いて>たよね？",
+      },
+      {
+        character: "A",
+        dialogue: "Bちゃんはピアノがうまかったから、音{おん}楽{がく}の<演{えん}奏{そう}>会{かい}で目{め}立{だ}ってた<印{いん}象{しょう}>があるよ。"
+      },
+      {
+        character: "B",
+        dialogue: "本当？私、<地{じ}味{み}だった>のに。",
+      },
+      {
+        character: "A",
+        dialogue: "そんなことないよ。",
+      }
+    ],
+    rubyWords: [
+      {
+        kanji: "思{おも}い出{で}",
+        english: "Memory",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "行{ぎょう}事{じ}",
+        english: "Event",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "遠{えん}足{そく}",
+        english: "Field trip・School trip",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "輝{かがや}く",
+        english: "To shine",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE
+      },
+      {
+        kanji: "演{えん}奏{そう}［する］",
+        english: "Musical performance・To perform",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "印{いん}象{しょう}",
+        english: "Impression",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "印{いん}象{しょう}的{てき}な",
+        english: "Impressive",
+        type: MiniStoryWordType.ADJECTIVE_NA
+      },
+      {
+        kanji: "地{じ}味{み}な",
+        english: "Plain・Subdued・Simple",
+        type: MiniStoryWordType.ADJECTIVE_NA
+      },
+    ],
+    translation: `A: Are there any events that remain as memories for you from elementary school?\nB: For me, class trips. I was happy that I had a lunch made for me.\nA: Wow. For me, it's sports day.\nB: You were a shining star on sports day, weren't you?\nA: And you were great on the piano, B-chan, so I always had the impression that you stood out at the music recital.\nB: Really? I was mediocre.\nA: That's not true.`,
+    audio: "T278.mp3",
+    topic: MiniStoryTopics.SCHOOL,
+    page: 197,
+  },
   "279": {
     id: "279",
     rubyStory: [
