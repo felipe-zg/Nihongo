@@ -1,4 +1,4 @@
-// pages 14 - 199 of Mini Story N3
+// pages 14 - 210 of Mini Story N3
 export const N3_IMPORTANT_WORDS: { kanji: string; english: string }[] = [
   {
     kanji: "快{かい}復{ふく}・回{かい}復{ふく}",
@@ -4159,5 +4159,273 @@ export const N3_IMPORTANT_WORDS: { kanji: string; english: string }[] = [
   {
     kanji: " 司{し}会{かい}者{しゃ}",
     english: "moderator"
+  },
+  {
+    kanji: "寝{ね}不{ぶ}足{そく}な",
+    english: "sleep deprived"
+  },
+  {
+    kanji: "職{しょく}業{ぎょう}",
+    english: "job・occupation"
+  },
+  {
+    kanji: "上{じょう}位{い}",
+    english: "top・higher ranking"
+  },
+  {
+    kanji: "～位{い}",
+    english: "position (ranking)"
+  },
+  {
+    kanji: "意{い}外{がい}な",
+    english: "surprising・unexpected"
+  },
+  {
+    kanji: "研{けん}修{しゅう}［する］",
+    english: "training・to train"
+  },
+  {
+    kanji: "期{き}間{かん}",
+    english: "period"
+  },
+  {
+    kanji: "給{きゅう}料{りょう}",
+    english: "salary"
+  },
+  {
+    kanji: "単{たん}純{じゅん}な",
+    english: "simple"
+  },
+  {
+    kanji: "機{き}械{かい}的{てき}な",
+    english: "mechanical"
+  },
+  {
+    kanji: "作{さ}業{ぎょう}［する］",
+    english: "work・to do work"
+  },
+  {
+    kanji: "繰{く}り返{かえ}す",
+    english: "to repeat"
+  },
+  {
+    kanji: "きつい",
+    english: "tight・tough"
+  },
+  {
+    kanji: "腰{こし}",
+    english: "Back・lower back"
+  },
+  {
+    kanji: "態{たい}度{ど}",
+    english: "attitude"
+  },
+  {
+    kanji: "休{きゅう}憩{けい}［する］",
+    english: "break・to take a break"
+  },
+  {
+    kanji: "承{しょう}知{ち}［する］",
+    english: "Understanding・to acknowledge"
+  },
+  {
+    kanji: "月{げつ}末{まつ}",
+    english: "end of the month"
+  },
+  {
+    kanji: "出{しゅっ}版{ぱん}社{しゃ}",
+    english: "publisher company"
+  },
+  {
+    kanji: "出{しゅっ}版{ぱん}［する］",
+    english: "publishing・to publish"
+  },
+  {
+    kanji: "副{ふく}～",
+    english: "vice-・assistant-"
+  },
+  {
+    kanji: "面{めん}接{せつ}［する］",
+    english: "interview・to interview"
+  },
+  {
+    kanji: "特{とく}技{ぎ}",
+    english: "special skill"
+  },
+  {
+    kanji: "事{じ}務{む}",
+    english: "Office work"
+  },
+  {
+    kanji: "受{う}かる",
+    english: "to pass (an exam)"
+  },
+  {
+    kanji: "落{お}ちる",
+    english: "to fall・to drop"
+  },
+  {
+    kanji: "失{しつ}業{ぎょう}［する］",
+    english: "to lose one's job・unemployment"
+  },
+  {
+    kanji: "約{やく}～",
+    english: "about・approximately"
+  },
+  {
+    kanji: "～割{わり}",
+    english: "Percent"
+  },
+  {
+    kanji: "営{えい}業{ぎょう}［する］",
+    english: "sales・do sales・to work in sales"
+  },
+  {
+    kanji: "高{こう}級{きゅう}な",
+    english: "high-class・luxury"
+  },
+  {
+    kanji: "苦{く}労{ろう}［する］",
+    english: "hardship・to struggle・to have a hard time"
+  },
+  {
+    kanji: "職{しょく}場{ば}",
+    english: "workplace"
+  },
+  {
+    kanji: "積{つ}む",
+    english: "gain・acquire (experience, skills)"
+  },
+  {
+    kanji: "積{つ}もる",
+    english: "accumulate・pile up"
+  },
+  {
+    kanji: "実{じつ}力{りょく}",
+    english: "Proficiency・ability"
+  },
+  {
+    kanji: "時{じ}給{きゅう}",
+    english: "hourly wage"
+  },
+  {
+    kanji: "月{げっ}給{きゅう}",
+    english: "monthly salary"
+  },
+  {
+    kanji: "~末{まつ}",
+    english: "end of ~"
+  },
+  {
+    kanji: "会{かい}員{いん}",
+    english: "member"
+  },
+  {
+    kanji: "限{げん}定{てい}［する］",
+    english: "limitation・to limit"
+  },
+  {
+    kanji: "向{む}ける",
+    english: "aim at・to direct toward"
+  },
+  {
+    kanji: "向{む}く",
+    english: "to face・to turn toward"
+  },
+  {
+    kanji: "混{こん}雑{ざつ}［する］",
+    english: "congestion・to be crowded"
+  },
+  {
+    kanji: "～期{き}",
+    english: "period"
+  },
+  {
+    kanji: "臨{りん}時{じ}",
+    english: "temporary"
+  },
+  {
+    kanji: "募{ぼ}集{しゅう}［する］",
+    english: "recruitment・to recruit"
+  },
+  {
+    kanji: "注{そそ}ぐ",
+    english: "take (care)・to pour"
+  },
+  {
+    kanji: "義{ぎ}務{む}",
+    english: "duty・obligation"
+  },
+  {
+    kanji: "二{に}度{ど}と",
+    english: "again・never again"
+  },
+  {
+    kanji: "握{にぎ}る",
+    english: "to grasp・to hold"
+  },
+  {
+    kanji: "問{と}い合{あ}わせる",
+    english: "to contact・to inquire・to ask about"
+  },
+  {
+    kanji: "速{そく}達{たつ}",
+    english: "express (mail)"
+  },
+  {
+    kanji: "履{り}歴{れき}書{しょ}",
+    english: "resume・curriculum vitae (CV)"
+  },
+  {
+    kanji: "提{てい}出{しゅつ}［する］",
+    english: "submission・to submit"
+  },
+  {
+    kanji: "宛{あて}名{な}",
+    english: "addressee's name"
+  },
+  {
+    kanji: "宛{あて}先{さき}",
+    english: "addressee's address・destination"
+  },
+  {
+    kanji: "指{し}定{てい}［する］",
+    english: "specifying・to specify・to designate"
+  },
+  {
+    kanji: "指{し}定{てい}席{せき}",
+    english: "designated seat・reserved seat"
+  },
+  {
+    kanji: "集{しゅう}合{ごう}［する］",
+    english: "gathering・to gather"
+  },
+  {
+    kanji: "集{しゅう}合{ごう}場{ば}所{しょ}",
+    english: "gathering place・meeting place"
+  },
+  {
+    kanji: "名{めい}刺{し}",
+    english: "business card"
+  },
+  {
+    kanji: "調{ちょう}整{せい}［する］",
+    english: "adjustment・to adjust"
+  },
+  {
+    kanji: "工{こう}業{ぎょう}",
+    english: "manufacturing industry"
+  },
+  {
+    kanji: "条{じょう}件{けん}",
+    english: "conditions・terms"
+  },
+  {
+    kanji: "順{じゅん}",
+    english: "order・sequence"
+  },
+  {
+    kanji: "判{はん}断{だん}［する］",
+    english: "judgment・decision・to judge・to decide"
   }
 ];
