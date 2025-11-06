@@ -1,7 +1,7 @@
-// pages 14 - 175 of Mini Story N3
+// pages 14 - 199 of Mini Story N3
 export const N3_IMPORTANT_WORDS: { kanji: string; english: string }[] = [
   {
-    kanji: "回{かい}復{ふく}",
+    kanji: "快{かい}復{ふく}・回{かい}復{ふく}",
     english: "recovery"
   },
   {
@@ -3519,5 +3519,645 @@ export const N3_IMPORTANT_WORDS: { kanji: string; english: string }[] = [
   {
     kanji: "網{あみ}棚{だな}",
     english: "Net shelf・Overhead luggage rack"
+  },
+  {
+    kanji: "理{り}科{か}",
+    english: "Science"
+  },
+  {
+    kanji: "物{ぶつ}理{り}",
+    english: "Physics"
+  },
+  {
+    kanji: "足{た}し算{ざん}",
+    english: "Addition"
+  },
+  {
+    kanji: "引{ひ}き算{ざん}",
+    english: "Subtraction"
+  },
+  {
+    kanji: "算{さん}数{すう}",
+    english: "Mathematics・Arithmetic"
+  },
+  {
+    kanji: "かけ算{ざん}",
+    english: "Multiplication"
+  },
+  {
+    kanji: "すらすら（と）",
+    english: "Smoothly"
+  },
+  {
+    kanji: "割{わ}り算{ざん}",
+    english: "Division"
+  },
+  {
+    kanji: "早{そう}退{たい}［する］",
+    english: "Leaving early・To leave early"
+  },
+  {
+    kanji: "欠{けっ}席{せき}［する］",
+    english: "Absence・To be absent"
+  },
+  {
+    kanji: "〜帳{ちょう}",
+    english: "~book"
+  },
+  {
+    kanji: "〜届{とどけ}",
+    english: "~form・~notification"
+  },
+  {
+    kanji: "寝{ね}坊{ぼう}［する］",
+    english: "Oversleeping・To oversleep"
+  },
+  {
+    kanji: "遅{ち}刻{こく}［する］",
+    english: "Tardiness・To be late"
+  },
+  {
+    kanji: "サボる",
+    english: "To skip class"
+  },
+  {
+    kanji: "～書{しょ}",
+    english: "Book"
+  },
+  {
+    kanji: "～部{ぶ}",
+    english: "~Club"
+  },
+  {
+    kanji: "親{しん}友{ゆう}",
+    english: "Best friend"
+  },
+  {
+    kanji: "仲{なか}直{なお}り［する］",
+    english: "Making up・To make up (after a fight)"
+  },
+  {
+    kanji: "ばかな",
+    english: "Stupid・Foolish"
+  },
+  {
+    kanji: "ふらふらな",
+    english: "Faint・Dizzy"
+  },
+  {
+    kanji: "どんなに",
+    english: "No matter how"
+  },
+  {
+    kanji: "教{きょう}科{か}書{しょ}",
+    english: "Textbook"
+  },
+  {
+    kanji: "生{せい}年{ねん}月{がっ}日{ぴ}",
+    english: "Date of Birth"
+  },
+  {
+    kanji: "横{よこ}書{が}き",
+    english: "Horizontal writing"
+  },
+  {
+    kanji: "縦{たて}書{が}き",
+    english: "Vertical writing"
+  },
+  {
+    kanji: "用{よう}紙{し}",
+    english: "Paper・Form"
+  },
+  {
+    kanji: "目{もく}次{じ}",
+    english: "Table of contents"
+  },
+  {
+    kanji: "父{ふ}母{ぼ}",
+    english: "Parents"
+  },
+  {
+    kanji: "思{おも}い切{き}って",
+    english: "Decisively・With determination"
+  },
+  {
+    kanji: "引{ひ}き受{う}ける",
+    english: "To take on・To undertake"
+  },
+  {
+    kanji: "係{かかり}",
+    english: "Duty・In charge of~"
+  },
+  {
+    kanji: "活{かつ}動{どう}［する］",
+    english: "Activity・To participate in an activity"
+  },
+  {
+    kanji: "話{はな}し合{あ}う",
+    english: "To discuss・To talk about together"
+  },
+  {
+    kanji: "見{けん}学{がく}［する］",
+    english: "Observation・View・To observe・To visit (a place for study)"
+  },
+  {
+    kanji: "すっかり",
+    english: "Completely・Totally"
+  },
+  {
+    kanji: "見{み}直{なお}す",
+    english: "To review・To look over again"
+  },
+  {
+    kanji: "専{せん}攻{こう}［する］",
+    english: "Major・To major in"
+  },
+  {
+    kanji: "専{せん}門{もん}",
+    english: "Specialty・Expertise"
+  },
+  {
+    kanji: "專{せん}門{もん}学{がっ}校{こう}",
+    english: "Vocational school"
+  },
+  {
+    kanji: "専{せん}門{もん}家{か}",
+    english: "Expert・Specialist"
+  },
+  {
+    kanji: "～室{しつ}",
+    english: "~Room"
+  },
+  {
+    kanji: "知{ち}識{しき}",
+    english: "Knowledge"
+  },
+  {
+    kanji: "まるで",
+    english: "Just like・As if"
+  },
+  {
+    kanji: "百{ひゃっ}科{か}事{じ}典{てん}",
+    english: "Encyclopedia"
+  },
+  {
+    kanji: "国{こく}際{さい}的{てき}な",
+    english: "International"
+  },
+  {
+    kanji: "悔{くや}しい",
+    english: "Frustrating・Regrettable"
+  },
+  {
+    kanji: "時{じ}期{き}",
+    english: "Period・Time"
+  },
+  {
+    kanji: "成{せい}績{せき}",
+    english: "Grades・Results"
+  },
+  {
+    kanji: "補{ほ}習{しゅう}［する］",
+    english: "Supplementary lessons・To take supplementary lessons"
+  },
+  {
+    kanji: "先{せん}輩{ぱい}",
+    english: "Senior"
+  },
+  {
+    kanji: "後{こう}輩{はい}",
+    english: "Junior"
+  },
+  {
+    kanji: "～集{しゅう}",
+    english: "~book"
+  },
+  {
+    kanji: "解{と}く",
+    english: "To solve"
+  },
+  {
+    kanji: "～組{くみ}",
+    english: "~class・`team"
+  },
+  {
+    kanji: "担{たん}任{にん}［する］",
+    english: "Homeroom teacher・To be in charge of a class"
+  },
+  {
+    kanji: "にこにこする",
+    english: "To smile"
+  },
+  {
+    kanji: "指{し}導{どう}［する］",
+    english: "Instruction・To instruct"
+  },
+  {
+    kanji: "指{し}導{どう}者{しゃ}",
+    english: "Instructor・Teacher"
+  },
+  {
+    kanji: "教{きょう}科{か}",
+    english: "Subject (in school)"
+  },
+  {
+    kanji: "教{きょう}師{し}",
+    english: "Teacher"
+  },
+  {
+    kanji: "教{きょう}授{じゅ}",
+    english: "Professor"
+  },
+  {
+    kanji: "実{じっ}習{しゅう}［する］",
+    english: "Training・To do training"
+  },
+  {
+    kanji: "しあさって",
+    english: "3 days from today"
+  },
+  {
+    kanji: "緊{きん}張{ちょう}［する］",
+    english: "Nervousness・To be nervous"
+  },
+  {
+    kanji: "学{がく}年{ねん}",
+    english: "School year"
+  },
+  {
+    kanji: "貸{か}し出{だ}し",
+    english: "Loan・Lending"
+  },
+  {
+    kanji: "通{つう}学{がく}［する］",
+    english: "Commuting to school・To commute to school"
+  },
+  {
+    kanji: "歩{ほ}道{どう}橋{きょう}",
+    english: "Pedestrian bridge"
+  },
+  {
+    kanji: "指{し}示{じ}［する］",
+    english: "Instruction・To instruct"
+  },
+  {
+    kanji: "いじめ",
+    english: "Bullying"
+  },
+  {
+    kanji: "たたく",
+    english: "To hit"
+  },
+  {
+    kanji: "引{ひ}っ張{ぱ}る",
+    english: "To pull"
+  },
+  {
+    kanji: "疑{ぎ}問{もん}",
+    english: "Suspicion・Doubt・Question"
+  },
+  {
+    kanji: "破{やぶ}る",
+    english: "To break"
+  },
+  {
+    kanji: "破{やぶ}れる",
+    english: "To be broken"
+  },
+  {
+    kanji: "カンニング［する］",
+    english: "Cheating (on a test)・To cheat (on a test)"
+  },
+  {
+    kanji: "学{がっ}期{き}",
+    english: "Semester"
+  },
+  {
+    kanji: "読{どく}書{しょ}［する］",
+    english: "Reading・To read"
+  },
+  {
+    kanji: "科{か}目{もく}",
+    english: "Subject (in school)"
+  },
+  {
+    kanji: "国{こく}語{ご}",
+    english: "National language"
+  },
+  {
+    kanji: "作{さっ}家{か}",
+    english: "Writer・Author"
+  },
+  {
+    kanji: "ゼミ",
+    english: "Seminar"
+  },
+  {
+    kanji: "歓{かん}迎{げい}会{かい}",
+    english: "Welcome party"
+  },
+  {
+    kanji: "延{えん}期{き}［する］",
+    english: "Postponement・To postpone"
+  },
+  {
+    kanji: "国{こく}立{りつ}",
+    english: "National"
+  },
+  {
+    kanji: "県{けん}立{りつ}",
+    english: "Prefectural"
+  },
+  {
+    kanji: "公{こう}立{りつ}",
+    english: "Public"
+  },
+  {
+    kanji: "私{し}立{りつ}",
+    english: "Private"
+  },
+  {
+    kanji: "大{だい}部{ぶ}分{ぶん}",
+    english: "Most"
+  },
+  {
+    kanji: "給{きゅう}食{しょく}",
+    english: "School lunch"
+  },
+  {
+    kanji: "当{とう}番{ばん}",
+    english: "Duty"
+  },
+  {
+    kanji: "受{じゅ}験{けん}［する］",
+    english: "Taking an exam・To take an  exam"
+  },
+  {
+    kanji: "受{じゅ}験{けん}生{せい}",
+    english: "Examinee・Test taker"
+  },
+  {
+    kanji: "～校{こう}",
+    english: "~School"
+  },
+  {
+    kanji: "合{ごう}格{かく}［する］",
+    english: "Passing・To pass"
+  },
+  {
+    kanji: "直{ちょく}接{せつ}",
+    english: "Directly"
+  },
+  {
+    kanji: "書{かき}留{とめ}",
+    english: "Registered mail"
+  },
+  {
+    kanji: "受{う}け取{と}る",
+    english: "To receive"
+  },
+  {
+    kanji: "コンクール",
+    english: "Contest"
+  },
+  {
+    kanji: "優{ゆう}秀{しゅう}な",
+    english: "Excellent"
+  },
+  {
+    kanji: "揭{けい}示{じ}板{ばん}",
+    english: "Bulletin board"
+  },
+  {
+    kanji: "掲{けい}示{じ}［する］",
+    english: "Bulletin・To post a notice"
+  },
+  {
+    kanji: "文{ぶん}房{ぼう}具{ぐ}・文{ぶん}具{ぐ}",
+    english: "Stationery"
+  },
+  {
+    kanji: "定{じょう}規{ぎ}",
+    english: "Ruler"
+  },
+  {
+    kanji: "筆{ふで}",
+    english: "Brush pen"
+  },
+  {
+    kanji: "書{しょ}類{るい}",
+    english: "Document"
+  },
+  {
+    kanji: "ほうき",
+    english: "Broom"
+  },
+  {
+    kanji: "泥{どろ}",
+    english: "Mud"
+  },
+  {
+    kanji: "構{かま}いません",
+    english: "It doesn't matter・No problem・I don't mind"
+  },
+  {
+    kanji: "講{こう}義{ぎ}［する］",
+    english: "Lecture・To give a lecture"
+  },
+  {
+    kanji: "敬{けい}語{ご}",
+    english: "Honorific language"
+  },
+  {
+    kanji: "初{しょ}級{きゅう}",
+    english: "Beginner level"
+  },
+  {
+    kanji: "中{ちゅう}級{きゅう}",
+    english: "Intermediate level"
+  },
+  {
+    kanji: "上{じょう}級{きゅう}",
+    english: "Advanced level"
+  },
+  {
+    kanji: "学{がく}習{しゅう}［する］",
+    english: "Learning・Studying・To learn・To study"
+  },
+  {
+    kanji: "～史{し}",
+    english: "~History"
+  },
+  {
+    kanji: "自{じ}習{しゅう}［する］",
+    english: "Self-study・To study by oneself"
+  },
+  {
+    kanji: "居{い}眠{ねむ}り［する］",
+    english: "Nodding off・Dozing off"
+  },
+  {
+    kanji: "〜行{ぎょう}",
+    english: "~line"
+  },
+  {
+    kanji: "閉{と}じる",
+    english: "To close"
+  },
+  {
+    kanji: "下{か}線{せん}",
+    english: "Underline"
+  },
+  {
+    kanji: "引{ひ}く",
+    english: "To pull"
+  },
+  {
+    kanji: "解{かい}答{とう}用{よう}紙{し}",
+    english: "Answer sheet"
+  },
+  {
+    kanji: "四{し}角{かく}・四{し}角{かっ}形{けい}",
+    english: "Square (shape)"
+  },
+  {
+    kanji: "四{し}角{かく}い",
+    english: "Square-shaped"
+  },
+  {
+    kanji: "開{かい}始{し}［する］",
+    english: "Start・To start"
+  },
+  {
+    kanji: "観{かん}察{さつ}［する］",
+    english: "Observation・To observe"
+  },
+  {
+    kanji: "括{かっ}弧{こ}",
+    english: "Parentheses"
+  },
+  {
+    kanji: "学{がく}割{わり}・学{がく}生{せい}割{わり}引{びき}",
+    english: "Student discount"
+  },
+  {
+    kanji: "下{げ}宿{しゅく}",
+    english: "Boarding house"
+  },
+  {
+    kanji: "男{だん}子{し}",
+    english: "Boy"
+  },
+  {
+    kanji: "女{じょ}子{し}",
+    english: "Girl"
+  },
+  {
+    kanji: "授{じゅ}業{ぎょう}料{りょう}",
+    english: "Tuition fee"
+  },
+  {
+    kanji: "集{しゅう}会{かい}",
+    english: "Assembly・Conference"
+  },
+  {
+    kanji: "いたずら［する］",
+    english: "Mischief・Prank・To play a trick"
+  },
+  {
+    kanji: "全{ぜん}体{たい}",
+    english: "Whole・Entire"
+  },
+  {
+    kanji: "隠{かく}す",
+    english: "To hide"
+  },
+  {
+    kanji: "隠{かく}れる",
+    english: "To hide oneself"
+  },
+  {
+    kanji: "思{おも}いつく",
+    english: "To think of (something)"
+  },
+  {
+    kanji: "行{ぎょう}事{じ}",
+    english: "Event"
+  },
+  {
+    kanji: "遠{えん}足{そく}",
+    english: "Field trip・School trip"
+  },
+  {
+    kanji: "輝{かがや}く",
+    english: "To shine"
+  },
+  {
+    kanji: "演{えん}奏{そう}［する］",
+    english: "Musical performance・To perform"
+  },
+  {
+    kanji: "印{いん}象{しょう}",
+    english: "Impression"
+  },
+  {
+    kanji: "印{いん}象{しょう}的{てき}な",
+    english: "Impressive"
+  },
+  {
+    kanji: "地{じ}味{み}な",
+    english: "Plain・Subdued・Simple"
+  },
+  {
+    kanji: "前{ぜん}期{き}",
+    english: "first semester"
+  },
+  {
+    kanji: "後{こう}期{き}",
+    english: "second semester"
+  },
+  {
+    kanji: "合{ごう}計{けい}［する］",
+    english: "sum total・total"
+  },
+  {
+    kanji: "時{じ}間{かん}割{わり}",
+    english: "class schedule・timetable"
+  },
+  {
+    kanji: "掘{ほ}る",
+    english: "to dig"
+  },
+  {
+    kanji: "こける",
+    english: "to trip and fall"
+  },
+  {
+    kanji: "ぶつける",
+    english: "to bump"
+  },
+  {
+    kanji: "ぶつかる",
+    english: "bump into"
+  },
+  {
+    kanji: "委{い}員{いん}",
+    english: "committee member"
+  },
+  {
+    kanji: "委{い}員{いん}会{かい}",
+    english: "committee"
+  },
+  {
+    kanji: "中{ちゅう}心{しん}",
+    english: "center"
+  },
+  {
+    kanji: "司{し}会{かい}",
+    english: "Moderating"
+  },
+  {
+    kanji: " 司{し}会{かい}者{しゃ}",
+    english: "moderator"
   }
 ];
