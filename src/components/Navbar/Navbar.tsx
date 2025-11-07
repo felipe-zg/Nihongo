@@ -1,7 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { Box, Button, HamburgerIcon, VStack } from 'native-base';
-import { useScreenWidth } from '../../hooks';
+import { Box, Button, HamburgerIcon, VStack, CloseIcon } from 'native-base';
 
 const routes = [
   { name: 'ミニストーリー', path: '/ministory' },
@@ -27,48 +26,77 @@ const routes = [
   { name: 'JLPT Grammar N2', path: '/JLPT/grammar/N2' },
   { name: 'Music', path: '/music/leina/nostalgia' },
   { name: 'Real Japanese Audio', path: '/audio/real-japanese' },
-]
+];
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
-  const screenWidth = useScreenWidth();
 
   const getLinkStyle = (isActive: boolean) => ({
-    color: isActive ? 'white' : 'white',
+    color: 'white',
     fontWeight: isActive ? 'bold' : 'normal',
   });
 
-  const Menu = () => (
-    <VStack space={4} minHeight="100vh" justifyItems="flex-start" >
-      {routes.map((route) => (
-        <NavLink key={route.path} to={route.path} style={{ textDecoration: 'none', }}>
-          {({ isActive }) => (
-            <Button variant="ghost" _text={getLinkStyle(isActive)}>
-              {route.name}
-            </Button>
-          )}
-        </NavLink>
-      ))}
-    </VStack>
-  );
+  const toggleMenu = () => setIsOpen((prev) => !prev);
 
-  return screenWidth < 1200 ? (
+  return (
     <>
+      {/* Fixed Hamburger Button */}
+      <Button
+        onPress={toggleMenu}
+        variant="solid"
+        colorScheme="light"
+        position="fixed"
+        top="16px"
+        left="16px"
+        zIndex={50}
+        borderRadius="full"
+        width="48px"
+        height="48px"
+        bg="darkBlue.900"
+        _pressed={{ bg: 'darkBlue.700' }}
+      >
+        {isOpen ? <CloseIcon color="white" /> : <HamburgerIcon color="white" />}
+      </Button>
+
+      {/* Fullscreen Overlay Menu */}
       {isOpen && (
-        <Box bg="darkBlue.900" px="4" py="3" width="100%" height="100%">
-          <Menu />
+        <Box
+          position="fixed"
+          top="0"
+          left="0"
+          width="100vw"
+          height="100vh"
+          bg="darkBlue.900"
+          zIndex={40}
+          px="6"
+          py="70"
+          overflowY="auto"
+        >
+          <VStack space={4} alignItems="center">
+            {routes.map((route) => (
+              <NavLink
+                key={route.path}
+                to={route.path}
+                style={{ width: '100%', textDecoration: 'none'}}
+                onClick={() => setIsOpen(false)} // close on link click
+              >
+                {({ isActive }) => (
+                  <Button
+                    variant="ghost"
+                    width="100%"
+                    justifyContent="flex-start"
+                    _text={getLinkStyle(isActive)}
+                    _hover={{ bg: 'darkBlue.800' }}
+                  >
+                    {route.name}
+                  </Button>
+                )}
+              </NavLink>
+            ))}
+          </VStack>
         </Box>
       )}
-      {!isOpen && (
-        <Button onPress={() => setIsOpen(true)} variant="solid" colorScheme="light" position="absolute" top="10px" left="10px" zIndex={2}>
-          <HamburgerIcon color="white" />
-        </Button>
-      )}
     </>
-  ) : (
-    <Box bg="darkBlue.900" px="4" py="3" width="15%" height="100%">
-      <Menu />
-    </Box>
   );
 };
 
