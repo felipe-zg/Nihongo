@@ -9,6 +9,8 @@ export const GrammarEntryCategory = {
   ASSUMPTIONS_CONDITIONS: '仮定・条件',
   PURPOSE_METHOD_OPERATION: '目的・方法・動作',
   RULES_ADVICE: 'ルール・アドバイス',
+  PARALLEL: '並列',
+  OTHER: 'その他',
 } as const;
 
 export const NIHONGO_NO_MORI_GRAMMAR: GrammarEntry[] = [
@@ -2737,6 +2739,541 @@ export const NIHONGO_NO_MORI_GRAMMAR: GrammarEntry[] = [
     extraInfo: "In daily conversations 〜しなさい is most used instead of 〜ように or 〜こと\nBut when comparing these 2, In daily conversations, 〜ように is more commonly used than 〜こと for giving instructions or commands.",
   },
   // SECTION 11 - GRAMMAR 84 - 89
+  {
+    id: 84,
+    grammar: "〜なんか①",
+    imi: "～とか",
+    explanation: '例を出すときに使う。\nThis grammar pattern is used when suggesting something to someone, such as "How about this?"',
+    usage: {
+      form: [{name: "名詞"}],
+      pattern: ["なんか", "なんて"],
+    },
+    examples: [
+      {
+        sentence: "掃除なんか手伝ってくれないかな？",
+        meaning: "I wonder if you could help me with cleaning or something?",
+        point: "掃除とか手伝って欲しい。",
+      },
+      {
+        sentence: "A:週末、どこに行こうか。\nB:そうだね。暖かくなってきたら海なんてどう？",
+        meaning: "A: Where should we go this weekend?\nB: Well, how about the beach when it gets warmer?",
+      },
+      {
+        sentence: "休日は、散歩なんかしてゆっくり過ごしています。",
+        meaning: "On my days off, I take leisurely walks and relax.",
+      },
+      {
+        sentence: "A:最近、新しい趣味を探しているんだよね。\nB: そうなんだ。読書なんてどう？",
+        meaning: "A: I've been looking for a new hobby lately.\nB: I see. How about reading?",
+      },
+    ],
+    category: GrammarEntryCategory.PARALLEL,
+    newWords: [
+      { kanji: "読書", kana: "どくしょ", english: "reading" },
+    ],
+    extraInfo: "会話の中だったら「なんて」ってよく使う。\nThis grammar is not used when writing, but often used in conversations.",
+  },
+  {
+    id: 85,
+    grammar: "〜ばかりでなく",
+    imi: "～だけではなく",
+    explanation: "これだけじゃなくて他にもある。\nThis grammar pattern is used to indicate that something is not only one thing but also includes other things, similar to 'not only... but also...'.",
+    usage: {
+      form: [{name: "普通形"}, {name: "名詞"}, {name: "ナ形容詞", connector: "な"}],
+      pattern: ["ばかりで(は)なく"],
+    },
+    examples: [
+      {
+        sentence: "彼女は仕事が丁寧なばかりではなく親切なので、みんなに愛されている",
+        meaning: "She is not only meticulous in her work but also kind, which is why everyone loves her.",
+      },
+      {
+        sentence: "このお店の商品はデザインがわいいばかりではなく値段も安い。",
+        meaning: "Not only are the products in this store cute in design, but they are also inexpensive.",
+      },
+      {
+        sentence: "好きなことを仕事にするのは、楽しいことばかりでなく辛いこともたくさんある。",
+        meaning: "Doing what you love as a job includes not only fun things but also many hardships.",
+      },
+    ],
+    category: GrammarEntryCategory.PARALLEL,
+    newWords: [
+      { kanji: "丁寧", kana: "ていねい", english: "polite" },
+      { kanji: "愛される", kana: "あいされる", english: "to be loved" },
+      { kanji: "辛い", kana: "つらい", english: "painful・hardship・Tough" },
+    ],
+  },
+  {
+    id: 86,
+    grammar: "〜とか ～とか",
+    imi: "~や ~や",
+    explanation: "例を出すとき使う。\nThis grammar pattern is used to list examples or items, similar to 'such as' or 'like'.",
+    usage: {
+      form: [{name: "V. る"}, {name: "名詞"}],
+      pattern: ["とか" ],
+      secondsForm: [{name: "V. る・名詞", connector: "とか..."}],
+    },
+    examples: [
+      {
+        sentence: "将来は、おきなわとか北海道とか、海の近いところで暮らしたい。",
+        meaning: "In the future, I want to live in a place close to the sea, like Okinawa or Hokkaido.",
+      },
+      {
+        sentence: "カタカナとか漢字とか、日本語は覚えることが多すぎるよ。",
+        meaning: "There are too many things to remember in Japanese, such as katakana and kanji.",
+      },
+      {
+        sentence: "服とか靴とか、欲しいものがたくさんある。",
+        meaning: "I have a lot of things I want, like clothes and shoes.",
+      },
+    ],
+    category: GrammarEntryCategory.PARALLEL,
+    newWords: [
+      { kanji: "靴", kana: "くつ", english: "shoes" },
+    ],
+  },
+  {
+    id: 87,
+    grammar: "〜はもとより",
+    imi: "~はもちろん",
+    usage: {
+      form: [{name: "名詞"}],
+      pattern: ["はもとより"],
+    },
+    examples: [
+      {
+        sentence: "運転免許をもっていない妻は、車はもとよりバイクや自転車にも乗ったことがないらしい。",
+        meaning: "My wife, who doesn't have a driver's license, apparently has never ridden a car, let alone a motorcycle or bicycle.",},
+      {
+        sentence: "彼は英語はもとより、中国語もスペイン語も話せる。",
+        meaning: "He can speak not only English but also Chinese and Spanish.",
+      },
+      {
+        sentence: "このレストランは、料理の味はもとより、サービスもいいので気に入っている。",
+        meaning: "I like this restaurant not only for the taste of the food but also for the good service.",
+      },
+      {
+        sentence: "両親はもとより、子どももみんな喜んでくれた。",
+        meaning: "Not only the parents but also all the children were happy.",
+      },
+    ],
+    category: GrammarEntryCategory.PARALLEL,
+    newWords: [
+      { kanji: "運転免許", kana: "うんてんめんきょ", english: "driver's license" },
+      { kanji: "喜ぶ", kana: "よろこぶ", english: "to be happy" },
+    ],
+  },
+  {
+    id: 88,
+    grammar: "〜だけでなく",
+    imi: "〜のほかにもある",
+    explanation: "これだけじゃなくて他にもある。\nThis grammar pattern is used to indicate that something is not only one thing but also includes other things, similar to 'not only... but also...'. Same as 〜ばかりでなく",
+    usage: {
+      form: [{name: "普通形"}, {name: "名詞"}, {name: "ナ形容詞", connector: "な"}],
+      pattern: ["だけで(は)なく", "だけじゃなく" ],
+    },
+    examples: [
+      {
+        sentence: "子どもは笑った顔だけではなく、泣いている顔もかわいい。",
+        meaning: "Children are not only cute when they smile, but also when they cry.",
+      },
+      {
+        sentence: "この町には美しい山があるだけじゃなく、美味しい食べ物もたくさんある。",
+        meaning: "This town has not only beautiful mountains but also a lot of delicious food.",
+      },
+      {
+        sentence: "この店は安いだけではなく、料理も美味しいので人気だ。",
+        meaning: "This shop is popular not only because it's cheap, but also because the food is delicious.",
+      },
+    ],
+    category: GrammarEntryCategory.PARALLEL,
+    newWords: [
+      { kanji: "美しい", kana: "うつくしい", english: "beautiful" },
+    ],
+  },
+  {
+    id: 89,
+    grammar: "〜かわりに②",
+    imi: "〜を使わないで、別のものを使う\n自分が〜して、他の人に別のことをしてもらう",
+    explanation: "This grammar pattern is used to indicate that one thing is done in place of another, or that one action is performed in exchange for another.",
+    usage: {
+      form: [{name: "V. る"}, {name: "名詞", connector: "の"}],
+      pattern: ["かわりに"],
+    },
+    examples: [
+      {
+        sentence: "砂糖のかわりに、蜂蜜を使ってもおいしいですよ。",
+        meaning: "Instead of sugar, using honey is also delicious.",
+        point: "意味1",
+      },
+      {
+        sentence: "私が荷物を持つかわりに、あなたが傘をさしてください。",
+        meaning: "I'll carry the luggage, in return, please hold the umbrella.",
+        point: "意味2",
+      },
+      {
+        sentence: "手伝ってあげるよ。そのかわりに、今度僕の仕事も助けてね。",
+        meaning: "I'll help you this time, you help me with my work next time.",
+        point: "意味2",
+      },
+    ],
+    category: GrammarEntryCategory.PARALLEL,
+    newWords: [
+      { kanji: "砂糖", kana: "さとう", english: "sugar" },
+      { kanji: "蜂蜜", kana: "はちみつ", english: "honey" },
+    ],
+  },
   // SECTION 12 - GRAMMAR 90 - 100
+  {
+    id: 90,
+    grammar: "〜そう③",
+    imi: "〜らしい",
+    explanation: "This grammar pattern is used to express hearsay or information that has been heard from others, similar to 'I heard that...' or 'It seems that...'.",
+    usage: {
+      form: [{name: "普通形"}],
+      pattern: ["そう(だ)"],
+    },
+    examples: [
+      {
+        sentence: "風邪を引いたときは、お腹にやさしいものを食べるのがいいそうです。",
+        meaning: "I heard that when you catch a cold, it's good to eat gentle foods for your stomach.",
+      },
+      {
+        sentence: "彼は、動物の絵を描くことが趣味だそう。",
+        meaning: "I heard that he enjoys drawing pictures of animals.",
+      },
+      {
+        sentence: "さとうさんは、辛い食べ物が苦手だそうです。",
+        meaning: "I heard that Sato-san doesn't like spicy food.",
+      },
+      {
+        sentence: "明日暑くなるそうだ。",
+        meaning: "I heard that it will be hot tomorrow.",
+      },
+    ],
+    category: GrammarEntryCategory.OTHER,
+    newWords: [
+      { kanji: "描く", kana: "かく", english: "to draw" },
+    ],
+  },
+  {
+    id: 91,
+    grammar: "〜ということだ",
+    imi: "〜らしい",
+    explanation: "誰かから聞いた話を伝えるときに使う。\nSame as 〜そう③, but more formal, used at work.\nThis grammar pattern is used to convey hearsay or information that has been reported by someone else, similar to 'I heard that...' or 'It seems that...'.",
+    usage: {
+      form: [{name: "普通形"}],
+      pattern: ["ということだ", "とのことだ"],
+    },
+    examples: [
+      {
+        sentence: "近所に住んでいるかなちゃんは、来年から海外で働くということだ。",
+        meaning: "I heard that Kana-chan, who lives in the neighborhood, will work overseas starting next year.",
+      },
+      {
+        sentence: "田中さんは、アフリカから世界を回る旅をスタートするとのことだ。",
+        meaning: "I heard that Tanaka-san will start a trip around the world from Africa.",
+      },
+      {
+        sentence: "天気予報によると、明日は気温が35度まで上がるということだ。",
+        meaning: "According to the weather forecast, the temperature will rise to 35 degrees tomorrow.",
+      },
+      {
+        sentence: "明日の会議は10時に変更するとのことです。",
+        meaning: "I heard that tomorrow's meeting will be changed to 10 o'clock.",
+      },
+    ],
+    category: GrammarEntryCategory.OTHER,
+    newWords: [
+      { kanji: "近所", kana: "きんじょ", english: "neighborhood" },
+      { kanji: "変更", kana: "へんこう", english: "change" },
+    ],
+    extraInfo: "〜らしい is more related to inferences, or general info, often less certain than 〜そう and 〜ということだ.",
+  },
+  {
+    id: 92,
+    grammar: "〜きる",
+    imi: "はっきりと ～ する・最後まで ～ する",
+    explanation: "This grammar pattern is used to indicate that an action is done completely or thoroughly, often with a sense of finality or decisiveness.",
+    usage: {
+      form: [{name: "V. ます STEM"}],
+      pattern: ["きる", "きれない"],
+    },
+    examples: [
+      {
+        sentence: "近所の人にたくさんの果物をもらったが、なかなか食べきれない。",
+        meaning: "I received a lot of fruit from my neighbors, but I can't eat it all.",
+      },
+      {
+        sentence: "まだ冷蔵庫にあるマヨネーズを使いきっていないのに、彼は新しいものを開けてしまった。",
+        meaning: "Even though I haven't used up the mayonnaise that's still in the fridge, he went ahead and opened a new one.",
+      },
+      {
+        sentence: "彼はみんなの前で「今年は絶対に合格する」と言いきった。",
+        meaning: "He declared in front of everyone, 'I will definitely pass this year.'",
+        point: "はっきりと言った。",
+      },
+    ],
+    category: GrammarEntryCategory.OTHER,
+    newWords: [
+      { kanji: "なかなか", kana: "なかなか", english: "not easily" },
+      { kanji: "冷蔵庫", kana: "れいぞうこ", english: "refrigerator" },
+    ],
+    extraInfo: "〜きる -> Do till the end.\n〜きれない -> Cannot do till the end.",
+  },
+  {
+    id: 93,
+    grammar: "〜される",
+    imi: "自然と ～ する",
+    explanation: "This grammar pattern is used to indicate that an action happens naturally or involuntarily, often without the subject's intention or control.",
+    usage: {
+      form: [{name: "V. ない STEM"}],
+      pattern: ["(ら)れる"],
+    },
+    examples: [
+      {
+        sentence: "彼の成長の早さには驚かされた。",
+        meaning: "I was surprised by how quickly he grew.",
+      },
+      {
+        sentence: "この場所に来ると、学生時代の楽しかったことが思い出される。",
+        meaning: "Whenever I come to this place, I remember the fun times I had in school.",
+        point: "自然に思い出す。",
+      },
+      {
+        sentence: "息子の顔を見ると、反省した様子が感じられる。",
+        meaning: "When I see my son's face, I can feel his remorse.",
+      },
+    ],
+    category: GrammarEntryCategory.OTHER,
+    newWords: [
+      { kanji: "成長", kana: "せいちょう", english: "growth" },
+      { kanji: "驚く", kana: "おどろく", english: "to be surprised" },
+      { kanji: "反省する", kana: "はんせいする", english: "to reflect" },
+      { kanji: "様子", kana: "ようす", english: "appearance・state・situation" },
+      { kanji: "感じる", kana: "かんじる", english: "to feel" },
+    ],
+    extraInfo: "する -> される\n来る -> こられる",
+  },
+  {
+    id: 94,
+    grammar: "〜だけ",
+    imi: "～できるところまで",
+    explanation: "This grammar pattern is used to express doing something to the extent possible or as much as one can.",
+    usage: {
+      form: [{name: "V. Potential"}],
+      pattern: ["だけ" ],
+    },
+    examples: [
+      {
+        sentence: "休日の朝は、寝られるだけ寝ている。目が覚めるのは11時くらいだ。",
+        meaning: "On holiday mornings, I sleep as much as I can. I usually wake up around 11 o'clock.",
+      },
+      {
+        sentence: "うまくできるかわからないけど、やれるだけやってみよう。",
+        meaning: "I don't know if I can do it well, but I'll try to do as much as I can.",
+      },
+      {
+        sentence: "A:スーパーに行くけど、何か買ってほしい物ある？\nb:プリンが売っていたら、あるだけ買ってきてくれるる？",
+        meaning: "A: I'm going to the supermarket, is there anything you want me to buy?\nb: If they have pudding, can you buy as much as you can?",
+        point: "あるだけ = 全部",
+      },
+      {
+        sentence: "あるだけ持って行っていいよ。",
+        meaning: "You can take as much as you can.",
+      },
+      {
+        sentence: "好きなだけ食べていいよ。",
+        meaning: "You can eat as much as you like.",
+      }
+    ],
+    category: GrammarEntryCategory.OTHER,
+    extraInfo: "This grammar is used with verbs in the potential form, but there's 2 exceptions that are very often used: あるだけ (as much as there is; All that is available) and 好きなだけ (as much as you like).",
+  },
+  {
+    id: 95,
+    grammar: "〜ことがある",
+    imi: "時々 ～ する・昔 ～ ました経験がある",
+    explanation: "This grammar pattern has two meanings:\n1. To express that something happens occasionally or sometimes.\n2. To indicate that someone has had the experience of doing something in the past.",
+    usage: {
+      form: [{name: "V. る・V. ない"}, {name: "V. た"}],
+      pattern: ["ことがある"],
+    },
+    examples: [
+      {
+        sentence: "この映画を見たことがある。",
+        meaning: "I have seen this movie.",
+        point: "意味２",
+      },
+      {
+        sentence: "けんかをすることがある。",
+        meaning: "I sometimes get into fights.",
+        point: "意味１",
+      },
+      {
+        sentence: "A: よしださん、中国語を勉強しているの？\nB: はい、仕事で中国に行くことがあるので、話せるように勉強しているんです。",
+        meaning: "A: Yoshida, are you studying Chinese?\nB: Yes, I sometimes go to China for work, so I'm studying to be able to speak it.",
+        point: "意味１",
+      },
+      {
+        sentence: "「食べなさい」と言っているのに、息子は朝食を食べないことがある。",
+        meaning: "Even though I tell him to eat, my son sometimes doesn't eat breakfast.",
+        point: "意味１",
+      },
+      {
+        sentence: "学生時代に、花屋と飲食店のアルバイトをしたことがある。",
+        meaning: "I have worked part-time at a flower shop and a restaurant during my student days.",
+        point: "意味２",
+      }
+    ],
+    category: GrammarEntryCategory.OTHER,
+    extraInfo: "意味１ -> Used with V. る and V. ない forms to express occasional actions.\n意味２ -> Used with V. た form to indicate past experiences.",
+  },
+  {
+    id: 96,
+    grammar: "つい ～ てしまう",
+    imi: "～するつもりではないのに、～する",
+    explanation: "This grammar pattern is used to express that something is done unintentionally or without meaning to, often leading to regret or unintended consequences.",
+    usage: {
+      form: [{name: "つい"}],
+      pattern: ["V. て"],
+      secondsForm: [{name: "しまう"}],
+    },
+    examples: [
+      {
+        sentence: "興味のある内容の本を見つけると、つい買ってしまう。",
+        meaning: "When I find a book on a topic I'm interested in, I end up buying it.",
+      },
+      {
+        sentence: "早く起きなければいけないのに、つい二度寝てしまった。",
+        meaning: "I have to get up early, but I ended up oversleeping.",
+      },
+      {
+        sentence: "ダイエットをしようと思っていたのに、ついアイスクリームを食べちゃった。",
+        meaning: "I was planning to diet, but I ended up eating ice cream.",
+      },
+    ],
+    category: GrammarEntryCategory.OTHER,
+  },
+  {
+    id: 97,
+    grammar: "〜てほしい",
+    imi: "～てください",
+    explanation: "This grammar pattern is used to express a desire or request for someone else to do something, similar to 'I want you to...' or 'Please do...'.",
+    usage: {
+      form: [{name: "V. て"}],
+      pattern: ["ほしい" ],
+    },
+    examples: [
+      {
+        sentence: "仕事でしばらく留守にするので、家のペットの世話をしてきましい",
+        meaning: "Since I'll be away for work for a while, please take care of my pet.",
+      },
+      {
+        sentence: "自分のことばかり話すのではなく、こちらの話も聞いてほしい。",
+        meaning: "I want you to listen to my side of the story, not just talk about yourself.",
+      },
+      {
+        sentence: "高い授業料を払っているんだから、もっといい授業をしてほしい。",
+        meaning: "Since I'm paying a high tuition fee, I want better classes.",
+      },
+    ],
+    category: GrammarEntryCategory.OTHER,
+    newWords: [
+      { kanji: "留守", kana: "るす", english: "absence" },
+    ],
+  },
+  {
+    id: 98,
+    grammar: "〜なんか②",
+    imi: "～は",
+    explanation: "「すごくない」という気持ちを表すときに使う。\nThis grammar pattern is used to express a feeling of belittlement or dismissal towards something, often implying that it is not impressive or significant.",
+    usage: {
+      form: [{name: "名詞"}],
+      pattern: ["なんか", "なんて"],
+    },
+    examples: [
+      {
+        sentence: "うちの犬なんて、人の食べているものをなんでも欲しがるのよ。",
+        meaning: "My dog wants everything that people are eating.",
+      },
+      {
+        sentence: "私の息子なんて、学校から帰ってきたら勉強もせずに遊んでばかりいるのよ。",
+        meaning: "My son comes home from school and just plays without studying.",
+      },
+      {
+        sentence: "私なんか、キムさんに比べたら何もできないただの新入社員です。",
+        meaning: "Compared to Kim-san, I'm just a new employee who can't do anything.",
+      },
+    ],
+    category: GrammarEntryCategory.OTHER,
+  },
+  {
+    id: 99,
+    grammar: "～なんて～だろう",
+    imi: "とても ～ だ",
+    explanation: "気持ちを強く言いたいときに使う。\nThis grammar pattern is used to strongly express feelings or opinions about something, often emphasizing surprise, admiration, or disbelief.",
+    usage: {
+      form: [{name: "なんて"}],
+      pattern: ["普通形"],
+      secondsForm: [{name: "だろう"}, {name: "でしょう"}],
+    },
+    examples: [
+      {
+        sentence: "なんてかわいい子でしょう！",
+        meaning: "What a cute child!",
+        point: "とてもかわいい子だ。",
+      },
+      {
+        sentence: "初めてこの町に来たとき、なんて楽しい場所だろう！と感動した。",
+        meaning: "When I first came to this town, I was so impressed by what a fun place it is!",
+        point: "とても楽しい場所だ。",
+      },
+      {
+        sentence: "この美しいドレスを着て、好きなんとバーティーに行けたら、なんてすてきでしょう。",
+        meaning: "If I could wear this beautiful dress and go to the party I like, how wonderful it would be!",
+        point: "とてもすてきだ。"
+      },
+      {
+        sentence: "風邪を引いた私の世話を一日中してくれるなんて、なんてやさしい人でしょう。",
+        meaning: "What a kind person to take care of me all day when I caught a cold!",
+        point: "とてもやさしい人だ。"
+      },
+    ],
+    category: GrammarEntryCategory.OTHER,
+    extraInfo: "This grammar is not very often used in real life, but very often used in anime/manga.",
+  },
+  {
+    id: 100,
+    grammar: "~ように③",
+    imi: "～と願う (お願いすること)",
+    usage: {
+      form: [{name: "V. ます形"}],
+      pattern: ["ように"],
+    },
+    examples: [
+      {
+        sentence: "明日は晴れて、運動会できますように。",
+        meaning: "I hope it will be sunny tomorrow so that we can have the sports festival.",
+        point: "できることを願っている。",
+      },
+      {
+        sentence: "今年こそは海外旅行に行けますように。",
+        meaning: "I hope I can go on a trip abroad this year.",
+        point: "行けることを願っている。",
+      },
+      {
+        sentence: "明日の演奏会、絶対成功しますように。",
+        meaning: "I hope tomorrow's performance will definitely be a success.",
+        point: "成功することを願っている。",
+      },
+    ],
+    category: GrammarEntryCategory.OTHER,
+    newWords: [
+      { kanji: "演奏会", kana: "えんそうかい", english: "concert" },
+      { kanji: "成功", kana: "せいこう", english: "success" },
+    ],
+    extraInfo: "ように always come at the end of the sentence.",
+  },
   // SECTION 13 - GRAMMAR 101 - 110
 ]
