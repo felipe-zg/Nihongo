@@ -53,60 +53,65 @@ const NihongoNoMoriGrammar: React.FC<Props> = ({ grammarList }) => {
             <Text fontSize={"sm"} italic color={"white"}>{`${currentItem.category}`}</Text>
           </Box>
         </ContentBox>
-        <ContentBox>
-          {(currentItem.usage.form || currentItem.usage.pattern) && (
-            <HStack space={5} alignItems="center">
-              <Box>
-                {currentItem.usage.form?.map((form, index) => (
-                  <HStack key={index} space={10} justifyContent={"space-between"}>
-                    <Text color={"white"}>{form.name}</Text>
-                    {form.connector && <Text>
-                      <Text color={"green.500"}> + </Text>
-                      <Text color={"pink.500"}>{form.connector}</Text>  
-                    </Text>}
-                  </HStack>
-                ))}
-              </Box>
-              <Box>
-                <Text color={"white"} fontSize={"xl"}> + </Text>
-              </Box>
-              <Box>
-                {currentItem.usage.pattern?.map((pattern, index) => (
-                  <Text key={index} color={"primary.500"} bold>{pattern}</Text>
-                ))}
-              </Box>
-              {currentItem.usage.secondsForm && (
+        {currentItem.usage && (
+          <ContentBox>
+            {(currentItem.usage.form || currentItem.usage.pattern) && (
+              <HStack space={5} alignItems="center">
                 <Box>
-                  {currentItem.usage.secondsForm?.map((form, index) => (
+                  {currentItem.usage.form?.map((form, index) => (
                     <HStack key={index} space={10} justifyContent={"space-between"}>
-                      <Text color={"white"}>{form.name}</Text>
+                      <Text color={currentItem.usage?.secondsForm ? "primary.500" : "white"} bold={!!currentItem.usage?.secondsForm}>{form.name}</Text>
                       {form.connector && <Text>
-                        <Text mr={5} color={"white"} fontSize={"xl"}> + </Text>
-                        <Text color={"primary.500"}>{form.connector}</Text>  
+                        <Text color={"green.500"}> + </Text>
+                        <Text color={"pink.500"}>{form.connector}</Text>  
                       </Text>}
                     </HStack>
                   ))}
                 </Box>
-              )}
-            </HStack>
-          )}
-          {currentItem.usage.combinedForms && (
-            <>
-            <Divider my={2} bg="gray.500" thickness={0.5}/>
-            {currentItem.usage.combinedForms?.map((form, index) => (
-              <HStack key={index} space={5} alignItems="center">
-                <Text key={index} color={"white"}>{form.first}</Text>
-                <Text color={"white"} fontSize={"xl"}> + </Text>
-                <Text key={index} color={"primary.500"} bold>{form.pattern}</Text>
-                {form.second && <>
+                <Box>
                   <Text color={"white"} fontSize={"xl"}> + </Text>
-                  <Text key={index} color={"white"}>{form.second}</Text>
-                </>}
+                </Box>
+                <Box>
+                  {currentItem.usage.pattern?.map((pattern, index) => (
+                    <Text key={index} color={currentItem.usage?.secondsForm ? "white" : "primary.500"} bold={!!!currentItem.usage?.secondsForm}>{pattern}</Text>
+                  ))}
+                </Box>
+                {currentItem.usage.secondsForm && (
+                  <HStack space={3}>
+                    <Text color={"white"} fontSize={"xl"}> + </Text>
+                    <Box>
+                      {currentItem.usage.secondsForm?.map((form, index) => (
+                        <HStack key={index} space={10} alignItems={"center"} justifyContent={"space-between"}>
+                          <Text color={"primary.500"} bold>{form.name}</Text>
+                          {form.connector && <Text>
+                            <Text mr={5} color={"white"} fontSize={"xl"}> + </Text>
+                            <Text color={"primary.500"}>{form.connector}</Text>  
+                          </Text>}
+                        </HStack>
+                      ))}
+                    </Box>
+                  </HStack>
+                )}
               </HStack>
-            ))}
-            </>
-          )}
-        </ContentBox>
+            )}
+            {currentItem.usage.combinedForms && (
+              <>
+              <Divider my={2} bg="gray.500" thickness={0.5}/>
+              {currentItem.usage.combinedForms?.map((form, index) => (
+                <HStack key={index} space={5} alignItems="center">
+                  <Text key={index} color={"white"}>{form.first}</Text>
+                  <Text color={"white"} fontSize={"xl"}> + </Text>
+                  <Text key={index} color={"primary.500"} bold>{form.pattern}</Text>
+                  {form.second && <>
+                    <Text color={"white"} fontSize={"xl"}> + </Text>
+                    <Text key={index} color={"white"}>{form.second}</Text>
+                  </>}
+                </HStack>
+              ))}
+              </>
+            )}
+          </ContentBox>
+        )}
         <ContentBox>
           {currentItem.examples.map((example, index) => (
             <Box key={index} mb={4} alignItems="center">
