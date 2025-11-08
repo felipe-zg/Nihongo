@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import { Box, Button, HamburgerIcon, VStack, CloseIcon } from 'native-base';
+import { Box, Button, VStack, HamburgerIcon, CloseIcon } from 'native-base';
+import { motion, useAnimation } from 'framer-motion';
+
+const MotionButton = motion(Button);
 
 const routes = [
   { name: 'ミニストーリー', path: '/ministory' },
@@ -30,7 +33,8 @@ const routes = [
 ];
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = React.useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+  const controls = useAnimation();
 
   const getLinkStyle = (isActive: boolean) => ({
     color: 'white',
@@ -39,10 +43,30 @@ const Navbar = () => {
 
   const toggleMenu = () => setIsOpen((prev) => !prev);
 
+  useEffect(() => {
+    let lastScrollY = window.scrollY;
+
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      if (currentScrollY > lastScrollY + 10) {
+        // scrolling down
+        controls.start({ opacity: 0, y: -10, transition: { duration: 0.4 } });
+      } else if (currentScrollY < lastScrollY - 10) {
+        // scrolling up
+        controls.start({ opacity: 1, y: 0, transition: { duration: 0.4 } });
+      }
+      lastScrollY = currentScrollY;
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [controls]);
+
   return (
     <>
-      {/* Fixed Hamburger Button */}
-      <Button
+      {/* Animated Hamburger Button */}
+      <MotionButton
+        animate={controls}
         onPress={toggleMenu}
         variant="solid"
         colorScheme="light"
@@ -57,7 +81,7 @@ const Navbar = () => {
         _pressed={{ bg: 'darkBlue.700' }}
       >
         {isOpen ? <CloseIcon color="white" /> : <HamburgerIcon color="white" />}
-      </Button>
+      </MotionButton>
 
       {/* Fullscreen Overlay Menu */}
       {isOpen && (
@@ -78,8 +102,8 @@ const Navbar = () => {
               <NavLink
                 key={route.path}
                 to={route.path}
-                style={{ width: '100%', textDecoration: 'none'}}
-                onClick={() => setIsOpen(false)} // close on link click
+                style={{ width: '100%', textDecoration: 'none' }}
+                onClick={() => setIsOpen(false)}
               >
                 {({ isActive }) => (
                   <Button
