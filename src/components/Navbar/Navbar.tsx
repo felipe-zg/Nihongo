@@ -8,6 +8,7 @@ const routes = [
   { name: '日本語の森・文法', path: '/grammar/nihongo-no-mori' },
   { name: '漢字 M2', path: '/kanji-m2' },
   { name: '日本語の森・N3', path: '/JLPT/NihongoNoMori/N3' },
+  { name: '日本語500・N3', path: '/JLPT/Nihongo500Mondai?level=N3' },
   { name: 'JLPT', path: '/JLPT/N3' },
   { name: 'JLPT Vocabs N3', path: '/JLPT/vocabs?level=N3' },
   { name: 'Levels', path: '/' },

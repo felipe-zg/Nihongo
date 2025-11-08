@@ -35,4 +35,5 @@ declare type JLPTExercise = {
   options: string[];
   answer: string;
   comment?: string;
+  refersTo?: number; // For linking related exercises
 }
