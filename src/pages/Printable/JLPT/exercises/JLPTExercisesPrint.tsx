@@ -1,19 +1,20 @@
 import React, { useEffect } from "react";
 import { Box, HStack } from "native-base";
 import { useSearchParams } from "react-router-dom";
-import { JLPT_N2_GRAMMAR_EXERCISES, JLPT_N2_MOJI_EXERCISES } from "../../../../consts";
+import { JLPT_N2_GRAMMAR_EXERCISES, JLPT_N2_MOJI_EXERCISES, JLPT_N3_GRAMMAR_EXERCISES, JLPT_N3_MOJI_EXERCISES } from "../../../../consts";
 import { parseRuby } from "../../../../utils/music/rubyParser";
 
 const JLPTExercisesPrint: React.FC = () => {
   const [searchParams] = useSearchParams();
   const typeParam = searchParams.get("type");
+  const levelParam = searchParams.get("level");
   const exerciseType: 'grammar' | 'moji' = typeParam === 'grammar' || typeParam === 'moji' ? typeParam : 'grammar';
 
   let exerciseList: JLPTExercise[] = [];
   if (exerciseType === 'grammar') {
-    exerciseList = JLPT_N2_GRAMMAR_EXERCISES;
+    exerciseList = levelParam === 'N2' ? JLPT_N2_GRAMMAR_EXERCISES : JLPT_N3_GRAMMAR_EXERCISES;
   } else if (exerciseType === 'moji') {
-    exerciseList = JLPT_N2_MOJI_EXERCISES;
+    exerciseList = levelParam === 'N2' ? JLPT_N2_MOJI_EXERCISES : JLPT_N3_MOJI_EXERCISES;
   }
 
   useEffect(() => {
@@ -116,7 +117,7 @@ const JLPTExercisesPrint: React.FC = () => {
         ).join('');
         answerCells.push(`<td style="padding: 8px; vertical-align: top;">${formattedAnswer}</td>`);
         return (
-        <div key={index} className="lesson-break">
+        <div key={index} className="lesson-break" style={{ whiteSpace: 'pre-wrap' }}>
           <h2>{ex.id}) &nbsp;&nbsp;
             {parts.map((part, partIndex) => {
               if (part.kanji === '<') {

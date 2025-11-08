@@ -73,7 +73,7 @@ const VocabsJLPT: React.FC<Props> = ({ vocabList, level }) => {
 
   const openPrintPage = (printKanji = false, exercise?: 'grammar' | 'moji') => {
     if (exercise) {
-      window.open(`/printable/JLPT/exercises?type=${exercise}`, "_blank")?.focus();
+      window.open(`/printable/JLPT/exercises?type=${exercise}&level=${level}`, "_blank")?.focus();
       return;
     }
     window.open(`/printable/JLPT/vocabs/N3?fromIndex=${startIndex}&toIndex=${endIndex}&shuffle=${spacedRepetition}&printKanji=${printKanji}`, "_blank")?.focus();
