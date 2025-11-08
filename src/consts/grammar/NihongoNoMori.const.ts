@@ -11,6 +11,7 @@ export const GrammarEntryCategory = {
   RULES_ADVICE: 'ルール・アドバイス',
   PARALLEL: '並列',
   OTHER: 'その他',
+  KEIGO: '敬語',
 } as const;
 
 export const NIHONGO_NO_MORI_GRAMMAR: GrammarEntry[] = [
@@ -3276,4 +3277,307 @@ export const NIHONGO_NO_MORI_GRAMMAR: GrammarEntry[] = [
     extraInfo: "ように always come at the end of the sentence.",
   },
   // SECTION 13 - GRAMMAR 101 - 110
+  {
+    id: 101,
+    grammar: "お・ご ～ する",
+    imi: "~する",
+    explanation: "自分の行動を相手に丁寧に言うときに使う。\nThis grammar pattern is used to politely express one's own actions to others, often in formal or respectful contexts.",
+    usage: {
+      form: [{name: "お・ご"}],
+      pattern: ["V. ます STEM", "名詞"],
+      secondsForm: [{name: "します"}, {name: "いたします"}],
+    },
+    examples: [
+      {
+        sentence: "午後、こちらからお電話いたします。何時ごろがご都合よろしいでしょうか。",
+        meaning: "In the afternoon, I will call you from here. What time would be convenient for you?",
+        point: "私からあなたに午後電話します。",
+      },
+      {
+        sentence: "試験の結果は、葉書でお送りします。",
+        meaning: "The exam results will be sent by postcard.",
+      },
+      {
+        sentence: "2階のお部屋へご案内いたします。",
+        meaning: "I will guide you to the room on the second floor.",
+      },
+    ],
+    category: GrammarEntryCategory.KEIGO,
+    newWords: [
+      { kanji: "都合", kana: "つごう", english: "convenience" },
+      { kanji: "葉書", kana: "はがき", english: "postcard" },
+      { kanji: "階", kana: "かい", english: "floor" },
+    ],
+  },
+  {
+    id: 102,
+    grammar: "お・ご ～ になる",
+    imi: "～です",
+    explanation: "他の人の行動や状況について丁寧に言うとき使う。\nThis grammar pattern is used to politely express the actions or situations of others, often in formal or respectful contexts.",
+    usage: {
+      form: [{name: "お・ご"}],
+      pattern: ["V. ます STEM", "名詞"],
+      secondsForm: [{name: "になります"}],
+    },
+    examples: [
+      {
+        sentence: "村上さんは、用事があるとのことで、さっきお帰りになりました。",
+        meaning: "Mr. Murakami went home a little while ago because he had something to do.",
+      },
+      {
+        sentence: "社長は商品を売り出す前に、まず自分でお試しになる。",
+        meaning: "The president will first try the product himself before selling it.",
+      },
+      {
+        sentence: "さとう先生は、3時ごろ病院にお見えになりました。",
+        meaning: "Mr. Sato arrived at the hospital around 3 o'clock.",
+      },
+      {
+        sentence: "おかけになってお待ちください。",
+        meaning: "Please sit and wait here.",
+        point: "すわって待ってください。",
+      },
+    ],
+    category: GrammarEntryCategory.KEIGO,
+    newWords: [
+      { kanji: "状況", kana: "じょうきょう", english: "situation" },
+      { kanji: "試す", kana: "ためす", english: "to try" },
+    ],
+  },
+  {
+    id: 103,
+    grammar: "お・ご ～ くださる",
+    imi: "～してくれる",
+    explanation: "相手が自分に何かをしてくれることを丁寧に言うときに使う。\nThis grammar pattern is used to politely express that someone is doing something for oneself, often in formal or respectful contexts.",
+    usage: {
+      form: [{name: "お・ご"}],
+      pattern: ["V. ます STEM", "名詞"],
+      secondsForm: [{name: "くださる"}],
+    },
+    examples: [
+      {
+        sentence: "おばさんがお送りくださったみかん、昨日受け取りました。",
+        meaning: "I received the oranges that my aunt sent me yesterday.",
+      },
+      {
+        sentence: "私に仕事のやり方を全てお教えくださったのは、中本部長です。",
+        meaning: "It was Section Chief Nakamoto who taught me the entire way of doing the job.",
+      },
+      {
+        sentence: "私の気持ちご理解くださり、本当にありがとうございます。",
+        meaning: "Thank you very much for understanding my feelings.",
+      },
+      {
+        sentence: "あ、いつもご心配くださってありがとうございます。",
+        meaning: "Thank you for always worrying about me.",
+      },
+    ],
+    category: GrammarEntryCategory.KEIGO,
+  },
+  {
+    id: 104,
+    grammar: "お・ご ～ いただく",
+    imi: "～してもらう",
+    explanation: "自分が相手に何かをしてもらうことを丁寧に言うときに使う。\nThis grammar pattern is used to politely express that one is receiving a favor or action from someone else, often in formal or respectful contexts.",
+    usage: {
+      form: [{name: "お・ご"}],
+      pattern: ["V. ます STEM", "名詞"],
+      secondsForm: [{name: "いただく"}],
+    },
+    examples: [
+      {
+        sentence: "この度はご協力いただき、心より感謝しております。",
+        meaning: "Thank you very much for your cooperation this time.",
+      },
+      {
+        sentence: "本日は、ご来店いただきありがとうございました。またお待ちしております。",
+        meaning: "Thank you for visiting us today. We look forward to seeing you again.",
+      },
+      {
+        sentence: "有名な画家に、花の絵をお描きいただきました。",
+        meaning: "I had a famous painter draw a picture of flowers.",
+      },
+      {
+        sentence: "xxxxxxxx",
+        meaning: "xxxxxxxxx",
+      },
+    ],
+    category: GrammarEntryCategory.KEIGO,
+    newWords: [
+      { kanji: "この度", kana: "このたび", english: "this time" },
+      { kanji: "協力", kana: "きょうりょく", english: "cooperation" },
+      { kanji: "感謝", kana: "かんしゃ", english: "gratitude" },
+      { kanji: "来店", kana: "らいてん", english: "store visit" },
+      { kanji: "画家", kana: "がか", english: "painter" },
+      { kanji: "登録", kana: "とうろく", english: "registration" },
+    ],
+  },
+  {
+    id: 105,
+    grammar: "お・ご ～ 申し上げる",
+    imi: "～を言う・伝える",
+    explanation: "自分の言葉や気持ちを相手に丁寧に伝えるときに使う。\nThis grammar pattern is used to politely convey one's own words or feelings to others, often in formal or respectful contexts.",
+    usage: {
+      form: [{name: "お・ご"}],
+      pattern: ["名詞"],
+      secondsForm: [{name: "申し上げる"}],
+    },
+    examples: [
+      {
+        sentence: "ご結婚されたんですね。お祝い申し上げます。",
+        meaning: "Congratulations on your marriage.",
+        point: "お祝い申し上げます = おめでとうございます。",
+      },
+      {
+        sentence: "今後とも、よろしくお願い申し上げます。",
+        meaning: "I look forward to your continued support.",
+      },
+      {
+        sentence: "皆様に、新年のごあいさつ申し上げます。",
+        meaning: "I would like to extend my New Year's greetings to everyone.",
+        point: "新年のごあいさつ = 新年あけましておめでとうございます。",
+      },
+    ],
+    category: GrammarEntryCategory.KEIGO,
+    newWords: [
+      { kanji: "今後", kana: "こんご", english: "hereafter" },
+    ],
+  },
+  {
+    id: 106,
+    grammar: "～ございます",
+    imi: "～です・～があります",
+    explanation: "丁寧に物事の存在や状態を伝えるときに使う。\nThis grammar pattern is used to politely convey the existence or state of things, often in formal or respectful contexts.",
+    usage: {
+      form: [{name: "ナ形容詞"}, {name: "名詞"}],
+      pattern: ["でございます", "がございます"],
+    },
+    examples: [
+      {
+        sentence: "学生課の田中でございます。学校生活で困ったときは、いつでも声をかけてください。",
+        meaning: "I am Tanaka from the Student Affairs Division. Please feel free to reach out to me anytime you have trouble with school life.",
+      },
+      {
+        sentence: "課長、この資料の内容について確認したいことがございます。ただ今時間よろしいでしょうか。",
+        meaning: "Chief, I have something I would like to confirm regarding the contents of this document. Do you have a moment now?",
+      },
+      {
+        sentence: "せっかくのお誘いですが、週末は予定がございます。申し訳ありません。",
+        meaning: "I appreciate the invitation, but I have plans this weekend. I apologize.",
+      },
+    ],
+    category: GrammarEntryCategory.KEIGO,
+    newWords: [
+      { kanji: "学生課", kana: "がくせいか", english: "Student Affairs Division" },
+      { kanji: "資料", kana: "しりょう", english: "document" },
+      { kanji: "確認", kana: "かくにん", english: "confirmation" },
+      { kanji: "誘い", kana: "さそい", english: "invitation" },
+    ],
+    extraInfo: "です -> でございます   [ With Nouns and ナ adj ]\nあります -> がございます   [ With Nouns only ]",
+  },
+  {
+    id: 107,
+    grammar: "～ております",
+    imi: "~しています",
+    explanation: "自分の動作や状態を丁寧に言うときに使う。\nThis grammar pattern is used to politely express one's own actions or states, often in formal or respectful contexts.",
+    usage: {
+      form: [{name: "V. テ形"}],
+      pattern: ["おります"],
+    },
+    examples: [
+      {
+        sentence: "父はただ今外出しております。",
+        meaning: "My father is currently out.",
+      },
+      {
+        sentence: "当店は、年中休まず営業しております。",
+        meaning: "Our store is open year-round without any breaks.",
+      },
+      {
+        sentence: "先生方のおかげで、大学に合格できました。本当に感謝しております。",
+        meaning: "Thanks to my teachers, I was able to pass the university entrance exam. I am truly grateful.",
+      },
+    ],
+    category: GrammarEntryCategory.KEIGO,
+    newWords: [
+      { kanji: "外出", kana: "がいしゅつ", english: "going out" },
+      { kanji: "当店", kana: "とうてん", english: "our store" },
+      { kanji: "営業", kana: "えいぎょう", english: "business" },
+    ],
+  },
+  {
+    id: 108,
+    grammar: "〜と申します",
+    imi: "（名前）と言います",
+    explanation: "自分の名前を丁寧に言うときに使う。\nThis grammar pattern is used to politely introduce one's own name, often in formal or respectful contexts.",
+    usage: {
+      form: [{name: "名前"}],
+      pattern: ["と申します"],
+    },
+    examples: [
+      {
+        sentence: "K大学の山田先生のところで研究をしています。田中と申します。",
+        meaning: "I am Tanaka, and I am conducting research under Professor Yamada at K University.",
+      },
+      {
+        sentence: "この度、こちらのお店で働くことになりました。さかいと申します。",
+        meaning: "I have started working at this store. My name is Sakai.",
+      },
+    ],
+    category: GrammarEntryCategory.KEIGO,
+    newWords: [
+      { kanji: "研究", kana: "けんきゅう", english: "research" },
+    ],
+  },
+  {
+    id: 109,
+    grammar: "お目にかかります",
+    imi: "会います",
+    examples: [
+      {
+        sentence: "お目にかかることができて、大変嬉しく思っております。",
+        meaning: "I am very pleased to have the opportunity to meet you.",
+      },
+      {
+        sentence: "昨日は、お目にかかることができず残念でした。",
+        meaning: "I was disappointed that I could not meet you yesterday.",
+      },
+      {
+        sentence: "先生にお目にかかれて光栄です。",
+        meaning: "I am honored to meet you, Professor.",
+      },
+    ],
+    category: GrammarEntryCategory.KEIGO,
+    newWords: [
+      { kanji: "大変", kana: "たいへん", english: "very" },
+      { kanji: "光栄", kana: "こうえい", english: "honor" },
+    ],
+  },
+  {
+    id: 110,
+    grammar: "伺います",
+    imi: "行きます・聞きます",
+    examples: [
+      {
+        sentence: "社員旅行の日にちについて、皆様の意見を伺いたいです。",
+        meaning: "I would like to hear everyone's opinions about the date of the company trip.",
+        point: "聞きます",
+      },
+      {
+        sentence: "それでは、来週月曜日の朝9時に伺いますね。",
+        meaning: "Well then, I will go next Monday at 9 AM.",
+        point: "行きます",
+      },
+      {
+        sentence: "動物園の園長に、詳しくお話を伺ってみます。",
+        meaning: "I will try to ask the zoo director for more details.",
+        point: "聞きます",
+      },
+    ],
+    category: GrammarEntryCategory.KEIGO,
+    newWords: [
+      { kanji: "伺います", kana: "うかがいます", english: "to visit (humble)" },
+      { kanji: "園長", kana: "えんちょう", english: "zoo director" },
+    ],
+  },
 ]
