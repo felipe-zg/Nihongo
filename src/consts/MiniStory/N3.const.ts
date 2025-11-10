@@ -15,6 +15,7 @@ export const MiniStoryTopics = {
   TRAVEL: "旅行",
   SCHOOL: "学校",
   HEALTH: "健康",
+  MANNERS: "マナー",
 } as const;
 
 // type MiniStoryTopic = typeof MiniStoryTopics[keyof typeof MiniStoryTopics];
@@ -13983,5 +13984,1052 @@ export const MINI_STORY_N3: Record<string, MiniStory> = {
     audio: "T324.mp3",
     topic: MiniStoryTopics.HEALTH,
     page: 229,
+  },
+  "325": {
+    id: "325",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<心{しん}臓{ぞう}><病{びょう}>を抱{かか}えていた父{ちち}は、お店{みせ}を<休{きゅう}業{ぎょう}して><手{しゅ}術{じゅつ}>を受{う}けた。2年{ねん}<後{ご}>の今では<症{しょう}状{じょう}>も安{あん}定{てい}して、<健{けん}康{こう}な>生{せい}活{かつ}を送{おく}っている。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "心{しん}臓{ぞう}",
+        english: "Heart",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "～病{びょう}",
+        english: "Disease",
+        type: MiniStoryWordType.SUFFIX
+      },
+      {
+        kanji: "休{きゅう}業{ぎょう}［する］",
+        english: "Closure・to close (a business)",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+      {
+        kanji: "手{しゅ}術{じゅつ}［する］",
+        english: "Surgery・to perform surgery",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+      {
+        kanji: "～後{ご}",
+        english: "After ~",
+        type: MiniStoryWordType.SUFFIX
+      },
+      {
+        kanji: "症{しょう}状{じょう}",
+        english: "Symptoms",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "健{けん}康{こう}な",
+        english: "Healthy",
+        type: MiniStoryWordType.ADJECTIVE_NA
+      },
+    ],
+    translation: `My father, who had heart disease, closed his shop and had surgery. Two years later, he is now living a healthy life with stable symptoms.`,
+    audio: "T325.mp3",
+    topic: MiniStoryTopics.HEALTH,
+    page: 230,
+  },
+  "326": {
+    id: "326",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<產{さん}婦{ふ}人{じん}科{か}>に行くと、<看{かん}護{ご}師{し}>に「もうすぐなので、椅{い}子{す}に<腰{こし}掛{か}けて>、少しお待ちください」と言われた。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "產{さん}婦{ふ}人{じん}科{か}",
+        english: "Obstetrics and gynecology",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "看{かん}護{ご}師{し}",
+        english: "Nurse",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "腰{こし}掛{か}ける",
+        english: "To sit down",
+        type: MiniStoryWordType.ICHIDAN_INTRANSITIVE
+      },
+    ],
+    translation: `When I went to the obstetrics and gynecology department, the nurse said, "It's about time, so please sit down in a chair and wait for a while."`,
+    audio: "T326.mp3",
+    topic: MiniStoryTopics.HEALTH,
+    page: 230,
+  },
+  "327": {
+    id: "327",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<胸{むね}>と<胃{い}>に<痛{いた}み>を感じたので、大きな病院に行った。わざわざ院{いん}長{ちょう}が<おいでになり>、詳しく<診{しん}察{さつ}して>くれたが、よく分からないと言われてしまった。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "胸{むね}",
+        english: "Chest",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "胃{い}",
+        english: "Stomach",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "痛{いた}み",
+        english: "Pain",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "おいでになる",
+        english: "To come (honorific)・to visit",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE
+      },
+      {
+        kanji: "診{しん}察{さつ}［する］",
+        english: "Examination・to examine",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "診{しん}察{さつ}券{けん}",
+        english: "Patient registration card",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `I felt pain in my chest and stomach, so I went to a big hospital. The director came all the way to examine me in detail, but I was told that he couldn't find out the cause.`,
+    audio: "T327.mp3",
+    topic: MiniStoryTopics.HEALTH,
+    page: 231,
+  },
+  "328": {
+    id: "328",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "交{こう}通{つう}事{じ}故{こ}が<発{はっ}生{せい}した>。運{うん}転{てん}手{しゅ}は<出{しゅっ}血{けつ}>がひどくて、<骨{こっ}折{せつ}して>いるようだ。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "発{はっ}生{せい}［する］",
+        english: "Occurrence・to occur",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+      {
+        kanji: "出{しゅっ}血{けつ}［する］",
+        english: "Bleeding・to bleed",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+      {
+        kanji: "骨{こっ}折{せつ}［する］",
+        english: "Fracture・to fracture",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+    ],
+    translation: `A traffic accident has occurred. The driver seems to be bleeding badly and have broken bones.`,
+    audio: "T328.mp3",
+    topic: MiniStoryTopics.HEALTH,
+    page: 231,
+  },
+  "329": {
+    id: "329",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "右手と右足が<しびれる>ので、<外{げ}科{か}>や<神{しん}経{けい}><内{ない}科{か}>を<受{じゅ}診{しん}した>が、原{げん}因{いん}は分からなかった。<片{かた}>手{て}と片{かた}足{あし}だけなので、<不{ふ}思{じ}議{ぎ}な>感{かん}じ>がする。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "しびれる",
+        english: "To become numb",
+        type: MiniStoryWordType.ICHIDAN_INTRANSITIVE
+      },
+      {
+        kanji: "外{げ}科{か}",
+        english: "Surgery",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "神{しん}経{けい}",
+        english: "Nerve・Nervous system",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "内{ない}科{か}",
+        english: "Internal medicine",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "受{じゅ}診{しん}［する］",
+        english: "Medical examination・to receive medical examination",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "片{かた}～",
+        english: "One〜 (e.g., one side of the body)",
+        type: MiniStoryWordType.PREFIX
+      },
+      {
+        kanji: "不{ふ}思{じ}議{ぎ}な",
+        english: "Strange・Incomprehensible・Mysterious",
+        type: MiniStoryWordType.ADJECTIVE_NA
+      },
+    ],
+    translation: `My right hand and right foot were numb, so I went to surgery and neurology, but they couldn't find the cause. It's only (happening to) one hand and foot, so it's a strange feeling.`,
+    audio: "T329.mp3",
+    topic: MiniStoryTopics.HEALTH,
+    page: 232,
+  },
+  "330": {
+    id: "330",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "インフルエンザを<予{よ}防{ぼう}する>ために、<手{て}洗{あら}い>と<うがい>をしなければならない。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "予{よ}防{ぼう}［する］",
+        english: "Prevention・to prevent",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "手{て}洗{あら}い［する］",
+        english: "Handwashing・to wash hands",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+      {
+        kanji: "うがい［する］",
+        english: "Gargling・to gargle",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+      {
+        kanji: "うがい薬{ぐすり}",
+        english: "Gargling medicine・Mouthwash",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `We must wash our hands and gargle to prevent the flu.`,
+    audio: "T330.mp3",
+    topic: MiniStoryTopics.HEALTH,
+    page: 232,
+  },
+  "331": {
+    id: "331",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<喫{きつ}煙{えん}>、飲酒、<高{こう}><血{けつ}圧{あつ}>はがんになるリスクが高いので、<気{き}をつけ>なければならない。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "喫{さつ}煙{えん}［する］",
+        english: "Smoking・to smoke",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+      {
+        kanji: "禁{きん}煙{えん}［する］",
+        english: "Non-smoking・to refrain from smoking",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+      {
+        kanji: "高{こう}～",
+        english: "High ~",
+        type: MiniStoryWordType.PREFIX
+      },
+      {
+        kanji: "血{けつ}圧{あつ}",
+        english: "Blood pressure",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "気{き}をつける",
+        english: "To be careful",
+        type: MiniStoryWordType.ICHIDAN_INTRANSITIVE
+      },
+    ],
+    translation: `Smoking, drinking alcohol and high blood pressure put you at high risk of developing cancer, so we have to be careful.`,
+    audio: "T331.mp3",
+    topic: MiniStoryTopics.HEALTH,
+    page: 233,
+  },
+  "332": {
+    id: "332",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "ドラッグストアで<目{め}薬{ぐすり}>、<やけど>に<効{き}く>薬{くすり}、<傷{きず}>の<消{しょう}毒{どく}する>薬{くすり}を買った。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "目{め}薬{ぐすり}",
+        english: "Eye drops",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "やけど［する］",
+        english: "Burn・to get burned",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+      {
+        kanji: "効{き}く",
+        english: "To be effective",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE
+      },
+      {
+        kanji: "効{き}きめ",
+        english: "Effect・Efficacy",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "傷{きず}",
+        english: "Wound・Injury・cut・scratch",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "消{しょう}毒{どく}［する］",
+        english: "Disinfection・to disinfect",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "アルコール消{しょう}毒{どく}",
+        english: "Alcohol disinfection",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `I bought eye drops, burn medicine and wound disinfectant at a drugstore.`,
+    audio: "T332.mp3",
+    topic: MiniStoryTopics.HEALTH,
+    page: 233,
+  },
+  "333": {
+    id: "333",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<皮{ひ}膚{ふ}>が<腫{は}れて>、体{からだ}を<かいて>しまうのは、<アレルギー>症{しょう}状{じょう}の一つかもしれない。小さな<医{い}院{いん}>で治{なお}らないときは、大きな病{びょう}院{いん}に行き、専{せん}門{もん}の<医{い}師{し}>に<診{み}て>もらった方がいい。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "皮{ひ}膚{ふ}",
+        english: "Skin",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "腫{は}れる",
+        english: "To swell",
+        type: MiniStoryWordType.ICHIDAN_INTRANSITIVE
+      },
+      {
+        kanji: "かく",
+        english: "To scratch",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+      {
+        kanji: "アレルギー",
+        english: "Allergy",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "医{い}院{いん}",
+        english: "Clinic",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "医{い}師{し}",
+        english: "Doctor",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "診{み}る",
+        english: "To examine",
+        type: MiniStoryWordType.ICHIDAN_TRANSITIVE
+      },
+    ],
+    translation: `Swelling of the skin and itchiness of the body may be allergic symptoms. If you cannot get cured at a small clinic, you should go to a larger hospital and see a specialist.`,
+    audio: "T333.mp3",
+    topic: MiniStoryTopics.HEALTH,
+    page: 234,
+  },
+  "334": {
+    id: "334",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "父は<めったに>病{びょう}院{いん}に行かないが、<腹{ふく}痛{つう}>と<下{げ}痢{り}>が続{つづ}き、<吐{は}いて>しまったので、病{びょう}院{いん}に行った。<血{けつ}液{えき}><検{けん}査{さ}>をしたが、特{とく}に異{い}常{じょう}はなかった。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "めったに",
+        english: "Rarely",
+        type: MiniStoryWordType.ADVERB
+      },
+      {
+        kanji: "腹{ふく}痛{つう}",
+        english: "Abdominal pain・Stomachache",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "下{げ}痢{り}［する］",
+        english: "Diarrhea・to have diarrhea",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+      {
+        kanji: "吐{は}く",
+        english: "To vomit",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+      {
+        kanji: "血{けつ}液{えき}",
+        english: "Blood",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "血{けつ}液{えき}型{がた}",
+        english: "Blood type",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "検{けん}査{さ}［する］",
+        english: "Examination・Inspection・to examine・to inspect",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "検{けん}査{さ}入{にゅう}院{いん}",
+        english: "Admission for examination",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `My father rarely goes to the hospital, but his abdominal pain and diarrhea continued, and he threw up, so he went to a hospital. A blood test was performed, but there were no particular abnormalities found.`,
+    audio: "T334.mp3",
+    topic: MiniStoryTopics.HEALTH,
+    page: 234,
+  },
+  "335": {
+    id: "335",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<虫{むし}歯{ば}>の<患{かん}者{じゃ}>が「何も食べられないので、<体{たい}重{じゅう}>が10キロも減{へ}った」と言っていた。<注{ちゅう}射{しゃ}>が苦手で、半{はん}年{とし}もそのままにしていたそうだ。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "虫{むし}歯{ば}",
+        english: "Cavity",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "患{かん}者{じゃ}",
+        english: "Patient",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "体{たい}重{じゅう}",
+        english: "Body weight",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "体{たい}重{じゅう}計{けい}",
+        english: "Weighing scale",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "注{ちゅう}射{しゃ}［する］",
+        english: "Injection・to give a shot",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+    ],
+    translation: `A patient with cavities said, "I lost 10 kilos because I couldn't eat anything". He hates getting shots, so he neglected his teeth for six months.`,
+    audio: "T335.mp3",
+    topic: MiniStoryTopics.HEALTH,
+    page: 235,
+  },
+  "336": {
+    id: "336",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<満{まん}員{いん}>電車で大きな<リュック>を背{せ}負{お}うと、<周{まわ}り>の人の<迷{めい}惑{わく}>になる。大きなリュックは背{せ}負{お}わずに前に持つといい。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "満{まん}員{いん}",
+        english: "Full (of people)",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "リュック（サック）",
+        english: "Backpack",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "周{まわ}り",
+        english: "Surroundings",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "迷{めい}惑{わく}［する］",
+        english: "Nuisance・annoyance・to be a nuisance",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+    ],
+    translation: `Carrying a large backpack on a crowded train can be a nuisance to those around you. Its a good idea to carry a large backpack in front of you without carrying it on your back.`,
+    audio: "T336.mp3",
+    topic: MiniStoryTopics.MANNERS,
+    page: 238,
+  },
+  "337": {
+    id: "337",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "この道は<幅{はば}>が広{ひろ}くて危{あぶ}ないのに、<横{おう}断{だん}歩{ほ}道{どう}>が少{すく}ないので道{どう}路{ろ}を<横{おう}断{だん}する>人が多い。<そこで>警{けい}察{さつ}がどのくらいの人が道{どう}路{ろ}を横{おう}断{だん}するのかの<調{ちょう}査{さ}>を行{おこな}った。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "幅{はば}",
+        english: "Width",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "横{おう}断{だん}歩{ほ}道{どう}",
+        english: "Pedestrian crossing",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "横{おう}断{だん}［する］",
+        english: "Crossing・To cross",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "そこで",
+        english: "Therefore・So",
+        type: MiniStoryWordType.CONJUNCTION
+      },
+      {
+        kanji: "調{ちょう}査{さ}［する］",
+        english: "Investigation・To investigate",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+    ],
+    translation: `Although this road is wide and dangerous, many people cross the road because there are few pedestrian crossings. So the police investigated how many people crossed the road.`,
+    audio: "T337.mp3",
+    topic: MiniStoryTopics.MANNERS,
+    page: 238,
+  },
+  "338": {
+    id: "338",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<リサイクルできる>ように、<空{あ}きびん>と<空{あ}き缶{かん}>は<分{わ}けて>捨{す}てよう。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "リサイクル［する］",
+        english: "Recycling・to recycle",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+      {
+        kanji: "空{あ}きびん",
+        english: "Empty bottle",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "空{あ}き缶{かん}",
+        english: "Empty can",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "分{わ}ける",
+        english: "To divide・to separate",
+        type: MiniStoryWordType.ICHIDAN_TRANSITIVE
+      },
+    ],
+    translation: `Discard empty bottles and cans separately so that they can be recycled.`,
+    audio: "T338.mp3",
+    topic: MiniStoryTopics.MANNERS,
+    page: 239,
+  },
+  "339": {
+    id: "339",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "入{にゅう}学{がく}資{し}料{りょう}の中{なか}に、留{りゅう}学{がく}生{せい}と<おしゃべりして>交{こう}流{りゅう}する<ボランティア>のチラシが<挟{はさ}んで>あった。私の周{まわ}りにはそのような活{かつ}動{どう}に<積{せっ}極{きょく}的{てき}な>人が多いので、私もやってみようと思う。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "おしゃべり［する］",
+        english: "Chatting・to chat",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+      {
+        kanji: "ボランティア",
+        english: "Volunteer",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "挟{はさ}む",
+        english: "To insert・to put between",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+      {
+        kanji: "挟{はさ}まる",
+        english: "To be caught in",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE
+      },
+      {
+        kanji: "積{せっ}極{きょく}的{てき}な",
+        english: "Proactive・Active",
+        type: MiniStoryWordType.ADJECTIVE_NA
+      },
+      {
+        kanji: "消{しょう}極{きょく}的{てき}な",
+        english: "Passive・Unenthusiastic",
+        type: MiniStoryWordType.ADJECTIVE_NA
+      },
+    ],
+    translation: `In the admission materials, there was a leaflet of a volunteer who chats and interacts with international students. There are many people around me who are active in such activities, so I will try it too.`,
+    audio: "T339.mp3",
+    topic: MiniStoryTopics.MANNERS,
+    page: 239,
+  },
+  "340": {
+    id: "340",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "少{すこ}し前{まえ}は、<環{かん}境{きょう}>のための分{ぶん}別{べつ}やリサイクルを<面{めん}倒{どう}な>ことだと思う人もいたかもしれない。しかし、今は環{かん}境{きょう}を守{まも}るための行{こう}動{どう}は<当{とう}然{ぜん}>のことになった。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "環{かん}境{きょう}",
+        english: "Environment",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "環{かん}境{きょう}問{もん}題{だい}",
+        english: "Environmental issues",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "面{めん}倒{どう}な",
+        english: "Bothersome・Troublesome",
+        type: MiniStoryWordType.ADJECTIVE_NA
+      },
+      {
+        kanji: "当{とう}然{ぜん}",
+        english: "Of course・Naturally",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.ADVERB]
+      },
+    ],
+    translation: `Not long ago, some may have found it a hassle to separate and recycle waste for the environment. Nowadays, however, taking action to protect the environment has become standard.`,
+    audio: "T340.mp3",
+    topic: MiniStoryTopics.MANNERS,
+    page: 240,
+  },
+  "341": {
+    id: "341",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "世界にはさまざまな<宗{しゅう}教{きょう}>がある。厳{きび}しい<決{き}まり>があって、破{やぶ}ることが<許{ゆる}されない>宗{しゅう}教{きょう}もあるし、あまり厳{きび}しい決{き}まりがない宗{しゅう}教{きょう}もある。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "宗{しゅう}教{きょう}",
+        english: "Religion",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "決{き}まり",
+        english: "Decision・Rule",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "許{ゆる}す",
+        english: "To allow・To forgive",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+    ],
+    translation: `There are various religions in the world. Some religions have strict rules that cannot be broken, while others do not have very strict rules.`,
+    audio: "T341.mp3",
+    topic: MiniStoryTopics.MANNERS,
+    page: 240,
+  },
+  "342": {
+    id: "342",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "部屋の<奥{おく}>から<煙{けむり}>が出ているのに<気{き}づいた>。慌{あわ}てて行ってみると、パソコンに取{と}り付{つ}けた<スピーカー>から煙{けむり}が出{で}ていた。急{いそ}いでスピーカーを取{と}り外{はず}し、周{まわ}りの燃{も}えやすい物{もの}を<どけて>、水{みず}をかけた。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "奥{おく}",
+        english: "Back・Inner part",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "煙{けむり}",
+        english: "Smoke",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "気{き}づく",
+        english: "To notice・To become aware of・To find",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE
+      },
+      {
+        kanji: "スピーカー",
+        english: "Speaker",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "どける",
+        english: "To remove・To take away",
+        type: MiniStoryWordType.ICHIDAN_TRANSITIVE
+      },
+    ],
+    translation: `I noticed smoke coming from the back of the room. I hurried and found smoke coming from the speakers atached to a computer. I hurriedly removed the speaker and the flammable material around it, and sprinkled it with water.`,
+    audio: "T342.mp3",
+    topic: MiniStoryTopics.MANNERS,
+    page: 241,
+  },
+  "343": {
+    id: "343",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "食{しょく}堂{どう}で名前を呼{よ}ばれて<振{ふ}り向{む}いた>ときに、コーヒーをこぼしてしまった。<着{き}替{が}え>もないので、汚{よご}れたところを<こすって>いたら、汚{よご}れがどんどん広{ひろ}がってしまった。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "振{ふ}り向{む}く",
+        english: "To look back・To turn around",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE
+      },
+      {
+        kanji: "着{き}替{が}え",
+        english: "Change of clothes・Spare clothes",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "こする",
+        english: "To rub・To scrub",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+    ],
+    translation: `I spilled coffee when I looked back at my name in the cafeteria. I didn't have spare clothes, so when I was rubbing the dirty part, the dirt spread more and more.`,
+    audio: "T343.mp3",
+    topic: MiniStoryTopics.MANNERS,
+    page: 241,
+  },
+  "344": {
+    id: "344",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "昨日、<ラッシュ>の電車で、若い人がお年{とし}寄{よ}りに<座{ざ}席{せき}>を譲{ゆず}っていて、<感{かん}心{しん}した>よ。",
+      },
+      {
+        character: "B",
+        dialogue: "素{す}敵{てき}だね。<優{ゆう}先{せん}席{せき}>に座{すわ}っていても譲{ゆず}らない人もいるよね。",
+      },
+      {
+        character: "A",
+        dialogue: "そうだね。「どうぞ」と言{い}うのは少{すこ}し<勇{ゆう}気{き}>がいるかもしれないけど、ぜひやってほしいね。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "ラッシュ",
+        english: "Rush hour",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "座{ざ}席{せき}",
+        english: "Seat",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "感{かん}心{しん}［する］",
+        english: "Impression・to be impressed",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+      {
+        kanji: "優{ゆう}先{せん}席{せき}",
+        english: "Priority seat",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "勇{ゆう}気{き}",
+        english: "Courage",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `A: Yesterday, I was impressed by the young woman giving up her seat to the elderly on the train during rush hour.\nB: That's nice. Some people don't give up their seats even if they sit in the priority seats.\nA: That's right. It may be a little courageous to say "please," but I definitely want them to do it.`,
+    audio: "T344.mp3",
+    topic: MiniStoryTopics.MANNERS,
+    page: 242,
+  },
+  "345": {
+    id: "345",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "ゴミの<分{ぶん}別{べつ}>方{ほう}法{ほう}は<地{ち}域{いき}>によって違{ちが}うので、その地{ち}域{いき}のルールを<守{まも}りましょう>。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "分{ぶん}別{べつ}［する］",
+        english: "Separation・To separate",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "地{ち}域{いき}",
+        english: "Region・Area",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "守{まも}る",
+        english: "To protect・To follow (rules)",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+    ],
+    translation: `The way to separate garbage vary from region to region, so follow the rules for that region. `,
+    audio: "T345.mp3",
+    topic: MiniStoryTopics.MANNERS,
+    page: 242,
+  },
+  "346": {
+    id: "346",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "この<広{ひろ}場{ば}>にある<公{こう}衆{しゅう}トイレ>は、とてもきれいだ。みんなが<マナー>を守って使っているからだ。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "広{ひろ}場{ば}",
+        english: "Square・Plaza",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "公{こう}衆{しゅう}トイレ",
+        english: "Public toilet",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "マナー",
+        english: "Manners",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `The public toilets in this square are very clean. This is because everyone uses them with good manners.`,
+    audio: "T346.mp3",
+    topic: MiniStoryTopics.MANNERS,
+    page: 243,
+  },
+  "347": {
+    id: "347",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "デパートの<化{け}粧{しょう}品{ひん}>売り場で、新しい<香{こう}水{すい}>の<サンプル>をもらった。香{こう}水{すい}は<たまに>しかつけないが、とてもいい香{かお}りだったし、「誰{だれ}にでも<愛{あい}される>香{かお}り」と書{か}いてあったので、買ってしまった。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "化{け}粧{しょう}品{ひん}",
+        english: "Cosmetics",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "化{け}粧{しょう}［する］",
+        english: "Makeup・To put on makeup",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "メイク［する］",
+        english: "Makeup・To put on makeup",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+      {
+        kanji: "香{こう}水{すい}",
+        english: "Perfume",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "サンプル",
+        english: "Sample",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "たまに",
+        english: "Occasionally・Once in a while",
+        type: MiniStoryWordType.ADVERB
+      },
+      {
+        kanji: "愛{あい}［する］",
+        english: "Love・To love",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+    ],
+    translation: `I got a new perfume sample at the cosmetics department of a department store. I only wear perfume once in a while, but it had a very nice scent, and it said, "A scent loved by everyone," so I bought it.`,
+    audio: "T347.mp3",
+    topic: MiniStoryTopics.MANNERS,
+    page: 243,
+  },
+  "348": {
+    id: "348",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: " 今日の電車で、髪{かみ}が全部<自{しら}髪{が}>の男の人が乗ってきたんだ。席{せき}に<空{あ}き>がなかったから<譲{ゆず}ろう>としたら、「まだ若いからいい」って怒{おこ}られたんだ。",
+      },
+      {
+        character: "B",
+        dialogue: "そうなんだ。",
+      },
+      {
+        character: "A",
+        dialogue: "<確{たし}かに>間違えたのは<申{もう}し訳{わけ}ない>けど・・・もうちょっと優{やさ}しく断{ことわ}ってほしかったよ。",
+      },
+      {
+        character: "B",
+        dialogue: "きっと今ごろその男の人も<反{はん}省{せい}して>いるよ。",
+      }
+    ],
+    rubyWords: [
+      {
+        kanji: "白{しら}髪{が}",
+        english: "Gray hair",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "空{あ}き",
+        english: "Vacancy・Empty",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "譲{ゆず}る",
+        english: "To yield・To give way",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+      {
+        kanji: "確{たし}かに",
+        english: "Certainly・Surely",
+        type: MiniStoryWordType.ADVERB
+      },
+      {
+        kanji: "申{もう}し訳{わけ}ない",
+        english: "I'm sorry・unforgivable",
+        type: MiniStoryWordType.ADJECTIVE_I
+      },
+      {
+        kanji: "反{はん}省{せい}［する］",
+        english: "Reflection・To reflect",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+    ],
+    translation: `A: On today's train, a man with all gray hair came on board. There were no vacant seats, and when I tried to give him my seat, he got mad at me, saying he was still young.\nB: Is that so?\nA: I'm sorry I made a mistake, but... I wanted him to decline it a little more gently.\nB: I'm sure the man is also reflecting on it right now.`,
+    audio: "T348.mp3",
+    topic: MiniStoryTopics.MANNERS,
+    page: 244,
+  },
+  "349": {
+    id: "349",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "昨日駅のホームで、<ものすごい>大きな声で<しゃべる>グループがいたんだよ。",
+      },
+      {
+        character: "B",
+        dialogue: "そうなんだ。",
+      },
+      {
+        character: "A",
+        dialogue: "ホームの真{ま}ん中{なか}で<バッグ>の荷物を<広{ひろ}げて>、注意されても<どかない>し。電車に乗った後{あと}は広{ひろ}い<シート>を全部使っちゃうし。",
+      },
+      {
+        character: "B",
+        dialogue: "それは困{こま}るね。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "ものすごい",
+        english: "Incredible・Amazing",
+        type: MiniStoryWordType.ADJECTIVE_I
+      },
+      {
+        kanji: "しゃべる",
+        english: "To talk・To chat",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE
+      },
+      {
+        kanji: "バッグ",
+        english: "Baggage・Bag",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "広{ひろ}げる",
+        english: "To spread・To expand",
+        type: MiniStoryWordType.ICHIDAN_TRANSITIVE
+      },
+      {
+        kanji: "広{ひろ}がる",
+        english: "To spread・To expand",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE
+      },
+      {
+        kanji: "どく",
+        english: "To move・Get out of the way",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE
+      },
+      {
+        kanji: "シート",
+        english: "Seat",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: " シートベルト",
+        english: "Seat belt",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `A: Yesterday on the platform of the station, there was a group of people who talked really loudly.\nB: Oh really?\nA: They spread their baggage out in the middle of the platform and didn't move even after being warned. After getting on the train, they used all of the wide seats.\nB: That's a problem.`,
+    audio: "T349.mp3",
+    topic: MiniStoryTopics.MANNERS,
+    page: 245,
   },
 };
