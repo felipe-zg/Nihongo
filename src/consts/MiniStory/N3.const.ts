@@ -16,6 +16,7 @@ export const MiniStoryTopics = {
   SCHOOL: "学校",
   HEALTH: "健康",
   MANNERS: "マナー",
+  SOCIETY: "社会",
 } as const;
 
 // type MiniStoryTopic = typeof MiniStoryTopics[keyof typeof MiniStoryTopics];
@@ -15031,5 +15032,1118 @@ export const MINI_STORY_N3: Record<string, MiniStory> = {
     audio: "T349.mp3",
     topic: MiniStoryTopics.MANNERS,
     page: 245,
+  },
+  "350": {
+    id: "350",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<昨{さく}夜{や}>、酔{よ}った人がけんかをして、相手を<刺{さ}して>しまったそうだ。すぐに<警{けい}官{かん}>が来て、<逮{たい}捕{ほ}された>。酔{よ}った人の迷{めい}惑{わく}な行{こう}動{どう}をどうやって<防{ぼう}止{し}する>か、考えなければならない。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "昨{さく}夜{や} ",
+        english: "Last night",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.ADVERB]
+      },
+      {
+        kanji: "昨{さく}晚{ばん}",
+        english: "Last night",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.ADVERB]
+      },
+      {
+        kanji: "刺{さ}す",
+        english: "To stab",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+      {
+        kanji: "刺{さ}さる",
+        english: "To be stabbed",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE
+      },
+      {
+        kanji: "警{けい}官{かん}・警{けい}察{さつ}官{かん}",
+        english: "Police officer",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "警{けい}察{さつ}署{しょ}",
+        english: "Police station",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "逮{たい}捕{ほ}［する］",
+        english: "Arrest・To arrest",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "防{ぼう}止{し}［する］",
+        english: "Prevention・To prevent",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+    ],
+    translation: `Last night, a drunken man quarreled with someone and stabbed him. A policeman came right away and he was arrested. We have to think about how to prevent the annoying behavior of drunk people.`,
+    audio: "T350.mp3",
+    topic: MiniStoryTopics.MANNERS,
+    page: 246,
+  },
+  "351": {
+    id: "351",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<大{だい}>都{と}会{かい}東{とう}京{きょう}の地{ち}下{か}鉄{てつ}はとても<複{ふく}雑{ざつ}だ>。一つの駅に<改{かい}札{さつ}>も出口もたくさんある。<がらがらな>電車はほとんど見たことがない。かばんに資{し}料{りょう}や本を<詰{つ}め込{こ}んだ>サラリーマンや学生が、いつもたくさん乗っている。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "大{だい}～",
+        english: "Big〜・Large〜",
+        type: MiniStoryWordType.PREFIX
+      },
+      {
+        kanji: "複{ふく}雑{ざつ}な",
+        english: "Complicated・Complex",
+        type: MiniStoryWordType.ADJECTIVE_NA
+      },
+      {
+        kanji: "改{かい}札{さつ}",
+        english: "Ticket gate",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "がらがらな",
+        english: "Empty・Uncrowded・vacant",
+        type: MiniStoryWordType.ADJECTIVE_NA
+      },
+      {
+        kanji: "詰{つ}め込{こ}む",
+        english: "To pack・To cram",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+      {
+        kanji: "詰{つ}める",
+        english: "To pack・To cram",
+        type: MiniStoryWordType.ICHIDAN_TRANSITIVE
+      },
+      {
+        kanji: "詰{つ}め替{か}え",
+        english: "Refill・Repackaging",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `The subway in the big city of Tokyo is very complicated. There are many ticket gates and exits at one station. I have hardly seen a rattle train. There are always a lot of office workers and students who pack materials and books in their bags.`,
+    audio: "T351.mp3",
+    topic: MiniStoryTopics.MANNERS,
+    page: 246,
+  },
+  "352": {
+    id: "352",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "日本では、20歳より若い人がお酒を飲むことは<法{ほう}律{りつ}>で<禁{きん}止{し}されて>います。<違{い}反{はん}したら>、お金を払わなければなりません。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "法{ほう}律{りつ}",
+        english: "Law",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "禁{きん}止{し}［する］",
+        english: "Prohibition・To prohibit",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "違{い}反{はん}［する］",
+        english: "Violation・To violate",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+    ],
+    translation: `In Japan, it is prohibited by law for people younger than 20 to drink alcohol. If you violate it, fines will be imposed.`,
+    audio: "T352.mp3",
+    topic: MiniStoryTopics.MANNERS,
+    page: 247,
+  },
+  "353": {
+    id: "353",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "今日図{と}書{しょ}館{かん}で、<イヤホン>で音楽を聞いている人がいたんだけど、大きな音が漏{も}れていて、とても<気{き}になった>よ。",
+      },
+      {
+        character: "B",
+        dialogue: "図{と}書{しょ}館{かん}や美{び}術{じゅつ}館{かん}のような<しいんと>した場所や<交{こう}通{つう}機{き}関{かん}>では、そういう人は<目{め}立{だ}つ>ね。音に気をつけてほしいね。",
+      },
+      {
+        character: "A",
+        dialogue: "うん。携{けい}帯{たい}電{でん}話{わ}も<マナーモード>にしてほしいよ。",
+      }
+    ],
+    rubyWords: [
+      {
+        kanji: "イヤホン",
+        english: "Earphones",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "ヘッドホン",
+        english: "Headphones",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "気になる",
+        english: "To be worried about・To be concerned about",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE
+      },
+      {
+        kanji: "しいんと",
+        english: "Silently・Quietly",
+        type: MiniStoryWordType.ADVERB
+      },
+      {
+        kanji: "交{こう}通{つう}機{き}関{かん}",
+        english: "Transportation system",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "目{め}立{だ}つ",
+        english: "To stand out",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE
+      },
+      {
+        kanji: "マナーモード",
+        english: "Silent mode",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `A: There was a person listening to music with earphones in the library today, but I was very worried because there was a loud noise.\nB: Such people stand out in silent places such as libraries and museums and on transportation. I wish they'd be mindful of the noise.\nA: Yeah. I wish they'd set their mobile phone to silent mode.`,
+    audio: "T353.mp3",
+    topic: MiniStoryTopics.MANNERS,
+    page: 248,
+  },
+  "354": {
+    id: "354",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "現{げん}在{ざい}小{しょう}学{がく}生{せい}くらいの<年{ねん}齢{れい}>の子供が<成{せい}人{じん}する><頃{ころ}>には、日本の<経{けい}済{ざい}>や<産{さん}業{ぎょう}>は今よりも<縮{しゅく}小{しょう}して>いるだろう。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "年{ねん}齢{れい}",
+        english: "Age",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "成{せい}人{じん}［する］",
+        english: "Adulthood・To become an adult",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+      {
+        kanji: "成{せい}人{じん}式{しき}",
+        english: "Coming-of-age ceremony",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "頃{ころ}",
+        english: "Around (a time)",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "経{けい}済{ざい}",
+        english: "Economy",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "経{けい}済{ざい}的{てき}",
+        english: "Economic",
+        type: MiniStoryWordType.ADJECTIVE_NA
+      },
+      {
+        kanji: "産{さん}業{ぎょう}",
+        english: "Industry",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "縮{しゅく}小{しょう}［する］",
+        english: "Shrinkage・To shrink",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+    ],
+    translation: `By the time the children who are currently of elementary school age grow up, Japan's economy and industry will be smaller than they are now.`,
+    audio: "T354.mp3",
+    topic: MiniStoryTopics.SOCIETY,
+    page: 250,
+  },
+  "355": {
+    id: "355",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "以{い}前{ぜん}と比{くら}べ、<長{なが}生{い}きする><高{こう}齢{れい}者{しゃ}>の<割{わり}合{あい}>が<低{てい}下{か}>している。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "長{なが}生{い}き［する］",
+        english: "Longevity・To live long",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+      {
+        kanji: "高{こう}齢{れい}者{しゃ}",
+        english: "Elderly person・Senior citizen",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "高{こう}齢{れい}化{か}［する］",
+        english: "Aging・To get old",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+      {
+        kanji: "割{わり}合{あい}",
+        english: "Proportion・Ratio",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "低{てい}下{か}［する］",
+        english: "Decline・To decline",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+    ],
+    translation: `The percentage of elderly people who live longer is decreasing compared to that of the past.`,
+    audio: "T355.mp3",
+    topic: MiniStoryTopics.SOCIETY,
+    page: 250,
+  },
+  "356": {
+    id: "356",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<消{しょう}費{ひ}税{ぜい}>の増{ぞう}<税{ぜい}>など、<税{ぜい}金{きん}><制{せい}度{ど}>は<非{ひ}常{じょう}に><緩{ゆる}やかで>はあるが、<変{へん}化{か}して>いる。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "消{しょう}費{ひ}税{ぜい}",
+        english: "Consumption tax",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "消{しょう}費{ひ}［する］",
+        english: "Consumption・To consume",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "～税{ぜい}",
+        english: "～Tax",
+        type: MiniStoryWordType.SUFFIX
+      },
+      {
+        kanji: "税{ぜい}金{きん}",
+        english: "Tax",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "制{せい}度{ど}",
+        english: "System",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "非{ひ}常{じょう}に",
+        english: "Very・Extremely",
+        type: MiniStoryWordType.ADVERB
+      },
+      {
+        kanji: "緩{ゆる}やかな",
+        english: "Gentle・Slow・Calm",
+        type: MiniStoryWordType.ADJECTIVE_NA
+      },
+      {
+        kanji: "変{へん}化{か}［する］",
+        english: "Change・To change",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+    ],
+    translation: `The tax system is changing, albeit very slowly, such as the consumption tax hike.`,
+    audio: "T356.mp3",
+    topic: MiniStoryTopics.SOCIETY,
+    page: 251,
+  },
+  "357": {
+    id: "357",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<一{いち}部{ぶ}>を除{のぞ}き、<以{い}前{ぜん}>より、<現{げん}在{ざい}>の<住{す}まい>に<満{まん}足{ぞく}して>いる人が多{おお}い。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "一{いち}部{ぶ}",
+        english: "Some・One part",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.ADVERB]
+      },
+      {
+        kanji: "以{い}前{ぜん}",
+        english: "Before・Previously",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.ADVERB]
+      },
+      {
+        kanji: "現{げん}在{ざい}",
+        english: "Present・Current",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.ADVERB]
+      },
+      {
+        kanji: "住{す}まい",
+        english: "Residence・Home",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "満{まん}足{ぞく}［する］",
+        english: "Satisfaction・To be satisfied",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE]
+      },
+    ],
+    translation: `Except for some, more people are more satisfied with their current home than the one before.`,
+    audio: "T357.mp3",
+    topic: MiniStoryTopics.SOCIETY,
+    page: 251,
+  },
+  "358": {
+    id: "358",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<現{げん}代{だい}>は<平{へい}和{わ}に>なった。<だが>、前{まえ}より<不{ふ}幸{こう}に>なったと<感{かん}じて>いる<お年{とし}寄{よ}り>が<恐{おそ}らく>いるだろう。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "現{げん}代{だい}",
+        english: "Modern times・Present age",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "現{げん}代{だい}的{てき}な",
+        english: "Modern・Contemporary",
+        type: MiniStoryWordType.ADJECTIVE_NA
+      },
+      {
+        kanji: "平{へい}和{わ}な",
+        english: "Peaceful",
+        type: MiniStoryWordType.ADJECTIVE_NA
+      },
+      {
+        kanji: "だが",
+        english: "However・But",
+        type: MiniStoryWordType.CONJUNCTION
+      },
+      {
+        kanji: "不{ふ}幸{こう}な",
+        english: "Unhappy・Unfortunate",
+        type: MiniStoryWordType.ADJECTIVE_NA
+      },
+      {
+        kanji: "感{かん}じる",
+        english: "To feel",
+        type: MiniStoryWordType.ICHIDAN_TRANSITIVE
+      },
+      {
+        kanji: "（お）年{とし}寄{よ}り",
+        english: "Elderly person",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "恐{おそ}らく",
+        english: "Probably",
+        type: MiniStoryWordType.ADVERB
+      },
+    ],
+    translation: `The present age has become peaceful. However, there are probably older people who feel more unhappy than before.`,
+    audio: "T358.mp3",
+    topic: MiniStoryTopics.SOCIETY,
+    page: 252,
+  },
+  "359": {
+    id: "359",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<首{しゅ}相{しょう}>は、「<国{こく}民{みん}>は<例{れい}外{がい}>なく<幸{こう}福{ふく}に>なる<権{けん}利{り}>がある」と<考{かんが}え>を述{の}べた。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "首{しゅ}相{しょう}",
+        english: "Prime Minister",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "国{こく}民{みん}",
+        english: "Citizen・National",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "市{し}民{みん}",
+        english: "Citizen・City dweller",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "例{れい}外{がい}",
+        english: "Exception・Exclusion",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "幸{こう}福{ふく}な",
+        english: "Happy・Fortunate",
+        type: MiniStoryWordType.ADJECTIVE_NA
+      },
+      {
+        kanji: "権{けん}利{り}",
+        english: "Right・Entitlement",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "考{かんが}え",
+        english: "Thought・Consideration",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `The prime minister said, "People have the right to happiness without exception".`,
+    audio: "T359.mp3",
+    topic: MiniStoryTopics.SOCIETY,
+    page: 252,
+  },
+  "360": {
+    id: "360",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<先{せん}日{じつ}>、<選{せん}挙{きょ}>があった。<若{わか}者{もの}>の<投{とう}票{ひょう}>率{りつ}は<毎{まい}>回{かい}下{さ}がっている。<解{かい}決{けつ}><法{ほう}>を考{かんが}えるべきだ。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "先{せん}日{じつ}",
+        english: "The other day",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.ADVERB]
+      },
+      {
+        kanji: "選{せん}挙{きょ}［する］",
+        english: "Election・To elect",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+      {
+        kanji: "若{わか}者{もの}",
+        english: "Young people・Youth",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "投{とう}票{ひょう}［する］",
+        english: "Voting・To vote",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE]
+      },
+      {
+        kanji: "票{ひょう}",
+        english: "Vote",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "每{まい}～",
+        english: "Every〜",
+        type: MiniStoryWordType.PREFIX
+      },
+      {
+        kanji: "解{かい}決{けつ}［する］",
+        english: "Solution・To solve",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE]
+      },
+      {
+        kanji: "〜法{ほう}",
+        english: "〜method",
+        type: MiniStoryWordType.SUFFIX
+      },
+    ],
+    translation: `There was an election the other day. Youth turnout is declining every time. We should think of a solution.`,
+    audio: "T360.mp3",
+    topic: MiniStoryTopics.SOCIETY,
+    page: 253,
+  },
+  "361": {
+    id: "361",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<政{せい}府{ふ}>は、<政{せい}治{じ}家{か}>と<青{せい}年{ねん}>が<交{こう}流{りゅう}できる><チャンス>をつくろうとしたが、<結{けっ}局{きょく}>良{よ}い<アイディア>が出{で}なかった。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "政{せい}府{ふ}",
+        english: "Government",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "政{せい}治{じ}家{か}",
+        english: "Politician",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "政{せい}治{じ}",
+        english: "Politics",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "青{せい}年{ねん}",
+        english: "Youth・Adolescence",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "交{こう}流{りゅう}［する］",
+        english: "Interaction・To interact",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE]
+      },
+      {
+        kanji: "チャンス",
+        english: "Chance・Opportunity",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "結{けっ}局{きょく}",
+        english: "After all・Eventually",
+        type: MiniStoryWordType.ADVERB
+      },
+      {
+        kanji: "アイディア・アイデア",
+        english: "Idea",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `The government tried to create opportunities for politicians and adolescents to interact, but in the end it didn't come up with a good idea.`,
+    audio: "T361.mp3",
+    topic: MiniStoryTopics.SOCIETY,
+    page: 254,
+  },
+  "362": {
+    id: "362",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<数{かぞ}えられない>ほど試{し}験{けん}を受{う}け、<なんとか><運{うん}転{てん}免{めん}許{きょ}証{しょう}>をとることができた。友達は<とっくに>とっているので、一人で<お祝{いわ}いしよう>。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "数{かぞ}える",
+        english: "To count",
+        type: MiniStoryWordType.ICHIDAN_TRANSITIVE
+      },
+      {
+        kanji: "なんとか",
+        english: "Somehow",
+        type: MiniStoryWordType.ADVERB
+      },
+      {
+        kanji: "運{うん}転{てん}免{めん}許{きょ}証{しょう}",
+        english: "Driver's license",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "とっくに",
+        english: "Already・Long ago",
+        type: MiniStoryWordType.ADVERB
+      },
+      {
+        kanji: "お祝{いわ}いする",
+        english: "To celebrate",
+        type: MiniStoryWordType.IRREGULAR_TRANSITIVE
+      },
+      {
+        kanji: "祝{いわ}う",
+        english: "To celebrate",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+    ],
+    translation: `I took countless tests and managed to get a driver's license. My friends had already gotten theirs long ago, so I'll celebrate alone.`,
+    audio: "T362.mp3",
+    topic: MiniStoryTopics.SOCIETY,
+    page: 254,
+  },
+  "363": {
+    id: "363",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "最近は生活のための<費{ひ}用{よう}>を<削{けず}って>いる。<なぜなら>、<奨{しょう}学{がく}金{きん}>が減{へ}る<一{いっ}方{ぽう}>で、<学{がく}費{ひ}>は高{たか}くなっているからだ。<仕{し}方{かた}がない>が、<貧{びん}乏{ぼう}な>学生にはつらい。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "費{ひ}用{よう}",
+        english: "Cost・Expense",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "削{けず}る",
+        english: "To cut down・To reduce",
+        type: MiniStoryWordType.IRREGULAR_TRANSITIVE
+      },
+      {
+        kanji: "なぜなら",
+        english: "Because",
+        type: MiniStoryWordType.CONJUNCTION
+      },
+      {
+        kanji: "奨{しょう}学{がく}金{きん}",
+        english: "Scholarship",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "一{いっ}方{ぽう}",
+        english: "On the other hand",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "学{がく}費{ひ}",
+        english: "Tuition fees",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "仕{し}方{かた}（が）ない",
+        english: "It can't be helped",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "貧{びん}乏{ぼう}な",
+        english: "Poor",
+        type: MiniStoryWordType.ADJECTIVE_NA
+      },
+    ],
+    translation: `Recently, I've been cutting costs for living. This is because scholarships are decreasing, while tuition fees are increasing. It can't be helped, but it's hard for poor students.`,
+    audio: "T363.mp3",
+    topic: MiniStoryTopics.SOCIETY,
+    page: 255,
+  },
+  "364": {
+    id: "364",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<講{こう}演{えん}会{かい}>を聞いた<後{のち}>に、<エコロジー>に<関{かん}心{しん}>を持{も}つようになった。私たち<一{ひ}人{とり}一{ひ}人{とり}>の<行{かん}動{どう}>が結{けっ}果{か}に<現{あらわ}れる>のだ。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "講{こう}演{えん}会{かい}",
+        english: "Lecture",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "講{こう}演{えん}［する］",
+        english: "Lecture・To give a lecture",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "後{のち}",
+        english: "Later",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.ADVERB]
+      },
+      {
+        kanji: "エコロジー",
+        english: "Ecology",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "関{かん}心{しん}",
+        english: "Concern・Interest",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "一{ひ}人{とり}一{ひ}人{とり}",
+        english: "Each person・One by one",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.ADVERB]
+      },
+      {
+        kanji: "行{かん}動{どう}［する］",
+        english: "Action・Behavior・To act",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+      {
+        kanji: "現{あらわ}れる",
+        english: "To appear",
+        type: MiniStoryWordType.ICHIDAN_INTRANSITIVE
+      },
+    ],
+    translation: `After listening to the lecture, I became interested in ecology. The actions of each of us are reflected in the results.`,
+    audio: "T364.mp3",
+    topic: MiniStoryTopics.SOCIETY,
+    page: 256,
+  },
+  "365": {
+    id: "365",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "グループで話し合ってみたところ、<子{こ}育{そだ}て>をしやすくするために<最{もっと}も>必要なことは、<保{ほ}育{いく}園{えん}>の<数{かず}>を<増{ふ}やす>ことだという<結{けつ}論{ろん}>になった。<明{あか}るい><未{み}来{らい}>になってほしい。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "子{こ}育{そだ}て",
+        english: "Raising children",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "最{もっと}も",
+        english: "Most",
+        type: MiniStoryWordType.ADVERB
+      },
+      {
+        kanji: "保{ほ}育{いく}園{えん}",
+        english: "Nursery",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "数{かず}",
+        english: "Number",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "増{ふ}やす",
+        english: "To increase",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+      {
+        kanji: "結{けつ}論{ろん}",
+        english: "Conclusion",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "明{あか}るい",
+        english: "Bright",
+        type: MiniStoryWordType.ADJECTIVE_I
+      },
+      {
+        kanji: "未{み}来{らい}",
+        english: "Future",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `After trying to discuss things as a group, it was concluded that the most important thing to make it easier to raise children is to increase the number of nurseries. We want them to have a bright future.`,
+    audio: "T365.mp3",
+    topic: MiniStoryTopics.SOCIETY,
+    page: 256,
+  },
+  "366": {
+    id: "366",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<グラフ>から分かるように、<老{ろう}人{じん}ホーム>の<建{けん}設{せつ}><数{すう}>は<確{かく}実{じつ}に><増{ぞう}加{か}>している。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "グラフ",
+        english: "Graph",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "老{ろう}人{じん}ホーム",
+        english: "Nursing home",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "老{ろう}人{じん}",
+        english: "Elderly person",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "建{けん}設{せつ}［する］",
+        english: "Construction・To construct",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE]
+      },
+      {
+        kanji: "～数{すう}",
+        english: "Number of ~",
+        type: MiniStoryWordType.SUFFIX
+      },
+      {
+        kanji: "確{かく}実{じつ}な",
+        english: "Certain・Reliable",
+        type: MiniStoryWordType.ADJECTIVE_NA
+      },
+      {
+        kanji: "増{ぞう}加{か}［する］",
+        english: "Increase・To increase",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE]
+      },
+      {
+        kanji: "減{げん}少{しょう}［する］",
+        english: "Decrease・To decrease",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE]
+      },
+    ],
+    translation: `As you can see from the graph, the number of elderly homes built is steadily increasing.`,
+    audio: "T366.mp3",
+    topic: MiniStoryTopics.SOCIETY,
+    page: 257,
+  },
+  "367": {
+    id: "367",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "最近、<通{つう}訳{やく}><ロボット>の<話{わ}題{だい}>がニュースで取{と}り上{あ}げられている。21<世{せい}紀{き}>は科{か}学{がく}が<進{しん}歩{ぽ}し>、<ますます>使{し}用{よう}が<拡{かく}大{だい}される>だろう。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "通{つう}訳{やく}［する］",
+        english: "Interpretation・To interpret",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE]
+      },
+      {
+        kanji: "ロボット",
+        english: "Robot",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "話{わ}題{だい}",
+        english: "Topic",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "～世{せい}紀{き}",
+        english: "〜century",
+        type: MiniStoryWordType.SUFFIX
+      },
+      {
+        kanji: "進{しん}歩{ぽ}［する］",
+        english: "Progress・To progress",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE]
+      },
+      {
+        kanji: "ますます",
+        english: "More and more",
+        type: MiniStoryWordType.ADVERB
+      },
+      {
+        kanji: "拡{かく}大{だい}［する］",
+        english: "Expansion・To expand",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE]
+      },
+    ],
+    translation: `Recently, the topic of interpreting robots has been in the news. In the 21st century, science will advance and its use will increase.`,
+    audio: "T367.mp3",
+    topic: MiniStoryTopics.SOCIETY,
+    page: 258,
+  },
+  "368": {
+    id: "368",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<今{こん}回{かい}>の<報{ほう}告{こく}>で、車の<生{せい}産{さん}>が<無{む}期{き}限{げん}>で休{きゅう}止{し}されることが分かった。会社の<トップ>が<無{む}責{せき}任{にん}な><決{けっ}定{てい}>をしたためだ。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "今{こん}回{かい}",
+        english: "This time",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.ADVERB]
+      },
+      {
+        kanji: "報{ほう}告{こく}［する］",
+        english: "Report・To report",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE]
+      },
+      {
+        kanji: "生{せい}産{さん}［する］",
+        english: "Production・To produce",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE]
+      },
+      {
+        kanji: "無{む}～",
+        english: "No〜・Non-〜",
+        type: MiniStoryWordType.PREFIX
+      },
+      {
+        kanji: "期{き}限{げん}",
+        english: "Deadline・Time limit",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "トップ",
+        english: "Top",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "無{む}責{せき}任{にん}な",
+        english: "Irresponsible",
+        type: MiniStoryWordType.ADJECTIVE_NA
+      },
+      {
+        kanji: "決{けっ}定{てい}［する］",
+        english: "Decision・To decide",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE]
+      },
+    ],
+    translation: `From this report, we learned that car production will be suspended indefinitely. This is because the company's upper management made irresponsible decisions.`,
+    audio: "T368.mp3",
+    topic: MiniStoryTopics.SOCIETY,
+    page: 258,
+  },
+  "369": {
+    id: "369",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<表{ひょう}>から分かるように、<石{せき}油{ゆ}>、<石{せき}炭{たん}>、<その他{た}>の<資{し}源{げん}>は<減{へ}り>続{つづ}けている。<いつまでも>あるわけではないのだ。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "表{ひょう}",
+        english: "Table・Chart",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "石{せき}油{ゆ}",
+        english: "Oil",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "石{せき}炭{たん}",
+        english: "Coal",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "その他{た}",
+        english: "Other",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "資{し}源{げん}",
+        english: "Resources",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "資{し}源{げん}ごみ",
+        english: "Recyclable waste",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "減{へ}る",
+        english: "To decrease",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE
+      },
+      {
+        kanji: "いつまでも",
+        english: "Forever",
+        type: MiniStoryWordType.ADVERB
+      },
+    ],
+    translation: `As you can see from the table, oil, coal and other resources continue to decline. It doesn't last forever.`,
+    audio: "T369.mp3",
+    topic: MiniStoryTopics.SOCIETY,
+    page: 259,
+  },
+  "370": {
+    id: "370",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "まず、このモニターの丸{まる}の中{なか}に、<ぴったりと>顔{かお}の位{い}置{ち}を合{あ}わせて、体{たい}温{おん}を測{はか}ってください。次{つぎ}に、こちらの用{よう}紙{し}に健{けん}康{こう}<状{じょう}態{たい}>を<記{き}入{にゅう}して>いただきます。書{か}き方{かた}は、<例{れい}>の<図{ず}>をご覧{らん}ください。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "ぴったり（と）",
+        english: "Percisely・Exactly",
+        type: MiniStoryWordType.ADVERB
+      },
+      {
+        kanji: "状{じょう}態{たい}",
+        english: "Condition・Status",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "記{き}入{にゅう}［する］",
+        english: "Filling out・To fill out",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE]
+      },
+      {
+        kanji: "例{れい}",
+        english: "Example",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "図{ず}",
+        english: "Figure・Diagram・Chart",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `First, please position your face in the center of the circle on the monitor and take your temperature. Next, please write your health condition on this form. Please reference the example chart for instructions on how to fill it out.`,
+    audio: "T370.mp3",
+    topic: MiniStoryTopics.SOCIETY,
+    page: 260,
+  },
+  "371": {
+    id: "371",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "この道は夜になると<真{ま}っ暗{くら}だ>が、<残{ざん}業{ぎょう}>帰{がえ}りの人がよく通{とお}っていた。しかし、この前{まえ}ニュースで<取{と}り上{あ}げられた>ように、<事{じ}件{けん}>が<起{お}こった>。それ<以{い}後{ご}>、人{ひと}通{どお}りがなくなった。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "真{ま}っ暗{くら}な",
+        english: "Pitch black・Completely dark",
+        type: MiniStoryWordType.ADJECTIVE_NA
+      },
+      {
+        kanji: "残{ざん}業{ぎょう}［する］",
+        english: "Overtime・To work overtime",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE]
+      },
+      {
+        kanji: "取{と}り上{あ}げる",
+        english: "To take up・To pick up",
+        type: MiniStoryWordType.ICHIDAN_TRANSITIVE
+      },
+      {
+        kanji: "事{じ}件{けん}",
+        english: "Incident",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "事{じ}件{けん}現{げん}場{ば}",
+        english: "Crime scene・Scene of the incident",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "起{お}こる",
+        english: "To occur・To happen",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE
+      },
+      {
+        kanji: "以{い}後{ご}",
+        english: "Thereafter",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `This road was pitch black at night, but people returning from overtime often used to go there. However, as mentioned in the news the other day, an incident happened. Since then, the traffic has disappeared.`,
+    audio: "T371.mp3",
+    topic: MiniStoryTopics.SOCIETY,
+    page: 260,
   },
 };
