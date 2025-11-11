@@ -1,4 +1,4 @@
-// pages 14 - 229 of Mini Story N3
+// pages 14 - 260 of Mini Story N3
 export const N3_IMPORTANT_WORDS: { kanji: string; english: string }[] = [
   {
     kanji: "快{かい}復{ふく}・回{かい}復{ふく}",
@@ -4871,5 +4871,929 @@ export const N3_IMPORTANT_WORDS: { kanji: string; english: string }[] = [
   {
     kanji: "感{かん}染{せん}［する］",
     english: "Infection・to be infected"
+  },
+  {
+    kanji: "心{しん}臓{ぞう}",
+    english: "Heart"
+  },
+  {
+    kanji: "～病{びょう}",
+    english: "Disease"
+  },
+  {
+    kanji: "休{きゅう}業{ぎょう}［する］",
+    english: "Closure・to close (a business)"
+  },
+  {
+    kanji: "手{しゅ}術{じゅつ}［する］",
+    english: "Surgery・to perform surgery"
+  },
+  {
+    kanji: "症{しょう}状{じょう}",
+    english: "Symptoms"
+  },
+  {
+    kanji: "健{けん}康{こう}な",
+    english: "Healthy"
+  },
+  {
+    kanji: "產{さん}婦{ふ}人{じん}科{か}",
+    english: "Obstetrics and gynecology"
+  },
+  {
+    kanji: "看{かん}護{ご}師{し}",
+    english: "Nurse"
+  },
+  {
+    kanji: "腰{こし}掛{か}ける",
+    english: "To sit down"
+  },
+  {
+    kanji: "胸{むね}",
+    english: "Chest"
+  },
+  {
+    kanji: "胃{い}",
+    english: "Stomach"
+  },
+  {
+    kanji: "おいでになる",
+    english: "To come (honorific)・to visit"
+  },
+  {
+    kanji: "診{しん}察{さつ}［する］",
+    english: "Examination・to examine"
+  },
+  {
+    kanji: "診{しん}察{さつ}券{けん}",
+    english: "Patient registration card"
+  },
+  {
+    kanji: "発{はっ}生{せい}［する］",
+    english: "Occurrence・to occur"
+  },
+  {
+    kanji: "出{しゅっ}血{けつ}［する］",
+    english: "Bleeding・to bleed"
+  },
+  {
+    kanji: "骨{こっ}折{せつ}［する］",
+    english: "Fracture・to fracture"
+  },
+  {
+    kanji: "しびれる",
+    english: "To become numb"
+  },
+  {
+    kanji: "外{げ}科{か}",
+    english: "Surgery"
+  },
+  {
+    kanji: "神{しん}経{けい}",
+    english: "Nerve・Nervous system"
+  },
+  {
+    kanji: "内{ない}科{か}",
+    english: "Internal medicine"
+  },
+  {
+    kanji: "受{じゅ}診{しん}［する］",
+    english: "Medical examination・to receive medical examination"
+  },
+  {
+    kanji: "不{ふ}思{じ}議{ぎ}な",
+    english: "Strange・Incomprehensible・Mysterious"
+  },
+  {
+    kanji: "予{よ}防{ぼう}［する］",
+    english: "Prevention・to prevent"
+  },
+  {
+    kanji: "うがい［する］",
+    english: "Gargling・to gargle"
+  },
+  {
+    kanji: "喫{さつ}煙{えん}［する］",
+    english: "Smoking・to smoke"
+  },
+  {
+    kanji: "禁{きん}煙{えん}［する］",
+    english: "Non-smoking・to refrain from smoking"
+  },
+  {
+    kanji: "血{けつ}圧{あつ}",
+    english: "Blood pressure"
+  },
+  {
+    kanji: "効{き}く",
+    english: "To be effective"
+  },
+  {
+    kanji: "効{き}きめ",
+    english: "Effect・Efficacy"
+  },
+  {
+    kanji: "傷{きず}",
+    english: "Wound・Injury・cut・scratch"
+  },
+  {
+    kanji: "消{しょう}毒{どく}［する］",
+    english: "Disinfection・to disinfect"
+  },
+  {
+    kanji: "皮{ひ}膚{ふ}",
+    english: "Skin"
+  },
+  {
+    kanji: "腫{は}れる",
+    english: "To swell"
+  },
+  {
+    kanji: "かく",
+    english: "To scratch"
+  },
+  {
+    kanji: "医{い}院{いん}",
+    english: "Clinic"
+  },
+  {
+    kanji: "医{い}師{し}",
+    english: "Doctor"
+  },
+  {
+    kanji: "診{み}る",
+    english: "To examine"
+  },
+  {
+    kanji: "めったに",
+    english: "Rarely"
+  },
+  {
+    kanji: "腹{ふく}痛{つう}",
+    english: "Abdominal pain・Stomachache"
+  },
+  {
+    kanji: "下{げ}痢{り}［する］",
+    english: "Diarrhea・to have diarrhea"
+  },
+  {
+    kanji: "吐{は}く",
+    english: "To vomit"
+  },
+  {
+    kanji: "血{けつ}液{えき}",
+    english: "Blood"
+  },
+  {
+    kanji: "血{けつ}液{えき}型{がた}",
+    english: "Blood type"
+  },
+  {
+    kanji: "検{けん}査{さ}［する］",
+    english: "Examination・Inspection・to examine・to inspect"
+  },
+  {
+    kanji: "検{けん}査{さ}入{にゅう}院{いん}",
+    english: "Admission for examination"
+  },
+  {
+    kanji: "患{かん}者{じゃ}",
+    english: "Patient"
+  },
+  {
+    kanji: "体{たい}重{じゅう}",
+    english: "Body weight"
+  },
+  {
+    kanji: "注{ちゅう}射{しゃ}［する］",
+    english: "Injection・to give a shot"
+  },
+  {
+    kanji: "満{まん}員{いん}",
+    english: "Full (of people)"
+  },
+  {
+    kanji: "リュック（サック）",
+    english: "Backpack"
+  },
+  {
+    kanji: "迷{めい}惑{わく}［する］",
+    english: "Nuisance・annoyance・to be a nuisance"
+  },
+  {
+    kanji: "幅{はば}",
+    english: "Width"
+  },
+  {
+    kanji: "横{おう}断{だん}歩{ほ}道{どう}",
+    english: "Pedestrian crossing"
+  },
+  {
+    kanji: "そこで",
+    english: "Therefore・So"
+  },
+  {
+    kanji: "調{ちょう}査{さ}［する］",
+    english: "Investigation・To investigate"
+  },
+  {
+    kanji: "空{あ}きびん",
+    english: "Empty bottle"
+  },
+  {
+    kanji: "空{あ}き缶{かん}",
+    english: "Empty can"
+  },
+  {
+    kanji: "分{わ}ける",
+    english: "To divide・to separate"
+  },
+  {
+    kanji: "挟{はさ}む",
+    english: "To insert・to put between"
+  },
+  {
+    kanji: "挟{はさ}まる",
+    english: "To be caught in"
+  },
+  {
+    kanji: "積{せっ}極{きょく}的{てき}な",
+    english: "Proactive・Active"
+  },
+  {
+    kanji: "消{しょう}極{きょく}的{てき}な",
+    english: "Passive・Unenthusiastic"
+  },
+  {
+    kanji: "環{かん}境{きょう}",
+    english: "Environment"
+  },
+  {
+    kanji: "環{かん}境{きょう}問{もん}題{だい}",
+    english: "Environmental issues"
+  },
+  {
+    kanji: "面{めん}倒{どう}な",
+    english: "Bothersome・Troublesome"
+  },
+  {
+    kanji: "当{とう}然{ぜん}",
+    english: "Of course・Naturally"
+  },
+  {
+    kanji: "宗{しゅう}教{きょう}",
+    english: "Religion"
+  },
+  {
+    kanji: "決{き}まり",
+    english: "Decision・Rule"
+  },
+  {
+    kanji: "許{ゆる}す",
+    english: "To allow・To forgive"
+  },
+  {
+    kanji: "奥{おく}",
+    english: "Back・Inner part"
+  },
+  {
+    kanji: "煙{けむり}",
+    english: "Smoke"
+  },
+  {
+    kanji: "気{き}づく",
+    english: "To notice・To become aware of・To find"
+  },
+  {
+    kanji: "どける",
+    english: "To remove・To take away"
+  },
+  {
+    kanji: "振{ふ}り向{む}く",
+    english: "To look back・To turn around"
+  },
+  {
+    kanji: "着{き}替{が}え",
+    english: "Change of clothes・Spare clothes"
+  },
+  {
+    kanji: "こする",
+    english: "To rub・To scrub"
+  },
+  {
+    kanji: "座{ざ}席{せき}",
+    english: "Seat"
+  },
+  {
+    kanji: "感{かん}心{しん}［する］",
+    english: "Impression・to be impressed"
+  },
+  {
+    kanji: "優{ゆう}先{せん}席{せき}",
+    english: "Priority seat"
+  },
+  {
+    kanji: "勇{ゆう}気{き}",
+    english: "Courage"
+  },
+  {
+    kanji: "分{ぶん}別{べつ}［する］",
+    english: "Separation・To separate"
+  },
+  {
+    kanji: "地{ち}域{いき}",
+    english: "Region・Area"
+  },
+  {
+    kanji: "広{ひろ}場{ば}",
+    english: "Square・Plaza"
+  },
+  {
+    kanji: "公{こう}衆{しゅう}トイレ",
+    english: "Public toilet"
+  },
+  {
+    kanji: "化{け}粧{しょう}品{ひん}",
+    english: "Cosmetics"
+  },
+  {
+    kanji: "化{け}粧{しょう}［する］",
+    english: "Makeup・To put on makeup"
+  },
+  {
+    kanji: "香{こう}水{すい}",
+    english: "Perfume"
+  },
+  {
+    kanji: "たまに",
+    english: "Occasionally・Once in a while"
+  },
+  {
+    kanji: "愛{あい}［する］",
+    english: "Love・To love"
+  },
+  {
+    kanji: "白{しら}髪{が}",
+    english: "Gray hair"
+  },
+  {
+    kanji: "空{あ}き",
+    english: "Vacancy・Empty"
+  },
+  {
+    kanji: "譲{ゆず}る",
+    english: "To yield・To give way"
+  },
+  {
+    kanji: "確{たし}かに",
+    english: "Certainly・Surely"
+  },
+  {
+    kanji: "反{はん}省{せい}［する］",
+    english: "Reflection・To reflect"
+  },
+  {
+    kanji: "ものすごい",
+    english: "Incredible・Amazing"
+  },
+  {
+    kanji: "広{ひろ}げる",
+    english: "To spread・To expand"
+  },
+  {
+    kanji: "広{ひろ}がる",
+    english: "To spread・To expand"
+  },
+  {
+    kanji: "どく",
+    english: "To move・Get out of the way"
+  },
+  {
+    kanji: "昨{さく}夜{や} ",
+    english: "Last night"
+  },
+  {
+    kanji: "昨{さく}晚{ばん}",
+    english: "Last night"
+  },
+  {
+    kanji: "刺{さ}す",
+    english: "To stab"
+  },
+  {
+    kanji: "刺{さ}さる",
+    english: "To be stabbed"
+  },
+  {
+    kanji: "警{けい}官{かん}・警{けい}察{さつ}官{かん}",
+    english: "Police officer"
+  },
+  {
+    kanji: "警{けい}察{さつ}署{しょ}",
+    english: "Police station"
+  },
+  {
+    kanji: "逮{たい}捕{ほ}［する］",
+    english: "Arrest・To arrest"
+  },
+  {
+    kanji: "防{ぼう}止{し}［する］",
+    english: "Prevention・To prevent"
+  },
+  {
+    kanji: "複{ふく}雑{ざつ}な",
+    english: "Complicated・Complex"
+  },
+  {
+    kanji: "改{かい}札{さつ}",
+    english: "Ticket gate"
+  },
+  {
+    kanji: "がらがらな",
+    english: "Empty・Uncrowded・vacant"
+  },
+  {
+    kanji: "詰{つ}め込{こ}む",
+    english: "To pack・To cram"
+  },
+  {
+    kanji: "詰{つ}める",
+    english: "To pack・To cram"
+  },
+  {
+    kanji: "詰{つ}め替{か}え",
+    english: "Refill・Repackaging"
+  },
+  {
+    kanji: "法{ほう}律{りつ}",
+    english: "Law"
+  },
+  {
+    kanji: "禁{きん}止{し}［する］",
+    english: "Prohibition・To prohibit"
+  },
+  {
+    kanji: "違{い}反{はん}［する］",
+    english: "Violation・To violate"
+  },
+  {
+    kanji: "気になる",
+    english: "To be worried about・To be concerned about"
+  },
+  {
+    kanji: "しいんと",
+    english: "Silently・Quietly"
+  },
+  {
+    kanji: "交{こう}通{つう}機{き}関{かん}",
+    english: "Transportation system"
+  },
+  {
+    kanji: "目{め}立{だ}つ",
+    english: "To stand out"
+  },
+  {
+    kanji: "年{ねん}齢{れい}",
+    english: "Age"
+  },
+  {
+    kanji: "成{せい}人{じん}［する］",
+    english: "Adulthood・To become an adult"
+  },
+  {
+    kanji: "成{せい}人{じん}式{しき}",
+    english: "Coming-of-age ceremony"
+  },
+  {
+    kanji: "頃{ころ}",
+    english: "Around (a time)"
+  },
+  {
+    kanji: "経{けい}済{ざい}",
+    english: "Economy"
+  },
+  {
+    kanji: "経{けい}済{ざい}的{てき}",
+    english: "Economic"
+  },
+  {
+    kanji: "産{さん}業{ぎょう}",
+    english: "Industry"
+  },
+  {
+    kanji: "縮{しゅく}小{しょう}［する］",
+    english: "Shrinkage・To shrink"
+  },
+  {
+    kanji: "長{なが}生{い}き［する］",
+    english: "Longevity・To live long"
+  },
+  {
+    kanji: "高{こう}齢{れい}者{しゃ}",
+    english: "Elderly person・Senior citizen"
+  },
+  {
+    kanji: "高{こう}齢{れい}化{か}［する］",
+    english: "Aging・To get old"
+  },
+  {
+    kanji: "割{わり}合{あい}",
+    english: "Proportion・Ratio"
+  },
+  {
+    kanji: "低{てい}下{か}［する］",
+    english: "Decline・To decline"
+  },
+  {
+    kanji: "消{しょう}費{ひ}税{ぜい}",
+    english: "Consumption tax"
+  },
+  {
+    kanji: "消{しょう}費{ひ}［する］",
+    english: "Consumption・To consume"
+  },
+  {
+    kanji: "～税{ぜい}",
+    english: "～Tax"
+  },
+  {
+    kanji: "税{ぜい}金{きん}",
+    english: "Tax"
+  },
+  {
+    kanji: "制{せい}度{ど}",
+    english: "System"
+  },
+  {
+    kanji: "非{ひ}常{じょう}に",
+    english: "Very・Extremely"
+  },
+  {
+    kanji: "緩{ゆる}やかな",
+    english: "Gentle・Slow・Calm"
+  },
+  {
+    kanji: "変{へん}化{か}［する］",
+    english: "Change・To change"
+  },
+  {
+    kanji: "一{いち}部{ぶ}",
+    english: "Some・One part"
+  },
+  {
+    kanji: "以{い}前{ぜん}",
+    english: "Before・Previously"
+  },
+  {
+    kanji: "現{げん}在{ざい}",
+    english: "Present・Current"
+  },
+  {
+    kanji: "住{す}まい",
+    english: "Residence・Home"
+  },
+  {
+    kanji: "満{まん}足{ぞく}［する］",
+    english: "Satisfaction・To be satisfied"
+  },
+  {
+    kanji: "現{げん}代{だい}",
+    english: "Modern times・Present age"
+  },
+  {
+    kanji: "現{げん}代{だい}的{てき}な",
+    english: "Modern・Contemporary"
+  },
+  {
+    kanji: "平{へい}和{わ}な",
+    english: "Peaceful"
+  },
+  {
+    kanji: "だが",
+    english: "However・But"
+  },
+  {
+    kanji: "不{ふ}幸{こう}な",
+    english: "Unhappy・Unfortunate"
+  },
+  {
+    kanji: "感{かん}じる",
+    english: "To feel"
+  },
+  {
+    kanji: "（お）年{とし}寄{よ}り",
+    english: "Elderly person"
+  },
+  {
+    kanji: "恐{おそ}らく",
+    english: "Probably"
+  },
+  {
+    kanji: "首{しゅ}相{しょう}",
+    english: "Prime Minister"
+  },
+  {
+    kanji: "例{れい}外{がい}",
+    english: "Exception・Exclusion"
+  },
+  {
+    kanji: "幸{こう}福{ふく}な",
+    english: "Happy・Fortunate"
+  },
+  {
+    kanji: "権{けん}利{り}",
+    english: "Right・Entitlement"
+  },
+  {
+    kanji: "先{せん}日{じつ}",
+    english: "The other day"
+  },
+  {
+    kanji: "選{せん}挙{きょ}［する］",
+    english: "Election・To elect"
+  },
+  {
+    kanji: "若{わか}者{もの}",
+    english: "Young people・Youth"
+  },
+  {
+    kanji: "投{とう}票{ひょう}［する］",
+    english: "Voting・To vote"
+  },
+  {
+    kanji: "票{ひょう}",
+    english: "Vote"
+  },
+  {
+    kanji: "解{かい}決{けつ}［する］",
+    english: "Solution・To solve"
+  },
+  {
+    kanji: "政{せい}府{ふ}",
+    english: "Government"
+  },
+  {
+    kanji: "政{せい}治{じ}家{か}",
+    english: "Politician"
+  },
+  {
+    kanji: "政{せい}治{じ}",
+    english: "Politics"
+  },
+  {
+    kanji: "青{せい}年{ねん}",
+    english: "Youth・Adolescence"
+  },
+  {
+    kanji: "交{こう}流{りゅう}［する］",
+    english: "Interaction・To interact"
+  },
+  {
+    kanji: "結{けっ}局{きょく}",
+    english: "After all・Eventually"
+  },
+  {
+    kanji: "数{かぞ}える",
+    english: "To count"
+  },
+  {
+    kanji: "なんとか",
+    english: "Somehow"
+  },
+  {
+    kanji: "運{うん}転{てん}免{めん}許{きょ}証{しょう}",
+    english: "Driver's license"
+  },
+  {
+    kanji: "とっくに",
+    english: "Already・Long ago"
+  },
+  {
+    kanji: "費{ひ}用{よう}",
+    english: "Cost・Expense"
+  },
+  {
+    kanji: "削{けず}る",
+    english: "To cut down・To reduce"
+  },
+  {
+    kanji: "なぜなら",
+    english: "Because"
+  },
+  {
+    kanji: "奨{しょう}学{がく}金{きん}",
+    english: "Scholarship"
+  },
+  {
+    kanji: "一{いっ}方{ぽう}",
+    english: "On the other hand"
+  },
+  {
+    kanji: "学{がく}費{ひ}",
+    english: "Tuition fees"
+  },
+  {
+    kanji: "貧{びん}乏{ぼう}な",
+    english: "Poor"
+  },
+  {
+    kanji: "講{こう}演{えん}会{かい}",
+    english: "Lecture"
+  },
+  {
+    kanji: "講{こう}演{えん}［する］",
+    english: "Lecture・To give a lecture"
+  },
+  {
+    kanji: "後{のち}",
+    english: "Later"
+  },
+  {
+    kanji: "関{かん}心{しん}",
+    english: "Concern・Interest"
+  },
+  {
+    kanji: "行{かん}動{どう}［する］",
+    english: "Action・Behavior・To act"
+  },
+  {
+    kanji: "現{あらわ}れる",
+    english: "To appear"
+  },
+  {
+    kanji: "子{こ}育{そだ}て",
+    english: "Raising children"
+  },
+  {
+    kanji: "最{もっと}も",
+    english: "Most"
+  },
+  {
+    kanji: "保{ほ}育{いく}園{えん}",
+    english: "Nursery"
+  },
+  {
+    kanji: "数{かず}",
+    english: "Number"
+  },
+  {
+    kanji: "増{ふ}やす",
+    english: "To increase"
+  },
+  {
+    kanji: "結{けつ}論{ろん}",
+    english: "Conclusion"
+  },
+  {
+    kanji: "明{あか}るい",
+    english: "Bright"
+  },
+  {
+    kanji: "老{ろう}人{じん}ホーム",
+    english: "Nursing home"
+  },
+  {
+    kanji: "建{けん}設{せつ}［する］",
+    english: "Construction・To construct"
+  },
+  {
+    kanji: "～数{すう}",
+    english: "Number of ~"
+  },
+  {
+    kanji: "確{かく}実{じつ}な",
+    english: "Certain・Reliable"
+  },
+  {
+    kanji: "増{ぞう}加{か}［する］",
+    english: "Increase・To increase"
+  },
+  {
+    kanji: "減{げん}少{しょう}［する］",
+    english: "Decrease・To decrease"
+  },
+  {
+    kanji: "通{つう}訳{やく}［する］",
+    english: "Interpretation・To interpret"
+  },
+  {
+    kanji: "話{わ}題{だい}",
+    english: "Topic"
+  },
+  {
+    kanji: "～世{せい}紀{き}",
+    english: "〜century"
+  },
+  {
+    kanji: "進{しん}歩{ぽ}［する］",
+    english: "Progress・To progress"
+  },
+  {
+    kanji: "ますます",
+    english: "More and more"
+  },
+  {
+    kanji: "拡{かく}大{だい}［する］",
+    english: "Expansion・To expand"
+  },
+  {
+    kanji: "報{ほう}告{こく}［する］",
+    english: "Report・To report"
+  },
+  {
+    kanji: "生{せい}産{さん}［する］",
+    english: "Production・To produce"
+  },
+  {
+    kanji: "無{む}～",
+    english: "No〜・Non-〜"
+  },
+  {
+    kanji: "期{き}限{げん}",
+    english: "Deadline・Time limit"
+  },
+  {
+    kanji: "無{む}責{せき}任{にん}な",
+    english: "Irresponsible"
+  },
+  {
+    kanji: "決{けっ}定{てい}［する］",
+    english: "Decision・To decide"
+  },
+  {
+    kanji: "表{ひょう}",
+    english: "Table・Chart"
+  },
+  {
+    kanji: "石{せき}油{ゆ}",
+    english: "Oil"
+  },
+  {
+    kanji: "石{せき}炭{たん}",
+    english: "Coal"
+  },
+  {
+    kanji: "その他{た}",
+    english: "Other"
+  },
+  {
+    kanji: "資{し}源{げん}",
+    english: "Resources"
+  },
+  {
+    kanji: "減{へ}る",
+    english: "To decrease"
+  },
+  {
+    kanji: "いつまでも",
+    english: "Forever"
+  },
+  {
+    kanji: "ぴったり（と）",
+    english: "Percisely・Exactly"
+  },
+  {
+    kanji: "状{じょう}態{たい}",
+    english: "Condition・Status"
+  },
+  {
+    kanji: "記{き}入{にゅう}［する］",
+    english: "Filling out・To fill out"
+  },
+  {
+    kanji: "例{れい}",
+    english: "Example"
+  },
+  {
+    kanji: "図{ず}",
+    english: "Figure・Diagram・Chart"
+  },
+  {
+    kanji: "真{ま}っ暗{くら}な",
+    english: "Pitch black・Completely dark"
+  },
+  {
+    kanji: "残{ざん}業{ぎょう}［する］",
+    english: "Overtime・To work overtime"
+  },
+  {
+    kanji: "取{と}り上{あ}げる",
+    english: "To take up・To pick up"
+  },
+  {
+    kanji: "事{じ}件{けん}",
+    english: "Incident"
+  },
+  {
+    kanji: "事{じ}件{けん}現{げん}場{ば}",
+    english: "Crime scene・Scene of the incident"
+  },
+  {
+    kanji: "起{お}こる",
+    english: "To occur・To happen"
+  },
+  {
+    kanji: "以{い}後{ご}",
+    english: "Thereafter"
   }
 ];
