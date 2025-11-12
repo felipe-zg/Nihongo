@@ -64,12 +64,12 @@ const MojiGoiDeck: React.FC<Props> = ({ vocabList }) => {
       {filteredVocabList.length > 0 && (
         <FlipCard 
           ref={flipCardRef} 
-          CardFrontContent={<Text fontSize={"6xl"} color={"teal.500"}>{currentCard.word}</Text>}
+          CardFrontContent={<Text fontSize={"7xl"} color={"teal.500"}>{currentCard.word}</Text>}
           CardBackContent={
             <>
-              <Text fontSize={"3xl"} color={"white"}>{currentCard.reading}</Text>
-              <Text fontSize={"2xl"} color={"primary.500"}>{currentCard.meaning}</Text>
-              <Text fontSize={"xl"} mt={8} textAlign={"center"} color={"pink.500"}>{currentCard.example || ""}</Text>
+              <Text fontSize={"4xl"} color={"white"}>{currentCard.reading}</Text>
+              <Text fontSize={"3xl"} color={"primary.500"}>{currentCard.meaning}</Text>
+              <Text fontSize={"3xl"} mt={8} textAlign={"center"} color={"pink.500"}>{currentCard.example || ""}</Text>
             </>
           } 
         />
