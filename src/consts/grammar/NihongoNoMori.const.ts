@@ -1499,6 +1499,135 @@ export const NIHONGO_NO_MORI_GRAMMAR: GrammarEntry[] = [
       { kanji: "うらやましい", kana: "うらやましい", english: "envious" },
     ],
   },
+  {
+    id: 44,
+    grammar: "〜に違いない",
+    imi: "絶対に〜だ・きっと〜だ",
+    explanation: "違うことはないと思っている気持ちを表します。\nこれは絶対にそうだと強く信じているときに使う文法です。\nThis grammar pattern is used when you strongly believe that something is definitely true and there is no doubt about it.",
+    usage: {
+      form: [{name: "普通形"}],
+      pattern: ["〜に違いない"],
+      combinedForms: [{ first: "(名詞・ナ形容詞) である", pattern: "に違いない" }],
+    },
+    examples: [
+      {
+        sentence: "昨日買ったお菓子がもうないのは、妻が食べたからに違いない。",
+        meaning: "There's no doubt that my wife ate the snacks I bought yesterday.",
+      },
+      {
+        sentence: "何度もお願い事をしてしまっては、相手に迷惑であるに違いない。",
+        meaning: "If you repeatedly ask for favors, it's definitely a nuisance to the other person.",
+      },
+      {
+        sentence: "この服は彼女に似合うに違いない。",
+        meaning: "This outfit suits her for sure.",
+      },
+    ],
+    category: GrammarEntryCategory.DEGREE_ENPHASIS_COMPARISON,
+    newWords: [
+      { kanji: "迷惑", kana: "めいわく", english: "nuisance" },
+      { kanji: "似合う", kana: "にあう", english: "to suit・to look good on" },
+    ],
+  },
+  {
+    id: 45,
+    grammar: "〜に対して ②",
+    imi: "〜と比べて考えると",
+    explanation: "これに対してこう というふうに2つのものを比べて考えるときに使う文法です。\nThis grammar pattern is used when comparing two things by saying 'in contrast to this, that...'.",
+    usage: {
+      form: [{name: "普通形"}, {name: "名詞", connector: "な・である"}, {name: "ナ形容詞", connector: "な・である"}],
+      pattern: ["(の) に対して"],
+    },
+    examples: [
+      {
+        sentence: "私の国の言葉は発音が難しいのに対して、日本語は文法が難しい。",
+        meaning: "In my country's language, pronunciation is difficult, whereas in Japanese, grammar is difficult.",
+      },
+      {
+        sentence: "日本は夜の10時であるのに対して、アメリカは朝の8時だそうだ。",
+        meaning: "In Japan, it's 10 PM at night, whereas in America, it's 8 AM in the morning.",
+      },
+      {
+        sentence: "とても優しい父に対して、母はかなり厳しい人だ。",
+        meaning: "In contrast to my very kind father, my mother is quite strict.",
+      },
+      {
+        sentence: "ベトナムは若者の人口が多いのに対して日本は高齢の人口が多い。",
+        meaning: "In contrast to Vietnam, which has a large population of young people, Japan has a large population of elderly people.",
+      },
+    ],
+    category: GrammarEntryCategory.DEGREE_ENPHASIS_COMPARISON,
+    newWords: [
+      { kanji: "厳しい", kana: "きびしい", english: "strict" },
+      { kanji: "人口", kana: "じんこう", english: "population" },
+      { kanji: "高齢", kana: "こうれい", english: "elderly" },
+    ],
+  },
+  {
+    id: 46,
+    grammar: "〜どころか",
+    imi: "〜よりもっと",
+    explanation: "比較して強調するときに使う文法です。\nThis grammar pattern is used to emphasize a comparison.",
+    usage: {
+      form: [{name: "普通形"}, {name: "名詞"}, {name: "ナ形容詞", connector: "な"}],
+      pattern: ["どころか"],
+    },
+    examples: [
+      {
+        sentence: "昔の携帯電話は、写真を撮るどころかメッセージを送ることもできなかった。",
+        meaning: "Not only could old mobile phones not take pictures, but they couldn't even send messages.",
+      },
+      {
+        sentence: "私と彼が付き合っているということは、クラスの友達どころか先生も親もみんな知っている。",
+        meaning: "Not only our classmates, but even our teachers and parents all know that we are dating.",
+      },
+      {
+        sentence: "この子犬は、病気が原因で最初は歩くどころか立つこともできなかった。",
+        meaning: "This puppy couldn't even stand up, let alone walk, due to illness.",
+      },
+      {
+        sentence: "a: 試験どうだったの？\nB: 合格どころか満点だったよ。なめてるの？",
+        meaning: "A: How was the exam?\nB: Not only did I pass, but I got a perfect score. Are you looking down on me?",
+      },
+    ],
+    category: GrammarEntryCategory.DEGREE_ENPHASIS_COMPARISON,
+    newWords: [
+      { kanji: "原因", kana: "げんいん", english: "cause" },
+      { kanji: "なめる", kana: "なめる", english: "to look down on・to underestimate" },
+    ],
+  },
+  {
+    id: 47,
+    grammar: "〜に比べて",
+    imi: "〜より",
+    explanation: '比べるというのは物を並べて それを見て考えることですよね。だから比べてと言ったら これより という言い方になります。\nThis grammar pattern is used to express "compared to" or "in comparison to ~ this is more~" when comparing two things.',
+    usage: {
+      form: [{name: "名詞", connector: "に・と"}],
+      pattern: ["比べて", "比べると"],
+    },
+    examples: [
+      {
+        sentence: "私の子どものころに比べて、ここ数年、雪が降ることが少なくなった。",
+        meaning: "Compared to my childhood, it has snowed less in recent years.",
+      },
+      {
+        sentence: "日本の料理は韓国の料理に比べて、そんなに辛くない。",
+        meaning: "Compared to Korean cuisine, Japanese food isn't that spicy.",
+      },
+      {
+        sentence: "兄は昔に比べて、料理がとてもうまくなったと思う。",
+        meaning: "I think my brother has become a much better cook than he used to be.",
+      },
+      {
+        sentence: "去年の冬に比べて今年の冬は寒いね。",
+        meaning: "This winter is colder compared to last winter.",
+      }
+    ],
+    category: GrammarEntryCategory.DEGREE_ENPHASIS_COMPARISON,
+    newWords: [
+      { kanji: "数年", kana: "すうねん", english: "several years" },
+    ],
+  },
   // SECTION 6 - GRAMMAR 48 - 53
   {
     id: 48,
