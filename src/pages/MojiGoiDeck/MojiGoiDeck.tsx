@@ -1,5 +1,5 @@
 import React, { useMemo, useRef, useState } from "react";
-import { Box, Button, HStack, Text, Select } from "native-base";
+import { Box, Button, HStack, Text, Select, Switch, Divider } from "native-base";
 import FlipCard, { FlipCardHandle } from "../../components/FlipCard/FlipCard";
 
 type Props = {
@@ -12,6 +12,9 @@ const MojiGoiDeck: React.FC<Props> = ({ vocabList }) => {
   const [startIndex, setStartIndex] = useState(0);
   const [endIndex, setEndIndex] = useState(vocabList.length - 1);
   const [isShuffled, setIsShuffled] = useState(false);
+  const [isChallengeMode, setIsChallengeMode] = useState(false);
+  const [showKanji, setShowKanji] = useState(false);
+  const [showMeaning, setShowMeaning] = useState(false);
   const flipCardRef = useRef<FlipCardHandle>(null);
 
   const handleStartIndexChange = (value: number) => {
@@ -46,12 +49,24 @@ const MojiGoiDeck: React.FC<Props> = ({ vocabList }) => {
   }
 
   function handleNext() {
-    if (!flipCardRef.current?.isFlipped()) {
-      flipCardRef.current?.flip();
-      return;
+    if(isChallengeMode) {
+      if(!showKanji) {
+        setShowKanji(true);
+        setShowMeaning(true);
+        return;
+      } else {
+        setShowKanji(false);
+        setShowMeaning(false);
+      }
     } else {
-      flipCardRef.current?.unflip();
+      if (!flipCardRef.current?.isFlipped()) {
+        flipCardRef.current?.flip();
+        return;
+      } else {
+        flipCardRef.current?.unflip();
+      }
     }
+
     setTimeout(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % filteredVocabList.length);
     }, 200);
@@ -61,7 +76,7 @@ const MojiGoiDeck: React.FC<Props> = ({ vocabList }) => {
     <Box alignItems="center" mt={10}>
       <Text fontSize={"xl"} bold color={"white"}>JLPT 文字・語彙</Text>
       <Text color="pink.500">{`${currentIndex + 1}/${filteredVocabList.length}`}</Text>
-      {filteredVocabList.length > 0 && (
+      {filteredVocabList.length > 0 && !isChallengeMode && (
         <FlipCard 
           ref={flipCardRef} 
           CardFrontContent={<Text fontSize={"7xl"} color={"teal.500"}>{currentCard.word}</Text>}
@@ -75,6 +90,16 @@ const MojiGoiDeck: React.FC<Props> = ({ vocabList }) => {
         />
       )}
 
+      {filteredVocabList.length > 0 && isChallengeMode && (
+        <Box mt={3} borderColor={"pink.500"} borderWidth={1} borderRadius={5} padding={5} width={"90%"} alignItems={"center"}>
+          <Text color={"primary.400"} fontSize={"2xl"} bold italic>{currentCard.reading}</Text>
+          <Divider my={2} bg="gray.500" thickness={0.5}/>
+          <Text color={showKanji ? "pink.500" : "transparent"} fontSize={"6xl"}>{currentCard.word}</Text>
+          <Text color={showMeaning ? "white" : "transparent"} fontSize={"xl"}>{currentCard.meaning}</Text>
+          <Button mt={4} variant={"outline"} onPress={() => setShowMeaning(true)}>Meaning</Button>
+        </Box>
+      )}
+
       {/* <Text color={"gray.300"}>{quantitySeen}/{filteredVocabList.length}</Text> */}
       <HStack mt={12} paddingX={8} space={4} width={"100%"}>
         <Button onPress={handleNext} width={"100%"}>
@@ -82,7 +107,7 @@ const MojiGoiDeck: React.FC<Props> = ({ vocabList }) => {
         </Button>
       </HStack>
 
-      <HStack mt={10} width="100%" px={4}>
+      <HStack mt={10} width="100%" px={4} >
         <Box width={120} mr={5}>
           <Select
             selectedValue={startIndex.toString()}
@@ -108,6 +133,14 @@ const MojiGoiDeck: React.FC<Props> = ({ vocabList }) => {
           </Select>
         </Box>
         <button disabled={isShuffled} onClick={shuffleCards}>Shuffle ⇄</button>
+        <HStack space={2} ml={5}>
+          <Switch
+            onValueChange={(val) => setIsChallengeMode(val)}
+            colorScheme="red"
+            isChecked={isChallengeMode}
+          />
+          <Text color="red.500">Challenge Mode</Text>
+        </HStack>
       </HStack>
     </Box>
   );
