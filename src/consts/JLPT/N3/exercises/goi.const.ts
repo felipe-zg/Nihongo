@@ -6,7 +6,8 @@ export const JLPT_N3_GOI_EXERCISES: JLPTExercise[] = [
       '',
     ],
     options: ['ちがかったです', 'まちがったです', 'ちがっていました', 'まちがえていました'],
-    answer: 'xxxxx',
+    answer: 'ちがっていました',
+    type: 'ごい',
   },
   {
     id: 5,
@@ -15,7 +16,8 @@ export const JLPT_N3_GOI_EXERCISES: JLPTExercise[] = [
       '、卒業後{ご}すぐに結婚した。',
     ],
     options: ['出会って', '出会いして', '出会いで', '出会いにして'],
-    answer: 'xxx',
+    answer: '出会って',
+    type: 'ごい',
   },
   {
     id: 8,
@@ -24,7 +26,8 @@ export const JLPT_N3_GOI_EXERCISES: JLPTExercise[] = [
       'はいけません。',
     ],
     options: ['ひいて', 'とって', 'うつして', 'ついて'],
-    answer: 'xxxxx',
+    answer: 'ついて',
+    type: 'ごい',
   },
   {
     id: 11,
@@ -33,7 +36,8 @@ export const JLPT_N3_GOI_EXERCISES: JLPTExercise[] = [
       'から、3時までには着くと思います。',
     ],
     options: ['むかえます', 'とどきます', 'まにあいます', 'むかいます'],
-    answer: 'xxxxx',
+    answer: 'むかいます',
+    type: 'ごい',
   },
   {
     id: 14,
@@ -42,7 +46,8 @@ export const JLPT_N3_GOI_EXERCISES: JLPTExercise[] = [
       'いいよ。」',
     ],
     options: ['あいさつしなくても', 'あやまらなくても', 'ちゅういしなくても', 'おこらなくても'],
-    answer: 'xxxxx',
+    answer: 'あやまらなくても',
+    type: 'ごい',
   },
   {
     id: 17,
@@ -51,7 +56,8 @@ export const JLPT_N3_GOI_EXERCISES: JLPTExercise[] = [
       'だと思う。',
     ],
     options: ['アイデア', 'チャンス', 'バランス', 'テーマ'],
-    answer: 'xxxx',
+    answer: 'アイデア',
+    type: 'ごい',
   },
   {
     id: 20,
@@ -60,7 +66,8 @@ export const JLPT_N3_GOI_EXERCISES: JLPTExercise[] = [
       'わからなかったけど、だいたいできたよ。」',
     ],
     options: ['すべて', 'まあまあ', 'つぎつぎに', 'ところどころ'],
-    answer: 'xxxx',
+    answer: 'ところどころ',
+    type: 'ごい',
   },
   {
     id: 23,
@@ -69,7 +76,8 @@ export const JLPT_N3_GOI_EXERCISES: JLPTExercise[] = [
       'だ。',
     ],
     options: ['上手', '得{とく}意{い}', '上{じょう}等{とう}', '高{こう}級{きゅう}'],
-    answer: 'xxxxx',
+    answer: '得{とく}意{い}',
+    type: 'ごい',
   },
   {
     id: 26,
@@ -78,7 +86,8 @@ export const JLPT_N3_GOI_EXERCISES: JLPTExercise[] = [
       'ので、荷物をそこに置いた。',
     ],
     options: ['あいていた', 'のこっていた', 'すいていた', 'あまっていた'],
-    answer: 'xxxxxx',
+    answer: 'あいていた',
+    type: 'ごい',
   },
   {
     id: 29,
@@ -87,7 +96,8 @@ export const JLPT_N3_GOI_EXERCISES: JLPTExercise[] = [
       '。」',
     ],
     options: ['りょうかいいたします', 'おじゃまいたしました', 'しょうちいたします', ' かしこまりました'],
-    answer: 'xxxxx',
+    answer: 'かしこまりました',
+    type: 'ごい',
   },
   {
     id: 32,
@@ -96,7 +106,8 @@ export const JLPT_N3_GOI_EXERCISES: JLPTExercise[] = [
       'お電話いたします。',
     ],
     options: ['まもなく', 'のちほど', 'しばらく', 'さきに'],
-    answer: 'xxxxx',
+    answer: 'のちほど',
+    type: 'ごい',
   },
   {
     id: 35,
@@ -105,7 +116,8 @@ export const JLPT_N3_GOI_EXERCISES: JLPTExercise[] = [
       'が痛いです。',
     ],
     options: ['あのへん', 'どこでも', 'あちこち', 'どこか'],
-    answer: 'xxxxxx',
+    answer: 'あちこち',
+    type: 'ごい',
   },
   {
     id: 38,
@@ -114,16 +126,18 @@ export const JLPT_N3_GOI_EXERCISES: JLPTExercise[] = [
       '詰しましょう。',
     ],
     options: ['おもいついて', 'はりきって', 'おちついて', 'みなおして'],
-    answer: 'xxxxx',
+    answer: 'おちついて',
+    type: 'ごい',
   },
   {
     id: 41,
     content: [
       'よくわかりません。もう少し',
-      '説してくださいませんか。',
+      '説明してくださいませんか。',
     ],
     options: ['くわしく', 'きびしく', 'けわしく', 'よろしく'],
-    answer: 'xxxxx',
+    answer: 'くわしく',
+    type: 'ごい',
   },
   {
     id: 44,
@@ -132,7 +146,8 @@ export const JLPT_N3_GOI_EXERCISES: JLPTExercise[] = [
       '足の骨{ほね}を折{お}ってしまった。',
     ],
     options: ['おちて', 'たおれて', 'ころんで', 'つぶれて'],
-    answer: 'xxxxx',
+    answer: 'ころんで',
+    type: 'ごい',
   },
   {
     id: 47,
@@ -141,7 +156,8 @@ export const JLPT_N3_GOI_EXERCISES: JLPTExercise[] = [
       'で、姉{あね}が一人、兄{あに}が二人います',
     ],
     options: ['ひとりっこ', 'すえっこ', 'ちょうなん', 'じなん'],
-    answer: 'xxxxx',
+    answer: 'すえっこ',
+    type: 'ごい',
   },
   {
     id: 50,
@@ -150,7 +166,8 @@ export const JLPT_N3_GOI_EXERCISES: JLPTExercise[] = [
       '食べられません。ゆでるか焼{や}くかしてください。',
     ],
     options: ['むいては', 'ままでは', 'なまでは', 'にては'],
-    answer: 'xxxxxx',
+    answer: 'なまでは',
+    type: 'ごい',
   },
   {
     id: 53,
@@ -159,7 +176,8 @@ export const JLPT_N3_GOI_EXERCISES: JLPTExercise[] = [
       'から待って。」',
     ],
     options: ['ぬく', 'くっつける', 'むすぶ', 'ぬう'],
-    answer: 'xxxxxx',
+    answer: 'むすぶ',
+    type: 'ごい',
   },
   {
     id: 56,
@@ -168,7 +186,8 @@ export const JLPT_N3_GOI_EXERCISES: JLPTExercise[] = [
       'よかった。',
     ],
     options: ['気をつけて', 'いいかげんで', 'お気の毒{どく}で', '大{たい}したことがなくて'],
-    answer: 'xxxxxx',
+    answer: '大{たい}したことがなくて',
+    type: 'ごい',
   },
   {
     id: 59,
@@ -177,7 +196,8 @@ export const JLPT_N3_GOI_EXERCISES: JLPTExercise[] = [
       'が、どうぞお入りください。',
     ],
     options: ['片{かた}付{づ}けられません', '散{ち}らかっています', 'きれいにしません', '汚{よご}れてきます'],
-    answer: 'xxxxxx',
+    answer: '散{ち}らかっています',
+    type: 'ごい',
   },
   {
     id: 62,
@@ -186,7 +206,8 @@ export const JLPT_N3_GOI_EXERCISES: JLPTExercise[] = [
       'は、約{やく}10万円です。',
     ],
     options: ['売{う}り場{ば}', '売{う}り上{あ}げ', '売{う}り切{き}れ', '売{う}り出{だ}し'],
-    answer: 'xxxxxx',
+    answer: '売{う}り上{あ}げ',
+    type: 'ごい',
   },
   {
     id: 65,
@@ -195,7 +216,8 @@ export const JLPT_N3_GOI_EXERCISES: JLPTExercise[] = [
       '・たくさん召{め}し上{あ}がってください。',
     ],
     options: ['失{しつ}礼{れい}して', '遠{えん}慮{りょ}せずに', '謙{けん}そんせずに', '承{しょう}知{ち}して'],
-    answer: 'xxxxx',
+    answer: '遠{えん}慮{りょ}せずに',
+    type: 'ごい',
   },
   {
     id: 68,
@@ -204,7 +226,8 @@ export const JLPT_N3_GOI_EXERCISES: JLPTExercise[] = [
       'をそります。',
     ],
     options: ['ひじ', 'はげ', ' かび', 'ひげ'],
-    answer: 'xxxxxxx',
+    answer: 'ひげ',
+    type: 'ごい',
   },
   {
     id: 71,
@@ -213,7 +236,8 @@ export const JLPT_N3_GOI_EXERCISES: JLPTExercise[] = [
       'には、梅{つ}雨{ゆ}も明{あ}けるでしょう。',
     ],
     options: ['中{ちゅう}旬{じゅん}', '中{ちゅう}間{かん}', '中{ちゅう}心{しん}', '中{ちゅう}央{おう}'],
-    answer: 'xxxxx',
+    answer: '中{ちゅう}旬{じゅん}',
+    type: 'ごい',
   },
   {
     id: 74,
@@ -222,7 +246,8 @@ export const JLPT_N3_GOI_EXERCISES: JLPTExercise[] = [
       'いけません。もう一度やってみましょう。',
     ],
     options: ['あきては', 'あきれては', 'あきらめては', 'あきられては'],
-    answer: 'xxxxx',
+    answer: 'あきらめては',
+    type: 'ごい',
   },
   {
     id: 77,
@@ -231,7 +256,8 @@ export const JLPT_N3_GOI_EXERCISES: JLPTExercise[] = [
       'ことがありません。',
     ],
     options: ['かけた', 'だした', 'きいた', 'さげた'],
-    answer: 'xxxxx',
+    answer: 'きいた',
+    type: 'ごい',
   },
   {
     id: 80,
@@ -240,7 +266,8 @@ export const JLPT_N3_GOI_EXERCISES: JLPTExercise[] = [
       '人です。',
     ],
     options: ['あわただしい', 'おとなしい', 'まぶしい', 'ほがらかな'],
-    answer: 'xxxxx',
+    answer: 'ほがらかな',
+    type: 'ごい',
   },
   {
     id: 83,
@@ -250,7 +277,8 @@ export const JLPT_N3_GOI_EXERCISES: JLPTExercise[] = [
       'が必要だ。'
     ],
     options: ['券{けん}/券{けん}', '札{さつ}/札{さつ}', '紙{かみ}/紙{かみ}', '賃{ちん}/賃{ちん}'],
-    answer: 'xxxxx',
+    answer: '券{けん}/券{けん}',
+    type: 'ごい',
   },
   {
     id: 86,
@@ -259,7 +287,8 @@ export const JLPT_N3_GOI_EXERCISES: JLPTExercise[] = [
       'お届けいたします。',
     ],
     options: ['確{たし}かに', '確{たし}か', '急{いそ}ぎに', '急{きゅう}に'],
-    answer: 'xxxxx',
+    answer: '確{たし}か',
+    type: 'ごい',
   },
   {
     id: 89,
@@ -268,7 +297,8 @@ export const JLPT_N3_GOI_EXERCISES: JLPTExercise[] = [
       'に行けばいいですか。',
     ],
     options: ['土{と}地{ち}', '向{む}き', '地{ち}方{ほう}', '方{ほう}向{こう}'],
-    answer: 'xxxxx',
+    answer: '方{ほう}向{こう}',
+    type: 'ごい',
   },
   /*
   * REVIEW OF SECTION 1
@@ -277,12 +307,13 @@ export const JLPT_N3_GOI_EXERCISES: JLPTExercise[] = [
   {
     id: 93,
     content: [
-      '昨日の会議では、よいアイデアが',
+      '昨日の会議では、よいアイデアが昨日の会議では、よいアイデアが昨日の会議では、よいアイデアが昨日の会議では、よいアイデアが',
       '発表された。',
     ],
     options: ['ところどころ', 'つぎつぎに'],
-    answer: 'xxxxxxx',
+    answer: 'つぎつぎに',
     refersTo: 20,
+    type: 'ごい',
   },
   {
     id: 94,
@@ -291,8 +322,9 @@ export const JLPT_N3_GOI_EXERCISES: JLPTExercise[] = [
       'しなさい。',
     ],
     options: ['えんりょ', 'いいかげんに'],
-    answer: 'xxxxx',
+    answer: 'いいかげんに',
     refersTo: 56,
+    type: 'ごい',
   },
   {
     id: 99,
@@ -301,8 +333,9 @@ export const JLPT_N3_GOI_EXERCISES: JLPTExercise[] = [
       'こわいけれど、とてもいい先生です。',
     ],
     options: ['きびしくて', 'けわしくて'],
-    answer: 'xxxxx',
+    answer: 'きびしくて',
     refersTo: 41,
+    type: 'ごい',
   },
   {
     id: 100,
@@ -311,8 +344,9 @@ export const JLPT_N3_GOI_EXERCISES: JLPTExercise[] = [
       '友だちも少なかったです。',
     ],
     options: ['ほがらかで', 'おとなしくて'],
-    answer: 'xxxxx',
+    answer: 'おとなしくて',
     refersTo: 80,
+    type: 'ごい',
   },
   {
     id: 105,
@@ -321,8 +355,9 @@ export const JLPT_N3_GOI_EXERCISES: JLPTExercise[] = [
       'が良い食事を心がけましょう。',
     ],
     options: ['テーマ', 'バランス'],
-    answer: 'xxxxxx',
+    answer: 'バランス',
     refersTo: 17,
+    type: 'ごい',
   },
   {
     id: 106,
@@ -331,8 +366,9 @@ export const JLPT_N3_GOI_EXERCISES: JLPTExercise[] = [
       'ね。',
     ],
     options: ['あきられる', 'あきれる'],
-    answer: 'xxxxx',
+    answer: 'あきれる',
     refersTo: 74,
+    type: 'ごい',
   },
   {
     id: 111,
@@ -341,8 +377,9 @@ export const JLPT_N3_GOI_EXERCISES: JLPTExercise[] = [
       '。」\nB:「気をつけて。また遊びに来てください。」',
     ],
     options: ['おじゃましました', 'しょうちしました'],
-    answer: 'xxxxx',
+    answer: 'おじゃましました',
     refersTo: 29,
+    type: 'ごい',
   },
   {
     id: 112,
@@ -351,8 +388,9 @@ export const JLPT_N3_GOI_EXERCISES: JLPTExercise[] = [
       'が、何も言えなかった。',
     ],
     options: ['腹にきた', '頭にきた'],
-    answer: 'xxxxx',
+    answer: '頭にきた',
     refersTo: 77,
+    type: 'ごい',
   },
   {
     id: 117,
@@ -361,8 +399,9 @@ export const JLPT_N3_GOI_EXERCISES: JLPTExercise[] = [
       'があるが、そこに家を建てるつもりはない。',
     ],
     options: ['土地', '地方'],
-    answer: 'xxxxx',
+    answer: '土地',
     refersTo: 89,
+    type: 'ごい',
   },
   {
     id: 118,
@@ -371,8 +410,9 @@ export const JLPT_N3_GOI_EXERCISES: JLPTExercise[] = [
       '来月の10日だったと思うけれど・・・。',
     ],
     options: ['確かに', '確か'],
-    answer: 'xxxxx',
+    answer: '確か',
     refersTo: 86,
+    type: 'ごい',
   },
   {
     id: 123,
@@ -381,8 +421,9 @@ export const JLPT_N3_GOI_EXERCISES: JLPTExercise[] = [
       '。',
     ],
     options: ['ころびそうだ', 'たおれそうだ'],
-    answer: 'xxxxx',
+    answer: 'たおれそうだ',
     refersTo: 44,
+    type: 'ごい',
   },
   {
     id: 124,
@@ -391,8 +432,9 @@ export const JLPT_N3_GOI_EXERCISES: JLPTExercise[] = [
       'もなくなった。',
     ],
     options: ['賃', '券'],
-    answer: 'xxxxx',
+    answer: '賃',
     refersTo: 83,
+    type: 'ごい',
   },
   /*
   * EXERCISES SECTION 2

@@ -36,4 +36,5 @@ declare type JLPTExercise = {
   answer: string;
   comment?: string;
   refersTo?: number; // For linking related exercises
+  type: string; // e.g., "もじ", "ごい", "ぶんぽう"
 }

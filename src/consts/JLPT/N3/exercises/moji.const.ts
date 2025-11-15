@@ -8,6 +8,7 @@ export const JLPT_N3_MOJI_EXERCISES: JLPTExercise[] = [
     moji: '郵便局',
     options: ['ゆうびんきょく', 'ゆびんきょく', 'ようべんきょく', 'よべんきょく'],
     answer: ' ゆうびんきょく',
+    type: 'もじ',
   },
   {
     id: 4,
@@ -17,7 +18,8 @@ export const JLPT_N3_MOJI_EXERCISES: JLPTExercise[] = [
     ],
     moji: 'もうします',
     options: ['由します', '曲します', '申します', '直します'],
-    answer: ' xxxxx',
+    answer: ' 申します',
+    type: 'もじ',
   },
   {
     id: 7,
@@ -27,7 +29,8 @@ export const JLPT_N3_MOJI_EXERCISES: JLPTExercise[] = [
     ],
     moji: '届けた',
     options: ['つづけた', ' あずけた', 'とどけた', 'ほどけた'],
-    answer: ' xxxxx',
+    answer: ' とどけた',
+    type: 'もじ',
   },
   {
     id: 10,
@@ -37,7 +40,8 @@ export const JLPT_N3_MOJI_EXERCISES: JLPTExercise[] = [
     ],
     moji: 'おかし',
     options: ['お菓子', 'お果物', 'お果子', 'お菓物'],
-    answer: ' xxxxx',
+    answer: ' お菓子',
+    type: 'もじ',
   },
   {
     id: 13,
@@ -47,7 +51,8 @@ export const JLPT_N3_MOJI_EXERCISES: JLPTExercise[] = [
     ],
     moji: '荷物',
     options: ['みもつ', 'かもつ', 'にもつ', 'いもつ'],
-    answer: ' xxxxx',
+    answer: ' にもつ',
+    type: 'もじ',
   },
   {
     id: 16,
@@ -57,7 +62,8 @@ export const JLPT_N3_MOJI_EXERCISES: JLPTExercise[] = [
     ],
     moji: '曲がって',
     options: ['もがって', 'みがって', 'むがって', 'まがって'],
-    answer: ' xxxxx',
+    answer: ' まがって',
+    type: 'もじ',
   },
   {
     id: 19,
@@ -67,7 +73,8 @@ export const JLPT_N3_MOJI_EXERCISES: JLPTExercise[] = [
     ],
     moji: 'まいります',
     options: ['入ります', '参ります', '着ります', '回ります'],
-    answer: 'xxxxx',
+    answer: ' 参ります',
+    type: 'もじ',
   },
   {
     id: 22,
@@ -77,7 +84,8 @@ export const JLPT_N3_MOJI_EXERCISES: JLPTExercise[] = [
     ],
     moji: '要りません',
     options: ['ありません', 'おりません', 'たりません', 'いりません'],
-    answer: 'xxxxx',
+    answer: 'いりません',
+    type: 'もじ',
   },
   {
     id: 25,
@@ -87,7 +95,8 @@ export const JLPT_N3_MOJI_EXERCISES: JLPTExercise[] = [
     ],
     moji: 'ざっし',
     options: ['冊子', '雜誌', '冊誌', '雜子'],
-    answer: 'xxxxx',
+    answer: '雜誌',
+    type: 'もじ',
   },
   {
     id: 28,
@@ -97,7 +106,8 @@ export const JLPT_N3_MOJI_EXERCISES: JLPTExercise[] = [
     ],
     moji: '宿題',
     options: ['すくだい', 'しょくだい', 'しゅくだい', 'しくだい'],
-    answer: 'xxxxx',
+    answer: 'しゅくだい',
+    type: 'もじ',
   },
   {
     id: 31,
@@ -107,7 +117,8 @@ export const JLPT_N3_MOJI_EXERCISES: JLPTExercise[] = [
     ],
     moji: '港',
     options: ['やまと', 'みやこ', 'ちまた', 'みなと'],
-    answer: 'xxxxx',
+    answer: 'みなと',
+    type: 'もじ',
   },
   {
     id: 34,
@@ -117,7 +128,8 @@ export const JLPT_N3_MOJI_EXERCISES: JLPTExercise[] = [
     ],
     moji: 'おくれました',
     options: ['割れました', '送れました', '遅れました', '別れました'],
-    answer: 'xxxxx',
+    answer: '遅れました',
+    type: 'もじ',
   },
   {
     id: 37,
@@ -127,7 +139,8 @@ export const JLPT_N3_MOJI_EXERCISES: JLPTExercise[] = [
     ],
     moji: '卒業式',
     options: ['そっぎょうしき', 'そちぎょうしき', 'そつぎょうしき', 'そうぎょうしき'],
-    answer: 'xxxxx',
+    answer: 'そつぎょうしき',
+    type: 'もじ',
   },
   {
     id: 40,
@@ -137,7 +150,8 @@ export const JLPT_N3_MOJI_EXERCISES: JLPTExercise[] = [
     ],  
     moji: 'つま',
     options: ['夫', '妻', '主人', '家内'],
-    answer: 'xxxxx',
+    answer: '妻',
+    type: 'もじ',
   },
   {
     id: 43,
@@ -147,7 +161,8 @@ export const JLPT_N3_MOJI_EXERCISES: JLPTExercise[] = [
     ],  
     moji: '授業',
     options: ['じぎょう', 'ずぎょう', 'じゅうぎょう', 'じゅぎょう'],
-    answer: 'xxxxx',
+    answer: 'じゅぎょう',
+    type: 'もじ',
   },
   {
     id: 46,
@@ -157,7 +172,8 @@ export const JLPT_N3_MOJI_EXERCISES: JLPTExercise[] = [
     ],  
     moji: '約束',
     options: ['よくそく', 'よっそく', 'やくそく', 'やっそく'],
-    answer: 'xxxxx',
+    answer: 'やくそく',
+    type: 'もじ',
   },
   {
     id: 49,
@@ -167,7 +183,8 @@ export const JLPT_N3_MOJI_EXERCISES: JLPTExercise[] = [
     ],  
     moji: 'ひこうき',
     options: ['飛高機', '飛行機', '引行機', '引高機'],
-    answer: 'xxxxx',
+    answer: '飛行機',
+    type: 'もじ',
   },
   {
     id: 52,
@@ -177,7 +194,8 @@ export const JLPT_N3_MOJI_EXERCISES: JLPTExercise[] = [
     ],  
     moji: '美術',
     options: ['ぎじつ', 'ぎじゅつ', 'びじつ', 'びじゅつ'],
-    answer: 'xxxxx',
+    answer: 'びじゅつ',
+    type: 'もじ',
   },
   {
     id: 55,
@@ -187,7 +205,8 @@ export const JLPT_N3_MOJI_EXERCISES: JLPTExercise[] = [
     ],  
     moji: 'わたって',
     options: ['渡って', '通って', '進って', '沿って'],
-    answer: 'xxxxx',
+    answer: '渡って',
+    type: 'もじ',
   },
   {
     id: 58,
@@ -197,7 +216,8 @@ export const JLPT_N3_MOJI_EXERCISES: JLPTExercise[] = [
     ],  
     moji: '残念',
     options: ['さんれん', 'ざんれん', 'ざっねん', 'ざんねん'],
-    answer: 'xxxxx',
+    answer: 'ざんねん',
+    type: 'もじ',
   },
   {
     id: 61,
@@ -207,7 +227,8 @@ export const JLPT_N3_MOJI_EXERCISES: JLPTExercise[] = [
     ],  
     moji: '細かく',
     options: ['こまかく', 'みじかく', 'ほそかく', 'やわらかく'],
-    answer: 'xxxxx',
+    answer: 'こまかく',
+    type: 'もじ',
   },
   {
     id: 64,
@@ -217,7 +238,8 @@ export const JLPT_N3_MOJI_EXERCISES: JLPTExercise[] = [
     ],  
     moji: 'とまり',
     options: ['足まり', '泊まり', '通まり', '止まり'],
-    answer: 'xxxxx',
+    answer: '泊まり',
+    type: 'もじ',
   },
   {
     id: 67,
@@ -227,7 +249,8 @@ export const JLPT_N3_MOJI_EXERCISES: JLPTExercise[] = [
     ],  
     moji: '比べて',
     options: ['ひらべて', 'くらべて', 'ならべて', 'こらべて'],
-    answer: 'xxxxx',
+    answer: 'くらべて',
+    type: 'もじ',
   },
   {
     id: 70,
@@ -237,7 +260,8 @@ export const JLPT_N3_MOJI_EXERCISES: JLPTExercise[] = [
     ],  
     moji: 'やさしい',
     options: ['難しい', '易しい', '優しい', '美しい'],
-    answer: 'xxxxx',
+    answer: '優しい',
+    type: 'もじ',
   },
   {
     id: 73,
@@ -247,7 +271,8 @@ export const JLPT_N3_MOJI_EXERCISES: JLPTExercise[] = [
     ],  
     moji: '再来週',
     options: ['さらいしゅう', 'さいらいしゅう', 'せらいしゅう', 'せいらいしゅう'],
-    answer: 'xxxxx',
+    answer: 'さいらいしゅう',
+    type: 'もじ',
   },
   {
     id: 76,
@@ -257,7 +282,8 @@ export const JLPT_N3_MOJI_EXERCISES: JLPTExercise[] = [
     ],  
     moji: '君',
     options: ['くん', 'あなた', 'かみ', 'きみ'],
-    answer: 'xxxxx',
+    answer: 'きみ',
+    type: 'もじ',
   },
   {
     id: 79,
@@ -267,7 +293,8 @@ export const JLPT_N3_MOJI_EXERCISES: JLPTExercise[] = [
     ],  
     moji: 'こ',
     options: ['個', '台', '校', '故'],
-    answer: 'xxxxx',
+    answer: '個',
+    type: 'もじ',
   },
   {
     id: 82,
@@ -277,7 +304,8 @@ export const JLPT_N3_MOJI_EXERCISES: JLPTExercise[] = [
     ],  
     moji: '静か',
     options: ['にぎやか', 'ゆたか', 'しずか', 'のどか'],
-    answer: 'xxxxx',
+    answer: 'しずか',
+    type: 'もじ',
   },
   {
     id: 85,
@@ -287,7 +315,8 @@ export const JLPT_N3_MOJI_EXERCISES: JLPTExercise[] = [
     ],  
     moji: 'お伝え',
     options: ['おつだえ', 'おつたえ', 'おだつえ', 'おたつえ'],
-    answer: 'xxxxx',
+    answer: 'おつたえ',
+    type: 'もじ',
   },
   {
     id: 88,
@@ -297,7 +326,8 @@ export const JLPT_N3_MOJI_EXERCISES: JLPTExercise[] = [
     ],  
     moji: 'こども',
     options: ['子達', '子供', '小児', '小人'],
-    answer: 'xxxxx',
+    answer: '子供',
+    type: 'もじ',
   },
   /*
   * REVIEW OF SECTION 1
@@ -311,8 +341,9 @@ export const JLPT_N3_MOJI_EXERCISES: JLPTExercise[] = [
     ],  
     moji: '空港',
     options: ['くうこう', 'こうくう'],
-    answer: 'xxxxx',
+    answer: 'くうこう',
     refersTo: 31,
+    type: 'もじ',
   },
   {
     id: 92,
@@ -322,8 +353,9 @@ export const JLPT_N3_MOJI_EXERCISES: JLPTExercise[] = [
     ],  
     moji: 'じゆう',
     options: ['自由', '理由'],
-    answer: 'xxxxx',
+    answer: '自由',
     refersTo: 4,
+    type: 'もじ',
   },
   {
     id: 97,
@@ -333,8 +365,9 @@ export const JLPT_N3_MOJI_EXERCISES: JLPTExercise[] = [
     ],  
     moji: '遅れない',
     options: ['おそれない', 'おくれない'],
-    answer: 'xxxxx',
+    answer: 'おくれない',
     refersTo: 34,
+    type: 'もじ',
   },
   {
     id: 98,
@@ -344,7 +377,8 @@ export const JLPT_N3_MOJI_EXERCISES: JLPTExercise[] = [
     ],  
     moji: 'しんじられない',
     options: ['信じられない', '真じられない'],
-    answer: 'xxxxx',
+    answer: '信じられない',
+    type: 'もじ',
   },
   {
     id: 103,
@@ -354,8 +388,9 @@ export const JLPT_N3_MOJI_EXERCISES: JLPTExercise[] = [
     ],  
     moji: '果物',
     options: ['くだもの', 'こどもの'],
-    answer: 'xxxxx',
+    answer: 'くだもの',
     refersTo: 10,
+    type: 'もじ',
   },
   {
     id: 104,
@@ -365,8 +400,9 @@ export const JLPT_N3_MOJI_EXERCISES: JLPTExercise[] = [
     ],  
     moji: 'きょく',
     options: ['局', '曲'],
-    answer: 'xxxxx',
+    answer: '曲',
     refersTo: 16,
+    type: 'もじ',
   },
   {
     id: 109,
@@ -376,8 +412,9 @@ export const JLPT_N3_MOJI_EXERCISES: JLPTExercise[] = [
     ],  
     moji: '優先席',
     options: ['ようせんせき', 'ゆうせんせき'],
-    answer: 'xxxxx',
+    answer: 'ゆうせんせき',
     refersTo: 70,
+    type: 'もじ',
   },
   {
     id: 110,
@@ -387,8 +424,9 @@ export const JLPT_N3_MOJI_EXERCISES: JLPTExercise[] = [
     ],  
     moji: 'わって',
     options: ['割って', '折って'],
-    answer: 'xxxxx',
+    answer: '割って',
     refersTo: 34,
+    type: 'もじ',
   },
   {
     id: 115,
@@ -398,8 +436,9 @@ export const JLPT_N3_MOJI_EXERCISES: JLPTExercise[] = [
     ],  
     moji: '夫婦',
     options: ['ふさい', 'ふうふ'],
-    answer: 'xxxxx',
+    answer: 'ふうふ',
     refersTo: 31,
+    type: 'もじ',
   },
   {
     id: 116,
@@ -409,8 +448,9 @@ export const JLPT_N3_MOJI_EXERCISES: JLPTExercise[] = [
     ],  
     moji: 'とんで',
     options: ['込んで', '飛んで'],
-    answer: 'xxxxx',
+    answer: '飛んで',
     refersTo: 49,
+    type: 'もじ',
   },
   {
     id: 121,
@@ -420,8 +460,9 @@ export const JLPT_N3_MOJI_EXERCISES: JLPTExercise[] = [
     ],  
     moji: '三角',
     options: ['さんかく', 'みつかど'],
-    answer: 'xxxxx',
+    answer: 'さんかく',
     refersTo: 55,
+    type: 'もじ',
   },
   {
     id: 122,
@@ -431,8 +472,9 @@ export const JLPT_N3_MOJI_EXERCISES: JLPTExercise[] = [
     ],  
     moji: 'とまる',
     options: ['泊まる', '宿まる'],
-    answer: 'xxxxx',
+    answer: '泊まる',
     refersTo: 64,
+    type: 'もじ',
   },
 ];
 

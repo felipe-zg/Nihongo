@@ -7,6 +7,7 @@ export const JLPT_N3_GRAMMAR_EXERCISES: JLPTExercise[] = [
     ],
     options: ['ことか', 'ことだ', 'ものか', 'ものだ'],
     answer: 'ものだ',
+    type: 'ぶんぽう',
   },
   {
     id: 6,
@@ -15,7 +16,8 @@ export const JLPT_N3_GRAMMAR_EXERCISES: JLPTExercise[] = [
       'ばかりいないで、自然に親{した}しんだらどうですか。',
     ],
     options: ['し', 'して', 'した', 'する'],
-    answer: 'xxx',
+    answer: 'して',
+    type: 'ぶんぽう',
   },
   {
     id: 9,
@@ -25,6 +27,7 @@ export const JLPT_N3_GRAMMAR_EXERCISES: JLPTExercise[] = [
     ],
     options: ['手伝って', '手振う', '手伝ったのは', '手伝ってくれて'],
     answer: '手伝ってくれて',
+    type: 'ぶんぽう',
   },
   {
     id: 12,
@@ -33,7 +36,8 @@ export const JLPT_N3_GRAMMAR_EXERCISES: JLPTExercise[] = [
       'いけないんだよ。」\nB:「あ、そうなんだ。」',
     ],
     options: ['とっちゃ', 'とるんじゃ', 'とんじゃ', 'とっちゃって'],
-    answer: 'xxxxx',
+    answer: 'とっちゃ',
+    type: 'ぶんぽう',
   },
   {
     id: 15,
@@ -42,7 +46,8 @@ export const JLPT_N3_GRAMMAR_EXERCISES: JLPTExercise[] = [
       'ちゃおうか。」\nB:「明日の分、とっとこうよ。」',
     ],
     options: ['食べる', '食べて', '食べ', '食べた'],
-    answer: 'xxxxx',
+    answer: '食べ',
+    type: 'ぶんぽう',
   },
   {
     id: 18,
@@ -51,7 +56,8 @@ export const JLPT_N3_GRAMMAR_EXERCISES: JLPTExercise[] = [
       'だろうと思う。',
     ],
     options: ['いく', 'いかない', 'いこう', 'いくまい'],
-    answer: 'xxxx',
+    answer: 'いかない',
+    type: 'ぶんぽう',
   },
   {
     id: 21,
@@ -60,7 +66,8 @@ export const JLPT_N3_GRAMMAR_EXERCISES: JLPTExercise[] = [
       'と思います。',
     ],
     options: ['受けよう', '受けろう', '受けるよう', '受こう'],
-    answer: 'xxxx',
+    answer: '受けよう',
+    type: 'ぶんぽう',
   },
   {
     id: 24,
@@ -69,7 +76,8 @@ export const JLPT_N3_GRAMMAR_EXERCISES: JLPTExercise[] = [
       'が…・。」',
     ],
     options: ['行くつもりです', '行くつもりません', '行ったつもり', '行くつもりでした'],
-    answer: 'xxxxx',
+    answer: '行くつもりでした',
+    type: 'ぶんぽう',
   },
   {
     id: 27,
@@ -78,7 +86,8 @@ export const JLPT_N3_GRAMMAR_EXERCISES: JLPTExercise[] = [
       '忘れていた。',
     ],
     options: ['には', 'のに', 'のを', 'もの'],
-    answer: 'xxxxxx',
+    answer: 'のを',
+    type: 'ぶんぽう',
   },
   {
     id: 30,
@@ -87,7 +96,8 @@ export const JLPT_N3_GRAMMAR_EXERCISES: JLPTExercise[] = [
       '気になって眠れない。',
     ],
     options: ['については', 'のことが', 'によって', ' だから'],
-    answer: 'xxxxx',
+    answer: 'のことが',
+    type: 'ぶんぽう',
   },
   {
     id: 33,
@@ -96,7 +106,8 @@ export const JLPT_N3_GRAMMAR_EXERCISES: JLPTExercise[] = [
       '練習は休みません。',
     ],
     options: ['疲れていても', '疲れていては', '疲れていると', '疲れているから'],
-    answer: 'xxxxx',
+    answer: '疲れていても',
+    type: 'ぶんぽう',
   },
   {
     id: 36,
@@ -105,7 +116,8 @@ export const JLPT_N3_GRAMMAR_EXERCISES: JLPTExercise[] = [
       '泳ぐと危{き}険{けん}です。',
     ],
     options: ['さずに', 'しずに', 'されずに', 'せずに'],
-    answer: 'xxxxxx',
+    answer: 'せずに',
+    type: 'ぶんぽう',
   },
   {
     id: 39,
@@ -114,7 +126,8 @@ export const JLPT_N3_GRAMMAR_EXERCISES: JLPTExercise[] = [
       '」って書いてあるんだよ。」',
     ],
     options: ['飛び出せ', '飛び出して', '飛び出そう', '飛び出すな'],
-    answer: 'xxxxx',
+    answer: '飛び出すな',
+    type: 'ぶんぽう',
   },
   {
     id: 42,
@@ -123,7 +136,8 @@ export const JLPT_N3_GRAMMAR_EXERCISES: JLPTExercise[] = [
       'かなあ。」\nB:「お金のむだだよ。」',
     ],
     options: ['買うもの', '買うこと', '買おう', '買うよう'],
-    answer: 'xxxxx',
+    answer: '買おう',
+    type: 'ぶんぽう',
   },
   {
     id: 45,
@@ -132,7 +146,8 @@ export const JLPT_N3_GRAMMAR_EXERCISES: JLPTExercise[] = [
       'ほしい。',
     ],
     options: ['覚えて', '覚えないで', '忘れて', '忘れないで'],
-    answer: 'xxxxx',
+    answer: '忘れないで',
+    type: 'ぶんぽう',
   },
   {
     id: 48,
@@ -141,7 +156,8 @@ export const JLPT_N3_GRAMMAR_EXERCISES: JLPTExercise[] = [
       '、マスクをします。',
     ],
     options: ['ために', 'ように', 'のそうに', 'とおりに'],
-    answer: 'xxxxx',
+    answer: 'ように',
+    type: 'ぶんぽう',
   },
   {
     id: 51,
@@ -150,7 +166,8 @@ export const JLPT_N3_GRAMMAR_EXERCISES: JLPTExercise[] = [
       'ないのに、遊びに行けるわけがない。',
     ],
     options: ['でも', 'ほど', 'さえ', 'だけ'],
-    answer: 'xxxxxx',
+    answer: 'さえ',
+    type: 'ぶんぽう',
   },
   {
     id: 54,
@@ -159,7 +176,8 @@ export const JLPT_N3_GRAMMAR_EXERCISES: JLPTExercise[] = [
       'なんかいられないよ。」',
     ],
     options: ['休んで', '休む', '体み', '休んだ'],
-    answer: 'xxxxxx',
+    answer: '休んで',
+    type: 'ぶんぽう',
   },
   {
     id: 57,
@@ -168,7 +186,8 @@ export const JLPT_N3_GRAMMAR_EXERCISES: JLPTExercise[] = [
       '。',
     ],
     options: ['しかない', 'だけない', 'からない', 'こそない'],
-    answer: 'xxxxxx',
+    answer: 'しかない',
+    type: 'ぶんぽう',
   },
   {
     id: 60,
@@ -177,7 +196,8 @@ export const JLPT_N3_GRAMMAR_EXERCISES: JLPTExercise[] = [
       '、何を思い浮{う}かべますか。」\nB:「雷{かみなり}門{もん}、神{み}輿{こし}、そしてスカイツリーかな。',
     ],
     options: ['として', 'というと', 'といっても', 'といっては'],
-    answer: 'xxxxxx',
+    answer: 'というと',
+    type: 'ぶんぽう',
   },
   {
     id: 63,
@@ -186,7 +206,8 @@ export const JLPT_N3_GRAMMAR_EXERCISES: JLPTExercise[] = [
       '花火大{たい}会{かい}が行われるため、交{こう}通{つう}機{き}関{かん}は混{こん}雑{ざつ}するでしょう。',
     ],
     options: ['について', 'によって', 'にあたって', 'において'],
-    answer: 'xxxxxx',
+    answer: 'において',
+    type: 'ぶんぽう',
   },
   {
     id: 66,
@@ -195,7 +216,8 @@ export const JLPT_N3_GRAMMAR_EXERCISES: JLPTExercise[] = [
       'ニュースをお伝えいたします。',
     ],
     options: ['に関{かん}する', 'に対{たい}する', 'に反{はん}する', 'に先{さき}立{た}つ'],
-    answer: 'xxxxx',
+    answer: 'に関{かん}する',
+    type: 'ぶんぽう',
   },
   {
     id: 69,
@@ -204,7 +226,8 @@ export const JLPT_N3_GRAMMAR_EXERCISES: JLPTExercise[] = [
       '事故まで起こり、高{こう}速{そく}道{どう}路{ろ}はひどい渋{じゅう}滞{たい}になった。',
     ],
     options: ['にくらべて', 'にくわえて', 'にかけて', 'にさいして'],
-    answer: 'xxxxxxx',
+    answer: 'にくわえて',
+    type: 'ぶんぽう',
   },
   {
     id: 72,
@@ -213,7 +236,8 @@ export const JLPT_N3_GRAMMAR_EXERCISES: JLPTExercise[] = [
       'ください。',
     ],
     options: ['お伝え', 'お伝えて', 'お伝えして', 'お伝えられ'],
-    answer: 'xxxxx',
+    answer: 'お伝え',
+    type: 'ぶんぽう',
   },
   {
     id: 75,
@@ -222,7 +246,8 @@ export const JLPT_N3_GRAMMAR_EXERCISES: JLPTExercise[] = [
       '違います。',
     ],
     options: ['によって', 'にとって', 'において', 'について'],
-    answer: 'xxxxx',
+    answer: 'によって',
+    type: 'ぶんぽう',
   },
   {
     id: 78,
@@ -231,7 +256,8 @@ export const JLPT_N3_GRAMMAR_EXERCISES: JLPTExercise[] = [
       'はずなのに。」\nB: 「あ、ごめん、1個食べちゃった。」',
     ],
     options: ['買う', '買わない', '買った', '買わなかった'],
-    answer: 'xxxxx',
+    answer: '買った',
+    type: 'ぶんぽう',
   },
   {
     id: 81,
@@ -240,7 +266,8 @@ export const JLPT_N3_GRAMMAR_EXERCISES: JLPTExercise[] = [
       '。\nB: 「はい、いいですよ。」',
     ],
     options: ['いただけませんか', 'いただきませんか', 'いただきでしょうか', 'いただいてでしょうか'],
-    answer: 'xxxxx',
+    answer: 'いただけませんか',
+    type: 'ぶんぽう',
   },
   {
     id: 84,
@@ -249,7 +276,8 @@ export const JLPT_N3_GRAMMAR_EXERCISES: JLPTExercise[] = [
       'お待ちください。',
     ],
     options: ['おかけして', 'おかけになって', 'おかけて', 'おかけされて'],
-    answer: 'xxxxx',
+    answer: 'おかけになって',
+    type: 'ぶんぽう',
   },
   {
     id: 87,
@@ -258,7 +286,8 @@ export const JLPT_N3_GRAMMAR_EXERCISES: JLPTExercise[] = [
       '。B:「Aランチ、お願いします。」',
     ],
     options: ['いたしますか', 'なさいますか', 'お食べになりますか', 'いただきますか'],
-    answer: 'xxxxx',
+    answer: 'なさいますか',
+    type: 'ぶんぽう',
   },
   {
     id: 90,
@@ -267,7 +296,8 @@ export const JLPT_N3_GRAMMAR_EXERCISES: JLPTExercise[] = [
       'ように。',
     ],
     options: ['なくなる', 'なくなって', 'なくなった', ' なくなります'],
-    answer: 'xxxxx',
+    answer: 'なくなります',
+    type: 'ぶんぽう',
   },
   /*
   * REVIEW OF SECTION 1
@@ -280,8 +310,9 @@ export const JLPT_N3_GRAMMAR_EXERCISES: JLPTExercise[] = [
       '少し易しくなった。',
     ],
     options: ['にくらべて', 'にくわえて'],
-    answer: 'xxxxxxx',
+    answer: 'にくらべて',
     refersTo: 69,
+    type: 'ぶんぽう',
   },
   {
     id: 96,
@@ -290,8 +321,9 @@ export const JLPT_N3_GRAMMAR_EXERCISES: JLPTExercise[] = [
       '、いつもより早く家を出よう。',
     ],
     options: ['ために', 'ように'],
-    answer: 'xxxxx',
+    answer: 'ように',
     refersTo: 48,
+    type: 'ぶんぽう',
   },
   {
     id: 101,
@@ -300,8 +332,9 @@ export const JLPT_N3_GRAMMAR_EXERCISES: JLPTExercise[] = [
       'いないよ、心配しているんだ。」',
     ],
     options: ['なんか', 'ばかり'],
-    answer: 'xxxxx',
+    answer: 'なんか',
     refersTo: 54,
+    type: 'ぶんぽう',
   },
   {
     id: 102,
@@ -310,8 +343,9 @@ export const JLPT_N3_GRAMMAR_EXERCISES: JLPTExercise[] = [
       'ありがとう。',
     ],
     options: ['もらえて', 'くれて'],
-    answer: 'xxxxx',
+    answer: 'くれて',
     refersTo: 9,
+    type: 'ぶんぽう',
   },
   {
     id: 107,
@@ -320,8 +354,9 @@ export const JLPT_N3_GRAMMAR_EXERCISES: JLPTExercise[] = [
       'がんばります。',
     ],
     options: ['しかない', 'だけある'],
-    answer: 'xxxxxx',
+    answer: 'しかない',
     refersTo: 57,
+    type: 'ぶんぽう',
   },
   {
     id: 108,
@@ -330,8 +365,9 @@ export const JLPT_N3_GRAMMAR_EXERCISES: JLPTExercise[] = [
       '、そっと置いてください。',
     ],
     options: ['ように', 'ために'],
-    answer: 'xxxxx',
+    answer: 'ように',
     refersTo: 48,
+    type: 'ぶんぽう',
   },
   {
     id: 113,
@@ -340,8 +376,9 @@ export const JLPT_N3_GRAMMAR_EXERCISES: JLPTExercise[] = [
       '、サクラですね。',
     ],
     options: ['というより', 'といえば'],
-    answer: 'xxxxx',
+    answer: 'といえば',
     refersTo: 60,
+    type: 'ぶんぽう',
   },
   {
     id: 114,
@@ -350,8 +387,9 @@ export const JLPT_N3_GRAMMAR_EXERCISES: JLPTExercise[] = [
       '。',
     ],
     options: ['してほしくない', 'しなくてほしい'],
-    answer: 'xxxxx',
+    answer: 'してほしくない',
     refersTo: 45,
+    type: 'ぶんぽう',
   },
   {
     id: 119,
@@ -360,8 +398,9 @@ export const JLPT_N3_GRAMMAR_EXERCISES: JLPTExercise[] = [
       'よ。国に帰ったんだから。」',
     ],
     options: ['はずない', 'はずじゃない'],
-    answer: 'xxxxx',
+    answer: 'はずない',
     refersTo: 78,
+    type: 'ぶんぽう',
   },
   {
     id: 120,
@@ -370,8 +409,9 @@ export const JLPT_N3_GRAMMAR_EXERCISES: JLPTExercise[] = [
       '違う。',
     ],
     options: ['にそって', 'によって'],
-    answer: 'xxxxx',
+    answer: 'によって',
     refersTo: 87,
+    type: 'ぶんぽう',
   },
   {
     id: 126,
@@ -380,8 +420,9 @@ export const JLPT_N3_GRAMMAR_EXERCISES: JLPTExercise[] = [
       '。',
     ],
     options: ['ように', 'かなあ'],
-    answer: 'xxxxx',
+    answer: 'ように',
     refersTo: 90,
+    type: 'ぶんぽう',
   },
   /*
   * EXERCISES SECTION 2

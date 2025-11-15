@@ -7,6 +7,7 @@ export const JLPT_N2_GRAMMAR_EXERCISES: JLPTExercise[] = [
     ],
     options: ['行かないきり', '行ったきり', '行きっきり', '行ってきり'],
     answer: '行ったきり',
+    type: 'ぶんぽう',
   },
   {
     id: 9,
@@ -16,6 +17,7 @@ export const JLPT_N2_GRAMMAR_EXERCISES: JLPTExercise[] = [
     ],
     options: ['につき', 'にのみ', 'でこそ', 'でさえ'],
     answer: 'につき',
+    type: 'ぶんぽう',
   },
   {
     id: 12,
@@ -25,6 +27,7 @@ export const JLPT_N2_GRAMMAR_EXERCISES: JLPTExercise[] = [
     ],
     options: ['にはじめ', 'をはじめ', 'にはじめて', 'をはじめて'],
     answer: 'をはじめ',
+    type: 'ぶんぽう',
   },
   {
     id: 15,
@@ -34,6 +37,7 @@ export const JLPT_N2_GRAMMAR_EXERCISES: JLPTExercise[] = [
     ],
     options: ['かゆいだけでならない', 'かゆいしかならない', 'かゆくてたまらない', 'かゆくてしかない'],
     answer: 'かゆくてたまらない。',
+    type: 'ぶんぽう',
   },
   {
     id: 18,
@@ -43,6 +47,7 @@ export const JLPT_N2_GRAMMAR_EXERCISES: JLPTExercise[] = [
     ],
     options: ['飲んでならない', '飲むことはならない', '飲まないことではない', '飲まずにはいられない'],
     answer: '飲まずにはいられない',
+    type: 'ぶんぽう',
   },
   {
     id: 21,
@@ -52,6 +57,7 @@ export const JLPT_N2_GRAMMAR_EXERCISES: JLPTExercise[] = [
     ],
     options: ['ように', 'ほどに', 'だけに', 'くらいに'],
     answer: 'だけに',
+    type: 'ぶんぽう',
   },
   {
     id: 24,
@@ -61,6 +67,7 @@ export const JLPT_N2_GRAMMAR_EXERCISES: JLPTExercise[] = [
     ],
     options: ['にわたり', 'にとって', 'にしても', 'にあたって'],
     answer: 'るにあたって',
+    type: 'ぶんぽう',
   },
   {
     id: 27,
@@ -70,6 +77,7 @@ export const JLPT_N2_GRAMMAR_EXERCISES: JLPTExercise[] = [
     ],
     options: ['にさえ', 'について', 'につき', 'によると'],
     answer: 'につき',
+    type: 'ぶんぽう',
   },
   {
     id: 30,
@@ -79,6 +87,7 @@ export const JLPT_N2_GRAMMAR_EXERCISES: JLPTExercise[] = [
     ],
     options: ['せいか', 'につれて', 'とたんに', ' ばかりか'],
     answer: 'につれて',
+    type: 'ぶんぽう',
   },
   {
     id: 33,
@@ -88,6 +97,7 @@ export const JLPT_N2_GRAMMAR_EXERCISES: JLPTExercise[] = [
     ],
     options: ['にしたら', 'でさえ', 'に際し', 'にしても'],
     answer: 'にしたら',
+    type: 'ぶんぽう',
   },
   {
     id: 36,
@@ -98,6 +108,7 @@ export const JLPT_N2_GRAMMAR_EXERCISES: JLPTExercise[] = [
     options: ['にかける', 'にわたる', 'における', 'にあたる'],
     answer: 'における',
     comment: "教育の諸問題 OK",
+    type: 'ぶんぽう',
   },
   {
     id: 39,
@@ -108,6 +119,7 @@ export const JLPT_N2_GRAMMAR_EXERCISES: JLPTExercise[] = [
     options: ['わけがない', 'っこない', 'ないっぽい', 'ものか'],
     answer: 'っこない',
     comment: "できるわけがない / できるものか OK",
+    type: 'ぶんぽう',
   },
   {
     id: 42,
@@ -118,6 +130,7 @@ export const JLPT_N2_GRAMMAR_EXERCISES: JLPTExercise[] = [
     options: ['たびに', 'にしたら', 'にこそ', 'にしろ'],
     answer: 'にしろ',
     comment: "(たとえ) あきらめるにしても / あきらめるにせよ OK",
+    type: 'ぶんぽう',
   },
   {
     id: 45,
@@ -128,6 +141,7 @@ export const JLPT_N2_GRAMMAR_EXERCISES: JLPTExercise[] = [
     options: ['にすぎない', 'しかない', 'ということだ', 'にかぎる'],
     answer: 'に過ぎない',
     comment: "言い訳でしかない OK",
+    type: 'ぶんぽう',
   },
   {
     id: 48,
@@ -137,6 +151,7 @@ export const JLPT_N2_GRAMMAR_EXERCISES: JLPTExercise[] = [
     ],
     options: ['ことは', 'というと', 'ことに', 'ことだから'],
     answer: 'ことに',
+    type: 'ぶんぽう',
   },
   {
     id: 51,
@@ -146,6 +161,7 @@ export const JLPT_N2_GRAMMAR_EXERCISES: JLPTExercise[] = [
     ],
     options: ['関して', '応じて', '際して', '反して'],
     answer: '応{おう}じて',
+    type: 'ぶんぽう',
   },
   {
     id: 54,
@@ -155,6 +171,7 @@ export const JLPT_N2_GRAMMAR_EXERCISES: JLPTExercise[] = [
     ],
     options: ['にわたって', 'にそって', 'にあたって', 'に先だって'],
     answer: 'に沿{そ}って',
+    type: 'ぶんぽう',
   },
   {
     id: 57,
@@ -164,6 +181,7 @@ export const JLPT_N2_GRAMMAR_EXERCISES: JLPTExercise[] = [
     ],
     options: ['に基づいて', 'に応えて', 'によって', 'に反して'],
     answer: 'に反{はん}して',
+    type: 'ぶんぽう',
   },
   {
     id: 60,
@@ -173,6 +191,7 @@ export const JLPT_N2_GRAMMAR_EXERCISES: JLPTExercise[] = [
     ],
     options: ['にかぎって', 'にかぎらず', 'かぎりで', 'をかぎりに'],
     answer: 'に限{かぎ}って',
+    type: 'ぶんぽう',
   },
   {
     id: 63,
@@ -182,6 +201,7 @@ export const JLPT_N2_GRAMMAR_EXERCISES: JLPTExercise[] = [
     ],
     options: ['につれて', 'にもとづいて', 'のもとで', 'である反面'],
     answer: 'に基{もと}づいて',
+    type: 'ぶんぽう',
   },
   {
     id: 66,
@@ -191,6 +211,7 @@ export const JLPT_N2_GRAMMAR_EXERCISES: JLPTExercise[] = [
     ],
     options: ['にもかかわらず', 'に反して', 'のに加えて', 'のを問わず'],
     answer: 'にもかかわらず',
+    type: 'ぶんぽう',
   },
   {
     id: 69,
@@ -200,6 +221,7 @@ export const JLPT_N2_GRAMMAR_EXERCISES: JLPTExercise[] = [
     ],
     options: ['すれば', 'つけて', 'つれて', 'こたえて'],
     answer: '応{こた}えて',
+    type: 'ぶんぽう',
   },
   {
     id: 72,
@@ -209,6 +231,7 @@ export const JLPT_N2_GRAMMAR_EXERCISES: JLPTExercise[] = [
     ],
     options: ['を問わず', 'にわたって', 'にかけて', 'を中心に'],
     answer: 'にわたって',
+    type: 'ぶんぽう',
   },
   {
     id: 75,
@@ -218,6 +241,7 @@ export const JLPT_N2_GRAMMAR_EXERCISES: JLPTExercise[] = [
     ],
     options: ['のせいで', 'のおかげで', 'をぬきに', 'をめぐって'],
     answer: 'を抜{ぬ}きに',
+    type: 'ぶんぽう',
   },
   {
     id: 78,
@@ -227,6 +251,7 @@ export const JLPT_N2_GRAMMAR_EXERCISES: JLPTExercise[] = [
     ],
     options: ['つけ', 'しろ', 'やら', 'せよ'],
     answer: 'つけ',
+    type: 'ぶんぽう',
   },
   {
     id: 81,
@@ -236,6 +261,7 @@ export const JLPT_N2_GRAMMAR_EXERCISES: JLPTExercise[] = [
     ],
     options: ['しかない', 'かかわりない', 'かぎらない', 'ほかならない'],
     answer: 'ほかならない',
+    type: 'ぶんぽう',
   },
   {
     id: 84,
@@ -246,6 +272,7 @@ export const JLPT_N2_GRAMMAR_EXERCISES: JLPTExercise[] = [
     ],
     options: ['なり／なり', 'やら／やら', 'にせよ／にせよ', 'にしろ／にしろ'],
     answer: 'やら／やら',
+    type: 'ぶんぽう',
   },
   {
     id: 87,
@@ -255,6 +282,7 @@ export const JLPT_N2_GRAMMAR_EXERCISES: JLPTExercise[] = [
     ],
     options: ['通り', '通った', '通ろう', '通って'],
     answer: '通{とお}った',
+    type: 'ぶんぽう',
   },
   {
     id: 90,
@@ -264,6 +292,7 @@ export const JLPT_N2_GRAMMAR_EXERCISES: JLPTExercise[] = [
     ],
     options: ['をこめて', 'のもとで', 'をとわず', ' のたびに'],
     answer: 'のもとで',
+    type: 'ぶんぽう',
   },
   /*
   * REVIEW OF SECTION 1
@@ -277,6 +306,7 @@ export const JLPT_N2_GRAMMAR_EXERCISES: JLPTExercise[] = [
     ],
     options: ['受けっこない', '受かりっこない'],
     answer: '受けっこない',
+    type: 'ぶんぽう',
   },
   {
     id: 96,
@@ -286,6 +316,7 @@ export const JLPT_N2_GRAMMAR_EXERCISES: JLPTExercise[] = [
     ],
     options: ['おどろいた', 'おどろいたという'],
     answer: 'おどろいた',
+    type: 'ぶんぽう',
   },
   {
     id: 101,
@@ -295,6 +326,7 @@ export const JLPT_N2_GRAMMAR_EXERCISES: JLPTExercise[] = [
     ],
     options: ['高くてたまらない', '高いだけのことはある'],
     answer: '高いだけのことはある',
+    type: 'ぶんぽう',
   },
   {
     id: 102,
@@ -304,6 +336,7 @@ export const JLPT_N2_GRAMMAR_EXERCISES: JLPTExercise[] = [
     ],
     options: ['つこない', 'もんか'],
     answer: 'もんか',
+    type: 'ぶんぽう',
   },
   {
     id: 107,
@@ -313,6 +346,7 @@ export const JLPT_N2_GRAMMAR_EXERCISES: JLPTExercise[] = [
     ],
     options: ['こたえて', 'にもとづいて'],
     answer: 'こたえて',
+    type: 'ぶんぽう',
   },
   {
     id: 108,
@@ -322,6 +356,7 @@ export const JLPT_N2_GRAMMAR_EXERCISES: JLPTExercise[] = [
     ],
     options: ['につれて', 'にそって'],
     answer: 'に連{つ}れて',  
+    type: 'ぶんぽう',
   },
   {
     id: 113,
@@ -331,6 +366,7 @@ export const JLPT_N2_GRAMMAR_EXERCISES: JLPTExercise[] = [
     ],
     options: ['にともない', 'にあたり'],
     answer: 'に当{あ}たり',
+    type: 'ぶんぽう',
   },
   {
     id: 114,
@@ -340,6 +376,7 @@ export const JLPT_N2_GRAMMAR_EXERCISES: JLPTExercise[] = [
     ],
     options: ['において', 'のもとで'],
     answer: 'において',
+    type: 'ぶんぽう',
   },
   {
     id: 119,
@@ -349,6 +386,7 @@ export const JLPT_N2_GRAMMAR_EXERCISES: JLPTExercise[] = [
     ],
     options: ['にすぎない', 'にかぎる'],
     answer: 'に過{す}ぎない',
+    type: 'ぶんぽう',
   },
   {
     id: 120,
@@ -359,6 +397,7 @@ export const JLPT_N2_GRAMMAR_EXERCISES: JLPTExercise[] = [
     ],
     options: ['にせよ/にせよ', 'やら/やら'],
     answer: 'やら/やら',
+    type: 'ぶんぽう',
   },
   {
     id: 126,
@@ -368,6 +407,7 @@ export const JLPT_N2_GRAMMAR_EXERCISES: JLPTExercise[] = [
     ],
     options: ['ばかりに', 'にもかかわらず'],
     answer: 'ばかりに',
+    type: 'ぶんぽう',
   },
   /*
   * EXERCISES SECTION 2
