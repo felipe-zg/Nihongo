@@ -3,7 +3,7 @@ import Nihongo500Mondai from "./Nihongo500N3Mondai";
 import { useSearchParams } from "react-router-dom";
 import { JLPT_N2_GRAMMAR_EXERCISES, JLPT_N2_MOJI_EXERCISES, JLPT_N3_GOI_EXERCISES, JLPT_N3_GRAMMAR_EXERCISES, JLPT_N3_MOJI_EXERCISES } from "../../../consts";
 
-function mergeAlternating<T>(...arrays: T[][]): T[] {
+function mergeAlternating<T extends { id: number }>(...arrays: T[][]): T[] {
   const maxLength = Math.max(...arrays.map(arr => arr.length));
   const result: T[] = [];
 
@@ -15,7 +15,7 @@ function mergeAlternating<T>(...arrays: T[][]): T[] {
     }
   }
 
-  return result;
+  return result.sort((a, b) => a.id - b.id);
 }
 
 const Nihongo500MondaiPage: React.FC = () => {
