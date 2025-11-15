@@ -32,6 +32,7 @@ function OptionsTable({
     <VStack space={2}>
       {options.map((option, index) => {
         const optionNormalized = normalize(option);
+        const optionParts = parseRuby(optionNormalized);
 
         let backgroundColor = "white";
 
@@ -61,7 +62,13 @@ function OptionsTable({
           >
             <Box padding={3} borderWidth={1} borderColor="gray.300" borderRadius={5}>
               <Text fontSize="md" color="black">
-                {option}
+                {optionParts.map((part, partIndex) => {
+                  return (
+                    <span key={partIndex} style={{ color: 'black' }}>
+                      {part.furigana ? <ruby>{part.kanji}<rt>{part.furigana}</rt></ruby> : part.kanji}
+                    </span>
+                  );
+                })}
               </Text>
             </Box>
           </Pressable>
@@ -88,16 +95,46 @@ function OptionsTable({
   );
 }
 
+function BoxHeader({ title, refersTo }: { title: string, refersTo?: number }) {
+  return (
+    <Box position="relative" w="100%">
+      <Text fontSize="sm" color="pink.500" textAlign="center">
+        {title}
+      </Text>
+
+      {refersTo && (
+        <Box
+          position="absolute"
+          right={0}
+          top={0}
+          borderWidth={0.5}
+          borderColor="pink.500"
+          borderRadius="full"
+          w={6}
+          h={6}
+          justifyContent="center"
+          alignItems="center"
+        >
+          <Text fontSize="sm" color="pink.500">
+            {refersTo}
+          </Text>
+        </Box>
+      )}
+    </Box>
+  )
+}
+
 
 const Nihongo500Mondai: React.FC<Props> = ({ items }) => {
 
   return (
     <Box padding={5} minHeight={"100vh"}>
-      {items.map((item, index) => {
+      {items.map((item) => {
         const parts = parseRuby(item.content.join(item.moji ? `<${item.moji}>` : '_____'));
         let color = 'black';
         return (
-          <Box key={item.id} marginBottom={8} padding={5} backgroundColor="#fffff0" borderRadius={10} shadow={4} >
+          <Box key={item.id} marginBottom={8} px={5} pb={5} pt={3} backgroundColor="#fffff0" borderRadius={10} shadow={4} >
+            <BoxHeader title={item.type} refersTo={item.refersTo} />
             <VStack space={4}>
               <h2 style={{ color: 'black', whiteSpace: 'pre-wrap' }}>{item.id}) &nbsp;&nbsp;
                 {parts.map((part, partIndex) => {
