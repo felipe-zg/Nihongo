@@ -23,3 +23,4 @@ export { default as KanjiM2Cards } from "./M2/KanjiM2Cards";
 export { default as NihongoNoMoriJLPTN3 } from "./JLPT/NihongoNoMori/NihongoNoMoriJLPTN3";
 export { default as RealJapaneseAudioPlayer } from "./AudioPlayers/RealJapanese";
 export { default as Nihongo500Mondai } from "./Nihongo500/Mondai";
+export { default as PastJLPTExams } from "./JLPT/PastExams";

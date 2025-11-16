@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { DaysOfTheMonth, Deck, GrammarJLPTN2, JLPTExercisesPrint, JLPTVocabsPrint, Kanji, KanjiM2, KanjiM2Cards, KanjiPractice, KanjiPrint, Levels, MiniStory, MiniStoryAudioPlayer, MiniStoryCards, MojiGoiDeck, Nihongo500Mondai, Nihongo500N3, NihongoNoMoriGrammar, NihongoNoMoriJLPTN3, Periods, RealJapaneseAudioPlayer, Verbs, VocabsJLPT, Words, WordsYDCQuizz } from './pages';
+import { DaysOfTheMonth, Deck, GrammarJLPTN2, JLPTExercisesPrint, JLPTVocabsPrint, Kanji, KanjiM2, KanjiM2Cards, KanjiPractice, KanjiPrint, Levels, MiniStory, MiniStoryAudioPlayer, MiniStoryCards, MojiGoiDeck, Nihongo500Mondai, Nihongo500N3, NihongoNoMoriGrammar, NihongoNoMoriJLPTN3, PastJLPTExams, Periods, RealJapaneseAudioPlayer, Verbs, VocabsJLPT, Words, WordsYDCQuizz } from './pages';
 import { Box, HStack, NativeBaseProvider } from "native-base";
 import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom';
 import { MusicNavbar, Navbar } from './components';
@@ -56,6 +56,7 @@ function AppContent() {
           <Route path="/audio/real-japanese" element={<RealJapaneseAudioPlayer />} />
           <Route path="/JLPT/NihongoNoMori/N3" element={<NihongoNoMoriJLPTN3 />} />
           <Route path="/JLPT/Nihongo500Mondai" element={<Nihongo500Mondai />} />
+          <Route path="/JLPT/PastExams" element={<PastJLPTExams />} />
         </Routes>
       </Box>
     </HStack>

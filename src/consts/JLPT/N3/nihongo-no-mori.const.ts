@@ -1,13 +1,4 @@
-type T = { 
-  kanji: string; 
-  kana: string 
-  english: string;
-  explanation?: string;
-  example?: string;
-  important?: boolean;
-};
-
-export const NIHONGO_NO_MORI_JLPT_N3: T[] = [
+export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
   {
     kanji: "感情的",
     kana: "かんじょうてき［な］",
@@ -231,6 +222,20 @@ export const NIHONGO_NO_MORI_JLPT_N3: T[] = [
     english: "Not at all・Completely (not)",
     explanation: "Used to express that something is not done at all or completely not the case. (ぜんぜん 〜 ない と同じ意味だ）",
     example: "彼の話は{さっぱり}分からない。I don't understand his story at all."
+  },
+  {
+    kanji: "ぐっすり",
+    kana: "ぐっすり［する］",
+    english: "Soundly・Deeply・To sleep soundly",
+    explanation: "Refers to sleeping deeply and soundly without disturbance.",
+    example: "昨夜は疲れていたので、{ぐっすり}眠れた。I was tired last night, so I slept soundly."
+  },
+  {
+    kanji: "たっぷり",
+    kana: "たっぷり［する］",
+    english: "Plenty・Ample・To have plenty",
+    explanation: "Refers to having a large amount or plenty of something.",
+    example: "このケーキはクリームが{たっぷり}入っている。This cake has plenty of cream."
   },
   {
     kanji: "延期",

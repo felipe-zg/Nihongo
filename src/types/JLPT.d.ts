@@ -38,3 +38,12 @@ declare type JLPTExercise = {
   refersTo?: number; // For linking related exercises
   type: string; // e.g., "もじ", "ごい", "ぶんぽう"
 }
+
+declare type JLPTReview = {
+  kanji: string; 
+  kana: string 
+  english: string;
+  explanation?: string;
+  example?: string;
+  important?: boolean;
+}
