@@ -13,6 +13,7 @@ const routes = [
   { name: '日本語の森復習N3', path: '/JLPT/NihongoNoMori/N3' },
   { name: '日本語500・N3', path: '/JLPT/Nihongo500Mondai?level=N3' },
   { name: '過去のJLPT試験N3', path: '/JLPT/PastExams' },
+  { name: 'トモ先生 JLPT', path: '/JLPT/TomoSenseiJLPT' },
   { name: 'JLPT', path: '/JLPT/N3' },
   { name: 'JLPT Vocabs N3', path: '/JLPT/vocabs?level=N3' },
   { name: 'Levels', path: '/' },

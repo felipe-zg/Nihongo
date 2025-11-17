@@ -24,3 +24,4 @@ export { default as NihongoNoMoriJLPTN3 } from "./JLPT/NihongoNoMori/NihongoNoMo
 export { default as RealJapaneseAudioPlayer } from "./AudioPlayers/RealJapanese";
 export { default as Nihongo500Mondai } from "./Nihongo500/Mondai";
 export { default as PastJLPTExams } from "./JLPT/PastExams";
+export { default as TomoSenseiJLPT } from "./JLPT/TomoSenseiJLPT";
