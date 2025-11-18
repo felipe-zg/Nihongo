@@ -126,6 +126,7 @@ const TomoSenseiJLPT: React.FC<Props> = ({ vocabList }) => {
         </HStack>
       </Stack>
     </Box>
+    
   );
 };
 
