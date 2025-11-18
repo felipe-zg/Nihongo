@@ -201,5 +201,229 @@ export const TOMO_SENSEI_JLPT_N3: JLPTReview[] = [
     english: "Cleanliness・hygiene",
     explanation: "The state of being clean and free from dirt or germs.",
     example: "この病院はとても{清潔}です。\nThis hospital is very clean."
+  },
+  {
+    kanji: "訪問",
+    kana: "ほうもん",
+    english: "Visit・calling on",
+    explanation: "The act of going to see someone or someplace.",
+    example: "友達の家を{訪問}しました。\nI visited my friend's house."
+  },
+  {
+    kanji: "共通",
+    kana: "きょうつう",
+    english: "Common・shared",
+    explanation: "Something that is shared by two or more people or groups.",
+    example: "私たちは{共通}の趣味を持っています。\nWe have a common hobby."
+  },
+  {
+    kanji: "応援",
+    kana: "おうえん",
+    english: "Support・cheering",
+    explanation: "The act of encouraging or backing someone or something.",
+    example: "試合でチームを{応援}しました。\nI cheered for the team at the game."
+  },
+  {
+    kanji: "回収",
+    kana: "かいしゅう",
+    english: "Collection・retrieval",
+    explanation: "The act of gathering or retrieving items or materials.",
+    example: "リサイクルのためにゴミを{回収}します。\nWe collect garbage for recycling."
+  },
+  {
+    kanji: "渋滞",
+    kana: "じゅうたい",
+    english: "Traffic jam・congestion",
+    explanation: "A situation where vehicles are unable to move freely due to overcrowding on the roads.",
+    example: "朝の通勤時間に{渋滞}が発生しました。\nThere was a traffic jam during the morning commute."
+  },
+  {
+    kanji: "主要な",
+    kana: "しゅような",
+    english: "Main・principal・major",
+    explanation: "Of greatest importance or significance.",
+    example: "{主要な}な問題に対処する必要があります。\nWe need to address the main issues."
+  },
+  {
+    kanji: "暗記する",
+    kana: "あんきする",
+    english: "To memorize・to learn by heart",
+    explanation: "To commit information to memory for easy recall.",
+    example: "単語を{暗記する}のは大変です。\nMemorizing vocabulary is difficult."
+  },
+  {
+    kanji: "募集",
+    kana: "ぼしゅう",
+    english: "Recruitment・solicitation・hiring",
+    explanation: "The act of seeking or attracting people to join a group or organization.",
+    example: "新しいメンバーを{募集}しています。\nWe are recruiting new members."
+  },
+  {
+    kanji: "包丁",
+    kana: "ほうちょう",
+    english: "Kitchen knife・chef's knife",
+    explanation: "A sharp knife used for cutting food in the kitchen.",
+    example: "新しい{包丁}を買いました。\nI bought a new kitchen knife."
+  },
+  {
+    kanji: "税金",
+    kana: "ぜいきん",
+    english: "Tax・taxation",
+    explanation: "A compulsory financial charge imposed by a government on individuals or businesses.",
+    example: "所得に応じて{税金}を支払う必要があります。\nYou need to pay taxes according to your income."
+  },
+  {
+    kanji: "物語",
+    kana: "ものがたり",
+    english: "Story・tale・narrative",
+    explanation: "A narrative or account of events, either real or fictional.",
+    example: "この本は面白い{物語}です。\nThis book has an interesting story."
+  },
+  {
+    kanji: "欠点",
+    kana: "けってん",
+    english: "Weakness・flaw・defect",
+    explanation: "A shortcoming or imperfection in someone or something.",
+    example: "誰にでも{欠点}があります。\nEveryone has weaknesses."
+  },
+  {
+    kanji: "中旬",
+    kana: "ちゅうじゅん",
+    english: "Middle of the month",
+    explanation: "The period around the 11th to the 20th of a month.",
+    example: "{中旬}に旅行の予定があります。\nI have plans to travel in the middle of the month."
+  },
+  {
+    kanji: "交流",
+    kana: "こうりゅう",
+    english: "Exchange・interaction・communication",
+    explanation: "The act of sharing ideas, culture, or information between people or groups.",
+    example: "国際的な{交流}が重要です。\nInternational exchange is important."
+  },
+  {
+    kanji: "突然",
+    kana: "とつぜん",
+    english: "Suddenly・abruptly",
+    explanation: "Happening quickly and unexpectedly.",
+    example: "{突然}の雨でびしょ濡れになった。\nI got soaked in the sudden rain."
+  },
+  {
+    kanji: "隠す",
+    kana: "かくす",
+    english: "To hide・to conceal",
+    explanation: "To keep something out of sight or prevent it from being known.",
+    example: "彼は秘密を{隠して}いる。\nHe is hiding a secret."
+  },
+  {
+    kanji: "制限",
+    kana: "せいげん",
+    english: "Restriction・limitation",
+    explanation: "A rule or condition that limits or controls something.",
+    example: "速度{制限}を守ってください。\nPlease obey the speed limit."
+  },
+  {
+    kanji: "申請",
+    kana: "しんせい",
+    english: "Application・request",
+    explanation: "The act of formally asking for something, such as a job or permission.",
+    example: "ビザの{申請}をしました。\nI applied for a visa."
+  },
+  {
+    kanji: "通訳",
+    kana: "つうやく",
+    english: "Interpretation・interpreter",
+    explanation: "The act of translating spoken language from one language to another.",
+    example: "彼は会議で{通訳}を担当しました。\nHe was in charge of interpretation at the meeting."
+  },
+  {
+    kanji: "右折",
+    kana: "うせつ",
+    english: "Right turn",
+    explanation: "The action of turning to the right while driving or walking.",
+    example: "次の交差点で{右折}してください。\nPlease make a right turn at the next intersection."
+  },
+  {
+    kanji: "伝言",
+    kana: "でんごん",
+    english: "Message・oral message",
+    explanation: "A piece of information or communication conveyed from one person to another.",
+    example: "彼からの{伝言}を伝えます。\nI will convey the message from him."
+  },
+  {
+    kanji: "移動する",
+    kana: "いどうする",
+    english: "To move・to transfer",
+    explanation: "To change position or location from one place to another.",
+    example: "新しいオフィスに{移動する}予定です。\nI plan to move to a new office."
+  },
+  {
+    kanji: "期限",
+    kana: "きげん",
+    english: "Deadline・time limit",
+    explanation: "The latest time or date by which something must be done.",
+    example: "レポートの{期限}は来週です。\nThe deadline for the report is next week."
+  },
+  {
+    kanji: "中古",
+    kana: "ちゅうこ",
+    english: "Used・second-hand",
+    explanation: "Something that has been previously owned or used by someone else.",
+    example: "この店では{中古}の本を売っています。\nThis store sells used books."
+  },
+  {
+    kanji: "主張",
+    kana: "しゅちょう",
+    english: "Claim・assertion・opinion",
+    explanation: "A statement or belief that someone strongly supports or defends.",
+    example: "彼は自分の{主張}をはっきりと述べた。\nHe clearly stated his opinion."
+  },
+  {
+    kanji: "姿勢",
+    kana: "しせい",
+    english: "Posture・attitude",
+    explanation: "The way someone holds their body or their approach to a situation.",
+    example: "良い{姿勢}を保つことは健康に良いです。\nMaintaining good posture is good for health."
+  },
+  {
+    kanji: "距離",
+    kana: "きょり",
+    english: "Distance・range",
+    explanation: "The amount of space between two points or locations.",
+    example: "駅までの{距離}は約2キロです。\nThe distance to the station is about 2 kilometers."
+  },
+  {
+    kanji: "翻訳",
+    kana: "ほんやく",
+    english: "Translation・translating",
+    explanation: "The act of converting text from one language to another.",
+    example: "この本は英語から日本語に{翻訳}されました。\nThis book was translated from English to Japanese."
+  },
+  {
+    kanji: "検査",
+    kana: "けんさ",
+    english: "Inspection・examination",
+    explanation: "The act of carefully checking or examining something.",
+    example: "健康{検査}を受けることが重要です。\nIt is important to undergo a health examination."
+  },
+  {
+    kanji: "禁止",
+    kana: "きんし",
+    english: "Prohibition・ban",
+    explanation: "The act of forbidding or not allowing something.",
+    example: "ここでは喫煙が{禁止}されています。\nSmoking is prohibited here."
+  },
+  {
+    kanji: "派手な",
+    kana: "はでな",
+    english: "Flashy・showy・gaudy",
+    explanation: "Attracting attention through bright colors or extravagant style.",
+    example: "彼女は{派手な}服をよく着ます。\nShe often wears flashy clothes."
+  },
+  {
+    kanji: "追い越す",
+    kana: "おいこす",
+    english: "To overtake・to pass",
+    explanation: "To go past someone or something that is ahead.",
+    example: "車が前の車を{追い越した}。\nThe car overtook the vehicle in front."
   }
 ];
