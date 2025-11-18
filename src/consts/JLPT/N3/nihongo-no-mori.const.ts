@@ -238,6 +238,13 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     example: "このケーキはクリームが{たっぷり}入っている。This cake has plenty of cream."
   },
   {
+    kanji: "ぎっしり",
+    kana: "ぎっしり［する］",
+    english: "Tightly・Fully・To be packed tightly",
+    explanation: "Refers to something being filled or packed tightly with no space left.",
+    example: "父のトランクには、子どもたちへの土産が{ぎっしり}入っていた。My father's trunk was packed tightly with souvenirs for the children."
+  },
+  {
     kanji: "延期",
     kana: "えんき［する］",
     english: "Postponement・To postpone",
