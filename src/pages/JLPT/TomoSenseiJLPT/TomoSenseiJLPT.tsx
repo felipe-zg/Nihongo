@@ -1,5 +1,5 @@
 import React, { useMemo, useRef, useState } from "react";
-import { Box, Button, HStack, Text, Select, Switch } from "native-base";
+import { Box, Button, HStack, Text, Select, Switch, Stack } from "native-base";
 import FlipCard, { FlipCardHandle } from "../../../components/FlipCard/FlipCard";
 import { ExampleSentence } from "../../../utils/textDecoration";
 
@@ -70,10 +70,10 @@ const TomoSenseiJLPT: React.FC<Props> = ({ vocabList }) => {
           CardFrontContent={<Text fontSize={"7xl"} color={"teal.500"}>{currentCard.kanji}</Text>}
           CardBackContent={
             <>
-              <Text fontSize={"4xl"} color={"white"} mb={3}>{currentCard.kana}</Text>
-              <Text fontSize={"xl"} color={"primary.500"}>{currentCard.english}</Text>
-              <Text fontSize={"xl"} color={"pink.500"} mb={5}>{currentCard.explanation}</Text>
-              <ExampleSentence sentence={currentCard.example || ""} />
+              <Text textAlign={"center"} fontSize={"4xl"} color={"white"} mb={3}>{currentCard.kana}</Text>
+              <Text textAlign={"center"} fontSize={"xl"} color={"primary.500"}>{currentCard.english}</Text>
+              <Text textAlign={"center"} fontSize={"xl"} color={"pink.500"} mb={5}>{currentCard.explanation}</Text>
+              <ExampleSentence sentence={currentCard.example || ""} textAlign="center" />
             </>
           } 
         />
@@ -86,41 +86,45 @@ const TomoSenseiJLPT: React.FC<Props> = ({ vocabList }) => {
         </Button>
       </HStack>
 
-      <HStack mt={10} width="100%" px={4} >
-        <Box width={120} mr={5}>
-          <Select
-            selectedValue={startIndex.toString()}
-            onValueChange={(value) => handleStartIndexChange(parseInt(value))}
-            placeholder="From"
-            backgroundColor={"white"}
-          >
-            {Array.from({ length: vocabList.length }, (_, i) => (
-              <Select.Item key={i} label={`${i + 1}`} value={i.toString()} />
-            ))}
-          </Select>
-        </Box>
-        <Box width={120} mr={5}>
-          <Select
-            selectedValue={endIndex.toString()}
-            onValueChange={(value) => handleEndIndexChange(parseInt(value))}
-            placeholder="To"
-            backgroundColor={"white"}
-          >
-            {Array.from({ length: vocabList.length - startIndex }, (_, i) => (
-              <Select.Item key={i + startIndex} label={`${i + startIndex + 1}`} value={(i + startIndex).toString()} />
-            ))}
-          </Select>
-        </Box>
-        <button disabled={isShuffled} onClick={shuffleCards}>Shuffle ⇄</button>
-        <HStack space={2} ml={5}>
-          <Switch
-            onValueChange={(val) => setIsChallengeMode(val)}
-            colorScheme="red"
-            isChecked={isChallengeMode}
-          />
-          <Text color="red.500">Challenge Mode</Text>
+      <Stack my={10} width="100%" px={4} direction={{ base: "column", lg: "row" }} space={5}>
+        <HStack space={2}>
+          <Box width={120} mr={5}>
+            <Select
+              selectedValue={startIndex.toString()}
+              onValueChange={(value) => handleStartIndexChange(parseInt(value))}
+              placeholder="From"
+              backgroundColor={"white"}
+            >
+              {Array.from({ length: vocabList.length }, (_, i) => (
+                <Select.Item key={i} label={`${i + 1}`} value={i.toString()} />
+              ))}
+            </Select>
+          </Box>
+          <Box width={120} mr={5}>
+            <Select
+              selectedValue={endIndex.toString()}
+              onValueChange={(value) => handleEndIndexChange(parseInt(value))}
+              placeholder="To"
+              backgroundColor={"white"}
+            >
+              {Array.from({ length: vocabList.length - startIndex }, (_, i) => (
+                <Select.Item key={i + startIndex} label={`${i + startIndex + 1}`} value={(i + startIndex).toString()} />
+              ))}
+            </Select>
+          </Box>
         </HStack>
-      </HStack>
+        <HStack space={2} alignItems="center">
+          <button disabled={isShuffled} onClick={shuffleCards}>Shuffle ⇄</button>
+          <HStack space={2} ml={5} alignItems="center">
+            <Switch
+              onValueChange={(val) => setIsChallengeMode(val)}
+              colorScheme="red"
+              isChecked={isChallengeMode}
+            />
+            <Text color="red.500">Challenge Mode</Text>
+          </HStack>
+        </HStack>
+      </Stack>
     </Box>
   );
 };

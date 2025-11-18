@@ -5,7 +5,7 @@ import { Text } from "native-base";
  * @param String - phrase to be decorated
  * @returns String - decorated phrase
  */
-export function ExampleSentence({ sentence }: { sentence: string }) {
+export function ExampleSentence({ sentence, textAlign }: { sentence: string; textAlign?: "left" | "center" | "right" }) {
   // Split the string into 3 parts: before <>, inside <>, and after <>
   // const match = sentence.match(/^(.*)\{(.*)\}(.*)$/);
   const match = sentence.match(/^[\s\S]*?\{([\s\S]*?)\}[\s\S]*$/);
@@ -13,7 +13,7 @@ export function ExampleSentence({ sentence }: { sentence: string }) {
   if (!match) {
     // No <> found, render normally
     return (
-      <Text fontSize="sm" italic color="gray.400">
+      <Text textAlign={textAlign || "left"} fontSize="sm" italic color="gray.400">
         {sentence}
       </Text>
     );
