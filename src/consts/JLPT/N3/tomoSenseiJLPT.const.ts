@@ -425,5 +425,180 @@ export const TOMO_SENSEI_JLPT_N3: JLPTReview[] = [
     english: "To overtake・to pass",
     explanation: "To go past someone or something that is ahead.",
     example: "車が前の車を{追い越した}。\nThe car overtook the vehicle in front."
+  },
+  {
+    kanji: "増減",
+    kana: "ぞうげん",
+    english: "Increase and decrease・fluctuation",
+    explanation: "The act of rising and falling in number or amount.",
+    example: "売上の{増減}を分析する必要があります。\nWe need to analyze the fluctuations in sales."
+  },
+  {
+    kanji: "岩",
+    kana: "いわ",
+    english: "Rock・boulder",
+    explanation: "A large mass of stone forming a hill, cliff, or other natural feature.",
+    example: "山の中に大きな{岩}がありました。\nThere was a large rock in the mountain."
+  },
+  {
+    kanji: "疑問",
+    kana: "ぎもん",
+    english: "Question・doubt",
+    explanation: "A feeling of uncertainty or a question about something.",
+    example: "子どもの{疑問}に答えた。\nI answered the child's question."
+  },
+  {
+    kanji: "血液型",
+    kana: "けつえきがた",
+    english: "Blood type",
+    explanation: "The classification of blood based on the presence or absence of certain antigens.",
+    example: "彼の{血液型}はA型です。\nHis blood type is A."
+  },
+  {
+    kanji: "通勤",
+    kana: "つうきん",
+    english: "Commuting・going to work",
+    explanation: "The act of traveling to and from one's place of work.",
+    example: "毎日電車で{通勤}しています。\nI commute by train every day."
+  },
+  {
+    kanji: "逆",
+    kana: "ぎゃく",
+    english: "Reverse・opposite・contrary",
+    explanation: "The opposite direction or order of something.",
+    example: "彼は{逆}の道を選んだ。\nHe chose the opposite path."
+  },
+  {
+    kanji: "個人",
+    kana: "こじん",
+    english: "Individual・personal",
+    explanation: "Relating to a single person rather than a group.",
+    example: "これは{個人}の意見です。\nThis is an individual opinion."
+  },
+  {
+    kanji: "減少",
+    kana: "げんしょう",
+    english: "Decrease・reduction",
+    explanation: "The act of becoming smaller or less in number or amount.",
+    example: "人口の{減少}が問題となっています。\nThe decrease in population is becoming a problem."
+  },
+  {
+    kanji: "積極的",
+    kana: "せっきょくてき",
+    english: "Positive・proactive・aggressive",
+    explanation: "Having a confident and enthusiastic approach to situations.",
+    example: "彼は{積極的}に意見を述べます。\nHe expresses his opinions proactively."
+  },
+  {
+    kanji: "材料",
+    kana: "ざいりょう",
+    english: "Material・ingredient",
+    explanation: "The substances or components used to make something.",
+    example: "料理の{材料}を買いに行きます。\nI am going to buy ingredients for cooking."
+  },
+  {
+    kanji: "観光",
+    kana: "かんこう",
+    english: "Sightseeing・tourism",
+    explanation: "The activity of visiting places of interest for pleasure.",
+    example: "京都は有名な{観光}地です。\nKyoto is a famous sightseeing spot."
+  },
+  {
+    kanji: "教師",
+    kana: "きょうし",
+    english: "Teacher・instructor",
+    explanation: "A person who teaches or educates others, especially in a school.",
+    example: "彼女は小学校の{教師}です。\nShe is an elementary school teacher."
+  },
+  {
+    kanji: "上品な",
+    kana: "じょうひんな",
+    english: "Elegant・refined・graceful",
+    explanation: "Having a sophisticated and tasteful manner or appearance.",
+    example: "彼女はとても{上品な}服を着ています。\nShe wears very elegant clothes."
+  },
+  {
+    kanji: "経由",
+    kana: "けいゆ",
+    english: "Via・by way of",
+    explanation: "The route or path taken to reach a destination.",
+    example: "東京を{経由}して大阪に行きます。\nI will go to Osaka via Tokyo."
+  },
+  {
+    kanji: "配達",
+    kana: "はいたつ",
+    english: "Delivery・distribution",
+    explanation: "The act of bringing goods or services to a specified location.",
+    example: "荷物を{配達}しました。\nI delivered the package."
+  },
+  {
+    kanji: "親戚",
+    kana: "しんせき",
+    english: "Relative・relation",
+    explanation: "A person connected by blood or marriage.",
+    example: "週末に{親戚}の家を訪ねます。\nI will visit my relatives' house on the weekend."
+  },
+  {
+    kanji: "知識",
+    kana: "ちしき",
+    english: "Knowledge・information",
+    explanation: "Facts, information, and skills acquired through experience or education.",
+    example: "読書は{知識}を増やす良い方法です。\nReading is a good way to increase knowledge."
+  },
+  {
+    kanji: "健康",
+    kana: "けんこう",
+    english: "Health・well-being",
+    explanation: "The state of being free from illness or injury.",
+    example: "{健康}的な生活を送ることが大切です。\nIt is important to lead a healthy lifestyle."
+  },
+  {
+    kanji: "性格",
+    kana: "せいかく",
+    english: "Personality・character",
+    explanation: "The combination of characteristics or qualities that form an individual's distinctive character.",
+    example: "彼の{性格}はとても明るいです。\nHis personality is very cheerful."
+  },
+  {
+    kanji: "滞在",
+    kana: "たいざい",
+    english: "Stay・residence",
+    explanation: "The act of remaining in a place for a period of time.",
+    example: "ホテルに{滞在}しました。\nI stayed at a hotel."
+  },
+  {
+    kanji: "栄養",
+    kana: "えいよう",
+    english: "Nutrition",
+    explanation: "The process of providing or obtaining the food necessary for health and growth.",
+    example: "バランスの良い{栄養}を摂ることが大切です。\nIt is important to have a balanced nutrition."
+  },
+  {
+    kanji: "不満",
+    kana: "ふまん",
+    english: "Dissatisfaction・complaint",
+    explanation: "A feeling of unhappiness or displeasure about something.",
+    example: "サービスに{不満}を感じました。\nI felt dissatisfaction with the service."
+  },
+  {
+    kanji: "自慢",
+    kana: "じまん",
+    english: "Pride・boast",
+    explanation: "A feeling of satisfaction or pride in one's achievements or qualities.",
+    example: "彼は自分の成績を{自慢}しています。\nHe is boasting about his grades."
+  },
+  {
+    kanji: "特徴",
+    kana: "とくちょう",
+    english: "Special feature・characteristic",
+    explanation: "A distinctive attribute or aspect of something.",
+    example: "この車の{特徴}は燃費の良さです。\nThe feature of this car is its good fuel efficiency."
+  },
+  {
+    kanji: "毛布",
+    kana: "もうふ",
+    english: "Blanket",
+    explanation: "A large piece of fabric used to keep warm while sleeping or resting.",
+    example: "寒い夜には{毛布}が必要です。\nA blanket is necessary on cold nights."
   }
 ];
