@@ -510,4 +510,116 @@ export const PAST_JLPT_N3: JLPTReview[] = [
     explanation: "A written document that provides information or findings on a specific topic.",
     example: "会議の前に{報告書}を提出してください。\nPlease submit the report document before the meeting."
   },
+  {
+    kanji: "消費",
+    kana: "しょうひ",
+    english: "Consumption・expenditure",
+    explanation: "The act of using up goods or services.",
+    example: "このお弁当は{消費}期限が近づいている。\nThe expiration date for this bento is approaching."
+  },
+  {
+    kanji: "親しい",
+    kana: "したしい",
+    english: "Close・intimate",
+    explanation: "Having a strong and friendly relationship with someone.",
+    example: "{親しい}友達と旅行するつもりだ。\nI plan to travel with close friends."
+  },
+  {
+    kanji: "身分",
+    kana: "みぶん",
+    english: "Social status・identity",
+    explanation: "A person's social position or identity within a society.",
+    example: "会員になるには、{身分}を証明するものが必要だ。\nTo become a member, you need something that proves your identity."
+  },
+  {
+    kanji: "種類",
+    kana: "しゅるい",
+    english: "Type・kind",
+    explanation: "A category or classification of things that share common characteristics.",
+    example: "店にはたくさんの{種類}の野菜がならんでいる。\nThe store has many kinds of vegetables."
+  },
+  {
+    kanji: "完成",
+    kana: "かんせい",
+    english: "Completion・accomplishment",
+    explanation: "The act of finishing or bringing something to a state of readiness.",
+    example: "ビルはとうとう{完成}しました。\nThe building has finally been completed."
+  },
+  {
+    kanji: "捨てる",
+    kana: "すてる",
+    english: "To throw away・to discard",
+    explanation: "To get rid of something that is no longer needed or wanted.",
+    example: "いらないものは{捨てて}ください。\nPlease throw away things you don't need."
+  },
+  {
+    kanji: "様子",
+    kana: "ようす",
+    english: "State・condition",
+    explanation: "The appearance or condition of something or someone.",
+    example: "動画を見ると、皆さんの様子がよくわかります。\nBy watching the video, I can understand everyone's condition well."
+  },
+  {
+    kanji: "削る",
+    kana: "けずる",
+    english: "To shave・to cut down",
+    explanation: "To remove material from the surface of something, often to make it thinner or smoother.",
+    example: "シャープペンを使うので、鉛筆を{削る}必要がなくなった。\nSince I use a mechanical pencil, I no longer need to sharpen my pencils."
+  },
+  {
+    kanji: "印象",
+    kana: "いんしょう",
+    english: "Impression・impact",
+    explanation: "The effect or feeling that something or someone leaves on a person.",
+    example: "石田さんははじめ、暗い{印象}だったが、実際は明るい人だった。\nAt first, Mr. Ishida gave a dark impression, but in reality, he was a cheerful person."
+  },
+  {
+    kanji: "引き受ける",
+    kana: "ひきうける",
+    english: "To undertake・to take on",
+    explanation: "To accept responsibility for a task or duty. Used when someone agrees to take on a job, task, request, duty, etc.",
+    example: "中山さんに結婚式のスピーチを頼んだら、喜んで{引き受けて}くれた。\nWhen I asked Mr. Nakayama to give a speech at the wedding, he happily accepted."
+  },
+  {
+    kanji: "騒ぐ",
+    kana: "さわぐ",
+    english: "To make noise・to be noisy",
+    explanation: "To create a loud or disruptive sound, often due to excitement or agitation.\nうるさいっていう意味だ。",
+    example: "子どもたちが{騒いで}いる。\nThe children are making noise."
+  },
+  {
+    kanji: "断る",
+    kana: "ことわる",
+    english: "To refuse・to decline",
+    explanation: "To say no to a request, invitation or offer.\n行けないっていう意味だ。",
+    example: "友達に旅行に行こうと言われましたが、{断りました}。\nMy friend asked me to go on a trip, but I declined."
+  },
+  {
+    kanji: "注目",
+    kana: "ちゅうもく",
+    english: "Attention・notice",
+    explanation: "The act of focusing one's attention on something or someone.",
+    example: "海の上での風力発電が{注目}されている。\nOffshore wind power generation is attracting attention."
+  },
+  {
+    kanji: "加える",
+    kana: "くわえる",
+    english: "To add・to include",
+    explanation: "To include something extra or additional.",
+    example: "作文にちょっと手を{加えた}ら、よくなった。\nWhen I made a few additions to my essay, it improved."
+  },
+  {
+    kanji: "発展",
+    kana: "はってん",
+    english: "Development・expansion",
+    explanation: "The process of growing or improving over time.",
+    example: "大きい工場ができて人口も増え、町が{発展}した。\nA large factory was built, the population increased, and the town developed."
+  },
+  {
+    kanji: "気に入る",
+    kana: "きにいる",
+    english: "To like・to be pleased with",
+    explanation: "To find something agreeable or satisfactory.",
+    example: "買い物に行ったけれど、{気に入った}ものはなかった。\nI went shopping, but there was nothing I liked."
+  }
 ];
