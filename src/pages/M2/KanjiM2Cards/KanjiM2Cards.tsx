@@ -95,7 +95,7 @@ const KanjiM2Cards: React.FC<Props> = ({ wordsList }) => {
 
     return (
       <Box borderColor={"amber.100"} borderWidth={1} mb={2} mt={30} p={1} borderRadius={5} width={"100%"} alignItems="center">
-        <Text fontSize={fontsize} mb={2} color={isShowAnswer ? "pink.300" : "yellow.500"}>{mainText}</Text>
+        <Text fontSize={fontsize} fontFamily="Klee One" mb={2} color={isShowAnswer ? "pink.300" : "yellow.500"}>{mainText}</Text>
       </Box>
     )
   }
@@ -108,10 +108,14 @@ const KanjiM2Cards: React.FC<Props> = ({ wordsList }) => {
       {!isChallengeMode && filteredWordsList.length > 0 && (
         <FlipCard 
           ref={flipCardRef} 
-          CardFrontContent={<Text fontSize={"6xl"} color={"teal.300"}>{isHiraganaMode ? currentCard.reading : currentCard.word.replace(REGEX_WORD, "")}</Text>}
+          CardFrontContent={
+            <Text fontSize={"6xl"} color={"teal.300"} fontFamily="Klee One">
+              {isHiraganaMode ? currentCard.reading : currentCard.word.replace(REGEX_WORD, "")}
+            </Text>
+          }
           CardBackContent={
             <>
-              <Text fontSize={"5xl"} color={"white"}>{!isHiraganaMode ? currentCard.reading : currentCard.word.replace(REGEX_WORD, "")}</Text>
+              <Text fontSize={"5xl"} color={"white"} fontFamily="Klee One">{!isHiraganaMode ? currentCard.reading : currentCard.word.replace(REGEX_WORD, "")}</Text>
               <Text fontSize={"3xl"} color={"primary.500"}>{currentCard.meaning}</Text>
             </>
           } 

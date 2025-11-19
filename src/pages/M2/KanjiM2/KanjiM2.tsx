@@ -63,11 +63,11 @@ const KanjiM2: React.FC<Props> = ({
           {/* Main Kanji Information */}
           <Text alignSelf={"center"} color={"orange.400"}>{kanjiItem.id}</Text>
           <HStack alignItems="center" space={4} mb={2}>
-            <Text fontSize="6xl" color={"pink.400"}>{kanjiItem.kanji}</Text>
+            <Text fontSize="6xl" color={"pink.400"} fontFamily="Klee One">{kanjiItem.kanji}</Text>
             <Box>
-              <Text color={"primary.500"}>{kanjiItem.on.join(", ")}</Text>
-              <Text color={"primary.500"}>{kanjiItem.kun.join(", ")}</Text>
-              <Text color={"white"}>{kanjiItem.meanings.join(", ")}</Text>
+              <Text fontFamily="Klee One" color={"primary.500"}>{kanjiItem.on.join(", ")}</Text>
+              <Text fontFamily="Klee One" color={"primary.500"}>{kanjiItem.kun.join(", ")}</Text>
+              <Text fontFamily="Klee One" color={"white"}>{kanjiItem.meanings.join(", ")}</Text>
             </Box>
           </HStack>
 
@@ -78,16 +78,16 @@ const KanjiM2: React.FC<Props> = ({
               return (
                 <Box key={index} mb={2}>
                   <HStack alignItems="center" space={4} mb={1}>
-                    <Text fontSize="2xl" color={"pink.400"}>{wordObj.word}</Text>
-                    <Text color={"primary.500"}>{wordObj.reading}</Text>
-                    <Text color={"white"}>{wordObj.meaning}</Text>
+                    <Text fontFamily="Klee One" fontSize="2xl" color={"pink.400"}>{wordObj.word}</Text>
+                    <Text fontFamily="Klee One" color={"primary.500"}>{wordObj.reading}</Text>
+                    <Text fontFamily="Klee One" color={"white"}>{wordObj.meaning}</Text>
                   </HStack>
                   <Text fontSize={"xl"}>
                     {exampleSentence.map((part, idx) => 
                       typeof part === 'string' ? (
-                        <Text fontSize={"xl"} key={idx}>{part}</Text>
+                        <Text fontFamily="Klee One" fontSize={"xl"} key={idx}>{part}</Text>
                       ) : (
-                        <Text key={idx} fontSize={"xl"} color={"white"}>
+                        <Text fontFamily="Klee One" key={idx} fontSize={"xl"} color={"white"}>
                           <ruby>{part.kanji}<rt>{part.furigana}</rt></ruby>
                         </Text>
                       )
@@ -104,10 +104,10 @@ const KanjiM2: React.FC<Props> = ({
             {kanjiItem.otherWords.map((otherWordObj, index) => (
               <Box key={index} mb={1}>
                 <HStack alignItems="center" space={4}>
-                  <Text fontSize="2xl" color={"yellow.400"}>{otherWordObj.word}</Text>
-                  <Text color={"red.500"}>{otherWordObj.reading}</Text>
+                  <Text fontFamily="Klee One" fontSize="2xl" color={"yellow.400"}>{otherWordObj.word}</Text>
+                  <Text fontFamily="Klee One" color={"red.500"}>{otherWordObj.reading}</Text>
                 </HStack>
-                <Text color={"white"}>{otherWordObj.meaning}</Text>
+                <Text fontFamily="Klee One" color={"white"}>{otherWordObj.meaning}</Text>
               </Box>
             ))}
           </Box>
