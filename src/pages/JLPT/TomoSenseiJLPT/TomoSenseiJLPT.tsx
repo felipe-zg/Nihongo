@@ -67,7 +67,9 @@ const TomoSenseiJLPT: React.FC<Props> = ({ vocabList }) => {
       {filteredVocabList.length > 0 && !isChallengeMode && (
         <FlipCard 
           ref={flipCardRef} 
-          CardFrontContent={<Text fontSize={"7xl"} color={"teal.500"}>{currentCard.kanji}</Text>}
+          CardFrontContent={
+            <Text fontSize={"7xl"} fontFamily="Klee One" color={"teal.500"}>{currentCard.kanji}</Text>
+          }
           CardBackContent={
             <>
               <Text textAlign={"center"} fontSize={"4xl"} color={"white"} mb={3}>{currentCard.kana}</Text>
