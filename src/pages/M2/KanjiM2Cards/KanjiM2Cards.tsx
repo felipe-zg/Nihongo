@@ -109,7 +109,7 @@ const KanjiM2Cards: React.FC<Props> = ({ wordsList }) => {
         <FlipCard 
           ref={flipCardRef} 
           CardFrontContent={
-            <Text fontSize={"6xl"} color={"teal.300"} fontFamily="Klee One">
+            <Text fontSize={"7xl"} color={"teal.300"} fontFamily="Klee One">
               {isHiraganaMode ? currentCard.reading : currentCard.word.replace(REGEX_WORD, "")}
             </Text>
           }

@@ -72,11 +72,11 @@ const MiniStory: React.FC<MiniStoryProps> = ({
       <HStack>
         {rubypart.character !== "" && (
           <Box flex={1} alignItems={"center"} justifyContent={"flex-start"} mt={1}>
-            <p style={{ color: "#ea84cdff", fontSize: fontSize,  marginTop: "0.5rem", marginBottom: "0.5rem", lineHeight: "2rem"}}>{rubypart.character}:</p>
+            <p style={{ color: "#ea84cdff", fontSize: fontSize, fontFamily: "Klee One",  marginTop: "0.5rem", marginBottom: "0.5rem", lineHeight: "2rem"}}>{rubypart.character}:</p>
           </Box>
         )}
         <Box flex={11} key={index}>
-          <p style={{ fontSize: fontSize, marginTop: "0.5rem", marginBottom: "0.5rem", lineHeight: isLargeLetter && (isFuriganaHidden || isKanjiHidden) ? "3rem" : "2rem"}} dangerouslySetInnerHTML={{ __html: formattedDialogue }}  />
+          <p style={{ fontSize: fontSize, fontFamily: "Klee One", marginTop: "0.5rem", marginBottom: "0.5rem", lineHeight: isLargeLetter && (isFuriganaHidden || isKanjiHidden) ? "3rem" : "2rem"}} dangerouslySetInnerHTML={{ __html: formattedDialogue }}  />
         </Box>
       </HStack>
     )
@@ -93,10 +93,10 @@ const MiniStory: React.FC<MiniStoryProps> = ({
       <>
         <HStack>
           <Box flex={3}>
-            <p style={{color: whiteColor}} dangerouslySetInnerHTML={{ __html: formattedWords }} />
+            <p style={{color: whiteColor, fontFamily: "Klee One"}} dangerouslySetInnerHTML={{ __html: formattedWords }} />
           </Box>
           <Box  flex={4} justifyContent={"center"}>
-            <Text color={isFuriganaHidden ? "transparent" : "red.600"}>{rubypart.english}</Text>
+            <Text color={isFuriganaHidden ? "transparent" : "red.600"} fontFamily="Klee One">{rubypart.english}</Text>
           </Box>
           <Box  flex={1} justifyContent={"center"}>
             <Text color="primary.400">
