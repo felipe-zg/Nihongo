@@ -29,7 +29,7 @@ function ExampleSentence({ example }: { example: string }) {
   const [before, highlighted, after] = parts;
 
   return (
-    <Text fontSize="sm" italic>
+    <Text fontSize="sm" fontFamily="Klee One">
       <Text color="gray.400">{before}</Text>
       <Text color="pink.500">{highlighted}</Text>
       <Text color="gray.400">{after}</Text>
@@ -49,11 +49,11 @@ const NihongoNoMoriJLPTN3: React.FC = () => {
         {NIHONGO_NO_MORI_JLPT_N3.map((item, index) => (
           <Box key={index}>
             <HStack space={3} alignItems="center" alignContent="center">
-              <Text fontSize="3xl" color="pink.500">{item.kanji}</Text>
-              <Text fontSize="md" color={showContent ? "primary.500" : "transparent"} mt={2}>
+              <Text fontSize="3xl" color="pink.500" fontFamily="Klee One">{item.kanji}</Text>
+              <Text fontSize="md" fontFamily="Klee One" color={showContent ? "primary.500" : "transparent"} mt={2}>
                 {item.kana}
               </Text>
-              <Text fontSize="md" color={showContent ? "white" : "transparent"} mt={2}>
+              <Text fontSize="md" fontFamily="Klee One" color={showContent ? "white" : "transparent"} mt={2}>
                 {item.english}
               </Text>
             </HStack>
