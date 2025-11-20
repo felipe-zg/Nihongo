@@ -298,5 +298,75 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     english: "Order・Turn",
     explanation: "Refers to the sequence or arrangement of things or people.",
     example: "{順番}が来るまで、このいすにおかけになってお待ちください。Please sit in this chair and wait until your turn comes."
+  },
+  {
+    kanji: "断る",
+    kana: "ことわる",
+    english: "To refuse・To decline",
+    explanation: "Refers to the action of refusing or declining an offer or request.",
+    example: "山田さんは{断った}らしいですよ。I heard that Yamada-san refused."
+  },
+  {
+    kanji: "降りる",
+    kana: "おりる",
+    english: "To get off・To descend",
+    explanation: "Refers to the action of getting off a vehicle or descending from a higher place. Used for buses, trains, etc.",
+    example: "次のバス停で{降りましょう}。Let's get off at the next bus stop."
+  },
+  {
+    kanji: "限る",
+    kana: "かぎる",
+    english: "To limit・To restrict",
+    explanation: "Refers to the action of setting a limit or restriction on something.",
+    example: "このセールは今日だけに{限られています}。This sale is limited to today only."
+  },
+  {
+    kanji: "收入",
+    kana: "しゅうにゅう",
+    english: "Income・Earnings",
+    explanation: "Refers to the money received, especially on a regular basis, for work or through investments.",
+    example: "彼の月{收入}は非常に高い。His monthly income is very high."
+  },
+  {
+    kanji: "流行",
+    kana: "りゅうこう［する］",
+    english: "Trend・To be trendy",
+    explanation: "Refers to the popularity or trendiness of something, such as fashion or culture.",
+    example: "今年の夏は新しいファッションが{流行している}。New fashion is trendy this summer."
+  },
+  {
+    kanji: "伝言",
+    kana: "でんごん",
+    english: "Message",
+    explanation: "Refers to a message or communication conveyed from one person to another.",
+    example: "田中さんから{伝言}があります。There is a message from Tanaka-san."
+  },
+  {
+    kanji: "なるべく",
+    kana: "なるべく",
+    english: "As much as possible・If possible",
+    explanation: "Used to express the idea of doing something to the greatest extent possible or if circumstances allow.・できるだけと同じ意味だ。",
+    example: "今回は出張で日本に来たので自由な時間が少ないが、{なるべく}多くの観光地に行きたい。This time I came to Japan on a business trip, so I have little free time, but I want to visit as many tourist spots as possible."
+  },
+  {
+    kanji: "そっと",
+    kana: "そっと［する］",
+    english: "Quietly・Gently・Softly・To do something quietly",
+    explanation: "Refers to doing something in a quiet, gentle, or soft manner.",
+    example: "赤ちゃんが寝ているので、{そっと}部屋を出た。Since the baby was sleeping, I quietly left the room."
+  },
+  {
+    kanji: "与える",
+    kana: "あたえる",
+    english: "To give・To provide",
+    explanation: "Refers to the action of giving or providing something to someone.あげると同じ意味だ。",
+    example: "もう一度チャンスを{与えよう}と思う。I think I will give you another chance."
+  },
+  {
+    kanji: "活動",
+    kana: "かつどう［する］",
+    english: "Activity・To be active",
+    explanation: "Refers to the act of engaging in activities or actions, often for a specific purpose or goal.",
+    example: "この歌手は海外でも{活動して}います。This singer is also active overseas."
   }
 ]
