@@ -600,5 +600,222 @@ export const TOMO_SENSEI_JLPT_N3: JLPTReview[] = [
     english: "Blanket",
     explanation: "A large piece of fabric used to keep warm while sleeping or resting.",
     example: "寒い夜には{毛布}が必要です。\nA blanket is necessary on cold nights."
+  },
+  {
+    kanji: "扱う",
+    kana: "あつかう",
+    english: "Handle・deal with",
+    explanation: "To manage or control something.",
+    example: "この問題を{扱う}のは難しいです。\nIt's difficult to deal with this problem."
+  },
+  {
+    kanji: "小型",
+    kana: "こがた",
+    english: "Small size・compact",
+    explanation: "Of a size that is smaller than usual or standard.",
+    example: "この車は{小型}で運転しやすいです。\nThis car is small and easy to drive."
+  },
+  {
+    kanji: "恋しい",
+    kana: "こいしい",
+    english: "Miss・long for",
+    explanation: "To feel a deep emotional longing for someone or something.",
+    example: "故郷が{恋しい}です。\nI miss my hometown."
+  },
+  {
+    kanji: "順番",
+    kana: "じゅんばん",
+    english: "Order・sequence",
+    explanation: "The arrangement or sequence of things.",
+    example: "{順番}を守ってください。\nPlease follow the order."
+  },
+  {
+    kanji: "印象",
+    kana: "いんしょう",
+    english: "Impression",
+    explanation: "A mark, figure, or image produced by pressure.",
+    example: "彼の第一{印象}はとても良かったです。\nHis first impression was very good."
+  },
+  {
+    kanji: "低い",
+    kana: "ひくい",
+    english: "Low",
+    explanation: "Situated not far above the ground・having little height.",
+    example: "この椅子は{低い}です。\nThis chair is low."
+  },
+  {
+    kanji: "改札",
+    kana: "かいさつ",
+    english: "Ticket gate",
+    explanation: "A gate where tickets are checked.",
+    example: "{改札}を通るときは、チケットを見せてください。\nPlease show your ticket when passing through the ticket gate."
+  },
+  {
+    kanji: "文句",
+    kana: "もんく",
+    english: "Complaint・grumble",
+    explanation: "A statement that something is unsatisfactory or unacceptable.",
+    example: "彼はサービスに{文句}を言っています。\nHe is complaining about the service."
+  },
+  {
+    kanji: "記録",
+    kana: "きろく",
+    english: "Record・documentation",
+    explanation: "The act of keeping a detailed account of something.",
+    example: "会議の{記録}を取ることが重要です。\nIt's important to keep a record of the meeting."
+  },
+  {
+    kanji: "迷う",
+    kana: "まよう",
+    english: "Be lost・become confused・to hesitate",
+    explanation: "To become lost or confused about something.",
+    example: "道に{迷いました}。\nI got lost on the way."
+  },
+  {
+    kanji: "成績",
+    kana: "せいせき",
+    english: "Grades・results",
+    explanation: "A measure of a student's academic performance.",
+    example: "彼女の{成績}はとても良いです。\nHer grades are very good."
+  },
+  {
+    kanji: "出張",
+    kana: "しゅっちょう",
+    english: "Business trip",
+    explanation: "A trip taken for work or business purposes.",
+    example: "来週、{出張}に行きます。\nI'm going on a business trip next week."
+  },
+  {
+    kanji: "代金",
+    kana: "だいきん",
+    english: "Payment・charge・cost・fee",
+    explanation: "The amount of money required for goods or services.",
+    example: "この商品の{代金}は5000円です。\nThe payment for this product is 5000 yen."
+  },
+  {
+    kanji: "我慢",
+    kana: "がまん",
+    english: "Patience・endurance・To put up with",
+    explanation: "The ability to endure difficult circumstances.",
+    example: "彼は{我慢}強い人です。\nHe is a patient person."
+  },
+  {
+    kanji: "分類",
+    kana: "ぶんるい",
+    english: "Classification・category・sorting",
+    explanation: "The action or process of classifying something.",
+    example: "この資料の{分類}は重要です。\nThe classification of this material is important."
+  },
+  {
+    kanji: "葉",
+    kana: "は",
+    english: "Leaf",
+    explanation: "The part of a plant that is typically green and flat, and is attached to a stem.",
+    example: "木の{葉}が秋に色づきます。\nThe leaves of the tree change color in autumn."
+  },
+  {
+    kanji: "観察",
+    kana: "かんさつ",
+    english: "Observation",
+    explanation: "The action or process of observing something or someone carefully.",
+    example: "{観察}力を高めることが大切です。\nIt's important to enhance your observation skills."
+  },
+  {
+    kanji: "記念",
+    kana: "きねん",
+    english: "Commemoration・memorial",
+    explanation: "The act of remembering and honoring someone or something.",
+    example: "彼の{記念}に花を捧げました。\nI offered flowers in commemoration of him."
+  },
+  {
+    kanji: "細かい",
+    kana: "こまかい",
+    english: "Detailed・fine",
+    explanation: "Something that is very small or precise.",
+    example: "このレポートは{細かい}情報が含まれています。\nThis report contains detailed information."
+  },
+  {
+    kanji: "法律",
+    kana: "ほうりつ",
+    english: "Law",
+    explanation: "A system of rules created and enforced through social or governmental institutions.",
+    example: "{法律}を守ることは重要です。\nIt is important to obey the law."
+  },
+  {
+    kanji: "浅い",
+    kana: "あさい",
+    english: "Shallow",
+    explanation: "Having little depth not deep.",
+    example: "この川は{浅い}です。\nThis river is shallow."
+  },
+  {
+    kanji: "土地",
+    kana: "とち",
+    english: "Land・property",
+    explanation: "The part of the Earth's surface that is not covered by water.",
+    example: "この{土地}は高いです。\nThis land is expensive."
+  },
+  {
+    kanji: "企業",
+    kana: "きぎょう",
+    english: "Enterprise・company・corporation",
+    explanation: "A business organization or company.",
+    example: "彼は大きな{企業}で働いています。\nHe works for a large enterprise."
+  },
+  {
+    kanji: "農業",
+    kana: "のうぎょう",
+    english: "Agriculture",
+    explanation: "The science or practice of farming, including cultivation of the soil for growing crops.",
+    example: "日本の{農業}は米の生産が中心です。\nJapan's agriculture is centered around rice production."
+  },
+  {
+    kanji: "左右",
+    kana: "さゆう",
+    english: "Left and right",
+    explanation: "The directions to the left and right sides.",
+    example: "{左右}を確認してください。\nPlease check your left and right."
+  },
+  {
+    kanji: "原料",
+    kana: "げんりょう",
+    english: "Raw materials",
+    explanation: "The basic materials from which products are made.",
+    example: "この製品は{原料}にこだわっています。\nThis product is particular about its raw materials."
+  },
+  {
+    kanji: "週刊誌",
+    kana: "しゅうかんし",
+    english: "Weekly magazine",
+    explanation: "A magazine published once a week.",
+    example: "彼は毎週{週刊誌}を読んでいます。\nHe reads a weekly magazine every week."
+  },
+  {
+    kanji: "通知",
+    kana: "つうち",
+    english: "Notification",
+    explanation: "A message or announcement that informs someone about something.",
+    example: "新しい{通知}が届きました。\nA new notification has arrived."
+  },
+  {
+    kanji: "延期",
+    kana: "えんき",
+    english: "Postponement",
+    explanation: "The act of delaying or rescheduling something.",
+    example: "会議の{延期}が決まりました。\nThe postponement of the meeting has been decided."
+  },
+  {
+    kanji: "広告",
+    kana: "こうこく",
+    english: "Advertisement",
+    explanation: "A public promotion of some product or service.",
+    example: "この{広告}はとても面白いです。\nThis advertisement is very interesting."
+  },
+  {
+    kanji: "適当な",
+    kana: "てきとうな",
+    english: "Appropriate・suitable",
+    explanation: "Something that is suitable or proper in the circumstances.",
+    example: "この服は{適当な}サイズです。\nThis clothing is the appropriate size."
   }
 ];
