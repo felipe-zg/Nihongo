@@ -817,5 +817,187 @@ export const TOMO_SENSEI_JLPT_N3: JLPTReview[] = [
     english: "Appropriate・suitable",
     explanation: "Something that is suitable or proper in the circumstances.",
     example: "この服は{適当な}サイズです。\nThis clothing is the appropriate size."
+  },
+  {
+    kanji: "観客",
+    kana: "かんきゃく",
+    english: "Audience・spectator",
+    explanation: "A group of people who watch or listen to a performance or event.",
+    example: "コンサートには多くの{観客}が集まりました。\nMany spectators gathered at the concert."
+  },
+  {
+    kanji: "疑う",
+    kana: "うたがう",
+    english: "To doubt・to suspect",
+    explanation: "To feel uncertain about the truth or reliability of something.",
+    example: "彼の話を{疑っています}。\nI doubt his story."
+  },
+  {
+    kanji: "駐車",
+    kana: "ちゅうしゃ",
+    english: "Parking",
+    explanation: "The act of leaving a vehicle in a designated area.",
+    example: "ここは{駐車}禁止です。\nParking is prohibited here."
+  },
+  {
+    kanji: "完成",
+    kana: "かんせい",
+    english: "Completion・accomplishment",
+    explanation: "The act of finishing or bringing something to a successful end.",
+    example: "新しいビルが{完成}しました。\nThe new building has been completed."
+  },
+  {
+    kanji: "地球",
+    kana: "ちきゅう",
+    english: "Earth・globe",
+    explanation: "The planet on which we live; the third planet from the sun.",
+    example: "{地球}は太陽系の一部です。\nThe Earth is part of the solar system."
+  },
+  {
+    kanji: "規則",
+    kana: "きそく",
+    english: "Rule・regulation",
+    explanation: "A set of explicit or understood regulations or principles governing conduct.",
+    example: "学校の{規則}を守ってください。\nPlease follow the school rules."
+  },
+  {
+    kanji: "若い",
+    kana: "わかい",
+    english: "Young",
+    explanation: "Having lived or existed for only a short time; not old.",
+    example: "彼はまだ{若い}です。\nHe is still young."
+  },
+  {
+    kanji: "訓練",
+    kana: "くんれん",
+    english: "Training・drill",
+    explanation: "The process of learning skills or behaviors through practice.",
+    example: "新しい仕事のために{訓練}を受けました。\nI received training for my new job."
+  },
+  {
+    kanji: "価格",
+    kana: "かかく",
+    english: "Price・cost",
+    explanation: "The amount of money required to purchase something.",
+    example: "この商品の{価格}は高いです。\nThe price of this product is high."
+  },
+  {
+    kanji: "預ける",
+    kana: "あずける",
+    english: "To entrust・to deposit",
+    explanation: "To leave something in the care of someone else.",
+    example: "子供を保育園に{預けました}。\nI entrusted my child to the daycare."
+  },
+  {
+    kanji: "命令",
+    kana: "めいれい",
+    english: "Order・command",
+    explanation: "A directive or instruction given by someone in authority.",
+    example: "上司の{命令}に従いました。\nI followed my boss's orders."
+  },
+  {
+    kanji: "合計",
+    kana: "ごうけい",
+    english: "Total・sum",
+    explanation: "The total amount resulting from the addition of two or more numbers.",
+    example: "買い物の{合計}は3000円です。\nThe total for the shopping is 3000 yen."
+  },
+  {
+    kanji: "横断",
+    kana: "おうだん",
+    english: "Crossing・traversing",
+    explanation: "The act of going across something, such as a road or river.",
+    example: "道路を{横断}する時は注意してください。\nPlease be careful when crossing the road."
+  },
+  {
+    kanji: "産業",
+    kana: "さんぎょう",
+    english: "Industry・manufacturing",
+    explanation: "The production of goods or services within an economy.",
+    example: "日本の{産業}は多様です。\nJapan's industries are diverse."
+  },
+  {
+    kanji: "調査",
+    kana: "ちょうさ",
+    english: "Investigation・survey・research",
+    explanation: "The act of examining or researching something in detail.",
+    example: "市場の{調査}を行いました。\nWe conducted a market survey."
+  },
+  {
+    kanji: "苦労",
+    kana: "くろう",
+    english: "Hardship・trouble・to have a hard time",
+    explanation: "Difficulties or challenges that one has to endure.",
+    example: "彼は多くの{苦労}を経験しました。\nHe has experienced many hardships."
+  },
+  {
+    kanji: "輸出",
+    kana: "ゆしゅつ",
+    english: "Export",
+    explanation: "The act of sending goods or services to another country for sale.",
+    example: "日本は多くの製品を{輸出}しています。\nJapan exports many products."
+  },
+  {
+    kanji: "一般的な",
+    kana: "いっぱんてきな",
+    english: "General・common・typical",
+    explanation: "Something that is usual or widespread among people or things.",
+    example: "{一般的な}意見を聞きたいです。\nI want to hear a general opinion."
+  },
+  {
+    kanji: "専門家",
+    kana: "せんもんか",
+    english: "Expert・specialist",
+    explanation: "A person who has a high level of knowledge or skill in a particular area.",
+    example: "彼はITの{専門家}です。\nHe is an expert in IT."
+  },
+  {
+    kanji: "比較",
+    kana: "ひかく",
+    english: "Comparison",
+    explanation: "The act of evaluating two or more things to determine their similarities and differences.",
+    example: "製品の{比較}をしました。\nI made a comparison of the products."
+  },
+  {
+    kanji: "経営",
+    kana: "けいえい",
+    english: "Management・administration",
+    explanation: "The process of organizing and coordinating resources to achieve specific goals.",
+    example: "会社の{経営}は順調です。\nThe management of the company is going well."
+  },
+  {
+    kanji: "資源",
+    kana: "しげん",
+    english: "Resources",
+    explanation: "Materials or assets that can be used to produce goods or services.",
+    example: "天然{資源}の保護が重要です。\nThe conservation of natural resources is important."
+  },
+  {
+    kanji: "内側",
+    kana: "うちがわ",
+    english: "Inside・inner side・interior",
+    explanation: "The interior part or surface of something.",
+    example: "ドアの{内側}に鍵があります。\nThe key is on the inside of the door."
+  },
+  {
+    kanji: "温泉",
+    kana: "おんせん",
+    english: "Hot spring",
+    explanation: "A natural spring of hot water, often used for bathing.",
+    example: "{温泉}に行ってリラックスしました。\nI went to a hot spring and relaxed."
+  },
+  {
+    kanji: "退院",
+    kana: "たいいん",
+    english: "Discharge from hospital",
+    explanation: "The act of leaving a hospital after being treated.",
+    example: "昨日、病院を{退院}しました。\nI was discharged from the hospital yesterday."
+  },
+  {
+    kanji: "石油",
+    kana: "せきゆ",
+    english: "Petroleum・oil",
+    explanation: "A liquid mixture of hydrocarbons used as fuel and in the production of various products.",
+    example: "{石油}の価格が上昇しています。\nThe price of petroleum is rising."
   }
 ];
