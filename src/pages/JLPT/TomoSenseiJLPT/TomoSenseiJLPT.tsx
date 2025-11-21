@@ -2,6 +2,7 @@ import React, { useMemo, useRef, useState } from "react";
 import { Box, Button, HStack, Text, Select, Switch, Stack, Divider } from "native-base";
 import FlipCard, { FlipCardHandle } from "../../../components/FlipCard/FlipCard";
 import { ExampleSentence } from "../../../utils/textDecoration";
+import { FloatingControls } from "../../../components";
 
 type Props = {
   vocabList: JLPTReview[];
@@ -57,6 +58,19 @@ const TomoSenseiJLPT: React.FC<Props> = ({ vocabList }) => {
 
     setTimeout(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % filteredVocabList.length);
+    }, 200);
+  }
+
+  function handlePrev() {
+    if (!flipCardRef.current?.isFlipped()) {
+      flipCardRef.current?.flip();
+      return;
+    } else {
+      flipCardRef.current?.unflip();
+    }
+
+    setTimeout(() => {
+      setCurrentIndex((prevIndex) => (prevIndex - 1 + filteredVocabList.length) % filteredVocabList.length);
     }, 200);
   }
 
@@ -134,8 +148,8 @@ const TomoSenseiJLPT: React.FC<Props> = ({ vocabList }) => {
           </HStack>
         </HStack>
       </Stack>
+      <FloatingControls onNext={handleNext} onPrev={handlePrev} position="top" />
     </Box>
-    
   );
 };
 
