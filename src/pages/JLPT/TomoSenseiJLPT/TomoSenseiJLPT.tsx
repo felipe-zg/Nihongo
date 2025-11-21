@@ -71,7 +71,7 @@ const TomoSenseiJLPT: React.FC<Props> = ({ vocabList }) => {
             <Text
               fontSize={currentCard.kanji.length <= 4 ? "8xl" : "6xl"}
               fontFamily="Klee One"
-              color={"teal.500"}
+              color={!!currentCard.important ? "orange.500" : "teal.500"}
             >
               {currentCard.kanji}
             </Text>

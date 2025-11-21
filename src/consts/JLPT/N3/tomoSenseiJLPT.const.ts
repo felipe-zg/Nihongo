@@ -25,7 +25,8 @@ export const TOMO_SENSEI_JLPT_N3: JLPTReview[] = [
     kana: "しょうひ",
     english: "Consumption・expenditure",
     explanation: "The act of using up resources, goods, or services.",
-    example: "エネルギーの{消費}を減らすことが重要です。\nIt is important to reduce energy consumption."
+    example: "エネルギーの{消費}を減らすことが重要です。\nIt is important to reduce energy consumption.",
+    important: true
   },
   {
     kanji: "現在",
@@ -67,14 +68,16 @@ export const TOMO_SENSEI_JLPT_N3: JLPTReview[] = [
     kana: "しじ",
     english: "Instruction・direction",
     explanation: "A command or guidance given to someone.",
-    example: "先生は学生に宿題の{指示}を出しました。\nThe teacher gave instructions to the students about the homework."
+    example: "先生は学生に宿題の{指示}を出しました。\nThe teacher gave instructions to the students about the homework.",
+    important: true
   },
   {
     kanji: "発展",
     kana: "はってん",
     english: "Development・expansion",
     explanation: "The process of growing or improving in a particular area.",
-    example: "その地域は急速に{発展}しています。\nThat area is developing rapidly."
+    example: "その地域は急速に{発展}しています。\nThat area is developing rapidly.",
+    important: true
   },
   {
     kanji: "集合",
@@ -137,7 +140,8 @@ export const TOMO_SENSEI_JLPT_N3: JLPTReview[] = [
     kana: "かんじょうてき",
     english: "Emotional・sentimental",
     explanation: "Relating to feelings and emotions rather than logic or reason.",
-    example: "彼は{感情的}な話し方をすることが多いです。\nHe often speaks in an emotional manner."
+    example: "彼は{感情的}な話し方をすることが多いです。\nHe often speaks in an emotional manner.",
+    important: true
   },
   {
     kanji: "悩む",
@@ -200,7 +204,8 @@ export const TOMO_SENSEI_JLPT_N3: JLPTReview[] = [
     kana: "せいけつ",
     english: "Cleanliness・hygiene",
     explanation: "The state of being clean and free from dirt or germs.",
-    example: "この病院はとても{清潔}です。\nThis hospital is very clean."
+    example: "この病院はとても{清潔}です。\nThis hospital is very clean.",
+    important: true
   },
   {
     kanji: "訪問",
@@ -214,7 +219,8 @@ export const TOMO_SENSEI_JLPT_N3: JLPTReview[] = [
     kana: "きょうつう",
     english: "Common・shared",
     explanation: "Something that is shared by two or more people or groups.",
-    example: "私たちは{共通}の趣味を持っています。\nWe have a common hobby."
+    example: "私たちは{共通}の趣味を持っています。\nWe have a common hobby.",
+    important: true
   },
   {
     kanji: "応援",
@@ -235,7 +241,8 @@ export const TOMO_SENSEI_JLPT_N3: JLPTReview[] = [
     kana: "じゅうたい",
     english: "Traffic jam・congestion",
     explanation: "A situation where vehicles are unable to move freely due to overcrowding on the roads.",
-    example: "朝の通勤時間に{渋滞}が発生しました。\nThere was a traffic jam during the morning commute."
+    example: "朝の通勤時間に{渋滞}が発生しました。\nThere was a traffic jam during the morning commute.",
+    important: true
   },
   {
     kanji: "主要な",
@@ -347,7 +354,8 @@ export const TOMO_SENSEI_JLPT_N3: JLPTReview[] = [
     kana: "でんごん",
     english: "Message・oral message",
     explanation: "A piece of information or communication conveyed from one person to another.",
-    example: "彼からの{伝言}を伝えます。\nI will convey the message from him."
+    example: "彼からの{伝言}を伝えます。\nI will convey the message from him.",
+    important: true
   },
   {
     kanji: "移動する",
@@ -375,7 +383,8 @@ export const TOMO_SENSEI_JLPT_N3: JLPTReview[] = [
     kana: "しゅちょう",
     english: "Claim・assertion・opinion",
     explanation: "A statement or belief that someone strongly supports or defends.",
-    example: "彼は自分の{主張}をはっきりと述べた。\nHe clearly stated his opinion."
+    example: "彼は自分の{主張}をはっきりと述べた。\nHe clearly stated his opinion.",
+    important: true
   },
   {
     kanji: "姿勢",
@@ -431,7 +440,8 @@ export const TOMO_SENSEI_JLPT_N3: JLPTReview[] = [
     kana: "ぞうげん",
     english: "Increase and decrease・fluctuation",
     explanation: "The act of rising and falling in number or amount.",
-    example: "売上の{増減}を分析する必要があります。\nWe need to analyze the fluctuations in sales."
+    example: "売上の{増減}を分析する必要があります。\nWe need to analyze the fluctuations in sales.",
+    important: true
   },
   {
     kanji: "岩",
@@ -445,7 +455,8 @@ export const TOMO_SENSEI_JLPT_N3: JLPTReview[] = [
     kana: "ぎもん",
     english: "Question・doubt",
     explanation: "A feeling of uncertainty or a question about something.",
-    example: "子どもの{疑問}に答えた。\nI answered the child's question."
+    example: "子どもの{疑問}に答えた。\nI answered the child's question.",
+    important: true
   },
   {
     kanji: "血液型",
@@ -473,7 +484,8 @@ export const TOMO_SENSEI_JLPT_N3: JLPTReview[] = [
     kana: "こじん",
     english: "Individual・personal",
     explanation: "Relating to a single person rather than a group.",
-    example: "これは{個人}の意見です。\nThis is an individual opinion."
+    example: "これは{個人}の意見です。\nThis is an individual opinion.",
+    important: true
   },
   {
     kanji: "減少",
@@ -487,7 +499,8 @@ export const TOMO_SENSEI_JLPT_N3: JLPTReview[] = [
     kana: "せっきょくてき",
     english: "Positive・proactive・aggressive",
     explanation: "Having a confident and enthusiastic approach to situations.",
-    example: "彼は{積極的}に意見を述べます。\nHe expresses his opinions proactively."
+    example: "彼は{積極的}に意見を述べます。\nHe expresses his opinions proactively.",
+    important: true
   },
   {
     kanji: "材料",
@@ -564,7 +577,8 @@ export const TOMO_SENSEI_JLPT_N3: JLPTReview[] = [
     kana: "たいざい",
     english: "Stay・residence",
     explanation: "The act of remaining in a place for a period of time.",
-    example: "ホテルに{滞在}しました。\nI stayed at a hotel."
+    example: "ホテルに{滞在}しました。\nI stayed at a hotel.",
+    important: true
   },
   {
     kanji: "栄養",
@@ -578,7 +592,8 @@ export const TOMO_SENSEI_JLPT_N3: JLPTReview[] = [
     kana: "ふまん",
     english: "Dissatisfaction・complaint",
     explanation: "A feeling of unhappiness or displeasure about something.",
-    example: "サービスに{不満}を感じました。\nI felt dissatisfaction with the service."
+    example: "サービスに{不満}を感じました。\nI felt dissatisfaction with the service.",
+    important: true
   },
   {
     kanji: "自慢",
@@ -627,14 +642,16 @@ export const TOMO_SENSEI_JLPT_N3: JLPTReview[] = [
     kana: "じゅんばん",
     english: "Order・sequence",
     explanation: "The arrangement or sequence of things.",
-    example: "{順番}を守ってください。\nPlease follow the order."
+    example: "{順番}を守ってください。\nPlease follow the order.",
+    important: true
   },
   {
     kanji: "印象",
     kana: "いんしょう",
     english: "Impression",
     explanation: "A mark, figure, or image produced by pressure.",
-    example: "彼の第一{印象}はとても良かったです。\nHis first impression was very good."
+    example: "彼の第一{印象}はとても良かったです。\nHis first impression was very good.",
+    important: true
   },
   {
     kanji: "低い",
@@ -802,14 +819,16 @@ export const TOMO_SENSEI_JLPT_N3: JLPTReview[] = [
     kana: "えんき",
     english: "Postponement",
     explanation: "The act of delaying or rescheduling something.",
-    example: "会議の{延期}が決まりました。\nThe postponement of the meeting has been decided."
+    example: "会議の{延期}が決まりました。\nThe postponement of the meeting has been decided.",
+    important: true
   },
   {
     kanji: "広告",
     kana: "こうこく",
     english: "Advertisement",
     explanation: "A public promotion of some product or service.",
-    example: "この{広告}はとても面白いです。\nThis advertisement is very interesting."
+    example: "この{広告}はとても面白いです。\nThis advertisement is very interesting.",
+    important: true
   },
   {
     kanji: "適当な",
@@ -844,14 +863,16 @@ export const TOMO_SENSEI_JLPT_N3: JLPTReview[] = [
     kana: "かんせい",
     english: "Completion・accomplishment",
     explanation: "The act of finishing or bringing something to a successful end.",
-    example: "新しいビルが{完成}しました。\nThe new building has been completed."
+    example: "新しいビルが{完成}しました。\nThe new building has been completed.",
+    important: true
   },
   {
     kanji: "地球",
     kana: "ちきゅう",
     english: "Earth・globe",
     explanation: "The planet on which we live; the third planet from the sun.",
-    example: "{地球}は太陽系の一部です。\nThe Earth is part of the solar system."
+    example: "{地球}は太陽系の一部です。\nThe Earth is part of the solar system.",
+    important: true,
   },
   {
     kanji: "規則",
@@ -893,7 +914,8 @@ export const TOMO_SENSEI_JLPT_N3: JLPTReview[] = [
     kana: "めいれい",
     english: "Order・command",
     explanation: "A directive or instruction given by someone in authority.",
-    example: "上司の{命令}に従いました。\nI followed my boss's orders."
+    example: "上司の{命令}に従いました。\nI followed my boss's orders.",
+    important: true
   },
   {
     kanji: "合計",
@@ -956,7 +978,8 @@ export const TOMO_SENSEI_JLPT_N3: JLPTReview[] = [
     kana: "ひかく",
     english: "Comparison",
     explanation: "The act of evaluating two or more things to determine their similarities and differences.",
-    example: "製品の{比較}をしました。\nI made a comparison of the products."
+    example: "製品の{比較}をしました。\nI made a comparison of the products.",
+    important: true
   },
   {
     kanji: "経営",
@@ -991,7 +1014,8 @@ export const TOMO_SENSEI_JLPT_N3: JLPTReview[] = [
     kana: "たいいん",
     english: "Discharge from hospital",
     explanation: "The act of leaving a hospital after being treated.",
-    example: "昨日、病院を{退院}しました。\nI was discharged from the hospital yesterday."
+    example: "昨日、病院を{退院}しました。\nI was discharged from the hospital yesterday.",
+    important: true
   },
   {
     kanji: "石油",
