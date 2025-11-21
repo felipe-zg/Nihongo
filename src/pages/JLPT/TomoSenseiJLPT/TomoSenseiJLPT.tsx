@@ -1,5 +1,5 @@
 import React, { useMemo, useRef, useState } from "react";
-import { Box, Button, HStack, Text, Select, Switch, Stack } from "native-base";
+import { Box, Button, HStack, Text, Select, Switch, Stack, Divider } from "native-base";
 import FlipCard, { FlipCardHandle } from "../../../components/FlipCard/FlipCard";
 import { ExampleSentence } from "../../../utils/textDecoration";
 
@@ -68,13 +68,20 @@ const TomoSenseiJLPT: React.FC<Props> = ({ vocabList }) => {
         <FlipCard 
           ref={flipCardRef} 
           CardFrontContent={
-            <Text fontSize={"7xl"} fontFamily="Klee One" color={"teal.500"}>{currentCard.kanji}</Text>
+            <Text
+              fontSize={currentCard.kanji.length <= 4 ? "8xl" : "6xl"}
+              fontFamily="Klee One"
+              color={"teal.500"}
+            >
+              {currentCard.kanji}
+            </Text>
           }
           CardBackContent={
             <>
-              <Text textAlign={"center"} fontSize={"4xl"} color={"white"} mb={3}>{currentCard.kana}</Text>
+              <Text textAlign={"center"} fontSize={"5xl"} color={"white"} mb={3}>{currentCard.kana}</Text>
               <Text textAlign={"center"} fontSize={"xl"} color={"primary.500"}>{currentCard.english}</Text>
-              <Text textAlign={"center"} fontSize={"xl"} color={"pink.500"} mb={5}>{currentCard.explanation}</Text>
+              <Text textAlign={"center"} fontSize={"xl"} color={"pink.500"}>{currentCard.explanation}</Text>
+              <Divider bg="gray.500" thickness={0.5} my={3} />
               <ExampleSentence sentence={currentCard.example || ""} textAlign="center" />
             </>
           } 
