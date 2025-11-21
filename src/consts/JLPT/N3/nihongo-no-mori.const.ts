@@ -42,12 +42,6 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     example: "木々が{囲んでいる}。The trees are surrounding it."
   },
   {
-    kanji: "延期",
-    kana: "えんき［する］",
-    english: "Postponement・To postpone",
-    explanation: "Used when an event or activity is rescheduled to a later time or date."
-  },
-  {
     kanji: "運休",
     kana: "うんきゅう［する］",
     english: "Suspension of service・To suspend service",

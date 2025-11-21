@@ -329,13 +329,6 @@ export const PAST_JLPT_N3: JLPTReview[] = [
     example: "家族と離れていても、心が{つながっている}と思えれば大丈夫です。\nEven if you are apart from your family, it's okay as long as you feel that your hearts are connected."
   },
   {
-    kanji: "主張",
-    kana: "しゅちょう",
-    english: "Claim・assertion",
-    explanation: "A statement or belief that someone strongly supports.",
-    example: "生徒の親たちは、教室にエアコンが必要だと{主張}している。\nThe students' parents are asserting that air conditioning is necessary in the classroom."
-  },
-  {
     kanji: "むだな",
     kana: "むだな",
     english: "Wasteful・useless",
@@ -467,13 +460,6 @@ export const PAST_JLPT_N3: JLPTReview[] = [
     english: "Employment・getting a job",
     explanation: "The act of finding and starting a job.",
     example: "今、{就職}活動をしています。\nI am currently job hunting."
-  },
-  {
-    kanji: "地球",
-    kana: "ちきゅう",
-    english: "Earth・the globe",
-    explanation: "The planet we live on, third from the sun in the solar system.",
-    example: "{地球}の表面の70%は海です。\n70% of the Earth's surface is covered by oceans."
   },
   {
     kanji: "席",
