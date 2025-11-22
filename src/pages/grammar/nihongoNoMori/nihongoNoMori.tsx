@@ -1,5 +1,6 @@
 import React from "react";
-import { Box, Button, Divider, HStack, Input, Stack, Text, useBreakpointValue } from "native-base";
+import { Box, Button, Divider, HStack, Input, Stack, Text } from "native-base";
+import { FloatingControls } from "../../../components";
 
 type Props = {
   grammarList: GrammarEntry[];
@@ -16,9 +17,7 @@ function ContentBox({ children }: { children: React.ReactNode }) {
 const NihongoNoMoriGrammar: React.FC<Props> = ({ grammarList }) => {
   const [currentIndex, setCurrentIndex] = React.useState(0);
   const [showContent, setShowContent] = React.useState(false);
-  // const currentItem = grammarList[currentIndex];
   const [filterText, setFilterText] = React.useState("");
-  const isMobile = useBreakpointValue({ base: true, lg: false });
 
   const filteredList = grammarList.filter(item =>
     item.grammar.toLowerCase().includes(filterText.toLowerCase()) ||
@@ -181,52 +180,10 @@ const NihongoNoMoriGrammar: React.FC<Props> = ({ grammarList }) => {
               </ContentBox>
             )}
           </Box>
-          {isMobile && (
-            /* --- Fixed Navigation Buttons --- */
-            <>
-              <Box
-                position="fixed"
-                left={0}
-                top="75%"
-                zIndex={100}
-                style={{ transform: [{ translateY: -25 }] }}
-              >
-                <Button
-                  size="xs"
-                  borderRadius="full"
-                  colorScheme="pink"
-                  variant="outline"
-                  opacity={0.5}
-                  onPress={handlePrev}
-                >
-                  {"前"}
-                </Button>
-              </Box>
-    
-              <Box
-                position="fixed"
-                right={0}
-                top="75%"
-                zIndex={100}
-                style={{ transform: [{ translateY: -25 }] }}
-              >
-                <Button
-                  size="xs"
-                  borderRadius="full"
-                  colorScheme="pink"
-                  opacity={0.5}
-                  onPress={handleNext}
-                >
-                  {showContent ? "次" : "見"}
-                </Button>
-              </Box>
-            </>
-          )}
-          {!isMobile && (
-            <Box width={"90%"} mt={"auto"} mb={35}>
-              <Button w={"full"} onPress={handleNext} mt={4} variant={showContent ? "solid" : "outline"} colorScheme="pink">{showContent ? "次へ" : "見る"}</Button>
-            </Box>
-          )}
+          <FloatingControls onPrev={handlePrev} onNext={handleNext} nextLabel={showContent ? "次" : "見"} prevLabel={"前"} />
+          <Box width={"90%"} mt={"auto"} mb={35}>
+            <Button w={"full"} onPress={handleNext} mt={4} variant={showContent ? "solid" : "outline"} colorScheme="pink">{showContent ? "次へ" : "見る"}</Button>
+          </Box>
         </>
       )}
     </Box>
