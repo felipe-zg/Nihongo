@@ -1,4 +1,4 @@
-import React, { useMemo, useRef, useState } from "react";
+import React, { useEffect, useMemo, useRef, useState } from "react";
 import { Box, Button, HStack, Text, Select, Switch, Stack, Divider } from "native-base";
 import FlipCard, { FlipCardHandle } from "../../../components/FlipCard/FlipCard";
 import { ExampleSentence } from "../../../utils/textDecoration";
@@ -15,6 +15,7 @@ const TomoSenseiJLPT: React.FC<Props> = ({ vocabList }) => {
   const [endIndex, setEndIndex] = useState(vocabList.length - 1);
   const [isShuffled, setIsShuffled] = useState(false);
   const [isChallengeMode, setIsChallengeMode] = useState(false);
+  const [isAutoJump, setIsAutoJump] = useState(false);
   const flipCardRef = useRef<FlipCardHandle>(null);
 
   const handleStartIndexChange = (value: number) => {
@@ -73,6 +74,17 @@ const TomoSenseiJLPT: React.FC<Props> = ({ vocabList }) => {
       setCurrentIndex((prevIndex) => (prevIndex - 1 + filteredVocabList.length) % filteredVocabList.length);
     }, 200);
   }
+
+  useEffect(() => {
+    //start/end auto jump of cards when auto jump is true/false
+    if (isAutoJump) {
+      const interval = setInterval(() => {
+        handleNext();
+      }, 3000); // Change card every 3 seconds
+      return () => clearInterval(interval);
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isAutoJump]);
 
   return (
     <Box alignItems="center" mt={10}>
@@ -145,6 +157,14 @@ const TomoSenseiJLPT: React.FC<Props> = ({ vocabList }) => {
               isChecked={isChallengeMode}
             />
             <Text color="red.500">Challenge Mode</Text>
+          </HStack>
+          <HStack space={2} ml={5} alignItems="center">
+            <Switch
+              onValueChange={(val) => setIsAutoJump(val)}
+              colorScheme="red"
+              isChecked={isAutoJump}
+            />
+            <Text color="red.500">Auto Jump</Text>
           </HStack>
         </HStack>
       </Stack>
