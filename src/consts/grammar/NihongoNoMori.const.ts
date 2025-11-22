@@ -14,6 +14,8 @@ export const GrammarEntryCategory = {
   KEIGO: '敬語',
 } as const;
 
+export type GrammarCategory = typeof GrammarEntryCategory[keyof typeof GrammarEntryCategory];
+
 export const NIHONGO_NO_MORI_GRAMMAR: GrammarEntry[] = [
   {
     id: 1,

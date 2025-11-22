@@ -1,6 +1,7 @@
-import React from "react";
-import { Box, Button, Divider, HStack, Input, Stack, Text } from "native-base";
+import React, { useMemo } from "react";
+import { Box, Button, Divider, HStack, Input, Select, Stack, Text } from "native-base";
 import { FloatingControls } from "../../../components";
+import { GrammarCategory, GrammarEntryCategory } from "../../../consts";
 
 type Props = {
   grammarList: GrammarEntry[];
@@ -18,10 +19,17 @@ const NihongoNoMoriGrammar: React.FC<Props> = ({ grammarList }) => {
   const [currentIndex, setCurrentIndex] = React.useState(0);
   const [showContent, setShowContent] = React.useState(false);
   const [filterText, setFilterText] = React.useState("");
+  const [categoryFilter, setCategoryFilter] = React.useState<GrammarCategory>();
+
+  const grammarCategoryOptions = Object.entries(GrammarEntryCategory).map(
+    ([key, value]) => ({ key, label: value, value })
+  );
 
   const filteredList = grammarList.filter(item =>
     item.grammar.toLowerCase().includes(filterText.toLowerCase()) ||
     item.category.toLowerCase().includes(filterText.toLowerCase())
+  ).filter(item =>
+    categoryFilter ? item.category === categoryFilter : true
   );
 
   const currentItem = filteredList[currentIndex] || null;
@@ -44,10 +52,43 @@ const NihongoNoMoriGrammar: React.FC<Props> = ({ grammarList }) => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
+  const CategorySelect = useMemo(() => {
+    return (
+      <Select
+        selectedValue={categoryFilter}
+        onValueChange={(value) => setCategoryFilter(value as GrammarCategory)}
+        placeholder="Category"
+        backgroundColor={"white"}
+      >
+        {grammarCategoryOptions.map((category) => (
+          <Select.Item
+            key={category.key}
+            label={category.label}
+            value={category.value}
+          />
+        ))}
+      </Select>
+    );
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  const FilterInput = useMemo(() => {
+    return (
+      <Input
+        placeholder="検索..."
+        width={"100%"}
+        value={filterText}
+        onChangeText={setFilterText}
+        bg="white"
+        color="pink.500"
+      />
+    );
+  }, [filterText]);
+
   React.useEffect(() => {
     setCurrentIndex(0);
     setShowContent(false);
-  }, [filterText]);
+  }, [filteredList.length, categoryFilter]);
 
   return (
     <Box alignItems="center" mt={10} minHeight={"90vh"}>
@@ -58,21 +99,16 @@ const NihongoNoMoriGrammar: React.FC<Props> = ({ grammarList }) => {
         justifyContent="space-between"
         direction={{ base: "column", sm: "row" }}
       >
-        <Box flex={1}></Box>
+        <Box flex={1} display={{ base: "none", sm: "flex" }}>
+          {CategorySelect}
+        </Box>
         <Box flex={2} alignItems="center">
           <Text fontFamily="Klee One" fontSize="xl" bold color="white">
             日本語の森・文法
           </Text>
         </Box>
-        <Box flex={1} alignItems="flex-end" width={{ base: "100%", sm: "auto" }}>
-          <Input
-            placeholder="検索..."
-            width={"100%"}
-            value={filterText}
-            onChangeText={setFilterText}
-            bg="white"
-            color="pink.500"
-          />
+        <Box flex={1} alignItems="flex-end" width={{ base: "100%", sm: "auto" }} display={{ base: "none", sm: "flex" }}>
+          {FilterInput}
         </Box>
       </Stack>
       {filteredList.length === 0 ? (
@@ -186,6 +222,14 @@ const NihongoNoMoriGrammar: React.FC<Props> = ({ grammarList }) => {
           </Box>
         </>
       )}
+      <HStack width="90%" space={4} mt={4} mb={10} display={{ base: "flex", sm: "none" }}>
+        <Box flex={1}>
+          {CategorySelect}
+        </Box>
+        <Box flex={1}>
+          {FilterInput}
+        </Box>
+      </HStack>
     </Box>
   );
 };
