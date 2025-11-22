@@ -5,9 +5,17 @@ type FloatingControlsProps = {
   onNext: () => void;
   onPrev: () => void;
   position?: "top" | "middle" | "bottom";
+  nextLabel?: string;
+  prevLabel?: string;
 };
 
-export default function FloatingControls({ onNext, onPrev, position = "middle" }: FloatingControlsProps) {
+export default function FloatingControls({
+  onNext,
+  onPrev,
+  position = "middle",
+  nextLabel = "次",
+  prevLabel = "前"
+}: FloatingControlsProps) {
   const topPosition = position === "top" ? "15%" : position === "middle" ? "50%" : "75%";
 
   return (
@@ -27,7 +35,7 @@ export default function FloatingControls({ onNext, onPrev, position = "middle" }
             opacity={0.5}
             onPress={onPrev}
           >
-            {"前"}
+            {prevLabel}
           </Button>
         </Box>
 
@@ -45,7 +53,7 @@ export default function FloatingControls({ onNext, onPrev, position = "middle" }
             opacity={0.5}
             onPress={onNext}
           >
-            次
+            {nextLabel}
           </Button>
         </Box>
       </>
