@@ -60,7 +60,7 @@ const NihongoNoMoriGrammar: React.FC<Props> = ({ grammarList }) => {
       >
         <Box flex={1}></Box>
         <Box flex={2} alignItems="center">
-          <Text fontSize="xl" bold color="white">
+          <Text fontFamily="Klee One" fontSize="xl" bold color="white">
             日本語の森・文法
           </Text>
         </Box>
@@ -76,12 +76,12 @@ const NihongoNoMoriGrammar: React.FC<Props> = ({ grammarList }) => {
         </Box>
       </Stack>
       {filteredList.length === 0 ? (
-        <Text color="white" mt={4}>該当する文法が見つかりません。</Text>
+        <Text fontFamily="Klee One" color="white" mt={4}>該当する文法が見つかりません。</Text>
       ) : (
         <>
           <Text color="pink.500" my={5}>{`${currentIndex + 1}/${filteredList.length}`}</Text>
           <ContentBox>
-            <Text fontSize={"2xl"} bold color={"white"}>{currentItem.grammar}</Text>
+            <Text fontFamily="Klee One" fontSize={"2xl"} bold color={"white"}>{currentItem.grammar}</Text>
           </ContentBox>
           <Box opacity={showContent ? 1 : 0} alignItems={"center"} width={"100%"}>
             <ContentBox>
@@ -154,7 +154,7 @@ const NihongoNoMoriGrammar: React.FC<Props> = ({ grammarList }) => {
             <ContentBox>
               {currentItem.examples.map((example, index) => (
                 <Box key={index} mb={4} alignItems="center">
-                  <Text textAlign={"center"} color={"white"}>{example.sentence}</Text>
+                  <Text fontFamily="Klee One" bold textAlign={"center"} color={"white"}>{example.sentence}</Text>
                   {example.meaning && <Text italic textAlign={"center"} color={"primary.400"} fontSize={"xs"}>{example.meaning}</Text>}
                   {example.point && <Text italic textAlign={"center"} color={"pink.400"} fontSize={"xs"}>{example.point}</Text>}
                   <Divider my={2} bg="gray.500" thickness={0.5}/>
@@ -171,7 +171,7 @@ const NihongoNoMoriGrammar: React.FC<Props> = ({ grammarList }) => {
                 <Box minWidth={{ base: "100%", lg: "50%" }}>
                   {currentItem.newWords?.map((word, index) => (
                     <HStack key={index} width={"100%"}>
-                      <Text flex={1} color={"yellow.300"}>{word.kanji}</Text>
+                      <Text flex={1} color={"yellow.300"} fontFamily="Klee One">{word.kanji}</Text>
                       <Text flex={2} color={"primary.400"}>{word.kana}</Text>
                       <Text flex={2} color={"white"}>{word.english}</Text>
                     </HStack>
