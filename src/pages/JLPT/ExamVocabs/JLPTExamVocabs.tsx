@@ -166,7 +166,7 @@ const JLPTExamVocabs: React.FC<Props> = ({
 
   return (
     <Box alignItems="center" mt={10}>
-      <Text fontSize={"xl"} bold color={"white"}>トモ先生 JLPT 文字語彙</Text>
+      <Text fontSize={"xl"} bold color={"white"}>JLPT 文字語彙</Text>
       {!listLayout && <CardsUI />}
       {listLayout && <ListLayout />}
 
