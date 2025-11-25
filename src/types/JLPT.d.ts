@@ -46,4 +46,5 @@ declare type JLPTReview = {
   explanation?: string;
   example?: string;
   important?: boolean;
+  repeat?: boolean;
 }
