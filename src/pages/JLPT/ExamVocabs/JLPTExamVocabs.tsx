@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useMemo, useRef, useState } from "react";
 import { Box, Button, HStack, Text, Select, Switch, Stack, Divider } from "native-base";
 import FlipCard, { FlipCardHandle } from "../../../components/FlipCard/FlipCard";
 import { ExampleSentence } from "../../../utils/textDecoration";
@@ -82,7 +82,7 @@ const JLPTExamVocabs: React.FC<Props> = ({
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isAutoJump]);
 
-  const CardsUI = () => (
+  const CardsUI = useMemo(() => (
     <>
       <Text color="pink.500">{`${currentIndex + 1}/${vocabList.length}`}</Text>
       {vocabList.length > 0 && !isChallengeMode && (
@@ -117,9 +117,11 @@ const JLPTExamVocabs: React.FC<Props> = ({
       </HStack>
       <FloatingControls onNext={handleNext} onPrev={handlePrev} position="top" />
     </>
-  );
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  ), [currentCard]);
 
-  const ListLayout = () => (
+  const ListLayout = useMemo(() => (
+    (
     <Box minHeight={"100vh"} width={"95%"} px={5} py={5}>
       <Box borderWidth={1} borderColor={"white"} p={2} borderRadius={10} mb={5}>
         {vocabList.map((item, index) => (
@@ -162,13 +164,14 @@ const JLPTExamVocabs: React.FC<Props> = ({
         </Box>
       </Box>
     </Box>
-  );
+  )
+  ), [vocabList, showContent]);
 
   return (
     <Box alignItems="center" mt={10}>
       <Text fontSize={"xl"} bold color={"white"}>JLPT 文字語彙</Text>
-      {!listLayout && <CardsUI />}
-      {listLayout && <ListLayout />}
+      {!listLayout && CardsUI}
+      {listLayout && ListLayout}
 
       <Stack my={10} width="100%" px={4} direction={{ base: "column", lg: "row" }} space={5}>
         {!listLayout && (
