@@ -858,7 +858,8 @@ export const TOMO_SENSEI_JLPT_N3: JLPTReview[] = [
     kana: "うたがう",
     english: "To doubt・to suspect",
     explanation: "To feel uncertain about the truth or reliability of something.",
-    example: "彼の話を{疑っています}。\nI doubt his story."
+    example: "彼の話を{疑っています}。\nI doubt his story.",
+    repeat: true
   },
   {
     kanji: "駐車",

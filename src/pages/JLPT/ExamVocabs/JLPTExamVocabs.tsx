@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useRef, useState } from "react";
+import React, { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { Box, Button, HStack, Text, Select, Switch, Stack, Divider } from "native-base";
 import FlipCard, { FlipCardHandle } from "../../../components/FlipCard/FlipCard";
 import { ExampleSentence } from "../../../utils/textDecoration";
@@ -47,7 +47,7 @@ const JLPTExamVocabs: React.FC<Props> = ({
     setIsShuffled(true);
   }
 
-  function handleNext() {
+  const handleNext = useCallback(() => {
     if (!flipCardRef.current?.isFlipped()) {
       flipCardRef.current?.flip();
       return;
@@ -58,9 +58,9 @@ const JLPTExamVocabs: React.FC<Props> = ({
     setTimeout(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % vocabList.length);
     }, 200);
-  }
+  }, [flipCardRef, vocabList.length]);
 
-  function handlePrev() {
+  const handlePrev = useCallback(() => {
     if (flipCardRef.current?.isFlipped()) {
       flipCardRef.current?.unflip();
     }
@@ -68,22 +68,16 @@ const JLPTExamVocabs: React.FC<Props> = ({
     setTimeout(() => {
       setCurrentIndex((prevIndex) => (prevIndex - 1 + vocabList.length) % vocabList.length);
     }, 200);
-  }
+  }, [flipCardRef, vocabList.length]);
 
   useEffect(() => {
-    function handleKeyDown(e: KeyboardEvent) {
-      if (e.key === "ArrowRight") {
-        handleNext();
-      }
-      if (e.key === "ArrowLeft") {
-        handlePrev();
-      }
-    }
-
-    window.addEventListener("keydown", handleKeyDown);
-    return () => window.removeEventListener("keydown", handleKeyDown);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  function handleKeyDown(e: KeyboardEvent) {
+    if (e.key === "ArrowRight") handleNext();
+    if (e.key === "ArrowLeft") handlePrev();
+  }
+  window.addEventListener("keydown", handleKeyDown);
+  return () => window.removeEventListener("keydown", handleKeyDown);
+}, [handleNext, handlePrev]);
 
   useEffect(() => {
     //start/end auto jump of cards when auto jump is true/false
