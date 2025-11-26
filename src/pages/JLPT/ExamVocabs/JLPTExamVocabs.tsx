@@ -6,6 +6,7 @@ import { FloatingControls } from "../../../components";
 
 type Props = {
   vocabList: JLPTReview[];
+  numberOfVocabs: number;
   startIndex: number;
   handleStartIndexChange: (value: number) => void;
   endIndex: number;
@@ -17,6 +18,7 @@ type Props = {
 
 const JLPTExamVocabs: React.FC<Props> = ({
   vocabList,
+  numberOfVocabs,
   startIndex,
   handleStartIndexChange,
   endIndex,
@@ -195,7 +197,7 @@ const JLPTExamVocabs: React.FC<Props> = ({
                 placeholder="From"
                 backgroundColor={"white"}
               >
-                {Array.from({ length: vocabList.length }, (_, i) => (
+                {Array.from({ length: numberOfVocabs }, (_, i) => (
                   <Select.Item key={i} label={`${i + 1}`} value={i.toString()} />
                 ))}
               </Select>
@@ -207,7 +209,7 @@ const JLPTExamVocabs: React.FC<Props> = ({
                 placeholder="To"
                 backgroundColor={"white"}
               >
-                {Array.from({ length: vocabList.length - startIndex }, (_, i) => (
+                {Array.from({ length: numberOfVocabs - startIndex }, (_, i) => (
                   <Select.Item key={i + startIndex} label={`${i + startIndex + 1}`} value={(i + startIndex).toString()} />
                 ))}
               </Select>

@@ -51,6 +51,7 @@ const JLPTExamVocabsPage: React.FC = () => {
   return (
     <JLPTExamVocabs
       vocabList={filteredVocabList}
+      numberOfVocabs={vocabList.length}
       startIndex={startIndex}
       handleStartIndexChange={handleStartIndexChange}
       endIndex={endIndex}
