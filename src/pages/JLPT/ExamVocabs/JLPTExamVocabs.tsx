@@ -132,7 +132,7 @@ const JLPTExamVocabs: React.FC<Props> = ({
       <FloatingControls onNext={handleNext} onPrev={handlePrev} position="top" />
     </>
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  ), [currentCard]);
+  ), [currentCard, vocabList]);
 
   const ListLayout = useMemo(() => (
     (
