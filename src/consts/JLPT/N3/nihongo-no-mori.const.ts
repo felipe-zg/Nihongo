@@ -1,12 +1,5 @@
 export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
   {
-    kanji: "退院",
-    kana: "たいいん",
-    english: "Discharge・To be discharged",
-    explanation: "Refers to the act of leaving a hospital after treatment.",
-    example: "彼は病気が治ったので、{退院}した。\nHe was discharged from the hospital because he recovered."
-  },
-  {
     kanji: "包む",
     kana: "つつむ",
     english: "To wrap・To cover",
@@ -77,20 +70,6 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     example: "地図の道を{なぞった}。\nI traced the path on the map."
   },
   {
-    kanji: "渋滞",
-    kana: "じゅうたい",
-    english: "Traffic jam・To be congested",
-    explanation: "Refers to a situation where vehicles are unable to move or are moving very slowly due to heavy traffic.",
-    example: "事故で家の前の道が{渋滞}している。\nThe road in front of my house is congested due to an accident."
-  },
-  {
-    kanji: "滞在",
-    kana: "たいざい",
-    english: "Stay・To stay",
-    explanation: "Refers to the act of staying in a place for a period of time.",
-    example: "彼はホテルに{滞在}している。\nHe is staying at a hotel。"
-  },
-  {
     kanji: "縮小",
     kana: "しゅくしょう［する］",
     english: "Reduction・To reduce",
@@ -141,13 +120,6 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     example: "ルールが{複数}あって、覚えるのが大変だ。\nThere are multiple rules, and it's hard to remember them."
   },
   {
-    kanji: "増減",
-    kana: "ぞうげん［する］",
-    english: "Increase and decrease・To increase and decrease",
-    explanation: "Refers to the fluctuation or variation in numbers or amounts.",
-    example: "お金の{増減}が見えるようにする。\nTo make the increase and decrease of money visible."
-  },
-  {
     kanji: "焼く",
     kana: "やく",
     english: "To bake・To grill・To burn",
@@ -160,13 +132,6 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     english: "To burn・To be on fire",
     explanation: "Refers to the action of something burning or being on fire.",
     example: "木が{燃えている}。\nThe tree is burning."
-  },
-  {
-    kanji: "積極的な",
-    kana: "せっきょくてき［な］",
-    english: "Positive・Active・Proactive",
-    explanation: "Refers to a proactive or positive attitude towards situations or tasks.",
-    example: "彼は仕事に対して{積極的だ}。\nHe is proactive about his work."
   },
   {
     kanji: "消極的な",
@@ -232,13 +197,6 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     example: "父のトランクには、子どもたちへの土産が{ぎっしり}入っていた。\nMy father's trunk was packed tightly with souvenirs for the children."
   },
   {
-    kanji: "延期",
-    kana: "えんき［する］",
-    english: "Postponement・To postpone",
-    explanation: "Used when an event or activity is rescheduled to a later time or date.",
-    example: "参加できない人が多いので、今日の会議は{延期された}。\nToday's meeting was postponed because many people could not attend."
-  },
-  {
     kanji: "遅延",
     kana: "ちえん［する］",
     english: "Delay・To delay",
@@ -280,13 +238,6 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     example: "会社から毎月交通費が{支給された}。\nThe company provided transportation expenses every month."
   },
   {
-    kanji: "順番",
-    kana: "じゅんばん",
-    english: "Order・Turn",
-    explanation: "Refers to the sequence or arrangement of things or people.",
-    example: "{順番}が来るまで、このいすにおかけになってお待ちください。\nPlease sit in this chair and wait until your turn comes."
-  },
-  {
     kanji: "断る",
     kana: "ことわる",
     english: "To refuse・To decline",
@@ -320,13 +271,6 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     english: "Trend・To be trendy",
     explanation: "Refers to the popularity or trendiness of something, such as fashion or culture.",
     example: "今年の夏は新しいファッションが{流行している}。\nNew fashion is trendy this summer."
-  },
-  {
-    kanji: "伝言",
-    kana: "でんごん",
-    english: "Message",
-    explanation: "Refers to a message or communication conveyed from one person to another.",
-    example: "田中さんから{伝言}があります。\nThere is a message from Tanaka-san."
   },
   {
     kanji: "なるべく",
