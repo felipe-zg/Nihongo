@@ -11,7 +11,8 @@ export const TOMO_SENSEI_JLPT_N3: JLPTReview[] = [
     kana: "しょうじき",
     english: "Honest・frank",
     explanation: "Being truthful and straightforward in behavior and speech.",
-    example: "彼はとても{正直}な人です。\nHe is a very honest person."
+    example: "彼はとても{正直}な人です。\nHe is a very honest person.",
+    important: true,
   },
   {
     kanji: "余る",
@@ -169,7 +170,8 @@ export const TOMO_SENSEI_JLPT_N3: JLPTReview[] = [
     kana: "むだ",
     english: "Wasteful・useless",
     explanation: "Not achieving any useful result・not worth the effort.",
-    example: "時間を{無駄}にしないようにしましょう。\nLet's not waste our time."
+    example: "時間を{無駄}にしないようにしましょう。\nLet's not waste our time.",
+    important: true,
   },
   {
     kanji: "足音",
@@ -474,6 +476,7 @@ export const TOMO_SENSEI_JLPT_N3: JLPTReview[] = [
     english: "Commuting・going to work",
     explanation: "The act of traveling to and from one's place of work.",
     example: "毎日電車で{通勤}しています。\nI commute by train every day.",
+    important: true,
   },
   {
     kanji: "逆",
@@ -977,7 +980,8 @@ export const TOMO_SENSEI_JLPT_N3: JLPTReview[] = [
     kana: "せんもんか",
     english: "Expert・specialist",
     explanation: "A person who has a high level of knowledge or skill in a particular area.",
-    example: "彼はITの{専門家}です。\nHe is an expert in IT."
+    example: "彼はITの{専門家}です。\nHe is an expert in IT.",
+    important: true
   },
   {
     kanji: "比較",
@@ -1029,5 +1033,13 @@ export const TOMO_SENSEI_JLPT_N3: JLPTReview[] = [
     english: "Petroleum・oil",
     explanation: "A liquid mixture of hydrocarbons used as fuel and in the production of various products.",
     example: "{石油}の価格が上昇しています。\nThe price of petroleum is rising."
+  },
+  {
+    kanji: "影響",
+    kana: "えいきょう",
+    english: "Influence・effect・impact",
+    explanation: "The power to have an effect on people or things.",
+    example: "環境問題は私たちの生活に大きな{影響}を与えます。\nEnvironmental issues have a big impact on our lives.",
+    important: true
   }
 ];
