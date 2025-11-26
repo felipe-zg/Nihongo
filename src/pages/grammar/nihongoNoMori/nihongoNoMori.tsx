@@ -1,4 +1,4 @@
-import React, { useMemo } from "react";
+import React, { useEffect, useMemo } from "react";
 import { Box, Button, Divider, HStack, Input, Select, Stack, Text } from "native-base";
 import { FloatingControls } from "../../../components";
 import { GrammarCategory, GrammarEntryCategory } from "../../../consts";
@@ -34,23 +34,23 @@ const NihongoNoMoriGrammar: React.FC<Props> = ({ grammarList }) => {
 
   const currentItem = filteredList[currentIndex] || null;
 
-  function handleNext() {
-    if(!showContent) {
+  const handleNext = React.useCallback(() => {
+    if (!showContent) {
       setShowContent(true);
       return;
     }
     setShowContent(false);
     setCurrentIndex((prevIndex) => (prevIndex + 1) % filteredList.length);
     window.scrollTo({ top: 0, behavior: "smooth" });
-  }
+  }, [showContent, filteredList.length]);
 
-  function handlePrev() {
+  const handlePrev = React.useCallback(() => {
     setShowContent(false);
     setCurrentIndex((prevIndex) =>
       prevIndex === 0 ? filteredList.length - 1 : prevIndex - 1
     );
     window.scrollTo({ top: 0, behavior: "smooth" });
-  }
+  }, [filteredList.length]);
 
   const CategorySelect = useMemo(() => {
     return (
@@ -85,7 +85,17 @@ const NihongoNoMoriGrammar: React.FC<Props> = ({ grammarList }) => {
     );
   }, [filterText]);
 
-  React.useEffect(() => {
+  useEffect(() => {
+    function handleKeyDown(e: KeyboardEvent) {
+      if (e.key === "ArrowRight") handleNext();
+      if (e.key === "ArrowLeft") handlePrev();
+    }
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [handleNext, handlePrev]);
+
+  useEffect(() => {
     setCurrentIndex(0);
     setShowContent(false);
   }, [filteredList.length, categoryFilter]);
