@@ -106,7 +106,6 @@ export const TOMO_SENSEI_JLPT_N3: JLPTReview[] = [
     english: "Short distance",
     explanation: "A relatively small space between two points.",
     example: "彼は{短距離}走で優勝しました。\nHe won the short-distance race.",
-    repeat: true,
   },
   {
     kanji: "屋根",
@@ -164,7 +163,6 @@ export const TOMO_SENSEI_JLPT_N3: JLPTReview[] = [
     english: "Resubmission・re-submitting",
     explanation: "The act of submitting something again, often after making corrections.",
     example: "レポートを{再提出}する必要があります。\nI need to resubmit the report.",
-    repeat: true,
   },
   {
     kanji: "無駄",
@@ -200,7 +198,6 @@ export const TOMO_SENSEI_JLPT_N3: JLPTReview[] = [
     english: "Sense of responsibility",
     explanation: "A feeling of duty or obligation to take care of something or someone.",
     example: "彼は強い{責任感}を持っています。\nHe has a strong sense of responsibility.",
-    repeat: true,
   },
   {
     kanji: "清潔",
@@ -311,7 +308,6 @@ export const TOMO_SENSEI_JLPT_N3: JLPTReview[] = [
     english: "Exchange・interaction・communication",
     explanation: "The act of sharing ideas, culture, or information between people or groups.",
     example: "国際的な{交流}が重要です。\nInternational exchange is important.",
-    repeat: true,
   },
   {
     kanji: "突然",
@@ -478,7 +474,6 @@ export const TOMO_SENSEI_JLPT_N3: JLPTReview[] = [
     english: "Commuting・going to work",
     explanation: "The act of traveling to and from one's place of work.",
     example: "毎日電車で{通勤}しています。\nI commute by train every day.",
-    repeat: true,
   },
   {
     kanji: "逆",
@@ -509,7 +504,6 @@ export const TOMO_SENSEI_JLPT_N3: JLPTReview[] = [
     explanation: "Having a confident and enthusiastic approach to situations.",
     example: "彼は{積極的}に意見を述べます。\nHe expresses his opinions proactively.",
     important: true,
-    repeat: true,
   },
   {
     kanji: "材料",
@@ -581,7 +575,6 @@ export const TOMO_SENSEI_JLPT_N3: JLPTReview[] = [
     english: "Personality・character",
     explanation: "The combination of characteristics or qualities that form an individual's distinctive character.",
     example: "彼の{性格}はとても明るいです。\nHis personality is very cheerful.",
-    repeat: true,
   },
   {
     kanji: "滞在",
