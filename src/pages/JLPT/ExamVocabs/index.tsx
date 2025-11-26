@@ -21,7 +21,7 @@ const JLPTExamVocabsPage: React.FC = () => {
 
   const handleEndIndexChange = (value: number) => {
     if (value < startIndex) {
-      setStartIndex(value);
+      setStartIndex(value - 1);
     }
     setEndIndex(value);
   };
@@ -40,7 +40,7 @@ const JLPTExamVocabsPage: React.FC = () => {
 
   let filteredVocabList = useMemo(() => {
     if (startIndex === 0 && endIndex === 0) return vocabList;
-    return vocabList.slice(startIndex, endIndex + 1).filter(item => !isDifficultWords || item.repeat);
+    return vocabList.slice(startIndex, endIndex).filter(item => !isDifficultWords || item.repeat);
   }, [vocabList, startIndex, endIndex, isDifficultWords]);
 
   useEffect(() => {

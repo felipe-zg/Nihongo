@@ -210,7 +210,7 @@ const JLPTExamVocabs: React.FC<Props> = ({
                 backgroundColor={"white"}
               >
                 {Array.from({ length: numberOfVocabs - startIndex }, (_, i) => (
-                  <Select.Item key={i + startIndex} label={`${i + startIndex + 1}`} value={(i + startIndex).toString()} />
+                  <Select.Item key={i + startIndex} label={`${i + startIndex + 1}`} value={(i + startIndex + 1).toString()} />
                 ))}
               </Select>
             </Box>
