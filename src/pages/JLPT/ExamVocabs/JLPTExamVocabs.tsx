@@ -59,10 +59,7 @@ const JLPTExamVocabs: React.FC<Props> = ({
   }
 
   function handlePrev() {
-    if (!flipCardRef.current?.isFlipped()) {
-      flipCardRef.current?.flip();
-      return;
-    } else {
+    if (flipCardRef.current?.isFlipped()) {
       flipCardRef.current?.unflip();
     }
 
@@ -70,6 +67,21 @@ const JLPTExamVocabs: React.FC<Props> = ({
       setCurrentIndex((prevIndex) => (prevIndex - 1 + vocabList.length) % vocabList.length);
     }, 200);
   }
+
+  useEffect(() => {
+    function handleKeyDown(e: KeyboardEvent) {
+      if (e.key === "ArrowRight") {
+        handleNext();
+      }
+      if (e.key === "ArrowLeft") {
+        handlePrev();
+      }
+    }
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   useEffect(() => {
     //start/end auto jump of cards when auto jump is true/false
