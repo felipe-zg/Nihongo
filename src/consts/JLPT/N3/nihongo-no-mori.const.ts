@@ -242,7 +242,8 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     kana: "ことわる",
     english: "To refuse・To decline",
     explanation: "Refers to the action of refusing or declining an offer or request.",
-    example: "山田さんは{断った}らしいですよ。\nI heard that Yamada-san refused."
+    example: "山田さんは{断った}らしいですよ。\nI heard that Yamada-san refused.",
+    important: true,
   },
   {
     kanji: "降りる",
