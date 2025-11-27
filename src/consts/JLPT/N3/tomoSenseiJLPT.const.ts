@@ -34,7 +34,8 @@ export const TOMO_SENSEI_JLPT_N3: JLPTReview[] = [
     kana: "げんざい",
     english: "Present・current・now",
     explanation: "The current time or situation.",
-    example: "{現在}の状況を把握することが必要です。\nIt is necessary to understand the current situation."
+    example: "{現在}の状況を把握することが必要です。\nIt is necessary to understand the current situation.",
+    important: true
   },
   {
     kanji: "血圧",
@@ -295,7 +296,8 @@ export const TOMO_SENSEI_JLPT_N3: JLPTReview[] = [
     kana: "けってん",
     english: "Weakness・flaw・defect",
     explanation: "A shortcoming or imperfection in someone or something.",
-    example: "誰にでも{欠点}があります。\nEveryone has weaknesses."
+    example: "誰にでも{欠点}があります。\nEveryone has weaknesses.",
+    important: true
   },
   {
     kanji: "中旬",
@@ -866,7 +868,16 @@ export const TOMO_SENSEI_JLPT_N3: JLPTReview[] = [
     kana: "ちゅうしゃ",
     english: "Parking",
     explanation: "The act of leaving a vehicle in a designated area.",
-    example: "ここは{駐車}禁止です。\nParking is prohibited here."
+    example: "ここは{駐車}禁止です。\nParking is prohibited here.",
+    important: true
+  },
+  {
+    kanji: "駐輪",
+    kana: "ちゅうりん",
+    english: "Bicycle parking",
+    explanation: "The act of leaving a bicycle in a designated area.",
+    example: "この場所は{駐輪}場です。\nThis place is a bicycle parking area.",
+    important: true
   },
   {
     kanji: "完成",
