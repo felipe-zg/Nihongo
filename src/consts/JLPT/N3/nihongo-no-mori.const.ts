@@ -88,7 +88,8 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     kana: "おしまい［する］",
     english: "The end・To end",
     explanation: "Refers to the conclusion or termination of something.",
-    example: "遊びは{おしまい}です。\nPlaytime is over. \n終わりって同じ意味だ。"
+    example: "遊びは{おしまい}です。\nPlaytime is over. \n終わりって同じ意味だ。",
+    important: true,
   },
   {
     kanji: "退屈",
@@ -197,6 +198,41 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     example: "父のトランクには、子どもたちへの土産が{ぎっしり}入っていた。\nMy father's trunk was packed tightly with souvenirs for the children."
   },
   {
+    kanji: "ばらばら",
+    kana: "ばらばら［する］",
+    english: "Scattered・In pieces・To be scattered",
+    explanation: "Refers to something being scattered or in pieces, not organized or together. (espalhado)",
+    example: "机の上が本やノートで{ばらばら}になっている。\nThe desk is scattered with books and notebooks."
+  },
+  {
+    kanji: "ぐずぐず",
+    kana: "ぐずぐず［する］",
+    english: "Hesitantly・Slowly・To hesitate",
+    explanation: "Refers to doing something hesitantly or slowly, often due to indecision or reluctance.\nはっきりじゃなくて・早くない",
+    example: "彼はいつも{ぐずぐず}していて、なかなか決断しない。\nHe is always hesitating and doesn't make decisions easily."
+  },
+  {
+    kanji: "ずきずき",
+    kana: "ずきずき［する］",
+    english: "Throbbing・To throb",
+    explanation: "Refers to a sharp, recurring pain, often used to describe headaches or toothaches.",
+    example: "お酒を飲み過ぎて、頭が{ずきずき}する。\nI drank too much alcohol, and my head is throbbing."
+  },
+  {
+    kanji: "ふらろら",
+    kana: "ふらふら［する］",
+    english: "Dizzy・Unsteady・To be dizzy",
+    explanation: "Refers to a feeling of dizziness or unsteadiness, often due to illness or fatigue.",
+    example: "熱があって、体が{ふらふら}する。\nI have a fever, and my body feels dizzy."
+  },
+  {
+    kanji: "ぶらぶら",
+    kana: "ぶらぶら［する］",
+    english: "To stroll・To hang around",
+    explanation: "Refers to the action of strolling or hanging around without a specific purpose. (Uma corda pendurada balançando)",
+    example: "休日は街を{ぶらぶら}するのが好きだ。\nI like to stroll around the city on my days off."
+  },
+  {
     kanji: "遅延",
     kana: "ちえん［する］",
     english: "Delay・To delay",
@@ -215,7 +251,8 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     kana: "そうたい［する］",
     english: "Leaving early・To leave early",
     explanation: "Refers to the act of leaving a place, such as work or school, before the scheduled time.",
-    example: "体調が悪いので、今日は{早退}します。\nI will leave early today because I am not feeling well."
+    example: "体調が悪いので、今日は{早退}します。\nI will leave early today because I am not feeling well.",
+    important: true,
   },
   {
     kanji: "普段",
@@ -300,5 +337,54 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     english: "Activity・To be active",
     explanation: "Refers to the act of engaging in activities or actions, often for a specific purpose or goal.",
     example: "この歌手は海外でも{活動して}います。\nThis singer is also active overseas."
+  },
+  {
+    kanji: "腰",
+    kana: "こし",
+    english: "Waist・Hips・Lower back",
+    explanation: "Refers to the part of the body between the ribs and hips.",
+    example: "長時間座っていると、{腰}が痛くなる。\nSitting for long periods makes my lower back hurt."
+  },
+  {
+    kanji: "腹",
+    kana: "はら",
+    english: "Stomach・Belly",
+    explanation: "Refers to the part of the body between the chest and pelvis.",
+    example: "お腹が空いたので、{腹}が鳴っている。\nMy stomach is growling because I'm hungry."
+  },
+  {
+    kanji: "肌",
+    kana: "はだ",
+    english: "Skin",
+    explanation: "Refers to the outer covering of the body.",
+    example: "夏は{肌}を守るために日焼け止めを塗る。\nIn summer, I apply sunscreen to protect my skin."
+  },
+  {
+    kanji: "腕",
+    kana: "うで",
+    english: "Arm",
+    explanation: "Refers to the part of the body between the shoulder and hand.",
+    example: "彼は{腕}にタトゥーを入れている。\nHe has a tattoo on his arm."
+  },
+  {
+    kanji: "差",
+    kana: "さ",
+    english: "Difference・Gap",
+    explanation: "Refers to the distinction or gap between two or more things.",
+    example: "年齢の{差}は関係ない。\nAge difference doesn't matter."
+  },
+  {
+    kanji: "納得する",
+    kana: "なっとく［する］",
+    english: "Consent・To agree・To be convinced",
+    explanation: "Refers to the act of agreeing to something or being convinced by an explanation or argument.\nとてもよく分かったっていう意味だ。",
+    example: "どうして間違えたのか、先生の説明を聞いて{納得した}。\nI was convinced after hearing the teacher's explanation of why I made a mistake."
+  },
+  {
+    kanji: "響く",
+    kana: "ひびく",
+    english: "To echo・To resonate",
+    explanation: "Refers to the action of sound reverberating or resonating in a space.",
+    example: "この会場でピアノを弾くと音がよく{響く}。\nWhen I play the piano in this venue, the sound echoes well."
   }
 ]
