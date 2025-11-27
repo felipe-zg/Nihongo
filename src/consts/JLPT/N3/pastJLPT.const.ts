@@ -474,5 +474,103 @@ export const PAST_JLPT_N3: JLPTReview[] = [
     english: "To like・to be pleased with",
     explanation: "To find something agreeable or satisfactory.",
     example: "買い物に行ったけれど、{気に入った}ものはなかった。\nI went shopping, but there was nothing I liked."
+  },
+  {
+    kanji: "下線",
+    kana: "かせん",
+    english: "Underline・underscoring",
+    explanation: "A line drawn beneath text to emphasize or highlight it.",
+    example: "重要な部分に{下線}を引いてください。\nPlease underline the important parts."
+  },
+  {
+    kanji: "期待",
+    kana: "きたい",
+    english: "Expectation・anticipation",
+    explanation: "The act of looking forward to something with hope or excitement.",
+    example: "新しい映画に大いに{期待}している。\nI have high expectations for the new movie."
+  },
+  {
+    kanji: "応募",
+    kana: "おうぼ",
+    english: "Application・entry",
+    explanation: "The act of applying for something, such as a job or scholarship.",
+    example: "大学の奨学金に{応募}した。\nI applied for a university scholarship."
+  },
+  {
+    kanji: "底",
+    kana: "そこ",
+    english: "Bottom・base",
+    explanation: "The lowest part or point of something.",
+    example: "この入れ物は、{底}に小さい穴があいている。\nThere is a small hole at the bottom of this container."
+  },
+  {
+    kanji: "沈む",
+    kana: "しずむ",
+    english: "To sink・to submerge",
+    explanation: "To go down below the surface of a liquid or to become lower in position.",
+    example: "夕日が海に{沈んで}いくのを見た。\nI watched the sunset sink into the sea."
+  },
+  {
+    kanji: "平均",
+    kana: "へいきん",
+    english: "Average・mean",
+    explanation: "A number that represents the central value of a set of numbers.",
+    example: "私は、一日{平均}して10時間ぐらい仕事している。\nOn average, I work about 10 hours a day."
+  },
+  {
+    kanji: "解決",
+    kana: "かいけつ",
+    english: "Solution・resolution",
+    explanation: "The act of finding an answer or resolving a problem.",
+    example: "みんなで話し合って、問題を{解決した}。\nWe discussed together and solved the problem."
+  },
+  {
+    kanji: "正常",
+    kana: "せいじょう",
+    english: "Normal・regular",
+    explanation: "A state of being typical or expected.",
+    example: "機械は{正常}に動いている。\nThe machine is operating normally."
+  },
+  {
+    kanji: "確実",
+    kana: "かくじつ",
+    english: "Certain・reliable",
+    explanation: "Something that is dependable or guaranteed to happen.",
+    example: "この方法は{確実}に成功する。\nThis method is certain to succeed."
+  },
+  {
+    kanji: "呼びかける",
+    kana: "よびかける",
+    english: "To call out to・to appeal",
+    explanation: "To address someone or make a public appeal.",
+    example: "ポスターを作って、みんなにスポーツ大会への参加を{呼びかける}ことにした。\nWe decided to make posters to call on everyone to participate in the sports tournament."
+  },
+  {
+    kanji: "眩しい",
+    kana: "まぶしい",
+    english: "Dazzling・bright",
+    explanation: "Extremely bright or shining, often causing discomfort to the eyes.\n明るいっていう意味。",
+    example: "太陽が{眩しくて}、前がよく見えない。\nThe sun is so dazzling that I can't see well ahead."
+  },
+  {
+    kanji: "引き受ける",
+    kana: "ひきうける",
+    english: "To undertake・to take on",
+    explanation: "To accept responsibility for a task or duty. Used when someone agrees to take on a job, task, request, duty, etc.",
+    example: "中山さんに結婚式のスピーチを頼んだら、喜んで{引き受けて}くれた。\nWhen I asked Mr. Nakayama to give a speech at the wedding, he happily accepted."
+  },
+  {
+    kanji: "枯れる",
+    kana: "かれる",
+    english: "To wither・to dry up",
+    explanation: "To lose vitality or freshness, often referring to plants.",
+    example: "一週間以上も水をやるのを忘れたので、庭の花が{枯れて}しまった。\nI forgot to water the garden flowers for over a week, so they withered."
+  },
+  {
+    kanji: "拭く",
+    kana: "ふく",
+    english: "To wipe・to dry",
+    explanation: "To clean or dry a surface by rubbing it with a cloth or towel.",
+    example: "このタオルで、ぬれた手をしっかり{拭いて}ください。\nPlease wipe your wet hands thoroughly with this towel."
   }
 ];
