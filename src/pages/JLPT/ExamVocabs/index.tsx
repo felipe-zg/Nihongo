@@ -10,7 +10,7 @@ const JLPTExamVocabsPage: React.FC = () => {
   const [startIndex, setStartIndex] = useState(0);
   const [endIndex, setEndIndex] = useState(0);
   const [isDifficultWords, setIsDifficultWords] = useState(false);
-  const lessonsParam: VocabsSource = (searchParams.get("source") as VocabsSource) || "TOMO_SENSEI";
+  const lessonsParam: VocabsSource = (searchParams.get("source") as VocabsSource);
 
   const handleStartIndexChange = (value: number) => {
     if (endIndex <= value) {
@@ -33,8 +33,9 @@ const JLPTExamVocabsPage: React.FC = () => {
       case "PAST_EXAMS":
         return PAST_JLPT_N3;
       case "TOMO_SENSEI":
-      default:
         return TOMO_SENSEI_JLPT_N3;
+      default:
+        return [...NIHONGO_NO_MORI_JLPT_N3, ...PAST_JLPT_N3, ...TOMO_SENSEI_JLPT_N3];
     }
   }, [lessonsParam]);
 
