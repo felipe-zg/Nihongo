@@ -107,7 +107,7 @@ const JLPTExamVocabs: React.FC<Props> = ({
           }
           CardBackContent={
             <>
-              <Text textAlign={"center"} fontSize={"5xl"} color={"white"} mb={3}>{currentCard.kana}</Text>
+              <Text textAlign={"center"} fontSize={"5xl"} color={"white"} mb={3}>{currentCard.kana.replace("［する］", "")}</Text>
               <Text textAlign={"center"} fontSize={"xl"} color={"primary.500"}>{currentCard.english}</Text>
               <Text textAlign={"center"} fontSize={"xl"} color={"pink.500"}>{currentCard.explanation}</Text>
               <Divider bg="gray.500" thickness={0.5} my={3} />
