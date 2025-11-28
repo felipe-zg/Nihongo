@@ -74,6 +74,7 @@ const JLPTExamVocabs: React.FC<Props> = ({
   function handleKeyDown(e: KeyboardEvent) {
     if (e.key === "ArrowRight") handleNext();
     if (e.key === "ArrowLeft") handlePrev();
+    if (e.key === "ArrowUp") flipCardRef.current?.unflip();
   }
   window.addEventListener("keydown", handleKeyDown);
   return () => window.removeEventListener("keydown", handleKeyDown);
