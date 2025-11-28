@@ -44,7 +44,7 @@ const JLPTExamVocabsPage: React.FC = () => {
   }, [vocabList, startIndex, endIndex, isDifficultWords]);
 
   useEffect(() => {
-    setEndIndex(vocabList.length > 0 ? vocabList.length - 1 : 0);
+    setEndIndex(vocabList.length > 0 ? vocabList.length : 0);
     setStartIndex(0);
   }, [vocabList]);
 
