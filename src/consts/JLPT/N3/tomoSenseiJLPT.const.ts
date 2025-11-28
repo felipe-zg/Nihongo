@@ -209,7 +209,6 @@ export const TOMO_SENSEI_JLPT_N3: JLPTReview[] = [
     explanation: "The state of being clean and free from dirt or germs.",
     example: "この病院はとても{清潔}です。\nThis hospital is very clean.",
     important: true,
-    repeat: true,
   },
   {
     kanji: "訪問",
@@ -238,8 +237,7 @@ export const TOMO_SENSEI_JLPT_N3: JLPTReview[] = [
     kana: "かいしゅう",
     english: "Collection・retrieval",
     explanation: "The act of gathering or retrieving items or materials.",
-    example: "リサイクルのためにゴミを{回収}します。\nWe collect garbage for recycling.",
-    repeat: true,
+    example: "リサイクルのためにゴミを{回収}します。\nWe collect garbage for recycling."
   },
   {
     kanji: "渋滞",
@@ -248,7 +246,6 @@ export const TOMO_SENSEI_JLPT_N3: JLPTReview[] = [
     explanation: "A situation where vehicles are unable to move freely due to overcrowding on the roads.",
     example: "朝の通勤時間に{渋滞}が発生しました。\nThere was a traffic jam during the morning commute.",
     important: true,
-    repeat: true,
   },
   {
     kanji: "主要な",
@@ -534,7 +531,6 @@ export const TOMO_SENSEI_JLPT_N3: JLPTReview[] = [
     english: "Teacher・instructor",
     explanation: "A person who teaches or educates others, especially in a school.",
     example: "彼女は小学校の{教師}です。\nShe is an elementary school teacher.",
-    repeat: true,
   },
   {
     kanji: "上品な",
@@ -594,7 +590,6 @@ export const TOMO_SENSEI_JLPT_N3: JLPTReview[] = [
     explanation: "The act of remaining in a place for a period of time.",
     example: "ホテルに{滞在}しました。\nI stayed at a hotel.",
     important: true,
-    repeat: true,
   },
   {
     kanji: "栄養",
@@ -691,7 +686,6 @@ export const TOMO_SENSEI_JLPT_N3: JLPTReview[] = [
     english: "Complaint・grumble",
     explanation: "A statement that something is unsatisfactory or unacceptable.",
     example: "彼はサービスに{文句}を言っています。\nHe is complaining about the service.",
-    repeat: true,
   },
   {
     kanji: "記録",
@@ -871,8 +865,7 @@ export const TOMO_SENSEI_JLPT_N3: JLPTReview[] = [
     kana: "うたがう",
     english: "To doubt・to suspect",
     explanation: "To feel uncertain about the truth or reliability of something.",
-    example: "彼の話を{疑っています}。\nI doubt his story.",
-    repeat: true
+    example: "彼の話を{疑っています}。\nI doubt his story."
   },
   {
     kanji: "駐車",
@@ -906,7 +899,6 @@ export const TOMO_SENSEI_JLPT_N3: JLPTReview[] = [
     explanation: "The planet on which we live; the third planet from the sun.",
     example: "{地球}は太陽系の一部です。\nThe Earth is part of the solar system.",
     important: true,
-    repeat: true,
   },
   {
     kanji: "規則",
@@ -951,7 +943,6 @@ export const TOMO_SENSEI_JLPT_N3: JLPTReview[] = [
     explanation: "A directive or instruction given by someone in authority.",
     example: "上司の{命令}に従いました。\nI followed my boss's orders.",
     important: true,
-    repeat: true,
   },
   {
     kanji: "合計",
@@ -1019,7 +1010,6 @@ export const TOMO_SENSEI_JLPT_N3: JLPTReview[] = [
     explanation: "The act of evaluating two or more things to determine their similarities and differences.",
     example: "製品の{比較}をしました。\nI made a comparison of the products.",
     important: true,
-    repeat: true,
   },
   {
     kanji: "経営",
