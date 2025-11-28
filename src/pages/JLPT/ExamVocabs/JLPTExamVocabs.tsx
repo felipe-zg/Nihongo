@@ -210,11 +210,11 @@ const JLPTExamVocabs: React.FC<Props> = ({
             </Box>
           </HStack>
         )}
-        <HStack space={2} alignItems="center">
+        <Stack space={{base: 4, lg: 2}}  direction={{ base: "column", lg: "row" }}>
           {!listLayout && (
             <>
               <button disabled={isShuffled} onClick={shuffleCards}>Shuffle ⇄</button>
-              <HStack space={2} ml={5} alignItems="center">
+              <HStack space={2} ml={{ base: 0, lg: 5 }} alignItems="center">
                 <Switch
                   onValueChange={(val) => setIsChallengeMode(val)}
                   colorScheme="red"
@@ -222,7 +222,7 @@ const JLPTExamVocabs: React.FC<Props> = ({
                 />
                 <Text color="red.500">Challenge Mode</Text>
               </HStack>
-              <HStack space={2} ml={5} alignItems="center">
+              <HStack space={2} ml={{ base: 0, lg: 5 }} alignItems="center">
                 <Switch
                   onValueChange={(val) => setIsAutoJump(val)}
                   colorScheme="red"
@@ -232,7 +232,7 @@ const JLPTExamVocabs: React.FC<Props> = ({
               </HStack>
             </>
           )}
-          <HStack space={2} ml={5} alignItems="center">
+          <HStack space={2} ml={{ base: 0, lg: 5 }} alignItems="center">
             <Switch
               onValueChange={(val) => handleIsDifficultWordsChange(val)}
               colorScheme="primary"
@@ -240,7 +240,7 @@ const JLPTExamVocabs: React.FC<Props> = ({
             />
             <Text color="primary.500">Difficult words</Text>
           </HStack>
-          <HStack space={2} ml={5} alignItems="center">
+          <HStack space={2} ml={{ base: 0, lg: 5 }} alignItems="center">
             <Switch
               onValueChange={(val) => setListLayout(val)}
               colorScheme="green"
@@ -248,7 +248,7 @@ const JLPTExamVocabs: React.FC<Props> = ({
             />
             <Text color="green.200">List layout</Text>
           </HStack>
-        </HStack>
+        </Stack>
       </Stack>
     </Box>
   );
