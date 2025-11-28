@@ -238,7 +238,8 @@ export const TOMO_SENSEI_JLPT_N3: JLPTReview[] = [
     kana: "かいしゅう",
     english: "Collection・retrieval",
     explanation: "The act of gathering or retrieving items or materials.",
-    example: "リサイクルのためにゴミを{回収}します。\nWe collect garbage for recycling."
+    example: "リサイクルのためにゴミを{回収}します。\nWe collect garbage for recycling.",
+    repeat: true,
   },
   {
     kanji: "渋滞",
@@ -318,7 +319,8 @@ export const TOMO_SENSEI_JLPT_N3: JLPTReview[] = [
     kana: "とつぜん",
     english: "Suddenly・abruptly",
     explanation: "Happening quickly and unexpectedly.",
-    example: "{突然}の雨でびしょ濡れになった。\nI got soaked in the sudden rain."
+    example: "{突然}の雨でびしょ濡れになった。\nI got soaked in the sudden rain.",
+    repeat: true,
   },
   {
     kanji: "隠す",
@@ -332,7 +334,8 @@ export const TOMO_SENSEI_JLPT_N3: JLPTReview[] = [
     kana: "せいげん",
     english: "Restriction・limitation",
     explanation: "A rule or condition that limits or controls something.",
-    example: "速度{制限}を守ってください。\nPlease obey the speed limit."
+    example: "速度{制限}を守ってください。\nPlease obey the speed limit.",
+    repeat: true,
   },
   {
     kanji: "申請",
@@ -485,7 +488,8 @@ export const TOMO_SENSEI_JLPT_N3: JLPTReview[] = [
     kana: "ぎゃく",
     english: "Reverse・opposite・contrary",
     explanation: "The opposite direction or order of something.",
-    example: "彼は{逆}の道を選んだ。\nHe chose the opposite path."
+    example: "彼は{逆}の道を選んだ。\nHe chose the opposite path.",
+    important: true
   },
   {
     kanji: "個人",
@@ -544,7 +548,8 @@ export const TOMO_SENSEI_JLPT_N3: JLPTReview[] = [
     kana: "けいゆ",
     english: "Via・by way of",
     explanation: "The route or path taken to reach a destination.",
-    example: "東京を{経由}して大阪に行きます。\nI will go to Osaka via Tokyo."
+    example: "東京を{経由}して大阪に行きます。\nI will go to Osaka via Tokyo.",
+    important: true,
   },
   {
     kanji: "配達",
@@ -558,7 +563,8 @@ export const TOMO_SENSEI_JLPT_N3: JLPTReview[] = [
     kana: "しんせき",
     english: "Relative・relation",
     explanation: "A person connected by blood or marriage.",
-    example: "週末に{親戚}の家を訪ねます。\nI will visit my relatives' house on the weekend."
+    example: "週末に{親戚}の家を訪ねます。\nI will visit my relatives' house on the weekend.",
+    repeat: true,
   },
   {
     kanji: "知識",
@@ -676,14 +682,16 @@ export const TOMO_SENSEI_JLPT_N3: JLPTReview[] = [
     kana: "かいさつ",
     english: "Ticket gate",
     explanation: "A gate where tickets are checked.",
-    example: "{改札}を通るときは、チケットを見せてください。\nPlease show your ticket when passing through the ticket gate."
+    example: "{改札}を通るときは、チケットを見せてください。\nPlease show your ticket when passing through the ticket gate.",
+    repeat: true,
   },
   {
     kanji: "文句",
     kana: "もんく",
     english: "Complaint・grumble",
     explanation: "A statement that something is unsatisfactory or unacceptable.",
-    example: "彼はサービスに{文句}を言っています。\nHe is complaining about the service."
+    example: "彼はサービスに{文句}を言っています。\nHe is complaining about the service.",
+    repeat: true,
   },
   {
     kanji: "記録",
@@ -697,14 +705,16 @@ export const TOMO_SENSEI_JLPT_N3: JLPTReview[] = [
     kana: "まよう",
     english: "Be lost・become confused・to hesitate",
     explanation: "To become lost or confused about something.",
-    example: "道に{迷いました}。\nI got lost on the way."
+    example: "道に{迷いました}。\nI got lost on the way.",
+    repeat: true,
   },
   {
     kanji: "成績",
     kana: "せいせき",
     english: "Grades・results",
     explanation: "A measure of a student's academic performance.",
-    example: "彼女の{成績}はとても良いです。\nHer grades are very good."
+    example: "彼女の{成績}はとても良いです。\nHer grades are very good.",
+    repeat: true,
   },
   {
     kanji: "出張",
@@ -732,7 +742,8 @@ export const TOMO_SENSEI_JLPT_N3: JLPTReview[] = [
     kana: "ぶんるい",
     english: "Classification・category・sorting",
     explanation: "The action or process of classifying something.",
-    example: "この資料の{分類}は重要です。\nThe classification of this material is important."
+    example: "この資料の{分類}は重要です。\nThe classification of this material is important.",
+    important: true
   },
   {
     kanji: "葉",
@@ -885,7 +896,8 @@ export const TOMO_SENSEI_JLPT_N3: JLPTReview[] = [
     english: "Completion・accomplishment",
     explanation: "The act of finishing or bringing something to a successful end.",
     example: "新しいビルが{完成}しました。\nThe new building has been completed.",
-    important: true
+    important: true,
+    repeat: true,
   },
   {
     kanji: "地球",
@@ -894,13 +906,15 @@ export const TOMO_SENSEI_JLPT_N3: JLPTReview[] = [
     explanation: "The planet on which we live; the third planet from the sun.",
     example: "{地球}は太陽系の一部です。\nThe Earth is part of the solar system.",
     important: true,
+    repeat: true,
   },
   {
     kanji: "規則",
     kana: "きそく",
     english: "Rule・regulation",
     explanation: "A set of explicit or understood regulations or principles governing conduct.",
-    example: "学校の{規則}を守ってください。\nPlease follow the school rules."
+    example: "学校の{規則}を守ってください。\nPlease follow the school rules.",
+    repeat: true,
   },
   {
     kanji: "若い",
@@ -936,7 +950,8 @@ export const TOMO_SENSEI_JLPT_N3: JLPTReview[] = [
     english: "Order・command",
     explanation: "A directive or instruction given by someone in authority.",
     example: "上司の{命令}に従いました。\nI followed my boss's orders.",
-    important: true
+    important: true,
+    repeat: true,
   },
   {
     kanji: "合計",
@@ -964,7 +979,8 @@ export const TOMO_SENSEI_JLPT_N3: JLPTReview[] = [
     kana: "ちょうさ",
     english: "Investigation・survey・research",
     explanation: "The act of examining or researching something in detail.",
-    example: "市場の{調査}を行いました。\nWe conducted a market survey."
+    example: "市場の{調査}を行いました。\nWe conducted a market survey.",
+    repeat: true,
   },
   {
     kanji: "苦労",
@@ -978,7 +994,8 @@ export const TOMO_SENSEI_JLPT_N3: JLPTReview[] = [
     kana: "ゆしゅつ",
     english: "Export",
     explanation: "The act of sending goods or services to another country for sale.",
-    example: "日本は多くの製品を{輸出}しています。\nJapan exports many products."
+    example: "日本は多くの製品を{輸出}しています。\nJapan exports many products.",
+    repeat: true,
   },
   {
     kanji: "一般的な",
@@ -1001,7 +1018,8 @@ export const TOMO_SENSEI_JLPT_N3: JLPTReview[] = [
     english: "Comparison",
     explanation: "The act of evaluating two or more things to determine their similarities and differences.",
     example: "製品の{比較}をしました。\nI made a comparison of the products.",
-    important: true
+    important: true,
+    repeat: true,
   },
   {
     kanji: "経営",
@@ -1015,7 +1033,8 @@ export const TOMO_SENSEI_JLPT_N3: JLPTReview[] = [
     kana: "しげん",
     english: "Resources",
     explanation: "Materials or assets that can be used to produce goods or services.",
-    example: "天然{資源}の保護が重要です。\nThe conservation of natural resources is important."
+    example: "天然{資源}の保護が重要です。\nThe conservation of natural resources is important.",
+    repeat: true,
   },
   {
     kanji: "内側",
@@ -1044,7 +1063,8 @@ export const TOMO_SENSEI_JLPT_N3: JLPTReview[] = [
     kana: "せきゆ",
     english: "Petroleum・oil",
     explanation: "A liquid mixture of hydrocarbons used as fuel and in the production of various products.",
-    example: "{石油}の価格が上昇しています。\nThe price of petroleum is rising."
+    example: "{石油}の価格が上昇しています。\nThe price of petroleum is rising.",
+    repeat: true,
   },
   {
     kanji: "影響",
