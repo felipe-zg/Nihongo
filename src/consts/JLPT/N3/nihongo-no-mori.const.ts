@@ -46,7 +46,8 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     kana: "ていたい［する］",
     english: "Stagnation・To stagnate",
     explanation: "Refers to a lack of movement or progress in various contexts, such as traffic or economic conditions. 目に見えないことに使える。",
-    example: "経済の{停滞}が続いている。\nThe economic stagnation continues."
+    example: "経済の{停滞}が続いている。\nThe economic stagnation continues.",
+    repeat: true,
   },
   {
     kanji: "叩く",
@@ -81,7 +82,8 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     kana: "こしょう［する］",
     english: "Breakdown・To break down",
     explanation: "Refers to a failure or malfunction of a machine or system. ものが壊れること。",
-    example: "車が{故障}した。\nThe car broke down。"
+    example: "車が{故障}した。\nThe car broke down。",
+    repeat: true,
   },
   {
     kanji: "おしまい",
@@ -98,6 +100,7 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     explanation: "Refers to a state of being bored or uninterested.",
     example: "毎日、{退屈だ}。\nI am bored every day。\nひまとか、つまらないって同じ意味だ。",
     important: true,
+    repeat: true,
   },
   {
     kanji: "取り消す",
@@ -219,7 +222,7 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     example: "お酒を飲み過ぎて、頭が{ずきずき}する。\nI drank too much alcohol, and my head is throbbing."
   },
   {
-    kanji: "ふらろら",
+    kanji: "ふらふら",
     kana: "ふらふら［する］",
     english: "Dizzy・Unsteady・To be dizzy",
     explanation: "Refers to a feeling of dizziness or unsteadiness, often due to illness or fatigue.",
@@ -281,6 +284,7 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     explanation: "Refers to the action of refusing or declining an offer or request.",
     example: "山田さんは{断った}らしいですよ。\nI heard that Yamada-san refused.",
     important: true,
+    repeat: true,
   },
   {
     kanji: "降りる",
@@ -322,7 +326,8 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     kana: "そっと［する］",
     english: "Quietly・Gently・Softly・To do something quietly",
     explanation: "Refers to doing something in a quiet, gentle, or soft manner.",
-    example: "赤ちゃんが寝ているので、{そっと}部屋を出た。\nSince the baby was sleeping, I quietly left the room."
+    example: "赤ちゃんが寝ているので、{そっと}部屋を出た。\nSince the baby was sleeping, I quietly left the room.",
+    important: true,
   },
   {
     kanji: "与える",
@@ -385,6 +390,7 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     kana: "ひびく",
     english: "To echo・To resonate",
     explanation: "Refers to the action of sound reverberating or resonating in a space.",
-    example: "この会場でピアノを弾くと音がよく{響く}。\nWhen I play the piano in this venue, the sound echoes well."
+    example: "この会場でピアノを弾くと音がよく{響く}。\nWhen I play the piano in this venue, the sound echoes well.",
+    repeat: true,
   }
 ]
