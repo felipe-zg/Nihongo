@@ -1063,5 +1063,243 @@ export const TOMO_SENSEI_JLPT_N3: JLPTReview[] = [
     explanation: "The power to have an effect on people or things.",
     example: "環境問題は私たちの生活に大きな{影響}を与えます。\nEnvironmental issues have a big impact on our lives.",
     important: true
-  }
+  },
+  {
+    kanji: "整理",
+    kana: "せいり",
+    english: "Organization・arrangement・to sort out",
+    explanation: "The act of arranging or putting things in order.",
+    example: "部屋を{整理}しました。\nI organized the room."
+  },
+  {
+    kanji: "高価",
+    kana: "こうか",
+    english: "Expensive・high-priced",
+    explanation: "Having a high cost or value.",
+    example: "この時計はとても{高価}です。\nThis watch is very expensive."
+  },
+  {
+    kanji: "位置",
+    kana: "いち",
+    english: "Position・location",
+    explanation: "The specific place or point where something is situated.",
+    example: "駅の{位置}を確認してください。\nPlease check the location of the station."
+  },
+  {
+    kanji: "呼吸",
+    kana: "こきゅう",
+    english: "Breathing・respiration",
+    explanation: "The process of taking in oxygen and expelling carbon dioxide from the lungs.",
+    example: "深い{呼吸}をすることはリラックスに役立ちます。\nTaking deep breaths helps with relaxation."
+  },
+  {
+    kanji: "重ねる",
+    kana: "かさねる",
+    english: "To pile up・to stack",
+    explanation: "To place things on top of each other or to repeat an action.",
+    example: "書類をきちんと重ねておきます。\nI will neatly stack the documents.",
+    important: true
+  },
+  {
+    kanji: "降りる",
+    kana: "おりる",
+    english: "To get off・To descend",
+    explanation: "Refers to the action of getting off a vehicle or descending from a higher place. Used for buses, trains, etc.",
+    example: "次のバス停で{降りましょう}。\nLet's get off at the next bus stop.",
+    important: true
+  },
+  {
+    kanji: "身長",
+    kana: "しんちょう",
+    english: "Height (of a person)",
+    explanation: "The measurement of how tall a person or object is.",
+    example: "彼の{身長}は180センチです。\nHis height is 180 centimeters."
+  },
+  {
+    kanji: "期待",
+    kana: "きたい",
+    english: "Expectation・anticipation",
+    explanation: "A strong belief that something will happen or be the case.\nThe act of looking forward to something with hope or excitement.",
+    example: "新しい映画に大いに{期待}している。\nI have high expectations for the new movie.",
+    important: true
+  },
+  {
+    kanji: "投げる",
+    kana: "なげる",
+    english: "To throw・to toss",
+    explanation: "To propel something through the air by a movement of the arm and hand.",
+    example: "ボールを遠くに{投げました}。\nI threw the ball far."
+  },
+  {
+    kanji: "泊まる",
+    kana: "とまる",
+    english: "To stay (overnight)・to lodge",
+    explanation: "To spend the night at a place away from home.",
+    example: "友達の家に{泊まりました}。\nI stayed at my friend's house."
+  },
+  {
+    kanji: "黒板",
+    kana: "こくばん",
+    english: "Blackboard・chalkboard",
+    explanation: "A large board with a dark surface used for writing on with chalk.",
+    example: "先生は{黒板}に書きました。\nThe teacher wrote on the blackboard."
+  },
+  {
+    kanji: "表す",
+    kana: "あらわす",
+    english: "To express・to represent・to show",
+    explanation: "To convey a thought or feeling through words or actions.",
+    example: "彼の笑顔は喜びを{表しています}。\nHis smile expresses joy."
+  },
+  {
+    kanji: "貯金",
+    kana: "ちょきん",
+    english: "Savings・to save money",
+    explanation: "The act of setting aside money for future use.",
+    example: "毎月少しずつ{貯金}しています。\nI save a little money every month."
+  },
+  {
+    kanji: "到着",
+    kana: "とうちゃく",
+    english: "Arrival",
+    explanation: "The act of reaching a destination.",
+    example: "電車が予定通りに{到着}しました。\nThe train arrived on time.",
+    important: true
+  },
+  {
+    kanji: "容器",
+    kana: "ようき",
+    english: "Container・receptacle",
+    explanation: "An object used to hold or store something.",
+    example: "この{容器}は食品を保存するのに適しています。\nThis container is suitable for storing food."
+  },
+  {
+    kanji: "塩",
+    kana: "しお",
+    english: "Salt",
+    explanation: "A white crystalline substance used for seasoning and preserving food.",
+    example: "料理に少し{塩}を加えました。\nI added a little salt to the dish."
+  },
+  {
+    kanji: "勤める",
+    kana: "つとめる",
+    english: "To work for・to be employed at",
+    explanation: "To be employed by a company or organization.",
+    example: "彼は大手企業に{勤めています}。\nHe works for a major company."
+  },
+  {
+    kanji: "退屈",
+    kana: "たいくつ",
+    english: "Boredom・tedium",
+    explanation: "A state of being uninterested or unengaged.",
+    example: "今日はやることがなくて{退屈}だった。\nI was bored today because I had nothing to do.",
+    important: true
+  },
+  {
+    kanji: "破れる",
+    kana: "やぶれる",
+    english: "To be torn・to be ripped",
+    explanation: "To become damaged or torn apart.",
+    example: "紙が{破れました}。\nThe paper got torn."
+  },
+  {
+    kanji: "目標",
+    kana: "もくひょう",
+    english: "Goal・target・objective",
+    explanation: "A specific aim or desired outcome that one strives to achieve.",
+    example: "今年の{目標}を設定しました。\nI set my goals for this year.",
+    important: true
+  },
+  {
+    kanji: "混ぜる",
+    kana: "まぜる",
+    english: "To mix・to blend",
+    explanation: "To combine two or more substances together.",
+    example: "材料をよく{混ぜて}ください。\nPlease mix the ingredients well."
+  },
+  {
+    kanji: "進歩",
+    kana: "しんぽ",
+    english: "Progress・advancement",
+    explanation: "The process of improving or developing over time.",
+    example: "技術の{進歩}は速いです。\nThe progress of technology is fast.",
+  },
+  {
+    kanji: "味方",
+    kana: "みかた",
+    english: "Ally・friend・supporter",
+    explanation: "A person or group that supports or helps another.",
+    example: "彼はいつも私の{味方}です。\nHe is always my ally."
+  },
+  {
+    kanji: "用心",
+    kana: "ようじん",
+    english: "Caution・carefulness",
+    explanation: "The act of being careful to avoid danger or mistakes.",
+    example: "夜道では{用心}してください。\nPlease be cautious on the streets at night."
+  },
+  {
+    kanji: "同窓会",
+    kana: "どうそうかい",
+    english: "Alumni reunion",
+    explanation: "A gathering of former classmates or schoolmates.",
+    example: "来月、大学の{同窓会}があります。\nThere is a university alumni reunion next month."
+  },
+  {
+    kanji: "半額",
+    kana: "はんがく",
+    english: "Half price",
+    explanation: "A price that is reduced to half of the original amount.",
+    example: "この商品は今{半額}セール中です。\nThis product is currently on a half-price sale."
+  },
+  {
+    kanji: "基準",
+    kana: "きじゅん",
+    english: "Standard・criteria",
+    explanation: "A level of quality or attainment used as a measure or benchmark.",
+    example: "この学校は高い{基準}を持っています。\nThis school has high standards.",
+  },
+  {
+    kanji: "貿易",
+    kana: "ぼうえき",
+    english: "Trade・commerce",
+    explanation: "The activity of buying and selling goods and services between countries.",
+    example: "国際{貿易}は経済に重要です。\nInternational trade is important for the economy.",
+  },
+  {
+    kanji: "勇気",
+    kana: "ゆうき",
+    english: "Courage・bravery",
+    explanation: "The ability to face fear, danger, or adversity with confidence.",
+    example: "困難に立ち向かうには{勇気}が必要です。\nIt takes courage to face difficulties."
+  },
+  {
+    kanji: "差別",
+    kana: "さべつ",
+    english: "Discrimination・distinction",
+    explanation: "The unjust or prejudicial treatment of different categories of people.",
+    example: "人種{差別}は許されません。\nRacial discrimination is not acceptable.",
+  },
+  {
+    kanji: "会談",
+    kana: "かいだん",
+    english: "Talks・conference・meeting",
+    explanation: "A formal discussion or meeting between two or more parties.",
+    example: "両国の首脳が{会談}を行いました。\nThe leaders of both countries held talks."
+  },
+  {
+    kanji: "縮小",
+    kana: "しゅくしょう",
+    english: "Reduction・downsizing・shrinkage",
+    explanation: "The act of making something smaller or less in size or amount.",
+    example: "会社は経費の{縮小}を計画しています。\nThe company is planning to reduce expenses.",
+    important: true
+  },
+  {
+    kanji: "暗記",
+    kana: "あんき",
+    english: "Memorization",
+    explanation: "The process of committing something to memory.",
+    example: "単語を{暗記}するのは大変です。\nMemorizing vocabulary is difficult."
+  },
 ];

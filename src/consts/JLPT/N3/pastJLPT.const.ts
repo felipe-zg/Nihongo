@@ -81,7 +81,7 @@ export const PAST_JLPT_N3: JLPTReview[] = [
     kana: "きょうりょく",
     english: "Cooperation・collaboration",
     explanation: "The act of working together towards a common goal.",
-    example: "{二人で協力}すれば、仕事も早く終わるだろう。\nIf we cooperate together, the work will probably finish quickly."
+    example: "二人で{協力}すれば、仕事も早く終わるだろう。\nIf we cooperate together, the work will probably finish quickly."
   },
   {
     kanji: "応募",
@@ -96,13 +96,6 @@ export const PAST_JLPT_N3: JLPTReview[] = [
     english: "Solution・resolution",
     explanation: "The act of finding an answer or resolving a problem.",
     example: "みんなで話し合って、問題を{解決した}。\nWe discussed together and solved the problem."
-  },
-  {
-    kanji: "ぶらぶら",
-    kana: "ぶらぶら",
-    english: "To stroll aimlessly・to hang loosely",
-    explanation: "To walk around without a specific purpose or to dangle freely.",
-    example: "街を{ぶらぶら}していたら、山田さんに会った。\nWhile I was strolling around town, I met Mr. Yamada.",
   },
   {
     kanji: "申込書",
@@ -180,13 +173,6 @@ export const PAST_JLPT_N3: JLPTReview[] = [
     english: "Unification・standardization",
     explanation: "The act of bringing together or making uniform.",
     example: "国が{統一}されて30年になる。\nIt has been 30 years since the country was unified."
-  },
-  {
-    kanji: "重ねる",
-    kana: "かさねる",
-    english: "To pile up・to stack",
-    explanation: "To place things on top of each other or to repeat an action.",
-    example: "書類をきちんと重ねておきます。\nI will neatly stack the documents."
   },
   {
     kanji: "世代",
@@ -371,13 +357,6 @@ export const PAST_JLPT_N3: JLPTReview[] = [
     example: "よごれたところをティッシュで{掃いた}ら、きれいになった。\nWhen I swept the dirty area with a tissue, it became clean."
   },
   {
-    kanji: "退屈",
-    kana: "たいくつ",
-    english: "Boredom・tedium",
-    explanation: "A state of being uninterested or unengaged.",
-    example: "今日はやることがなくて{退屈}だった。\nI was bored today because I had nothing to do."
-  },
-  {
     kanji: "危険",
     kana: "きけん",
     english: "Danger・hazard",
@@ -474,13 +453,6 @@ export const PAST_JLPT_N3: JLPTReview[] = [
     english: "Underline・underscoring",
     explanation: "A line drawn beneath text to emphasize or highlight it.",
     example: "重要な部分に{下線}を引いてください。\nPlease underline the important parts."
-  },
-  {
-    kanji: "期待",
-    kana: "きたい",
-    english: "Expectation・anticipation",
-    explanation: "The act of looking forward to something with hope or excitement.",
-    example: "新しい映画に大いに{期待}している。\nI have high expectations for the new movie."
   },
   {
     kanji: "応募",

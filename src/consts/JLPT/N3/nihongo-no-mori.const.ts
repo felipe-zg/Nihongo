@@ -17,8 +17,9 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     kanji: "結ぶ",
     kana: "むすぶ",
     english: "To tie・To bind",
-    explanation: "Refers to the action of tying or binding something together.",
-    example: "リボンを{結んだ}。\nI tied the ribbon."
+    explanation: "Refers to the action of tying or binding something together, to fasten or secure something with a knot or bond",
+    example: "リボンを{結んだ}。\nI tied the ribbon.",
+    important: true,
   },
   {
     kanji: "囲む",
@@ -71,13 +72,6 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     example: "地図の道を{なぞった}。\nI traced the path on the map."
   },
   {
-    kanji: "縮小",
-    kana: "しゅくしょう［する］",
-    english: "Reduction・To reduce",
-    explanation: "Refers to the act of making something smaller or less in amount.",
-    example: "画面を{縮小}する。\nTo reduce the screen size。(Zoom out)"
-  },
-  {
     kanji: "故障",
     kana: "こしょう［する］",
     english: "Breakdown・To break down",
@@ -92,15 +86,6 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     explanation: "Refers to the conclusion or termination of something.",
     example: "遊びは{おしまい}です。\nPlaytime is over. \n終わりって同じ意味だ。",
     important: true,
-  },
-  {
-    kanji: "退屈",
-    kana: "たいくつ［する］",
-    english: "Boredom・To be bored",
-    explanation: "Refers to a state of being bored or uninterested.",
-    example: "毎日、{退屈だ}。\nI am bored every day。\nひまとか、つまらないって同じ意味だ。",
-    important: true,
-    repeat: true,
   },
   {
     kanji: "取り消す",
@@ -275,7 +260,8 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     kana: "しきゅう［する］",
     english: "Provision・To provide",
     explanation: "Refers to the act of supplying or providing something, such as money or resources.",
-    example: "会社から毎月交通費が{支給された}。\nThe company provided transportation expenses every month."
+    example: "会社から毎月交通費が{支給された}。\nThe company provided transportation expenses every month.",
+    important: true,
   },
   {
     kanji: "断る",
@@ -285,13 +271,6 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     example: "山田さんは{断った}らしいですよ。\nI heard that Yamada-san refused.",
     important: true,
     repeat: true,
-  },
-  {
-    kanji: "降りる",
-    kana: "おりる",
-    english: "To get off・To descend",
-    explanation: "Refers to the action of getting off a vehicle or descending from a higher place. Used for buses, trains, etc.",
-    example: "次のバス停で{降りましょう}。\nLet's get off at the next bus stop."
   },
   {
     kanji: "限る",
