@@ -99,7 +99,8 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     kana: "おれる",
     english: "To break・To snap・To fold",
     explanation: "Refers to the action of something breaking or snapping, or folding. (Usually used for things like branches, bones, etc.)",
-    example: "木の枝が{折れた}。\nThe tree branch broke."
+    example: "木の枝が{折れた}。\nThe tree branch broke.",
+    important: true,
   },
   {
     kanji: "複数",
@@ -200,6 +201,20 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     example: "彼は父親に{そっくり}だ。\nHe looks exactly like his father.",
   },
   {
+    kanji: "やっぱり",
+    kana: "やっぱり",
+    english: "As expected・After all",
+    explanation: "Used to express that something is as expected or as previously thought.",
+    example: "山田くんは今日も遅刻だろうと思っていたが、{やっぱり}遅れてきた。\nI thought Yamada-kun would be late again today, and as expected, he came late."
+  },
+  {
+    kanji: "きっと",
+    kana: "きっと",
+    english: "Surely・Certainly",
+    explanation: "Used to express a strong belief or certainty about something.",
+    example: "彼は{きっと}成功するだろう。\nHe will surely succeed."
+  },
+  {
     kanji: "ばらばら",
     kana: "ばらばら［する］",
     english: "Scattered・In pieces・To be scattered",
@@ -233,6 +248,20 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     english: "To stroll・To hang around",
     explanation: "Refers to the action of strolling or hanging around without a specific purpose. (Uma corda pendurada balançando)",
     example: "休日は街を{ぶらぶら}するのが好きだ。\nI like to stroll around the city on my days off."
+  },
+  {
+    kanji: "ざあざあ",
+    kana: "ざあざあ［する］",
+    english: "Pouring rain・To rain heavily",
+    explanation: "Refers to heavy rain or the sound of pouring rain.",
+    example: "外は{ざあざあ}雨が降っている。\nIt is pouring rain outside."
+  },
+  {
+    kanji: "すらすら",
+    kana: "すらすら［する］",
+    english: "Fluently・Smoothly・To do something fluently",
+    explanation: "Refers to doing something fluently or smoothly, often used for speaking or writing.",
+    example: "彼は英語を{すらすら}話すことができる。\nHe can speak English fluently."
   },
   {
     kanji: "遅延",

@@ -331,13 +331,6 @@ export const PAST_JLPT_N3: JLPTReview[] = [
     example: "私の会社は、彼の会社と{取引}がある。\nMy company has transactions with his company."
   },
   {
-    kanji: "折れる",
-    kana: "おれる",
-    english: "To break・to snap",
-    explanation: "To bend or break under pressure or force.",
-    example: "木の枝が{折れて}しまいました。\nThe tree branch has broken."
-  },
-  {
     kanji: "就職",
     kana: "しゅうしょく",
     english: "Employment・getting a job",
@@ -664,5 +657,70 @@ export const PAST_JLPT_N3: JLPTReview[] = [
     example: "レポートを{提出}する期限は来週の金曜日です。\nThe deadline for submitting the report is next Friday.",
     fromBook: true,
     important: true
+  },
+  {
+    kanji: "明後日",
+    kana: "あさって",
+    english: "The day after tomorrow",
+    explanation: "Refers to the day that comes two days after today.",
+    example: "{明後日}、友達と映画を見に行く予定です。\nThe day after tomorrow, I plan to go see a movie with my friends.",
+    fromBook: true,
+    important: true
+  },
+  {
+    kanji: "高齢化",
+    kana: "こうれいか",
+    english: "Aging population",
+    explanation: "The increasing average age of a population due to declining birth rates and rising life expectancy.",
+    example: "日本は{高齢化}が進んでいる。\nJapan's population is aging.",
+    fromBook: true,
+  },
+  {
+    kanji: "計算書",
+    kana: "けいさんしょ",
+    english: "Calculation sheet・worksheet",
+    explanation: "A document used for performing calculations or keeping track of numerical data.",
+    example: "経理部に{計算書}を提出してください。\nPlease submit the calculation sheet to the accounting department.",
+    fromBook: true,
+  },
+  {
+    kanji: "勤勉",
+    kana: "きんべん",
+    english: "Diligent・hardworking",
+    explanation: "Showing persistent effort and dedication in work or study.",
+    example: "彼はとても{勤勉}な学生です。\nHe is a very diligent student.",
+    fromBook: true,
+  },
+  {
+    kanji: "単純",
+    kana: "たんじゅん",
+    english: "Simple・straightforward",
+    explanation: "Something that is easy to understand or not complicated.",
+    example: "この問題は{単純}なので、すぐに解けるでしょう。\nThis problem is simple, so you should be able to solve it quickly.",
+    fromBook: true,
+  },
+  {
+    kanji: "改良",
+    kana: "かいりょう",
+    english: "Improvement・refinement",
+    explanation: "The act of making something better or more effective.",
+    example: "新しい技術を使って、製品の{改良}を行った。\nWe made improvements to the product using new technology.",
+    fromBook: true,
+  },
+  {
+    kanji: "夢中",
+    kana: "むちゅう",
+    english: "Absorbed・engrossed",
+    explanation: "Being completely focused or immersed in something.",
+    example: "息子は小さいころ、犬の絵をかくのに{夢中}になっていた。\nWhen my son was little, he was engrossed in drawing pictures of dogs.",
+    fromBook: true,
+  },
+  {
+    kanji: "情熱",
+    kana: "じょうねつ",
+    english: "Passion・enthusiasm",
+    explanation: "A strong feeling of excitement or dedication towards something.",
+    example: "彼女は音楽に対して強い{情熱}を持っている。\nShe has a strong passion for music.",
+    fromBook: true,
   }
 ];
