@@ -1171,7 +1171,8 @@ export const TOMO_SENSEI_JLPT_N3: JLPTReview[] = [
     kana: "ようき",
     english: "Container・receptacle",
     explanation: "An object used to hold or store something.",
-    example: "この{容器}は食品を保存するのに適しています。\nThis container is suitable for storing food."
+    example: "この{容器}は食品を保存するのに適しています。\nThis container is suitable for storing food.",
+    important: true
   },
   {
     kanji: "塩",

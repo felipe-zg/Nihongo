@@ -371,5 +371,141 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     explanation: "Refers to the action of sound reverberating or resonating in a space.",
     example: "この会場でピアノを弾くと音がよく{響く}。\nWhen I play the piano in this venue, the sound echoes well.",
     repeat: true,
+  },
+  {
+    kanji: "手術",
+    kana: "しゅじゅつ",
+    english: "Surgery・operation",
+    explanation: "A medical procedure involving an incision to treat a condition or injury.",
+    example: "来週、父は腕を{手術}することになりました。\nMy father is scheduled to have surgery on his arm next week.",
+    fromBook: true
+  },
+  {
+    kanji: "停電",
+    kana: "ていでん",
+    english: "Power outage・blackout",
+    explanation: "A temporary loss of electrical power in a specific area.",
+    example: "昨夜の{停電}で、冷蔵庫の中の食べ物が全部ダメになった。\nDue to last night's power outage, all the food in the refrigerator went bad.",
+    fromBook: true
+  },
+  {
+    kanji: "電球",
+    kana: "でんきゅう",
+    english: "Light bulb",
+    explanation: "A device that produces light when electricity passes through it.",
+    example: "{電球}が切れたので、買いに行くことにした。\nSince the light bulb went out, I decided to go buy one.",
+    fromBook: true
+  },
+  {
+    kanji: "方向",
+    kana: "ほうこう",
+    english: "Direction・orientation",
+    explanation: "The course or path along which something moves or faces.",
+    example: "太陽がのぼる{方向}に歩く。\nWalk in the direction where the sun rises.",
+    fromBook: true
+  },
+  {
+    kanji: "具合",
+    kana: "ぐあい",
+    english: "Condition・state",
+    explanation: "The state or condition of something, often referring to health.",
+    example: "{具合}が悪いので、今日は帰らせていただきます。\nSince I am not feeling well, I will be going home today.",
+    fromBook: true
+  },
+  {
+    kanji: "工事",
+    kana: "こうじ",
+    english: "Construction work・engineering work",
+    explanation: "The process of building or repairing structures or infrastructure.",
+    example: "駅前で道路の{工事}が行われている。\nConstruction work is being carried out on the road in front of the station.",
+    fromBook: true
+  },
+  {
+    kanji: "相談",
+    kana: "そうだん",
+    english: "Consultation・discussion",
+    explanation: "The act of seeking advice or discussing a matter with someone.",
+    example: "明後日の食事会について、少し{相談}があります。\nI have a little consultation regarding the dinner party the day after tomorrow.",
+    fromBook: true
+  },
+  {
+    kanji: "仮定",
+    kana: "かてい",
+    english: "Assumption・hypothesis",
+    explanation: "A supposition or premise that is taken for granted without proof.",
+    example: "この{仮定}に基づいて、計画を立てましょう。\nLet's make a plan based on this assumption.",
+    fromBook: true
+  },
+  {
+    kanji: "基礎的",
+    kana: "きそてき",
+    english: "Basic・fundamental",
+    explanation: "Relating to the essential or foundational aspects of something.",
+    example: "バスケットボールを始めたばかりなので、{基礎的}な練習をたくさんする。\nSince I just started playing basketball, I do a lot of basic practice.",
+    fromBook: true
+  },
+  {
+    kanji: "経済的",
+    kana: "けいざいてき",
+    english: "Economic・financial",
+    explanation: "Relating to the economy or finances.",
+    example: "この車は{経済的}で、燃費がいい。\nThis car is economical and has good fuel efficiency.",
+    fromBook: true
+  },
+  {
+    kanji: "数学的",
+    kana: "すうがくてき",
+    english: "Mathematical",
+    explanation: "Relating to mathematics or the principles of mathematics.",
+    example: "{数学的}な考え方を身につけることは、問題解決に役立つ。\nAcquiring a mathematical way of thinking helps in problem-solving.",
+    fromBook: true
+  },
+  {
+    kanji: "惜しい",
+    kana: "おしい",
+    english: "Regrettable・a pity",
+    explanation: "Something that is unfortunate or disappointing.",
+    example: "テストで{惜しい}間違いをして合格できなかった。\nI made a regrettable mistake on the test and couldn't pass.",
+    fromBook: true
+  },
+  {
+    kanji: "暗い",
+    kana: "くらい",
+    english: "Dark・gloomy",
+    explanation: "Having little or no light・not bright.",
+    example: "部屋の電気を消したら、すごく{暗くなった}。\nWhen I turned off the room light, it became very dark.",
+    fromBook: true
+  },
+  {
+    kanji: "叫ぶ",
+    kana: "さけぶ",
+    english: "To shout・to scream",
+    explanation: "To raise one's voice loudly, often in excitement or anger.",
+    example: "彼は試合に勝って、大声で{叫んだ}。\nHe won the game and shouted loudly.",
+    fromBook: true
+  },
+  {
+    kanji: "定員",
+    kana: "ていいん",
+    english: "Capacity・fixed number of people",
+    explanation: "The maximum number of people allowed in a space or for an event.",
+    example: " 生活を助けるロボットを発明した彼の講演は、いつも{定員}を超える人が集まる。\nHis lectures on inventing robots that help with daily life always attract more people than the capacity allows.",
+    fromBook: true
+  },
+  {
+    kanji: "振り込む",
+    kana: "ふりこむ",
+    english: "To transfer money・to deposit",
+    explanation: "To send money electronically to another person's bank account.",
+    example: "このカードを使って、先月の電気代を{振り込んで}ください。\nPlease use this card to transfer last month's electricity bill.",
+    fromBook: true
+  },
+  {
+    kanji: "次第に",
+    kana: "しだいに",
+    english: "Gradually・progressively",
+    explanation: "Something that happens slowly over time.\nだんだんっていう意味。",
+    example: "すずしくなり、木の葉の色が{次第に}変わってきた。\nIt has become cooler, and the color of the leaves has gradually changed.",
+    fromBook: true
   }
 ]

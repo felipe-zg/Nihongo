@@ -95,7 +95,8 @@ export const PAST_JLPT_N3: JLPTReview[] = [
     kana: "かいけつ",
     english: "Solution・resolution",
     explanation: "The act of finding an answer or resolving a problem.",
-    example: "みんなで話し合って、問題を{解決した}。\nWe discussed together and solved the problem."
+    example: "みんなで話し合って、問題を{解決した}。\nWe discussed together and solved the problem.",
+    important: true,
   },
   {
     kanji: "申込書",
@@ -339,8 +340,9 @@ export const PAST_JLPT_N3: JLPTReview[] = [
     kanji: "就職",
     kana: "しゅうしょく",
     english: "Employment・getting a job",
-    explanation: "The act of finding and starting a job.",
-    example: "今、{就職}活動をしています。\nI am currently job hunting."
+    explanation: "The act of finding and starting a job.\n勤めるっていう意味。",
+    example: "今、{就職}活動をしています。\nI am currently job hunting.",
+    important: true
   },
   {
     kanji: "席",
@@ -481,13 +483,6 @@ export const PAST_JLPT_N3: JLPTReview[] = [
     english: "Average・mean",
     explanation: "A number that represents the central value of a set of numbers.",
     example: "私は、一日{平均}して10時間ぐらい仕事している。\nOn average, I work about 10 hours a day."
-  },
-  {
-    kanji: "解決",
-    kana: "かいけつ",
-    english: "Solution・resolution",
-    explanation: "The act of finding an answer or resolving a problem.",
-    example: "みんなで話し合って、問題を{解決した}。\nWe discussed together and solved the problem."
   },
   {
     kanji: "正常",
