@@ -37,6 +37,12 @@ const JLPTExamVocabs: React.FC<Props> = ({
 
   const currentCard = vocabList[currentIndex];
 
+  function getMainTextColorForCard(card: JLPTReview) {
+    if (card.important) return "orange.500";
+    if (card.fromBook) return "purple.500";
+    return "teal.500";
+  }
+
   function shuffleCards() {
     for (let i = vocabList.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
@@ -71,14 +77,14 @@ const JLPTExamVocabs: React.FC<Props> = ({
   }, [flipCardRef, vocabList.length]);
 
   useEffect(() => {
-  function handleKeyDown(e: KeyboardEvent) {
-    if (e.key === "ArrowRight") handleNext();
-    if (e.key === "ArrowLeft") handlePrev();
-    if (e.key === "ArrowUp") flipCardRef.current?.unflip();
-  }
-  window.addEventListener("keydown", handleKeyDown);
-  return () => window.removeEventListener("keydown", handleKeyDown);
-}, [handleNext, handlePrev]);
+    function handleKeyDown(e: KeyboardEvent) {
+      if (e.key === "ArrowRight") handleNext();
+      if (e.key === "ArrowLeft") handlePrev();
+      if (e.key === "ArrowUp") flipCardRef.current?.unflip();
+    }
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [handleNext, handlePrev]);
 
   useEffect(() => {
     //start/end auto jump of cards when auto jump is true/false
@@ -101,7 +107,7 @@ const JLPTExamVocabs: React.FC<Props> = ({
             <Text
               fontSize={currentCard.kanji.length <= 4 ? "8xl" : "6xl"}
               fontFamily="Klee One"
-              color={!!currentCard.important ? "orange.500" : "teal.500"}
+              color={getMainTextColorForCard(currentCard)}
             >
               {currentCard.kanji}
             </Text>
