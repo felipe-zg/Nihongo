@@ -186,6 +186,20 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     example: "父のトランクには、子どもたちへの土産が{ぎっしり}入っていた。\nMy father's trunk was packed tightly with souvenirs for the children."
   },
   {
+    kanji: "がっかり",
+    kana: "がっかり［する］",
+    english: "Disappointed・To be disappointed",
+    explanation: "Refers to feeling disappointed or let down.",
+    example: "試験に落ちて{がっかり}した。\nI was disappointed because I failed the exam."
+  },
+  {
+    kanji: "そっくり",
+    kana: "そっくり［する］",
+    english: "Exactly alike・To resemble exactly",
+    explanation: "Refers to two things or people looking exactly alike or being very similar.",
+    example: "彼は父親に{そっくり}だ。\nHe looks exactly like his father.",
+  },
+  {
     kanji: "ばらばら",
     kana: "ばらばら［する］",
     english: "Scattered・In pieces・To be scattered",
@@ -513,7 +527,7 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     kana: "どりょく",
     english: "Effort・endeavor",
     explanation: "The exertion of physical or mental energy to achieve a goal.",
-    example: "彼が毎日努力していることをみんな知っています。\nEveryone knows that he is making an effort every day.",
+    example: "彼が毎日{努力}していることをみんな知っています。\nEveryone knows that he is making an effort every day.",
     fromBook: true
   },
   {
@@ -521,7 +535,7 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     kana: "けっきょく",
     english: "After all・in the end",
     explanation: "Used to indicate the final outcome or result after considering all factors.",
-    example: "様々な店に行ったが、結局欲しい物は買えなかった。\nI went to various stores, but in the end, I couldn't buy what I wanted.",
+    example: "様々な店に行ったが、{結局}欲しい物は買えなかった。\nI went to various stores, but in the end, I couldn't buy what I wanted.",
     fromBook: true
   },
   {
@@ -529,7 +543,7 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     kana: "きかん",
     english: "Organization・institution",
     explanation: "An established body or system that serves a specific purpose.",
-    example: "国の機関に問い合わせる。\nContact the government agency.",
+    example: "国の{機関}に問い合わせる。\nContact the government agency.",
     fromBook: true
   },
   {
@@ -537,7 +551,7 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     kana: "けんちく",
     english: "Architecture・construction",
     explanation: "The art and science of designing and constructing buildings.",
-    example: "わたしは新しい家を建築する予定です。\nI plan to construct a new house.",
+    example: "わたしは新しい家を{建築}する予定です。\nI plan to construct a new house.",
     fromBook: true
   },
   {
@@ -545,7 +559,7 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     kana: "ごかっけい",
     english: "Pentagon",
     explanation: "A five-sided polygon.",
-    example: "サッカーボールは、五角形が12個集まってできている。\nA soccer ball is made up of 12 pentagons.",
+    example: "サッカーボールは、{五角形}が12個集まってできている。\nA soccer ball is made up of 12 pentagons.",
     fromBook: true
   },
   {
@@ -553,7 +567,7 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     kana: "かんしん",
     english: "Interest・concern",
     explanation: "A feeling of wanting to learn more about something or being involved in it.",
-    example: "彼は、日本語に関心を持っている。\nHe has an interest in the Japanese language.",
+    example: "彼は、日本語に{関心}を持っている。\nHe has an interest in the Japanese language.",
     fromBook: true
   },
   {
@@ -561,7 +575,7 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     kana: "たいかい",
     english: "Withdrawal from a group・to withdraw",
     explanation: "The act of leaving or withdrawing from a group or organization.",
-    example: "スポーツクラブを退会することにした。\nI decided to withdraw from the sports club.",
+    example: "スポーツクラブを{退会}することにした。\nI decided to withdraw from the sports club.",
     fromBook: true
   },
   {
@@ -569,7 +583,7 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     kana: "まずしい",
     english: "Poor・impoverished",
     explanation: "Lacking sufficient financial resources or material possessions.",
-    example: "彼は貧しい家庭で育ったが、一生懸命勉強して成功した。\nHe grew up in a poor family but studied hard and succeeded.",
+    example: "彼は{貧しい}家庭で育ったが、一生懸命勉強して成功した。\nHe grew up in a poor family but studied hard and succeeded.",
     fromBook: true
   },
   {
@@ -577,7 +591,7 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     kana: "いしき",
     english: "Consciousness・awareness",
     explanation: "The state of being aware of and able to think about one's own existence, thoughts, and surroundings.",
-    example: "事故の後、彼はしばらく意識を失っていた。\nAfter the accident, he lost consciousness for a while.",
+    example: "事故の後、彼はしばらく{意識}を失っていた。\nAfter the accident, he lost consciousness for a while.",
     fromBook: true
   },
   {
@@ -585,7 +599,7 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     kana: "ぐたい",
     english: "Concrete・specific",
     explanation: "Something that is clear and definite, rather than abstract or general.",
-    example: "彼は具体的な例を挙げて説明した。\nHe explained by giving concrete examples.",
+    example: "彼は{具体}的な例を挙げて説明した。\nHe explained by giving concrete examples.",
     fromBook: true
   },
   {
@@ -593,7 +607,7 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     kana: "たいそう",
     english: "Gymnastics・physical exercise",
     explanation: "Physical exercises or activities designed to improve strength, flexibility, and overall fitness.",
-    example: "毎朝、公園で体操をするのが日課です。\nDoing physical exercise in the park every morning is my daily routine.",
+    example: "毎朝、公園で{体操}をするのが日課です。\nDoing physical exercise in the park every morning is my daily routine.",
     fromBook: true
   },
   {
@@ -601,15 +615,16 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     kana: "じっけん",
     english: "Experiment・test",
     explanation: "A scientific procedure undertaken to make a discovery, test a hypothesis, or demonstrate a known fact.",
-    example: "新しい薬の効果を確かめるために実験を行った。\nAn experiment was conducted to verify the effectiveness of the new drug.",
-    fromBook: true
+    example: "新しい薬の効果を確かめるために{実験}を行った。\nAn experiment was conducted to verify the effectiveness of the new drug.",
+    fromBook: true,
+    important: true,
   },
   {
     kanji: "行動",
     kana: "こうどう",
     english: "Action・behavior",
     explanation: "The way in which a person behaves or conducts themselves.",
-    example: "彼の行動はいつも冷静で理性的だ。\nHis behavior is always calm and rational.",
+    example: "彼の{行動}はいつも冷静で理性的だ。\nHis behavior is always calm and rational.",
     fromBook: true
   },
   {
@@ -617,7 +632,7 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     kana: "ちょうせつ",
     english: "Adjustment・to adjust",
     explanation: "The act of making changes to something to achieve a desired fit, appearance, or result.",
-    example: "エアコンの温度を調節して、快適な室内環境を作る。\nAdjust the air conditioner temperature to create a comfortable indoor environment.",
+    example: "エアコンの温度を{調節}して、快適な室内環境を作る。\nAdjust the air conditioner temperature to create a comfortable indoor environment.",
     fromBook: true
   },
   {
@@ -625,7 +640,7 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     kana: "しっかり［する］",
     english: "Firmly・steadily・to do something firmly",
     explanation: "To do something with determination, strength, or stability.",
-    example: "彼は毎日しっかり勉強して、試験に合格した。\nHe studied firmly every day and passed the exam.",
+    example: "彼は毎日{しっかり}勉強して、試験に合格した。\nHe studied firmly every day and passed the exam.",
     fromBook: true
   },
   {
@@ -633,7 +648,7 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     kana: "にぎる",
     english: "To grasp・to hold",
     explanation: "To take hold of something firmly with the hand.",
-    example: "迷子にならないように、しっかり手を握っていてね。\nHold my hand firmly so you don't get lost.",
+    example: "迷子にならないように、しっかり手を{握って}いてね。\nHold my hand firmly so you don't get lost.",
     fromBook: true
   },
   {
@@ -641,7 +656,7 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     kana: "ゆたか［な］",
     english: "Rich・abundant",
     explanation: "Having a large amount of something, such as wealth, resources, or qualities.",
-    example: "将来は、自然が豊かな場所に住みたい。\nIn the future, I want to live in a place rich in nature.",
+    example: "将来は、自然が{豊かな}場所に住みたい。\nIn the future, I want to live in a place rich in nature.",
     fromBook: true
   },
   {
@@ -649,7 +664,7 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     kana: "してい",
     english: "Designation・to designate",
     explanation: "The act of officially choosing or naming something for a specific purpose.",
-    example: "この席は予約者専用に指定されています。\nThis seat is designated for reserved customers only.",
+    example: "この席は予約者専用に{指定}されています。\nThis seat is designated for reserved customers only.",
     fromBook: true
   },
   {
@@ -657,7 +672,7 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     kana: "しどう",
     english: "Guidance・to guide",
     explanation: "The act of providing direction, advice, or instruction to someone.",
-    example: "新入社員に仕事の指導をする。\nProvide job guidance to new employees.",
+    example: "新入社員に仕事の{指導}をする。\nProvide job guidance to new employees.",
     fromBook: true
   },
   {
@@ -665,7 +680,7 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     kana: "そうてい",
     english: "Assumption・to assume",
     explanation: "The act of supposing or presuming something to be true without proof.",
-    example: "最悪の事態を想定して、準備を進める。\nAssume the worst-case scenario and proceed with preparations.",
+    example: "最悪の事態を{想定}して、準備を進める。\nAssume the worst-case scenario and proceed with preparations.",
     fromBook: true
   },
   {
@@ -673,7 +688,7 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     kana: "すっかり［する］",
     english: "Completely・entirely・to do something completely",
     explanation: "To do something to the fullest extent or degree.",
-    example: "妹を迎えに行くことをすっかり忘れて、そのまま帰ってきてしまった。\nI completely forgot to pick up my sister and ended up going home as is.",
+    example: "妹を迎えに行くことを{すっかり}忘れて、そのまま帰ってきてしまった。\nI completely forgot to pick up my sister and ended up going home as is.",
     fromBook: true
   },
   {
@@ -681,7 +696,7 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     kana: "すっと［する］",
     english: "Smoothly・quickly・to do something smoothly",
     explanation: "To do something in a smooth, quick, or effortless manner.",
-    example: "彼は質問にすっと答えた。\nHe answered the question smoothly.",
+    example: "彼は質問に{すっと}答えた。\nHe answered the question smoothly.",
     fromBook: true
   },
   {
@@ -689,7 +704,7 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     kana: "なかなか 〜 ない",
     english: "Not easily・not readily",
     explanation: "Used to express that something does not happen easily or readily. (ぜんぜん 〜 ない と同じ意味だ）",
-    example: "最近、忙しくてなかなか映画を見る時間がない。\nLately, I've been busy and don't easily have time to watch movies.",
+    example: "最近、忙しくて{なかなか}映画を見る時間がない。\nLately, I've been busy and don't easily have time to watch movies.",
     fromBook: true
   },
   {
@@ -697,7 +712,7 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     kana: "さっき",
     english: "A little while ago・just now",
     explanation: "Refers to a short time in the past, often used to indicate something that happened recently.",
-    example: "さっき電話があったよ。\nThere was a phone call a little while ago.",
+    example: "{さっき}電話があったよ。\nThere was a phone call a little while ago.",
     fromBook: true
   },
   {
@@ -705,7 +720,7 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     kana: "ずいぶん",
     english: "Quite・considerably",
     explanation: "Used to express a significant degree or extent of something.\nかなりって同じ意味だ。",
-    example: "彼はずいぶん背が高くなったね。\nHe has grown quite tall.",
+    example: "彼は{ずいぶん}背が高くなったね。\nHe has grown quite tall.",
     fromBook: true
   },
   {
@@ -713,7 +728,7 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     kana: "かなり",
     english: "Fairly・considerably",
     explanation: "Used to express a moderate to significant degree or extent of something.",
-    example: "この本はかなり面白い。\nThis book is fairly interesting.",
+    example: "この本は{かなり}面白い。\nThis book is fairly interesting.",
     fromBook: true
   },
   {
@@ -721,7 +736,7 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     kana: "さっそく［する］",
     english: "Immediately・right away・to do something immediately",
     explanation: "To do something without delay or hesitation.",
-    example: "招待状を受け取ったら、さっそく返事を書いたほうがいい。\nWhen you receive an invitation, it's best to write a reply right away.",
+    example: "招待状を受け取ったら、{さっそく}返事を書いたほうがいい。\nWhen you receive an invitation, it's best to write a reply right away.",
     fromBook: true
   },
   {
@@ -729,7 +744,7 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     kana: "そそぐ",
     english: "To pour・to fill",
     explanation: "To cause a liquid to flow from one container to another.",
-    example: "庭の花や野菜にたっぷり水を注いであげよう。\nLet's pour plenty of water on the flowers and vegetables in the garden.",
+    example: "庭の花や野菜にたっぷり水を{注いで}あげよう。\nLet's pour plenty of water on the flowers and vegetables in the garden.",
     fromBook: true
   },
   {
@@ -737,7 +752,7 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     kana: "そうぞう",
     english: "Imagination・to imagine",
     explanation: "The act of forming mental images or concepts of things that are not present or real.",
-    example: "未来の自分の生活を想像してみる。\nTry to imagine your future life.",
+    example: "未来の自分の生活を{想像}してみる。\nTry to imagine your future life.",
     fromBook: true
   },
   {
@@ -745,7 +760,7 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     kana: "けんせつ",
     english: "Construction・to construct",
     explanation: "The act of building or creating structures, such as buildings or infrastructure.",
-    example: "新しい学校の建設が始まった。\nThe construction of a new school has begun.",
+    example: "新しい学校の{建設}が始まった。\nThe construction of a new school has begun.",
     fromBook: true
   },
   {
@@ -753,7 +768,7 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     kana: "とうぜん",
     english: "Naturally・as a matter of course",
     explanation: "Something that is expected or happens as a natural result.",
-    example: "彼が成功したのは当然のことだ。\nIt is only natural that he succeeded.",
+    example: "彼が成功したのは{当然}のことだ。\nIt is only natural that he succeeded.",
     fromBook: true
   },
 ]

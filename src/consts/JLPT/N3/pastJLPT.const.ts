@@ -256,7 +256,7 @@ export const PAST_JLPT_N3: JLPTReview[] = [
     kanji: "そろう",
     kana: "そろう",
     english: "To be complete・to be gathered",
-    explanation: "To have all necessary parts or members present.",
+    explanation: "To have all necessary parts or members present.\n全員集まるっていう意味。",
     example: "新しいプロジェクトのメンバーが{そろった}。\nThe members for the new project have been gathered.\n全員集まったっていう意味"
   },
   {
@@ -411,7 +411,7 @@ export const PAST_JLPT_N3: JLPTReview[] = [
   {
     kanji: "削る",
     kana: "けずる",
-    english: "To shave・to cut down",
+    english: "To shave・to cut down・to sharpen",
     explanation: "To remove material from the surface of something, often to make it thinner or smoother.",
     example: "シャープペンを使うので、鉛筆を{削る}必要がなくなった。\nSince I use a mechanical pencil, I no longer need to sharpen my pencils."
   },
@@ -479,13 +479,6 @@ export const PAST_JLPT_N3: JLPTReview[] = [
     example: "夕日が海に{沈んで}いくのを見た。\nI watched the sunset sink into the sea."
   },
   {
-    kanji: "平均",
-    kana: "へいきん",
-    english: "Average・mean",
-    explanation: "A number that represents the central value of a set of numbers.",
-    example: "私は、一日{平均}して10時間ぐらい仕事している。\nOn average, I work about 10 hours a day."
-  },
-  {
     kanji: "正常",
     kana: "せいじょう",
     english: "Normal・regular",
@@ -533,5 +526,143 @@ export const PAST_JLPT_N3: JLPTReview[] = [
     english: "To wipe・to dry",
     explanation: "To clean or dry a surface by rubbing it with a cloth or towel.",
     example: "このタオルで、ぬれた手をしっかり{拭いて}ください。\nPlease wipe your wet hands thoroughly with this towel."
+  },
+  {
+    kanji: "保存",
+    kana: "ほぞん",
+    english: "Preservation・storage",
+    explanation: "The act of keeping something in good condition or storing it for future use.",
+    example: "USBメモリーにデータを{保存}する。\nSave the data to a USB memory.",
+    fromBook: true
+  },
+  {
+    kanji: "通過",
+    kana: "つうか",
+    english: "Passing through・transit",
+    explanation: "The act of moving through a place without stopping.",
+    example: "この電車は東京を{通過}して、次の駅に止まります。\nThis train will pass through Tokyo and stop at the next station.",
+    fromBook: true
+  },
+  {
+    kanji: "とうとう",
+    kana: "とうとう",
+    english: "Finally・at last",
+    explanation: "Indicates that something has happened after a long wait or effort.",
+    example: "長い間探していた本を{とうとう}見つけた。\nI finally found the book I had been looking for a long time.",
+    fromBook: true
+  },
+  {
+    kanji: "状態",
+    kana: "じょうたい",
+    english: "Condition・state",
+    explanation: "The current situation or condition of something or someone.",
+    example: "この機械の{状態}は良好です。\nThe condition of this machine is good.",
+    fromBook: true
+  },
+  {
+    kanji: "傾向",
+    kana: "けいこう",
+    english: "Tendency・trend",
+    explanation: "A general direction or pattern of behavior or development.",
+    example: "最近の若者には、環境問題に関心を持つ{傾向}がある。\nThere is a tendency among young people recently to be interested in environmental issues.",
+    fromBook: true
+  },
+  {
+    kanji: "掛かる",
+    kana: "かかる",
+    english: "To take (time/money)・to hang・to come in・to be received (a phone call)",
+    explanation: "To require a certain amount of time or money・to be suspended or hung.",
+    example: "この仕事は全部で3時間{掛かる}。\nThis job takes a total of 3 hours.",
+    fromBook: true
+  },
+  {
+    kanji: "等分",
+    kana: "とうぶん",
+    english: "For the time being・for now",
+    explanation: "Indicates a temporary state or condition.",
+    example: "体調が悪いので、{等分}休ませてください。\nSince I'm not feeling well, please let me rest for the time being.",
+    fromBook: true
+  },
+  {
+    kanji: "配分",
+    kana: "はいぶん",
+    english: "Distribution・allocation",
+    explanation: "The act of distributing or allocating resources or tasks.",
+    example: "予算の{配分}を見直す必要がある。\nThere is a need to review the allocation of the budget.",
+    fromBook: true
+  },
+  {
+    kanji: "平行",
+    kana: "へいこう",
+    english: "Parallel・simultaneous",
+    explanation: "Two or more things happening at the same time or in a similar manner.",
+    example: "彼は仕事と勉強を{平行}している。\nHe is working and studying simultaneously.",
+    fromBook: true
+  },
+  {
+    kanji: "きちんと",
+    kana: "きちんと",
+    english: "Properly・neatly",
+    explanation: "In a correct or orderly manner.",
+    example: "毎日、部屋を{きちんと}掃除しています。\nI clean my room properly every day.",
+    fromBook: true
+  },
+  {
+    kanji: "都合",
+    kana: "つごう",
+    english: "Convenience・circumstances",
+    explanation: "The state of being suitable or convenient for someone.",
+    example: "来週の会議の{都合}を教えてください。\nPlease let me know your availability for next week's meeting.",
+    fromBook: true
+  },
+  {
+    kanji: "繰り返す",
+    kana: "くりかえす",
+    english: "To repeat・to do something over again",
+    explanation: "To do something multiple times or to go over something again.",
+    example: "相手の言葉がわからなかったら、{繰り返して}もらうといいですよ。\nIf you don't understand what the other person is saying, it's good to ask them to repeat it.",
+    fromBook: true,
+    important: true
+  },
+  {
+    kanji: "繋がる",
+    kana: "つながる",
+    english: "To be connected・to be linked",
+    explanation: "To have a connection or relationship with something or someone. Be linked (physically or abstractly)",
+    example: "家族と離れていても、心が{繋がっている}と思えれば大丈夫です。\nEven if you are apart from your family, it's okay as long as you feel that your hearts are connected.",
+    fromBook: true
+  },
+  {
+    kanji: "零れる",
+    kana: "こぼれる",
+    english: "To spill・to overflow",
+    explanation: "To accidentally pour out or overflow from a container.",
+    example: "コップから水が{零れた}。\nWater spilled from the glass.",
+    fromBook: true
+  },
+  {
+    kanji: "感動",
+    kana: "かんどう",
+    english: "Emotionally moved・deeply impressed",
+    explanation: "The state of being deeply affected or touched emotionally.",
+    example: "その映画に{感動}して、涙が出た。\nI was so emotionally moved by the movie that I cried.",
+    fromBook: true
+  },
+  {
+    kanji: "緊張",
+    kana: "きんちょう",
+    english: "Nervousness・tension",
+    explanation: "A state of being anxious or stressed, often before a performance or event.",
+    example: "試験の前はいつも{緊張}する。\nI always get nervous before exams.",
+    fromBook: true
+  },
+  {
+    kanji: "提出",
+    kana: "ていしゅつ",
+    english: "Submission・presentation",
+    explanation: "The act of handing in or presenting something, such as a document or assignment.",
+    example: "レポートを{提出}する期限は来週の金曜日です。\nThe deadline for submitting the report is next Friday.",
+    fromBook: true,
+    important: true
   }
 ];
