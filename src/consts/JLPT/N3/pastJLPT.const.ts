@@ -264,7 +264,8 @@ export const PAST_JLPT_N3: JLPTReview[] = [
     kana: "ぐうぜん",
     english: "By chance・coincidence",
     explanation: "Something that happens unexpectedly or without planning.",
-    example: "実験の間に{偶然}発見した事が高く評価され、科学賞を受賞した。\nWhat was discovered by chance during the experiment was highly praised and received a science award."
+    example: "実験の間に{偶然}発見した事が高く評価され、科学賞を受賞した。\nWhat was discovered by chance during the experiment was highly praised and received a science award.",
+    important: true
   },
   {
     kanji: "当たる",

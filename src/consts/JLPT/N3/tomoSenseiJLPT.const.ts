@@ -398,6 +398,7 @@ export const TOMO_SENSEI_JLPT_N3: JLPTReview[] = [
     english: "Posture・attitude",
     explanation: "The way someone holds their body or their approach to a situation.",
     example: "良い{姿勢}を保つことは健康に良いです。\nMaintaining good posture is good for health.",
+    important: true,
     repeat: true,
   },
   {
