@@ -263,7 +263,7 @@ export const PAST_JLPT_N3: JLPTReview[] = [
     kanji: "偶然",
     kana: "ぐうぜん",
     english: "By chance・coincidence",
-    explanation: "Something that happens unexpectedly or without planning.",
+    explanation: "Something that happens unexpectedly or without planning.\nたまたまっていう意味。",
     example: "実験の間に{偶然}発見した事が高く評価され、科学賞を受賞した。\nWhat was discovered by chance during the experiment was highly praised and received a science award.",
     important: true
   },
@@ -385,7 +385,8 @@ export const PAST_JLPT_N3: JLPTReview[] = [
     kana: "しゅるい",
     english: "Type・kind",
     explanation: "A category or classification of things that share common characteristics.",
-    example: "店にはたくさんの{種類}の野菜がならんでいる。\nThe store has many kinds of vegetables."
+    example: "店にはたくさんの{種類}の野菜がならんでいる。\nThe store has many kinds of vegetables.",
+    important: true
   },
   {
     kanji: "捨てる",
@@ -497,7 +498,8 @@ export const PAST_JLPT_N3: JLPTReview[] = [
     kana: "まぶしい",
     english: "Dazzling・bright",
     explanation: "Extremely bright or shining, often causing discomfort to the eyes.\n明るいっていう意味。",
-    example: "太陽が{眩しくて}、前がよく見えない。\nThe sun is so dazzling that I can't see well ahead."
+    example: "太陽が{眩しくて}、前がよく見えない。\nThe sun is so dazzling that I can't see well ahead.",
+    important: true
   },
   {
     kanji: "引き受ける",

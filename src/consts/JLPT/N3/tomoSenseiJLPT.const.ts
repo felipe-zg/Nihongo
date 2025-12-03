@@ -327,11 +327,11 @@ export const TOMO_SENSEI_JLPT_N3: JLPTReview[] = [
     example: "{急に}雨が降り出した。\nIt suddenly started to rain."
   },
   {
-    kanji: "いっきなり",
-    kana: "いっきなり",
+    kanji: "いきなり",
+    kana: "いきなり",
     english: "Suddenly・all of a sudden",
     explanation: "Happening quickly and unexpectedly.",
-    example: "{いっきなり}雨が降り出した。\nIt suddenly started to rain."
+    example: "{いきなり}雨が降り出した。\nIt suddenly started to rain."
   },
   {
     kanji: "隠す",
@@ -737,7 +737,8 @@ export const TOMO_SENSEI_JLPT_N3: JLPTReview[] = [
     kana: "だいきん",
     english: "Payment・charge・cost・fee",
     explanation: "The amount of money required for goods or services.",
-    example: "この商品の{代金}は5000円です。\nThe payment for this product is 5000 yen."
+    example: "この商品の{代金}は5000円です。\nThe payment for this product is 5000 yen.",
+    important: true
   },
   {
     kanji: "我慢",
