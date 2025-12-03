@@ -84,7 +84,8 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     kana: "おしまい［する］",
     english: "The end・To end",
     explanation: "Refers to the conclusion or termination of something.",
-    example: "遊びは{おしまい}です。\nPlaytime is over. \n終わりって同じ意味だ。",
+    example: "遊びは{おしまい}です。\nPlaytime is over.",
+    sameMeaning: "終わりって同じ意味だ。",
     important: true,
   },
   {
@@ -106,7 +107,8 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     kanji: "複数",
     kana: "ふくすう",
     english: "Multiple・Plural",
-    explanation: "Refers to more than one or several items or people. (たさんと同じ意味だ）",
+    explanation: "Refers to more than one or several items or people.",
+    sameMeaning: "二つ以上っていう意味だ。たくさんと同じ意味だ。",
     example: "ルールが{複数}あって、覚えるのが大変だ。\nThere are multiple rules, and it's hard to remember them."
   },
   {
@@ -162,7 +164,8 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     kanji: "さっぱり",
     kana: "さっぱり 〜 ない",
     english: "Not at all・Completely (not)",
-    explanation: "Used to express that something is not done at all or completely not the case. (ぜんぜん 〜 ない と同じ意味だ）",
+    explanation: "Used to express that something is not done at all or completely not the case.",
+    sameMeaning: "全然〜ないっていう意味だ。",
     example: "彼の話は{さっぱり}分からない。\nI don't understand his story at all."
   },
   {
@@ -289,7 +292,8 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     kanji: "普段",
     kana: "ふだん",
     english: "Usually・Ordinarily",
-    explanation: "Refers to something that is done regularly or habitually in everyday life. (いつもと同じ意味だ）",
+    explanation: "Refers to something that is done regularly or habitually in everyday life.",
+    sameMeaning: "いつもっていう意味だ。",
     example: "{普段}は朝ご飯を食べない。\nI usually don't eat breakfast."
   },{
     kanji: "交通費",
@@ -340,7 +344,8 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     kanji: "なるべく",
     kana: "なるべく",
     english: "As much as possible・If possible",
-    explanation: "Used to express the idea of doing something to the greatest extent possible or if circumstances allow.・できるだけと同じ意味だ。",
+    explanation: "Used to express the idea of doing something to the greatest extent possible or if circumstances allow.",
+    sameMeaning: "できるだけと同じ意味だ。",
     example: "今回は出張で日本に来たので自由な時間が少ないが、{なるべく}多くの観光地に行きたい。\nThis time I came to Japan on a business trip, so I have little free time, but I want to visit as many tourist spots as possible."
   },
   {
@@ -355,7 +360,8 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     kanji: "与える",
     kana: "あたえる",
     english: "To give・To provide",
-    explanation: "Refers to the action of giving or providing something to someone.あげると同じ意味だ。",
+    explanation: "Refers to the action of giving or providing something to someone.",
+    sameMeaning: "あげるっていう意味だ。",
     example: "もう一度チャンスを{与えよう}と思う。\nI think I will give you another chance."
   },
   {
@@ -404,7 +410,8 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     kanji: "納得する",
     kana: "なっとく［する］",
     english: "Consent・To agree・To be convinced",
-    explanation: "Refers to the act of agreeing to something or being convinced by an explanation or argument.\nとてもよく分かったっていう意味だ。",
+    explanation: "Refers to the act of agreeing to something or being convinced by an explanation or argument.",
+    sameMeaning: "とてもよく分かったっていう意味だ。",
     example: "どうして間違えたのか、先生の説明を聞いて{納得した}。\nI was convinced after hearing the teacher's explanation of why I made a mistake."
   },
   {
@@ -539,7 +546,8 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     kanji: "次第に",
     kana: "しだいに",
     english: "Gradually・progressively",
-    explanation: "Something that happens slowly over time.\nだんだんっていう意味。",
+    explanation: "Something that happens slowly over time.",
+    sameMeaning: "だんだんっていう意味だ。",
     example: "すずしくなり、木の葉の色が{次第に}変わってきた。\nIt has become cooler, and the color of the leaves has gradually changed.",
     fromBook: true
   },
@@ -724,7 +732,8 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     kanji: "なかなか",
     kana: "なかなか 〜 ない",
     english: "Not easily・not readily",
-    explanation: "Used to express that something does not happen easily or readily. (ぜんぜん 〜 ない と同じ意味だ）",
+    explanation: "Used to express that something does not happen easily or readily.",
+    sameMeaning: "全然〜ないっていう意味だ。",
     example: "最近、忙しくて{なかなか}映画を見る時間がない。\nLately, I've been busy and don't easily have time to watch movies.",
     fromBook: true
   },
@@ -740,7 +749,8 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     kanji: "ずいぶん",
     kana: "ずいぶん",
     english: "Quite・considerably",
-    explanation: "Used to express a significant degree or extent of something.\nかなりって同じ意味だ。",
+    explanation: "Used to express a significant degree or extent of something.",
+    sameMeaning: "かなりって同じ意味だ。",
     example: "彼は{ずいぶん}背が高くなったね。\nHe has grown quite tall.",
     fromBook: true
   },
@@ -880,7 +890,8 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     kanji: "見物",
     kana: "けんぶつ［する］",
     english: "Sightseeing・to sightsee",
-    explanation: "The act of visiting places of interest to see and experience them.\n観光と同じ意味だ。(楽しい物を見ること）",
+    explanation: "The act of visiting places of interest to see and experience them.",
+    sameMeaning: "観光と同じ意味だ。(楽しい物を見ること）",
     example: "京都に行って、たくさんの寺院を{見物}した。\nI went to Kyoto and sightsee many temples.",
     fromBook: true,
   },
@@ -920,7 +931,8 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     kanji: "壊す",
     kana: "こわす",
     english: "To break・to destroy",
-    explanation: "To cause something to become damaged or non-functional.\n体を壊すっていうのは、体の調子が悪くなるっていう意味だ。",
+    explanation: "To cause something to become damaged or non-functional.",
+    sameMeaning: "体を壊すっていうのは、体の調子が悪くなるっていう意味だ。",
     example: "たまには休まないと体を{壊す}よ。\nIf you don't take a break sometimes, you'll break your body.",
     fromBook: true,
   },
@@ -951,7 +963,8 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     kanji: "短気",
     kana: "たんき［な］",
     english: "Short-tempered・impatient",
-    explanation: "A personality trait characterized by a quickness to anger or frustration.\n我慢できないっていう意味だ。(気が短いこと)",
+    explanation: "A personality trait characterized by a quickness to anger or frustration.",
+    sameMeaning: "我慢できないっていう意味だ。(気が短いこと)",
     example: "彼は{短気}なので、すぐに怒る。\nHe is short-tempered, so he gets angry easily.",
   },
   {

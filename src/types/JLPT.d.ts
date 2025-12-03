@@ -44,6 +44,7 @@ declare type JLPTReview = {
   kana: string 
   english: string;
   explanation?: string;
+  sameMeaning?: string;
   example?: string;
   important?: boolean;
   repeat?: boolean;

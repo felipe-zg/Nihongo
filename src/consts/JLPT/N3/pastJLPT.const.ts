@@ -137,21 +137,24 @@ export const PAST_JLPT_N3: JLPTReview[] = [
     kanji: "おそろしい",
     kana: "おそろしい",
     english: "Frightening・dreadful",
-    explanation: "Causing fear or terror・very scary. [ こわいっていう意味 ]",
+    explanation: "Causing fear or terror・very scary.",
+    sameMeaning: "こわいっていう意味",
     example: "とてもおそろしい経験をした。\nI had a very frightening experience."
   },
   {
     kanji: "わけ",
     kana: "わけ",
     english: "Reason・cause",
-    explanation: "The underlying reason or cause for something. [ 理由っていう意味 ]",
+    explanation: "The underlying reason or cause for something.",
+    sameMeaning: "理由っていう意味",
     example: "彼が来なかった{わけ}を教えてください。\nPlease tell me the reason why he didn't come."
   },
   {
     kanji: "へった",
     kana: "へった",
     english: "Decreased・reduced",
-    explanation: "Something that has become smaller in size, amount, or degree. [ 少なくなったっていう意味 ]",
+    explanation: "Something that has become smaller in size, amount, or degree.",
+    sameMeaning: "少なくなったっていう意味",
     example: "最近、この川は水がへった気がする。\nLately, I feel that the water in this river has decreased."
   },
   {
@@ -256,14 +259,16 @@ export const PAST_JLPT_N3: JLPTReview[] = [
     kanji: "そろう",
     kana: "そろう",
     english: "To be complete・to be gathered",
-    explanation: "To have all necessary parts or members present.\n全員集まるっていう意味。",
-    example: "新しいプロジェクトのメンバーが{そろった}。\nThe members for the new project have been gathered.\n全員集まったっていう意味"
+    explanation: "To have all necessary parts or members present.",
+    sameMeaning: "全員集まるっていう意味。",
+    example: "新しいプロジェクトのメンバーが{そろった}。\nThe members for the new project have been gathered.",
   },
   {
     kanji: "偶然",
     kana: "ぐうぜん",
     english: "By chance・coincidence",
-    explanation: "Something that happens unexpectedly or without planning.\nたまたまっていう意味。",
+    explanation: "Something that happens unexpectedly or without planning.",
+    sameMeaning: "たまたまっていう意味。",
     example: "実験の間に{偶然}発見した事が高く評価され、科学賞を受賞した。\nWhat was discovered by chance during the experiment was highly praised and received a science award.",
     important: true
   },
@@ -334,7 +339,8 @@ export const PAST_JLPT_N3: JLPTReview[] = [
     kanji: "就職",
     kana: "しゅうしょく",
     english: "Employment・getting a job",
-    explanation: "The act of finding and starting a job.\n勤めるっていう意味。",
+    explanation: "The act of finding and starting a job.",
+    sameMeaning: "勤めるっていう意味。",
     example: "今、{就職}活動をしています。\nI am currently job hunting.",
     important: true
   },
@@ -357,7 +363,8 @@ export const PAST_JLPT_N3: JLPTReview[] = [
     kana: "きけん",
     english: "Danger・hazard",
     explanation: "A situation or condition that poses a risk of harm or injury.",
-    example: "ここで泳ぐのは{危険}です。\nIt is dangerous to swim here.\nあぶないっていう意味"
+    example: "ここで泳ぐのは{危険}です。\nIt is dangerous to swim here.",
+    sameMeaning: "あぶないっていう意味"
   },
   {
     kanji: "報告書",
@@ -420,7 +427,8 @@ export const PAST_JLPT_N3: JLPTReview[] = [
     kanji: "騒ぐ",
     kana: "さわぐ",
     english: "To make noise・to be noisy",
-    explanation: "To create a loud or disruptive sound, often due to excitement or agitation.\nうるさいっていう意味だ。",
+    explanation: "To create a loud or disruptive sound, often due to excitement or agitation.",
+    sameMeaning: "うるさいっていう意味だ。",
     example: "子どもたちが{騒いで}いる。\nThe children are making noise."
   },
   {
@@ -497,7 +505,8 @@ export const PAST_JLPT_N3: JLPTReview[] = [
     kanji: "眩しい",
     kana: "まぶしい",
     english: "Dazzling・bright",
-    explanation: "Extremely bright or shining, often causing discomfort to the eyes.\n明るいっていう意味。",
+    explanation: "Extremely bright or shining, often causing discomfort to the eyes.",
+    sameMeaning: "明るいっていう意味。",
     example: "太陽が{眩しくて}、前がよく見えない。\nThe sun is so dazzling that I can't see well ahead.",
     important: true
   },
