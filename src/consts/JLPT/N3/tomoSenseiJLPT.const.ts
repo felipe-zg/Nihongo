@@ -320,6 +320,20 @@ export const TOMO_SENSEI_JLPT_N3: JLPTReview[] = [
     repeat: true,
   },
   {
+    kanji: "急に",
+    kana: "きゅうに",
+    english: "Suddenly・abruptly",
+    explanation: "Happening quickly and unexpectedly.",
+    example: "{急に}雨が降り出した。\nIt suddenly started to rain."
+  },
+  {
+    kanji: "いっきなり",
+    kana: "いっきなり",
+    english: "Suddenly・all of a sudden",
+    explanation: "Happening quickly and unexpectedly.",
+    example: "{いっきなり}雨が降り出した。\nIt suddenly started to rain."
+  },
+  {
     kanji: "隠す",
     kana: "かくす",
     english: "To hide・to conceal",

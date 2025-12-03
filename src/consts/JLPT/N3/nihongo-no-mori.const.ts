@@ -472,14 +472,6 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     fromBook: true
   },
   {
-    kanji: "仮定",
-    kana: "かてい",
-    english: "Assumption・hypothesis",
-    explanation: "A supposition or premise that is taken for granted without proof.",
-    example: "この{仮定}に基づいて、計画を立てましょう。\nLet's make a plan based on this assumption.",
-    fromBook: true
-  },
-  {
     kanji: "基礎的",
     kana: "きそてき",
     english: "Basic・fundamental",
@@ -800,4 +792,79 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     example: "彼が成功したのは{当然}のことだ。\nIt is only natural that he succeeded.",
     fromBook: true
   },
+  {
+    kanji: "天然",
+    kana: "てんねん［な］",
+    english: "Natural・unaffected",
+    explanation: "Something that is in its natural state, not altered or artificial.",
+    example: "この温泉は{天然}のもので、体に良いとされている。\nThis hot spring is natural and is said to be good for the body.",
+    fromBook: true,
+    important: true,
+  },
+  {
+    kanji: "職場",
+    kana: "しょくば",
+    english: "Workplace・work environment",
+    explanation: "The physical location or environment where people perform their job duties.",
+    example: "新しい{職場}での仕事に慣れるのに時間がかかった。\nIt took time to get used to the work at the new workplace.",
+    fromBook: true,
+    important: true,
+  },
+  {
+    kanji: "腰痛",
+    kana: "ようつう",
+    english: "Lower back pain・lumbago",
+    explanation: "Pain or discomfort in the lower back area.",
+    example: "長時間座っていると{腰痛}がひどくなる。\nSitting for long periods makes my lower back pain worse.",
+    fromBook: true
+  },
+  {
+    kanji: "腹痛",
+    kana: "ふくつう",
+    english: "Stomachache・abdominal pain",
+    explanation: "Pain or discomfort in the stomach or abdominal area.",
+    example: "食べ過ぎて{腹痛}がした。\nI had a stomachache from eating too much.",
+    fromBook: true
+  },
+  {
+    kanji: "坂",
+    kana: "さか",
+    english: "Slope・hill",
+    explanation: "An inclined surface or area of land that rises or falls.",
+    example: "この{坂}を上るのは大変だ。\nClimbing this hill is tough.",
+    fromBook: true
+  },
+  {
+    kanji: "仮",
+    kana: "かり［の］",
+    english: "Temporary・provisional",
+    explanation: "Something that is not permanent and is intended to last for a short period of time.",
+    example: "これは{仮}の住所だから、引っ越したら教えてね。\nThis is a temporary address, so let me know when you move.",
+    fromBook: true
+  },
+  {
+    kanji: "仮定",
+    kana: "かてい",
+    english: "Assumption・hypothesis",
+    explanation: "A supposition or premise that is taken for granted without proof.",
+    example: "この{仮定}に基づいて、計画を立てましょう。\nLet's make a plan based on this assumption.",
+    fromBook: true,
+    important: true,
+  },
+  {
+    kanji: "返す",
+    kana: "かえす",
+    english: "To return・to give back",
+    explanation: "To give something back to its original owner or place.",
+    example: "図書館の本を期限内に{返さなければ}ならない。\nI have to return the library book by the due date.",
+    fromBook: true,
+  },
+  {
+    kanji: "返事",
+    kana: "へんじ",
+    english: "Reply・response",
+    explanation: "A response or answer to a question, request, or communication.",
+    example: "メールの{返事}を早く書いてください。\nPlease write a reply to the email quickly.",
+    fromBook: true,
+  }
 ]
