@@ -162,7 +162,8 @@ export const PAST_JLPT_N3: JLPTReview[] = [
     kana: "うえる",
     english: "To plant・to grow",
     explanation: "To put seeds, plants, or trees into the ground to grow.",
-    example: "遊所の公園にはいろいろな花が{植えて}ある。\nVarious flowers are planted in the park."
+    example: "遊所の公園にはいろいろな花が{植えて}ある。\nVarious flowers are planted in the park.",
+    important: true,
   },
   {
     kanji: "見送る",
