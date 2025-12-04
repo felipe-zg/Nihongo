@@ -706,7 +706,7 @@ export const PAST_JLPT_N3: JLPTReview[] = [
     kanji: "単純",
     kana: "たんじゅん",
     english: "Simple・straightforward",
-    explanation: "Something that is easy to understand or not complicated.",
+    explanation: "Something that is easy to understand or not complicated.\n複雑の反対の意味。",
     example: "この問題は{単純}なので、すぐに解けるでしょう。\nThis problem is simple, so you should be able to solve it quickly.",
     fromBook: true,
   },

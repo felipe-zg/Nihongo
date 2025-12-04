@@ -552,7 +552,8 @@ export const TOMO_SENSEI_JLPT_N3: JLPTReview[] = [
     kana: "じょうひんな",
     english: "Elegant・refined・graceful",
     explanation: "Having a sophisticated and tasteful manner or appearance.",
-    example: "彼女はとても{上品な}服を着ています。\nShe wears very elegant clothes."
+    example: "彼女はとても{上品な}服を着ています。\nShe wears very elegant clothes.",
+    important: true
   },
   {
     kanji: "経由",
@@ -1202,7 +1203,9 @@ export const TOMO_SENSEI_JLPT_N3: JLPTReview[] = [
     kana: "つとめる",
     english: "To work for・to be employed at",
     explanation: "To be employed by a company or organization.",
-    example: "彼は大手企業に{勤めています}。\nHe works for a major company."
+    sameMeaning: "働くっていう意味だ。",
+    example: "彼は大手企業に{勤めています}。\nHe works for a major company.",
+    important: true
   },
   {
     kanji: "退屈",
