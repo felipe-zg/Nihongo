@@ -117,7 +117,7 @@ const JLPTExamVocabs: React.FC<Props> = ({
               <Text textAlign={"center"} fontSize={"5xl"} color={"white"} mb={3}>{currentCard.kana.replace("［する］", "")}</Text>
               <Text textAlign={"center"} fontSize={"xl"} color={"primary.500"}>{currentCard.english}</Text>
               <Text textAlign={"center"} fontSize={"xl"} color={"pink.500"}>{currentCard.explanation}</Text>
-              {currentCard.sameMeaning && <Text textAlign={"center"} fontSize={"xl"} color={"green.500"}>{currentCard.sameMeaning}</Text>}
+              {currentCard.sameMeaning && <Text textAlign={"center"} fontSize={"xl"} color={"yellow.400"}>{currentCard.sameMeaning}</Text>}
               <Divider bg="gray.500" thickness={0.5} my={3} />
               <ExampleSentence sentence={currentCard.example || ""} textAlign="center" />
             </>

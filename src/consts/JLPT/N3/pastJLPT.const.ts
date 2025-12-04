@@ -261,7 +261,7 @@ export const PAST_JLPT_N3: JLPTReview[] = [
     kana: "そろう",
     english: "To be complete・to be gathered",
     explanation: "To have all necessary parts or members present.",
-    sameMeaning: "全員集まるっていう意味。",
+    sameMeaning: "全員集まるっていう意味",
     example: "新しいプロジェクトのメンバーが{そろった}。\nThe members for the new project have been gathered.",
   },
   {
@@ -269,7 +269,7 @@ export const PAST_JLPT_N3: JLPTReview[] = [
     kana: "ぐうぜん",
     english: "By chance・coincidence",
     explanation: "Something that happens unexpectedly or without planning.",
-    sameMeaning: "たまたまっていう意味。",
+    sameMeaning: "たまたまっていう意味",
     example: "実験の間に{偶然}発見した事が高く評価され、科学賞を受賞した。\nWhat was discovered by chance during the experiment was highly praised and received a science award.",
     important: true
   },
@@ -341,7 +341,7 @@ export const PAST_JLPT_N3: JLPTReview[] = [
     kana: "しゅうしょく",
     english: "Employment・getting a job",
     explanation: "The act of finding and starting a job.",
-    sameMeaning: "勤めるっていう意味。",
+    sameMeaning: "勤めるっていう意味",
     example: "今、{就職}活動をしています。\nI am currently job hunting.",
     important: true
   },
@@ -429,7 +429,7 @@ export const PAST_JLPT_N3: JLPTReview[] = [
     kana: "さわぐ",
     english: "To make noise・to be noisy",
     explanation: "To create a loud or disruptive sound, often due to excitement or agitation.",
-    sameMeaning: "うるさいっていう意味だ。",
+    sameMeaning: "うるさいっていう意味だ",
     example: "子どもたちが{騒いで}いる。\nThe children are making noise."
   },
   {
@@ -507,7 +507,7 @@ export const PAST_JLPT_N3: JLPTReview[] = [
     kana: "まぶしい",
     english: "Dazzling・bright",
     explanation: "Extremely bright or shining, often causing discomfort to the eyes.",
-    sameMeaning: "明るいっていう意味。",
+    sameMeaning: "明るいっていう意味",
     example: "太陽が{眩しくて}、前がよく見えない。\nThe sun is so dazzling that I can't see well ahead.",
     important: true
   },

@@ -4,7 +4,7 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     kana: "つつむ",
     english: "To wrap・To cover",
     explanation: "Refers to the action of wrapping or covering something.",
-    example: "プレゼントをきれいに{包んだ}。\nI wrapped the present."
+    example: "プレゼントをきれいに{包んだ}。\nI wrapped the present.",
   },
   {
     kanji: "畳む",
@@ -85,7 +85,7 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     english: "The end・To end",
     explanation: "Refers to the conclusion or termination of something.",
     example: "遊びは{おしまい}です。\nPlaytime is over.",
-    sameMeaning: "終わりって同じ意味だ。",
+    sameMeaning: "終わりって同じ意味だ",
     important: true,
   },
   {
@@ -108,7 +108,7 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     kana: "ふくすう",
     english: "Multiple・Plural",
     explanation: "Refers to more than one or several items or people.",
-    sameMeaning: "二つ以上っていう意味だ。たくさんと同じ意味だ。",
+    sameMeaning: "二つ以上っていう意味だ・たくさんと同じ意味だ",
     example: "ルールが{複数}あって、覚えるのが大変だ。\nThere are multiple rules, and it's hard to remember them."
   },
   {
@@ -165,7 +165,7 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     kana: "さっぱり 〜 ない",
     english: "Not at all・Completely (not)",
     explanation: "Used to express that something is not done at all or completely not the case.",
-    sameMeaning: "全然〜ないっていう意味だ。",
+    sameMeaning: "全然〜ないっていう意味だ",
     example: "彼の話は{さっぱり}分からない。\nI don't understand his story at all."
   },
   {
@@ -201,7 +201,7 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     kana: "そっくり［する］",
     english: "Exactly alike・To resemble exactly",
     explanation: "Refers to two things or people looking exactly alike or being very similar.",
-    sameMeaning: "よく似ているっていう意味だ。",
+    sameMeaning: "よく似ているっていう意味だ",
     example: "彼は父親に{そっくり}だ。\nHe looks exactly like his father.",
   },
   {
@@ -294,7 +294,7 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     kana: "ふだん",
     english: "Usually・Ordinarily",
     explanation: "Refers to something that is done regularly or habitually in everyday life.",
-    sameMeaning: "いつもっていう意味だ。",
+    sameMeaning: "いつもっていう意味だ",
     example: "{普段}は朝ご飯を食べない。\nI usually don't eat breakfast."
   },{
     kanji: "交通費",
@@ -346,7 +346,7 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     kana: "なるべく",
     english: "As much as possible・If possible",
     explanation: "Used to express the idea of doing something to the greatest extent possible or if circumstances allow.",
-    sameMeaning: "できるだけと同じ意味だ。",
+    sameMeaning: "できるだけと同じ意味だ",
     example: "今回は出張で日本に来たので自由な時間が少ないが、{なるべく}多くの観光地に行きたい。\nThis time I came to Japan on a business trip, so I have little free time, but I want to visit as many tourist spots as possible."
   },
   {
@@ -362,7 +362,7 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     kana: "あたえる",
     english: "To give・To provide",
     explanation: "Refers to the action of giving or providing something to someone.",
-    sameMeaning: "あげるっていう意味だ。",
+    sameMeaning: "あげるっていう意味だ",
     example: "もう一度チャンスを{与えよう}と思う。\nI think I will give you another chance."
   },
   {
@@ -412,7 +412,7 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     kana: "なっとく［する］",
     english: "Consent・To agree・To be convinced",
     explanation: "Refers to the act of agreeing to something or being convinced by an explanation or argument.",
-    sameMeaning: "とてもよく分かったっていう意味だ。",
+    sameMeaning: "とてもよく分かったっていう意味だ",
     example: "どうして間違えたのか、先生の説明を聞いて{納得した}。\nI was convinced after hearing the teacher's explanation of why I made a mistake."
   },
   {
@@ -548,7 +548,7 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     kana: "しだいに",
     english: "Gradually・progressively",
     explanation: "Something that happens slowly over time.",
-    sameMeaning: "だんだんっていう意味だ。",
+    sameMeaning: "だんだんっていう意味だ",
     example: "すずしくなり、木の葉の色が{次第に}変わってきた。\nIt has become cooler, and the color of the leaves has gradually changed.",
     fromBook: true
   },
@@ -734,7 +734,7 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     kana: "なかなか 〜 ない",
     english: "Not easily・not readily",
     explanation: "Used to express that something does not happen easily or readily.",
-    sameMeaning: "全然〜ないっていう意味だ。",
+    sameMeaning: "全然〜ないっていう意味だ",
     example: "最近、忙しくて{なかなか}映画を見る時間がない。\nLately, I've been busy and don't easily have time to watch movies.",
     fromBook: true
   },
@@ -751,7 +751,7 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     kana: "ずいぶん",
     english: "Quite・considerably",
     explanation: "Used to express a significant degree or extent of something.",
-    sameMeaning: "かなりって同じ意味だ。",
+    sameMeaning: "かなりって同じ意味だ",
     example: "彼は{ずいぶん}背が高くなったね。\nHe has grown quite tall.",
     fromBook: true
   },
@@ -892,7 +892,7 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     kana: "けんぶつ［する］",
     english: "Sightseeing・to sightsee",
     explanation: "The act of visiting places of interest to see and experience them.",
-    sameMeaning: "観光と同じ意味だ。(楽しい物を見ること）",
+    sameMeaning: "観光と同じ意味だ (楽しい物を見ること）",
     example: "京都に行って、たくさんの寺院を{見物}した。\nI went to Kyoto and sightsee many temples.",
     fromBook: true,
   },
@@ -933,7 +933,7 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     kana: "こわす",
     english: "To break・to destroy",
     explanation: "To cause something to become damaged or non-functional.",
-    sameMeaning: "体を壊すっていうのは、体の調子が悪くなるっていう意味だ。",
+    sameMeaning: "体を壊すっていうのは、体の調子が悪くなるっていう意味だ",
     example: "たまには休まないと体を{壊す}よ。\nIf you don't take a break sometimes, you'll break your body.",
     fromBook: true,
   },
@@ -965,7 +965,7 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     kana: "たんき［な］",
     english: "Short-tempered・impatient",
     explanation: "A personality trait characterized by a quickness to anger or frustration.",
-    sameMeaning: "我慢できないっていう意味だ。(気が短いこと)",
+    sameMeaning: "我慢できないっていう意味だ (気が短いこと)",
     example: "彼は{短気}なので、すぐに怒る。\nHe is short-tempered, so he gets angry easily.",
   },
   {
@@ -994,7 +994,7 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     kana: "ちっとも 〜 ない",
     english: "Not at all・not in the slightest",
     explanation: "Used to express that something does not happen or is not true in any way.",
-    sameMeaning: "少しも〜0%っていう意味だ。全くっていう意味だ。",
+    sameMeaning: "少しも〜0%っていう意味だ・全くっていう意味だ",
     example: "この本は{ちっとも}面白くない。\nThis book is not interesting at all.",
   },
   {
@@ -1017,7 +1017,7 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     kana: "ひじょうに",
     english: "Extremely・very",
     explanation: "Used to express a high degree or intensity of something.",
-    sameMeaning: "とてもっていう意味だ。",
+    sameMeaning: "とてもっていう意味だ・すごくっていう意味だ",
     example: "彼の日本語の能力は{非常に}高い。\nHis Japanese language ability is extremely high.",
   },
   {
@@ -1046,7 +1046,7 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     kana: "おとなしい",
     english: "Quiet・docile",
     explanation: "A personality trait characterized by being calm, reserved, or submissive.\n(Used only for people or animals, not for things or places)",
-    sameMeaning: "静かっていう意味だ。",
+    sameMeaning: "静かっていう意味だ",
     example: "彼女はとても{大人しい}性格です。\nShe has a very quiet personality.",
   },
   {
@@ -1069,7 +1069,7 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     kana: "あやしい",
     english: "Suspicious・dubious",
     explanation: "Something that arouses doubt or mistrust due to its unusual or questionable nature.",
-    sameMeaning: "信じられないっていう意味だ。\n変だっていう意味だ。",
+    sameMeaning: "信じられないっていう意味だ・変だっていう意味だ",
     example: "その男は{怪しい}行動をしていた。\nThe man was acting suspiciously.",
     important: true,
   },
@@ -1078,7 +1078,7 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     kana: "ふれる",
     english: "To touch・to feel",
     explanation: "To make physical contact with something or someone (Gentle touch).",
-    sameMeaning: "触ると同じ意味だが、優しく触るっていう意味だ。",
+    sameMeaning: "触ると同じ意味だが、優しく触るっていう意味だ",
     example: "赤ちゃんの肌に優しく{触れて}あげる。\nGently touch the baby's skin.",
     important: true,
   },
@@ -1087,7 +1087,7 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     kana: "つとめる",
     english: "To strive・to endeavor",
     explanation: "To make a continuous effort to achieve a goal or fulfill a duty.",
-    sameMeaning: "頑張るっていう意味だ。",
+    sameMeaning: "頑張るっていう意味だ",
     example: "彼は会社のために最善を{努めて}いる。\nHe is striving to do his best for the company.",
   },
   {
