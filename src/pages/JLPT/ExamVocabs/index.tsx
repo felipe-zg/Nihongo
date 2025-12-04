@@ -41,7 +41,7 @@ const JLPTExamVocabsPage: React.FC = () => {
 
   let filteredVocabList = useMemo(() => {
     if (startIndex === 0 && endIndex === 0) return vocabList;
-    return vocabList.slice(startIndex, endIndex).filter(item => !isDifficultWords || item.repeat);
+    return vocabList.slice(startIndex, endIndex).filter(item => !isDifficultWords || item.important || item.repeat);
   }, [vocabList, startIndex, endIndex, isDifficultWords]);
 
   useEffect(() => {
