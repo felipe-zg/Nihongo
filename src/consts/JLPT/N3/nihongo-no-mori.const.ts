@@ -485,7 +485,7 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     english: "Basic・fundamental",
     explanation: "Relating to the essential or foundational aspects of something.",
     example: "バスケットボールを始めたばかりなので、{基礎的}な練習をたくさんする。\nSince I just started playing basketball, I do a lot of basic practice.",
-    fromBook: true
+    important: true,
   },
   {
     kanji: "経済的",
@@ -558,7 +558,7 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     english: "Effort・endeavor",
     explanation: "The exertion of physical or mental energy to achieve a goal.",
     example: "彼が毎日{努力}していることをみんな知っています。\nEveryone knows that he is making an effort every day.",
-    fromBook: true
+    important: true,
   },
   {
     kanji: "結局",
@@ -622,7 +622,7 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     english: "Consciousness・awareness",
     explanation: "The state of being aware of and able to think about one's own existence, thoughts, and surroundings.",
     example: "事故の後、彼はしばらく{意識}を失っていた。\nAfter the accident, he lost consciousness for a while.",
-    fromBook: true
+    important: true,
   },
   {
     kanji: "具体",
@@ -695,6 +695,7 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     english: "Designation・to designate",
     explanation: "The act of officially choosing or naming something for a specific purpose.",
     example: "この席は予約者専用に{指定}されています。\nThis seat is designated for reserved customers only.",
+    important: true,
     fromBook: true
   },
   {
@@ -844,7 +845,8 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     english: "Slope・hill",
     explanation: "An inclined surface or area of land that rises or falls.",
     example: "この{坂}を上るのは大変だ。\nClimbing this hill is tough.",
-    fromBook: true
+    fromBook: true,
+    important: true,
   },
   {
     kanji: "仮",
@@ -1148,5 +1150,12 @@ export const NIHONGO_NO_MORI_JLPT_N3: JLPTReview[] = [
     english: "I want to try ~ just once",
     explanation: "Used to express a desire to experience something at least one time.\nSomething is really difficult o do, but if I can do i even only once I'm happy.",
     example: "田中さんは、{一度でいいから行ってみたい}と思う国はある？\nTanaka-san, is there a country you want to try going to even just once?",
+  },
+  {
+    kanji: "後輩",
+    kana: "こうはい",
+    english: "Junior・younger colleague",
+    explanation: "A person who is younger or has less experience in a particular field or organization.",
+    example: "彼は私の大学の{後輩}です。\nHe is my junior from university.",
   }
 ]

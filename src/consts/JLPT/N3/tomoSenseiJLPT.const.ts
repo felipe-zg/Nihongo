@@ -516,7 +516,8 @@ export const TOMO_SENSEI_JLPT_N3: JLPTReview[] = [
     kana: "げんしょう",
     english: "Decrease・reduction",
     explanation: "The act of becoming smaller or less in number or amount.",
-    example: "人口の{減少}が問題となっています。\nThe decrease in population is becoming a problem."
+    example: "人口の{減少}が問題となっています。\nThe decrease in population is becoming a problem.",
+    important: true
   },
   {
     kanji: "積極的",
@@ -612,7 +613,8 @@ export const TOMO_SENSEI_JLPT_N3: JLPTReview[] = [
     kana: "えいよう",
     english: "Nutrition",
     explanation: "The process of providing or obtaining the food necessary for health and growth.",
-    example: "バランスの良い{栄養}を摂ることが大切です。\nIt is important to have a balanced nutrition."
+    example: "バランスの良い{栄養}を摂ることが大切です。\nIt is important to have a balanced nutrition.",
+    important: true,
   },
   {
     kanji: "不満",
@@ -746,7 +748,8 @@ export const TOMO_SENSEI_JLPT_N3: JLPTReview[] = [
     kana: "がまん",
     english: "Patience・endurance・To put up with",
     explanation: "The ability to endure difficult circumstances.",
-    example: "彼は{我慢}強い人です。\nHe is a patient person."
+    example: "彼は{我慢}強い人です。\nHe is a patient person.",
+    important: true
   },
   {
     kanji: "分類",
@@ -775,7 +778,8 @@ export const TOMO_SENSEI_JLPT_N3: JLPTReview[] = [
     kana: "きねん",
     english: "Commemoration・memorial",
     explanation: "The act of remembering and honoring someone or something.",
-    example: "彼の{記念}に花を捧げました。\nI offered flowers in commemoration of him."
+    example: "彼の{記念}に花を捧げました。\nI offered flowers in commemoration of him.",
+    important: true
   },
   {
     kanji: "細かい",
@@ -923,6 +927,7 @@ export const TOMO_SENSEI_JLPT_N3: JLPTReview[] = [
     english: "Rule・regulation",
     explanation: "A set of explicit or understood regulations or principles governing conduct.",
     example: "学校の{規則}を守ってください。\nPlease follow the school rules.",
+    important: true,
     repeat: true,
   },
   {
@@ -1041,6 +1046,7 @@ export const TOMO_SENSEI_JLPT_N3: JLPTReview[] = [
     english: "Resources",
     explanation: "Materials or assets that can be used to produce goods or services.",
     example: "天然{資源}の保護が重要です。\nThe conservation of natural resources is important.",
+    important: true,
     repeat: true,
   },
   {
@@ -1285,6 +1291,7 @@ export const TOMO_SENSEI_JLPT_N3: JLPTReview[] = [
     english: "Trade・commerce",
     explanation: "The activity of buying and selling goods and services between countries.",
     example: "国際{貿易}は経済に重要です。\nInternational trade is important for the economy.",
+    important: true
   },
   {
     kanji: "勇気",
