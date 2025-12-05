@@ -32,6 +32,7 @@ const JLPTExamVocabs: React.FC<Props> = ({
   const [showContent, setShowContent] = useState(true);
   const [listLayout, setListLayout] = useState(false);
   const [isAutoJump, setIsAutoJump] = useState(false);
+  const [showHint, setShowHint] = useState(false);
   const flipCardRef = useRef<FlipCardHandle>(null);
 
 
@@ -80,7 +81,10 @@ const JLPTExamVocabs: React.FC<Props> = ({
     function handleKeyDown(e: KeyboardEvent) {
       if (e.key === "ArrowRight") handleNext();
       if (e.key === "ArrowLeft") handlePrev();
-      if (e.key === "ArrowUp") flipCardRef.current?.unflip();
+      if (e.key === "ArrowUp") {
+        e.preventDefault();
+        flipCardRef.current?.unflip();
+      }
     }
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
@@ -104,13 +108,16 @@ const JLPTExamVocabs: React.FC<Props> = ({
         <FlipCard 
           ref={flipCardRef} 
           CardFrontContent={
-            <Text
-              fontSize={currentCard.kanji.length <= 4 ? "8xl" : "6xl"}
-              fontFamily="Klee One"
-              color={getMainTextColorForCard(currentCard)}
-            >
-              {currentCard.kanji}
-            </Text>
+            <>
+              <Text
+                fontSize={currentCard.kanji.length <= 4 ? "8xl" : "6xl"}
+                fontFamily="Klee One"
+                color={getMainTextColorForCard(currentCard)}
+              >
+                {currentCard.kanji}
+              </Text>
+              {showHint && <ExampleSentence sentence={currentCard.example?.split("\n")[0] || ""} textAlign="center" />}
+            </>
           }
           CardBackContent={
             <>
@@ -134,7 +141,7 @@ const JLPTExamVocabs: React.FC<Props> = ({
       <FloatingControls onNext={handleNext} onPrev={handlePrev} position="top" />
     </>
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  ), [currentCard, vocabList]);
+  ), [currentCard, vocabList, showHint]);
 
   const ListLayout = useMemo(() => (
     (
@@ -255,6 +262,14 @@ const JLPTExamVocabs: React.FC<Props> = ({
               isChecked={listLayout}
             />
             <Text color="green.200">List layout</Text>
+          </HStack>
+          <HStack space={2} ml={{ base: 0, lg: 5 }} alignItems="center">
+            <Switch
+              onValueChange={(val) => setShowHint(val)}
+              colorScheme="blue"
+              isChecked={showHint}
+            />
+            <Text color="blue.200">Hint</Text>
           </HStack>
         </Stack>
       </Stack>
