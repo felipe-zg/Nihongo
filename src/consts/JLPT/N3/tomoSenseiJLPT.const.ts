@@ -318,6 +318,7 @@ export const TOMO_SENSEI_JLPT_N3: JLPTReview[] = [
     explanation: "Happening quickly and unexpectedly.",
     example: "{突然}の雨でびしょ濡れになった。\nI got soaked in the sudden rain.",
     repeat: true,
+    important: true
   },
   {
     kanji: "急に",

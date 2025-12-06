@@ -3,6 +3,7 @@ import { Box, Button, HStack, Text, Select, Switch, Stack, Divider } from "nativ
 import FlipCard, { FlipCardHandle } from "../../../components/FlipCard/FlipCard";
 import { ExampleSentence } from "../../../utils/textDecoration";
 import { FloatingControls } from "../../../components";
+import { saveCard, removeCard, getSavedCards } from "../../../utils/storage/JLPT/jlpt-cards";
 
 type Props = {
   vocabList: JLPTReview[];
@@ -33,10 +34,11 @@ const JLPTExamVocabs: React.FC<Props> = ({
   const [listLayout, setListLayout] = useState(false);
   const [isAutoJump, setIsAutoJump] = useState(false);
   const [showHint, setShowHint] = useState(false);
+  const [useSavedCards, setUseSavedCards] = useState(false);
   const flipCardRef = useRef<FlipCardHandle>(null);
 
-
-  const currentCard = vocabList[currentIndex];
+  const activeList = useSavedCards ? getSavedCards() : vocabList;
+  const currentCard = activeList[currentIndex];
 
   function getMainTextColorForCard(card: JLPTReview) {
     if (card.important) return "orange.500";
@@ -63,9 +65,9 @@ const JLPTExamVocabs: React.FC<Props> = ({
     }
 
     setTimeout(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % vocabList.length);
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % activeList.length);
     }, 200);
-  }, [flipCardRef, vocabList.length]);
+  }, [flipCardRef, activeList.length]);
 
   const handlePrev = useCallback(() => {
     if (flipCardRef.current?.isFlipped()) {
@@ -73,9 +75,9 @@ const JLPTExamVocabs: React.FC<Props> = ({
     }
 
     setTimeout(() => {
-      setCurrentIndex((prevIndex) => (prevIndex - 1 + vocabList.length) % vocabList.length);
+      setCurrentIndex((prevIndex) => (prevIndex - 1 + activeList.length) % activeList.length);
     }, 200);
-  }, [flipCardRef, vocabList.length]);
+  }, [flipCardRef, activeList.length]);
 
   useEffect(() => {
     function handleKeyDown(e: KeyboardEvent) {
@@ -103,7 +105,7 @@ const JLPTExamVocabs: React.FC<Props> = ({
 
   const CardsUI = useMemo(() => (
     <>
-      <Text color="pink.500">{`${currentIndex + 1}/${vocabList.length}`}</Text>
+      <Text color="pink.500">{`${currentIndex + 1}/${activeList.length}`}</Text>
       {vocabList.length > 0 && !isChallengeMode && (
         <FlipCard 
           ref={flipCardRef} 
@@ -136,6 +138,14 @@ const JLPTExamVocabs: React.FC<Props> = ({
       <HStack mt={12} paddingX={8} space={4} width={"100%"}>
         <Button onPress={handleNext} width={"100%"}>
             Next
+        </Button>
+      </HStack>
+      <HStack mt={20} paddingX={8} space={4} width={"100%"}>
+        <Button onPress={() => removeCard(currentCard)} colorScheme="red" flex={1}>
+          Remove
+        </Button>
+        <Button onPress={() => saveCard(currentCard)} colorScheme="green" flex={1}>
+          Add
         </Button>
       </HStack>
       <FloatingControls onNext={handleNext} onPrev={handlePrev} position="top" />
@@ -270,6 +280,14 @@ const JLPTExamVocabs: React.FC<Props> = ({
               isChecked={showHint}
             />
             <Text color="blue.200">Hint</Text>
+          </HStack>
+          <HStack space={2} ml={{ base: 0, lg: 5 }} alignItems="center">
+            <Switch
+              onValueChange={(val) => setUseSavedCards(val)}
+              colorScheme="yellow"
+              isChecked={useSavedCards}
+            />
+            <Text color="yellow.300">Saved Cards</Text>
           </HStack>
         </Stack>
       </Stack>
