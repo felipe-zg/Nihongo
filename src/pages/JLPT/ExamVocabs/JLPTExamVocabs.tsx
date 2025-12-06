@@ -140,14 +140,14 @@ const JLPTExamVocabs: React.FC<Props> = ({
             Next
         </Button>
       </HStack>
-      <HStack mt={20} paddingX={8} space={4} width={"100%"}>
-        <Button onPress={() => removeCard(currentCard)} colorScheme="red" flex={1}>
-          Remove
-        </Button>
-        <Button onPress={() => saveCard(currentCard)} colorScheme="green" flex={1}>
-          Add
-        </Button>
-      </HStack>
+      <Button
+        onPress={() => useSavedCards ? removeCard(currentCard) : saveCard(currentCard)}
+        colorScheme={useSavedCards ? "red" : "green"}
+        width="90%"
+        m={12}
+      >
+        {useSavedCards ? "Remove" : "Save"}
+      </Button>
       <FloatingControls onNext={handleNext} onPrev={handlePrev} position="top" />
     </>
   // eslint-disable-next-line react-hooks/exhaustive-deps
