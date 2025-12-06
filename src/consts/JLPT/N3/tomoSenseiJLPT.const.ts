@@ -1323,11 +1323,4 @@ export const TOMO_SENSEI_JLPT_N3: JLPTReview[] = [
     example: "会社は経費の{縮小}を計画しています。\nThe company is planning to reduce expenses.",
     important: true
   },
-  {
-    kanji: "暗記",
-    kana: "あんき",
-    english: "Memorization",
-    explanation: "The process of committing something to memory.",
-    example: "単語を{暗記}するのは大変です。\nMemorizing vocabulary is difficult."
-  },
 ];
