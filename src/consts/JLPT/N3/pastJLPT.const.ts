@@ -240,7 +240,8 @@ export const PAST_JLPT_N3: JLPTReview[] = [
     kana: "くりかえす",
     english: "To repeat・to do something over again",
     explanation: "To do something multiple times or to go over something again.",
-    example: "相手の言葉がわからなかったら、{繰り返して}もらうといいですよ。\nIf you don't understand what the other person is saying, it's good to ask them to repeat it."
+    example: "相手の言葉がわからなかったら、{繰り返して}もらうといいですよ。\nIf you don't understand what the other person is saying, it's good to ask them to repeat it.",
+    important: true
   },
   {
     kanji: "つながる",
@@ -279,13 +280,6 @@ export const PAST_JLPT_N3: JLPTReview[] = [
     english: "To hit・to be correct",
     explanation: "To strike or make contact with something・to be accurate or correct.",
     example: "私の子想が{当たって}、サッカーの試合でK高校はS高校に勝った。\nMy prediction was correct・K High School won against S High School in the soccer match."
-  },
-  {
-    kanji: "影響",
-    kana: "えいきょう",
-    english: "Influence・effect",
-    explanation: "The impact or effect that something has on someone or something else.",
-    example: "今朝の大雨が{影響}し、バスの到着時刻が少し遅れているようだ。\nThe heavy rain this morning seems to have affected the bus arrival time, causing a slight delay."
   },
   {
     kanji: "押さえる",
@@ -461,20 +455,6 @@ export const PAST_JLPT_N3: JLPTReview[] = [
     example: "重要な部分に{下線}を引いてください。\nPlease underline the important parts."
   },
   {
-    kanji: "応募",
-    kana: "おうぼ",
-    english: "Application・entry",
-    explanation: "The act of applying for something, such as a job or scholarship.",
-    example: "大学の奨学金に{応募}した。\nI applied for a university scholarship."
-  },
-  {
-    kanji: "底",
-    kana: "そこ",
-    english: "Bottom・base",
-    explanation: "The lowest part or point of something.",
-    example: "この入れ物は、{底}に小さい穴があいている。\nThere is a small hole at the bottom of this container."
-  },
-  {
     kanji: "沈む",
     kana: "しずむ",
     english: "To sink・to submerge",
@@ -510,13 +490,6 @@ export const PAST_JLPT_N3: JLPTReview[] = [
     sameMeaning: "明るいっていう意味",
     example: "太陽が{眩しくて}、前がよく見えない。\nThe sun is so dazzling that I can't see well ahead.",
     important: true
-  },
-  {
-    kanji: "引き受ける",
-    kana: "ひきうける",
-    english: "To undertake・to take on",
-    explanation: "To accept responsibility for a task or duty. Used when someone agrees to take on a job, task, request, duty, etc.",
-    example: "中山さんに結婚式のスピーチを頼んだら、喜んで{引き受けて}くれた。\nWhen I asked Mr. Nakayama to give a speech at the wedding, he happily accepted."
   },
   {
     kanji: "枯れる",
@@ -619,15 +592,6 @@ export const PAST_JLPT_N3: JLPTReview[] = [
     explanation: "The state of being suitable or convenient for someone.",
     example: "来週の会議の{都合}を教えてください。\nPlease let me know your availability for next week's meeting.",
     important: true,
-  },
-  {
-    kanji: "繰り返す",
-    kana: "くりかえす",
-    english: "To repeat・to do something over again",
-    explanation: "To do something multiple times or to go over something again.",
-    example: "相手の言葉がわからなかったら、{繰り返して}もらうといいですよ。\nIf you don't understand what the other person is saying, it's good to ask them to repeat it.",
-    fromBook: true,
-    important: true
   },
   {
     kanji: "繋がる",
