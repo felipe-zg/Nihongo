@@ -244,13 +244,6 @@ export const PAST_JLPT_N3: JLPTReview[] = [
     important: true
   },
   {
-    kanji: "つながる",
-    kana: "つながる",
-    english: "To be connected・to be linked",
-    explanation: "To have a connection or relationship with something or someone. Be linked (physically or abstractly)",
-    example: "家族と離れていても、心が{つながっている}と思えれば大丈夫です。\nEven if you are apart from your family, it's okay as long as you feel that your hearts are connected."
-  },
-  {
     kanji: "いくつか",
     kana: "いくつか",
     english: "Several・a few",
@@ -735,13 +728,6 @@ export const PAST_JLPT_N3: JLPTReview[] = [
     example: "少し{休席}してもよろしいですか。\nMay I take a short break from my seat?",
   },
   {
-    kanji: "短かい",
-    kana: "みじかい",
-    english: "Short・brief",
-    explanation: "Having a small length or duration.",
-    example: "彼の髪はとても{短かい}。\nHis hair is very short.",
-  },
-  {
     kanji: "老い",
     kana: "おい",
     english: "Old age・aging",
@@ -889,11 +875,4 @@ export const PAST_JLPT_N3: JLPTReview[] = [
     explanation: "To speak loudly and forcefully, often out of anger.",
     example: "そんなに{怒鳴らなくて}も、ちゃんと聞こえるよ",
   },
-  {
-    kanji: "指定",
-    kana: "してい",
-    english: "Designation・specification",
-    explanation: "The act of officially choosing or naming something for a particular purpose.",
-    example: "この席は予約{指定}席です。\nThis seat is a reserved seat.",
-  }
 ];

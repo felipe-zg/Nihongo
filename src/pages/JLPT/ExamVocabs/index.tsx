@@ -1,9 +1,9 @@
 import React, { useMemo, useState, useEffect } from "react";
-import { NIHONGO_NO_MORI_JLPT_N3, PAST_JLPT_N3, TOMO_SENSEI_JLPT_N3 } from "../../../consts";
+import { JLPT_N3_REVIEW, NIHONGO_NO_MORI_JLPT_N3, PAST_JLPT_N3, TOMO_SENSEI_JLPT_N3 } from "../../../consts";
 import JLPTExamVocabs from "./JLPTExamVocabs";
 import { useSearchParams } from "react-router-dom";
 
-type VocabsSource = "TOMO_SENSEI" | "NIHONGO_NO_MORI" | "PAST_EXAMS";
+type VocabsSource = "TOMO_SENSEI" | "NIHONGO_NO_MORI" | "PAST_EXAMS" | "REVIEW";
 
 const JLPTExamVocabsPage: React.FC = () => {
   const [searchParams] = useSearchParams();
@@ -34,6 +34,8 @@ const JLPTExamVocabsPage: React.FC = () => {
         return PAST_JLPT_N3;
       case "TOMO_SENSEI":
         return TOMO_SENSEI_JLPT_N3;
+      case "REVIEW":
+        return JLPT_N3_REVIEW;
       default:
         return [...NIHONGO_NO_MORI_JLPT_N3, ...PAST_JLPT_N3, ...TOMO_SENSEI_JLPT_N3];
     }

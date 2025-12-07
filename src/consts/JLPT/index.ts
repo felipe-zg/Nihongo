@@ -3,6 +3,7 @@ export * from "./N3/vocabs.const";
 export * from "./N3/nihongo-no-mori.const";
 export * from "./N3/pastJLPT.const";
 export * from "./N3/tomoSenseiJLPT.const";
+export * from "./N3/review.const";
 export * from "./N3/exercises/grammar.const";
 export * from "./N3/exercises/moji.const";
 export * from "./N3/exercises/goi.const";
