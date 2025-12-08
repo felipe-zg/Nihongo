@@ -1,49 +1,76 @@
 import React, { useEffect } from "react";
-import M2_KANJI from "../../../consts/kanji/M2";
 import KanjiM2 from "./KanjiM2";
+import { KanjiService } from "../../../api/firebase/firestore/kanji/m2/kanjiService.api";
 
 const KanjiM2Page: React.FC = () => {
-  const [wordsList, setWordsList] = React.useState<Record<number, TKanjiM2>>(M2_KANJI);
-  const [availableIndexes] = React.useState<number[]>(() => {
-    return Object.keys(M2_KANJI).map(key => Number(key)).sort((a, b) => a - b);
-  });
-  const [selectedStartIndex, setSelectedStartIndex] = React.useState<number>(availableIndexes[0]);
-  const [selectedEndIndex, setSelectedEndIndex] = React.useState<number>(availableIndexes[availableIndexes.length - 1]);
+  const [wordsList, setWordsList] = React.useState<Record<number, TKanjiM2>>({});
+  const [availableIndexes, setAvailableIndexes] = React.useState<number[]>([]);
 
-  function handleStartIndexChange(index: number) {
-    setSelectedStartIndex(index);
-  }
+  const [selectedStartIndex, setSelectedStartIndex] = React.useState<number>(0);
+  const [selectedEndIndex, setSelectedEndIndex] = React.useState<number>(0);
 
-  function handleEndIndexChange(index: number) {
-    setSelectedEndIndex(index);
-  }
+  const [loading, setLoading] = React.useState<boolean>(true);
 
+  // Load data from Firestore
   useEffect(() => {
-    // if nothing selected, return all words
-    if (selectedStartIndex === availableIndexes[0] && selectedEndIndex === availableIndexes[availableIndexes.length - 1]) {
-      setWordsList(M2_KANJI);
-    } else {
-      const filteredWords = Object.values(M2_KANJI).filter(word => {
-        return word.id >= selectedStartIndex && word.id <= selectedEndIndex;
-      });
-      const newWordsList: Record<number, TKanjiM2> = {};
-      filteredWords.forEach(word => {
-        newWordsList[word.id] = word;
-      });
-      setWordsList(newWordsList);
+    async function loadData() {
+      setLoading(true);
+
+      const data = await KanjiService.getAllKanji(); // THIS RETURNS Record<number, TKanjiM2>
+
+      setWordsList(data);
+
+      // Same logic you used originally
+      const indexes = Object.keys(data)
+        .map(k => Number(k))
+        .sort((a, b) => a - b);
+
+      setAvailableIndexes(indexes);
+      setSelectedStartIndex(indexes[0]);
+      setSelectedEndIndex(indexes[indexes.length - 1]);
+
+      setLoading(false);
     }
-  }, [selectedStartIndex, selectedEndIndex, availableIndexes]);
+
+    loadData();
+  }, []);
+
+  // Filter words based on selected range
+  useEffect(() => {
+    if (availableIndexes.length === 0) return;
+
+    const min = availableIndexes[0];
+    const max = availableIndexes[availableIndexes.length - 1];
+
+    // If full range, use entire list
+    if (selectedStartIndex === min && selectedEndIndex === max) {
+      return; // wordsList already has everything
+    }
+
+    // Filter Record => Record
+    const newRecord: Record<number, TKanjiM2> = {};
+    Object.values(wordsList).forEach(item => {
+      if (item.id >= selectedStartIndex && item.id <= selectedEndIndex) {
+        newRecord[item.id] = item;
+      }
+    });
+
+    setWordsList(newRecord);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [selectedStartIndex, selectedEndIndex]);
+
+  if (loading) return <div>Loading...</div>;
 
   return (
     <KanjiM2
       wordsList={wordsList}
       selectedStartIndex={selectedStartIndex}
-      onStartIndexChange={handleStartIndexChange}
+      onStartIndexChange={setSelectedStartIndex}
       selectedEndIndex={selectedEndIndex}
-      onEndIndexChange={handleEndIndexChange}
+      onEndIndexChange={setSelectedEndIndex}
       availableIndexes={availableIndexes}
     />
-  )
+  );
 };
 
 export default KanjiM2Page;
