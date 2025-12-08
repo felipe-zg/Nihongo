@@ -67,7 +67,7 @@ const MiniStory: React.FC<MiniStoryProps> = ({
       return `<span style="color: ${color};">${mainContent}</span>`;
     }
     ).join('');
-    const fontSize = isLargeLetter ? '2rem' : '1.3rem';
+    const fontSize = isLargeLetter ? '2.5rem' : '1.3rem';
     return (
       <HStack>
         {rubypart.character !== "" && (
