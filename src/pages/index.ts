@@ -23,3 +23,4 @@ export { default as KanjiM2Cards } from "./M2/KanjiM2Cards";
 export { default as RealJapaneseAudioPlayer } from "./AudioPlayers/RealJapanese";
 export { default as Nihongo500Mondai } from "./Nihongo500/Mondai";
 export { default as JLPTExamVocabs } from "./JLPT/ExamVocabs";
+export { default as KanjiCreateForm } from "./M2/KanjiCreateForm/KanjiCreateForm";
