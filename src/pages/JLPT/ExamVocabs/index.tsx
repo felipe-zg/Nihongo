@@ -1,9 +1,10 @@
 import React, { useMemo, useState, useEffect } from "react";
-import { JLPT_N3_REVIEW, NIHONGO_NO_MORI_JLPT_N3, PAST_JLPT_N3, TOMO_SENSEI_JLPT_N3 } from "../../../consts";
+import { JLPT_N3_REVIEW, NIHONGO_NO_MORI_JLPT_N2, NIHONGO_NO_MORI_JLPT_N3, PAST_JLPT_N3, TOMO_SENSEI_JLPT_N3 } from "../../../consts";
 import JLPTExamVocabs from "./JLPTExamVocabs";
 import { useSearchParams } from "react-router-dom";
 
 type VocabsSource = "TOMO_SENSEI" | "NIHONGO_NO_MORI" | "PAST_EXAMS" | "REVIEW";
+type VocabsLevel = "N3" | "N2";
 
 const JLPTExamVocabsPage: React.FC = () => {
   const [searchParams] = useSearchParams();
@@ -11,6 +12,7 @@ const JLPTExamVocabsPage: React.FC = () => {
   const [endIndex, setEndIndex] = useState(0);
   const [isDifficultWords, setIsDifficultWords] = useState(false);
   const lessonsParam: VocabsSource = (searchParams.get("source") as VocabsSource);
+  const levelParam: VocabsLevel = (searchParams.get("level") as VocabsLevel) || "N3";
 
   const handleStartIndexChange = (value: number) => {
     if (endIndex <= value) {
@@ -29,7 +31,7 @@ const JLPTExamVocabsPage: React.FC = () => {
   const vocabList: JLPTReview[] = useMemo(() => {
     switch (lessonsParam) {
       case "NIHONGO_NO_MORI":
-        return NIHONGO_NO_MORI_JLPT_N3;
+        return levelParam === "N3" ? NIHONGO_NO_MORI_JLPT_N3 : NIHONGO_NO_MORI_JLPT_N2;
       case "PAST_EXAMS":
         return PAST_JLPT_N3;
       case "TOMO_SENSEI":
@@ -39,7 +41,7 @@ const JLPTExamVocabsPage: React.FC = () => {
       default:
         return [...NIHONGO_NO_MORI_JLPT_N3, ...PAST_JLPT_N3, ...TOMO_SENSEI_JLPT_N3];
     }
-  }, [lessonsParam]);
+  }, [lessonsParam, levelParam]);
 
   let filteredVocabList = useMemo(() => {
     if (startIndex === 0 && endIndex === 0) return vocabList;
