@@ -10,3 +10,4 @@ export * from "./N3/exercises/goi.const";
 export * from "./N2/vocabs.const";
 export * from "./N2/exercises/grammar.const";
 export * from "./N2/exercises/moji.const";
+export * from "./N2/nihongo-no-mori.const";
