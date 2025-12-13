@@ -426,7 +426,7 @@ export const NIHONGO_NO_MORI_GRAMMAR: GrammarEntry[] = [
       ],
       pattern: ["ほど", "であるほど"],
       combinedForms: [
-        { first: "ナ形容詞・名詞", pattern: "〜であればあるほど"},
+        { first: "ナ形容詞・名詞", pattern: ["〜であればあるほど"]},
       ],
     },
     examples: [
@@ -543,7 +543,7 @@ export const NIHONGO_NO_MORI_GRAMMAR: GrammarEntry[] = [
       form: [{name: "名詞"}],
       pattern: ["として"],
       combinedForms: [
-        { first: "名詞1", pattern: "としての", second: "名詞2" },
+        { first: "名詞1", pattern: ["としての"], second: "名詞2" },
       ],
     },
     examples: [
@@ -578,7 +578,7 @@ export const NIHONGO_NO_MORI_GRAMMAR: GrammarEntry[] = [
       form: [{name: "名詞"}],
       pattern: ["にとって"],
       combinedForms: [
-        { first: "名詞1", pattern: "にとっての", second: "名詞2" },
+        { first: "名詞1", pattern: ["にとっての"], second: "名詞2" },
       ],
     },
     examples: [
@@ -618,8 +618,7 @@ export const NIHONGO_NO_MORI_GRAMMAR: GrammarEntry[] = [
       form: [{name: "名詞"}],
       pattern: ["に基づいて"],
       combinedForms: [
-        { first: "名詞1", pattern: "に基づく", second: "名詞2" },
-        { first: "名詞1", pattern: "に基づいた", second: "名詞2" },
+        { first: "名詞1", pattern: ["に基づく", "に基づいた"], second: "名詞2" },
       ],
     },
     examples: [
@@ -718,7 +717,7 @@ export const NIHONGO_NO_MORI_GRAMMAR: GrammarEntry[] = [
     imi: "〜という名前の",
     explanation: "知らないことを説明したり、教えてもらったりするときに使う。",
     usage: {
-      combinedForms: [{ first: "名詞1", pattern: "という。っていう・って", second: "名詞2" }],
+      combinedForms: [{ first: "名詞1", pattern: ["という", "っていう", "って"], second: "名詞2" }],
     },
     examples: [
       {
@@ -760,7 +759,7 @@ export const NIHONGO_NO_MORI_GRAMMAR: GrammarEntry[] = [
     usage: {
       form: [{name: "名詞"}],
       pattern: ["に対して"],
-      combinedForms: [{ first: "名詞1", pattern: "に対する", second: "名詞2" }],
+      combinedForms: [{ first: "名詞1", pattern: ["に対する"], second: "名詞2" }],
     },
     examples: [
       {
@@ -823,7 +822,7 @@ export const NIHONGO_NO_MORI_GRAMMAR: GrammarEntry[] = [
       form: [{name: "名詞"}],
       pattern: ["に関して"],
       combinedForms: [
-        { first: "名詞1", pattern: "に関する・に関しての", second: "名詞2" },
+        { first: "名詞1", pattern: ["に関する", "に関しての"], second: "名詞2" },
       ]
     },
     examples: [
@@ -893,7 +892,7 @@ export const NIHONGO_NO_MORI_GRAMMAR: GrammarEntry[] = [
       form: [{name: "V. ます STEM"}, {name: "イ形容詞"}, {name: "ナ形容詞"}, {name: "名詞"}],
       pattern: ["ながら（も）"],
       combinedForms: [
-        { first: "ナ形容詞・名詞", pattern: "でありながら（も）"},
+        { first: "ナ形容詞・名詞", pattern: ["でありながら（も）"]},
       ]
     },
     examples: [
@@ -1270,7 +1269,7 @@ export const NIHONGO_NO_MORI_GRAMMAR: GrammarEntry[] = [
     usage: {
       form: [{name: "普通形"}, {name: "ナ形容詞", connector: "な"}, {name: "名詞", connector: "の"}],
       pattern: ["はず"],
-      combinedForms: [{ first: "(名詞・ナ形容詞) である", pattern: "はず" }],
+      combinedForms: [{ first: "(名詞・ナ形容詞) である", pattern: ["はず"] }],
     },
     examples: [
       {
@@ -1509,7 +1508,7 @@ export const NIHONGO_NO_MORI_GRAMMAR: GrammarEntry[] = [
     usage: {
       form: [{name: "普通形"}],
       pattern: ["〜に違いない"],
-      combinedForms: [{ first: "(名詞・ナ形容詞) である", pattern: "に違いない" }],
+      combinedForms: [{ first: "(名詞・ナ形容詞) である", pattern: ["に違いない"] }],
     },
     examples: [
       {
@@ -1768,7 +1767,7 @@ export const NIHONGO_NO_MORI_GRAMMAR: GrammarEntry[] = [
       form: [{name: "普通形"}, {name: "形容詞"}, {name: "名詞"}],
       pattern: ["みたい"],
       combinedForms: [
-        { first: "名詞 ＋ まるで", pattern: "みたい"},
+        { first: "名詞 ＋ まるで", pattern: ["みたい"]},
       ]
     },
     examples: [
@@ -1910,7 +1909,7 @@ export const NIHONGO_NO_MORI_GRAMMAR: GrammarEntry[] = [
     usage: {
       form: [{name: "V. る"}, {name: "名詞"}],
       pattern: ["に先立って", "に先立ち"],
-      combinedForms: [{ first: "名詞 1", pattern: " に先立つ", second: "名詞 2"}],
+      combinedForms: [{ first: "名詞 1", pattern: ["に先立つ"], second: "名詞 2"}],
     },
     examples: [
       {

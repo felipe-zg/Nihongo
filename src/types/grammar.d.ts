@@ -13,7 +13,7 @@ declare type GrammarEntry = {
     form?: { name: string; connector?: string }[];
     pattern?: string[];
     secondsForm?: { name: string; connector?: string }[];
-    combinedForms?: { first: string; pattern: string; second?: string }[]
+    combinedForms?: { first: string; pattern: string[]; second?: string }[]
   };
   examples: {
     sentence: string;
