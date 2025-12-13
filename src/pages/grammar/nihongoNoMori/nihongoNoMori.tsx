@@ -100,6 +100,38 @@ const NihongoNoMoriGrammar: React.FC<Props> = ({ grammarList }) => {
     setShowContent(false);
   }, [filteredList.length, categoryFilter]);
 
+  const ExamplePhrase: React.FC<{ example: string }> = ({ example }) => {
+    // Split text into normal + highlighted parts
+    const parts = example.split(/(\{.*?\})/g);
+
+    return (
+      <Text
+        fontFamily="Klee One"
+        bold
+        textAlign="center"
+        color="white"
+      >
+        {parts.map((part, index) => {
+          // Text inside {}
+          if (part.startsWith("{") && part.endsWith("}")) {
+            return (
+              <Text key={index} color="pink.500">
+                {part.slice(1, -1)}
+              </Text>
+            );
+          }
+
+          // Normal text
+          return (
+            <Text key={index} color="white">
+              {part}
+            </Text>
+          );
+        })}
+      </Text>
+    );
+  };
+
   return (
     <Box alignItems="center" mt={10} minHeight={"90vh"}>
       <Stack
@@ -158,7 +190,7 @@ const NihongoNoMoriGrammar: React.FC<Props> = ({ grammarList }) => {
                     </Box>
                     <Box>
                       {currentItem.usage.pattern?.map((pattern, index) => (
-                        <Text key={index} color={currentItem.usage?.secondsForm ? "white" : "primary.500"} bold={!!!currentItem.usage?.secondsForm}>{pattern}</Text>
+                        <Text key={index} color={currentItem.usage?.secondsForm ? "white" : "primary.500"}>{pattern}</Text>
                       ))}
                     </Box>
                     {currentItem.usage.secondsForm && (
@@ -167,7 +199,7 @@ const NihongoNoMoriGrammar: React.FC<Props> = ({ grammarList }) => {
                         <Box>
                           {currentItem.usage.secondsForm?.map((form, index) => (
                             <HStack key={index} space={10} alignItems={"center"} justifyContent={"space-between"}>
-                              <Text color={"primary.500"} bold>{form.name}</Text>
+                              <Text color={"primary.500"}>{form.name}</Text>
                               {form.connector && <Text>
                                 <Text mr={5} color={"white"} fontSize={"xl"}> + </Text>
                                 <Text color={"primary.500"}>{form.connector}</Text>  
@@ -186,7 +218,11 @@ const NihongoNoMoriGrammar: React.FC<Props> = ({ grammarList }) => {
                     <HStack key={index} space={5} alignItems="center">
                       <Text key={index} color={"white"}>{form.first}</Text>
                       <Text color={"white"} fontSize={"xl"}> + </Text>
-                      <Text key={index} color={"primary.500"} bold>{form.pattern}</Text>
+                      <Box>
+                        {form.pattern.map((pattern, pIndex) => (
+                          <Text key={pIndex} color={"primary.500"}>{pattern}</Text>
+                        ))}
+                      </Box>
                       {form.second && <>
                         <Text color={"white"} fontSize={"xl"}> + </Text>
                         <Text key={index} color={"white"}>{form.second}</Text>
@@ -200,7 +236,7 @@ const NihongoNoMoriGrammar: React.FC<Props> = ({ grammarList }) => {
             <ContentBox>
               {currentItem.examples.map((example, index) => (
                 <Box key={index} mb={4} alignItems="center">
-                  <Text fontFamily="Klee One" bold textAlign={"center"} color={"white"}>{example.sentence}</Text>
+                  <ExamplePhrase example={example.sentence} />
                   {example.meaning && <Text italic textAlign={"center"} color={"primary.400"} fontSize={"xs"}>{example.meaning}</Text>}
                   {example.point && <Text italic textAlign={"center"} color={"pink.400"} fontSize={"xs"}>{example.point}</Text>}
                   <Divider my={2} bg="gray.500" thickness={0.5}/>
