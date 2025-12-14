@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo } from "react";
 import { Box, Button, Divider, HStack, Input, Select, Stack, Text } from "native-base";
 import { FloatingControls } from "../../../components";
-import { GrammarCategory, GrammarEntryCategory } from "../../../consts";
+import { GrammarCategory, GrammarEntryCategory } from "../../../enums";
 
 type Props = {
   grammarList: GrammarEntry[];
@@ -101,8 +101,8 @@ const NihongoNoMoriGrammar: React.FC<Props> = ({ grammarList }) => {
   }, [filteredList.length, categoryFilter]);
 
   const ExamplePhrase: React.FC<{ example: string }> = ({ example }) => {
-    // Split text into normal + highlighted parts
-    const parts = example.split(/(\{.*?\})/g);
+    // Split by { } or [ ]
+    const parts = example.split(/(\{.*?\}|\[.*?\])/g);
 
     return (
       <Text
@@ -112,7 +112,7 @@ const NihongoNoMoriGrammar: React.FC<Props> = ({ grammarList }) => {
         color="white"
       >
         {parts.map((part, index) => {
-          // Text inside {}
+          // { ... } → pink
           if (part.startsWith("{") && part.endsWith("}")) {
             return (
               <Text key={index} color="pink.500">
@@ -121,7 +121,16 @@ const NihongoNoMoriGrammar: React.FC<Props> = ({ grammarList }) => {
             );
           }
 
-          // Normal text
+          // [ ... ] → yellow
+          if (part.startsWith("[") && part.endsWith("]")) {
+            return (
+              <Text key={index} color="yellow.500">
+                {part.slice(1, -1)}
+              </Text>
+            );
+          }
+
+          // default text
           return (
             <Text key={index} color="white">
               {part}

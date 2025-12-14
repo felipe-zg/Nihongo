@@ -1,0 +1,36 @@
+export const GrammarEntryCategory = {
+  MONO: 'もの',
+  KOTO: 'こと',
+  REASON_CAUSE: '理由・原因',
+  SITUATION_CHANGE: '状況・変化',
+  POSITIONS_STANDARDS: '立場・基準',
+  ADVERSATIVE_NEGATIVE: '逆接・否定',
+  IMAGINATION_PREDICTION: '想像・予想',
+  DEGREE_ENPHASIS_COMPARISON: '程度・強調・比較',
+  POINT_IN_TIME: '時・間',
+  ASSUMPTIONS_CONDITIONS: '仮定・条件',
+  PURPOSE_METHOD_OPERATION: '目的・方法・動作',
+  RULES_ADVICE: 'ルール・アドバイス',
+  PARALLEL: '並列',
+  OTHER: 'その他',
+  KEIGO: '敬語',
+} as const;
+
+export type GrammarCategory = typeof GrammarEntryCategory[keyof typeof GrammarEntryCategory];
+
+
+// export const GrammarEntryCategory = {
+//   REASON_CAUSE: '理由・原因',
+//   SITUATION_CHANGE: '状況・変化',
+//   POSITIONS_STANDARDS: '立場・基準',
+//   ADVERSATIVE_NEGATIVE: '逆接・否定',
+//   IMAGINATION_PREDICTION: '想像・予想',
+//   DEGREE_ENPHASIS_COMPARISON: '程度・強調・比較',
+//   POINT_IN_TIME: '時・間',
+//   ASSUMPTIONS_CONDITIONS: '仮定・条件',
+//   PURPOSE_METHOD_OPERATION: '目的・方法・動作',
+//   RULES_ADVICE: 'ルール・アドバイス',
+//   PARALLEL: '並列',
+//   OTHER: 'その他',
+//   KEIGO: '敬語',
+// } as const;
