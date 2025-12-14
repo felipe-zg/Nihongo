@@ -8,7 +8,8 @@ const MotionButton = motion(Button);
 const routes = [
   { name: 'ミニストーリー', path: '/ministory' },
   { name: '文字・語彙', path: '/moji-goi-deck' },
-  { name: '日本語の森・文法', path: '/grammar/nihongo-no-mori' },
+  { name: '日本語の森・文法・N3', path: '/grammar/nihongo-no-mori?level=N3' },
+  { name: '日本語の森・文法・N2', path: '/grammar/nihongo-no-mori?level=N2' },
   { name: '漢字 M2', path: '/kanji-m2' },
   { name: '日本語の森復習N3', path: '/JLPT/ExamVocabs?source=NIHONGO_NO_MORI&level=N3' },
   { name: '日本語の森復習N2', path: '/JLPT/ExamVocabs?source=NIHONGO_NO_MORI&level=N2' },
