@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { DaysOfTheMonth, Deck, GrammarJLPTN2, JLPTExamVocabs, JLPTExercisesPrint, JLPTVocabsPrint, Kanji, KanjiCreateForm, KanjiM2, KanjiM2Cards, KanjiPractice, KanjiPrint, Levels, MiniStory, MiniStoryAudioPlayer, MiniStoryCards, MojiGoiDeck, Nihongo500Mondai, Nihongo500N3, NihongoNoMoriGrammar, Periods, RealJapaneseAudioPlayer, Verbs, VocabsJLPT, Words, WordsYDCQuizz } from './pages';
+import { DaysOfTheMonth, Deck, GrammarJLPTN2, JLPTExamVocabs, JLPTExercisesPrint, JLPTVocabsPrint, Kanji, KanjiCreateForm, KanjiM2, KanjiM2Cards, KanjiPractice, KanjiPrint, Levels, MiniStory, MiniStoryAudioPlayer, MiniStoryCards, MojiGoiDeck, Nihongo500Mondai, Nihongo500N3, NihongoNoMoriGrammar, Periods, RealJapanese, RealJapaneseAudioPlayer, Verbs, VocabsJLPT, Words, WordsYDCQuizz } from './pages';
 import { Box, HStack, NativeBaseProvider } from "native-base";
 import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom';
 import { MusicNavbar, Navbar } from './components';
@@ -56,6 +56,7 @@ function AppContent() {
           <Route path="/audio/real-japanese" element={<RealJapaneseAudioPlayer />} />
           <Route path="/JLPT/Nihongo500Mondai" element={<Nihongo500Mondai />} />
           <Route path="/JLPT/ExamVocabs" element={<JLPTExamVocabs />} />
+          <Route path="/real-japanese" element={<RealJapanese />} />
           {/* Private routes */}
           <Route path="/kanji-create" element={<KanjiCreateForm />} />
         </Routes> 

@@ -45,6 +45,7 @@ export const routes: RouteItem[] = [
       { name: 'JLPT Vocabs N2', path: '/JLPT/vocabs?level=N2' },
     ],
   },
+  { name: 'Real Japanese', path: '/real-japanese' },
   { name: '文字・語彙', path: '/moji-goi-deck' },
   { name: 'Levels', path: '/' },
   { name: 'Periods', path: '/periods' },
