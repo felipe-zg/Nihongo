@@ -1,7 +1,7 @@
 import { Button, HStack } from 'native-base';
 import React, { useEffect, useRef, useState } from 'react';
 
-const AudioPlayer = ({ level, fileName }: { level: 'N2' | 'N3'; fileName: string }) => {
+const AudioPlayer = ({ level, fileName, path }: { level?: 'N2' | 'N3'; fileName?: string; path?: string }) => {
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const [isPaused, setIsPaused] = useState(true);
 
@@ -46,7 +46,8 @@ const AudioPlayer = ({ level, fileName }: { level: 'N2' | 'N3'; fileName: string
 
   return (
     <HStack>
-      <audio ref={audioRef} src={`/audio/ministory/${level}/${fileName}`} />
+      <audio 
+        ref={audioRef} src={path ? `/audio/${path}` : `/audio/ministory/${level}/${fileName}`} />
       <Button 
         variant="outline" 
         colorScheme={isPaused ? "primary" : "secondary"} 
