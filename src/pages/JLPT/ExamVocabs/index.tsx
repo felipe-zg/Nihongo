@@ -1,9 +1,9 @@
 import React, { useMemo, useState, useEffect } from "react";
-import { JLPT_N3_REVIEW, NIHONGO_NO_MORI_JLPT_N2, NIHONGO_NO_MORI_JLPT_N3, PAST_JLPT_N3, TOMO_SENSEI_JLPT_N3 } from "../../../consts";
+import { JLPT_N3_REVIEW, NIHONGO_NO_MORI_JLPT_N2, NIHONGO_NO_MORI_JLPT_N3, NIHONGO_NO_MORI_MOJI_GOI_N2, PAST_JLPT_N3, TOMO_SENSEI_JLPT_N3 } from "../../../consts";
 import JLPTExamVocabs from "./JLPTExamVocabs";
 import { useSearchParams } from "react-router-dom";
 
-type VocabsSource = "TOMO_SENSEI" | "NIHONGO_NO_MORI" | "PAST_EXAMS" | "REVIEW";
+type VocabsSource = "TOMO_SENSEI" | "NIHONGO_NO_MORI" | "PAST_EXAMS" | "REVIEW" | "MOJI_GOI";
 type VocabsLevel = "N3" | "N2";
 
 const JLPTExamVocabsPage: React.FC = () => {
@@ -38,6 +38,8 @@ const JLPTExamVocabsPage: React.FC = () => {
         return TOMO_SENSEI_JLPT_N3;
       case "REVIEW":
         return JLPT_N3_REVIEW;
+      case "MOJI_GOI":
+        return NIHONGO_NO_MORI_MOJI_GOI_N2;
       default:
         return [...NIHONGO_NO_MORI_JLPT_N3, ...PAST_JLPT_N3, ...TOMO_SENSEI_JLPT_N3];
     }
