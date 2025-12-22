@@ -4,6 +4,7 @@ import FlipCard, { FlipCardHandle } from "../../../components/FlipCard/FlipCard"
 import { ExampleSentence } from "../../../utils/textDecoration";
 import { FloatingControls } from "../../../components";
 import { saveCard, removeCard, getSavedCards } from "../../../utils/storage/JLPT/jlpt-cards";
+import { speak } from "../../../helpers";
 
 type Props = {
   vocabList: JLPTReview[];
@@ -135,19 +136,23 @@ const JLPTExamVocabs: React.FC<Props> = ({
       )}
 
       {/* <Text color={"gray.300"}>{quantitySeen}/{filteredVocabList.length}</Text> */}
-      <HStack mt={12} paddingX={8} space={4} width={"100%"}>
-        <Button onPress={handleNext} width={"100%"}>
-            Next
+      <HStack mt={12} width={"100%"} justifyContent={"space-between"} px={5}>
+        <Button
+          onPress={() => useSavedCards ? removeCard(currentCard) : saveCard(currentCard)}
+          colorScheme={useSavedCards ? "red" : "green"}
+          width="15%"
+        >
+          {useSavedCards ? "Remove" : "Save"}
+        </Button>
+        <Button 
+          onPress={() => currentCard.example && speak(currentCard.example.split("\n")[0])} 
+          width={"50%"}
+          colorScheme={"pink"}
+          variant={"outline"}
+        >
+            🗣️ Speak
         </Button>
       </HStack>
-      <Button
-        onPress={() => useSavedCards ? removeCard(currentCard) : saveCard(currentCard)}
-        colorScheme={useSavedCards ? "red" : "green"}
-        width="90%"
-        m={12}
-      >
-        {useSavedCards ? "Remove" : "Save"}
-      </Button>
       <FloatingControls onNext={handleNext} onPrev={handlePrev} position="top" />
     </>
   // eslint-disable-next-line react-hooks/exhaustive-deps
