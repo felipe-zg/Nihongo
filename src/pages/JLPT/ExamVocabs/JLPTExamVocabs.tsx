@@ -145,7 +145,13 @@ const JLPTExamVocabs: React.FC<Props> = ({
           {useSavedCards ? "Remove" : "Save"}
         </Button>
         <Button 
-          onPress={() => currentCard.example && speak(currentCard.example.split("\n")[0])} 
+          onPress={
+            () => currentCard.example && speak(currentCard.example
+              .replace("{", "")
+              .replace("}", "")
+              .split("\n")[0]
+            )
+          } 
           width={"50%"}
           colorScheme={"pink"}
           variant={"outline"}
