@@ -9,6 +9,7 @@ export * from './words';
 export * from './Verbs/verbs.const';
 export * from './levels';
 export * from './JLPT';
+export * from './Notes';
 export * from './moji_goi';
 export * from './grammar';
 export * from './MiniStory';

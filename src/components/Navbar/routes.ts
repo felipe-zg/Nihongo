@@ -36,6 +36,12 @@ export const routes: RouteItem[] = [
     ],
   },
   {
+    name: 'Notes',
+    children: [
+      { name: 'Notes words', path: '/JLPT/ExamVocabs?source=NOTES_WORDS' },
+    ],
+  },
+  {
     name: '横浜デザイン学院',
     children: [
       { name: 'ミニストーリー', path: '/ministory' },
