@@ -1,11 +1,10 @@
 import React from 'react';
 import './App.css';
-import { DaysOfTheMonth, Deck, GrammarJLPTN2, JLPTExamVocabs, JLPTExercisesPrint, JLPTVocabsPrint, Kanji, KanjiCreateForm, KanjiM2, KanjiM2Cards, KanjiPractice, KanjiPrint, Levels, MiniStory, MiniStoryAudioPlayer, MiniStoryCards, MojiGoiDeck, Nihongo500Mondai, Nihongo500N3, NihongoNoMoriGrammar, Periods, RealJapanese, RealJapaneseAudioPlayer, Verbs, VocabsJLPT, Words, WordsYDCQuizz } from './pages';
+import { DaysOfTheMonth, Deck, GrammarJLPTN2, JLPTExamVocabs, JLPTExercisesPrint, JLPTVocabsPrint, Kanji, KanjiCreateForm, KanjiM2, KanjiM2Cards, KanjiPractice, KanjiPrint, Levels, Lyrics, MiniStory, MiniStoryAudioPlayer, MiniStoryCards, MojiGoiDeck, Nihongo500Mondai, Nihongo500N3, NihongoNoMoriGrammar, Periods, RealJapanese, RealJapaneseAudioPlayer, Verbs, VocabsJLPT, Words, WordsYDCQuizz } from './pages';
 import { Box, HStack, NativeBaseProvider } from "native-base";
 import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom';
 import { MusicNavbar, Navbar } from './components';
 import Materials from './pages/Materials/Materials';
-import Nostalgia from './pages/Music/Leina/Nostalgia/Nostalgia';
 
 function App() {
   return (
@@ -45,7 +44,6 @@ function AppContent() {
           <Route path="/JLPT/grammar/N2" element={<GrammarJLPTN2 />} />
           <Route path="/printable/JLPT/vocabs/N3" element={<JLPTVocabsPrint />} />
           <Route path="/printable/JLPT/exercises" element={<JLPTExercisesPrint />} />
-          <Route path="/music/leina/nostalgia" element={<Nostalgia />} />
           <Route path="/ministory" element={<MiniStory />} />
           <Route path="/ministory-cards" element={<MiniStoryCards />} />
           <Route path="/ministory-audioplayer" element={<MiniStoryAudioPlayer />} />
@@ -59,6 +57,8 @@ function AppContent() {
           <Route path="/real-japanese" element={<RealJapanese />} />
           {/* Private routes */}
           <Route path="/kanji-create" element={<KanjiCreateForm />} />
+          {/* Music */}
+          <Route path="/music" element={<Lyrics />} />
         </Routes> 
       </Box>
     </HStack>
