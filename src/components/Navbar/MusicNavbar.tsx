@@ -9,6 +9,7 @@ const routes = [
   { name: 'ブルーライト', path: '/music?artist=Others&song=ブルーライト' },
   { name: '死ぬのがいいわ', path: '/music?artist=Others&song=死ぬのがいいわ' },
   { name: '東京', path: '/music?artist=Others&song=東京' },
+  { name: '革命道中', path: '/music?artist=Others&song=革命道中' },
 ]
 
 const MusicNavbar = () => {
