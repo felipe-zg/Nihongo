@@ -174,7 +174,7 @@ const NihongoNoMoriGrammar: React.FC<Props> = ({ grammarList }) => {
             <ContentBox>
               <Text fontSize={"lg"} color={"white"}>{currentItem.imi}</Text>
               <Divider mt={2} bg="gray.500" thickness={0.5}/>
-              <Text fontSize={"md"} italic color={"white"} textAlign={"center"}>{currentItem.explanation}</Text>
+              <Text fontSize={"md"} italic color={"white"} textAlign={"center"} my={2}>{currentItem.explanation}</Text>
               <Box borderColor={"pink.500"} borderWidth={1} borderRadius={5} px={4} py={1} mt={2}>
                 <Text fontSize={"sm"} italic color={"white"}>{`${currentItem.category}`}</Text>
               </Box>
