@@ -23,4 +23,5 @@ declare type GrammarEntry = {
   extraInfo?: string;
   category: typeof GrammarEntryCategory[keyof typeof GrammarEntryCategory];
   newWords?: GrammarEntryNewWord[];
+  important?: boolean;
 };

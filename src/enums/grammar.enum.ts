@@ -1,6 +1,4 @@
 export const GrammarEntryCategory = {
-  MONO: 'もの',
-  KOTO: 'こと',
   REASON_CAUSE: '理由・原因',
   SITUATION_CHANGE: '状況・変化',
   POSITIONS_STANDARDS: '立場・基準',
@@ -14,6 +12,10 @@ export const GrammarEntryCategory = {
   PARALLEL: '並列',
   OTHER: 'その他',
   KEIGO: '敬語',
+  MONO: 'もの',
+  KOTO: 'こと',
+  KAGIRI: '限り',
+  SETSUZOKU_RELATIONS: '順接・逆接',
 } as const;
 
 export type GrammarCategory = typeof GrammarEntryCategory[keyof typeof GrammarEntryCategory];

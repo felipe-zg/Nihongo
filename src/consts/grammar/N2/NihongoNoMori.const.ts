@@ -1,6 +1,7 @@
 import { GrammarEntryCategory } from "../../../enums";
 
 export const NIHONGO_NO_MORI_GRAMMAR_N2: GrammarEntry[] = [
+  // SECTION 1: 「もの」シリーズ - GRAMMAR 1 - 10
   {
     id: 1,
     grammar: "〜もの ①",
@@ -350,4 +351,413 @@ export const NIHONGO_NO_MORI_GRAMMAR_N2: GrammarEntry[] = [
       { kanji: "現場", kana: "げんば", english: "scene (of crime, accident, etc.)" },
     ]
   },
-]
+  // SECTION 2: 「こと」シリーズ - GRAMMAR 1 - 10
+  // SECTION 3: 「限り」シリーズ - GRAMMAR 1 - 10
+  // SECTION 4: 順接・逆接 - GRAMMAR 29 - 40
+  {
+    id: 29,
+    grammar: "〜だけあって",
+    imi: "〜だから当然そうなる〜",
+    explanation: "「〜だから」と理由を表す時に使う文法なんですが、その理由が特別な場合に使う文法です。\n特に人をほめる時とか、いいことを言うときによく使われる文法です。\nThis grammar is used to express a reason with 'because~', but it is used when the reason is special.\nIt is often used when praising someone or saying something good.",
+    usage: {
+      form: [{ name: "普通形" }, { name: "な形容詞", connector: "な" }, { name: "名詞"}],
+      pattern: ["だけあって"],
+    },
+    examples: [
+      {
+        sentence: "日本に[留学した]{だけあって}、彼は日本の文化についてとても詳しい。",
+        meaning: "Because he studied abroad in Japan, he is very knowledgeable about Japanese culture."
+      },
+      {
+        sentence: "テレビで紹介されるほど[有名な]{だけあって}、、このラーメン屋さんはいつも行列ができる。",
+        meaning: "Because it is famous enough to be introduced on TV, this ramen shop always has a line."
+      },
+      {
+        sentence: "元サッカー[選手]{だけあって}、サッカーに関しては誰よりも詳しい。",
+        meaning: "Because he is a former soccer player, he is more knowledgeable about soccer than anyone else."
+      },
+      {
+        sentence: "ゆか先生が[教える]{だけあって}、やっぱり、日本語の森の授業はわかりやすいな～！",
+        meaning: "Because Yuka-sensei teaches, as expected, the classes at Nihongo no Mori are easy to understand!"
+      },
+    ],
+    category: GrammarEntryCategory.SETSUZOKU_RELATIONS,
+    newWords: [
+      { kanji: "行列", kana: "ぎょうれつ", english: "line・queue" },
+    ]
+  },
+  {
+    id: 30,
+    grammar: "〜だけに",
+    imi: "①　〜だけあって\n②　〜だからさらに",
+    explanation: "①「～だけあって」と全く同じ意味です。この意味の場合は文章の中で「だけあって」「だけに」入れ替えてもOKです。ただし「だけあって」の方は良い意味とか人をほめるときに使う。「～だけに」という文法はちょっと悪いことに使われる場合が多いです。\n②「〜だからさらに強く感じる」って意味だ。これが原因・これが理由で、もっとこういうふうに感じると言いたい時に使います。（自分の気持ちを強調して言うときに使う）\n① It has the same meaning as 'だけあって'. In this case, you can interchange 'だけあって' and 'だけに' in a sentence. However, 'だけあって' is used for good meanings or when praising someone. The grammar 'だけに' is often used for somewhat negative things.\n② It means 'because of ~, I feel it even more strongly'. It is used when you want to say that this is the cause or reason for feeling something more strongly (used to emphasize your feelings).",
+    usage: {
+      form: [{ name: "普通形" }, { name: "名詞", connector: "である" }, { name: "な形容詞", connector: "な・である" }],
+      pattern: ["だけに"],
+    },
+    examples: [
+      {
+        sentence: "失敗が[続いていた]{だけに}、今回の実験成功は心の底からうれしい。",
+        meaning: "Because failures had continued, I am truly happy about the success of this experiment."
+      },
+      {
+        sentence: "最近は[忙しかった]{だけに}、突然暇になると何をすればいいのかわからない。",
+        meaning: "Because I had been busy recently, I don't know what to do when I suddenly have free time."
+      },
+      {
+        sentence: "彼は若者の間で[有名な]{だけに}、街を歩くだけで声をかけられて大変だ。",
+        meaning: "Because he is famous among young people, it is difficult for him to walk around the city without being approached."
+      },
+      {
+        sentence: "A:試験どうだった？\nB:あれだけ[威張っていた]{だけに}、不合格だったから恥ずかしい。。。",
+        meaning: "A: How was the exam?\nB: Because I was so arrogant, I'm embarrassed that I failed..."
+      },
+    ],
+    category: GrammarEntryCategory.SETSUZOKU_RELATIONS,
+    newWords: [
+      { kanji: "成功", kana: "せいこう", english: "success" },
+      { kanji: "底", kana: "そこ", english: "bottom" },
+      { kanji: "暇", kana: "ひま", english: "free time" },
+      { kanji: "威張る", kana: "いばる", english: "to be arrogant・to brag" },
+    ],
+    extraInfo: "V.る 使えない",
+  },
+  {
+    id: 31,
+    grammar: "〜からには・以上（は）",
+    imi: "〜だから！",
+    explanation: "「こうだから」というふうに強い気持ちを表す時に使う。「からには」の後ろは「～するつもりだ」という意志を表す文章とか「〜するべきだ」と注意をする文章「～しなさい」と命令をする文章とか「絶対にこうだ」と強く断言をする文章などが入ります。\nThis grammar is used to express strong feelings like 'because of this!'. After 'からには', sentences that express intention like 'I intend to do ~', cautionary sentences like 'you should do ~', imperative sentences like 'do ~', or strongly assertive sentences like 'it is definitely this way' are used.",
+    usage: {
+      form: [{ name: "V.る" }, { name: "V.た" }, { name: "名詞", connector: "である" }, { name: "ナ形容詞", connector: "である" }],
+      pattern: ["からには", "以上（は）"],
+    },
+    examples: [
+      {
+        sentence: "最初はやりたくなかったが、[やる]{からには}本気で取り組みたいと思っている。",
+        meaning: "I didn't want to do it at first, but since I'm going to do it, I want to tackle it seriously."
+      },
+      {
+        sentence: "雨が降っているが、ここまで[来た]{からには}、観光名所を見てから帰ろう。",
+        meaning: "It is raining, but since we've come this far, let's see the tourist attractions before going home."
+      },
+      {
+        sentence: "[上司である]{以上}、部下のミスであっても責任を取らなければならない。",
+        meaning: "As a superior, you must take responsibility even if it is the subordinate's mistake."
+      },
+      {
+        sentence: "私が[来た]{からには}、もう大丈夫。",
+        meaning: "Since I have come, it's already okay."
+      },
+    ],
+    category: GrammarEntryCategory.SETSUZOKU_RELATIONS,
+    newWords: [
+      { kanji: "本気", kana: "ほんき", english: "seriousness" },
+      { kanji: "取り組む", kana: "とりくむ", english: "to tackle・to work on" },
+      { kanji: "観光名所", kana: "かんこうめいしょ", english: "tourist attraction" },
+      { kanji: "上司", kana: "じょうし", english: "superior・boss" },
+      { kanji: "部下", kana: "ぶか", english: "subordinate・junior" },
+      { kanji: "責任", kana: "せきにん", english: "responsibility" },
+      { kanji: "責任を取る", kana: "せきにんをとる", english: "to take responsibility" }
+    ]
+  },
+  {
+    id: 32,
+    grammar: "〜というだけで",
+    imi: "〜という理由だけで",
+    explanation: "「〜という理由だけで、そうなる・そう思う・そう感じると言いたい時に使う文法です。\nThis grammar means 'just because of ~'. It is used when you want to say that something happens, you think so, or you feel so just because of that reason.",
+    usage: {
+      form: [{ name: "普通形" }, { name: "名詞", connector: "である" }, { name: "な形容詞", connector: "である" }],
+      pattern: ["というだけで"],
+    },
+    examples: [
+      {
+        sentence: "あの店が販売している[商品]{というだけで}、品質が悪いのに高い値段で売られている。",
+        meaning: "Just because it is a product sold by that store, it is sold at a high price despite its poor quality."
+      },
+      {
+        sentence: "芸能人が[来た]{というだけで}、あのレストランは次の日から行列ができたそうだ。",
+        meaning: "Just because a celebrity came, that restaurant apparently had a line starting the next day."
+      },
+      {
+        sentence: "彼女は[かわいい]{というだけで}、色々な会社の面接に合格した。",
+        meaning: "Just because she is cute, she passed interviews at various companies."
+      },
+    ],
+    category: GrammarEntryCategory.SETSUZOKU_RELATIONS,
+    newWords: [
+      { kanji: "販売", kana: "はんばい", english: "sales" },
+      { kanji: "品質", kana: "ひんしつ", english: "quality" },
+      { kanji: "芸能人", kana: "げいのうじん", english: "celebrity" },
+      { kanji: "面接", kana: "めんせつ", english: "interview" },
+    ]
+  },
+  {
+    id: 33,
+    grammar: "〜にもかかわらず",
+    imi: "〜なのに",
+    explanation: "「～なのに」という意味です。～ということに関係なく、そうであると言いたい時に使う文法です。\nThis grammar means 'despite ~'. It is used when you want to say that something is the case regardless of the fact that ~.",
+    usage: {
+      form: [{ name: "普通形" }, { name: "名詞", connector: "である" }, { name: "な形容詞", connector: "である" }],
+      pattern: ["にもかかわらず"],
+      combinedForms: [
+        { first: "名詞", pattern: ["にもかかわらず"] },
+      ]
+    },
+    examples: [
+      {
+        sentence: "彼は[お金持ちである]{にもかかわらず}、値段の高いものを一切買わない。",
+        meaning: "Despite being wealthy, he never buys expensive things."
+      },
+      {
+        sentence: "こんなに[暑い]{にもかかわらず}、彼は長袖のトレーナーを着ている。",
+        meaning: "Despite it being so hot, he is wearing a long-sleeved sweatshirt."
+      },
+      {
+        sentence: "[雨]{にもかかわらず}、新発売のゲームを買いに来たお客さんで長い列ができています。",
+        meaning: "Despite the rain, there is a long line of customers who came to buy the newly released game."
+      },
+      {
+        sentence: "5年以上一緒に[いる]{にもかかわらず}、彼女のことが全く理解できない・••。",
+        meaning: "Despite being together for over five years, I still don't understand her at all..."
+      },
+    ],
+    category: GrammarEntryCategory.SETSUZOKU_RELATIONS,
+    newWords: [
+      { kanji: "一切", kana: "いっさい", english: "not at all・never" },
+      { kanji: "長袖", kana: "ながそで", english: "long-sleeved" },
+      { kanji: "新発売", kana: "しんはつばい", english: "newly released" },
+      { kanji: "列", kana: "れつ", english: "line・queue" },
+    ],
+    extraInfo: "「にかかわらず」は「～に関係がなく」という意味でしたね。「にもかかわらず」「も」が入ると「～なのに」という意味になります。",
+  },
+  {
+    id: 34,
+    grammar: "〜にしては",
+    imi: "〜から予想することとは違う",
+    explanation: "この人だったら、まあこれくらいできるだろうと予想しますよね。その予想したものよりも「よくできてるな」とか「あまりできてないな」というように予想とは違うと言いたい時に「～にしてはこうだ」というふうに使われる文法です。\nYou would expect that this person could do about this much, right? When you want to say that it is different from what you expected, such as 'they did better than expected' or 'they didn't do as well as expected', you use the grammar '~にしてはこうだ'.\nThis grammar is used when you want to say that something is different from what you expected, such as 'they did better than expected' or 'they didn't do as well as expected'.",
+    usage: {
+      form: [{ name: "普通形" }, { name: "名詞", connector: "である" }, { name: "な形容詞", connector: "である" }],
+      pattern: ["にしては" ],
+    },
+    examples: [
+      {
+        sentence: "彼の作った資料にはいくつかミスがあったが、[新入社員]{にしては}よくできている方だ。",
+        meaning: "Although there were some mistakes in the materials he made, he did well for a new employee."
+      },
+      {
+        sentence: "昨日全然[寝ていない]{にしては}、なんだか頭がすっきりしている。",
+        meaning: "Although I didn't sleep at all yesterday, my head feels somehow clear."
+      },
+      {
+        sentence: "私の父は見た目に気を使っているので、[50代]{にしては}若く見える。",
+        meaning: "My father pays attention to his appearance, so he looks young for his age in his 50s."
+      },
+    ],
+    category: GrammarEntryCategory.SETSUZOKU_RELATIONS,
+  },
+  {
+    id: 35,
+    grammar: "〜わりに",
+    imi: "〜なのに",
+    explanation: "この文法は「～予想できることとは違う」と言いたいときに使う文法です。\nThis grammar is used when you want to say that something is different from what you would expect.",
+    usage: {
+      form: [{ name: "普通形" }, { name: "名詞", connector: "の" }, { name: "な形容詞", connector: "な" }],
+      pattern: ["わりに"],
+    },
+    examples: [
+      {
+        sentence: "息子は毎日休まず[勉強している]{わりに}、全く成績が良くならない。",
+        meaning: "Despite studying every day without fail, my son's grades do not improve at all."
+      },
+      {
+        sentence: "このシャンプーは[値段の]{わりに}、量が少ないし、香りもよくない。",
+        meaning: "Despite the price, this shampoo has a small amount and the scent is not good."
+      },
+      {
+        sentence: "この仕事は[大変な]{わりに}給料が低いので、やりたがる人が少ない。",
+        meaning: "Despite the job being tough, the salary is low, so there are few people who want to do it."
+      },
+      {
+        sentence: "君もまずいって言ってるわりに、たくさん食べているね。",
+        meaning: "Despite saying it's bad, you're eating a lot."
+      },
+    ],
+    category: GrammarEntryCategory.SETSUZOKU_RELATIONS,
+    newWords: [
+      { kanji: "成績", kana: "せいせき", english: "grades" },
+      { kanji: "量", kana: "りょう", english: "amount" },
+    ]
+  },
+  {
+    id: 36,
+    grammar: "〜といっても",
+    imi: "〜だけど、本当は",
+    explanation: "This grammar is used when you want to say 'although ~, in reality...'. It is used to express that while something may be the case, the reality is different or there are additional considerations.",
+    usage: {
+      form: [{ name: "普通形" }, { name: "名詞" }, { name: "な形容詞" }],
+      pattern: ["といっても"],
+    },
+    examples: [
+      {
+        sentence: "A:すごい！この料理、佐藤さんが作ったの？\nB:はい。[作った]{といっても}、切って焼いただけの簡単な料理ですよ。",
+        meaning: "A: Wow! Did Sato-san make this dish?\nB: Yes. Although I made it, it's a simple dish that I just cut and grilled."
+      },
+      {
+        sentence: "旅行に[行った]{といっても}、日帰りで温泉に行ってきただけですよ。",
+        meaning: "Although I went on a trip, I only went to a hot spring for a day trip."
+      },
+      {
+        sentence: "昨日買った本は、[古本]{といっても}新品のようなきれいさだった。",
+        meaning: "Although the book I bought yesterday is secondhand, it was as clean as a new one."
+      },
+    ],
+    category: GrammarEntryCategory.SETSUZOKU_RELATIONS,
+    newWords: [
+      { kanji: "日帰り", kana: "ひがえり", english: "day trip" },
+      { kanji: "古本", kana: "ふるほん", english: "secondhand book" },
+      { kanji: "新品", kana: "しんぴん", english: "new product" }
+    ]
+  },
+  {
+    id: 37,
+    grammar: "〜こそ〜が",
+    imi: "〜は〜だけど",
+    explanation: "この文法は「～は～だけど」という意味です。～はそうであるけれども、実際には反対のことが起こる・そう感じると言いたい時に使う文法です。\nThis grammar means 'although ~ is ~'. It is used when you want to say that although something is the case, in reality, the opposite happens or you feel differently.",
+    usage: {
+      form: [{ name: "名詞" }],
+      pattern: ["こそ" ],
+      secondsForm: [{ name: "普通形", connector: "が" }]
+    },
+    examples: [
+      {
+        sentence: "今は[力]{こそ}[弱い]{が}、これからトレーニングすれば彼は素晴らしい選手になるだろう。",
+        meaning: "Although he is weak now, if he trains from now on, he will probably become a great athlete.",
+        point: "力は弱いけど。。。",
+      },
+      {
+        sentence: "あそこのラーメン屋さんは[サービス]{こそ}[悪い]{が}、行列ができるほどおいしいそうだ。",
+        meaning: "Although the service at that ramen shop is bad, it is said to be so delicious that there is a line."
+      },
+      {
+        sentence: "埼玉県は[名産品]{こそ}[ない]{が}、都心にも近くて便利なところである。",
+        meaning: "Although Saitama Prefecture does not have any famous products, it is close to the city center and a convenient place."
+      },
+    ],
+    category: GrammarEntryCategory.SETSUZOKU_RELATIONS,
+    newWords: [
+      { kanji: "素晴らしい", kana: "すばらしい", english: "wonderful" },
+      { kanji: "埼玉県", kana: "さいたまけん", english: "Saitama Prefecture" },
+      { kanji: "名産品", kana: "めいさんひん", english: "famous products" },
+      { kanji: "都心", kana: "としん", english: "city center"}
+    ]
+  },
+  {
+    id: 38,
+    grammar: "〜からといって",
+    imi: "〜という理由だけでは判断できない",
+    explanation: "この文法は「～という理由だけでは判断できない」という意味です。～だからといって、必ずしもそうだとは限らない・そうではないと言いたい時に使う文法です。\nThis grammar means 'just because ~, it does not necessarily mean that...'. It is used when you want to say that just because something is the case, it does not necessarily mean that it is so or that it is not so.",
+    extraInfo: "このからといっての後には「とは限らない」とか「わけではない」と続くことが多いです。",
+    usage: {
+      form: [{ name: "普通形" }, { name: "名詞", connector: "である" }, { name: "な形容詞", connector: "である" }],
+      pattern: ["からといって"],
+    },
+    examples: [
+      {
+        sentence: "勉強したからといって合格できるとは限らない。",
+        meaning: "Just because you studied doesn't mean you will definitely pass."
+      },
+      {
+        sentence: "[留学した]{からといって}、英語が話せるようになる[わけではない]。",
+        meaning: "Just because you study abroad doesn't mean you will be able to speak English."
+      },
+      {
+        sentence: "体に良いと[言われている]{からといって}、この野菜を食べるだけで健康になるとは言えない。",
+        meaning: "Just because it is said to be good for the body, it does not mean that you will become healthy just by eating this vegetable."
+      },
+      {
+        sentence: "[日本人である]{からといって}漢字を全部知っているとは[限らない]。",
+        meaning: "Just because someone is Japanese doesn't mean they know all the kanji."
+      },
+      {
+        sentence: "水だからといって飲みすぎたら死んじゃうんだよ。",
+        meaning: "Just because it's water doesn't mean you won't die if you drink too much."
+      }
+    ],
+    category: GrammarEntryCategory.SETSUZOKU_RELATIONS,
+    newWords: [
+      { kanji: "判断", kana: "はんだん", english: "judgment" },
+      { kanji: "限る", kana: "かぎる", english: "to limit" },
+    ],
+  },
+  {
+    id: 39,
+    grammar: "〜かというと",
+    imi: "〜と聞かれたら、そうではない",
+    explanation: "～だと思う人もいるかもしれないが、実際にはそうではないと言いたい時に使う文法です。\nThis grammar means 'if asked whether ~, it is not so'. It is used when you want to say that while some people may think that something is the case, in reality, it is not so.",
+    usage: {
+      form: [{ name: "普通形", connector: "（の）" }, { name: "名詞", connector: "なの" }, { name: "な形容詞", connector: "なの" }],
+      pattern: ["かというと", "かといえば" ],
+    },
+    examples: [
+      {
+        sentence: "一生懸命勉強すれば必ず試験に[合格する]{かというと}、そんなことはない。",
+        meaning: "Just because you study hard doesn't necessarily mean you will pass the exam."
+      },
+      {
+        sentence: "日本人は全員わさびが[好き]{かといえば}、そんなことはない。",
+        meaning: "Not all Japanese people like wasabi."
+      },
+      {
+        sentence: "大学を卒業すれば誰でも[就職できる]{かというと}、そうではない。",
+        meaning: "Just because you graduate from university doesn't mean you can get a job."
+      },
+      {
+        sentence: "3食全部パスタかというと、そんなことはないよ。たまにはお肉も食べるよ。",
+        meaning: "I don't eat pasta for all three meals. Sometimes I also eat meat."
+      },
+    ],
+    category: GrammarEntryCategory.SETSUZOKU_RELATIONS,
+    newWords: [
+      { kanji: "一生懸命", kana: "いっしょうけんめい", english: "with utmost effort" },
+      { kanji: "就職", kana: "しゅうしょく", english: "employment" },
+      { kanji: "食全部", kana: "しょくぜんぶ", english: "all meals" }
+    ]
+  },
+  {
+    id: 40,
+    grammar: "〜一方",
+    imi: "① 〜とは反対に\n② 〜とは別の面もある",
+    explanation: "一方というのは、1つの方向という意味ですからこっちではない部分があるとかこっちとは反対の部分があるという意味の文法です。\nThis grammar means 'on the other hand' or 'there is also another aspect'. Since '一方' means 'one direction', it implies that there is a part that is not this way or a part that is opposite to this way.",
+    usage: {
+      form: [{ name: "普通形" }, { name: "名詞", connector: "の・である" }, { name: "な形容詞", connector: "な・である" }],
+      pattern: ["一方（で）" ],
+    },
+    examples: [
+      {
+        sentence: "外国を飛び回って仕事をする人が[いる]{一方で}、自分の国から一度も出たことがない人もいる。",
+        meaning: "While some people travel around the world for work, there are also people who have never left their own country."
+      },
+      {
+        sentence: "一人暮らしは[自由である]{一方}、病気になった時は少し心配だ。",
+        meaning: "Living alone gives freedom, but it is a little worrisome when you get sick."
+      },
+      {
+        sentence: "僕は生まれたときから不自由ない暮らしをしてきた。[その]{一方で}、ずっと貧しい生活を送っている人もいる。",
+        meaning: "I have lived a comfortable life since I was born. On the other hand, there are people who have been living in poverty all along."
+      },
+      {
+        sentence: "ゆか先生は標準語で日本語を教える一方、普段は関西弁で話しています。",
+        meaning: "Yuka-sensei teaches Japanese in standard Japanese, but usually speaks in the Kansai dialect."
+      },
+    ],
+    category: GrammarEntryCategory.SETSUZOKU_RELATIONS,
+    newWords: [
+      { kanji: "一方", kana: "いっぽう", english: "on the other hand" },
+      { kanji: "飛び回る", kana: "とびまわる", english: "to fly around" },
+      { kanji: "不自由", kana: "ふじゆう", english: "inconvenience・disability" },
+      { kanji: "貧しい", kana: "まずしい", english: "poor" },
+      { kanji: "標準", kana: "ひょうじゅん", english: "standard" },
+      { kanji: "関西弁", kana: "かんさいべん", english: "Kansai dialect"}
+    ]
+  },
+];
