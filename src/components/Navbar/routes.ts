@@ -15,6 +15,7 @@ export const routes: RouteItem[] = [
     name: 'N2',
     children: [
       { name: '日本語の森・文法・N2', path: '/grammar/nihongo-no-mori?level=N2' },
+      { name: '日本語の森・文法問題・N2', path: '/grammar/mondai?level=N2' },
       { name: '日本語の森・復習・N2', path: '/JLPT/ExamVocabs?source=NIHONGO_NO_MORI&level=N2' },
       { name: '文字・語彙', path: '/JLPT/ExamVocabs?source=MOJI_GOI&level=N2' },
       { name: 'JLPT Grammar N2', path: '/JLPT/grammar/N2' },

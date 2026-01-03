@@ -18,6 +18,7 @@ export { default as MiniStoryCards } from "./MiniStoryCards";
 export { default as MiniStoryAudioPlayer } from "./MiniStoryAudioPlayer";
 export { default as MojiGoiDeck } from "./MojiGoiDeck";
 export { default as NihongoNoMoriGrammar } from "./grammar/nihongoNoMori";
+export { default as GrammarMondai } from "./grammar/Mondai";
 export { default as KanjiM2 } from "./M2/KanjiM2";
 export { default as KanjiM2Cards } from "./M2/KanjiM2Cards";
 export { default as RealJapaneseAudioPlayer } from "./AudioPlayers/RealJapanese";
