@@ -16,6 +16,7 @@ export const GrammarEntryCategory = {
   KOTO: 'こと',
   KAGIRI: '限り',
   SETSUZOKU_RELATIONS: '順接・逆接',
+  BAD_MEANING: '悪い意味',
 } as const;
 
 export type GrammarCategory = typeof GrammarEntryCategory[keyof typeof GrammarEntryCategory];

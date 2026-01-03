@@ -760,4 +760,303 @@ export const NIHONGO_NO_MORI_GRAMMAR_N2: GrammarEntry[] = [
       { kanji: "関西弁", kana: "かんさいべん", english: "Kansai dialect"}
     ]
   },
+  // SECTION 5: 悪い意味 - GRAMMAR 41 - 48
+  {
+    id: 41,
+    grammar: "〜くせに",
+    imi: "〜なのに",
+    explanation: "人の悪いところ非難したりあとは自分の不満などを表すときに使います。\nThis grammar is used to criticize someone's bad points or to express one's own dissatisfaction.",
+    usage: {
+      form: [{ name: "普通形" }, { name: "名詞", connector: "の" }, { name: "な形容詞", connector: "な" }],
+      pattern: ["くせに"],
+    },
+    examples: [
+      {
+        sentence: "家事を何も[やらない]{くせに}私の弟は文句ばかり言っている。",
+        meaning: "My younger brother does nothing around the house but just complains."
+      },
+      {
+        sentence: "自分でやったことが[ない]{くせに}、偉そうにアドバイスしないでほしい。",
+        meaning: "I don't want you to give advice arrogantly when you have never done it yourself."
+      },
+      {
+        sentence: "本当は[元気な]{くせに}、弟は熱があると言って学校を休んだ。",
+        meaning: "Although he was actually fine, my younger brother said he had a fever and took a day off from school."
+      },
+      {
+        sentence: "私の兄は[大学生の]{くせに}、簡単な算数の問題も解けない。",
+        meaning: "My older brother is a university student, but he can't even solve simple arithmetic problems."
+      },
+      {
+        sentence: "全然[家事してない]{くせに}文句ばかり言わないでよ！",
+        meaning: "You don't do any housework at all, so stop complaining!"
+      }
+    ],
+    category: GrammarEntryCategory.BAD_MEANING,
+    newWords: [
+      { kanji: "非難", kana: "ひなん", english: "criticism" },
+      { kanji: "不満", kana: "ふまん", english: "dissatisfaction"},
+      { kanji: "文句", kana: "もんく", english: "complaint" },
+      { kanji: "偉そう", kana: "えらそう", english: "arrogant" },
+      { kanji: "算数", kana: "さんすう", english: "arithmetic"},
+      { kanji: "解く", kana: "とく", english: "to solve" }
+    ]
+  },
+  {
+    id: 42,
+    grammar: "〜っこない",
+    imi: "絶対に　〜　できない",
+    explanation: "会話で使う言い方。これはその人自身が本当に絶対にできない！というその人の判断をよく表している文法です。\nThis is a way of speaking used in conversation. This grammar often expresses the person's own judgment that they absolutely cannot do something!",
+    usage: {
+      form: [{ name: "V.　ます STEM" }],
+      pattern: ["っこない"],
+    },
+    examples: [
+      {
+        sentence: "JLPTのN1になんて合格できっこない。",
+        meaning: "There is no way I can pass the JLPT N1.",
+        point: "もう絶対に合格できない！って意味になる。",
+      },
+      {
+        sentence: "全然勉強してないあいつが試験を受けても、[受かり]{っこない}よ。",
+        meaning: "There is no way that guy who hasn't studied at all will pass the exam."
+      },
+      {
+        sentence: "運転[でき]{っこない}と言っていたけど、やってみたら意外と簡単だったでしょう？",
+        meaning: "He said there was no way he could drive, but it was surprisingly easy when he tried, wasn't it?"
+      },
+      {
+        sentence: "歌手になんて[なれ]{っこない}ってわかっているけど、夢をあきらめられないんだ。",
+        meaning: "I know there's no way I can become a singer, but I can't give up on my dream.",
+        point: "歌手になることは絶対にできない！という意味",
+      },
+    ],
+    category: GrammarEntryCategory.BAD_MEANING,
+    newWords: [
+      { kanji: "意外", kana: "いがい", english: "unexpected" },
+    ]
+  },
+  {
+    id: 43,
+    grammar: "〜ていては",
+    imi: "～をずっとしていたら、良い結果にならない",
+    explanation: "こうであったら、良い結果にならない、目標としていることに到達できないと言いたいときに使います。\nThis grammar is used when you want to say that if you continue doing something, it will not lead to a good result or you will not reach your goal.",
+    usage: {
+      form: [{ name: "V. テ形" }],
+      pattern: ["いては"],
+    },
+    examples: [
+      {
+        sentence: "少し疲れたくらいで[休憩して]{いては}、少しも作業が進まない。",
+        meaning: "If you take a break just because you're a little tired, you won't make any progress at all."
+      },
+      {
+        sentence: "毎日の睡眠時間を[削って]{いては}、仕事に集中できないし、体調を崩すよ。",
+        meaning: "If you keep cutting down on your daily sleep time, you won't be able to concentrate on work and you'll ruin your health."
+      },
+      {
+        sentence: "そんな風にむだづかいしていては、お金が必要になったときに困るよ。",
+        meaning: "If you keep wasting money like that, you'll be in trouble when you need it."
+      },
+      {
+        sentence: "ゴキブリが出てきたくらいで[こわがって]{いては}、一人暮らしはできないよ。",
+        meaning: "If you get scared just because a cockroach appears, you can't live alone."
+      },
+    ],
+    category: GrammarEntryCategory.BAD_MEANING,
+    newWords: [
+      { kanji: "休憩", kana: "きゅうけい", english: "break・rest" },
+      { kanji: "作業", kana: "さぎょう", english: "work・operation" },
+      { kanji: "進む", kana: "すすむ", english: "to advance・to progress" },
+      { kanji: "睡眠", kana: "すいみん", english: "sleep" },
+      { kanji: "睡眠時間", kana: "すいみんじかん", english: "sleep time" },
+      { kanji: "削る", kana: "けずる", english: "to cut down" },
+      { kanji: "崩す", kana: "くずす", english: "to ruin・to break down"},
+      { kanji: "無駄遣い", kana: "むだづかい", english: "wasteful spending"},
+      { kanji: "ゴキブリ", kana: "", english: "cockroach"}
+    ]
+  },
+  {
+    id: 44,
+    grammar: "〜ようでは",
+    imi: "〜のままだと悪い結果になる",
+    explanation: "相手を批判したりとか、悪く言いたいときに使う文法です。相手に注意をするときによく使われます。\n目上の人に使うときはちょっと注意してください。\nThis grammar is used to express that if a certain state or condition continues, it will lead to a bad result. It is often used to criticize or warn about negative consequences of continuing in a certain way.",
+    extraInfo: "話し言葉だったら「〜ようじゃ」という言い方もよく使われます。",
+    usage: {
+      form: [{ name: "V. る" }, { name: "V. ない" }, { name: "V. ている" }],
+      pattern: ["ようでは", "ようじゃ"],
+    },
+    examples: [
+      {
+        sentence: "そんなことを[している]{ようでは}、いつまでたっても立派な大人にはなれませんよ。",
+        meaning: "If you keep doing things like that, you'll never become a respectable adult."
+      },
+      {
+        sentence: "コンビニの店員さんと話すのも[恥ずかしがっている]{ようじゃ}、人前でプレゼンするのは難しいね。",
+        meaning: "If you're too shy to even talk to a convenience store clerk, it's difficult to give a presentation in front of people."
+      },
+      {
+        sentence: "こんな簡単な言葉も[覚えられない]{ようでは}、日本に行っても生活できないよ。",
+        meaning: "If you can't even remember such simple words, you won't be able to live in Japan."
+      },
+      {
+        sentence: "寝ながらポテチ食べてるようじゃムキムキの体にはなれないよー。",
+        meaning: "If you eat potato chips while lying down, you won't be able to have a muscular body."
+      },
+    ],
+    category: GrammarEntryCategory.BAD_MEANING,
+    newWords: [
+      { kanji: "立派な", kana: "りっぱな", english: "splendid・fine・respectable" },
+      { kanji: "ポテチ", kana: "", english: "potato chips" },
+    ]
+  },
+  {
+    id: 45,
+    grammar: "〜そうもない",
+    imi: "〜する可能性が低い",
+    explanation: "そのように見えないとかそのように思えないという意味です。\n特にこの文法は、可能形と一緒に使うことが多いです。\nThis grammar is used to express that the possibility of something happening is low. It indicates that it seems unlikely that a certain action will take place.",
+    usage: {
+      form: [{ name: "V. ます STEM" }, { name: "V. れる STEM" }],
+      pattern: ["そう（に）もない", "そうにない"],
+    },
+    examples: [
+      {
+        sentence: "今日は娘の誕生日だから残業せずに家に帰りたいが、やることが多くて定時に[帰れ]{そうにない}。",
+        meaning: "It's my daughter's birthday today, so I want to go home without working overtime, but there are so many things to do that it seems unlikely I'll be able to leave on time."
+      },
+      {
+        sentence: "9月になってもまだ暑くて、まだまだ[涼しくなり]{そうもない}。",
+        meaning: "It is still hot even though it is September, and it seems unlikely to get cooler anytime soon."
+      },
+      {
+        sentence: "思っていたより宿題の量が多くて、明日までに[終わり]{そうもない}。",
+        meaning: "There is more homework than I thought, and it seems unlikely that I will finish it by tomorrow."
+      },
+      {
+        sentence: "ああ〜今日は[寝られ]{そうにないな・・・}。",
+        meaning: "Ah, it seems like I won't be able to sleep today..."
+      },
+    ],
+    category: GrammarEntryCategory.BAD_MEANING,
+    newWords: [
+      { kanji: "定時", kana: "ていじ", english: "regular working hours" },
+    ]
+  },
+  {
+    id: 46,
+    grammar: "〜あげく",
+    imi: "〜した結果",
+    explanation: "悪い結果になるときに使う。結果を表す文法なので「～末」という文法とほとんど同じです。結果を表すという意味では同じなんですが、この「〜末」「〜あげく」この2つが絶対に違うところは「あげく」の方は悪い結果を表すときに使います。だから、いろいろしたのに悪い結果になった言いたいときに使われる文法です。\nThis grammar is used when the result is bad. Since it expresses the result, it is almost the same as the grammar '～末'. While both express results, the key difference is that '〜あげく' is used specifically to indicate bad outcomes. Therefore, it is used when you want to say that despite doing various things, the result was negative.",
+    usage: {
+      form: [{ name: "V. た" }],
+      pattern: ["あげく" ],
+    },
+    examples: [
+      {
+        sentence: "厳しい上司の命令で長時間[働いた]{あげく}、体調を崩して倒れてしまった。",
+        meaning: "After working long hours under the orders of a strict boss, I ended up getting sick and collapsing."
+      },
+      {
+        sentence: "4時間も[待たされた]{あげく}、彼女から「今日は行けない」と電話が来た。",
+        meaning: "After being made to wait for 4 hours, I got a call from her saying 'I can't go today.'"
+      },
+      {
+        sentence: "彼女は何を買うかさんざん悩んだあげく、何も買わなかった。",
+        meaning: "After agonizing over what to buy, she ended up not buying anything."
+      },
+      {
+        sentence: "さんざん[迷った]{あげく}何も食べないの？",
+        meaning: "After much hesitation, you don't eat anything?"
+      },
+    ],
+    category: GrammarEntryCategory.BAD_MEANING,
+    newWords: [
+      { kanji: "厳しい", kana: "きびしい", english: "strict" },
+      { kanji: "上司", kana: "じょうし", english: "boss" },
+      { kanji: "命令", kana: "めいれい", english: "order" },
+      { kanji: "長時間", kana: "ちょうじかん", english: "long time" },
+      { kanji: "崩す", kana: "くずす", english: "to break down" },
+      { kanji: "倒れる", kana: "たおれる", english: "to collapse" },
+      { kanji: "さんざん", kana: "", english: "thoroughly・severely" },
+      { kanji: "悩む", kana: "なやむ", english: "to worry" },
+    ]
+  },
+  {
+    id: 47,
+    grammar: "〜ばかりに",
+    imi: "〜だから",
+    explanation: "この文法は、だからって意味なんですが後ろは必ず悪いことが起こります。これが原因で悪い結果になったと言いたいときに使われる文法です。\nThis grammar means 'because ~', but it is always followed by something bad happening. It is used when you want to say that something bad happened as a result of this cause.",
+    usage: {
+      form: [{ name: "普通形" }, { name: "名詞", connector: "である" }, { name: "な形容詞", connector: "な・である" }],
+      pattern: ["ばかりに" ],
+    },
+    examples: [
+      {
+        sentence: "上司に[反抗した]{ばかりに}、プロジェクトのメンバーから外されてしまった。",
+        meaning: "Because I rebelled against my boss, I was removed from the project team."
+      },
+      {
+        sentence: "家が[貧乏である]{ばかりに}、彼は成績が良いのに大学に進学することができなかった。",
+        meaning: "Because his family was poor, he couldn't go to university despite having good grades."
+      },
+      {
+        sentence: "外国で慣れない料理を[食べた]{ばかりに}、お腹を壊してしまった。",
+        meaning: "Because I ate unfamiliar food in a foreign country, I ended up getting a stomachache."
+      },
+      {
+        sentence: "日本語が[使いこなせない]{ばかりに}また彼女を怒らせてしまった。",
+        meaning: "Because I can't use Japanese well, I ended up making her angry again."
+      },
+    ],
+    category: GrammarEntryCategory.BAD_MEANING,
+    newWords: [
+      { kanji: "反抗", kana: "はんこう", english: "rebellion" },
+      { kanji: "外す", kana: "はずす", english: "to remove" },
+      { kanji: "貧乏", kana: "びんぼう", english: "poverty" },
+      { kanji: "進学", kana: "しんがく", english: "going on to higher education"},
+      { kanji: "慣れない", kana: "なれない", english: "unfamiliar"},
+      { kanji: "壊す", kana: "こわす", english: "to break" }
+    ]
+  },
+  {
+    id: 48,
+    grammar: "〜たら、かえって",
+    imi: "～したら、反対の結果になった",
+    explanation: "～をしたら、反対の結果になったというときに使う文法です。特に悪い結果です。よくなると思ってやったのに反対に悪い結果になってしまった！と言いたいときによく使われます。\nThis grammar is used when you want to say that after doing something, the opposite result occurred, especially a bad one. It is often used when you thought things would get better, but instead, they turned out worse.",
+    extraInfo: "悪い結果になるときによく使う。",
+    usage: {
+      form: [{ name: "V. たら" }],
+      pattern: ["かえって" ],
+    },
+    examples: [
+      {
+        sentence: "故障したパソコンを自分で修理しようと[したら]、{かえって}ひどくなってしまった。",
+        meaning: "After trying to repair the broken computer myself, it ended up getting worse."
+      },
+      {
+        sentence: "叱られて落ち込む人もいるが、私は怒られたら、かえってやる気が出てくる。",
+        meaning: "Some people get depressed when scolded, but when I am scolded, I actually feel more motivated."
+      },
+      {
+        sentence: "窓をきれいにしようと思って[拭いたら]、{かえって}汚くなってしまった。",
+        meaning: "I thought I would clean the window, but after wiping it, it actually became dirtier."
+      },
+      {
+        sentence: "説明を[聞いたら]、{かえって}わからなくなっちゃったよ。",
+        meaning: "After listening to the explanation, I actually ended up understanding less."
+      },
+      {
+        sentence: "文法の意味とか接続を、調べれば調べるほどかえってわからなくなってしまうということはよくありますよね。",
+        meaning: "It's common that the more you look up the meaning and connections of grammar, the less you understand, right?"
+      }
+    ],
+    category: GrammarEntryCategory.BAD_MEANING,
+    newWords: [
+      { kanji: "故障", kana: "こしょう", english: "breakdown・failure" },
+      { kanji: "叱る", kana: "しかる", english: "to scold" },
+      { kanji: "落ち込む", kana: "おちこむ", english: "to get depressed" },
+      { kanji: "怒る", kana: "おこる", english: "to get angry" },
+      { kanji: "拭く", kana: "ふく", english: "to wipe" }
+    ]
+  },
 ];
