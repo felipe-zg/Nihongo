@@ -1059,4 +1059,361 @@ export const NIHONGO_NO_MORI_GRAMMAR_N2: GrammarEntry[] = [
       { kanji: "拭く", kana: "ふく", english: "to wipe" }
     ]
   },
+  // SECTION 6: 強調 - GRAMMAR 49 - 58
+  {
+    id: 49,
+    grammar: "〜あまり",
+    imi: "とても 〜 で",
+    explanation: "「〜あまり〜だ」というように後ろには結果を表す文章が続きます。〜あまりこうなってしっまったという風ようにととても〜でこうなってしっまったって意味になります。\nThis grammar is used in the form of '〜あまり〜だ', where the latter part expresses a result. It conveys the meaning that something happened as a result of being very ~.",
+    extraInfo: "「～さ/〜み」でよく使われる。例えば：「悲しみあまり」「嬉しさあまり」など。",
+    usage: {
+      form: [{ name: "V. る" }, { name: "名詞", connector: "の" }, { name: "な形容詞", connector: "な" }],
+      pattern: ["あまり" ],
+    },
+    examples: [
+      {
+        sentence: "大好きな人に見つめられて、[恥ずかしさの]{あまり}両手で顔を隠してしまった。",
+        meaning: "Because I was stared at by someone I really like, I was so embarrassed that I hid my face with both hands."
+      },
+      {
+        sentence: "新しい家が[快適な]{あまり}、友達と遊びに出かけることすら面倒になってしまった。",
+        meaning: "Because the new house is so comfortable, I even find it bothersome to go out and play with friends."
+      },
+      {
+        sentence: "母親は帰って来ない娘を[心配する]{あまり}、外へ探しに行った。",
+        meaning: "Because the mother was so worried about her daughter not coming home, she went out to look for her."
+      },
+      {
+        sentence: "おおお！美しさのあまり、勉強が手に付かない・・・！",
+        meaning: "Because of overwhelming beauty, I can't concentrate on studying...!"
+      },
+    ],
+    category: GrammarEntryCategory.EMPHASIS,
+    newWords: [
+      { kanji: "見つめる", kana: "みつめる", english: "to stare" },
+      { kanji: "両手", kana: "りょうて", english: "both hands" },
+      { kanji: "隠す", kana: "かくす", english: "to hide" },
+      { kanji: "快適", kana: "かいてき", english: "comfortable" },
+      { kanji: "面倒", kana: "めんどう", english: "troublesome" },
+      { kanji: "美しい", kana: "うつくしい", english: "beautiful" },
+      { kanji: "手に付く", kana: "てにつく", english: "to concentrate on" }
+    ]
+  },
+  {
+    id: 50,
+    grammar: "〜のなんのって",
+    imi: "とても 〜 だ",
+    explanation: "のなんのって、ってもうそれが何？と思うような変な言葉なんですが、これは自分の気持ちを強調するときに使う文法です。\nとてもこうだ！気持ちが強すぎて自分の言葉ではうまく説明ができないくらいとてもこう思っていると言いたいときに使う文法です。\nうまく言えないというのが文法の形に表れています。「のなんのって」です。\nThis grammar is used to emphasize one's feelings. It expresses that one feels so strongly about something that they cannot adequately explain it in their own words.",
+    extraInfo: "名詞は使えない。\nこの～のなんのってという文法は書き言葉というよりは話し言葉として使われます。ただ今の日本で、実際に会話の中でこの文法を使っている人はあまりいないです。\nMostly used in animes and mangas.",
+    usage: {
+      form: [{ name: "普通形" }, { name: "な形容詞", connector: "な" }],
+      pattern: ["のなんのって" ],
+    },
+    examples: [
+      {
+        sentence: "椅子に足の小指をぶつけてしまって、[痛い]{のなんのって}、しばらく動けなかった。",
+        meaning: "I hit my little toe on the chair, and it was so painful that I couldn't move for a while."
+      },
+      {
+        sentence: "毎日気温が37度もあって、もう[暑い]{のなんのって}。",
+        meaning: "It's been 37 degrees every day, and it's unbearably hot."
+      },
+      {
+        sentence: "最近の携帯電話は画面が小さくて[使いにくい]{のなんのって}、使うたびにいらいらして嫌になるよ。",
+        meaning: "Recent mobile phones have small screens and are so difficult to use that I get frustrated every time I use them."
+      },
+      {
+        sentence: "いやー、ゆか先生こわいよねー。なんかさ、単語覚える！とか、あと、漢字覚える！ってもう本当に[うるさい]{のなんのって}。もう本当に嫌なんだよね。",
+        meaning: "Yeah, Yuka-sensei is scary, right? Like, 'Remember the vocabulary!' and 'Remember the kanji!' She's really noisy, you know. I really hate it."
+      },
+    ],
+    category: GrammarEntryCategory.EMPHASIS,
+    newWords: [
+      { kanji: "椅子", kana: "いす", english: "chair" },
+      { kanji: "足の小指", kana: "あしのこゆび", english: "little toe" },
+      { kanji: "画面", kana: "がめん", english: "screen" },
+      { kanji: "嫌", kana: "いや", english: "dislike" }
+    ]
+  },
+  {
+    id: 51,
+    grammar: "〜てならない",
+    imi: "とても 〜 だ",
+    explanation: "この文法はとても～だというふうに、自分の気持ちを強調したいときに使われる文法です。\n感情を表す言葉が一緒につきます。くやしくてならないとか不思議でならない、このようにとてもこう思うというふうに気持ちを強調するための文法です。\nThis grammar is used to strongly emphasize one's feelings. It is often used with words that express emotions, such as 'I am extremely frustrated' or 'I am extremely curious', to emphasize how strongly one feels about something.",
+    extraInfo: "この〜でならないという文法ちょっとかたい表現なので書き言葉でよく使われるんですが、例えば残念でなりません。こういう言い方だったら話し言葉でもたまに使われることがあります。\nIn spoken language, a more common expression is '〜でなりません' (e.g., '残念でなりません').",
+    usage: {
+      form: [{ name: "V. テ形" }, { name: "形容詞テ形" }],
+      pattern: ["ならない" ],
+    },
+    examples: [
+      {
+        sentence: "一点足りなかったせいで試験に合格できなかったことが、[悔しくて]{ならない}。",
+        meaning: "I am extremely frustrated that I couldn't pass the exam because I was one point short."
+      },
+      {
+        sentence: "運動をするようになってから、毎日[お腹が空いて]{ならない}。",
+        meaning: "Since I started exercising, I feel extremely hungry every day."
+      },
+      {
+        sentence: "素晴らしい才能を持つ彼が20歳という若さで亡くなってしまい、[残念で]{ならない}。",
+        meaning: "I am extremely disappointed that he, who had wonderful talent, passed away at the young age of 20."
+      },
+      {
+        sentence: "いってらっしゃい！これからわざわざ遠くまで行って難しい試験を受けて試験に不合格になるために試験を受けに行くんだな〜。[残念で]{ならない}な〜。",
+        meaning: "Have a good trip! You're going all the way to a far place to take a difficult exam just to fail it. I'm extremely disappointed."
+      },
+    ],
+    category: GrammarEntryCategory.EMPHASIS,
+    newWords: [
+      { kanji: "悔しい", kana: "くやしい", english: "frustrating" },
+      { kanji: "素晴らしい", kana: "すばらしい", english: "wonderful" },
+      { kanji: "才能", kana: "さいのう", english: "talent" },
+      { kanji: "亡くなる", kana: "なくなる", english: "to pass away"}
+    ]
+  },
+  {
+    id: 52,
+    grammar: "〜てたまらない",
+    imi: "我慢できないくらい、とても ～ だ",
+    explanation: "自分の気持ちを強調するための文法です。この「たまらない」という言葉は我慢できないという意味です。それが我慢できないぐらい、それぐらい強くこう感じている、とてもこうだ！と言いたいときに使う文法です。ちなみにこのたまらないという文法は～で仕方がないとか、～でしょうがないという言い方に言いかえても OK です。\nThis grammar is used to strongly emphasize one's feelings. The word 'たまらない' means 'unbearable' or 'cannot be endured'. It is used when you want to express that you feel something so strongly that it is unbearable. This expression can also be replaced with '～で仕方がない' or '～でしょうがない'.",
+    extraInfo: "「～て～てたまらない」の言い方もある",
+    usage: {
+      form: [{ name: "V. テ形"}, { name: "V. たいテ形"}, { name: "形容詞テ形" }],
+      pattern: ["たまらない" ],
+    },
+    examples: [
+      {
+        sentence: "ここーか月は痩せるために野菜ばかり食べていたので、お菓子が[食べたくて]{たまらない}。",
+        meaning: "For the past few months, I have been eating mostly vegetables to lose weight, so I really want to eat sweets."
+      },
+      {
+        sentence: "今日の試験が[不安]{で}[不安で]{たまらなくて}、全然眠れなかったよ。",
+        meaning: "I was so anxious about today's exam that I couldn't sleep at all."
+      },
+      {
+        sentence: "エアコンが壊れてしまい、部屋の中が[暑くて]{たまらない}。",
+        meaning: "The air conditioner broke, and the room is unbearably hot."
+      },
+      {
+        sentence: "私はあなたのことが[嫌い]{でたまらない}わ。",
+        meaning: "I really dislike you."
+      },
+    ],
+    category: GrammarEntryCategory.EMPHASIS,
+    newWords: [
+      { kanji: "痩せる", kana: "やせる", english: "to lose weight" },
+      { kanji: "不安", kana: "ふあん", english: "anxiety" },
+      { kanji: "壊れる", kana: "こわれる", english: "to break" }
+    ]
+  },
+  {
+    id: 53,
+    grammar: "〜にほかならない",
+    imi: "〜以外のものではない",
+    explanation: "～以外のものではないというときに使う文法です。絶対にこれだ！と強調して言いたいときに使う。それ以外のものではない、つまり絶対にこれだ！というふうに強調して言いたいときに使われる文法です。\nThis grammar is used when you want to say that something is nothing other than ~. It is used to strongly emphasize that it is definitely this and nothing else.",
+    extraInfo: "「～からにほかならない」と理由を強調する言い方もある。\nこの〜にほかならないという文法はかたい表現なのでこのような場面で日常生活で使うことはあまりないです。基本的には書き言葉でよく使われる文法です。\nThis grammar is a formal expression and is not commonly used in everyday life. It is primarily used in written language.",
+    usage: {
+      form: [{ name: "名詞" }],
+      pattern: ["にほかならない", "からにほかならない" ],
+    },
+    examples: [
+      {
+        sentence: "何も言わずに突然会社を辞めるなんて、彼のやったことは[無責任]{にほかならない}。",
+        meaning: "Quitting the company suddenly without saying anything is nothing other than irresponsible."
+      },
+      {
+        sentence: "人の本当の気持ちが出るのは、言葉ではなく[態度]{にほかならない}。",
+        meaning: "The true feelings of a person are nothing other than shown through their attitude, not their words."
+      },
+      {
+        sentence: "僕が資格試験に合格したのは、母の支えが[あった]{からにほかならない}。",
+        meaning: "The reason I passed the qualification exam is nothing other than the support of my mother."
+      },
+      {
+        sentence: "[迷惑]{にほかならない}な。",
+        meaning: "It is nothing other than a nuisance."
+      },
+    ],
+    category: GrammarEntryCategory.EMPHASIS,
+    newWords: [
+      { kanji: "無責任", kana: "むせきにん", english: "irresponsible" },
+      { kanji: "態度", kana: "たいど", english: "attitude" },
+      { kanji: "資格", kana: "しかく", english: "qualification" },
+      { kanji: "支える", kana: "ささえる", english: "to support" },
+      { kanji: "迷惑", kana: "めいわく", english: "nuisance" }
+    ]
+  },
+  {
+    id: 54,
+    grammar: "〜こそ",
+    imi: "〜は！",
+    explanation: "この名詞を強調するときに使います。例えばずっと受験に失敗していた人は3回ぐらい受験に失敗していて次こそは合格してみせるとか来年こそは大学に入ってみせる！と言うことができます。これは次とか来年、これを強調しています。来年がとても大切で、来年は絶対に合格するという気持ちそれを強調している時に使います。\nThis grammar is used to emphasize a noun. For example, a person who has failed the entrance exam multiple times might say, 'I will definitely pass the exam next time!' or 'I will definitely enter university next year!' Here, 'next time' or 'next year' is being emphasized. It is used when you want to strongly express that something is very important and that you are determined to achieve it.",
+    extraInfo: "「～からこそ」と理由を強調する言い方もある。",
+    usage: {
+      form: [{ name: "名詞" }],
+      pattern: ["こそ", "からこそ" ],
+    },
+    examples: [
+      {
+        sentence: "彼はみんなに「[今年]{こそ}試験に合格する」と言っていたが、また不合格だったらしい。",
+        meaning: "He told everyone, 'I will definitely pass the exam this year,' but it seems he failed again."
+      },
+      {
+        sentence: "たくさんのつらい[経験をした]{からこそ}、彼女は人に優しいのだろう。",
+        meaning: "It is precisely because she has had many painful experiences that she is kind to others."
+      },
+      {
+        sentence: "[今日]{こそ}彼女に気持ちを伝えようと思ったが、また今日も言えなかった。",
+        meaning: "I thought I would tell her how I feel today for sure, but I couldn't say it again today.",
+        point: "昨日もおとといも、その前もずっと告白しようと思っていたんだけどできませんでした。でも今日こそ(今日は絶対に)好きだと言おうと決意している文章です。",
+      },
+    ],
+    category: GrammarEntryCategory.EMPHASIS,
+    newWords: [
+      { kanji: "辛い", kana: "つらい", english: "painful" },
+      { kanji: "告白", kana: "こくはく", english: "confession" },
+    ]
+  },
+  {
+    id: 55,
+    grammar: "〜まい",
+    imi: "① 〜ないだろう\n② 絶対 〜 ない",
+    explanation: "これは簡単に言うと「ない」と同じ意味で否定の意味を表す文法です。でも使い方が2つあります。\n1つめはないだろうと予想して言う時の言い方、そして2つめは絶対にないと強い気持ちを表す言い方です。\n例えば、1つめの「ないだろう」というのは、朝外に出て、中から外に出てあぁ今日は晴れているなと思ったら今日は雨は降るまいと言うことができます。これは今日は雨は降らないだろうという意味でその状況から考えて予想して雨は降るまいつまり雨は降らないだろうと言っているんです。\n2つめ「絶対にない」と強い気持ちを表すときの言い方、これは例えば今日会社で嫌なことがあってすごく考えてしまう。でももう考えまい！考えまい！、これはもう考えないようにしよう。「考えない考えない！」と自分で強い気持ちを表して言っています。「もう絶対に考えない！」でも考えてしまう、でも絶対に考えない！と自分のことを言っている文になります。\nThis grammar is used to express negation, similar to 'ない', but it has two different usages. The first usage is to express a prediction or assumption that something will not happen, like saying 'It probably won't rain today' based on the situation. The second usage is to express a strong determination not to do something, like saying 'I will definitely not think about it anymore!' as a way of convincing oneself to stop thinking about something unpleasant.\n来る = くるまい or こまい\nする = すまい or しまい",
+    extraInfo: "この2つめの意味の「まい」は自分の意志を表す文法ですから自分のことを言うと覚えておきましょう。",
+    usage: {
+      form: [{ name: "V. る" }, { name: "V. ます STEM" }],
+      pattern: ["まい" ],
+    },
+    examples: [
+      {
+        sentence: "料理の味も店員の態度も悪いこんな店には、もう二度と[来る]{まい}。",
+        meaning: "I will never come to such a restaurant again where both the food and the staff's attitude are bad.",
+        point: "もう絶対に来ないという意味だ。",
+      },
+      {
+        sentence: "いつも嘘ばかりついている彼の言うことなんか、誰も[信じ]{まい}。",
+        meaning: "No one will believe what he says because he always lies.",
+        point: "誰も信じないだろうという予想を表している。",
+      },
+      {
+        sentence: "頭の良い彼女には、試験に落ちた私の気持ちなんて[わかる]{まい}。",
+        meaning: "A smart person like her probably doesn't understand how I feel after failing the exam."
+      },
+      {
+        sentence: "今日の授業は[諦めるしかある]{まい}。",
+        meaning: "I guess I have no choice but to give up on today's class."
+      },
+    ],
+    category: GrammarEntryCategory.EMPHASIS,
+    newWords: [
+      { kanji: "否定", kana: "ひてい", english: "negation" },
+      { kanji: "態度", kana: "たいど", english: "attitude" },
+      { kanji: "嘘", kana: "うそ", english: "lie" }
+    ]
+  },
+  {
+    id: 56,
+    grammar: "〜てでも",
+    imi: "〜しても",
+    explanation: "これは普通はしない方法を使っても～がしたい！など自分の気持ちを強く表す文法です。\nThis grammar is used to strongly express one's feelings, such as wanting to do something even if it means using an unusual method that one normally wouldn't use.",
+    usage: {
+      form: [{ name: "V. テ" }],
+      pattern: ["でも"],
+    },
+    examples: [
+      {
+        sentence: "このお店のラーメンは最高においしいので、一時間[待って]{でも}食べたい。",
+        meaning: "The ramen at this shop is so delicious that I want to eat it even if I have to wait for an hour.",
+        point: "普通はラーメンを食べるのに1時間も待ちたくないですよね。でもこのラーメンはそれぐらいおいしいから1時間待ってでも食べたい！という意味です。",
+      },
+      {
+        sentence: "僕は彼女と[別れて]{でも}、この夢をかなえたかった。",
+        meaning: "I wanted to achieve this dream even if it meant breaking up with my girlfriend."
+      },
+      {
+        sentence: "今の安定した生活を[捨てて]{でも}やりたいことがあると言って、彼はアフリカへ行った。",
+        meaning: "He said he had something he wanted to do even if it meant giving up his stable life, and he went to Africa."
+      },
+    ],
+    category: GrammarEntryCategory.EMPHASIS,
+    newWords: [
+      { kanji: "別れる", kana: "わかれる", english: "to break up" },
+    ]
+  },
+  {
+    id: 57,
+    grammar: "〜というより",
+    imi: "〜ではなくて",
+    explanation: "これは～ではなくて、もっとぴったりな言い方があると言いたいときに使います。AというよりBで、Aという言い方よりBという言い方をした方がいいということです。\nThis grammar is used when you want to say that there is a more appropriate way to express something than the one being used. It is used in the form of 'AというよりB', meaning that it is better to use expression B rather than expression A.",
+    usage: {
+      form: [{ name: "普通形" }, { name: "名詞", connector: "（である）" }, { name: "な形容詞", connector: "（である）" }],
+      pattern: ["というより" ],
+    },
+    examples: [
+      {
+        sentence: "私と弟はとても仲が良くて兄弟というより[親友]{というより}という感じだ。",
+        meaning: "My younger brother and I are very close, and it feels more like we are best friends rather than siblings.",
+        point: "兄弟なんだけれども、兄弟という言い方よりももっとぴったりな言い方は親友だ。",
+      },
+      {
+        sentence: "彼とは性格も趣味も似ていて、[恋人]{というより}友達のような関係だ。",
+        meaning: "He and I have similar personalities and hobbies, and our relationship feels more like friends rather than lovers."
+      },
+      {
+        sentence: "日本語を勉強しているときは、[努力している]{というより}遊んでいるような気持ちになる。",
+        meaning: "When studying Japanese, it feels more like playing rather than making an effort."
+      },
+      {
+        sentence: "彼の話し方は、[おもしろい]{というより}下品だ。",
+        meaning: "His way of speaking is more vulgar than funny."
+      },
+      {
+        sentence: "私たち[同僚]{というより}友人です。",
+        meaning: "We are more like friends than colleagues."
+      }
+    ],
+    category: GrammarEntryCategory.EMPHASIS,
+    newWords: [
+      { kanji: "性格", kana: "せいかく", english: "personality" },
+      { kanji: "似てる", kana: "にてる", english: "to resemble" },
+      { kanji: "下品", kana: "げひん", english: "vulgar" },
+      { kanji: "同僚", kana: "どうりょう", english: "work colleague"}
+    ]
+  },
+  {
+    id: 58,
+    grammar: "〜に決まっている",
+    imi: "絶対〜だ！",
+    explanation: "これは絶対に〜だとか必ず〜だというふうに、話している人が断定する言い方です。\nThis grammar is used to strongly assert that something is definitely or certainly the case.",
+    usage: {
+      form: [{ name: "普通形" }, { name: "名詞", connector: "（である）" }, { name: "な形容詞", connector: "（である）" }],
+      pattern: ["に決まっている" ],
+    },
+    examples: [
+      {
+        sentence: "コンビニでお弁当を買うよりスーパーに行った方が[安い]{に決まっている}。",
+        meaning: "It's definitely cheaper to go to the supermarket than to buy a bento at the convenience store.",
+        point: "これはその人がスーパーに行った方が安いとじていて、絶対にそうだと思っている気持ちを表しています。",
+      },
+      {
+        sentence: "あんなに休まず働き続けていたら、そのうち[倒れる]{に決まっている}。",
+        meaning: "If you keep working without rest like that, you'll definitely collapse eventually."
+      },
+      {
+        sentence: "毎日コンビニでランチを買っていたら、食費が[高くつく]{に決まっている}よ。",
+        meaning: "If you buy lunch at a convenience store every day, your food expenses will definitely be high."
+      },
+      {
+        sentence: "佐藤さんが主役の映画だって。こんなの[面白い]{に決まってる}じゃん！",
+        meaning: "That movie starring Sato-san as the lead is definitely going to be interesting!"
+      },
+    ],
+    category: GrammarEntryCategory.EMPHASIS,
+    newWords: [
+      { kanji: "断定", kana: "だんてい", english: "assertion" },
+      { kanji: "倒れる", kana: "たおれる", english: "to collapse" },
+      { kanji: "食費", kana: "しょくひ", english: "food expenses" },
+      { kanji: "主役", kana: "しゅやく", english: "lead role"}
+    ]
+  },
 ];
