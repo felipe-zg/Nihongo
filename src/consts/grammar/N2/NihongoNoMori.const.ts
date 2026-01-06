@@ -1416,4 +1416,311 @@ export const NIHONGO_NO_MORI_GRAMMAR_N2: GrammarEntry[] = [
       { kanji: "主役", kana: "しゅやく", english: "lead role"}
     ]
   },
+  // SECTION 7: 時間 - GRAMMAR 59 - 67
+  {
+    id: 59,
+    grammar: "〜最中",
+    imi: "〜しているところ",
+    explanation: "今、まさにそれをしているんだと言いたいときに使う文法です。\nThis grammar is used when you want to say that you are in the middle of doing something right now.",
+    usage: {
+      form: [{ name: "V. ている" }, { name: "名詞", connector: "の" }],
+      pattern: ["最中（に）"],
+    },
+    examples: [
+      {
+        sentence: "会社で[プレゼンをしている]{最中に}、突然頭が痛くなり倒れてしまった。",
+        meaning: "I was in the middle of giving a presentation at work when suddenly I got a headache and collapsed."
+      },
+      {
+        sentence: "[シャワーの]{最中に}、誰かが訪ねてきて困った。",
+        meaning: "I was in the middle of taking a shower when someone came to visit, and I was troubled."
+      },
+      {
+        sentence: "試験を[受けている]{最中に}、突然停電した。",
+        meaning: "I was in the middle of taking an exam when suddenly the power went out."
+      },
+      {
+        sentence: "[食べてる]{最中に}話しかけないで。",
+        meaning: "Don't talk to me while I'm eating."
+      },
+    ],
+    category: GrammarEntryCategory.TIME,
+    newWords: [
+      { kanji: "まさに", kana: "まさに", english: "exactly・just・right" },
+      { kanji: "訪ねる", kana: "たずねる", english: "to visit" },
+      { kanji: "停電", kana: "ていでん", english: "power outage" }
+    ]
+  },
+  {
+    id: 60,
+    grammar: "〜かと思うと",
+    imi: "〜したあとすぐ",
+    explanation: "この文法は～すると、すぐという意味です。～をした後すぐに、これをする。ほぼ同時ぐらい、それくらい間をあけずに何か別の行動をすると言いたい時に使う文法です。\nThis grammar means 'immediately after doing ~'. It is used when you want to express that you do something else almost simultaneously or without much delay after doing something.",
+    extraInfo: "この文法は自分のことには使えないので注意してください。",
+    usage: {
+      form: [{ name: "V. た" }],
+      pattern: [ "かと思うと", "かと思ったら" ],
+    },
+    examples: [
+      {
+        sentence: "彼はテーブルにある料理を全部食べ[終わった]{かと思うと}、さらに料理を注文し始めた。",
+        meaning: "Just as he finished eating all the food on the table, he started ordering more food."
+      },
+      {
+        sentence: "友人はアメリカに[留学した]{かと思ったら}、今度はフィリピンに住むらしい。",
+        meaning: "Just as my friend studied abroad in America, it seems they will now live in the Philippines."
+      },
+      {
+        sentence: "ベトナムの天気は不安定で、大雨が[降った]{かと思ったら}すぐに晴れることがよくある。",
+        meaning: "The weather in Vietnam is unstable, and it often clears up immediately after heavy rain."
+      },
+      {
+        sentence: "[帰ってきた]{かと思うと}、また出かけてしまう。",
+        meaning: "Just as she came back, she goes out again."
+      },
+    ],
+    category: GrammarEntryCategory.TIME,
+    newWords: [
+      { kanji: "ほぼ", kana: "", english: "almost" },
+      { kanji: "さらに", kana: "", english: "furthermore" },
+      { kanji: "xx", kana: "xx", english: "xx" }
+    ]
+  },
+  {
+    id: 61,
+    grammar: "〜か 〜ないかのうちに",
+    imi: "～し終わらないくらい、すぐに",
+    explanation: "この文法は～の後すぐに、という意味です。～をした後すぐに別のことが起きる。別のことをすると言いたいときに使う文法です。この「〜か」の、〜の部分には動作を表す言葉が入ります。この動作が終わるか終わらないかのうちにという意味です。つまりこの動作が完全に終わらないくらいそれぐらいすぐだと言いたい文法です。\nThis grammar means 'immediately after ~'. It is used when you want to express that something else happens or you do something else right after completing an action. The '〜か' part is filled with a verb that represents an action. It conveys the meaning that the action is completed or almost completed, indicating that the subsequent event happens very quickly after the action.",
+    extraInfo: "この動詞のところには同じ動詞が入ります。\n The same verb is used in both parts of the sentence.",
+    usage: {
+      form: [{ name: "V. る", connector: "か"  }, { name: "V. た", connector: "か" }],
+      pattern: ["V. ない　＋　かのうちに" ],
+    },
+    examples: [
+      {
+        sentence: "コップの中のビールを[飲む]{か}[飲まない]{かのうちに}、酔っ払って顔が真っ赤になってしまった。",
+        meaning: "As soon as I drank the beer in the glass, I got drunk and my face turned bright red."
+      },
+      {
+        sentence: "信号が[青になる]{か}[青にならない]{かのうちに}、彼は道路を渡り出した。",
+        meaning: "As soon as the traffic light turned green, he started crossing the road."
+      },
+      {
+        sentence: "家に[着いた]{か}[着かない]{かのうちに}、急いでトイレへ入っていった。",
+        meaning: "As soon as I arrived home, I hurried into the bathroom."
+      },
+      {
+        sentence: "私が[答える]{か}[答えない]{かのうちに}話始めるのやめてくれない？",
+        meaning: "Can you stop talking before I finish answering?"
+      },
+    ],
+    category: GrammarEntryCategory.TIME,
+    newWords: [
+      { kanji: "動作", kana: "どうさ", english: "action" },
+      { kanji: "酔っ払う", kana: "よっぱらう", english: "to get drunk" },
+    ]
+  },
+  {
+    id: 62,
+    grammar: "〜たとたん",
+    imi: "〜したあと、すぐ",
+    explanation: "この文法は～した後すぐという意味があります。何かをした後、すぐに別のことが起きると言いたいときに使う文法です。\nThis grammar means 'immediately after ~'. It is used when you want to express that something else happens right after doing something.",
+    usage: {
+      form: [{ name: "V. た" }],
+      pattern: ["とたん（に）" ],
+    },
+    examples: [
+      {
+        sentence: "よほど疲れていたのか、布団に入って[目を閉じた]{とたん}に眠ってしまった。",
+        meaning: "Perhaps I was very tired, but as soon as I got into bed and closed my eyes, I fell asleep."
+      },
+      {
+        sentence: "彼は[立ち上がった]{とたん}、気分が悪くなって倒れてしまった。",
+        meaning: "As soon as he stood up, he felt sick and collapsed."
+      },
+      {
+        sentence: "会社を[出た]{とたん}、大雨が降ってきた。",
+        meaning: "As soon as I left the company, it started raining heavily."
+      },
+    ],
+    category: GrammarEntryCategory.TIME,
+    newWords: [
+      { kanji: "よほど", kana: "", english: "very・greatly" },
+      { kanji: "布団", kana: "ふとん", english: "futon・bedding" },
+    ]
+  },
+  {
+    id: 63,
+    grammar: "〜上で",
+    imi: "① 〜をするとき\n② 〜をした後",
+    explanation: "この文法は〜という立場でとか～という状況でという意味です。「上で」という言葉は、物の上というふうに使うことが多いですよね。ただこの文法で使う場合は、物じゃなくてそういう状況とか立場の上でという意味になります。ですから意味としては〜するときとかもう1つは～した後という言い方になります。文法の「上で」というのは〜という立場・状況でという意味ですからする時ももしくは、した後この2つがあると覚えてください。\nThis grammar means 'in the situation of ~' or 'from the standpoint of ~'. The word '上で' is often used to refer to the top of something, but in this grammar, it refers to a situation or standpoint rather than a physical object. Therefore, it can mean either 'when doing ~' or 'after doing ~'. Remember that in this grammar, '上で' can refer to either the time of doing something or the time after having done something.",
+    extraInfo: "名詞の接続でよく使われるのはご確認の上とか、ご相談の上とか、覚悟の上、こういう名詞がよく使われます。",
+    usage: {
+      form: [{ name: "① V. る" }, { name: "② V. た" }, { name: "② 名詞", connector: "の" }],
+      pattern: ["上（で）" ],
+    },
+    examples: [
+      {
+        sentence: "社内で何度も[話し合いをした]{上で}、この商品を発売することが決定しました。",
+        meaning: "After having many discussions within the company, it was decided to release this product."
+      },
+      {
+        sentence: "家族と[相談の]{上}、一人暮らしをすることに決めました。",
+        meaning: "After consulting with my family, I decided to live alone."
+      },
+      {
+        sentence: "[仕事をする]{上で}大切なことは、責任感を持つことだ。",
+        meaning: "An important thing when working is to have a sense of responsibility."
+      },
+    ],
+    category: GrammarEntryCategory.TIME,
+    newWords: [
+      { kanji: "状況", kana: "じょうきょう", english: "situation" },
+      { kanji: "確認", kana: "かくにん", english: "confirmation" },
+      { kanji: "相談", kana: "そうだん", english: "consultation" },
+      { kanji: "覚悟", kana: "かくご", english: "resolution" },
+      { kanji: "発売", kana: "はつばい", english: "release (of a product)"},
+      { kanji: "相談", kana: "そうだん", english: "consultation"},
+      { kanji: "責任感", kana: "せきにんかん", english: "sense of responsibility" }
+    ]
+  },
+  {
+    id: 64,
+    grammar: "〜ついでに",
+    imi: "〜をするときに、別のこともする",
+    explanation: "何か目的があってそのために一つ行動をしますよね。それはするときに一つの目的だけじゃなくてもう一つ別のことをするという意味です。",
+    extraInfo: "この「ついでに」という文法は日常会話でもよく使います。",
+    usage: {
+      form: [{ name: "V. る" }, { name: "V. た" }, { name: "名詞", connector: "（ の ）" }],
+      pattern: ["ついでに"],
+    },
+    examples: [
+      {
+        sentence: "[掃除の]{ついでに}、生活に必要のない無駄な物を全て捨てた。",
+        meaning: "While cleaning, I threw away all the unnecessary items that were not needed for daily life."
+      },
+      {
+        sentence: "コンビニに[行く]{ついでに}、電池も買ってきてくれない？",
+        meaning: "While you're going to the convenience store, could you also buy some batteries?"
+      },
+      {
+        sentence: "京都へ[出張した]{ついでに}、学生時代の友達に会ってきた。",
+        meaning: "While on a business trip to Kyoto, I also met a friend from my student days."
+      },
+      {
+        sentence: "あ、ちょっと。[立った]{ついでに}それ取って。",
+        meaning: "Ah, While you're up, could you grab that for me?"
+      },
+    ],
+    category: GrammarEntryCategory.TIME,
+    newWords: [
+      { kanji: "掃除", kana: "そうじ", english: "cleaning" },
+      { kanji: "無駄な", kana: "むだな", english: "wasteful" },
+    ]
+  },
+  {
+    id: 65,
+    grammar: "〜をかねて",
+    imi: "〜も同時に行って",
+    explanation: "この文法は～も同時に行なってという意味です。かねるという言葉は1つのものが2つの役割をするという意味があります。ですから〜をかねて〜するというふうに言った場合は2つのことを同時に行うという意味になります。\nThis grammar means 'to do ~ at the same time'. The word 'かねる' implies that one thing serves two roles. Therefore, when you say '〜をかねて〜する', it means to perform two actions simultaneously.",
+    usage: {
+      form: [{ name: "名詞" }],
+      pattern: ["をかねて"],
+    },
+    examples: [
+      {
+        sentence: "リスニングと会話の[練習]{をかねて}、日本のアニメをたくさん観ている。",
+        meaning: "I watch a lot of Japanese anime to practice both listening and conversation."
+      },
+      {
+        sentence: "ストレス[発散]{をかねて}、ジムに通っている。",
+        meaning: "I go to the gym to relieve stress."
+      },
+      {
+        sentence: "[節約とダイエット]{をかねて}、毎朝駅まで歩いている。",
+        meaning: "I walk to the station every morning to save money and diet."
+      },
+      {
+        sentence: "僕は日本語の[勉強]{もかねて}漫省を読んでいるんだよ。",
+        meaning: "I read manga to study Japanese as well."
+      },
+    ],
+    category: GrammarEntryCategory.TIME,
+    newWords: [
+      { kanji: "役割", kana: "やくわり", english: "role" },
+      { kanji: "発散", kana: "はっさん", english: "relief" },
+      { kanji: "節約", kana: "せつやく", english: "saving" },
+    ]
+  },
+  {
+    id: 66,
+    grammar: "〜につけ",
+    imi: "〜する度に",
+    explanation: "この文法は～たびに、と同じです。これをするたびにいつも同じ気持ちになるとかいつも同じことが起こると言いたいときに使う文法です。この文法は、聞くけとか、見るにつけとか考えるにつけ、この3つの動詞がよく使われます。他にも使われるものはあるんですがこの3つは特によく使われるのでぜひ覚えてください。\nThis grammar is the same as '～たびに'. It is used when you want to express that the same feeling arises or the same thing happens every time you do something. This grammar is often used with the verbs '聞く', '見る', and '考える'. While there are other verbs that can be used, these three are particularly common, so be sure to remember them.",
+    extraInfo: "「何かにつけて」この言い方もよく使われるのでぜひ覚えておいてください。",
+    usage: {
+      form: [{ name: "V. る" }],
+      pattern: ["につけ（ て ）"],
+    },
+    examples: [
+      {
+        sentence: "片思い中の彼女のことを[考える]{につけ}、胸が締め付けられるような切ない気持ちになる。",
+        meaning: "Every time I think about the girl I have a crush on, I feel a painful feeling as if my chest is being squeezed."
+      },
+      {
+        sentence: "道で犬を[見かける]{につけ}、昔飼っていた愛犬のことを思い出す。",
+        meaning: "Every time I see a dog on the street, I remember the dog I used to have."
+      },
+      {
+        sentence: "彼は[何か]{につけ}文句を言ってくるので、皆から嫌われている。",
+        meaning: "He complains about everything, so everyone dislikes him."
+      },
+    ],
+    category: GrammarEntryCategory.TIME,
+    newWords: [
+      { kanji: "片思い中", kana: "かたおもいちゅう", english: "having a crush" },
+      { kanji: "締め付ける", kana: "しめつける", english: "to tighten" },
+      { kanji: "切ない", kana: "せつない", english: "painful・heartrending" },
+      { kanji: "愛犬", kana: "あいけん", english: "beloved dog" }
+    ]
+  },
+  {
+    id: 67,
+    grammar: "〜ぶりに",
+    imi: "〜という長い時間が経って",
+    explanation: "時間を表す文法なので、ここには1週間とか1年とか半年のように時間の長さを表す言葉が入ります。長い時間がたってという意味なんです例えば1週間と1年を比べたら1年の方が長いんじゃないかと思うかもしれません。でもこの文法では、話している人が長いと思っていればいいのでそれは話している人とかその状況によって1週間が長いと思うのか1年が長いと思うのかというのは変わってくると思います。ですからここには2日ぶりにとか、3日ぶりにのようにもう少し少ない数を入れても大丈夫です。\nThis grammar expresses time, so it is used with words that indicate the length of time, such as '1 week', '1 year', or 'half a year'. It means 'after a long time has passed'. For example, when comparing 1 week and 1 year, one might think that 1 year is longer. However, in this grammar, it is sufficient for the speaker to feel that the time is long. Therefore, whether 1 week or 1 year feels long can vary depending on the speaker and the situation. Thus, it is also acceptable to use smaller numbers like 'after 2 days' or 'after 3 days' here.",
+    usage: {
+      form: [{ name: "名詞" }],
+      pattern: ["ぶり（ に ）"],
+    },
+    examples: [
+      {
+        sentence: "同窓会で[10年]{ぶりに}親友と再会し、学生時代のように楽しく話をした。",
+        meaning: "I reunited with my best friend at the alumni meeting after 10 years and had a fun conversation like in our student days."
+      },
+      {
+        sentence: "けがの治療が終わり退院し、[一か月]{ぶりに}同僚に会うことができた。",
+        meaning: "After finishing treatment for my injury and being discharged from the hospital, I was able to meet my colleagues after a month."
+      },
+      {
+        sentence: "{久しぶりに}家へ帰ったら、飼っていたペットが大きく成長していて驚いた。",
+        meaning: "I was surprised to see that the pet I used to have had grown significantly when I returned home after a long time."
+      },
+      {
+        sentence: "このお店、[1年]{ぶりに}来たな～。変わってないな～。",
+        meaning: "It's been a year since I last came to this shop. It hasn't changed at all."
+      },
+    ],
+    category: GrammarEntryCategory.TIME,
+    newWords: [
+      { kanji: "経る", kana: "へる", english: "to pass (time)" },
+      { kanji: "同窓会", kana: "どうそうかい", english: "alumni meeting" },
+      { kanji: "再会", kana: "さいかい", english: "reunion" },
+      { kanji: "退院", kana: "たいいん", english: "discharge from hospital" },
+      { kanji: "治療", kana: "ちりょう", english: "treatment" },
+      { kanji: "同僚", kana: "どうりょう", english: "colleague" },
+      { kanji: "成長", kana: "せいちょう", english: "growth" },
+      { kanji: "驚く", kana: "おどろく", english: "to be surprised" }
+    ]
+  },
 ];
