@@ -18,7 +18,8 @@ export const GrammarEntryCategory = {
   SETSUZOKU_RELATIONS: '順接・逆接',
   BAD_MEANING: '悪い意味',
   EMPHASIS: '強調',
-  TIME: "時間"
+  TIME: "時間",
+  STANDARDS_AND_RELATIONS: '基準・関連',
 } as const;
 
 export type GrammarCategory = typeof GrammarEntryCategory[keyof typeof GrammarEntryCategory];

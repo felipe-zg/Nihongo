@@ -1723,4 +1723,384 @@ export const NIHONGO_NO_MORI_GRAMMAR_N2: GrammarEntry[] = [
       { kanji: "驚く", kana: "おどろく", english: "to be surprised" }
     ]
   },
+  // SECTION 8: 基準・関連 - GRAMMAR 68 - 77
+  {
+    id: 68,
+    grammar: "〜に反して",
+    imi: "〜とは反対に",
+    explanation: "この文字を見たらわかるように～とは反対にという意味です。\nAs you can see from the characters, it means 'in contrast to ~' or 'contrary to ~'.",
+    extraInfo: "この名詞の部分なんですけど、基本的には何を使ってもいいんですが、よく使われる名詞がいくつかある。「予想に反して」、「期待に反して」、「命令に反して」、「希望に反して」とか。こういう名詞が一緒によく使われるのでぜひ覚えておいてください。\nRegarding the noun part, basically you can use anything, but there are some nouns that are often used together. For example, 'contrary to expectations', 'contrary to hopes', 'contrary to orders', etc. Please remember these commonly used nouns.",
+    usage: {
+      form: [{ name: "名詞" }],
+      pattern: ["に反して" ],
+      combinedForms: [{ first: '名詞１', pattern: ['に反する'], second: '名詞２' }]
+    },
+    examples: [
+      {
+        sentence: "この会社では、上司の[命令]{に反する}[行動]をとることは絶対に許されない。",
+        meaning: "In this company, taking actions contrary to the boss's orders is absolutely not allowed."
+      },
+      {
+        sentence: "親の[期待]{に反して}、彼はピアニストにならずに歌手になった。",
+        meaning: "Contrary to his parents' expectations, he became a singer instead of a pianist."
+      },
+      {
+        sentence: "専門家の[予想]{に反して}、感染症は一年経った今でも拡大し続けている。",
+        meaning: "Contrary to experts' predictions, the infectious disease has continued to spread even after a year."
+      },
+      {
+        sentence: "教室の[ルール]{に反する}[人]は教室からおい出しますよ！",
+        meaning: "People who go against the classroom rules will be kicked out of the classroom!"
+      },
+    ],
+    category: GrammarEntryCategory.STANDARDS_AND_RELATIONS,
+    newWords: [
+      { kanji: "行動", kana: "こうどう", english: "action" },
+      { kanji: "許す", kana: "ゆるす", english: "to allow" },
+      { kanji: "期待", kana: "きたい", english: "expectation" },
+      { kanji: "予想", kana: "よそう", english: "prediction" },
+      { kanji: "感染症", kana: "かんせんしょう", english: "infectious disease" },
+      { kanji: "経つ", kana: "たつ", english: "to pass (time)" },
+      { kanji: "拡大", kana: "かくだい", english: "expansion" },
+    ]
+  },
+  {
+    id: 69,
+    grammar: "〜に応じて",
+    imi: "〜に合わせて",
+    explanation: "応じるというのは、相手の変化に対応するとかそれに合わせるという意味がありますから、この文法も～に合わせてという意味になります。\nThe verb '応じる' means to respond to or adapt to changes in the other party. Therefore, this grammar also means 'in accordance with ~' or 'according to ~'.",
+    extraInfo: "この名詞の部分なんですけど、基本的には何を使ってもいいんですが、よく使われる名詞がいくつかある。「希望に応じて」、「変化に応じて」、「場所に応じて」、「状況に応じて」、「能力・経験に応じて」とか。こういう単語が一緒に使われる場合が多いです。\nRegarding the noun part, basically you can use anything, but there are some nouns that are often used together. For example, 'according to hopes', 'according to changes', 'according to location', 'according to situation', 'according to ability/experience', etc. These words are often used together.\n\nこの～に応じてという文法はかたい表現です。お知らせなどによく使われますね。かたい表現なので今のような場面だったら相手に応じて態度を変えてるね、よりも相手によって態度を変えてるね、の方が会話だったら自然になります。\nThis grammar '〜に応じて' is a formal expression. It is often used in announcements and similar contexts. Since it is a formal expression, in conversational situations like the current one, it would be more natural to say '相手によって態度を変えてるね' (changing attitude depending on the person) rather than '相手に応じて態度を変えてるね' (changing attitude according to the person).",
+    usage: {
+      form: [{ name: "名詞" }],
+      pattern: ["に応じて" ],
+      combinedForms: [{ first: '名詞１', pattern: ['に応じた'], second: '名詞２' }]
+    },
+    examples: [
+      {
+        sentence: "部下には、一人ひとりの[能力]{に応じた}[仕事]を任せることが大切だ。",
+        meaning: "It is important to assign tasks to subordinates according to each individual's ability."
+      },
+      {
+        sentence: "荷物の[大きさ]{に応じて}、配達の料金が異なります。",
+        meaning: "The delivery fee varies according to the size of the luggage."
+      },
+      {
+        sentence: "お客様の[要望]{に応じて}、営業時間を一時間延ばすことに決めた。",
+        meaning: "We decided to extend the business hours by one hour according to customer requests."
+      },
+      {
+        sentence: "あの女、[相手]{に応じて}態度を変えてるな・・・嫌なやつ。",
+        meaning: "That woman changes her attitude according to the person she's dealing with... what an unpleasant person."
+      },
+    ],
+    category: GrammarEntryCategory.STANDARDS_AND_RELATIONS,
+    newWords: [
+      { kanji: "部下", kana: "ぶか", english: "subordinate" },
+      { kanji: "能力", kana: "のうりょく", english: "ability" },
+      { kanji: "任せる", kana: "まかせる", english: "to entrust" },
+      { kanji: "異", kana: "こと", english: "difference" },
+      { kanji: "要望", kana: "ようぼう", english: "request" },
+      { kanji: "営業時間", kana: "えいぎょうじかん", english: "business hours"},
+      { kanji: "延ばす", kana: "のばす", english: "to extend"}
+    ]
+  },
+  {
+    id: 70,
+    grammar: "〜に加えて",
+    imi: "〜だけでなく",
+    explanation: "加えるというのは、何かに何かを足す、プラスする、という意味ですからこれだけじゃなくてこれも、という意味になります。\nThe verb '加える' means to add something to something else, so it conveys the meaning of 'not only this, but also this'.",
+    usage: {
+      form: [{ name: "名詞" }],
+      pattern: ["に加えて"],
+    },
+    examples: [
+      {
+        sentence: "外国語を習得するためには、単語の[暗記]{に加えて}会話の練習をすることがとても大切だ。",
+        meaning: "It is very important to practice conversation in addition to memorizing vocabulary in order to acquire a foreign language."
+      },
+      {
+        sentence: "本日、[入会金]{に加えて}、今月分の料金もお支払いいただきます。",
+        meaning: "Today, in addition to the admission fee, you will also pay this month's fee."
+      },
+      {
+        sentence: "症状をおさえるために、薬を[飲むこと]{に加えて}軽い運動もするようにしてください。",
+        meaning: "In order to relieve symptoms, please take medicine and also do light exercise."
+      },
+      {
+        sentence: "日本語の森は、[もりお]{に加えて}トリハダも仲間になってくれて、幸せだな～",
+        meaning: "I am happy that Nihongo no Mori, in addition to Morio, has also welcomed Torihada as a member."
+      },
+    ],
+    category: GrammarEntryCategory.STANDARDS_AND_RELATIONS,
+    newWords: [
+      { kanji: "習得", kana: "しゅうとく", english: "acquisition" },
+      { kanji: "入会金", kana: "にゅうかいきん", english: "admission fee" },
+      { kanji: "月分", kana: "げつぶん", english: "monthly portion" },
+      { kanji: "症状", kana: "しょうじょう", english: "symptom" },
+      { kanji: "抑える", kana: "おさえる", english: "to suppress" },
+      { kanji: "軽い", kana: "かるい", english: "light" },
+      { kanji: "仲間", kana: "なかま", english: "companion" }
+    ]
+  },
+  {
+    id: 71,
+    grammar: "〜に沿って",
+    imi: "〜に合わせて",
+    explanation: "まずこの「沿う」という言葉の意味なんですけど道路とか線路とか川がありますよね。そういうものの、すでにある形に合わせてこういうふうに行くこと、これ川に沿って歩くとか道に沿って歩くという言い方をします。道とか道路とか川という名詞が一緒についてその形に合わせるという意味があります。\n他に実際に目に見えないものだったら期待に沿ってとか、希望に沿ってとかお客様の要望に沿ってこのような言い方もよく使われます。\n従ってという言葉は、指示とか命令こうしなさい！と言うことに合わせるという意味で使われるんですが沿っての場合は、何か相手がしてほしいこと自分がしたいことのように、希望とか要望それに合わせるという意味でよく使われます。\n\nFirst, regarding the meaning of the word '沿う', there are roads, railways, and rivers. It refers to following the already existing shape of such things. For example, we say 'walk along the river' or 'walk along the road'. It conveys the meaning of following the shape of nouns like roads or rivers.\nAdditionally, for intangible things that cannot be seen, phrases like 'in line with expectations', 'in line with hopes', or 'in line with customer requests' are also commonly used.\nThe word '従って' is used to mean following instructions or orders, such as 'do this!'. However, in the case of '沿って', it is often used to mean aligning with desires or requests, such as what someone wants you to do or what you want to do.\nThis grammar is often used to express alignment with hopes or requests.",
+    usage: {
+      form: [{ name: "名詞" }],
+      pattern: ["に沿って" ],
+      combinedForms: [{ first: '名詞１', pattern: ['に沿った'], second: '名詞２' }]
+    },
+    examples: [
+      {
+        sentence: "春になると[川]{に沿って}並んでいる桜の木が満開になって、とても美しい。",
+        meaning: "The cherry trees lined up along the river are in full bloom in spring, and it is very beautiful."
+      },
+      {
+        sentence: "[大通り]{に沿って}まっすぐ進むと、黄色い看板がありますのでそこを右に曲がってください。",
+        meaning: "If you go straight along the main street, there is a yellow signboard, so please turn right there."
+      },
+      {
+        sentence: "お客様のご[希望]{に沿った}{快適なお部屋}をご用意いたしました。",
+        meaning: "We have prepared a comfortable room in accordance with the customer's wishes."
+      },
+      {
+        sentence: "今日から君の[希望]{に沿って}デートプランを立てようと思う。",
+        meaning: "From today, I plan to make a date plan according to your wishes."
+      },
+    ],
+    category: GrammarEntryCategory.STANDARDS_AND_RELATIONS,
+    newWords: [
+      { kanji: "沿う", kana: "そう", english: "to follow・to run along" },
+      { kanji: "従う", kana: "したがう", english: "to obey・to follow" },
+      { kanji: "桜", kana: "さくら", english: "cherry blossom" },
+      { kanji: "満開", kana: "まんかい", english: "full bloom" },
+      { kanji: "大通り", kana: "おおどおり", english: "main street" },
+      { kanji: "進む", kana: "すすむ", english: "to advance・to proceed" },
+      { kanji: "黄色い", kana: "きいろい", english: "yellow" },
+      { kanji: "看板", kana: "かんばん", english: "signboard" },
+      { kanji: "快適な", kana: "かいてきな", english: "comfortable"}
+    ]
+  },
+  {
+    id: 72,
+    grammar: "〜に伴って",
+    imi: "〜と一緒に",
+    explanation: "同時に別のことが起きると言いたいときに使う。この伴うという言葉は一緒にという意味があります。だから～に伴って、これは～と一緒にという意味ですね。この文法は、これと一緒にこういうことが起きるとかこれと一緒にこちらも変化するというように何か状況が変わったり変化したり何かが起きるこれと一緒にこれも起きるこれと一緒にこれも変化するというふうに言いたい場合に使われる文法です。\nThis grammar is used when you want to express that something else happens simultaneously. The word '伴う' means 'together with'. Therefore, '〜に伴って' means 'together with ~'. This grammar is used when you want to say that something happens along with something else, or that something changes along with something else. It is used to express that when a situation changes or something happens, something else also happens or changes together with it.",
+    extraInfo: "「に伴って」これは漢字で書かれる場合とひらがなで書かれる場合も多いのでどちらでもわかるようにしておきましょう。\n\nこの〜に伴ってという文法はかたい表現なのでこういう日常会話で使うことはほとんどありません。何か正式な場で話したり、書き言葉として使われることが多いです。",
+    usage: {
+      form: [{ name: "名詞" }],
+      pattern: ["に伴って", "に伴い" ],
+      combinedForms: [{ first: '名詞１', pattern: ['に伴う'], second: '名詞２' }]
+    },
+    examples: [
+      {
+        sentence: "[就職]{に伴って}、田舎の街へ引っ越しすることになった。",
+        meaning: "Due to getting a job, I had to move to a rural town."
+      },
+      {
+        sentence: "台風の[接近]{に伴って}、雨と風が強くなってきた。",
+        meaning: "As the typhoon approached, the rain and wind became stronger."
+      },
+      {
+        sentence: "本日の授業では、[地球温暖化]{に伴う}[問題]についてお話します。",
+        meaning: "In today's class, we will talk about the problems associated with global warming."
+      },
+      {
+        sentence: "恋人との[お別れ]{に伴い}、日本語の勉強をやめることにしました。皮女が日本人だったので一生懸命勉強していたんですがもう必要ないですね！",
+        meaning: "Due to parting with my lover, I decided to stop studying Japanese. Since my girlfriend was Japanese, I was studying hard, but now it's no longer necessary!"
+      },
+    ],
+    category: GrammarEntryCategory.STANDARDS_AND_RELATIONS,
+    newWords: [
+      { kanji: "伴う", kana: "ともなう", english: "to accompany・to bring with" },
+      { kanji: "就職", kana: "しゅうしょく", english: "getting a job" },
+      { kanji: "田舎", kana: "いなか", english: "rural area" },
+      { kanji: "接近", kana: "せっきん", english: "approach" },
+      { kanji: "地球温暖化", kana: "ちきゅうおんだんか", english: "global warming" },
+      { kanji: "正式", kana: "せいしき", english: "formal" },
+    ]
+  },
+  {
+    id: 73,
+    grammar: "〜において",
+    imi: "〜で",
+    explanation: "場所とか場面、あとは状況を表すときに使います。\nThis grammar is used to indicate a place, scene, or situation.",
+    extraInfo: "これはかたい表現で日常的な会話には使われません。この〜においてというのは敬語と一緒に使ったり、あとは新聞とか小説などかたい表現だと覚えておきましょう。\n\nThis is a formal expression and is not used in everyday conversation. Remember that '〜において' is often used together with honorific language, as well as in formal writings such as newspapers and novels.",
+    usage: {
+      form: [{ name: "名詞" }],
+      pattern: ["において" ],
+    },
+    examples: [
+      {
+        sentence: "今日の会議は3階の[会議室]{において}行われます。",
+        meaning: "Today's meeting will be held in the conference room on the third floor.",
+        point: "今日の会議は3階の会議室で行われますという意味です。",
+      },
+      {
+        sentence: "[人生]{において}最も大切なことは、失敗を恐れずチャレンジし続けることだ。",
+        meaning: "The most important thing in life is to keep challenging yourself without fear of failure."
+      },
+      {
+        sentence: "インターネットのない[時代]{において}、家族に連絡する方法は電話か手紙しかなかった。",
+        meaning: "In the era without the internet, the only ways to contact family were by phone or letter."
+      },
+      {
+        sentence: "明日[東京大学]{において}、村上教授の講演会が行われます。",
+        meaning: "Professor Murakami's lecture will be held at the University of Tokyo tomorrow."
+      },
+    ],
+    category: GrammarEntryCategory.STANDARDS_AND_RELATIONS,
+    newWords: [
+      { kanji: "恐れる", kana: "おそれる", english: "to fear" },
+      { kanji: "村上教授", kana: "むらかみきょうじゅ", english: "Professor Murakami" },
+      { kanji: "講演会", kana: "こうえんかい", english: "lecture" }
+    ]
+  },
+  {
+    id: 74,
+    grammar: "〜にかけては",
+    imi: "〜については",
+    explanation: "それに関してはよくできる！と言いたいときに使う。自慢したいこととか、これだけは誰にも負けないとても上手だと自信を持って言えることに対して使います。\nThis grammar is used when you want to say that you are good at something related to it! It is used for things you want to boast about or things you can confidently say you are very skilled at and won't lose to anyone else.",
+    usage: {
+      form: [{ name: "名詞" }],
+      pattern: ["にかけては" ],
+    },
+    examples: [
+      {
+        sentence: "私の母は[料理]{にかけては}誰にも負けない。",
+        meaning: "My mother is unbeatable when it comes to cooking.",
+        point: "私のお母さんは料理がとっても上手で誰よりも上手です。本当に上手だって自信を持って言えますという意味です。",
+      },
+      {
+        sentence: "日本の[漫画とアニメ]{にかけては}、彼より詳しい人にこれまで出会ったことがない。",
+        meaning: "I have never met anyone more knowledgeable about Japanese manga and anime than him."
+      },
+      {
+        sentence: "選抜チームの中でも、[足の速さ]{にかけては}彼に勝てる人はいないだろう。",
+        meaning: "There is probably no one in the selected team who can beat him in terms of speed."
+      },
+      {
+        sentence: "彼は勉強はできないけれど、[音楽の知識]{にかけては}クラスで一番だ。",
+        meaning: "He may not be good at studying, but when it comes to knowledge of music, he is the best in the class."
+      },
+      {
+        sentence: "絵を[描くこと]{にかけては}ゆか先生の右にでるものはいないですね！",
+        meaning: "When it comes to drawing, there is no one who can surpass Yuka-sensei!"
+      }
+    ],
+    category: GrammarEntryCategory.STANDARDS_AND_RELATIONS,
+    newWords: [
+      { kanji: "選抜", kana: "せんばつ", english: "selection" },
+      { kanji: "足の速さ", kana: "あしのはやさ", english: "speed" },
+      { kanji: "勝てる", kana: "かてる", english: "can win" },
+      { kanji: "知識", kana: "ちしき", english: "knowledge" },
+      { kanji: "右に出る", kana: "みぎにでる", english: "to surpass" }
+    ]
+  },
+  {
+    id: 75,
+    grammar: "〜をめぐって",
+    imi: "〜について",
+    explanation: "問題や争いが起きるときに使う。これは〜についてという意味で何かの話題を中心にして争いとか話し合いが起きると言いたいときに使います。\nThis grammar is used when a problem or dispute arises. It means 'about ~' and is used when you want to say that a dispute or discussion arises centered around a certain topic.",
+    extraInfo: "ちょっとかたい表現なので日常的な話題に対してはあまり使うことはありません。",
+    usage: {
+      form: [{ name: "名詞" }],
+      pattern: ["をめぐって", "をめぐり" ],
+      combinedForms: [{ first: '名詞１', pattern: ['をめぐる'], second: '名詞２' }]
+    },
+    examples: [
+      {
+        sentence: "[親の遺産]{をめぐって}、親戚同士の激しい争いが始まった。",
+        meaning: "A fierce dispute began among relatives over the inheritance of the parents."
+      },
+      {
+        sentence: "[大会の中止]{をめぐって}、たくさんの意見が寄せられた。",
+        meaning: "Many opinions were gathered regarding the cancellation of the tournament."
+      },
+      {
+        sentence: "住民の間で[ビルの建設]{をめぐる}対立が起こっている。",
+        meaning: "A conflict has arisen among residents regarding the construction of the building."
+      },
+    ],
+    category: GrammarEntryCategory.STANDARDS_AND_RELATIONS,
+    newWords: [
+      { kanji: "遺産", kana: "いさん", english: "inheritance" },
+      { kanji: "親戚同士", kana: "しんせきどうし", english: "relatives" },
+      { kanji: "激しい", kana: "はげしい", english: "intense" },
+      { kanji: "寄せる", kana: "よせる", english: "to gather" },
+      { kanji: "建設", kana: "けんせつ", english: "construction" },
+      { kanji: "対立", kana: "たいりつ", english: "conflict" }
+    ]
+  },
+  {
+    id: 76,
+    grammar: "〜というと",
+    imi: "〜について言うと",
+    explanation: "意味は～について言うと、という意味で何かある言葉を言った時、もしくは聞いたときにパッと思い浮かべること、一番最初にイメージすることはこうですと言いたいときに使います。\nThe meaning is 'speaking of ~' or 'when it comes to ~'. It is used when you want to express what comes to mind or what you first imagine when you say or hear a certain word.",
+    usage: {
+      form: [{ name: "名詞" }],
+      pattern: ["というと", "といえば" ],
+    },
+    examples: [
+      {
+        sentence: "[漢字の勉強]{というと}嫌がる人が多いのですが、実はとてもおもしろいものです。",
+        meaning: "Many people dislike studying kanji, but in reality, it is very interesting."
+      },
+      {
+        sentence: "[北海道]{といえば}、じゃがいもやとうもろこしなどのおいしい食べ物を思い浮かべる。",
+        meaning: "When it comes to Hokkaido, I think of delicious foods like potatoes and corn."
+      },
+      {
+        sentence: "東京出身の人は[遠足]{というと}、京都や奈良へ行くらしい。",
+        meaning: "People from Tokyo apparently think of going to Kyoto or Nara when it comes to excursions."
+      },
+      {
+        sentence: "昔は海外で[一人暮らし]{というと}とても寂しかったが今はテレビ電話ができるので寂しくないですね。",
+        meaning: "In the past, living alone overseas was very lonely, but now with video calls, it is not lonely."
+      },
+    ],
+    category: GrammarEntryCategory.STANDARDS_AND_RELATIONS,
+    newWords: [
+      { kanji: "じゃがいも", kana: "じゃがいも", english: "potato" },
+      { kanji: "とうもろこし", kana: "とうもろこし", english: "corn" },
+      { kanji: "遠足", kana: "えんそく", english: "excursion" },
+      { kanji: "奈良", kana: "なら", english: "Nara"}
+    ]
+  },
+  {
+    id: 77,
+    grammar: "〜とは",
+    imi: "〜は",
+    explanation: "言葉の意味を説明するときに使います。硬い言い方ので、〜ってとか、〜というのは、と言うことができます。でも話言葉じゃなくて書き言葉で言う時は〜とは、と言うことができます。\nThis grammar is used when explaining the meaning of a word. It is a formal expression, and you can also say '〜って' or '〜というのは'. However, when speaking in written language rather than spoken language, you can say '〜とは'.",
+    usage: {
+      form: [{ name: "名詞" }],
+      pattern: ["とは" ],
+    },
+    examples: [
+      {
+        sentence: "[仕事]{とは}、人の役に立つ代わりにお金をもらうという行為である。",
+        meaning: "Work is the act of receiving money in exchange for being useful to others.",
+        point: "これは「仕事とは」でも「仕事は」でも意味は全く同じなんですが「仕事とは」と言った方が少しかたい言い方になります。",
+      },
+      {
+        sentence: "[梅雨]{とは}5月から7月の間にある、雨の多い時期のことです。",
+        meaning: "The rainy season is the period with a lot of rain between May and July."
+      },
+      {
+        sentence: "[ゴールデンウィーク]{とは}、毎年5月にある長い連休のことです。",
+        meaning: "Golden Week is a long holiday that occurs every May."
+      },
+      {
+        sentence: "[帰りしな]{とは}関西弁で帰ってくる途中という意味です。",
+        meaning: "In Kansai dialect, '帰りしな' means on the way back."
+      },
+    ],
+    category: GrammarEntryCategory.STANDARDS_AND_RELATIONS,
+    newWords: [
+      { kanji: "行為", kana: "こうい", english: "act・deed" },
+      { kanji: "連休", kana: "れんきゅう", english: "consecutive holidays" },
+    ]
+  },
 ];
