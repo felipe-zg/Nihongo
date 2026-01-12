@@ -2103,4 +2103,307 @@ export const NIHONGO_NO_MORI_GRAMMAR_N2: GrammarEntry[] = [
       { kanji: "連休", kana: "れんきゅう", english: "consecutive holidays" },
     ]
   },
+  // SECTION 9: 仮定・条件 - GRAMMAR 78 - 86
+  {
+    id: 78,
+    grammar: "〜にしても",
+    imi: "〜だと考えても",
+    explanation: "この文法は～だとしてもという意味です。～にしてもというのは、たとえこうだったとしても言いたいことは変わらないとか結果は変わらないと言いたいときに使われる文法です。仮にこうだったとしても、私はこう思うというふうに自分の考えとか意見を述べるときによく使われます。\nThis grammar means 'even if ~ is the case'. It is used when you want to say that your opinion or the result does not change even if you consider it to be a certain way. It is often used when expressing your thoughts or opinions, such as 'even if it were the case that ~, I think this way'.",
+    extraInfo: "この「それにしても」という言い方本当によく使われます。今のように「～と考えてもこうだ」という風に自分の意見を言いたいときにもよく使われますしあまり意味をもたない時もあります。",
+    usage: {
+      form: [{ name: "普通形" }, { name: "名詞", connector: "である" }, { name: "な形容詞", connector: "である" }],
+      pattern: ["にしても" ],
+    },
+    examples: [
+      {
+        sentence: "いくら素材が[良い]{にしても}、Tシャツ一枚で3万円は高すぎると思う。",
+        meaning: "No matter how good the material is, I think 30,000 yen for a single T-shirt is too expensive."
+      },
+      {
+        sentence: "いくら[慣れている]{にしても}、山では何があるかわかりませんから、必ず二人以上で行動しましょう。",
+        meaning: "No matter how experienced you are, you never know what might happen in the mountains, so always go with at least one other person."
+      },
+      {
+        sentence: "[未経験者である]{にしても}、基礎知識くらいは勉強してきてほしかった。",
+        meaning: "Even if you are inexperienced, I wanted you to at least study the basic knowledge."
+      },
+    ],
+    category: GrammarEntryCategory.ASSUMPTIONS_CONDITIONS,
+    newWords: [
+      { kanji: "素材", kana: "そざい", english: "material" },
+      { kanji: "未経験", kana: "みけいけん", english: "inexperience" },
+      { kanji: "未経験者", kana: "みけいけんしゃ", english: "inexperienced person" },
+      { kanji: "基礎", kana: "きそ", english: "foundation・basics" },
+      { kanji: "基礎知識", kana: "きそちしき", english: "basic knowledge" },
+    ],
+    important: true,
+  },
+  {
+    id: 79,
+    grammar: "〜としても",
+    imi: "〜だと考えても",
+    explanation: "この文法は、たとえ～が本当のことでもとかたとえ～だと考えてもという意味です。～としてもというのは、たとえ、仮にというように、仮定をする文章ですね。もしこうだったとしても、私はこう思うとかもしこうだったとしても、こうだろうというふうに自分の意見とか自分の予想を言うときによく使われます。\nThis grammar means 'even if ~ is true' or 'even if we consider ~ to be the case'. '〜としても' is used in hypothetical sentences, such as 'even if it were the case that ~, I think this way' or 'even if it were the case that ~, it would probably be like this'. It is often used when expressing your opinions or predictions.",
+    extraInfo: "この文法を使うときは「たとえ～としても」というふうに「たとえ」が一緒に使われる場合が多いです。",
+    usage: {
+      form: [{ name: "普通形" }],
+      pattern: ["としても" ],
+    },
+    examples: [
+      {
+        sentence: "たとえ[冗談だった]{としても}、見た目のことをからかわれてとても傷ついた。",
+        meaning: "Even if it was a joke, I was very hurt to be teased about my appearance."
+      },
+      {
+        sentence: "たとえ[大雪だ]{としても}、仕事を休むことはできないだろう。",
+        meaning: "Even if there is heavy snow, you probably can't take a day off work."
+      },
+      {
+        sentence: "どんなに生活が[苦しい]{としても}、犯罪はしないと決めている。",
+        meaning: "No matter how difficult life is, I have decided not to commit crimes."
+      },
+    ],
+    category: GrammarEntryCategory.ASSUMPTIONS_CONDITIONS,
+    newWords: [
+      { kanji: "犯罪", kana: "はんざい", english: "crime" },
+    ]
+  },
+  {
+    id: 80,
+    grammar: "〜とも",
+    imi: "〜ても",
+    explanation: "この文法は「ても」と同じです。～しても、～とも、全く同じ意味です。ただ、この「とも」という文法を使った場合は少しかたいという印象がありますし古いという印象もあります。\nThis grammar is the same as 'ても'. Both '〜しても' and '〜とも' have exactly the same meaning. However, when using the grammar 'とも', it gives a slightly formal impression and also has an old-fashioned feel.",
+    usage: {
+      form: [{ name: "V. よう" }, { name: "い形容詞テ形", connector: "く" }, { name: "な形容詞", connector: "であろう" }, { name: "名詞", connector: "であろう" }],
+      pattern: ["とも" ],
+    },
+    examples: [
+      {
+        sentence: "この先何が[あろう]{とも}、僕たちはずっと親友だ。",
+        meaning: "No matter what happens in the future, we will always be best friends.",
+        point: "これは「この先何があっても僕たちはずっと親友だ」という意味です。「あろうとも」は「あっても」と全く同じ意味です。",
+      },
+      {
+        sentence: "どんなに孫が[かわいく]{とも}、甘やかしすぎるのはよくない。",
+        meaning: "No matter how cute your grandchildren are, it's not good to spoil them too much."
+      },
+      {
+        sentence: "出張先が[海外であろう]{とも}、会社の命令だから必ず行かなければならない。",
+        meaning: "Even if the business trip destination is overseas, you must go because it's a company order."
+      },
+      {
+        sentence: "まあいいや、着が僕を無視し[続けよう]{とも}、僕は着を諦めないよ。",
+        meaning: "Well, even if Ki continues to ignore me, I won't give up on Ki."
+      },
+    ],
+    category: GrammarEntryCategory.ASSUMPTIONS_CONDITIONS,
+    newWords: [
+      { kanji: "孫", kana: "まご", english: "grandchild" },
+      { kanji: "出張先", kana: "しゅっちょうさき", english: "business trip destination" },
+      { kanji: "無視", kana: "むし", english: "ignoring" }
+    ]
+  },
+  {
+    id: 81,
+    grammar: "〜ばよかった",
+    imi: "〜するべきだった",
+    explanation: "後悔する気持ちを表す時に使う文法です。\nThis grammar is used to express feelings of regret.",
+    usage: {
+      form: [{ name: "動詞 ば形" }],
+      pattern: ["よかった" ],
+    },
+    examples: [
+      {
+        sentence: "彼女を怒らせてしまった。あんなこと[言わなければ]{よかった}。",
+        meaning: "I made her angry. I wish I hadn't said such a thing."
+      },
+      {
+        sentence: "こんなに時間がかかるなんて、昨日のうちに[準備しておけば]{よかった}。",
+        meaning: "I didn't expect it to take this long. I wish I had prepared yesterday."
+      },
+      {
+        sentence: "もっと計画的に夏休みの宿題を[やれば]{よかった}。",
+        meaning: "I wish I had done my summer homework more systematically."
+      },
+    ],
+    category: GrammarEntryCategory.ASSUMPTIONS_CONDITIONS,
+    newWords: [
+      { kanji: "計画", kana: "けいかく", english: "plan" },
+      { kanji: "計画的", kana: "けいかくてき", english: "systematic" },
+    ]
+  },
+  {
+    id: 82,
+    grammar: "〜さえ 〜ば",
+    imi: "〜だけが大切なことだ",
+    explanation: "「さえ」というのは「だけ」という意味で「ば」というのは仮定を表す言葉ですよね。だから「これさえあれば」というのはもしこれだけあったら、という意味です。これだけあったらいいのにという風に使うのでこれがすごく大切だ！と「これ」を強調して言いたいときに使う文法です。\nThe word 'さえ' means 'only', and 'ば' is a word that expresses a conditional. Therefore, 'これさえあれば' means 'if only I had this'. It is used to express the desire for just this to be present, emphasizing that this is very important! This grammar is used when you want to strongly emphasize that 'this' is very important.",
+    usage: {
+      form: [{ name: "名詞" }],
+      pattern: ["さえ"],
+      secondsForm: [{ name: "動詞 ば形" }, { name: "い形容詞 ければ形"}, { name: "な形容詞", connector: "なら"  }, { name: "名詞", connector: "なら"  }],
+      combinedForms: [
+        { first: 'V. ます STEM', pattern: ['さえすれば', 'さえしなければ'] },
+        { first: '名詞・な形容詞', pattern: ['でさえあれば', 'でさえなければ']},
+      ],
+    },
+    examples: [
+      {
+        sentence: "[身長]{さえ}[高ければ]、もっと試合で活躍できるのになあ。",
+        meaning: "If only I were taller, I could perform better in matches."
+      },
+      {
+        sentence: "[英語]{さえ}[できれば]、海外で働けるというものではない。",
+        meaning: "It's not necessarily the case that if you can speak English, you can work overseas."
+      },
+      {
+        sentence: "結婚相手は[高収入]{でさえあれば}誰でもいいというわけではない。",
+        meaning: "It's not necessarily the case that if a marriage partner has a high income, anyone is acceptable."
+      },
+      {
+        sentence: "もう[自分]{さえ}[楽しければ]それでいいんだね。",
+        meaning: "As long as you're happy, that's all that matters.",
+        point: "自分だけ楽しかったらそれでいいんだねという意味です。",
+      },
+    ],
+    category: GrammarEntryCategory.ASSUMPTIONS_CONDITIONS,
+    newWords: [
+      { kanji: "身長", kana: "しんちょう", english: "height" },
+      { kanji: "活躍", kana: "かつやく", english: "activity・success・great efforts" },
+      { kanji: "高収入", kana: "こうしゅうにゅう", english: "high income" }
+    ]
+  },
+  {
+    id: 83,
+    grammar: "〜を抜きにして",
+    imi: "〜なしで",
+    explanation: "この文法は～を考えずにとか、～をなくしてという意味です。抜きにしてというのは「抜く」という動詞が入っていますよね。抜くということはつまりそれを取るとかなくすという意味です。だから〜を抜きにしてと言ったらこれを考えずにとか、これを取ってこれをなくしてという意味になります。〜を抜きにしてという言い方の場合はこれがないとこれができないというように後ろが「できない」の文章の形になります。～を抜きにしてこうすることができない。\nThis grammar means 'without ~' or 'excluding ~'. The phrase '抜きにして' contains the verb '抜く', which means to remove or eliminate something. Therefore, when you say '〜を抜きにして', it means 'without considering this' or 'removing this'. In the case of the expression '〜を抜きにして', the following part is often in the form of a sentence that indicates 'cannot do something without this'.",
+    extraInfo: "名詞 ＋ を抜きにして -> これを考えずにこれができないとかこれがなかったらこれができないという言い方になります。\nNoun + を抜きにして -> This means 'cannot do something without considering this' or 'cannot do something if this is not present'.\n\n名詞 ＋ は抜きにして・抜きに・抜きで -> これは後ろに〜できないという文章がつくのではなくて、単純にこれがない、これをなくしてという意味になります。\nNoun + は抜きにして・抜きに・抜きで -> This does not have a sentence with 'cannot do something' following it, but simply means 'without this' or 'excluding this'.\n\n言い方は日常生活でよく使われます。日本だったら、おすしを注文するときに、からいのが苦手だったら「わさび抜きでお願いします」こういう言い方をよく使います。",
+    usage: {
+      form: [{ name: "名詞" }],
+      pattern: ["を抜きにして（は）", "は抜きにして", "抜きに", "抜きで"],
+    },
+    examples: [
+      {
+        sentence: "お祝いのための食事会だから、[仕事の話]{は抜きにして}楽しみましょう。",
+        meaning: "Since it's a celebration meal, let's enjoy it without talking about work."
+      },
+      {
+        sentence: "昨日、私の家族は[私]{抜きで}焼き肉を食べに行ったらしい。",
+        meaning: "It seems that my family went to eat yakiniku without me yesterday."
+      },
+      {
+        sentence: "この仕事は[部長]{を抜きにしては}進められません。",
+        meaning: "This work cannot proceed without the manager."
+      },
+      {
+        sentence: "すみません、アボカドバーガーください。あ、[ピクルス]{抜きで}おねがいします。",
+        meaning: "Excuse me, I'll have the avocado burger. Oh, please without pickles."
+      },
+    ],
+    category: GrammarEntryCategory.ASSUMPTIONS_CONDITIONS,
+    newWords: [
+      { kanji: "抜く", kana: "ぬく", english: "to extract・to omit" },
+    ]
+  },
+  {
+    id: 84,
+    grammar: "〜を除いて",
+    imi: "〜以外で",
+    explanation: "除くというのは、そのものをとってなくすという意味がありますから、そのものをとってなくした状態、つまりそれ以外という意味になります。\nThe word '除く' means to remove or eliminate something, so it refers to the state of having removed that thing, which means 'except for that' or 'excluding that'. This grammar is used to indicate that something is excluded from a group or category.",
+    usage: {
+      form: [{ name: "名詞" }],
+      pattern: ["を除いて（は）"],
+    },
+    examples: [
+      {
+        sentence: "このお店は[日曜日]{を除いて}営業しています。",
+        meaning: "This store is open every day except Sunday.",
+        point: "日曜日以外は営業していますという意味です。",
+      },
+      {
+        sentence: "この中で試験に合格したのは、[私]{を除いて}5人だけです。",
+        meaning: "Except for me, only five people passed the exam."
+      },
+      {
+        sentence: "当店は[年末年始]{を除いて}、休まず営業しています。",
+        meaning: "This store is open every day except for the New Year's holidays."
+      },
+      {
+        sentence: "この家は新しいし家賃も安いし、[交通が不便なところ]{を除いては}最高です。",
+        meaning: "This house is new and the rent is cheap, and except for the inconvenient transportation, it's the best."
+      },
+    ],
+    category: GrammarEntryCategory.ASSUMPTIONS_CONDITIONS,
+    newWords: [
+      { kanji: "除く", kana: "のぞく", english: "to exclude・to except" },
+      { kanji: "当店", kana: "とうてん", english: "this store" },
+      { kanji: "年末年始", kana: "ねんまつねんし", english: "New Year's holidays" }
+    ]
+  },
+  {
+    id: 85,
+    grammar: "〜次第で",
+    imi: "〜によって",
+    explanation: "これによってこれも変わると言いたい時に使います。これが変われば結果も変わってくる。～次第、～によってという意味です。\nThis grammar is used when you want to say that something changes depending on something else. If this changes, the result also changes. It means 'depending on ~' or 'by ~'.",
+    extraInfo: "この「次第」という言葉ほかにもいろいろ意味があるので違いをしっかり区別しておきましょう。今回は「～によって」という意味でした。",
+    usage: {
+      form: [{ name: "名詞" }],
+      pattern: ["次第で（は）", "次第だ"],
+    },
+    examples: [
+      {
+        sentence: "この話を信じるか信じないかは、[あなた]{次第です}よ。",
+        meaning: "Whether you believe this story or not is up to you."
+      },
+      {
+        sentence: "明日は遠足の予定だが、[天気]{次第では}中止になりそうだ。",
+        meaning: "It looks like tomorrow's excursion might be canceled depending on the weather."
+      },
+      {
+        sentence: "この[検査の結果]{次第で}、入院するかどうかが決まります。",
+        meaning: "Whether or not you will be hospitalized depends on the results of this examination."
+      },
+      {
+        sentence: "ま、君の[謝り方]{次第では}許してやってもいいけど・・・",
+        meaning: "Well, depending on how you apologize, I might forgive you..."
+      },
+    ],
+    category: GrammarEntryCategory.ASSUMPTIONS_CONDITIONS,
+    newWords: [
+      { kanji: "次第", kana: "しだい", english: "depending on" },
+      { kanji: "遠足", kana: "えんそく", english: "excursion" },
+      { kanji: "検査", kana: "けんさ", english: "examination" },
+      { kanji: "謝る", kana: "あやまる", english: "to apologize" },
+      { kanji: "許す", kana: "ゆるす", english: "to forgive"}
+    ]
+  },
+  {
+    id: 86,
+    grammar: "〜でなければ",
+    imi: "〜でないと",
+    explanation: "こうじゃないと後ろのことができないとかこうじゃないと後ろのことが成り立たないと言いたいときに使う文法です。\nThis grammar is used when you want to say that something cannot be done or cannot be established unless a certain condition is met.",
+    usage: {
+      form: [{ name: "名詞" }, { name: "な形容詞" }],
+      pattern: ["でなければ" ],
+    },
+    examples: [
+      {
+        sentence: "[健康]{でなければ}、働くことはできません。",
+        meaning: "If you are not healthy, you cannot work."
+      },
+      {
+        sentence: "[登録者]{でなければ}、動画を観ることができません。",
+        meaning: "If you are not a subscriber, you cannot watch the videos."
+      },
+      {
+        sentence: "[あなた]{でなければ}、この仕事は任せられません。",
+        meaning: "If it is not you, I cannot entrust this job."
+      },
+    ],
+    category: GrammarEntryCategory.ASSUMPTIONS_CONDITIONS,
+    newWords: [
+      { kanji: "登録", kana: "とうろく", english: "registration" },
+      { kanji: "登録者", kana: "とうろくしゃ", english: "subscriber" },
+      { kanji: "任せる", kana: "まかせる", english: "to entrust" }
+    ]
+  },
 ];
