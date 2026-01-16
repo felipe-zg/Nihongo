@@ -71,12 +71,12 @@ const MiniStory: React.FC<MiniStoryProps> = ({
     return (
       <HStack>
         {rubypart.character !== "" && (
-          <Box flex={1} alignItems={"center"} justifyContent={"flex-start"} mt={1}>
+          <Box flex={1} alignItems={"center"} justifyContent={"center"} mt={1}>
             <p style={{ color: "#ea84cdff", fontSize: fontSize, fontFamily: "Klee One",  marginTop: "0.5rem", marginBottom: "0.5rem", lineHeight: "2rem"}}>{rubypart.character}:</p>
           </Box>
         )}
         <Box flex={11} key={index}>
-          <p style={{ fontSize: fontSize, fontFamily: "Klee One", marginTop: "0.5rem", marginBottom: "0.5rem", lineHeight: isLargeLetter && (isFuriganaHidden || isKanjiHidden) ? "3rem" : "2rem"}} dangerouslySetInnerHTML={{ __html: formattedDialogue }}  />
+          <p style={{ fontSize: fontSize, fontFamily: "Klee One", marginTop: "0.5rem", marginBottom: "0.5rem", lineHeight: isLargeLetter ? "5rem" : "2rem"}} dangerouslySetInnerHTML={{ __html: formattedDialogue }}  />
         </Box>
       </HStack>
     )
@@ -84,6 +84,7 @@ const MiniStory: React.FC<MiniStoryProps> = ({
 
   const words = rubyWords.map((rubypart, index) => {
     const parts = parseRuby(rubypart.kanji);
+    const fontSize = isLargeLetter ? '2.5rem' : '1.3rem';
     const formattedWords = parts.map(a =>
       a.furigana
         ? `<ruby>${a.kanji}<rt style="color: ${isFuriganaHidden ? "transparent" : redColor};">${a.furigana}</rt></ruby>`
@@ -92,11 +93,11 @@ const MiniStory: React.FC<MiniStoryProps> = ({
     return (
       <>
         <HStack>
-          <Box flex={3}>
-            <p style={{color: whiteColor, fontFamily: "Klee One"}} dangerouslySetInnerHTML={{ __html: formattedWords }} />
+          <Box flex={4}>
+            <p style={{color: whiteColor, fontFamily: "Klee One", fontSize: fontSize}} dangerouslySetInnerHTML={{ __html: formattedWords }} />
           </Box>
           <Box  flex={4} justifyContent={"center"}>
-            <Text color={isFuriganaHidden ? "transparent" : "red.600"} fontFamily="Klee One">{rubypart.english}</Text>
+            <Text color={isFuriganaHidden ? "transparent" : "red.600"} fontFamily="Klee One" fontSize={isLargeLetter ? "2xl" : "md"}>{rubypart.english}</Text>
           </Box>
           <Box  flex={1} justifyContent={"center"}>
             <Text color="primary.400">
