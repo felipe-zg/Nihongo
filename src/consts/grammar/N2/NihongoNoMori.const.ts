@@ -2406,4 +2406,402 @@ export const NIHONGO_NO_MORI_GRAMMAR_N2: GrammarEntry[] = [
       { kanji: "任せる", kana: "まかせる", english: "to entrust" }
     ]
   },
+  // SECTION 10: 状況・伝聞 - GRAMMAR 87 - 97
+  {
+    id: 87,
+    grammar: "〜かのように",
+    imi: "〜みたいに見える",
+    explanation: "この文法は本当はそうじゃないんだけど、そのように見えるという意味です。かの「ように」ですからね。そういうふうに見えるという意味です、でも実際はそうじゃない。そのように見えるだけだと言いたいときに使う文法です。\nThis grammar means that although it is not actually the case, it appears to be so. Since it is 'かのように', it means that it looks that way, but in reality, it is not. It is used when you want to say that it only appears to be so.",
+    extraInfo: "この「かのように」という文法は日常生活でもまあまあ使われることがある文法です。特に例文の中でも出てきた「何もなかったかのように」とか「何事もなかったかのように」という言い方はよく使われます。何か問題があったのに、何もないように見えるという意味です。\nThis grammar 'かのように' is quite commonly used in daily life. Especially the phrases '何もなかったかのように' or '何事もなかったかのように' are often used. They mean that although there was a problem, it appears as if nothing happened.\n\nまるで〜かのように、はよく使われますね。",
+    usage: {
+      form: [{ name: "普通形" }, { name: "名詞", connector: "（ である ）" }, { name: "な形容詞", connector: "（ である ）" }],
+      pattern: ["かのように" ],
+    },
+    examples: [
+      {
+        sentence: "彼はいつも人から聞いた話を、自分が[経験した]{かのように}話す。",
+        meaning: "He always talks as if he has experienced the stories he heard from others."
+      },
+      {
+        sentence: "昨日大事件が起きたのに、世の中は[何もなかった]{かのように}時間が流れている。",
+        meaning: "Although a major incident happened yesterday, time flows as if nothing happened in the world."
+      },
+      {
+        sentence: "初対面なのに、彼女はまるで昔からの[友達である]{かのように}接してきた。",
+        meaning: "Although it was our first meeting, she treated me as if we had been friends for a long time."
+      },
+    ],
+    category: GrammarEntryCategory.CIRCUMSTANCES_HEARSAY,
+    newWords: [
+      { kanji: "件", kana: "けん", english: "incident" },
+      { kanji: "初対面", kana: "しょたいめん", english: "first meeting" },
+      { kanji: "接", kana: "せつ", english: "to interact" }
+    ],
+    important: true,
+  },
+  {
+    id: 88,
+    grammar: "〜つもり",
+    imi: "自分は 〜 だと思っている",
+    explanation: "この文法は本当はそうじゃないんだけど自分はそうだと思っているという意味です。\nThis grammar means that although it is not actually the case, one believes it to be so.",
+    extraInfo: "1つ前で勉強した「〜かのように」という文法とすごく意味が似ているんですが「かのように」という文法は本当はそうじゃないんだけどそのように見えるという意味でした。「つもり」というのは本当はそうじゃないけど自分はそうだと思っている、という意味です。少し違うので注意してください。\nThis grammar is very similar in meaning to the previously studied grammar '〜かのように', but 'かのように' means that although it is not actually the case, it appears to be so. On the other hand, 'つもり' means that although it is not actually the case, one believes it to be so. Please be careful as there is a slight difference.",
+    usage: {
+      form: [{ name: "V. る" }, { name: "V. た" }, { name: "V. ている" }, { name: "い形容詞" }, { name: "な形容詞", connector: "な" }, { name: "名詞", connector: "の" }],
+      pattern: ["つもり（ で ）"],
+    },
+    examples: [
+      {
+        sentence: "[確認した]{つもりだった}けどミスがあった。",
+        meaning: "I thought I had checked it, but there was a mistake.",
+        point: "これは、自分は確認した、もうミスがないと思っているんですね。でも本当はそうじゃありませんでした。本当は失敗がありました。",
+      },
+      {
+        sentence: "本人は一生懸命[やっている]{つもりだろう}けど、周りから見ると努力が足りない。",
+        meaning: "He probably thinks he is working hard, but from the perspective of those around him, his effort is insufficient."
+      },
+      {
+        sentence: "自分は[元気な]{つもり}でも、病気が治ったばかりなので運動するとすぐに疲れてしまう。",
+        meaning: "Even though I think I am healthy, I get tired quickly when I exercise because I just recovered from an illness."
+      },
+      {
+        sentence: "[冗談の]{つもり}で言った言葉で、彼女を傷つけてしまった。",
+        meaning: "I said something as a joke, but it ended up hurting her feelings."
+      },
+    ],
+    category: GrammarEntryCategory.CIRCUMSTANCES_HEARSAY,
+    newWords: [
+      { kanji: "本人", kana: "ほんにん", english: "the person himself/herself" },
+      { kanji: "傷", kana: "きず", english: "wound・injury" },
+      { kanji: "xx", kana: "xx", english: "xx" }
+    ],
+    important: true,
+  },
+  {
+    id: 89,
+    grammar: "〜てばかりいる\n〜てばかりいられない",
+    imi: "〜だけを続けている\n〜だけを続けていることはできない",
+    explanation: "この文法は、それだけを続けているという意味です。反対に、ばかりいられないという言い方もあります。～してばかりいる、はそれだけを続けているという意味ですが、～してばかりいられないこれは、それだけを続けていることができないいう意味になります。\nThis grammar means that one continues to do only that. Conversely, there is also the expression 'ばかりいられない'. '～してばかりいる' means that one continues to do only that, while '～してばかりいられない' means that one cannot continue to do only that.",
+    extraInfo: "この文法を使うときは動作をずっと続けているんだと言いたい時ですから少し注意してください。\nThis grammar is used when you want to say that an action is being continued, so please be careful.\n\n例えば、お菓子を食べてばかりいるだったらお菓子を食べるということをずっと続けているという意味になります。「お菓子ばかりを食べている」言ったら、ご飯じゃなくてお菓子をずっと食べているんだという風に聞こえますが「お菓子を食べてばかりいる」だったら運動をしない、仕事もしない、でも食べるということをずっと続けているんだという意味になります。\nFor example, if you say 'お菓子を食べてばかりいる', it means that you are continuously eating sweets. If you say 'お菓子ばかりを食べている', it sounds like you are eating only sweets instead of meals, but 'お菓子を食べてばかりいる' means that you are not exercising or working, but you are continuously eating.",
+    usage: {
+      form: [{ name: "V. テ形" }],
+      pattern: ["ばかりいる", "ばかりいられない" ],
+    },
+    examples: [
+      {
+        sentence: "夏休みなのに、息子は家の中で[ゲームをして]{ばかりいる}。",
+        meaning: "Even though it's summer vacation, my son is just playing games inside the house.",
+        point: "息子は家の中でゲームをずっとしている ( それだけを続けている )",
+      },
+      {
+        sentence: "もう入社して3年目だから、先輩に[助けてもらって]{ばかりいられない}。",
+        meaning: "Since it's already my third year since joining the company, I can't keep relying on my seniors for help."
+      },
+      {
+        sentence: "授業中、話を聞かずに[寝て]{ばかりいる}ので、先生に怒られた。",
+        meaning: "Since I was just sleeping and not listening during class, the teacher got angry at me."
+      },
+      {
+        sentence: "もう勉強しないで[遊んで]{ばかりいる}からこうなるんだよ。",
+        meaning: "This is what happens when you don't study and just play all the time."
+      },
+    ],
+    category: GrammarEntryCategory.CIRCUMSTANCES_HEARSAY,
+  },
+  {
+    id: 90,
+    grammar: "〜どころではない",
+    imi: "今は 〜 できない状況だ",
+    explanation: "この文法は、今は～できない状態だと言いたいときに使う文法です。今はこれをできる状態ではない、つまりそんなことをしている場合ではないんだ。そんなことをしている状況ではないんだと言いたいときに使う文法です。そんなことよりもっと大切なことがあるとかそんなことよりもっと重要なことがあるという意味です。\nThis grammar is used when you want to say that you are not in a situation where you can do something right now. It means that you are not in a situation to do that, or that it is not the time to be doing such things. It implies that there are more important things to consider than that.",
+    extraInfo: "この「～どころではない」という文法と「てはいられない」という文法すごく似ていますよね。言いかえられる場面もすごく多いです。～している場合じゃないという意味で使うならどちらを使っても OK ですね。ただ「どころではない」の方が会話ではよく使われるかな、と思います。どころじゃないという言い方ですね。\nThis grammar '～どころではない' is very similar to the grammar 'てはいられない'. There are many situations where they can be used interchangeably. If you want to express that it is not the time to be doing something, either can be used. However, 'どころではない' is more commonly used in conversation. It is often said as 'どころじゃない'.",
+    usage: {
+      form: [{ name: "V. る" }, { name: "V. ている" }, { name: "名詞" } ],
+      pattern: ["どころではない", "どころじゃない"],
+    },
+    examples: [
+      {
+        sentence: "仕事と勉強でとても忙しいので、人のことを[心配している]{どころではない}。",
+        meaning: "I am so busy with work and study that I don't have time to worry about others."
+      },
+      {
+        sentence: "彼を傷つけたのではないかと心配で、ご飯を[食べる]{どころではなかった}。",
+        meaning: "I was so worried that I might have hurt him that I couldn't eat."
+      },
+      {
+        sentence: "彼は子どもが生まれたかどうか気になって、[仕事]{どころじゃない}ようだ。",
+        meaning: "He is so worried about whether his child was born that he can't focus on work."
+      },
+      {
+        sentence: "A:佐藤氏！佐藤氏！今日もコンサートの応援の練習しに行きましょうー！\nB:村上氏・・・[それ]{どころじゃない}んだよ・・・。僕たちコンサートの抽選外れたんだよ。",
+        meaning: "A: Mr. Sato! Mr. Sato! Let's go practice cheering for the concert today too!\nB: Mr. Murakami... It's not the time for that... We lost the lottery for the concert."
+      },
+    ],
+    category: GrammarEntryCategory.CIRCUMSTANCES_HEARSAY,
+    newWords: [
+      { kanji: "状況", kana: "じょうきょう", english: "situation" },
+      { kanji: "状態", kana: "じょうたい", english: "state・condition" },
+      { kanji: "〜氏", kana: "〜し", english: "Mr./Ms." },
+      { kanji: "抽選", kana: "ちゅうせん", english: "lottery" },
+      { kanji: "外れる", kana: "はずれる", english: "to be off・to be out of place" }
+    ]
+  },
+  {
+    id: 91,
+    grammar: "〜ずにすむ",
+    imi: "〜しないまま終わった",
+    explanation: "「ず」っていうのは「ない」という意味で「すむ」というのは「終わる」とか「完了する」という意味があります。ですから「ずにすむ」はそれをしないで終わるという意味です。\n'ず' means 'not', and 'すむ' means 'to end' or 'to complete'. Therefore, 'ずにすむ' means to finish without doing that. This grammar is used when you want to express that you were able to avoid doing something or that something was resolved without having to take a certain action.",
+    usage: {
+      form: [{ name: "V. ない", connector: "で" }, { name: "V. ない STEM", connector: "ずに" } ],
+      pattern: ["すむ"],
+    },
+    examples: [
+      {
+        sentence: "友達がその仕事をやってくれたので私はやらずにすんだ。",
+        meaning: "I didn't have to do it because my friend did the job for me.",
+        point: "これは友達がやってくれたから私はやらないで終わった。やらなくてもよかったという意味ですね。",
+      },
+      {
+        sentence: "先輩が全員分の食事代を払ってくれたので、一円もお金を[払わずに]{すんだ}。",
+        meaning: "I didn't have to pay a single yen because my senior paid for everyone's meal.",
+      },
+      {
+        sentence: "寝坊をしてしまったが、なんとか[遅刻せずに]{すんだ}。",
+        meaning: "I overslept, but somehow managed to avoid being late."
+      },
+      {
+        sentence: "派手に転んだが、大きなけがではなかったので、病院に[行かないで]{すんだ}。",
+        meaning: "I had a flashy fall, but since it wasn't a serious injury, I didn't have to go to the hospital."
+      },
+      {
+        sentence: "先生は今日は機嫌がいいな。[怒られずに]{済んで}よかった。",
+        meaning: "The teacher is in a good mood today. I'm glad I didn't get scolded."
+      }
+    ],
+    category: GrammarEntryCategory.CIRCUMSTANCES_HEARSAY,
+    newWords: [
+      { kanji: "済む", kana: "すむ", english: "to be finished・to be completed" },
+      { kanji: "完了", kana: "かんりょう", english: "completion" },
+      { kanji: "遅刻", kana: "ちこく", english: "being late" },
+      { kanji: "派手", kana: "はで", english: "flashy" },
+      { kanji: "機嫌", kana: "きげん", english: "mood・temper" }
+    ]
+  },
+  {
+    id: 92,
+    grammar: "〜おそれがある",
+    imi: "〜の可能性がある",
+    explanation: "危ないことや悪いことが起こる可能性があるときに使う文法です。悪いことが起こる可能性があるとか悪いことが起こるかもしれないと言いたい時に使います。\nThis grammar is used when there is a possibility of something dangerous or bad happening. It is used when you want to say that there is a possibility of something bad happening or that something bad might happen.",
+    extraInfo: "「～おそれはありません」「～おそれなし」という言い方もある。",
+    usage: {
+      form: [{ name: "V. る" }, { name: "V. ない" }, { name: "名詞", connector: "の" } ],
+      pattern: ["おそれがある"],
+    },
+    examples: [
+      {
+        sentence: "喫煙は深刻な病気を[引き起こす]{おそれがあります}。",
+        meaning: "There is a risk that smoking can cause serious diseases."
+      },
+      {
+        sentence: "道路が渋滞していて、時間に[間に合わない]{おそれがあります}。",
+        meaning: "There is a risk that I won't be able to make it on time due to traffic congestion."
+      },
+      {
+        sentence: "西日本は明日にかけて[大雨の][おそれがあります]。",
+        meaning: "There is a risk of heavy rain in western Japan tomorrow."
+      },
+      {
+        sentence: "この地震による[津波の]{おそれはありません}。",
+        meaning: "There is no risk of a tsunami caused by this earthquake."
+      },
+    ],
+    category: GrammarEntryCategory.CIRCUMSTANCES_HEARSAY,
+    newWords: [
+      { kanji: "喫煙", kana: "きつえん", english: "smoking" },
+      { kanji: "深刻", kana: "しんこく", english: "serious・severe" },
+      { kanji: "引き起こす", kana: "ひきおこす", english: "to cause・to bring about" },
+      { kanji: "渋滞", kana: "じゅうたい", english: "traffic jam" }
+    ]
+  },
+  {
+    id: 93,
+    grammar: "〜のももっともだ",
+    imi: "〜のも当然だ",
+    explanation: "これは〜のも当然だとか～のも当たり前だと言いたいときに使います。\nThis grammar is used when you want to say that something is natural or obvious.",
+    usage: {
+      form: [{ name: "V. る" }],
+      pattern: ["のももっともだ"],
+    },
+    examples: [
+      {
+        sentence: "こんな会社辞めるのももっともだ。",
+        meaning: "It's only natural to quit a company like this.",
+        point: "これはすごく大変な仕事で給料も安い、締けていられない！ (やめても当然です)",
+      },
+      {
+        sentence: "休まず働き続けていたんだから、[倒れてしまう]{のももっともだ}。",
+        meaning: "It's only natural to collapse after working continuously without rest."
+      },
+      {
+        sentence: "初めてみんなの前でスピーチするのですから、[緊張する]{のももっともです}。",
+        meaning: "It's only natural to be nervous when giving a speech in front of everyone for the first time."
+      },
+      {
+        sentence: "頭のいい彼女が試験に落ちて、私なんかが合格したんだから、皆が[驚く]{のももっともだ}。",
+        meaning: "It's only natural that everyone is surprised since the smart girl failed the exam and someone like me passed."
+      },
+    ],
+    category: GrammarEntryCategory.CIRCUMSTANCES_HEARSAY,
+    newWords: [
+      { kanji: "倒れる", kana: "たおれる", english: "to fall down・to collapse" },
+      { kanji: "緊張", kana: "きんちょう", english: "nervousness・tension" },
+    ]
+  },
+  {
+    id: 94,
+    grammar: "〜のもとで",
+    imi: "〜という状況で",
+    explanation: "これは〜という状況でという意味で何か大きな影響力があるものの下でとか影響を受けながらという意味があります。\nThis grammar means 'in the situation of ~' and implies being under the influence of something significant or receiving influence from it.",
+    usage: {
+      form: [{ name: "名詞" }],
+      pattern: ["のもと （ で ）"],
+    },
+    examples: [
+      {
+        sentence: "[先生]{のもとで}日本語を勉強したおかげで、試験に合格することができました。",
+        meaning: "I was able to pass the exam thanks to studying Japanese under the guidance of my teacher.",
+        point: "つまり先生が教えてくれたから試験に合格することができましたという文章です。"
+      },
+      {
+        sentence: "[大自然]{のもとで}育った牛の牛乳は、濃厚でおいしい。",
+        meaning: "Milk from cows raised in the great outdoors is rich and delicious.",
+        point: "自然がたくさんあるという状況で育った牛という意味だ。"
+      },
+      {
+        sentence: "学生時代は村上教授の[ご指導]{のもと}、虫の研究をしていました。",
+        meaning: "During my student days, I conducted insect research under the guidance of Professor Murakami.",
+        point: "先生に指導をしてもらうという状況でという意味です。",
+      },
+      {
+        sentence: "A:あの、僕と結婚してください\nnB:こんな[きれいな星空]{のもとで}プロポーズされるなんてロマンチックウ",
+        meaning: "A: Um, please marry me.\nB: Being proposed to under such a beautiful starry sky is so romantic."
+      },
+    ],
+    category: GrammarEntryCategory.CIRCUMSTANCES_HEARSAY,
+    newWords: [
+      { kanji: "状況", kana: "じょうきょう", english: "situation" },
+      { kanji: "大自然", kana: "だいしぜん", english: "nature" },
+      { kanji: "濃厚", kana: "のうこう", english: "rich and thick" },
+      { kanji: "指導", kana: "しどう", english: "guidance" },
+      { kanji: "星空", kana: "ほしぞら", english: "starry sky" }
+    ]
+  },
+  {
+    id: 95,
+    grammar: "〜を込めて",
+    imi: "〜を入れて",
+    explanation: "これは〜を入れてという意味なんですが気持ちとか感情を表す言葉が入ります。例えば、心を込めてとか、思いを込めてなど見えないものに対して使われる言葉ですね。\nThis grammar means 'to put in ~', but it is used with words that express feelings or emotions. For example, '心を込めて' (with all one's heart) or '思いを込めて' (with deep thoughts), phrases used for invisible things.",
+    usage: {
+      form: [{ name: "名詞" }],
+      pattern: ["を込めて" ],
+      combinedForms: [{first: "名詞１", pattern: ["を込めた"], second: "名詞２"}]
+    },
+    examples: [
+      {
+        sentence: "なかなか扉が開かないので、[力]{を込めて}強く押したら壊れてしまった。",
+        meaning: "The door wouldn't open, so I pushed it hard with all my strength and it broke.",
+        point: "これは力を入れておしたということですね。力を込めては、力を入れてという意味です。",
+      },
+      {
+        sentence: "入院している友達に、「元気になりますように」と[願い]{を込めて}、お守りを作った。",
+        meaning: "I made a good luck charm for my friend who is hospitalized, with hopes for their recovery.",
+      },
+      {
+        sentence: "友人の結婚式で今までの[感謝の思い]{を込めた}[手紙]を読んだ。",
+        meaning: "I read a letter filled with gratitude and thanks for my friend's wedding."
+      }
+    ],
+    category: GrammarEntryCategory.CIRCUMSTANCES_HEARSAY,
+    newWords: [
+      { kanji: "込める", kana: "こめる", english: "to put in・to include" },
+      { kanji: "感情", kana: "かんじょう", english: "feeling・emotion" },
+      { kanji: "扉", kana: "とびら", english: "door" },
+      { kanji: "壊れる", kana: "こわれる", english: "to break・to be broken" },
+      { kanji: "感謝", kana: "かんしゃ", english: "gratitude・appreciation" }
+    ]
+  },
+  {
+    id: 96,
+    grammar: "〜を ～とする",
+    imi: "〜を 〜だと考える・決める",
+    explanation: "これは、～を～だと考えるとか～と決めると言いたいときに使います。例えば、今私は自分の部屋をスタジオとして使っていますね。こういうように自分の部屋本当はスタジオじゃないんですがスタジオと決めてとか、スタジオと考えて使っています。このように使うことができますね。\nThis grammar is used when you want to say that you consider something to be something else or decide on something. For example, 'I am currently using my room as a studio'. In this way, even though my room is not actually a studio, I have decided to use it as one or consider it as such. You can use this grammar in this way.",
+    extraInfo: "ただこの言い方、本当によく使われる言い方で「本日は～さんを～としてお招きしました。」のような使い方は人を紹介するときによく使われます。",
+    usage: {
+      form: [{ name: "名詞１　＋　を　＋　名詞２" }],
+      pattern: ["とする", "として" ],
+    },
+    examples: [
+      {
+        sentence: "本日は日本語の森の[村上先生]{を}[講師]{として}お招きしました。",
+        meaning: "Today, we have invited Mr. Murakami from Nihongo No Mori as a lecturer.",
+        point: "つまり、今日の講師は村上先生です。",
+      },
+      {
+        sentence: "[建物の一階]{を}[お店]{として}使っていて、私たち家族はその上に住んでいます。",
+        meaning: "We use the first floor of a building as a store, and our family lives upstairs."
+      },
+      {
+        sentence: "ごみ拾い活動は、地域の人との[交流]{を}[目的]{として}行われた。",
+        meaning: "The garbage collection activity was conducted with the purpose of promoting communication with local residents."
+      },
+      {
+        sentence: "今日から[ここ]{を}[立ち入り禁止]{とする}。私が出てくるまで絶対にこのドアは開けてはいけません。",
+        meaning: "From today, this area is off-limits. You must not open this door until I come out."
+      },
+    ],
+    category: GrammarEntryCategory.CIRCUMSTANCES_HEARSAY,
+    newWords: [
+      { kanji: "講師", kana: "こうし", english: "lecturer・instructor" },
+      { kanji: "招く", kana: "まねく", english: "to invite・to summon" },
+      { kanji: "拾い", kana: "ひろい", english: "picking up" },
+      { kanji: "交流", kana: "こうりゅう", english: "interaction・exchange" },
+      { kanji: "立ち入り", kana: "たちいり", english: "entry・access" }
+    ]
+  },
+  {
+    id: 97,
+    grammar: "〜とか",
+    imi: "〜らしい",
+    explanation: "この文法は〜らしいという意味でこれは誰かから聞いた話を、また違う人に伝えるときに「～とか」と言うんですね。",
+    usage: {
+      form: [{ name: "普通形" }, { name: "名詞", connector: "な" }, { name: "な形容詞", connector: "な" } ],
+      pattern: ["とか", "んだとか" ],
+    },
+    examples: [
+      {
+        sentence: "お隣の村上さん、宝くじが[当たった]{とか}。羨ましいなあ。",
+        meaning: "I heard that Mr. Murakami from next door won the lottery. I'm so jealous."
+      },
+      {
+        sentence: "天気予報によると、関東は[大雨だ]{とか}。",
+        meaning: "According to the weather forecast, it's said that the Kanto region will have heavy rain."
+      },
+      {
+        sentence: "今年のオリンピックは、感染症の影響で[中止だ]{とか}。",
+        meaning: "I heard that this year's Olympics will be canceled due to the impact of infectious diseases."
+      },
+      {
+        sentence: "なんか発電所でトラブルがあったんだって。今日は一日電気が[使えない]{とか}。",
+        meaning: "I heard there was a problem at the power plant. They said we won't be able to use electricity for a whole day."
+      },
+    ],
+    category: GrammarEntryCategory.CIRCUMSTANCES_HEARSAY,
+    newWords: [
+      { kanji: "隣", kana: "となり", english: "next door" },
+      { kanji: "宝くじ", kana: "たからくじ", english: "lottery" },
+      { kanji: "当たる", kana: "あたる", english: "to win (a lottery)" },
+      { kanji: "羨ましい", kana: "うらやましい", english: "envious・jealous" },
+      { kanji: "感染症", kana: "かんせんしょう", english: "infectious disease" },
+      { kanji: "影響", kana: "えいきょう", english: "influence" },
+      { kanji: "発電所", kana: "はつでんしょ", english: "power plant" }
+    ]
+  },
 ];
