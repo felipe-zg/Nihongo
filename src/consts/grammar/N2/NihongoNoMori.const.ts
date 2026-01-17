@@ -2804,4 +2804,279 @@ export const NIHONGO_NO_MORI_GRAMMAR_N2: GrammarEntry[] = [
       { kanji: "発電所", kana: "はつでんしょ", english: "power plant" }
     ]
   },
+  // SECTION 11: 変化・結果 - GRAMMAR 98 - 105
+  {
+    id: 98,
+    grammar: "〜につれ",
+    imi: "〜の変化に合わせて、別のものも変化する",
+    explanation: "つれるっていうのはついていくことですから 1つのものが変化すると同時に、もう1つのものも同じように変化していく。これを表す文法です。ですから～につれ～、この前と後ろには変化する2つのものを入れてください。\nSince 'つれる' means to follow, when one thing changes, another thing also changes in the same way at the same time. This grammar expresses that. Therefore, in the structure '～につれ～', please put the two things that change before and after.\nThis grammar is used to express that as one thing changes, another thing also changes accordingly.",
+    usage: {
+      form: [{ name: "V. る" }],
+      pattern: ["につれ（ て ）"],
+    },
+    examples: [
+      {
+        sentence: "[お腹が空く]{につれて}集中力が切れてくるので、いつもお菓子を持ち歩いている。",
+        meaning: "As my stomach gets hungry, my concentration fades, so I always carry snacks with me."
+      },
+      {
+        sentence: "夜が[明ける]{につれ}、外が明るくなってきた。",
+        meaning: "As the night gets lighter, the outside becomes brighter."
+      },
+      {
+        sentence: "町が[発展する]{につれて}、地元の人に愛されていた古いお店が少なくなってしまった。",
+        meaning: "As the town developed, the old shops that were loved by local people became fewer and fewer."
+      },
+      {
+        sentence: "JLPTレベルが[上がる]{につれて}覚える漢字もどんどん増えるね。",
+        meaning: "As the JLPT level increases, the number of kanji I have to memorize keeps growing."
+      },
+    ],
+    category: GrammarEntryCategory.CHANGE_RESULT,
+    newWords: [
+      { kanji: "明ける", kana: "あける", english: "to get light (of night)" },
+      { kanji: "地元", kana: "じもと", english: "local area" },
+      { kanji: "愛", kana: "あい", english: "love" }
+    ]
+  },
+  {
+    id: 99,
+    grammar: "〜一方だ",
+    imi: "どんどん 〜 にな",
+    explanation: "この文法はどんどん～になるという意味です。～という状態がどんどんどんどん進んでいくと言いたいときに使います。この「一方」という文法、もう1つあるんですが一方という言葉は一つの方向という意味ですよね。だから〜の一方という言い方をすると反対という意味になるんですがこの文法では～一方だ、一つの方向にどんどん進んでいくという意味で使われているのでこういう状態がどんどんどんどん進んでいく上に上がるんだったら、どんどんあがっていく。下がるんだったら、ずっと下がる。良くなったり悪くなったりする。一つの状態がどんどん進むと言いたいときに使う文法です。\nThis grammar means 'to become more and more ~'. It is used when you want to express that a certain state is progressing rapidly. The word '一方' also has another meaning, which is 'one direction'. Therefore, when you say '〜の一方', it can mean the opposite. However, in this grammar, '～一方だ' is used to mean that something is progressing rapidly in one direction. So if something is going up, it keeps going up; if it's going down, it keeps going down. It is used when you want to express that a certain state is continuously progressing in one direction.",
+    extraInfo: "この文法は「一方だ」と言ってもいいですし「ばかりだ」と言いかえてもOKです。これは意味も接続も全く同じです。",
+    usage: {
+      form: [{ name: "V. る" }],
+      pattern: ["一方だ"],
+    },
+    examples: [
+      {
+        sentence: "痩せたいとは思っているが、お菓子がやめられないので[太り続ける]{一方だ}。",
+        meaning: "I want to lose weight, but since I can't stop eating snacks, I'm only getting fatter."
+      },
+      {
+        sentence: "新発売の商品がヒットして、我が社の売り上げは[伸びる]{一方だ}。",
+        meaning: "The newly released product has become a hit, and our sales are continuing to grow."
+      },
+      {
+        sentence: "都市へ行く若者が増え、地方の人口は[減る]{一方だ}。",
+        meaning: "Young people are moving to cities, and the population in rural areas is decreasing."
+      },
+      {
+        sentence: "文句ばかり言っていたら[ブサイクになる]{一方だ}よ。",
+        meaning: "If you keep complaining, you'll only get uglier."
+      },
+    ],
+    category: GrammarEntryCategory.CHANGE_RESULT,
+    newWords: [
+      { kanji: "痩せる", kana: "やせる", english: "to lose weight" },
+      { kanji: "太り続ける", kana: "ふとりつづける", english: "to keep getting fatter" },
+      { kanji: "我が", kana: "わが", english: "myself" },
+      { kanji: "都市", kana: "とし", english: "city" },
+      { kanji: "地方", kana: "ちほう", english: "rural area" },
+      { kanji: "ブサイク", kana: "", english: "ugly" }
+    ]
+  },
+  {
+    id: 100,
+    grammar: "〜を契機として",
+    imi: "〜が理由で、あることが始まった",
+    explanation: "この文法は〜が理由であることが始まったと言いたいときに使う文法です。「契機」という言葉、ちょっと難しいんですが何かが変わったり何かが始まったりする時の原因やきっかけという意味があります。ですから、これを契機としてというふうに言ったらこれをきっかけにして何かが変わったとかこれが原因で何かが始まったという意味になります。\nThis grammar is used when you want to say that something started because of a certain reason. The word '契機' is a bit difficult, but it means the cause or trigger when something changes or starts. Therefore, when you say 'を契機として', it means that something changed or started because of that trigger or cause.",
+    extraInfo: "この「契機に」という言葉すごくかたい言い方です。言葉自体もすごく難しいので日常会話で使うことはほとんどありません。言いかえるなら「きっかけ」をよく使いますね。でもかたい文章の中とか正式な場なら使われることがあります。",
+    usage: {
+      form: [{ name: "名詞" }],
+      pattern: ["を契機として", "を契機に" ],
+    },
+    examples: [
+      {
+        sentence: "生徒の中から東大合格者が[現れたこと]{を契機に}、この高校は地元で有名になった。",
+        meaning: "Because a student from this school was accepted into Tokyo University, the school became well-known in the local area."
+      },
+      {
+        sentence: "[去年手術したこと]{を契機に}、痛みは我慢せずに病院で診てもらうようにしている。",
+        meaning: "Because of last year's surgery, I now go to the hospital for treatment instead of enduring the pain."
+      },
+      {
+        sentence: "[結婚]{を契機として}、勤めていた会社を辞め、家でできる仕事を始めました。",
+        meaning: "Because of marriage, I quit my job and started working from home."
+      },
+    ],
+    category: GrammarEntryCategory.CHANGE_RESULT,
+    newWords: [
+      { kanji: "契機", kana: "けいき", english: "occasion" },
+      { kanji: "生徒", kana: "せいと", english: "student" },
+      { kanji: "東大", kana: "とうだい", english: "Tokyo University" },
+      { kanji: "現れる", kana: "あらわれる", english: "to appear・to emerge" },
+      { kanji: "手術", kana: "しゅじゅつ", english: "surgery" },
+      { kanji: "我慢", kana: "がまん", english: "endurance・patience" },
+      { kanji: "診る", kana: "みる", english: "to examine (a patient)" },
+      { kanji: "勤める", kana: "つとめる", english: "to work for (a company)" }
+    ]
+  },
+  {
+    id: 101,
+    grammar: "〜を通して",
+    imi: "〜という方法で",
+    explanation: "この文法は～という方法でという意味です。例えば、「友達を通して日本語の森を知りました。」というふうに言ったら友達が方法になるんですね。友達が「ねえねぇ日本語の森っていうのがあるよ」というふうに教えてくれたから、日本語の森を知ることができたという意味になります。このように何かをする方法とか手段を表すときに使う文法です。\nThis grammar means 'by means of ~'. For example, when you say 'I learned about Nihongo No Mori through a friend', the friend becomes the method. It means that the friend told you about Nihongo No Mori, allowing you to learn about it. This grammar is used to express the method or means of doing something.",
+    extraInfo: "を通して -> をとおして\nを通じて -> をつうじて\n",
+    usage: {
+      form: [{ name: "名詞" }],
+      pattern: ["を通して", "を通じて" ],
+    },
+    examples: [
+      {
+        sentence: "様々な国の人々との[出会い]{を通して}、言語学習の大切さを学びました。",
+        meaning: "Through meeting people from various countries, I learned the importance of language learning."
+      },
+      {
+        sentence: "[海外留学]{を通して}、世の中にはいろんな価値観があるということを知りました。",
+        meaning: "Through studying abroad, I learned that there are many different values in the world."
+      },
+      {
+        sentence: "今付き合っている彼とは、[共通の友人]{を通じて}知り合った。",
+        meaning: "I met my current boyfriend through a mutual friend."
+      },
+      {
+        sentence: "[日本語の勉強]{を通じて}皆さんに知り合うことができて本当にうれしいです。",
+        meaning: "I'm really happy to have met everyone through studying Japanese."
+      },
+    ],
+    category: GrammarEntryCategory.CHANGE_RESULT,
+    newWords: [
+      { kanji: "価値観", kana: "かちかん", english: "values" },
+      { kanji: "共通", kana: "きょうつう", english: "common" },
+    ]
+  },
+  {
+    id: 102,
+    grammar: "〜てはじめて",
+    imi: "〜を経験したらわかる",
+    explanation: "この文法は～を経験したらという意味です。はじめてという言葉が入っていますからね。これをしたらその後はじめて何かがわかるとか何か新しいことを知るとか、新しいことに気づく新しいことを理解すると言いたいときに使う文法です。\nThis grammar means 'when you experience ~ for the first time'. Since the word 'はじめて' (for the first time) is included, it is used when you want to say that after doing something, you will understand something new, realize something new, or comprehend something new.",
+    usage: {
+      form: [{ name: "V. テ形" }],
+      pattern: ["はじめて"],
+    },
+    examples: [
+      {
+        sentence: "先生に[なって]{はじめて}、人に何かを教えることがどんなに難しいことなのかがわかった。",
+        meaning: "I only realized how difficult it is to teach people when I became a teacher."
+      },
+      {
+        sentence: "友達に[言われて]{はじめて}、服に値段のシールが付いていることに気づいた。",
+        meaning: "I only noticed that clothes have price tags on them after my friend told me."
+      },
+      {
+        sentence: "ゆか先生の授業を[受けて]{はじめて}、日本語の勉強が楽しいと思えた。",
+        meaning: "I only realized that studying Japanese could be fun after attending Yuko-sensei's class."
+      },
+      {
+        sentence: "あなたと[付き合って]{はじめて}幸せというもの知りました。",
+        meaning: "I only realized what happiness is after dating you.",
+        point: "あなたと付き合うという経験をした後幸せがどういうものかわかったという意味ですね。つまり彼と付き合うまでは幸せって何かはっきりわからなかったという事です。それくらい今、幸せだということですね。",
+      },
+    ],
+    category: GrammarEntryCategory.CHANGE_RESULT,
+    newWords: [
+      { kanji: "気づく", kana: "きづく", english: "to notice" },
+    ]
+  },
+  {
+    id: 103,
+    grammar: "〜末",
+    imi: "〜した結果",
+    explanation: "この文法は～した後という意味です。この「末」という言葉は物事の一番最後を表す意味があります。だから「〜末」というふうについたらこれが終わった後という意味ですね。いろんなことがあって結局こうなったこういう結果になりましたというふうに一番最後の結果を表したい時に使う文法です。\nThis grammar means 'after ~'. The word '末' (end) represents the very end of something. Therefore, when it is attached as '〜末', it means 'after this is finished'. It is used when you want to express the final result after various events have occurred, indicating what ultimately happened or the outcome.",
+    extraInfo: "この～末という表現は少しかたい表現なので日常生活で友達と使うことはほとんどないです。でもニュースとか会社の中ではよく使われる表現なのでぜひ覚えておいてください。",
+    usage: {
+      form: [{ name: "V. た" }, { name: "名詞", connector: "の" } ],
+      pattern: ["末（ に ）"],
+    },
+    examples: [
+      {
+        sentence: "将来についてあれこれ[考えた]{末}、日本ではなく海外の大学へ進学することに決めた。",
+        meaning: "After thinking about the future for a long time, I decided to go to a university abroad rather than in Japan."
+      },
+      {
+        sentence: "二人は4年間の[遠距離恋愛の]{末}、結婚したそうだ。",
+        meaning: "They got married after 4 years of long-distance relationship."
+      },
+      {
+        sentence: "一生懸命[努力した]{末}、結局彼は合格できなかった。",
+        meaning: "After working hard, he ultimately failed the exam."
+      },
+    ],
+    category: GrammarEntryCategory.CHANGE_RESULT,
+    newWords: [
+      { kanji: "末", kana: "すえ", english: "end・conclusion" },
+      { kanji: "遠距離", kana: "えんきょり", english: "long distance" },
+      { kanji: "恋愛", kana: "れんあい", english: "romance" },
+      { kanji: "結局", kana: "けっきょく", english: "after all・finally" }
+    ]
+  },
+  {
+    id: 104,
+    grammar: "〜かいがあって",
+    imi: "〜のおかげで",
+    explanation: "この文法は～のおかげでという意味です。これのおかげでこういういい結果になった。いいことがあったと言いたいときに使う文法です。\nThis grammar means 'thanks to ~'. It is used when you want to say that thanks to something, a good result was achieved or something good happened.",
+    usage: {
+      form: [{ name: "V. た" }],
+      pattern: ["かいがあって"],
+    },
+    examples: [
+      {
+        sentence: "たくさん会話の[練習をした]{かいがあって}、英語がぺらぺら話せるようになった。",
+        meaning: "Thanks to a lot of conversation practice, I became able to speak English fluently."
+      },
+      {
+        sentence: "わざわざ休みを取って遠くまで[来た]{かいがあって}、とてもきれいな星空を見ることができた。",
+        meaning: "Thanks to taking time off and coming all the way here, I was able to see a beautiful starry sky."
+      },
+      {
+        sentence: "長い時間[待った]{かいがあって}、おいしいラーメンを食べることができた。",
+        meaning: "Thanks to waiting for a long time, I was able to eat delicious ramen."
+      },
+    ],
+    category: GrammarEntryCategory.CHANGE_RESULT,
+    newWords: [
+      { kanji: "わざわざ", kana: "わざわざ", english: "on purpose" },
+      { kanji: "星空", kana: "ほしょくう", english: "starry sky" },
+    ]
+  },
+  {
+    id: 105,
+    grammar: "～たところ",
+    imi: "〜したら",
+    explanation: "この文法は～したら同じ意味です。〜をしてみたらこういうことがわかったと言いたいときに使われる文法です。\nThis grammar means 'when/after ~'. It is used when you want to say that after doing something, you found out something.",
+    extraInfo: "この「～たところ」という表現は少しかたい表現なので、友達同士で使うことはほとんどありません。ただ生活をしていたらよく聞く表現なのでぜひ覚えてください。",
+    usage: {
+      form: [{ name: "V. た" }],
+      pattern: ["ところ"],
+    },
+    examples: [
+      {
+        sentence: "この街を[調査した]{ところ}、いたるところに危険な生物が生息していることがわかりました。",
+        meaning: "After investigating this town, I found that dangerous animals live everywhere."
+      },
+      {
+        sentence: "パソコンに詳しい父に[聞いてみた]{ところ}、「再起動してみて」と言われました。",
+        meaning: "After asking my father who is knowledgeable about computers, he told me to try restarting."
+      },
+      {
+        sentence: "最近文字が見づらいので眼科で[検査した]{ところ}、右目に異常がありました。",
+        meaning: "Recently, because the text was hard to read, I went to an eye doctor for an examination, and found that there was an issue with my right eye."
+      },
+    ],
+    category: GrammarEntryCategory.CHANGE_RESULT,
+    newWords: [
+      { kanji: "調査", kana: "ちょうさ", english: "investigation" },
+      { kanji: "いたるところ", kana: "いたるところ", english: "everywhere" },
+      { kanji: "危険", kana: "きけん", english: "dangerous" },
+      { kanji: "生物", kana: "せいぶつ", english: "living thing" },
+      { kanji: "生息", kana: "せいそく", english: "to inhabit" },
+      { kanji: "再起動", kana: "さいきどう", english: "restart" },
+      { kanji: "見づらい", kana: "みづらい", english: "hard to see" },
+      { kanji: "眼科", kana: "がんか", english: "ophthalmology" },
+      { kanji: "検査", kana: "けんさ", english: "examination" },
+      { kanji: "異常", kana: "いじょう", english: "abnormality" },
+    ]
+  },
 ];

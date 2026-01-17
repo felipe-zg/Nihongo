@@ -20,6 +20,8 @@ export const GrammarEntryCategory = {
   EMPHASIS: '強調',
   TIME: "時間",
   STANDARDS_AND_RELATIONS: '基準・関連',
+  CIRCUMSTANCES_HEARSAY: '状況・伝聞',
+  CHANGE_RESULT: '変化・結果',
 } as const;
 
 export type GrammarCategory = typeof GrammarEntryCategory[keyof typeof GrammarEntryCategory];
