@@ -3079,4 +3079,325 @@ export const NIHONGO_NO_MORI_GRAMMAR_N2: GrammarEntry[] = [
       { kanji: "異常", kana: "いじょう", english: "abnormality" },
     ]
   },
+  // SECTION 12: 強制・関係ない・推測 - GRAMMAR 106 - 114
+  {
+    id: 106,
+    grammar: "〜わけにはいかない",
+    imi: "〜できない\n～しなければならない",
+    explanation: "この文法は〜できないとか〜しなければならないという意味です。何か理由があるからこれができないとか何か特別な事情があってこれをしなければならないと言いたいときに使う文法です。\nThis grammar means 'cannot ~' or 'must ~'. It is used when you want to say that you cannot do something due to a certain reason or that you must do something because of special circumstances.",
+    extraInfo: "「するわけにはいかない」ってできないという意味になりますし「しないわけにはいかない」って絶対にしなければならないという意味になります。ですから、動詞のる形とない形の両方で使うことができます。",
+    usage: {
+      form: [{ name: "V. る" }, { name: "V. ない" }],
+      pattern: ["わけにはいかない"],
+    },
+    examples: [
+      {
+        sentence: "今日は私の誕生日会なので、体調が悪くても[参加しない]{わけにはいかない}。",
+        meaning: "Since it's my birthday party today, even if I'm not feeling well, I can't not participate."
+      },
+      {
+        sentence: "頑張ってここまで登ってきたので、頂上に着くまで[あきらめる]{わけにはいかない}。",
+        meaning: "Since I've worked hard to get this far up the mountain, I can't give up until I reach the summit."
+      },
+      {
+        sentence: "明日提出しなければならないレポートが終わっていないので、[寝る]{わけにはいかない}。",
+        meaning: "Since I have a report due tomorrow that isn't finished, I can't go to sleep."
+      },
+    ],
+    category: GrammarEntryCategory.MANDATORY_IRRELEVANCE_INFERENCE,
+    newWords: [
+      { kanji: "事情", kana: "じじょう", english: "circumstances" },
+      { kanji: "頂上", kana: "ちょうじょう", english: "summit" },
+      { kanji: "提出", kana: "ていしゅつ", english: "submission" }
+    ]
+  },
+  {
+    id: 107,
+    grammar: "〜てはいられない",
+    imi: "〜し続けることができない",
+    explanation: "この文法は～し続けることができないという意味です。この状態を続けることが難しい、できないと言いたいときに使う文法です。これをすることはがまんができない！たえられない！というときに使ったりこんなことをしている場合じゃないという意味でもよく使われます。\nThis grammar means 'cannot continue to do ~'. It is used when you want to say that it is difficult or impossible to continue in this state. It is often used when you cannot endure or tolerate doing something, or when you want to express that you cannot afford to be doing such a thing.",
+    extraInfo: "この文法は実際に話すことはあんまりないんですが、よくアニメとかマンガの中で出てくる表現です。",
+    usage: {
+      form: [{ name: "V. テ形" }],
+      pattern: ["はいられない", "ちゃいられない"],
+    },
+    examples: [
+      {
+        sentence: "来月は大切な試験があるので、さすがに[遊んで]{はいられません}。",
+        meaning: "Since next month is an important exam, I can't just play around."
+      },
+      {
+        sentence: "家族のために夜ご飯をつくらなきゃいけないから、[休んで]{はいられない}。",
+        meaning: "Since I have to make dinner for my family, I can't just rest."
+      },
+      {
+        sentence: "最近好きなだけ食べていたけど、ダイエットをすると決めた以上、[こうし]{ちゃいられない}。",
+        meaning: "I've been eating as much as I wanted recently, but since I've decided to diet, I can't just keep doing that."
+      },
+    ],
+    category: GrammarEntryCategory.MANDATORY_IRRELEVANCE_INFERENCE
+  },
+  {
+    id: 108,
+    grammar: "〜ざるを得ない",
+    imi: "嫌だけど 〜 しなければならない",
+    explanation: "この文法は～しないわけにはいかないという意味です。この「ざる」っていう言葉ですね。「せざる」っていうのがしないっていう意味で「得ない」というのはそれをすることができないという意味なんですね。だから「ざるを得ない」と言ったらそれをしないということができないという意味なのでしないわけにはいかない。嫌なんだけどしなければならないという意味になります。この「ざるを得ない」という文法は本当はやりたくないんだけどやらなければいけないとか本当はこうしたくないんだけどこうするしかないというようなときに使います。嫌なことをやらないといけない時ですね。\nThis grammar means 'cannot help but ~' or 'have no choice but to ~'. The word 'ざる' means 'not doing', and '得ない' means 'cannot do it'. Therefore, when you say 'ざるを得ない', it means that you cannot not do something, or in other words, you have no choice but to do it. This grammar is used when you don't really want to do something, but you have to do it anyway, or when you don't want to do something, but you have no other option. It is used when you have to do something unpleasant.",
+    extraInfo: "※しない → せざるを得ない",
+    usage: {
+      form: [{ name: "V. ない STEM" }],
+      pattern: ["ざるを得ない"],
+    },
+    examples: [
+      {
+        sentence: "買い物中に自転車を盗まれてしまったので、歩いて[帰ら]{ざるを得なくなった}。",
+        meaning: "Since my bicycle was stolen while shopping, I had no choice but to walk home."
+      },
+      {
+        sentence: "宇宙飛行士になりたかったが、目が悪いので、[あきらめ]{ざるを得ない}。",
+        meaning: "I wanted to become an astronaut, but because my eyesight is poor, I have no choice but to give up."
+      },
+      {
+        sentence: "台風の影響により、予定していたイベントは[中止]{せざるを得なくなった}。",
+        meaning: "Due to the impact of the typhoon, I had no choice but to cancel the scheduled event."
+      },
+    ],
+    category: GrammarEntryCategory.MANDATORY_IRRELEVANCE_INFERENCE,
+    newWords: [
+      { kanji: "盗まれる", kana: "ぬすまれる", english: "to be stolen" },
+      { kanji: "宇宙飛行士", kana: "うちゅうひこうし", english: "astronaut" },
+    ]
+  },
+  {
+    id: 109,
+    grammar: "〜を問わず",
+    imi: "〜に関係なく",
+    explanation: "この文法は～に関係なくという意味です。問わずというのは、問わないという意味ですね。質問をされないということです。「あなたは日本人ですか？日本人ならOKです。日本人じゃないならだめです。」とか「あなたは20歳以上ですか？20歳以上ならOKです。20歳以上じゃなかったらだめです。」こんなふうに何かを聞かれて、良い悪いとかOKとかだめを判断されることがないということです。つまり問わずというのは、問われないなので～に関係がなくという意味になります。\nThis grammar means 'regardless of ~' or 'irrespective of ~'. '問わず' means 'not to ask' or 'not to question'. For example, if someone asks you, 'Are you Japanese? If you are Japanese, it's OK. If you're not Japanese, it's not OK.' or 'Are you over 20 years old? If you are over 20, it's OK. If you're not over 20, it's not OK.' In such cases, when something is asked and judged as good or bad, OK or not OK, '問わず' means that there is no questioning or judgment based on that. Therefore, '問わず' means 'regardless of ~' or 'irrespective of ~'.",
+    extraInfo: "よく使うのは男女を問わずとか、年齢を問わず場所を問わず、こういう言い方がよく使われます。",
+    usage: {
+      form: [{ name: "名詞" }],
+      pattern: ["を問わず"],
+    },
+    examples: [
+      {
+        sentence: "この仕事に関する[経験の有無]{を問わず}、やる気のある人を採用します。",
+        meaning: "We will hire people who are enthusiastic, regardless of whether they have experience in this job."
+      },
+      {
+        sentence: "このスーパーは[昼夜]{を問わず}営業しているので、夜に働いている人にとって便利だ。",
+        meaning: "This supermarket is open 24 hours a day, so it's convenient for people who work at night."
+      },
+      {
+        sentence: "インターネットが普及し、[場所]{を問わず}働けるようになった。",
+        meaning: "With the spread of the internet, it became possible to work from anywhere."
+      },
+      {
+        sentence: "日本語の森では[国籍]{を問わず}さまざまな国の学生が日本語を勉強しています。",
+        meaning: "At Nihongo No Mori, students from various countries study Japanese regardless of their nationality."
+      },
+    ],
+    category: GrammarEntryCategory.MANDATORY_IRRELEVANCE_INFERENCE,
+    newWords: [
+      { kanji: "有無", kana: "ゆうむ", english: "existence or non-existence" },
+      { kanji: "採用", kana: "さいよう", english: "hiring" },
+      { kanji: "昼夜", kana: "ちゅうや", english: "day and night" },
+      { kanji: "普及", kana: "ふきゅう", english: "spread・popularization" },
+      { kanji: "国籍", kana: "こくせき", english: "nationality" }
+    ]
+  },
+  {
+    id: 110,
+    grammar: "〜にかかわらず",
+    imi: "〜に関係なく",
+    explanation: "この文法は～に関係なくという意味です。関わらずというのは関わらないという意味ですからそれに関係がなく結果はいつも同じだと言いたいときに使われる文法です。\nThis grammar means 'regardless of ~' or 'irrespective of ~'. '関わらず' means 'not to be involved' or 'not to be related', so it is used when you want to say that regardless of that, the result is always the same.",
+    extraInfo: "名詞には、大きさとか長さを表す表現がよくつきます。例えば大きさに関わらずとか距離にかかわらずとか、値段にかかわらずこのようによく使われます。これは大きくても小さくても関係がないという意味ですし値段が高くても安くても関係がない。こういうふうに大きさとか幅を表す表現がよくつきます。\n「するしないにかかわらず」ってしてもしなくても結果は変わらないという意味になります。",
+    usage: {
+      form: [
+        { name: "V. る　＋　V. ない"},
+        { name: "名詞" },
+        { name: "V. る", connector: "かどうか" },
+        { name: "V. ない", connector: "かどうか" },
+      ],
+      pattern: ["にかかわらず"],
+    },
+    examples: [
+      {
+        sentence: "[値段]{にかかわらず}、欲しいものは我慢せずに何でも買ってしまう性格だ。",
+        meaning: "This person has a personality that buys anything they want without hesitation, regardless of the price."
+      },
+      {
+        sentence: "この仕事の経験が[あるかどうか]{にかかわらず}、研修には必ず参加してください。",
+        meaning: "Please participate in the training regardless of whether you have experience in this job."
+      },
+      {
+        sentence: "[参加するしない]{にかかわらず}、金曜日までに必ずご返信ください。",
+        meaning: "Please reply by Friday, regardless of whether you participate or not."
+      },
+      {
+        sentence: "[勉強するしない]{にかかわらず}、試験の日は一日ずつ近づいていますよ…・•。",
+        meaning: "Regardless of whether you study or not, the exam day is getting closer day by day.",
+        point: "勉強しても勉強をしなくても関係がない。試験の日は決まっていますから。",
+      },
+    ],
+    category: GrammarEntryCategory.MANDATORY_IRRELEVANCE_INFERENCE,
+    newWords: [
+      { kanji: "関わる", kana: "かかわる", english: "to be involved with" },
+      { kanji: "研修", kana: "けんしゅう", english: "training" },
+      { kanji: "返信", kana: "へんしん", english: "reply" },
+      { kanji: "近づく", kana: "ちかづく", english: "to approach" },
+    ]
+  },
+  {
+    id: 111,
+    grammar: "〜もかまわず",
+    imi: "〜を気にしないで",
+    explanation: "この文法は～を気にしないで、という意味です。構うというのは、人のことを気にするとかかわるという意味があります。構わず、構わないという意味ですから気にしないという意味になります。\nThis grammar means 'without caring about ~' or 'regardless of ~'. The word '構う' means to care about or to be involved with someone. Therefore, '構わず' or '構わない' means 'not caring about' or 'not being concerned with'.",
+    extraInfo: "「人目もかまわず」という言い方が一番よく使われます。人目もかまわずというのは周りの視線を気にしないで、つまり周りのことを気にしないで何かをするという意味ですね。\n**他の場面だったら「もかまわず」という文法を使うよりも～を気にしないでという言い方の方がよく使われます。",
+    usage: {
+      form: [
+        { name: "普通形", connector: "の" },
+        { name: "名詞", connector: "（ であるの ）" },
+        { name: "な形容詞", connector: "なの・であるの" } 
+      ],
+      pattern: ["もかまわず"],
+    },
+    examples: [
+      {
+        sentence: "足が[痛いの]{もかまわず}、彼はチームのために最後まで走り切った。",
+        meaning: "He ran the entire race without caring about his foot pain, for the sake of his team."
+      },
+      {
+        sentence: "午後に面接が[あるの]{もかまわず}、彼はラーメンににんにくをたくさん入れた。",
+        meaning: "He added a lot of garlic to his ramen without caring about the interview after noon."
+      },
+      {
+        sentence: "母親に叱られた子どもが、人目もかまわずデパートで泣き叫んでいる。",
+        meaning: "The child, scolded by his mother, is crying out loudly in the department store without caring about others' around him."
+      },
+      {
+        sentence: "え？こいつ・・・[値段]{もかまわず}、高い料理ばかり頼んでる•••。ちょっとは遠慮しろよ•••",
+        meaning: "What? This guy... he's ordering only expensive dishes without caring about the price... He should be a bit more considerate...",
+      },
+    ],
+    category: GrammarEntryCategory.MANDATORY_IRRELEVANCE_INFERENCE,
+    newWords: [
+      { kanji: "構う", kana: "かまう", english: "to care about" },
+      { kanji: "にんにく", kana: "にんにく", english: "garlic" },
+      { kanji: "叱る", kana: "しかる", english: "to scold" },
+      { kanji: "叫ぶ", kana: "さぶ", english: "to shout" },
+      { kanji: "泣き叫ぶ", kana: "なきさぶ", english: "to cry out loudly" },
+    ]
+  },
+  {
+    id: 112,
+    grammar: "〜はともかく",
+    imi: "〜については考えないで",
+    explanation: "この文法は～について今は考えないでという意味です。これはともかくというのは、これについては今ちょっと考えないで、これについてはおいておいて、それよりもこっちの方が重要だとかこれの方がいい、こう言いたいと言いたいときに使われる文法です。\nThis grammar means 'let's not think about ~ for now'. 'ともかく' means 'let's not think about this for now', 'let's put this aside', and it is used when you want to say that something else is more important or better than this.",
+    extraInfo: "「～はともかくとして」という言い方もあるんですが、これはどちらでも意味は全く同じです。「ともかくとして」と言った方がちょっとだけかたい印象があるかなと思います。そしてこの接続の部分、名詞と書いているんですが～かどうか、が入る場合もたまにあります。「行くかどうかはともかくとして連絡をください」とかね。行く行かないというのは重要ではない。それは置いておいて、とにかく連絡をくださいという意味になります。",
+    usage: {
+      form: [{ name: "名詞" }],
+      pattern: ["はともかく（として）"],
+    },
+    examples: [
+      {
+        sentence: "[内容]{はともかく}、締め切り日までに卒業論文を書き上げることができた。",
+        meaning: "Let's not worry about the content for now, but I was able to finish my thesis by the deadline."
+      },
+      {
+        sentence: "[着て行く服]{はともかく}、旅行先をどこにするかをまず決めよう。",
+        meaning: "Let's not worry about the clothes we'll wear on the trip for now, but let's decide where we're going to travel first."
+      },
+      {
+        sentence: "この美容液は、[値段]{はともかくとして}効果があるので女性に人気だ。",
+        meaning: "This beauty liquid is popular among women, regardless of its price, because it has an effect."
+      },
+    ],
+    category: GrammarEntryCategory.MANDATORY_IRRELEVANCE_INFERENCE,
+    newWords: [
+      { kanji: "締め切り", kana: "しめきり", english: "deadline" },
+      { kanji: "論文", kana: "ろんぶん", english: "thesis" },
+      { kanji: "美容液", kana: "びようえき", english: "beauty liquid" },
+      { kanji: "効果", kana: "こうか", english: "effectiveness" }
+    ]
+  },
+  {
+    id: 113,
+    grammar: "〜ところをみると",
+    imi: "〜から推測すると",
+    explanation: "この文法は～から推測するとという意味です。ある状況とか様子を見て、そこから考えてこうじゃないかな、と思うとき推測するときに使う文法です。\nThis grammar means 'judging from ~' or 'based on ~'. It is used when you want to speculate or make an inference based on observing a certain situation or condition.",
+    extraInfo: "動詞の普通形しか使うことができないので注意してください。\n\nこの文法「ところをみると」ですから何か状況を見て、こうだと推測する時にも使うんですが実際に何かを見たわけじゃなくてもそういう状況から考えてこうだと推測するとにも使われます。\nSince this grammar is 'ところをみると', it can be used not only when you actually see something, but also when you speculate based on a certain situation or condition.",
+    usage: {
+      form: [{ name: "普通形" }],
+      pattern: ["ところをみると"],
+    },
+    examples: [
+      {
+        sentence: "返事が[ない]{ところをみると}忙しいんだろう。",
+        meaning: "Judging from the fact that there's no reply, he must be busy.",
+        point: "返事がないという状況から考えて彼は今、忙しいんだろうというふうに推測をしています。",
+      },
+      {
+        sentence: "彼が[うれしそうな顔をしている]{ところをみると}、昨日のデートはかなり楽しかったようだ。",
+        meaning: "Judging from the way he looks happy, yesterday's date must have been quite fun."
+      },
+      {
+        sentence: "部長がまだ[戻っていない]{ところをみると}、会議が長引いているのだろう。",
+        meaning: "Judging from the fact that the manager hasn't returned yet, the meeting must be dragging on."
+      },
+      {
+        sentence: "彼と話すときだけ顔が[赤くなる]{ところをみると}、やはり彼女は彼のことが好きなようだ。",
+        meaning: "Judging from the fact that his face turns red only when talking to her, she must really like him."
+      },
+    ],
+    category: GrammarEntryCategory.MANDATORY_IRRELEVANCE_INFERENCE,
+    newWords: [
+      { kanji: "推測", kana: "すいそく", english: "speculation" },
+      { kanji: "長引く", kana: "ながびく", english: "to drag on" },
+    ]
+  },
+  {
+    id: 114,
+    grammar: "〜から言うと\n〜から見ると\n〜からすると",
+    imi: "〜から考えて意見を言うと",
+    explanation: "この文法は～から考えて意見を言うと、という意味です。こういう立場から考えるとこういう意見になるとかこういう点に注目してみるとこういう意見になるというふうに、自分が言いたい意見の判断した材料を言うときに使う文法です。\nThis grammar means 'from the perspective of ~' or 'judging from ~'. It is used when you want to express your opinion based on a certain standpoint or when you want to highlight a specific point that leads to your opinion.",
+    extraInfo: "実は「言う」だけじゃなくて「見る」と「する」を使ってもほとんど同じ意味になります。この言う・見る・するどれを使ってもほとんど意味は変わりません。だいたい言いかえることもできます。\n\nただこの「言う」とか「見る」「する」がふさわしくない文章だとちょっと変になるんですがだいたい言いかえることができます。\n\n「実力から言って」という表現はよく使われます。実力を考えて意見を言うとこうだという意味ですね。",
+    usage: {
+      form: [{ name: "名詞" }],
+      pattern: [
+        "から言うと",
+        "から言えば",
+        "から言って",
+        "から見ると",
+        "から見れば",
+        "から見て",
+        "からすると",
+        "からすれば",
+        "からして",
+      ],
+    },
+    examples: [
+      {
+        sentence: "[見た目]{から言うと}、村上さんよりも佐藤さんの方が年上に見える。",
+        meaning: "From a visual perspective, Mr. Sato appears older than Mr. Murakami."
+      },
+      {
+        sentence: "子どもの才能を見つけるという[点]{から見ると}、夢中になれることをやらせるのはいいことだ。",
+        meaning: "From the perspective of finding a child's talent, it's good to let them do what they're passionate about."
+      },
+      {
+        sentence: "その[症状]{からすると}、かぜではなくインフルエンザの可能性が高いです。",
+        meaning: "Judging from those symptoms, it's more likely to be influenza than a cold."
+      },
+      {
+        sentence: "まあ君の[実力]{からいって}合格することは99%ないと思うけど、まあ、頑張って•••。",
+        meaning: "Well, judging from your actual ability, I think you have a 99% chance of failing, but still, try your best..."
+      },
+    ],
+    category: GrammarEntryCategory.MANDATORY_IRRELEVANCE_INFERENCE,
+    newWords: [
+      { kanji: "才能", kana: "さいのう", english: "talent" },
+      { kanji: "やらせる", kana: "", english: "to let someone do something" },
+      { kanji: "症状", kana: "しょうじょう", english: "symptoms" },
+      { kanji: "実力", kana: "じつりょく", english: "actual ability" },
+    ]
+  },
 ];
