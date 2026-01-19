@@ -3400,4 +3400,257 @@ export const NIHONGO_NO_MORI_GRAMMAR_N2: GrammarEntry[] = [
       { kanji: "実力", kana: "じつりょく", english: "actual ability" },
     ]
   },
+  // SECTION 13: 列挙 - GRAMMAR 115 - 121
+  {
+    id: 115,
+    grammar: "〜をはじめ",
+    imi: "〜だけではなく",
+    explanation: "この文法は～だけじゃなくという意味です。これだけじゃなくて、これもこれもこれも他にもたくさんあるという意味です。はじめ、ですからね。1つ目ですよね。これだけじゃなくて2345・他にもいろいろたくさんありますよと言いたいときに使う文法です。\nThis grammar means 'not only ~'. It is used to express that not only this, but also this, this, and many others exist. 'はじめ' means 'the first one'. It is used when you want to say that not only this, but also many others exist.",
+    usage: {
+      form: [{ name: "名詞" }],
+      pattern: ["をはじめ（として）"],
+      combinedForms: [
+        { first: "名詞 １" , pattern: ["をはじめとする"], second: "名詞 ２" },
+      ]
+    },
+    examples: [
+      {
+        sentence: "日本語には[ひらがな]{をはじめ}、カタカナや漢字といった様々な文字がある。",
+        meaning: "In Japanese, there are various characters such as hiragana, katakana, and kanji."
+      },
+      {
+        sentence: "上野動物園には、[パンダ]{をはじめ}ゾウやキリンなどいろんな動物がいます。",
+        meaning: "In Ueno Zoo, there are various animals such as pandas, elephants, and giraffes."
+      },
+      {
+        sentence: "今日のパーティーは[社長]{をはじめとする}100人の社員が参加することになっている。",
+        meaning: "Today's party will have 100 employees, including the president, participating."
+      },
+    ],
+    category: GrammarEntryCategory.ENUMERATION,
+    newWords: [
+      { kanji: "上野", kana: "うえの", english: "Ueno" },
+      { kanji: "動物園", kana: "どうぶつえん", english: "zoo" },
+      { kanji: "ゾウ", kana: "", english: "elephant" },
+      { kanji: "キリン", kana: "", english: "giraffe" }
+    ]
+  },
+  {
+    id: 116,
+    grammar: "〜のみならず",
+    imi: "〜だけでなく",
+    explanation: "この文法は～だけでなくという意味です。「〜のみ」この「のみ」という言葉は「だけ」という意味ですし「ならず」というのは、「ならない」という意味ですからね。「のみならず」というのは、「これだけではなく」という意味になりまます。\nThis grammar means 'not only ~'. The word 'のみ' means 'only', and 'ならず' means 'not to be'. Therefore, 'のみならず' means 'not only this'.",
+    extraInfo: "「～のみならず、～も」でよく使われる。",
+    usage: {
+      form: [{ name: "普通形" }, { name: "名詞", connector: "（ である ）" }, { name: "な形容詞", connector: "である" }],
+      pattern: ["のみならず"],
+    },
+    examples: [
+      {
+        sentence: "彼は[優しい人である]{のみならず}、みんなをまとめるリーダーシップ[も]ある。",
+        meaning: "He is not only a kind person, but also has leadership skills to unite everyone."
+      },
+      {
+        sentence: "近年の日本のアニメは[子ども]{のみならず}、大人[も]楽しんで観るものという印象がある。",
+        meaning: "In recent years, Japanese animation is not only enjoyed by children, but also by adults."
+      },
+      {
+        sentence: "村上春樹の本は[日本人]{のみならず}、外国人に[も]よく知られている。",
+        meaning: "Murakami Haruki's books are well-known not only among Japanese people, but also among foreigners."
+      },
+      {
+        sentence: "日本語の森は、[日本国内]{のみならず}、世界中の人が使っている素晴らしいサービスだ。",
+        meaning: "Nihongo No Mori is a wonderful service used by people all over the world, not just in Japan."
+      },
+    ],
+    category: GrammarEntryCategory.ENUMERATION,
+    newWords: [
+      { kanji: "優しい", kana: "やさしい", english: "kind" },
+      { kanji: "近年", kana: "きんねん", english: "recent years" },
+      { kanji: "国内", kana: "こくない", english: "domestic" },
+      { kanji: "素晴らしい", kana: "すばらしい", english: "wonderful" }
+    ]
+  },
+  {
+    id: 117,
+    grammar: "〜といった",
+    imi: "〜など",
+    explanation: "例を並べるときに使う。この文法は～などという意味です。前に例をいくつか出します。これとかこれとかこれとかこれ・・といった～。というふうに例をいくつか出すときにこの文法が使われます。「これやこれやこれ、これなど」と言いたい時に使う文法ですね。\nThis grammar is used when listing examples. It means 'such as ~' or 'like ~'. You provide several examples before using this grammar. It is used when you want to say 'this and this and this, etc.' or 'this, this, this, and so on'.",
+    extraInfo: "基本的には例は2つか3つくらい出すと自然です。\n\n「安っぽい」言葉というのは、「価値がない」言葉という意味です。",
+    usage: {
+      form: [{ name: "名詞１　＋　や・とか　＋　名詞２" }],
+      pattern: ["といった"],
+    },
+    examples: [
+      {
+        sentence: "[お寿司]{や}[天ぷら]{といった}日本食は、海外でも人気が高い食べ物の一つだ。",
+        meaning: "Japanese food such as sushi and tempura is one of the most popular foods overseas."
+      },
+      {
+        sentence: "[掃除]{や}[洗濯]{といった}家事は、すべてロボットがやってくれる時代も遠くないだろう。",
+        meaning: "Household chores such as cleaning and laundry will soon be done entirely by robots."
+      },
+      {
+        sentence: "日本には[東京]{とか}[京都]{といった}、外国人に人気のある観光地がたくさんあるんだよ。",
+        meaning: "There are many popular tourist spots in Japan, such as Tokyo and Kyoto, that are loved by foreigners."
+      },
+      {
+        sentence: "[かわいい]、[きれい]{といった}安っぽい言葉で私が喜ぶと思わないでください•••。",
+        meaning: "Don't think that I would be pleased by words like 'cute' or 'pretty'...",
+      },
+    ],
+    category: GrammarEntryCategory.ENUMERATION,
+    newWords: [
+      { kanji: "掃除", kana: "そうじ", english: "cleaning" },
+      { kanji: "観光地", kana: "かんこうち", english: "tourist spot" },
+      { kanji: "喜ぶ", kana: "よろこぶ", english: "to be pleased" }
+    ]
+  },
+  {
+    id: 118,
+    grammar: "〜上",
+    imi: "〜だし、しかも",
+    explanation: "この文法は～だし、しかもという意味です。これだし、しかもこういうことがあるというふうに情報を付け加えて言いたいときに使う文法です。そしてこの文法を使うとき、例えばほめることだったらいいことを並べないといけないし悪いことだったら悪いことを並べて言わなければいけません。\nThis grammar means 'and also ~' or 'moreover ~'. It is used when you want to add information by saying 'this is the case, and also this is the case'. When using this grammar, if you are praising something, you should list good things, and if you are criticizing something, you should list bad things.",
+    extraInfo: "「その上」っていう言い方もよく使われます。",
+    usage: {
+      form: [{ name: "普通形" }, { name: "名詞", connector: "である" }, { name: "な形容詞", connector: "な・である" }],
+      pattern: ["上（ に ）"],
+    },
+    examples: [
+      {
+        sentence: "寝坊して[遅刻した]{上に}宿題もやっていなかったので、先生に怒られてしまった。",
+        meaning: "I overslept, was late, and didn't do my homework, so the teacher scolded me."
+      },
+      {
+        sentence: "あのお店の商品は、[デザインが良い]{上}、機能性にも優れているのでよく買っている。",
+        meaning: "I often buy products from that store because they have good design and are also functional."
+      },
+      {
+        sentence: "この仕事は[危険な]{上に}給料も低いので、誰もやりたがらない。",
+        meaning: "This job is dangerous and has a low salary, so no one wants to do it."
+      },
+    ],
+    category: GrammarEntryCategory.ENUMERATION,
+    newWords: [
+      { kanji: "寝坊", kana: "ねぼう", english: "oversleeping" },
+      { kanji: "遅刻", kana: "ちこく", english: "being late" },
+      { kanji: "機能性", kana: "きのうせい", english: "functionality" },
+      { kanji: "優れる", kana: "すぐれる", english: "to excel" }
+    ]
+  },
+  {
+    id: 119,
+    grammar: "〜やら〜やら",
+    imi: "～や〜など\n〜したり〜したり",
+    explanation: "この文法は～とか～とか、と同じ意味です。「これやらこれやら」、これは「これとかこれとか」というように何かを並べて言いたいときに使う文法なんですが特に、「これとかこれとかこんなことがあってすごく大変だった」と、自分の気持ちを言いたい時とか気持ちが複雑ではっきり言えないとき、例えばうれしい気持ちもあったり悲しい気持ちもあってはっきり言えないというときにも、この「～やら〜やら」という文法が使われます。\nThis grammar means 'such as ~ and ~' or 'doing things like ~ and ~'. It is used when you want to list things, similar to 'this and this and so on'. It is particularly used when you want to express your feelings, especially when your feelings are complex and you cannot clearly express them. For example, when you have both happy and sad feelings and cannot clearly express them, this grammar '～やら〜やら' is used.\nIt's usually used to list multiple bad or chaotic things, often with the feeling of “this and that happened”",
+    extraInfo: "この文法はそんなに日常生活で使われることはない。",
+    usage: {
+      form: [
+        { name: "V. る１　＋　V. る２" },
+        { name: "名詞１　＋　名詞２" },
+        { name: "イ形容詞１　＋　イ形容詞２" }
+      ],
+      pattern: ["やら"],
+    },
+    examples: [
+      {
+        sentence: "寝坊して急いで家を出たので、[スマホ]{やら}[財布]{やら}必要なものを持ってくるのを忘れてしまった。",
+        meaning: "I overslept and hurried out of the house, so I forgot to bring my phone, wallet, and other necessary items."
+      },
+      {
+        sentence: "週末は、[掃除をする]{やら}[買い物に行く]{やら}、やらなければいけないことが色々ある。",
+        meaning: "On weekends, I have all sorts of things to do, such as cleaning or going shopping."
+      },
+      {
+        sentence: "子どもが成人して、[うれしい]{やら}[寂しい]{やら}複雑な気持ちだ。",
+        meaning: "My child has grown up, and I feel a complex mix of happiness and sadness."
+      },
+      {
+        sentence: "今日は寝坊するやら、うんちふむやらもう最悪な一日だった•••。",
+        meaning: "Today was the worst day ever, oversleeping and stepping on poop..."
+      },
+    ],
+    category: GrammarEntryCategory.ENUMERATION,
+    newWords: [
+      { kanji: "成人", kana: "せいじん", english: "adulthood" },
+      { kanji: "寂しい", kana: "さびしい", english: "lonely" },
+      { kanji: "複雑", kana: "ふくざつ", english: "complex" },
+      { kanji: "踏む", kana: "ふむ", english: "to step on" },
+      { kanji: "うんち踏む", kana: "うんちふむ", english: "to step on poop" }
+    ]
+  },
+  {
+    id: 120,
+    grammar: "〜にしろ〜にしろ",
+    imi: "〜でも〜でも\nどれでも",
+    explanation: "この文法は～でも〜でも、という文法です。これも例をいくつかあげるときに使われる文法です。これでも、これでも、どれでもその中の物だったらどれでも同じことがいえると言いたいときに使う文法です。これでも、これでも、あれでも、それでもどれでも同じだ。結果は変わらないという時に使われます。\nThis grammar means 'whether ~ or ~' or 'whichever ~'. It is used when you want to list several examples. It is used when you want to say that no matter which one it is, the same thing can be said about it. Whether it's this or that, the result is the same.",
+    extraInfo: "「するにしる、しないにしろ」のように反対の動作を並べて言う場合もあります。\n\nこの「〜にしろ」の部分なんですが～にしても～しても、と言ってもいいですし～にせよ～にせよ、こういう言い方もあります。これは全部、全く同じ意味です。\n聞いた印象もそこまで違いはないです。どれを使っても OKです。\nまあちょっとだけ「にしろ」よりも「にしても」の方が丁寧で「にしても」よりも「にせよ」の方がちょっとかたいかな？という印象はありますがだいたい同じです。",
+    usage: {
+      form: [
+        { name: "V. る１　＋　V. る２" },
+        { name: "V. る　＋　V. ない" },
+        { name: "名詞１　＋　名詞２" },
+      ],
+      pattern: ["にしろ"],
+    },
+    examples: [
+      {
+        sentence: "試験を[受ける]{にしろ}[受けない]{にしろ}、とにかく勉強を続けておいて損はないと思う。",
+        meaning: "Whether I take the exam or not, I think it's not a loss to keep studying."
+      },
+      {
+        sentence: "[東京]{にしろ}[大阪]{にしろ}、梅雨の時期は洗濯物が乾かない。",
+        meaning: "Whether it's Tokyo or Osaka, during the rainy season clothes don't dry."
+      },
+      {
+        sentence: "[進学する]{にしろ}[就職する]{にしろ}、家族でよく話し合って決めてください。",
+        meaning: "Whether you go to university or get a job, please discuss it with your family and make a decision."
+      },
+      {
+        sentence: "[俺]{にしろ}[お前]{にしろ}、点数悪すぎじゃない？これ100点満点のテストだよ？",
+        meaning: "Whether it's me or you, the score is too bad, right? This is a 100-point test!"
+      },
+    ],
+    category: GrammarEntryCategory.ENUMERATION,
+    newWords: [
+      { kanji: "とにかく", kana: "とにかく", english: "anyway" },
+      { kanji: "損", kana: "そん", english: "loss" },
+      { kanji: "乾く", kana: "かわく", english: "to dry (out)" },
+      { kanji: "進学", kana: "しんがく", english: "going on to higher education" },
+      { kanji: "就職", kana: "しゅうしょく", english: "getting a job" },
+      { kanji: "点数", kana: "てんすう", english: "score" },
+      { kanji: "満点", kana: "まんてん", english: "perfect score" }
+    ]
+  },
+  {
+    id: 121,
+    grammar: "〜も〜ば、〜も",
+    imi: "〜も〜だし、〜も",
+    explanation: "この文法の意味は、これもこうだしこれもこうだというふうに、これもこれもと並べて何かを言いたいときに使われる文法です。例えば、いいことを並べて言うときはいいこともいいこともと並べて言いますし、悪いことを並べて言うときは悪いことも悪いこともと並べて言います。両方の意味で使うことができます。\nThe meaning of this grammar is 'this is also this, and that is also that'. It is used when you want to list multiple things. For example, when listing good things, you say 'good thing and good thing', and when listing bad things, you say 'bad thing and bad thing'. It can be used for both meanings.",
+    extraInfo: "この文法は少しかたい表現なので、日常生活で使われることはあまりないんですが、この会話の中で紹介した「先生が先生なら、学生も学生だな」とか「親が親なら、子も子だな」こういう言い方は会話の中でよく使われます。(Rewatch the video for reference)",
+    usage: {
+      form: [{ name: "名詞", connector: "も" }],
+      pattern: ["V. ば", "イ形容詞 ければ", "な形容詞 なら", "名詞 なら"],
+      secondsForm: [{ name: "名詞２", connector: "も" }],
+    },
+    examples: [
+      {
+        sentence: "文章を書くのが[上手な子]{も}<いれば>、計算が[早い子]{も}いる。",
+        meaning: "There are children who are good at writing and children who are fast at calculations."
+      },
+      {
+        sentence: "あそこのレストランは[味]{も}<おいしければ>、[店内]{も}きれいなので、また行こうと思っている。",
+        meaning: "The restaurant over there is good in taste and the interior is also clean, so I'm thinking of going again."
+      },
+      {
+        sentence: "今日は[山田くん]{も}<休みなら>、[鈴木くん]{も}休みで、教室がいつもより静かだ。",
+        meaning: "Today, since Yamada-kun is off and Suzuki-kun is also off, the classroom is quieter than usual."
+      },
+    ],
+    category: GrammarEntryCategory.ENUMERATION,
+    newWords: [
+      { kanji: "文章", kana: "ぶんしょう", english: "sentence" },
+      { kanji: "計算", kana: "けいさん", english: "calculation" },
+    ]
+  },
 ];

@@ -23,6 +23,7 @@ export const GrammarEntryCategory = {
   CIRCUMSTANCES_HEARSAY: '状況・伝聞',
   CHANGE_RESULT: '変化・結果',
   MANDATORY_IRRELEVANCE_INFERENCE: '強制・関係ない・推測',
+  ENUMERATION: '列挙',
 } as const;
 
 export type GrammarCategory = typeof GrammarEntryCategory[keyof typeof GrammarEntryCategory];
