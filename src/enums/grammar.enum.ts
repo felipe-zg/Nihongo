@@ -25,6 +25,8 @@ export const GrammarEntryCategory = {
   MANDATORY_IRRELEVANCE_INFERENCE: '強制・関係ない・推測',
   ENUMERATION: '列挙',
   LEXICAL_GRAMMAR: '語彙的な文法',
+  POLITE_EXPRESSIONS_OTHERS: '丁寧な表現・その他',
+
 } as const;
 
 export type GrammarCategory = typeof GrammarEntryCategory[keyof typeof GrammarEntryCategory];
