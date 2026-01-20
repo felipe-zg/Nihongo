@@ -3653,4 +3653,288 @@ export const NIHONGO_NO_MORI_GRAMMAR_N2: GrammarEntry[] = [
       { kanji: "計算", kana: "けいさん", english: "calculation" },
     ]
   },
+  // SECTION 14: 語彙のような文法 - GRAMMAR 122 - 129
+  {
+    id: 122,
+    grammar: "〜げ",
+    imi: "〜そうだ",
+    explanation: "この文法は～そうだという意味です。他の人から見てその人がこのように見えると言いたいときに使う文法です。特に気持ちですね。こういう気持ちなんだろうなと周りの人から見て、そう見えると言いたいときに使います。\nThis grammar means 'looks like ~' or 'seems ~'. It is used when you want to say how someone appears from the perspective of others. It is especially used for feelings. It is used when you want to say that from the perspective of people around, it looks like this is how they feel.",
+    extraInfo: "よく使うのは、「寂しげ」とか「悲しげ」とか「うれしげ」とか、「楽しげ」ですね。こういう言葉はその人の気持ちを表しますよね。\n\nこの「～げ」という文法、日常生活でもよく使われるんですが、さっきも説明したように人の気持ちを表す言葉と一緒に使われることが、ほとんどです。ですから「暑げですね」とか、「寒げです」というような言い方はほとんどされません。",
+    usage: {
+      form: [
+        { name: "V. たい", connector: "drop last い" },
+        { name: "イ形容詞", connector: "drop last い" },
+        { name: "ナ形容詞" },
+        { name: "名詞" },
+      ],
+      pattern: ["げ"],
+    },
+    examples: [
+      {
+        sentence: "彼は「試験に合格したんだ」と、[自慢]{げ}に話しかけてきた。",
+        meaning: "He boasted to me, saying 'I passed the exam.'"
+      },
+      {
+        sentence: "今も変わらない母校を前に、彼は[懐かし]{げ}に思い出を語った。",
+        meaning: "Before his unchanged alma mater, he spoke of memories with a nostalgic look."
+      },
+      {
+        sentence: "犬が何か[言いた]{げ}な表情でこちらを見ているが、お腹でも空いたのだろうか。",
+        meaning: "The dog is looking at me with a face that seems to want to say something, I wonder if it's hungry."
+      },
+      {
+        sentence: "[得意]{げ}に話してるけど君まだN2合格してないよね？",
+        meaning: "You're talking proudly, but you haven't passed the N2 yet, right?"
+      },
+    ],
+    category: GrammarEntryCategory.LEXICAL_GRAMMAR,
+    newWords: [
+      { kanji: "自慢", kana: "じまん", english: "boast" },
+      { kanji: "母校", kana: "ぼこう", english: "alma mater" },
+      { kanji: "懐かしい", kana: "なつかしい", english: "nostalgic" },
+      { kanji: "語る", kana: "かたる", english: "to talk about" },
+      { kanji: "表情", kana: "ひょうじょう", english: "facial expression" },
+      { kanji: "得意", kana: "とくい", english: "pride" }
+    ],
+    important: true
+  },
+  {
+    id: 123,
+    grammar: "〜気味",
+    imi: "少し〜のような感じがする",
+    explanation: "この文法は少し～のような感じがするという意味です。はっきりこうだと言うことができないんだけどちょっとこんな感じがするなと言いたいときに使う文法です。\nThis grammar means 'feeling a little ~'. It is used when you cannot say something clearly, but you want to express that you feel something like this a little bit.",
+    extraInfo: "この文法もどんな言葉でも使えるというわけではなくて「疲れぎみ」とか「太り気味」のように、状態を表す言葉と一緒に使われることがほとんどです。ですから、「食べぎみ」とか、「行きぎみ」という言い方は使いません。\n\n「疲れ気味」という言い方、日常生活でもよく使います。\n\nこの～ぎみという文法は日常会話でもよく使われます。友達同士の会話でもよく使われる文法ですね。特に今回例文で紹介したものは本当によく使われるのでぜひ覚えて使ってみてください！",
+    usage: {
+      form: [{ name: "V. ます STEM" }, { name: "名詞" }],
+      pattern: ["気味"],
+    },
+    examples: [
+      {
+        sentence: "最近[太り]{気味なんだ}よね•••。",
+        meaning: "I've been feeling a bit overweight lately...",
+        point: "最近ちょっと太ってきている感じがするという意味です。",
+      },
+      {
+        sentence: "ちょっと今日[かぜ]{気味なんだ}•••。",
+        meaning: "I'm feeling a bit cold today...",
+        point: "まだかぜをひいたとは言えないくらいなんだけどちょっとかぜをひき始めている感じがするという意味です。",
+      },
+      {
+        sentence: "最近は残業が続いて[疲れ]{気味だった}ので、休日は家でゆっくり過ごすことにした。",
+        meaning: "Recently, I've been working overtime and feeling a bit tired, so I decided to spend my days off relaxing at home."
+      },
+      {
+        sentence: "4時には目的地に着く予定だったが、道が混んでいて[遅刻]{気味だ}。",
+        meaning: "I was supposed to arrive at my destination by 4 o'clock, but the roads are crowded and I'm running a bit late."
+      },
+      {
+        sentence: "最近は運動もせず、カロリーの高いものばかり食べているので[太り]{気味だ}。",
+        meaning: "Recently, I haven't been exercising and have been eating a lot of high-calorie foods, so I'm feeling a bit overweight."
+      },
+    ],
+    category: GrammarEntryCategory.LEXICAL_GRAMMAR,
+    newWords: [
+      { kanji: "気味", kana: "ぎみ", english: "a bit" },
+      { kanji: "目的地", kana: "もくてきち", english: "destination" },
+      { kanji: "遅刻", kana: "ちこく", english: "lateness" }
+    ],
+    important: true
+  },
+  {
+    id: 124,
+    grammar: "〜がち",
+    imi: "よく〜になる\nよく〜する",
+    explanation: "この文法は、よく～になるとかよく～をするという意味の文法です。～をする傾向があると言いたいときに使う文法です。\nThis grammar means 'often becomes ~' or 'often does ~'. It is used when you want to say that there is a tendency to do something.",
+    extraInfo: "これも日常会話で良く使われますね。\n病気がちとか、休みがち、忘れがち悪い方に考えがち、とかなまけがちと言い方がよく使われます。",
+    usage: {
+      form: [{ name: "V. ます STEM" }, { name: "名詞" }],
+      pattern: ["がち"],
+    },
+    examples: [
+      {
+        sentence: "疲れたり気分が落ち込んでいると、物事を悪いように[考え]{がち}になってしまう。",
+        meaning: "When you're tired or in a bad mood, you tend to think negatively about things."
+      },
+      {
+        sentence: "最近はやる気が起きなくて、勉強を[怠け]{がち}だ。",
+        meaning: "Recently, I haven't been feeling motivated and I tend to neglect my studies."
+      },
+      {
+        sentence: "子どものころは[病気]{がち}で、よく学校を休んでいた。",
+        meaning: "When I was a child, I was often sick and used to miss school."
+      },
+      {
+        sentence: "君は[失敗し]{がち}だから、ぼくがやっとくよ。",
+        meaning: "You tend to fail, so I'll do it for you."
+      },
+    ],
+    category: GrammarEntryCategory.LEXICAL_GRAMMAR,
+    newWords: [
+      { kanji: "物事", kana: "ものごと", english: "matters" },
+      { kanji: "怠ける", kana: "なまける", english: "to be lazy" }
+    ],
+    important: true
+  },
+  {
+    id: 125,
+    grammar: "〜っぽい",
+    imi: "① 〜のように感じる\n② よく〜する",
+    explanation: "この文法は2つ意味があります。1つめは〜のように感じるという意味で2つめは、よく～するという意味です。これは使われる場面とか単語によって変わるんですが、たとえば「彼は子どもっぽい人だ」というふうに言ったら本当はこどもじゃない、大人なんだけど子供のように感じる、そういう性格だという意味になります。それから「私は忘れっぽい性格です」、というふうに言ったら2つめの意味ですね。「私はよく忘れる性格です」という意味です。言われたことを忘れたり持ち物を忘れてしまったり、そういう人の事を忘れぽい性格というふうに言います。\nThis grammar has two meanings. The first is 'feels like ~' and the second is 'often does ~'. The meaning changes depending on the context and the words used. For example, if you say 「彼は子どもっぽい人だ」, it means that he is not really a child, but an adult who feels like a child in terms of personality. On the other hand, if you say 「私は忘れっぽい性格です」, it means 'I often forget things'. It refers to people who tend to forget what they were told or their belongings.",
+    extraInfo: "この文法、日常生活でも本当によく使われます。意味が2つあると言ったんですが人の性格を表す言葉と使う場合には2つめの、よく～するの意味でほとんど使われます。",
+    usage: {
+      form: [{ name: "V. ます STEM" }, { name: "名詞" }],
+      pattern: ["っぽい"],
+    },
+    examples: [
+      {
+        sentence: "私は昔から[飽き]{っぽい}性格で、何をやっても長く続かなかった。",
+        meaning: "I've always been a person who gets bored easily, so I never stick with anything for long."
+      },
+      {
+        sentence: "彼の言うことは、なんとなく[嘘]{っぽい}ので信じないようにしている。",
+        meaning: "His words feel somewhat like lies, so I try not to believe them."
+      },
+      {
+        sentence: "彼女は仕事を変えてストレスがたまっているのか、[怒り]{っぽく}なった。",
+        meaning: "She's become more irritable, probably because she's stressed from changing jobs."
+      },
+    ],
+    category: GrammarEntryCategory.LEXICAL_GRAMMAR,
+    newWords: [
+      { kanji: "飽きる", kana: "あきる", english: "to get bored" },
+      { kanji: "嘘", kana: "うそ", english: "lie" },
+    ],
+    important: true
+  },
+  {
+    id: 126,
+    grammar: "〜かけ",
+    imi: "〜し終わらない",
+    explanation: "この文法は～し終わらないという意味です。何か動作をやり始めて、それが最後まで終わっていないということを表す文法です。例えば、「食べかけのパン」だったら食べ始めてまだ最後まで食べ終わっていないパンという意味ですし、「読みかけの本」だったらまだ読み終わっていない本という意味になります。このように何かを最後までし終わっていないということを表す文法です。\nThis grammar means 'not finished doing ~'. It expresses that an action has been started but not completed. For example, '食べかけのパン' means bread that has been started to be eaten but not finished, and '読みかけの本' means a book that has not been finished reading. It is used to express that something has not been completed.",
+    usage: {
+      form: [{ name: "V. ます STEM" }],
+      pattern: ["かける"],
+      combinedForms: [
+        { first: "V. ます STEM" , pattern: ["かけの"], second: "名詞" },
+      ]
+    },
+    examples: [
+      {
+        sentence: "机の上に、[飲み]{かけの}[コーヒー]と[食べ]{かけの}[クッキー}が置いてある。",
+        meaning: "On the desk, there are a coffee that was started drinking but not finished and cookies that were started eating but not finished."
+      },
+      {
+        sentence: "母が夕食を[作り]{かけた}のに、父は家族でお寿司を食べに行こうと言い出した。",
+        meaning: "Mother had started preparing dinner, but Father said he wanted to go out for sushi with the family."
+      },
+      {
+        sentence: "家に[読み]{かけの}[本]があるのに、新しい本を買ってしまった。",
+        meaning: "There's a book I haven't finished reading at home, but I bought a new one anyway."
+      },
+      {
+        sentence: "全部[やり]{かけ}で一日が終わってしまった・・・。",
+        meaning: "I had left everything unfinished and the day ended..."
+      },
+    ],
+    category: GrammarEntryCategory.LEXICAL_GRAMMAR,
+  },
+  {
+    id: 127,
+    grammar: "〜向け",
+    imi: "〜に合う",
+    explanation: "この文法は～に合うという意味があります。向くっていうのは、ある方向を見るという意味ですからね。例えば「日本語の森は日本語学習者向けに作られているものです。」こういうふうに言ったら、日本語を勉強している人のことを見て、その人のことを見てその人に合った物を作っているという意味です。\nThis grammar means 'suitable for ~'. '向け' means to face a certain direction. For example, if you say 「日本語の森は日本語学習者向けに作られているものです。」, it means that Nihongo No Mori is created with Japanese language learners in mind, making it suitable for them.",
+    usage: {
+      form: [{ name: "名詞" }],
+      pattern: ["向けに"],
+      combinedForms: [
+        { first: "名詞１" , pattern: ["向けの"], second: "名詞２" },
+      ]
+    },
+    examples: [
+      {
+        sentence: "来月から、[新入社員]{向けの}[研修]カリキュラム作成を担当することになった。",
+        meaning: "Starting next month, I will be in charge of creating a training curriculum for new employees."
+      },
+      {
+        sentence: "この本は[子ども]{向けに}書かれた本だが、大人が読んでもおもしろい。",
+        meaning: "This book is written for children, but adults can also find it interesting."
+      },
+      {
+        sentence: "この食堂は、[学生]{向けに}安くて量が多いメニューを用意している。",
+        meaning: "This cafeteria prepares affordable and generous menus for students."
+      },
+    ],
+    category: GrammarEntryCategory.LEXICAL_GRAMMAR,
+    newWords: [
+      { kanji: "向く", kana: "むく", english: "to face" },
+      { kanji: "研修", kana: "けんしゅう", english: "training" },
+      { kanji: "カリキュラム", kana: "", english: "curriculum" },
+      { kanji: "作成", kana: "さくせい", english: "creation" },
+      { kanji: "担当", kana: "たんとう", english: "in charge" },
+      { kanji: "食堂", kana: "しょくどう", english: "cafeteria" },
+    ]
+  },
+  {
+    id: 128,
+    grammar: "〜得る",
+    imi: "〜の可能性がある",
+    explanation: "この文法は～の可能性があるという意味です。「得る」という言葉は手に入れるという意味があります。自分のものにするという意味があるので前に動詞がついて〜し得るというふうに言った場合は～できるという可能性があるという意味になります。\nThis grammar means 'there is a possibility of ~'. The word '得る' means to obtain or acquire something. When a verb is attached before it, as in ～し得る, it means that there is a possibility of being able to do something.",
+    extraInfo: "この「得る」{える} という言葉は「うる」とも読みます。～しえる、～しうる、どちらを言っても〜の可能性があるという意味は変わらないんですが「うる」と言った方がちょっとだけかたいかな？という印象があります。少し古い印象ですね。でも意味は全く変わらないのでどちらで読んでも大丈夫です。\n「〜し得ない」の場合は「うない」とは読まないのでここは注意してください。\n\n\nこの〜得る・〜得ないという文法は会話の中で使うと少しかたい印象になるんですがさっき紹介した「ありえない」という言葉は友達との会話でもよく使われます。信じられない！と思う時に「ありえない」と使ってみてください。(There's no way! / Unbelievable!)",
+    usage: {
+      form: [{ name: "V. ます STEM" }],
+      pattern: ["得る", "得ない"],
+    },
+    examples: [
+      {
+        sentence: "あんなに成績の良かった彼が試験に不合格だなんて、[あり]{得ない}！",
+        meaning: "It's impossible for someone who did so well on the test to fail.",
+        point: "あるという可能性がないという意味ですから、つまり絶対にない！という意味です。",
+      },
+      {
+        sentence: "地震はいつでも[起こり]{得る}ので、非常時の集合場所を決めておきましょう。",
+        meaning: "Earthquakes can happen anytime, so let's decide on a gathering place in case of an emergency."
+      },
+      {
+        sentence: "食事を一切とらないなどの無理なダイエットは病気の原因に[なり]{得ます}。",
+        meaning: "Extreme diets that involve not eating at all can cause illness."
+      },
+    ],
+    category: GrammarEntryCategory.LEXICAL_GRAMMAR,
+    newWords: [
+      { kanji: "得る", kana: "える", english: "to gain" },
+      { kanji: "成績", kana: "せいせき", english: "grade" },
+      { kanji: "非常", kana: "ひじょう", english: "emergency" },
+      { kanji: "集合", kana: "しゅうごう", english: "gathering" },
+      { kanji: "一切", kana: "いっさい", english: "none at all" }
+    ]
+  },
+  {
+    id: 129,
+    grammar: "〜きり",
+    imi: "〜したあと、ずっとそのまま",
+    explanation: "この文法は～した後ずっとそのままという意味があります。それをした後から何も変わっていないずっとその状態が続いていると言いたいときに使う文法です。\nThis grammar means 'after doing ~, it remains that way'. It is used when you want to say that nothing has changed since doing something and that state continues.",
+    extraInfo: "話すときには小さい「つ」が間に入って、「行ったっきり」のような言い方になる場合もあります。",
+    usage: {
+      form: [{ name: "V. た" }],
+      pattern: ["きり", "っきり"],
+    },
+    examples: [
+      {
+        sentence: "「ごめん。」と[言った]{っきり}、彼はだまり込んでしまった。",
+        meaning: "After saying 'I'm sorry,' he just stood there in silence."
+      },
+      {
+        sentence: "高校時代の親友とは10年前に[会った]{きり}、連絡もしていない。",
+        meaning: "I haven't had any contact with my childhood friend since we last met 10 years ago."
+      },
+      {
+        sentence: "仕事が忙しくて、朝パンを一枚[食べた]{きり}何も食べていない。",
+        meaning: "Because I was busy with work, I only ate one slice of bread for breakfast and haven't eaten anything else."
+      },
+    ],
+    category: GrammarEntryCategory.LEXICAL_GRAMMAR,
+    newWords: [
+      { kanji: "一枚", kana: "いちまい", english: "one slice" },
+    ]
+  },
 ];

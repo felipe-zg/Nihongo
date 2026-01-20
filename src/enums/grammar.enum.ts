@@ -24,6 +24,7 @@ export const GrammarEntryCategory = {
   CHANGE_RESULT: '変化・結果',
   MANDATORY_IRRELEVANCE_INFERENCE: '強制・関係ない・推測',
   ENUMERATION: '列挙',
+  LEXICAL_GRAMMAR: '語彙的な文法',
 } as const;
 
 export type GrammarCategory = typeof GrammarEntryCategory[keyof typeof GrammarEntryCategory];
