@@ -1,6 +1,182 @@
 import { GrammarEntryCategory } from "../../../enums";
 
 export const NIHONGO_NO_MORI_GRAMMAR_MONDAI_N2: any[] = [
+  // SECTION 1: 「もの」シリーズ - GRAMMAR 1 - 10
+  {
+    id: 1,
+    content: [
+      '世間の目は厳しい。ただひたすら頑張れば、評価されるという',
+      '。',
+    ],
+    options: ['ものと思われる', 'ものと思われない', 'ものではない', 'ものだ'],
+    answer: 'ものではない',
+    type: '文法形式の判断',
+    category: GrammarEntryCategory.MONO,
+  },
+  {
+    id: 2,
+    content: [
+      'どんなに親しくなったとしても、上司には常に敬語で',
+      'ものだ。',
+    ],
+    options: ['話す', '話した', '話さない', '話そう'],
+    answer: '話す',
+    type: '文法形式の判断',
+    category: GrammarEntryCategory.MONO,
+  },
+  {
+    id: 3,
+    content: [
+      '何事も最初は失敗する',
+      'だから、うまくいかなくても諦めずに続けることが大切だ。',
+    ],
+    options: ['うえ', 'もの', 'あげく', 'ため'],
+    answer: 'もの',
+    type: '文法形式の判断',
+    category: GrammarEntryCategory.MONO,
+  },
+  {
+    id: 4,
+    content: [
+      '事件現場の近くで、犯人が使用した',
+      '自転車が発見された。',
+    ],
+    options: ['ものと思うと', 'ものと思いつつ', 'ものと思ったつもりの', 'ものと思われる'],
+    answer: 'ものと思われる',
+    type: '文法形式の判断',
+    category: GrammarEntryCategory.MONO,
+  },
+  {
+    id: 5,
+    content: [
+      '誕生日パーティーを開いてもらうなんて少し恥ずかしいけど、みんなにお祝いしてもらうのは',
+      '。',
+    ],
+    options: ['うれしいもんか', 'うれしいもんだ', 'うれしいものの', 'うれしいもんでもない'],
+    answer: 'うれしいもんだ',
+    type: '文法形式の判断',
+    category: GrammarEntryCategory.MONO,
+  },
+  {
+    id: 6,
+    content: [
+      '休める',
+      '休みたいけど、今日は大事なテストがあるから絶対に学校へ行かなければならない。',
+    ],
+    options: ['ものの', 'ものか', 'ものでも', 'ものなら'],
+    answer: 'ものなら',
+    type: '文法形式の判断',
+    category: GrammarEntryCategory.MONO,
+  },
+  {
+    id: 7,
+    content: [
+      '思い切って赤色のワンピースを買った',
+      '、恥ずかしくて結局まだ一度も着ていない。',
+    ],
+    options: ['ものの', 'ものに', 'ものか', 'ものが'],
+    answer: 'ものの',
+    type: '文法形式の判断',
+    category: GrammarEntryCategory.MONO,
+  },
+  {
+    id: 8,
+    content: [
+      'いくつになっても子どものことを一番に思う、それが親',
+      '。',
+    ],
+    options: ['というものだ', 'ということだ', 'というものならだ', 'ということならだ'],
+    answer: 'というものだ',
+    type: '文法形式の判断',
+    category: GrammarEntryCategory.MONO,
+  },
+  {
+    id: 9,
+    content: [
+      '桜の花びらが散っている様子はとてもきれいだけど、どこか',
+      'がありますね。',
+    ],
+    options: ['さびしいというもの', 'さびしいものとか', 'さびしいものの', 'さびしいもの'],
+    answer: 'さびしいもの',
+    type: '文法形式の判断',
+    category: GrammarEntryCategory.MONO,
+  },
+  {
+    id: 10,
+    content: [
+      '一度不合格だったくらいで、合格を',
+      '。',
+    ],
+    options: ['あきらめることにする', 'あきらめることか', 'あきらめるものか', 'あきらめるもの'],
+    answer: 'あきらめるものか',
+    type: '文法形式の判断',
+    category: GrammarEntryCategory.MONO,
+  },
+  {
+    id: 11,
+    content: [
+      'こんな大きい家に',
+      '。',
+    ],
+    options: ['みたい', '住んで', '住める', 'ものなら'],
+    answer: 'ものなら',
+    order: [3, 4, 2, 1],
+    starPosition: 2,
+    type: '並び替え',
+    category: GrammarEntryCategory.MONO,
+  },
+  {
+    id: 12,
+    content: [
+      '揺れる車内で6時間も座りっぱなしで、全然眠れなかった。夜行バス',
+      '。',
+    ],
+    options: ['なんて', '乗る', 'もんか', '二度と'],
+    answer: 'なんて',
+    order: [1, 4, 2, 3],
+    starPosition: 1,
+    type: '並び替え',
+    category: GrammarEntryCategory.MONO,
+  },
+  {
+    id: 13,
+    content: [
+      'できなくても落ち込まないでください。誰でもはじめた',
+      '。',
+    ],
+    options: ['ものです', 'うまくいかない', 'ばかりの', 'ころは'],
+    answer: 'うまくいかない',
+    order: [3, 4, 2, 1],
+    starPosition: 3,
+    type: '並び替え',
+    category: GrammarEntryCategory.MONO,
+  },
+  {
+    id: 14,
+    content: [
+      '遊んでもいいが、ちゃんと勉強も',
+      '。',
+    ],
+    options: ['大学生', 'するのが', 'という', 'ものだ'],
+    answer: 'という',
+    order: [2, 1, 3, 4],
+    starPosition: 3,
+    type: '並び替え',
+    category: GrammarEntryCategory.MONO,
+  },
+  {
+    id: 15,
+    content: [
+      'ドーナツは油が多いと',
+      '食べるのをやめられない。',
+    ],
+    options: ['大好き', 'わかっている', 'だから', 'ものの'],
+    answer: 'ものの',
+    order: [2, 4, 1, 3],
+    starPosition: 2,
+    type: '並び替え',
+    category: GrammarEntryCategory.MONO,
+  },
   // SECTION 4: 順接・逆接 - GRAMMAR 29 - 40
   {
     id: 1,
