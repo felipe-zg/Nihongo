@@ -101,8 +101,8 @@ const NihongoNoMoriGrammar: React.FC<Props> = ({ grammarList }) => {
   }, [filteredList.length, categoryFilter]);
 
   const ExamplePhrase: React.FC<{ example: string }> = ({ example }) => {
-    // Split by { } or [ ]
-    const parts = example.split(/(\{.*?\}|\[.*?\])/g);
+    // Split by { } or [ ] or < >
+    const parts = example.split(/(\{.*?\}|\[.*?\]|<.*?>)/g);
 
     return (
       <Text
@@ -125,6 +125,15 @@ const NihongoNoMoriGrammar: React.FC<Props> = ({ grammarList }) => {
           if (part.startsWith("[") && part.endsWith("]")) {
             return (
               <Text key={index} color="yellow.500">
+                {part.slice(1, -1)}
+              </Text>
+            );
+          }
+
+          // < ... > → orange
+          if (part.startsWith("<") && part.endsWith(">")) {
+            return (
+              <Text key={index} color="orange.500">
                 {part.slice(1, -1)}
               </Text>
             );
@@ -168,7 +177,7 @@ const NihongoNoMoriGrammar: React.FC<Props> = ({ grammarList }) => {
         <>
           <Text color="pink.500" my={5}>{`${currentIndex + 1}/${filteredList.length}`}</Text>
           <ContentBox>
-            <Text fontFamily="Klee One" fontSize={"2xl"} bold color={"white"}>{currentItem.grammar}</Text>
+            <Text fontFamily="Klee One" fontSize={"2xl"} bold color={currentItem.important ? "yellow.500" : "white"}>{currentItem.grammar}</Text>
           </ContentBox>
           <Box opacity={showContent ? 1 : 0} alignItems={"center"} width={"100%"}>
             <ContentBox>
@@ -179,6 +188,11 @@ const NihongoNoMoriGrammar: React.FC<Props> = ({ grammarList }) => {
                 <Text fontSize={"sm"} italic color={"white"}>{`${currentItem.category}`}</Text>
               </Box>
             </ContentBox>
+            {currentItem.extraInfo && (
+              <ContentBox>
+                <Text fontSize={"sm"} color={"orange.500"}>{currentItem.extraInfo}</Text>
+              </ContentBox>
+            )}
             {currentItem.usage && (
               <ContentBox>
                 {(currentItem.usage.form || currentItem.usage.pattern) && (
@@ -247,16 +261,11 @@ const NihongoNoMoriGrammar: React.FC<Props> = ({ grammarList }) => {
                 <Box key={index} mb={4} alignItems="center">
                   <ExamplePhrase example={example.sentence} />
                   {example.meaning && <Text italic textAlign={"center"} color={"primary.400"} fontSize={"xs"}>{example.meaning}</Text>}
-                  {example.point && <Text italic textAlign={"center"} color={"pink.400"} fontSize={"xs"}>{example.point}</Text>}
+                  {example.point && <Text italic textAlign={"center"} color={"green.400"} fontSize={"xs"}>{example.point}</Text>}
                   <Divider my={2} bg="gray.500" thickness={0.5}/>
                 </Box>
               ))}
             </ContentBox>
-            {currentItem.extraInfo && (
-              <ContentBox>
-                <Text fontSize={"sm"} color={"pink.400"}>{currentItem.extraInfo}</Text>
-              </ContentBox>
-            )}
             {currentItem.newWords && (
               <ContentBox>
                 <Box minWidth={{ base: "100%", lg: "50%" }}>
