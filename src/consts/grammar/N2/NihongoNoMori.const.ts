@@ -351,8 +351,377 @@ export const NIHONGO_NO_MORI_GRAMMAR_N2: GrammarEntry[] = [
       { kanji: "現場", kana: "げんば", english: "scene (of crime, accident, etc.)" },
     ]
   },
-  // SECTION 2: 「こと」シリーズ - GRAMMAR 1 - 10
-  // SECTION 3: 「限り」シリーズ - GRAMMAR 1 - 10
+  // SECTION 2: 「こと」シリーズ - GRAMMAR 11 - 20
+  {
+    id: 11,
+    grammar: "〜ことに",
+    imi: "とても〜だ",
+    explanation: "この文法は「とても～だ」というふうに自分の感情を強調して言いたいときに使う文法です。「あ～本当にこう思う！」というふうに自分の気持ちを強く表現したいときに使われる文法です。",
+    extraInfo: "この文法、気持ちを強調していう文法なので自分がこういうふうに感じる。という風に自分の感情を表す言葉と一緒によく使われます。\n\nこの「～ことに」という文法は日常会話ではあまり使わない言い方ですね。もし使うんだったら、「こんなことがあってさめっちゃ困ったよ。」とか「もうすごく大変だったよ。」こういう言い方をすることの方が多いです。「困ったことに」とわざわざ言う事は少なくて小説の中とか、書き言葉の中でよく見かけるかなと思います。",
+    usage: {
+      form: [
+        { name: "V. た" },
+        { name: "な形容詞", connector: "な"},
+        { name: "イ形容詞"}
+      ],
+      pattern: ["ことに"],
+    },
+    examples: [
+      {
+        sentence: "[悲しい]{ことに}、新しく買ったばかりの口紅をなくしてしまった。",
+        meaning: "xxxxx"
+      },
+      {
+        sentence: "[驚いた]{ことに}、普通は3日かかる仕事を彼は1日で完璧にやり終えてしまった。",
+        meaning: "xxxxx"
+      },
+      {
+        sentence: "上司：「昨日のプレゼンどうだった？」\n部下：「[ありがたい]{ことに}、我が社の製品を気に入っていただけたようです。」",
+        meaning: "xxxxx"
+      },
+      {
+        sentence: "[不思議な]{ことに}全然悲しくないんだよね！",
+        meaning: "xxxxx"
+      },
+    ],
+    category: GrammarEntryCategory.KOTO,
+    newWords: [
+      { kanji: "口紅", kana: "xx", english: "xx" },
+      { kanji: "驚く", kana: "xx", english: "xx" },
+      { kanji: "完璧", kana: "xx", english: "xx" },
+      { kanji: "我", kana: "xx", english: "xx" },
+      { kanji: "製品", kana: "xx", english: "xx" },
+      { kanji: "不思議な", kana: "xx", english: "xx" }
+    ]
+  },
+  {
+    id: 12,
+    grammar: "〜ことにする",
+    imi: "本当はそうじゃないけど、〜というふりをする",
+    explanation: "この文法は、本当はそうじゃないんだけど「～のふりをする」という意味です。本当はそれをやったわけじゃないんだけどそれをやったようなふりをする。",
+    extraInfo: "この場面のように、「見なかったことにしてほしい」とか、「聞かなかったことにしてほしい」とか、「知らなかったことにしてほしい」こういう言い方は、日常会話でもよく使われます。",
+    usage: {
+      form: [{ name: "v. た" }],
+      pattern: ["ことにする"],
+    },
+    examples: [
+      {
+        sentence: "姉が作ったお弁当を、自分が[作った]{ことにして}恋人にプレゼントした。",
+        meaning: "xxxxx"
+      },
+      {
+        sentence: "来月転校するって話、まだ内緒にしているから、[聞かなかった]{ことにして}くれない？",
+        meaning: "xxxxx"
+      },
+      {
+        sentence: "宿題を[終わらせた]{ことにして}遊びに行ったら、お母さんに叱られた。",
+        meaning: "xxxxx"
+      },
+      {
+        sentence: "分けてくれるなら[見なかった]{ことにする}！",
+        meaning: "xxxxx"
+      },
+    ],
+    category: GrammarEntryCategory.KOTO,
+    newWords: [
+      { kanji: "転校", kana: "xx", english: "xx" },
+      { kanji: "内緒", kana: "xx", english: "xx" },
+      { kanji: "叱られる", kana: "xx", english: "xx" }
+    ]
+  },
+  {
+    id: 13,
+    grammar: "〜ことか",
+    imi: "本当に〜だ",
+    explanation: "この文法は、自分の気持ちとか自分がやったこと行動に対して気持ちを込めて言うときに使う文法です。「ああこうだなぁ」というふうに強く感じることを表現したいときに使う文法です。この「ことか」を使うときは前に「どんなに〜ことか」とか「どれだけ〜ことか」「どれほど〜ことか」「なんと〜ことか」この4つの言葉が一緒に使われる場合が多いです。これを使うことでもっともっと気持ちを強調をして表現することができます。",
+    extraInfo: "この「～ことか」という文法は、日常生活ではあまり使うことがありません。こういう話し方をする人もいるんですがどちらかというと、小説の中とか、アニメやマンガ、ドラマの中でよく聞く表現かなと思います。",
+    usage: {
+      form: [{ name: "普通形" }, { name: "名詞", connector: "である" }, { name: "な形容詞", connector: "な・である" }],
+      pattern: ["ことか"],
+    },
+    examples: [
+      {
+        sentence: "どんなときでも明るい笑顔を見せる彼女に、<どれほど>[救われている]{ことか}。",
+        meaning: "xxxxx"
+      },
+      {
+        sentence: "今までお腹の中にいた息子の顔を初めてみたとき、<どんなに>[うれしかった]{ことか}。",
+        meaning: "xxxxx"
+      },
+      {
+        sentence: "大事な試合前にけがをしてしまって、<どれだけ>[つらかった]{ことか}。",
+        meaning: "xxxxx"
+      },
+      {
+        sentence: "N2合格のために、<どれだけ>[勉強した]{ことか}。",
+        meaning: "xxxxx"
+      },
+    ],
+    category: GrammarEntryCategory.KOTO,
+    newWords: [
+      { kanji: "救われる", kana: "xx", english: "xx" },
+    ]
+  },
+  {
+    id: 14,
+    grammar: "〜ことから",
+    imi: "〜だから",
+    explanation: "この文法は、原因や理由を表すときに使われる文法です。特に名前の由来ですね。このものの名前がどうしてそういう名前になったのかという理由を説明するときそれから何か物事が起きていてそれがどうしてそうなったのかの原因を説明するときによく使われる文法です。",
+    extraInfo: "この「ことから」という文法は日常会話ではあまり使わないです。ちゃんとした言い方だな。という印象があるので何か物の名前を説明するときに書き言葉として使われたり、正式な場で説明をするときに使われるような文法です。\n\n日常会話だったら「〜から」と使います。「呼びやすいからこの名前になったんだよ。」こういう言い方のほうが自然ですね。",
+    usage: {
+      form: [{ name: "普通形" }, { name: "名詞", connector: "である" }, { name: "な形容詞", connector: "な・である" }],
+      pattern: ["ことから"],
+    },
+    examples: [
+      {
+        sentence: "この通りにあるお菓子屋さんはどれも[有名である]{ことから}、ここは「スイーツストリート」と呼ばれている。",
+        meaning: "xxxxx"
+      },
+      {
+        sentence: "まだ足跡が雪の上にはっきりと[残っている]{ことから}、熊はまだ近くにいると考えられる。",
+        meaning: "xxxxx"
+      },
+      {
+        sentence: "栄養のバランスが[良い]{ことから}、和食がまた注目を集めるようになった。",
+        meaning: "xxxxx"
+      },
+      {
+        sentence: "A: あやの先生の名前の由来ってなんですか？\nB: 礼儀が[正しくなるようにという]{ことから}「あやの」という名前になりました。",
+        meaning: "xxxxx"
+      },
+    ],
+    category: GrammarEntryCategory.KOTO,
+    newWords: [
+      { kanji: "由来", kana: "xx", english: "xx" },
+      { kanji: "足跡", kana: "あしあと", english: "xx" },
+      { kanji: "熊", kana: "くま", english: "xx" },
+      { kanji: "栄養", kana: "えいよう", english: "xx" },
+      { kanji: "礼儀", kana: "れいぎ", english: "xx" },
+    ]
+  },
+  {
+    id: 15,
+    grammar: "〜のことだから",
+    imi: "〜の性格を考えると",
+    explanation: "この文法は「～の性格から考えるとこうだろう」と思うときに使う文法です。",
+    extraInfo: "接続は、名詞＋のことだから、名詞が入ります。この名詞の中には、人の名前とか組織の名前が入ります。このように「〜の性格から考えるとこうだろうきっとこうなるだろうというふうに予想するときに使われる文法です。\n\nこの「～のことだから」という文法はいい意味でも悪い意味でもどちらでも使うことができます。\nこの文法、日常生活でもよく使います。",
+    usage: {
+      form: [{ name: "名詞" }],
+      pattern: ["のことだから"],
+    },
+    examples: [
+      {
+        sentence: "いつも寝坊する[彼女]{のことだから}、今日もデートに遅刻してくるだろう。",
+        meaning: "xxxxx"
+      },
+      {
+        sentence: "[母]{のことだから}、私を元気にさせるためにお弁当に大好物の卵焼きをたくさん入れてくれたのだろう。",
+        meaning: "xxxxx"
+      },
+      {
+        sentence: "田中；「どうしよう。森くんのペン壊しちゃった。」\n山田；「[優しい彼]{のことだから}、謝れば許してくれるさ。」",
+        meaning: "xxxxx"
+      },
+      {
+        sentence: "おっそ！全然こーへんやん！[あいつ]{のことやから}、どうせ寝坊してんねやろなー！",
+        meaning: "xxxxx"
+      },
+    ],
+    category: GrammarEntryCategory.KOTO,
+    newWords: [
+      { kanji: "壊す", kana: "xx", english: "xx" },
+      { kanji: "優しい", kana: "xx", english: "xx" },
+      { kanji: "謝る", kana: "あやまる", english: "xx" },
+      { kanji: "許す", kana: "ゆるす", english: "xx" }
+    ],
+    important: true
+  },
+  {
+    id: 16,
+    grammar: "〜ことなく",
+    imi: "〜しないで",
+    explanation: "この文法は「～しないで」という意味です。\n「ことなく」というのは「〜をしない状態で別のことをする」と言いたいときに使う文法ですから「〜ことなく」これは「〜しないで」と同じ意味になります。",
+    usage: {
+      form: [{ name: "V. る" }],
+      pattern: ["ことなく"],
+    },
+    examples: [
+      {
+        sentence: "工場では24時間、[止まる]{ことなく}機械が動き続けている。",
+        meaning: "xxxxx"
+      },
+      {
+        sentence: "私の親友は、毎年[忘れる]{ことなく}誕生日に手紙をくれる。",
+        meaning: "xxxxx"
+      },
+      {
+        sentence: "彼は祝日も[休む]{ことなく}働き続けていたので、身体を壊してしまった。",
+        meaning: "xxxxx"
+      },
+      {
+        sentence: "私はこれまで[休む]{ことなく}勉強を続けてきました。",
+        meaning: "xxxxx"
+      },
+    ],
+    category: GrammarEntryCategory.KOTO,
+    newWords: [
+      { kanji: "機械", kana: "きかい", english: "xx" },
+      { kanji: "祝日", kana: "しゅくじつ", english: "xx" },
+      { kanji: "壊す", kana: "xx", english: "xx" }
+    ]
+  },
+  {
+    id: 17,
+    grammar: "〜ないことには",
+    imi: "〜しなければ",
+    explanation: "この文法は「～しなければ」という意味です。これをしないと、こういう結果にはならないと言いたいときに使う文法なので「～ないことには～ない」のように後ろには「ない」がつく文章が続きます。",
+    extraInfo: "この文法は、「～してみないことには分からない」という使い方がすごく多いです。\n「使ってみないことには分からない」とか「食べてみないことにはおいしいかどうかわからない」、「行ってみないことには、楽しいかどうかわからない」このように使われることが本当に多いです。",
+    usage: {
+      form: [
+        { name: "V. ない STEM" },
+        { name: "イ形容詞 ない形 STEM" },
+        { name: "な形容詞", connector: "で" },
+        { name: "名詞", connector: "で" },
+      ],
+      pattern: ["ないことには"],
+    },
+    examples: [
+      {
+        sentence: "実物を[見てみない]{ことには}、買うかどうか決めることはできない。",
+        meaning: "xxxxx"
+      },
+      {
+        sentence: "お湯が[熱くない]{ことには}、温泉に入っても体が温まらない。",
+        meaning: "xxxxx"
+      },
+      {
+        sentence: "色々やりたいことがあっても、[健康でない]{ことには}何も始められない。",
+        meaning: "xxxxx"
+      },
+      {
+        sentence: "実際に[使ってみない]{ことには}いいかどうかわからないから。",
+        meaning: "xxxxx"
+      },
+    ],
+    category: GrammarEntryCategory.KOTO,
+    newWords: [
+      { kanji: "実物", kana: "じつぶつ", english: "xx" },
+      { kanji: "お湯", kana: "おゆ", english: "xx" },
+      { kanji: "熱い", kana: "あつい", english: "xx" },
+      { kanji: "温まる", kana: "あたたまる", english: "xx" }
+    ]
+  },
+  {
+    id: 18,
+    grammar: "〜ないことはない",
+    imi: "〜だ！とはっきり言えない",
+    explanation: "この文法は「絶対に～だ」とはっきり言えないときに使う文法です。「ないことはない」ですからつまり、あるんですね。「そうだ。」という文法なんですが「そうだ」とはっきり言えないときにこの文法が使われます。",
+    extraInfo: "この「ないことはない」という表現を使うときはまあまあよりちょっと下ぐらいを表すときに使います。例えば、「似合ってないこともない」と言ったら、まあすごく似合ってないわけじゃないんだけどまぁちょっと似合ってるぐらいちょっと、まあまあより下ぐらいの評価になるんですよ。\nこれはいう人とか、聞く人の関係とか場面によっても少し違うんですが「ないこともない」っていう表現を使うときははっきり言えない時とはっきり言いたくない時によく使われるんですよ。",
+    usage: {
+      form: [
+        { name: "V. ない" },
+        { name: "V. れない" },
+        { name: "イ形容詞 ない形" },
+        { name: "な形容詞", connector: "でない" },
+      ],
+      pattern: ["ことはない", "こともない"],
+    },
+    examples: [
+      {
+        sentence: "部長の気持ちは[わからない]{ことはない}が、あの言い方は良くないと思う。",
+        meaning: "xxxxx"
+      },
+      {
+        sentence: "お酒は[飲めない]{こともない}んですが、一人では飲まないです。",
+        meaning: "xxxxx"
+      },
+      {
+        sentence: "[かわいくな]<く>{もない}が、彼女はこの役のイメージには合わない。",
+        meaning: "xxxxx"
+      },
+    ],
+    category: GrammarEntryCategory.KOTO,
+    newWords: [
+      { kanji: "役", kana: "やく", english: "xx" },
+    ]
+  },
+  {
+    id: 19,
+    grammar: "〜ことは〜が",
+    imi: "〜だけど",
+    explanation: "この文法は「～だけど」という意味です。反対のことを言いたいときに使う文法ですね。例えば、「勉強したことは勉強したが合格する自がない。」このように使います。勉強したけど自信がないという意味ですね。このように「〜だけど」とはっきり言う よりも一応これをやったけど気になることがある。とかこうなんだけど、別の意見があると言いたいときに使う文法です。",
+    extraInfo: "この～の部分は、同じ言葉が入るので注意してください。\n\nこの「～ことは～が」という文法は日常生活でもよく使われます。日常の会話だったら「〜ことは〜けど」という言い方になる場合が多いですね。",
+    usage: {
+      form: [{ name: "普通形" }, { name: "名詞", connector: "な" }, { name: "な形容詞", connector: "な" }],
+      pattern: ["ことは"],
+      secondsForm: [{ name: "普通形", connector: "が" }]
+    },
+    examples: [
+      {
+        sentence: "試験に[合格した]{ことは}[合格した]{が}、こんな資格があっても何の役にも立たない。",
+        meaning: "xxxxx"
+      },
+      {
+        sentence: "村上：「昨日のコンサート、どうだった？」\n佐藤：「[楽しかった]{ことは}[楽しかったんです]{が}、隣の人がうるさくて全然ゆっくり歌を聴けませんでした。！",
+        meaning: "xxxxx"
+      },
+      {
+        sentence: "日本で働くのは[大変な]{ことは}[大変だ]{が}、学びも多いです。",
+        meaning: "xxxxx"
+      },
+      {
+        sentence: "[美味しい]{ことは}[美味しいです]{が}病気になってしまいますよ！",
+        meaning: "xxxxx"
+      },
+      {
+        sentence: "A；「ねえねえ。レポート書いた？」\nB；「ああ、[書いた]{ことは}[書いた]{けど}適当だよ。」",
+        meaning: "xxxxx"
+      },
+    ],
+    category: GrammarEntryCategory.KOTO,
+    newWords: [
+      { kanji: "資格", kana: "しかく", english: "xx" },
+      { kanji: "適当", kana: "てきとう", english: "xx" },
+    ],
+    important: true
+  },
+  {
+    id: 20,
+    grammar: "～ことになる\n～ことにはならない",
+    imi: "〜だと言える\n～だと言えない",
+    explanation: "この文法は「～だといえる」という意味です。例えば、皆さん漢字を1000個覚えなければいけません1日に漢字を1つずつ覚えていったら何年かかりますか？だいたい3年くらいかかりますよね。こういう時に3年かかることになるっていうことができます。",
+    usage: {
+      form: [
+        { name: "普通形" },
+        { name: "名詞", connector: "だという" },
+        { name: "な形容詞", connector: "だという" },
+      ],
+      pattern: ["ことになる", "ことにはならない"],
+    },
+    examples: [
+      {
+        sentence: "このサービスは一か月利用するのに980円かかるので、一年使う11760円[支払う]{ことになる}。",
+        meaning: "xxxxx"
+      },
+      {
+        sentence: "ただ日本のドラマを字幕付きで観ただけでは、日本語の[勉強をした]{ことにはならない}。",
+        meaning: "xxxxx"
+      },
+      {
+        sentence: "犬の散歩ぐらいじゃ、[ダイエットした]{ことにはなりません}よ。",
+        meaning: "xxxxx"
+      },
+      {
+        sentence: "そんなに本をたくさん持っているからって[勉強した]{ことにはならない}ょー。",
+        meaning: "xxxxx"
+      },
+    ],
+    category: GrammarEntryCategory.KOTO,
+    newWords: [
+      { kanji: "字幕", kana: "じまく", english: "subtitle" },
+    ]
+  },
+  // SECTION 3: 「限り」シリーズ - GRAMMAR 21 - 28
   // SECTION 4: 順接・逆接 - GRAMMAR 29 - 40
   {
     id: 29,
@@ -4130,4 +4499,5 @@ export const NIHONGO_NO_MORI_GRAMMAR_N2: GrammarEntry[] = [
     important: true
   },
   //TODO: Add translations for unit 15: 丁寧な表現・その他
+  //TODO: Add translations for unit 2: 「こと」シリーズ
 ];
