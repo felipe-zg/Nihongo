@@ -3937,4 +3937,197 @@ export const NIHONGO_NO_MORI_GRAMMAR_N2: GrammarEntry[] = [
       { kanji: "一枚", kana: "いちまい", english: "one slice" },
     ]
   },
+  // SECTION 15: 丁寧な表現・その他 - GRAMMAR 130 - 135
+  {
+    id: 130,
+    grammar: "おいでになる",
+    imi: "「行く・来る・いる」の尊敬語",
+    explanation: "この言葉は3つ意味があります。1つめは「行く」2つめは「来る」3つめは「いる」です。行く・来る・いる、この3つの動詞の尊敬語です。\nこの3つの意味は、場面によってどの意味になるかがかわります。",
+    extraInfo: "おいで --> いる",
+    examples: [
+      {
+        sentence: "来週、中本部長が出張のため[大阪へ]{おいでになる}そうです。",
+        meaning: "",
+        point: "「行く」の意味です。"
+      },
+      {
+        sentence: "ゆか先生、至急、[会議室に]{おいでください}。",
+        meaning: "xxxxx",
+        point: "「来る」の意味です。",
+      },
+      {
+        sentence: "佐藤様は、もうすでに本社の[待合室に]{おいでです}。",
+        meaning: "xxxxx",
+        point: "「いる」の意味です。",
+      },
+      {
+        sentence: "xxxxx",
+        meaning: "xxxxx"
+      },
+    ],
+    category: GrammarEntryCategory.POLITE_EXPRESSIONS_OTHERS,
+    newWords: [
+      { kanji: "xx", kana: "xx", english: "xx" },
+      { kanji: "xx", kana: "xx", english: "xx" },
+      { kanji: "xx", kana: "xx", english: "xx" }
+    ],
+    important: true
+  },
+  {
+    id: 131,
+    grammar: "〜ご存知ですか",
+    imi: "「知っていますか？」の尊敬語",
+    explanation: "この表現は「知っていますか？」の尊敬語です。存じるというのは、知っているとか自分が思うという意味があります。ですから相手に「ご存知ですか」というふうに聞いたら「知っていますか？」の丁寧な言い方になります。何かを知っているかどうか確認する時のとても丁寧な表現です。",
+    extraInfo: "ご存知ですかという聞き方はとても丁寧な表現なの初対面の人とか目上の人にはよく使う言い方です。",
+    examples: [
+      {
+        sentence: "山田：日本語の森のゆか先生を{ご存知ですか}。\n田中：はい、存じ上げております。",
+        meaning: "xxxxx"
+      },
+      {
+        sentence: "中本部長が大阪へ転勤になること、もう{ご存知ですか}。",
+        meaning: "xxxxx"
+      },
+      {
+        sentence: "彼女の連絡先を{ご存知}でしたら、教えていただけませんか。",
+        meaning: "xxxxx"
+      },
+    ],
+    category: GrammarEntryCategory.POLITE_EXPRESSIONS_OTHERS,
+    newWords: [
+      { kanji: "転勤", kana: "xx", english: "xx" },
+      { kanji: "連絡先", kana: "xx", english: "xx" },
+    ]
+  },
+  {
+    id: 132,
+    grammar: "〜してもよろしいでしょうか",
+    imi: "〜してもいいですか？",
+    explanation: "この表現は～してもいいですかという意味です。〜してもいいですかと相手に何かを聞いたり尋ねたり、それから許可をとったりするときに使うとても丁寧な表現です。",
+    extraInfo: "この3つを覚えてください：\n「お聞きしてもよろしいでしょうか？」\n「お伺いしてもよろしいでしょうか？」\n「お尋ねしてもよろしいでしょうか？」",
+    examples: [
+      {
+        sentence: "もう一度、お名前を{お聞きしてもよろしいでしょうか}。",
+        meaning: "xxxxx"
+      },
+      {
+        sentence: "失礼ですが、年齢を{お伺いしてもよろしいでしょうか}。",
+        meaning: "xxxxx"
+      },
+      {
+        sentence: "すみません、一つ{お尋ねしてもよろしいでしょうか}。",
+        meaning: "xxxxx"
+      },
+      {
+        sentence: "あー、先生、すいません。この問題の答えを{お聞きしてもよろしいでしょうか}。",
+        meaning: "xxxxx"
+      },
+    ],
+    category: GrammarEntryCategory.POLITE_EXPRESSIONS_OTHERS,
+    newWords: [
+      { kanji: "伺う", kana: "xx", english: "xx" },
+      { kanji: "尋ねる", kana: "xx", english: "xx" },
+      { kanji: "年齢", kana: "xx", english: "xx" },
+    ],
+    important: true
+  },
+  {
+    id: 133,
+    grammar: "〜させてもらう",
+    imi: "〜することを許してもらう（くれる）",
+    explanation: "この文法は〜することを許してもらうとか許してくれるという意味の文法です。「させる」は使役ですよね。人に何かをさせるという時に使うんですがさせてもらうと言っていますから何か許可をしてもらう、そしてそれをすることができると言いたいときに使います。許してもらうとか、許可をもらうという意味の文法なのでこの文法を使うときはお母さんと子供とかね。上司と部下のように、それをしてもいいですよと許可を出す立場の上の人と下の人という関係で使われる場合がほとんどです。",
+    usage: {
+      form: [{ name: "V. ない STEM" }],
+      pattern: ["（ さ ）せてもらう", "（ さ ）せてくれる"],
+    },
+    examples: [
+      {
+        sentence: "サッカー、バレエ、習字など、両親は私のやりたいことを全部[やら]{せてくれた}。",
+        meaning: "xxxxx"
+      },
+      {
+        sentence: "小さい頃は貧乏で好きなものを[食べ]{させてもらえなかった}ので、大人になったらいろんなものを食べたいとずっと思っていた。",
+        meaning: "xxxxx"
+      },
+      {
+        sentence: "会社での頑張りが認められて、新商品の開発リーダーを[任]{せてもらえる}ことになった。",
+        meaning: "xxxxx"
+      },
+    ],
+    category: GrammarEntryCategory.POLITE_EXPRESSIONS_OTHERS,
+    newWords: [
+      { kanji: "使役", kana: "xx", english: "xx" },
+      { kanji: "許可", kana: "xx", english: "xx" },
+      { kanji: "許す", kana: "xx", english: "xx" },
+      { kanji: "習字", kana: "xx", english: "xx" },
+      { kanji: "貧乏", kana: "xx", english: "xx" },
+      { kanji: "認める", kana: "xx", english: "xx" },
+      { kanji: "開発", kana: "xx", english: "xx" },
+      { kanji: "任せる", kana: "xx", english: "xx" },
+    ]
+  },
+  {
+    id: 134,
+    grammar: "〜かねる",
+    imi: "〜するのが難しい\n～できない",
+    explanation: "この表現は〜するのが難しいとかそれはできないと言いたいときに使う表現です。〜かねるという表現自体がすごく丁寧で敬語表現だということはできないんですがこの〜かねるという言い方はお客様と店員が話をするときによく使われるのでここで紹介しておきます。",
+    extraInfo: "特にお客様に対して「できない」と伝える時によく使われる。\n\nこの「～かねる」という表現日本のお店に行くとよく聞きます。特に値段の高いお店に行くとよく使われていますね。コンビニだったら「それはできません」のように言われることが多いです。でも百貨店とか高級レストランとかホテルに泊まった時などは「そちらはできかねます」とか「お答えしかねます」のように断られることがある。",
+    usage: {
+      form: [{ name: "V. ます STEM" }],
+      pattern: ["かねる"],
+    },
+    examples: [
+      {
+        sentence: "大変申し訳ありませんが、そちらの質問には[お答えし]{かねます}。",
+        meaning: "xxxxx"
+      },
+      {
+        sentence: "客：これ、返品したいんですが。\n店員；大変申し訳ありません。返品の対応は[致し]{かねます}。",
+        meaning: "xxxxx"
+      },
+      {
+        sentence: "大変申し上げにくいのですが、そちらの意見には[賛成し]{かねます}。",
+        meaning: "xxxxx"
+      },
+      {
+        sentence: "申し訳ございません。一度食べてしまったものは返品[でき]{かねます}。",
+        meaning: "xxxxx"
+      },
+    ],
+    category: GrammarEntryCategory.POLITE_EXPRESSIONS_OTHERS,
+    newWords: [
+      { kanji: "致す", kana: "xx", english: "xx" },
+      { kanji: "賛成", kana: "xx", english: "xx" },
+    ]
+  },
+  {
+    id: 135,
+    grammar: "〜もらってくれない？",
+    imi: "私のために、この物を「もらう」ということをしてくれませんか？",
+    explanation: "この表現「もらう」と「くれる」が並んでいてよくわかりにくいかもしれないんですが「もらってくれない？」というのは「もらうという行為を私のためにしてくれませんか？」とお願いをするときに使う表現です。このものをあなたがもらうということをしてほしいとお願いをしているので、つまりこれをあげます。という意味と同じです。でも「もらってくれない？」という表現を使うときは決まった場面があります。",
+    extraInfo: "この「もらってくれない？」という表現は日常生活でもよく使われます。基本的にあげるという行為は、あげる人が上でもらう人が下になるはずですね。もちろん何かをもらうわけですから、ありがとうございますともらった人は思うんですが「もらってくれない？」というふうに聞くとこれをあげることは迷惑かもしれないけど私がうれしいからもらってほしいという意味になります。\n実際の会話で使われるときは本当にもらってうれしいものなんだけどあげる人は「もらってくれない？」というふうに言う場合が多いです。これはあげる人が「そんなに、たいしたものじゃないんですよ」と謙遜をする意味でも使われますしもらってくれない？というふうに言うことでもらう人もそのものをもらいやすくなるという効果があります。",
+    examples: [
+      {
+        sentence: "引っ越しするんだけど、家にある漫画全部{もらってくれない？}",
+        meaning: "xxxxx",
+        point: "家にあるまんが、あなたにあげたいと言っています。",
+      },
+      {
+        sentence: "実家から野菜がたくさん送られてきたから、少し{もらってくれない？}",
+        meaning: "xxxxx",
+        point: "実家からたくさん野菜が送られてきたからちょっとあげるよと言っているんですね。たくさん野菜があっても、一人で食べきることができない場合もありますよね。",
+      },
+      {
+        sentence: "プレゼントでもらった服、小さくてサイズが合わないから、{もらってくれない？}",
+        meaning: "xxxxx",
+        point: "これは私のためにこのものをもらうということをしてほしいという意味です。",
+      },
+    ],
+    category: GrammarEntryCategory.POLITE_EXPRESSIONS_OTHERS,
+    newWords: [
+      { kanji: "実家", kana: "xx", english: "xx" },
+    ],
+    important: true
+  },
+  //TODO: Add translations for unit 15: 丁寧な表現・その他
 ];
