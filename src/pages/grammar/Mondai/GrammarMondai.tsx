@@ -1,6 +1,7 @@
-import { Box, Button, HStack, Pressable, Text, VStack } from "native-base";
-import React from "react";
+import { Box, Button, HStack, Pressable, Select, Text, VStack } from "native-base";
+import React, { useMemo } from "react";
 import { parseRuby } from "../../../utils/music/rubyParser";
+import { GrammarCategory, GrammarEntryCategory } from "../../../enums";
 
 type Props = {
   items: any[];
@@ -134,10 +135,42 @@ function BoxHeader({ title, category, refersTo }: { title: string, category: str
 
 
 const GrammarMondai: React.FC<Props> = ({ items }) => {
+  const [categoryFilter, setCategoryFilter] = React.useState<GrammarCategory>();
+
+  const grammarCategoryOptions = Object.entries(GrammarEntryCategory).map(
+    ([key, value]) => ({ key, label: value, value })
+  );
+
+  const filteredList = items.filter(item =>
+    categoryFilter ? item.category === categoryFilter : true
+  );
+
+  const CategorySelect = useMemo(() => {
+    return (
+      <Select
+        selectedValue={categoryFilter}
+        onValueChange={(value) => setCategoryFilter(value as GrammarCategory)}
+        placeholder="Category"
+        backgroundColor={"white"}
+      >
+        {grammarCategoryOptions.map((category) => (
+          <Select.Item
+            key={category.key}
+            label={category.label}
+            value={category.value}
+          />
+        ))}
+      </Select>
+    );
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <Box padding={5} minHeight={"100vh"}>
-      {items.map((item) => {
+      <Box flex={1} mb={5} display={{ base: "none", sm: "flex" }}>
+        {CategorySelect}
+      </Box>
+      {filteredList.map((item) => {
         const narabiakaeText = item.options.map((_opt: any, i: number) => ` ${item.starPosition === i + 1 ? '⭐' : '_____'} `).join('');
         const placeholderText = item.type === "並び替え" ? narabiakaeText : '_____';
         const parts = parseRuby(item.content.join(item.moji ? `<${item.moji}>` : placeholderText));
