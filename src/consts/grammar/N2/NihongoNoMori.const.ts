@@ -722,6 +722,277 @@ export const NIHONGO_NO_MORI_GRAMMAR_N2: GrammarEntry[] = [
     ]
   },
   // SECTION 3: 「限り」シリーズ - GRAMMAR 21 - 28
+  {
+    id: 21,
+    grammar: "〜限り ①",
+    imi: "〜の範囲で言うと",
+    explanation: "この文法は自分が持っている情報の範囲を表す時に使うものです。「限り」という言葉は、ここまでですよとものの範囲を表す時に使う言葉ですよね。この文法では、自分が持っている情報はここまでですよと範囲を表したいときに使います。",
+    extraInfo: "よく使われる言葉は「見た限り」とか「聞いた限り」「調べた限り」、私が「知っている限り」とか「覚えている限り」また「調査した限り」このように自分が持っている情報自分の知識とか調べたりしてわかったことはここまでですよと範囲を示したいときに使われます。\n\n「では」を付けると、ちょっとだけ文章を強調することができるんですが付けても付けなくても、どちらでもいいし意味は変わりません。",
+    usage: {
+      form: [{ name: "V. る" }, { name: "V. た" }, { name: "V. ている" }],
+      pattern: ["限り（ では ）"],
+    },
+    examples: [
+      {
+        sentence: "私の[知る]{限り}、彼女はそんな嘘をつくような人ではありません。",
+        meaning: "xxxxx"
+      },
+      {
+        sentence: "[調べた]{限り}、この辺にある日本食屋さんはここだけです。",
+        meaning: "xxxxx"
+      },
+      {
+        sentence: "私が[聞いている]{限りでは}、彼女はまだあの会社で働いています。",
+        meaning: "xxxxx"
+      },
+      {
+        sentence: "A：ダイエットは明日からだ？明日からって言ったじゃん？\nB：ええ？私が[覚えている]{限りでは}、今日からダイエットするって言っていたよ！",
+        meaning: "xxxxx"
+      },
+    ],
+    category: GrammarEntryCategory.KAGIRI,
+    newWords: [
+      { kanji: "範囲", kana: "はんい", english: "Range" },
+      { kanji: "嘘", kana: "うそ", english: "Lie" },
+      { kanji: "辺", kana: "へん", english: "xx" }
+    ]
+  },
+  {
+    id: 22,
+    grammar: "〜限り ②",
+    imi: "〜という状態の間は",
+    explanation: "この「限り」という文法たくさん意味があるんですが、今回勉強するのは～をしている状態の間は、という意味の「限り」です。これをしている状態の間はずっと同じ状態が続きますよと言いたいときに使います。この「限り」という言葉は、ここまでというふうに範囲を決める言葉ですよね。だから「〜限り」という風に言うと～をしているという状態、ここまでの間は同じ状況が続きますという意味になります。",
+    extraInfo: "「は」を付けると、少しだけ文章を強調することができますが、意味は同じです。どちらを使ってもOKです。\nそして、この接続なんですが現在の形だけ使います。～限りという文法は、これをしている状態今の状態を表しますから、現在の形だけ使われます。注意してください。",
+    usage: {
+      form: [
+        { name: "普通形" },
+        { name: "名詞", connector: "である" },
+        { name: "な形容詞", connector: "な・である" }
+      ],
+      pattern: ["限り（ は ）"],
+    },
+    examples: [
+      {
+        sentence: "ここに[いる]{限り}、敵からの攻撃を受けることはないだろう。",
+        meaning: "xxxxx"
+      },
+      {
+        sentence: "日本に[住んでいる]{限り}、地震の被害にあう可能性があるので準備しておいた方がいい。",
+        meaning: "xxxxx"
+      },
+      {
+        sentence: "彼が[社長である]{限り}、私の給料は上がらないだろう。",
+        meaning: "xxxxx"
+      },
+      {
+        sentence: "ごめんとかいらない。新しいプリンを[買ってこない]{限り}、絶対に許さない。",
+        meaning: "xxxxx",
+        point: "買ってこない状態の間はずっと許さないよという意味ですね。つまり、ごめんって言ってないで新しいプリン買ってきなさいよっていうことですね。新しいプリンを買ってこないと絶対に許さないという意味です。",
+      },
+    ],
+    category: GrammarEntryCategory.KAGIRI,
+    newWords: [
+      { kanji: "状態", kana: "じょうたい", english: "Situation" },
+      { kanji: "接続", kana: "xx", english: "xx" },
+      { kanji: "敵", kana: "xx", english: "xx" },
+      { kanji: "攻撃", kana: "こうげき", english: "xx" },
+      { kanji: "被害", kana: "ひがい", english: "xx" },
+    ]
+  },
+  {
+    id: 23,
+    grammar: "〜限り ③",
+    imi: "〜だけ",
+    explanation: "この「限り」という文法たくさん意味があるんですが今回勉強するのは、「だけ」という意味です。「～限り」これは～だけという意味でよくお知らせなどに使われる表現です。",
+    extraInfo: "この「限る」を使う場合は書くときに使われる場合が多いです。",
+    usage: {
+      form: [{ name: "名詞" }],
+      pattern: ["に限り", "に限る"],
+    },
+    examples: [
+      {
+        sentence: "この地域に[お住まいの方]{に限り}、こちらの商品が全品10%オフです。",
+        meaning: "xxxxx"
+      },
+      {
+        sentence: "この階段の使用は[緊急の場合]{に限る}。",
+        meaning: "xxxxx"
+      },
+      {
+        sentence: "店では[平日]{に限り}、食後のアイスをサービスしています。",
+        meaning: "xxxxx"
+      },
+      {
+        sentence: "アルバイト募集中！日本語能力試験N2[合格者]{に限り}。",
+        meaning: "xxxxx"
+      },
+    ],
+    category: GrammarEntryCategory.KAGIRI,
+    newWords: [
+      { kanji: "緊急", kana: "きんきゅう", english: "Emergency" },
+      { kanji: "xx", kana: "xx", english: "xx" },
+      { kanji: "xx", kana: "xx", english: "xx" }
+    ]
+  },
+  {
+    id: 24,
+    grammar: "〜に限る",
+    imi: "〜が一番良い選択だ",
+    explanation: "この文法は～が一番良い選択だという意味です。これが1番いい、これをするのが最高だ！と言いたいときに使う文法です。",
+    usage: {
+      form: [{ name: "V. る" }, { name: "V. ない" }, { name: "名詞" }],
+      pattern: ["に限る"],
+    },
+    examples: [
+      {
+        sentence: "夏休みは勉強を忘れて、友達と[海水浴]{に限る}。",
+        meaning: "xxxxx"
+      },
+      {
+        sentence: "なんだかうまくいかないときは、いったん[休む]{に限る}。",
+        meaning: "xxxxx"
+      },
+      {
+        sentence: "体調が悪いときは、ご飯だけ食べて、後は何も[しない]{に限る}。",
+        meaning: "xxxxx"
+      },
+    ],
+    category: GrammarEntryCategory.KAGIRI,
+    newWords: [
+      { kanji: "選択", kana: "せんたく", english: "Choice" },
+      { kanji: "海水浴", kana: "かいすいよく", english: "Sea bathing" },
+    ]
+  },
+  {
+    id: 25,
+    grammar: "〜に限らず",
+    imi: "〜だけでなく",
+    explanation: "この文法は、～だけでなくという意味です。「限る」という文法の中に「だけ」という意味もありましたよね。「限らず」というのは、限らないという意味ですからこれは～だけでなく、だけではないという意見になります。",
+    usage: {
+      form: [{ name: "名詞" }],
+      pattern: ["に限らず"],
+    },
+    examples: [
+      {
+        sentence: "[日本語]{に限らず}、言語はどれも複雑で習得するのが難しいものだ。",
+        meaning: "xxxxx"
+      },
+      {
+        sentence: "[特別な日]{に限らず}、彼はなんでもない日でもプレゼントをくれる。",
+        meaning: "xxxxx"
+      },
+      {
+        sentence: "このレストランは[休日]{に限らず}、平日もお客さんでいっぱいだ。",
+        meaning: "xxxxx"
+      },
+    ],
+    category: GrammarEntryCategory.KAGIRI,
+    newWords: [
+      { kanji: "複雑", kana: "ふくざつ", english: "Complicated" },
+      { kanji: "習得", kana: "しゅうとく", english: "Acquisition" },
+    ]
+  },
+  {
+    id: 26,
+    grammar: "〜に限って",
+    imi: "〜はいつもと違って",
+    explanation: "この文法は～はいつもとは違う特別なことが起こると言いたいときに使う文法です。特に嫌なことですね。今、これが起きてほしくないということが起きる時そういう悪いことですね。今起こってほしくないということが起きると言いたい時に使う文法です。",
+    extraInfo: "他の日だったらいいのに、今日に限ってと言ったら今日はこれが起きてほしくないのに嫌なことが起きてしまう、というように悪いことが起きると言いたいときに使われる文法です。",
+    usage: {
+      form: [{ name: "名詞" }],
+      pattern: ["に限って"],
+    },
+    examples: [
+      {
+        sentence: "静かにしなければいけない[とき]{に限って}、お腹が鳴ってしまう。",
+        meaning: "xxxxx"
+      },
+      {
+        sentence: "白い服を[着ている日]{に限って}、コーヒーをこぼしてしまう。",
+        meaning: "xxxxx"
+      },
+      {
+        sentence: "私のアルバイト先は[忙しい日]{に限って}、誰かが休んで人が足りなくなる。",
+        meaning: "xxxxx"
+      },
+      {
+        sentence: "いつもは傘を持ってるのにな。。。あ～！傘を[持ってない日]{に限って}、雨が降るんだよな～もう！どうしよう。",
+        meaning: "xxxxx"
+      },
+    ],
+    category: GrammarEntryCategory.KAGIRI,
+    newWords: [
+      { kanji: "鳴る", kana: "なる", english: "To ring・To make a sound" },
+    ],
+    important: true
+  },
+  {
+    id: 27,
+    grammar: "〜に限って〜ない",
+    imi: "〜がそんなことをするなんて、言じられない！ありえない！",
+    explanation: "この文法は信じられない！とか、ありえない！というように強く何かを否定したいときに使う文法です。そんなこと絶対にない！という風に強く否定したい気持ちを表現する時に使う文法ですね。\nこの「～ない」の部分は「～のはずがない」とか「わけがない」とか「ありえない」というような言葉が続きます。そんなこと絶対にない！じられない！ありえない！という意味を表す文法ですね。",
+    usage: {
+      form: [{ name: "名詞" }],
+      pattern: ["に限って 〜　ない"],
+    },
+    examples: [
+      {
+        sentence: "まじめな[彼女]{に限って}、学校をさぼって友達と遊ぶなんて<あり得ない>。",
+        meaning: "xxxxx"
+      },
+      {
+        sentence: "私の[彼氏]{に限って}、浮気をするなんて<あり得ない>。",
+        meaning: "xxxxx"
+      },
+      {
+        sentence: "優しい[息子]{に限って}、友達を泣かせる<はずがない>。",
+        meaning: "xxxxx"
+      },
+      {
+        sentence: "[私]{に限って}、テストが満点じゃないなんてこと、<あるわけない>でしょ。",
+        meaning: "xxxxx"
+      },
+    ],
+    category: GrammarEntryCategory.KAGIRI,
+    newWords: [
+      { kanji: "否定", kana: "ひてい", english: "Denial" },
+      { kanji: "浮気", kana: "うわき", english: "Cheating" },
+    ]
+  },
+  {
+    id: 28,
+    grammar: "〜とは限らない",
+    imi: "100%〜だと言えない",
+    explanation: "この文法は100%～だ！と言えないというときに使います。絶対にこうだとはっきり言えないときに使う文法ですね。\n例えば、頑張って勉強したからって合格するとは限らない、ですよね。頑張って勉強したら合格する可能性は高くなるけど絶対に合格するとは言えないです。不合格になることもあります。こういう時に「～とは限らない」という文法を使います。",
+    usage: {
+      form: [{ name: "普通形" }],
+      pattern: ["とは限らない"],
+    },
+    examples: [
+      {
+        sentence: "お金をたくさん持っている人が、みんな[幸せだ]{とは限らない}。",
+        meaning: "xxxxx"
+      },
+      {
+        sentence: "努力をすれば必ず[成功する]{とは限らない}が、努力をしなければ成功しない。",
+        meaning: "xxxxx"
+      },
+      {
+        sentence: "韓国人と結婚したからといって、韓国語が上手に[話せる]{とは限らない}。",
+        meaning: "xxxxx"
+      },
+      {
+        sentence: "店の前に行列ができているからといって、[おいしい]{とは限らない}んだね。",
+        meaning: "xxxxx"
+      },
+    ],
+    category: GrammarEntryCategory.KAGIRI,
+    newWords: [
+      { kanji: "成功", kana: "せいこう", english: "Success" },
+      { kanji: "行列", kana: "ぎょうれつ", english: "Queue" },
+    ],
+    important: true,
+  },
   // SECTION 4: 順接・逆接 - GRAMMAR 29 - 40
   {
     id: 29,
@@ -4500,4 +4771,5 @@ export const NIHONGO_NO_MORI_GRAMMAR_N2: GrammarEntry[] = [
   },
   //TODO: Add translations for unit 15: 丁寧な表現・その他
   //TODO: Add translations for unit 2: 「こと」シリーズ
+  //TODO: Add translations for unit 3: 「限り」シリーズ
 ];
