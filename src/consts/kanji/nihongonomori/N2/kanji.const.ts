@@ -68,5 +68,23 @@ export const NIHONGO_NO_MORI_KANJI_N2: TKanji[] = [
       { kanji: "バス停", kana: "バスてい", meaning: "Bus stop", description: "これはバスの停留所を短く言った言葉です。" },
       { kanji: "停留所", kana: "ていりゅうじょ", meaning: "Stop point", description: "停留所というのは、とまるところです。\n停留所という言葉も、ほとんどバスに対してしか使われません。バス停・停留所よく使いますね。" },
     ]
+  },
+  {
+    kanji: "健",
+    kun: ["すこ"],
+    on: ["けん"],
+    meaning: "この漢字は健康の健ですね。この漢字、人が元気だ！という意味です。",
+    radical: KanjiRadical.NINBEN,
+    components: [
+      { kanji: "建", word: "建物" }
+    ],
+    vocabulary: [
+      { kanji: "健やか", kana: "すこやか", meaning: "Healthy", description: "" },
+      { kanji: "健康", kana: "けんこう", meaning: "Health", description: "これは体が病気ではない、元気だという意味です。" },
+      { kanji: "健康法", kana: "けんこうほう", meaning: "Means of getting healthy", description: "これは健康になる方法のことです。よく～健康法というふうに使われていますね。" },
+      { kanji: "健康的", kana: "けんこうてき", meaning: "Health", description: "" },
+      { kanji: "健全な", kana: "けんぜん", meaning: "Health", description: "健全というのも、健康と同じ意味があります。でも健全の方が、もっと意味が広くて体が病気じゃない、元気という意味とか悪い考えを持っていないという意味もあります。" },
+      { kanji: "健康診断", kana: "けんこうしんだん", meaning: "Health check", description: "これは体に悪いところがないか病気がないかを調べることです。" },
+    ]
   }
 ];
