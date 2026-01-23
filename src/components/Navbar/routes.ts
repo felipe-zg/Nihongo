@@ -20,6 +20,7 @@ export const routes: RouteItem[] = [
       { name: '文字・語彙', path: '/JLPT/ExamVocabs?source=MOJI_GOI&level=N2' },
       { name: 'JLPT Grammar N2', path: '/JLPT/grammar/N2' },
       { name: 'JLPT Vocabs N2', path: '/JLPT/vocabs?level=N2' },
+      { name: '日本語の森・美味しい漢字・N2', path: '/kanji' },
     ],
   },
   {
@@ -47,8 +48,6 @@ export const routes: RouteItem[] = [
     children: [
       { name: 'ミニストーリー', path: '/ministory' },
       { name: '漢字 M2', path: '/kanji-m2' },
-      { name: 'Kanji (YDC)', path: '/kanji-ydc' },
-      { name: 'Kanji (Genki)', path: '/kanji-genki' },
       { name: 'Kanji practice', path: '/kanji-practice' },
       { name: 'Words (YDC)', path: '/words-ydc' },
       { name: 'Words (Genki)', path: '/words-genki' },

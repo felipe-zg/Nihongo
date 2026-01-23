@@ -27,8 +27,7 @@ function AppContent() {
       <Box flex="1" height="100%">
         <Routes>
           <Route path="/" element={<Levels />} />
-          <Route path="/kanji-ydc" element={<Kanji source='YDC' />} />
-          <Route path="/kanji-genki" element={<Kanji source='GENKI' />} />
+          <Route path="/kanji" element={<Kanji />} />
           <Route path="/kanji-practice" element={<KanjiPractice />} />
           <Route path="/printable/kanji-print" element={<KanjiPrint />} />
           <Route path="/words-ydc" element={<Words source='YDC' />} />
