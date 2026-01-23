@@ -64,3 +64,28 @@ declare type TKanjiM2 = {
   words: TKanjiM2WordsWithExample[];
   otherWords: TKanjiM2Words[];
 };
+
+//日本語の森美味しい漢字
+declare type TKanjiRadical = typeof KanjiRadical[keyof typeof KanjiRadical];
+
+declare type TKanjiVocabulary = {
+  kanji: string;
+  kana: string;
+  meaning: string;
+  description?: string;
+}
+
+declare type TKanjiComponent = {
+  kanji: string;
+  word: string;
+}
+
+declare type TKanji = {
+  kanji: string;
+  kun?: string[];
+  on?: string[];
+  meaning: string;
+  radical: TKanjiRadical;
+  components?: TKanjiComponent[];
+  vocabulary?: TKanjiVocabulary[];
+}
