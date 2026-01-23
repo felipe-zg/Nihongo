@@ -54,5 +54,19 @@ export const NIHONGO_NO_MORI_KANJI_N2: TKanji[] = [
     components: [
       { kanji: "*美", word: "美しい" }
     ],
+  },
+  {
+    kanji: "停",
+    on: ["テイ"],
+    meaning: "意味は泊まるです。",
+    radical: KanjiRadical.NINBEN,
+    components: [
+      { kanji: "亭", word: "料亭" }
+    ],
+    vocabulary: [
+      { kanji: "停電", kana: "ていでん", meaning: "Power outage", description: "これは電気が止まることです。" },
+      { kanji: "バス停", kana: "バスてい", meaning: "Bus stop", description: "これはバスの停留所を短く言った言葉です。" },
+      { kanji: "停留所", kana: "ていりゅうじょ", meaning: "Stop point", description: "停留所というのは、とまるところです。\n停留所という言葉も、ほとんどバスに対してしか使われません。バス停・停留所よく使いますね。" },
+    ]
   }
 ];
