@@ -1,0 +1,1 @@
+export * from './N2/kanji.const'
