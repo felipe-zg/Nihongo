@@ -21,6 +21,7 @@ export const routes: RouteItem[] = [
       { name: 'JLPT Grammar N2', path: '/JLPT/grammar/N2' },
       { name: 'JLPT Vocabs N2', path: '/JLPT/vocabs?level=N2' },
       { name: '日本語の森・美味しい漢字・N2', path: '/kanji' },
+      { name: 'ミニストーリー', path: '/ministory?level=N2' },
     ],
   },
   {
@@ -35,6 +36,7 @@ export const routes: RouteItem[] = [
       { name: '文字・語彙', path: '/moji-goi-deck' },
       { name: 'JLPT', path: '/JLPT/N3' },
       { name: 'JLPT Vocabs N3', path: '/JLPT/vocabs?level=N3' },
+      { name: 'ミニストーリー', path: '/ministory?level=N3' },
     ],
   },
   {
@@ -46,7 +48,6 @@ export const routes: RouteItem[] = [
   {
     name: '横浜デザイン学院',
     children: [
-      { name: 'ミニストーリー', path: '/ministory' },
       { name: '漢字 M2', path: '/kanji-m2' },
       { name: 'Kanji practice', path: '/kanji-practice' },
       { name: 'Words (YDC)', path: '/words-ydc' },

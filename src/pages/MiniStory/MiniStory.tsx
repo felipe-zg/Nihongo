@@ -8,8 +8,6 @@ type MiniStoryProps = {
   story: MiniStory;
   selectedStory: string;
   onStoryChange: (id: string) => void;
-  selectedLevel: 'N2' | 'N3';
-  onLevelChange: (level: 'N2' | 'N3') => void;
   selectedTopic: keyof typeof MiniStoryTopics | "";
   onTopicChange: (topic: keyof typeof MiniStoryTopics | "") => void;
   availableStories: string[];
@@ -25,8 +23,6 @@ const MiniStory: React.FC<MiniStoryProps> = ({
   story,
   selectedStory,
   onStoryChange,
-  selectedLevel,
-  onLevelChange,
   selectedTopic,
   onTopicChange,
   availableStories,
@@ -111,11 +107,11 @@ const MiniStory: React.FC<MiniStoryProps> = ({
   });
 
   function goToCardsDeck(onlyMainWords = false) {
-    window.location.href = `/ministory-cards?level=${selectedLevel}&topic=${selectedTopic}&startPage=${selectedStartPage}&endPage=${selectedEndPage}&availablePages=${availablePages.join(",")}&onlyMainWords=${onlyMainWords}`;
+    window.location.href = `/ministory-cards?level=${"n2"}&topic=${selectedTopic}&startPage=${selectedStartPage}&endPage=${selectedEndPage}&availablePages=${availablePages.join(",")}&onlyMainWords=${onlyMainWords}`;
   };
 
   function goToAudioFiles() {
-    window.location.href = `/ministory-audioplayer?level=${selectedLevel}`;
+    window.location.href = `/ministory-audioplayer?level=${"n2"}`;
   };
 
   return (
@@ -159,7 +155,7 @@ const MiniStory: React.FC<MiniStoryProps> = ({
       </Box>
 
       <HStack px={4} justifyContent={"space-between"} alignItems={"center"}>
-        <AudioPlayer level={selectedLevel} fileName={story.audio} />
+        <AudioPlayer level={"N2"} fileName={story.audio} />
         <Button size="sm" variant="outline" colorScheme="secondary" onPress={onNextStory}>Next story</Button>
       </HStack>
 
@@ -185,14 +181,6 @@ const MiniStory: React.FC<MiniStoryProps> = ({
             {availableStories.map((key) => (
               <Select.Item key={key} label={key} value={key} />
             ))}
-          </Select>
-        </Box>
-        <Box>
-          <Text color="pink.400">Level:</Text>
-          <Select color={"white"} size="sm" selectedValue={selectedLevel} onValueChange={(itemValue) => onLevelChange(itemValue as 'N2' | 'N3')}>
-            <Select.Item label="-- Select a level --" value="" />
-            <Select.Item label="N2" value="N2" />
-            <Select.Item label="N3" value="N3" />
           </Select>
         </Box>
         <Box>

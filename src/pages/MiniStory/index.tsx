@@ -1,15 +1,30 @@
 import React, { useEffect, useMemo } from "react";
 import MiniStory from "./MiniStory";
 import { MINI_STORY_N2, MINI_STORY_N3, MiniStoryTopics } from "../../consts/MiniStory";
+import { useSearchParams } from "react-router-dom";
+
+type Level = "N3" | "N2";
 
 const MiniStoryPage: React.FC = () => {
+  const [searchParams] = useSearchParams();
+  const levelParam: Level = (searchParams.get("level") as Level) || "N3";
+
+  const storyList: Record<string, MiniStory> = useMemo(() => {
+    switch (levelParam) {
+      case "N2":
+        return MINI_STORY_N2
+      case "N3":
+      default:
+        return MINI_STORY_N3;
+    }
+  }, [levelParam]);
+
   const [selectedStory, setSelectedStory] = React.useState<string>("1");
-  const [selectedLevel, setSelectedLevel] = React.useState<'N2' | 'N3'>("N3");
   const [selectedTopic, setSelectedTopic] = React.useState<keyof typeof MiniStoryTopics | "">("");
   const availablePages = React.useMemo<number[]>(() => {
-    const pages = Object.values(MINI_STORY_N3).map(story => story.page);
+    const pages = Object.values(storyList).map(story => story.page);
     return Array.from(new Set(pages)).sort((a, b) => a - b);
-  }, []);
+  }, [storyList]);
   const [selectedStartPage, setSelectedStartPage] = React.useState<number>(availablePages[0]);
   const [selectedEndPage, setSelectedEndPage] = React.useState<number>(availablePages[availablePages.length - 1]);
 
@@ -18,19 +33,11 @@ const MiniStoryPage: React.FC = () => {
   });
 
   const story = useMemo(() => {
-    if(selectedLevel === "N2")
-      return MINI_STORY_N2[selectedStory];
-    if(selectedLevel === "N3")
-      return MINI_STORY_N3[selectedStory];
-    return MINI_STORY_N3[selectedStory];
-  }, [selectedStory, selectedLevel]);
+    return storyList[selectedStory];
+  }, [selectedStory,  storyList]);
 
   function handleStoryChange(id: string) {
     setSelectedStory(id);
-  }
-
-  function handleLevelChange(level: 'N2' | 'N3') {
-    setSelectedLevel(level);
   }
 
   function handleTopicChange(topic: keyof typeof MiniStoryTopics | "") {
@@ -60,7 +67,6 @@ const MiniStoryPage: React.FC = () => {
   }
 
   useEffect(() => {
-    const stories = selectedLevel === "N2" ? MINI_STORY_N2 : MINI_STORY_N3;
 
     // define start and end safely using existing availablePages
     const startPage = selectedStartPage || availablePages[0];
@@ -68,11 +74,11 @@ const MiniStoryPage: React.FC = () => {
 
     // if nothing selected, return all stories
     if (!selectedTopic && !selectedStartPage && !selectedEndPage) {
-      setAvailableStories(Object.keys(stories));
+      setAvailableStories(Object.keys(storyList));
       return;
     }
 
-    const storyKeys = Object.entries(stories)
+    const storyKeys = Object.entries(storyList)
       .filter(([_, value]) => {
         const matchesTopic = selectedTopic ? value.topic === selectedTopic : true;
         const matchesPageRange = value.page >= startPage && value.page <= endPage;
@@ -96,8 +102,6 @@ const MiniStoryPage: React.FC = () => {
       story={story}
       selectedStory={selectedStory}
       onStoryChange={handleStoryChange}
-      selectedLevel={selectedLevel}
-      onLevelChange={handleLevelChange}
       selectedTopic={selectedTopic}
       onTopicChange={handleTopicChange}
       availableStories={availableStories}
