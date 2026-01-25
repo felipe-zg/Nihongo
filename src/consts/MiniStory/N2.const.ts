@@ -22,6 +22,7 @@ const MiniStoryWordType = {
   SUFFIX: '接尾',
   CLAUSE: '句',
   CONJUNCTION: '接続',
+  COMPOUND_EXPRESSION: '連語',
   OTHER: 'その他',
 } as const;
 
@@ -1318,776 +1319,624 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
     topic: MiniStoryTopics.FASHION,
     page: 54,
   },
-  // "xxxx": {
-  //   id: "xxxx",
-  //   rubyStory: [
-  //     {
-  //       character: "",
-  //       dialogue: "xxxxxxxxxxxxxxxx",
-  //     },
-  //   ],
-  //   rubyWords: [
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //   ],
-  //   translation: `xxxx`,
-  //   audio: "Txxxx.mp3",
-  //   topic: MiniStoryTopics.FASHION,
-  //   page: 10000000000,
-  // },
-  // "xxxx": {
-  //   id: "xxxx",
-  //   rubyStory: [
-  //     {
-  //       character: "",
-  //       dialogue: "xxxxxxxxxxxxxxxx",
-  //     },
-  //   ],
-  //   rubyWords: [
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //   ],
-  //   translation: `xxxx`,
-  //   audio: "Txxxx.mp3",
-  //   topic: MiniStoryTopics.FOOD,
-  //   page: 10000000000,
-  // },
-  // "xxxx": {
-  //   id: "xxxx",
-  //   rubyStory: [
-  //     {
-  //       character: "",
-  //       dialogue: "xxxxxxxxxxxxxxxx",
-  //     },
-  //   ],
-  //   rubyWords: [
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //   ],
-  //   translation: `xxxx`,
-  //   audio: "Txxxx.mp3",
-  //   topic: MiniStoryTopics.FOOD,
-  //   page: 10000000000,
-  // },
-  // "xxxx": {
-  //   id: "xxxx",
-  //   rubyStory: [
-  //     {
-  //       character: "",
-  //       dialogue: "xxxxxxxxxxxxxxxx",
-  //     },
-  //   ],
-  //   rubyWords: [
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //   ],
-  //   translation: `xxxx`,
-  //   audio: "Txxxx.mp3",
-  //   topic: MiniStoryTopics.FOOD,
-  //   page: 10000000000,
-  // },
-  // "xxxx": {
-  //   id: "xxxx",
-  //   rubyStory: [
-  //     {
-  //       character: "",
-  //       dialogue: "xxxxxxxxxxxxxxxx",
-  //     },
-  //   ],
-  //   rubyWords: [
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //   ],
-  //   translation: `xxxx`,
-  //   audio: "Txxxx.mp3",
-  //   topic: MiniStoryTopics.FOOD,
-  //   page: 10000000000,
-  // },
-  // "xxxx": {
-  //   id: "xxxx",
-  //   rubyStory: [
-  //     {
-  //       character: "",
-  //       dialogue: "xxxxxxxxxxxxxxxx",
-  //     },
-  //   ],
-  //   rubyWords: [
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //   ],
-  //   translation: `xxxx`,
-  //   audio: "Txxxx.mp3",
-  //   topic: MiniStoryTopics.FOOD,
-  //   page: 10000000000,
-  // },
-  // "xxxx": {
-  //   id: "xxxx",
-  //   rubyStory: [
-  //     {
-  //       character: "",
-  //       dialogue: "xxxxxxxxxxxxxxxx",
-  //     },
-  //   ],
-  //   rubyWords: [
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //   ],
-  //   translation: `xxxx`,
-  //   audio: "Txxxx.mp3",
-  //   topic: MiniStoryTopics.FOOD,
-  //   page: 10000000000,
-  // },
-  // "xxxx": {
-  //   id: "xxxx",
-  //   rubyStory: [
-  //     {
-  //       character: "",
-  //       dialogue: "xxxxxxxxxxxxxxxx",
-  //     },
-  //   ],
-  //   rubyWords: [
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //   ],
-  //   translation: `xxxx`,
-  //   audio: "Txxxx.mp3",
-  //   topic: MiniStoryTopics.FOOD,
-  //   page: 10000000000,
-  // },
-  // "xxxx": {
-  //   id: "xxxx",
-  //   rubyStory: [
-  //     {
-  //       character: "",
-  //       dialogue: "xxxxxxxxxxxxxxxx",
-  //     },
-  //   ],
-  //   rubyWords: [
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //   ],
-  //   translation: `xxxx`,
-  //   audio: "Txxxx.mp3",
-  //   topic: MiniStoryTopics.FOOD,
-  //   page: 10000000000,
-  // },
-  // "xxxx": {
-  //   id: "xxxx",
-  //   rubyStory: [
-  //     {
-  //       character: "",
-  //       dialogue: "xxxxxxxxxxxxxxxx",
-  //     },
-  //   ],
-  //   rubyWords: [
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //   ],
-  //   translation: `xxxx`,
-  //   audio: "Txxxx.mp3",
-  //   topic: MiniStoryTopics.FOOD,
-  //   page: 10000000000,
-  // },
-  // "xxxx": {
-  //   id: "xxxx",
-  //   rubyStory: [
-  //     {
-  //       character: "",
-  //       dialogue: "xxxxxxxxxxxxxxxx",
-  //     },
-  //   ],
-  //   rubyWords: [
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //   ],
-  //   translation: `xxxx`,
-  //   audio: "Txxxx.mp3",
-  //   topic: MiniStoryTopics.FOOD,
-  //   page: 10000000000,
-  // },
-  // "xxxx": {
-  //   id: "xxxx",
-  //   rubyStory: [
-  //     {
-  //       character: "",
-  //       dialogue: "xxxxxxxxxxxxxxxx",
-  //     },
-  //   ],
-  //   rubyWords: [
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //   ],
-  //   translation: `xxxx`,
-  //   audio: "Txxxx.mp3",
-  //   topic: MiniStoryTopics.FOOD,
-  //   page: 10000000000,
-  // },
-  // "xxxx": {
-  //   id: "xxxx",
-  //   rubyStory: [
-  //     {
-  //       character: "",
-  //       dialogue: "xxxxxxxxxxxxxxxx",
-  //     },
-  //   ],
-  //   rubyWords: [
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //   ],
-  //   translation: `xxxx`,
-  //   audio: "Txxxx.mp3",
-  //   topic: MiniStoryTopics.FOOD,
-  //   page: 10000000000,
-  // },
-  // "xxxx": {
-  //   id: "xxxx",
-  //   rubyStory: [
-  //     {
-  //       character: "",
-  //       dialogue: "xxxxxxxxxxxxxxxx",
-  //     },
-  //   ],
-  //   rubyWords: [
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //   ],
-  //   translation: `xxxx`,
-  //   audio: "Txxxx.mp3",
-  //   topic: MiniStoryTopics.FOOD,
-  //   page: 10000000000,
-  // },
+  "54": {
+    id: "54",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "あれ？ばっさり切ったね。<イメチェン>？",
+      },
+      {
+        character: "B",
+        dialogue: "ははは。実は、ヘアドネーションしたんだ。",
+      },
+      {
+        character: "A",
+        dialogue: "病気で髪が抜{ぬ}けてしまった子供たちのための、ウイッグになるんだっけ。",
+      },
+      {
+        character: "B",
+        dialogue: "そう。できるだけきれいな髪でいるために、<巻{ま}いたり>、<染{そ}めたり>するのも我{が}慢{まん}してたんだ。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "イメチェン・イメージチェンジ［する］",
+        english: "image change・to change one's image",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "チェンジ［する］",
+        english: "change・to change",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+      },
+      {
+        kanji: "巻{ま}く",
+        english: "to roll・to wind・to curl (hair)",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+      {
+        kanji: "染{そ}める",
+        english: "to dye (something)",
+        type: MiniStoryWordType.ICHIDAN_TRANSITIVE
+      },
+      {
+        kanji: "染{そ}まる",
+        english: "to be dyed・change color・be stained",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE
+      },
+    ],
+    translation: `A: Whoa! You've had your hair cut so short. Changing your image?\nB: Ha ha ha. Actually, I donated my hair.\nA: You mean, to make wigs for children who have lost their hair due to illness?\nB: Yes. I had to stop myself curling or dyeing my hair to keep it as nice as possible.`,
+    audio: "T54.mp3",
+    topic: MiniStoryTopics.FASHION,
+    page: 55,
+  },
+  "55": {
+    id: "55",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "この前京都で買った<くし>、どうだった？",
+      },
+      {
+        character: "B",
+        dialogue: "あ、あれね！髪をとかすだけで本当に<さらさらに>なるの。一緒に買ったオイルをつけると、自然な<艶{つや}>が出ていい感じだよ。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "くし",
+        english: "comb",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "さらさらな",
+        english: "smooth・silky",
+        type: MiniStoryWordType.ADJECTIVE_NA
+      },
+      {
+        kanji: "艶{つや}",
+        english: "gloss・shine",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `A: What do you think of the comb you bought in Kyoto the other day?\nB: Oh, that! Just brushing my hair with it made it feel really smooth. And when I used the oil I bought with it, it gave my hair a nice natural shine.`,
+    audio: "T55.mp3",
+    topic: MiniStoryTopics.FASHION,
+    page: 56,
+  },
+  "56": {
+    id: "56",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "これ<試{し}着{ちゃく}して>みない？似合うと思う。",
+      },
+      {
+        character: "B",
+        dialogue: "サイズいくつ？",
+      },
+      {
+        character: "A",
+        dialogue: "えっと、7<号{ごう}>だね。",
+      },
+      {
+        character: "B",
+        dialogue: "無理無理！私いつも11号{ごう}だよ。<ウエスト>が入{はい}らないよ。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "試{し}着{ちゃく}［する］",
+        english: "Fitting・to try on (clothes)",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE]
+      },
+      {
+        kanji: "試{し}食{しょく}［する］",
+        english: "to try a sample (food)",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE]
+      },
+      {
+        kanji: "〜号(ごう)",
+        english: "size~",
+        type: MiniStoryWordType.SUFFIX
+      },
+      {
+        kanji: "ウエスト",
+        english: "waist",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `A: Wanna try this on? I think it'd suit you.\nB: What size is it?\nA: Let's see, it's a size 7.\nB: No way! I'm usually a size 11.Tll never fit into the waist.`,
+    audio: "T56.mp3",
+    topic: MiniStoryTopics.FASHION,
+    page: 56,
+  },
+  "57": {
+    id: "57",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "いかがですか。",
+      },
+      {
+        character: "B",
+        dialogue: "この<縞{しま}>のデザインが気{き}に入{い}ってるんですが、、<客{きゃっ}観{かん}的{てき}に>見て派{は}手{で}すぎませんか。",
+      },
+      {
+        character: "A",
+        dialogue: "お似合いですよ。ジャケットと<組{く}み合{あ}わせれば>オフィスにも着ていけますし。",
+      },
+      {
+        character: "B",
+        dialogue: "そうですか。あと、<丈{たけ}>がちょっとだけ長いかな。",
+      },
+      {
+        character: "A",
+        dialogue: "丈{たけ}の長さは、このベルトで<調{ちょう}節{せつ}>できますよ。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "縞{しま}",
+        english: "stripe",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "客{きゃっ}観{かん}的{てき}な",
+        english: "objective",
+        type: MiniStoryWordType.ADJECTIVE_NA
+      },
+      {
+        kanji: "主{しゅ}観{かん}的{てき}な",
+        english: "subjective",
+        type: MiniStoryWordType.ADJECTIVE_NA
+      },
+      {
+        kanji: "組{く}み合{あ}わせる",
+        english: "to combine",
+        type: MiniStoryWordType.ICHIDAN_TRANSITIVE
+      },
+      {
+        kanji: "組{く}み合{あ}わせ",
+        english: "combination",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "丈{たけ}",
+        english: "length",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "調{ちょう}節{せつ}［する］",
+        english: "adjustment・to adjust",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE]
+      },
+    ],
+    translation: `A: How do you like it?\nB: I like the stripe design, but objectively speaking, it's a bit flashy, isn't it?\nA: It looks good on you. And combined with a jacket, you could even wear it to the office.\nB: Do you think so? The length might be slightly too long.\nA: You can adjust the length with this belt.`,
+    audio: "T57.mp3",
+    topic: MiniStoryTopics.FASHION,
+    page: 57,
+  },
+  "58": {
+    id: "58",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "あれ？眼{め}鏡{がね}変{か}えた？",
+      },
+      {
+        character: "B",
+        dialogue: "ああ、これサングラスなの。今まで<単{たん}なる>眼{め}鏡{がね}しか持ってなかったんだけど、外に出ると<まぶしくて>。",
+      },
+      {
+        character: "A",
+        dialogue: "へえ。<透{とう}明{めい}な><レンズ>でも効{こう}果{か}あるの？",
+      },
+      {
+        character: "B",
+        dialogue: "あ、このレンズ、よく見ると薄{うす}い茶{ちゃ}色{いろ}なんだよ。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "単{たん}なる",
+        english: "mere・simple",
+        type: MiniStoryWordType.COMPOUND_EXPRESSION
+      },
+      {
+        kanji: "まぶしい",
+        english: "dazzling・Too bright",
+        type: MiniStoryWordType.ADJECTIVE_I
+      },
+      {
+        kanji: "透{とう}明{めい}な",
+        english: "transparent",
+        type: MiniStoryWordType.ADJECTIVE_NA
+      },
+      {
+        kanji: "レンズ",
+        english: "lens",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `A: Hey, did you get new glasses?\nB: Oh, these are sunglasses. I used to have just simple normal glasses, but when I went outside it was always too dazzling.\nA: Really? Do the transparent lenses work?\nB: Well, if you look closely, these lenses are pale brown.`,
+    audio: "T58.mp3",
+    topic: MiniStoryTopics.FASHION,
+    page: 58,
+  },
+  "59": {
+    id: "59",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "腕{うで}の傷{きず}、どうしたの？",
+      },
+      {
+        character: "B",
+        dialogue: "ああ、これ・・・。私、腕{うで}の毛{け}が<割{わり}と>濃{こ}いから、毎日<かみそり>で剃{そ}ってるんだけど、昨日切っちゃって・・・。",
+      },
+      {
+        character: "A",
+        dialogue: "大変だね。",
+      },
+      {
+        character: "B",
+        dialogue: "脱{だつ}毛{もう}するっていう手もあるんだけど、<美{び}容{よう}>にお金かけたくないんだよね。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "割{わり}と",
+        english: "relatively・comparatively・rather",
+        type: MiniStoryWordType.ADVERB
+      },
+      {
+        kanji: "かみそり",
+        english: "razor",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "美容{びよう}",
+        english: "beauty・cosmetology",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `A: Hey, how did you cut your arm?\nB: Oh, that... I have rather thick hair on my arms, so I shave them every day with a razor, but yesterday I cut myself...\nA: That's awful.\nB: There are other ways to remove hair, but I don't want to spend a lot of money on beauty treatments.`,
+    audio: "T59.mp3",
+    topic: MiniStoryTopics.FASHION,
+    page: 58,
+  },
+  "60": {
+    id: "60",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "最近SNSでヒョウ<柄{がら}>の服をよく見るんだけど、私は普段<無{む}地{じ}>の服しか着ないから、ちょっと<抵{てい}抗{こう}>あるんだよね。",
+      },
+      {
+        character: "B",
+        dialogue: "そう？<キャップ>とかバッグとか、小{こ}物{もの}をちょっと<付{つ}け加{くわ}える>だけでいいアクセントになるんじゃない？この写真みたいに。",
+      },
+      {
+        character: "A",
+        dialogue: "なるほど。よく見るといろんなパターンがあるんだね。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "柄{がら}",
+        english: "pattern・design",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "無{む}  地{じ}",
+        english: "plain・solid color",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "抵{てい}抗{こう}［する］",
+        english: "resistance・to resist",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE]
+      },
+      {
+        kanji: "キャップ",
+        english: "cap",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "付{つ}け加{くわ}える",
+        english: "to add・to append・To supplement",
+        type: MiniStoryWordType.ICHIDAN_TRANSITIVE
+      },
+      {
+        kanji: "パターン",
+        english: "pattern",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `A: I've been seeing a lot of clothes in leopard-print patterns on social media lately, but I usually only wear plain, solid colors, so I'm a bit resistant to it.\nB: Really? I think just adding a cap, bag, or some other small accessory creates a nice accent. You know, like in this photo.\nA: Oh, right. If you look closely, you can see there are many different patterns.`,
+    audio: "T60.mp3",
+    topic: MiniStoryTopics.FASHION,
+    page: 59,
+  },
+  "61": {
+    id: "61",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "大{だい}統{とう}領{りょう}<夫{ふ}人{じん}>は、<知{ち}的{てき}な>イメージが強く、<幅{はば}広{ひろ}い>世代から人気がある。ここ数{すう}年{ねん}は、<上{じょう}品{ひん}な>ヘアスタイルと<独{どく}特{とく}な>ファッションが世界各{かっ}国{こく}のデザイナーから注目されている。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "夫{ふ}人{じん}",
+        english: "Wife・madam・lady",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "知{ち}的{てき}な",
+        english: "intelligent・intellectual",
+        type: MiniStoryWordType.ADJECTIVE_NA
+      },
+      {
+        kanji: "幅{はば}広{ひろ}い",
+        english: "wide range・broad・extensive",
+        type: MiniStoryWordType.ADJECTIVE_I
+      },
+      {
+        kanji: "上{じょう}品{ひん}な",
+        english: "elegant・refined・stylish",
+        type: MiniStoryWordType.ADJECTIVE_NA
+      },
+      {
+        kanji: "下{げ}品{ひん}な",
+        english: "vulgar・coarse・inelegant",
+        type: MiniStoryWordType.ADJECTIVE_NA
+      },
+      {
+        kanji: "独{どく}特{とく}な",
+        english: "unique・distinctive",
+        type: MiniStoryWordType.ADJECTIVE_NA
+      },
+    ],
+    translation: `The First Lady has a strongly intellectual image and she has found popularity among a wide range of ages. In recent years, her elegant hairstyle and unique fashion sense have attracted the attention of designers from around the world.`,
+    audio: "T61.mp3",
+    topic: MiniStoryTopics.FASHION,
+    page: 60,
+  },
+  "62": {
+    id: "62",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "新しい会社で、ひげはだめだって注意されたよ。日本の<ビジネス>マナーって難しいね。",
+      },
+      {
+        character: "B",
+        dialogue: "そっか。<欧{おう}米{べい}>ではひげを<生{は}やして>てもいいもんね。",
+      },
+      {
+        character: "A",
+        dialogue: "ひげは個{こ}性{せい}の一つだからね。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "ビジネス",
+        english: "business",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "ビジネスパーソン",
+        english: "business person",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "欧{おう}米{べい}",
+        english: "Europe and the U.S.・the West",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "生{は}やす",
+        english: "to grow (beard, hair, etc.)",
+        type: MiniStoryWordType.GODAN_TRANSITIVE
+      },
+    ],
+    translation: `A: I was warned to avoid growing a beard at my new company. Business etiquette in Japan can be tricky.\nB: Is that right? In Europe and the USA, it's fine to grow a beard, isn't it?\nA: A beard is a way to express your personality.`,
+    audio: "T62.mp3",
+    topic: MiniStoryTopics.FASHION,
+    page: 60,
+  },
+  "63": {
+    id: "63",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "先日行われたアンケートでは、日本の大学生の<大{だい}半{はん}>が、3カ月に1度以上ファストファッションを購{こう}入{にゅう}していると<回{かい}答{とう}した>。しかし、近{きん}年{ねん}ではファストファッションが客{きゃく}のニーズを満{み}たすために<衣{い}服{ふく}>を過{か}剰{じょう}に生{せい}産{さん}しているという、批{ひ}判{はん}の声も<多{た}数{すう}>聞かれる。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "大{たい}半{はん}",
+        english: "majority・most",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.ADVERB ]
+      },
+      {
+        kanji: "回{かい}答{とう}［する］",
+        english: "Response・answer・to answer/respond",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+      },
+      {
+        kanji: "衣{い}服{ふく}",
+        english: "clothing",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "多{た}数{すう}",
+        english: "Many・plenty・majority",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "多{た}数{すう}決{けつ}",
+        english: "majority decision・vote by majority",
+        type: MiniStoryWordType.NOUN
+      }
+    ],
+    translation: `In a recent survey, the majority of Japanese university students answered that they purchase fast fashion at least every three months. However, in recent years, many have apparently criticized fast fashion for overproducing clothing to satisfy customer demand.`,
+    audio: "T63.mp3",
+    topic: MiniStoryTopics.FASHION,
+    page: 61,
+  },
+  "64": {
+    id: "64",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "今日の服、<和{わ}服{ふく}>っぽくてかわいいね。",
+      },
+      {
+        character: "B",
+        dialogue: "ありがとう。おばあちゃんの着物を<普{ふ}段{だん}>着られるようにリメイクしたんだ。",
+      },
+      {
+        character: "A",
+        dialogue: "へえ、さすが。",
+      },
+      {
+        character: "B",
+        dialogue: "<絹{きぬ}>だから、ちょっと<手{て}入{い}れ>が大変だけどね。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "和{わ}服{ふく}",
+        english: "Japanese clothing",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "普{ふ}段{だん}",
+        english: "usually・normally",
+        type: MiniStoryWordType.ADVERB
+      },
+      {
+        kanji: "絹{きぬ}",
+        english: "silk",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "手{て}入{い}れ［する］",
+        english: "Care・looking after・to take care of",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE]
+      },
+    ],
+    translation: `A: Your clothes look so cute today, like traditional Japanese clothes.\nB: Thanks. I remade my grandmother's kimono so I can wear it normally.\nA: Wow, that's great.\nB: It's silk, so it's a little difficult to look after.`,
+    audio: "T64.mp3",
+    topic: MiniStoryTopics.FASHION,
+    page: 62,
+  },
+  "65": {
+    id: "65",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "わ、玄{げん}関{かん}が靴{くつ}<だらけ>！",
+      },
+      {
+        character: "B",
+        dialogue: "どれも長{ちょう}時間履{は}いてると痛くて、どんどん新しいの買っちゃうんだよね。",
+      },
+      {
+        character: "A",
+        dialogue: "Bさんの足は人{ひと}差{さ}し指{ゆび}が一番長いから、先が<とがって>るパンプスが足に合うと思うよ。靴{くつ}が合わないと<姿{し}勢{せい}>が悪くなるから気をつけて。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "～だらけ",
+        english: "full of ~・covered with ~・all over ~",
+        type: MiniStoryWordType.SUFFIX
+      },
+      {
+        kanji: "とがる",
+        english: "to be sharp・to be pointed",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE
+      },
+      {
+        kanji: "姿{し}勢{せい}",
+        english: "posture・attitude",
+        type: MiniStoryWordType.NOUN
+      },
+    ],
+    translation: `A: Hey, the hallway is full of shoes!\nB: They all hurt when I wear them for too long, so I keep buying new ones.\nA: Since your second toe is the longest on your foot, I think pumps with a pointed toe will suit your feet best. If your shoes don't fit, your posture will get worse, so be careful.`,
+    audio: "T65.mp3",
+    topic: MiniStoryTopics.FASHION,
+    page: 62,
+  },
+  "66": {
+    id: "66",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "4月は初めての人と会う機{き}会{かい}が多いので、服{ふく}装{そう}には<気{き}を遣{つか}う>。明るい色の服を着たり、<襟{えり}>付{つ}きのシャツを着たりして、<だらしない>印象を与{あた}えないように気をつけている。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "気{き}を遣{つか}う",
+        english: "to take care・be attentive・considerate・careful",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE
+      },
+      {
+        kanji: "襟{えり}",
+        english: "collar",
+        type: MiniStoryWordType.NOUN
+      },
+      {
+        kanji: "だらしない",
+        english: "sloppy・untidy・messy",
+        type: MiniStoryWordType.ADJECTIVE_I
+      },
+    ],
+    translation: `April offers many opportunities to meet people for the first time, so we tend to be careful about how we dress. I take care to avoid giving an untidy impression by wearing brightly colored clothes and collared shirts.`,
+    audio: "T66.mp3",
+    topic: MiniStoryTopics.FASHION,
+    page: 63,
+  },
+  "67": {
+    id: "67",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "お母さん、この制{せい}服{ふく}のズボン、お尻{しり}のあたりがパンパンで<破{やぶ}けそう>。",
+      },
+      {
+        character: "B",
+        dialogue: "あ、本当だね。入学したときは<ぶかぶかだった>のに・・・。卒業まであと半{はん}年{とし}か。買い替えるか<微{び}妙{みょう}な>ところだね。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "破{やぶ}ける",
+        english: "to tear・to rip",
+        type: MiniStoryWordType.ICHIDAN_INTRANSITIVE
+      },
+      {
+        kanji: "ぶかぶかな",
+        english: "baggy・loose-fitting・oversized",
+        type: MiniStoryWordType.ADJECTIVE_NA
+      },
+      {
+        kanji: "微{び}妙{みょう}な",
+        english: "unsure・delicate・questionable",
+        type: MiniStoryWordType.ADJECTIVE_NA
+      },
+    ],
+    translation: `A: Mom, my school uniform pants are so tight around my waist, they're about to rip.\nB: Oh, you're right. And they were so baggy when you first started school... Now there's only six months until you graduate. I'm unsure whether to buy you new ones or not.`,
+    audio: "T67.mp3",
+    topic: MiniStoryTopics.FASHION,
+    page: 64,
+  },
   // "xxxx": {
   //   id: "xxxx",
   //   rubyStory: [
