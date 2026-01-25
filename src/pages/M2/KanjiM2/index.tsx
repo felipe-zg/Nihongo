@@ -1,39 +1,40 @@
 import React, { useEffect } from "react";
 import KanjiM2 from "./KanjiM2";
-import { KanjiService } from "../../../api/firebase/firestore/kanji/m2/kanjiService.api";
+// import { KanjiService } from "../../../api/firebase/firestore/kanji/m2/kanjiService.api";
+import M2_KANJI from "../../../consts/kanji/M2";
 
 const KanjiM2Page: React.FC = () => {
-  const [wordsList, setWordsList] = React.useState<Record<number, TKanjiM2>>({});
-  const [availableIndexes, setAvailableIndexes] = React.useState<number[]>([]);
+  const [wordsList, setWordsList] = React.useState<Record<number, TKanjiM2>>(M2_KANJI);
+  const availableIndexes = Object.keys(M2_KANJI).map(k => Number(k)).sort((a, b) => a - b);
+  const [selectedStartIndex, setSelectedStartIndex] = React.useState<number>(availableIndexes[0]);
+  const [selectedEndIndex, setSelectedEndIndex] = React.useState<number>(availableIndexes[availableIndexes.length - 1]);
 
-  const [selectedStartIndex, setSelectedStartIndex] = React.useState<number>(0);
-  const [selectedEndIndex, setSelectedEndIndex] = React.useState<number>(0);
 
-  const [loading, setLoading] = React.useState<boolean>(true);
+  // const [loading, setLoading] = React.useState<boolean>(true);
 
   // Load data from Firestore
-  useEffect(() => {
-    async function loadData() {
-      setLoading(true);
+  // useEffect(() => {
+  //   async function loadData() {
+  //     setLoading(true);
 
-      const data = await KanjiService.getAllKanji(); // THIS RETURNS Record<number, TKanjiM2>
+  //     const data = await KanjiService.getAllKanji(); // THIS RETURNS Record<number, TKanjiM2>
 
-      setWordsList(data);
+  //     setWordsList(data);
 
-      // Same logic you used originally
-      const indexes = Object.keys(data)
-        .map(k => Number(k))
-        .sort((a, b) => a - b);
+  //     // Same logic you used originally
+  //     const indexes = Object.keys(data)
+  //       .map(k => Number(k))
+  //       .sort((a, b) => a - b);
 
-      setAvailableIndexes(indexes);
-      setSelectedStartIndex(indexes[0]);
-      setSelectedEndIndex(indexes[indexes.length - 1]);
+  //     setAvailableIndexes(indexes);
+  //     setSelectedStartIndex(indexes[0]);
+  //     setSelectedEndIndex(indexes[indexes.length - 1]);
 
-      setLoading(false);
-    }
+  //     setLoading(false);
+  //   }
 
-    loadData();
-  }, []);
+  //   loadData();
+  // }, []);
 
   // Filter words based on selected range
   useEffect(() => {
@@ -49,7 +50,7 @@ const KanjiM2Page: React.FC = () => {
 
     // Filter Record => Record
     const newRecord: Record<number, TKanjiM2> = {};
-    Object.values(wordsList).forEach(item => {
+    Object.values(M2_KANJI).forEach(item => {
       if (item.id >= selectedStartIndex && item.id <= selectedEndIndex) {
         newRecord[item.id] = item;
       }
@@ -59,7 +60,6 @@ const KanjiM2Page: React.FC = () => {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selectedStartIndex, selectedEndIndex]);
 
-  if (loading) return <div>Loading...</div>;
 
   return (
     <KanjiM2
