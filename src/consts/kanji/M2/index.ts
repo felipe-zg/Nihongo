@@ -4043,6 +4043,1346 @@ const M2_KANJI: Record<number, TKanjiM2> = {
       { word: "熱っぽい", reading: "ねつっぽい", meaning: "feverish" },
     ],
   },
+  //TODO: Add 541 to 570
+  571: {
+    kanji: "城",
+    words: [
+      {
+        word: "城・〜城",
+        meaning: "castle, ~castle",
+        exampleSentenceRuby: "",
+        reading: "しろ・じょう"
+      },
+      {
+        reading: "じょうかまち",
+        exampleSentenceRuby: "",
+        word: "城下町",
+        meaning: "castle town"
+      },
+      {
+        meaning: "ruins of a castle",
+        exampleSentenceRuby: "",
+        word: "城跡",
+        reading: "しろあと・じょうせき"
+      }
+    ],
+    meanings: [
+      ""
+    ],
+    kun: [
+      ""
+    ],
+    otherWords: [
+      {
+        reading: "じょうへき",
+        word: "城壁",
+        meaning: "teste1"
+      },
+      {
+        reading: "こじょう",
+        meaning: "teste2",
+        word: "古城"
+      },
+      {
+        reading: "じょうしゅ",
+        meaning: "teste3",
+        word: "城主"
+      },
+      {
+        word: "茨城（県）",
+        reading: "いばらき（けん）",
+        meaning: "teste4"
+      },
+      {
+        reading: "みやぎ（けん）",
+        word: "宮城（県）",
+        meaning: "teste5"
+      }
+    ],
+    id: 571,
+    on: [
+      "ジョウ"
+    ]
+  },
+  572: {
+    kun: [
+      "つ"
+    ],
+    on: [
+      "セツ",
+      "セッ"
+    ],
+    words: [
+      {
+        reading: "せっする",
+        meaning: "Touch・contact",
+        word: "接する",
+        exampleSentenceRuby: "ひどく患しんでいる友達に、どう接していいか分からない。"
+      },
+      {
+        reading: "せってん",
+        word: "接点",
+        exampleSentenceRuby: "物語では二人は友人だが、歴史上この二人に接点はない。",
+        meaning: "Point of contact"
+      },
+      {
+        meaning: "Indirect",
+        exampleSentenceRuby: "これは彼から直接聞いた話ではなく、人から間接的に聞きました。",
+        word: "間接（的な）",
+        reading: "かんせつ"
+      }
+    ],
+    kanji: "接",
+    meanings: [
+      "To connect",
+      "To touch"
+    ],
+    id: 572,
+    otherWords: [
+      {
+        meaning: "Teste",
+        word: "接触（する）",
+        reading: "せっしょく（する）"
+      },
+      {
+        word: "接着（する）",
+        meaning: "Teste",
+        reading: "せっちゃく（する）"
+      },
+      {
+        meaning: "Teste",
+        word: "密接（な）",
+        reading: "みっせつ（な）"
+      },
+      {
+        meaning: "Teste",
+        word: "応接室・応接間",
+        reading: "おうせつしつ・おうせつま"
+      },
+      {
+        reading: "せつぞくし",
+        word: "接続詞",
+        meaning: "Teste"
+      }
+    ]
+  },
+  573: {
+    id: 573,
+    words: [
+      {
+        meaning: "jump out・fly out",
+        word: "飛び出す",
+        reading: "とびだす",
+        exampleSentenceRuby: "猫が家の外に飛び出した。"
+      },
+      {
+        exampleSentenceRuby: "",
+        reading: "とびこむ",
+        meaning: "jump into・dive into",
+        word: "飛び込む"
+      },
+      {
+        meaning: "To blow something off",
+        exampleSentenceRuby: "",
+        word: "吹き飛ばす",
+        reading: "ふきとばす"
+      }
+    ],
+    on: [
+      "ヒ"
+    ],
+    kun: [
+      "と"
+    ],
+    kanji: "飛",
+    meanings: [
+      "To fly・to jump"
+    ],
+    otherWords: [
+      {
+        meaning: "Flight・Flying",
+        word: "飛行（する）",
+        reading: "ひこう（する）"
+      },
+      {
+        word: "飛ばす",
+        reading: "とばす",
+        meaning: "to make something fly"
+      },
+      {
+        word: "飛び立つ",
+        reading: "とぴたつ",
+        meaning: "to take off・to fly away"
+      },
+      {
+        word: "飛び降りる",
+        reading: "とびおりる",
+        meaning: "To jump down"
+      },
+      {
+        reading: "とびかう",
+        meaning: "To fly around",
+        word: "飛び交う"
+      }
+    ]
+  },
+  574: {
+    id: 574,
+    kun: [],
+    on: [
+      "ロウ"
+    ],
+    kanji: "郎",
+    words: [
+      {
+        exampleSentenceRuby: "新郎と新婦はハワイへ新婚旅行に出かけた。",
+        word: "新郎",
+        meaning: "bridegroom",
+        reading: "しんろう"
+      }
+    ],
+    meanings: [
+      "Male・Young man"
+    ],
+    otherWords: [
+      {
+        meaning: "name",
+        reading: "たろうさん・しろうさん",
+        word: "太郎・次郎くさん＞"
+      },
+      {
+        reading: "いちろうさん・じろうさん・さぶろうさん",
+        meaning: "name",
+        word: "一郎・二郎・三郎くさん＞"
+      }
+    ]
+  },
+  575: {
+    on: [
+      "キ"
+    ],
+    otherWords: [
+      {
+        word: "世紀",
+        reading: "せいさ",
+        meaning: "century (period of 100 years) [ 21世紀 ]"
+      },
+      {
+        word: "前世紀",
+        meaning: "the previous century",
+        reading: "ぜんせいき"
+      },
+      {
+        word: "紀要",
+        meaning: "academic bulletin・academic journal.",
+        reading: "きよう"
+      },
+      {
+        meaning: "Chronicles of Japan",
+        reading: "にほんしょき",
+        word: "日本書紀"
+      },
+      {
+        word: "紀子さん",
+        meaning: "A female given name",
+        reading: "のりこさん"
+      }
+    ],
+    id: 575,
+    meanings: [
+      "chronicle・historical record・account・narrative"
+    ],
+    kanji: "紀",
+    words: [
+      {
+        reading: "せいきまつ",
+        word: "世紀末",
+        meaning: "end of a century",
+        exampleSentenceRuby: "世紀末思想の騒ぎも収まり、世界は新世紀を迎えた。"
+      },
+      {
+        meaning: "account of a trip",
+        exampleSentenceRuby: "芭蕉の『奥の細道』は江戸時代の有名な紀行文です。",
+        word: "紀行",
+        reading: "きこう"
+      },
+      {
+        exampleSentenceRuby: "紀前 3世紀頃の遺跡から土器が発掘された",
+        meaning: "era, epoch",
+        word: "紀元",
+        reading: "きげん"
+      }
+    ],
+    kun: []
+  },
+  576: {
+    meanings: [
+      "Floor・Level"
+    ],
+    words: [
+      {
+        word: "階段",
+        meaning: "Stairs",
+        exampleSentenceRuby: "",
+        reading: "かいだん"
+      },
+      {
+        exampleSentenceRuby: "日本の学校では5F 段{だん}階{かい}評{ひょう}価{か}がよく使われる。最高は5である。",
+        reading: "だんかい",
+        word: "段階",
+        meaning: "grade・level"
+      },
+      {
+        word: "階・～階",
+        meaning: "floor, ～N floor (s)",
+        reading: "かい・～かい",
+        exampleSentenceRuby: "ビルの最{さい}上{じょう}階{かい}の 60階{かい}からは360度{ど}の展{てん}望{ほう}が楽{たの}しめる。"
+      }
+    ],
+    id: 576,
+    on: [
+      "カイ"
+    ],
+    kun: [],
+    kanji: "階",
+    otherWords: [
+      {
+        reading: "かいきゅう",
+        word: "階級",
+        meaning: "social class・rank"
+      },
+      {
+        reading: "かいそう",
+        meaning: "layer・social tier",
+        word: "階層"
+      },
+      {
+        word: "音階",
+        meaning: "musical scale",
+        reading: "おんかい"
+      },
+      {
+        meaning: "downstairs・Lower floor",
+        reading: "かいか",
+        word: "階下"
+      },
+      {
+        meaning: "basement floor",
+        reading: "ちかい",
+        word: "地階"
+      }
+    ]
+  },
+  577: {
+    kun: [],
+    otherWords: [
+      {
+        meaning: "class・homeroom",
+        word: "学級",
+        reading: "がっきゅう"
+      },
+      {
+        word: "一級",
+        reading: "いっきゅう",
+        meaning: "Level 1・first grade・top class"
+      },
+      {
+        word: "等級",
+        meaning: "grade・class・rating",
+        reading: "とうきゅう"
+      },
+      {
+        reading: "かきゅう",
+        word: "下級",
+        meaning: "lower grade・lower rank・inferior class"
+      },
+      {
+        reading: "とっきゅう",
+        meaning: "special grade・elite level",
+        word: "特級"
+      }
+    ],
+    on: [
+      "キュウ"
+    ],
+    words: [
+      {
+        exampleSentenceRuby: "日本語の教{きょう}科{か}書{しょ}は初{しょ}級{きゅう}・中{ちゅう}級{きゅう}・上{じょう}級{きゅう}に分かれている。",
+        meaning: "class, grade, ~Nth class",
+        reading: "きゅう・～きゅう",
+        word: "級・〜級"
+      },
+      {
+        meaning: "move up to (class)",
+        reading: "しんきゅう（する）",
+        word: "進級（する）",
+        exampleSentenceRuby: "留学のため1年休{きゅう}学{がく}したので同{どう}級{きゅう}生{せい}と一緒に進{しん}級{きゅう}できなかった。"
+      },
+      {
+        reading: "こうきゅう（な）",
+        word: "高級（な）",
+        meaning: "high-class, exclusive",
+        exampleSentenceRuby: "高{こう}級{きゅう}レストランで最高級の食事をする贅{ぜい}沢{たく}をしてみたい。"
+      }
+    ],
+    meanings: [
+      "level・rank・grade・class"
+    ],
+    kanji: "級",
+    id: 577
+  },
+  578: {
+    id: 578,
+    meanings: [
+      "to reflect・to project"
+    ],
+    on: [
+      "エイ"
+    ],
+    words: [
+      {
+        exampleSentenceRuby: "T 監督の映画の映像は芸術の域に達している。",
+        word: "映像",
+        reading: "えいぞう",
+        meaning: "picture・image"
+      },
+      {
+        meaning: "screen・show・run",
+        word: "上映（する）",
+        exampleSentenceRuby: "今上映されている邦画の評判がとてもいい。",
+        reading: "じょうえい（する）"
+      },
+      {
+        reading: "うつり",
+        meaning: "Reflection・reception",
+        exampleSentenceRuby: "",
+        word: "映り"
+      }
+    ],
+    otherWords: [
+      {
+        word: "映る・映す",
+        reading: "うつる・うつす",
+        meaning: "to be reflected・to be projected"
+      },
+      {
+        reading: "はえる",
+        word: "映える",
+        meaning: "to look good・to stand out"
+      },
+      {
+        meaning: "movie theater",
+        word: "映画館",
+        reading: "えいがかん"
+      },
+      {
+        meaning: "film adaptation・to turn something into a movie",
+        reading: "えいがか",
+        word: "映画化"
+      },
+      {
+        reading: "えいしゃ（する）",
+        word: "映写（する）",
+        meaning: "projection・to project (an image/video)"
+      }
+    ],
+    kanji: "映",
+    kun: [
+      "うつ"
+    ]
+  },
+  579: {
+    kun: [],
+    id: 579,
+    otherWords: [
+      {
+        reading: "ちゅうおうぐち",
+        word: "中央口",
+        meaning: "Central exit・Central entrance"
+      },
+      {
+        reading: "ちゅうおうしょうちょう",
+        word: "中央省庁",
+        meaning: "Central government ministries and agencies"
+      },
+      {
+        word: "中央区（東京都・大阪市ほか）",
+        meaning: "Locations in Tokyo and Osaka",
+        reading: "ちゅうおうく（とうきょうと・おおさかしほか)"
+      }
+    ],
+    meanings: [
+      "center・middle"
+    ],
+    on: [
+      "オウ"
+    ],
+    words: [
+      {
+        word: "中央",
+        meaning: "center・middle",
+        reading: "ちゅうおう",
+        exampleSentenceRuby: "街の中央に大きな公園があり、市民の憩いの場となっている。"
+      }
+    ],
+    kanji: "央"
+  },
+  580: {
+    otherWords: [
+      {
+        word: "吉祥寺〔東京都〕",
+        meaning: "A neighborhood in Musashino City, Tokyo",
+        reading: "きちじょうじ（とうきょうと）"
+      },
+      {
+        word: "清水寺〔京都府）",
+        meaning: "One of the most famous temples in Kyoto",
+        reading: "きよみすでら［きようとよ】"
+      },
+      {
+        reading: "ほんがんじ［きょうとぶ）",
+        word: "本願寺〔京都府）",
+        meaning: "name of a famous temple"
+      },
+      {
+        word: "寺田くさん＞",
+        meaning: "A Japanese surname",
+        reading: "てらださん"
+      }
+    ],
+    on: [
+      "ジ"
+    ],
+    words: [
+      {
+        word: "寺・〜寺",
+        meaning: "Buddhist temple",
+        reading: "てら・〜じ",
+        exampleSentenceRuby: "奈良の東大寺は大仏のある寺だ。"
+      },
+      {
+        word: "寺院",
+        meaning: "Temple",
+        reading: "じいん",
+        exampleSentenceRuby: "仏教寺院の壁には見事な壁画が描かれていた。"
+      },
+      {
+        reading: "やまでら",
+        word: "山寺",
+        meaning: "temple in a mountain",
+        exampleSentenceRuby: ""
+      }
+    ],
+    kanji: "寺",
+    meanings: [
+      "temple"
+    ],
+    kun: [
+      "てら"
+    ],
+    id: 580
+  },
+  581: {
+    meanings: [
+      "thought・feeling・sentiment"
+    ],
+    words: [
+      {
+        reading: "ねんがん（する）",
+        word: "念願（する）",
+        exampleSentenceRuby: "日本へ来て3年{ねん}目{め}で、やっと念{ねん}願{がん}の京{きょ}都{と}旅行ができました。",
+        meaning: "one's heart's desire"
+      },
+      {
+        exampleSentenceRuby: "「言{しん}頼{らい}と技{ぎ}術{じゅつ}で社会に貢{こう}献{けん}する」というのが当{とう}社{しゃ}の経{けい}営{えい}理{り}念{ねん}です。",
+        reading: "りねん",
+        word: "理念",
+        meaning: "principle・idea"
+      },
+      {
+        reading: "せんねん（する）",
+        word: "専念（する）",
+        exampleSentenceRuby: "今はアルバイトも部{ぶ}活{かつ}もしないで学{がく}業{ぎょう}に専{せん}念{ねん}している。",
+        meaning: "devote・concentrate"
+      }
+    ],
+    otherWords: [
+      {
+        reading: "ねん・ねんじる・いちねん",
+        meaning: "thought・to pray・to wish・a single thought",
+        word: "念・念じる・一念"
+      },
+      {
+        reading: "つうねんしゃかいつうねん",
+        word: "通念・社会通念",
+        meaning: "common idea・socially accepted norms"
+      },
+      {
+        meaning: "tenacity・persistence・obsession",
+        reading: "しゅうねん",
+        word: "執念"
+      },
+      {
+        reading: "ねんとう",
+        meaning: "in one’s mind",
+        word: "念頭"
+      },
+      {
+        reading: "むねん（な・の）",
+        meaning: "regret・frustration・disappointment",
+        word: "無念（な・の）"
+      }
+    ],
+    on: [
+      "ネン"
+    ],
+    id: 581,
+    kun: [],
+    kanji: "念"
+  },
+  582: {
+    id: 582,
+    on: [
+      "シ"
+    ],
+    meanings: [
+      "to administer・govern・conduct"
+    ],
+    words: [
+      {
+        exampleSentenceRuby: "上{じょう}司{し}と部{ぶ}下{か}が相{そう}互{ご}に評{ひょう}価{か}する人{じん}事{じ}考{こう}課{か}制{せい}度{ど}を導{どう}入{にゅう}した。",
+        meaning: "one's superior, boss",
+        reading: "じょうし",
+        word: "上司"
+      },
+      {
+        exampleSentenceRuby: "本{ほん}日{じつ}司{し}会{かい}を勤{つと}めさせていただきます、川{かわ}村{むら}と申{もう}します。",
+        word: "司会",
+        meaning: "moderator・M.C.",
+        reading: "しかい"
+      },
+      {
+        exampleSentenceRuby: "三{さん}権{けん}分{ぶん}立{りつ}制{せい}のもとでは、司{し}法{ほう}・行{ぎょう}政{せい}・立{りっ}法{ぽう}は独{どく}立{りつ}している。",
+        reading: "しほう",
+        meaning: "judicature",
+        word: "司法"
+      }
+    ],
+    kanji: "司",
+    otherWords: [
+      {
+        word: "司令（する）",
+        reading: "しれい（する）",
+        meaning: "o command・issue orders"
+      },
+      {
+        reading: "すし［すし］",
+        word: "寿司［鮨］",
+        meaning: "Sushi"
+      },
+      {
+        word: "司法書士",
+        meaning: "judicial scrivener (legal specialist in Japan)",
+        reading: "しほうしょし"
+      },
+      {
+        word: "司書",
+        meaning: "librarian",
+        reading: "ししょ"
+      },
+      {
+        reading: "ぎょうじ",
+        meaning: "sumo referee",
+        word: "行司"
+      }
+    ],
+    kun: [
+      "つかさど"
+    ]
+  },
+  583: {
+    on: [
+      "フク"
+    ],
+    meanings: [
+      "clothes・submission"
+    ],
+    kun: [],
+    id: 583,
+    words: [
+      {
+        reading: "ふく・〜ふく",
+        word: "服・〜服",
+        meaning: "clothes， ~ clothes",
+        exampleSentenceRuby: "洋{よう}服・和{わ}服・呉{ご}服・制{せい}服・私{し}服・夏{なつ}服・冬{ふゆ}服・軍{ぐん}服{ぷく}・喪{も}服・式{しき}服・礼{れい}服、"
+      },
+      {
+        meaning: "dissatisfied",
+        word: "不服（な）",
+        reading: "ふふく（な）",
+        exampleSentenceRuby: "審{しん}判{ぱん}のジャッジが不{ふ}服{ふく}で抗{こう}議{ぎ}したが認{みと}められなかった。"
+      },
+      {
+        reading: "ふくようする",
+        word: "服用する",
+        exampleSentenceRuby: "薬{くすり}は用{よう}法{ほう}・用{よう}量{りょう}を守{まも}って服{ふく}用{よう}してください。",
+        meaning: "take medicine"
+      }
+    ],
+    otherWords: [
+      {
+        meaning: "clothing・garments",
+        reading: "いふく",
+        word: "衣服"
+      },
+      {
+        meaning: "o obey・to submit・to comply with",
+        reading: "ふくする",
+        word: "服する"
+      },
+      {
+        reading: "ふくえき（する）",
+        word: "服役（する）",
+        meaning: "to serve a prison sentence・imprisonment"
+      },
+      {
+        reading: "いっぷく（する）",
+        word: "一服（する）",
+        meaning: "To take a break・have a rest"
+      },
+      {
+        word: "着服（する）",
+        meaning: "embezzlement・to misappropriate money or property",
+        reading: "ちゃくふく（する）"
+      }
+    ],
+    kanji: "服"
+  },
+  584: {
+    words: [
+      {
+        word: "脳",
+        exampleSentenceRuby: "脳{のう}の活動状{じょう}態{たい}を視{し}覚{かく}的{てき}に観{かん}察{さつ}できるようになってきた。",
+        meaning: "Brain",
+        reading: "のう"
+      },
+      {
+        reading: "しゅのう",
+        word: "首脳",
+        exampleSentenceRuby: "3{さん}ヶ{か}国{こく}首{しゅ}脳{のう}会{かい}談{だん}が東京で開{かい}催{さい}された。",
+        meaning: "head・leader"
+      },
+      {
+        exampleSentenceRuby: "アイディアが脳{のう}裏{り}に浮{う}かんだ。・不{ふ}安{あん}がふと脳{のう}裏{り}をかすめた。",
+        reading: "のうり",
+        meaning: "one's mind",
+        word: "脳裏"
+      }
+    ],
+    meanings: [
+      "brain・mind"
+    ],
+    otherWords: [
+      {
+        reading: "のうは",
+        word: "脳波",
+        meaning: "Brain waves"
+      },
+      {
+        meaning: "Cerebrum (the largest part of the brain)",
+        reading: "だいのう",
+        word: "大脳"
+      },
+      {
+        meaning: "Cerebellum",
+        reading: "しょうのう",
+        word: "小脳"
+      },
+      {
+        word: "脳神経",
+        meaning: "Cranial nerves",
+        reading: "のうしんけい"
+      },
+      {
+        meaning: "Inside the brain・in one’s mind",
+        reading: "のうない",
+        word: "脳内"
+      }
+    ],
+    kanji: "脳",
+    on: [
+      "ノウ"
+    ],
+    id: 584,
+    kun: []
+  },
+  585: {
+    id: 585,
+    on: [
+      "ジュン"
+    ],
+    otherWords: [
+      {
+        word: "照準",
+        reading: "しょうじゅん",
+        meaning: "aim・sighting・alignment"
+      },
+      {
+        reading: "じゅんじる",
+        meaning: "o follow・to conform to・to apply correspondingly",
+        word: "準じる"
+      },
+      {
+        meaning: "semi-express train",
+        word: "準急",
+        reading: "じゅんきゅう"
+      },
+      {
+        word: "下準備（する）",
+        reading: "したじゅんび（する）",
+        meaning: "preliminary preparation・prep work"
+      },
+      {
+        word: "標準時•標準語",
+        meaning: "standard time・standard Japanese (Tokyo-based standard language)",
+        reading: "ひょうじゃんじ・ひょうじゅんご"
+      }
+    ],
+    meanings: [
+      "standard・level・to prepare・to follow a standard"
+    ],
+    words: [
+      {
+        reading: "きじゅん",
+        word: "基準",
+        exampleSentenceRuby: "5年間の気温の平{へい}均{きん}値{ち}を基{}準{}にして、例{き}年{じゅん}の気温としている。",
+        meaning: "standard・yardstick"
+      },
+      {
+        reading: "ひょうじゅん",
+        word: "標準",
+        exampleSentenceRuby: "製{せい}品{ひん}を国{こく}際{さい}標{ひょう}準{じゅん}の規{き}格{かく}に合{あ}わせる。",
+        meaning: "standard・normal"
+      },
+      {
+        word: "水準",
+        exampleSentenceRuby: "このオーケストラは技{ぎ}術{じゅつ}的{てき}にたいへん水{すい}準{じゅん}が高{たか}い。",
+        meaning: "level・standard",
+        reading: "すいじゅん"
+      }
+    ],
+    kun: [],
+    kanji: "準"
+  },
+  586: {
+    on: [
+      "イン"
+    ],
+    kanji: "印",
+    otherWords: [
+      {
+        word: "印鑑",
+        reading: "いんかん",
+        meaning: "personal seal ハンコ"
+      },
+      {
+        meaning: "To sign or affix a seal",
+        reading: "ちょういん（する）",
+        word: "調印（する）"
+      },
+      {
+        word: "目印",
+        reading: "めじるし",
+        meaning: "A marker, landmark, or something you use as a reference to find a place"
+      },
+      {
+        reading: "だいいちいんしょう",
+        meaning: "First impression",
+        word: "第一印象"
+      },
+      {
+        reading: "いんじ（する）",
+        word: "印字（する）",
+        meaning: "To print characters / letters"
+      }
+    ],
+    kun: [
+      "しるし"
+    ],
+    words: [
+      {
+        exampleSentenceRuby: "話し方によって、人に与える印{いん}象{しょう}はずい分{ぶん}変{か}わります。",
+        reading: "いんしょう(てきな）",
+        word: "印象（的な）",
+        meaning: "impression"
+      },
+      {
+        word: "印刷（する）",
+        meaning: "printing・print",
+        reading: "いんさつ（する）",
+        exampleSentenceRuby: "これをB 5用紙に縦{たて}方{ほう}向{こう}で裏{うら}表{おもて}に印{いん}刷{さつ}してください。"
+      },
+      {
+        reading: "いん・しるし・～じるし",
+        meaning: "sign・seal・stamp",
+        exampleSentenceRuby: "星{ほし}印{じるし} ・米{こめ}印{じるし}などの印{しろし}をつける。・名前の後{あと}に印{いん}を押{お}す。",
+        word: "印・～印"
+      }
+    ],
+    id: 586,
+    meanings: [
+      "mark・seal・stamp"
+    ]
+  },
+  587: {
+    otherWords: [
+      {
+        word: "提訴（する）",
+        meaning: "To file a lawsuit・bring a case to court",
+        reading: "ていそ（する）"
+      },
+      {
+        word: "提携（する）",
+        meaning: "To partner・collaborate・form an alliance (between companies, organizations, countries, etc.)",
+        reading: "ていけい（する）"
+      },
+      {
+        meaning: "A major premise・fundamental assumption",
+        reading: "だいぜんてい",
+        word: "大前提"
+      },
+      {
+        reading: "てさげ",
+        word: "手提げ",
+        meaning: "handbag・tote"
+      },
+      {
+        meaning: "Japanese lantern (traditional paper lantern)",
+        word: "提灯",
+        reading: "ちょうちん"
+      }
+    ],
+    meanings: [
+      "to present・to propose"
+    ],
+    kun: [
+      "さ"
+    ],
+    kanji: "提",
+    words: [
+      {
+        exampleSentenceRuby: "大学院の講{こう}義{ぎ}は学{がく}部{ぶ}レベルの知{ち}識{しき}を前{ぜん}提{てい}として進{すす}められる。",
+        word: "前提",
+        meaning: "assumption・premise",
+        reading: "ぜんてい"
+      },
+      {
+        exampleSentenceRuby: "彼は会議で、インターネットを利用した単{たん}位{い}取{しゅ}得{とく}の可{か}能{のう}性{せい}について提{てい}言{げん}した。",
+        word: "提言（する）",
+        meaning: "suggestion・proposal",
+        reading: "ていげん（する）"
+      },
+      {
+        meaning: "advocate",
+        reading: "ていしょう（する）",
+        exampleSentenceRuby: "ワトソンは行{こう}動{どう}主{しゅ}義{ぎ}の心{しん}理{り}学{がく}を提{てい}唱{しょう}した。",
+        word: "提唱（する）"
+      }
+    ],
+    on: [
+      "テイ"
+    ],
+    id: 587
+  },
+  588: {
+    on: [
+      "ヘイ"
+    ],
+    otherWords: [
+      {
+        reading: "ならぶ・ならび",
+        meaning: "To line up・row",
+        word: "並ぶ・並び"
+      },
+      {
+        reading: "なお・なみ・〜なみ",
+        meaning: "Ordinary・average・common",
+        word: "並・並み・～並み"
+      },
+      {
+        reading: "なみき",
+        meaning: "Tree-lined road",
+        word: "並木"
+      },
+      {
+        meaning: "coordination・acting in sync",
+        word: "足並み",
+        reading: "あしなみ"
+      },
+      {
+        meaning: "ordinary・normal・average",
+        reading: "ひとなみ・つきなみ（な・の）",
+        word: "人並み・月並み（な・の）"
+      }
+    ],
+    id: 588,
+    meanings: [
+      "o line up・to arrange"
+    ],
+    kun: [
+      "なら"
+    ],
+    words: [
+      {
+        word: "並べる",
+        exampleSentenceRuby: "皿{さら}を並{ならべ}べる。・机{つくえ}を並{ならべ}べて学{まな}ぶ。・両{りょう}社{しゃ}のシェアは肩{かた}を並{ならべ}べている。",
+        meaning: "To line up・rank with",
+        reading: "ならべる"
+      },
+      {
+        word: "並行（する）",
+        meaning: "side by side・in parallel",
+        exampleSentenceRuby: "二つの実{じっ}験{けん}を並{へい}行{こう}して行{おこな}う。",
+        reading: "へいこう（する）"
+      },
+      {
+        reading: "ならびに",
+        word: "並びに",
+        meaning: "as well as・and also",
+        exampleSentenceRuby: "諸{しょ}先{せん}生{せい}方{がた}、並{なら}びにご来{らい}賓{ひん}の皆{ みな}様{さま}に心{こころ}より感{かん}謝{しゃ}申{もう}しあげます。"
+      }
+    ],
+    kanji: "並"
+  },
+  589: {
+    id: 589,
+    meanings: [
+      "pond"
+    ],
+    on: [
+      "チ"
+    ],
+    kanji: "池",
+    words: [
+      {
+        exampleSentenceRuby: "太{たい}陽{よう}電{でん}池{ち}を使って太{たい}陽{よう}光{こう}発{はつ}電{でん}をする。",
+        reading: "でんち",
+        word: "電池",
+        meaning: "battery"
+      },
+      {
+        meaning: "pond",
+        exampleSentenceRuby: "公園の池{いけ}には大{おお}きい鯉{こい}がたくさん泳{およ}いでいる。",
+        reading: "いけ",
+        word: "池"
+      },
+      {
+        reading: "かんでんち",
+        exampleSentenceRuby: "繰{く}り返{かえ}し使える充{じゅう}電{でん}式{しき}乾{かん}電{でん}池{ち}を利用している。",
+        word: "乾電池",
+        meaning: "dry cell ［battery］"
+      }
+    ],
+    otherWords: [
+      {
+        meaning: "reservoir",
+        word: "貯水池",
+        reading: "ちょすいち"
+      },
+      {
+        meaning: "rechargeable battery",
+        word: "蓄電池",
+        reading: "ちくでんち"
+      },
+      {
+        reading: "すいそでんち",
+        word: "水素電池",
+        meaning: "hydrogen fuel cell・hydrogen battery"
+      },
+      {
+        word: "池田　(さん）",
+        meaning: "A Japanese surname",
+        reading: "いけださん"
+      },
+      {
+        meaning: "Ikebukuro Station",
+        word: "池袋駅（東京都）",
+        reading: "いけぶくるえき　(とうきょうと)"
+      }
+    ],
+    kun: [
+      "いけ"
+    ]
+  },
+  590: {
+    meanings: [
+      "_"
+    ],
+    kun: [],
+    otherWords: [
+      {
+        meaning: "Japanese surname",
+        reading: "いとうさん・いとうさん",
+        word: "伊藤　(さん）・伊東　(さん）"
+      },
+      {
+        meaning: "Izu Peninsula",
+        word: "伊豆半島(静岡県)",
+        reading: "いずはんとう（しずおかけん)"
+      },
+      {
+        reading: "さいはんとう",
+        word: "紀伊半島",
+        meaning: "Kii Peninsula"
+      },
+      {
+        word: "伊勢湾",
+        reading: "いせわん",
+        meaning: "Ise Bay"
+      },
+      {
+        meaning: "Japanese surname",
+        reading: "だてさん",
+        word: "伊達　（さん）"
+      }
+    ],
+    id: 590,
+    words: [],
+    kanji: "伊",
+    on: [
+      "イ"
+    ]
+  },
+  646: {
+    id: 646,
+    kanji: "責",
+    kun: ["せ"],
+    on: ["セキ"],
+    meanings: ["responsibility・blame・duty"],
+    words: [
+      {
+        word: "無責任（な）",
+        reading: "むせきにん（な）",
+        meaning: "irresponsible",
+        exampleSentenceRuby: "上{じょう}司{し}が部{ぶ}下{か}の不{ふ}祥{しょう}事{じ}を「知らなかった」で済{す}ますのは無{む}責{せき}任{にん}だ。",
+      },
+      {
+        word: "責任感",
+        reading: "せきにんかん",
+        meaning: "sense of responsibility",
+        exampleSentenceRuby: "船{せん}長{ちょう}は責{せき}任{にん}感{かん}が強{つよ}く、全{ぜん}員{いん}が救{きゅう}出{しゅつ}されるまで船{ふね}を離{はな}れなかった。",
+      },
+      {
+        word: "責める",
+        reading: "せめる",
+        meaning: "to blame・to criticize",
+        exampleSentenceRuby: "自分のことを棚{たな}に上{あ}げて人を責{せ}めるのは恥ずかしいことだ。",
+      }
+    ],
+    otherWords: [
+      { word: "責任者", reading: "せきにんしゃ", meaning: "person in charge" },
+      { word: "責務", reading: "せきむ", meaning: "responsibility・duty" },
+      { word: "免責（する）", reading: "めんせき（する）", meaning: "exemption from responsibility" },
+      { word: "責め", reading: "せめ", meaning: "blame・criticism" },
+      { word: "自責（の念）", reading: "じせき（のねん）", meaning: "self-blame・remorse" }
+    ],
+  },
+  647: {
+    id: 647,
+    kanji: "阪",
+    kun: ["さか"],
+    on: ["ハン"],
+    meanings: ["slope・hill"],
+    words: [
+      {
+        word: "阪神",
+        reading: "はんしん",
+        meaning: "Hanshin (area between Osaka and Kobe)",
+        exampleSentenceRuby: "阪{はん}神{しん}・淡{あわ}路{じ}大{だい}震{しん}災{さい}の経{けい}験{けん}と教{きょう}訓{くん}を後{こう}世{せい}に伝{つた}える。",
+      },
+      {
+        word: "京阪神",
+        reading: "けいはんしん",
+        meaning: "Kyoto-Osaka-Kobe area",
+        exampleSentenceRuby: "京{きょう}阪{はん}神{しん}とは京{きょう}都{と}・大{おお}阪{さか}・神{こう}戸{べ}のことです。",
+      },
+    ],
+    otherWords: [
+      { word: "大阪（府・市）", reading: "おおさか（ふ・し）", meaning: "Osaka (prefecture and city)" },
+      { word: "阪本 (さん）", reading: "さかもとさん", meaning: "A Japanese surname" },
+      { word: "阪田 (さん）", reading: "さかたさん", meaning: "A Japanese surname" },
+    ],
+  },
+  648: {
+    id: 648,
+    kanji: "角",
+    kun: ["かど・つの"],
+    on: ["カク"],
+    meanings: ["corner・angle・horn"],
+    words: [
+      {
+        word: "角",
+        reading: "かど・つの・かく",
+        meaning: "corner",
+        exampleSentenceRuby: "角{かど}を曲{ま}がる。・牛{うし}の角{つの}。・正{せい}三{さん}角{かく}形{けい}の角{かど}は全{すべ}て60度{ど}。",
+      },
+      {
+        word: "角度",
+        reading: "かくど",
+        meaning: "angle",
+        exampleSentenceRuby: "この角{かど}の角{かく}度{ど}は90度{ど}、直{ちょっ}角{かく}です。・角{かく}度{ど}を変{か}えて見る",
+      },
+      {
+        word: "方角",
+        reading: "ほうがく",
+        meaning: "direction",
+        exampleSentenceRuby: "西{にし}北{ほく}の方{ほう}角{がく}に大学の講{こう}堂{どう}が見える。",
+      }
+    ],
+    otherWords: [
+      { word: "街角［町角］", reading: "まちかど", meaning: "street corner" },
+      { word: "三角・三角形", reading: "さんかく・さんかくけい", meaning: "triangle・triangular shape" },
+      { word: "四角・四角い・四角形", reading: "しかく・しかくい・しかくけい", meaning: "square・rectangular shape" },
+      { word: "頭角 (を表す)", reading: "とうかく (をあらわす)", meaning: "to show one's ability" },
+      { word: "死角", reading: "しかく", meaning: "blind spot" }
+    ],
+  },
+  649: {
+    id: 649,
+    kanji: "丁",
+    kun: ["ひのと"],
+    on: ["チョウ・テイ"],
+    meanings: ["town block・even number・counter for tools or guns"],
+    words: [
+      {
+        word: "包丁",
+        reading: "ほうちょう",
+        meaning: "kitchen knife",
+        exampleSentenceRuby: "包{ほう}丁{ちょう}を上手に使ってお刺{さ}身{しみ}を造{つく}るのは非{ひ}常{じょう}に難{むずか}しい。",
+      },
+      {
+        word: "丁度",
+        reading: "ちょうど",
+        meaning: "exactly・just right",
+        exampleSentenceRuby: "この靴{くつ}のサイズは丁{ちょう}度{ど}いい。・今{こん}夜{や}の月{つき}は丁{ちょう}度{ど}丸{まる}いお盆{ぼん}のようだ。",
+      },
+      {
+        word: "丁寧（な）",
+        reading: "ていねい（な）",
+        meaning: "polite・careful・courteous",
+        exampleSentenceRuby: "この美{び}容{よう}院{いん}の美{び}容{よう}師{し}さんはとても丁{てい}寧{ねい}にカットしてくれる。",
+      }
+    ],
+    otherWords: [
+      { word: "～丁目", reading: "〜ちょうめ", meaning: "town block" },
+      { word: "丁", reading: "ちょう", meaning: "even number" },
+      { word: "一丁", reading: "いっちょう", meaning: "One" },
+      { word: "横丁", reading: "よこちょう", meaning: "alley" },
+      { word: "装丁", reading: "そうてい", meaning: "bookbinding" }
+    ],
+  },
+  650: {
+    id: 650,
+    kanji: "遊",
+    kun: ["あそ"],
+    on: ["ユウ・ユ"],
+    meanings: ["to play・to hang out・to visit"],
+    words: [
+      {
+        word: "遊び・遊ぶ",
+        reading: "あそび・あそぶ",
+        meaning: "play・to play・do nothing",
+        exampleSentenceRuby: "空{あ}き地{ち}のまま、土{と}地{ち}を遊{あそ}ばせておくのはもったいない。",
+      },
+      {
+        word: "遊説（する）",
+        reading: "ゆうぜい（する）",
+        meaning: "to campaign・canvassing tour",
+        exampleSentenceRuby: "政{せい}治{じ}家{か}が選{せん}挙{きょ}区{く}の各{かく}地{ち}を遊{ゆう}説{ぜい}した。",
+      },
+      {
+        word: "浮遊（する）",
+        reading: "ふゆう（する）",
+        meaning: "to float・to drift",
+        exampleSentenceRuby: "ホコリや花{か}粉{ふん}が空{くう}気{き}中{ちゅう}を浮{ふ}遊{ゆう}している。",
+      }
+    ],
+    otherWords: [
+      { word: "水遊び", reading: "みずあそび", meaning: "playing in the water" },
+      { word: "外遊（する）", reading: "がいゆう（する）", meaning: "foreign travel" },
+      { word: "遊園地", reading: "ゆうえんち", meaning: "amusement park" },
+      { word: "遊牧", reading: "ゆうぼく", meaning: "nomadism" },
+      { word: "周遊（する）", reading: "しゅうゆう（する）", meaning: "to go around・to tour" }
+    ],
+  },
+  651: {
+    id: 651,
+    kanji: "危",
+    kun: ["あぶ・あや"],
+    on: ["キ"],
+    meanings: ["dangerous・risk"],
+    words: [
+      {
+        word: "危険（な）",
+        reading: "きけん（な）",
+        meaning: "dangerous・risk",
+        exampleSentenceRuby: "危{き}険{けん}な土{と}地{ち}への高{こう}層{そう}マンション建{けん}設{せつ}に反{はん}対{たい}する。",
+      },
+      {
+        word: "危ぶむ",
+        reading: "あやぶむ",
+        meaning: "to fear・to be doubtful・to be afraid",
+        exampleSentenceRuby: "子{こ}供{ども}たちの学{がく}力{りょく}低{てい}下{か}を危{あや}ぶむ声{こえ}が広{ひろ}がっている。",
+      },
+      {
+        word: "危うい・危うく",
+        reading: "あやうい・あやうく",
+        meaning: "dangerous・narrowly・almost・nearly",
+        exampleSentenceRuby: "危{あや}うく飛{ひ}行{こう}機{き}に乗{の}り遅{おく}れるところだった。",
+      }
+    ],
+    otherWords: [
+      { word: "危ない", reading: "あぶない", meaning: "dangerous" },
+      { word: "危害", reading: "きがい", meaning: "harm・injury" },
+      { word: "危惧（する）", reading: "きぐ（する）", meaning: "to fear・to be anxious" },
+      { word: "危うさ", reading: "あやうさ", meaning: "danger・risk" },
+      { word: "危篤", reading: "きとく", meaning: "critical condition" }
+    ],
+  },
+  652: {
+    id: 652,
+    kanji: "河",
+    kun: ["かわ"],
+    on: ["カ"],
+    meanings: ["river"],
+    words: [
+      {
+        word: "運河",
+        reading: "うんが",
+        meaning: "canal",
+        exampleSentenceRuby: "パナマ運{うん}河{が}は大{たい}西{せい}洋{よう}と太{たい}平{へい}洋{よう}とを結{むす}ぶ運{うん}河{が}だ。",
+      },
+      {
+        word: "河原［川原］",
+        reading: "かわら",
+        meaning: "dry riverbed",
+        exampleSentenceRuby: "多{た}摩{ま}川{がわ}の河{かわ}原{ら}に野{や}球{きゅう}をする人{ひと}や釣{つ}りをする人{ひと}がいる。",
+      },
+      {
+        word: "氷河",
+        reading: "ひょうが",
+        meaning: "glacier",
+        exampleSentenceRuby: "地{ち}球{きゅう}の温{おん}暖{だん}化{か}で氷{ひょう}河{が}がすさまじい勢{いきお}いで解{と}［溶{と}］け続{つづ}けている。",
+      }
+    ],
+    otherWords: [
+      { word: "河口", reading: "かこう", meaning: "river mouth" },
+      { word: "河童", reading: "かっぱ", meaning: "kappa (water imp)" },
+      { word: "河川", reading: "かせん", meaning: "rivers" },
+      { word: "銀河", reading: "ぎんが", meaning: "galaxy" },
+      { word: "河野 (さん)", reading: "かわの (さん)", meaning: "Japanese surname" }
+    ],
+  },
 }
 
 export default M2_KANJI;
