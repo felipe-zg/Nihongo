@@ -5383,6 +5383,107 @@ const M2_KANJI: Record<number, TKanjiM2> = {
       { word: "河野 (さん)", reading: "かわの (さん)", meaning: "Japanese surname" }
     ],
   },
+  653: {
+    id: 653,
+    kanji: "占",
+    kun: ["うらな・し"],
+    on: ["セン"],
+    meanings: ["to tell fortunes・to occupy"],
+    words: [
+      {
+        word: "占める",
+        reading: "しめる",
+        meaning: "to occupy・to account for",
+        exampleSentenceRuby: "癌{がん}は病{びょう}死{し}の原{げん}因{いん}の約{やく}30{さんじつ}パーセント（%）を占{し}めている。",
+      },
+      {
+        word: "占う",
+        reading: "うらなう",
+        meaning: "to tell fortunes・to predict・to forecast",
+        exampleSentenceRuby: "街{まち}角{かど}に机{つくえ}を置{お}いて客{きゃく}の手{て}相{そう}で運{うん}勢{せい}を占{うらな}う人{ひと}がいる。",
+      },
+      {
+        word: "独り占め",
+        reading: "ひとりじめ",
+        meaning: "monopolization・hogging",
+        exampleSentenceRuby: "コアラはこの動{どう}物{ぶつ}園{えん}の人気を独{ひと}り占{じ}めにしている。",
+      }
+    ],
+    otherWords: [
+      { word: "占拠（する）", reading: "せんきょ（する）", meaning: "to occupy・to seize" },
+      { word: "占い", reading: "うらない", meaning: "fortune telling" },
+      { word: "独占禁止法", reading: "どくせんきんしほう", meaning: "antitrust law" },
+      { word: "占有（する）", reading: "せんゆう（する）", meaning: "to possess・to occupy" },
+      { word: "市場占有率", reading: "しじょうせんゆうりつ", meaning: "market share" }
+    ],
+  },
+  654: {
+    id: 654,
+    kanji: "恵",
+    kun: ["めぐ"],
+    on: ["ケイ・エ"],
+    meanings: ["blessing・grace・favor"],
+    words: [
+      {
+        word: "恵まれる",
+        reading: "めぐまれる",
+        meaning: "to be blessed with・to be rich in",
+        exampleSentenceRuby: "私は友人に恵{めぐ}まれている。・村{むら}は自{し}然{ぜん}に恵{めぐ}まれている。",
+      },
+      {
+        word: "恩恵",
+        reading: "おんけい",
+        meaning: "blessing・favor・grace・benefit",
+        exampleSentenceRuby: "我{われ}々{われ}は科{か}学{がく}技{ぎ}術{じゅつ}の恩{おん}恵{けい}を受{う}けて暮{く}らしている。",
+      },
+      {
+        word: "恵み",
+        reading: "めぐみ",
+        meaning: "blessing・grace・favor",
+        exampleSentenceRuby: "恵{めぐ}みの雨が降{ふ}り、草{くさ}木{き}は生{い}き返{かえ}ったように青{あお}々{あお}としてきた。",
+      }
+    ],
+    otherWords: [
+      { word: "知恵", reading: "ちえ", meaning: "wisdom・intelligence" },
+      { word: "恵む", reading: "めぐむ", meaning: "to bless・to show mercy" },
+      { word: "惠比寿駅（東京都）", reading: "えびすえき（とうきょうと）", meaning: "Ebisu Station (Tokyo)" },
+      { word: "知恵袋", reading: "ちえぶくろ", meaning: "wisdom bag・encyclopedia" },
+    ],
+  },
+  655: {
+    id: 655,
+    kanji: "働",
+    kun: ["はたら"],
+    on: ["ドウ"],
+    meanings: ["to work・to labor"],
+    words: [
+      {
+        word: "働く・働き",
+        reading: "はたらく・はたらき",
+        meaning: "to work・work",
+        exampleSentenceRuby: "よく働{はたら}く勤{きん}勉{べん}な人{ひと}を働{はたら}き者{もの}という。・疲{つか}れていて頭{あたま}の働{はたら}きが悪{わる}い。",
+      },
+      {
+        word: "働き盛り",
+        reading: "はたらきざかり",
+        meaning: "prime of life (working age)",
+        exampleSentenceRuby: "40代{だい}・50代{だい}の働{はたら}き盛{ざか}りの人{ひと}の過{か}労{ろう}死{し}が問{もん}題{だい}になっている。",
+      },
+      {
+        word: "働き掛ける",
+        reading: "はたらきかける",
+        meaning: "to work on・to influence・to appeal to",
+        exampleSentenceRuby: "災{さい}害{がい}救{きゅう}援{えん}基{き}金{きん}への協{きょう}力{りょく}、支{し}援{えん}を各{かく}方{ほう}面{めん}に働{はたら}き掛{か}けた。",
+      }
+    ],
+    otherWords: [
+      { word: "労働力", reading: "ろうどうりょく", meaning: "workforce・labor force" },
+      { word: "労働基準法", reading: "ろうどうきじゅんほう", meaning: "Labor Standards Act" },
+      { word: "重労働", reading: "じゅうろうどう", meaning: "heavy labor" },
+      { word: "肉体労働", reading: "にくたいろうどう", meaning: "physical labor" },
+      { word: "働き手", reading: "はたらきて", meaning: "worker" }
+    ],
+  },
 }
 
 export default M2_KANJI;
