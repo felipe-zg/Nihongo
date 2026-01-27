@@ -18,7 +18,7 @@ const Kanji: React.FC<Props> = ({
       {kanjiList.map((kanjiItem) => (
         <Box key={kanjiItem.kanji} borderWidth={1} borderColor="gray.300" borderRadius="md" p={4} mb={4} width="98%">
           {/* Main Kanji Information */}
-          <Text alignSelf={"center"} color={"orange.400"}>{kanjiItem.radical}</Text>
+          <Text alignSelf={"center"} color={"orange.400"}>「{kanjiItem.katachi}」の形・「{kanjiItem.radical}」の漢字</Text>
           <HStack alignItems="center" space={4} mb={2}>
             <Text fontSize="6xl" color={"pink.400"} fontFamily="Klee One">{kanjiItem.kanji}</Text>
             <Box>
@@ -27,16 +27,27 @@ const Kanji: React.FC<Props> = ({
               <Text fontFamily="Klee One" color={"pink.500"}>{kanjiItem.meaning}</Text>
             </Box>
           </HStack>
-          {kanjiItem.components && (
-            <HStack borderColor={"red.500"} borderWidth={1} borderRadius={5} alignSelf="flex-start">
-              <Box borderLeftWidth={1} borderLeftColor={"red.500"} p={5}>
-                <Text alignSelf={"center"} color={"orange.400"}>{kanjiItem.radical}</Text>
-              </Box>
-              {kanjiItem.components.map(component => (
+          {(kanjiItem.radicals || kanjiItem.components) && (
+            <HStack borderColor={"red.500"} borderWidth={1} borderRadius={5} alignSelf="flex-start" overflow={"hidden"}>
+              {kanjiItem.radicals && (
+                <HStack  alignSelf="flex-start">
+                  {kanjiItem.radicals.map((radical) => (
+                    <Box borderLeftWidth={1} borderLeftColor={"red.500"} p={5}>
+                      <Text alignSelf={"center"} color={"primary.400"}>{radical}</Text>
+                    </Box>
+                  ))}
+                </HStack>
+              )}
+              <HStack alignSelf="flex-start">
                 <Box borderLeftWidth={1} borderLeftColor={"red.500"} p={5}>
-                  <Text alignSelf={"center"} color={"white"}>{component.word}の<Text color={"orange.400"}>{component.kanji}</Text></Text>
+                  <Text alignSelf={"center"} color={"orange.400"}>{kanjiItem.radical}</Text>
                 </Box>
-              ))}
+                {kanjiItem.components && kanjiItem.components.map(component => (
+                  <Box borderLeftWidth={1} borderLeftColor={"red.500"} p={5}>
+                    <Text alignSelf={"center"} color={"white"}>{component.word ? `${component.word}の` : ""}<Text color={"orange.400"}>{component.kanji}</Text></Text>
+                  </Box>
+                ))}
+              </HStack>
             </HStack>
           )}
 
