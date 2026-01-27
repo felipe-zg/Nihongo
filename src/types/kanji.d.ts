@@ -67,6 +67,7 @@ declare type TKanjiM2 = {
 
 //日本語の森美味しい漢字
 declare type TKanjiRadical = typeof KanjiRadical[keyof typeof KanjiRadical];
+declare type TKanjiKatachi = typeof KanjiKatachi[keyof typeof KanjiKatachi];
 
 declare type TKanjiVocabulary = {
   kanji: string;
@@ -77,7 +78,7 @@ declare type TKanjiVocabulary = {
 
 declare type TKanjiComponent = {
   kanji: string;
-  word: string;
+  word?: string;
 }
 
 declare type TKanji = {
@@ -86,6 +87,8 @@ declare type TKanji = {
   on?: string[];
   meaning: string;
   radical: TKanjiRadical;
+  katachi: TKanjiKatachi;
   components?: TKanjiComponent[];
+  radicals?: string[];
   vocabulary?: TKanjiVocabulary[];
 }
