@@ -1,0 +1,26 @@
+{
+  "Kanji Entry Template (Empty)": {
+    "prefix": "kanji-entry",
+    "body": [
+      "{",
+      "  kanji: \"${1}\",",
+      "  kun: [\"${2}\"],",
+      "  on: [\"${3}\"],",
+      "  meaning: \"${4}\",",
+      "  radical: KanjiRadical.${5},",
+      "  components: [",
+      "    { kanji: \"${6}\", word: \"${7}\" }",
+      "  ],",
+      "  vocabulary: [",
+      "    { kanji: \"${8}\", kana: \"${9}\", meaning: \"${10}\", description: \"${11}\" },",
+			"    { kanji: \"${8}\", kana: \"${9}\", meaning: \"${10}\", description: \"${11}\" },",
+			"    { kanji: \"${8}\", kana: \"${9}\", meaning: \"${10}\", description: \"${11}\" },",
+			"    { kanji: \"${8}\", kana: \"${9}\", meaning: \"${10}\", description: \"${11}\" },",
+			"    { kanji: \"${8}\", kana: \"${9}\", meaning: \"${10}\", description: \"${11}\" },",
+			"    { kanji: \"${8}\", kana: \"${9}\", meaning: \"${10}\", description: \"${11}\" }",
+      "  ]",
+      "}"
+    ],
+    "description": "Create an empty kanji dictionary entry"
+  }
+}

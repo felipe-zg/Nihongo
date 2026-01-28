@@ -1,0 +1,42 @@
+{
+  "Kanji Dictionary Entry With Words": {
+    "prefix": "kanji-entry-m2",
+    "body": [
+      "${1:ID}: {",
+      "  id: ${1:ID},",
+      "  kanji: \"${2}\",",
+      "  kun: [${3}],",
+      "  on: [${4}],",
+      "  meanings: [${5}],",
+      "  words: [",
+      "    {",
+      "      word: \"${6}\",",
+      "      reading: \"${7}\",",
+      "      meaning: \"${8}\",",
+      "      exampleSentenceRuby: \"${9}\",",
+      "    },",
+      "    {",
+      "      word: \"${10}\",",
+      "      reading: \"${11}\",",
+      "      meaning: \"${12}\",",
+      "      exampleSentenceRuby: \"${13}\",",
+      "    },",
+      "    {",
+      "      word: \"${14}\",",
+      "      reading: \"${15}\",",
+      "      meaning: \"${16}\",",
+      "      exampleSentenceRuby: \"${17}\",",
+      "    }",
+      "  ],",
+      "  otherWords: [",
+      "    { word: \"${18}\", reading: \"${19}\", meaning: \"${20}\" },",
+      "    { word: \"${21}\", reading: \"${22}\", meaning: \"${23}\" },",
+      "    { word: \"${24}\", reading: \"${25}\", meaning: \"${26}\" },",
+      "    { word: \"${27}\", reading: \"${28}\", meaning: \"${29}\" },",
+      "    { word: \"${30}\", reading: \"${31}\", meaning: \"${32}\" }",
+      "  ],",
+      "},"
+    ],
+    "description": "Create a full kanji entry with words and otherWords"
+  }
+}

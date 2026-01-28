@@ -1,0 +1,15 @@
+{
+  "JLPTReview Entry": {
+    "prefix": "jlpt-review",
+    "body": [
+      "{",
+      "  kanji: \"${1}\",",
+      "  kana: \"${2}\",",
+      "  english: \"${3}\",",
+      "  explanation: \"${4}\",",
+      "  example: \"${5}\",",
+      "},"
+    ],
+    "description": "Create a JLPTReview object entry"
+  }
+}
