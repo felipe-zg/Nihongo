@@ -49,4 +49,5 @@ declare type JLPTReview = {
   important?: boolean;
   repeat?: boolean;
   fromBook?: boolean;
+  unit?: number;
 }
