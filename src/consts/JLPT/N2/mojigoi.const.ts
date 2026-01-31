@@ -2917,6 +2917,902 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     unit: 5
   },
   // Unit 6
+  {
+    kanji: "情けない",
+    kana: "なさけない",
+    english: "pitiful・miserable",
+    explanation: "Refers to a feeling of shame or pity, often used when someone is disappointed in themselves or others.",
+    example: "たくさん練習したのに、一回戦で負けてしまうなんて{情けない}。\nIt's pitiful to lose in the first round despite practicing a lot.",
+    unit: 6
+  },
+  {
+    kanji: "濃い",
+    kana: "こい",
+    english: "thick・strong (flavor, color)",
+    explanation: "Refers to something that has a strong or intense flavor, color, or concentration.",
+    example: "父は味が{濃い}料理が好みで、何にでも醤油をかける。\nMy father prefers strong-flavored dishes and puts soy sauce on everything.",
+    unit: 6
+  },
+  {
+    kanji: "勿体ない",
+    kana: "もったいない",
+    english: "wasteful・too good",
+    explanation: "Refers to something that is wasteful or too good to be used or discarded.",
+    example: "この紙袋を捨てるのは{もったいない}ので、取っておいて後で何かに使おう。\nIt's wasteful to throw away this paper bag, so I'll keep it and use it for something later.",
+    unit: 6
+  },
+  {
+    kanji: "快く",
+    kana: "こころよく",
+    english: "willingly・pleasantly",
+    explanation: "Refers to doing something willingly or with a pleasant attitude.",
+    example: "友達に結婚式のスピーチをお願いしたら、{快く}引き受けてくれた。\nI asked my friend to give a speech at my wedding, and they willingly accepted.",
+    unit: 6
+  },
+  {
+    kanji: "望ましい",
+    kana: "のぞましい",
+    english: "desirable・preferable",
+    explanation: "Refers to something that is desirable or preferable in a given situation.",
+    example: "明日の全体会議は、全員参加が{望ましい}。\nIt is desirable for everyone to participate in tomorrow's general meeting.",
+    unit: 6
+  },
+  {
+    kanji: "だらしない",
+    kana: "だらしない",
+    english: "sloppy・untidy・negligent",
+    explanation: "Refers to someone who is careless, untidy, or negligent in their behavior or appearance.",
+    example: "彼女はお金に{だらしない}人なので、お金を貸さない方が良い。\nShe is careless with money, so it's better not to lend her any.",
+    unit: 6
+  },
+  {
+    kanji: "若々しい",
+    kana: "わかわかしい",
+    english: "youthful・vigorous",
+    explanation: "Refers to someone or something that appears youthful or vigorous.",
+    example: "いくつになっても{若々しく}いるために、毎日運動している。\nTo stay youthful no matter how old I get, I exercise every day.",
+    unit: 6
+  },
+  {
+    kanji: "騒がしい",
+    kana: "さわがしい",
+    english: "noisy・boisterous",
+    explanation: "Refers to a place or situation that is very noisy or full of commotion.",
+    example: "夜遅い時間なのに、子どもたちの{騒がしい}声が聞こえる。\nEven though it's late at night, I can hear the noisy voices of children.",
+    unit: 6
+  },
+  {
+    kanji: "本格的",
+    kana: "ほんかくてき",
+    english: "full-scale・genuine",
+    explanation: "Refers to something that is full-scale, genuine, or authentic.",
+    example: "実際にイタリアに行って、{本格的な}イタリア料理を食べてみたい。\nI want to go to Italy and try authentic Italian cuisine.",
+    unit: 6
+  },
+  {
+    kanji: "安易",
+    kana: "あんい",
+    english: "easy・simple",
+    explanation: "Refers to something that is easy or simple, often implying a lack of careful thought or effort.",
+    example: "{安易な}考えで今の会社に入ってしまったことを、後悔している。\nI regret joining my current company with an easy-minded approach.",
+    unit: 6
+  },
+  {
+    kanji: "ささやか",
+    kana: "ささやか",
+    english: "small・modest",
+    explanation: "Refers to something that is small or modest in size or amount, often used to describe gifts or efforts.",
+    example: "両親の結婚記念日に、{ささやかな}プレゼントをあげた。\nI gave a modest gift for my parents' wedding anniversary.",
+    unit: 6
+  },
+  {
+    kanji: "全面的",
+    kana: "ぜんめんてき",
+    english: "full-scale・comprehensive",
+    explanation: "Refers to something that is full-scale, comprehensive, or all-encompassing.",
+    example: "両親の{全面的な}サポートがあったからこそ、彼はオリンピック選手に選ばれた。\nHe was selected as an Olympic athlete thanks to the full support of his parents.",
+    unit: 6
+  },
+  {
+    kanji: "有りがち",
+    kana: "ありがち",
+    english: "common・frequent",
+    explanation: "Refers to something that happens frequently or is common, often implying a negative connotation.",
+    example: "これくらいのミスは{ありがち}なことですから、心配しなくていいですよ。\nMistakes like this are common, so you don't need to worry.",
+    unit: 6
+  },
+  {
+    kanji: "抽象的",
+    kana: "ちゅうしょうてき",
+    english: "abstract",
+    explanation: "Refers to something that is abstract or not concrete, often used in the context of ideas or concepts.",
+    example: "この文章は{抽象的}だから、何を伝えたいのかはっきりわからない。\nThis sentence is abstract, so it's not clear what it wants to convey.",
+    unit: 6
+  },
+  {
+    kanji: "具体的",
+    kana: "ぐたいてき",
+    english: "concrete・specific",
+    explanation: "Refers to something that is concrete, specific, or tangible, often used in contrast to abstract.",
+    example: "彼の説明は{具体的}でわかりやすかった。\nHis explanation was concrete and easy to understand.",
+    unit: 6
+  },
+  {
+    kanji: "大げさ",
+    kana: "おおげさ",
+    english: "exaggerated・overstated",
+    explanation: "Refers to something that is exaggerated or overstated, often making a situation seem more important or serious than it actually is.",
+    example: "ちょっと転んで血が出ただけなのに、病院に行くなんて{大げさ}ですよ。\nIt's exaggerated to go to the hospital just because you fell and bled a little.",
+    unit: 6
+  },
+  {
+    kanji: "強引",
+    kana: "ごういん",
+    english: "forceful・overbearing",
+    explanation: "Refers to someone who is forceful or overbearing, often pushing their own agenda without regard for others.",
+    example: "嫌がる息子を{強引}に病院に連れて行った。\nI forcefully took my reluctant son to the hospital.",
+    unit: 6
+  },
+  {
+    kanji: "短気",
+    kana: "たんき",
+    english: "short-tempered・impatient",
+    explanation: "Refers to someone who gets angry easily or is impatient.",
+    example: "店長は{短気な}人なので、忙しいとすぐに怒りだす。\nThe manager is short-tempered and gets angry quickly when busy.",
+    unit: 6
+  },
+  {
+    kanji: "一斉に",
+    kana: "いっせいに",
+    english: "simultaneously・all at once",
+    explanation: "Refers to something happening simultaneously or all at once.",
+    example: "森に入ったとたん、鳥が{一斉に}飛び立った。\nAs soon as I entered the forest, the birds flew away all at once.",
+    unit: 6
+  },
+  {
+    kanji: "とっくに",
+    kana: "とっくに",
+    english: "long ago・already",
+    explanation: "Refers to something that happened a long time ago or has already been done.",
+    example: "母；「ゲームをする前に、今日の宿題を終わらせなさい。」\n子；「今日の宿題はもう{とっくに}終わらせたよ。」\nMother: \"Finish today's homework before playing games.\"\nChild: \"I've already finished today's homework long ago.\"",
+    unit: 6
+  },
+  {
+    kanji: "一気に",
+    kana: "いっきに",
+    english: "all at once・in one go",
+    explanation: "Refers to doing something all at once or in one go, without stopping.",
+    example: "ドラマがおもしろかったので、最終話まで{一気に}観てしまった。\nThe drama was interesting, so I watched it all at once until the last episode.",
+    unit: 6
+  },
+  {
+    kanji: "一体",
+    kana: "いったい",
+    english: "what on earth・what in the world",
+    explanation: "Used to emphasize a question, often expressing surprise or confusion about something.",
+    example: "こんな遅くまで教室にいるなんて、君たちは{一体}何をしていたんだ。",
+    unit: 6
+  },
+  {
+    kanji: "いずれ",
+    kana: "いずれ",
+    english: "eventually・sooner or later",
+    explanation: "Refers to something that will happen eventually or sooner or later.",
+    example: "今は家族と暮らしているが、{いずれ}一人暮らしをしようと思っている。\nI am currently living with my family, but I plan to live alone eventually.",
+    unit: 6
+  },
+  {
+    kanji: "あいにく",
+    kana: "あいにく",
+    english: "unfortunately・regrettably",
+    explanation: "Used to express regret or apology when something does not go as planned or hoped.",
+    example: "今日は天気が良かったらピクニックに行こうと思っていたのに、{あいにく}の雨になってしまった。\nI was thinking of going on a picnic if the weather was good today, but unfortunately, it turned out to be rainy.",
+    unit: 6
+  },
+  {
+    kanji: "あえて",
+    kana: "あえて",
+    english: "dare to・intentionally",
+    explanation: "Used when someone does something intentionally or dares to do something, often against the norm or expectation.",
+    example: "便利な世の中だが、たまにキャンプに行って{あえて}不便さを体験するのも良い。\nIt's a convenient world, but sometimes it's good to go camping and dare to experience inconvenience.",
+    unit: 6
+  },
+  {
+    kanji: "かつて",
+    kana: "かつて",
+    english: "once・formerly",
+    explanation: "Refers to something that happened in the past or used to be the case.",
+    example: "この街は今は人口が減って何もないが、{かつて}は工業都市としてにぎやかな街だった。\nThis town has a declining population and nothing much now, but it used to be a bustling industrial city.",
+    unit: 6
+  },
+  {
+    kanji: "大人しい",
+    kana: "おとなしい",
+    english: "quiet・docile",
+    explanation: "Refers to someone who is quiet, gentle, or well-behaved.",
+    example: "彼はおとなしい性格で、あまり怒ることがない。\nHe has a quiet personality and rarely gets angry.",
+    unit: 6
+  },
+  {
+    kanji: "太い",
+    kana: "ふとい",
+    english: "thick・fat",
+    explanation: "Refers to something that is thick or fat in size or diameter.",
+    example: "この木の幹はとても{太い}です。\nThe trunk of this tree is very thick.",
+    unit: 6
+  },
+  {
+    kanji: "厚い",
+    kana: "あつい",
+    english: "thick・deep",
+    explanation: "Refers to something that is thick or deep, often used for objects or feelings.",
+    example: "彼は友達に対して{厚い}信頼を持っている。\nHe has deep trust in his friends.",
+    unit: 6
+  },
+  {
+    kanji: "易しい",
+    kana: "やさしい",
+    english: "easy・simple",
+    explanation: "Refers to something that is easy or simple, without difficulty.",
+    example: "この問題は{易しく}て、すぐに解けた。\nThis problem was easy and I solved it quickly.",
+    unit: 6
+  },
+  {
+    kanji: "快い",
+    kana: "こころよい",
+    english: "pleasant・agreeable",
+    explanation: "Refers to something that is pleasant, agreeable, or comfortable.",
+    example: "{快い}風が部屋に入ってきて、気持ちがいい。\nA pleasant breeze comes into the room, and it feels good.",
+    unit: 6
+  },
+  {
+    kanji: "等しい",
+    kana: "ひとしい",
+    english: "equal・equivalent",
+    explanation: "Refers to things that are equal or equivalent in value, amount, or status.",
+    example: "彼の意見は私の意見と{等しい}。\nHis opinion is equal to mine.",
+    unit: 6
+  },
+  {
+    kanji: "温い",
+    kana: "ぬるい",
+    english: "lukewarm・tepid",
+    explanation: "Refers to a temperature that is lukewarm or tepid, neither hot nor cold.",
+    example: "このお茶は{ぬるく}て飲みにくい。\nThis tea is lukewarm and hard to drink.",
+    unit: 6
+  },
+  {
+    kanji: "弱々しい",
+    kana: "よわよわしい",
+    english: "weak・feeble",
+    explanation: "Refers to someone or something that is weak or feeble in strength or appearance.",
+    example: "彼は病気で{弱々しく}歩いていた。\nHe was walking weakly due to illness.",
+    unit: 6
+  },
+  {
+    kanji: "そそっかしい",
+    kana: "そそっかしい",
+    english: "careless・thoughtless",
+    explanation: "Refers to someone who is careless or thoughtless, often making mistakes due to lack of attention.",
+    example: "彼はそそっかしくて、よく物を壊す。\nHe is careless and often breaks things.",
+    unit: 6
+  },
+  {
+    kanji: "あわただしい",
+    kana: "あわただしい",
+    english: "busy・hectic",
+    explanation: "Refers to a situation that is busy or hectic, often involving a lot of activity or movement.",
+    example: "朝からあわただしく準備をして、出かけた。\nI hurriedly prepared from the morning and went out.",
+    unit: 6
+  },
+  {
+    kanji: "膨大な",
+    kana: "ぼうだいな",
+    english: "enormous・vast",
+    explanation: "Refers to something that is enormous or vast in quantity or size.",
+    example: "{膨大な}データを分析するのは大変だ。\nAnalyzing enormous data is difficult.",
+    unit: 6
+  },
+  {
+    kanji: "民主的",
+    kana: "みんしゅてき",
+    english: "democratic",
+    explanation: "Refers to something that is democratic, relating to or supporting democracy.",
+    example: "{民主的な}社会では、すべての人が平等な権利を持っている。\nIn a democratic society, everyone has equal rights.",
+    unit: 6
+  },
+  {
+    kanji: "客観的",
+    kana: "きゃっかんてき",
+    english: "objective",
+    explanation: "Refers to something that is objective, based on facts rather than feelings or opinions.",
+    example: "{客観的な}視点で問題を考えることが重要だ。\nIt is important to think about problems from an objective perspective.",
+    unit: 6
+  },
+  {
+    kanji: "相対的",
+    kana: "そうたいてき",
+    english: "relative",
+    explanation: "Refers to something that is relative, considered in relation or in proportion to something else.",
+    example: "幸福は{相対的な}もので、人それぞれ感じ方が違う。\nHappiness is relative, and each person feels it differently.",
+    unit: 6
+  },
+  {
+    kanji: "無力",
+    kana: "むりょく",
+    english: "powerless・helpless",
+    explanation: "Refers to a state of being powerless or helpless, lacking strength or ability.",
+    example: "彼は病気で{無力}になってしまった。\nHe became powerless due to illness.",
+    unit: 6
+  },
+  {
+    kanji: "無縁",
+    kana: "むえん",
+    english: "unrelated・unconnected",
+    explanation: "Refers to something that is unrelated or unconnected, having no relation or connection.",
+    example: "彼はその事件とは{無縁}だ。\nHe is unrelated to that incident.",
+    unit: 6
+  },
+  {
+    kanji: "微か",
+    kana: "かすか",
+    english: "faint・slight",
+    explanation: "Refers to something that is faint or slight, barely perceptible.",
+    example: "{かすかな}音が聞こえた。\nI heard a faint sound.",
+    unit: 6
+  },
+  {
+    kanji: "細やか",
+    kana: "こまやか",
+    english: "detailed・meticulous",
+    explanation: "Refers to something that is detailed or meticulous, showing careful attention to detail.",
+    example: "彼は{こまやかな}気配りができる人だ。\nHe is a person who can pay detailed attention.",
+    unit: 6
+  },
+  {
+    kanji: "なだらか",
+    kana: "なだらか",
+    english: "gentle・gradual",
+    explanation: "Refers to something that is gentle or gradual, often describing slopes or changes.",
+    example: "{なだらかな}丘が広がっている。\nGentle hills are spreading out.",
+    unit: 6
+  },
+  {
+    kanji: "象徴的",
+    kana: "しょうちょうてき",
+    english: "symbolic",
+    explanation: "Refers to something that is symbolic, representing or standing for something else.",
+    example: "鳩は平和の{象徴的な}動物だ。\nThe dove is a symbolic animal of peace.",
+    unit: 6
+  },
+  {
+    kanji: "開放的",
+    kana: "かいほうてき",
+    english: "open・liberal",
+    explanation: "Refers to something that is open or liberal, often describing attitudes or environments that are free and unrestricted.",
+    example: "彼は{開放的な}性格で、誰とでもすぐに仲良くなれる。\nHe has an open personality and can quickly become friends with anyone.",
+    unit: 6
+  },
+  {
+    kanji: "穏やか",
+    kana: "おだやか",
+    english: "calm・gentle",
+    explanation: "Refers to something that is calm or gentle, often describing weather, personality, or atmosphere.",
+    example: "今日は{おだやかな}天気で、散歩にぴったりだ。\nToday is calm weather, perfect for a walk.",
+    unit: 6
+  },
+  {
+    kanji: "哀れ",
+    kana: "あわれ",
+    english: "pathetic・pitiful",
+    explanation: "Refers to something that evokes a feeling of pity or sadness.",
+    example: "彼の話を聞いて、{あわれ}に思った。\nI felt pity when I heard his story.",
+    unit: 6
+  },
+  {
+    kanji: "比較的",
+    kana: "ひかくてき",
+    english: "comparatively・relatively",
+    explanation: "Refers to something that is comparative or relative in nature.",
+    example: "この問題は{比較的}簡単だ。\nThis problem is comparatively easy.",
+    unit: 6
+  },
+  {
+    kanji: "積極的",
+    kana: "せっきょくてき",
+    english: "positive・active",
+    explanation: "Refers to someone who is positive or active, taking initiative and being proactive.",
+    example: "彼は{積極的}に仕事に取り組んでいる。\nHe is actively working on his tasks.",
+    unit: 6
+  },
+  {
+    kanji: "基礎的",
+    kana: "きそてき",
+    english: "basic・fundamental",
+    explanation: "Refers to something that is basic or fundamental, forming the foundation or basis of something.",
+    example: "{基礎的な}知識がなければ、この問題は解けない。\nWithout basic knowledge, you cannot solve this problem.",
+    unit: 6
+  },
+  {
+    kanji: "大まか",
+    kana: "おおまか",
+    english: "rough・general",
+    explanation: "Refers to something that is rough or general, not detailed or precise.",
+    example: "{大まかな}計画を立ててから、細かい部分を詰めていく。\nFirst, make a rough plan, then work out the details.",
+    unit: 6
+  },
+  {
+    kanji: "頑丈",
+    kana: "がんじょう",
+    english: "sturdy・robust",
+    explanation: "Refers to something that is sturdy or robust, able to withstand pressure or damage.",
+    example: "この机はとても{頑丈}で、長持ちする。\nThis desk is very sturdy and will last a long time.",
+    unit: 6
+  },
+  {
+    kanji: "有力",
+    kana: "ゆうりょく",
+    english: "powerful・influential",
+    explanation: "Refers to someone or something that is powerful or influential, having a strong effect or control.",
+    example: "彼は{有力}な政治家だ。\nHe is a powerful politician.",
+    unit: 6
+  },
+  {
+    kanji: "膨大",
+    kana: "ぼうだい",
+    english: "enormous・vast",
+    explanation: "Refers to something that is enormous or vast in quantity or size.",
+    example: "{膨大な}データを分析する。\nAnalyze enormous amounts of data.",
+    unit: 6
+  },
+  {
+    kanji: "気楽",
+    kana: "きらく",
+    english: "carefree・easygoing",
+    explanation: "Refers to a state of being carefree or easygoing, without worries or stress.",
+    example: "{気楽な}気持ちで旅行を楽しんだ。\nI enjoyed the trip with a carefree feeling.",
+    unit: 6
+  },
+  {
+    kanji: "不満",
+    kana: "ふまん",
+    english: "dissatisfaction・discontent",
+    explanation: "Refers to a feeling of dissatisfaction or discontent with a situation or condition.",
+    example: "彼は仕事に{不満}を持っている。\nHe is dissatisfied with his job.",
+    unit: 6
+  },
+  {
+    kanji: "陽気",
+    kana: "ようき",
+    english: "cheerful・lively",
+    explanation: "Refers to a cheerful or lively atmosphere or mood.",
+    example: "彼はいつも{陽気}で、周りの人を元気にする。\nHe is always cheerful and energizes those around him.",
+    unit: 6
+  },
+  {
+    kanji: "存分に",
+    kana: "ぞんぶんに",
+    english: "to one's heart's content・fully",
+    explanation: "Refers to doing something to one's heart's content or fully without holding back.",
+    example: "休日は{存分に}休んでリフレッシュしたい。\nI want to rest fully and refresh myself on my day off.",
+    unit: 6
+  },
+  {
+    kanji: "直ちに",
+    kana: "ただちに",
+    english: "immediately・at once",
+    explanation: "Refers to something happening immediately or without delay.",
+    example: "事故が起きたら、{直ちに}警察に連絡してください。\nIf an accident occurs, please contact the police immediately.",
+    unit: 6
+  },
+  {
+    kanji: "要するに",
+    kana: "ようするに",
+    english: "in short・to sum up",
+    explanation: "Used to summarize or conclude something in a concise manner.",
+    example: "{要するに}、彼は来ないということだ。\nIn short, it means he is not coming.",
+    unit: 6
+  },
+  {
+    kanji: "まさか",
+    kana: "まさか",
+    english: "no way・impossible",
+    explanation: "Used to express disbelief or surprise at something unexpected or unlikely.",
+    example: "{まさか}彼がそんなことをするとは思わなかった。\nI never thought he would do such a thing.",
+    unit: 6
+  },
+  {
+    kanji: "まるで",
+    kana: "まるで",
+    english: "as if・just like",
+    explanation: "Used to describe something that appears to be like something else, often used for similes.",
+    example: "彼の話は{まるで}映画のようだった。\nHis story was just like a movie.",
+    unit: 6
+  },
+  {
+    kanji: "稀に",
+    kana: "まれに",
+    english: "rarely・seldom",
+    explanation: "Used to describe something that happens rarely or infrequently.",
+    example: "彼は{まれに}しか遅刻しない。\nHe rarely arrives late.",
+    unit: 6
+  },
+  {
+    kanji: "はるかに",
+    kana: "はるかに",
+    english: "far more・much more",
+    explanation: "Used to indicate a much greater degree or extent compared to something else.",
+    example: "彼の成績は去年より{はるかに}良くなった。\nHis grades have improved far more than last year.",
+    unit: 6
+  },
+  {
+    kanji: "着々と",
+    kana: "ちゃくちゃくと",
+    english: "steadily・progressively",
+    explanation: "Refers to something progressing steadily or without interruption.",
+    example: "プロジェクトは{着々と}進んでいる。\nThe project is progressing steadily.",
+    unit: 6
+  },
+  {
+    kanji: "今一つ",
+    kana: "いまひとつ",
+    english: "not quite・one more",
+    explanation: "Used to describe something that is not quite satisfactory or lacking in some way.",
+    example: "この料理は美味しいけど、{今一つ}パンチが足りない。\nThis dish is delicious, but it lacks a bit of punch.",
+    unit: 6
+  },
+  {
+    kanji: "誠に",
+    kana: "まことに",
+    english: "truly・sincerely",
+    explanation: "Used to express sincerity or truthfulness, often in formal contexts.",
+    example: "{誠に}ありがとうございます。\nThank you very much.",
+    unit: 6
+  },
+  {
+    kanji: "あらかじめ",
+    kana: "あらかじめ",
+    english: "in advance・beforehand",
+    explanation: "Refers to doing something in advance or beforehand, before a particular time or event.",
+    example: "旅行の計画は{あらかじめ}立てておくべきだ。\nYou should make travel plans in advance.",
+    unit: 6
+  },
+  {
+    kanji: "いつの間にか",
+    kana: "いつのまにか",
+    english: "before one knows it・unnoticed",
+    explanation: "Refers to something happening without one realizing it, often unexpectedly.",
+    example: "気がついたら、{いつの間にか}夜になっていた。\nBefore I knew it, it had become night.",
+    unit: 6
+  },
+  {
+    kanji: "よほど",
+    kana: "よほど",
+    english: "considerably・to a great extent",
+    explanation: "Used to indicate a considerable degree or extent, often implying something is much more than usual.",
+    example: "彼は{よほど}疲れているようだ。\nHe seems to be considerably tired.",
+    unit: 6
+  },
+  {
+    kanji: "いわば",
+    kana: "いわば",
+    english: "so to speak・as it were",
+    explanation: "Used to indicate that something is being described in a figurative or metaphorical way.",
+    example: "彼は、{いわば}会社の顔だ。\nHe is, so to speak, the face of the company.",
+    unit: 6
+  },
+  {
+    kanji: "ふと",
+    kana: "ふと",
+    english: "suddenly・unexpectedly",
+    explanation: "Used to describe something happening suddenly or unexpectedly, often without intention.",
+    example: "{ふと}窓の外を見ると、雪が降っていた。\nWhen I suddenly looked out the window, it was snowing.",
+    unit: 6
+  },
+  {
+    kanji: "ただちに",
+    kana: "ただちに",
+    english: "immediately・at once",
+    explanation: "Used to indicate that something should be done immediately or without delay.",
+    example: "事故が起きたら、{ただちに}警察に連絡してください。\nIf an accident occurs, please contact the police immediately.",
+    unit: 6
+  },
+  {
+    kanji: "おそらく",
+    kana: "おそらく",
+    english: "probably・likely",
+    explanation: "Used to indicate that something is probable or likely to happen.",
+    example: "彼は{おそらく}来るでしょう。\nHe will probably come.",
+    unit: 6
+  },
+  {
+    kanji: "ともかく",
+    kana: "ともかく",
+    english: "anyway・in any case",
+    explanation: "Used to indicate that something is true or should be done regardless of other factors.",
+    example: "結果は{ともかく}、まずは挑戦してみることが大切だ。\nRegardless of the result, it is important to try first.",
+    unit: 6
+  },
+  {
+    kanji: "まったく",
+    kana: "まったく",
+    english: "entirely・completely",
+    explanation: "Used to emphasize the totality or completeness of something, often in a negative context.",
+    example: "彼の話は{まったく}理解できなかった。\nI couldn't understand his story at all.",
+    unit: 6
+  },
+  {
+    kanji: "せめて",
+    kana: "せめて",
+    english: "at least・if nothing else",
+    explanation: "Used to express a minimum requirement or a wish for something to happen at least.",
+    example: "{せめて}一言謝ってほしい。\nI want you to at least say sorry.",
+    unit: 6
+  },
+  {
+    kanji: "さらに",
+    kana: "さらに",
+    english: "furthermore・in addition",
+    explanation: "Used to indicate an additional point or to emphasize something more than what was previously mentioned.",
+    example: "彼は{さらに}努力を重ねて、成功を収めた。\nHe made further efforts and achieved success.",
+    unit: 6
+  },
+  {
+    kanji: "仮に",
+    kana: "かりに",
+    english: "supposing・if",
+    explanation: "Used to introduce a hypothetical situation or condition.",
+    example: "{仮に}雨が降っても、試合は行われます。\nSupposing it rains, the game will still be held.",
+    unit: 6
+  },
+  {
+    kanji: "はるか",
+    kana: "はるか",
+    english: "far・distant",
+    explanation: "Used to describe something that is far away in distance or time.",
+    example: "富士山は東京から{はるか}遠くに見える。\nMount Fuji can be seen far away from Tokyo.",
+    unit: 6
+  },
+  {
+    kanji: "うきうき",
+    kana: "うきうき",
+    english: "excited・cheerful",
+    explanation: "Refers to a feeling of excitement or cheerfulness, often in anticipation of something enjoyable.",
+    example: "明日は待ちに待った旅行の日なので、{うきうき}している。\nTomorrow is the long-awaited day of the trip, so I am feeling excited.",
+    unit: 6
+  },
+  {
+    kanji: "ぎゅうぎゅう",
+    kana: "ぎゅうぎゅう",
+    english: "packed・crammed",
+    explanation: "Refers to a situation where people or things are packed tightly together with no space.",
+    example: "通勤時間の電車の中は人が多くて{ぎゅうぎゅう}だ。\nThe train during rush hour is packed with people.",
+    unit: 6
+  },
+  {
+    kanji: "ぴかぴか",
+    kana: "ぴかぴか",
+    english: "shiny・sparkling",
+    explanation: "Refers to something that is shiny or sparkling, often clean or polished.",
+    example: "ずっとふいていなかった窓を{ぴかぴか}になるまで磨いた。\nI polished the window that hadn't been wiped for a long time until it was sparkling clean.",
+    unit: 6
+  },
+  {
+    kanji: "ごちゃごちゃ",
+    kana: "ごちゃごちゃ",
+    english: "cluttered・messy",
+    explanation: "Refers to a situation where things are cluttered or messy, often disorganized.",
+    example: "同時にたくさんの仕事を頼まれると、頭の中が{ごちゃごちゃ}してしまう。\nWhen I'm asked to do a lot of work at the same time, my mind gets cluttered.",
+    unit: 6
+  },
+  {
+    kanji: "うとうと",
+    kana: "うとうと",
+    english: "dozing off・nodding off",
+    explanation: "Refers to the state of lightly falling asleep, often unintentionally.",
+    example: "校長先生の話が長くて、集会中に{うとうと}してしまった。\nThe principal's speech was long, and I dozed off during the assembly.",
+    unit: 6
+  },
+  {
+    kanji: "ばたばた",
+    kana: "ばたばた",
+    english: "busy・flustered",
+    explanation: "Refers to a state of being busy or flustered, often moving around quickly and noisily.",
+    example: "今日は一日中{ばたばた}していて、お昼ご飯を食べる時間もなかった。\nI was busy all day today and didn't even have time to eat lunch.",
+    unit: 6
+  },
+  {
+    kanji: "じっくり",
+    kana: "じっくり",
+    english: "carefully・thoroughly",
+    explanation: "Refers to doing something carefully and thoroughly without rushing.",
+    example: "将来の計画について、{じっくり}考える時間が必要だ。\nI need time to think carefully about my future plans.",
+    unit: 6
+  },
+  {
+    kanji: "ぱったり",
+    kana: "ぱったり",
+    english: "suddenly・abruptly",
+    explanation: "Refers to something stopping suddenly or abruptly, often unexpectedly.",
+    example: "先週まで山田くんから何度もしつこく連絡が来ていたが、今週に入って{ぱったり}と連絡が来なくなった。\nUntil last week, Yamada kept contacting me persistently, but this week, the contact suddenly stopped.",
+    unit: 6
+  },
+  {
+    kanji: "ばっちり",
+    kana: "ばっちり",
+    english: "perfectly・flawlessly",
+    explanation: "Refers to something done perfectly or flawlessly, without any mistakes.",
+    example: "何度もくりかえし復習したので、明日のテストは{ばっちり}できるはずだ。\nI reviewed many times, so I should be able to do perfectly on tomorrow's test.",
+    unit: 6
+  },
+  {
+    kanji: "はらはら",
+    kana: "はらはら",
+    english: "nervous・anxious",
+    explanation: "Refers to a feeling of nervousness or anxiety, often in anticipation of something.",
+    example: "試合の結果が気になって、ずっと{はらはら}していた。\nI was nervous the whole time because I was worried about the outcome of the match.",
+    unit: 6
+  },
+  {
+    kanji: "ざわざわ",
+    kana: "ざわざわ",
+    english: "noisy・rustling",
+    explanation: "Refers to a noisy or rustling sound, often from a crowd or leaves.",
+    example: "会場が{ざわざわ}していて、スピーチが聞こえなかった。\nThe venue was noisy, and I couldn't hear the speech.",
+    unit: 6
+  },
+  {
+    kanji: "ぎりぎり",
+    kana: "ぎりぎり",
+    english: "just barely・at the last moment",
+    explanation: "Refers to something happening just barely or at the last possible moment.",
+    example: "試験に{ぎりぎり}間に合った。\nI just barely made it in time for the exam.",
+    unit: 6
+  },
+  {
+    kanji: "ばらばら",
+    kana: "ばらばら",
+    english: "scattered・in pieces",
+    explanation: "Refers to things being scattered or separated into pieces, often in a disorderly manner.",
+    example: "書類が机の上に{ばらばら}に置かれていて、どれが重要かわからなかった。\nThe documents were scattered on the desk, and I couldn't tell which ones were important.",
+    unit: 6
+  },
+  {
+    kanji: "ばりばり",
+    kana: "ばりばり",
+    english: "energetically・vigorously",
+    explanation: "Refers to doing something energetically or vigorously, often with a strong and active attitude.",
+    example: "彼は仕事を{ばりばり}こなしている。\nHe is handling his work energetically.",
+    unit: 6
+  },
+  {
+    kanji: "きらきら",
+    kana: "きらきら",
+    english: "sparkling・twinkling",
+    explanation: "Refers to something that sparkles or twinkles, often with a bright and shining appearance.",
+    example: "夜空に星が{きらきら}と輝いている。\nThe stars are sparkling in the night sky.",
+    unit: 6
+  },
+  {
+    kanji: "いきいき",
+    kana: "いきいき",
+    english: "lively・vivid",
+    explanation: "Refers to something or someone that is lively, vivid, or full of energy.",
+    example: "子供たちは公園で{いきいき}と遊んでいる。\nThe children are playing lively in the park.",
+    unit: 6
+  },
+  {
+    kanji: "ちかちか",
+    kana: "ちかちか",
+    english: "flickering・dazzling",
+    explanation: "Refers to a flickering or dazzling light, often causing discomfort or difficulty in seeing clearly.",
+    example: "蛍光灯が{ちかちか}していて、目が疲れる。\nThe fluorescent light is flickering, and it makes my eyes tired.",
+    unit: 6
+  },
+  {
+    kanji: "じたばた",
+    kana: "じたばた",
+    english: "struggling・floundering",
+    explanation: "Refers to struggling or floundering, often in a desperate or frantic manner.",
+    example: "彼は問題を解決しようと{じたばた}しているが、なかなかうまくいかない。\nHe is struggling to solve the problem, but it's not going well.",
+    unit: 6
+  },
+  {
+    kanji: "だぶだぶ",
+    kana: "だぶだぶ",
+    english: "baggy・loose",
+    explanation: "Refers to something that is baggy or loose, often used to describe clothing that is too large.",
+    example: "このシャツは{だぶだぶ}で、サイズが合っていない。\nThis shirt is baggy and doesn't fit.",
+    unit: 6
+  },
+  {
+    kanji: "ほかほか",
+    kana: "ほかほか",
+    english: "warm・steaming",
+    explanation: "Refers to something that is warm or steaming, often used to describe food or a cozy atmosphere.",
+    example: "お風呂から出たら、体が{ほかほか}して気持ちよかった。\nAfter getting out of the bath, my body felt warm and comfortable.",
+    unit: 6
+  },
+  {
+    kanji: "ぼろぼろ",
+    kana: "ぼろぼろ",
+    english: "worn out・tattered",
+    explanation: "Refers to something that is worn out, tattered, or in a state of disrepair.",
+    example: "古い服が{ぼろぼろ}になってしまった。\nMy old clothes have become worn out.",
+    unit: 6
+  },
+  {
+    kanji: "きょろきょろ",
+    kana: "きょろきょろ",
+    english: "looking around restlessly・glancing around",
+    explanation: "Refers to looking around restlessly or glancing around, often with curiosity or nervousness.",
+    example: "彼は初めての場所で{きょろきょろ}していた。\nHe was looking around restlessly in an unfamiliar place.",
+    unit: 6
+  },
+  {
+    kanji: "びっしょり",
+    kana: "びっしょり",
+    english: "soaking wet・drenched",
+    explanation: "Refers to being soaking wet or drenched, often due to rain or sweat.",
+    example: "雨に降られて、服が{びっしょり}濡れてしまった。\nI got caught in the rain and my clothes are soaking wet.",
+    unit: 6
+  },
+  {
+    kanji: "ぐっすり",
+    kana: "ぐっすり",
+    english: "soundly・deeply (sleep)",
+    explanation: "Refers to sleeping soundly or deeply without interruption.",
+    example: "昨夜は疲れていて、{ぐっすり}眠れた。\nI was tired last night and slept soundly.",
+    unit: 6
+  },
+  {
+    kanji: "うっかり",
+    kana: "うっかり",
+    english: "carelessly・inadvertently",
+    explanation: "Refers to doing something carelessly or inadvertently, often leading to a mistake or oversight.",
+    example: "{うっかり}鍵を忘れてしまった。\nI carelessly forgot my keys.",
+    unit: 6
+  },
+  {
+    kanji: "ばっさり",
+    kana: "ばっさり",
+    english: "sharply・decisively",
+    explanation: "Refers to doing something sharply or decisively, often used to describe cutting or trimming something cleanly.",
+    example: "髪を{ばっさり}切った。\nI cut my hair sharply.",
+    unit: 6
+  },
+  {
+    kanji: "きっちり",
+    kana: "きっちり",
+    english: "precisely・exactly・neatly",
+    explanation: "Refers to doing something precisely, exactly, or neatly without any mistakes or gaps.",
+    example: "彼は仕事を{きっちり}とこなす。\nHe does his work precisely.",
+    unit: 6
+  },
+  {
+    kanji: "しょんぼり",
+    kana: "しょんぼり",
+    english: "dejectedly・dispiritedly",
+    explanation: "Refers to feeling dejected, dispirited, or downhearted, often after a disappointment or failure.",
+    example: "試験に落ちて、{しょんぼり}している。\nI am feeling downhearted after failing the exam.",
+    unit: 6
+  },
+  {
+    kanji: "ぎっしり",
+    kana: "ぎっしり",
+    english: "tightly・densely・crammed",
+    explanation: "Refers to something that is tightly packed, densely filled, or crammed without any gaps.",
+    example: "箱の中に本が{ぎっしり}詰まっている。\nThe box is tightly packed with books.",
+    unit: 6
+  },
+  {
+    kanji: "すっかり",
+    kana: "すっかり",
+    english: "completely・entirely",
+    explanation: "Refers to something that is completely or entirely done or changed.",
+    example: "彼は{すっかり}元気になった。\nHe has completely recovered.",
+    unit: 6
+  },
   // Unit 9
   {
     kanji: "ずるい",
