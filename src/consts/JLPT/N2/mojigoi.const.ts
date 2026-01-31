@@ -1070,6 +1070,7 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     example: "この施設は{常時}監視カメラが作動している。\nThis facility has surveillance cameras operating at all times.",
     unit: 1
   },
+  // Unit 2
   {
     kanji: "迷う",
     kana: "まよう",
@@ -1095,14 +1096,6 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     unit: 2
   },
   {
-    kanji: "乱れる",
-    kana: "みだれる",
-    english: "to be disordered・to be disturbed・to be disrupted",
-    explanation: "To become disordered, disturbed, or disrupted, often referring to physical or mental states.",
-    example: "食生活の{乱れ}は、様々な体調不良を引き起こす。\nDisorder in eating habits causes various health problems.",
-    unit: 2
-  },
-  {
     kanji: "足腰",
     kana: "あしこし",
     english: "legs and lower back",
@@ -1116,14 +1109,6 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "commercial sale・marketed",
     explanation: "Refers to products that are sold commercially or available on the market.",
     example: "かぜをひいたので、{市販}の薬を飲んだ。\nI caught a cold, so I took an over-the-counter medicine.",
-    unit: 2
-  },
-  {
-    kanji: "距離",
-    kana: "きょり",
-    english: "distance",
-    explanation: "Refers to the distance between two points or places.",
-    example: "家から学校までの{距離}はどのくらいですか。\nHow far is the distance from home to school?",
     unit: 2
   },
   {
@@ -1172,14 +1157,6 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "environment・surroundings",
     explanation: "Refers to the surrounding conditions or environment in which a person, animal, or plant lives or operates.",
     example: "勉強に集中できる{環境}を整える。\nI create an environment where I can concentrate on studying.",
-    unit: 2
-  },
-  {
-    kanji: "栄養",
-    kana: "えいよう",
-    english: "nutrition・nourishment",
-    explanation: "Refers to the substances that provide nourishment essential for growth and the maintenance of life.",
-    example: "{栄養}をたくさんとって、たくさん寝ましょう。\nLet's take plenty of nutrition and get plenty of sleep.",
     unit: 2
   },
   {
@@ -1471,14 +1448,6 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     unit: 2
   },
   {
-    kanji: "求める",
-    kana: "もとめる",
-    english: "to request・to demand",
-    explanation: "Refers to the act of requesting or demanding something from someone.",
-    example: "近くの人に助けを{求めた}。\nI asked for help from a nearby person.",
-    unit: 2
-  },
-  {
     kanji: "減らす",
     kana: "へらす",
     english: "to reduce・to decrease",
@@ -1629,5 +1598,1468 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     explanation: "Refers to something that is temporary or provisional.",
     example: "{仮}に今回うまくいったとしても、次も成功するとは限らない。\nEven if it goes well this time temporarily, it does not mean that it will succeed next time.",
     unit: 2
+  },
+  // Unit 3
+  {
+    kanji: "旧",
+    kana: "きゅう",
+    english: "old・former",
+    explanation: "Refers to something that is old or former.",
+    example: "職員会議で{旧}校舎を取り壊すことが決まった。\nIt was decided at the staff meeting to demolish the old school building.",
+    unit: 3
+  },
+  {
+    kanji: "主",
+    kana: "しゅ",
+    english: "main・principal",
+    explanation: "Refers to something that is main or principal.",
+    example: "卵の{主}成分はタンパク質である。\nThe main component of eggs is protein.",
+    unit: 3
+  },
+  {
+    kanji: "再",
+    kana: "さい",
+    english: "again・re-",
+    explanation: "Refers to something happening again or being repeated.",
+    example: "レポートを修正して{再}提出してください。\nPlease revise and resubmit the report.",
+    unit: 3
+  },
+  {
+    kanji: "未",
+    kana: "み",
+    english: "not yet・un-",
+    explanation: "Refers to something that has not happened yet or is incomplete.",
+    example: "この仕事は{未}経験の方でも簡単にできる仕事です。\nThis job can be easily done even by those with no experience.",
+    unit: 3
+  },
+  {
+    kanji: "好",
+    kana: "こう",
+    english: "favorable・good",
+    explanation: "Refers to something that is favorable or good.",
+    example: "彼が遅刻してきたことは、私にとって{好}都合だった。\nHis being late was convenient for me.",
+    unit: 3
+  },
+  {
+    kanji: "準",
+    kana: "じゅん",
+    english: "semi-・quasi-・preparatory",
+    explanation: "Refers to something that is preparatory or quasi- in nature.",
+    example: "{準}決勝で去年の優勝チームと戦うことになっている。\nWe are scheduled to play against last year's champion team in the semifinals.",
+    unit: 3
+  },
+  {
+    kanji: "総",
+    kana: "そう",
+    english: "total・general",
+    explanation: "Refers to something that is total or general in nature.",
+    example: "この村の{総}人口は約1000人だ。\nThe total population of this village is about 1,000 people.",
+    unit: 3
+  },
+  {
+    kanji: "非",
+    kana: "ひ",
+    english: "non-・un-・in-",
+    explanation: "Refers to something that is negative or opposite in nature.",
+    example: "この動画は昨日から{非}公開になっている。\nThis video has been private since yesterday.",
+    unit: 3
+  },
+  {
+    kanji: "現",
+    kana: "げん",
+    english: "present・current",
+    explanation: "Refers to something that is present or current.",
+    example: "{現}段階ではイベントを中止する予定です。\nAt the present stage, we plan to cancel the event.",
+    unit: 3
+  },
+  {
+    kanji: "全自動",
+    kana: "ぜんじどう",
+    english: "fully automatic",
+    explanation: "Refers to a machine or system that operates automatically without manual intervention.",
+    example: "{全自動}の洗濯機を買ってから、家事が楽になった。\nSince I bought a fully automatic washing machine, housework has become easier.",
+    unit: 3
+  },
+  {
+    kanji: "元",
+    kana: "もと",
+    english: "former・ex-",
+    explanation: "Refers to something that is former or previous in nature.",
+    example: "{元}講演会を開いてくださった。\nThe former speaker held a lecture.",
+    unit: 3
+  },
+  {
+    kanji: "薄",
+    kana: "うす",
+    english: "thin・weak",
+    explanation: "Refers to something that is thin or weak in intensity.",
+    example: "彼は{薄}笑いを浮かべてこちらを見ている。\nHe is looking at me with a faint smile.",
+    unit: 3
+  },
+  // Unit 4
+  {
+    kanji: "生計",
+    kana: "せいけい",
+    english: "livelihood",
+    explanation: "Refers to the means of living or making a living.",
+    example: "プロのサッカー選手になって{生計}を立てるのが私の夢だ。\nMy dream is to make a living as a professional soccer player.",
+    unit: 4
+  },
+  {
+    kanji: "專属",
+    kana: "せんぞく",
+    english: "exclusive",
+    explanation: "Refers to something that is exclusive or dedicated to a particular person or purpose.",
+    example: "芸能人には{専属}のマネージャーがいることが一般的だ。\nIt is common for celebrities to have an exclusive manager.",
+    unit: 4
+  },
+  {
+    kanji: "土台",
+    kana: "どだい",
+    english: "foundation・base",
+    explanation: "Refers to the foundation or base of something.",
+    example: "健康の{土台}を作るためには、食事と運動が欠かせない。\nTo build a foundation for health, diet and exercise are essential.",
+    unit: 4
+  },
+  {
+    kanji: "詳細",
+    kana: "しょうさい",
+    english: "details・particulars",
+    explanation: "Refers to the detailed information or particulars of something.",
+    example: "普察に事件の{詳細}について聞いた。\nI inquired about the details of the incident from the detective.",
+    unit: 4
+  },
+  {
+    kanji: "代理",
+    kana: "だいり",
+    english: "agency・representation",
+    explanation: "Refers to acting on behalf of someone else or representing them.",
+    example: "社長は体調不良で外出できないため、私が{代理}で会議に参加した。\nThe president was unable to attend due to illness, so I attended the meeting as a representative.",
+    unit: 4
+  },
+  {
+    kanji: "悪意",
+    kana: "あくい",
+    english: "malice・ill will",
+    explanation: "Refers to having a harmful or hostile intent towards others.",
+    example: "{悪意}を込めて言ったわけではないことはわかっているが、彼の一言で私は落ち込んだ。\nI understand that he didn't mean it with malice, but his one word made me feel down.",
+    unit: 4
+  },
+  {
+    kanji: "教養",
+    kana: "きょうよう",
+    english: "education・cultivation",
+    explanation: "Refers to the cultivation of knowledge, manners, and culture.",
+    example: "{教養}を身につけることは、いろんな人と関わる上で必要なことだと思う。\nI think acquiring education and culture is necessary for interacting with various people.",
+    unit: 4
+  },
+  {
+    kanji: "成果",
+    kana: "せいか",
+    english: "result・outcome",
+    explanation: "Refers to the result or outcome of an effort or action.",
+    example: "この会社では、仕事の{成果}に応じて給料を決めています。\nIn this company, salaries are determined based on work results.",
+    unit: 4
+  },
+  {
+    kanji: "実績",
+    kana: "じっせき",
+    english: "achievement・track record",
+    explanation: "Refers to the achievements or track record of a person or organization.",
+    example: "これまでの{実績}がなくても、やる気がある人を採用しよう。\nEven if you don't have a track record so far, let's hire people who are motivated.",
+    unit: 4
+  },
+  {
+    kanji: "後者",
+    kana: "こうしゃ",
+    english: "the latter",
+    explanation: "Refers to the second of two things or people mentioned.",
+    example: "頭の良さと性格の良さはどちらも大切だが、{後者}の方が人として大切な要素だと思う。\nBoth intelligence and good personality are important, but I think the latter is a more important element as a person.",
+    unit: 4
+  },
+  {
+    kanji: "仕様",
+    kana: "しよう",
+    english: "specifications・usage",
+    explanation: "Refers to the specifications or usage details of a product or system.",
+    example: "新作のスマホは、以前のものと{仕様}が少し変わっている。\nThe new smartphone's specifications are slightly different from the previous one.",
+    unit: 4
+  },
+  {
+    kanji: "欠陥",
+    kana: "けっかん",
+    english: "defect・flaw",
+    explanation: "Refers to a defect or flaw in a product or system.",
+    example: "あの問題があった会社は、{欠陥}がある商品を全て回収し返金すると発表した。\nThe company with the problem announced that it would recall and refund all defective products.",
+    unit: 4
+  },
+  {
+    kanji: "活気",
+    kana: "かっき",
+    english: "vitality・liveliness",
+    explanation: "Refers to the energy and liveliness of a place or person.",
+    example: "若い人は少ないがこの村の住人はみんな元気で、なんだか街に{活気}がある。\nThere are few young people, but all the residents of this village are energetic, and somehow the town is lively.",
+    unit: 4
+  },
+  {
+    kanji: "地元",
+    kana: "じもと",
+    english: "local area・hometown",
+    explanation: "Refers to the local area or hometown where someone lives or is from.",
+    example: "{地元}でとれた野菜を使った母の料理が一番おいしい。\nMy mother's cooking using vegetables from the local area is the most delicious.",
+    unit: 4
+  },
+  {
+    kanji: "生態",
+    kana: "せいたい",
+    english: "ecology",
+    explanation: "Refers to the relationships between living organisms and their environment.",
+    example: "大学でねずみの{生態}について研究しています。\nI am researching the ecology of mice at the university.",
+    unit: 4
+  },
+  {
+    kanji: "最善",
+    kana: "さいぜん",
+    english: "best・optimal",
+    explanation: "Refers to the best or most optimal course of action or solution.",
+    example: "問題が起きたときは、チームみんなで話し合って{最善}の解決方法を探すべきだ。\nWhen a problem occurs, the team should discuss and find the best solution together.",
+    unit: 4
+  },
+  {
+    kanji: "視界",
+    kana: "しかい",
+    english: "field of vision・visibility",
+    explanation: "Refers to the area that can be seen or the range of vision.",
+    example: "天気が悪い日は{視界}が悪く、事故が起きる可能性が高くなる。\nOn bad weather days, visibility is poor, increasing the likelihood of accidents.",
+    unit: 4
+  },
+  {
+    kanji: "段階",
+    kana: "だんかい",
+    english: "stage・phase",
+    explanation: "Refers to a particular stage or phase in a process or development.",
+    example: "入社して3か月の彼は、まだ一人で営業に回れる{段階}ではないと思います。\nI think he is not yet at the stage where he can go on sales rounds alone after joining the company for three months.",
+    unit: 4
+  },
+  {
+    kanji: "面会",
+    kana: "めんかい",
+    english: "meeting・interview",
+    explanation: "Refers to a meeting or interview, especially in a formal or official context.",
+    example: "新しいウイルスが流行しているため、病院での{面会}をお断りしています。\nDue to the spread of a new virus, hospital visits are being refused.",
+    unit: 4
+  },
+  {
+    kanji: "苦戦",
+    kana: "くせん",
+    english: "hard fight・struggle",
+    explanation: "Refers to a difficult or tough battle or struggle, often used in sports or competitions.",
+    example: "今回の試合はなかなか{苦戦}したが、なんとか勝つことができた。\nThis match was quite a tough fight, but we managed to win somehow.",
+    unit: 4
+  },
+  {
+    kanji: "延長",
+    kana: "えんちょう",
+    english: "extension・prolongation",
+    explanation: "Refers to the act of extending or prolonging something, such as time or a deadline.",
+    example: "歌い足りないので、カラオケの利用時間を一時間{延長}した。\nSince I didn't sing enough, I extended the karaoke usage time by one hour.",
+    unit: 4
+  },
+  {
+    kanji: "解消",
+    kana: "かいしょう",
+    english: "resolution・elimination",
+    explanation: "Refers to the act of resolving or eliminating a problem or issue.",
+    example: "ストレスを{解消}するために、毎晩軽い運動をしている。\nI do light exercise every night to relieve stress.",
+    unit: 4
+  },
+  {
+    kanji: "引退",
+    kana: "いんたい",
+    english: "retirement・retire",
+    explanation: "Refers to the act of retiring from a job or position, especially in sports or public life.",
+    example: "彼は今シーズンで、プロ野球選手を{引退}することを発表した。\nHe announced that he will retire from professional baseball at the end of this season.",
+    unit: 4
+  },
+  {
+    kanji: "実感",
+    kana: "じっかん",
+    english: "real feeling・actual feeling",
+    explanation: "Refers to the feeling of actually experiencing or realizing something.",
+    example: "外国人のコメントを見て初めて、自分の動画が世界中の人に見られているということを{実感}した。\nI truly realized that my video is being watched by people all over the world when I saw comments from foreigners for the first time.",
+    unit: 4
+  },
+  {
+    kanji: "覚悟",
+    kana: "かくご",
+    english: "resolution・readiness",
+    explanation: "Refers to the mental preparation or determination to face a difficult situation.",
+    example: "反対されるのを{覚悟}して、恋人を両親に紹介した。\nI introduced my lover to my parents, prepared for their opposition.",
+    unit: 4
+  },
+  {
+    kanji: "回復",
+    kana: "かいふく",
+    english: "recovery・restoration",
+    explanation: "Refers to the process of recovering or restoring health, condition, or situation.",
+    example: "けががだいぶ{回復}し、補助なしでも歩けるようになった。\nThe injury has recovered considerably, and I can walk without assistance.",
+    unit: 4
+  },
+  {
+    kanji: "支持",
+    kana: "しじ",
+    english: "support・endorsement",
+    explanation: "Refers to the act of supporting or endorsing someone or something.",
+    example: "彼はまじめな人なので、多くの人からリーダーとして{支持}されている。\nHe is a serious person, so he is supported as a leader by many people.",
+    unit: 4
+  },
+  {
+    kanji: "改良",
+    kana: "かいりょう",
+    english: "improvement・modification",
+    explanation: "Refers to the act of making something better or improving it.",
+    example: "これまでの製品を{改良}し、新しいモデルとして発売することになった。\nWe improved the previous product and decided to release it as a new model.",
+    unit: 4
+  },
+  {
+    kanji: "獲得",
+    kana: "かくとく",
+    english: "acquisition・obtainment",
+    explanation: "Refers to the act of acquiring or obtaining something, such as a skill, right, or prize.",
+    example: "初めて出場したテニスの試合で、賞金を{獲得}することができた。\nI was able to win prize money in my first tennis tournament.",
+    unit: 4
+  },
+  {
+    kanji: "一致",
+    kana: "いっち",
+    english: "agreement・consistency",
+    explanation: "Refers to the state of being in agreement or consistent with something.",
+    example: "彼は言っていることとやっていることが{一致}していないので信用できない。\nHe cannot be trusted because what he says and what he does do not match.",
+    unit: 4
+  },
+  {
+    kanji: "運営",
+    kana: "うんえい",
+    english: "management・operation",
+    explanation: "Refers to the act of managing or operating an organization, event, or system.",
+    example: "マラソン大会を{運営}するために必要なお金を企業から集める。\nWe collect the necessary funds from companies to operate the marathon event.",
+    unit: 4
+  },
+  {
+    kanji: "返却",
+    kana: "へんきゃく",
+    english: "return・give back",
+    explanation: "Refers to the act of returning something to its original place or owner.",
+    example: "図書館で借りた本は、2週間以内に{返却}してください。\nPlease return the books borrowed from the library within two weeks.",
+    unit: 4
+  },
+  {
+    kanji: "回収",
+    kana: "かいしゅう",
+    english: "collection・recovery",
+    explanation: "Refers to the act of collecting or recovering something, such as waste or money.",
+    example: "古新聞を{回収}するトラックは、毎週土曜日の午前中に来る。\nThe truck that collects old newspapers comes every Saturday morning.",
+    unit: 4
+  },
+  {
+    kanji: "志望",
+    kana: "しぼう",
+    english: "aspiration・desire",
+    explanation: "Refers to the act of aspiring or desiring to achieve something, such as a job or school.",
+    example: "営業部を{志望}した理由は、この商品の良さを広めたいと思ったからです。\nThe reason I aspired to join the sales department is that I wanted to spread the goodness of this product.",
+    unit: 4
+  },
+  {
+    kanji: "加速",
+    kana: "かそく",
+    english: "acceleration",
+    explanation: "Refers to the act of increasing speed or rate.",
+    example: "新しいウイルスが流行したことにより、学生の学習環境のオンライン化が{加速}した。\nThe spread of the new virus accelerated the online learning environment for students.",
+    unit: 4
+  },
+  {
+    kanji: "家計",
+    kana: "かけい",
+    english: "household finances・Household budget",
+    explanation: "Refers to the management of income and expenses within a household.",
+    example: "{家計}を見直して、無駄な支出を減らすことにした。\nI decided to review the household finances and reduce unnecessary expenses.",
+    unit: 4
+  },
+  {
+    kanji: "設計",
+    kana: "せっけい",
+    english: "design・plan",
+    explanation: "Refers to the act of designing or planning something, such as a building or system.",
+    example: "新しいビルの{設計}を建築家に依頼した。\nI asked an architect to design the new building.",
+    unit: 4
+  },
+  {
+    kanji: "選出",
+    kana: "せんしゅつ",
+    english: "selection・election",
+    explanation: "Refers to the act of selecting or electing someone for a position or role.",
+    example: "新しい委員長を{選出}するための会議が開かれた。\nA meeting was held to elect a new chairman.",
+    unit: 4
+  },
+  {
+    kanji: "所属",
+    kana: "しょぞく",
+    english: "affiliation・belonging",
+    explanation: "Refers to the state of belonging to a particular group or organization.",
+    example: "彼はその会社に{所属}している。\nHe belongs to that company.",
+    unit: 4
+  },
+  {
+    kanji: "関連",
+    kana: "かんれん",
+    english: "relation・connection",
+    explanation: "Refers to the relationship or connection between things.",
+    example: "この問題は環境問題と{関連}している。\nThis issue is related to environmental problems.",
+    unit: 4
+  },
+  {
+    kanji: "屋根",
+    kana: "やね",
+    english: "roof",
+    explanation: "Refers to the structure that covers the top of a building.",
+    example: "家の{屋根}に雪が積もっている。\nSnow has piled up on the roof of the house.",
+    unit: 4
+  },
+  {
+    kanji: "外見",
+    kana: "がいけん",
+    english: "appearance・looks",
+    explanation: "Refers to the outward appearance or looks of a person or thing.",
+    example: "彼は{外見}は怖そうだが、実はとても優しい人だ。\nHe looks scary, but he is actually a very kind person.",
+    unit: 4
+  },
+  {
+    kanji: "現象",
+    kana: "げんしょう",
+    english: "phenomenon",
+    explanation: "Refers to an observable event or occurrence, especially one that is unusual or significant.",
+    example: "自然{現象}には地震や台風などがある。\nNatural phenomena include earthquakes and typhoons.",
+    unit: 4
+  },
+  {
+    kanji: "移行",
+    kana: "いこう",
+    english: "transition・migration",
+    explanation: "Refers to the process of moving from one state or condition to another.",
+    example: "システムの{移行}には時間がかかることがある。\nThe transition of the system can take time.",
+    unit: 4
+  },
+  {
+    kanji: "代用",
+    kana: "だいよう",
+    english: "substitute・replacement",
+    explanation: "Refers to the act of using something as a substitute or replacement for something else.",
+    example: "バターの{代用}としてマーガリンを使った。\nI used margarine as a substitute for butter.",
+    unit: 4
+  },
+  {
+    kanji: "苦情",
+    kana: "くじょう",
+    english: "complaint",
+    explanation: "Refers to an expression of dissatisfaction or grievance.",
+    example: "お客様から{苦情}が寄せられた。\nA complaint was received from a customer.",
+    unit: 4
+  },
+  {
+    kanji: "機嫌",
+    kana: "きげん",
+    english: "mood・temper",
+    explanation: "Refers to a person's mood or temper, indicating how they are feeling emotionally.",
+    example: "彼は{機嫌}が悪そうだった。\nHe seemed to be in a bad mood.",
+    unit: 4
+  },
+  {
+    kanji: "欠点",
+    kana: "けってん",
+    english: "fault・defect・disadvantage",
+    explanation: "Refers to a fault, defect, or disadvantage in a person or thing.",
+    example: "誰にでも{欠点}はある。\nEveryone has faults.",
+    unit: 4
+  },
+  {
+    kanji: "説教",
+    kana: "せっきょう",
+    english: "sermon・lecture",
+    explanation: "Refers to a speech or lecture, often given to admonish or advise someone.",
+    example: "父に{説教}をされた。\nI was given a lecture by my father.",
+    unit: 4
+  },
+  {
+    kanji: "教材",
+    kana: "きょうざい",
+    english: "teaching materials",
+    explanation: "Refers to materials used for teaching or educational purposes.",
+    example: "新しい{教材}を使って授業を行った。\nWe conducted the class using new teaching materials.",
+    unit: 4
+  },
+  {
+    kanji: "効果",
+    kana: "こうか",
+    english: "effect・impact",
+    explanation: "Refers to the result or impact of an action or event.",
+    example: "この薬は頭痛に{効果}がある。\nThis medicine is effective for headaches.",
+    unit: 4
+  },
+  {
+    kanji: "安定",
+    kana: "あんてい",
+    english: "stability・steadiness",
+    explanation: "Refers to the state of being stable or steady, without sudden changes or fluctuations.",
+    example: "経済の{安定}は国の発展にとって重要だ。\nEconomic stability is important for the development of a country.",
+    unit: 4
+  },
+  {
+    kanji: "成立",
+    kana: "せいりつ",
+    english: "establishment・formation",
+    explanation: "Refers to the act of establishing or forming something, such as an agreement or organization.",
+    example: "新しい法律の{成立}には時間がかかることがある。\nThe establishment of a new law can take time.",
+    unit: 4
+  },
+  {
+    kanji: "相性",
+    kana: "あいしょう",
+    english: "compatibility",
+    explanation: "Refers to how well two or more people or things get along or work together.",
+    example: "彼らは性格が合っていて、{相性}が良い。\nThey have compatible personalities and get along well.",
+    unit: 4
+  },
+  {
+    kanji: "記録",
+    kana: "きろく",
+    english: "record・document",
+    explanation: "Refers to the act of recording or documenting information or events.",
+    example: "試合の{記録}を更新した。\nThe record of the match was updated.",
+    unit: 4
+  },
+  {
+    kanji: "以後",
+    kana: "いご",
+    english: "after・since",
+    explanation: "Refers to the time after a certain point or event.",
+    example: "会議は午後2時{以後}に始まります。\nThe meeting will start after 2 PM.",
+    unit: 4
+  },
+  {
+    kanji: "後方",
+    kana: "こうほう",
+    english: "rear・back・backward",
+    explanation: "Refers to the rear or back part of something.",
+    example: "車の{後方}に注意してください。\nPlease be careful of the rear of the car.",
+    unit: 4
+  },
+  {
+    kanji: "以降",
+    kana: "いこう",
+    english: "after・since・onwards",
+    explanation: "Refers to the time after a certain point or event.",
+    example: "会議は午後2時{以降}に始まります。\nThe meeting will start after 2 PM.",
+    unit: 4
+  },
+  {
+    kanji: "衣装",
+    kana: "いしょう",
+    english: "costume・clothing",
+    explanation: "Refers to clothing or costumes, often used in the context of performances or special occasions.",
+    example: "舞台で使う{衣装}を選んだ。\nI chose the costumes to be used on stage.",
+    unit: 4
+  },
+  {
+    kanji: "様子",
+    kana: "ようす",
+    english: "appearance・state・situation",
+    explanation: "Refers to the appearance, state, or situation of something or someone.",
+    example: "彼の{様子}が変だ。\nHis appearance/state is strange.",
+    unit: 4
+  },
+  {
+    kanji: "物質",
+    kana: "ぶっしつ",
+    english: "substance・material",
+    explanation: "Refers to physical matter or material that has mass and occupies space.",
+    example: "水は液体の{物質}です。\nWater is a liquid substance.",
+    unit: 4
+  },
+  {
+    kanji: "油断",
+    kana: "ゆだん",
+    english: "carelessness・negligence・let down one's guard",
+    explanation: "Refers to a lack of caution or attention, often leading to mistakes or accidents.",
+    example: "{油断}すると失敗することがある。\nIf you are careless, you might make mistakes.",
+    unit: 4
+  },
+  {
+    kanji: "減点",
+    kana: "げんてん",
+    english: "deduction of points",
+    explanation: "Refers to the act of deducting points, often used in the context of scoring or grading.",
+    example: "試験で間違えると{減点}される。\nPoints are deducted for mistakes on the exam.",
+    unit: 4
+  },
+  {
+    kanji: "反面",
+    kana: "はんめん",
+    english: "on the other hand・conversely",
+    explanation: "Refers to the opposite side or aspect of something.",
+    example: "彼は優しい{反面}、厳しいところもある。\nHe is kind, but on the other hand, he can be strict.",
+    unit: 4
+  },
+  {
+    kanji: "活用",
+    kana: "かつよう",
+    english: "conjugation・practical use",
+    explanation: "Refers to the conjugation of verbs and adjectives or the practical use of something.",
+    example: "この単語の{活用}を覚えましょう。\nLet's learn the conjugation of this word.",
+    unit: 4
+  },
+  {
+    kanji: "活躍",
+    kana: "かつやく",
+    english: "activity・great efforts",
+    explanation: "Refers to someone actively participating or making great efforts in a particular field or activity.",
+    example: "彼はスポーツの分野で{活躍}している。\nHe is active in the field of sports.",
+    unit: 4
+  },
+  {
+    kanji: "地面",
+    kana: "じめん",
+    english: "ground・surface",
+    explanation: "Refers to the surface of the earth or ground.",
+    example: "{地面}に落ちたものを拾った。\nI picked up something that fell on the ground.",
+    unit: 4
+  },
+  {
+    kanji: "温暖",
+    kana: "おんだん",
+    english: "warm・mild",
+    explanation: "Refers to warm or mild weather or climate.",
+    example: "{温暖}な気候の地域に住んでいる。\nI live in a region with a warm climate.",
+    unit: 4
+  },
+  {
+    kanji: "根元",
+    kana: "ねもと",
+    english: "root・base",
+    explanation: "Refers to the root or base of something, often used for plants or the origin of something.",
+    example: "木の{根元}に花が咲いている。\nFlowers are blooming at the base of the tree.",
+    unit: 4
+  },
+  {
+    kanji: "人体",
+    kana: "じんたい",
+    english: "human body",
+    explanation: "Refers to the human body as a whole.",
+    example: "{人体}の構造について学ぶ。\nLearn about the structure of the human body.",
+    unit: 4
+  },
+  {
+    kanji: "大型",
+    kana: "おおがた",
+    english: "large size・large scale",
+    explanation: "Refers to something that is large in size or scale.",
+    example: "{大型}のトラックが通る道路は広い。\nRoads where large trucks pass are wide.",
+    unit: 4
+  },
+  {
+    kanji: "上位",
+    kana: "じょうい",
+    english: "higher rank・upper position",
+    explanation: "Refers to a higher rank or position in a hierarchy or order.",
+    example: "彼はクラスで{上位}の成績を取っている。\nHe has a top rank in the class.",
+    unit: 4
+  },
+  {
+    kanji: "視野",
+    kana: "しや",
+    english: "field of vision・perspective",
+    explanation: "Refers to the range of vision or the scope of one's perspective or understanding.",
+    example: "広い{視野}を持つことが大切だ。\nIt is important to have a broad perspective.",
+    unit: 4
+  },
+  {
+    kanji: "免許",
+    kana: "めんきょ",
+    english: "license・permit",
+    explanation: "Refers to an official permission or license to do something, such as driving or operating machinery.",
+    example: "運転{免許}を取得した。\nI obtained a driver's license.",
+    unit: 4
+  },
+  {
+    kanji: "設備",
+    kana: "せつび",
+    english: "equipment・facilities",
+    explanation: "Refers to the equipment or facilities provided for a particular purpose.",
+    example: "新しい{設備}が工場に導入された。\nNew equipment was introduced in the factory.",
+    unit: 4
+  },
+  {
+    kanji: "知識",
+    kana: "ちしき",
+    english: "knowledge",
+    explanation: "Refers to information, understanding, or skills gained through experience or education.",
+    example: "彼は豊富な{知識}を持っている。\nHe has extensive knowledge.",
+    unit: 4
+  },
+  {
+    kanji: "入会",
+    kana: "にゅうかい",
+    english: "joining a group・membership",
+    explanation: "Refers to the act of joining a group, club, or organization.",
+    example: "彼は新しいクラブに{入会}した。\nHe joined a new club.",
+    unit: 4
+  },
+  {
+    kanji: "訪問",
+    kana: "ほうもん",
+    english: "visit・call",
+    explanation: "Refers to the act of visiting a place or person, often for a specific purpose.",
+    example: "彼は友人の家を{訪問}した。\nHe visited his friend's house.",
+    unit: 4
+  },
+  {
+    kanji: "来場",
+    kana: "らいじょう",
+    english: "attendance・visiting a place",
+    explanation: "Refers to the act of attending or visiting a place, such as an event or venue.",
+    example: "多くの人がコンサートに{来場}した。\nMany people attended the concert.",
+    unit: 4
+  },
+  {
+    kanji: "観戦",
+    kana: "かんせん",
+    english: "watching a game・spectating",
+    explanation: "Refers to the act of watching a sports game or competition.",
+    example: "友達と一緒にサッカーの試合を{観戦}した。\nI watched a soccer game with my friends.",
+    unit: 4
+  },
+  {
+    kanji: "検討",
+    kana: "けんとう",
+    english: "consideration・examination",
+    explanation: "Refers to the act of considering or examining something carefully.",
+    example: "新しい計画について{検討}している。\nWe are considering a new plan.",
+    unit: 4
+  },
+  {
+    kanji: "克服",
+    kana: "こくふく",
+    english: "overcoming・conquest",
+    explanation: "Refers to the act of overcoming or conquering a difficulty or obstacle.",
+    example: "彼は困難を{克服}して成功した。\nHe overcame difficulties and succeeded.",
+    unit: 4
+  },
+  {
+    kanji: "延期",
+    kana: "えんき",
+    english: "postponement・delay",
+    explanation: "Refers to the act of postponing or delaying an event or action.",
+    example: "会議が{延期}になった。\nThe meeting was postponed.",
+    unit: 4
+  },
+  {
+    kanji: "拡大",
+    kana: "かくだい",
+    english: "expansion・enlargement",
+    explanation: "Refers to the act of expanding or enlarging something.",
+    example: "会社の事業を{拡大}する。\nExpand the company's business.",
+    unit: 4
+  },
+  {
+    kanji: "拡張",
+    kana: "かくちょう",
+    english: "expansion・extension",
+    explanation: "Refers to the act of expanding or extending something, often used for physical or abstract concepts.",
+    example: "店舗の{拡張}工事が始まった。\nThe store expansion construction has started.",
+    unit: 4
+  },
+  {
+    kanji: "発揮",
+    kana: "はっき",
+    english: "demonstration・exhibition",
+    explanation: "Refers to the act of demonstrating or exhibiting one's abilities or qualities.",
+    example: "彼は試合で実力を{発揮}した。\nHe demonstrated his ability in the match.",
+    unit: 4
+  },
+  {
+    kanji: "消耗",
+    kana: "しょうもう",
+    english: "consumption・exhaustion・wear and tear",
+    explanation: "Refers to the act of consuming or using up resources, energy, or materials.",
+    example: "エネルギーを{消耗}する仕事をしている。\nI am doing work that consumes energy.",
+    unit: 4
+  },
+  {
+    kanji: "退職",
+    kana: "たいしょく",
+    english: "retirement・resignation",
+    explanation: "Refers to the act of retiring or resigning from a job or position.",
+    example: "彼は会社を{退職}した。\nHe retired from the company.",
+    unit: 4
+  },
+  {
+    kanji: "引用",
+    kana: "いんよう",
+    english: "quotation・citation",
+    explanation: "Refers to the act of quoting or citing a source or reference.",
+    example: "論文で他の研究を{引用}する。\nI cite other research in my paper.",
+    unit: 4
+  },
+  {
+    kanji: "早退",
+    kana: "そうたい",
+    english: "leaving early・early departure",
+    explanation: "Refers to the act of leaving a place, such as work or school, earlier than the scheduled time.",
+    example: "体調が悪くて{早退}した。\nI left early because I was not feeling well.",
+    unit: 4
+  },
+  {
+    kanji: "伝達",
+    kana: "でんたつ",
+    english: "transmission・communication",
+    explanation: "Refers to the act of transmitting or communicating information or messages.",
+    example: "情報を正確に{伝達}することが重要だ。\nIt is important to transmit information accurately.",
+    unit: 4
+  },
+  {
+    kanji: "明示",
+    kana: "めいじ",
+    english: "explicit indication・clear presentation",
+    explanation: "Refers to the act of explicitly indicating or clearly presenting information.",
+    example: "契約条件を{明示}する必要がある。\nIt is necessary to explicitly indicate the contract terms.",
+    unit: 4
+  },
+  {
+    kanji: "決着",
+    kana: "けっちゃく",
+    english: "settlement・conclusion",
+    explanation: "Refers to the act of settling or concluding a dispute or issue.",
+    example: "問題に{決着}をつける。\nSettle the issue.",
+    unit: 4
+  },
+  {
+    kanji: "考察",
+    kana: "こうさつ",
+    english: "consideration・examination",
+    explanation: "Refers to the act of carefully considering or examining something.",
+    example: "問題の原因を{考察}する。\nConsider the cause of the problem.",
+    unit: 4
+  },
+  {
+    kanji: "決意",
+    kana: "けつい",
+    english: "determination・resolution",
+    explanation: "Refers to the act of making a firm decision or resolution.",
+    example: "新しい目標に向けて{決意}を固めた。\nI made a firm determination towards a new goal.",
+    unit: 4
+  },
+  {
+    kanji: "往復",
+    kana: "おうふく",
+    english: "round trip・going and returning",
+    explanation: "Refers to the act of going to a place and returning back to the starting point.",
+    example: "東京から大阪まで{往復}の切符を買った。\nI bought a round-trip ticket from Tokyo to Osaka.",
+    unit: 4
+  },
+  {
+    kanji: "上達",
+    kana: "じょうたつ",
+    english: "improvement・progress",
+    explanation: "Refers to the act of improving or making progress in a skill or ability.",
+    example: "日本語の会話が{上達}した。\nMy Japanese conversation skills have improved.",
+    unit: 4
+  },
+  {
+    kanji: "展開",
+    kana: "てんかい",
+    english: "development・expansion",
+    explanation: "Refers to the act of developing or expanding something, such as a story or a plan.",
+    example: "物語の{展開}が予想外だった。\nThe development of the story was unexpected.",
+    unit: 4,
+    important: true
+  },
+  {
+    kanji: "領域",
+    kana: "りょういき",
+    english: "area・domain",
+    explanation: "Refers to a specific area or domain, often used in academic or professional contexts.",
+    example: "彼は物理学の{領域}で有名だ。\nHe is famous in the field of physics.",
+    unit: 4,
+    important: true
+  },
+  {
+    kanji: "批評",
+    kana: "ひひょう",
+    english: "criticism・review",
+    explanation: "Refers to the act of evaluating or critiquing something, such as a work of art or literature.",
+    example: "映画の{批評}を読むのが好きだ。\nI like reading movie reviews.",
+    unit: 4
+  },
+  {
+    kanji: "確認",
+    kana: "かくにん",
+    english: "confirmation・verification",
+    explanation: "Refers to the act of confirming or verifying something.",
+    example: "予約の{確認}を電話で行った。\nI confirmed the reservation by phone.",
+    unit: 4
+  },
+  {
+    kanji: "証明",
+    kana: "しょうめい",
+    english: "proof・certification",
+    explanation: "Refers to the act of proving or certifying something.",
+    example: "彼は自分の無実を{証明}した。\nHe proved his innocence.",
+    unit: 4
+  },
+  {
+    kanji: "進歩",
+    kana: "しんぽ",
+    english: "progress・advancement",
+    explanation: "Refers to the act of making progress or advancing in a certain field or activity.",
+    example: "技術の{進歩}は日々続いている。\nTechnological progress continues every day.",
+    unit: 4
+  },
+  {
+    kanji: "向上",
+    kana: "こうじょう",
+    english: "improvement・enhancement",
+    explanation: "Refers to the act of improving or enhancing something.",
+    example: "彼の技術は年々{向上}している。\nHis skills are improving year by year.",
+    unit: 4
+  },
+  {
+    kanji: "新設",
+    kana: "しんせつ",
+    english: "new establishment・newly established",
+    explanation: "Refers to the act of newly establishing or setting up something, such as an organization or system.",
+    example: "新しい支店を{新設}した。\nA new branch was newly established.",
+    unit: 4
+  },
+  {
+    kanji: "収穫",
+    kana: "しゅうかく",
+    english: "harvest・reaping",
+    explanation: "Refers to the act of harvesting crops or reaping the benefits of something.",
+    example: "今年の稲の{収穫}は豊作だった。\nThis year's rice harvest was abundant.",
+    unit: 4
+  },
+  {
+    kanji: "取得",
+    kana: "しゅとく",
+    english: "acquisition・obtaining",
+    explanation: "Refers to the act of acquiring or obtaining something, such as skills, knowledge, or possessions.",
+    example: "新しい資格を{取得}した。\nI acquired a new qualification.",
+    unit: 4
+  },
+  {
+    kanji: "完備",
+    kana: "かんび",
+    english: "complete equipment・fully equipped",
+    explanation: "Refers to something being fully equipped or complete with all necessary parts or facilities.",
+    example: "このホテルは設備が{完備}されている。\nThis hotel is fully equipped with facilities.",
+    unit: 4
+  },
+  {
+    kanji: "徹底",
+    kana: "てってい",
+    english: "thoroughness・completeness",
+    explanation: "Refers to the act of thoroughly doing something or ensuring completeness.",
+    example: "安全対策を{徹底}する。\nThoroughly implement safety measures.",
+    unit: 4
+  },
+  {
+    kanji: "抵抗",
+    kana: "ていこう",
+    english: "resistance・opposition",
+    explanation: "Refers to the act of resisting or opposing something.",
+    example: "新しいルールに{抵抗}する人もいる。\nSome people resist the new rules.",
+    unit: 4
+  },
+  {
+    kanji: "一転",
+    kana: "いってん",
+    english: "sudden change・complete reversal",
+    explanation: "Refers to a sudden change or complete reversal in a situation or condition.",
+    example: "天気が{一転}して雨になった。\nThe weather suddenly changed and it started raining.",
+    unit: 4
+  },
+  {
+    kanji: "合唱",
+    kana: "がっしょう",
+    english: "chorus・singing together",
+    explanation: "Refers to a group of people singing together in harmony.",
+    example: "学校の{合唱}コンクールに参加した。\nI participated in the school's chorus competition.",
+    unit: 4
+  },
+  {
+    kanji: "同意",
+    kana: "どうい",
+    english: "agreement・consent",
+    explanation: "Refers to the act of agreeing or consenting to something.",
+    example: "彼の意見に{同意}した。\nI agreed with his opinion.",
+    unit: 4
+  },
+  {
+    kanji: "建設",
+    kana: "けんせつ",
+    english: "construction・building",
+    explanation: "Refers to the act of constructing or building something, such as buildings or infrastructure.",
+    example: "新しい橋の{建設}が始まった。\nThe construction of a new bridge has started.",
+    unit: 4
+  },
+  {
+    kanji: "発生",
+    kana: "はっせい",
+    english: "occurrence・outbreak",
+    explanation: "Refers to the occurrence or outbreak of an event or phenomenon.",
+    example: "地震が{発生}した。\nAn earthquake occurred.",
+    unit: 4
+  },
+  {
+    kanji: "支配",
+    kana: "しはい",
+    english: "control・domination",
+    explanation: "Refers to the act of controlling or dominating something or someone.",
+    example: "彼は会社を{支配}している。\nHe controls the company.",
+    unit: 4
+  },
+  {
+    kanji: "出版",
+    kana: "しゅっぱん",
+    english: "publication・publishing",
+    explanation: "Refers to the act of publishing or issuing printed materials such as books or magazines.",
+    example: "新しい本が{出版}された。\nA new book was published.",
+    unit: 4
+  },
+  {
+    kanji: "納品",
+    kana: "のうひん",
+    english: "delivery・shipment",
+    explanation: "Refers to the act of delivering or shipping goods or products.",
+    example: "商品の{納品}が遅れた。\nThe delivery of the products was delayed.",
+    unit: 4
+  },
+  {
+    kanji: "帰宅",
+    kana: "きたく",
+    english: "returning home",
+    explanation: "Refers to the act of returning to one's home.",
+    example: "仕事が終わって{帰宅}した。\nI returned home after work.",
+    unit: 4
+  },
+  {
+    kanji: "採集",
+    kana: "さいしゅう",
+    english: "collection・gathering",
+    explanation: "Refers to the act of collecting or gathering items, such as plants, insects, or data.",
+    example: "昆虫を{採集}する。\nCollect insects.",
+    unit: 4
+  },
+  {
+    kanji: "追求",
+    kana: "ついきゅう",
+    english: "pursuit・seeking",
+    explanation: "Refers to the act of pursuing or seeking something, such as goals or ideals.",
+    example: "夢を{追求}する。\nPursue a dream.",
+    unit: 4
+  },
+  {
+    kanji: "同情",
+    kana: "どうじょう",
+    english: "sympathy・compassion",
+    explanation: "Refers to the feeling of sympathy or compassion towards someone else's situation or feelings.",
+    example: "彼の話に{同情}した。\nI felt sympathy for his story.",
+    unit: 4
+  },
+  {
+    kanji: "感心",
+    kana: "かんしん",
+    english: "admiration・being impressed",
+    explanation: "Refers to the feeling of admiration or being impressed by someone's actions or qualities.",
+    example: "彼の努力には{感心}した。\nI was impressed by his effort.",
+    unit: 4
+  },
+  {
+    kanji: "接近",
+    kana: "せっきん",
+    english: "approach・coming near",
+    explanation: "Refers to the act of approaching or coming near to something or someone.",
+    example: "台風が{接近}している。\nThe typhoon is approaching.",
+    unit: 4
+  },
+  {
+    kanji: "加工",
+    kana: "かこう",
+    english: "processing・manufacturing",
+    explanation: "Refers to the act of processing or manufacturing raw materials into finished products.",
+    example: "この工場では食品の{加工}を行っている。\nThis factory processes food products.",
+    unit: 4
+  },
+  // Unit 5
+  {
+    kanji: "痛む",
+    kana: "いたむ",
+    english: "to be damaged・to be hurt",
+    explanation: "Refers to something being damaged or hurt, often used for physical pain or damage to objects.",
+    example: "髪を染めたり、パーマをかけたりすると、髪が{痛む}ことがある。\nIf you dye or perm your hair, it can get damaged.",
+    unit: 5
+  },
+  {
+    kanji: "迫る",
+    kana: "せまる",
+    english: "to approach・to draw near",
+    explanation: "Refers to something approaching or drawing near, such as a deadline or event.",
+    example: "レポートの提出期限が明日に{せまって}いるので、徹夜で終わらせる。\nThe deadline for submitting the report is tomorrow, so I will finish it overnight.",
+    unit: 5
+  },
+  {
+    kanji: "効く",
+    kana: "きく",
+    english: "to be effective・to work",
+    explanation: "Refers to something being effective or working well, often used for medicine or remedies.",
+    example: "薬が{効いた}のか、すっかり熱が下がった。\nThe medicine worked, and my fever has completely gone down.",
+    unit: 5
+  },
+  {
+    kanji: "劣る",
+    kana: "おとる",
+    english: "to be inferior・to be worse",
+    explanation: "Refers to something being inferior or worse in comparison to something else.",
+    example: "母が作ってくれる料理は、見た目は{おとる}が味はおいしい。\nThe food my mother makes looks inferior, but it tastes delicious.",
+    unit: 5
+  },
+  {
+    kanji: "操る",
+    kana: "あやつる",
+    english: "to manipulate・to operate",
+    explanation: "Refers to the act of skillfully controlling or manipulating something, such as a machine or situation.",
+    example: "彼は英語だけでなく他に3か国語を{あやつる}ことができる。\nHe can manipulate not only English but also three other languages.",
+    unit: 5
+  },
+  {
+    kanji: "塗る",
+    kana: "ぬる",
+    english: "to paint・to apply",
+    explanation: "Refers to the act of applying something like paint or cream onto a surface.",
+    example: "日焼けをしないように、毎日肌にクリームを{塗っている}。\nI apply cream to my skin every day to avoid sunburn.",
+    unit: 5
+  },
+  {
+    kanji: "区切る",
+    kana: "くぎる",
+    english: "to divide・to separate",
+    explanation: "Refers to the act of dividing or separating something into parts.",
+    example: "集中できないときは、時間を{区切って}勉強してみるとよい。\nWhen you can't concentrate, it's good to divide your study time into segments.",
+    unit: 5
+  },
+  {
+    kanji: "収まる",
+    kana: "おさまる",
+    english: "to be settled・to be contained",
+    explanation: "Refers to something being settled or contained within a certain space or limit.",
+    example: "このかばんには、定期券が{収まる}サイズのポケットが付いていて便利だ。\nThis bag has a pocket that can contain a commuter pass, which is convenient.",
+    unit: 5
+  },
+  {
+    kanji: "抱える",
+    kana: "かかえる",
+    english: "to hold・to carry",
+    explanation: "Refers to the act of holding or carrying something, often used metaphorically for problems or debts.",
+    example: "借金を{抱えて}しまうなんて、予想もしていなかった。\nI never expected to be carrying debt.",
+    unit: 5
+  },
+  {
+    kanji: "味わう",
+    kana: "あじわう",
+    english: "to taste・to savor",
+    explanation: "Refers to the act of experiencing the flavor of something or savoring an experience.",
+    example: "京都の映画村では、まるで違う世界に行ったような気分を{味わう}ことができるそうだ。\nAt the Kyoto Movie Village, it seems you can experience a feeling as if you have gone to a completely different world.",
+    unit: 5
+  },
+  {
+    kanji: "占める",
+    kana: "しめる",
+    english: "to occupy・to account for",
+    explanation: "Refers to the act of occupying a certain position or amount within a whole.",
+    example: "日本の約7割を森林が{占めている}。\nAbout 70% of Japan is covered by forests.",
+    unit: 5
+  },
+  {
+    kanji: "挙げる",
+    kana: "あげる",
+    english: "to raise・to give (an example)",
+    explanation: "Refers to the act of raising something or giving an example or reason.",
+    example: "次の旅行先の候補をいくつか{挙げる}。\nTo give several candidates for the next travel destination.",
+    unit: 5
+  },
+  {
+    kanji: "上回る",
+    kana: "うわまわる",
+    english: "to exceed・to surpass",
+    explanation: "Refers to something exceeding or surpassing a certain amount or level.",
+    example: "オープン初日は、予想を{上回る}人数の客が水族館に訪れた。\nOn the opening day, a number of customers exceeding expectations visited the aquarium.",
+    unit: 5
+  },
+  {
+    kanji: "思いやる",
+    kana: "おもいやる",
+    english: "to be considerate・to sympathize",
+    explanation: "Refers to the act of being considerate or sympathetic towards others.",
+    example: "周りの人のことを{思いやる}ことができる人になりたい。\nI want to be a person who can be considerate of those around me.",
+    unit: 5
+  },
+  {
+    kanji: "裏切る",
+    kana: "うらぎる",
+    english: "to betray・to deceive",
+    explanation: "Refers to the act of betraying someone's trust or deceiving someone.",
+    example: "勝つと思っていたチームが一回戦で負け、予想を{裏切る}結果となった。\nThe team we thought would win lost in the first round, resulting in an unexpected outcome.",
+    unit: 5
+  },
+  {
+    kanji: "こだわる",
+    kana: "こだわる",
+    english: "to be particular about・to be obsessed with",
+    explanation: "Refers to the act of being particular or obsessed with certain details or aspects.",
+    example: "当店のメニューはどれも、店長が素材から{こだわって}作りました。\nAll the items on our menu were made with particular attention to ingredients by the manager.",
+    unit: 5
+  },
+  {
+    kanji: "うなずく",
+    kana: "うなずく",
+    english: "nod (one's head)",
+    explanation: "Refers to the act of nodding one's head, often to show agreement or understanding.",
+    example: "学生たちは、先生の話を{うなずき}ながら聞いている。\nThe students are listening to the teacher's story while nodding.",
+    unit: 5
+  },
+  {
+    kanji: "うつむく",
+    kana: "うつむく",
+    english: "to look down",
+    explanation: "Refers to the act of lowering one's head or looking down, often indicating sadness or shame.",
+    example: "不合格の通知を見て、彼はがっかりして{うつむいた}。\nHe looked down in disappointment after seeing the notification of failure.",
+    unit: 5
+  },
+  {
+    kanji: "すれ違う",
+    kana: "すれちがう",
+    english: "to pass by each other・to miss each other",
+    explanation: "Refers to the act of passing by someone without meeting or missing each other.",
+    example: "めがねをかけた少年と、いつも同じ時間に同じ場所で{すれ違う}。\nI always pass by the boy wearing glasses at the same time and place.",
+    unit: 5
+  },
+  {
+    kanji: "打ち消す",
+    kana: "うちけす",
+    english: "to dispel・to deny",
+    explanation: "Refers to the act of dispelling or denying something, such as a rumor or feeling.",
+    example: "不安を{打ち消す}ために、大きな声でさけんでみた。\nTo dispel anxiety, I tried shouting loudly.",
+    unit: 5
+  },
+  {
+    kanji: "思い立つ",
+    kana: "おもいたつ",
+    english: "to suddenly decide to do something",
+    explanation: "Refers to the act of suddenly deciding to do something or having a sudden inspiration.",
+    example: "空港まで来たが、どこへ行くのかまだ決めていない。\nI came to the airport, but I haven't decided where to go yet.",
+    unit: 5
+  },
+  {
+    kanji: "生き残る",
+    kana: "いきのこる",
+    english: "to survive",
+    explanation: "Refers to the act of surviving or remaining alive, especially in difficult situations.",
+    example: "このゲームでは、{生き残る}ために戦わずに相手から逃げることも必要だ。\nIn this game, to survive, it is also necessary to escape from the opponent without fighting.",
+    unit: 5
+  },
+  {
+    kanji: "詰め込む",
+    kana: "つめこむ",
+    english: "to cram・to stuff",
+    explanation: "Refers to the act of stuffing or cramming something into a space.",
+    example: "大きなかばんに一週間分の荷物を{詰め込んだ}。\nI stuffed a week's worth of luggage into a large bag.",
+    unit: 5
+  },
+  {
+    kanji: "移し替える",
+    kana: "うつしかえる",
+    english: "to transfer・to shift",
+    explanation: "Refers to the act of transferring or shifting something from one place to another.",
+    example: "新しく買った容器に洗剤を{移し替える}。\nTransfer the detergent to the newly purchased container.",
+    unit: 5
+  },
+  {
+    kanji: "使い分ける",
+    kana: "つかいわける",
+    english: "to use different things appropriately",
+    explanation: "Refers to the act of using different things appropriately depending on the situation.",
+    example: "5か国語を話せる彼は、相手によって言葉を{使い分ける}ことができる。\nHe can use different languages appropriately depending on the person he is talking to.",
+    unit: 5
+  },
+  {
+    kanji: "差し引く",
+    kana: "さしひく",
+    english: "to deduct・to subtract",
+    explanation: "Refers to the act of deducting or subtracting an amount from a total.",
+    example: "給料から光熱費と家賃を{差し引く}と自由に使えるお金はあまり残らない。\nAfter deducting utility bills and rent from the salary, there isn't much money left to use freely.",
+    unit: 5
+  },
+  {
+    kanji: "取りかかる",
+    kana: "とりかかる",
+    english: "to start (working on something)",
+    explanation: "Refers to the act of beginning or starting to work on a task or project.",
+    example: "夏休みの宿題に{取りかかる}のが遅すぎて、登校日までに宿題を終わらせることができなかった。\nI started my summer vacation homework too late and couldn't finish it by the school day.",
+    unit: 5
+  },
+  // Unit 6
+  // Unit 9
+  {
+    kanji: "ずるい",
+    kana: "ずるい",
+    english: "sly・cunning・sneaky",
+    explanation: "Refers to someone who is sly, cunning, or sneaky, often using unfair means to achieve their goals.",
+    example: "彼女はいつも上司が見ているときだけ仕事をしている、とても{ずるい}人だ。\nShe only works when the boss is watching; she's a very sly person.",
+    unit: 9
+  },
+  {
+    kanji: "騒々しい",
+    kana: "そうぞうしい",
+    english: "noisy・boisterous",
+    explanation: "Refers to a place or situation that is very noisy or full of commotion.",
+    example: "なんだか{騒々しい}ので外を見てみると、車が建物にぶつかっていた。\nIt was so noisy that when I looked outside, I saw a car had crashed into a building.",
+    unit: 9
+  },
+  {
+    kanji: "厚かましい",
+    kana: "あつかましい",
+    english: "impudent・shameless・brazen",
+    explanation: "Refers to someone who is impudent, shameless, or brazen, often acting without regard for others' feelings.",
+    example: "{厚かましい}お願いですが、一度工場を見学させていただけないでしょうか。\nIt's a shameless request, but could you let me visit the factory once?",
+    unit: 9
+  },
+  {
+    kanji: "欠かせない",
+    kana: "かかせない",
+    english: "indispensable・essential",
+    explanation: "Refers to something that is indispensable or essential and cannot be omitted.",
+    example: "早朝に散歩するのは、私にとって{欠かせない}習慣だ。\nTaking a walk early in the morning is an indispensable habit for me.",
+    unit: 9
+  },
+  {
+    kanji: "くだらない",
+    kana: "くだらない",
+    english: "worthless・trivial・silly",
+    explanation: "Refers to something that is worthless, trivial, or silly and not worth paying attention to.",
+    example: "{くだらない}話をして仲間と笑い合う時間は、私にとって大切な時間だ。\nSpending time laughing with friends over silly stories is important to me.",
+    unit: 9
+  },
+  {
+    kanji: "一方的",
+    kana: "いっぽうてき",
+    english: "one-sided・unilateral",
+    explanation: "Refers to something that is one-sided or unilateral, often without considering the other side.",
+    example: "自分の意見を{一方的}に押し付けないで、相手の意見を尊重できる人になりたい。\nI want to be a person who respects others' opinions without imposing my own one-sidedly.",
+    unit: 9
+  },
+  {
+    kanji: "手頃",
+    kana: "てごろ",
+    english: "reasonable・affordable・moderate",
+    explanation: "Refers to something that is reasonably priced, affordable, or moderate in size or amount.",
+    example: "このパソコンは性能が良く{手頃な}価格なので、学生に人気だ。\nThis computer has good performance and a reasonable price, so it is popular among students.",
+    unit: 9
+  },
+  {
+    kanji: "さわやか",
+    kana: "さわやか",
+    english: "refreshing・fresh",
+    explanation: "Refers to something that is refreshing, fresh, or pleasant, often used to describe feelings, atmosphere, or appearance.",
+    example: "彼は清潔感があり、笑顔が{さわやか}なので、皆から好かれている。\nHe has a sense of cleanliness and a refreshing smile, so he is liked by everyone.",
+    unit: 9
+  },
+  {
+    kanji: "和やか",
+    kana: "なごやか",
+    english: "calm・peaceful・harmonious",
+    explanation: "Refers to a calm, peaceful, or harmonious atmosphere or mood.",
+    example: "社長の誕生日パーティは、{和やかな}雰囲気で行われた。\nThe president's birthday party was held in a peaceful atmosphere.",
+    unit: 9
+  },
+  {
+    kanji: "いまいち",
+    kana: "いまいち",
+    english: "not quite・unsatisfactory",
+    explanation: "Refers to something that is not quite right or unsatisfactory, often used to express a lack of enthusiasm or satisfaction.",
+    example: "友達にお勧めされた映画を観に行ったが、{いまいち}だった。\nI went to see a movie recommended by a friend, but it was unsatisfactory.",
+    unit: 9
+  },
+  {
+    kanji: "なかなか",
+    kana: "なかなか",
+    english: "quite・considerably・fairly",
+    explanation: "Refers to something that is quite or fairly the case, often used to express a positive degree of something.",
+    example: "明日締め切りのレポートが{なかなか}進まなくていらいらする。\nI'm frustrated because the report due tomorrow is not progressing quite well.",
+    unit: 9
+  },
+  {
+    kanji: "直に",
+    kana: "じかに",
+    english: "directly・immediately",
+    explanation: "Refers to doing something directly or immediately without any intermediaries or delay.",
+    example: "肌に{直に}触れるものだから下着の素材にはこだわっている。\nSince it directly touches the skin, I am particular about the material of underwear.",
+    unit: 9
+  },
+  {
+    kanji: "一段と",
+    kana: "いちだんと",
+    english: "much more・still more・all the more",
+    explanation: "Refers to something that is much more or still more than before, often used to express an increased degree or intensity.",
+    example: "彼女は高校のときもきれいだったが、10年ぶりに会うと{一段と}きれいになっていた。\nShe was beautiful in high school, but when I met her after 10 years, she had become much more beautiful.",
+    unit: 9
+  },
+  {
+    kanji: "たびたび",
+    kana: "たびたび",
+    english: "often・repeatedly",
+    explanation: "Refers to something that happens often or repeatedly.",
+    example: "私が住んでいるアパートは、雷のせいで{たびたび}停電が起こる。\nThe apartment I live in often experiences power outages due to lightning.",
+    unit: 9
+  },
+  {
+    kanji: "明らか",
+    kana: "あきらか",
+    english: "clear・obvious・evident",
+    explanation: "Refers to something that is clear, obvious, or evident and can be easily understood or recognized.",
+    example: "ずっとなぞに包まれていた犯人の姿が{明らか}になった。\nThe identity of the culprit, which had been shrouded in mystery, has become clear.",
+    unit: 9
+  },
+  {
+    kanji: "きっぱり",
+    kana: "きっぱり",
+    english: "clearly・decisively",
+    explanation: "Refers to doing something clearly or decisively, often used to describe a firm decision or statement.",
+    example: "次の大学受験に落ちたら、{きっぱり}あきらめて就職することに決めた。\nI decided that if I fail the next university entrance exam, I will give up decisively and get a job.",
+    unit: 9
+  },
+  {
+    kanji: "ぐったり",
+    kana: "ぐったり",
+    english: "exhausted・drained・limp",
+    explanation: "Refers to being extremely tired or exhausted, often to the point of being limp or unable to move.",
+    example: "今日は人の多いところに出かけたので、疲れて{ぐったり}してしまった。\nI went to a crowded place today, so I got tired and became exhausted.",
+    unit: 9
+  },
+  {
+    kanji: "ぐんぐん",
+    kana: "ぐんぐん",
+    english: "rapidly・steadily・vigorously",
+    explanation: "Refers to something progressing rapidly or steadily, often used to describe growth or improvement.",
+    example: "今年に入って、会社の売り上げが{ぐんぐん}伸びている。\nSince the beginning of this year, the company's sales have been growing rapidly.",
+    unit: 9
   },
 ];
