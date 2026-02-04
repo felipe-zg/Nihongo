@@ -11,7 +11,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     moji: 'めぐみ',
     options: ['怠み', '志み', '恵み', '患み'],
     answer: '恵み',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.KANJI_READING,
   },
   {
     id: 1,
@@ -769,7 +769,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['古', '旧', '昔', '去'],
     answer: '旧',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.WORD_FORMATION,
     unit: 3
   },
   {
@@ -780,7 +780,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['本', '元', '主', '源'],
     answer: '主',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.WORD_FORMATION,
     unit: 3
   },
   {
@@ -791,7 +791,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['古', '旧', '先', '前'],
     answer: '前',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.WORD_FORMATION,
     unit: 3
   },
   {
@@ -802,7 +802,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['再', '来', '最', '次'],
     answer: '再',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.WORD_FORMATION,
     unit: 3
   },
   {
@@ -813,7 +813,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['本', '真', '正', '生'],
     answer: '真',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.WORD_FORMATION,
     unit: 3
   },
   {
@@ -824,7 +824,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['不', '未', '無', '非'],
     answer: '未',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.WORD_FORMATION,
     unit: 3
   },
   {
@@ -835,7 +835,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['合', '良', '好', '4'],
     answer: '好',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.WORD_FORMATION,
     unit: 3
   },
   {
@@ -846,7 +846,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['前', '準', '次', '副'],
     answer: '準',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.WORD_FORMATION,
     unit: 3
   },
   {
@@ -857,7 +857,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['来', '次', '先', '後'],
     answer: '来',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.WORD_FORMATION,
     unit: 3
   },
   {
@@ -868,7 +868,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['最', '先', '主', '高'],
     answer: '最',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.WORD_FORMATION,
     unit: 3
   },
   {
@@ -879,7 +879,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['高', '総', '各', '合'],
     answer: '総',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.WORD_FORMATION,
     unit: 3
   },
   {
@@ -890,7 +890,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['不', '前', '非', '無'],
     answer: '非',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.WORD_FORMATION,
     unit: 3
   },
   {
@@ -901,7 +901,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['先', '今', '最', '現'],
     answer: '現',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.WORD_FORMATION,
     unit: 3
   },
   {
@@ -912,7 +912,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['全', '総', '完', '統'],
     answer: '全',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.WORD_FORMATION,
     unit: 3
   },
   {
@@ -923,7 +923,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['短', '中', '半', '無'],
     answer: '半',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.WORD_FORMATION,
     unit: 3
   },
   {
@@ -934,7 +934,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['前', '元', '古', '旧'],
     answer: '元',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.WORD_FORMATION,
     unit: 3
   },
   {
@@ -945,7 +945,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['小', '少', '薄', '短'],
     answer: '薄',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.WORD_FORMATION,
     unit: 3
   },
   {
@@ -956,7 +956,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['現', '初', 'ー', '始'],
     answer: '初',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.WORD_FORMATION,
     unit: 3
   },
   {
@@ -967,7 +967,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['短', '小', '少', '低'],
     answer: '低',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.WORD_FORMATION,
     unit: 3
   },
   {
@@ -978,7 +978,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['先', '次', '異', '違'],
     answer: '異',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.WORD_FORMATION,
     unit: 3
   },
   {
@@ -989,7 +989,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['場', '元', '先', '部'],
     answer: '先',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.WORD_FORMATION,
     unit: 3
   },
   {
@@ -1000,7 +1000,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['発', '元', '地', '原'],
     answer: '元',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.WORD_FORMATION,
     unit: 3
   },
   {
@@ -1011,7 +1011,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['式', '性', '質', '類'],
     answer: '式',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.WORD_FORMATION,
     unit: 3
   },
   {
@@ -1022,7 +1022,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['代', '費', '賃', '値'],
     answer: '費',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.WORD_FORMATION,
     unit: 3
   },
   {
@@ -1033,7 +1033,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['式', '集', '種', '類'],
     answer: '類',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.WORD_FORMATION,
     unit: 3
   },
   {
@@ -1044,7 +1044,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['類', '感', '風', '色'],
     answer: '風',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.WORD_FORMATION,
     unit: 3
   },
   {
@@ -1055,7 +1055,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['異', '差', '分', '違'],
     answer: '差',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.WORD_FORMATION,
     unit: 3
   },
   {
@@ -1066,7 +1066,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['状', '形', '感', '質'],
     answer: '状',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.WORD_FORMATION,
     unit: 3
   },
   {
@@ -1077,7 +1077,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['金', '費', '代', '賃'],
     answer: '代',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.WORD_FORMATION,
     unit: 3
   },
   {
@@ -1088,7 +1088,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['版', '順', '制', '式'],
     answer: '順',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.WORD_FORMATION,
     unit: 3
   },
   {
@@ -1099,7 +1099,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['費', '料', '金', '代'],
     answer: '金',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.WORD_FORMATION,
     unit: 3
   },
   {
@@ -1110,7 +1110,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['点', '所', '化', '状'],
     answer: '点',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.WORD_FORMATION,
     unit: 3
   },
   {
@@ -1121,7 +1121,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['服', '着', '被', '付'],
     answer: '着',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.WORD_FORMATION,
     unit: 3
   },
   {
@@ -1132,7 +1132,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['観', '順', '流', '法'],
     answer: '流',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.WORD_FORMATION,
     unit: 3
   },
   {
@@ -1143,7 +1143,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['賞', '型', '状', '証'],
     answer: '証',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.WORD_FORMATION,
     unit: 3
   },
   {
@@ -1154,7 +1154,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['晝', '券', '章', '物'],
     answer: '晝',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.WORD_FORMATION,
     unit: 3
   },
   {
@@ -1165,7 +1165,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['差', '別', '部', '界'],
     answer: '別',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.WORD_FORMATION,
     unit: 3
   },
   {
@@ -1176,7 +1176,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['耳', '手', '口', '目'],
     answer: '手',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.WORD_FORMATION,
     unit: 3
   },
   {
@@ -1187,7 +1187,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['型', '流', '状', '類'],
     answer: '型',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.WORD_FORMATION,
     unit: 3
   },
   {
@@ -1198,7 +1198,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['業', '決', '限', '制'],
     answer: '制',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.WORD_FORMATION,
     unit: 3
   },
   {
@@ -1209,7 +1209,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['外', '内', '下', '上'],
     answer: '上',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.WORD_FORMATION,
     unit: 3
   },
   {
@@ -1220,7 +1220,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['下', '上', '中', '内'],
     answer: '下',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.WORD_FORMATION,
     unit: 3
   },
   {
@@ -1231,7 +1231,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['集', '点', '量', '力'],
     answer: '量',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.WORD_FORMATION,
     unit: 3
   },
   {
@@ -1242,7 +1242,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['元', '内', '発', ' 状'],
     answer: '内',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.WORD_FORMATION,
     unit: 3
   },
   {
@@ -1253,7 +1253,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['感', '点', '性', '観'],
     answer: '観',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.WORD_FORMATION,
     unit: 3
   },
   {
@@ -1264,7 +1264,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['切れ', '消え', '去り', '飛び'],
     answer: '切れ',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.WORD_FORMATION,
     unit: 3
   },
   {
@@ -1275,7 +1275,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['がち', 'ぎれ', '気味', '一色'],
     answer: '気味',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.WORD_FORMATION,
     unit: 3
   },
   {
@@ -1286,7 +1286,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['忘れ', '別れ', '逃げ', '離れ'],
     answer: '離れ',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.WORD_FORMATION,
     unit: 3
   },
   {
@@ -1297,7 +1297,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['明け', '入り', '開け', '出し'],
     answer: '明け',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.WORD_FORMATION,
     unit: 3
   },
   {
@@ -1308,7 +1308,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['沿い', '並み', '付き', '過ぎ'],
     answer: '沿い',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.WORD_FORMATION,
     unit: 3
   },
   // Unit 4
@@ -1320,7 +1320,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['家計', '生活', '設計', '生計'],
     answer: '生計',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 4
   },
   {
@@ -1331,7 +1331,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['選出', '所属', '專属', '関連'],
     answer: '專属',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 4
   },
   {
@@ -1342,7 +1342,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['屋根', '土台', '姿勢', '外見'],
     answer: '土台',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 4
   },
   {
@@ -1353,7 +1353,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['設計', '専門', '現象', '詳細'],
     answer: '詳細',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 4
   },
   {
@@ -1364,7 +1364,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['変化', '移行', '代理', '代用'],
     answer: '代理',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 4
   },
   {
@@ -1375,7 +1375,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['悪意', '苦情', '機嫌', '欠点'],
     answer: '悪意',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 4
   },
   {
@@ -1386,7 +1386,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['栄養', '教養', '説教', '教材'],
     answer: '教養',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 4
   },
   {
@@ -1397,7 +1397,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['効果', '安定', '成果', '成立'],
     answer: '成果',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 4
   },
   {
@@ -1408,7 +1408,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['実績', '相性', '記録', '専門'],
     answer: '実績',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 4
   },
   {
@@ -1419,7 +1419,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['以後', '後方', '後者', '以降'],
     answer: '後者',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 4
   },
   {
@@ -1430,7 +1430,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['衣装', '仕様', '様子', '物質'],
     answer: '仕様',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 4
   },
   {
@@ -1441,7 +1441,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['油断', '減点', '反面', '欠陥'],
     answer: '欠陥',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 4
   },
   {
@@ -1452,7 +1452,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['活気', '活用', '活動', '活躍'],
     answer: '活気',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 4
   },
   {
@@ -1463,7 +1463,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['地面', '温暖', '地元', '根元'],
     answer: '地元',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 4
   },
   {
@@ -1474,7 +1474,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['現象', '生態', '生計', '人体'],
     answer: '生態',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 4
   },
   {
@@ -1485,7 +1485,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['改良', '大型', '最善', '上位'],
     answer: '最善',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 4
   },
   {
@@ -1496,7 +1496,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['視界', '視察', '視点', '視野'],
     answer: '視界',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 4
   },
   {
@@ -1507,7 +1507,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['免許', '設備', '知識', '段階'],
     answer: '段階',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 4
   },
   {
@@ -1518,7 +1518,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['入会', '訪問', '面会', '来場'],
     answer: '面会',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 4
   },
   {
@@ -1529,7 +1529,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['観戦', '苦戦', '検討', '克服'],
     answer: '苦戦',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 4
   },
   {
@@ -1540,7 +1540,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['延期', '拡大', '拡張', '延長'],
     answer: '延長',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 4
   },
   {
@@ -1551,7 +1551,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['減点', '発揮', '解消', '消耗'],
     answer: '解消',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 4
   },
   {
@@ -1562,7 +1562,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['退職', '引退', '引用', '早退'],
     answer: '引退',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 4
   },
   {
@@ -1573,7 +1573,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['反応', '伝達', '実感', '明示'],
     answer: '実感',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 4
   },
   {
@@ -1584,7 +1584,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['決着', '覚悟', '考察', '決意'],
     answer: '覚悟',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 4
   },
   {
@@ -1595,7 +1595,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['回復', '往復', '上達', '展開'],
     answer: '回復',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 4
   },
   {
@@ -1606,7 +1606,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['批評', '支持', '確認', '証明'],
     answer: '支持',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 4
   },
   {
@@ -1617,7 +1617,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['進歩', '向上', '新設', '改良'],
     answer: '改良',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 4
   },
   {
@@ -1628,7 +1628,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['収穫', '取得', '獲得', '募集'],
     answer: '獲得',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 4
   },
   {
@@ -1639,7 +1639,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['用心', '完備', '徹底', '抵抗'],
     answer: '用心',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 4
   },
   {
@@ -1650,7 +1650,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['一転', '一致', '合唱', '同意'],
     answer: '一致',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 4
   },
   {
@@ -1661,7 +1661,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['建設', '発生', '運営', '支配'],
     answer: '運営',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 4
   },
   {
@@ -1672,7 +1672,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['出版', '納品', '帰宅', '返却'],
     answer: '返却',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 4
   },
   {
@@ -1683,7 +1683,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['採集', '獲得', '回収', '収穫'],
     answer: '回収',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 4
   },
   {
@@ -1694,7 +1694,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['追求', '同情', '志望', '感心'],
     answer: '志望',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 4
   },
   {
@@ -1705,7 +1705,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['接近', '加速', '伝達', '加工'],
     answer: '加速',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 4
   },
   // Unit 5
@@ -1717,7 +1717,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['くさる', 'さびる', 'いたむ', ' おとる'],
     answer: 'いたむ',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 5
   },
   {
@@ -1728,7 +1728,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['達して', 'せまって', '縮まって', 'つきて'],
     answer: 'せまって',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 5
   },
   {
@@ -1739,7 +1739,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['効いた', 'そまった', '当たった', 'わいた'],
     answer: '効いた',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 5
   },
   {
@@ -1750,7 +1750,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['遅れる', 'おとる', '倒れる', '崩れる'],
     answer: 'おとる',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 5
   },
   {
@@ -1761,7 +1761,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['あやつる', 'えがく', '握る', '満たす'],
     answer: 'あやつる',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 5
   },
   {
@@ -1772,7 +1772,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['放っている', '履いている', '塗っている', '含んでいる'],
     answer: '塗っている',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 5
   },
   {
@@ -1783,7 +1783,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['裏切って', '区切って', '思い切って', '張り切って'],
     answer: '区切って',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 5
   },
   {
@@ -1794,7 +1794,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['いたる', '関わる', '重なる', '収まる'],
     answer: '収まる',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 5
   },
   {
@@ -1805,7 +1805,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['抱えて', '握って', '備えて', '責めて'],
     answer: '抱えて',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 5
   },
   {
@@ -1816,7 +1816,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['迎える', '用いる', '向ける', '味わう'],
     answer: '味わう',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 5
   },
   {
@@ -1827,7 +1827,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['伸ばしている', '測っている', '占めている', '命じている'],
     answer: '占めている',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 5
   },
   {
@@ -1838,7 +1838,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['積む', '挙げる', '放つ', 'はる'],
     answer: '挙げる',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 5
   },
   {
@@ -1849,7 +1849,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['走り回る', '飛び回る', '上回る', '見回る'],
     answer: '上回る',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 5
   },
   {
@@ -1860,7 +1860,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['思いつく', '思い立つ', '思い込む', '思いやる'],
     answer: '思いやる',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 5
   },
   {
@@ -1871,7 +1871,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['裏切る', '引っ張る', '立て替える', '追い抜く'],
     answer: '裏切る',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 5
   },
   {
@@ -1882,7 +1882,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['かじって', 'こだわって', 'めぐって', 'きずいて'],
     answer: 'こだわって',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 5
   },
   {
@@ -1893,7 +1893,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['とらえ', 'うかがい', 'うなずき', 'ことわり'],
     answer: 'うなずき',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 5
   },
   {
@@ -1904,7 +1904,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['きがすんだ', 'はみだした', 'きがむいた', 'うつむいた'],
     answer: 'うつむいた',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 5
   },
   {
@@ -1915,7 +1915,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['すれ違う', '流れ去る', 'くり返す', '見通す'],
     answer: 'すれ違う',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 5
   },
   {
@@ -1926,7 +1926,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['見逃す', '打ち消す', '引き離す', '流れ去る'],
     answer: '打ち消す',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 5
   },
   {
@@ -1937,7 +1937,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['駆け上がって', '飛び上がって', '思い立って', '立ち上がって'],
     answer: '思い立って',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 5
   },
   {
@@ -1948,7 +1948,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['生き残る', '成り立つ', 'くり上がる', '打ち上げる'],
     answer: '生き残る',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 5
   },
   {
@@ -1959,7 +1959,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['持ち帰った', '詰め込んだ', '埋め込んだ', '取り扱った'],
     answer: '詰め込んだ',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 5
   },
   {
@@ -1970,7 +1970,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['取り入れる', '買い替える', '移し替える', '受け入れる'],
     answer: '移し替える',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 5
   },
   {
@@ -1981,7 +1981,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['使い分ける', '身につける', '肖てはめる', '言い切る'],
     answer: '使い分ける',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 5
   },
   {
@@ -1992,7 +1992,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['引っ張る', '差し引く', '取り除く', '切り取る'],
     answer: '差し引く',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 5
   },
   {
@@ -2003,7 +2003,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['割り込む', '差し伸べる', '取りかかる', '歩み寄る'],
     answer: '取りかかる',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 5
   },
   // Unit 6
@@ -2015,7 +2015,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['情けない', '相応しい', 'だらしない', 'おとなしい'],
     answer: '情けない',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 6
   },
   {
@@ -2026,7 +2026,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['太い', '濃い', '厚い', '硬い'],
     answer: '濃い',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 6
   },
   {
@@ -2037,7 +2037,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['騒々しい', '仕方ない', '情けない', 'もったいない'],
     answer: 'もったいない',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 6
   },
   {
@@ -2048,7 +2048,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['素晴らしく', '快く', '易しく', '好ましく'],
     answer: '快く',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 6
   },
   {
@@ -2059,7 +2059,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['興味深い', 'うらやましい', 'あやしい', '厚かましい'],
     answer: 'あやしい',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 6
   },
   {
@@ -2070,7 +2070,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['快い', '等しい', '著しい', '望ましい'],
     answer: '望ましい',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 6
   },
   {
@@ -2081,7 +2081,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['しょうがない', '荒い', 'だらしない', 'ぬるい'],
     answer: 'だらしない',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 6
   },
   {
@@ -2092,7 +2092,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['若々しく', '弱々しく', 'そそっかしく', 'あわただしく'],
     answer: '若々しく',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 6
   },
   {
@@ -2103,7 +2103,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['著しい', '騒がしい', '大幅な', '膨大な'],
     answer: '騒がしい',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 6
   },
   {
@@ -2114,7 +2114,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['民主的', '客観的', '本格的', '相対的'],
     answer: '本格的',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 6
   },
   {
@@ -2125,7 +2125,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['安価', '安易', '無力', '無縁'],
     answer: '安易',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 6
   },
   {
@@ -2136,7 +2136,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['かすか', 'こまやか', 'なだらか', 'ささやか'],
     answer: 'ささやか',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 6
   },
   {
@@ -2147,7 +2147,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['象徴的', '全面的', '開放的', '相対的'],
     answer: '全面的',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 6
   },
   {
@@ -2158,7 +2158,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['ありがち', 'なごやか', 'おだやか', 'あわれ'],
     answer: 'ありがち',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 6
   },
   {
@@ -2169,7 +2169,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['比較的', '抽象的', '積極的', '基礎的'],
     answer: '抽象的',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 6
   },
   {
@@ -2180,7 +2180,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['巨大', '大まか', '大幅', '大げさ'],
     answer: '大げさ',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 6
   },
   {
@@ -2191,7 +2191,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['強引', '頑丈', '有力', '膨大'],
     answer: '強引',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 6
   },
   {
@@ -2202,7 +2202,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['気楽', '短気', '不満', '陽気'],
     answer: '短気',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 6
   },
   {
@@ -2213,7 +2213,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['一斉に', '存分に', '直ちに', '要するに'],
     answer: '一斉に',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 6
   },
   {
@@ -2224,7 +2224,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['まさか', ' まるで', 'とっくに', 'まれに'],
     answer: 'とっくに',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 6
   },
   {
@@ -2235,7 +2235,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['一気に', '一段と', 'はるかに', '着々と'],
     answer: '一気に',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 6
   },
   {
@@ -2246,7 +2246,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['一層', '一体', '今一つ', '誠に'],
     answer: '一体',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 6
   },
   {
@@ -2257,7 +2257,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['あらかじめ', 'いつの間に', 'いずれ', 'よほど'],
     answer: 'いずれ',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 6
   },
   {
@@ -2268,7 +2268,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['つい', 'いわば', 'ふと', 'ただちに'],
     answer: 'つい',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 6
   },
   {
@@ -2279,7 +2279,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['おそらく', 'あいにく', 'ともかく', 'まったく'],
     answer: 'あいにく',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 6
   },
   {
@@ -2290,7 +2290,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['せめて', 'さらに', '仮に', 'あえて'],
     answer: 'あえて',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 6
   },
   {
@@ -2301,7 +2301,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['かつて', 'いわば', 'いずれ', 'はるか'],
     answer: 'かつて',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 6
   },
   {
@@ -2312,7 +2312,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['ぴかぴか', 'うきうき', 'はらはら', 'ざわざわ'],
     answer: 'うきうき',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 6
   },
   {
@@ -2323,7 +2323,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['ぎゅうぎゅう', 'ぎりぎり', 'ばらばら', 'ばりばり'],
     answer: 'ぎゅうぎゅう',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 6
   },
   {
@@ -2334,7 +2334,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['きらきら', 'いきいき', 'ぴかぴか', 'ちかちか'],
     answer: 'ぴかぴか',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 6
   },
   {
@@ -2345,7 +2345,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['じたばた', 'ごちゃごちゃ', 'ばたばた', 'だぶだぶ'],
     answer: 'ごちゃごちゃ',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 6
   },
   {
@@ -2356,7 +2356,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['うとうと', 'うきうき', 'ほかほか', 'ぼろぼろ'],
     answer: 'うとうと',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 6
   },
   {
@@ -2367,7 +2367,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['ぎりぎり', 'ばたばた', 'きょろきょろ', 'ざわざわ'],
     answer: 'ばたばた',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 6
   },
   {
@@ -2378,7 +2378,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['びっしょり', 'ぐっすり', 'うっかり', 'じっくり'],
     answer: 'じっくり',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 6
   },
   {
@@ -2389,7 +2389,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['ばっさり', 'ぱったり', 'きっちり', 'しょんぼり'],
     answer: 'ぱったり',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 6
   },
   {
@@ -2400,7 +2400,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['ぎっしり', 'すっかり', 'ぐったり', 'ばっちり'],
     answer: 'ばっちり',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 6
   },
   {
@@ -2411,7 +2411,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['ボリューム', 'エネルギー', 'コーラス', 'バランス'],
     answer: 'ボリューム',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 6
   },
   {
@@ -2422,7 +2422,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['リクエスト', 'コンテスト', 'マーケット', 'インパクト'],
     answer: 'コンテスト',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 6
   },
   {
@@ -2433,7 +2433,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['ターゲット', 'アイデア', 'テクニック', 'アレンジ'],
     answer: 'アレンジ',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 6
   },
   {
@@ -2444,7 +2444,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['ギャップ', 'スペース', 'シーン', 'シニア'],
     answer: 'ギャップ',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 6
   },
   {
@@ -2455,7 +2455,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['セルフ', 'プライバシー', 'プレゼン', 'リスト'],
     answer: 'プライバシー',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 6
   },
   {
@@ -2466,7 +2466,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['プレッシャー', 'ダメージ', 'フォロー', 'カウンター'],
     answer: 'プレッシャー',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 6
   },
   {
@@ -2477,7 +2477,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['プレー', 'フェア', 'フロア', 'ブーム'],
     answer: 'フェア',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 6
   },
   {
@@ -2488,7 +2488,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['スムーズ', 'ステージ', 'フレッシュ', 'プラン'],
     answer: 'スムーズ',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 6
   },
   {
@@ -2499,7 +2499,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     ],
     options: ['プロセス', 'ニーズ', 'ケア', 'シーズン'],
     answer: 'ニーズ',
-    type: '文法形式の判断',
+    type: MojiGoiEntryCategory.CONTEXT_DEFINITION,
     unit: 6
   },
   // Unit 7
@@ -2512,7 +2512,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     moji: "お手入れ",
     options: ['オープン', 'サポート', 'ケア', 'セット'],
     answer: 'ケア',
-    type: '文脈規定',
+    type: MojiGoiEntryCategory.SYNONYMS,
     unit: 7
   },
   {
@@ -2524,7 +2524,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     moji: "最寄りの",
     options: ['大きな', '近所の', '最近の', '次の'],
     answer: '近所の',
-    type: '文脈規定',
+    type: MojiGoiEntryCategory.SYNONYMS,
     unit: 7
   },
   {
@@ -2536,7 +2536,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     moji: "気配り",
     options: ['笑顏', '心配', '感謝', '思いやり'],
     answer: '思いやり',
-    type: '文脈規定',
+    type: MojiGoiEntryCategory.SYNONYMS,
     unit: 7
   },
   {
@@ -2548,7 +2548,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     moji: "勘違い",
     options: ['聞かされて', '想像して', '知って', '思い込んで'],
     answer: '思い込んで',
-    type: '文脈規定',
+    type: MojiGoiEntryCategory.SYNONYMS,
     unit: 7
   },
   {
@@ -2560,7 +2560,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     moji: "息抜き",
     options: ['深呼吸', '休むこと', '努力すること', '待つこと'],
     answer: '休むこと',
-    type: '文脈規定',
+    type: MojiGoiEntryCategory.SYNONYMS,
     unit: 7
   },
   {
@@ -2572,7 +2572,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     moji: "日頃",
     options: ['生活', '小さいころ', '昼間', '普段'],
     answer: '普段',
-    type: '文脈規定',
+    type: MojiGoiEntryCategory.SYNONYMS,
     unit: 7
   },
   {
@@ -2584,7 +2584,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     moji: "素人",
     options: ['初心者', '上級者', '子ども', '関係ない人'],
     answer: '初心者',
-    type: '文脈規定',
+    type: MojiGoiEntryCategory.SYNONYMS,
     unit: 7
   },
   {
@@ -2596,7 +2596,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     moji: "容姿",
     options: ['態度', '見た目', '中身', '印象'],
     answer: '見た目',
-    type: '文脈規定',
+    type: MojiGoiEntryCategory.SYNONYMS,
     unit: 7
   },
   {
@@ -2608,7 +2608,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     moji: "規模",
     options: ['大切さ', '種類', '大きさ', '必要性'],
     answer: '大きさ',
-    type: '文脈規定',
+    type: MojiGoiEntryCategory.SYNONYMS,
     unit: 7
   },
   {
@@ -2620,7 +2620,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     moji: "方針",
     options: ['進む方向', '場所', '人材', '売り上げ'],
     answer: '進む方向',
-    type: '文脈規定',
+    type: MojiGoiEntryCategory.SYNONYMS,
     unit: 7
   },
   {
@@ -2632,7 +2632,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     moji: "動揺",
     options: ['嫌な気分になった', '落ち着きをなくした', '落ち込んだ', 'うれしかった'],
     answer: '落ち着きをなくした',
-    type: '文脈規定',
+    type: MojiGoiEntryCategory.SYNONYMS,
     unit: 7
   },
   {
@@ -2644,7 +2644,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     moji: "説得",
     options: ['支える', '油断させる', '納得させる', '理解する'],
     answer: '納得させる',
-    type: '文脈規定',
+    type: MojiGoiEntryCategory.SYNONYMS,
     unit: 7
   },
   {
@@ -2656,7 +2656,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     moji: "加減する",
     options: ['調整する', '測る', '上げる', '下げる'],
     answer: '調整する',
-    type: '文脈規定',
+    type: MojiGoiEntryCategory.SYNONYMS,
     unit: 7
   },
   {
@@ -2668,7 +2668,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     moji: "後押しして",
     options: ['任せて', '助けて', '気に入って', '頑張って'],
     answer: '助けて',
-    type: '文脈規定',
+    type: MojiGoiEntryCategory.SYNONYMS,
     unit: 7
   },
   {
@@ -2680,7 +2680,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     moji: "通用する",
     options: ['有名な', '役に立つ', '便利な', '一番の'],
     answer: '役に立つ',
-    type: '文脈規定',
+    type: MojiGoiEntryCategory.SYNONYMS,
     unit: 7
   },
   {
@@ -2692,7 +2692,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     moji: "検討する",
     options: ['報告する', '取り組む', '意見を聞く', 'よく考える'],
     answer: 'よく考える',
-    type: '文脈規定',
+    type: MojiGoiEntryCategory.SYNONYMS,
     unit: 7
   },
   {
@@ -2704,7 +2704,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     moji: "克服",
     options: ['やり直した', '思い出した', '乗りこえた', 'かくした'],
     answer: '乗りこえた',
-    type: '文脈規定',
+    type: MojiGoiEntryCategory.SYNONYMS,
     unit: 7
   },
   {
@@ -2716,7 +2716,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     moji: "倒産した",
     options: ['分かれた', 'うまれた', '買われた', 'つぶれた'],
     answer: 'つぶれた',
-    type: '文脈規定',
+    type: MojiGoiEntryCategory.SYNONYMS,
     unit: 7
   },
   {
@@ -2728,7 +2728,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     moji: "依頼した",
     options: ['教えた', '紹介した', 'お願いした', '分けた'],
     answer: 'お願いした',
-    type: '文脈規定',
+    type: MojiGoiEntryCategory.SYNONYMS,
     unit: 7
   },
   {
@@ -2740,7 +2740,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     moji: "出世する",
     options: ['地位が上がる', '社会に出る', '会社を辞める', '悪いことをする'],
     answer: '地位が上がる',
-    type: '文脈規定',
+    type: MojiGoiEntryCategory.SYNONYMS,
     unit: 7
   },
   {
@@ -2752,7 +2752,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     moji: "ずらして",
     options: ['確認して', '変更して', '延長して', '短縮して'],
     answer: '変更して',
-    type: '文脈規定',
+    type: MojiGoiEntryCategory.SYNONYMS,
     unit: 7
   },
   {
@@ -2764,7 +2764,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     moji: "束ねる",
     options: ['きれいに洗う', '短く切る', 'まとめる', '広げる'],
     answer: 'まとめる',
-    type: '文脈規定',
+    type: MojiGoiEntryCategory.SYNONYMS,
     unit: 7
   },
   {
@@ -2776,7 +2776,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     moji: "慌てる",
     options: ['ゆっくりする', '適当にする', 'まじめにする', '急いでする'],
     answer: '急いでする',
-    type: '文脈規定',
+    type: MojiGoiEntryCategory.SYNONYMS,
     unit: 7
   },
   {
@@ -2788,7 +2788,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     moji: "つとめて",//努めて
     options: ['努力して', '向かって', '苦労して', '従事して'],
     answer: '努力して',
-    type: '文脈規定',
+    type: MojiGoiEntryCategory.SYNONYMS,
     unit: 7
   },
   {
@@ -2800,7 +2800,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     moji: "寄せる",
     options: ['捨てる', '集める', 'ためる', '見つける'],
     answer: '集める',
-    type: '文脈規定',
+    type: MojiGoiEntryCategory.SYNONYMS,
     unit: 7
   },
   {
@@ -2812,7 +2812,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     moji: "もちいる",
     options: ['増やす', '買う', '選ぶ', '使う'],
     answer: '使う',
-    type: '文脈規定',
+    type: MojiGoiEntryCategory.SYNONYMS,
     unit: 7
   },
   {
@@ -2824,7 +2824,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     moji: "わく",
     options: ['出る', '減る', 'なくなる', '見える'],
     answer: '出る',
-    type: '文脈規定',
+    type: MojiGoiEntryCategory.SYNONYMS,
     unit: 7
   },
   {
@@ -2836,7 +2836,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     moji: "縮める",
     options: ['競う', '短くする', '測る', '確かめる'],
     answer: '短くする',
-    type: '文脈規定',
+    type: MojiGoiEntryCategory.SYNONYMS,
     unit: 7
   },
   {
@@ -2848,7 +2848,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     moji: "含める",
     options: ['入れる', '除く', '採用する', '増やす'],
     answer: '入れる',
-    type: '文脈規定',
+    type: MojiGoiEntryCategory.SYNONYMS,
     unit: 7
   },
   {
@@ -2860,7 +2860,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     moji: "埋まっている",
     options: ['なくなった', '全くない', 'いっぱいだ', '少しある'],
     answer: 'いっぱいだ',
-    type: '文脈規定',
+    type: MojiGoiEntryCategory.SYNONYMS,
     unit: 7
   },
   {
@@ -2872,7 +2872,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     moji: "問い合わせる",
     options: ['教える', '謝る', '送る', '確かめる'],
     answer: '確かめる',
-    type: '文脈規定',
+    type: MojiGoiEntryCategory.SYNONYMS,
     unit: 7
   },
   {
@@ -2884,7 +2884,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     moji: "飛び回っている",
     options: ['遠くへでかけている', 'いそがしく歩き回っている', '会社の外にいる', 'いそがしくて疲れている'],
     answer: 'いそがしく歩き回っている',
-    type: '文脈規定',
+    type: MojiGoiEntryCategory.SYNONYMS,
     unit: 7
   },
   {
@@ -2896,7 +2896,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     moji: "洗い出す",
     options: ['あきらかにする', '改善する', 'してきする', '言い合う'],
     answer: 'あきらかにする',
-    type: '文脈規定',
+    type: MojiGoiEntryCategory.SYNONYMS,
     unit: 7
   },
   {
@@ -2908,7 +2908,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     moji: "追い返した",
     options: ['おいかけた', '帰らせた', 'うったえた', '説得した'],
     answer: '帰らせた',
-    type: '文脈規定',
+    type: MojiGoiEntryCategory.SYNONYMS,
     unit: 7
   },
   {
@@ -2920,7 +2920,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     moji: "引き返した",
     options: ['声をかけた', '引き止めた', '拾ってとどけた', '来た道をもどった'],
     answer: '来た道をもどった',
-    type: '文脈規定',
+    type: MojiGoiEntryCategory.SYNONYMS,
     unit: 7
   },
   {
@@ -2932,7 +2932,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     moji: "たくましい",
     options: ['強そうな', '健康そうな', 'だらしない', 'うらやましい'],
     answer: '強そうな',
-    type: '文脈規定',
+    type: MojiGoiEntryCategory.SYNONYMS,
     unit: 7
   },
   {
@@ -2944,7 +2944,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     moji: "くどい",
     options: ['ひどい', 'しつこい', 'すばらしい', 'わかりにくい'],
     answer: 'しつこい',
-    type: '文脈規定',
+    type: MojiGoiEntryCategory.SYNONYMS,
     unit: 7
   },
   {
@@ -2956,7 +2956,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     moji: "思いがけない",
     options: ['心配な', '悲しい', '意外な', '苦しい'],
     answer: '意外な',
-    type: '文脈規定',
+    type: MojiGoiEntryCategory.SYNONYMS,
     unit: 7
   },
   {
@@ -2968,7 +2968,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     moji: "おとなしい",
     options: ['かわいい', '上品な', '優しい', 'しずかな'],
     answer: 'しずかな',
-    type: '文脈規定',
+    type: MojiGoiEntryCategory.SYNONYMS,
     unit: 7
   },
   {
@@ -2980,7 +2980,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     moji: "ものたりない",
     options: ['理解できない', '想像できない', '満足できない', '説明できない'],
     answer: '満足できない',
-    type: '文脈規定',
+    type: MojiGoiEntryCategory.SYNONYMS,
     unit: 7
   },
   {
@@ -2992,7 +2992,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     moji: "非凡",
     options: ['まあまあだ', 'とても低い', '普通だ', 'すばらしい'],
     answer: 'すばらしい',
-    type: '文脈規定',
+    type: MojiGoiEntryCategory.SYNONYMS,
     unit: 7
   },
   {
@@ -3004,7 +3004,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     moji: "あいまいな",
     options: ['はっきりしない', 'おもしろい', '不思議な', '明確な'],
     answer: 'はっきりしない',
-    type: '文脈規定',
+    type: MojiGoiEntryCategory.SYNONYMS,
     unit: 7
   },
   {
@@ -3016,7 +3016,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     moji: "的確な",
     options: ['詳細な', '明確な', 'はっきりしない', '優しい'],
     answer: '明確な',
-    type: '文脈規定',
+    type: MojiGoiEntryCategory.SYNONYMS,
     unit: 7
   },
   {
@@ -3028,7 +3028,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     moji: "余計な",
     options: ['面倒な', '適当な', '不必要な', 'ばかな'],
     answer: '不必要な',
-    type: '文脈規定',
+    type: MojiGoiEntryCategory.SYNONYMS,
     unit: 7
   },
   {
@@ -3040,7 +3040,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     moji: "物騒な",
     options: ['うるさい', '危険な', '忙しい', '冷たい'],
     answer: '危険な',
-    type: '文脈規定',
+    type: MojiGoiEntryCategory.SYNONYMS,
     unit: 7
   },
   {
@@ -3052,7 +3052,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     moji: "深刻な",
     options: ['厳しい', '眠そうな', 'よゆうな', 'うれしそうな'],
     answer: '厳しい',
-    type: '文脈規定',
+    type: MojiGoiEntryCategory.SYNONYMS,
     unit: 7
   },
   {
@@ -3064,7 +3064,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     moji: "円満な",
     options: ['大切な', 'おだやかな', 'おもしろい', '厳しい'],
     answer: 'おだやかな',
-    type: '文脈規定',
+    type: MojiGoiEntryCategory.SYNONYMS,
     unit: 7
   },
   {
@@ -3076,7 +3076,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     moji: "見事な",
     options: ['りっぱな', 'あたらしい', 'ひどい', 'さんざんな'],
     answer: 'りっぱな',
-    type: '文脈規定',
+    type: MojiGoiEntryCategory.SYNONYMS,
     unit: 7
   },
   {
@@ -3088,7 +3088,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     moji: "あわれな",
     options: ['汚い', 'かわいい', 'かわいそうな', '死にそうな'],
     answer: 'かわいそうな',
-    type: '文脈規定',
+    type: MojiGoiEntryCategory.SYNONYMS,
     unit: 7
   },
   {
@@ -3100,7 +3100,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     moji: "わずかな",
     options: ['特別な', '単純な', '新しい', '小さい'],
     answer: '小さい',
-    type: '文脈規定',
+    type: MojiGoiEntryCategory.SYNONYMS,
     unit: 7
   },
   {
@@ -3112,7 +3112,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     moji: "のんびりしたい",
     options: ['眠りたい', '旅をしたい', 'ゆっくりしたい', '遊びたい'],
     answer: 'ゆっくりしたい',
-    type: '文脈規定',
+    type: MojiGoiEntryCategory.SYNONYMS,
     unit: 7
   },
   {
@@ -3124,7 +3124,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     moji: "よほど",
     options: ['とても', 'ちょっと', 'たくさん', 'まあまあ'],
     answer: 'とても',
-    type: '文脈規定',
+    type: MojiGoiEntryCategory.SYNONYMS,
     unit: 7
   },
   {
@@ -3136,7 +3136,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     moji: "着々と",
     options: ['にぎやかに', 'ゆっくりと', '止まらずに', 'こっそりと'],
     answer: '止まらずに',
-    type: '文脈規定',
+    type: MojiGoiEntryCategory.SYNONYMS,
     unit: 7
   },
   {
@@ -3148,7 +3148,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     moji: "おそらく",
     options: ['ほぼ', 'たぶん', '絶対', 'ぎりぎり'],
     answer: 'たぶん',
-    type: '文脈規定',
+    type: MojiGoiEntryCategory.SYNONYMS,
     unit: 7
   },
   {
@@ -3160,7 +3160,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     moji: "当分",
     options: ['しばらく', 'ずっと', '今だけ', '一応'],
     answer: 'しばらく',
-    type: '文脈規定',
+    type: MojiGoiEntryCategory.SYNONYMS,
     unit: 7
   },
   {
@@ -3172,7 +3172,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     moji: "あらゆる",
     options: ['意外な', '全ての', '自分なりの', '特別な'],
     answer: '全ての',
-    type: '文脈規定',
+    type: MojiGoiEntryCategory.SYNONYMS,
     unit: 7
   },
   {
@@ -3184,7 +3184,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     moji: "案外",
     options: ['まあまあ', 'いつもより', '思ったより', '他より'],
     answer: '思ったより',
-    type: '文脈規定',
+    type: MojiGoiEntryCategory.SYNONYMS,
     unit: 7
   },
   {
@@ -3196,7 +3196,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     moji: "たまたま",
     options: ['約束して', '偶然', '待ち合わせて', 'たまに'],
     answer: '偶然',
-    type: '文脈規定',
+    type: MojiGoiEntryCategory.SYNONYMS,
     unit: 7
   },
   {
@@ -3208,7 +3208,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     moji: "要するに",
     options: ['つまり', '実は', '当然', 'たぶん'],
     answer: 'つまり',
-    type: '文脈規定',
+    type: MojiGoiEntryCategory.SYNONYMS,
     unit: 7
   },
   {
@@ -3220,7 +3220,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     moji: "しばしば",
     options: ['突然', 'たまに', '何度も', 'うっかり'],
     answer: '何度も',
-    type: '文脈規定',
+    type: MojiGoiEntryCategory.SYNONYMS,
     unit: 7
   },
   {
@@ -3232,7 +3232,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     moji: "ほっと",
     options: ['安心', '感心', '期待', '納得'],
     answer: '安心',
-    type: '文脈規定',
+    type: MojiGoiEntryCategory.SYNONYMS,
     unit: 7
   },
   {
@@ -3244,7 +3244,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     moji: "ばったり",
     options: ['突然', '偶然', '結構', '早速'],
     answer: '偶然',
-    type: '文脈規定',
+    type: MojiGoiEntryCategory.SYNONYMS,
     unit: 7
   },
   {
@@ -3256,7 +3256,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     moji: "じたばたしても",
     options: ['走っても', 'やめても', '始めても', 'あわてても'],
     answer: 'あわてても',
-    type: '文脈規定',
+    type: MojiGoiEntryCategory.SYNONYMS,
     unit: 7
   },
   {
@@ -3268,7 +3268,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     moji: "はらはら",
     options: ['心配', '苦労', '安心', ' 感動'],
     answer: '心配',
-    type: '文脈規定',
+    type: MojiGoiEntryCategory.SYNONYMS,
     unit: 7
   },
   {
@@ -3280,7 +3280,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     moji: "ざっと",
     options: ['なるべく', 'だいたい', 'いい加減', 'きちんと'],
     answer: 'だいたい',
-    type: '文脈規定',
+    type: MojiGoiEntryCategory.SYNONYMS,
     unit: 7
   },
   {
@@ -3292,7 +3292,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     moji: "プロセス",
     options: ['要点', '内容', '過程', '問題'],
     answer: '過程',
-    type: '文脈規定',
+    type: MojiGoiEntryCategory.SYNONYMS,
     unit: 7
   },
   {
@@ -3304,7 +3304,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     moji: "ムード",
     options: ['ふんいき', '環境', '音楽', '場所'],
     answer: 'ふんいき',
-    type: '文脈規定',
+    type: MojiGoiEntryCategory.SYNONYMS,
     unit: 7
   },
   {
@@ -3316,7 +3316,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     moji: "ナイター",
     options: ['夜の市場', '夜の試合', '夜の風景', '夜の花火'],
     answer: '夜の試合',
-    type: '文脈規定',
+    type: MojiGoiEntryCategory.SYNONYMS,
     unit: 7
   },
   {
@@ -3328,7 +3328,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     moji: "スペース",
     options: ['時間', '家具', '空間', '予定'],
     answer: '空間',
-    type: '文脈規定',
+    type: MojiGoiEntryCategory.SYNONYMS,
     unit: 7
   },
   {
@@ -3340,7 +3340,7 @@ export const NIHONGO_NO_MORI_MOJIGOI_MONDAI_N2: any[] = [
     moji: "フレッシュな",
     options: ['新鮮な', '多様な', '安価な', '手軽な'],
     answer: '新鮮な',
-    type: '文脈規定',
+    type: MojiGoiEntryCategory.SYNONYMS,
     unit: 7
   },
   // Unit 8
