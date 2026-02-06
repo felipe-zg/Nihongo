@@ -15,6 +15,7 @@ export const routes: RouteItem[] = [
     name: 'N2',
     children: [
       { name: '日本語の森・文法・N2', path: '/grammar/nihongo-no-mori?level=N2' },
+      { name: '日本語の森・文法練習・N2', path: '/grammar/nihongo-no-mori?level=N2&mode=test' },
       { name: '日本語の森・文法問題・N2', path: '/grammar/mondai?level=N2' },
       { name: '日本語の森・復習・N2', path: '/JLPT/ExamVocabs?source=NIHONGO_NO_MORI&level=N2' },
       { name: '日本語の森・美味しい漢字・N2', path: '/kanji' },
@@ -28,6 +29,7 @@ export const routes: RouteItem[] = [
     name: 'N3',
     children: [
       { name: '日本語の森・文法・N3', path: '/grammar/nihongo-no-mori?level=N3' },
+      { name: '日本語の森・文法練習・N3', path: '/grammar/nihongo-no-mori?level=N3&mode=test' },
       { name: '日本語の森・復習・N3', path: '/JLPT/ExamVocabs?source=NIHONGO_NO_MORI&level=N3' },
       { name: '過去のJLPT試験・N3', path: '/JLPT/ExamVocabs?source=PAST_EXAMS' },
       { name: 'トモ先生 JLPT', path: '/JLPT/ExamVocabs?source=TOMO_SENSEI' },

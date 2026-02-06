@@ -1,10 +1,11 @@
 import React, { useEffect, useMemo } from "react";
-import { Box, Button, Divider, HStack, Input, Select, Stack, Text } from "native-base";
+import { Box, Button, Divider, HStack, Input, Pressable, Select, Stack, Text } from "native-base";
 import { FloatingControls } from "../../../components";
 import { GrammarCategory, GrammarEntryCategory } from "../../../enums";
 
 type Props = {
   grammarList: GrammarEntry[];
+  mode?: "test" | "grammar";
 };
 
 function ContentBox({ children }: { children: React.ReactNode }) {
@@ -15,7 +16,7 @@ function ContentBox({ children }: { children: React.ReactNode }) {
   );
 }
 
-const NihongoNoMoriGrammar: React.FC<Props> = ({ grammarList }) => {
+const NihongoNoMoriGrammar: React.FC<Props> = ({ grammarList, mode }) => {
   const [currentIndex, setCurrentIndex] = React.useState(0);
   const [showContent, setShowContent] = React.useState(false);
   const [filterText, setFilterText] = React.useState("");
@@ -150,6 +151,41 @@ const NihongoNoMoriGrammar: React.FC<Props> = ({ grammarList }) => {
     );
   };
 
+  const TestExample: React.FC<{item: {example: string; english: string, imi: string}}> = ({item}) => {
+    const [showTranslation, setShowTranslation] = React.useState(false);
+
+    return (
+      <Pressable onPress={() => setShowTranslation(!showTranslation)} px={10}>
+        <Box py={2}>
+          <ExamplePhrase example={item.example} />
+          { showTranslation && <Text color={"white"} textAlign="center">{item.english}</Text> }
+          { showTranslation && <Text color={"gray.400"} textAlign="center">意味：{item.imi}</Text> }
+        </Box>
+        <Divider my={2} bg="gray.500" thickness={0.5}/>
+      </Pressable>
+    );
+  };
+
+  const TestMode: React.FC = () => {
+    let examples = filteredList.reduce((acc: { example: string; english: string, imi: string }[], item) => {
+      item.examples.forEach(ex => {
+        acc.push({ example: ex.sentence, english: ex.meaning || "", imi: item.imi});
+      });
+      return acc;
+    }, []);
+
+    //shuffle examples
+    examples = examples.sort(() => Math.random() - 0.5);
+
+    return (
+      <Box>
+        {examples.map((ex, index) => (
+          <TestExample item={ex} />
+        ))}
+      </Box>
+    );
+  };
+
   return (
     <Box alignItems="center" mt={10} minHeight={"90vh"}>
       <Stack
@@ -174,6 +210,12 @@ const NihongoNoMoriGrammar: React.FC<Props> = ({ grammarList }) => {
       {filteredList.length === 0 ? (
         <Text fontFamily="Klee One" color="white" mt={4}>該当する文法が見つかりません。</Text>
       ) : (
+        mode === "test" ? (
+          <Box>
+            <Text textAlign={"center"} color="gray.500" my={5}>{`${categoryFilter} - ${filteredList.length} grammar points`}</Text>
+            <TestMode />
+          </Box>
+        ) :
         <>
           <Text color="pink.500" my={5}>{`${currentIndex + 1}/${filteredList.length}`}</Text>
           <ContentBox>

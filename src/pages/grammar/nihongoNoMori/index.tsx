@@ -4,10 +4,12 @@ import { NIHONGO_NO_MORI_GRAMMAR, NIHONGO_NO_MORI_GRAMMAR_N2 } from "../../../co
 import { useSearchParams } from "react-router-dom";
 
 type Level = "N3" | "N2";
+type Mode = "test" | "grammar";
 
 const NihongoNoMoriGrammarPage: React.FC = () => {
   const [searchParams] = useSearchParams();
   const levelParam: Level = (searchParams.get("level") as Level) || "N3";
+  const modeParam: Mode = (searchParams.get("mode") as Mode) || "grammar";
 
   const grammarList: GrammarEntry[] = useMemo(() => {
     switch (levelParam) {
@@ -20,7 +22,7 @@ const NihongoNoMoriGrammarPage: React.FC = () => {
   }, [levelParam]);
 
   return (
-    <NihongoNoMoriGrammar grammarList={grammarList} />
+    <NihongoNoMoriGrammar grammarList={grammarList} mode={modeParam} />
   )
 };
 
