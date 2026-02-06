@@ -1400,14 +1400,6 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     unit: 2
   },
   {
-    kanji: "寄る",
-    kana: "よる",
-    english: "to approach・to stop by",
-    explanation: "Refers to the act of approaching or stopping by a place.",
-    example: "学校帰りにコンビニに{寄る}。\nStop by the convenience store on the way home from school.",
-    unit: 2
-  },
-  {
     kanji: "間違う",
     kana: "まちがう",
     english: "to make a mistake",
@@ -2616,7 +2608,7 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     kana: "はっせい",
     english: "occurrence・outbreak",
     explanation: "Refers to the occurrence or outbreak of an event or phenomenon.",
-    example: "地震が{発生}した。\nAn earthquake occurred.",
+    example: "地震が{発生}した。\n返却期限に遅れると、追加料金が{発生}いたします。\nAn earthquake occurred.\nIf you are late returning it, additional charges will occur.",
     unit: 4
   },
   {
@@ -3919,14 +3911,6 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     unit: 7
   },
   {
-    kanji: "態度",
-    kana: "たいど",
-    english: "attitude・behavior",
-    explanation: "Refers to a person's attitude or behavior towards others or situations.",
-    example: "うそをついている人は、{態度}でわかる。\nYou can tell if someone is lying by their attitude.",
-    unit: 7
-  },
-  {
     kanji: "中身",
     kana: "なかみ",
     english: "contents・inside",
@@ -4007,14 +3991,6 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     unit: 7
   },
   {
-    kanji: "落ち込む",
-    kana: "おちこむ",
-    english: "to feel down・to be depressed",
-    explanation: "Refers to feeling down, depressed, or discouraged.",
-    example: "試験に失敗して、{落ち込んでいる}。\nI failed the exam and am feeling down.",
-    unit: 7
-  },
-  {
     kanji: "説得",
     kana: "せっとく",
     english: "persuasion",
@@ -4028,14 +4004,6 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "consent・agreement・understanding",
     explanation: "Refers to the act of understanding and accepting something, often after being convinced.",
     example: "彼の説明に{納得}した。\nI was convinced by his explanation.",
-    unit: 7
-  },
-  {
-    kanji: "油断",
-    kana: "ゆだん",
-    english: "carelessness・negligence",
-    explanation: "Refers to a state of being careless or negligent, often leading to mistakes or accidents.",
-    example: "{油断}すると、事故が起こることがある。\nIf you are careless, accidents can happen.",
     unit: 7
   },
   {
@@ -4135,14 +4103,6 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     unit: 7
   },
   {
-    kanji: "克服",
-    kana: "こくふく",
-    english: "overcome・conquer",
-    explanation: "Refers to the act of overcoming or conquering difficulties or obstacles.",
-    example: "つらい過去を{克服}した。\nI overcame a painful past.",
-    unit: 7
-  },
-  {
     kanji: "乗りこえる",
     kana: "のりこえる",
     english: "to overcome・to get over",
@@ -4204,14 +4164,6 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "change・modification",
     explanation: "Refers to the act of changing or modifying something.",
     example: "計画を{変更}する。\nChange the plan.",
-    unit: 7
-  },
-  {
-    kanji: "延長",
-    kana: "えんちょう",
-    english: "extension・elongation",
-    explanation: "Refers to the act of extending or lengthening something, such as time or a deadline.",
-    example: "締め切りを{延長}する。\nExtend the deadline.",
     unit: 7
   },
   {
@@ -4295,14 +4247,6 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     unit: 7
   },
   {
-    kanji: "寄せる",
-    kana: "よせる",
-    english: "to gather・to collect・to bring near",
-    explanation: "Refers to the act of gathering or bringing things or people closer together.",
-    example: "ほこりを部屋の隅に{寄せる}。\nGather dust in the corner of the room.",
-    unit: 7
-  },
-  {
     kanji: "用いる",
     kana: "もちいる",
     english: "to use・to utilize",
@@ -4327,43 +4271,11 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     unit: 7
   },
   {
-    kanji: "競う",
-    kana: "きそう",
-    english: "to compete・to contend",
-    explanation: "Refers to the act of competing or contending with others to achieve a goal or win.",
-    example: "選手たちは優勝を目指して{競っている}。\nThe athletes are competing to win the championship.",
-    unit: 7
-  },
-  {
-    kanji: "測る",
-    kana: "はかる",
-    english: "to measure・to weigh・to survey",
-    explanation: "Refers to the act of measuring, weighing, or surveying something.",
-    example: "温度を{測る}。\nMeasure the temperature.",
-    unit: 7
-  },
-  {
     kanji: "確かめる",
     kana: "たしかめる",
     english: "to confirm・to verify",
     explanation: "Refers to the act of checking or confirming something to ensure its accuracy or truth.",
     example: "予約内容を{確かめる}。\nConfirm the reservation details.",
-    unit: 7
-  },
-  {
-    kanji: "含める",
-    kana: "ふくめる",
-    english: "to include・to contain",
-    explanation: "Refers to the act of including or containing something within a group or category.",
-    example: "新入社員を{含めて}100名の社員がいます。\nIncluding new employees, there are 100 employees.",
-    unit: 7
-  },
-  {
-    kanji: "除く",
-    kana: "のぞく",
-    english: "to exclude・to remove",
-    explanation: "Refers to the act of excluding or removing something from a group or category.",
-    example: "彼をメンバーから{除く}。\nExclude him from the members.",
     unit: 7
   },
   {
@@ -4457,17 +4369,9 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
   {
     kanji: "追いかける",
     kana: "おいかける",
-    english: "to chase・to run after",
+    english: "to chase・to run after・to pursue",
     explanation: "Refers to the act of chasing or running after someone or something.",
     example: "子供たちが公園でボールを{追いかけている}。\nThe children are chasing a ball in the park.",
-    unit: 7
-  },
-  {
-    kanji: "説得",
-    kana: "せっとく",
-    english: "to persuade・to convince",
-    explanation: "Refers to the act of persuading or convincing someone to agree with a point of view or to take a certain action.",
-    example: "彼を{説得}して、プロジェクトに参加させた。\nI persuaded him to participate in the project.",
     unit: 7
   },
   {
@@ -4583,14 +4487,6 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     unit: 7
   },
   {
-    kanji: "満足",
-    kana: "まんぞく",
-    english: "satisfaction・contentment",
-    explanation: "Refers to the state of being satisfied or content with something.",
-    example: "彼は仕事に{満足}している。\nHe is satisfied with his job.",
-    unit: 7
-  },
-  {
     kanji: "非凡",
     kana: "ひぼん",
     english: "extraordinary・remarkable",
@@ -4695,14 +4591,6 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     unit: 7
   },
   {
-    kanji: "厳しい",
-    kana: "きびしい",
-    english: "strict・severe・harsh",
-    explanation: "Refers to someone or something that is strict, severe, or harsh, often used to describe rules, conditions, or people.",
-    example: "先生は学生に対して{厳しい}。\nThe teacher is strict with the students.",
-    unit: 7
-  },
-  {
     kanji: "円満な",
     kana: "えんまんな",
     english: "harmonious・amicable・peaceful",
@@ -4775,23 +4663,6 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     unit: 7
   },
   {
-    kanji: "様子",
-    kana: "ようす",
-    english: "appearance・state・situation",
-    explanation: "Refers to the appearance, state, or situation of something or someone, often used to describe how things look or feel.",
-    example: "彼女の{様子}からして、嫌なことがあったのだろう。\nJudging from her appearance, something unpleasant must have happened.",
-    unit: 7
-  },
-  {
-    kanji: "よほど",
-    kana: "よほど",
-    english: "considerably・greatly・to a large extent",
-    explanation: "Refers to something that is to a considerable degree or extent, often used to emphasize a large difference or amount.",
-    example: "彼女の様子からして、{よほど}嫌なことがあったのだろう。\nJudging from her appearance, something unpleasant must have happened to a great extent.",
-    sameMeaning: "とても",
-    unit: 7
-  },
-  {
     kanji: "着々",
     kana: "ちゃくちゃく",
     english: "steadily・progressively",
@@ -4808,36 +4679,11 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     unit: 7
   },
   {
-    kanji: "おそらく",
-    kana: "おそらく",
-    english: "probably・likely",
-    explanation: "Refers to something that is probable or likely to happen or be true.",
-    example: "この作業は{おそらく}今日中に終えることができると思う。\nI think this task can probably be finished by today.",
-    unit: 7
-  },
-  {
     kanji: "作業",
     kana: "さぎょう",
     english: "work・operation・task",
     explanation: "Refers to work, operation, or a task that is being performed.",
     example: "この{作業}はおそらく今日中に終えることができると思う。\nI think this task can probably be finished by today.",
-    unit: 7
-  },
-  {
-    kanji: "当分",
-    kana: "とうぶん",
-    english: "for the time being・for a while",
-    explanation: "Refers to a period of time in the near future, often implying a temporary state.",
-    example: "体調が悪いので、{当分}は安静にしていなければならない。\nBecause I'm not feeling well, I have to rest for the time being.",
-    sameMeaning: "しばらく",
-    unit: 7
-  },
-  {
-    kanji: "しばらく",
-    kana: "しばらく",
-    english: "for a while・for some time",
-    explanation: "Refers to a short period of time or a while.",
-    example: "{しばらく}休んでから、また仕事を始めた。\nAfter resting for a while, I started working again.",
     unit: 7
   },
   {
@@ -4905,14 +4751,6 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     unit: 7
   },
   {
-    kanji: "要するに",
-    kana: "ようするに",
-    english: "in short・to sum up",
-    explanation: "Used to summarize or conclude what has been said before.",
-    example: "{要するに}、私は必要ないということですね。\nIn short, you mean that I am not needed.",
-    unit: 7
-  },
-  {
     kanji: "つまり",
     kana: "つまり",
     english: "in other words・that is to say",
@@ -4945,14 +4783,6 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     unit: 7
   },
   {
-    kanji: "うっかり",
-    kana: "うっかり",
-    english: "carelessly・inadvertently",
-    explanation: "Refers to doing something carelessly or inadvertently, often leading to mistakes or accidents.",
-    example: "{うっかり}鍵を忘れてしまった。\nI carelessly forgot my keys.",
-    unit: 7
-  },
-  {
     kanji: "ほっと",
     kana: "ほっと",
     english: "relieved・feeling relieved",
@@ -4962,27 +4792,11 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     unit: 7
   },
   {
-    kanji: "感心",
-    kana: "かんしん",
-    english: "admiration・being impressed",
-    explanation: "Refers to the feeling of admiration or being impressed by someone's actions or qualities.",
-    example: "彼の努力には{感心}した。\nI was impressed by his effort.",
-    unit: 7
-  },
-  {
     kanji: "期待",
     kana: "きたい",
     english: "expectation・anticipation",
     explanation: "Refers to the feeling of looking forward to something or expecting something to happen.",
     example: "彼の成功を{期待}している。\nI am expecting his success.",
-    unit: 7
-  },
-  {
-    kanji: "納得",
-    kana: "なっとく",
-    english: "consent・agreement・understanding",
-    explanation: "Refers to the act of understanding and agreeing with something.",
-    example: "彼の説明に{納得}した。\nI was convinced by his explanation.",
     unit: 7
   },
   {
@@ -5011,27 +4825,11 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     unit: 7
   },
   {
-    kanji: "早速",
-    kana: "さっそく",
-    english: "immediately・at once",
-    explanation: "Refers to doing something immediately or without delay.",
-    example: "問題が起きたので、{早速}対応した。\nSince a problem occurred, I responded immediately.",
-    unit: 7
-  },
-  {
     kanji: "じたばたする",
     kana: "じたばたする",
     english: "to struggle・to flail about",
     explanation: "Refers to struggling or flailing about, often in a futile or desperate manner.",
     example: "彼は問題を解決しようと{じたばた}している。\nHe is struggling to solve the problem.",
-    unit: 7
-  },
-  {
-    kanji: "慌てる",
-    kana: "あわてる",
-    english: "to panic・to be flustered",
-    explanation: "Refers to becoming panicked or flustered, often leading to hasty or careless actions.",
-    example: "彼は急な出来事に{慌てて}しまった。\nHe panicked due to the sudden event.",
     unit: 7
   },
   {
@@ -5072,14 +4870,6 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "properly・neatly・accurately",
     explanation: "Refers to doing something properly, neatly, or accurately without any mistakes or sloppiness.",
     example: "書類は{きちんと}整理してください。\nPlease organize the documents properly.",
-    unit: 7
-  },
-  {
-    kanji: "加減",
-    kana: "かげん",
-    english: "adjustment・degree・extent",
-    explanation: "Refers to the adjustment or degree of something, often related to temperature, taste, or condition.",
-    example: "料理の味の{加減}を調整してください。\nPlease adjust the seasoning of the dish.",
     unit: 7
   },
   {
@@ -5128,14 +4918,6 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "atmosphere・mood",
     explanation: "Refers to the atmosphere or mood of a place or situation.",
     example: "パーティーは楽しい{雰囲気}だった。\nThe party had a fun atmosphere.",
-    unit: 7
-  },
-  {
-    kanji: "環境",
-    kana: "かんきょう",
-    english: "environment",
-    explanation: "Refers to the environment or surroundings in which a person, animal, or plant lives or operates.",
-    example: "良い{環境}で働くことは、健康にとって重要だ。\nWorking in a good environment is important for health.",
     unit: 7
   },
   {
@@ -5320,13 +5102,6 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     example: "{日当たり}の良い部屋に住むと、気持ちが前向きになるらしい。\nLiving in a room with good sunlight exposure is said to make you feel more positive.",
   },
   {
-    kanji: "目標",
-    kana: "もくひょう",
-    english: "goal・target",
-    explanation: "Refers to a goal or target that one aims to achieve.",
-    example: "今年の{目標}は英語を流暢に話せるようになることだ。\nMy goal for this year is to be able to speak English fluently.",
-  },
-  {
     kanji: "目に当たって",
     kana: "めにあたって",
     english: "on the occasion of・at the time of",
@@ -5348,25 +5123,11 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     example: "庭が広いので、庭の{手入れ}は専門の人に任せている。\nSince the garden is large, I leave the maintenance of the garden to a professional.",
   },
   {
-    kanji: "段階",
-    kana: "だんかい",
-    english: "stage・phase・step",
-    explanation: "Refers to a stage, phase, or step in a process or development.",
-    example: "プロジェクトは現在、計画{段階}にあります。\nThe project is currently in the planning stage.",
-  },
-  {
     kanji: "段差",
     kana: "だんさ",
     english: "step・difference in level",
     explanation: "Refers to a difference in height or level between two surfaces, such as a step or ledge.",
     example: "階段の{段差}に注意してください。\nPlease be careful of the steps on the stairs.",
-  },
-  {
-    kanji: "除く",
-    kana: "のぞく",
-    english: "to exclude・to remove・to except",
-    explanation: "Refers to the act of excluding, removing, or excepting something from a group or category.",
-    example: "このリストから自分の名前を{除いて}ください。\nPlease exclude your name from this list.",
   },
   {
     kanji: "階段",
@@ -5432,13 +5193,6 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     example: "夜間に警備員が建物の周りを{見回り}している。\nThe security guard is patrolling around the building at night.",
   },
   {
-    kanji: "寄る",
-    kana: "よる",
-    english: "to stop by・to drop in",
-    explanation: "Refers to the act of stopping by or dropping in at a place, often briefly.",
-    example: "仕事帰りに近くのスーパーに{寄った}。\nI stopped by the nearby supermarket on my way home from work.",
-  },
-  {
     kanji: "引き出す",
     kana: "ひきだす",
     english: "to withdraw (money)",
@@ -5472,13 +5226,6 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "large serving・extra portion",
     explanation: "Refers to ordering or serving a larger portion of food than usual.",
     example: "おなかが空いていたので、店長にご飯を{大盛に}してもらった。\nI was hungry, so I asked the manager to give me a large serving of rice.",
-  },
-  {
-    kanji: "発生",
-    kana: "はっせい",
-    english: "occurrence・outbreak",
-    explanation: "Refers to the occurrence or outbreak of an event, such as a problem, incident, or natural phenomenon.",
-    example: "返却期限に遅れると、追加料金が{発生}いたします。\nIf you are late returning it, additional charges will occur.",
   },
   {
     kanji: "誕生",
@@ -5677,13 +5424,6 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     example: "「筋トレ」という言葉は「筋力トレーニング」を略した言い方だ。\nThe word '筋トレ' is an abbreviation of '筋力トレーニング' (muscle training).",
   },
   {
-    kanji: "短縮",
-    kana: "たんしゅく",
-    english: "shortening・reduction",
-    explanation: "Refers to the act of shortening or reducing something in length, time, or amount.",
-    example: "電子レンジをうまく使えば、料理の時間を短縮することができる。\nIf you use the microwave well, you can shorten the cooking time.",
-  },
-  {
     kanji: "狭い",
     kana: "せまい",
     english: "narrow・cramped",
@@ -5703,13 +5443,6 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "to interrupt・to obstruct",
     explanation: "Refers to the act of interrupting or obstructing something, such as blocking light or sound.",
     example: "外からの光を{遮る}ために、部屋に特別なカーテンをつけた。\nI put special curtains in the room to block out the light from outside.",
-  },
-  {
-    kanji: "防ぐ",
-    kana: "ふせぐ",
-    english: "to prevent・to protect",
-    explanation: "Refers to the act of preventing something undesirable from happening or protecting against harm.",
-    example: "風邪を{防ぐ}ために、手洗いやうがいをしっかりしましょう。\nLet's wash our hands and gargle properly to prevent colds.",
   },
   {
     kanji: "高まる",
@@ -5761,13 +5494,6 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     example: "トンネルの中に入ると、ラジオの音声が{途切れた}。\nWhen I entered the tunnel, the radio sound was cut off.",
   },
   {
-    kanji: "遮る",
-    kana: "さえぎる",
-    english: "to interrupt・to obstruct",
-    explanation: "Refers to the act of interrupting or obstructing something, such as blocking light or sound.",
-    example: "外からの光を{遮る}ために、部屋に特別なカーテンをつけた。\nI put special curtains in the room to block out the light from outside.",
-  },
-  {
     kanji: "告白",
     kana: "こくはく",
     english: "confession",
@@ -5780,13 +5506,6 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "to embed・to implant",
     explanation: "Refers to the act of embedding or implanting something into another object or surface.",
     example: "専門の会社に頼んで、スピーカーを壁に{埋め込む}工事をした。\nI asked a specialized company to do the work of embedding speakers into the wall.",
-  },
-  {
-    kanji: "詰め込む",
-    kana: "つめこむ",
-    english: "to cram・to stuff",
-    explanation: "Refers to the act of cramming or stuffing something into a space.",
-    example: "息子はかばんに一週間分の荷物を{詰め込んで}、家を出て行った。\nMy son stuffed a week's worth of luggage into his bag and left home.",
   },
   {
     kanji: "植える",
@@ -5815,13 +5534,6 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "to fall・to drop",
     explanation: "Refers to something falling or dropping from a higher position to a lower one.",
     example: "木からリンゴが{落ちた}。\nAn apple fell from the tree.",
-  },
-  {
-    kanji: "浸かる",
-    kana: "つかる",
-    english: "to soak・to be submerged",
-    explanation: "Refers to something being soaked or submerged in a liquid, such as water.",
-    example: "お風呂にゆっくり{浸かった}。\nI soaked in the bath slowly.",
   },
   {
     kanji: "信じ込む",
@@ -5854,9 +5566,9 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
   {
     kanji: "寄る",
     kana: "よる",
-    english: "to approach・to draw near",
+    english: "to approach・to draw near・to stop by",
     explanation: "Refers to the act of approaching or drawing near to a place or person.",
-    example: "仕事が終わったらスーパーに{寄って}、ビールとおつまみを買うつもりだ。\nAfter work, I plan to stop by the supermarket to buy beer and snacks.",
+    example: "学校帰りにコンビニに{寄る}。\nStop by the convenience store on the way home from school.",
   },
   {
     kanji: "取り寄せる",
@@ -5927,13 +5639,6 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "to select carefully・to choose thoroughly",
     explanation: "Refers to the act of carefully selecting or choosing the best from among many options.",
     example: "こちらの料理は、数ある野菜の中から{選び抜いた}新鮮なものだけを使っています。\nThis dish uses only the freshest vegetables carefully selected from many options.",
-  },
-  {
-    kanji: "追いかける",
-    kana: "おいかける",
-    english: "to chase・to pursue",
-    explanation: "Refers to the act of chasing or pursuing someone or something.",
-    example: "子どもたちは公園で鬼ごっこをしていて、元気よく{追いかけて}いた。\nThe children were playing tag in the park and were energetically chasing each other.",
   },
   {
     kanji: "呼びかける",
