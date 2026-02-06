@@ -13,7 +13,7 @@ export function ExampleSentence({ sentence, textAlign }: { sentence: string; tex
   if (!match) {
     // No <> found, render normally
     return (
-      <Text textAlign={textAlign || "left"} fontSize="sm" color="gray.400">
+      <Text textAlign={textAlign || "left"} fontSize="sm" color="white">
         {sentence}
       </Text>
     );
@@ -23,7 +23,7 @@ export function ExampleSentence({ sentence, textAlign }: { sentence: string; tex
 
   if (parts.length < 3) {
     return (
-      <Text fontSize="sm" textAlign={textAlign || "left"} color="gray.400">
+      <Text fontSize="sm" textAlign={textAlign || "left"} color="white">
         {sentence}
       </Text>
     );
@@ -33,9 +33,9 @@ export function ExampleSentence({ sentence, textAlign }: { sentence: string; tex
 
   return (
     <Text fontSize="xl" textAlign={textAlign || "left"}>
-      <Text color="gray.400">{before}</Text>
-      <Text color="pink.500">{highlighted}</Text>
-      <Text color="gray.400">{after}</Text>
+      <Text color="white">{before}</Text>
+      <Text color="yellow.400">{highlighted}</Text>
+      <Text color="white">{after}</Text>
     </Text>
   );
 }
