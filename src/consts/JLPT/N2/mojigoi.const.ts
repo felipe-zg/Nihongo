@@ -5058,6 +5058,7 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "time and effort・labor",
     explanation: "Refers to the time and effort required to do something.",
     example: "仕事が終わって家に帰ってきてから{手間}のかかる料理を作るのは面倒だ。",
+    unit: 8
   },
   {
     kanji: "世話",
@@ -5065,6 +5066,7 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "care・help・assistance",
     explanation: "Refers to the act of taking care of someone or something, or providing help and assistance.",
     example: "病気の時は家族の世話が必要だ。\nWhen you are sick, you need the care of your family.",
+    unit: 8
   },
   {
     kanji: "障害",
@@ -5072,6 +5074,7 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "obstacle・disability・impediment",
     explanation: "Refers to an obstacle, disability, or impediment that hinders progress or function.",
     example: "支払いシステムに{障害}があって、うまくお金を支払うことができなかった。\nThere was an obstacle in the payment system, so I couldn't pay the money properly.",
+    unit: 8
   },
   {
     kanji: "不平",
@@ -5079,6 +5082,7 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "complaint・discontent・dissatisfaction",
     explanation: "Refers to a feeling of dissatisfaction or complaint about something perceived as unfair or unpleasant.",
     example: "同僚から仕事を押し付けられることに対して、部下が{不平}を言っている。\nThe subordinate is complaining about being burdened with work by a colleague.",
+    unit: 8
   },
   {
     kanji: "目上",
@@ -5086,6 +5090,7 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "superior・senior",
     explanation: "Refers to someone who is senior or of higher status, often in a workplace or social hierarchy.",
     example: "社会人にもなって{目上}の人に敬語を使えないなんてありえない。\nIt's unthinkable for an adult not to use honorific language with superiors.",
+    unit: 8
   },
   {
     kanji: "やりがい",
@@ -5093,6 +5098,7 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "worthwhile・rewarding",
     explanation: "Refers to the sense of fulfillment or motivation one gets from doing meaningful or rewarding work.",
     example: "{やりがい}のある仕事に出会うまで、何度も転職を続けた。\nI changed jobs many times until I found a worthwhile job.",
+    unit: 8
   },
   {
     kanji: "日当たり",
@@ -5100,6 +5106,7 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "exposure to sunlight",
     explanation: "Refers to the amount of sunlight that a place receives.",
     example: "{日当たり}の良い部屋に住むと、気持ちが前向きになるらしい。\nLiving in a room with good sunlight exposure is said to make you feel more positive.",
+    unit: 8
   },
   {
     kanji: "目に当たって",
@@ -5107,6 +5114,7 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "on the occasion of・at the time of",
     explanation: "Refers to the occasion or time when something significant happens.",
     example: "卒業{目に当たって}、先生方に感謝の気持ちを伝えたい。\nOn the occasion of graduation, I want to express my gratitude to my teachers.",
+    unit: 8
   },
   {
     kanji: "目当て",
@@ -5114,6 +5122,7 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "aim・purpose・goal",
     explanation: "Refers to the aim, purpose, or goal of an action or activity.",
     example: "お金{目当て}でビジネスをしても、うまくいくとは限らない。\nEven if you do business for the sake of money, it doesn't necessarily mean it will go well.",
+    unit: 8
   },
   {
     kanji: "手入れ",
@@ -5121,6 +5130,7 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "maintenance・care・upkeep",
     explanation: "Refers to the act of maintaining, caring for, or taking care of something to keep it in good condition.",
     example: "庭が広いので、庭の{手入れ}は専門の人に任せている。\nSince the garden is large, I leave the maintenance of the garden to a professional.",
+    unit: 8
   },
   {
     kanji: "段差",
@@ -5128,6 +5138,7 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "step・difference in level",
     explanation: "Refers to a difference in height or level between two surfaces, such as a step or ledge.",
     example: "階段の{段差}に注意してください。\nPlease be careful of the steps on the stairs.",
+    unit: 8
   },
   {
     kanji: "階段",
@@ -5135,6 +5146,7 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "stairs・staircase",
     explanation: "Refers to a set of steps that connect different levels in a building or structure.",
     example: "{階段}を上るときは手すりを使ってください。\nPlease use the handrail when going up the stairs.",
+    unit: 8
   },
   {
     kanji: "段取り",
@@ -5142,6 +5154,7 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "arrangements・preparations・plans",
     explanation: "Refers to the process of making arrangements or preparations for an event or task.",
     example: "イベントがうまく進むように、{段取り}してください。\nPlease make arrangements so that the event goes smoothly.",
+    unit: 8
   },
   {
     kanji: "手渡し",
@@ -5149,6 +5162,7 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "handing over・hand delivery",
     explanation: "Refers to the act of handing something directly to someone else, rather than sending it through a third party.",
     example: "入社してから3か月間は、給料は{手渡し}されます。\nFor the first three months after joining the company, the salary will be handed over directly.",
+    unit: 8
   },
   {
     kanji: "手助け",
@@ -5156,6 +5170,7 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "help・assistance",
     explanation: "Refers to the act of helping or assisting someone with a task or problem.",
     example: "父が入院することになり、母を{手助け}する必要があるので、しばらく実家に帰ります。\nMy father is going to be hospitalized, so I need to help my mother, and I will return to my parents' house for a while.",
+    unit: 8
   },
   {
     kanji: "投入",
@@ -5163,6 +5178,7 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "investment・input・putting in",
     explanation: "Refers to the act of investing or putting something into use, such as money, resources, or effort.",
     example: "服を入れてから、洗濯機に洗剤を{投入}してください。\nAfter putting in the clothes, please put the detergent into the washing machine.",
+    unit: 8
   },
   {
     kanji: "明らかに",
@@ -5170,6 +5186,7 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "clearly・obviously",
     explanation: "Refers to something that is clear or obvious, easily understood or perceived.",
     example: "ずっとなぞに包まれていた担任の先生の過去が{明らかに}なった。\nThe past of the homeroom teacher, which had been shrouded in mystery, became clear.",
+    unit: 8
   },
   {
     kanji: "遠回り",
@@ -5177,6 +5194,7 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "detour・roundabout way",
     explanation: "Refers to taking a longer or indirect route to reach a destination.",
     example: "初めて行く場所だったので、道を間違えて{遠回り}してしまった。\nSince it was my first time going there, I took a wrong turn and ended up taking a detour.",
+    unit: 8
   },
   {
     kanji: "乗り換え",
@@ -5184,6 +5202,7 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "transfer・change (trains, buses, etc.)",
     explanation: "Refers to the act of transferring or changing from one mode of transportation to another, such as changing trains or buses.",
     example: "東京駅で新幹線に{乗り換え}ます。\nI will transfer to the Shinkansen at Tokyo Station.",
+    unit: 8
   },
   {
     kanji: "見回り",
@@ -5191,6 +5210,7 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "patrol・round",
     explanation: "Refers to the act of patrolling or making rounds to check for safety or security.",
     example: "夜間に警備員が建物の周りを{見回り}している。\nThe security guard is patrolling around the building at night.",
+    unit: 8
   },
   {
     kanji: "引き出す",
@@ -5198,6 +5218,7 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "to withdraw (money)",
     explanation: "Refers to the act of taking money out of a bank account or ATM.",
     example: "銀行のATMからお金を{引き出した}。\nI withdrew money from the bank ATM.",
+    unit: 8
   },
   {
     kanji: "繁盛",
@@ -5205,6 +5226,7 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "prosperity・thriving",
     explanation: "Refers to a business or place that is prosperous and thriving, often busy with customers.",
     example: "この和菓子屋さんは、朝から夜まで{繁盛}している有名なお店だそうだ。\nThis Japanese sweets shop is famous for being busy from morning till night.",
+    unit: 8
   },
   {
     kanji: "繁栄",
@@ -5212,6 +5234,7 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "prosperity・flourishing",
     explanation: "Refers to a state of thriving, prosperity, or flourishing, often used for countries, economies, or cultures.",
     example: "かって京都は長い間、日本の首都として{繁栄}していた。\nKyoto once prospered as the capital of Japan for a long time.",
+    unit: 8
   },
   {
     kanji: "繁殖",
@@ -5219,6 +5242,7 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "breeding・propagation",
     explanation: "Refers to the process of breeding or propagation of animals or plants.",
     example: "ミントは繁殖する力が強いので、放っておいても成長する育てやすい植物だそうだ。\nMint has a strong ability to propagate, so it is an easy-to-grow plant that grows even if left alone.",
+    unit: 8
   },
   {
     kanji: "大盛に",
@@ -5226,6 +5250,7 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "large serving・extra portion",
     explanation: "Refers to ordering or serving a larger portion of food than usual.",
     example: "おなかが空いていたので、店長にご飯を{大盛に}してもらった。\nI was hungry, so I asked the manager to give me a large serving of rice.",
+    unit: 8
   },
   {
     kanji: "誕生",
@@ -5233,6 +5258,7 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "birth",
     explanation: "Refers to the birth or emergence of a person, idea, or thing.",
     example: "赤ちゃんが無事に{誕生}した。\nThe baby was born safely.",
+    unit: 8
   },
   {
     kanji: "生誕",
@@ -5240,6 +5266,7 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "birth・nativity",
     explanation: "Refers to the birth or nativity of a person, often used in a historical or formal context.",
     example: "有名な作曲家の{生誕}100年を記念して、パーティーが開かれた。\nA party was held to commemorate the 100th birth anniversary of the famous composer.",
+    unit: 8
   },
   {
     kanji: "廃止",
@@ -5247,6 +5274,7 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "abolition・discontinuation",
     explanation: "Refers to the act of abolishing or discontinuing a system, practice, or service.",
     example: "日本では、水泳の授業を{廃止}する小学校が増えているそうだ。\nIn Japan, the number of elementary schools that abolish swimming classes is increasing.",
+    unit: 8
   },
   {
     kanji: "休止",
@@ -5254,6 +5282,7 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "suspension・pause",
     explanation: "Refers to the act of temporarily stopping or pausing an activity or service.",
     example: "けがをしたので、しばらくは活動を{休止}します。\nDue to an injury, the activity will be suspended for a while.",
+    unit: 8
   },
   {
     kanji: "禁止",
@@ -5261,6 +5290,7 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "prohibition・ban",
     explanation: "Refers to the act of prohibiting or banning something.",
     example: "この公園では、ペットの持ち込みが{禁止}されています。\nBringing pets into this park is prohibited.",
+    unit: 8
   },
   {
     kanji: "導入",
@@ -5268,6 +5298,7 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "introduction・implementation",
     explanation: "Refers to the act of introducing or implementing something new, such as a system, technology, or method.",
     example: "会社に最新のパソコンを{導入}してから、仕事がしやすくなった。\nSince the company introduced the latest computers, work has become easier.",
+    unit: 8
   },
   {
     kanji: "案内",
@@ -5275,6 +5306,7 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "guidance・information",
     explanation: "Refers to the act of guiding or providing information to someone.",
     example: "日本にお越しになった際は、私が皆様をおいしいお店に{案内}いたします。\nWhen you come to Japan, I will guide you to delicious restaurants.",
+    unit: 8
   },
   {
     kanji: "入場",
@@ -5282,6 +5314,7 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "entry・admission",
     explanation: "Refers to the act of entering or being admitted to a place or event.",
     example: "オーケストラの演奏とともに、代表選手が{入場}してきた。\nAlong with the orchestra's performance, the representative players entered.",
+    unit: 8
   },
   {
     kanji: "団結",
@@ -5289,6 +5322,7 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "unity・solidarity",
     explanation: "Refers to the act of uniting or coming together as a group for a common purpose.",
     example: "今回優勝できたのは、何よりもチームが{団結}することができたからだと思います。\nI believe that the reason we were able to win this time was because the team was able to unite above all else.",
+    unit: 8
   },
   {
     kanji: "固定",
@@ -5296,6 +5330,7 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "fixation・securing",
     explanation: "Refers to the act of fixing or securing something in place.",
     example: "荷物が落ちないように、車の上にしっかりひもで{固定}した。\nI securely fixed the luggage on the car with a rope so it wouldn't fall off.",
+    unit: 8
   },
   {
     kanji: "団体",
@@ -5303,6 +5338,7 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "group・organization",
     explanation: "Refers to a group or organization of people.",
     example: "入場料金は1人300円で、10人以上の団体ですと1人250円です。\nThe admission fee is 300 yen per person, and for groups of 10 or more, it is 250 yen per person.",
+    unit: 8
   },
   {
     kanji: "集結",
@@ -5310,6 +5346,7 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "gathering・concentration",
     explanation: "Refers to the act of gathering or concentrating people or things in one place.",
     example: "友人の結婚式で、高校のとき親しかった仲間が久しぶりに地元に{集結}した。\nAt a friend's wedding, friends who were close in high school gathered in their hometown after a long time.",
+    unit: 8
   },
   {
     kanji: "洗練",
@@ -5317,6 +5354,7 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "refinement・polishing",
     explanation: "Refers to the process of refining or polishing something to make it more sophisticated or elegant.",
     example: "彼が作る時計は、機能性はもちろんだが、{洗練}されたデザインが魅力的だ。\nThe watches he makes are attractive not only for their functionality but also for their refined design.",
+    unit: 8
   },
   {
     kanji: "修行",
@@ -5324,6 +5362,7 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "training・ascetic practice",
     explanation: "Refers to the act of training or practicing, often in a disciplined or ascetic manner, to improve skills or character.",
     example: "彼は僧侶としての修行を積んでいる。\nHe is undergoing training as a monk.",
+    unit: 8
   },
   {
     kanji: "焦る",
@@ -5331,6 +5370,7 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "to be in a hurry・to be impatient",
     explanation: "Refers to the feeling of being rushed or impatient, often leading to mistakes or anxiety.",
     example: "時間がないときに{焦って}準備をすると、必ず何か忘れ物をしてしまう。\nWhen you hurry to prepare without enough time, you always forget something.",
+    unit: 8
   },
   {
     kanji: "焦げる",
@@ -5338,6 +5378,7 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "to burn・to be scorched",
     explanation: "Refers to the state of food or other items being burnt or scorched due to excessive heat.",
     example: "パンが{焦げて}しまったので、新しいのを焼き直した。\nThe bread got burnt, so I toasted a new one.",
+    unit: 8
   },
   {
     kanji: "湿る",
@@ -5345,6 +5386,7 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "to be damp・to be moist",
     explanation: "Refers to the state of something being damp or moist, often due to humidity or water.",
     example: "雨の時期はいくら洗濯物を干しても、服が乾かず{湿った}ままで困る。\nDuring the rainy season, no matter how much I hang the laundry, the clothes don't dry and remain damp, which is troublesome.",
+    unit: 8
   },
   {
     kanji: "溢れる",
@@ -5352,6 +5394,7 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "to overflow・to spill over",
     explanation: "Refers to the state of a liquid or other substance overflowing or spilling over the edges of a container.",
     example: "コップに水を入れすぎて、{溢れて}しまった。\nI poured too much water into the glass, and it overflowed.",
+    unit: 8
   },
   {
     kanji: "浸かる",
@@ -5359,6 +5402,7 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "to soak・to be submerged",
     explanation: "Refers to the state of being soaked or submerged in a liquid, often water.",
     example: "疲れた体を温泉に{浸かって}癒す。\nI soothe my tired body by soaking in a hot spring.",
+    unit: 8
   },
   {
     kanji: "至る",
@@ -5366,6 +5410,7 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "to reach・to arrive at",
     explanation: "Refers to the act of reaching or arriving at a certain point or stage.",
     example: "無職だった私が、会社を立ち上げるに{至る}までのお話をいたします。\nI will tell you the story of how I went from being unemployed to starting a company.",
+    unit: 8
   },
   {
     kanji: "居る",
@@ -5373,6 +5418,7 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "to be (for animate objects)",
     explanation: "Refers to the existence of animate objects such as people or animals.",
     example: "部屋に猫が{居る}。\nThere is a cat in the room.",
+    unit: 8
   },
   {
     kanji: "着く",
@@ -5380,6 +5426,7 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "to arrive・to reach",
     explanation: "Refers to the act of arriving at or reaching a destination.",
     example: "家を出てから会社に{着く}まで、だいたい一時間くらいかかります。\nIt takes about an hour to get from my house to the company.",
+    unit: 8
   },
   {
     kanji: "潜る",
@@ -5387,6 +5434,7 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "to dive・to go under",
     explanation: "Refers to the act of diving into water or going under something.",
     example: "昔から泳ぐのが苦手だった私は、海水浴に行ってすぐに{潜って}しまった。\nI have always been bad at swimming, so I immediately dived into the sea when I went swimming.",
+    unit: 8
   },
   {
     kanji: "暴く",
@@ -5394,6 +5442,7 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "to expose・to reveal",
     explanation: "Refers to the act of exposing or revealing hidden facts or truths.",
     example: "政治家の不正を{暴く}ために、証拠を集めているところだ。\nWe are gathering evidence to expose the politician's corruption.",
+    unit: 8
   },
   {
     kanji: "暴れる",
@@ -5401,6 +5450,7 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "to act violently・to rage",
     explanation: "Refers to the act of behaving in a violent or uncontrollable manner.",
     example: "彼は酔っ払って{暴れて}しまった。\nHe got drunk and started acting violently.",
+    unit: 8
   },
   {
     kanji: "解く",
@@ -5408,6 +5458,7 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "to solve・to untie",
     explanation: "Refers to the act of solving a problem or untying a knot.",
     example: "数学の問題を{解く}のは難しい。\nSolving math problems is difficult.",
+    unit: 8
   },
   {
     kanji: "殴る",
@@ -5415,6 +5466,7 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "to hit・to strike",
     explanation: "Refers to the act of hitting or striking someone or something with a hand or an object.",
     example: "彼は怒って相手を{殴った}。\nHe got angry and hit the other person.",
+    unit: 8
   },
   {
     kanji: "略す",
@@ -5422,6 +5474,7 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "to abbreviate・to omit",
     explanation: "Refers to the act of shortening or omitting parts of something, such as words or actions.",
     example: "「筋トレ」という言葉は「筋力トレーニング」を略した言い方だ。\nThe word '筋トレ' is an abbreviation of '筋力トレーニング' (muscle training).",
+    unit: 8
   },
   {
     kanji: "狭い",
@@ -5429,6 +5482,7 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "narrow・cramped",
     explanation: "Refers to a space or area that is limited in width or size.",
     example: "家賃の安い家に引っ越したら、部屋が前よりずいぶん狭くなってしまった。\nWhen I moved to a house with cheaper rent, the room became much narrower than before.",
+    unit: 8
   },
   {
     kanji: "妨げる",
@@ -5436,6 +5490,7 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "to hinder・to obstruct",
     explanation: "Refers to the act of hindering or obstructing something, preventing it from progressing smoothly.",
     example: "ゲームのやりすぎは、子どもの成長を{妨げる}ことにつながる。\nPlaying too many games can hinder a child's growth.",
+    unit: 8
   },
   {
     kanji: "遮る",
@@ -5443,6 +5498,7 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "to interrupt・to obstruct",
     explanation: "Refers to the act of interrupting or obstructing something, such as blocking light or sound.",
     example: "外からの光を{遮る}ために、部屋に特別なカーテンをつけた。\nI put special curtains in the room to block out the light from outside.",
+    unit: 8
   },
   {
     kanji: "高まる",
@@ -5450,6 +5506,7 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "to rise・to increase",
     explanation: "Refers to the act of something rising or increasing, such as feelings, tension, or levels.",
     example: "新型ウイルスの流行とともに、各国の対策方法への関心が{高まって}いる。\nWith the spread of the new virus, interest in countermeasures in each country is increasing.",
+    unit: 8
   },
   {
     kanji: "昇進",
@@ -5457,6 +5514,7 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "promotion",
     explanation: "Refers to the act of being promoted to a higher position or rank in a job or organization.",
     example: "今月の営業成績がトップだった彼は、来月から課長に{昇進}するらしい。\nHe was the top in sales this month, and it seems he will be promoted to section chief from next month.",
+    unit: 8
   },
   {
     kanji: "目立つ",
@@ -5464,6 +5522,7 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "to stand out・to be conspicuous",
     explanation: "Refers to something or someone that stands out or is conspicuous in a group or environment.",
     example: "スタイルが良くて美人の彼女は、教室の中でも特に{目立って}いる。\nShe has a good figure and is beautiful, so she stands out especially in the classroom.",
+    unit: 8
   },
   {
     kanji: "目がさえる",
@@ -5471,6 +5530,7 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "to be wide awake・to be alert",
     explanation: "Refers to the state of being wide awake or alert, often after being unable to sleep.",
     example: "夜にコーヒーを二杯も飲んだので、{目がさえて}なかなか眠れなくなってしまった。\nI drank two cups of coffee at night, so I was wide awake and couldn't sleep well.",
+    unit: 8
   },
   {
     kanji: "細かく",
@@ -5478,6 +5538,7 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "in detail・meticulously",
     explanation: "Refers to doing something in a detailed or meticulous manner.",
     example: "ゼミの先生は厳しい人なので、{細かく}私のレポートをチェックしてくれた。\nThe seminar teacher is strict, so he checked my report in detail.",
+    unit: 8
   },
   {
     kanji: "言い切る",
@@ -5485,6 +5546,7 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "to say definitively・to assert",
     explanation: "Refers to the act of saying something definitively or asserting something without doubt.",
     example: "犯人は絶対に彼だと{言い切る}ことはできませんが、可能性は高いです。\nI cannot say definitively that he is the culprit, but the possibility is high.",
+    unit: 8
   },
   {
     kanji: "途切れる",
@@ -5492,6 +5554,7 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "to be interrupted・to be cut off",
     explanation: "Refers to something being interrupted or coming to an end temporarily, such as a conversation or signal.",
     example: "トンネルの中に入ると、ラジオの音声が{途切れた}。\nWhen I entered the tunnel, the radio sound was cut off.",
+    unit: 8
   },
   {
     kanji: "告白",
@@ -5499,6 +5562,7 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "confession",
     explanation: "Refers to the act of confessing one's feelings or admitting something.",
     example: "彼は彼女に愛の{告白}をした。\nHe confessed his love to her.",
+    unit: 8
   },
   {
     kanji: "埋め込む",
@@ -5506,6 +5570,7 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "to embed・to implant",
     explanation: "Refers to the act of embedding or implanting something into another object or surface.",
     example: "専門の会社に頼んで、スピーカーを壁に{埋め込む}工事をした。\nI asked a specialized company to do the work of embedding speakers into the wall.",
+    unit: 8
   },
   {
     kanji: "植える",
@@ -5513,6 +5578,7 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "to plant",
     explanation: "Refers to the act of planting trees, flowers, or crops in the ground.",
     example: "庭に桜の木を{植えた}。\nI planted a cherry tree in the garden.",
+    unit: 8
   },
   {
     kanji: "落ち込む",
@@ -5520,6 +5586,7 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "to feel down・to be depressed",
     explanation: "Refers to the state of feeling down, depressed, or discouraged.",
     example: "彼はテストの点数が悪くて、ひどく{落ち込んで}いる。\nHe is feeling very down because of his bad test scores.",
+    unit: 8
   },
   {
     kanji: "落ち着かせる",
@@ -5527,6 +5594,7 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "to calm down・to settle",
     explanation: "Refers to the act of calming someone down or settling a situation.",
     example: "彼は怒っていたが、友達が話しかけて{落ち着かせた}。\nHe was angry, but his friend talked to him and calmed him down.",
+    unit: 8
   },
   {
     kanji: "落ちる",
@@ -5534,6 +5602,7 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "to fall・to drop",
     explanation: "Refers to something falling or dropping from a higher position to a lower one.",
     example: "木からリンゴが{落ちた}。\nAn apple fell from the tree.",
+    unit: 8
   },
   {
     kanji: "信じ込む",
@@ -5541,6 +5610,7 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "to believe firmly・to be convinced",
     explanation: "Refers to the act of believing something firmly or being convinced of something, often without doubt.",
     example: "彼の言うことを{信じ込んで}、「命の水」という水を高額で買ってしまった。\nI was convinced by what he said and ended up buying expensive water called 'Water of Life'.",
+    unit: 8
   },
   {
     kanji: "覚え込む",
@@ -5548,6 +5618,7 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "to memorize firmly・to learn thoroughly",
     explanation: "Refers to the act of memorizing something firmly or learning it thoroughly, often through repetition.",
     example: "小学生のときに、何度もノートに書いて漢字を{覚え込んだ}。\nWhen I was in elementary school, I wrote kanji in my notebook many times and memorized them thoroughly.",
+    unit: 8
   },
   {
     kanji: "頼み込む",
@@ -5555,6 +5626,7 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "to plead・to beg earnestly",
     explanation: "Refers to the act of pleading or begging someone earnestly for something.",
     example: "彼は何度も{頼み込んで}、仕事を手伝ってもらった。\nHe pleaded many times and got help with his work.",
+    unit: 8
   },
   {
     kanji: "寄せる",
@@ -5562,6 +5634,7 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "to gather・to collect・to bring near",
     explanation: "Refers to the act of gathering, collecting, or bringing something closer.",
     example: "荷物を全て部屋の隅に{寄せれば}、みんな座ることができると思います。\nIf you gather all the luggage in the corner of the room, I think everyone can sit down.",
+    unit: 8
   },
   {
     kanji: "寄る",
@@ -5569,6 +5642,7 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "to approach・to draw near・to stop by",
     explanation: "Refers to the act of approaching or drawing near to a place or person.",
     example: "学校帰りにコンビニに{寄る}。\nStop by the convenience store on the way home from school.",
+    unit: 8
   },
   {
     kanji: "取り寄せる",
@@ -5576,6 +5650,7 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "to order・to send for",
     explanation: "Refers to the act of ordering or sending for something, often from a distant place.",
     example: "雑誌で話題のおいしいチーズケーキを、わざわざ北海道から{取り寄せた}。\nI ordered a delicious cheesecake that was featured in a magazine from Hokkaido.",
+    unit: 8
   },
   {
     kanji: "引き寄せる",
@@ -5583,6 +5658,7 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "to pull close・to draw near",
     explanation: "Refers to the act of pulling something closer or drawing near.",
     example: "道路に飛び出そうとしていた子どもの腕を、ぐっとつかんで{引き寄せた}。\nI grabbed the arm of the child who was about to run out into the road and pulled them back.",
+    unit: 8
   },
   {
     kanji: "歩み寄る",
@@ -5590,6 +5666,7 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "to come to an agreement・to compromise",
     explanation: "Refers to the act of coming closer to someone else's position or opinion in order to reach an agreement or compromise.",
     example: "どんなに言い合いになっても、{歩み寄って}問題を解決するのが夫婦というものです。\nNo matter how much you argue, it is the nature of a married couple to come to an agreement and solve problems.",
+    unit: 8
   },
   {
     kanji: "見積もる",
@@ -5597,6 +5674,7 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "to estimate・to calculate",
     explanation: "Refers to the act of estimating or calculating the cost, amount, or value of something.",
     example: "部長に頼まれた仕事が多くて、終わらせるのに少なく{見積もって}もあと二時間はかかる。\nThere is a lot of work requested by the manager, and even with a low estimate, it will take another two hours to finish.",
+    unit: 8
   },
   {
     kanji: "溜まる",
@@ -5604,6 +5682,7 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "to accumulate・to pile up",
     explanation: "Refers to the act of something accumulating or piling up over time.",
     example: "仕事がたくさん{溜まって}しまって、休む暇がない。\nA lot of work has piled up, and I have no time to rest.",
+    unit: 8
   },
   {
     kanji: "積もる",
@@ -5611,6 +5690,7 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "to pile up・to accumulate",
     explanation: "Refers to the act of something piling up or accumulating, often used for snow or dust.",
     example: "夜の間に雪が降って、朝になると外が真っ白になるくらい雪が{積もって}いた。\nIt snowed during the night, and by morning, the outside was covered with snow.",
+    unit: 8
   },
   {
     kanji: "積む",
@@ -5618,6 +5698,7 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "to pile up・to stack",
     explanation: "Refers to the act of piling up or stacking objects on top of each other.",
     example: "荷物をトラックに{積んだ}。\nI piled up the luggage in the truck.",
+    unit: 8
   },
   {
     kanji: "追い抜く",
@@ -5625,6 +5706,7 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "to overtake・to pass",
     explanation: "Refers to the act of overtaking or passing someone or something, often in a race or competition.",
     example: "高校生になってから急に背が伸びてきて、兄の身長を{追い抜いた}。\nSince I became a high school student, I suddenly grew taller and overtook my brother's height.",
+    unit: 8
   },
   {
     kanji: "勝ち抜く",
@@ -5632,6 +5714,7 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "to win through・to survive",
     explanation: "Refers to the act of winning through a competition or surviving a difficult situation.",
     example: "彼は数々の厳しい試合を{勝ち抜いて}、ついに決勝戦の舞台に立った。\nHe won through many tough matches and finally stood on the stage of the final match.",
+    unit: 8
   },
   {
     kanji: "選び抜く",
@@ -5639,6 +5722,7 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "to select carefully・to choose thoroughly",
     explanation: "Refers to the act of carefully selecting or choosing the best from among many options.",
     example: "こちらの料理は、数ある野菜の中から{選び抜いた}新鮮なものだけを使っています。\nThis dish uses only the freshest vegetables carefully selected from many options.",
+    unit: 8
   },
   {
     kanji: "呼びかける",
@@ -5646,6 +5730,7 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "to call out to・to appeal to",
     explanation: "Refers to the act of calling out to someone or appealing to a group for attention or action.",
     example: "イベント会場内で、警備員が必死にマスクの着用を{呼びかけて}いる。\nThe security guard is desperately calling for mask-wearing inside the event venue.",
+    unit: 8
   },
   {
     kanji: "呼ぶ",
@@ -5653,6 +5738,7 @@ export const NIHONGO_NO_MORI_MOJI_GOI_N2: JLPTReview[] = [
     english: "to call・to invite",
     explanation: "Refers to the act of calling someone or inviting someone to a place or event.",
     example: "彼女を誕生日パーティーに{呼んだ}。\nI invited her to the birthday party.",
+    unit: 8
   },
   // Unit 9
   {
