@@ -101,7 +101,7 @@ const NihongoNoMoriGrammar: React.FC<Props> = ({ grammarList, mode }) => {
     setShowContent(false);
   }, [filteredList.length, categoryFilter]);
 
-  const ExamplePhrase: React.FC<{ example: string }> = ({ example }) => {
+  const ExamplePhrase: React.FC<{ example: string, fontSize?: string }> = ({ example, fontSize = "md" }) => {
     // Split by { } or [ ] or < >
     const parts = example.split(/(\{.*?\}|\[.*?\]|<.*?>)/g);
 
@@ -111,6 +111,7 @@ const NihongoNoMoriGrammar: React.FC<Props> = ({ grammarList, mode }) => {
         bold
         textAlign="center"
         color="white"
+        fontSize={fontSize}  
       >
         {parts.map((part, index) => {
           // { ... } → pink
@@ -157,7 +158,7 @@ const NihongoNoMoriGrammar: React.FC<Props> = ({ grammarList, mode }) => {
     return (
       <Pressable onPress={() => setShowTranslation(!showTranslation)} px={10}>
         <Box py={2}>
-          <ExamplePhrase example={item.example} />
+          <ExamplePhrase example={item.example} fontSize="xl"/>
           { showTranslation && <Text color={"white"} textAlign="center">{item.english}</Text> }
           { showTranslation && <Text color={"gray.400"} textAlign="center">意味：{item.imi}</Text> }
         </Box>
@@ -178,7 +179,7 @@ const NihongoNoMoriGrammar: React.FC<Props> = ({ grammarList, mode }) => {
     examples = examples.sort(() => Math.random() - 0.5);
 
     return (
-      <Box>
+      <Box minW={"100vw"}>
         {examples.map((ex, index) => (
           <TestExample item={ex} />
         ))}
