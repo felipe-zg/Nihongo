@@ -171,7 +171,7 @@ const JLPTExamVocabs: React.FC<Props> = ({
         {vocabList.map((item, index) => (
           <Box key={index}>
             <HStack space={3} alignItems="center" alignContent="center">
-              <Text fontSize="3xl" color="pink.500" fontFamily="Klee One">{item.kanji}</Text>
+              <Text fontSize="6xl" color="pink.500" fontFamily="Klee One">{item.kanji}</Text>
               <Text fontSize="md" fontFamily="Klee One" color={showContent ? "primary.500" : "transparent"} mt={2}>
                 {item.kana}
               </Text>
