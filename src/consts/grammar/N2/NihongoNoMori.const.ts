@@ -356,7 +356,7 @@ export const NIHONGO_NO_MORI_GRAMMAR_N2: GrammarEntry[] = [
     id: 11,
     grammar: "〜ことに",
     imi: "とても〜だ",
-    explanation: "この文法は「とても～だ」というふうに自分の感情を強調して言いたいときに使う文法です。「あ～本当にこう思う！」というふうに自分の気持ちを強く表現したいときに使われる文法です。",
+    explanation: "この文法は「とても～だ」というふうに自分の感情を強調して言いたいときに使う文法です。「あ～本当にこう思う！」というふうに自分の気持ちを強く表現したいときに使われる文法です。\nThis grammar is used when you want to strongly express your feelings by saying 'very ~'. It is used when you want to strongly express your feelings, like 'Ah, I really think this!'",
     extraInfo: "この文法、気持ちを強調していう文法なので自分がこういうふうに感じる。という風に自分の感情を表す言葉と一緒によく使われます。\n\nこの「～ことに」という文法は日常会話ではあまり使わない言い方ですね。もし使うんだったら、「こんなことがあってさめっちゃ困ったよ。」とか「もうすごく大変だったよ。」こういう言い方をすることの方が多いです。「困ったことに」とわざわざ言う事は少なくて小説の中とか、書き言葉の中でよく見かけるかなと思います。",
     usage: {
       form: [
@@ -369,36 +369,36 @@ export const NIHONGO_NO_MORI_GRAMMAR_N2: GrammarEntry[] = [
     examples: [
       {
         sentence: "[悲しい]{ことに}、新しく買ったばかりの口紅をなくしてしまった。",
-        meaning: "xxxxx"
+        meaning: "It's so sad that I lost the lipstick I just bought."
       },
       {
         sentence: "[驚いた]{ことに}、普通は3日かかる仕事を彼は1日で完璧にやり終えてしまった。",
-        meaning: "xxxxx"
+        meaning: "It's surprising that he perfectly finished a job that usually takes three days in just one day."
       },
       {
         sentence: "上司：「昨日のプレゼンどうだった？」\n部下：「[ありがたい]{ことに}、我が社の製品を気に入っていただけたようです。」",
-        meaning: "xxxxx"
+        meaning: "It's so grateful that it seems our company's product was well received."
       },
       {
         sentence: "[不思議な]{ことに}全然悲しくないんだよね！",
-        meaning: "xxxxx"
+        meaning: "It's strange that I'm not sad at all!"
       },
     ],
     category: GrammarEntryCategory.KOTO,
     newWords: [
-      { kanji: "口紅", kana: "xx", english: "xx" },
-      { kanji: "驚く", kana: "xx", english: "xx" },
-      { kanji: "完璧", kana: "xx", english: "xx" },
-      { kanji: "我", kana: "xx", english: "xx" },
-      { kanji: "製品", kana: "xx", english: "xx" },
-      { kanji: "不思議な", kana: "xx", english: "xx" }
+      { kanji: "口紅", kana: "くちべに", english: "lipstick" },
+      { kanji: "驚く", kana: "おどろく", english: "to be surprised" },
+      { kanji: "完璧", kana: "かんぺき", english: "perfect" },
+      { kanji: "我", kana: "わが", english: "our" },
+      { kanji: "製品", kana: "せいひん", english: "product" },
+      { kanji: "不思議な", kana: "ふしぎな", english: "strange" }
     ]
   },
   {
     id: 12,
     grammar: "〜ことにする",
     imi: "本当はそうじゃないけど、〜というふりをする",
-    explanation: "この文法は、本当はそうじゃないんだけど「～のふりをする」という意味です。本当はそれをやったわけじゃないんだけどそれをやったようなふりをする。",
+    explanation: "この文法は、本当はそうじゃないんだけど「～のふりをする」という意味です。本当はそれをやったわけじゃないんだけどそれをやったようなふりをする。\nThis grammar means 'to pretend to do something' even though it's not actually the case. It means that you didn't actually do it, but you pretend as if you did.",
     extraInfo: "この場面のように、「見なかったことにしてほしい」とか、「聞かなかったことにしてほしい」とか、「知らなかったことにしてほしい」こういう言い方は、日常会話でもよく使われます。",
     usage: {
       form: [{ name: "v. た" }],
@@ -407,33 +407,33 @@ export const NIHONGO_NO_MORI_GRAMMAR_N2: GrammarEntry[] = [
     examples: [
       {
         sentence: "姉が作ったお弁当を、自分が[作った]{ことにして}恋人にプレゼントした。",
-        meaning: "xxxxx"
+        meaning: "I pretended that I made the lunchbox my sister made and gave it to my lover as a present."
       },
       {
         sentence: "来月転校するって話、まだ内緒にしているから、[聞かなかった]{ことにして}くれない？",
-        meaning: "xxxxx"
+        meaning: "The story about transferring schools next month is still a secret, so can you pretend you didn't hear it?"
       },
       {
         sentence: "宿題を[終わらせた]{ことにして}遊びに行ったら、お母さんに叱られた。",
-        meaning: "xxxxx"
+        meaning: "I pretended that I finished my homework and went out to play, but my mother scolded me."
       },
       {
         sentence: "分けてくれるなら[見なかった]{ことにする}！",
-        meaning: "xxxxx"
+        meaning: "If you share it with me, I'll pretend I didn't see it!"
       },
     ],
     category: GrammarEntryCategory.KOTO,
     newWords: [
-      { kanji: "転校", kana: "xx", english: "xx" },
-      { kanji: "内緒", kana: "xx", english: "xx" },
-      { kanji: "叱られる", kana: "xx", english: "xx" }
+      { kanji: "転校", kana: "てんこう", english: "transfer schools" },
+      { kanji: "内緒", kana: "ないしょ", english: "secret" },
+      { kanji: "叱られる", kana: "しかられる", english: "to be scolded" }
     ]
   },
   {
     id: 13,
     grammar: "〜ことか",
     imi: "本当に〜だ",
-    explanation: "この文法は、自分の気持ちとか自分がやったこと行動に対して気持ちを込めて言うときに使う文法です。「ああこうだなぁ」というふうに強く感じることを表現したいときに使う文法です。この「ことか」を使うときは前に「どんなに〜ことか」とか「どれだけ〜ことか」「どれほど〜ことか」「なんと〜ことか」この4つの言葉が一緒に使われる場合が多いです。これを使うことでもっともっと気持ちを強調をして表現することができます。",
+    explanation: "この文法は、自分の気持ちとか自分がやったこと行動に対して気持ちを込めて言うときに使う文法です。「ああこうだなぁ」というふうに強く感じることを表現したいときに使う文法です。この「ことか」を使うときは前に「どんなに〜ことか」とか「どれだけ〜ことか」「どれほど〜ことか」「なんと〜ことか」この4つの言葉が一緒に使われる場合が多いです。これを使うことでもっともっと気持ちを強調をして表現することができます。\nThis grammar is used when you want to express your feelings or actions with strong emotion. It is used when you want to express that you strongly feel 'Ah, this is how it is.' When using 'ことか', it is often preceded by phrases like 'どんなに〜ことか', 'どれだけ〜ことか', 'どれほど〜ことか', or 'なんと〜ことか'. Using these phrases together allows you to further emphasize your feelings.",
     extraInfo: "この「～ことか」という文法は、日常生活ではあまり使うことがありません。こういう話し方をする人もいるんですがどちらかというと、小説の中とか、アニメやマンガ、ドラマの中でよく聞く表現かなと思います。",
     usage: {
       form: [{ name: "普通形" }, { name: "名詞", connector: "である" }, { name: "な形容詞", connector: "な・である" }],
@@ -442,31 +442,31 @@ export const NIHONGO_NO_MORI_GRAMMAR_N2: GrammarEntry[] = [
     examples: [
       {
         sentence: "どんなときでも明るい笑顔を見せる彼女に、<どれほど>[救われている]{ことか}。",
-        meaning: "xxxxx"
+        meaning: "I am so saved by her bright smile at all times."
       },
       {
         sentence: "今までお腹の中にいた息子の顔を初めてみたとき、<どんなに>[うれしかった]{ことか}。",
-        meaning: "xxxxx"
+        meaning: "When I first saw my son's face, who had been in my womb until then, I was so happy."
       },
       {
         sentence: "大事な試合前にけがをしてしまって、<どれだけ>[つらかった]{ことか}。",
-        meaning: "xxxxx"
+        meaning: "I was so distressed to get injured before an important match."
       },
       {
         sentence: "N2合格のために、<どれだけ>[勉強した]{ことか}。",
-        meaning: "xxxxx"
+        meaning: "I studied so much to pass the N2 exam."
       },
     ],
     category: GrammarEntryCategory.KOTO,
     newWords: [
-      { kanji: "救われる", kana: "xx", english: "xx" },
+      { kanji: "救われる", kana: "すくわれる", english: "to be saved" },
     ]
   },
   {
     id: 14,
     grammar: "〜ことから",
     imi: "〜だから",
-    explanation: "この文法は、原因や理由を表すときに使われる文法です。特に名前の由来ですね。このものの名前がどうしてそういう名前になったのかという理由を説明するときそれから何か物事が起きていてそれがどうしてそうなったのかの原因を説明するときによく使われる文法です。",
+    explanation: "この文法は、原因や理由を表すときに使われる文法です。特に名前の由来ですね。このものの名前がどうしてそういう名前になったのかという理由を説明するときそれから何か物事が起きていてそれがどうしてそうなったのかの原因を説明するときによく使われる文法です。\nThis grammar is used to express causes or reasons, especially the origin of names. It is often used when explaining why something has a certain name or when explaining the cause of something that has happened.",
     extraInfo: "この「ことから」という文法は日常会話ではあまり使わないです。ちゃんとした言い方だな。という印象があるので何か物の名前を説明するときに書き言葉として使われたり、正式な場で説明をするときに使われるような文法です。\n\n日常会話だったら「〜から」と使います。「呼びやすいからこの名前になったんだよ。」こういう言い方のほうが自然ですね。",
     usage: {
       form: [{ name: "普通形" }, { name: "名詞", connector: "である" }, { name: "な形容詞", connector: "な・である" }],
@@ -475,35 +475,35 @@ export const NIHONGO_NO_MORI_GRAMMAR_N2: GrammarEntry[] = [
     examples: [
       {
         sentence: "この通りにあるお菓子屋さんはどれも[有名である]{ことから}、ここは「スイーツストリート」と呼ばれている。",
-        meaning: "xxxxx"
+        meaning: "Because all the confectionery shops on this street are famous, this place is called 'Sweets Street'."
       },
       {
         sentence: "まだ足跡が雪の上にはっきりと[残っている]{ことから}、熊はまだ近くにいると考えられる。",
-        meaning: "xxxxx"
+        meaning: "Because the footprints are still clearly visible on the snow, it is believed that the bear is still nearby."
       },
       {
         sentence: "栄養のバランスが[良い]{ことから}、和食がまた注目を集めるようになった。",
-        meaning: "xxxxx"
+        meaning: "Because the nutritional balance is good, Japanese cuisine has once again attracted attention."
       },
       {
         sentence: "A: あやの先生の名前の由来ってなんですか？\nB: 礼儀が[正しくなるようにという]{ことから}「あやの」という名前になりました。",
-        meaning: "xxxxx"
+        meaning: "A: What is the origin of Ayano-sensei's name?\nB: The name 'Ayano' was given with the hope that she would become polite."
       },
     ],
     category: GrammarEntryCategory.KOTO,
     newWords: [
-      { kanji: "由来", kana: "xx", english: "xx" },
-      { kanji: "足跡", kana: "あしあと", english: "xx" },
-      { kanji: "熊", kana: "くま", english: "xx" },
-      { kanji: "栄養", kana: "えいよう", english: "xx" },
-      { kanji: "礼儀", kana: "れいぎ", english: "xx" },
+      { kanji: "由来", kana: "ゆらい", english: "origin" },
+      { kanji: "足跡", kana: "あしあと", english: "footprint" },
+      { kanji: "熊", kana: "くま", english: "bear" },
+      { kanji: "栄養", kana: "えいよう", english: "nutrition" },
+      { kanji: "礼儀", kana: "れいぎ", english: "manners" },
     ]
   },
   {
     id: 15,
     grammar: "〜のことだから",
     imi: "〜の性格を考えると",
-    explanation: "この文法は「～の性格から考えるとこうだろう」と思うときに使う文法です。",
+    explanation: "この文法は「～の性格から考えるとこうだろう」と思うときに使う文法です。\nThis grammar is used when you want to say 'considering the personality of ~, it is probably like this.'",
     extraInfo: "接続は、名詞＋のことだから、名詞が入ります。この名詞の中には、人の名前とか組織の名前が入ります。このように「〜の性格から考えるとこうだろうきっとこうなるだろうというふうに予想するときに使われる文法です。\n\nこの「～のことだから」という文法はいい意味でも悪い意味でもどちらでも使うことができます。\nこの文法、日常生活でもよく使います。",
     usage: {
       form: [{ name: "名詞" }],
@@ -512,27 +512,27 @@ export const NIHONGO_NO_MORI_GRAMMAR_N2: GrammarEntry[] = [
     examples: [
       {
         sentence: "いつも寝坊する[彼女]{のことだから}、今日もデートに遅刻してくるだろう。",
-        meaning: "xxxxx"
+        meaning: "Because she always oversleeps, she will probably be late for our date today as well."
       },
       {
         sentence: "[母]{のことだから}、私を元気にさせるためにお弁当に大好物の卵焼きをたくさん入れてくれたのだろう。",
-        meaning: "xxxxx"
+        meaning: "Considering my mother, she probably put a lot of my favorite tamagoyaki in my lunchbox to cheer me up."
       },
       {
         sentence: "田中；「どうしよう。森くんのペン壊しちゃった。」\n山田；「[優しい彼]{のことだから}、謝れば許してくれるさ。」",
-        meaning: "xxxxx"
+        meaning: "Tanaka: 'What should I do? I broke Mori-kun's pen.'\nYamada: 'Considering how kind he is, if you apologize, he'll probably forgive you.'"
       },
       {
         sentence: "おっそ！全然こーへんやん！[あいつ]{のことやから}、どうせ寝坊してんねやろなー！",
-        meaning: "xxxxx"
+        meaning: "So late! He hasn't come at all! Considering that guy, he must have overslept!"
       },
     ],
     category: GrammarEntryCategory.KOTO,
     newWords: [
-      { kanji: "壊す", kana: "xx", english: "xx" },
-      { kanji: "優しい", kana: "xx", english: "xx" },
-      { kanji: "謝る", kana: "あやまる", english: "xx" },
-      { kanji: "許す", kana: "ゆるす", english: "xx" }
+      { kanji: "壊す", kana: "こわす", english: "to break" },
+      { kanji: "優しい", kana: "やさしい", english: "kind" },
+      { kanji: "謝る", kana: "あやまる", english: "to apologize" },
+      { kanji: "許す", kana: "ゆるす", english: "to forgive" }
     ],
     important: true
   },
@@ -540,7 +540,7 @@ export const NIHONGO_NO_MORI_GRAMMAR_N2: GrammarEntry[] = [
     id: 16,
     grammar: "〜ことなく",
     imi: "〜しないで",
-    explanation: "この文法は「～しないで」という意味です。\n「ことなく」というのは「〜をしない状態で別のことをする」と言いたいときに使う文法ですから「〜ことなく」これは「〜しないで」と同じ意味になります。",
+    explanation: "この文法は「～しないで」という意味です。\n「ことなく」というのは「〜をしない状態で別のことをする」と言いたいときに使う文法ですから「〜ことなく」これは「〜しないで」と同じ意味になります。\nThis grammar means 'without doing ~'. 'ことなく' is used when you want to say 'doing something while not doing ~', so it has the same meaning as 'without doing ~'.",
     usage: {
       form: [{ name: "V. る" }],
       pattern: ["ことなく"],
@@ -548,33 +548,33 @@ export const NIHONGO_NO_MORI_GRAMMAR_N2: GrammarEntry[] = [
     examples: [
       {
         sentence: "工場では24時間、[止まる]{ことなく}機械が動き続けている。",
-        meaning: "xxxxx"
+        meaning: "In the factory, machines continue to operate 24 hours a day without stopping."
       },
       {
         sentence: "私の親友は、毎年[忘れる]{ことなく}誕生日に手紙をくれる。",
-        meaning: "xxxxx"
+        meaning: "My best friend never forgets to send me a letter on my birthday every year."
       },
       {
         sentence: "彼は祝日も[休む]{ことなく}働き続けていたので、身体を壊してしまった。",
-        meaning: "xxxxx"
+        meaning: "He continued to work without taking a break even on holidays, so he ended up ruining his health."
       },
       {
         sentence: "私はこれまで[休む]{ことなく}勉強を続けてきました。",
-        meaning: "xxxxx"
+        meaning: "I have continued studying without taking a break until now."
       },
     ],
     category: GrammarEntryCategory.KOTO,
     newWords: [
-      { kanji: "機械", kana: "きかい", english: "xx" },
-      { kanji: "祝日", kana: "しゅくじつ", english: "xx" },
-      { kanji: "壊す", kana: "xx", english: "xx" }
+      { kanji: "機械", kana: "きかい", english: "machine" },
+      { kanji: "祝日", kana: "しゅくじつ", english: "holiday" },
+      { kanji: "壊す", kana: "こわす", english: "to break" }
     ]
   },
   {
     id: 17,
     grammar: "〜ないことには",
     imi: "〜しなければ",
-    explanation: "この文法は「～しなければ」という意味です。これをしないと、こういう結果にはならないと言いたいときに使う文法なので「～ないことには～ない」のように後ろには「ない」がつく文章が続きます。",
+    explanation: "この文法は「～しなければ」という意味です。これをしないと、こういう結果にはならないと言いたいときに使う文法なので「～ないことには～ない」のように後ろには「ない」がつく文章が続きます。\nThis grammar means 'if not ~'. It is used when you want to say that if you don't do something, a certain result will not happen. Therefore, the sentence that follows usually ends with 'ない', as in '~ないことには~ない'.",
     extraInfo: "この文法は、「～してみないことには分からない」という使い方がすごく多いです。\n「使ってみないことには分からない」とか「食べてみないことにはおいしいかどうかわからない」、「行ってみないことには、楽しいかどうかわからない」このように使われることが本当に多いです。",
     usage: {
       form: [
@@ -588,34 +588,34 @@ export const NIHONGO_NO_MORI_GRAMMAR_N2: GrammarEntry[] = [
     examples: [
       {
         sentence: "実物を[見てみない]{ことには}、買うかどうか決めることはできない。",
-        meaning: "xxxxx"
+        meaning: "If you don't actually see the real thing, you can't decide whether to buy it or not."
       },
       {
         sentence: "お湯が[熱くない]{ことには}、温泉に入っても体が温まらない。",
-        meaning: "xxxxx"
+        meaning: "If the hot water is not hot, your body won't warm up even if you enter the hot spring."
       },
       {
         sentence: "色々やりたいことがあっても、[健康でない]{ことには}何も始められない。",
-        meaning: "xxxxx"
+        meaning: "Even if there are many things I want to do, if I'm not healthy, I can't start anything."
       },
       {
         sentence: "実際に[使ってみない]{ことには}いいかどうかわからないから。",
-        meaning: "xxxxx"
+        meaning: "If you don't actually try using it, you won't know if it's good or not."
       },
     ],
     category: GrammarEntryCategory.KOTO,
     newWords: [
-      { kanji: "実物", kana: "じつぶつ", english: "xx" },
-      { kanji: "お湯", kana: "おゆ", english: "xx" },
-      { kanji: "熱い", kana: "あつい", english: "xx" },
-      { kanji: "温まる", kana: "あたたまる", english: "xx" }
+      { kanji: "実物", kana: "じつぶつ", english: "actual thing" },
+      { kanji: "お湯", kana: "おゆ", english: "hot water" },
+      { kanji: "熱い", kana: "あつい", english: "hot" },
+      { kanji: "温まる", kana: "あたたまる", english: "to warm up" }
     ]
   },
   {
     id: 18,
     grammar: "〜ないことはない",
     imi: "〜だ！とはっきり言えない",
-    explanation: "この文法は「絶対に～だ」とはっきり言えないときに使う文法です。「ないことはない」ですからつまり、あるんですね。「そうだ。」という文法なんですが「そうだ」とはっきり言えないときにこの文法が使われます。",
+    explanation: "この文法は「絶対に～だ」とはっきり言えないときに使う文法です。「ないことはない」ですからつまり、あるんですね。「そうだ。」という文法なんですが「そうだ」とはっきり言えないときにこの文法が使われます。\nThis grammar is used when you cannot clearly say 'it is definitely ~'. Since it is 'not that it is not ~', it means that it is indeed ~. However, this grammar is used when you cannot clearly say 'it is so.'",
     extraInfo: "この「ないことはない」という表現を使うときはまあまあよりちょっと下ぐらいを表すときに使います。例えば、「似合ってないこともない」と言ったら、まあすごく似合ってないわけじゃないんだけどまぁちょっと似合ってるぐらいちょっと、まあまあより下ぐらいの評価になるんですよ。\nこれはいう人とか、聞く人の関係とか場面によっても少し違うんですが「ないこともない」っていう表現を使うときははっきり言えない時とはっきり言いたくない時によく使われるんですよ。",
     usage: {
       form: [
@@ -629,27 +629,27 @@ export const NIHONGO_NO_MORI_GRAMMAR_N2: GrammarEntry[] = [
     examples: [
       {
         sentence: "部長の気持ちは[わからない]{ことはない}が、あの言い方は良くないと思う。",
-        meaning: "xxxxx"
+        meaning: "It's not that I don't understand the manager's feelings, but I think that way of speaking is not good."
       },
       {
         sentence: "お酒は[飲めない]{こともない}んですが、一人では飲まないです。",
-        meaning: "xxxxx"
+        meaning: "It's not that I can't drink alcohol, but I don't drink it alone."
       },
       {
         sentence: "[かわいくな]<く>{もない}が、彼女はこの役のイメージには合わない。",
-        meaning: "xxxxx"
+        meaning: "It's not that she isn't cute, but she doesn't fit the image for this role."
       },
     ],
     category: GrammarEntryCategory.KOTO,
     newWords: [
-      { kanji: "役", kana: "やく", english: "xx" },
+      { kanji: "役", kana: "やく", english: "role" },
     ]
   },
   {
     id: 19,
     grammar: "〜ことは〜が",
     imi: "〜だけど",
-    explanation: "この文法は「～だけど」という意味です。反対のことを言いたいときに使う文法ですね。例えば、「勉強したことは勉強したが合格する自がない。」このように使います。勉強したけど自信がないという意味ですね。このように「〜だけど」とはっきり言う よりも一応これをやったけど気になることがある。とかこうなんだけど、別の意見があると言いたいときに使う文法です。",
+    explanation: "この文法は「～だけど」という意味です。反対のことを言いたいときに使う文法ですね。例えば、「勉強したことは勉強したが合格する自がない。」このように使います。勉強したけど自信がないという意味ですね。このように「〜だけど」とはっきり言う よりも一応これをやったけど気になることがある。とかこうなんだけど、別の意見があると言いたいときに使う文法です。\nThis grammar means 'but'. It is used when you want to say the opposite of something. For example, 'I did study, but I don't have confidence that I will pass.' This means 'I studied, but I don't have confidence.' In this way, instead of clearly saying 'but', it is used when you want to say that you did this, but there are some concerns or different opinions.",
     extraInfo: "この～の部分は、同じ言葉が入るので注意してください。\n\nこの「～ことは～が」という文法は日常生活でもよく使われます。日常の会話だったら「〜ことは〜けど」という言い方になる場合が多いですね。",
     usage: {
       form: [{ name: "普通形" }, { name: "名詞", connector: "な" }, { name: "な形容詞", connector: "な" }],
@@ -659,29 +659,29 @@ export const NIHONGO_NO_MORI_GRAMMAR_N2: GrammarEntry[] = [
     examples: [
       {
         sentence: "試験に[合格した]{ことは}[合格した]{が}、こんな資格があっても何の役にも立たない。",
-        meaning: "xxxxx"
+        meaning: "I did pass the exam, but even with this qualification, it is of no use."
       },
       {
         sentence: "村上：「昨日のコンサート、どうだった？」\n佐藤：「[楽しかった]{ことは}[楽しかったんです]{が}、隣の人がうるさくて全然ゆっくり歌を聴けませんでした。！",
-        meaning: "xxxxx"
+        meaning: "Murakami: 'How was the concert yesterday?'\nSato: 'It was fun, but the person next to me was noisy, and I couldn't listen to the songs slowly at all!'"
       },
       {
         sentence: "日本で働くのは[大変な]{ことは}[大変だ]{が}、学びも多いです。",
-        meaning: "xxxxx"
+        meaning: "Working in Japan is tough, but there is a lot to learn."
       },
       {
         sentence: "[美味しい]{ことは}[美味しいです]{が}病気になってしまいますよ！",
-        meaning: "xxxxx"
+        meaning: "It's delicious, but it will make you sick!"
       },
       {
         sentence: "A；「ねえねえ。レポート書いた？」\nB；「ああ、[書いた]{ことは}[書いた]{けど}適当だよ。」",
-        meaning: "xxxxx"
+        meaning: "A: 'Hey, did you write the report?'\nB: 'Ah, I did write it, but it's sloppy.'"
       },
     ],
     category: GrammarEntryCategory.KOTO,
     newWords: [
-      { kanji: "資格", kana: "しかく", english: "xx" },
-      { kanji: "適当", kana: "てきとう", english: "xx" },
+      { kanji: "資格", kana: "しかく", english: "qualification" },
+      { kanji: "適当", kana: "てきとう", english: "appropriate" },
     ],
     important: true
   },
@@ -689,7 +689,7 @@ export const NIHONGO_NO_MORI_GRAMMAR_N2: GrammarEntry[] = [
     id: 20,
     grammar: "～ことになる\n～ことにはならない",
     imi: "〜だと言える\n～だと言えない",
-    explanation: "この文法は「～だといえる」という意味です。例えば、皆さん漢字を1000個覚えなければいけません1日に漢字を1つずつ覚えていったら何年かかりますか？だいたい3年くらいかかりますよね。こういう時に3年かかることになるっていうことができます。",
+    explanation: "この文法は「～だといえる」という意味です。例えば、皆さん漢字を1000個覚えなければいけません1日に漢字を1つずつ覚えていったら何年かかりますか？だいたい3年くらいかかりますよね。こういう時に3年かかることになるっていうことができます。\nThis grammar means 'it can be said that ~'. For example, if everyone has to memorize 1000 kanji characters and they memorize one kanji per day, how many years will it take? It will take about 3 years, right? In this case, you can say that it will take 3 years.",
     usage: {
       form: [
         { name: "普通形" },
@@ -701,19 +701,19 @@ export const NIHONGO_NO_MORI_GRAMMAR_N2: GrammarEntry[] = [
     examples: [
       {
         sentence: "このサービスは一か月利用するのに980円かかるので、一年使う11760円[支払う]{ことになる}。",
-        meaning: "xxxxx"
+        meaning: "This service costs 980 yen to use for one month, so using it for a year will cost 11,760 yen."
       },
       {
         sentence: "ただ日本のドラマを字幕付きで観ただけでは、日本語の[勉強をした]{ことにはならない}。",
-        meaning: "xxxxx"
+        meaning: "Just watching Japanese dramas with subtitles doesn't count as studying Japanese."
       },
       {
         sentence: "犬の散歩ぐらいじゃ、[ダイエットした]{ことにはなりません}よ。",
-        meaning: "xxxxx"
+        meaning: "Just walking the dog doesn't count as dieting."
       },
       {
         sentence: "そんなに本をたくさん持っているからって[勉強した]{ことにはならない}ょー。",
-        meaning: "xxxxx"
+        meaning: "Just because you have a lot of books doesn't mean you've studied."
       },
     ],
     category: GrammarEntryCategory.KOTO,
@@ -726,7 +726,7 @@ export const NIHONGO_NO_MORI_GRAMMAR_N2: GrammarEntry[] = [
     id: 21,
     grammar: "〜限り ①",
     imi: "〜の範囲で言うと",
-    explanation: "この文法は自分が持っている情報の範囲を表す時に使うものです。「限り」という言葉は、ここまでですよとものの範囲を表す時に使う言葉ですよね。この文法では、自分が持っている情報はここまでですよと範囲を表したいときに使います。",
+    explanation: "この文法は自分が持っている情報の範囲を表す時に使うものです。「限り」という言葉は、ここまでですよとものの範囲を表す時に使う言葉ですよね。この文法では、自分が持っている情報はここまでですよと範囲を表したいときに使います。\nThis grammar is used to express the range of information you have. The word '限り' is used to indicate the extent or limit of something. In this grammar, it is used when you want to express that the information you have is limited to a certain extent.",
     extraInfo: "よく使われる言葉は「見た限り」とか「聞いた限り」「調べた限り」、私が「知っている限り」とか「覚えている限り」また「調査した限り」このように自分が持っている情報自分の知識とか調べたりしてわかったことはここまでですよと範囲を示したいときに使われます。\n\n「では」を付けると、ちょっとだけ文章を強調することができるんですが付けても付けなくても、どちらでもいいし意味は変わりません。",
     usage: {
       form: [{ name: "V. る" }, { name: "V. た" }, { name: "V. ている" }],
@@ -735,33 +735,33 @@ export const NIHONGO_NO_MORI_GRAMMAR_N2: GrammarEntry[] = [
     examples: [
       {
         sentence: "私の[知る]{限り}、彼女はそんな嘘をつくような人ではありません。",
-        meaning: "xxxxx"
+        meaning: "As far as I know, she is not the type of person to tell such lies."
       },
       {
         sentence: "[調べた]{限り}、この辺にある日本食屋さんはここだけです。",
-        meaning: "xxxxx"
+        meaning: "As far as I have researched, this is the only Japanese restaurant in this area."
       },
       {
         sentence: "私が[聞いている]{限りでは}、彼女はまだあの会社で働いています。",
-        meaning: "xxxxx"
+        meaning: "As far as I have heard, she is still working at that company."
       },
       {
         sentence: "A：ダイエットは明日からだ？明日からって言ったじゃん？\nB：ええ？私が[覚えている]{限りでは}、今日からダイエットするって言っていたよ！",
-        meaning: "xxxxx"
+        meaning: "A: Is the diet starting tomorrow? You said it was starting tomorrow, right?\nB: Huh? As far as I remember, you said the diet was starting today!"
       },
     ],
     category: GrammarEntryCategory.KAGIRI,
     newWords: [
       { kanji: "範囲", kana: "はんい", english: "Range" },
       { kanji: "嘘", kana: "うそ", english: "Lie" },
-      { kanji: "辺", kana: "へん", english: "xx" }
+      { kanji: "辺", kana: "へん", english: "Area" }
     ]
   },
   {
     id: 22,
     grammar: "〜限り ②",
     imi: "〜という状態の間は",
-    explanation: "この「限り」という文法たくさん意味があるんですが、今回勉強するのは～をしている状態の間は、という意味の「限り」です。これをしている状態の間はずっと同じ状態が続きますよと言いたいときに使います。この「限り」という言葉は、ここまでというふうに範囲を決める言葉ですよね。だから「〜限り」という風に言うと～をしているという状態、ここまでの間は同じ状況が続きますという意味になります。",
+    explanation: "この「限り」という文法たくさん意味があるんですが、今回勉強するのは～をしている状態の間は、という意味の「限り」です。これをしている状態の間はずっと同じ状態が続きますよと言いたいときに使います。この「限り」という言葉は、ここまでというふうに範囲を決める言葉ですよね。だから「〜限り」という風に言うと～をしているという状態、ここまでの間は同じ状況が続きますという意味になります。\nThis '限り' grammar has many meanings, but the one we will study this time is the meaning of 'as long as you are in a certain state'. It is used when you want to say that as long as you are in a certain state, the same situation will continue. The word '限り' is used to set a limit or extent. Therefore, when you say '~限り', it means that as long as you are in the state of doing something, the same situation will continue within that limit.",
     extraInfo: "「は」を付けると、少しだけ文章を強調することができますが、意味は同じです。どちらを使ってもOKです。\nそして、この接続なんですが現在の形だけ使います。～限りという文法は、これをしている状態今の状態を表しますから、現在の形だけ使われます。注意してください。",
     usage: {
       form: [
@@ -774,36 +774,36 @@ export const NIHONGO_NO_MORI_GRAMMAR_N2: GrammarEntry[] = [
     examples: [
       {
         sentence: "ここに[いる]{限り}、敵からの攻撃を受けることはないだろう。",
-        meaning: "xxxxx"
+        meaning: "As long as you are here, you probably won't be attacked by enemies."
       },
       {
         sentence: "日本に[住んでいる]{限り}、地震の被害にあう可能性があるので準備しておいた方がいい。",
-        meaning: "xxxxx"
+        meaning: "As long as you live in Japan, there is a possibility of being affected by earthquakes, so it's better to be prepared."
       },
       {
         sentence: "彼が[社長である]{限り}、私の給料は上がらないだろう。",
-        meaning: "xxxxx"
+        meaning: "As long as he is the president, my salary probably won't increase."
       },
       {
         sentence: "ごめんとかいらない。新しいプリンを[買ってこない]{限り}、絶対に許さない。",
-        meaning: "xxxxx",
+        meaning: "I don't need an apology. As long as you don't buy a new pudding, I will never forgive you.",
         point: "買ってこない状態の間はずっと許さないよという意味ですね。つまり、ごめんって言ってないで新しいプリン買ってきなさいよっていうことですね。新しいプリンを買ってこないと絶対に許さないという意味です。",
       },
     ],
     category: GrammarEntryCategory.KAGIRI,
     newWords: [
       { kanji: "状態", kana: "じょうたい", english: "Situation" },
-      { kanji: "接続", kana: "xx", english: "xx" },
-      { kanji: "敵", kana: "xx", english: "xx" },
-      { kanji: "攻撃", kana: "こうげき", english: "xx" },
-      { kanji: "被害", kana: "ひがい", english: "xx" },
+      { kanji: "接続", kana: "せつぞく", english: "Connection" },
+      { kanji: "敵", kana: "てき", english: "Enemy" },
+      { kanji: "攻撃", kana: "こうげき", english: "Attack" },
+      { kanji: "被害", kana: "ひがい", english: "Damage" },
     ]
   },
   {
     id: 23,
     grammar: "〜限り ③",
     imi: "〜だけ",
-    explanation: "この「限り」という文法たくさん意味があるんですが今回勉強するのは、「だけ」という意味です。「～限り」これは～だけという意味でよくお知らせなどに使われる表現です。",
+    explanation: "この「限り」という文法たくさん意味があるんですが今回勉強するのは、「だけ」という意味です。「～限り」これは～だけという意味でよくお知らせなどに使われる表現です。\nThis '限り' grammar has many meanings, but the one we will study this time is the meaning of 'only'. '~限り' means 'only ~' and is often used in announcements and notifications.",
     extraInfo: "この「限る」を使う場合は書くときに使われる場合が多いです。",
     usage: {
       form: [{ name: "名詞" }],
@@ -812,33 +812,31 @@ export const NIHONGO_NO_MORI_GRAMMAR_N2: GrammarEntry[] = [
     examples: [
       {
         sentence: "この地域に[お住まいの方]{に限り}、こちらの商品が全品10%オフです。",
-        meaning: "xxxxx"
+        meaning: "This product is 10% off for residents of this area only."
       },
       {
         sentence: "この階段の使用は[緊急の場合]{に限る}。",
-        meaning: "xxxxx"
+        meaning: "The use of these stairs is limited to emergencies only."
       },
       {
         sentence: "店では[平日]{に限り}、食後のアイスをサービスしています。",
-        meaning: "xxxxx"
+        meaning: "At the store, we offer free ice cream after meals only on weekdays."
       },
       {
         sentence: "アルバイト募集中！日本語能力試験N2[合格者]{に限り}。",
-        meaning: "xxxxx"
+        meaning: "Part-time job recruitment! Only for those who have passed the Japanese Language Proficiency Test N2."
       },
     ],
     category: GrammarEntryCategory.KAGIRI,
     newWords: [
       { kanji: "緊急", kana: "きんきゅう", english: "Emergency" },
-      { kanji: "xx", kana: "xx", english: "xx" },
-      { kanji: "xx", kana: "xx", english: "xx" }
     ]
   },
   {
     id: 24,
     grammar: "〜に限る",
     imi: "〜が一番良い選択だ",
-    explanation: "この文法は～が一番良い選択だという意味です。これが1番いい、これをするのが最高だ！と言いたいときに使う文法です。",
+    explanation: "この文法は～が一番良い選択だという意味です。これが1番いい、これをするのが最高だ！と言いたいときに使う文法です。\nThis grammar means that ~ is the best choice. It is used when you want to say that this is the best, or that doing this is the best!",
     usage: {
       form: [{ name: "V. る" }, { name: "V. ない" }, { name: "名詞" }],
       pattern: ["に限る"],
@@ -846,15 +844,15 @@ export const NIHONGO_NO_MORI_GRAMMAR_N2: GrammarEntry[] = [
     examples: [
       {
         sentence: "夏休みは勉強を忘れて、友達と[海水浴]{に限る}。",
-        meaning: "xxxxx"
+        meaning: "During summer vacation, forget about studying and go sea bathing with friends."
       },
       {
         sentence: "なんだかうまくいかないときは、いったん[休む]{に限る}。",
-        meaning: "xxxxx"
+        meaning: "When things aren't going well, it's best to take a break."
       },
       {
         sentence: "体調が悪いときは、ご飯だけ食べて、後は何も[しない]{に限る}。",
-        meaning: "xxxxx"
+        meaning: "When you're not feeling well, just eat your meal and do nothing else."
       },
     ],
     category: GrammarEntryCategory.KAGIRI,
@@ -867,7 +865,7 @@ export const NIHONGO_NO_MORI_GRAMMAR_N2: GrammarEntry[] = [
     id: 25,
     grammar: "〜に限らず",
     imi: "〜だけでなく",
-    explanation: "この文法は、～だけでなくという意味です。「限る」という文法の中に「だけ」という意味もありましたよね。「限らず」というのは、限らないという意味ですからこれは～だけでなく、だけではないという意見になります。",
+    explanation: "この文法は、～だけでなくという意味です。「限る」という文法の中に「だけ」という意味もありましたよね。「限らず」というのは、限らないという意味ですからこれは～だけでなく、だけではないという意見になります。\nThis grammar means 'not only ~'. There was also the meaning of 'only' in the grammar of '限る', right? Since '限らず' means 'not limited to', it expresses the opinion that it is not only ~, but also not limited to that.",
     usage: {
       form: [{ name: "名詞" }],
       pattern: ["に限らず"],
@@ -875,15 +873,15 @@ export const NIHONGO_NO_MORI_GRAMMAR_N2: GrammarEntry[] = [
     examples: [
       {
         sentence: "[日本語]{に限らず}、言語はどれも複雑で習得するのが難しいものだ。",
-        meaning: "xxxxx"
+        meaning: "Not only Japanese, but all languages are complicated and difficult to master."
       },
       {
         sentence: "[特別な日]{に限らず}、彼はなんでもない日でもプレゼントをくれる。",
-        meaning: "xxxxx"
+        meaning: "Not only on special days, he gives me presents even on ordinary days."
       },
       {
         sentence: "このレストランは[休日]{に限らず}、平日もお客さんでいっぱいだ。",
-        meaning: "xxxxx"
+        meaning: "This restaurant is always full of customers, not only on holidays but also on weekdays."
       },
     ],
     category: GrammarEntryCategory.KAGIRI,
@@ -896,7 +894,7 @@ export const NIHONGO_NO_MORI_GRAMMAR_N2: GrammarEntry[] = [
     id: 26,
     grammar: "〜に限って",
     imi: "〜はいつもと違って",
-    explanation: "この文法は～はいつもとは違う特別なことが起こると言いたいときに使う文法です。特に嫌なことですね。今、これが起きてほしくないということが起きる時そういう悪いことですね。今起こってほしくないということが起きると言いたい時に使う文法です。",
+    explanation: "この文法は～はいつもとは違う特別なことが起こると言いたいときに使う文法です。特に嫌なことですね。今、これが起きてほしくないということが起きる時そういう悪いことですね。今起こってほしくないということが起きると言いたい時に使う文法です。\nThis grammar is used when you want to say that something special and different from usual happens. Especially bad things. It is used when you want to say that something you don't want to happen now is happening.",
     extraInfo: "他の日だったらいいのに、今日に限ってと言ったら今日はこれが起きてほしくないのに嫌なことが起きてしまう、というように悪いことが起きると言いたいときに使われる文法です。",
     usage: {
       form: [{ name: "名詞" }],
@@ -905,19 +903,19 @@ export const NIHONGO_NO_MORI_GRAMMAR_N2: GrammarEntry[] = [
     examples: [
       {
         sentence: "静かにしなければいけない[とき]{に限って}、お腹が鳴ってしまう。",
-        meaning: "xxxxx"
+        meaning: "At times when I have to be quiet, my stomach always growls."
       },
       {
         sentence: "白い服を[着ている日]{に限って}、コーヒーをこぼしてしまう。",
-        meaning: "xxxxx"
+        meaning: "On the days I wear white clothes, I always spill coffee."
       },
       {
         sentence: "私のアルバイト先は[忙しい日]{に限って}、誰かが休んで人が足りなくなる。",
-        meaning: "xxxxx"
+        meaning: "At my part-time job, on the busy days, someone always takes a day off and we end up short-staffed."
       },
       {
         sentence: "いつもは傘を持ってるのにな。。。あ～！傘を[持ってない日]{に限って}、雨が降るんだよな～もう！どうしよう。",
-        meaning: "xxxxx"
+        meaning: "I always carry an umbrella... Ah! On the days I don't have an umbrella, it rains! What should I do?"
       },
     ],
     category: GrammarEntryCategory.KAGIRI,
@@ -930,7 +928,7 @@ export const NIHONGO_NO_MORI_GRAMMAR_N2: GrammarEntry[] = [
     id: 27,
     grammar: "〜に限って〜ない",
     imi: "〜がそんなことをするなんて、言じられない！ありえない！",
-    explanation: "この文法は信じられない！とか、ありえない！というように強く何かを否定したいときに使う文法です。そんなこと絶対にない！という風に強く否定したい気持ちを表現する時に使う文法ですね。\nこの「～ない」の部分は「～のはずがない」とか「わけがない」とか「ありえない」というような言葉が続きます。そんなこと絶対にない！じられない！ありえない！という意味を表す文法ですね。",
+    explanation: "この文法は信じられない！とか、ありえない！というように強く何かを否定したいときに使う文法です。そんなこと絶対にない！という風に強く否定したい気持ちを表現する時に使う文法ですね。\nこの「～ない」の部分は「～のはずがない」とか「わけがない」とか「ありえない」というような言葉が続きます。そんなこと絶対にない！じられない！ありえない！という意味を表す文法ですね。\nThis grammar is used when you want to strongly deny something, such as saying 'I can't believe it!' or 'It's impossible!'. It is used to express a strong feeling of denial, like saying 'That could never happen!'.\nThe '~ない' part is often followed by phrases like '~のはずがない', 'わけがない', or 'ありえない'. It is a grammar that expresses the meaning of 'That could never happen! I can't believe it! It's impossible!'.",
     usage: {
       form: [{ name: "名詞" }],
       pattern: ["に限って 〜　ない"],
@@ -938,19 +936,19 @@ export const NIHONGO_NO_MORI_GRAMMAR_N2: GrammarEntry[] = [
     examples: [
       {
         sentence: "まじめな[彼女]{に限って}、学校をさぼって友達と遊ぶなんて<あり得ない>。",
-        meaning: "xxxxx"
+        meaning: "I can't believe that my serious girlfriend would skip school to hang out with friends."
       },
       {
         sentence: "私の[彼氏]{に限って}、浮気をするなんて<あり得ない>。",
-        meaning: "xxxxx"
+        meaning: "I can't believe that my boyfriend would cheat on me."
       },
       {
         sentence: "優しい[息子]{に限って}、友達を泣かせる<はずがない>。",
-        meaning: "xxxxx"
+        meaning: "I can't believe that my kind son would make his friends cry."
       },
       {
         sentence: "[私]{に限って}、テストが満点じゃないなんてこと、<あるわけない>でしょ。",
-        meaning: "xxxxx"
+        meaning: "There's no way I wouldn't get a perfect score on the test."
       },
     ],
     category: GrammarEntryCategory.KAGIRI,
@@ -963,7 +961,7 @@ export const NIHONGO_NO_MORI_GRAMMAR_N2: GrammarEntry[] = [
     id: 28,
     grammar: "〜とは限らない",
     imi: "100%〜だと言えない",
-    explanation: "この文法は100%～だ！と言えないというときに使います。絶対にこうだとはっきり言えないときに使う文法ですね。\n例えば、頑張って勉強したからって合格するとは限らない、ですよね。頑張って勉強したら合格する可能性は高くなるけど絶対に合格するとは言えないです。不合格になることもあります。こういう時に「～とは限らない」という文法を使います。",
+    explanation: "この文法は100%～だ！と言えないというときに使います。絶対にこうだとはっきり言えないときに使う文法ですね。\n例えば、頑張って勉強したからって合格するとは限らない、ですよね。頑張って勉強したら合格する可能性は高くなるけど絶対に合格するとは言えないです。不合格になることもあります。こういう時に「～とは限らない」という文法を使います。\nThis grammar is used when you want to say that something is not 100% certain. It is used when you cannot say something is definitely true. For example, even if you study hard, it does not necessarily mean you will pass. Studying hard increases the chances of passing, but you cannot say for sure that you will pass. There is also a possibility of failing. In such cases, the grammar '~とは限らない' is used.",
     usage: {
       form: [{ name: "普通形" }],
       pattern: ["とは限らない"],
@@ -971,19 +969,19 @@ export const NIHONGO_NO_MORI_GRAMMAR_N2: GrammarEntry[] = [
     examples: [
       {
         sentence: "お金をたくさん持っている人が、みんな[幸せだ]{とは限らない}。",
-        meaning: "xxxxx"
+        meaning: "Not all people who have a lot of money are happy."
       },
       {
         sentence: "努力をすれば必ず[成功する]{とは限らない}が、努力をしなければ成功しない。",
-        meaning: "xxxxx"
+        meaning: "If you make an effort, you will not necessarily succeed, but if you do not make an effort, you will not succeed."
       },
       {
         sentence: "韓国人と結婚したからといって、韓国語が上手に[話せる]{とは限らない}。",
-        meaning: "xxxxx"
+        meaning: "Just because you married a Korean person doesn't mean you can speak Korean well."
       },
       {
         sentence: "店の前に行列ができているからといって、[おいしい]{とは限らない}んだね。",
-        meaning: "xxxxx"
+        meaning: "Just because there is a line in front of the store doesn't mean it's delicious."
       },
     ],
     category: GrammarEntryCategory.KAGIRI,
@@ -2123,7 +2121,6 @@ export const NIHONGO_NO_MORI_GRAMMAR_N2: GrammarEntry[] = [
     newWords: [
       { kanji: "ほぼ", kana: "", english: "almost" },
       { kanji: "さらに", kana: "", english: "furthermore" },
-      { kanji: "xx", kana: "xx", english: "xx" }
     ]
   },
   {
@@ -3112,7 +3109,6 @@ export const NIHONGO_NO_MORI_GRAMMAR_N2: GrammarEntry[] = [
     newWords: [
       { kanji: "本人", kana: "ほんにん", english: "the person himself/herself" },
       { kanji: "傷", kana: "きず", english: "wound・injury" },
-      { kanji: "xx", kana: "xx", english: "xx" }
     ],
     important: true,
   },
@@ -4582,92 +4578,83 @@ export const NIHONGO_NO_MORI_GRAMMAR_N2: GrammarEntry[] = [
     id: 130,
     grammar: "おいでになる",
     imi: "「行く・来る・いる」の尊敬語",
-    explanation: "この言葉は3つ意味があります。1つめは「行く」2つめは「来る」3つめは「いる」です。行く・来る・いる、この3つの動詞の尊敬語です。\nこの3つの意味は、場面によってどの意味になるかがかわります。",
+    explanation: "この言葉は3つ意味があります。1つめは「行く」2つめは「来る」3つめは「いる」です。行く・来る・いる、この3つの動詞の尊敬語です。\nこの3つの意味は、場面によってどの意味になるかがかわります。\nThis word has three meanings. The first is 'to go', the second is 'to come', and the third is 'to be'. It is the honorific form of these three verbs: 'to go', 'to come', and 'to be'. The meaning of these three verbs changes depending on the context.",
     extraInfo: "おいで --> いる",
     examples: [
       {
         sentence: "来週、中本部長が出張のため[大阪へ]{おいでになる}そうです。",
-        meaning: "",
+        meaning: "Next week, I heard that Director Nakamoto will be going on a business trip to Osaka.",
         point: "「行く」の意味です。"
       },
       {
         sentence: "ゆか先生、至急、[会議室に]{おいでください}。",
-        meaning: "xxxxx",
+        meaning: "Yuka-sensei, please come to the conference room immediately.",
         point: "「来る」の意味です。",
       },
       {
         sentence: "佐藤様は、もうすでに本社の[待合室に]{おいでです}。",
-        meaning: "xxxxx",
+        meaning: "Mr. Sato is already in the waiting room at the head office.",
         point: "「いる」の意味です。",
-      },
-      {
-        sentence: "xxxxx",
-        meaning: "xxxxx"
       },
     ],
     category: GrammarEntryCategory.POLITE_EXPRESSIONS_OTHERS,
-    newWords: [
-      { kanji: "xx", kana: "xx", english: "xx" },
-      { kanji: "xx", kana: "xx", english: "xx" },
-      { kanji: "xx", kana: "xx", english: "xx" }
-    ],
     important: true
   },
   {
     id: 131,
     grammar: "〜ご存知ですか",
     imi: "「知っていますか？」の尊敬語",
-    explanation: "この表現は「知っていますか？」の尊敬語です。存じるというのは、知っているとか自分が思うという意味があります。ですから相手に「ご存知ですか」というふうに聞いたら「知っていますか？」の丁寧な言い方になります。何かを知っているかどうか確認する時のとても丁寧な表現です。",
+    explanation: "この表現は「知っていますか？」の尊敬語です。存じるというのは、知っているとか自分が思うという意味があります。ですから相手に「ご存知ですか」というふうに聞いたら「知っていますか？」の丁寧な言い方になります。何かを知っているかどうか確認する時のとても丁寧な表現です。\nThis expression is the honorific form of 'Do you know?'. '存じる' means to know or to think. Therefore, when you ask someone 'ご存知ですか', it is a polite way of saying 'Do you know?'. It is a very polite expression used to confirm whether someone knows something or not.",
     extraInfo: "ご存知ですかという聞き方はとても丁寧な表現なの初対面の人とか目上の人にはよく使う言い方です。",
     examples: [
       {
         sentence: "山田：日本語の森のゆか先生を{ご存知ですか}。\n田中：はい、存じ上げております。",
-        meaning: "xxxxx"
+        meaning: "Yamada: Do you know Yuka-sensei from Nihongo No Mori?\nTanaka: Yes, I do."
       },
       {
         sentence: "中本部長が大阪へ転勤になること、もう{ご存知ですか}。",
-        meaning: "xxxxx"
+        meaning: "Do you already know that Director Nakamoto is being transferred to Osaka?"
       },
       {
         sentence: "彼女の連絡先を{ご存知}でしたら、教えていただけませんか。",
-        meaning: "xxxxx"
+        meaning: "If you know her contact information, could you please tell me?"
       },
     ],
     category: GrammarEntryCategory.POLITE_EXPRESSIONS_OTHERS,
     newWords: [
-      { kanji: "転勤", kana: "xx", english: "xx" },
-      { kanji: "連絡先", kana: "xx", english: "xx" },
+      { kanji: "転勤", kana: "てんきん", english: "transfer (job)" },
+      { kanji: "連絡先", kana: "れんらくさき", english: "contact information" },
     ]
   },
   {
     id: 132,
     grammar: "〜してもよろしいでしょうか",
     imi: "〜してもいいですか？",
-    explanation: "この表現は～してもいいですかという意味です。〜してもいいですかと相手に何かを聞いたり尋ねたり、それから許可をとったりするときに使うとても丁寧な表現です。",
+    explanation: "この表現は～してもいいですかという意味です。〜してもいいですかと相手に何かを聞いたり尋ねたり、それから許可をとったりするときに使うとても丁寧な表現です。\nThis expression means 'Is it okay to ~?'. It is a very polite way to ask someone for permission or to inquire about something.",
     extraInfo: "この3つを覚えてください：\n「お聞きしてもよろしいでしょうか？」\n「お伺いしてもよろしいでしょうか？」\n「お尋ねしてもよろしいでしょうか？」",
     examples: [
       {
         sentence: "もう一度、お名前を{お聞きしてもよろしいでしょうか}。",
-        meaning: "xxxxx"
+        meaning: "May I ask your name again?"
       },
       {
         sentence: "失礼ですが、年齢を{お伺いしてもよろしいでしょうか}。",
-        meaning: "xxxxx"
+        meaning: "Excuse me, may I ask your age?"
       },
       {
         sentence: "すみません、一つ{お尋ねしてもよろしいでしょうか}。",
-        meaning: "xxxxx"
+        meaning: "Excuse me, may I ask you something?"
       },
       {
         sentence: "あー、先生、すいません。この問題の答えを{お聞きしてもよろしいでしょうか}。",
-        meaning: "xxxxx"
+        meaning: "Ah, teacher, excuse me. May I ask you the answer to this question?"
       },
     ],
     category: GrammarEntryCategory.POLITE_EXPRESSIONS_OTHERS,
     newWords: [
-      { kanji: "伺う", kana: "xx", english: "xx" },
-      { kanji: "尋ねる", kana: "xx", english: "xx" },
-      { kanji: "年齢", kana: "xx", english: "xx" },
+      { kanji: "伺う", kana: "うかがう", english: "to ask, to inquire" },
+      { kanji: "尋ねる", kana: "たずねる", english: "to ask, to inquire" },
+      { kanji: "年齢", kana: "ねんれい", english: "age" },
     ],
     important: true
   },
@@ -4675,7 +4662,7 @@ export const NIHONGO_NO_MORI_GRAMMAR_N2: GrammarEntry[] = [
     id: 133,
     grammar: "〜させてもらう",
     imi: "〜することを許してもらう（くれる）",
-    explanation: "この文法は〜することを許してもらうとか許してくれるという意味の文法です。「させる」は使役ですよね。人に何かをさせるという時に使うんですがさせてもらうと言っていますから何か許可をしてもらう、そしてそれをすることができると言いたいときに使います。許してもらうとか、許可をもらうという意味の文法なのでこの文法を使うときはお母さんと子供とかね。上司と部下のように、それをしてもいいですよと許可を出す立場の上の人と下の人という関係で使われる場合がほとんどです。",
+    explanation: "この文法は〜することを許してもらうとか許してくれるという意味の文法です。「させる」は使役ですよね。人に何かをさせるという時に使うんですがさせてもらうと言っていますから何か許可をしてもらう、そしてそれをすることができると言いたいときに使います。許してもらうとか、許可をもらうという意味の文法なのでこの文法を使うときはお母さんと子供とかね。上司と部下のように、それをしてもいいですよと許可を出す立場の上の人と下の人という関係で使われる場合がほとんどです。\nThis grammar means 'to be allowed to do ~' or 'to have permission to do ~'. 'させる' is the causative form, which is used when making someone do something. However, since it is 'させてもらう', it implies that you are receiving permission to do something. It is used when you want to say that you have been allowed or given permission to do something. Since it means receiving permission, this grammar is mostly used in relationships where there is a higher authority giving permission, such as between a mother and child or a boss and subordinate.",
     usage: {
       form: [{ name: "V. ない STEM" }],
       pattern: ["（ さ ）せてもらう", "（ さ ）せてくれる"],
@@ -4683,34 +4670,34 @@ export const NIHONGO_NO_MORI_GRAMMAR_N2: GrammarEntry[] = [
     examples: [
       {
         sentence: "サッカー、バレエ、習字など、両親は私のやりたいことを全部[やら]{せてくれた}。",
-        meaning: "xxxxx"
+        meaning: "My parents let me do everything I wanted to do, such as soccer, ballet, and calligraphy."
       },
       {
         sentence: "小さい頃は貧乏で好きなものを[食べ]{させてもらえなかった}ので、大人になったらいろんなものを食べたいとずっと思っていた。",
-        meaning: "xxxxx"
+        meaning: "When I was little, I was poor and couldn't eat what I liked, so I always wanted to eat various things when I became an adult."
       },
       {
         sentence: "会社での頑張りが認められて、新商品の開発リーダーを[任]{せてもらえる}ことになった。",
-        meaning: "xxxxx"
+        meaning: "My efforts at the company were recognized, and I was allowed to be the leader of the new product development."
       },
     ],
     category: GrammarEntryCategory.POLITE_EXPRESSIONS_OTHERS,
     newWords: [
-      { kanji: "使役", kana: "xx", english: "xx" },
-      { kanji: "許可", kana: "xx", english: "xx" },
-      { kanji: "許す", kana: "xx", english: "xx" },
-      { kanji: "習字", kana: "xx", english: "xx" },
-      { kanji: "貧乏", kana: "xx", english: "xx" },
-      { kanji: "認める", kana: "xx", english: "xx" },
-      { kanji: "開発", kana: "xx", english: "xx" },
-      { kanji: "任せる", kana: "xx", english: "xx" },
+      { kanji: "使役", kana: "しえき", english: "causative" },
+      { kanji: "許可", kana: "きょか", english: "permission" },
+      { kanji: "許す", kana: "ゆるす", english: "to allow" },
+      { kanji: "習字", kana: "しゅうじ", english: "calligraphy" },
+      { kanji: "貧乏", kana: "びんぼう", english: "poverty" },
+      { kanji: "認める", kana: "みとめる", english: "to recognize" },
+      { kanji: "開発", kana: "かいはつ", english: "development" },
+      { kanji: "任せる", kana: "まかせる", english: "to entrust" },
     ]
   },
   {
     id: 134,
     grammar: "〜かねる",
     imi: "〜するのが難しい\n～できない",
-    explanation: "この表現は〜するのが難しいとかそれはできないと言いたいときに使う表現です。〜かねるという表現自体がすごく丁寧で敬語表現だということはできないんですがこの〜かねるという言い方はお客様と店員が話をするときによく使われるのでここで紹介しておきます。",
+    explanation: "この表現は〜するのが難しいとかそれはできないと言いたいときに使う表現です。〜かねるという表現自体がすごく丁寧で敬語表現だということはできないんですがこの〜かねるという言い方はお客様と店員が話をするときによく使われるのでここで紹介しておきます。\nThis expression is used when you want to say that it is difficult to do something or that you cannot do something. The expression ～かねる itself is very polite and honorific, and it is often used in conversations between customers and store clerks, so we will introduce it here.",
     extraInfo: "特にお客様に対して「できない」と伝える時によく使われる。\n\nこの「～かねる」という表現日本のお店に行くとよく聞きます。特に値段の高いお店に行くとよく使われていますね。コンビニだったら「それはできません」のように言われることが多いです。でも百貨店とか高級レストランとかホテルに泊まった時などは「そちらはできかねます」とか「お答えしかねます」のように断られることがある。",
     usage: {
       form: [{ name: "V. ます STEM" }],
@@ -4719,57 +4706,54 @@ export const NIHONGO_NO_MORI_GRAMMAR_N2: GrammarEntry[] = [
     examples: [
       {
         sentence: "大変申し訳ありませんが、そちらの質問には[お答えし]{かねます}。",
-        meaning: "xxxxx"
+        meaning: "I am very sorry, but I am unable to answer that question."
       },
       {
         sentence: "客：これ、返品したいんですが。\n店員；大変申し訳ありません。返品の対応は[致し]{かねます}。",
-        meaning: "xxxxx"
+        meaning: "Customer: I would like to return this.\nClerk: I am very sorry. We are unable to process returns."
       },
       {
         sentence: "大変申し上げにくいのですが、そちらの意見には[賛成し]{かねます}。",
-        meaning: "xxxxx"
+        meaning: "I am very sorry to say this, but I am unable to agree with that opinion."
       },
       {
         sentence: "申し訳ございません。一度食べてしまったものは返品[でき]{かねます}。",
-        meaning: "xxxxx"
+        meaning: "I am sorry. We are unable to accept returns for items that have already been eaten."
       },
     ],
     category: GrammarEntryCategory.POLITE_EXPRESSIONS_OTHERS,
     newWords: [
-      { kanji: "致す", kana: "xx", english: "xx" },
-      { kanji: "賛成", kana: "xx", english: "xx" },
+      { kanji: "致す", kana: "いたす", english: "to do (humble)" },
+      { kanji: "賛成", kana: "さんせい", english: "agreement" },
     ]
   },
   {
     id: 135,
     grammar: "〜もらってくれない？",
     imi: "私のために、この物を「もらう」ということをしてくれませんか？",
-    explanation: "この表現「もらう」と「くれる」が並んでいてよくわかりにくいかもしれないんですが「もらってくれない？」というのは「もらうという行為を私のためにしてくれませんか？」とお願いをするときに使う表現です。このものをあなたがもらうということをしてほしいとお願いをしているので、つまりこれをあげます。という意味と同じです。でも「もらってくれない？」という表現を使うときは決まった場面があります。",
+    explanation: "この表現「もらう」と「くれる」が並んでいてよくわかりにくいかもしれないんですが「もらってくれない？」というのは「もらうという行為を私のためにしてくれませんか？」とお願いをするときに使う表現です。このものをあなたがもらうということをしてほしいとお願いをしているので、つまりこれをあげます。という意味と同じです。でも「もらってくれない？」という表現を使うときは決まった場面があります。\nThis expression may be confusing because it combines 'もらう' and 'くれる'. 'もらってくれない？' is used to ask someone to do the act of receiving something for your sake. It is a way of requesting that the person receives this item, which essentially means 'I will give this to you'. However, there are specific situations in which the expression 'もらってくれない？' is used.",
     extraInfo: "この「もらってくれない？」という表現は日常生活でもよく使われます。基本的にあげるという行為は、あげる人が上でもらう人が下になるはずですね。もちろん何かをもらうわけですから、ありがとうございますともらった人は思うんですが「もらってくれない？」というふうに聞くとこれをあげることは迷惑かもしれないけど私がうれしいからもらってほしいという意味になります。\n実際の会話で使われるときは本当にもらってうれしいものなんだけどあげる人は「もらってくれない？」というふうに言う場合が多いです。これはあげる人が「そんなに、たいしたものじゃないんですよ」と謙遜をする意味でも使われますしもらってくれない？というふうに言うことでもらう人もそのものをもらいやすくなるという効果があります。",
     examples: [
       {
         sentence: "引っ越しするんだけど、家にある漫画全部{もらってくれない？}",
-        meaning: "xxxxx",
+        meaning: "I'm moving, so would you be willing to take all the manga I have at home?",
         point: "家にあるまんが、あなたにあげたいと言っています。",
       },
       {
         sentence: "実家から野菜がたくさん送られてきたから、少し{もらってくれない？}",
-        meaning: "xxxxx",
+        meaning: "A lot of vegetables were sent from my parents' home, so would you be willing to take some?",
         point: "実家からたくさん野菜が送られてきたからちょっとあげるよと言っているんですね。たくさん野菜があっても、一人で食べきることができない場合もありますよね。",
       },
       {
         sentence: "プレゼントでもらった服、小さくてサイズが合わないから、{もらってくれない？}",
-        meaning: "xxxxx",
+        meaning: "The clothes I received as a gift are too small and don't fit, so would you be willing to take them?",
         point: "これは私のためにこのものをもらうということをしてほしいという意味です。",
       },
     ],
     category: GrammarEntryCategory.POLITE_EXPRESSIONS_OTHERS,
     newWords: [
-      { kanji: "実家", kana: "xx", english: "xx" },
+      { kanji: "実家", kana: "じっか", english: "one's parents' home" },
     ],
     important: true
   },
-  //TODO: Add translations for unit 15: 丁寧な表現・その他
-  //TODO: Add translations for unit 2: 「こと」シリーズ
-  //TODO: Add translations for unit 3: 「限り」シリーズ
 ];
