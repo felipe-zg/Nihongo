@@ -1,0 +1,18 @@
+{
+  "Word Object (empty)": {
+    "prefix": "fptango",
+    "body": [
+      "{",
+      "  id: $1,",
+      "  wordRuby: \"$2\",",
+      "  meaning: \"$3\",",
+      "  components: [",
+      "    { kanji: \"$4\", meaning: \"$5\" }",
+      "  ],",
+      "  example: \"$6\",",
+      "  exampleMeaning: \"$7\"",
+      "},$0"
+    ],
+    "description": "Empty JLPT word object"
+  }
+}
