@@ -2104,6 +2104,7 @@ export const NIHONGO_NO_MORI_GRAMMAR: GrammarEntry[] = [
       { kanji: "得", kana: "とく", english: "Advantageous・great deal" },
     ],
     extraInfo: "When preceded by a noun, ごとに means 'each' or 'every'.\nWhen preceded by a verb, it means 'every time' or 'whenever'.",
+    important: true,
   },
   {
     id: 63,
