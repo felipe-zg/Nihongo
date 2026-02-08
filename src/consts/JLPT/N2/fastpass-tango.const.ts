@@ -235,7 +235,7 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
         meaning: "get rid of・remove",
         components: [
           { kanji: "取る", meaning: "Take" },
-          { kanji: "除く", meaning: "Remove・Exclude" }
+          { kanji: "除く", meaning: "Remove" }
         ],
         example: "不安や緊張を{取り除く}ことは難しい。",
         exampleMeaning: "It is difficult to {get rid of} anxiety and tension."
@@ -318,5 +318,219 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
         exampleMeaning: "{Reading and understanding} a person's feelings is difficult."
       },
     ],
+  },
+  '気' : {
+    meaning: "Feeling・spirit・mood・air",
+    words: [
+      {
+        id: 28,
+        wordRuby: "気{き}軽{がる}な",
+        meaning: "without hesitation・easygoing",
+        components: [
+          { kanji: "気", meaning: "Feeling" },
+          { kanji: "軽", meaning: "Light" }
+        ],
+        example: "疑問があれば{気軽に}質問してください。",
+        exampleMeaning: "If you have questions, feel free to ask {without hesitation}."
+      },
+      {
+        id: 29,
+        wordRuby: "気{き}楽{らく}な",
+        meaning: "relaxed",
+        components: [
+          { kanji: "気", meaning: "Feeling" },
+          { kanji: "楽", meaning: "Ease" }
+        ],
+        example: "休日は{気楽に}過ごしたい。",
+        exampleMeaning: "I want to spend my day off {relaxing}."
+      },
+      {
+        id: 30,
+        wordRuby: "お気{おき}に入{い}り",
+        meaning: "favorite",
+        components: [
+          { kanji: "気", meaning: "Feeling" },
+          { kanji: "入る", meaning: "Enter" }
+        ],
+        example: "{お気に入り}の本を何度も読む。",
+        exampleMeaning: "I read my {favorite} book over and over."
+      },
+      {
+        id: 31,
+        wordRuby: "陽{よう}気{き}な",
+        meaning: "upbeat・cheerful",
+        components: [
+          { kanji: "陽", meaning: "bright" },
+          { kanji: "気", meaning: "Feeling" }
+        ],
+        example: "{陽気な}音楽を聴いて踊りたくなった。",
+        exampleMeaning: "Listening to {upbeat} music made me want to dance."
+      },
+      {
+        id: 32,
+        wordRuby: "気{き}力{りょく}",
+        meaning: "energy",
+        components: [
+          { kanji: "気", meaning: "Spirit" },
+          { kanji: "力", meaning: "Power" }
+        ],
+        example: "最近、あまり{気力}が湧かない。",
+        exampleMeaning: "I haven't had much {energy} recently."
+      },
+      {
+        id: 33,
+        wordRuby: "気{け}配{はい}",
+        meaning: "presence・signs",
+        components: [
+          { kanji: "気", meaning: "Spirit" },
+          { kanji: "配", meaning: "Distribute" }
+        ],
+        example: "{気配}を感じて振り返ると猫がいた。",
+        exampleMeaning: "When I felt a {presence} and turned around, there was a cat."
+      },
+      {
+        id: 34,
+        wordRuby: "やる気{き}",
+        meaning: "motivation",
+        components: [
+          { kanji: "やる", meaning: "Do" },
+          { kanji: "気", meaning: "Spirit" }
+        ],
+        example: "先生に褒められて、{やる気}が出た。",
+        exampleMeaning: "I felt greater {motivation} after being praised by my teacher."
+      },
+      {
+        id: 35,
+        wordRuby: "気{き}象{しょう}",
+        meaning: "weather condition・phenomenon",
+        components: [
+          { kanji: "気", meaning: "air" },
+          { kanji: "象", meaning: "image" }
+        ],
+        example: "{気象}の変化が激しい。",
+        exampleMeaning: "There have been intense changes to {weather conditions}."
+      },
+    ],
+  },
+  'ー' : {
+    meaning: "One",
+    words: [
+      {
+        id: 36,
+        wordRuby: "ー{いち}から",
+        meaning: "from zero・from scratch",
+        components: [
+          { kanji: "ー", meaning: "One" },
+          { kanji: "から", meaning: "From" }
+        ],
+        example: "新しい環境で{一から}やり直すつもりだ。",
+        exampleMeaning: "I'm planning to start over {from zero} in a new environment."
+      },
+      {
+        id: 37,
+        wordRuby: "一{いっ}気{き}に",
+        meaning: "at once・in one go",
+        components: [
+          { kanji: "一", meaning: "One" },
+          { kanji: "気", meaning: "Spirit" }
+        ],
+        example: "コップの水を{一気に}飲んだ。",
+        exampleMeaning: "I drank all the water {at once}."
+      },
+      {
+        id: 38,
+        wordRuby: "一{いっ}斉{せい}に",
+        meaning: "all at once・simultaneously",
+        components: [
+          { kanji: "一", meaning: "One" },
+          { kanji: "斉", meaning: "unify" }
+        ],
+        example: "生徒が{一斉に}歌い始めた。",
+        exampleMeaning: "The students began to sing {all at once}."
+      },
+      {
+        id: 39,
+        wordRuby: "一{いっ}括{かつ}",
+        meaning: "all at once・in a lump",
+        connector: "する",
+        components: [
+          { kanji: "一", meaning: "One" },
+          { kanji: "括", meaning: "Bundle" }
+        ],
+        example: "{一括}でお支払いしますか？",
+        exampleMeaning: "Will you pay {all at once}?"
+      },
+      {
+        id: 40,
+        wordRuby: "一{いっ}般{ぱん}",
+        meaning: "ordinary・general",
+        components: [
+          { kanji: "一", meaning: "One" },
+          { kanji: "般", meaning: "Type" }
+        ],
+        example: "{一般}の人はこの施設を利用できません。",
+        exampleMeaning: "This facility is not open for use by {ordinary} people.\n{General} public cannot use this facility."
+      },
+      {
+        id: 41,
+        wordRuby: "一{ひと}口{くち}",
+        meaning: "one bite",
+        components: [
+          { kanji: "一", meaning: "One" },
+          { kanji: "口", meaning: "Mouth" }
+        ],
+        example: "{一口}食べてみてください。",
+        exampleMeaning: "Please take {one bite}."
+      },
+      {
+        id: 42,
+        wordRuby: "一{ひと}仕{し}事{ごと}",
+        meaning: "one task・one job",
+        components: [
+          { kanji: "一", meaning: "One" },
+          { kanji: "仕事", meaning: "Job" },
+        ],
+        example: "{一仕事}終えてから、コーヒーを飲んだ。",
+        exampleMeaning: "After finishing {one task}, I drank coffee."
+      },
+      {
+        id: 43,
+        wordRuby: "唯{ゆう}一{いつ}",
+        meaning: "only・sole",
+        components: [
+          { kanji: "唯", meaning: "Only" },
+          { kanji: "一", meaning: "One" }
+        ],
+        example: "彼女は私にとって{唯一}の親友だ。",
+        exampleMeaning: "She is my {only} best friend."
+      },
+    ]
+  },
+  '事' : {
+    meaning: "Thing",
+    words: [
+      {
+        id: 44,
+        wordRuby: "事{こと}柄{がら}",
+        meaning: "matter・thing・fact",
+        components: [
+          { kanji: "事", meaning: "Thing" },
+          { kanji: "柄", meaning: "Characteristic" }
+        ],
+        example: "大切な{事柄}は家族で決めるべきだ。",
+        exampleMeaning: "Important {matters} should be decided as a family."
+      },
+      {
+        id: 45,
+        wordRuby: "事{じ}情{じょう}",
+        meaning: "circumstances・situation",
+        components: [
+          { kanji: "事", meaning: "Thing" },
+          { kanji: "情", meaning: "Emotion" }
+        ],
+        example: "遅刻した{事情}を説明する。",
+        exampleMeaning: "I will explain the {circumstances} of being late."
+      },
+    ]
   },
 };
