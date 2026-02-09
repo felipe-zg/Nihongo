@@ -531,6 +531,320 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
         example: "遅刻した{事情}を説明する。",
         exampleMeaning: "I will explain the {circumstances} of being late."
       },
+      {
+        id: 46,
+        wordRuby: "事{じ}業{ぎょう}",
+        meaning: "business・enterprise",
+        components: [
+          { kanji: "事", meaning: "Thing" },
+          { kanji: "業", meaning: "Work" }
+        ],
+        example: "新しい{事業}を始める予定だ。",
+        exampleMeaning: "I plan to start a new {business}."
+      },
+      {
+        id: 47,
+        wordRuby: "事{じ}務{む}",
+        meaning: "office work・clerical work",
+        components: [
+          { kanji: "事", meaning: "Thing" },
+          { kanji: "務", meaning: "Duty" }
+        ],
+        example: "私にとって{事務}の仕事はとても楽しい。",
+        exampleMeaning: "I think {office work} is really fun for me."
+      },
+      {
+        id: 48,
+        wordRuby: "物{もの}事{ごと}",
+        meaning: "things",
+        components: [
+          { kanji: "物", meaning: "Thing" },
+          { kanji: "事", meaning: "Thing" }
+        ],
+        example: "{物事}が順調に進んでいる。",
+        exampleMeaning: "{Things} are proceeding smoothly."
+      },
+      {
+        id: 49,
+        wordRuby: "出{で}来{き}事{ごと}",
+        meaning: "happening・event",
+        components: [
+          { kanji: "出来る", meaning: "Occur" },
+          { kanji: "事", meaning: "Thing" }
+        ],
+        example: "夫に今日あった{出来事}を話す。",
+        exampleMeaning: "I tell my husband about today's {happenings}."
+      },
+      {
+        id: 50,
+        wordRuby: "家{か}事{じ}",
+        meaning: "housework・chores",
+        components: [
+          { kanji: "家", meaning: "House" },
+          { kanji: "事", meaning: "Thing" }
+        ],
+        example: "{家事}の中で掃除が一番苦手だ。",
+        exampleMeaning: "Cleaning is the one of housework I am worst at."
+      },
+      {
+        id: 51,
+        wordRuby: "無{ぶ}事{じ}な",
+        meaning: "safe・without incident",
+        components: [
+          { kanji: "無", meaning: "No" },
+          { kanji: "事", meaning: "Thing" }
+        ],
+        example: "母の手術は{無事}に成功した。",
+        exampleMeaning: "My mother's surgery was completed {safely}."
+      },
     ]
+  },
+  '場' : {
+    meaning: "Place・situation",
+    words: [
+      {
+        id: 52,
+        wordRuby: "場{ば}",
+        meaning: "Situation",
+        components: [
+          { kanji: "場", meaning: "Place" }
+        ],
+        example: "この{場}に合った言葉を選ぶべきだ。",
+        exampleMeaning: "I have to choose my words carefully in this {situation}."
+      },
+      {
+        id: 53,
+        wordRuby: "現{げん}場{ば}",
+        meaning: "site・scene",
+        components: [
+          { kanji: "現", meaning: "Appear" },
+          { kanji: "場", meaning: "Place" }
+        ],
+        example: "察が事故の{現場}を調査している。",
+        exampleMeaning: "The police are investigating the accident {site}."
+      },
+      {
+        id: 54,
+        wordRuby: "職{しょく}場{ば}",
+        meaning: "workplace",
+        components: [
+          { kanji: "職", meaning: "Job" },
+          { kanji: "場", meaning: "Place" }
+        ],
+        example: "新しい{職場}は雰囲気がとても良い。",
+        exampleMeaning: "My new {workplace} has a very nice atmosphere."
+      },
+      {
+        id: 55,
+        wordRuby: "立{たち}場{ば}",
+        meaning: "position・perspective",
+        components: [
+          { kanji: "立", meaning: "Stand" },
+          { kanji: "場", meaning: "Place" }
+        ],
+        example: "相手の{立場}に立って考えるべきだ。",
+        exampleMeaning: "You should think from the other person's {perspective}."
+      },
+      {
+        id: 56,
+        wordRuby: "牧{ぼく}場{じょう}",
+        meaning: "animal farm・ranch",
+        components: [
+          { kanji: "牧", meaning: "Pasture" },
+          { kanji: "場", meaning: "Place" }
+        ],
+        example: "子どもたちは{牧場}で動物と触れ合った。",
+        exampleMeaning: "The kids interacted with the animals at the {animal farm}."
+      },
+      {
+        id: 57,
+        wordRuby: "来{らい}場{じょう}",
+        meaning: "attendance",
+        connector: "する",
+        components: [
+          { kanji: "来", meaning: "Come" },
+          { kanji: "場", meaning: "Place" }
+        ],
+        example: "千人以上の人がイベントに{来場した}。",
+        exampleMeaning: "More than a thousand people {attended} the event."
+      },
+      {
+        id: 58,
+        wordRuby: "来{らい}場{じょう}者{しゃ}",
+        meaning: "attendee・visitor",
+        components: [
+          { kanji: "来場", meaning: "Attendance" },
+          { kanji: "者", meaning: "Person" }
+        ],
+        example: "{来場者}にプレゼントが配られた。",
+        exampleMeaning: "Gifts were handed out to the {attendees}."
+      },
+      {
+        id: 59,
+        wordRuby: "場{ば}面{めん}",
+        meaning: "scene・situation",
+        components: [
+          { kanji: "場", meaning: "Situation" },
+          { kanji: "面", meaning: "Face" }
+        ],
+        example: "感動的な{場面}で涙が止まらなかった。",
+        exampleMeaning: "The {scene} was so emotional that I couldn't stop crying."
+      },
+    ],
+  },
+  '地' : {
+    meaning: "Ground・place・earth・land",
+    words: [
+      {
+        id: 60,
+        wordRuby: "地{じ}面{めん}",
+        meaning: "ground",
+        components: [
+          { kanji: "地", meaning: "Ground" },
+          { kanji: "面", meaning: "Face" }
+        ],
+        example: "子どもが{地面}に絵を描いている。",
+        exampleMeaning: "The child is drawing on the {ground}."
+      },
+      {
+        id: 61,
+        wordRuby: "地{じ}元{もと}",
+        meaning: "local・native place",
+        components: [
+          { kanji: "地", meaning: "Ground" },
+          { kanji: "元", meaning: "Origin" }
+        ],
+        example: "{地元}で採れた野菜が食べたい",
+        exampleMeaning: "I want to eat {locally} harvested vegetables."
+      },
+      {
+        id: 62,
+        wordRuby: "地{ち}下{か}",
+        meaning: "underground",
+        components: [
+          { kanji: "地", meaning: "Ground" },
+          { kanji: "下", meaning: "Under" }
+        ],
+        example: "ビルの{地下}に大きな駐車場がある。",
+        exampleMeaning: "This building has a large {underground} parking lot."
+      },
+      {
+        id: 63,
+        wordRuby: "地{ち}球{きゅう}",
+        meaning: "The Earth・globe",
+        components: [
+          { kanji: "地", meaning: "Ground" },
+          { kanji: "球", meaning: "Ball" }
+        ],
+        example: "宇宙から見る{地球}は美しいらしい。",
+        exampleMeaning: "I heard that the Earth looks beautiful from space."
+      },
+      {
+        id: 64,
+        wordRuby: "地{ち}域{いき}",
+        meaning: "region・area",
+        components: [
+          { kanji: "地", meaning: "Ground" },
+          { kanji: "域", meaning: "Region" }
+        ],
+        example: "{地域}の人がごみ拾い活動をしている。",
+        exampleMeaning: "The people of the {region} do volunteer street cleanup."
+      },
+      {
+        id: 65,
+        wordRuby: "地{ち}方{ほう}",
+        meaning: "region・rural area",
+        components: [
+          { kanji: "地", meaning: "Ground" },
+          { kanji: "方", meaning: "Direction" }
+        ],
+        example: "{地方}によって色々な方言がある。",
+        exampleMeaning: "Each {region} has its own unique dialect."
+      },
+      {
+        id: 66,
+        wordRuby: "目{もく}的{てき}地{ち}",
+        meaning: "destination",
+        components: [
+          { kanji: "目的", meaning: "Goal" },
+          { kanji: "地", meaning: "Place" }
+        ],
+        example: "あと5分で{目的地}に到着する。",
+        exampleMeaning: "We'll reach our {destination} in five minutes."
+      },
+      {
+        id: 67,
+        wordRuby: "居{い}心{ごこ}地{ち}",
+        meaning: "comfort level",
+        components: [
+          { kanji: "居", meaning: "Being" },
+          { kanji: "心", meaning: "Heart" },
+          { kanji: "地", meaning: "Place" }
+        ],
+        example: "職場の雰囲気が良くて{居心地}が良い。",
+        exampleMeaning: "My workplace is {comfortable} and has a nice atmosphere."
+      },
+    ],
+  },
+  '定' : {
+    meaning: "Set・Determine・establish",
+    words: [
+      {
+        id: 68,
+        wordRuby: "定{さだ}まる",
+        meaning: "be set",
+        components: [
+          { kanji: "定", meaning: "Set" }
+        ],
+        example: "会社の方向性が{定まら}ない。",
+        exampleMeaning: "The company's path is not {set}."
+      },
+      {
+        id: 69,
+        wordRuby: "定{さだ}める",
+        meaning: "to set",
+        components: [
+          { kanji: "定", meaning: "Set" }
+        ],
+        example: "ルールを{定める}必要がある。",
+        exampleMeaning: "{Setting} rules is necessary."
+      },
+      {
+        id: 70,
+        wordRuby: "定{てい}年{ねん}",
+        meaning: "retirement",
+        connector: "する",
+        components: [
+          { kanji: "定", meaning: "Set" },
+          { kanji: "年", meaning: "Age" }
+        ],
+        example: "父は来年{定年}する予定だ。",
+        exampleMeaning: "My father plans to go into {retirement} next year."
+      },
+      {
+        id: 71,
+        wordRuby: "定{てい}着{ちゃく}",
+        meaning: "establishment・settlement",
+        connector: "する",
+        components: [
+          { kanji: "定", meaning: "Set" },
+          { kanji: "着", meaning: "Arrive" }
+        ],
+        example: "新しい制度が{定着して}きた。",
+        exampleMeaning: "A new system has been {established}."
+      },
+      {
+        id: 72,
+        wordRuby: "設{せつ}定{てい}",
+        meaning: "set up・establishment",
+        connector: "する",
+        components: [
+          { kanji: "設", meaning: "Establish" },
+          { kanji: "定", meaning: "Set" }
+        ],
+        example: "暗証番号を{設定}してください。",
+        exampleMeaning: "Please {set up} your PIN."
+      },
+    ],
   },
 };
