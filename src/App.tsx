@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { DaysOfTheMonth, Deck, GrammarJLPTN2, GrammarMondai, JLPTExamVocabs, JLPTExercisesPrint, JLPTVocabsPrint, Kanji, KanjiCreateForm, KanjiM2, KanjiM2Cards, KanjiPractice, KanjiPrint, Levels, Lyrics, MiniStory, MiniStoryAudioPlayer, MiniStoryCards, MojiGoiDeck, Nihongo500Mondai, Nihongo500N3, NihongoNoMoriGrammar, Periods, RealJapanese, RealJapaneseAudioPlayer, Verbs, VocabsJLPT, Words, WordsYDCQuizz } from './pages';
+import { DaysOfTheMonth, Deck, FastPass, GrammarJLPTN2, GrammarMondai, JLPTExamVocabs, JLPTExercisesPrint, JLPTVocabsPrint, Kanji, KanjiCreateForm, KanjiM2, KanjiM2Cards, KanjiPractice, KanjiPrint, Levels, Lyrics, MiniStory, MiniStoryAudioPlayer, MiniStoryCards, MojiGoiDeck, Nihongo500Mondai, Nihongo500N3, NihongoNoMoriGrammar, Periods, RealJapanese, RealJapaneseAudioPlayer, Verbs, VocabsJLPT, Words, WordsYDCQuizz } from './pages';
 import { Box, HStack, NativeBaseProvider } from "native-base";
 import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom';
 import { MusicNavbar, Navbar } from './components';
@@ -43,6 +43,7 @@ function AppContent() {
           <Route path="/JLPT/grammar/N2" element={<GrammarJLPTN2 />} />
           <Route path="/printable/JLPT/vocabs/N3" element={<JLPTVocabsPrint />} />
           <Route path="/printable/JLPT/exercises" element={<JLPTExercisesPrint />} />
+          <Route path="/JLPT/fastpass" element={<FastPass />} />
           <Route path="/ministory" element={<MiniStory />} />
           <Route path="/ministory-cards" element={<MiniStoryCards />} />
           <Route path="/ministory-audioplayer" element={<MiniStoryAudioPlayer />} />

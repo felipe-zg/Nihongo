@@ -47,18 +47,12 @@ const FastPass: React.FC<Props> = ({
     </HStack>
   );
 };
-  if (!tangoList || Object.keys(tangoList).length === 0) {
-    return <Text color="white">No data loaded</Text>;
-  }
 
   return (
     <Box alignItems="center" mt={10}>
       <Stack space={4} mb={6} alignItems="center" justifyContent={"space-between"} width="98%" direction={{ base: "column", lg: "row" }} >
         <Text fontSize={"xl"} bold color={"white"}>日本語の森 FAST PASS</Text>
       </Stack>
-      <Box color="white" bg="red.500">
-        {JSON.stringify(tangoList).slice(0, 200)}...
-      </Box>
       
       {Object.entries(tangoList).map(([key, tangoItem]) => (
         <Box key={key} borderWidth={1} borderColor="gray.300" borderRadius="md" mb={4} width="98%" overflow={"hidden"}>
