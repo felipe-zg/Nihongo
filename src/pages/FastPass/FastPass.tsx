@@ -47,6 +47,9 @@ const FastPass: React.FC<Props> = ({
     </HStack>
   );
 };
+  if (!tangoList || Object.keys(tangoList).length === 0) {
+    return <Text color="white">No data loaded</Text>;
+  }
 
   return (
     <Box alignItems="center" mt={10}>
