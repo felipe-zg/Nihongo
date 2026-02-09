@@ -242,7 +242,7 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
       },
       {
         id: 21,
-        wordRuby: "取{{と}り扱{あつか}う",
+        wordRuby: "取{と}り扱{あつか}う",
         meaning: "handle・deal in",
         components: [
           { kanji: "取る", meaning: "Take" },
