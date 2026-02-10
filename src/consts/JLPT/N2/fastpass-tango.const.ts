@@ -845,6 +845,474 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
         example: "暗証番号を{設定}してください。",
         exampleMeaning: "Please {set up} your PIN."
       },
+      {
+        id: 73,
+        wordRuby: "安{あん}定{てい}",
+        meaning: "stability",
+        connector: "する",
+        components: [
+          { kanji: "安", meaning: "Peaceful" },
+          { kanji: "定", meaning: "Set" }
+        ],
+        example: "運動をすると、精神が{安定する}。",
+        exampleMeaning: "When one exercises, their mind becomes {stable}."
+      },
+      {
+        id: 74,
+        wordRuby: "一{いっ}定{てい}",
+        meaning: "constant",
+        components: [
+          { kanji: "一", meaning: "One" },
+          { kanji: "定", meaning: "Set" }
+        ],
+        example: "この部屋は{一定}の温度に保たれている。",
+        exampleMeaning: "This room is kept at a {constant} temperature."
+      },
+    ],
+  },
+  '学' : {
+    meaning: "Study・Learn",
+    words: [
+      {
+        id: 75,
+        wordRuby: "学{がく}園{えん}",
+        meaning: "school・kindergarten",
+        components: [
+          { kanji: "学", meaning: "Study" },
+          { kanji: "園", meaning: "Garden" }
+        ],
+        example: "{学園}のルールを守る。",
+        exampleMeaning: "Follow the rules of the {school}."
+      },
+      {
+        id: 76,
+        wordRuby: "学{がく}問{もん}",
+        meaning: "academic discipline",
+        components: [
+          { kanji: "学", meaning: "Study" },
+          { kanji: "問", meaning: "Question" }
+        ],
+        example: "大学では様々な分野の{学問}が学べる。",
+        exampleMeaning: "At college, you can study a variety of {academic disciplines}."
+      },
+      {
+        id: 77,
+        wordRuby: "通{つう}学{がく}",
+        meaning: "commuting to school",
+        connector: "する",
+        components: [
+          { kanji: "通", meaning: "Pass through" },
+          { kanji: "学", meaning: "Study" }
+        ],
+        example: "毎日、バスで{通学して}いる。",
+        exampleMeaning: "I {commute to school} by bus every day."
+      },
+      {
+        id: 78,
+        wordRuby: "語{ご}学{がく}",
+        meaning: "language study",
+        components: [
+          { kanji: "語", meaning: "Language" },
+          { kanji: "学", meaning: "Study" }
+        ],
+        example: "彼は{語学}学校に通っている。",
+        exampleMeaning: "He attends a school for language study."
+      },
+      {
+        id: 79,
+        wordRuby: "哲{てつ}学{がく}",
+        meaning: "philosophy",
+        components: [
+          { kanji: "哲", meaning: "Wisdom" },
+          { kanji: "学", meaning: "Study" }
+        ],
+        example: "彼は大学で{哲学}を学んでいる。",
+        exampleMeaning: "He's learning {philosophy} at college."
+      },
+      {
+        id: 80,
+        wordRuby: "経{けい}済{ざい}学{がく}",
+        meaning: "economics",
+        components: [
+          { kanji: "経済", meaning: "Economy" },
+          { kanji: "学", meaning: "Study" }
+        ],
+        example: "父は大学で{経済学}を教えている。",
+        exampleMeaning: "My father teaches {economics} at a university."
+      },
+      {
+        id: 81,
+        wordRuby: "科{か}学{がく}的{てき}な",
+        meaning: "scientific",
+        components: [
+          { kanji: "科学", meaning: "Science" },
+          { kanji: "的", meaning: "Adjective suffix" }
+        ],
+        example: "この薬の効果が{科学的に}証明された。",
+        exampleMeaning: "This medicine's effectiveness is scientifically proven."
+      },
+    ],
+  },
+  '年' : {
+    meaning: "Year",
+    words: [
+      {
+        id: 82,
+        wordRuby: "年{ねん}々{ねん}",
+        meaning: "year after year",
+        components: [
+          { kanji: "年", meaning: "Year" },
+          { kanji: "々", meaning: "Iteration mark" }
+        ],
+        example: "試験は{年々}難しくなっている。",
+        exampleMeaning: "Exams are getting harder {year after year}."
+      },
+      {
+        id: 83,
+        wordRuby: "年{ねん}代{だい}",
+        meaning: "generation・age group",
+        components: [
+          { kanji: "年", meaning: "Year" },
+          { kanji: "代", meaning: "Era" }
+        ],
+        example: "この曲は、どの{年代}の人にも人気がある。",
+        exampleMeaning: "This song is popular with all {generations}."
+      },
+      {
+        id: 84,
+        wordRuby: "年{ねん}度{ど}",
+        meaning: "specific year",
+        components: [
+          { kanji: "年", meaning: "Year" },
+          { kanji: "度", meaning: "Occasion" }
+        ],
+        example: "今{年度}の売り上げ目標を達成した。",
+        exampleMeaning: "We reached our sales goal for this year."
+      },
+      {
+        id: 85,
+        wordRuby: "昨{さく}年{ねん}",
+        meaning: "last year",
+        components: [
+          { kanji: "昨", meaning: "Previous" },
+          { kanji: "年", meaning: "Year" }
+        ],
+        example: "{昨年}、結婚しました。",
+        exampleMeaning: "I got married {last year}."
+      },
+      {
+        id: 86,
+        wordRuby: "近{きん}年{ねん}",
+        meaning: "recent years",
+        components: [
+          { kanji: "近", meaning: "Near" },
+          { kanji: "年", meaning: "Year" }
+        ],
+        example: "{近年}、観光客が増加している。",
+        exampleMeaning: "The number of tourists has increased in {recent years}."
+      },
+      {
+        id: 87,
+        wordRuby: "長{なが}年{ねん}",
+        meaning: "many years",
+        components: [
+          { kanji: "長", meaning: "Long" },
+          { kanji: "年", meaning: "Year" }
+        ],
+        example: "彼女は{長年}この会社で働いている。",
+        exampleMeaning: "She has been working at this company for {many years}."
+      },
+    ],
+  },
+  '理' : {
+    meaning: "Logic・reason",
+    words: [
+      {
+        id: 88,
+        wordRuby: "理{り}想{そう}",
+        meaning: "ideal",
+        components: [
+          { kanji: "理", meaning: "Logic" },
+          { kanji: "想", meaning: "Thought" }
+        ],
+        example: "{理想}の自分を目指して努力している。",
+        exampleMeaning: "I'm working hard to become my {ideal} self."
+      },
+      {
+        id: 89,
+        wordRuby: "理{り}想{そう}的{てき}な",
+        meaning: "ideal",
+        components: [
+          { kanji: "理想", meaning: "Ideal" },
+          { kanji: "的", meaning: "Adjective suffix" }
+        ],
+        example: "私は{理想的な}環境で働いている。",
+        exampleMeaning: "I work in an {ideal} environment."
+      },
+      {
+        id: 90,
+        wordRuby: "処{しょ}理{り}",
+        meaning: "processing・handling",
+        connector: "する",
+        components: [
+          { kanji: "処", meaning: "Deal with" },
+          { kanji: "理", meaning: "Logic" }
+        ],
+        example: "機械が大量のデータを{処理する}。",
+        exampleMeaning: "Machines {process} large amounts of data."
+      },
+      {
+        id: 91,
+        wordRuby: "経{けい}理{り}",
+        meaning: "accounting",
+        components: [
+          { kanji: "経", meaning: "Pass" },
+          { kanji: "理", meaning: "Logic" }
+        ],
+        example: "会社で{経理}の仕事を担当している。",
+        exampleMeaning: "I'm in charge of {accounting} at my company."
+      },
+      {
+        id: 92,
+        wordRuby: "管{かん}理{り}",
+        meaning: "management",
+        connector: "する",
+        components: [
+          { kanji: "管", meaning: "Control" },
+          { kanji: "理", meaning: "Logic" }
+        ],
+        example: "データを{管理する}重要性を学んだ。",
+        exampleMeaning: "I learned about the importance of data {management}."
+      },
+      {
+        id: 93,
+        wordRuby: "管{かん}理{り}人{にん}",
+        meaning: "manager",
+        components: [
+          { kanji: "管理", meaning: "management" },
+          { kanji: "人", meaning: "Person" }
+        ],
+        example: "マンションの{管理人}に挨拶する。",
+        exampleMeaning: "I greet the building {manager}."
+      },
+    ],
+  },
+  '論' : {
+    meaning: "theory・discussion・argument",
+    words: [
+      {
+        id: 94,
+        wordRuby: "論{ろん}理{り}",
+        meaning: "logic",
+        components: [
+          { kanji: "論", meaning: "Theory" },
+          { kanji: "理", meaning: "Logic" }
+        ],
+        example: "{論理}を立てて意見を述べる。",
+        exampleMeaning: "State the {logic} behind your opinion."
+      },
+      {
+        id: 95,
+        wordRuby: "論{ろん}理{り}的{てき}な",
+        meaning: "logical",
+        components: [
+          { kanji: "論理", meaning: "Logic" },
+          { kanji: "的", meaning: "Adjective suffix" }
+        ],
+        example: "彼女は{論理的な}説明を求めた。",
+        exampleMeaning: "She requested a {logical} explanation."
+      },
+      {
+        id: 96,
+        wordRuby: "論{ろん}文{ぶん}",
+        meaning: "research paper・thesis",
+        components: [
+          { kanji: "論", meaning: "Theory" },
+          { kanji: "文", meaning: "Sentence" }
+        ],
+        example: "{論文}のテーマを決めた。",
+        exampleMeaning: "I decided on the theme for my {research paper}."
+      },
+      {
+        id: 97,
+        wordRuby: "理{り}論{ろん}",
+        meaning: "theory",
+        components: [
+          { kanji: "理", meaning: "Logic" },
+          { kanji: "論", meaning: "Theory" }
+        ],
+        example: "彼の{理論}は正しいように思える。",
+        exampleMeaning: "His {theory} seems to be accurate."
+      },
+      {
+        id: 98,
+        wordRuby: "結{けつ}論{ろん}",
+        meaning: "conclusion",
+        components: [
+          { kanji: "結", meaning: "Tied together" },
+          { kanji: "論", meaning: "Theory" }
+        ],
+        example: "急いで{結論}を出すのは危険だ。",
+        exampleMeaning: "It is dangerous to rush to a {conclusion}."
+      },
+      {
+        id: 99,
+        wordRuby: "議{ぎ}論{ろん}",
+        meaning: "argument・discussion",
+        connector: "する",
+        components: [
+          { kanji: "議", meaning: "Discussion" },
+          { kanji: "論", meaning: "Theory" }
+        ],
+        example: "政治問題について{議論する}。",
+        exampleMeaning: "We {discuss} political issues."
+      },
+    ],
+  },
+  '本' : {
+    meaning: "original・main",
+    words: [
+      {
+        id: 100,
+        wordRuby: "本{ほん}～",
+        meaning: "this ~",
+        components: [
+          { kanji: "本", meaning: "Original" }
+        ],
+        example: "{本}ホームページ・{本}学園",
+        exampleMeaning: "{this} homepage・{this} school"
+      },
+      {
+        id: 101,
+        wordRuby: "本{ほん}人{にん}",
+        meaning: "the person themselves",
+        components: [
+          { kanji: "本", meaning: "Original" },
+          { kanji: "人", meaning: "Person" }
+        ],
+        example: "合格かどうかは{本人}だけに伝えます。",
+        exampleMeaning: "I'll only inform the results to the {person themselves}."
+      },
+      {
+        id: 102,
+        wordRuby: "本{ほん}来{らい}",
+        meaning: "originally",
+        components: [
+          { kanji: "本", meaning: "Original" },
+          { kanji: "来", meaning: "Come" }
+        ],
+        example: "{本来}なら今日は休みのはずだった。",
+        exampleMeaning: "Today was {originally} meant to be a day off."
+      },
+      {
+        id: 103,
+        wordRuby: "本{ほん}物{もの}",
+        meaning: "genuine・real",
+        components: [
+          { kanji: "本", meaning: "Original" },
+          { kanji: "物", meaning: "Thing" }
+        ],
+        example: "{本物}の花は、写真で見るより美しい。",
+        exampleMeaning: "{Real} flowers are more beautiful than a picture."
+      },
+      {
+        id: 104,
+        wordRuby: "本{ほん}社{しゃ}",
+        meaning: "head office・headquarters",
+        components: [
+          { kanji: "本", meaning: "Original" },
+          { kanji: "社", meaning: "Company" }
+        ],
+        example: "最終面接は{本社}で行います。",
+        exampleMeaning: "The final interviews will be held at our {headquarters}."
+      },
+      {
+        id: 105,
+        wordRuby: "根{こん}本{ぽん}的{てき}な",
+        meaning: "fundamentally",
+        components: [
+          { kanji: "根", meaning: "Root" },
+          { kanji: "本", meaning: "Original" },
+          { kanji: "的", meaning: "Adjective suffix" }
+        ],
+        example: "彼とは考え方が{根本的に}違う。",
+        exampleMeaning: "His way of thinking is {fundamentally} different from mine."
+      },
+    ],
+  },
+  '実' : {
+    meaning: "Actual・real",
+    words: [
+      {
+        id: 106,
+        wordRuby: "実{じつ}現{げん}",
+        meaning: "realization・materialization・actualization",
+        connector: "する",
+        components: [
+          { kanji: "実", meaning: "Actual" },
+          { kanji: "現", meaning: "appear" }
+        ],
+        example: "長年の夢がついに{実現した}。",
+        exampleMeaning: "My years-long dream was finally {actualized}."
+      },
+      {
+        id: 107,
+        wordRuby: "実{じっ}習{しゅう}",
+        meaning: "practical training・practice",
+        connector: "する",
+        components: [
+          { kanji: "実", meaning: "Actual" },
+          { kanji: "習", meaning: "Learn" }
+        ],
+        example: "{実習}で多くのことを学んだ。",
+        exampleMeaning: "I learned a lot from my {practical training}."
+      },
+      {
+        id: 108,
+        wordRuby: "実{じっ}践{せん}",
+        meaning: "put into practice",
+        connector: "する",
+        components: [
+          { kanji: "実", meaning: "Actual" },
+          { kanji: "践", meaning: "Practice" }
+        ],
+        example: "学んだことをすぐに{実践する}。",
+        exampleMeaning: "I put what I've learned {into practice} right away."
+      },
+      {
+        id: 109,
+        wordRuby: "実{じっ}施{し}",
+        meaning: "Carry out・implementation・execution",
+        connector: "する",
+        components: [
+          { kanji: "実", meaning: "Actual" },
+          { kanji: "施", meaning: "Take action" }
+        ],
+        example: "国が観光に関する調査を{実施した}。",
+        exampleMeaning: "The government {carried out} a survey on tourism."
+      },
+      {
+        id: 110,
+        wordRuby: "事{じ}実{じつ}",
+        meaning: "fact・truth",
+        components: [
+          { kanji: "事", meaning: "Thing" },
+          { kanji: "実", meaning: "Actual" }
+        ],
+        example: "私が彼をたたいたのは{事実}だ。",
+        exampleMeaning: "It is a {fact} that I hit him."
+      },
+      {
+        id: 111,
+        wordRuby: "現{げん}実{じつ}",
+        meaning: "reality",
+        components: [
+          { kanji: "現", meaning: "Appear" },
+          { kanji: "実", meaning: "Actual" }
+        ],
+        example: "夢のような話が{現実}になった。",
+        exampleMeaning: "A story like a dream became {reality}."
+      },
     ],
   },
 };
