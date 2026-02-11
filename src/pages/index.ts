@@ -28,3 +28,4 @@ export { default as FastPass } from "./FastPass";
 export { default as KanjiCreateForm } from "./M2/KanjiCreateForm/KanjiCreateForm";
 export { default as RealJapanese } from "./RealJapanese";
 export { default as Lyrics } from "./Music";
+export { default as KeigoPage } from "./grammar/Keigo";

@@ -48,6 +48,7 @@ export const routes: RouteItem[] = [
       { name: 'Notes words', path: '/JLPT/ExamVocabs?source=NOTES_WORDS' },
     ],
   },
+  { name: '敬語', path: '/grammar/keigo' },
   {
     name: '横浜デザイン学院',
     children: [
