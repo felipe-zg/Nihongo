@@ -5,6 +5,7 @@ import { Box, HStack, NativeBaseProvider } from "native-base";
 import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom';
 import { MusicNavbar, Navbar } from './components';
 import Materials from './pages/Materials/Materials';
+import InterviewPage from './pages/Interview';
 
 function App() {
   return (
@@ -61,6 +62,9 @@ function AppContent() {
           <Route path="/kanji-create" element={<KanjiCreateForm />} />
           {/* Music */}
           <Route path="/music" element={<Lyrics />} />
+
+          
+          <Route path="/interview" element={<InterviewPage />} />
         </Routes> 
       </Box>
     </HStack>

@@ -69,4 +69,5 @@ export const routes: RouteItem[] = [
   { name: 'Music', path: '/music/leina/nostalgia' },
   { name: 'Real Japanese Audio', path: '/audio/real-japanese' },
   { name: 'Kanji Create', path: '/kanji-create' },
+  { name: 'Interview', path: '/interview' },
 ];
