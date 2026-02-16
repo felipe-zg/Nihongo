@@ -37,7 +37,7 @@ const Interview: React.FC<Props> = ({
                 {part.kanji}
                 <rt
                   style={{
-                    fontSize: "0.55em",
+                    fontSize: "0.65em",
                     lineHeight: "1",
                   }}
                 >
