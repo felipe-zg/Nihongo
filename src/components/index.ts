@@ -7,4 +7,5 @@ export { default as AudioPlayer } from './AudioPlayer/AudioPlayer';
 export { default as FlipCard } from './FlipCard/FlipCard';
 export { default as FloatingControls } from './FloatingControls/FloatingControls';
 export { default as ExamplePhrase } from './Phrase/ExamplePhrase';  
+export { default as YoutubePlayer } from './YoutubePlayer/YoutubePlayer';
 export * from './Typography';
