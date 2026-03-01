@@ -39,6 +39,7 @@ const MiniStory: React.FC<MiniStoryProps> = ({
   const { rubyStory, rubyWords, translation } = story;
 
   const redColor = '#ee1313ff';
+  const blueColor = '#1e90ffff';
   const whiteColor = '#fdf6f6ff';
 
   const storyParts = rubyStory.map((rubypart, index) => {
@@ -50,6 +51,14 @@ const MiniStory: React.FC<MiniStoryProps> = ({
         return null;
       }
       if (a.kanji === '>') {
+        color = whiteColor;
+        return null;
+      }
+      if (a.kanji === '[') {
+        color = isKanjiHidden ? "transparent" : blueColor;
+        return null;
+      }
+      if (a.kanji === ']') {
         color = whiteColor;
         return null;
       }
@@ -81,9 +90,10 @@ const MiniStory: React.FC<MiniStoryProps> = ({
   const words = rubyWords.map((rubypart, index) => {
     const parts = parseRuby(rubypart.kanji);
     const fontSize = isLargeLetter ? '2.5rem' : '1.3rem';
+    const furiganaColor = rubypart.secondary ? blueColor : redColor;
     const formattedWords = parts.map(a =>
       a.furigana
-        ? `<ruby>${a.kanji}<rt style="color: ${isFuriganaHidden ? "transparent" : redColor};">${a.furigana}</rt></ruby>`
+        ? `<ruby>${a.kanji}<rt style="color: ${isFuriganaHidden ? "transparent" : furiganaColor};">${a.furigana}</rt></ruby>`
         : a.kanji
     ).join('');
     return (
@@ -93,7 +103,7 @@ const MiniStory: React.FC<MiniStoryProps> = ({
             <p style={{color: whiteColor, fontFamily: "Klee One", fontSize: fontSize}} dangerouslySetInnerHTML={{ __html: formattedWords }} />
           </Box>
           <Box  flex={4} justifyContent={"center"}>
-            <Text color={isFuriganaHidden ? "transparent" : "red.600"} fontFamily="Klee One" fontSize={isLargeLetter ? "2xl" : "md"}>{rubypart.english}</Text>
+            <Text color={isFuriganaHidden ? "transparent" : furiganaColor} fontFamily="Klee One" fontSize={isLargeLetter ? "2xl" : "md"}>{rubypart.english}</Text>
           </Box>
           <Box  flex={1} justifyContent={"center"}>
             <Text color="primary.400">
