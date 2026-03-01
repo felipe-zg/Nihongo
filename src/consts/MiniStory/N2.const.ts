@@ -3,6 +3,7 @@ const MiniStoryTopics = {
   HOUSE_WORK: '家事',
   SHOPPING: "買い物",
   FASHION: "ファッション",
+  TECHNOLOGY: "テクノロジー",
 } as const;
 
 const MiniStoryWordType = {
@@ -1937,555 +1938,1140 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
     topic: MiniStoryTopics.FASHION,
     page: 64,
   },
-  // "xxxx": {
-  //   id: "xxxx",
-  //   rubyStory: [
-  //     {
-  //       character: "",
-  //       dialogue: "xxxxxxxxxxxxxxxx",
-  //     },
-  //   ],
-  //   rubyWords: [
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //   ],
-  //   translation: `xxxx`,
-  //   audio: "Txxxx.mp3",
-  //   topic: MiniStoryTopics.FOOD,
-  //   page: 10000000000,
-  // },
-  // "xxxx": {
-  //   id: "xxxx",
-  //   rubyStory: [
-  //     {
-  //       character: "",
-  //       dialogue: "xxxxxxxxxxxxxxxx",
-  //     },
-  //   ],
-  //   rubyWords: [
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //   ],
-  //   translation: `xxxx`,
-  //   audio: "Txxxx.mp3",
-  //   topic: MiniStoryTopics.FOOD,
-  //   page: 10000000000,
-  // },
-  // "xxxx": {
-  //   id: "xxxx",
-  //   rubyStory: [
-  //     {
-  //       character: "",
-  //       dialogue: "xxxxxxxxxxxxxxxx",
-  //     },
-  //   ],
-  //   rubyWords: [
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //   ],
-  //   translation: `xxxx`,
-  //   audio: "Txxxx.mp3",
-  //   topic: MiniStoryTopics.FOOD,
-  //   page: 10000000000,
-  // },
-  // "xxxx": {
-  //   id: "xxxx",
-  //   rubyStory: [
-  //     {
-  //       character: "",
-  //       dialogue: "xxxxxxxxxxxxxxxx",
-  //     },
-  //   ],
-  //   rubyWords: [
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //   ],
-  //   translation: `xxxx`,
-  //   audio: "Txxxx.mp3",
-  //   topic: MiniStoryTopics.FOOD,
-  //   page: 10000000000,
-  // },
-  // "xxxx": {
-  //   id: "xxxx",
-  //   rubyStory: [
-  //     {
-  //       character: "",
-  //       dialogue: "xxxxxxxxxxxxxxxx",
-  //     },
-  //   ],
-  //   rubyWords: [
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //   ],
-  //   translation: `xxxx`,
-  //   audio: "Txxxx.mp3",
-  //   topic: MiniStoryTopics.FOOD,
-  //   page: 10000000000,
-  // },
-  // "xxxx": {
-  //   id: "xxxx",
-  //   rubyStory: [
-  //     {
-  //       character: "",
-  //       dialogue: "xxxxxxxxxxxxxxxx",
-  //     },
-  //   ],
-  //   rubyWords: [
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //   ],
-  //   translation: `xxxx`,
-  //   audio: "Txxxx.mp3",
-  //   topic: MiniStoryTopics.FOOD,
-  //   page: 10000000000,
-  // },
-  // "xxxx": {
-  //   id: "xxxx",
-  //   rubyStory: [
-  //     {
-  //       character: "",
-  //       dialogue: "xxxxxxxxxxxxxxxx",
-  //     },
-  //   ],
-  //   rubyWords: [
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //   ],
-  //   translation: `xxxx`,
-  //   audio: "Txxxx.mp3",
-  //   topic: MiniStoryTopics.FOOD,
-  //   page: 10000000000,
-  // },
-  // "xxxx": {
-  //   id: "xxxx",
-  //   rubyStory: [
-  //     {
-  //       character: "",
-  //       dialogue: "xxxxxxxxxxxxxxxx",
-  //     },
-  //   ],
-  //   rubyWords: [
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //   ],
-  //   translation: `xxxx`,
-  //   audio: "Txxxx.mp3",
-  //   topic: MiniStoryTopics.FOOD,
-  //   page: 10000000000,
-  // },
-  // "xxxx": {
-  //   id: "xxxx",
-  //   rubyStory: [
-  //     {
-  //       character: "",
-  //       dialogue: "xxxxxxxxxxxxxxxx",
-  //     },
-  //   ],
-  //   rubyWords: [
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //   ],
-  //   translation: `xxxx`,
-  //   audio: "Txxxx.mp3",
-  //   topic: MiniStoryTopics.FOOD,
-  //   page: 10000000000,
-  // },
-  // "xxxx": {
-  //   id: "xxxx",
-  //   rubyStory: [
-  //     {
-  //       character: "",
-  //       dialogue: "xxxxxxxxxxxxxxxx",
-  //     },
-  //   ],
-  //   rubyWords: [
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //     {
-  //       kanji: "xxxx",
-  //       english: "xxxx",
-  //       type: MiniStoryWordType.
-  //     },
-  //   ],
-  //   translation: `xxxx`,
-  //   audio: "Txxxx.mp3",
-  //   topic: MiniStoryTopics.FOOD,
-  //   page: 10000000000,
-  // },
-  
+  "68": {
+    id: "68",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "新しいパソコン、どう？",
+      },
+      {
+        character: "B",
+        dialogue: "うん。<旧{きゅう}>モデルに比べて<多{た}少{しょう}>大きくなったけど、<反{はん}応{のう}>も速{はや}いから、<重{おも}たい>データ使った[作{さ}業{ぎょう}]もスムーズにできるよ。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "旧{きゅう}",
+        english: "old・former・previous",
+        type: MiniStoryWordType.PREFIX,
+        important: true,
+      },
+      {
+        kanji: "多{た}少{しょう}",
+        english: "somewhat・a little bit・sslightly",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.ADVERB ],
+        important: true,
+      },
+      {
+        kanji: "反{はん}応{のう}[する]",
+        english: "reaction・response",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.GODAN_INTRANSITIVE],
+        important: true,
+      },
+      {
+        kanji: "重{おも}たい",
+        english: "heavy・bulky",
+        type: MiniStoryWordType.ADJECTIVE_I,
+        important: true,
+      },
+      {
+        kanji: "スムーズな",
+        english: "smooth",
+        type: MiniStoryWordType.ADJECTIVE_NA,
+      },
+      {
+        kanji: "作{さ}業{ぎょう}",
+        english: "work・operation・task",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      }
+    ],
+    translation: `A: How do you like your new computer?\nB: Hmm,. I's a little bigger than the previous model,but it also responds faster, so it can handle heavy amounts of data smoothly.`,
+    audio: "T68.mp3",
+    topic: MiniStoryTopics.TECHNOLOGY,
+    page: 65,
+  },
+  "69": {
+    id: "69",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "授{じゅ}業{ぎょう}の資{し}料{りょう}をダウンロードしたんだけど、開{ひら}けなかったの。",
+      },
+      {
+        character: "B",
+        dialogue: "[圧{あつ}縮{しゅく}]<フォルダ>だからじゃない？<解{かい}凍{とう}すれば>いいよ。",
+      },
+      {
+        character: "A",
+        dialogue: "あ、そっか。あと、ここに書いてある漢字って何て読むの？読み方が分からないから<入{にゅう}力{りょく}できなくて>...。",
+      },
+      {
+        character: "B",
+        dialogue: "ええと・・・難しいね。こういうときは<手{て}書{が}き><機{き}能{のう}>を<活{かつ}用{よう}しよう>。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "フォルダ",
+        english: "folder",
+        type: MiniStoryWordType.NOUN,
+      },
+      {
+        kanji: "解{かい}凍{とう} [する]",
+        english: "decompression・unzip",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+        important: true,
+      },
+      {
+        kanji: "入{にゅう}力{りょく} [する]",
+        english: "input",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+        important: true,
+      },
+      {
+        kanji: "出{しゅつ}力{りょく} [する]",
+        english: "output",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+        important: true,
+      },
+      {
+        kanji: "手{て}書{が}き [する]",
+        english: "handwriting・to write by hand",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+        important: true,
+      },
+      {
+        kanji: "機{き}能{のう} [する]",
+        english: "function・to function",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE],
+        important: true,
+      },
+      {
+        kanji: "機{き}能{のう}的{てき}な",
+        english: "functional",
+        type: MiniStoryWordType.ADJECTIVE_NA,
+        important: true,
+      },
+      {
+        kanji: "活{か}用{よう} [する]",
+        english: "utilization・to utilize・apply",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+        important: true,
+      },
+      {
+        kanji: "圧{あつ}縮{しゅく}",
+        english: "compression・to compress",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+    ],
+    translation: `A: I downloaded the class materials, but I couldn't open them.\nB: Maybe that's because it's a compressed folder. Just unzip it.\nA: Oh, I see. Also, how do you read the kanji characters written here? I don't know how to read them, so I can't input them...\nB: Well... that's more difficult. In this case, let's use the handwriting function.`,
+    audio: "T69.mp3",
+    topic: MiniStoryTopics.TECHNOLOGY,
+    page: 66,
+  },
+  "70": {
+    id: "70",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "インターネットを通{とお}して、世界中の情報が<手{て}軽{がる}に>手{て}に入{い}れられるようになった。それによって社会・[経{けい}済{ざい}]に大きな革{かく}命{めい}が起きたことを<IT><革{かく}命{めい}>という。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "手{て}軽{がる}な",
+        english: "easy to handle・convenient",
+        type: MiniStoryWordType.ADJECTIVE_NA,
+        important: true,
+      },
+      {
+        kanji: "IT",
+        english: "information technology",
+        type: MiniStoryWordType.NOUN,
+      },
+      {
+        kanji: "革{かく}命{めい}",
+        english: "revolution",
+        type: MiniStoryWordType.NOUN,
+        important: true,
+      },
+      {
+        kanji: "経{けい}済{ざい}",
+        english: "economy",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+    ],
+    translation: `Through the Internet, information from all over the world has become readily available. This has led to a major social and economic revolution, known as the IT revolution.`,
+    audio: "T70.mp3",
+    topic: MiniStoryTopics.TECHNOLOGY,
+    page: 66,
+  },
+  "71": {
+    id: "71",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "「<リモートワークしなきゃ>いけないんだけどパソコンが苦手」「ソフトの使い方がよく分からないから、<常{つね}に><電{でん}卓{たく}>を使っている」「[作{さ}業{ぎょう}]の[無{む}駄{だ}]を<省{はぶ}きたい>けど、何をしたらいいか分からない」そのコンプレックス、パソコン[市{し}民{みん}講{こう}座{ざ}]で[解{かい}消{しょう}]しませんか？",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "リモートワーク [する]",
+        english: "remote work・to work remotely",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+      },
+      {
+        kanji: "リモート",
+        english: "remote",
+        type: MiniStoryWordType.NOUN,
+      },
+      {
+        kanji: "常{つね}に",
+        english: "always・constantly",
+        type: MiniStoryWordType.ADVERB,
+        important: true,
+      },
+      {
+        kanji: "電{でん}卓{たく}",
+        english: "calculator",
+        type: MiniStoryWordType.NOUN,
+        important: true,
+      },
+      {
+        kanji: "省{はぶ}く",
+        english: "to omit・to save (time, effort, etc.)",
+        type: MiniStoryWordType.GODAN_TRANSITIVE,
+        important: true,
+      },
+      {
+        kanji: "コンプレックス",
+        english: "complex",
+        type: MiniStoryWordType.NOUN,
+      },
+      {
+        kanji: "無{む}駄{だ}",
+        english: "waste・futility",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+      {
+        kanji: "市{し}民{みん}講{こう}座{ざ}",
+        english: "community class",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+      {
+        kanji: "解{かい}消{しょう} [する]",
+        english: "elimination・to eliminate",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+        secondary: true,
+      },
+    ],
+    translation: `"I need to work remotely, but I'm not good with computers," or "I don't know how to use software, so I'm constantly using calculators" or "I want to eliminate work-related waste, but I don't know how" —if you have concerns like this, why not solve it by taking a community computer class?`,
+    audio: "T71.mp3",
+    topic: MiniStoryTopics.TECHNOLOGY,
+    page: 67,
+  },
+  "72": {
+    id: "72",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "ねえ見て、メールで先生に[課{か}題{だい}]を[提{てい}出{しゅつ}]したら「[欲{よく}]で汚{きたな}いようです」って<コメント>がついてて・・・。",
+      },
+      {
+        character: "B",
+        dialogue: "それ、「よくできた内容です」っていう<メッセージ>じゃない？あの先生、漢字の<変{へん}換{かん}>ミスが多いよね。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "コメント［する］",
+        english: "comment・to leave a comment",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE],
+      },
+      {
+        kanji: "メッセージ",
+        english: "message",
+        type: MiniStoryWordType.NOUN,
+      },
+      {
+        kanji: "変{へん}換{かん}［する］",
+        english: "conversion・to convert",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+        important: true,
+      },
+      {
+        kanji: "課{か}題{だい}",
+        english: "assignment",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+      {
+        kanji: "提{てい}出{しゅつ}［する］",
+        english: "to submit・to present",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+        secondary: true,
+      },
+      {
+        kanji: "欲{よく}",
+        english: "desire",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+    ],
+    translation: `A: Hey, look. I submitted an assignment to my teacher via email and she left the comment yoku de kitanai yodesu ("This seems greedy and dirty") ...\nB: But isn't her message actually saying yoku dekita naiyo desu ("This is well written content")? She makes a lot of kanji conversion errors, doesnit she?`,
+    audio: "T72.mp3",
+    topic: MiniStoryTopics.TECHNOLOGY,
+    page: 68,
+  },
+  "73": {
+    id: "73",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "こないだCさんがSNSに[上{じょう}司{し}]の悪口書いてたのって見た？",
+      },
+      {
+        character: "B",
+        dialogue: "うん、見たよ。",
+      },
+      {
+        character: "A",
+        dialogue: "あの<投{とう}稿{こう}>、Cさんの後{こう}輩{はい}が<シェアして>、上{じょう}司{し}の<本{ほん}名{みょう}>ばらしちゃったんだって。それでCさんのアカウントが会社から<特{とく}定{てい}された>らしくて・・・Cさん、近{ちか}々{ぢか}会社やめるらしいよ。",
+      },
+      {
+        character: "B",
+        dialogue: "それは、<不{ふ}運{うん}だった>ね・・・。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "投{とう}稿{こう}［する］",
+        english: "to post",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+        important: true,
+      },
+      {
+        kanji: "シェア［する］",
+        english: "Sharing・to share",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+      },
+      {
+        kanji: "本{ほん}名{みょう}",
+        english: "real name",
+        type: MiniStoryWordType.NOUN,
+        important: true,
+      },
+      {
+        kanji: "特{とく}定{てい}［する］",
+        english: "Identification・to specify・to identify",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+        important: true,
+      },
+      {
+        kanji: "不{ふ}運{うん}な",
+        english: "unfortunate",
+        type: MiniStoryWordType.ADJECTIVE_NA,
+        important: true,
+      },
+      {
+        kanji: "上{じょう}司{し}",
+        english: "boss",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+    ],
+    translation: `A: Did you see that Mr. C wrote some awful things about his boss on social media the other day?\nB: Yes, I saw.\nA: His junior colleague shared the post and revealed his boss's real name. It seems that Mr. C's account was identified by the company... and it looks like Mr. C will be quitting the company soon.\nB: Wel, that's unfortunate...`,
+    audio: "T73.mp3",
+    topic: MiniStoryTopics.TECHNOLOGY,
+    page: 68,
+  },
+  "74": {
+    id: "74",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "パソコンの[充{じゅう}電{でん}器{き}]、[壊{こわ}れちゃった]んだけど、充{じゅう}電{でん}器{き}は修{しゅう}理{り}の[対{たい}象{しょう}]<外{がい}>だから、こういう<ケース>は買い替えるしかないんだって。<電{でん}圧{あつ}>とか<電{でん}力{りょく}>とかよく分からないんだけど、どれ買えばいいかな？",
+      },
+      {
+        character: "B",
+        dialogue: "えっと・・・6OWだね。パソコンと同じメーカーのがいいよ。<ただ>、高いけどね。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "〜外{がい}",
+        english: "outside of the scope of ~・not included in ~",
+        type: MiniStoryWordType.PREFIX,
+        important: true,
+      },
+      {
+        kanji: "ケース",
+        english: "case",
+        type: MiniStoryWordType.NOUN,
+      },
+      {
+        kanji: "電{でん}圧{あつ}",
+        english: "voltage",
+        type: MiniStoryWordType.NOUN,
+        important: true,
+      },
+      {
+        kanji: "電{でん}力{りょく}",
+        english: "electric power",
+        type: MiniStoryWordType.NOUN,
+        important: true,
+      },
+      {
+        kanji: "ただ",
+        english: "but・however",
+        type: MiniStoryWordType.ADVERB,
+        important: true,
+      },
+      {
+        kanji: "充{じゅう}電{でん}器{き}",
+        english: "charger",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+      {
+        kanji: "壊{こわ}れる",
+        english: "to break",
+        type: MiniStoryWordType.ICHIDAN_INTRANSITIVE,
+        secondary: true,
+      },
+      {
+        kanji: "対{たい}象{しょう}",
+        english: "target・object",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+    ],
+    translation: `A: The charger for my computer broke, but chargers aren't included in repairs, so in this case I just have to buy a new one. I don't know much about voltage or power. Which one should I buy?\nB: Let's see... it's 60W. You should get one from the same manufacturer as your computer. But they're expensive.`,
+    audio: "T74.mp3",
+    topic: MiniStoryTopics.TECHNOLOGY,
+    page: 69,
+  },
+  "75": {
+    id: "75",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "オンラインで、他の人と同時にファイルを<編{へん}集{しゅう}できる>方法ないかな。",
+      },
+      {
+        character: "B",
+        dialogue: "ウェブアプリを使えば、ファイルを<共{きょう}有{ゆう}する>だけで<やりとり>しながら<共{きょう}同{どう}>作{さ}業{ぎょう}ができるよ。データが<修{しゅう}正{せい}されたら>、リアルタイムで保{ほ}存{ぞん}されるんだ。",
+      },
+      {
+        character: "A",
+        dialogue: "<要{よう}するに>、内容が<上{うわ}書{が}きされて>いくってことだね。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "編{へん}集{しゅう}［する］",
+        english: "editing・to edit",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+        important: true,
+      },
+      {
+        kanji: "共{きょう}有{ゆう}［する］",
+        english: "sharing・to share",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+        important: true,
+      },
+      {
+        kanji: "やりとり［する］",
+        english: "exchange・to trade",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE],
+        important: true,
+      },
+      {
+        kanji: "修{しゅう}正{せい}［する］",
+        english: "correction・to correct",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+        important: true,
+      },
+      {
+        kanji: "要{よう}するに",
+        english: "in short・to sum up",
+        type: MiniStoryWordType.ADVERB,
+        important: true,
+      },
+      {
+        kanji: "上{うわ}書{が}き［する］",
+        english: "overwrite・to overwrite",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+        important: true,
+      },
+    ],
+    translation: `A: Is there any way I can edit a file online with another person at the same time?\nB: If you use a web app, you can collaborate just by sharing files to exchange them. Whenever data is modified, it's saved in real time.\nA: So in short, the content is overwritten.`,
+    audio: "T75.mp3",
+    topic: MiniStoryTopics.TECHNOLOGY,
+    page: 70,
+  },
+  "76": {
+    id: "76",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "[年{ねん}齢{れい}別{べつ}]のパソコン<普{ふ}及{きゅう}>[率{りつ}]を<探{さぐ}った>研{けん}究{きゅう}によると、人口の多{た}数{すう}を<占{し}める>30～59歳{さい}と60歳{さい}以上の普{ふ}及{きゅう}率{りつ}は60%以上で、前{ぜん}年{ねn}に比べて大きく[増{ぞう}加{か}]したそうだ。テレワークやオンライン学習が進んでいるため、<さらに>パソコンやタブレットの<需{じゅ}要{よう}>は増えていくと思われる。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "普{ふ}及{きゅう}［する］",
+        english: "to be widespread",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+        important: true,
+      },
+      {
+        kanji: "探{さぐ}る",
+        english: "to seek・to explore",
+        type: MiniStoryWordType.GODAN_TRANSITIVE,
+        important: true,
+      },
+      {
+        kanji: "占{し}める",
+        english: "to account for・to take up",
+        type: MiniStoryWordType.GODAN_TRANSITIVE,
+        important: true,
+      },
+      {
+        kanji: "さらに",
+        english: "furthermore・moreover",
+        type: MiniStoryWordType.ADVERB,
+        important: true,
+      },
+      {
+        kanji: "需{じゅ}要{よう}",
+        english: "demand・need",
+        type: MiniStoryWordType.NOUN,
+        important: true,
+      },
+      {
+        kanji: "年{ねん}齢{れい}別{べつ}",
+        english: "by age group",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+      {
+        kanji: "率{りつ}",
+        english: "rate",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+      {
+        kanji: "増{ぞう}加{か}",
+        english: "increase・to increase",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+    ],
+    translation: `According to a study that explored penetration rates for computers by age, the penetration rates for the 30-59 and 60+ age groups, which account for the majority of the population, were over 60%, a significant increase over the previous year. Demand for PCs and tablets is expected to increase further due to remote working and online learning.`,
+    audio: "T76.mp3",
+    topic: MiniStoryTopics.TECHNOLOGY,
+    page: 70,
+  },
+  "77": {
+    id: "77",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "もし<ハードウェア>に[不{ふ}具{ぐ}合{あい}]があった場合、<一{いっ}旦{たん}>[店{てん}舗{ぽ}]にお持ちください。<分{ぶん}解{かい}>[等{とう}]されますと、<保{ほ}証{しょう}>が受{う}けられなくなります。",
+      },
+      {
+        character: "B",
+        dialogue: "はい、分かりました。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "ハードウェア",
+        english: "hardware",
+        type: MiniStoryWordType.NOUN,
+      },
+      {
+        kanji: "一{いっ}旦{たん}",
+        english: "once (something is done)・for now・temporarily",
+        type: MiniStoryWordType.ADVERB,
+        important: true,
+      },
+      {
+        kanji: "分{ぶん}解{かい}[する］",
+        english: "disassembly・to disassemble",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+        important: true,
+      },
+      {
+        kanji: "保{ほ}証{しょう}[する］",
+        english: "warranty・to warranty",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+        important: true,
+      },
+      {
+        kanji: "不{ふ}具{ぐ}合{あい}",
+        english: "malfunction・defect",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+      {
+        kanji: "店{てん}舗{ぽ}",
+        english: "store",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+      {
+        kanji: "等{とう}",
+        english: "etc.",
+        type: MiniStoryWordType.ADVERB,
+        secondary: true,
+      },
+    ],
+    translation: `A: If you have any hardware problems, just bring it back to the store for the moment. If you disassemble it yourself, you will lose your warranty.\nB: Yes, I understand.`,
+    audio: "T77.mp3",
+    topic: MiniStoryTopics.TECHNOLOGY,
+    page: 71,
+  },
+  "78": {
+    id: "78",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "期末試験の<採{さい}点{てん}>結果を<リスト>にしたんだけど、ファイルが見つからなくて・・・。",
+      },
+      {
+        character: "B",
+        dialogue: "保{ほ}存{ぞん}せずに[終{しゅう}了{りょう}]したとか？",
+      },
+      {
+        character: "A",
+        dialogue: "そうかも・・・また<作{さく}成{せい}する>しかないかな。",
+      },
+      {
+        character: "B",
+        dialogue: "自動保存をオンにしておくといいよ。そうすれば、<改{かい}行{ぎょう}>でも<挿{そう}入{にゅう}>でも<削{さく}除{じょ}>でも、<更{こう}新{しん}する>たびに<勝{かっ}手{て}に>保存されるよ。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "採{さい}点{てん}[する］",
+        english: "to grade・to score",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+        important: true,
+      },
+      {
+        kanji: "リスト",
+        english: "list",
+        type: MiniStoryWordType.NOUN,
+      },
+      {
+        kanji: "作{さく}成{せい}[する］",
+        english: "creation・to create",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+        important: true,
+      },
+      {
+        kanji: "改{かい}行{ぎょう}[する］",
+        english: "to line break・to go to a new line",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+        important: true,
+      },
+      {
+        kanji: "挿{そう}入{にゅう}[する］",
+        english: "insertion・to insert",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+        important: true,
+      },
+      {
+        kanji: "削{さく}除{じょ}[する］",
+        english: "deletion・to delete",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+        important: true,
+      },
+      {
+        kanji: "更{こう}新{しん}[する］",
+        english: "update・to update",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+        important: true,
+      },
+      {
+        kanji: "勝{かっ}手{て}な",
+        english: "automatically・selfishly・without being asked",
+        type: MiniStoryWordType.ADJECTIVE_NA,
+        important: true,
+      },
+      {
+        kanji: "終{しゅう}了{りょう}[する］",
+        english: "completion・to complete",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+        secondary: true,
+      }
+    ],
+    translation: `A: I made a list of the final exam scores, but I can't find the file...\nB: Did you exit without saving it or something?\nA: Maybe... I'll have to create it again.\nB: You should turn on auto-save. That way, every time you update, whether it's a line break, insertion, or deletion, it will save automatically.`,
+    audio: "T78.mp3",
+    topic: MiniStoryTopics.TECHNOLOGY,
+    page: 72,
+  },
+  "79": {
+    id: "79",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "この<システム>の<設{せっ}定{てい}>の変{へん}更{こう}を<反{はん}映{えい}させる>ためには、パソコンを<再{さい}起{き}動{どう}>する必要がある。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "システム",
+        english: "system",
+        type: MiniStoryWordType.NOUN,
+      },
+      {
+        kanji: "設{せっ}定{てい}[する］",
+        english: "to set up・to configure",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+        important: true,
+      },
+      {
+        kanji: "反{はん}映{えい}[する］",
+        english: "reflection・to reflect",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+        important: true,
+      },
+      {
+        kanji: "再{さい}起{き}動{どう}[する］",
+        english: "reboot・to reboot・to restart",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+        important: true,
+      },
+      {
+        kanji: "起{き}動{どう}[する］",
+        english: "to start up・to turn on",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+        important: true,
+      },
+    ],
+    translation: `In order for these changes to system settings to take effect, the computer must be rebooted.`,
+    audio: "T79.mp3",
+    topic: MiniStoryTopics.TECHNOLOGY,
+    page: 72,
+  },
+  "80": {
+    id: "80",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "AIは人より<優{すぐ}れた>点がたくさんあるんだね。",
+      },
+      {
+        character: "B",
+        dialogue: "そうだね。もう少し時間が<経{た}ったら>、AIが人間を[超{こ}える]んじゃないかな。",
+      },
+      {
+        character: "A",
+        dialogue: "それは<否{ふ}定{てい}できない>ね。そのうち[人{じん}類{るい}]はAIに<支{し}配{ぱい}される>って言う人もいるもんね。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "優{すぐ}れる",
+        english: "to excel・to be superior",
+        type: MiniStoryWordType.ICHIDAN_INTRANSITIVE,
+        important: true,
+      },
+      {
+        kanji: "経{た}つ",
+        english: "to pass (time)・to elapse",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE,
+        important: true,
+      },
+      {
+        kanji: "否{ふ}定{てい}[する］",
+        english: "denial・to deny",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+        important: true,
+      },
+      {
+        kanji: "肯{こう}定{てい}[する］",
+        english: "affirmation・to affirm",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+        important: true,
+      },
+      {
+        kanji: "支{し}配{はい}[する］",
+        english: "domination・to dominate",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+        important: true,
+      },
+      {
+        kanji: "超{こ}える",
+        english: "to exceed・to surpass",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE,
+        secondary: true,
+      },
+      {
+        kanji: "人{じん}類{るい}",
+        english: "humanity",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      }
+    ],
+    translation: `A: In many ways, AI is superior to humanity.\nB: Yes, it is. I think that after some time has passed, AI will probably surpass humans.\nA: That's undeniable. Some people even think that AI will eventually come to dominate humanity.`,
+    audio: "T80.mp3",
+    topic: MiniStoryTopics.TECHNOLOGY,
+    page: 73,
+  },
+  "81": {
+    id: "81",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "メールに<添{てん}付{ぶ}する>ファイル<容{よう}量{りょう}>は3MB[未{み}満{まん}]とすることを覚えておこう。ファイルの容{よう}量{りょう}が3MBを<超{ちょう}過{か}する>と、メールが届かない可{か}能{のう}性{せい}がある。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "添{てん}付{ぷ}[する］",
+        english: "attachment・to attach",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+        important: true,
+      },
+      {
+        kanji: "添{てん}付{ぷ}ファイル",
+        english: "attached file",
+        type: MiniStoryWordType.NOUN,
+      },
+      {
+        kanji: "容{よう}量{りょう}",
+        english: "file size・capacity・volume",
+        type: MiniStoryWordType.NOUN,
+        important: true,
+      },
+      {
+        kanji: "超{ちょう}過{か}[する］",
+        english: "excess・to exceed",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+        important: true,
+      },
+      {
+        kanji: "未{み}満{まん}",
+        english: "under the limit・below the minimum",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+    ],
+    translation: `Try to remember that the size of a file attached to an email should be less than 3MB. If the file size exceeds 3MB, the email may not arrive.`,
+    audio: "T81.mp3",
+    topic: MiniStoryTopics.TECHNOLOGY,
+    page: 74,
+  },
+  "82": {
+    id: "82",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "スマートスピーカーって持ってる？",
+      },
+      {
+        character: "B",
+        dialogue: "うん。うちは[家{か}電{でん}]と<つないで>るから、毎日使ってるよ。あとは家族との音{おん}声{せい}<通{つう}信{しん}>に使ったり、<宅{たく}配{はい}>[頼{たの}んだり]…。うちの夫{おっと}なんて<親{した}しい>友人みたいに、よくAIとおしゃべりしてるよ。",
+      },
+      {
+        character: "A",
+        dialogue: "そっか、便利なんだね。今<売{う}り出{だ}して>るやつ、買ってみようかな。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "つなぐ",
+        english: "to connect・to link",
+        type: MiniStoryWordType.GODAN_TRANSITIVE,
+        important: true,
+      },
+      {
+        kanji: "通{つう}信{しん}[する］",
+        english: "communication・to communicate",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+        important: true,
+      },
+      {
+        kanji: "宅{たく}配{はい}[する］",
+        english: "home delivery・to deliver to one's home",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+        important: true,
+      },
+      {
+        kanji: "親{した}しい",
+        english: "familiar・close",
+        type: MiniStoryWordType.ADJECTIVE_I,
+        important: true,
+      },
+      {
+        kanji: "売{う}り出{だ}す",
+        english: "to go on sale・to be put up for sale",
+        type: MiniStoryWordType.GODAN_TRANSITIVE,
+        important: true,
+      },
+      {
+        kanji: "家{か}電{でん}",
+        english: "home electronics",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+      {
+        kanji: "頼{たの}む",
+        english: "to ask for a favor・to request",
+        type: MiniStoryWordType.GODAN_TRANSITIVE,
+        secondary: true,
+      },
+    ],
+    translation: `A: Do you own a smart speaker?\nB: Yes. I use it every day because it's linked to my home appliances. I also use it for voice communications with my family, ordering home deliveries... My husband often chats with the Al like a close friend.\nA: Right. It seems very handy. I think I'll buy one of those ofered on sale at the moment.`,
+    audio: "T82.mp3",
+    topic: MiniStoryTopics.TECHNOLOGY,
+    page: 74,
+  },
+  "83": {
+    id: "83",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "すみません、ノートパソコンを探しているんですが。",
+      },
+      {
+        character: "B",
+        dialogue: "どのような<用{よう}途{と}>でしょうか。",
+      },
+      {
+        character: "A",
+        dialogue: "WEB開発です。",
+      },
+      {
+        character: "B",
+        dialogue: "でしたら、こちらはいかがですか。<外{がい}部{ぶ}>のモニターとも<接{せつ}続{ぞく}し>やすい、[拡{かく}張{ちょう}性{せい}]が高い[製{せい}品{ひん}]です。新しいモデルに<劣{おと}らない>、クリエイターの方{かた}に<適{てき}した>パソコンです。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "用{よう}途{と}",
+        english: "purpose of use・application",
+        type: MiniStoryWordType.NOUN,
+        important: true,
+      },
+      {
+        kanji: "外{がい}部{ぶ}",
+        english: "external part",
+        type: MiniStoryWordType.NOUN,
+        important: true,
+      },
+      {
+        kanji: "接{せつ}続{ぞく}[する］",
+        english: "connection・to connect",
+        type: MiniStoryWordType.IRREGULAR_TRANSITIVE,
+        important: true,
+      },
+      {
+        kanji: "劣{おと}る",
+        english: "to be inferior to・to be worse than",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE,
+        important: true,
+      },
+      {
+        kanji: "適{てき}する",
+        english: "to be suitable for・to be appropriate",
+        type: MiniStoryWordType.IRREGULAR_INTRANSITIVE,
+        important: true,
+      },
+      {
+        kanji: "拡{かく}張{ちょう}性{せい}",
+        english: "extensibility",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+      {
+        kanji: "製{せい}品{ひん}",
+        english: "product",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+    ],
+    translation: `A: Excuse me, I'm looking for a laptop computer.\nB: What will you use it for?\nA: Web development.\nB: Okay, then how about this one? I's a very extensible model that can easily be connected to an external monitor. It's just as good as the new models and very suitable for creators.`,
+    audio: "T83.mp3",
+    topic: MiniStoryTopics.TECHNOLOGY,
+    page: 75,
+  },
+  "84": {
+    id: "84",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "昨日、SNSで<相{そう}互{ご}>フォローしてる人が動画の<配{はい}信{しん}して>たから見てみたんだけど、以前一緒に撮{と}った写真が[許{きょ}可{か}]なく使われてて..",
+      },
+      {
+        character: "B",
+        dialogue: "え！それは<プライバシー>をきちんと守ってほしいね。",
+      },
+      {
+        character: "A",
+        dialogue: "うん。[ショック]だったから、その<直{ちょく}後{ご}>に連絡しておいた。",
+      }
+    ],
+    rubyWords: [
+      {
+        kanji: "相{そう}互{ご}",
+        english: "mutual",
+        type: MiniStoryWordType.NOUN,
+        important: true,
+      },
+      {
+        kanji: "配{はい}信{しん}[する］",
+        english: "streaming・to stream",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+        important: true,
+      },
+      {
+        kanji: "プライバシー",
+        english: "privacy",
+        type: MiniStoryWordType.NOUN,
+      },
+      {
+        kanji: "直{ちょく}後{ご}",
+        english: "right after",
+        type: MiniStoryWordType.NOUN,
+        important: true,
+      },
+      {
+        kanji: "直{ちょく}前{ぜん}",
+        english: "right before",
+        type: MiniStoryWordType.NOUN,
+        important: true,
+      },
+      {
+        kanji: "許{きょ}可{か}",
+        english: "permission・approval",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+      {
+        kanji: "ショック",
+        english: "shock",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      }
+    ],
+    translation: `A: Yesterday, someone on social media— we follow each other-was streaming a video, so I watched it, but she used a photo wed taken together previously without asking my permission...\nB: What? I would have thought shed respect your privacy.\nA: Yes. I was shocked, so I contacted her right after that.`,
+    audio: "T84.mp3",
+    topic: MiniStoryTopics.TECHNOLOGY,
+    page: 76,
+  },
+  "85": {
+    id: "85",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "「インスタ映{ば}え」とは、<一{ひと}言{こと}>でいえば、「インスタグラムに写真を<アップロードした>際{さい}に、<華{はな}やか>で写真がよく<映{は}える>」という意味である。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "一{ひと}言{こと}",
+        english: "single word・in a word",
+        type: MiniStoryWordType.NOUN,
+        important: true,
+      },
+      {
+        kanji: "アップロード[する]",
+        english: "upload・to upload",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+      },
+      {
+        kanji: "華{はな}やかな",
+        english: "gorgeous・magnificent",
+        type: MiniStoryWordType.ADJECTIVE_NA,
+        important: true,
+      },
+      {
+        kanji: "映{は}える",
+        english: "to look・appear good (in photos)",
+        type: MiniStoryWordType.ICHIDAN_INTRANSITIVE,
+        important: true,
+      },
+    ],
+    translation: `In a word, "Instagrammable" means "something gorgeous that would look good uploaded as a photo on Instagram."`,
+    audio: "T85.mp3",
+    topic: MiniStoryTopics.TECHNOLOGY,
+    page: 76,
+  },
+  "86": {
+    id: "86",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "<サブスク>の<契{けい}約{やく}>をしたいんだけど、この「[同{どう}意{い}する]」ボタンがなぜか押{お}せないんだよね。",
+      },
+      {
+        character: "B",
+        dialogue: "ああ、ページを最後まで<スクロールすれば>、<実{じっ}行{こう}できる>と思うよ。契{けい}約{やく}上{じょう}の注意点をちゃんと読まないとトラブルに<つながる>から、簡単に「同{どう}意{い}する」ボタンを押{お}せないように[工{く}夫{ふう}]してあるんだね。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "サブスク（リプション）",
+        english: "subscription",
+        type: MiniStoryWordType.NOUN,
+        important: true,
+      },
+      {
+        kanji: "契{けい}約{やく}[する]",
+        english: "contract・to enter into a contract",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+        important: true,
+      },
+      {
+        kanji: "スクロール［する］",
+        english: "scroll・to scroll",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+      },
+      {
+        kanji: "実{じっ}行{こう}[する]",
+        english: "implementation・execution・to execute",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+        important: true,
+      },
+      {
+        kanji: "つながる",
+        english: "to lead to",
+        type: MiniStoryWordType.GODAN_TRANSITIVE,
+        important: true,
+      },
+      {
+        kanji: "つなげる",
+        english: "to connect・to link",
+        type: MiniStoryWordType.ICHIDAN_TRANSITIVE,
+        important: true,
+      },
+      {
+        kanji: "同{どう}意{い}[する]",
+        english: "agreement・to agree",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+        secondary: true,
+      },
+      {
+        kanji: "工{く}夫{ふう}[する]",
+        english: "Ingenuity・to devise",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+        secondary: true,
+      },
+    ],
+    translation: `A: I want to sign up for a subscription, but for some reason I can't click the "I agree button.\nB: Oh, if you scroll to the end of the page, I think you can do it. If you don't properly read over the contractual terms and conditions, it can lead to trouble, so they've made it so that you can't just press the "I agree" button without reading everything.`,
+    audio: "T86.mp3",
+    topic: MiniStoryTopics.TECHNOLOGY,
+    page: 77,
+  },
 };
