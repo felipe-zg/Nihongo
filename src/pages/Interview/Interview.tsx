@@ -1,6 +1,7 @@
 import React from "react";
 import { Box, Text, Stack, Pressable, Divider } from "native-base";
 import { parseRuby } from "../../utils/music/rubyParser";
+import { YoutubePlayer } from "../../components";
 
 type InterviewQuestion = {
   id: number;
@@ -129,8 +130,7 @@ const Interview: React.FC<Props> = ({
 
       
       {questions.map((question) => (
-        <Box key={question.id} borderWidth={1} borderColor="gray.300" borderRadius="md" mb={4} width="98%" nativeID={`question-${question.id}`}
->
+        <Box key={question.id} borderWidth={1} borderColor="gray.300" borderRadius="md" mb={4} width="98%" nativeID={`question-${question.id}`}>
           {/* Main Entry Information */}
           <Box bg="gray.600">
             <Text px={4} py={2}>
@@ -151,7 +151,9 @@ const Interview: React.FC<Props> = ({
           </Box>
         </Box>
       ))}
-      
+      <Box width={"50%"} alignSelf={"flex-start"} p={5}>
+        <YoutubePlayer title="Interview" videoId="fh14N8q32as" />
+      </Box>
     </Box>
   );
 };
