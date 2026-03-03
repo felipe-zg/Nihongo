@@ -1,0 +1,84 @@
+{
+  "Mini Story Template": {
+  "prefix": "miniStory",
+  "body": [
+    "\"${1:id}\": {",
+    "  id: \"${1}\",",
+    "  rubyStory: [",
+    "    {",
+    "      character: \"${2:A}\",",
+    "      dialogue: \"${3}\",",
+    "    },",
+    "    {",
+    "      character: \"${4:B}\",",
+    "      dialogue: \"${5}\",",
+    "    },",
+    "  ],",
+    "  rubyWords: [",
+
+    "    {",
+    "      kanji: \"${6}\",",
+    "      english: \"${7}\",",
+    "      type: ${8:MiniStoryWordType.},",
+    "      important: ${9:true},",
+    "    },",
+
+    "    {",
+    "      kanji: \"${10}\",",
+    "      english: \"${11}\",",
+    "      type: ${12:MiniStoryWordType.},",
+    "      important: ${13:true},",
+    "    },",
+
+    "    {",
+    "      kanji: \"${14}\",",
+    "      english: \"${15}\",",
+    "      type: ${16:MiniStoryWordType.},",
+    "      important: ${17:true},",
+    "    },",
+
+    "    {",
+    "      kanji: \"${18}\",",
+    "      english: \"${19}\",",
+    "      type: ${20:MiniStoryWordType.},",
+    "      important: ${21:true},",
+    "    },",
+
+    "    {",
+    "      kanji: \"${22}\",",
+    "      english: \"${23}\",",
+    "      type: ${24:MiniStoryWordType.},",
+    "      important: ${25:true},",
+    "    },",
+
+    "    {",
+    "      kanji: \"${26}\",",
+    "      english: \"${27}\",",
+    "      type: ${28:MiniStoryWordType.},",
+    "      important: ${29:true},",
+    "    },",
+
+    "    {",
+    "      kanji: \"${30}\",",
+    "      english: \"${31}\",",
+    "      type: ${32:MiniStoryWordType.},",
+    "      important: ${33:true},",
+    "    },",
+
+    "    {",
+    "      kanji: \"${34}\",",
+    "      english: \"${35}\",",
+    "      type: ${36:MiniStoryWordType.},",
+    "      important: ${37:true},",
+    "    },",
+
+    "  ],",
+    "  translation: `${38}`,",
+    "  audio: \"${39:T.mp3}\",",
+    "  topic: ${40:MiniStoryTopics.},",
+    "  page: ${41},",
+    "},"
+  ],
+    "description": "Mini Story structure"
+  }
+}
