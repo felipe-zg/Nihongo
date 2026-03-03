@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Text, Stack, Pressable, Divider } from "native-base";
+import { Box, Text, Stack, Pressable, Button } from "native-base";
 import { parseRuby } from "../../utils/music/rubyParser";
 import { YoutubePlayer } from "../../components";
 
@@ -20,6 +20,7 @@ type Props = {
 const Interview: React.FC<Props> = ({
   questions,
 }) => {
+  const [showLeftMenu, setShowLeftMenu] = React.useState(true);
 
   const scrollToQuestion = (id: number) => {
     const element = document.getElementById(`question-${id}`);
@@ -74,57 +75,62 @@ const Interview: React.FC<Props> = ({
   };
 
   return (
-    <Box alignItems="center" mt={10}>
+    <Box alignItems="center" mt={10} pl={100}>
       <Stack space={4} mb={6} alignItems="center" justifyContent={"space-between"} width="98%" direction={{ base: "column", lg: "row" }} >
         {/* <Text fontSize={"xl"} bold color={"white"}>面接</Text> */}
+        <Button colorScheme="pink" variant="outline" onPress={() => setShowLeftMenu(!showLeftMenu)}>
+          {showLeftMenu ? "Hide Menu" : "Show Menu"}
+        </Button>
+        {/* <Text fontSize={"xl"} bold color={"white"}>面接</Text> */}
       </Stack>
-      <Divider width="98%" mt={60} borderColor="gray.500" />
-      <Box
-        position="fixed"
-        top="10px"
-        left="50%"
-        zIndex={1000}
-        width="95%"
-        maxW="900px"
-        style={{
-          transform: "translateX(-50%)",
-        }}
-      >
+      {showLeftMenu && (
         <Box
-          bg="rgba(0,0,0,0.7)"
-          borderRadius="lg"
-          px={3}
-          py={2}
+          position="fixed"
+          top="10px"
+          left="5%"
+          zIndex={1000}
+          width="10%"
+          maxW="900px"
+          maxH="90vh"
+          overflowY="auto"
+          style={{
+            transform: "translateX(-50%)",
+            scrollbarWidth: "none",
+          } as any}
         >
-          <Stack
-            direction="row"
-            flexWrap="wrap"
-            justifyContent="center"
-            alignContent="flex-start"
-            maxH="70px"   // 👈 controls 2 rows
+          <Box
+            bg="rgba(0,0,0,0.9)"
+            borderRadius="lg"
+            px={3}
+            py={2}
           >
-            {questions.map((q) =>
-              q.label ? (
-                <Pressable
-                  key={q.id}
-                  onPress={() => scrollToQuestion(q.id)}
-                  width="80px"
-                  height="30px"
-                  alignItems="center"
-                  justifyContent="center"
-                  _hover={{ opacity: 0.8 }}
-                  borderBottomWidth={1}
-                  borderColor="rgba(255,255,255,0.3)"
-                >
-                  <Text fontSize="xs" color="pink.500">
-                    {q.label}
-                  </Text>
-                </Pressable>
-              ) : null
-            )}
-          </Stack>
+            <Stack
+              justifyContent="center"
+              alignContent="flex-start"
+            >
+              {questions.map((q) =>
+                q.label ? (
+                  <Pressable
+                    key={q.id}
+                    onPress={() => scrollToQuestion(q.id)}
+                    width="80px"
+                    height="30px"
+                    alignItems="center"
+                    justifyContent="center"
+                    _hover={{ opacity: 1 }}
+                    borderBottomWidth={1}
+                    borderColor="rgba(255,255,255,0.3)"
+                  >
+                    <Text fontSize="xs" bold color="white">
+                      {q.label}
+                    </Text>
+                  </Pressable>
+                ) : null
+              )}
+            </Stack>
+          </Box>
         </Box>
-      </Box>
+      )}
 
 
 
