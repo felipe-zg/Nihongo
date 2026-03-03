@@ -31,5 +31,13 @@ export const interviewWords = [
   { kanji: '課題', kana: 'かだい', english: 'issue・assignment' },
   { kanji: '解決', kana: 'かいけつ', english: 'solution' },
   { kanji: '真面目に', kana: 'まじめに', english: 'seriously' },
-
+  { kanji: '対応', kana: 'たいおう', english: 'response・correspondence' },
+  { kanji: '短期間', kana: 'たんきかん', english: 'short period of time' },
+  { kanji: '当時', kana: 'とうじ', english: 'at that time' },
+  { kanji: '状況', kana: 'じょうきょう', english: 'situation' },
+  { kanji: '連携部分', kana: 'れんけいぶぶん', english: 'integration part・connected section' },
+  { kanji: '公式', kana: 'こうしき', english: 'official' },
+  { kanji: '仕組み', kana: 'しきみ', english: 'mechanism・how something works' },
+  { kanji: '検証', kana: 'けんしょう', english: 'verification・validation・testing' },
+  { kanji: '参考', kana: 'さんこう', english: 'reference・example' },
 ];
