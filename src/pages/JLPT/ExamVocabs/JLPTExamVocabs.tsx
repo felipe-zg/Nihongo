@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { Box, Button, HStack, Text, Select, Switch, Stack, Divider } from "native-base";
+import { Box, Button, HStack, Text, Select, Switch, Stack, Divider, VStack } from "native-base";
 import FlipCard, { FlipCardHandle } from "../../../components/FlipCard/FlipCard";
 import { ExampleSentence } from "../../../utils/textDecoration";
 import { FloatingControls } from "../../../components";
@@ -244,64 +244,64 @@ const JLPTExamVocabs: React.FC<Props> = ({
                 ))}
               </Select>
             </Box>
+            <button disabled={isShuffled} onClick={shuffleCards}>Shuffle ⇄</button>
           </HStack>
         )}
-        <Stack space={{base: 4, lg: 2}}  direction={{ base: "column", lg: "row" }}>
-          {!listLayout && (
-            <>
-              <button disabled={isShuffled} onClick={shuffleCards}>Shuffle ⇄</button>
-              <HStack space={2} ml={{ base: 0, lg: 5 }} alignItems="center">
-                <Switch
-                  onValueChange={(val) => setIsChallengeMode(val)}
-                  colorScheme="red"
-                  isChecked={isChallengeMode}
-                />
-                <Text color="red.500">Challenge Mode</Text>
-              </HStack>
-              <HStack space={2} ml={{ base: 0, lg: 5 }} alignItems="center">
-                <Switch
-                  onValueChange={(val) => setIsAutoJump(val)}
-                  colorScheme="red"
-                  isChecked={isAutoJump}
-                />
-                <Text color="red.500">Auto Jump</Text>
-              </HStack>
-            </>
-          )}
-          <HStack space={2} ml={{ base: 0, lg: 5 }} alignItems="center">
-            <Switch
-              onValueChange={(val) => handleIsDifficultWordsChange(val)}
-              colorScheme="primary"
-              isChecked={isDifficultWords}
-            />
-            <Text color="primary.500">Difficult words</Text>
-          </HStack>
-          <HStack space={2} ml={{ base: 0, lg: 5 }} alignItems="center">
-            <Switch
-              onValueChange={(val) => setListLayout(val)}
-              colorScheme="green"
-              isChecked={listLayout}
-            />
-            <Text color="green.200">List layout</Text>
-          </HStack>
-          <HStack space={2} ml={{ base: 0, lg: 5 }} alignItems="center">
-            <Switch
-              onValueChange={(val) => setShowHint(val)}
-              colorScheme="blue"
-              isChecked={showHint}
-            />
-            <Text color="blue.200">Hint</Text>
-          </HStack>
-          <HStack space={2} ml={{ base: 0, lg: 5 }} alignItems="center">
-            <Switch
-              onValueChange={(val) => setUseSavedCards(val)}
-              colorScheme="yellow"
-              isChecked={useSavedCards}
-            />
-            <Text color="yellow.300">Saved Cards</Text>
-          </HStack>
-        </Stack>
       </Stack>
+      <VStack space={4} alignSelf={"flex-start"} p={5}>
+        {!listLayout && (
+          <>
+            <HStack space={2} ml={{ base: 0, lg: 5 }} alignItems="center">
+              <Switch
+                onValueChange={(val) => setIsChallengeMode(val)}
+                colorScheme="red"
+                isChecked={isChallengeMode}
+              />
+              <Text color="red.500">Challenge Mode</Text>
+            </HStack>
+            <HStack space={2} ml={{ base: 0, lg: 5 }} alignItems="center">
+              <Switch
+                onValueChange={(val) => setIsAutoJump(val)}
+                colorScheme="red"
+                isChecked={isAutoJump}
+              />
+              <Text color="red.500">Auto Jump</Text>
+            </HStack>
+          </>
+        )}
+        <HStack space={2} ml={{ base: 0, lg: 5 }} alignItems="center">
+          <Switch
+            onValueChange={(val) => handleIsDifficultWordsChange(val)}
+            colorScheme="primary"
+            isChecked={isDifficultWords}
+          />
+          <Text color="primary.500">Difficult words</Text>
+        </HStack>
+        <HStack space={2} ml={{ base: 0, lg: 5 }} alignItems="center">
+          <Switch
+            onValueChange={(val) => setListLayout(val)}
+            colorScheme="green"
+            isChecked={listLayout}
+          />
+          <Text color="green.200">List layout</Text>
+        </HStack>
+        <HStack space={2} ml={{ base: 0, lg: 5 }} alignItems="center">
+          <Switch
+            onValueChange={(val) => setShowHint(val)}
+            colorScheme="blue"
+            isChecked={showHint}
+          />
+          <Text color="blue.200">Hint</Text>
+        </HStack>
+        <HStack space={2} ml={{ base: 0, lg: 5 }} alignItems="center">
+          <Switch
+            onValueChange={(val) => setUseSavedCards(val)}
+            colorScheme="yellow"
+            isChecked={useSavedCards}
+          />
+          <Text color="yellow.300">Saved Cards</Text>
+        </HStack>
+      </VStack>
     </Box>
   );
 };
