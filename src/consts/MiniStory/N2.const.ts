@@ -3074,4 +3074,211 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
     topic: MiniStoryTopics.TECHNOLOGY,
     page: 77,
   },
+  "87": {
+    id: "87",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "ノート型{がた}パソコンの場合は多くは、[本{ほん}体{たい}]の[側{そく}面{めん}]や<底{そこ}>から熱{ねつ}を[逃{に}がす][構{こう}造{ぞう}]になっている。[発{はつ}熱{ねつ}]は[処{しょ}理{り}速{そく}度{ど}]などのパソコンの<性{せい}能{のう}>に<関{かか}わる>ので、本{ほん}体{たい}と机{つくえ}の間{あいだ}を空{あ}けておくことが重要だ。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "底{そこ}",
+        english: "bottom・floor",
+        type: MiniStoryWordType.NOUN,
+        important: true,
+      },
+      {
+        kanji: "性{せい}能{のう}",
+        english: "performance",
+        type: MiniStoryWordType.NOUN,
+        important: true,
+      },
+      {
+        kanji: "関{かか}わる",
+        english: "to be related to・to be involved in・to connect with",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE,
+        important: true,
+      },
+      {
+        kanji: "本{ほん}体{たい}",
+        english: "main unit・body",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+      {
+        kanji: "側{そく}面{めん}",
+        english: "side",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+      {
+        kanji: "逃{に}がす",
+        english: "to let escape・to let loose",
+        type: MiniStoryWordType.GODAN_TRANSITIVE,
+        secondary: true,
+      },
+      {
+        kanji: "構{こう}造{ぞう}",
+        english: "structure",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+      {
+        kanji: "発{はつ}熱{ねつ}",
+        english: "heat generation",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+      {
+        kanji: "処{しょ}理{り}",
+        english: "processing",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+      {
+        kanji: "処{しょ}理{り}速{そく}度{ど}",
+        english: "processing speed",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      }
+    ],
+    translation: `Many laptop computers are designed to allow heat to escape from the sides and bottom. Heat build-up is related to the performance of the computer - for example, processing speed - so it's important to leave space between the computer and the desk.`,
+    audio: "T87.mp3",
+    topic: MiniStoryTopics.TECHNOLOGY,
+    page: 78,
+  },
+  "88": {
+    id: "88",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<風{ふう}景{けい}>より[人{じん}物{ぶつ}]をしっかり[目{め}立{だ}たせたい]<画{が}像{ぞう}>は、<背{はい}景{けい}>の<焦{しょう}点{てん}>を[ぼかす]といい。アプリを使えば<容{よう}易{い}に><加{か}工{こう}できる>。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "風{ふう}景{けい}",
+        english: "scenery",
+        type: MiniStoryWordType.NOUN,
+        important: true,
+      },
+      {
+        kanji: "画{が}像{ぞう}",
+        english: "picture・image",
+        type: MiniStoryWordType.NOUN,
+        important: true,
+      },
+      {
+        kanji: "背{はい}景{けい}",
+        english: "background",
+        type: MiniStoryWordType.NOUN,
+        important: true,
+      },
+      {
+        kanji: "焦{しょう}点{てん}",
+        english: "focus point",
+        type: MiniStoryWordType.NOUN,
+        important: true,
+      },
+      {
+        kanji: "容{よう}易{い}な",
+        english: "easy",
+        type: MiniStoryWordType.ADJECTIVE_NA,
+        important: true,
+      },
+      {
+        kanji: "加{か}工{こう}[する]",
+        english: "process・to process・to work on",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE],
+        important: true,
+      },
+      {
+        kanji: "加{か}工{こう}食{しょく}品{ひん}",
+        english: "processed food",
+        type: MiniStoryWordType.NOUN,
+        important: true,
+      },
+      {
+        kanji: "人{じん}物{ぶつ}",
+        english: "people and things・subjects",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+      {
+        kanji: "目{め}立{だ}たせる",
+        english: "to make something stand out",
+        type: MiniStoryWordType.ICHIDAN_TRANSITIVE,
+        secondary: true,
+      },
+      {
+        kanji: "ぼかす",
+        english: "to blur",
+        type: MiniStoryWordType.GODAN_TRANSITIVE,
+        secondary: true,
+      },
+    ],
+    translation: `For images where you want the people to stand out more than the scenery, you can blur the background focus. This can easily be processed using an app.`,
+    audio: "T88.mp3",
+    topic: MiniStoryTopics.TECHNOLOGY,
+    page: 78,
+  },
+  "89": {
+    id: "89",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "[化{け}粧{しょう}]や[画{が}像{ぞう}]の[加{か}工{こう}]によって、自分の[外{がい}見{けん}]をよりよく見せることを「<盛{も}る>」という。これらを<支{し}援{えん}する>技{ぎ}術{じゅつ}は、シンデレラテクノロジーと<命{めい}名{めい}されて>いる。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "盛{も}る",
+        english: "to enhance・to exaggerate",
+        type: MiniStoryWordType.GODAN_TRANSITIVE,
+        important: true,
+      },
+      {
+        kanji: "支{し}援{えん}[する]",
+        english: "support・to support",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+        important: true,
+      },
+      {
+        kanji: "命{めい}名{めい}[する]",
+        english: "name・to be named・to be called",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE],
+        important: true,
+      },
+      {
+        kanji: "化{け}粧{しょう}",
+        english: "makeup・cosmetics",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+      {
+        kanji: "画{が}像{ぞう}",
+        english: "picture・image",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+      {
+        kanji: "加{か}工{こう}",
+        english: "processing・manufacturing",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+      {
+        kanji: "外{がい}見{けん}",
+        english: "appearance・looks",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+    ],
+    translation: `The term "enhance" refers to the process of improving one's appearance through cosmetics or image manipulation. Technology that supports this is called Cinderella technology.`,
+    audio: "T89.mp3",
+    topic: MiniStoryTopics.TECHNOLOGY,
+    page: 79,
+  },
 };
