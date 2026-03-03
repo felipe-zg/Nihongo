@@ -70,4 +70,5 @@ export const routes: RouteItem[] = [
   { name: 'Real Japanese Audio', path: '/audio/real-japanese' },
   { name: 'Kanji Create', path: '/kanji-create' },
   { name: 'Interview', path: '/interview' },
+  { name: 'Interview 単語', path: '/JLPT/ExamVocabs?source=INTERVIEW' },
 ];

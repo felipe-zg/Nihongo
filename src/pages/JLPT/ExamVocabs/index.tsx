@@ -2,8 +2,9 @@ import React, { useMemo, useState, useEffect } from "react";
 import { JLPT_N3_REVIEW, NIHONGO_NO_MORI_JLPT_N2, NIHONGO_NO_MORI_JLPT_N3, NIHONGO_NO_MORI_MOJI_GOI_N2, NOTE_WORDS, PAST_JLPT_N3, TOMO_SENSEI_JLPT_N3 } from "../../../consts";
 import JLPTExamVocabs from "./JLPTExamVocabs";
 import { useSearchParams } from "react-router-dom";
+import { interviewWords } from "../../../consts/interview/interview-words.cont";
 
-type VocabsSource = "TOMO_SENSEI" | "NIHONGO_NO_MORI" | "PAST_EXAMS" | "REVIEW" | "MOJI_GOI" | "NOTES_WORDS";
+type VocabsSource = "TOMO_SENSEI" | "NIHONGO_NO_MORI" | "PAST_EXAMS" | "REVIEW" | "MOJI_GOI" | "NOTES_WORDS" | "INTERVIEW";
 type VocabsLevel = "N3" | "N2";
 
 const JLPTExamVocabsPage: React.FC = () => {
@@ -30,6 +31,8 @@ const JLPTExamVocabsPage: React.FC = () => {
 
   const vocabList: JLPTReview[] = useMemo(() => {
     switch (lessonsParam) {
+      case "INTERVIEW":
+        return interviewWords as JLPTReview[];
       case "NIHONGO_NO_MORI":
         return levelParam === "N3" ? NIHONGO_NO_MORI_JLPT_N3 : NIHONGO_NO_MORI_JLPT_N2;
       case "PAST_EXAMS":
