@@ -3281,4 +3281,152 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
     topic: MiniStoryTopics.TECHNOLOGY,
     page: 79,
   },
+  "90": {
+    id: "90",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "印{いん}刷{さつ}された<活{かつ}字{じ}>資{し}料{りょう}を、データ化{か}してテキストファイルにしたいんだけど、どうするのがいいかな。",
+      },
+      {
+        character: "B",
+        dialogue: "んー、<ざっと>説明すると、まず資{し}料{りょう}をスキャンして、その後{あと}ソフトを使って文字を<読{よ}み込{こ}めば>いいよ。よく、文字が間違っていたり、いらない<記{き}号{ごう}>が入{はい}ったりしちゃうんだけど、そういうときはテキスト[編{へん}集{しゅう}]ソフトで<除{のぞ}いて>いけば、<最{さい}終{しゅう}的{てき}に>きれいなデータになるよ。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "活{かつ}字{じ}",
+        english: "typeface・printing type",
+        type: MiniStoryWordType.NOUN,
+        important: true,
+      },
+      {
+        kanji: "ざっと",
+        english: "quickly・briefly",
+        type: MiniStoryWordType.ADVERB,
+        important: true,
+      },
+      {
+        kanji: "読{よ}み込{こ}む",
+        english: "to load (data)・to read (data)",
+        type: MiniStoryWordType.GODAN_TRANSITIVE,
+        important: true,
+      },
+      {
+        kanji: "記{き}号{ごう}",
+        english: "symbol・mark",
+        type: MiniStoryWordType.NOUN,
+        important: true,
+      },
+      {
+        kanji: "除{のぞ}く",
+        english: "To remove・to exclude",
+        type: MiniStoryWordType.GODAN_TRANSITIVE,
+        important: true,
+      },
+      {
+        kanji: "最{さい}終{しゅう}的{てき}に",
+        english: "finally・in the end",
+        type: MiniStoryWordType.ADVERB,
+        important: true,
+      },
+      {
+        kanji: "最{さい}終{しゅう}",
+        english: "Last・final",
+        type: MiniStoryWordType.NOUN,
+        important: true,
+      },
+      {
+        kanji: "編{へん}集{しゅう} [する]",
+        english: "editing・to edit",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+        secondary: true,
+      },
+    ],
+    translation: `A: I'd like to convert typed, printed documents into data and text files. How can I do that?\nB: Well, to explain briefly, you scan the material first, and then use software to read the text. There will often be incorrect characters or unwanted symbols, but if you remove them using text editing software, you'll finally end up with clean data.`,
+    audio: "T90.mp3",
+    topic: MiniStoryTopics.TECHNOLOGY,
+    page: 80,
+  },
+  "91": {
+    id: "91",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "先週の[売{う}り上{げ}げ]の<速{そく}報{ほう}>メール、見た？",
+      },
+      {
+        character: "B",
+        dialogue: "さっき見た。またCさんがトップだったね。",
+      },
+      {
+        character: "A",
+        dialogue: "Cさんは会社の<行{い}き帰{かえ}り>によく一緒になるんだけど、本当に聞き上手だよね。お客さんの希望に<沿{そ}って>、商品を[提{てい}案{あん}]するのが上手なんだろうな。あと、<顧{こ}客{きゃく}>データをA Iに[分{ぶん}析{せき}させて]、[効{こう}率{りつ}的{てき}に]営{えい}業{ぎょう}してるんだって。",
+      },
+      {
+        character: "B",
+        dialogue: "セールテックってやつか。Cさん、さすが部長<候{こう}補{ほ}>だね。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "速{そく}報{ほう}",
+        english: "bulletin・quick report",
+        type: MiniStoryWordType.NOUN,
+        important: true,
+      },
+      {
+        kanji: "行{い}き帰{かえ}り",
+        english: "to and from",
+        type: MiniStoryWordType.NOUN,
+        important: true,
+      },
+      {
+        kanji: "沿{そ}う",
+        english: "to follow along・to be in line with・to comply with",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE,
+        important: true,
+      },
+      {
+        kanji: "顧{こ}客{きゃく}",
+        english: "customer",
+        type: MiniStoryWordType.NOUN,
+        important: true,
+      },
+      {
+        kanji: "候{こう}補{ほ}",
+        english: "candidate・prospect",
+        type: MiniStoryWordType.NOUN,
+        important: true,
+      },
+      {
+        kanji: "売{う}り上{あ}げ",
+        english: "sales figures・sales performance",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+      {
+        kanji: "提{てい}案{あん}",
+        english: "proposal・suggestion",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+      {
+        kanji: "分{ぶん}析{せき}[する]",
+        english: "analysis・to analyze",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+        secondary: true,
+      },
+      {
+        kanji: "効{こう}率{りつ}",
+        english: "efficiency",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      }
+    ],
+    translation: `A: Did you see the email with last week's sales bulletin?\nB: I just saw it. Ms. C was at the top of the list again.\nA: I often travel with Ms. C on the way to and from work, and she's a really good listener. I think shes good at recommending products in line with what the customer wants. Also, she gets AI analysis of customer data to make her sales more efficient.\nB: Sales tech, they call it. Now I know why shes a candidate for department manager.`,
+    audio: "T91.mp3",
+    topic: MiniStoryTopics.TECHNOLOGY,
+    page: 81,
+  },
 };
