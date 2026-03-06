@@ -290,9 +290,9 @@ export const INTERVIEW_QUESTIONS: InterviewQuestion[] = [
     question: 'Questions from you',
     answerRuby: [
       //KATIX
-      { subject: "New areas to expand", ruby: "現在、KATIXはバイクや車の売{ばい}却{きゃく}サービスに注{ちゅう}力{りょく}していると思いますが、今後はどのような分{ぶん}野{や}に拡{かく}大{だい}していく予定がありますか？" },
-      { subject: "About the engineering team", ruby: "エンジニアチームは現在どのような構{こう}成{せい}になっていますか？また、チーム間{かん}の連{れん}携{けい}はどのように行われていますか？" },
-      { subject: "growth and expectations", ruby: "このポジションで入社した場合、最初の3〜6ヶ月で期{き}待{たい}されていることは何でしょうか？" },
+      { subject: "New areas to expand", ruby: "現在、KATIXはバイクや車の売{ばい}却{きゃく}サービスに注{ちゅう}力{りょく}していると思いますが、今後はどのような分{ぶん}野{や}に拡{かく}大{だい}していく予定がありますか？\nI understand KATIX currently focuses on helping people sell bikes and cars. What kinds of new areas or verticals are you planning to expand into in the future?" },
+      { subject: "About the engineering team", ruby: "エンジニアチームは現在どのような構{こう}成{せい}になっていますか？また、チーム間{かん}の連{れん}携{けい}はどのように行われていますか？\nHow is the engineering team currently structured, and how do different teams collaborate?" },
+      { subject: "growth and expectations", ruby: "このポジションで入社した場合、最初の3〜6ヶ月で期{き}待{たい}されていることは何でしょうか？\nIf I joined this role, what would be the main expectations for the first 3–6 months?" },
       // Human Resocia
       // { subject: "Project assignment decision", ruby: "案{あん}件{けん}のアサインはどのように決まりますか？エンジニアの希望やキャリアプランはどの程{てい}度{ど}考{こう}慮{りょ}されますか？" },
       // { subject: "Evaluation System", ruby: "評{ひょう}価{か}制{せい}度{ど}についてお伺{うかが}いしたいのですが、パフォーマンスの評{ひょう}価{か}はどのくらいの頻{ひん}度{ど}で行われますか？" },
