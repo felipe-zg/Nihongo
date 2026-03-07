@@ -4,6 +4,7 @@ const MiniStoryTopics = {
   SHOPPING: "買い物",
   FASHION: "ファッション",
   TECHNOLOGY: "テクノロジー",
+  TRENDS: "流行",
 } as const;
 
 const MiniStoryWordType = {
@@ -3428,5 +3429,845 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
     audio: "T91.mp3",
     topic: MiniStoryTopics.TECHNOLOGY,
     page: 81,
+  },
+  "92": {
+    id: "92",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "音楽ゲーム、<略{きゃく}して>「音{おと}ゲー」は<リズム>に[合わせて]<太{たい}鼓{こ}>やボタンを[たたく]ゲームで、多くのゲームセンターに置いてある。最近では、リズムに合わせて<タップする>ゲームがスマホアプリでたくさん<リリースされて>いる。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "略{きゃく}す",
+        english: "to abbreviate",
+        type: MiniStoryWordType.GODAN_TRANSITIVE,
+        important: true,
+      },
+      {
+        kanji: "リズム",
+        english: "rhythm",
+        type: MiniStoryWordType.NOUN,
+      },
+      {
+        kanji: "太{たい}鼓{こ}",
+        english: "drum",
+        type: MiniStoryWordType.NOUN,
+        important: true,
+      },
+      {
+        kanji: "タップ［する］",
+        english: "tap・to tap",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+      },
+      {
+        kanji: "リリース［する］",
+        english: "release・to release",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+      },
+      {
+        kanji: "合{あ}わせる",
+        english: "to match・to fit",
+        type: MiniStoryWordType.ICHIDAN_TRANSITIVE,
+        secondary: true,
+      },
+      {
+        kanji: "たたく",
+        english: "to hit・to strike",
+        type: MiniStoryWordType.GODAN_TRANSITIVE,
+        secondary: true,
+      }
+    ],
+    translation: `Musical rhythm games, often abbreviated in Japanese as "otoge", are games in which players tap drums or buttons to a musical rhythm. They can be found in many game arcades. Recently, many games in which players tap to the rhythm have been released as smartphone apps.`,
+    audio: "T92.mp3",
+    topic: MiniStoryTopics.TRENDS,
+    page: 82,
+  },
+  "93": {
+    id: "93",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "このゲーム、最初の[城{しろ}]で<詰{つ}まった>んだけど。",
+      },
+      {
+        character: "B",
+        dialogue: "<武{ぶ}器{き}>は何使ってる？最初の[敷{てき}]は<銃{じゅう}>よりも剣{けん}に弱{よわ}かった気がする。",
+      },
+      {
+        character: "A",
+        dialogue: "そこが<弱{じゃく}点{てん}>なんだね。でも、[近{ちか}づく]と[攻{こう}撃{げき}]に当たっちゃうんだけど。",
+      },
+      {
+        character: "B",
+        dialogue: "あの城{しろ}は、[裏{うら}]の[壁{かべ}]に穴が開{あ}いてるから、そこから<こっそり>入{はい}って、[背{せ}中{なか}]から剣{けん}で[斬{き}る]んだよ。",
+      },
+      {
+        character: "A",
+        dialogue: "なんて<卑{ひ}怯{きよう}な>…。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "詰{つ}まる",
+        english: "to be stuck",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE,
+        important: true,
+      },
+      {
+        kanji: "武{ぶ}器{き}",
+        english: "weapon",
+        type: MiniStoryWordType.NOUN,
+        important: true,
+      },
+      {
+        kanji: "銃{じゅう}",
+        english: "gun",
+        type: MiniStoryWordType.NOUN,
+        important: true,
+      },
+      {
+        kanji: "剣{けん}",
+        english: "sword",
+        type: MiniStoryWordType.NOUN,
+        important: true,
+      },
+      {
+        kanji: "弱{じゃく}点{てん}",
+        english: "weakess・vulnerability",
+        type: MiniStoryWordType.NOUN,
+        important: true,
+      },
+      {
+        kanji: "こっそり（と）",
+        english: "secretly",
+        type: MiniStoryWordType.ADVERB,
+        important: true,
+      },
+      {
+        kanji: "卑{ひ}怯{きよう}な",
+        english: "cowardly",
+        type: MiniStoryWordType.ADJECTIVE_NA,
+        important: true,
+      },
+      {
+        kanji: "城{しろ}",
+        english: "castle",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+      {
+        kanji: "敷{てき}",
+        english: "ground",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+      {
+        kanji: "近{ちか}づく",
+        english: "to approach",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE,
+        secondary: true,
+      },
+      {
+        kanji: "攻{こう}撃{げき}",
+        english: "attack",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+      {
+        kanji: "裏{うら}",
+        english: "back・reverse side・other side (of something)",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+      {
+        kanji: "壁{かべ}",
+        english: "wall",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+      {
+        kanji: "背{せ}中{なか}",
+        english: "back・behind (someone's back)",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+      {
+        kanji: "斬{き}る",
+        english: "to cut",
+        type: MiniStoryWordType.GODAN_TRANSITIVE,
+        secondary: true,
+      },
+    ],
+    translation: `A: I'm stuck in the first castle in this game.\nB: What weapon are you using? I think the first enemies are more vulnerable to swords than guns.\nA: That's their weakness, right. But when I get too close, I get hit by their attacks.\nB: There's a hole in the back wall of the castle, so I sneak in through there and stab them in the back with my sword.\nA: That's so cowardly...`,
+    audio: "T93.mp3",
+    topic: MiniStoryTopics.TRENDS,
+    page: 83,
+  },
+  "94": {
+    id: "94",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "<ライバル>ってすごく重要な<要{よう}素{そ}>だと思う。",
+      },
+      {
+        character: "B",
+        dialogue: "分かる。[名{めい}作{さく}]ってだいたいライバルが<主{しゅ}人{じん}公{こう}>より人気あるよね。最初強かった[敵{てき}]が、<味{み}方{かた}>になる。まさかあのキャラクターが[仲間]になってくれるなんて！って<わくわくする>。",
+      },
+      {
+        character: "A",
+        dialogue: "でも、主{しゅ}人{じん}公{こう}に<ふさわしい>敵{てき}として最後まで戦{たたか}うのもいいよね。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "ライバル",
+        english: "rival",
+        type: MiniStoryWordType.NOUN,
+        important: true,
+      },
+      {
+        kanji: "要{よう}素{そ}",
+        english: "factor・element",
+        type: MiniStoryWordType.NOUN,
+        important: true,
+      },
+      {
+        kanji: "主{しゅ}人{じん}公{こう}",
+        english: "main character・protagonist",
+        type: MiniStoryWordType.NOUN,
+        important: true,
+      },
+      {
+        kanji: "味{み}方{かた}［する］",
+        english: "Ally・to take sides with",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE],
+        important: true,
+      },
+      {
+        kanji: "わくわくする",
+        english: "to feel excited",
+        type: MiniStoryWordType.IRREGULAR_INTRANSITIVE,
+        important: true,
+      },
+      {
+        kanji: "ふさわしい",
+        english: "appropriate・suitable・worthy of",
+        type: MiniStoryWordType.ADJECTIVE_I,
+        important: true,
+      },
+      {
+        kanji: "名{めい}作{さく}",
+        english: "famous work・masterpiece",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+      {
+        kanji: "敵{てき}",
+        english: "enemy",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+      {
+        kanji: "仲{なか}間{ま}",
+        english: "companion・friend・ally",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      }
+    ],
+    translation: `A: I think rivalry is a very important element.\nB: I agree. In lots of great movies, rivals are more popular than the main characters. Someone who was a powerful enemy at first later becomes an ally. And you never expect that character to become a friend! It's exciting!\nA: But it's also great when they fight to the very end as an enemy worthy of the main character.`,
+    audio: "T94.mp3",
+    topic: MiniStoryTopics.TRENDS,
+    page: 84,
+  },
+  "95": {
+    id: "95",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "高いところから<ジャンプして>[登{とう}場{じょう}]する。戦{たたか}う前に<勇{いさ}ましい><せりふ>を言う。これらは日本のヒーローの[特{とく}徴{ちょう}]である。ロボットに乗って戦う場合も、<パイロット>は[必{ひっ}殺{さつ}技{わざ}]を<撃{う}つ>ときに、[技{わざ}]の名前を[叫{さけ}ぶ]のだ。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "ジャンプ［する］",
+        english: "jump・to jump",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE],
+      },
+      {
+        kanji: "勇{いさ}ましい",
+        english: "brave・bold・heroic",
+        type: MiniStoryWordType.ADJECTIVE_I,
+        important: true,
+      },
+      {
+        kanji: "せりふ",
+        english: "line・speech・dialogue",
+        type: MiniStoryWordType.NOUN,
+        important: true,
+      },
+      {
+        kanji: "パイロット",
+        english: "pilot",
+        type: MiniStoryWordType.NOUN,
+      },
+      {
+        kanji: "撃{う}つ",
+        english: "to fire off・to discharge",
+        type: MiniStoryWordType.IRREGULAR_TRANSITIVE,
+        important: true,
+      },
+      {
+        kanji: "登{とう}場{じょう}",
+        english: "appearance・to appear on the scene",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+      {
+        kanji: "特{とく}徴{ちょう}",
+        english: "characteristic・feature",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+      {
+        kanji: "必{ひっ}殺{さつ}技{わざ}",
+        english: "finishing move・special move",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+      {
+        kanji: "技{わざ}",
+        english: "technique・move",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+      {
+        kanji: "叫{さけ}ぶ",
+        english: "to shout・to cry out",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE,
+        secondary: true,
+      },
+    ],
+    translation: `Jumping down from somewhere high to make a dramatic entrance. Saying heroic lines before fighting. These are the characteristics of Japanese heroes. Even when fighting in a giant robot, the pilot has to shout the name of the technique when firing off a killer technique.`,
+    audio: "T95.mp3",
+    topic: MiniStoryTopics.TRENDS,
+    page: 84,
+  },
+  "96": {
+    id: "96",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "ヒミコという名前はいろいろなマンガに登{とう}場{じょう}するが、これは[古{こ}代{だい}]の日本の<女{じょ}王{おう}>の名前である。男が[王{おう}]だった時代は、ずっと<争{あらそ}い>が続{つづ}いていた。しかし、女{じょ}王{おう}が国を<治{おさ}める>ようになると、争{あらそ}いは止まったと言われている。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "女{じょ}王{おう}",
+        english: "female ruler・queen",
+        type: MiniStoryWordType.NOUN,
+        important: true,
+      },
+      {
+        kanji: "争{あらそ}い",
+        english: "dispute・conflict",
+        type: MiniStoryWordType.NOUN,
+        important: true,
+      },
+      {
+        kanji: "争{あらそ}う",
+        english: "To fight・to compete・to struggle",
+        type: MiniStoryWordType.GODAN_TRANSITIVE,
+        important: true,
+      },
+      {
+        kanji: "治{おさ}める",
+        english: "Rule・to govern・to reign over",
+        type: MiniStoryWordType.ICHIDAN_TRANSITIVE,
+        important: true,
+      },
+      {
+        kanji: "古{こ}代{だい}",
+        english: "ancient times・old era",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+      {
+        kanji: "王{おう}",
+        english: "king・ruler",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+    ],
+    translation: `Himiko is the name of an ancient Japanese queen, and her name appears in various manga comics. When men were kings, there was constant conflict. However, it's said that when a queen ruled the land, the fighting ceased.`,
+    audio: "T96.mp3",
+    topic: MiniStoryTopics.TRENDS,
+    page: 85,
+  },
+  "97": {
+    id: "97",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "この映画では<悪{あく}役{やく}>の<演{えん}技{ぎ}>が素{す}晴{ば}らしく、[数{かず}々{かず}]の<名{めい}><シーン>を生{う}んだ。<評{ひょう}論{ろん}家{か}>も[絶{ぜっ}賛{さん}した]。しかし、あまりにも<醜{みにく}い><役{やく}>を[演{えん}じた]ためか、<役{やく}者{しゃ}>はその後{ご}、亡{な}くなってしまった。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "悪{あく}役{やく}",
+        english: "villain・antagonist・bad guy",
+        type: MiniStoryWordType.NOUN,
+        important: true,
+      },
+      {
+        kanji: "演{えん}技{ぎ}［する］",
+        english: "performance・acting・to perform・to act",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE],
+        important: true,
+      },
+      {
+        kanji: "名{めい}～",
+        english: "famous ~, great ~",
+        type: MiniStoryWordType.PREFIX,
+        important: true,
+      },
+      {
+        kanji: "シーン",
+        english: "scene",
+        type: MiniStoryWordType.NOUN,
+        important: true,
+      },
+      {
+        kanji: "評{ひょう}論{ろん}家{か}",
+        english: "critic・reviewer",
+        type: MiniStoryWordType.NOUN,
+        important: true,
+      },
+      {
+        kanji: "評{ひょう}論{ろん}［する］",
+        english: "criticism・to criticize",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+        important: true,
+      },
+      {
+        kanji: "醜{みにく}い",
+        english: "ugly・hideous・unpleasant",
+        type: MiniStoryWordType.ADJECTIVE_I,
+        important: true,
+      },
+      {
+        kanji: "役{やく}",
+        english: "role",
+        type: MiniStoryWordType.NOUN,
+        important: true,
+      },
+      {
+        kanji: "役{やく}者{しゃ}",
+        english: "actor・performer",
+        type: MiniStoryWordType.NOUN,
+        important: true,
+      },
+      {
+        kanji: "数{かず}々{かず}",
+        english: "numerous・many",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+      {
+        kanji: "絶{ぜっ}賛{さん}[する]",
+        english: "high praise・to praise highly",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+        secondary: true,
+      },
+      {
+        kanji: "演{えん}じる",
+        english: "to perform・to act",
+        type: MiniStoryWordType.ICHIDAN_TRANSITIVE,
+        secondary: true,
+      },
+    ],
+    translation: `The villain's performance in this film was excellent, which made for lots of great scenes. Critics also praised it. However, perhaps because the role was so unpleasant, the actor had passedaway.`,
+    audio: "T97.mp3",
+    topic: MiniStoryTopics.TRENDS,
+    page: 86,
+  },
+  "98": {
+    id: "98",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "小学生の頃、私はいろいろ<空{くう}想{そう}して>、漫画を描くことが好きだった。中学生になると、家族たちは<くだらない>とか、そんな<幼{よう}稚{ち}な>ことはやめると言ってきた。しかし、私は高校でも大学でも漫画を描くことはやめなかった。そして25[才{さい}]のとき、<ついに>私の描いた漫画が[雑{ざっ}誌{し}]に<載{の}った>。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "空{くう}想{そう}［する］",
+        english: "fantasy・to fantasize・to have daydreams",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE],
+        important: true,
+      },
+      {
+        kanji: "くだらない",
+        english: "silly・nonsense・pointless",
+        type: MiniStoryWordType.ADJECTIVE_I,
+        important: true,
+      },
+      {
+        kanji: "幼{よう}稚{ち}な",
+        english: "childish・naive",
+        type: MiniStoryWordType.ADJECTIVE_NA,
+        important: true,
+      },
+      {
+        kanji: "ついに",
+        english: "finally・at last",
+        type: MiniStoryWordType.ADVERB,
+        important: true,
+      },
+      {
+        kanji: "載{の}る",
+        english: "To be published・printed・posted",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE,
+        important: true,
+      },
+      {
+        kanji: "才{さい}",
+        english: "years old",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+      {
+        kanji: "雑{ざっ}誌{し}",
+        english: "magazine",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+    ],
+    translation: `When I was in elementary school, I liked to fantasize about all kinds of things and draw manga comics. When I entered junior high school, my family told me it was silly and that I should stop doing such childish things. But I never stopped drawing manga, even in high school and in college. Finally, when I was 25, a magazine published a manga comic that I'd drawn.`,
+    audio: "T98.mp3",
+    topic: MiniStoryTopics.TRENDS,
+    page: 86,
+  },
+  "99": {
+    id: "99",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<演{えん}劇{げき}>の面白さは、<粗{あら}筋{すじ}>は同じでも、[演{えん}出{しゅつ}]によって全く[異{こと}なる]作品になることである。さらに、同じメンバーでも日{ひ}によって<芝{しば}居{い}>は少しずつ変化する。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "演{えん}劇{げき}",
+        english: "theater・play",
+        type: MiniStoryWordType.NOUN,
+        important: true,
+      },
+      {
+        kanji: "粗{あら}筋{すじ}",
+        english: "plot・outline・summary",
+        type: MiniStoryWordType.NOUN,
+        important: true,
+      },
+      {
+        kanji: "芝{しば}居{い}［する］",
+        english: "acting・to act・play・perform",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE],
+        important: true,
+      },
+      {
+        kanji: "演{えん}出{しゅつ}[する]",
+        english: "direction・to direct",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+        secondary: true,
+      },
+      {
+        kanji: "異{こと}なる",
+        english: "different・to differ",
+        type: MiniStoryWordType.IRREGULAR_INTRANSITIVE,
+        secondary: true,
+      },
+    ],
+    translation: `The fascinating thing about theater is that even if the broad outline of a play stays the same, it can become a completely different work depending on how it's directed. Moreover, even with the same cast, the show will vary slghdly from day to day.`,
+    audio: "T99.mp3",
+    topic: MiniStoryTopics.TRENDS,
+    page: 87,
+  },
+  "100": {
+    id: "100",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "私は最初、その漫画を、<単{たん}に>街を<脅{おびや}かす>巨人を<やっつける>だけの漫画だと思っていた。しかし、さまざまな<謎{なぞ}>があることに[気づき]、インターネット上{じょう}で[議{ぎ}論{ろん}]しながら<展{てん}開{かい}>を予想するようになった。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "単{たん}に",
+        english: "simply・just",
+        type: MiniStoryWordType.ADVERB,
+        important: true,
+      },
+      {
+        kanji: "脅{おびや}かす",
+        english: "to threaten・to intimidate",
+        type: MiniStoryWordType.GODAN_TRANSITIVE,
+        important: true,
+      },
+      {
+        kanji: "やっつける",
+        english: "to defeat・to slay",
+        type: MiniStoryWordType.ICHIDAN_TRANSITIVE,
+        important: true,
+      },
+      {
+        kanji: "謎{なぞ}",
+        english: "mystery・riddle",
+        type: MiniStoryWordType.NOUN,
+        important: true,
+      },
+      {
+        kanji: "展{てん}開{かい}[する]",
+        english: "development・to develop (a story)",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+        important: true,
+      },
+      {
+        kanji: "気{き}づく",
+        english: "to notice・to realize・to become aware of",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE,
+        secondary: true,
+      },
+      {
+        kanji: "議{ぎ}論{ろん}",
+        english: "discussion・debate",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+        secondary: true,
+      },
+    ],
+    translation: `At first, I thought this manga was simply a comic book about slaying giants that threaten the city. However, I later became aware of various mysteries and began to try to predict story developments through discussions on the Internet.`,
+    audio: "T100.mp3",
+    topic: MiniStoryTopics.TRENDS,
+    page: 88,
+  },
+  "101": {
+    id: "101",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "元{もと}<刑{けい}事{じ}>が<殺{ざつ}人{じん}>をしたと言って警{けい}察{さつ}にやってきた。そんなシーンから始まるこの[小{しょう}説{せつ}]は、[当{とう}初{しょ}]、<批{ひ}評{ひょう}>家{か}の[評{ひょう}価{か}]は高くなかった。しかし、読{どく}者{しゃ}の人気は高く、映画やドラマが<制{せい}作{さく}された>。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "刑{けい}事{じ}",
+        english: "detective・police officer",
+        type: MiniStoryWordType.NOUN,
+        important: true,
+      },
+      {
+        kanji: "殺{さつ}人{じん}",
+        english: "murder",
+        type: MiniStoryWordType.NOUN,
+        important: true,
+      },
+      {
+        kanji: "批{ひ}評{ひょう}[する]",
+        english: "Critique・to criticize・to review",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+        important: true,
+      },
+      {
+        kanji: "制{せい}作{さく}[する]",
+        english: "production・to produce",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+        important: true,
+      },
+      {
+        kanji: "小{しょう}説{せつ}",
+        english: "novel",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+      {
+        kanji: "当{とう}初{しょ}",
+        english: "initially・at first",
+        type: MiniStoryWordType.ADVERB,
+        secondary: true,
+      },
+      {
+        kanji: "評{ひょう}価{か}",
+        english: "evaluation・to evaluate",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+        secondary: true,
+      },
+    ],
+    translation: `A former detective comes to the police, claiming to have committed a murder. The novel, which begins with this scene, was not well received by critics at first. But it was very popular with readers, and a movie and drama series were later produced.`,
+    audio: "T101.mp3",
+    topic: MiniStoryTopics.TRENDS,
+    page: 88,
+  },
+  "102": {
+    id: "102",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<娯{ご}楽{らく}>作品では、<探{たん}偵{てい}>は人気のある[職{しょく}業{ぎょう}]だが、[泥{どろ}棒{ぼう}]も人気があったりする。泥{どろ}棒{ぼう}のキャラクターは<ダイヤ>などの<宝{たから}>を[盗{ぬす}む]が、お金には興味がなく、盗{ぬす}んだものを<返{へん}却{きゃく}する>ことも多い。また、考えてみれば[不{ふ}思{し}議{ぎ}な]ことだが、しばしば[銃{じゅう}]から<トランプ>を<発{はっ}射{しゃ}して>戦{たたか}ったりする。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "娛{ご}楽{らく}",
+        english: "entertainment",
+        type: MiniStoryWordType.NOUN,
+        important: true,
+      },
+      {
+        kanji: "探{たん}偵{てい}",
+        english: "detective・investigator",
+        type: MiniStoryWordType.NOUN,
+        important: true,
+      },
+      {
+        kanji: "ダイヤ",
+        english: "diamond",
+        type: MiniStoryWordType.NOUN,
+        important: true,
+      },
+      {
+        kanji: "宝{たから}",
+        english: "treasure・valuable",
+        type: MiniStoryWordType.NOUN,
+        important: true,
+      },
+      {
+        kanji: "返{へん}却{きゃく}[する]",
+        english: "return・to return",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+        important: true,
+      },
+      {
+        kanji: "トランプ",
+        english: "playing cards",
+        type: MiniStoryWordType.NOUN,
+        important: true,
+      },
+      {
+        kanji: "発{はっ}射{しゃ}［する］",
+        english: "firing・to fire (a gun)",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+        important: true,
+      },
+      {
+        kanji: "職{しょく}業{ぎょう}",
+        english: "occupation・profession",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+      {
+        kanji: "泥{どろ}棒{ぼう}",
+        english: "thief・burglar",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+      {
+        kanji: "盗{ぬす}む",
+        english: "to steal",
+        type: MiniStoryWordType.GODAN_TRANSITIVE,
+        secondary: true,
+      },
+      {
+        kanji: "不{ふ}思{し}議{ぎ}な",
+        english: "mysterious・inexplicable",
+        type: MiniStoryWordType.ADJECTIVE_NA,
+        secondary: true,
+      },
+      {
+        kanji: "銃{じゅう}",
+        english: "gun",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+      {
+        kanji: "しばしば",
+        english: "often・frequently",
+        type: MiniStoryWordType.ADVERB,
+        secondary: true,
+      }
+    ],
+    translation: `In fictional works of entertainment, private investigators are popular characters, but thieves can also be popular. Thief characters steal diamonds and other riches, but they're often not interested in money and sometimes even return what they steal. It's odd when you think about it, but they often fight by firing playing cards from guns.`,
+    audio: "T102.mp3",
+    topic: MiniStoryTopics.TRENDS,
+    page: 89,
+  },
+  "103": {
+    id: "103",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<炎{ほのお}>を出したり、<翼{つばさ}>を[生{は}やしたり]、漫画・アニメには[超{ちょう}能{のう}力{りょく}]がよく登{とう}場{じょう}する。その不{ふ}思{し}議{ぎ}な<パワー>を手に入{い}れる方法も様{さま}々{ざま}だ。有名な漫画では、<奇{き}妙{みょう}な>形の<実{み}>を食べることで、力を手に入{い}れる。<しかも>、その実{み}の<図{ず}鑑{かん}>があり、食べる前からどんな力が手に入{はい}るのかわかるのだ。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "炎{ほのお}",
+        english: "fire・flame",
+        type: MiniStoryWordType.NOUN,
+        important: true,
+      },
+      {
+        kanji: "翼{つばさ}",
+        english: "wing",
+        type: MiniStoryWordType.NOUN,
+        important: true,
+      },
+      {
+        kanji: "パワー",
+        english: "power",
+        type: MiniStoryWordType.NOUN,
+      },
+      {
+        kanji: "奇{き}妙{みょう}な",
+        english: "strange・odd",
+        type: MiniStoryWordType.ADJECTIVE_NA,
+        important: true,
+      },
+      {
+        kanji: "実{み}",
+        english: "fruit・nut",
+        type: MiniStoryWordType.NOUN,
+        important: true,
+      },
+      {
+        kanji: "しかも",
+        english: "moreover・furthermore・on top of that",
+        type: MiniStoryWordType.CONJUNCTION,
+        important: true,
+      },
+      {
+        kanji: "図{ず}鑑{かん}",
+        english: "illustrated reference book・encyclopedia",
+        type: MiniStoryWordType.NOUN,
+        important: true,
+      },
+      {
+        kanji: "生{は}やす",
+        english: "to grow (e.g. wings)",
+        type: MiniStoryWordType.GODAN_TRANSITIVE,
+        secondary: true,
+      },
+      {
+        kanji: "超{ちょう}能{のう}力{りょく}",
+        english: "supernatural power・superpower",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+    ],
+    translation: `The ability to produce flames, grow wings, and other supernatural powers often appear in manga comics and anime. There are also various ways to obtain these mysterious powers. In one well-known manga, powers are obtained by eating strangely shaped fruit. And what's more, there's even an illustrated book of these fruit, so you know what sort of power you'll get before you eat it.`,
+    audio: "T103.mp3",
+    topic: MiniStoryTopics.TRENDS,
+    page: 90,
   },
 };
