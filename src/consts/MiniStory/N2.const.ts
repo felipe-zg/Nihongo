@@ -4270,4 +4270,916 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
     topic: MiniStoryTopics.TRENDS,
     page: 90,
   },
+  "104": {
+    id: "104",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "ホラー映画って苦手だな。<幽{ゆう}霊{れい}>に<恐{きょう}怖{ふ}>は感じないんだけど、大きな音で<驚{おどろ}かされる>のが嫌{きら}いなんだ。",
+      },
+      {
+        character: "B",
+        dialogue: "私は[推{すい}理{り}]ものとかでも、<死{し}体{たい}>が<映{うつ}って>いるとだめですね。<気{き}味{み}が悪{わる}い>から。",
+      }
+    ],
+    rubyWords: [
+      {
+        kanji: "幽{ゆう}霊{れい}",
+        english: "ghost",
+        type: MiniStoryWordType.NOUN,
+        important: true,
+      },
+      {
+        kanji: "恐{きょう}怖{ふ}［する］",
+        english: "fear・to be afraid of",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+        important: true,
+      },
+      {
+        kanji: "驚{おどろ}かす",
+        english: "to surprise・to frighten",
+        type: MiniStoryWordType.GODAN_TRANSITIVE,
+        important: true,
+      },
+      {
+        kanji: "死{し}体{たい}",
+        english: "corpse",
+        type: MiniStoryWordType.NOUN,
+        important: true,
+      },
+      {
+        kanji: "映{うつ}る",
+        english: "to be reflected・to appear on a screen",
+        type: MiniStoryWordType.IRREGULAR_INTRANSITIVE,
+        important: true,
+      },
+      {
+        kanji: "映{うつ}す",
+        english: "to reflect・to display",
+        type: MiniStoryWordType.GODAN_TRANSITIVE,
+        important: true,
+      },
+      {
+        kanji: "気{き}味{み}が悪{わる}い",
+        english: "gross・disgusting・creepy・uneasy",
+        type: MiniStoryWordType.ADJECTIVE_I,
+        important: true,
+      },
+      {
+        kanji: "推{すい}理{り}",
+        english: "inference・deduction・reasoning ( process of thinking logically based on clues or evidence to reach a conclusion )",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+    ],
+    translation: `A: I don't like horror movies. I'm not afraid of ghosts, but I don't like being startled by loud noises.\nB: I don't like to see dead bodies shown in thriller movies . It gives me a creepy feeling.`,
+    audio: "T104.mp3",
+    topic: MiniStoryTopics.TRENDS,
+    page: 90,
+  },
+  "105": {
+    id: "105",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "ある人気漫画は36<巻{かん}>、<ストーリー>の[途{と}中{ちゅう}]で止まってしまっている。しかし、もうすぐ<再{さい}開{かい}する>と<うわさされて>いる。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "～巻{かん}",
+        english: "~th volume (of a manga series)・~installments",
+        type: MiniStoryWordType.SUFFIX,
+        important: true,
+      },
+      {
+        kanji: "ストーリー",
+        english: "Story",
+        type: MiniStoryWordType.NOUN,
+      },
+      {
+        kanji: "再{さい}開{かい}［する］",
+        english: "restart・to resume (a series)・to restart",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+        important: true,
+      },
+      {
+        kanji: "うわさ［する］",
+        english: "rumor・to spread rumors・to hear rumors",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+        important: true,
+      },
+      {
+        kanji: "途{と}中{ちゅう}",
+        english: "in the middle of・during",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+    ],
+    translation: `A certain popular manga has stopped at 36 volumes, and it's only partway through the story. However,its rumored that it wil resume soon.`,
+    audio: "T105.mp3",
+    topic: MiniStoryTopics.TRENDS,
+    page: 91,
+  },
+  "106": {
+    id: "106",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "RPG、ロールプレイングゲームが日本で発{はつ}売{ばい}されたとき、大{だい}<ブーム>が起こった。多くの若者が[剣{けん}]と<魔{ま}法{ほう}>の世界での<冒{ぼう}険{けん}>に<熱{ねっ}中{ちゅう}>した。<当{とう}時{じ}>は<徹{てつ}夜{や}して><プレイした>人も多かった。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "ブーム",
+        english: "boom",
+        type: MiniStoryWordType.NOUN,
+        important: true,
+      },
+      {
+        kanji: "魔{ま}法{ほう}",
+        english: "magic",
+        type: MiniStoryWordType.NOUN,
+        important: true,
+      },
+      {
+        kanji: "冒{ぼう}険{けん}［する］",
+        english: "adventure・to go on an adventure",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE],
+        important: true,
+      },
+      {
+        kanji: "熱{ねっ}中{ちゅう}［する］",
+        english: "enthusiasm・to be absorbed in",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE],
+        important: true,
+      },
+      {
+        kanji: "当{とう}時{じ}",
+        english: "at that time",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.ADVERB],
+        important: true,
+      },
+      {
+        kanji: "徹{てつ}夜{や}［する］",
+        english: "all-nighter・to stay up all night",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE],
+        important: true,
+      },
+      {
+        kanji: "プレイ［する］",
+        english: "play・to play (a game)",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+      },
+      {
+        kanji: "剣{けん}",
+        english: "sword",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+    ],
+    translation: `When role-playing games, or RPGs, were first released in Japan, there was a huge RPG boom. Many young people were absorbed in adventures in sword and magical worlds. At that time, many people stayed up all night to play.`,
+    audio: "T106.mp3",
+    topic: MiniStoryTopics.TRENDS,
+    page: 92,
+  },
+  "107": {
+    id: "107",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "このゲームの<請{せい}求{きゅう}晝{しょ}>は、<あらゆる><端{たん}末{まつ}>から見ることができます。「<発{はっ}行{こう}する>」のボタンを押すと、PDFがダウンロードでき、印{いん}刷{さつ}することもできます。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "請{せい}求{きゅう}晝{しょ}",
+        english: "billing statement・invoice",
+        type: MiniStoryWordType.NOUN,
+        important: true,
+      },
+      {
+        kanji: "請{せい}求{きゅう}［する］",
+        english: "invoice・to request payment",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+        important: true,
+      },
+      {
+        kanji: "あらゆる",
+        english: "Any kind of・all sorts of",
+        type: MiniStoryWordType.OTHER,
+        important: true,
+      },
+      {
+        kanji: "端{たん}末{まつ}",
+        english: "device・terminal",
+        type: MiniStoryWordType.NOUN,
+        important: true,
+      },
+      {
+        kanji: "発{はっ}行{こう}［する］",
+        english: "issuence・to publish・to release",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+        important: true,
+      },
+    ],
+    translation: `The billing statement for this game can be viewed from any kind of device. You can also download a PDF file and print it out by clicking the “Issue" button.`,
+    audio: "T107.mp3",
+    topic: MiniStoryTopics.TRENDS,
+    page: 92,
+  },
+  "108": {
+    id: "108",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "<シリーズ>最新作、3月に<上{じょう}映{えい}>だってね。今から[超{ちょう}楽{たの}しみ]。絶対<前{まえ}売{う}り>[券{けん}]買って、[初{しょ}日{にち}]に見る。",
+      },
+      {
+        character: "B",
+        dialogue: "どうせ上{じょう}映{えい}後{ご}1年したらテレビで見られるんだから、急{いそ}いで見る必要なくない？",
+      },
+      {
+        character: "A",
+        dialogue: "あの大きい<スクリーン>で見るのがいいんじゃない！それに、<CM>が入るのが我慢できないんだ。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "シリーズ",
+        english: "series",
+        type: MiniStoryWordType.NOUN,
+        important: true,
+      },
+      {
+        kanji: "上{じょう}映{えい}［する］",
+        english: "release・projection・to release・project (a movie)",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+        important: true,
+      },
+      {
+        kanji: "前{まえ}売{う}り［する］",
+        english: "pre-sale・to sell in advance",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+        important: true,
+      },
+      {
+        kanji: "スクリーン",
+        english: "screen",
+        type: MiniStoryWordType.NOUN,
+      },
+      {
+        kanji: "СМ・コマーシャル",
+        english: "commercial",
+        type: MiniStoryWordType.NOUN,
+        important: true,
+      },
+      {
+        kanji: "超{ちょう}",
+        english: "super",
+        type: MiniStoryWordType.OTHER,
+        secondary: true,
+      },
+      {
+        kanji: "超{ちょう}楽{たの}しみ",
+        english: "super excited",
+        type: MiniStoryWordType.OTHER,
+        secondary: true,
+      },
+      {
+        kanji: "券{けん}",
+        english: "ticket",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+      {
+        kanji: "初{しょ}日{にち}",
+        english: "first day",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+    ],
+    translation: `A: I heard that the latest movie in the series will screen in March. I'm really looking forward to it. I'll definitely buy a ticket in advance and see it on the first day.\nB: It'll be on TV a year after it screens anyway, so there's no rush to see it.\nA: It's better to see it on the big screen! Besides, I canit stand commercials.`,
+    audio: "T108.mp3",
+    topic: MiniStoryTopics.TRENDS,
+    page: 93,
+  },
+  "109": {
+    id: "109",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "私の好きな漫画家のSNSが、「<公{こう}式{しき}>」って書いてあるのに、本{ほん}人{にん}じゃなかったんだー。<だまされた>気分。",
+      },
+      {
+        character: "B",
+        dialogue: "それは仕方ないね。漫画家がSNSやるの大変らしいよ。「私の好きなキャラクターを[活{かつ}躍{やく}]させてください」って<リクエスト>する人もいるし。",
+      },
+      {
+        character: "A",
+        dialogue: "えー。<ずうずうしい>人がいるんだね。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "公{こう}式{しき}",
+        english: "official",
+        type: MiniStoryWordType.NOUN,
+        important: true,
+      },
+      {
+        kanji: "だます",
+        english: "to deceive・to trick・to cheat",
+        type: MiniStoryWordType.GODAN_TRANSITIVE,
+        important: true,
+      },
+      {
+        kanji: "リクエスト［する］",
+        english: "request・to request",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+      },
+      {
+        kanji: "ずうずうしい",
+        english: "shameless・brazen",
+        type: MiniStoryWordType.ADJECTIVE_I,
+        important: true,
+      },
+      {
+        kanji: "活{かつ}躍{やく}［する］",
+        english: "to be active・to play an active role",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE],
+        secondary: true,
+      },
+    ],
+    translation: `A: My favorite manga cartoonist's social media site says "Official" but it's not actually him! I feel cheated.\nB: But what can you do? It's not easy for cartoonists to be on social media. People make requests to put in their own favorite characters.\nA: Really? Some people are shameless.`,
+    audio: "T109.mp3",
+    topic: MiniStoryTopics.TRENDS,
+    page: 94,
+  },
+  "110": {
+    id: "110",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "昔は、<終{お}えた>ゲームは<中{ちゅう}古{こ}>ゲーム店{てん}に売ることが多かった。中{ちゅう}古{こ}ゲームには、前の持ち[主{ぬし}]の名前が書かれていたり、<シール>が[貼{は}られていたり]することもあった。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "終{お}える",
+        english: "to finish・to complete",
+        type: MiniStoryWordType.ICHIDAN_TRANSITIVE,
+        important: true,
+      },
+      {
+        kanji: "中{ちゅう}古{こ}",
+        english: "used・second-hand",
+        type: MiniStoryWordType.NOUN,
+        important: true,
+      },
+      {
+        kanji: "シール",
+        english: "sticker",
+        type: MiniStoryWordType.NOUN,
+        important: true,
+      },
+      {
+        kanji: "主{ぬし}",
+        english: "owner",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+      {
+        kanji: "貼{は}る",
+        english: "to stick・to paste",
+        type: MiniStoryWordType.GODAN_TRANSITIVE,
+        secondary: true,
+      },
+    ],
+    translation: `In the past, after finishing a video game, people often sold them to used game stores. Used games sometimes had the name of the previous owner written on them or were covered in stickers.`,
+    audio: "T110.mp3",
+    topic: MiniStoryTopics.TRENDS,
+    page: 94,
+  },
+  "111": {
+    id: "111",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "うわー、もう死にそう。ここ難しすぎるよー。",
+      },
+      {
+        character: "B",
+        dialogue: "今見えた<泉{いずみ}>に入ってみたら？回{かい}復{ふく}するんじゃない？",
+      },
+      {
+        character: "A",
+        dialogue: "え、本当に回復した！<ヒント>は<一{いっ}切{さい}>なかったのに、どうして分かったの？",
+      },
+      {
+        character: "B",
+        dialogue: "こういうゲームは<一{ひと}通{とお}り>プレイしているからね。",
+      },
+      {
+        character: "A",
+        dialogue: "<さすが>だね。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "泉{いずみ}",
+        english: "spring・fountain",
+        type: MiniStoryWordType.NOUN,
+        important: true,
+      },
+      {
+        kanji: "ヒント",
+        english: "hint",
+        type: MiniStoryWordType.NOUN,
+      },
+      {
+        kanji: "一{いっ}切{さい}",
+        english: "at all・absolutely",
+        type: MiniStoryWordType.ADVERB,
+        important: true,
+      },
+      {
+        kanji: "一{ひと}通{とお}り",
+        english: "Generally speaking・usually",
+        type: MiniStoryWordType.ADVERB,
+        important: true,
+      },
+      {
+        kanji: "さすが",
+        english: "As expected・Just like (someone)",
+        type: MiniStoryWordType.ADVERB,
+        important: true,
+      },
+    ],
+    translation: `A: Whoa, I'm about to die. It's too difficult here.\nB: Why not try entering the fountain we just saw? You should recover.\nA: Hey, I did recover! There were no hints at all. How did you figure it out?\nB: I play a lot of these games, and they're usually quite similar.\nA: I knew it. That's just like you.`,
+    audio: "T111.mp3",
+    topic: MiniStoryTopics.TRENDS,
+    page: 95,
+  },
+  "112": {
+    id: "112",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "ゲームのやりすぎかなあ。これ以上、<視{し}力{りょく}>が悪くなったらメガネかコンタクトだって医{い}者{しゃ}に<警{けい}告{こく}された>。どっちが<もてる>と思う？",
+      },
+      {
+        character: "B",
+        dialogue: "どっちにしても、もてないと思う。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "視{し}力{りょく}",
+        english: "vision・eyesight",
+        type: MiniStoryWordType.NOUN,
+        important: true,
+      },
+      {
+        kanji: "警{けい}告{こく}［する］",
+        english: "warning・to warn",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+        important: true,
+      },
+      {
+        kanji: "もてる",
+        english: "be attractive・to be popular (especially with the opposite sex)",
+        type: MiniStoryWordType.ICHIDAN_INTRANSITIVE,
+        important: true,
+      },
+    ],
+    translation: `A: I think I play too many games. My doctor warned me that if my eyesight gets any worse, I'll have to get glasses or contact lenses. Which do you think would be more attractive?\nB: Either way, I don't think you'll be attractive.`,
+    audio: "T112.mp3",
+    topic: MiniStoryTopics.TRENDS,
+    page: 96,
+  },
+  "113": {
+    id: "113",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "今度の映画の<ゲスト>キャラクターの[役{やく}者{しゃ}]が<公{こう}表{ひょう}された>けど、<お笑{わら}い芸{げい}人{にん}>なんだって。ちゃんとプロの[声{せい}優{ゆう}]を使ってほしいよ。",
+      },
+      {
+        character: "B",
+        dialogue: "きっと、事{じ}務{む}所{しょ}が<推{すい}薦{せん}した>んだろうね。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "ゲスト",
+        english: "guest",
+        type: MiniStoryWordType.NOUN,
+      },
+      {
+        kanji: "公{こう}表{ひょう}［する］",
+        english: "announcement・to announce",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+        important: true,
+      },
+      {
+        kanji: "(お笑{わら}い）芸{げい}人{にん}",
+        english: "comedian",
+        type: MiniStoryWordType.NOUN,
+        important: true,
+      },
+      {
+        kanji: "推{すい}薦{せん}［する］",
+        english: "recommendation・to recommend",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+        important: true,
+      },
+      {
+        kanji: "推{すい}薦{せん}状{じょう}",
+        english: "recommendation letter",
+        type: MiniStoryWordType.NOUN,
+        important: true,
+      },
+      {
+        kanji: "役{やく}者{しゃ}",
+        english: "actor",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+      {
+        kanji: "声{せい}優{ゆう}",
+        english: "voice actor",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+    ],
+    translation: `A: They've announced who's playing the guest character in the upcoming movie, but he's a comedian. I wish they get a professional voice actor.\nB: Well, I'm sure the agency recommended him.`,
+    audio: "T113.mp3",
+    topic: MiniStoryTopics.TRENDS,
+    page: 96,
+  },
+  "114": {
+    id: "114",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "「ガチャ」と[呼{よ}ばれる]、<抽{ちゅう}選{せん}>でキャラクターがあたるシステムは、今は[大{たい}半{はん}]のスマホゲームに<広{ひろ}まって>いる。お金がかかるのでもうやめよう、と思っても「あと1回で当たるかも」と<悪{あく}魔{ま}>が<ささやいて>くる。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "抽{ちゅう}選{せん}［する］",
+        english: "lottery・to draw at random",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE],
+        important: true,
+      },
+      {
+        kanji: "広{ひろ}まる",
+        english: "to spread・to become widespread",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE],
+        important: true,
+      },
+      {
+        kanji: "広{ひろ}める",
+        english: "to spread・to make widespread",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+        important: true,
+      },
+      {
+        kanji: "悪{あく}魔{ま}",
+        english: "devil・demon",
+        type: MiniStoryWordType.NOUN,
+        important: true,
+      },
+      {
+        kanji: "ささやく",
+        english: "to whisper",
+        type: MiniStoryWordType.GODAN_TRANSITIVE,
+        important: true,
+      },
+      {
+        kanji: "呼{よ}ぶ",
+        english: "to call・to summon",
+        type: MiniStoryWordType.GODAN_TRANSITIVE,
+        secondary: true,
+      },
+      {
+        kanji: "大{たい}半{はん}",
+        english: "most・majority",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+    ],
+    translation: `The gacha system, in which players are awarded characters by random draw, has now spread widely to the majority of smartphone games. Even if you decide to stop playing because it costs money, the devil will still whisper in your ear, "Just one more time— you might win..."`,
+    audio: "T114.mp3",
+    topic: MiniStoryTopics.TRENDS,
+    page: 97,
+  },
+  "115": {
+    id: "115",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "今日漫画に「アメノ」なんとかっていう名前の[剣{けん}]が出てきて、変な名前だなって思ったよ。",
+      },
+      {
+        character: "B",
+        dialogue: "「アメノハバキリ」じゃない？日本の<神{しん}話{わ}>に出てくる剣{けん}だよ。",
+      },
+      {
+        character: "A",
+        dialogue: "え！本当にあったの？",
+      },
+      {
+        character: "B",
+        dialogue: "神{しん}話{わ}だよ。でも、<架{か}空{くう}>の剣{けん}に、<オリジナル>の名前をつけても覚えづらいでしょ。だから、剣{けん}でもモンスターでも、神{しん}話{わ}から名前を借{か}りてくることは多いよ。漫画やアニメを見ていると、神{しん}話{わ}にも詳しくなる。",
+      },
+      {
+        character: "A",
+        dialogue: "へえ。そこまでくると、<教{きょう}養{よう}>だね。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "神{しん}話{わ}",
+        english: "myth・mythology",
+        type: MiniStoryWordType.NOUN,
+        important: true,
+      },
+      {
+        kanji: "架{か}空{くう}",
+        english: "fictitious・imaginary・fantastical",
+        type: MiniStoryWordType.NOUN,
+        important: true,
+      },
+      {
+        kanji: "オリジナル",
+        english: "original",
+        type: MiniStoryWordType.NOUN,
+      },
+      {
+        kanji: "教{きょう}養{よう}",
+        english: "education・training・refinement",
+        type: MiniStoryWordType.NOUN,
+        important: true,
+      },
+      {
+        kanji: "剣{けん}",
+        english: "sword",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+    ],
+    translation: `A: In the manga I read today, there was a sword named "Ameno" something, and I thought it was such a strange name.\nB: Isn't that Ame-no-Habakiri? It's a sword from Japanese mythology.\nA: What? Did it really exist?\nB: It's a myth. But it's harder to remember a fictional sword with an original name, isn't it? That's why swords and monsters often borrow names from mythology. If you watch manga and anime, you become more familiar with mythology.\nA: Wow. I suppose if you take it far enough, you can really gain an education.`,
+    audio: "T115.mp3",
+    topic: MiniStoryTopics.TRENDS,
+    page: 98,
+  },
+  "116": {
+    id: "116",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<アイドル>の仕事はとても大変だ。スケジュールが<ハードな>上、<激{はげ}しい>動きのダンスをしながら、ステージでは[常{つね}に]<ほほ笑{え}んで>いなければならない。そして、休日にデートしているところを見られると、ニュースの<見{み}出{だ}し>に名前が[載{の}り]、ファンには「<裏{うら}切{ぎ}られた>」と言われる。しかし、大変だからこそ、<プライド>を持って仕事をしているのである。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "アイドル",
+        english: "idol",
+        type: MiniStoryWordType.NOUN,
+      },
+      {
+        kanji: "ハードな",
+        english: "tough・demanding",
+        type: MiniStoryWordType.ADJECTIVE_NA,
+        important: true,
+      },
+      {
+        kanji: "激{はげ}しい",
+        english: "strenuous・intense",
+        type: MiniStoryWordType.ADJECTIVE_I,
+        important: true,
+      },
+      {
+        kanji: "ほほ笑{え}む",
+        english: "to smile",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE,
+        important: true,
+      },
+      {
+        kanji: "見{み}出{だ}し",
+        english: "headline",
+        type: MiniStoryWordType.NOUN,
+        important: true,
+      },
+      {
+        kanji: "裏{うら}切{ぎ}る",
+        english: "to betray",
+        type: MiniStoryWordType.GODAN_TRANSITIVE,
+        important: true,
+      },
+      {
+        kanji: "プライド",
+        english: "Pride",
+        type: MiniStoryWordType.NOUN,
+      },
+      {
+        kanji: "常{つね}に",
+        english: "always",
+        type: MiniStoryWordType.ADVERB,
+        secondary: true,
+      },
+      {
+        kanji: "載{の}る",
+        english: "to be published・to be printed・to be posted",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE,
+        secondary: true,
+      },
+    ],
+    translation: `Working as a musical "idol" performer is not easy. The schedule is hard, and you have to constantly smile on stage while performing strenuous dance moves. And if you're ever spotted going on a date on your day off, your name will be in the headlines and fans will say that you've betrayed them. But precisely because it's so hard, they take pride in their work.`,
+    audio: "T116.mp3",
+    topic: MiniStoryTopics.TRENDS,
+    page: 99,
+  },
+  "117": {
+    id: "117",
+    rubyStory: [
+      {
+        character: "",
+        dialogue: "<いわゆる>オープンワールドと呼ばれるゲームは、<広{こう}大{だい}な>世界を自由に[移{い}動{どう}]できるゲームのことだ。プレイヤーは自由にゲームを<進{すす}める>ことができる。もちろん、世界のあちこちに敵{てき}が<存{そん}在{ざい}し>、それに<勝{しょう}利{り}する>ことが目的である。ストーリーが<進{しん}行{こう}する>にしたがって、最初は何も持っていなかった主人公がどんどん<重{じゅう}><装{そう}備{び}>になっていくことも、[魅{み}力{りょく}]の一つだ。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "いわゆる",
+        english: "so-called",
+        type: MiniStoryWordType.ADVERB,
+        important: true,
+      },
+      {
+        kanji: "広{こう}大{だい}な",
+        english: "vast・huge",
+        type: MiniStoryWordType.ADJECTIVE_NA,
+        important: true,
+      },
+      {
+        kanji: "進{すす}める",
+        english: "to proceed・move forward",
+        type: MiniStoryWordType.ICHIDAN_TRANSITIVE,
+        important: true,
+      },
+      {
+        kanji: "存{そん}在{ざい}［する］",
+        english: "existence・to exist",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE],
+        important: true,
+      },
+      {
+        kanji: "勝{しょう}利{り}［する］",
+        english: "triumph over・to win・to defeat",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE],
+        important: true,
+      },
+      {
+        kanji: "進{しん}行{こう}［する］",
+        english: "progress・to progress",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+        important: true,
+      },
+      {
+        kanji: "重{じゅう}～",
+        english: "Heavily~",
+        type: MiniStoryWordType.PREFIX,
+        important: true,
+      },
+      {
+        kanji: "装{そう}備{び}［する］",
+        english: "equipment・to equip",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+        important: true,
+      },
+      {
+        kanji: "移{い}動{どう}[する]",
+        english: "movement・to move",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+        secondary: true,
+      },
+      {
+        kanji: "魅{み}力{りょく}",
+        english: "charm・attraction",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+    ],
+    translation: `So-called "open world" games are games that allow players to move freely through vast worlds. The player can proceed through the game however they like. Of course, enemies exist everywhere in the world, and the goal is to defeat them. As the story progresses, the main character, who initially had nothing, becomes more and more heavily equipped, which is one of the attractions of the game.`,
+    audio: "T117.mp3",
+    topic: MiniStoryTopics.TRENDS,
+    page: 100,
+  },
+  "118": {
+    id: "118",
+    rubyStory: [
+      {
+        character: "A",
+        dialogue: "やっぱり古い3[部{ぶ}作{さく}]は見た方{ほう}がいいかなあ？",
+      },
+      {
+        character: "B",
+        dialogue: "いろんな映画に影響を<及{およ}ぼした>名作だからね。映画[史{し}]に<永{えい}遠{えん}に>残{の}るだろうね。[帝{てい}国{こく}]に[支{し}配{はい}されて]いた[民{みん}族{ぞく}]が<解{かい}放{ほう}される>シーンは、当時の<思{し}想{そう}>なども[反{はん}映{えい}されて]いると思うよ。",
+      },
+      {
+        character: "A",
+        dialogue: "でも古い3部{ぶ}作{さく}は、ストーリーの最初じゃないんだよね。",
+      },
+      {
+        character: "B",
+        dialogue: "ストーリーの<順{じゅん}序{じょ}>は異なるけど、[映{えい}像{ぞう}]としては古いものから新しいものを見た方{ほう}が技術の[進{しん}歩{ぽ}]を感じられるよ。",
+      },
+    ],
+    rubyWords: [
+      {
+        kanji: "及{およ}ぼす",
+        english: "to extend・to reach",
+        type: MiniStoryWordType.GODAN_TRANSITIVE,
+        important: true,
+      },
+      {
+        kanji: "永{えい}遠{えん}な",
+        english: "eternal・long-lasting・forever",
+        type: MiniStoryWordType.ADJECTIVE_NA,
+        important: true,
+      },
+      {
+        kanji: "解{かい}放{ほう}［する］",
+        english: "liberation・to free",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+        important: true,
+      },
+      {
+        kanji: "思{し}想{そう}",
+        english: "thoughts・ideas・thinking",
+        type: MiniStoryWordType.NOUN,
+        important: true,
+      },
+      {
+        kanji: "順{じゅん}序{じょ}",
+        english: "order・sequence",
+        type: MiniStoryWordType.NOUN,
+        important: true,
+      },
+      {
+        kanji: "部{ぶ}作{さく}",
+        english: "part of a series・division",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+      {
+        kanji: "史{し}",
+        english: "history",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+      {
+        kanji: "帝{てい}国{こく}",
+        english: "imperial nation・empire",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+      {
+        kanji: "支{し}配{はい}[する]",
+        english: "control・to control・to rule",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+        secondary: true,
+      },
+      {
+        kanji: "民{みん}族{ぞく}",
+        english: "people・ethnic group・ethnicity",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+      {
+        kanji: "反{はん}映{えい}[する]",
+        english: "reflection・to reflect",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+        secondary: true,
+      },
+      {
+        kanji: "映{えい}像{ぞう}",
+        english: "image・picture",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+      {
+        kanji: "進{しん}歩{ぽ}[する]",
+        english: "progress・to advance",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE],
+        secondary: true,
+      },
+    ],
+    translation: `A: So should I watch the original trilogy?\nB: They're masterpieces whose influence has extended to lots of films. I think they'll go down forever in the history of cinema. The scenes showing the people once ruled by the Empire become liberated reflect the thinking of the time.\nA: But the original trilogy isn't the beginning of the story.\nB: The order of the story is different, but as for the images, you get more of a sense of how the technology progressed by watching the original trillogy first, then the new ones.`,
+    audio: "T118.mp3",
+    topic: MiniStoryTopics.TRENDS,
+    page: 101,
+  },
 };
