@@ -160,14 +160,13 @@ const MiniStory: React.FC<MiniStoryProps> = ({
       <Box m={4} borderWidth={1} borderColor="pink.400" borderRadius="md" p={2}>
         {storyParts}
       </Box>
-      <Box m={4} borderWidth={1} borderColor="pink.400" borderRadius="md" p={2}>
-        {words}
-      </Box>
-
       <HStack px={4} justifyContent={"space-between"} alignItems={"center"}>
         <AudioPlayer level={"N2"} fileName={story.audio} />
         <Button size="sm" variant="outline" colorScheme="secondary" onPress={onNextStory}>Next story</Button>
       </HStack>
+      <Box m={4} borderWidth={1} borderColor="pink.400" borderRadius="md" p={2}>
+        {words}
+      </Box>
 
       <Box m={4} borderWidth={1} borderColor="cyan.400" borderRadius="md" p={2}>
         <Text color="white" textAlign={"justify"}>{translation}</Text>
