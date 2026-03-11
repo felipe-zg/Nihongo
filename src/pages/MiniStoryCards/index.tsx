@@ -17,8 +17,19 @@ const MiniStoryCardsPage: React.FC = () => {
   const endPageParam : number = parseInt(searchParams.get("endPage")!) || availablePagesParam[availablePagesParam.length - 1];
   const topicParam : keyof typeof MINI_STORY_N3["1"]["topic"] | "" = (searchParams.get("topic") || "") as keyof typeof MINI_STORY_N2["1"]["topic"] | "";
   const onlyMainWordsParam : boolean = searchParams.get("onlyMainWords") === "true";
+
+  const getImportanteWordss = () => {
+    if(levelParam === "N3") {
+      return N3_IMPORTANT_WORDS;
+    }
+    // For N2, we can consider words from pages 1-5 as important, but this is just an example and can be adjusted based on actual content.
+    const words = Object.values(MINI_STORY_N2).filter(story => story.page >= startPageParam && story.page <= endPageParam).flatMap(item => item.rubyWords);
+    const importantWords = words.filter(word => !!word.important);
+    return importantWords;
+  }
+
   const vocabList = onlyMainWordsParam
-    ? N3_IMPORTANT_WORDS
+    ? getImportanteWordss()
     : Object.values(vocabsByLevel).filter(story => {
       if (story.page < startPageParam || story.page > endPageParam) {
         return false;
