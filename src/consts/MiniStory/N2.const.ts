@@ -1,3 +1,36 @@
+export const MINISTORY_KANJIS_N2: Record<string, MinistoryRubyKanji> = {
+  "創": { kanji: "創", meaning: "create・Start・originate", rubyWord: "創{つく}る", wordMeaning: "to create" },
+  "勝": { kanji: "勝", meaning: "victory", rubyWord: "勝{か}つ", wordMeaning: "to win" },
+  "負": { kanji: "負", meaning: "defeat", rubyWord: "負{ま}ける", wordMeaning: "to lose" },
+  "種": { kanji: "種", meaning: "Seed・Kind・type・species", rubyWord: "種{しゅ}類{るい}", wordMeaning: "Kind・type" },
+  "放": { kanji: "放", meaning: "To let go", rubyWord: "放{はな}す", wordMeaning: "to let go・to release", wordSentence: "手を放す"},
+  "題": { kanji: "題", meaning: "Topic・Subject・Problem・Question", rubyWord: "問{もん}題{だい}", wordMeaning: "question・problem" },
+  "等": { kanji: "等", meaning: "Class・Rank・And so on・Etc.", rubyWord: "等{など}", wordMeaning: "and so on・etc.", wordSentence: "パン、ケーキ等を買いました。"},
+  "歓": { kanji: "歓", meaning: "Delight・Joy", rubyWord: "歓{かん}迎{げい}", wordMeaning: "welcome", wordSentence: "日本へ歓迎します。" },
+  "迎": { kanji: "迎", meaning: "To welcome・To receive (someone)", rubyWord: "迎{むか}える", wordMeaning: "to welcome・to go pick someone up", wordSentence: "駅まで友だちを迎えに行く。" },
+  "評": { kanji: "評", meaning: "Evaluate・Criticism・Comment", rubyWord: "評{ひょう}価{か}", wordMeaning: "Evaluation" },
+  "判": { kanji: "判", meaning: "Judgement・Signature・Decision", rubyWord: "判{はん}断{だん}", wordMeaning: "Judgement・Decision" },
+  "栄": { kanji: "栄", meaning: "Glory・Prosperity・Honor", rubyWord: "栄{さか}える", wordMeaning: "To prosper・To be honored", wordSentence: "この町は昔とても栄えた。" },
+  "養": { kanji: "養", meaning: "Take care of・Support・Nourish・Raise", rubyWord: "養{やしな}う", wordMeaning: "to support・to raise・to provide for", wordSentence: "家族を養う。" },
+  "臭": { kanji: "臭", meaning: "Smell・Stink", rubyWord: "臭{くさ}い", wordMeaning: "smelly・stinky" },
+  "賞": { kanji: "賞", meaning: "Prize・Award", rubyWord: "賞{しょう}金{きん}", wordMeaning: "prize money" },
+  "農": { kanji: "農", meaning: "Agriculture・Farming", rubyWord: "農{のう}業{ぎょう}", wordMeaning: "agriculture" },
+  "粗": { kanji: "粗", meaning: "Coarse・Rough・Crude", rubyWord: "粗{あら}い", wordMeaning: "rough・coarse" },
+  "末": { kanji: "末", meaning: "End・Future", rubyWord: "末{すえ}", wordMeaning: "the end・the future" },
+  "訳": { kanji: "訳", meaning: "Translation・Reason・Circumstance", rubyWord: "訳{わけ}", wordMeaning: "reason・circumstance", wordSentence: "どういう訳？" },
+  "支": { kanji: "支", meaning: "Branch・Support・Sustain", rubyWord: "支{ささ}える", wordMeaning: "to support・to sustain" },
+  "感": { kanji: "感", meaning: "Feeling・Sensation・Emotion", rubyWord: "感{かん}じる", wordMeaning: "to feel" },
+  "染": { kanji: "染", meaning: "Dye・stain・Infect・Catch (a cold)", rubyWord: "染{そ}める", wordMeaning: "to dye" },
+  "症": { kanji: "症", meaning: "Symptom・Illness", rubyWord: "症{しょう}状{じょう}", wordMeaning: "symptom" },
+  "流": { kanji: "流", meaning: "Stream・Flow・Current", rubyWord: "流{なが}れる", wordMeaning: "to flow" },
+  "制": { kanji: "制", meaning: "Control・Restrain・System", rubyWord: "制{せい}度{ど}", wordMeaning: "system・institution" },
+  "限": { kanji: "限", meaning: "Limit・Restrict", rubyWord: "限{かぎ}る", wordMeaning: "to limit・to restrict" },
+  "精": { kanji: "精", meaning: "Spirit・Energy・Refined", rubyWord: "精{せい}神{しん}", wordMeaning: "spirit・energy・mind", wordSentence: "精神が強い。" },
+  "算": { kanji: "算", meaning: "Calculate・Count", rubyWord: "算{さん}数{すう}", wordMeaning: "Mathematics・arithmetic" },
+  "貯": { kanji: "貯", meaning: "Save・Store", rubyWord: "貯{た}める", wordMeaning: "to save (money)", wordSentence: "お金を貯める。" },
+  "与": { kanji: "与", meaning: "Give・Grant・Bestow", rubyWord: "与{あた}える", wordMeaning: "to give・to grant・to bestow" },
+};
+
 const MiniStoryTopics = {
   FOOD: '食事',
   HOUSE_WORK: '家事',
@@ -48,17 +81,26 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
     rubyWords: [
       {
         kanji: "創{そう}作{さく}",
-        english: "creative, create"
+        english: "creative・create",
+        important: true,
       },
       {
         kanji: "食{しょく}物{もつ}",
-        english: "food"
+        english: "food",
+        important: true
       },
       {
         kanji: "勝{しょう}負{ぶ}[する]",
-        english: "Victory, to compete"
+        english: "Victory・to compete",
+        important: true
       },
+      {
+        kanji: "に対{たい}応{おう}[する]",
+        english: "to respond to・to deal with",
+        secondary: true
+      }
     ],
+    kanjis: ["創", "勝", "負"],
     translation: `A: I heard that the creative cuisine restaurant by the station that we went to last week is closing.\nB: What? That restaurant was great—it had a menu for people with food allergies.\nA: Yeah. There are lots of franchise family restaurants near the station, and it's probably difficult for a smaller restaurant to compete with such large places.`,
     audio: "T1.mp3",
     topic: MiniStoryTopics.FOOD,
@@ -69,13 +111,14 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
     rubyStory: [
       {
         character: "",
-        dialogue: "日本の米は、品種によって<粒{つぶ}>の大きさ、甘<み>、食{しょっ}感{かん}などが異{こと}なる。300gの少{しょう}量{りょう}<パック>も売っているので、いろいろと試{ため}してみるのもいいだろう。保{ほ}存{ぞん}するときは、温{あたた}かいうちに1<人{にん}前{まえ}>ずつ<ラップ>で包{つつ}むのが大切だ。<冷{さ}めたら>さらに<アルミホイル>で包{つつ}んで冷{れい}凍{とう}庫{こ}に入{い}れれば、おいしいまま冷{れい}凍{とう}できる。",
+        dialogue: "日本の米は、[品{ひん}種{しゅう}]によって<粒{つぶ}>の大きさ、甘<み>、[食{しょっ}感{かん}]などが[異{こと}なる]。300gの[少{しょう}量{りょう}]<パック>も売っているので、いろいろと[試{ため}して]みるのもいいだろう。保{ほ}存{ぞん}するときは、温{あたた}かいうちに1<人{にん}前{まえ}>ずつ<ラップ>で包{つつ}むのが大切だ。<冷{さ}めたら>さらに<アルミホイル>で包{つつ}んで冷{れい}凍{とう}庫{こ}に入{い}れれば、おいしいまま冷{れい}凍{とう}できる。",
       },
     ],
     rubyWords: [
       {
         kanji: "粒{つぶ}",
-        english: "grain"
+        english: "grain",
+        important: true,
       },
       {
         kanji: "〜み",
@@ -87,7 +130,8 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
       },
       {
         kanji: "〜人前",
-        english: "serving / portion"
+        english: "serving / portion",
+        important: true,
       },
       {
         kanji: "ラップ［する］",
@@ -95,17 +139,45 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
       },
       {
         kanji: "冷{さ}める",
-        english: "to cool down"
+        english: "to cool down",
+        important: true,
       },
       {
         kanji: "冷{さ}ます",
-        english: "to cool down"
+        english: "to cool down",
+        important: true,
       },
       {
         kanji: "アルミホイル",
         english: "aluminum foil"
       },
+      {
+        kanji: "品{ひん}種{しゅう}",
+        english: "variety・strain・breed",
+        secondary: true,
+      },
+      {
+        kanji: "食{しょっ}感{かん}",
+        english: "texture・taste・flavor",
+        secondary: true,
+      },
+      {
+        kanji: "異{こと}なる",
+        english: "different",
+        secondary: true,
+      },
+      {
+        kanji: "少{しょう}量{りょう}",
+        english: "small amount",
+        secondary: true,
+      },
+      {
+        kanji: "試{ため}す",
+        english: "to try out",
+        secondary: true,
+      },
     ],
+    kanjis: [ "種" ],
     translation: `Japanese rice varies in grain size, sweetness, and texture, depending on the variety. Small 300 gram packs are available, so it's a good idea to try different varieties. When storing rice, its important to wrap it in single portions in plastic wrap while it's still warm. After they cool, wrap them in aluminum foil and put them in the freezer to freeze them while they are still full of flavor.`,
     audio: "T2.mp3",
     topic: MiniStoryTopics.FOOD,
@@ -128,45 +200,58 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
       },
       {
         character: "B",
-        dialogue: "あ、でも、チャーシューが<あぶって>あったのはよかったね。",
+        dialogue: "あ、でも、[チャーシュー]が<あぶって>あったのはよかったね。",
       },
     ],
     rubyWords: [
       {
         kanji: "あっさり",
         english: "lightly・plainly・simply",
-        type: MiniStoryWordType.ADVERB
+        type: MiniStoryWordType.ADVERB,
+        important: true,
       },
       {
         kanji: "物{もの}足{た}りない",
         english: "lacking・unsatisfying/",
-        type: MiniStoryWordType.ADJECTIVE_I
+        type: MiniStoryWordType.ADJECTIVE_I,
+        important: true,
       },
       {
         kanji: "脂{あぶら}",
         english: "Fat",
-        type: MiniStoryWordType.NOUN
+        type: MiniStoryWordType.NOUN,
+        important: true,
       },
       {
         kanji: "たっぷり",
         english: "generously・plentifully",
-        type: MiniStoryWordType.ADVERB
+        type: MiniStoryWordType.ADVERB,
+        important: true,
       },
       {
         kanji: "好{この}み",
         english: "preference",
-        type: MiniStoryWordType.NOUN
+        type: MiniStoryWordType.NOUN,
+        important: true,
       },
       {
         kanji: "好{この}む",
         english: "To prefer",
-        type: MiniStoryWordType.GODAN_TRANSITIVE
+        type: MiniStoryWordType.GODAN_TRANSITIVE,
+        important: true,
       },
       {
         kanji: "あぶる",
         english: "roast・sear",
-        type: MiniStoryWordType.GODAN_TRANSITIVE
+        type: MiniStoryWordType.GODAN_TRANSITIVE,
+        important: true,
       },
+      {
+        kanji: "チャーシュー",
+        english: "Roasted pork",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      }
     ],
     translation: `A: How was that ramen shop?\nB: Hmmm. Well, I found it rather light and unsatisfying. Personally, I prefer ramen with plenty of fat.\nA: Oh, right.\nB: But the roasted pork was nicely seared.`,
     audio: "T3.mp3",
@@ -182,7 +267,7 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
       },
       {
         character: "B",
-        dialogue: "えっと、日{ひ}替{が}わりランチ。",
+        dialogue: "えっと、[日{ひ}替{が}わり]ランチ。",
       },
       {
         character: "A",
@@ -215,18 +300,27 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
       {
         kanji: "和{わ}風{ふう}",
         english: "Japanese SStyle",
-        type: MiniStoryWordType.NOUN
+        type: MiniStoryWordType.NOUN,
+        important: true,
       },
       {
         kanji: "洋{よう}風{ふう}",
         english: "Western-style",
-        type: MiniStoryWordType.NOUN
+        type: MiniStoryWordType.NOUN,
+        important: true,
       },
       {
         kanji: "それと",
         english: "And also",
-        type: MiniStoryWordType.CONJUNCTION
+        type: MiniStoryWordType.CONJUNCTION,
+        important: true,
       },
+      {
+        kanji: "日{ひ}替{が}わり",
+        english: "Daily special",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      }
     ],
     translation: `A: Have you decided what you want to order?\nB: Let's see, the daily lunch.\nA: Right, well, please choose your main dish here.\nB: Oh, well, I'll have the mixed deep-fry plate.\nA: Got it. What kind of dressing would you like for your salad?\nB: Um, Japanese-style dressing. And also, the green tea parfait, please.`,
     audio: "T4.mp3",
@@ -246,30 +340,40 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
       },
       {
         character: "A",
-        dialogue: "うーん・・・たぶん、ホルモン・・・。",
+        dialogue: "うーん・・・たぶん、[ホルモン]・・・。",
       },
     ],
     rubyWords: [
       {
         kanji: "煙{けむ}い",
         english: "Smoky",
-        type: MiniStoryWordType.ADJECTIVE_I
+        type: MiniStoryWordType.ADJECTIVE_I,
+        important: true,
       },
       {
         kanji: "焦{こ}げる",
         english: "To burn",
-        type: MiniStoryWordType.ICHIDAN_INTRANSITIVE
+        type: MiniStoryWordType.ICHIDAN_INTRANSITIVE,
+        important: true,
       },
       {
         kanji: "焦{こ}がす",
         english: "To burn (Something)",
-        type: MiniStoryWordType.GODAN_TRANSITIVE
+        type: MiniStoryWordType.GODAN_TRANSITIVE,
+        important: true,
       },
       {
         kanji: "塊{かたまり}",
         english: "Chunk・Lump",
-        type: MiniStoryWordType.NOUN
+        type: MiniStoryWordType.NOUN,
+        important: true,
       },
+      {
+        kanji: "ホルモン",
+        english: "Guts・hormone",
+        type: MiniStoryWordType.NOUN,
+        secondary: true
+      }
     ],
     translation: `A: Can't you smell smoke?\nB: I sure can... Oh, it's burning! What are these black chunks?\nA: Hmmm... its probably offal..`,
     audio: "T5.mp3",
@@ -281,34 +385,63 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
     rubyStory: [
       {
         character: "",
-        dialogue: "この店の<名{めい}物{ぶつ}>は、皮{かわ}付{つ}きのりんごが<丸{まる}々{まる}>1個{こ}入{はい}ったアップルパイだ。<芯{しん}>をくりぬいた部分には、スポンジが<ぎっしり>と詰{つ}まっている。<見{み}た目{め}>がかわいい上にとてもおいしく、大人気だ。",
+        dialogue: "この店の<名{めい}物{ぶつ}>は、[皮{かわ}付{つ}き]のりんごが<丸{まる}々{まる}>1個{こ}入{はい}ったアップルパイだ。<芯{しん}>を[くりぬいた]部分には、スポンジが<ぎっしり>と[詰{つ}まって]いる。<見{み}た目{め}>がかわいい上にとてもおいしく、大人気だ。",
       },
     ],
     rubyWords: [
       {
         kanji: "名{めい}物{ぶつ}",
         english: "Specialty",
-        type: MiniStoryWordType.NOUN
+        type: MiniStoryWordType.NOUN,
+        important: true,
       },
       {
         kanji: "丸{まる}々{まる}",
         english: "Entirely・Wholly",
-        type: MiniStoryWordType.ADVERB
+        type: MiniStoryWordType.ADVERB,
+        important: true,
       },
       {
         kanji: "芯{しん}",
         english: "Core",
-        type: MiniStoryWordType.NOUN
+        type: MiniStoryWordType.NOUN,
+        important: true,
       },
       {
         kanji: "ぎっしり（と）",
         english: "Tightly・Fully",
-        type: MiniStoryWordType.ADVERB
+        type: MiniStoryWordType.ADVERB,
+        important: true,
       },
       {
         kanji: "見{み}た目{め}",
         english: "Appearance・Look",
-        type: MiniStoryWordType.NOUN
+        type: MiniStoryWordType.NOUN,
+        important: true,
+      },
+      {
+        kanji: "皮{かわ}付{つ}き",
+        english: "With skin",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+      {
+        kanji: "くりぬく",
+        english: "To hollow out",
+        type: MiniStoryWordType.GODAN_TRANSITIVE,
+        secondary: true,
+      },
+      {
+        kanji: "詰{つ}まる",
+        english: "To be packed full",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE,
+        secondary: true,
+      },
+      {
+        kanji: "詰{つ}める",
+        english: "To pack full",
+        type: MiniStoryWordType.ICHIDAN_TRANSITIVE,
+        secondary: true,
       },
     ],
     translation: `This store's specialty is apple pie, made from an entire apple with the skin left on. The core is hollowed out and packed full of sponge cake. The pie looks cute, tastes really great, and is very popular.`,
@@ -321,44 +454,68 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
     rubyStory: [
       {
         character: "A",
-        dialogue: "今度の歓{かん}迎{げい}会{かい}だけど、焼肉<食{た}べ放{ほう}題{だい}>はどう？",
+        dialogue: "今度の[歓{かん}迎{げい}会{かい}]だけど、焼肉<食{た}べ放{ほう}題{だい}>はどう？",
       },
       {
         character: "B",
-        dialogue: "いいですね。でも、胃{い}が<もたれ>そうだな。",
+        dialogue: "いいですね。でも、[胃{い}]が<もたれ>そうだな。",
       },
       {
         character: "A",
-        dialogue: "え、まだ若いのに。じゃあ、このしゃぶしゃぶ屋はどう？<上{じょう}等{とう}な>肉が安く食べられるって<ロ{くち}コミ>でも評{ひょう}判{ばん}だよ。",
+        dialogue: "え、まだ若いのに。じゃあ、このしゃぶしゃぶ屋はどう？<上{じょう}等{とう}な>肉が安く食べられるって<ロ{くち}コミ>でも[評{ひょう}判{ばん}]だよ。",
       },
     ],
     rubyWords: [
       {
         kanji: "食{た}べ放{ほう}題{だい}",
         english: "All-you-can-eat",
-        type: MiniStoryWordType.NOUN
+        type: MiniStoryWordType.NOUN,
+        important: true,
       },
       {
         kanji: "～放{ほう}題{だい}",
         english: "All-you-can〜",
-        type: MiniStoryWordType.PREFIX
+        type: MiniStoryWordType.PREFIX,
+        important: true,
       },
       {
         kanji: "もたれる",
         english: "Sit heavily",
-        type: MiniStoryWordType.ICHIDAN_INTRANSITIVE
+        type: MiniStoryWordType.ICHIDAN_INTRANSITIVE,
+        important: true,
       },
       {
         kanji: "上{じょう}等{とう}な",
         english: "High-end・Top quality",
-        type: MiniStoryWordType.ADJECTIVE_NA
+        type: MiniStoryWordType.ADJECTIVE_NA,
+        important: true,
       },
       {
         kanji: "口{くち}コミ",
         english: "Word of mouth",
-        type: MiniStoryWordType.NOUN
+        type: MiniStoryWordType.NOUN,
+        important: true,
+      },
+      {
+        kanji: "歓{かん}迎{げい}会{かい}",
+        english: "Welcome party",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+      {
+        kanji: "胃{い}",
+        english: "Stomach",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+      {
+        kanji: "評{ひょう}判{ばん}",
+        english: "Review・Opinion",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
       },
     ],
+    kanjis: [ "放", "題", "等", "歓", "迎", "評", "判" ],
     translation: `A: How about all-you-can-eat barbecue for the upcoming welcome party?\nB: Sounds good. But it'll probably sit too heavily in my stomach.\nA: What? You're still young. How about this shabu-shabu place? It's got great word-of-mouth for being inexpensive for top-quality meat.`,
     audio: "T7.mp3",
     topic: MiniStoryTopics.FOOD,
@@ -369,46 +526,60 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
     rubyStory: [
       {
         character: "",
-        dialogue: "一人暮らしをしていると、栄{えい}養{よう}が<偏{かたよ}り>がちだ。何か野菜を食べなければと思うが、今は野菜が高くて<手{て}に入{い}れ>にくい。子どものときは<好{す}き嫌{きら}い>が多く、母の作る料理が嫌{いや}だと思ったこともあったが、今となっては栄{えい}養{よう}たっぷりの母の手料理が<恋{こい}しい>。",
+        dialogue: "一人暮らしをしていると、[栄{えい}養{よう}]が<偏{かたよ}り>がちだ。何か野菜を食べなければと思うが、今は野菜が高くて<手{て}に入{い}れ>にくい。子どものときは<好{す}き嫌{きら}い>が多く、母の作る料理が嫌{いや}だと思ったこともあったが、今となっては栄{えい}養{よう}たっぷりの母の手料理が<恋{こい}しい>。",
       },
     ],
     rubyWords: [
       {
         kanji: "偏{かたよ}る",
         english: "To be uneven・biased",
-        type: MiniStoryWordType.GODAN_INTRANSITIVE
+        type: MiniStoryWordType.GODAN_INTRANSITIVE,
+        important: true,
       },
       {
         kanji: "偏{かたよ}り",
         english: "Imbalance・Unevenness",
-        type: MiniStoryWordType.NOUN
+        type: MiniStoryWordType.NOUN,
+        important: true,
       },
       {
         kanji: "手{て}に入{い}れる",
         english: "To obtain・get・acquire",
-        type: MiniStoryWordType.ICHIDAN_TRANSITIVE
+        type: MiniStoryWordType.ICHIDAN_TRANSITIVE,
+        important: true,
       },
       {
         kanji: "手{て}に入{はい}る",
         english: "To be obtainable・To be available・To come into one’s possession",
-        type: MiniStoryWordType.GODAN_INTRANSITIVE
+        type: MiniStoryWordType.GODAN_INTRANSITIVE,
+        important: true,
       },
       {
         kanji: "好{す}き嫌{きら}い［する］",
         english: "likes and dislikes・to be picky",
-        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE]
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE],
+        important: true,
       },
       {
         kanji: "恋{こい}しい",
         english: "To miss someone/something・To long for",
-        type: MiniStoryWordType.ADJECTIVE_I
+        type: MiniStoryWordType.ADJECTIVE_I,
+        important: true,
       },
       {
-        kanji: "恋［する］",
+        kanji: "恋{こい}［する］",
         english: "love・to fall in love",
-        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE]
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE],
+        important: true,
       },
+      {
+        kanji: "栄{えい}養{よう}",
+        english: "Nutrition",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      }
     ],
+    kanjis: [ "栄", "養" ],
     translation: `When you live alone, your diet tends to get imbalanced. I probably need to eat some vegetables, but vegetables are expensive and hard to get nowadays. When I was a child, I was fussy about food and at times I disliked the food my mother cooked, but now I miss her healthy, nutritious cooking`,
     audio: "T8.mp3",
     topic: MiniStoryTopics.FOOD,
@@ -419,46 +590,78 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
     rubyStory: [
       {
         character: "",
-        dialogue: "冷蔵庫の中が<生{なま}臭{ぐさ}い>と思ったら、きゅうりが腐って白い<液{えき}体{たい}>が出ていた。普段、<賞{しょう}味{み}期{き}限{げん}><切{き}れ>のお菓子などは気にせず食べているが、これはさすがにやめておこう。せっかく母が<農{のう}薬{やく}>を使わずに育てたからと送ってくれたのに、<粗{そ}末{まつ}に>してしまって申し訳ない。",
+        dialogue: "[冷蔵庫]の中が<生{なま}臭{ぐさ}い>と思ったら、[きゅうり]が[腐って]白い<液{えき}体{たい}>が出ていた。普段、<賞{しょう}味{み}期{き}限{げん}><切{き}れ>のお菓子などは気にせず食べているが、これはさすがにやめておこう。[せっかく]母が<農{のう}薬{やく}>を使わずに育てたからと送ってくれたのに、<粗{そ}末{まつ}に>してしまって申し訳ない。",
       },
     ],
     rubyWords: [
       {
         kanji: "生{なま}臭{ぐさ}い",
         english: "Fishy・Smelly・Stinky",
-        type: MiniStoryWordType.ADJECTIVE_I
+        type: MiniStoryWordType.ADJECTIVE_I,
+        important: true,
       },
       {
         kanji: "液{えき}体{たい}",
         english: "Liquid",
-        type: MiniStoryWordType.NOUN
+        type: MiniStoryWordType.NOUN,
+        important: true,
       },
       {
         kanji: "賞{しょう}味{み}期{き}限{げん}",
         english: "Best before・Expiration date",
-        type: MiniStoryWordType.NOUN
+        type: MiniStoryWordType.NOUN,
+        important: true,
       },
       {
         kanji: "消{しょう}費{ひ}期{き}限{げん}",
         english: "Use-by date・Expiration date",
-        type: MiniStoryWordType.NOUN
+        type: MiniStoryWordType.NOUN,
+        important: true,
       },
       {
         kanji: "〜切{き}れ",
         english: "~ Used up・Expired・Past",
-        type: MiniStoryWordType.SUFFIX
+        type: MiniStoryWordType.SUFFIX,
+        important: true,
       },
       {
         kanji: "農{のう}薬{やく}",
         english: "Pesticide",
-        type: MiniStoryWordType.NOUN
+        type: MiniStoryWordType.NOUN,
+        important: true,
       },
       {
         kanji: "粗{そ}末{まつ}な",
         english: "Careless・Negligent",
-        type: MiniStoryWordType.ADJECTIVE_NA
+        type: MiniStoryWordType.ADJECTIVE_NA,
+        important: true,
       },
+      {
+        kanji: "冷{れい}蔵{ぞう}庫{こ}",
+        english: "Refrigerator",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+      {
+        kanji: "きゅうり",
+        english: "Cucumber",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+      {
+        kanji: "腐{くさ}る",
+        english: "To rot・To go bad",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE,
+        secondary: true,
+      },
+      {
+        kanji: "せっかく",
+        english: "With trouble・With effort・Long-awaited",
+        type: MiniStoryWordType.EXPRESSION,
+        secondary: true,
+      }
     ],
+    kanjis: ["臭", "賞", "農", "粗", "末", "訳", ],
     translation: `I noticed something stinking in the refrigerator hut it turned out to be rotten cucumbers with white fluid oozing out of them. I usually don't mind eating expired snacks, but there's no way I'd eat this. My mother sent me these cucumbers she'd grown without using any pesticides, so I feel bad for treating them so carelessly.`,
     audio: "T9.mp3",
     topic: MiniStoryTopics.FOOD,
@@ -469,7 +672,7 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
     rubyStory: [
       {
         character: "",
-        dialogue: "昨日、久しぶりに友だちとスイーツ<ビュッフェ>に行った。壁{かべ}<一{いち}面{めん}>がパステルカラーで、メニューには、カラフルなケーキや、<綿{わた}>あめがのったドリンクがあったりして、とてもかわいかった。",
+        dialogue: "昨日、久しぶりに友だちとスイーツ<ビュッフェ>に行った。[壁{かべ}]<一{いち}面{めん}>がパステルカラーで、メニューには、カラフルなケーキや、<綿{わた}>あめがのったドリンクがあったりして、とてもかわいかった。",
       },
     ],
     rubyWords: [
@@ -481,12 +684,26 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
       {
         kanji: "一{いち}面{めん}",
         english: "One whole side・Entire surface・All over",
-        type: MiniStoryWordType.NOUN
+        type: MiniStoryWordType.NOUN,
+        important: true,
       },
       {
         kanji: "綿{わた}",
         english: "Cotton",
-        type: MiniStoryWordType.NOUN
+        type: MiniStoryWordType.NOUN,
+        important: true,
+      },
+      {
+        kanji: "壁{かべ}",
+        english: "Wall",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+      {
+        kanji: "綿{わた}あめ",
+        english: "Cotton candy",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
       },
     ],
     translation: `Yesterday, for the first time in a while, I went to a dessert buffet with a friend. The walls were pastel-colored all over, and there were colorful cakes and drinks with cotton candy on the menu. It was really cute.`,
@@ -499,31 +716,66 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
     rubyStory: [
       {
         character: "",
-        dialogue: "感{かん}染{せん}症{しょう}の流{りゅう}行{こう}は、社会にさまざまな影響を与えている。例えば、外{がい}出{しゅつ}が制{せい}限{げん}されたため、旅行関係の<支{し}出{しゅつ}>は大きく減{げん}少{しょう}した。また、感{かん}染{せん}症{しょう}予{よ}防{ぼう}のマスク<着{ちゃく}用{よう}>により、<一{いっ}気{き}に><万{まん}引{び}き>が増えた店もあるようだ。",
+        dialogue: "[感{かん}染{せん}症{しょう}]の[流{りゅう}行{こう}]は、社会にさまざまな影響を[与{あた}えて]いる。例えば、[外{がい}出{しゅつ}]が[制{せい}限{げん}]されたため、旅行関係の<支{し}出{しゅつ}>は大きく減{げん}少{しょう}した。また、感{かん}染{せん}症{しょう}予{よ}防{ぼう}のマスク<着{ちゃく}用{よう}>により、<一{いっ}気{き}に><万{まん}引{び}き>が増えた店もあるようだ。",
       },
     ],
     rubyWords: [
       {
         kanji: "支{し}出{しゅつ}［する］",
         english: "Expenditure・To spend",
-        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE]
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+        important: true,
       },
       {
         kanji: "着{ちゃく}用{よう}［する］",
         english: "To wear・To put on (clothes, accessories)",
-        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE]
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+        important: true,
       },
       {
         kanji: "一{いっ}気{き}に",
         english: "All at once・In one go・Suddenly",
-        type: MiniStoryWordType.ADVERB
+        type: MiniStoryWordType.ADVERB,
+        important: true,
       },
       {
         kanji: "万{まん}引{び}き［する］",
         english: "Shoplifting・To shoplift",
-        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE]
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+        important: true,
       },
+      {
+        kanji: "感{かん}染{せん}症{しょう}",
+        english: "Infectious disease",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+      {
+        kanji: "流{りゅう}行{こう}",
+        english: "Spread・Epidemic",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+      {
+        kanji: "与{あた}える",
+        english: "To give・To cause",
+        type: MiniStoryWordType.ICHIDAN_TRANSITIVE,
+        secondary: true,
+      },
+      {
+        kanji: "外{がい}出{しゅつ}",
+        english: "Going out",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+      {
+        kanji: "制{せい}限{げん}",
+        english: "Restriction",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      }
     ],
+    kanjis: ["支", "感", "染", "症", "流", "制", "限" ],
     translation: `The outbreak of infectious disease is affecting society in various ways. For example, travel-related spending has dropped significantly, due to restrictions on going out. Also, some stores have seen a sudden increase in shoplifting due to the wearing of masks to prevent infectious disease.`,
     audio: "T36.mp3",
     topic: MiniStoryTopics.SHOPPING,
@@ -534,7 +786,7 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
     rubyStory: [
       {
         character: "A",
-        dialogue: "こないだ会社の人たちと飲みに行ったとき、全員分僕が払っておいたんだよ。それで昨日、どうやって<精{せい}算{さん}しよう>かと思って先輩に相談してみたら「1円まできれいに分{わ}けてくれ」って言われちゃって・・・。",
+        dialogue: "こないだ会社の人たちと飲みに行ったとき、全員分僕が払っておいたんだよ。それで昨日、どうやって<精{せい}算{さん}しよう>かと思って先輩に相{そう}談{だん}してみたら「1円まできれいに分{わ}けてくれ」って言われちゃって・・・。",
       },
       {
         character: "B",
@@ -549,35 +801,41 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
       {
         kanji: "精{せい}算{さん}［する］",
         english: "Settlement of accounts・To settle a bill・Payment",
-        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE]
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+        important: true,
       },
       {
         kanji: "けちな",
         english: "stingy・cheap・Tight (with money)",
-        type: MiniStoryWordType.ADJECTIVE_NA
+        type: MiniStoryWordType.ADJECTIVE_NA,
+        important: true,
       },
       {
         kanji: "高{こう}価{か}な",
         english: "expensive・high-priced",
-        type: MiniStoryWordType.ADJECTIVE_NA
+        type: MiniStoryWordType.ADJECTIVE_NA,
+        important: true,
       },
       {
         kanji: "賞{しょう}与{よ}",
         english: "Bonus (salary)",
-        type: MiniStoryWordType.NOUN
+        type: MiniStoryWordType.NOUN,
+        important: true,
       },
     ],
+    kanjis: ["精", "算", "貯", "賞", "与"],
     translation: `A: The other night, I went out for drinks with some people from work and I paid for everyone. Yesterday, I asked a senior colleague for advice on how to settle the bill, and he told me to split it evenly, right down to the last yen...\nB: Wow, that's so stingy.\nA: And he was the only one drinking lots of expensive alcohol... Damn, I just got my bonus last month and finally saved up a little money.`,
     audio: "T37.mp3",
     topic: MiniStoryTopics.SHOPPING,
     page: 42,
   },
+  //TODO: keep adding kanjis and flags from here
   "38": {
     id: "38",
     rubyStory: [
       {
         character: "A",
-        dialogue: "通{つう}販{はん}でコンロ買ったんだけど、<包{ほう}装{そう}>を<ほどいて>みたら、都{と}市{し}ガス用{よう}だったの。うちでは使えないから<返{へん}品{ぴん}しよう>と思ったんだけど、箱{はこ}に「<不{ふ}良{りょう}品{ひん}>を除{のぞ}いて、開{かい}封{ふう}済{ず}みの商品の返品には、送{そう}料{りょう}と<手{て}数{すう}料{りょう}>を<頂{ちょう}戴{だい}します>」って書いてあったの。",
+        dialogue: "[通{つう}販{はん}]でコンロ買ったんだけど、<包{ほう}装{そう}>を<ほどいて>みたら、都{と}市{し}ガス用{よう}だったの。うちでは使えないから<返{へん}品{ぴん}しよう>と思ったんだけど、[箱{はこ}]に「<不{ふ}良{りょう}品{ひん}>を[除{のぞ}いて]、[開{かい}封{ふう}済{ず}み]の商品の返品には、[送{そう}料{りょう}]と<手{て}数{すう}料{りょう}>を<頂{ちょう}戴{だい}します>」って書いてあったの。",
       },
       {
         character: "B",
@@ -588,42 +846,80 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
       {
         kanji: "包{ほう}装{そう}［する］",
         english: "Packaging・To package",
-        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE]
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+        important: true,
       },
       {
         kanji: "ほどく",
         english: "To unwrap・To undo・To unfasten・To take off",
-        type: MiniStoryWordType.GODAN_TRANSITIVE
+        type: MiniStoryWordType.GODAN_TRANSITIVE,
+        important: true,
       },
       {
         kanji: "ほどける",
         english: "To come undone・To loosen",
-        type: MiniStoryWordType.ICHIDAN_INTRANSITIVE
+        type: MiniStoryWordType.ICHIDAN_INTRANSITIVE,
+        important: true,
       },
       {
         kanji: "返{へん}品{ぴん}［する］",
         english: "Return (goods)・To return (goods)",
-        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE]
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+        important: true,
       },
       {
         kanji: "不{ふ}良{りょう}品{ひん}",
         english: "Defective goods",
-        type: MiniStoryWordType.NOUN
+        type: MiniStoryWordType.NOUN,
+        important: true,
       },
       {
         kanji: "手{て}数{すう}料{りょう}",
         english: "Handling fee・Service charge",
-        type: MiniStoryWordType.NOUN
+        type: MiniStoryWordType.NOUN,
+        important: true,
       },
       {
         kanji: "頂{ちょう}戴{だい}する",
         english: "To request・To require",
-        type: MiniStoryWordType.IRREGULAR_TRANSITIVE
+        type: MiniStoryWordType.IRREGULAR_TRANSITIVE,
+        important: true,
       },
       {
-        kanji: "商売［する］",
+        kanji: "商{しょう}売{ばい}［する］",
         english: "Business・To do business",
-        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE]
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE],
+        important: true
+      },
+      {
+        kanji: "通{つう}販{はん}",
+        english: "Mail order",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+      {
+        kanji: "箱{はこ}",
+        english: "Box",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+      {
+        kanji: "除{のぞ}く",
+        english: "To exclude・To leave out",
+        type: MiniStoryWordType.GODAN_TRANSITIVE,
+        secondary: true,
+      },
+      {
+        kanji: "開{かい}封{ふう}済{ず}み",
+        english: "Opened",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+      {
+        kanji: "送{そう}料{りょう}",
+        english: "Shipping fee",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
       },
     ],
     translation: `A: I bought a stove by mail order, but when I removed the packaging, I found it was designed to use city gas. Since I can't use that at home, I tried to return it, but on the box it said, "Unless a product is defective, a handling fee is required for the return of products that have been opened”\nB: Is that right? Well, I guess theyre a business too.`,
