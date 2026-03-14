@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Button, Divider, Heading, HStack, Select, Stack, Switch, Text} from "native-base";
 import { parseRuby } from "../../utils/music/rubyParser";
-import { MiniStoryTopics } from "../../consts/MiniStory";
+import { MINISTORY_KANJIS_N2, MiniStoryTopics } from "../../consts/MiniStory";
 import { AudioPlayer } from "../../components";
 
 type MiniStoryProps = {
@@ -36,7 +36,7 @@ const MiniStory: React.FC<MiniStoryProps> = ({
   const [isFuriganaHidden, setIsFuriganaHidden] = React.useState(false);
   const [isKanjiHidden, setIsKanjiHidden] = React.useState(false);
   const [isLargeLetter, setIsLargeLetter] = React.useState(false);
-  const { rubyStory, rubyWords, translation } = story;
+  const { rubyStory, rubyWords, translation, kanjis } = story;
 
   const redColor = '#ee1313ff';
   const blueColor = '#1e90ffff';
@@ -87,6 +87,39 @@ const MiniStory: React.FC<MiniStoryProps> = ({
     )
   });
 
+  const kanjiList = kanjis?.map((kanjiObj, index) => {
+    const { kanji, meaning, rubyWord, wordMeaning, wordSentence } = MINISTORY_KANJIS_N2[kanjiObj];  
+    const parts = parseRuby(rubyWord);
+    const fontSize = '1.3rem';
+    const formattedWord = parts.map(a =>
+      a.furigana
+        ? `<ruby>${a.kanji}<rt style="color: yellow;">${a.furigana}</rt></ruby>`
+        : a.kanji
+    ).join('');
+    return (
+      <>
+        <HStack>
+          <Box  flex={1} justifyContent={"center"}>
+            <Text color={"yellow.500"} fontFamily="Klee One" fontSize={"2xl"}>{kanji}</Text>
+          </Box>
+          <Box  flex={7} justifyContent={"center"}>
+            <Text color={"yellow.500"} fontSize={"md"}>{meaning}</Text>
+          </Box>
+          <Box flex={2}>
+            <p style={{color: whiteColor, fontFamily: "Klee One", fontSize: fontSize}} dangerouslySetInnerHTML={{ __html: formattedWord }} />
+          </Box>
+          <Box  flex={5} justifyContent={"center"}>
+            <Text color="primary.500">{wordMeaning}</Text>
+          </Box>
+          <Box  flex={5} justifyContent={"center"} fontFamily="Klee One">
+            <Text color="red.600">{wordSentence}</Text>
+          </Box>
+        </HStack>
+        {index < kanjis.length - 1 &&  <Divider thickness={0.5} />}
+      </>
+    )
+  });
+
   const words = rubyWords.map((rubypart, index) => {
     const parts = parseRuby(rubypart.kanji);
     const fontSize = isLargeLetter ? '2.5rem' : '1.3rem';
@@ -111,7 +144,7 @@ const MiniStory: React.FC<MiniStoryProps> = ({
             </Text>
           </Box>
         </HStack>
-        {index < rubyWords.length - 1 &&  <Divider />}
+        {index < rubyWords.length - 1 &&  <Divider thickness={0.5} />}
       </>
     )
   });
@@ -167,7 +200,12 @@ const MiniStory: React.FC<MiniStoryProps> = ({
       <Box m={4} borderWidth={1} borderColor="pink.400" borderRadius="md" p={2}>
         {words}
       </Box>
-
+      {kanjis && (
+        <Box m={4} borderWidth={1} borderColor="yellow.400" borderRadius="md" p={2}>
+          {kanjiList}
+        </Box>
+      )}
+      
       <Box m={4} borderWidth={1} borderColor="cyan.400" borderRadius="md" p={2}>
         <Text color="white" textAlign={"justify"}>{translation}</Text>
       </Box>
