@@ -29,6 +29,34 @@ export const MINISTORY_KANJIS_N2: Record<string, MinistoryRubyKanji> = {
   "算": { kanji: "算", meaning: "Calculate・Count", rubyWord: "算{さん}数{すう}", wordMeaning: "Mathematics・arithmetic" },
   "貯": { kanji: "貯", meaning: "Save・Store", rubyWord: "貯{た}める", wordMeaning: "to save (money)", wordSentence: "お金を貯める。" },
   "与": { kanji: "与", meaning: "Give・Grant・Bestow", rubyWord: "与{あた}える", wordMeaning: "to give・to grant・to bestow" },
+  "装": { kanji: "装", meaning: "Wear・Equip・Dress・Pretend", rubyWord: "装{よそお}う", wordMeaning: "to dress up・to pretend" },
+  "返": { kanji: "返", meaning: "Return・Reply", rubyWord: "返{かえ}す", wordMeaning: "to return (something)・to reply" },
+  "数": { kanji: "数", meaning: "Number・Count", rubyWord: "数{かぞ}える", wordMeaning: "to count" },
+  "頂": { kanji: "頂", meaning: "Receive・Top・Summit", rubyWord: "頂{いただ}く", wordMeaning: "to receive (humble form)" },
+  "戴": { kanji: "戴", meaning: "Receive・Wear on the head", rubyWord: "戴{いただ}く", wordMeaning: "to receive (humble form)" },
+  "商": { kanji: "商", meaning: "Commerce・Trade・Sell", rubyWord: "商{しょう}店{てん}", wordMeaning: "shop・store" },
+  "販": { kanji: "販", meaning: "Sell・Market", rubyWord: "販{はん}売{ばい}", wordMeaning: "sale" },
+  "封": { kanji: "封", meaning: "Seal・Enclose", rubyWord: "封{ふう}筒{とう}", wordMeaning: "envelope", wordSentence: "封筒に手紙を入れる。" },
+  "済": { kanji: "済", meaning: "Finish・Settle・Relieve", rubyWord: "済{す}む", wordMeaning: "to finish・to be settled", wordSentence: "支払い済み" },
+  "各": { kanji: "各", meaning: "Each・Every", rubyWord: "各{かく}駅{えき}停{てい}車{しゃ}", wordMeaning: "local train (stops at every station)" },
+  "格": { kanji: "格", meaning: "Rank・Status・Standard", rubyWord: "性{せい}格{かく}", wordMeaning: "Personality・Character" },
+  "製": { kanji: "製", meaning: "Manufacture・Make・Made in", rubyWord: "日{に}本{ほん}製{せい}", wordMeaning: "Made in Japan" },
+  "扱": { kanji: "扱", meaning: "Handle・Deal with", rubyWord: "扱{あつか}う", wordMeaning: "to handle・to deal in", wordSentence: "この店は各種の電化製品を取り扱っています。" },
+  "条": { kanji: "条", meaning: "Article・Clause・Condition", rubyWord: "条{じょう}文{ぶん}", wordMeaning: "article・clause (in a law or contract)" },
+  "件": { kanji: "件", meaning: "Matter・Case・Item", rubyWord: "事{じ}件{けん}", wordMeaning: "incident・crime" },
+  "指": { kanji: "指", meaning: "Finger・To point", rubyWord: "指{さ}す", wordMeaning: "to point" },
+  "定": { kanji: "定", meaning: "Fix・Decide・Determine・Set", rubyWord: "決{けっ}定{てい}", wordMeaning: "decision" },
+  "銭": { kanji: "銭", meaning: "Money・Coin", rubyWord: "銭{せん}湯{とう}", wordMeaning: "Public bath" },
+  "硬": { kanji: "硬", meaning: "Hard・Stiff", rubyWord: "硬{かた}い", wordMeaning: "hard・stiff" },
+  "貨": { kanji: "貨", meaning: "Cargo・Freight・Currency", rubyWord: "貨{か}物{もつ}", wordMeaning: "cargo" },
+  "紙": { kanji: "紙", meaning: "Paper", rubyWord: "紙{かみ}袋{ぶくろ}", wordMeaning: "paper bag" },
+  "幣": { kanji: "幣", meaning: "Paper money", rubyWord: "紙{し}幣{へい}", wordMeaning: "banknote・paper money" },
+  "購": { kanji: "購", meaning: "Purchase", rubyWord: "購{こう}読{どく}", wordMeaning: "subscription (magazine, newspaper)" },
+  "価": { kanji: "価", meaning: "Value・Price", rubyWord: "原{げん}価{か}", wordMeaning: "Original price・Production cost" },
+  "為": { kanji: "為", meaning: "Do・Make", rubyWord: "行{こう}為{い}", wordMeaning: "action・to act" },
+  "替": { kanji: "替", meaning: "Exchange・Replace", rubyWord: "替{か}える", wordMeaning: "to exchange・to replace" },
+  "関": { kanji: "関", meaning: "Barrier・Connection・Relation", rubyWord: "関{かん}係{けい}", wordMeaning: "relation・connection" },
+  "税": { kanji: "税", meaning: "Tax", rubyWord: "消{しょう}費{ひ}税{ぜい}", wordMeaning: "consumption tax" },
 };
 
 const MiniStoryTopics = {
@@ -829,7 +857,6 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
     topic: MiniStoryTopics.SHOPPING,
     page: 42,
   },
-  //TODO: keep adding kanjis and flags from here
   "38": {
     id: "38",
     rubyStory: [
@@ -910,6 +937,12 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
         secondary: true,
       },
       {
+        kanji: "開{かい}封{ふう}",
+        english: "Opening (a package)",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+      {
         kanji: "開{かい}封{ふう}済{ず}み",
         english: "Opened",
         type: MiniStoryWordType.NOUN,
@@ -922,6 +955,7 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
         secondary: true,
       },
     ],
+    kanjis: ["装", "返", "数", "頂", "戴", "商", "販", "封", "済"],
     translation: `A: I bought a stove by mail order, but when I removed the packaging, I found it was designed to use city gas. Since I can't use that at home, I tried to return it, but on the box it said, "Unless a product is defective, a handling fee is required for the return of products that have been opened”\nB: Is that right? Well, I guess theyre a business too.`,
     audio: "T38.mp3",
     topic: MiniStoryTopics.SHOPPING,
@@ -932,46 +966,66 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
     rubyStory: [
       {
         character: "",
-        dialogue: "パソコン探しに困っていたら、<株{かぶ}式{しき}会{がい}社{しゃ}>値段ドットコムのホームページを見てみるといい。<各{かく}種{しゅ}>メーカー製{せい}品{ひん}を<取{と}り扱{あつか}って>いて、<価{か}格{かく}>やスペック、<売{う}れ行{ゆ}き>など、さまざまな条{じょう}件{けん}を指{し}定{てい}して探すことができる。",
+        dialogue: "パソコン探しに困っていたら、<株{かぶ}式{しき}会{がい}社{しゃ}>値{ね}段{だん}ドットコムのホームページを見てみるといい。<各{かく}種{しゅ}>メーカー製{せい}品{ひん}を<取{と}り扱{あつか}って>いて、<価{か}格{かく}>やスペック、<売{う}れ行{ゆ}き>など、さまざまな[条{じょう}件{けん}]を[指{し}定{てい}]して探すことができる。",
       },
     ],
     rubyWords: [
       {
         kanji: "株{かぶ}式{しき}会{がい}社{しゃ}",
         english: "Corporation (Inc.・Ltd.・Co.)",
-        type: MiniStoryWordType.NOUN
+        type: MiniStoryWordType.NOUN,
+        important: true,
       },
       {
         kanji: "株{かぶ}式{しき}",
         english: "Stock・Share",
-        type: MiniStoryWordType.NOUN
+        type: MiniStoryWordType.NOUN,
+        important: true,
       },
       {
         kanji: "各{かく}種{しゅ}",
         english: "Various kinds",
-        type: MiniStoryWordType.NOUN
+        type: MiniStoryWordType.NOUN,
+        important: true,
       },
       {
         kanji: "取{と}り扱{あつか}う",
         english: "To handle・To deal in",
-        type: MiniStoryWordType.GODAN_TRANSITIVE
+        type: MiniStoryWordType.GODAN_TRANSITIVE,
+        important: true,
       },
       {
         kanji: "取{と}り扱{あつか}い［する］",
         english: "Handling・To handle",
-        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE]
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+        important: true,
       },
       {
         kanji: "価{か}格{かく}",
         english: "Price",
-        type: MiniStoryWordType.NOUN
+        type: MiniStoryWordType.NOUN,
+        important: true,
       },
       {
         kanji: "売{う}れ行{ゆ}き",
         english: "Sales・How well something sells・Demand",
-        type: MiniStoryWordType.NOUN
+        type: MiniStoryWordType.NOUN,
+        important: true,
       },
+      {
+        kanji: "条{じょう}件{けん}",
+        english: "Condition・Criteria",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+      {
+        kanji: "指{し}定{てい}［する］",
+        english: "Specification・To specify",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+        secondary: true,
+      }
     ],
+    kanjis: ["各", "格", "種", "製", "扱", "条", "件", "指", "定"],
     translation: `If you're having trouble finding a computer, take a look at the Price.com Inc. website. They stock products from various manufacturers, and you can search by specifying various criteria such as price, specifications, and how well they sell.`,
     audio: "T39.mp3",
     topic: MiniStoryTopics.SHOPPING,
@@ -982,31 +1036,42 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
     rubyStory: [
       {
         character: "",
-        dialogue: "この商品はとても小さいので<小{こ}銭{ぜに}>入{い}れに見えるが、実は<硬{こう}貨{か}>だけでなく<紙{し}幣{へい}>も入{はい}る。<泡{あわ}>をつけて丁{てい}寧{ねい}に洗{あら}えば、とてもきれになるところもお気{き}に入{い}りだ。",
+        dialogue: "この商品はとても小さいので<小{こ}銭{ぜに}>入{い}れに見えるが、実は<硬{こう}貨{か}>だけでなく<紙{し}幣{へい}>も入{はい}る。<泡{あわ}>をつけて丁{てい}寧{ねい}に洗{あら}えば、とてもきれになるところも[お気{き}に入{い}り]だ。",
       },
     ],
     rubyWords: [
       {
         kanji: "小{こ}銭{ぜに}",
         english: "change (money)・coins",
-        type: MiniStoryWordType.NOUN
+        type: MiniStoryWordType.NOUN,
+        important: true,
       },
       {
         kanji: "硬{こう}貨{か}",
         english: "coin・hard currency",
-        type: MiniStoryWordType.NOUN
+        type: MiniStoryWordType.NOUN,
+        important: true,
       },
       {
         kanji: "紙{し}幣{へい}",
         english: "banknote・paper money",
-        type: MiniStoryWordType.NOUN
+        type: MiniStoryWordType.NOUN,
+        important: true,
       },
       {
         kanji: "泡{あわ}",
         english: "foam・bubble・lather",
-        type: MiniStoryWordType.NOUN
+        type: MiniStoryWordType.NOUN,
+        important: true,
       },
+      {
+        kanji: "気{き}に入{い}り",
+        english: "Favorite・To like",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE],
+        secondary: true,
+      }
     ],
+    kanjis: ["銭", "硬", "貨", "紙", "幣"],
     translation: `This product is so tiny it looks like a coin purse, but it actually holds banknotes as well as coins. It's also popular because it cleans up nicely when lathered up and washed carefully.`,
     audio: "T40.mp3",
     topic: MiniStoryTopics.SHOPPING,
@@ -1017,7 +1082,7 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
     rubyStory: [
       {
         character: "A",
-        dialogue: "国内ではまだ<販{はん}売{ばい}されて>いない、海外の商品が購{こう}入{にゅう}できるサイトって知らない？",
+        dialogue: "国内ではまだ<販{はん}売{ばい}されて>いない、海外の商品が[購{こう}入{にゅう}]できるサイトって知らない？",
       },
       {
         character: "B",
@@ -1033,34 +1098,47 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
       {
         kanji: "評{ひょう}価{か}［する］",
         english: "Evaluation・to evaluate",
-        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ],
+        important: true,
       },
       {
         kanji: "為{かわ}替{せ}レート",
         english: "Exchange rate",
-        type: MiniStoryWordType.NOUN
+        type: MiniStoryWordType.NOUN,
+        important: true,
       },
       {
         kanji: "為{かわ}替{せ}",
         english: "Currency exchange・Money exchange",
-        type: MiniStoryWordType.NOUN
+        type: MiniStoryWordType.NOUN,
+        important: true,
       },
       {
         kanji: "関{かん}税{ぜい}",
         english: "Customs duty・Tariff",
-        type: MiniStoryWordType.NOUN
+        type: MiniStoryWordType.NOUN,
+        important: true,
       },
       {
         kanji: "発{はっ}送{そう}［する］",
         english: "Shipping・To ship",
-        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ]
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ],
+        important: true,
       },
+      {
+        kanji: "購{こう}入{にゅう}［する］",
+        english: "Purchase・To purchase",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ],
+        secondary: true,
+      }
     ],
+    kanjis: ["販", "購", "評", "価", "為", "替", "関", "税"],
     translation: `A: Do you know any websites where you can buy overseas products not yet on sale in Japan?\nB: Well, I think Kaigai Mall is the most highly rated. But prices tend to change depending on the exchange rate, and there are Customs charges too. Also, shipping might be slow.`,
     audio: "T41.mp3",
     topic: MiniStoryTopics.SHOPPING,
     page: 45,
   },
+  //TODO: keep adding kanjis and flags from here
   "42": {
     id: "42",
     rubyStory: [
