@@ -1,64 +1,3 @@
-export const MINISTORY_KANJIS_N2: Record<string, MinistoryRubyKanji> = {
-  "創": { kanji: "創", meaning: "create・Start・originate", rubyWord: "創{つく}る", wordMeaning: "to create" },
-  "勝": { kanji: "勝", meaning: "victory", rubyWord: "勝{か}つ", wordMeaning: "to win" },
-  "負": { kanji: "負", meaning: "defeat", rubyWord: "負{ま}ける", wordMeaning: "to lose" },
-  "種": { kanji: "種", meaning: "Seed・Kind・type・species", rubyWord: "種{しゅ}類{るい}", wordMeaning: "Kind・type" },
-  "放": { kanji: "放", meaning: "To let go", rubyWord: "放{はな}す", wordMeaning: "to let go・to release", wordSentence: "手を放す"},
-  "題": { kanji: "題", meaning: "Topic・Subject・Problem・Question", rubyWord: "問{もん}題{だい}", wordMeaning: "question・problem" },
-  "等": { kanji: "等", meaning: "Class・Rank・And so on・Etc.", rubyWord: "等{など}", wordMeaning: "and so on・etc.", wordSentence: "パン、ケーキ等を買いました。"},
-  "歓": { kanji: "歓", meaning: "Delight・Joy", rubyWord: "歓{かん}迎{げい}", wordMeaning: "welcome", wordSentence: "日本へ歓迎します。" },
-  "迎": { kanji: "迎", meaning: "To welcome・To receive (someone)", rubyWord: "迎{むか}える", wordMeaning: "to welcome・to go pick someone up", wordSentence: "駅まで友だちを迎えに行く。" },
-  "評": { kanji: "評", meaning: "Evaluate・Criticism・Comment", rubyWord: "評{ひょう}価{か}", wordMeaning: "Evaluation" },
-  "判": { kanji: "判", meaning: "Judgement・Signature・Decision", rubyWord: "判{はん}断{だん}", wordMeaning: "Judgement・Decision" },
-  "栄": { kanji: "栄", meaning: "Glory・Prosperity・Honor", rubyWord: "栄{さか}える", wordMeaning: "To prosper・To be honored", wordSentence: "この町は昔とても栄えた。" },
-  "養": { kanji: "養", meaning: "Take care of・Support・Nourish・Raise", rubyWord: "養{やしな}う", wordMeaning: "to support・to raise・to provide for", wordSentence: "家族を養う。" },
-  "臭": { kanji: "臭", meaning: "Smell・Stink", rubyWord: "臭{くさ}い", wordMeaning: "smelly・stinky" },
-  "賞": { kanji: "賞", meaning: "Prize・Award", rubyWord: "賞{しょう}金{きん}", wordMeaning: "prize money" },
-  "農": { kanji: "農", meaning: "Agriculture・Farming", rubyWord: "農{のう}業{ぎょう}", wordMeaning: "agriculture" },
-  "粗": { kanji: "粗", meaning: "Coarse・Rough・Crude", rubyWord: "粗{あら}い", wordMeaning: "rough・coarse" },
-  "末": { kanji: "末", meaning: "End・Future", rubyWord: "末{すえ}", wordMeaning: "the end・the future" },
-  "訳": { kanji: "訳", meaning: "Translation・Reason・Circumstance", rubyWord: "訳{わけ}", wordMeaning: "reason・circumstance", wordSentence: "どういう訳？" },
-  "支": { kanji: "支", meaning: "Branch・Support・Sustain", rubyWord: "支{ささ}える", wordMeaning: "to support・to sustain" },
-  "感": { kanji: "感", meaning: "Feeling・Sensation・Emotion", rubyWord: "感{かん}じる", wordMeaning: "to feel" },
-  "染": { kanji: "染", meaning: "Dye・stain・Infect・Catch (a cold)", rubyWord: "染{そ}める", wordMeaning: "to dye" },
-  "症": { kanji: "症", meaning: "Symptom・Illness", rubyWord: "症{しょう}状{じょう}", wordMeaning: "symptom" },
-  "流": { kanji: "流", meaning: "Stream・Flow・Current", rubyWord: "流{なが}れる", wordMeaning: "to flow" },
-  "制": { kanji: "制", meaning: "Control・Restrain・System", rubyWord: "制{せい}度{ど}", wordMeaning: "system・institution" },
-  "限": { kanji: "限", meaning: "Limit・Restrict", rubyWord: "限{かぎ}る", wordMeaning: "to limit・to restrict" },
-  "精": { kanji: "精", meaning: "Spirit・Energy・Refined", rubyWord: "精{せい}神{しん}", wordMeaning: "spirit・energy・mind", wordSentence: "精神が強い。" },
-  "算": { kanji: "算", meaning: "Calculate・Count", rubyWord: "算{さん}数{すう}", wordMeaning: "Mathematics・arithmetic" },
-  "貯": { kanji: "貯", meaning: "Save・Store", rubyWord: "貯{た}める", wordMeaning: "to save (money)", wordSentence: "お金を貯める。" },
-  "与": { kanji: "与", meaning: "Give・Grant・Bestow", rubyWord: "与{あた}える", wordMeaning: "to give・to grant・to bestow" },
-  "装": { kanji: "装", meaning: "Wear・Equip・Dress・Pretend", rubyWord: "装{よそお}う", wordMeaning: "to dress up・to pretend" },
-  "返": { kanji: "返", meaning: "Return・Reply", rubyWord: "返{かえ}す", wordMeaning: "to return (something)・to reply" },
-  "数": { kanji: "数", meaning: "Number・Count", rubyWord: "数{かぞ}える", wordMeaning: "to count" },
-  "頂": { kanji: "頂", meaning: "Receive・Top・Summit", rubyWord: "頂{いただ}く", wordMeaning: "to receive (humble form)" },
-  "戴": { kanji: "戴", meaning: "Receive・Wear on the head", rubyWord: "戴{いただ}く", wordMeaning: "to receive (humble form)" },
-  "商": { kanji: "商", meaning: "Commerce・Trade・Sell", rubyWord: "商{しょう}店{てん}", wordMeaning: "shop・store" },
-  "販": { kanji: "販", meaning: "Sell・Market", rubyWord: "販{はん}売{ばい}", wordMeaning: "sale" },
-  "封": { kanji: "封", meaning: "Seal・Enclose", rubyWord: "封{ふう}筒{とう}", wordMeaning: "envelope", wordSentence: "封筒に手紙を入れる。" },
-  "済": { kanji: "済", meaning: "Finish・Settle・Relieve", rubyWord: "済{す}む", wordMeaning: "to finish・to be settled", wordSentence: "支払い済み" },
-  "各": { kanji: "各", meaning: "Each・Every", rubyWord: "各{かく}駅{えき}停{てい}車{しゃ}", wordMeaning: "local train (stops at every station)" },
-  "格": { kanji: "格", meaning: "Rank・Status・Standard", rubyWord: "性{せい}格{かく}", wordMeaning: "Personality・Character" },
-  "製": { kanji: "製", meaning: "Manufacture・Make・Made in", rubyWord: "日{に}本{ほん}製{せい}", wordMeaning: "Made in Japan" },
-  "扱": { kanji: "扱", meaning: "Handle・Deal with", rubyWord: "扱{あつか}う", wordMeaning: "to handle・to deal in", wordSentence: "この店は各種の電化製品を取り扱っています。" },
-  "条": { kanji: "条", meaning: "Article・Clause・Condition", rubyWord: "条{じょう}文{ぶん}", wordMeaning: "article・clause (in a law or contract)" },
-  "件": { kanji: "件", meaning: "Matter・Case・Item", rubyWord: "事{じ}件{けん}", wordMeaning: "incident・crime" },
-  "指": { kanji: "指", meaning: "Finger・To point", rubyWord: "指{さ}す", wordMeaning: "to point" },
-  "定": { kanji: "定", meaning: "Fix・Decide・Determine・Set", rubyWord: "決{けっ}定{てい}", wordMeaning: "decision" },
-  "銭": { kanji: "銭", meaning: "Money・Coin", rubyWord: "銭{せん}湯{とう}", wordMeaning: "Public bath" },
-  "硬": { kanji: "硬", meaning: "Hard・Stiff", rubyWord: "硬{かた}い", wordMeaning: "hard・stiff" },
-  "貨": { kanji: "貨", meaning: "Cargo・Freight・Currency", rubyWord: "貨{か}物{もつ}", wordMeaning: "cargo" },
-  "紙": { kanji: "紙", meaning: "Paper", rubyWord: "紙{かみ}袋{ぶくろ}", wordMeaning: "paper bag" },
-  "幣": { kanji: "幣", meaning: "Paper money", rubyWord: "紙{し}幣{へい}", wordMeaning: "banknote・paper money" },
-  "購": { kanji: "購", meaning: "Purchase", rubyWord: "購{こう}読{どく}", wordMeaning: "subscription (magazine, newspaper)" },
-  "価": { kanji: "価", meaning: "Value・Price", rubyWord: "原{げん}価{か}", wordMeaning: "Original price・Production cost" },
-  "為": { kanji: "為", meaning: "Do・Make", rubyWord: "行{こう}為{い}", wordMeaning: "action・to act" },
-  "替": { kanji: "替", meaning: "Exchange・Replace", rubyWord: "替{か}える", wordMeaning: "to exchange・to replace" },
-  "関": { kanji: "関", meaning: "Barrier・Connection・Relation", rubyWord: "関{かん}係{けい}", wordMeaning: "relation・connection" },
-  "税": { kanji: "税", meaning: "Tax", rubyWord: "消{しょう}費{ひ}税{ぜい}", wordMeaning: "consumption tax" },
-};
-
 const MiniStoryTopics = {
   FOOD: '食事',
   HOUSE_WORK: '家事',
@@ -1138,13 +1077,12 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
     topic: MiniStoryTopics.SHOPPING,
     page: 45,
   },
-  //TODO: keep adding kanjis and flags from here
   "42": {
     id: "42",
     rubyStory: [
       {
         character: "A",
-        dialogue: "昨日<足{あし}首{くび}>のサポーターとスマホの充{じゅう}電{でん}<器{き}>注文したんだけど、口{こう}座{ざ}<引{ひ}き落{お}とし>で支払おうとしたら、<残{ざん}高{だか}>が足りなくて買えなくて…・。Bさん、もしクレジットカード持ってたら<立{た}て替{か}えて>くれない？",
+        dialogue: "昨日<足{あし}首{くび}>のサポーターとスマホの[充{じゅう}電{でん}]<器{き}>注文したんだけど、[口{こう}座{ざ}]<引{ひ}き落{お}とし>で支払おうとしたら、<残{ざん}高{だか}>が足りなくて買えなくて…・。Bさん、もしクレジットカード持ってたら<立{た}て替{か}えて>くれない？",
       },
       {
         character: "B",
@@ -1155,34 +1093,53 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
       {
         kanji: "足{あし}首{くび}",
         english: "ankle",
-        type: MiniStoryWordType.NOUN
+        type: MiniStoryWordType.NOUN,
+        important: true,
       },
       {
         kanji: "～器{き}",
         english: "~ device・~ instrument",
-        type: MiniStoryWordType.SUFFIX
+        type: MiniStoryWordType.SUFFIX,
+        important: true,
       },
       {
         kanji: "引{ひ}き落{お}とし",
         english: "withdrawal (from account)・direct debit",
-        type: MiniStoryWordType.NOUN
+        type: MiniStoryWordType.NOUN,
+        important: true,
       },
       {
         kanji: "引{ひ}き落{お}とす",
         english: "to withdraw (from account)・to pay by direct debit",
-        type: MiniStoryWordType.GODAN_TRANSITIVE
+        type: MiniStoryWordType.GODAN_TRANSITIVE,
+        important: true,
       },
       {
         kanji: "残{ざん}高{だか}",
         english: "balance (account balance)",
-        type: MiniStoryWordType.NOUN
+        type: MiniStoryWordType.NOUN,
+        important: true,
       },
       {
         kanji: "立て替える",
         english: "to pay on behalf of someone・to advance money",
-        type: MiniStoryWordType.ICHIDAN_TRANSITIVE
+        type: MiniStoryWordType.ICHIDAN_TRANSITIVE,
+        important: true,
       },
+      {
+        kanji: "充{じゅう}電{でん}",
+        english: "Charging (of a device)",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+      {
+        kanji: "口{こう}座{ざ}",
+        english: "bank account",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      }
     ],
+    kanjis: ["落", "残", "替", "充", "座"],
     translation: `A: I ordered an ankle brace and a phone charging device yesterday, but when I tried to pay by direct debit, I couldn't because my account balance was too low... Hey B, if you have a credit card, could you pay it on my behalf?\nB: Hmmm, I'm not sure about that...`,
     audio: "T42.mp3",
     topic: MiniStoryTopics.SHOPPING,
@@ -1193,7 +1150,7 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
     rubyStory: [
       {
         character: "A",
-        dialogue: "もうすぐホワイトデーだから、彼女に<花{はな}束{たば}>とチョコを贈{おく}ろうと思ってて・・・これなんてどうかな？",
+        dialogue: "もうすぐホワイトデーだから、彼女に<花{はな}束{たば}>とチョコを[贈{おく}ろう]と思ってて・・・これなんてどうかな？",
       },
       {
         character: "B",
@@ -1204,22 +1161,26 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
       {
         kanji: "花{はな}束{たば}",
         english: "Bouquet",
-        type: MiniStoryWordType.NOUN
+        type: MiniStoryWordType.NOUN,
+        important: true,
       },
       {
         kanji: "束{たば}",
         english: "bundle・bunch",
-        type: MiniStoryWordType.NOUN
+        type: MiniStoryWordType.NOUN,
+        important: true,
       },
       {
         kanji: "かご",
         english: "basket",
-        type: MiniStoryWordType.NOUN
+        type: MiniStoryWordType.NOUN,
+        important: true,
       },
       {
         kanji: "いくらか",
         english: "some amount・A few・A little",
-        type: MiniStoryWordType.ADVERB
+        type: MiniStoryWordType.ADVERB,
+        important: true,
       },
       {
         kanji: "ボーナス",
@@ -1231,7 +1192,14 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
         english: "points (reward points)",
         type: MiniStoryWordType.NOUN
       },
+      {
+        kanji: "贈{おく}る",
+        english: "To give (a gift)・To present",
+        type: MiniStoryWordType.GODAN_TRANSITIVE,
+        secondary: true,
+      }
     ],
+    kanjis: ["束", "贈"],
     translation: `A: It's almost White Day. I was thinking of getting my girlfriend a bouquet of flowers and some chocolates... How about this?\nB: Wow, that's cute! It's a basket with flowers and chocolates. Oh, there's a campaign on at the moment, so it looks like you can earn a few bonus points too.`,
     audio: "T43.mp3",
     topic: MiniStoryTopics.SHOPPING,
@@ -1242,25 +1210,46 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
     rubyStory: [
       {
         character: "A",
-        dialogue: "見てこれ。絶{ぜっ}版{ぱん}になった本がオークションに出てるんだけど、予{よ}算{さん}を<超{こ}えて>るんだよね。",
+        dialogue: "見てこれ。[絶{ぜっ}版{ぱん}]になった本がオークションに出てるんだけど、[予{よ}算{さん}]を<超{こ}えて>るんだよね。",
       },
       {
         character: "B",
-        dialogue: "珍{めずら}しいものは<大{たい}概{がい}>そうなるよね。",
+        dialogue: "[珍{めずら}しい]ものは<大{たい}概{がい}>そうなるよね。",
       },
     ],
     rubyWords: [
       {
         kanji: "超{こ}える",
         english: "to exceed",
-        type: MiniStoryWordType.ICHIDAN_TRANSITIVE
+        type: MiniStoryWordType.ICHIDAN_TRANSITIVE,
+        important: true,
       },
       {
         kanji: "大概{たいがい}",
         english: "generally・Usually",
-        type: [MiniStoryWordType.NOUN, MiniStoryWordType.ADVERB]
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.ADVERB],
+        important: true,
       },
+      {
+        kanji: "珍{めずら}しい",
+        english: "rare・unusual",
+        type: MiniStoryWordType.ADJECTIVE_I,
+        secondary: true,
+      },
+      {
+        kanji: "絶{ぜっ}版{ぱん}",
+        english: "Out of print・No longer in print",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+      {
+        kanji: "予{よ}算{さん}",
+        english: "Budget",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      }
     ],
+    kanjis: ["概", "絶", "版", "予", "算"],
     translation: `A: Look at this. There's an out-of-print book on auction, but it's over my budget.\nB: That's usually the case with rare items.`,
     audio: "T44.mp3",
     topic: MiniStoryTopics.SHOPPING,
@@ -1271,35 +1260,52 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
     rubyStory: [
       {
         character: "A",
-        dialogue: "あー、どうしよう。オークションの終{しゅう}了{りょう}時間が追{せま}ってる。",
+        dialogue: "あー、どうしよう。オークションの[終{しゅう}了{りょう}]時間が<追{せま}ってる>。",
       },
       {
         character: "B",
-        dialogue: "予{よ}算{さん}オーバーって言っても<せいぜい>500円でしょ。新{しん}品{ぴん}とそんなに<差{さ}>はないんだから、<損{そん}得{とく}>考えずに買っちゃいなよ。",
+        dialogue: "予{よ}算{さん}[オーバー]って言っても<せいぜい>500円でしょ。新{しん}品{ぴん}とそんなに<差{さ}>はないんだから、<損{そん}得{とく}>考えずに買っちゃいなよ。",
       },
     ],
     rubyWords: [
       {
         kanji: "迫{せま}る",
         english: "to approach・to draw near",
-        type: MiniStoryWordType.GODAN_INTRANSITIVE
+        type: MiniStoryWordType.GODAN_INTRANSITIVE,
+        important: true,
       },
       {
         kanji: "せいぜい",
         english: "at most・at best",
-        type: MiniStoryWordType.ADVERB
+        type: MiniStoryWordType.ADVERB,
+        important: true,
       },
       {
         kanji: "差{さ}",
         english: "difference・Discrepancy",
-        type: MiniStoryWordType.NOUN
+        type: MiniStoryWordType.NOUN,
+        important: true,
       },
       {
         kanji: "損{そん}得{とく}",
         english: "profit and loss・gain and loss",
-        type: MiniStoryWordType.NOUN
+        type: MiniStoryWordType.NOUN,
+        important: true,
+      },
+      {
+        kanji: "終{しゅう}了{りょう}",
+        english: "end・completion",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+      {
+        kanji: "オーバー",
+        english: "over (budget)",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
       },
     ],
+    kanjis: ["追", "損", "得", "終", "了"],
     translation: `A: Oh, what should I do? The end of the auction is approaching.\nB: Even if it's over your budget, it won't be more than 500 yen at most. That's not too different from a new one, so jus buy it and don't worry about your monetary gain or loss.`,
     audio: "T45.mp3",
     topic: MiniStoryTopics.SHOPPING,
@@ -1313,16 +1319,16 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
         dialogue: "あ、パソコン買ったの？",
       },
       {
-        character: "",
-        dialogue: "欲しかったモデルがたまたま売ってて、<つい>買っちゃった。",
+        character: "B",
+        dialogue: "欲しかったモデルが[たまたま]売ってて、<つい>買っちゃった。",
       },
       {
         character: "A",
         dialogue: "最新モデルだよね。高くなかった？",
       },
       {
-        character: "",
-        dialogue: "展{てん}示{じ}品{ひん}だったから、<値{ね}引{び}き>もされて、<手{て}頃{ごろ}な>価{か}格{かく}だったよ。<不{ふ}要{よう}な>パソコンは買い取ってもらって、<おまけ>で画{が}面{めん}に貼{は}るフィルムももらっちゃった。<品{ひん}質{しつ}>もいいし、大{だい}満{まん}足{ぞく}！",
+        character: "B",
+        dialogue: "[展{てん}示{じ}品{ひん}]だったから、<値{ね}引{び}き>もされて、<手{て}頃{ごろ}な>価{か}格{かく}だったよ。<不{ふ}要{よう}な>パソコンは[買い取って]もらって、<おまけ>で画{が}面{めん}に貼{は}るフィルムももらっちゃった。<品{ひん}質{しつ}>もいいし、大{だい}満{まん}足{ぞく}！",
       },
     ],
     rubyWords: [
@@ -1334,29 +1340,53 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
       {
         kanji: "値{ね}引{び}き［する］",
         english: "discount・to discount",
-        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE]
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+        important: true,
       },
       {
         kanji: "手{て}頃{ごろ}な",
         english: "affordable・reasonable price",
-        type: MiniStoryWordType.ADJECTIVE_NA
+        type: MiniStoryWordType.ADJECTIVE_NA,
+        important: true,
       },
       {
         kanji: "不{ふ}要{よう}な",
         english: "unnecessary",
-        type: MiniStoryWordType.ADJECTIVE_NA
+        type: MiniStoryWordType.ADJECTIVE_NA,
+        important: true,
       },
       {
         kanji: "おまけ［する］",
         english: "Gift ・incentive・to give a gift/incentive",
-        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE]
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+        important: true,
       },
       {
         kanji: "品{ひん}質{しつ}",
         english: "quality",
-        type: MiniStoryWordType.NOUN
+        type: MiniStoryWordType.NOUN,
+        important: true,
       },
+      {
+        kanji: "たまたま",
+        english: "by chance・accidentally",
+        type: MiniStoryWordType.ADVERB,
+        secondary: true,
+      },
+      {
+        kanji: "展{てん}示{じ}品{ひん}",
+        english: "display model・mostruário",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+      {
+        kanji: "買{か}い取{と}る",
+        english: "to buy (something from someone)・to purchase",
+        type: MiniStoryWordType.GODAN_TRANSITIVE,
+        secondary: true,
+      }
     ],
+    kanjis: ["質", "展", "示"],
     translation: `A: Oh, did you buy a computer?\nB: The model I wanted was on sale, so I just bought it on impulse.\nA: It's the latest model, right? Wasn't it expensive?\nB: It was a display model, so I got a discount and it was a reasonable price. I exchanged it for a computer I didn't need, and got some protective film for the screen as a free gift. The quality is good, and I'm very satisfied!`,
     audio: "T46.mp3",
     topic: MiniStoryTopics.SHOPPING,
@@ -1367,19 +1397,19 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
     rubyStory: [
       {
         character: "A",
-        dialogue: "この選手、確{たし}か<モデル>の女性と結婚したんだよね。",
+        dialogue: "この選手、[確{たし}か]<モデル>の女性と結婚したんだよね。",
       },
       {
         character: "B",
-        dialogue: "ああ、「笑わない男」って呼ばれてる人？",
+        dialogue: "ああ、「笑わない男」って[呼ばれて]る人？",
       },
       {
         character: "A",
-        dialogue: "そう。でも本当はすごく優{やさ}しくて、私{し}服{ふく}もすごくおしゃれで<センス>いいんだって。",
+        dialogue: "そう。でも本当はすごく優{やさ}しくて、[私{し}服{ふく}]もすごくおしゃれで<センス>いいんだって。",
       },
       {
         character: "B",
-        dialogue: "なるほど。<ギャップ>がある人はモテるって言うもんね。",
+        dialogue: "なるほど。<ギャップ>がある人は[モテる]って言うもんね。",
       },
     ],
     rubyWords: [
@@ -1398,7 +1428,32 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
         english: "gap・difference・contradiction",
         type: MiniStoryWordType.NOUN
       },
+      {
+        kanji: "確{たし}か",
+        english: "certainly・if I'm not mistaken・if I remember correctly",
+        type: MiniStoryWordType.ADJECTIVE_NA,
+        secondary: true,
+      },
+      {
+        kanji: "呼{よ}ぶ",
+        english: "to call・to refer to as",
+        type: MiniStoryWordType.GODAN_TRANSITIVE,
+        secondary: true,
+      },
+      {
+        kanji: "私{し}服{ふく}",
+        english: "private clothes・casual clothes",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+      {
+        kanji: "モテる",
+        english: "to be popular (with the opposite sex)",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE,
+        secondary: true,
+      },
     ],
+    kanjis: ["確", "私"],
     translation: `A: This athlete married his model girlfriend, didn't he?\nB: Oh, the one they call "the man who never smiles"?\nA: Yes. But actually, he seems very kind and in his private life, he has a stylish fashion sense.\nB: I see. They say people who have contradictions are more attractive.`,
     audio: "T47.mp3",
     topic: MiniStoryTopics.FASHION,
@@ -1409,11 +1464,11 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
     rubyStory: [
       {
         character: "A",
-        dialogue: "明日初{はつ}デートなんだけど、この服どうかな？",
+        dialogue: "明日[初{はつ}]デートなんだけど、この服どうかな？",
       },
       {
         character: "B",
-        dialogue: "<全{ぜん}身{しん}>、<アウトドア><ブランド>で揃{そろ}えたのね。",
+        dialogue: "<全{ぜん}身{しん}>、<アウトドア><ブランド>で[揃{そろ}えた]のね。",
       },
       {
         character: "A",
@@ -1421,7 +1476,7 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
       },
       {
         character: "B",
-        dialogue: "うーん。流{りゅう}行{こう}を<取{と}り入{い}れよう>としてるのはいいと思うんだけど、<だぶだぶな>ズボンはカジュアルすぎない？スニーカーもその色はちょっと・・・。",
+        dialogue: "うーん。[流{りゅう}行{こう}]を<取{と}り入{い}れよう>としてるのはいいと思うんだけど、<だぶだぶな>ズボンはカジュアルすぎない？スニーカーもその色はちょっと・・・。",
       },
       {
         character: "A",
@@ -1432,7 +1487,8 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
       {
         kanji: "全{ぜん}身{しん}",
         english: "whole body",
-        type: MiniStoryWordType.NOUN
+        type: MiniStoryWordType.NOUN,
+        important: true,
       },
       {
         kanji: "アウトドア",
@@ -1447,24 +1503,47 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
       {
         kanji: "ダサい",
         english: "uncool・unstylish・tacky",
-        type: MiniStoryWordType.ADJECTIVE_I
+        type: MiniStoryWordType.ADJECTIVE_I,
+        important: true,
       },
       {
         kanji: "取{と}り入{い}れる",
         english: "to incorporate・to adopt",
-        type: MiniStoryWordType.ICHIDAN_TRANSITIVE
+        type: MiniStoryWordType.ICHIDAN_TRANSITIVE,
+        important: true,
       },
       {
         kanji: "だぶだぶな",
         english: "baggy・loose-fitting",
-        type: MiniStoryWordType.ADJECTIVE_NA
+        type: MiniStoryWordType.ADJECTIVE_NA,
+        important: true,
       },
       {
         kanji: "～足(そく)",
         english: "~pairs (of shoes/socks)",
-        type: MiniStoryWordType.NOUN
+        type: MiniStoryWordType.NOUN,
+        important: true,
+      },
+      {
+        kanji: "初{はつ}",
+        english: "first (date)",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+      {
+        kanji: "揃{そろ}える",
+        english: "to complete a set ・to make a set of",
+        type: MiniStoryWordType.GODAN_TRANSITIVE,
+        secondary: true,
+      },
+      {
+        kanji: "流{りゅう}行{こう}",
+        english: "trend・fashion",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
       },
     ],
+    kanjis: ["全", "身", "揃", "流"],
     translation: `A: I'm going on a first date tomorrow. What do you think about these clothes?\nB: The whole outfit is from outdoor brands, isn't it?\nA: Yes. Does it look unstylish?\nB: Hmmm. It's good that you're trying to incorporate the latest trends, but aren't the baggy pants a bit casual? I don't like the color of the sneakers either...\nA: Okay. I have two pairs of these shoes in different colors. Maybe the black ones would look better?`,
     audio: "T48.mp3",
     topic: MiniStoryTopics.FASHION,
@@ -1475,7 +1554,7 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
     rubyStory: [
       {
         character: "A",
-        dialogue: "この<ポーズ>は、背{せ}伸{の}びする猫を<表{あらわ}して>います。",
+        dialogue: "この<ポーズ>は、[背{せ}伸{の}び]する猫を<表{あらわ}して>います。",
       },
       {
         character: "B",
@@ -1483,7 +1562,7 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
       },
       {
         character: "A",
-        dialogue: "そうですね。でも、<ただ>ポーズをまねするんじゃなくて、呼{こ}吸{きゅう}を意{い}識{しき}するのが大切ですよ。",
+        dialogue: "そうですね。でも、<ただ>ポーズを[まねする]んじゃなくて、[呼{こ}吸{きゅう}]を[意{い}識{しき}]するのが大切ですよ。",
       },
     ],
     rubyWords: [
@@ -1495,14 +1574,41 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
       {
         kanji: "表{あらわ}す",
         english: "to express・to represent",
-        type: MiniStoryWordType.GODAN_TRANSITIVE
+        type: MiniStoryWordType.GODAN_TRANSITIVE,
+        important: true,
       },
       {
         kanji: "ただ",
         english: "just・only・merely",
-        type: MiniStoryWordType.ADVERB
+        type: MiniStoryWordType.ADVERB,
+        important: true,
       },
+      {
+        kanji: "まねする",
+        english: "to imitate・to mimic",
+        type: MiniStoryWordType.IRREGULAR_TRANSITIVE,
+        secondary: true,
+      },
+      {
+        kanji: "呼{こ}吸{きゅう}",
+        english: "breathing",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+      {
+        kanji: "意{い}識{しき}",
+        english: "consciousness・awareness",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+      {
+        kanji: "背{せ}伸{の}び",
+        english: "stretching (one's back)",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      }
     ],
+    kanjis: ["表", "背", "伸", "呼", "吸", "識"],
     translation: `A: This pose represents a cat stretching.\nB: Oh, this one is easy.\nA: Yes, it is. But it's important to stay aware of your breathing, not just imitate the pose.`,
     audio: "T49.mp3",
     topic: MiniStoryTopics.FASHION,
@@ -1513,7 +1619,7 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
     rubyStory: [
       {
         character: "A",
-        dialogue: "ねえ、この写真見て。今若い人の間でこんなのはやってるんだって。買ってみようかな。",
+        dialogue: "ねえ、この写真見て。今若い人の間でこんなの[はやって]るんだって。買ってみようかな。",
       },
       {
         character: "B",
@@ -1521,11 +1627,11 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
       },
       {
         character: "A",
-        dialogue: "ほら、最近のお母さんってみんな<若{わか}々{わか}しい>じゃない？",
+        dialogue: "[ほら]、最近のお母さんってみんな<若{わか}々{わか}しい>じゃない？",
       },
       {
         character: "B",
-        dialogue: "うーん、無理にそんな<格{かっ}好{こう}>すると、<逆{ぎゃく}に>目{め}立{だ}つと思うよ。",
+        dialogue: "うーん、無理にそんな<格{かっ}好{こう}>すると、<逆{ぎゃく}に>[目{め}立{だ}つ]と思うよ。",
       },
     ],
     rubyWords: [
@@ -1537,24 +1643,47 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
       {
         kanji: "若{わか}々{わか}しい",
         english: "youthful・young looking・vigorous",
-        type: MiniStoryWordType.ADJECTIVE_I
+        type: MiniStoryWordType.ADJECTIVE_I,
+        important: true,
       },
       {
         kanji: "格{かっ}好{こう}",
         english: "Appearance・looks・style",
-        type: MiniStoryWordType.NOUN
+        type: MiniStoryWordType.NOUN,
+        important: true,
       },
       {
         kanji: "逆{ぎゃく}に",
         english: "on the contrary・conversely",
-        type: MiniStoryWordType.ADVERB
+        type: MiniStoryWordType.ADVERB,
+        important: true,
       },
       {
         kanji: "逆{ぎゃく}",
         english: "reverse・opposite",
-        type: MiniStoryWordType.NOUN
+        type: MiniStoryWordType.NOUN,
+        important: true,
+      },
+      {
+        kanji: "はやる",
+        english: "to be popular・to be in fashion",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE,
+        secondary: true,
+      },
+      {
+        kanji: "ほら",
+        english: "Look・See",
+        type: MiniStoryWordType.OTHER,
+        secondary: true,
+      },
+      {
+        kanji: "目{め}立{だ}つ",
+        english: "to stand out・to be conspicuous",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE,
+        secondary: true,
       },
     ],
+    kanjis: ["格", "逆"],
     translation: `A: Hey, look at this photo. I heard this kind of thing is popular among young people these days. Maybe I should buy one.\nB: No way... How old are you?\nA: Hey, all the mothers these days look young, don't they?\nB: Well, if you dress to look like that, I think on the contrary, you'll actually stand out.`,
     audio: "T50.mp3",
     topic: MiniStoryTopics.FASHION,
@@ -1565,39 +1694,68 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
     rubyStory: [
       {
         character: "A",
-        dialogue: "見て。<たんす>を整{せい}理{り}したら、いらない服がこんなに出てきた。",
+        dialogue: "見て。<たんす>を[整{せい}理{り}]したら、いらない服がこんなに出てきた。",
       },
       {
         character: "B",
-        dialogue: "駅前のデパートの<婦{ふ}人{じん}>服売り場に、<衣{い}料{りょう}>品{ひん}を回{かい}収{しゅう}する箱{はこ}があったから持っていったら？アフリカに送るんだって。",
+        dialogue: "駅前のデパートの<婦{ふ}人{じん}>服売り場に、<衣{い}料{りょう}>品{ひん}を[回{かい}収{しゅう}]する[箱{はこ}]があったから持っていったら？アフリカに送るんだって。",
       },
       {
         character: "A",
-        dialogue: "うーん。でも最近アフリカでは、海外から届く服が余{あま}ってごみになることもあるみたいで、<かえって>問題になってるみたいだよ。",
+        dialogue: "うーん。でも最近アフリカでは、海外から届く服が[余{あま}って]ごみになることもあるみたいで、<かえって>問題になってるみたいだよ。",
       },
     ],
     rubyWords: [
       {
         kanji: "たんす",
         english: "dresser・chest of drawers",
-        type: MiniStoryWordType.NOUN
+        type: MiniStoryWordType.NOUN,
+        important: true,
       },
       {
         kanji: "婦{ふ}人{じん}",
         english: "woman・lady",
-        type: MiniStoryWordType.NOUN
+        type: MiniStoryWordType.NOUN,
+        important: true,
       },
       {
         kanji: "衣{い}料{りょう}",
         english: "clothing・apparel",
-        type: MiniStoryWordType.NOUN
+        type: MiniStoryWordType.NOUN,
+        important: true,
       },
       {
         kanji: "かえって",
         english: "on the contrary・instead・conversely",
-        type: MiniStoryWordType.ADVERB
+        type: MiniStoryWordType.ADVERB,
+        important: true,
       },
+      {
+        kanji: "整{せい}理{り} [する]",
+        english: "to organize・to tidy up",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ],
+        secondary: true,
+      },
+      {
+        kanji: "回{かい}収{しゅう} [する]",
+        english: "collection・to collect",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ],
+        secondary: true,
+      },
+      {
+        kanji: "箱{はこ}",
+        english: "box",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+      {
+        kanji: "余{あま}る",
+        english: "to be left over・to be in excess",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE,
+        secondary: true,
+      }
     ],
+    kanjis: ["衣", "料", "整", "理", "回", "収", "余"],
     translation: `A: Hey, look. I went through my closet and found so many clothes I don't need.\nB: There's a clothing collection box in the women's clothing section at the department store by the station. Why don't you take them there? They're going to send them to Africa.\nA: Hmmm. But recently, surplus clothing sent to Africa from overseas has been ending up as trash, and on the contrary, it actually seems to be causing problems.`,
     audio: "T51.mp3",
     topic: MiniStoryTopics.FASHION,
@@ -1612,7 +1770,7 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
       },
       {
         character: "B",
-        dialogue: "Looksとismを合わせた言葉で、人を見た目で判{はん}断{だん}する<主{しゅ}義{ぎ}>のことだよ。最近よく批{ひ}判{はん}されてるね。",
+        dialogue: "Looksとismを合わせた言葉で、人を見た目で[判{はん}断{だん}]する<主{しゅ}義{ぎ}>のことだよ。最近よく[批{ひ}判{はん}]されてるね。",
       },
       {
         character: "A",
@@ -1623,24 +1781,41 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
       {
         kanji: "主{しゅ}義{ぎ}",
         english: "Principle・-ism",
-        type: MiniStoryWordType.NOUN
+        type: MiniStoryWordType.NOUN,
+        important: true,
       },
       {
         kanji: "完{かん}璧{ぺき}主{しゅ}義{ぎ}",
         english: "perfectionism",
-        type: MiniStoryWordType.NOUN
+        type: MiniStoryWordType.NOUN,
+        important: true,
       },
       {
         kanji: "美{び}人{じん}",
         english: "beautiful person・beauty",
-        type: MiniStoryWordType.NOUN
+        type: MiniStoryWordType.NOUN,
+        important: true,
       },
       {
         kanji: "ずるい",
         english: "unfair・sneaky",
-        type: MiniStoryWordType.ADJECTIVE_I
+        type: MiniStoryWordType.ADJECTIVE_I,
+        important: true,
       },
+      {
+        kanji: "判{はん}断{だん} [する]",
+        english: "Judgment・to judge・to decide",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ],
+        secondary: true,
+      },
+      {
+        kanji: "批{ひ}判{はん} [する]",
+        english: "criticism・to criticize",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ],
+        secondary: true,
+      }
     ],
+    kanjis: ["義", "美", "判", "断", "批"],
     translation: `A: Hey, what does "lookism" mean?\nB: It's a combination of the words "looks" and "ism," and refers to the principle of judging people by their looks. It's widely criticized these days.\nA: Oh, I see. People have always said that beautiful people get a better deal. It's a bit unfair.`,
     audio: "T52.mp3",
     topic: MiniStoryTopics.FASHION,
@@ -1651,11 +1826,11 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
     rubyStory: [
       {
         character: "A",
-        dialogue: "妊{にん}婦{ぷ}さん<向{む}け>の服や下{した}着{ぎ}って、なぜか<綿{めん}>とか<シルク>が多いよね。",
+        dialogue: "[妊{にん}婦{ぷ}]さん<向{む}け>の服や下{した}着{ぎ}って、なぜか<綿{めん}>とか<シルク>が多いよね。",
       },
       {
         character: "B",
-        dialogue: "ああ、妊{にん}娠{しん}中{ちゅう}は肌{はだ}が<敏{びん}感{かん}>になる人が多いから、肌{はだ}に優しい<生{き}地{じ}>が好{この}まれるんだと思うよ。",
+        dialogue: "ああ、[妊{にん}娠{しん}]中{ちゅう}は肌{はだ}が<敏{びん}感{かん}>になる人が多いから、肌{はだ}に優しい<生{き}地{じ}>が好{この}まれるんだと思うよ。",
       },
     ],
     rubyWords: [
@@ -1667,7 +1842,8 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
       {
         kanji: "綿{めん}",
         english: "cotton",
-        type: MiniStoryWordType.NOUN
+        type: MiniStoryWordType.NOUN,
+        important: true,
       },
       {
         kanji: "コットン",
@@ -1682,14 +1858,29 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
       {
         kanji: "敏{びん}感{かん}な",
         english: "sensitive",
-        type: MiniStoryWordType.ADJECTIVE_NA
+        type: MiniStoryWordType.ADJECTIVE_NA,
+        important: true,
       },
       {
         kanji: "生{き}地{じ}",
         english: "fabric・material",
-        type: MiniStoryWordType.NOUN
+        type: MiniStoryWordType.NOUN,
+        important: true,
       },
+      {
+        kanji: "妊{にん}婦{ぷ}",
+        english: "pregnant woman",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+      {
+        kanji: "妊{にん}娠{しん}",
+        english: "pregnancy",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      }
     ],
+    kanjis: ["敏", "感", "地", "妊", "婦"],
     translation: `A: For some reason, clothes and underwear made for pregnant women are often cotton or silk, aren't they?\nB: Oh, I think it's because their skin gets more sensitive during pregnancy, so they prefer gentler fabrics.`,
     audio: "T53.mp3",
     topic: MiniStoryTopics.FASHION,
@@ -1700,7 +1891,7 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
     rubyStory: [
       {
         character: "A",
-        dialogue: "あれ？ばっさり切ったね。<イメチェン>？",
+        dialogue: "あれ？[ばっさり]切ったね。<イメチェン>？",
       },
       {
         character: "B",
@@ -1708,11 +1899,11 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
       },
       {
         character: "A",
-        dialogue: "病気で髪が抜{ぬ}けてしまった子供たちのための、ウイッグになるんだっけ。",
+        dialogue: "病気で髪が[抜{ぬ}けて]しまった子供たちのための、ウイッグになるんだっけ。",
       },
       {
         character: "B",
-        dialogue: "そう。できるだけきれいな髪でいるために、<巻{ま}いたり>、<染{そ}めたり>するのも我{が}慢{まん}してたんだ。",
+        dialogue: "そう。できるだけきれいな髪でいるために、<巻{ま}いたり>、<染{そ}めたり>するのも[我{が}慢{まん}]してたんだ。",
       },
     ],
     rubyWords: [
@@ -1729,19 +1920,41 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
       {
         kanji: "巻{ま}く",
         english: "to roll・to wind・to curl (hair)",
-        type: MiniStoryWordType.GODAN_TRANSITIVE
+        type: MiniStoryWordType.GODAN_TRANSITIVE,
+        important: true,
       },
       {
         kanji: "染{そ}める",
         english: "to dye (something)",
-        type: MiniStoryWordType.ICHIDAN_TRANSITIVE
+        type: MiniStoryWordType.ICHIDAN_TRANSITIVE,
+        important: true,
       },
       {
         kanji: "染{そ}まる",
         english: "to be dyed・change color・be stained",
-        type: MiniStoryWordType.GODAN_INTRANSITIVE
+        type: MiniStoryWordType.GODAN_INTRANSITIVE,
+        important: true,
+      },
+      {
+        kanji: "我{が}慢{まん} [する]",
+        english: "patience・to endure・to be patient",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ],
+        secondary: true,
+      },
+      {
+        kanji: "抜{ぬ}ける",
+        english: "to come out・to fall out (hair, teeth)",
+        type: MiniStoryWordType.GODAN_INTRANSITIVE,
+        secondary: true,
+      },
+      {
+        kanji: "ばっさり",
+        english: "completely・drastically",
+        type: MiniStoryWordType.ADVERB,
+        secondary: true,
       },
     ],
+    kanjis: ["巻", "染", "抜", "我", "慢"],
     translation: `A: Whoa! You've had your hair cut so short. Changing your image?\nB: Ha ha ha. Actually, I donated my hair.\nA: You mean, to make wigs for children who have lost their hair due to illness?\nB: Yes. I had to stop myself curling or dyeing my hair to keep it as nice as possible.`,
     audio: "T54.mp3",
     topic: MiniStoryTopics.FASHION,
@@ -1756,25 +1969,34 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
       },
       {
         character: "B",
-        dialogue: "あ、あれね！髪をとかすだけで本当に<さらさらに>なるの。一緒に買ったオイルをつけると、自然な<艶{つや}>が出ていい感じだよ。",
+        dialogue: "あ、あれね！髪を[とかす]だけで本当に<さらさらに>なるの。一緒に買ったオイルをつけると、自然な<艶{つや}>が出ていい感じだよ。",
       },
     ],
     rubyWords: [
       {
         kanji: "くし",
         english: "comb",
-        type: MiniStoryWordType.NOUN
+        type: MiniStoryWordType.NOUN,
+        important: true,
       },
       {
         kanji: "さらさらな",
         english: "smooth・silky",
-        type: MiniStoryWordType.ADJECTIVE_NA
+        type: MiniStoryWordType.ADJECTIVE_NA,
+        important: true,
       },
       {
         kanji: "艶{つや}",
         english: "gloss・shine",
-        type: MiniStoryWordType.NOUN
+        type: MiniStoryWordType.NOUN,
+        important: true,
       },
+      {
+        kanji: "とかす",
+        english: "to comb (hair)",
+        type: MiniStoryWordType.GODAN_TRANSITIVE,
+        secondary: true,
+      }
     ],
     translation: `A: What do you think of the comb you bought in Kyoto the other day?\nB: Oh, that! Just brushing my hair with it made it feel really smooth. And when I used the oil I bought with it, it gave my hair a nice natural shine.`,
     audio: "T55.mp3",
@@ -1805,17 +2027,20 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
       {
         kanji: "試{し}着{ちゃく}［する］",
         english: "Fitting・to try on (clothes)",
-        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE]
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+        important: true,
       },
       {
         kanji: "試{し}食{しょく}［する］",
         english: "to try a sample (food)",
-        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE]
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+        important: true,
       },
       {
         kanji: "〜号(ごう)",
         english: "size~",
-        type: MiniStoryWordType.SUFFIX
+        type: MiniStoryWordType.SUFFIX,
+        important: true,
       },
       {
         kanji: "ウエスト",
@@ -1823,6 +2048,7 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
         type: MiniStoryWordType.NOUN
       },
     ],
+    kanjis: ["試", "着"],
     translation: `A: Wanna try this on? I think it'd suit you.\nB: What size is it?\nA: Let's see, it's a size 7.\nB: No way! I'm usually a size 11.Tll never fit into the waist.`,
     audio: "T56.mp3",
     topic: MiniStoryTopics.FASHION,
@@ -1837,7 +2063,7 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
       },
       {
         character: "B",
-        dialogue: "この<縞{しま}>のデザインが気{き}に入{い}ってるんですが、、<客{きゃっ}観{かん}的{てき}に>見て派{は}手{で}すぎませんか。",
+        dialogue: "この<縞{しま}>のデザインが気{き}に入{い}ってるんですが、<客{きゃっ}観{かん}的{てき}に>見て[派{は}手{で}]すぎませんか。",
       },
       {
         character: "A",
@@ -1856,39 +2082,53 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
       {
         kanji: "縞{しま}",
         english: "stripe",
-        type: MiniStoryWordType.NOUN
+        type: MiniStoryWordType.NOUN,
+        important: true,
       },
       {
         kanji: "客{きゃっ}観{かん}的{てき}な",
         english: "objective",
-        type: MiniStoryWordType.ADJECTIVE_NA
+        type: MiniStoryWordType.ADJECTIVE_NA,
+        important: true,
       },
       {
         kanji: "主{しゅ}観{かん}的{てき}な",
         english: "subjective",
-        type: MiniStoryWordType.ADJECTIVE_NA
+        type: MiniStoryWordType.ADJECTIVE_NA,
+        important: true,
       },
       {
         kanji: "組{く}み合{あ}わせる",
         english: "to combine",
-        type: MiniStoryWordType.ICHIDAN_TRANSITIVE
+        type: MiniStoryWordType.ICHIDAN_TRANSITIVE,
+        important: true,
       },
       {
         kanji: "組{く}み合{あ}わせ",
         english: "combination",
-        type: MiniStoryWordType.NOUN
+        type: MiniStoryWordType.NOUN,
+        important: true,
       },
       {
         kanji: "丈{たけ}",
         english: "length",
-        type: MiniStoryWordType.NOUN
+        type: MiniStoryWordType.NOUN,
+        important: true,
       },
       {
         kanji: "調{ちょう}節{せつ}［する］",
         english: "adjustment・to adjust",
-        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE]
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+        important: true,
       },
+      {
+        kanji: "派{は}手{で}な",
+        english: "flashy・showy",
+        type: MiniStoryWordType.ADJECTIVE_NA,
+        secondary: true,
+      }
     ],
+    kanjis: ["客", "観", "組", "調", "節", "派"],
     translation: `A: How do you like it?\nB: I like the stripe design, but objectively speaking, it's a bit flashy, isn't it?\nA: It looks good on you. And combined with a jacket, you could even wear it to the office.\nB: Do you think so? The length might be slightly too long.\nA: You can adjust the length with this belt.`,
     audio: "T57.mp3",
     topic: MiniStoryTopics.FASHION,
@@ -1899,7 +2139,7 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
     rubyStory: [
       {
         character: "A",
-        dialogue: "あれ？眼{め}鏡{がね}変{か}えた？",
+        dialogue: "あれ？[眼{め}鏡{がね}]変{か}えた？",
       },
       {
         character: "B",
@@ -1907,35 +2147,57 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
       },
       {
         character: "A",
-        dialogue: "へえ。<透{とう}明{めい}な><レンズ>でも効{こう}果{か}あるの？",
+        dialogue: "へえ。<透{とう}明{めい}な><レンズ>でも[効{こう}果{か}]あるの？",
       },
       {
         character: "B",
-        dialogue: "あ、このレンズ、よく見ると薄{うす}い茶{ちゃ}色{いろ}なんだよ。",
+        dialogue: "あ、このレンズ、よく見ると[薄{うす}い]茶{ちゃ}色{いろ}なんだよ。",
       },
     ],
     rubyWords: [
       {
         kanji: "単{たん}なる",
         english: "mere・simple",
-        type: MiniStoryWordType.COMPOUND_EXPRESSION
+        type: MiniStoryWordType.COMPOUND_EXPRESSION,
+        important: true,
       },
       {
         kanji: "まぶしい",
         english: "dazzling・Too bright",
-        type: MiniStoryWordType.ADJECTIVE_I
+        type: MiniStoryWordType.ADJECTIVE_I,
+        important: true,
       },
       {
         kanji: "透{とう}明{めい}な",
         english: "transparent",
-        type: MiniStoryWordType.ADJECTIVE_NA
+        type: MiniStoryWordType.ADJECTIVE_NA,
+        important: true,
       },
       {
         kanji: "レンズ",
         english: "lens",
         type: MiniStoryWordType.NOUN
       },
+      {
+        kanji: "眼{め}鏡{がね}",
+        english: "glasses",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+      {
+        kanji: "効{こう}果{か}",
+        english: "effect・effectiveness",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+      {
+        kanji: "薄{うす}い",
+        english: "thin・light (color)",
+        type: MiniStoryWordType.ADJECTIVE_I,
+        secondary: true,
+      }
     ],
+    kanjis: ["透", "眼", "鏡", "効", "果", "薄"],
     translation: `A: Hey, did you get new glasses?\nB: Oh, these are sunglasses. I used to have just simple normal glasses, but when I went outside it was always too dazzling.\nA: Really? Do the transparent lenses work?\nB: Well, if you look closely, these lenses are pale brown.`,
     audio: "T58.mp3",
     topic: MiniStoryTopics.FASHION,
@@ -1946,11 +2208,11 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
     rubyStory: [
       {
         character: "A",
-        dialogue: "腕{うで}の傷{きず}、どうしたの？",
+        dialogue: "[腕{うで}]の[傷{きず}]、どうしたの？",
       },
       {
         character: "B",
-        dialogue: "ああ、これ・・・。私、腕{うで}の毛{け}が<割{わり}と>濃{こ}いから、毎日<かみそり>で剃{そ}ってるんだけど、昨日切っちゃって・・・。",
+        dialogue: "ああ、これ・・・。私、腕{うで}の毛{け}が<割{わり}と>[濃{こ}い]から、毎日<かみそり>で[剃{そ}って]るんだけど、昨日切っちゃって・・・。",
       },
       {
         character: "A",
@@ -1958,26 +2220,60 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
       },
       {
         character: "B",
-        dialogue: "脱{だつ}毛{もう}するっていう手もあるんだけど、<美{び}容{よう}>にお金かけたくないんだよね。",
+        dialogue: "[脱{だつ}毛{もう}]するっていう手もあるんだけど、<美{び}容{よう}>にお金かけたくないんだよね。",
       },
     ],
     rubyWords: [
       {
         kanji: "割{わり}と",
         english: "relatively・comparatively・rather",
-        type: MiniStoryWordType.ADVERB
+        type: MiniStoryWordType.ADVERB,
+        important: true,
       },
       {
         kanji: "かみそり",
         english: "razor",
-        type: MiniStoryWordType.NOUN
+        type: MiniStoryWordType.NOUN,
+        important: true,
       },
       {
-        kanji: "美容{びよう}",
+        kanji: "美{び}容{よう}",
         english: "beauty・cosmetology",
-        type: MiniStoryWordType.NOUN
+        type: MiniStoryWordType.NOUN,
+        important: true,
       },
+      {
+        kanji: "腕{うで}",
+        english: "arm",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+      {
+        kanji: "傷{きず}",
+        english: "wound・cut・scar",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+      {
+        kanji: "濃{こ}い",
+        english: "thick・dense",
+        type: MiniStoryWordType.ADJECTIVE_I,
+        secondary: true,
+      },
+      {
+        kanji: "剃{そ}る",
+        english: "to shave",
+        type: MiniStoryWordType.GODAN_TRANSITIVE,
+        secondary: true,
+      },
+      {
+        kanji: "脱{だつ}毛{もう} [する]",
+        english: "hair removal・to remove hair",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ],
+        secondary: true,
+      }
     ],
+    kanjis: ["割", "美", "容", "濃", "剃", "脱"],
     translation: `A: Hey, how did you cut your arm?\nB: Oh, that... I have rather thick hair on my arms, so I shave them every day with a razor, but yesterday I cut myself...\nA: That's awful.\nB: There are other ways to remove hair, but I don't want to spend a lot of money on beauty treatments.`,
     audio: "T59.mp3",
     topic: MiniStoryTopics.FASHION,
@@ -1988,7 +2284,7 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
     rubyStory: [
       {
         character: "A",
-        dialogue: "最近SNSでヒョウ<柄{がら}>の服をよく見るんだけど、私は普段<無{む}地{じ}>の服しか着ないから、ちょっと<抵{てい}抗{こう}>あるんだよね。",
+        dialogue: "最近SNSで[ヒョウ]<柄{がら}>の服をよく見るんだけど、私は普段<無{む}地{じ}>の服しか着ないから、ちょっと<抵{てい}抗{こう}>あるんだよね。",
       },
       {
         character: "B",
@@ -1996,24 +2292,27 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
       },
       {
         character: "A",
-        dialogue: "なるほど。よく見るといろんなパターンがあるんだね。",
+        dialogue: "なるほど。よく見るといろんな<パターン>があるんだね。",
       },
     ],
     rubyWords: [
       {
         kanji: "柄{がら}",
         english: "pattern・design",
-        type: MiniStoryWordType.NOUN
+        type: MiniStoryWordType.NOUN,
+        important: true,
       },
       {
         kanji: "無{む}  地{じ}",
         english: "plain・solid color",
-        type: MiniStoryWordType.NOUN
+        type: MiniStoryWordType.NOUN,
+        important: true,
       },
       {
         kanji: "抵{てい}抗{こう}［する］",
         english: "resistance・to resist",
-        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE]
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE],
+        important: true,
       },
       {
         kanji: "キャップ",
@@ -2023,14 +2322,22 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
       {
         kanji: "付{つ}け加{くわ}える",
         english: "to add・to append・To supplement",
-        type: MiniStoryWordType.ICHIDAN_TRANSITIVE
+        type: MiniStoryWordType.ICHIDAN_TRANSITIVE,
+        important: true,
       },
       {
         kanji: "パターン",
         english: "pattern",
         type: MiniStoryWordType.NOUN
       },
+      {
+        kanji: "ヒョウ",
+        english: "leopard",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      }
     ],
+    kanjis: ["無", "地", "抵", "抗"],
     translation: `A: I've been seeing a lot of clothes in leopard-print patterns on social media lately, but I usually only wear plain, solid colors, so I'm a bit resistant to it.\nB: Really? I think just adding a cap, bag, or some other small accessory creates a nice accent. You know, like in this photo.\nA: Oh, right. If you look closely, you can see there are many different patterns.`,
     audio: "T60.mp3",
     topic: MiniStoryTopics.FASHION,
@@ -2041,41 +2348,66 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
     rubyStory: [
       {
         character: "",
-        dialogue: "大{だい}統{とう}領{りょう}<夫{ふ}人{じん}>は、<知{ち}的{てき}な>イメージが強く、<幅{はば}広{ひろ}い>世代から人気がある。ここ数{すう}年{ねん}は、<上{じょう}品{ひん}な>ヘアスタイルと<独{どく}特{とく}な>ファッションが世界各{かっ}国{こく}のデザイナーから注目されている。",
+        dialogue: "[大{だい}統{とう}領{りょう}]<夫{ふ}人{じん}>は、<知{ち}的{てき}な>イメージが強く、<幅{はば}広{ひろ}い>世代から人気がある。ここ[数{すう}年{ねん}]は、<上{じょう}品{ひん}な>ヘアスタイルと<独{どく}特{とく}な>ファッションが世界[各{かっ}国{こく}]のデザイナーから注目されている。",
       },
     ],
     rubyWords: [
       {
         kanji: "夫{ふ}人{じん}",
         english: "Wife・madam・lady",
-        type: MiniStoryWordType.NOUN
+        type: MiniStoryWordType.NOUN,
+        important: true,
       },
       {
         kanji: "知{ち}的{てき}な",
         english: "intelligent・intellectual",
-        type: MiniStoryWordType.ADJECTIVE_NA
+        type: MiniStoryWordType.ADJECTIVE_NA,
+        important: true,
       },
       {
         kanji: "幅{はば}広{ひろ}い",
         english: "wide range・broad・extensive",
-        type: MiniStoryWordType.ADJECTIVE_I
+        type: MiniStoryWordType.ADJECTIVE_I,
+        important: true,
       },
       {
         kanji: "上{じょう}品{ひん}な",
         english: "elegant・refined・stylish",
-        type: MiniStoryWordType.ADJECTIVE_NA
+        type: MiniStoryWordType.ADJECTIVE_NA,
+        important: true,
       },
       {
         kanji: "下{げ}品{ひん}な",
         english: "vulgar・coarse・inelegant",
-        type: MiniStoryWordType.ADJECTIVE_NA
+        type: MiniStoryWordType.ADJECTIVE_NA,
+        important: true,
       },
       {
         kanji: "独{どく}特{とく}な",
         english: "unique・distinctive",
-        type: MiniStoryWordType.ADJECTIVE_NA
+        type: MiniStoryWordType.ADJECTIVE_NA,
+        important: true,
       },
+      {
+        kanji: "大{だい}統{とう}領{りょう}",
+        english: "President",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+      {
+        kanji: "数{すう}年{ねん}",
+        english: "a few years",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+      {
+        kanji: "各{かっ}国{こく}",
+        english: "each country・every country・various countries",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      }
     ],
+    kanjis: ["夫", "知", "幅", "独", "特", "統", "領", "各"],
     translation: `The First Lady has a strongly intellectual image and she has found popularity among a wide range of ages. In recent years, her elegant hairstyle and unique fashion sense have attracted the attention of designers from around the world.`,
     audio: "T61.mp3",
     topic: MiniStoryTopics.FASHION,
@@ -2086,7 +2418,7 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
     rubyStory: [
       {
         character: "A",
-        dialogue: "新しい会社で、ひげはだめだって注意されたよ。日本の<ビジネス>マナーって難しいね。",
+        dialogue: "新しい会社で、[ひげ]はだめだって注意されたよ。日本の<ビジネス>マナーって難しいね。",
       },
       {
         character: "B",
@@ -2094,7 +2426,7 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
       },
       {
         character: "A",
-        dialogue: "ひげは個{こ}性{せい}の一つだからね。",
+        dialogue: "ひげは[個{こ}性{せい}]の一つだからね。",
       },
     ],
     rubyWords: [
@@ -2111,14 +2443,29 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
       {
         kanji: "欧{おう}米{べい}",
         english: "Europe and the U.S.・the West",
-        type: MiniStoryWordType.NOUN
+        type: MiniStoryWordType.NOUN,
+        important: true,
       },
       {
         kanji: "生{は}やす",
         english: "to grow (beard, hair, etc.)",
-        type: MiniStoryWordType.GODAN_TRANSITIVE
+        type: MiniStoryWordType.GODAN_TRANSITIVE,
+        important: true,
       },
+      {
+        kanji: "ひげ",
+        english: "beard",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+      {
+        kanji: "個{こ}性{せい}",
+        english: "personality・individuality",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      }
     ],
+    kanjis: ["欧", "米", "個", "性"],
     translation: `A: I was warned to avoid growing a beard at my new company. Business etiquette in Japan can be tricky.\nB: Is that right? In Europe and the USA, it's fine to grow a beard, isn't it?\nA: A beard is a way to express your personality.`,
     audio: "T62.mp3",
     topic: MiniStoryTopics.FASHION,
@@ -2129,36 +2476,78 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
     rubyStory: [
       {
         character: "",
-        dialogue: "先日行われたアンケートでは、日本の大学生の<大{だい}半{はん}>が、3カ月に1度以上ファストファッションを購{こう}入{にゅう}していると<回{かい}答{とう}した>。しかし、近{きん}年{ねん}ではファストファッションが客{きゃく}のニーズを満{み}たすために<衣{い}服{ふく}>を過{か}剰{じょう}に生{せい}産{さん}しているという、批{ひ}判{はん}の声も<多{た}数{すう}>聞かれる。",
+        dialogue: "先日行われたアンケートでは、日本の大学生の<大{だい}半{はん}>が、3カ月に1度以上ファストファッションを[購{こう}入{にゅう}]していると<回{かい}答{とう}した>。しかし、[近{きん}年{ねん}]ではファストファッションが客{きゃく}のニーズを[満{み}たす]ために<衣{い}服{ふく}>を[過{か}剰{じょう}]に[生{せい}産{さん}]しているという、[批{ひ}判{はん}]の声も<多{た}数{すう}>聞かれる。",
       },
     ],
     rubyWords: [
       {
         kanji: "大{たい}半{はん}",
         english: "majority・most",
-        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.ADVERB ]
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.ADVERB ],
+        important: true,
       },
       {
         kanji: "回{かい}答{とう}［する］",
         english: "Response・answer・to answer/respond",
-        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ]
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ],
+        important: true,
       },
       {
         kanji: "衣{い}服{ふく}",
         english: "clothing",
-        type: MiniStoryWordType.NOUN
+        type: MiniStoryWordType.NOUN,
+        important: true,
       },
       {
         kanji: "多{た}数{すう}",
         english: "Many・plenty・majority",
-        type: MiniStoryWordType.NOUN
+        type: MiniStoryWordType.NOUN,
+        important: true,
       },
       {
         kanji: "多{た}数{すう}決{けつ}",
         english: "majority decision・vote by majority",
-        type: MiniStoryWordType.NOUN
+        type: MiniStoryWordType.NOUN,
+        important: true,
+      },
+      {
+        kanji: "購{こう}入{にゅう}［する］",
+        english: "purchase・to purchase",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ],
+        secondary: true,
+      },
+      {
+        kanji: "近{きん}年{ねん}",
+        english: "recent years",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+      {
+        kanji: "満{み}たす",
+        english: "to satisfy・to meet (conditions, needs, etc.)",
+        type: MiniStoryWordType.GODAN_TRANSITIVE,
+        secondary: true,
+      },
+      {
+        kanji: "過{か}剰{じょう}",
+        english: "excessive・over-",
+        type: MiniStoryWordType.ADJECTIVE_NA,
+        secondary: true,
+      },
+      {
+        kanji: "生{せい}産{さん}［する］",
+        english: "production・to produce",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE ],
+        secondary: true,
+      },
+      {
+        kanji: "批{ひ}判{はん}",
+        english: "criticism・to criticize",
+        type: [ MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_INTRANSITIVE ],
+        secondary: true,
       }
     ],
+    kanjis: ["回", "答", "数", "購", "満", "剰", "生", "産", "批", "判"],
     translation: `In a recent survey, the majority of Japanese university students answered that they purchase fast fashion at least every three months. However, in recent years, many have apparently criticized fast fashion for overproducing clothing to satisfy customer demand.`,
     audio: "T63.mp3",
     topic: MiniStoryTopics.FASHION,
@@ -2193,19 +2582,23 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
       {
         kanji: "普{ふ}段{だん}",
         english: "usually・normally",
-        type: MiniStoryWordType.ADVERB
+        type: MiniStoryWordType.ADVERB,
+        important: true,
       },
       {
         kanji: "絹{きぬ}",
         english: "silk",
-        type: MiniStoryWordType.NOUN
+        type: MiniStoryWordType.NOUN,
+        important: true,
       },
       {
         kanji: "手{て}入{い}れ［する］",
         english: "Care・looking after・to take care of",
-        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE]
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+        important: true,
       },
     ],
+    kanjis: ["和", "普", "段"],
     translation: `A: Your clothes look so cute today, like traditional Japanese clothes.\nB: Thanks. I remade my grandmother's kimono so I can wear it normally.\nA: Wow, that's great.\nB: It's silk, so it's a little difficult to look after.`,
     audio: "T64.mp3",
     topic: MiniStoryTopics.FASHION,
@@ -2216,15 +2609,15 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
     rubyStory: [
       {
         character: "A",
-        dialogue: "わ、玄{げん}関{かん}が靴{くつ}<だらけ>！",
+        dialogue: "わ、[玄{げん}関{かん}]が靴{くつ}<だらけ>！",
       },
       {
         character: "B",
-        dialogue: "どれも長{ちょう}時間履{は}いてると痛くて、どんどん新しいの買っちゃうんだよね。",
+        dialogue: "どれも長{ちょう}時間[履{は}いて]ると痛くて、どんどん新しいの買っちゃうんだよね。",
       },
       {
         character: "A",
-        dialogue: "Bさんの足は人{ひと}差{さ}し指{ゆび}が一番長いから、先が<とがって>るパンプスが足に合うと思うよ。靴{くつ}が合わないと<姿{し}勢{せい}>が悪くなるから気をつけて。",
+        dialogue: "Bさんの足は[人{ひと}差{さ}し指{ゆび}]が一番長いから、先が<とがって>るパンプスが足に合うと思うよ。靴{くつ}が合わないと<姿{し}勢{せい}>が悪くなるから気をつけて。",
       },
     ],
     rubyWords: [
@@ -2236,14 +2629,35 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
       {
         kanji: "とがる",
         english: "to be sharp・to be pointed",
-        type: MiniStoryWordType.GODAN_INTRANSITIVE
+        type: MiniStoryWordType.GODAN_INTRANSITIVE,
+        important: true,
       },
       {
         kanji: "姿{し}勢{せい}",
         english: "posture・attitude",
-        type: MiniStoryWordType.NOUN
+        type: MiniStoryWordType.NOUN,
+        important: true,
+      },
+      {
+        kanji: "玄{げん}関{かん}",
+        english: "entrance (where shoes are taken off)",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+      {
+        kanji: "履{は}く",
+        english: "to wear (shoes, pants, etc.)",
+        type: MiniStoryWordType.GODAN_TRANSITIVE,
+        secondary: true,
+      },
+      {
+        kanji: "人{ひと}差{さ}し]指{ゆび}",
+        english: "index finger (or toe)",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
       },
     ],
+    kanjis: ["姿", "勢", "玄", "履", "差"],
     translation: `A: Hey, the hallway is full of shoes!\nB: They all hurt when I wear them for too long, so I keep buying new ones.\nA: Since your second toe is the longest on your foot, I think pumps with a pointed toe will suit your feet best. If your shoes don't fit, your posture will get worse, so be careful.`,
     audio: "T65.mp3",
     topic: MiniStoryTopics.FASHION,
@@ -2254,26 +2668,48 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
     rubyStory: [
       {
         character: "",
-        dialogue: "4月は初めての人と会う機{き}会{かい}が多いので、服{ふく}装{そう}には<気{き}を遣{つか}う>。明るい色の服を着たり、<襟{えり}>付{つ}きのシャツを着たりして、<だらしない>印象を与{あた}えないように気をつけている。",
+        dialogue: "4月は初めての人と会う[機{き}会{かい}]が多いので、[服{ふく}装{そう}]には<気{き}を遣{つか}う>。明るい色の服を着たり、<襟{えり}>付{つ}きのシャツを着たりして、<だらしない>印象を[与{あた}えない]ように気をつけている。",
       },
     ],
     rubyWords: [
       {
         kanji: "気{き}を遣{つか}う",
         english: "to take care・be attentive・considerate・careful",
-        type: MiniStoryWordType.GODAN_INTRANSITIVE
+        type: MiniStoryWordType.GODAN_INTRANSITIVE,
+        important: true,
       },
       {
         kanji: "襟{えり}",
         english: "collar",
-        type: MiniStoryWordType.NOUN
+        type: MiniStoryWordType.NOUN,
+        important: true,
       },
       {
         kanji: "だらしない",
         english: "sloppy・untidy・messy",
-        type: MiniStoryWordType.ADJECTIVE_I
+        type: MiniStoryWordType.ADJECTIVE_I,
+        important: true,
       },
+      {
+        kanji: "機{き}会{かい}",
+        english: "opportunity・chance",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+      {
+        kanji: "服{ふく}装{そう}",
+        english: "clothing・dress",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+      {
+        kanji: "与{あた}える",
+        english: "to give・to cause (an impression, etc.)",
+        type: MiniStoryWordType.GODAN_TRANSITIVE,
+        secondary: true,
+      }
     ],
+    kanjis: ["遣", "機", "装"],
     translation: `April offers many opportunities to meet people for the first time, so we tend to be careful about how we dress. I take care to avoid giving an untidy impression by wearing brightly colored clothes and collared shirts.`,
     audio: "T66.mp3",
     topic: MiniStoryTopics.FASHION,
@@ -2284,30 +2720,52 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
     rubyStory: [
       {
         character: "A",
-        dialogue: "お母さん、この制{せい}服{ふく}のズボン、お尻{しり}のあたりがパンパンで<破{やぶ}けそう>。",
+        dialogue: "お母さん、この[制{せい}服{ふく}]のズボン、お[尻{しり}]のあたりがパンパンで<破{やぶ}けそう>。",
       },
       {
         character: "B",
-        dialogue: "あ、本当だね。入学したときは<ぶかぶかだった>のに・・・。卒業まであと半{はん}年{とし}か。買い替えるか<微{び}妙{みょう}な>ところだね。",
+        dialogue: "あ、本当だね。入学したときは<ぶかぶかだった>のに・・・。卒業まであと半{はん}年{とし}か。[買い替える]か<微{び}妙{みょう}な>ところだね。",
       },
     ],
     rubyWords: [
       {
         kanji: "破{やぶ}ける",
         english: "to tear・to rip",
-        type: MiniStoryWordType.ICHIDAN_INTRANSITIVE
+        type: MiniStoryWordType.ICHIDAN_INTRANSITIVE,
+        important: true,
       },
       {
         kanji: "ぶかぶかな",
         english: "baggy・loose-fitting・oversized",
-        type: MiniStoryWordType.ADJECTIVE_NA
+        type: MiniStoryWordType.ADJECTIVE_NA,
+        important: true,
       },
       {
         kanji: "微{び}妙{みょう}な",
-        english: "unsure・delicate・questionable",
-        type: MiniStoryWordType.ADJECTIVE_NA
+        english: "unsure・delicate・questionable。kinda…・not great",
+        type: MiniStoryWordType.ADJECTIVE_NA,
+        important: true,
       },
+      {
+        kanji: "制{せい}服{ふく}",
+        english: "school uniform",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+      {
+        kanji: "尻{しり}",
+        english: "butt",
+        type: MiniStoryWordType.NOUN,
+        secondary: true,
+      },
+      {
+        kanji: "買い替える",
+        english: "to replace (by buying)",
+        type: MiniStoryWordType.GODAN_TRANSITIVE,
+        secondary: true,
+      }
     ],
+    kanjis: ["破", "微", "妙", "制", "替"],
     translation: `A: Mom, my school uniform pants are so tight around my waist, they're about to rip.\nB: Oh, you're right. And they were so baggy when you first started school... Now there's only six months until you graduate. I'm unsure whether to buy you new ones or not.`,
     audio: "T67.mp3",
     topic: MiniStoryTopics.FASHION,
@@ -2362,6 +2820,7 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
         secondary: true,
       }
     ],
+    kanjis: ["反", "応"],
     translation: `A: How do you like your new computer?\nB: Hmm,. I's a little bigger than the previous model,but it also responds faster, so it can handle heavy amounts of data smoothly.`,
     audio: "T68.mp3",
     topic: MiniStoryTopics.TECHNOLOGY,
@@ -2442,6 +2901,7 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
         secondary: true,
       },
     ],
+    kanjis: ["解", "凍", "機", "能", "圧", "縮"],
     translation: `A: I downloaded the class materials, but I couldn't open them.\nB: Maybe that's because it's a compressed folder. Just unzip it.\nA: Oh, I see. Also, how do you read the kanji characters written here? I don't know how to read them, so I can't input them...\nB: Well... that's more difficult. In this case, let's use the handwriting function.`,
     audio: "T69.mp3",
     topic: MiniStoryTopics.TECHNOLOGY,
@@ -2452,7 +2912,7 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
     rubyStory: [
       {
         character: "",
-        dialogue: "インターネットを通{とお}して、世界中の情報が<手{て}軽{がる}に>手{て}に入{い}れられるようになった。それによって社会・[経{けい}済{ざい}]に大きな革{かく}命{めい}が起きたことを<IT><革{かく}命{めい}>という。",
+        dialogue: "インターネットを通{とお}して、世界中の情報が<手{て}軽{がる}に>[手{て}に入{い}れられる]ようになった。それによって社会・[経{けい}済{ざい}]に大きな革{かく}命{めい}が起きたことを<IT><革{かく}命{めい}>という。",
       },
     ],
     rubyWords: [
@@ -2474,12 +2934,19 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
         important: true,
       },
       {
+        kanji: "手{て}に入{い}れる",
+        english: "to obtain・to get",
+        type: MiniStoryWordType.GODAN_TRANSITIVE,
+        secondary: true,
+      },
+      {
         kanji: "経{けい}済{ざい}",
         english: "economy",
         type: MiniStoryWordType.NOUN,
         secondary: true,
       },
     ],
+    kanjis: ["軽", "革", "命", "経", "済"],
     translation: `Through the Internet, information from all over the world has become readily available. This has led to a major social and economic revolution, known as the IT revolution.`,
     audio: "T70.mp3",
     topic: MiniStoryTopics.TECHNOLOGY,
@@ -2546,6 +3013,7 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
         secondary: true,
       },
     ],
+    kanjis: ["卓", "省", "無", "駄", "講", "座", "解", "消"],
     translation: `"I need to work remotely, but I'm not good with computers," or "I don't know how to use software, so I'm constantly using calculators" or "I want to eliminate work-related waste, but I don't know how" —if you have concerns like this, why not solve it by taking a community computer class?`,
     audio: "T71.mp3",
     topic: MiniStoryTopics.TECHNOLOGY,
@@ -2599,6 +3067,7 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
         secondary: true,
       },
     ],
+    kanjis: ["変", "換", "課", "題", "提"],
     translation: `A: Hey, look. I submitted an assignment to my teacher via email and she left the comment yoku de kitanai yodesu ("This seems greedy and dirty") ...\nB: But isn't her message actually saying yoku dekita naiyo desu ("This is well written content")? She makes a lot of kanji conversion errors, doesnit she?`,
     audio: "T72.mp3",
     topic: MiniStoryTopics.TECHNOLOGY,
@@ -2617,7 +3086,7 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
       },
       {
         character: "A",
-        dialogue: "あの<投{とう}稿{こう}>、Cさんの後{こう}輩{はい}が<シェアして>、上{じょう}司{し}の<本{ほん}名{みょう}>ばらしちゃったんだって。それでCさんのアカウントが会社から<特{とく}定{てい}された>らしくて・・・Cさん、近{ちか}々{ぢか}会社やめるらしいよ。",
+        dialogue: "あの<投{とう}稿{こう}>、Cさんの後{こう}輩{はい}が<シェアして>、上{じょう}司{し}の<本{ほん}名{みょう}>[ばらしちゃった]んだって。それでCさんのアカウントが会社から<特{とく}定{てい}された>らしくて・・・Cさん、近{ちか}々{ぢか}会社やめるらしいよ。",
       },
       {
         character: "B",
@@ -2660,7 +3129,14 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
         type: MiniStoryWordType.NOUN,
         secondary: true,
       },
+      {
+        kanji: "ばらす",
+        english: "to reveal",
+        type: MiniStoryWordType.GODAN_TRANSITIVE,
+        secondary: true,
+      }
     ],
+    kanjis: ["投", "稿", "特", "定", "不", "運", "司"],
     translation: `A: Did you see that Mr. C wrote some awful things about his boss on social media the other day?\nB: Yes, I saw.\nA: His junior colleague shared the post and revealed his boss's real name. It seems that Mr. C's account was identified by the company... and it looks like Mr. C will be quitting the company soon.\nB: Wel, that's unfortunate...`,
     audio: "T73.mp3",
     topic: MiniStoryTopics.TECHNOLOGY,
@@ -2727,6 +3203,7 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
         secondary: true,
       },
     ],
+    kanjis: ["充", "器", "壊", "対", "象"],
     translation: `A: The charger for my computer broke, but chargers aren't included in repairs, so in this case I just have to buy a new one. I don't know much about voltage or power. Which one should I buy?\nB: Let's see... it's 60W. You should get one from the same manufacturer as your computer. But they're expensive.`,
     audio: "T74.mp3",
     topic: MiniStoryTopics.TECHNOLOGY,
@@ -2786,6 +3263,7 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
         important: true,
       },
     ],
+    kanjis: ["編", "集", "共", "有", "修", "正"],
     translation: `A: Is there any way I can edit a file online with another person at the same time?\nB: If you use a web app, you can collaborate just by sharing files to exchange them. Whenever data is modified, it's saved in real time.\nA: So in short, the content is overwritten.`,
     audio: "T75.mp3",
     topic: MiniStoryTopics.TECHNOLOGY,
@@ -2849,6 +3327,7 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
         secondary: true,
       },
     ],
+    kanjis: ["普", "及", "探", "占", "需", "齢", "別", "率"],
     translation: `According to a study that explored penetration rates for computers by age, the penetration rates for the 30-59 and 60+ age groups, which account for the majority of the population, were over 60%, a significant increase over the previous year. Demand for PCs and tablets is expected to increase further due to remote working and online learning.`,
     audio: "T76.mp3",
     topic: MiniStoryTopics.TECHNOLOGY,
@@ -2909,6 +3388,7 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
         secondary: true,
       },
     ],
+    kanjis: ["旦", "解", "保", "証", "不", "具", "合", "舗", "等"],
     translation: `A: If you have any hardware problems, just bring it back to the store for the moment. If you disassemble it yourself, you will lose your warranty.\nB: Yes, I understand.`,
     audio: "T77.mp3",
     topic: MiniStoryTopics.TECHNOLOGY,
@@ -2989,6 +3469,7 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
         secondary: true,
       }
     ],
+    kanjis: ["採", "成", "改", "挿", "削", "除", "更", "勝", "終", "了"],
     translation: `A: I made a list of the final exam scores, but I can't find the file...\nB: Did you exit without saving it or something?\nA: Maybe... I'll have to create it again.\nB: You should turn on auto-save. That way, every time you update, whether it's a line break, insertion, or deletion, it will save automatically.`,
     audio: "T78.mp3",
     topic: MiniStoryTopics.TECHNOLOGY,
@@ -3033,6 +3514,7 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
         important: true,
       },
     ],
+    kanjis: ["設", "定", "反", "映", "再", "起", "動"],
     translation: `In order for these changes to system settings to take effect, the computer must be rebooted.`,
     audio: "T79.mp3",
     topic: MiniStoryTopics.TECHNOLOGY,
@@ -3098,6 +3580,7 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
         secondary: true,
       }
     ],
+    kanjis: ["優", "経", "否", "定", "支", "配", "超", "類"],
     translation: `A: In many ways, AI is superior to humanity.\nB: Yes, it is. I think that after some time has passed, AI will probably surpass humans.\nA: That's undeniable. Some people even think that AI will eventually come to dominate humanity.`,
     audio: "T80.mp3",
     topic: MiniStoryTopics.TECHNOLOGY,
@@ -3142,6 +3625,7 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
         secondary: true,
       },
     ],
+    kanjis: ["添", "付", "容", "量", "超", "過", "未", "満"],
     translation: `Try to remember that the size of a file attached to an email should be less than 3MB. If the file size exceeds 3MB, the email may not arrive.`,
     audio: "T81.mp3",
     topic: MiniStoryTopics.TECHNOLOGY,
@@ -3207,6 +3691,7 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
         secondary: true,
       },
     ],
+    kanjis: ["宅", "配", "親", "頼"],
     translation: `A: Do you own a smart speaker?\nB: Yes. I use it every day because it's linked to my home appliances. I also use it for voice communications with my family, ordering home deliveries... My husband often chats with the Al like a close friend.\nA: Right. It seems very handy. I think I'll buy one of those ofered on sale at the moment.`,
     audio: "T82.mp3",
     topic: MiniStoryTopics.TECHNOLOGY,
@@ -3276,6 +3761,7 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
         secondary: true,
       },
     ],
+    kanjis: ["用", "途", "部", "接", "続", "劣", "適", "拡", "張", "性", "製"],
     translation: `A: Excuse me, I'm looking for a laptop computer.\nB: What will you use it for?\nA: Web development.\nB: Okay, then how about this one? I's a very extensible model that can easily be connected to an external monitor. It's just as good as the new models and very suitable for creators.`,
     audio: "T83.mp3",
     topic: MiniStoryTopics.TECHNOLOGY,
@@ -3340,6 +3826,7 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
         secondary: true,
       }
     ],
+    kanjis: ["相", "互", "許", "可"],
     translation: `A: Yesterday, someone on social media— we follow each other-was streaming a video, so I watched it, but she used a photo wed taken together previously without asking my permission...\nB: What? I would have thought shed respect your privacy.\nA: Yes. I was shocked, so I contacted her right after that.`,
     audio: "T84.mp3",
     topic: MiniStoryTopics.TECHNOLOGY,
@@ -3378,6 +3865,7 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
         important: true,
       },
     ],
+    kanjis: ["華"],
     translation: `In a word, "Instagrammable" means "something gorgeous that would look good uploaded as a photo on Instagram."`,
     audio: "T85.mp3",
     topic: MiniStoryTopics.TECHNOLOGY,
@@ -3444,6 +3932,7 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
         secondary: true,
       },
     ],
+    kanjis: ["契", "約", "工", "夫"],
     translation: `A: I want to sign up for a subscription, but for some reason I can't click the "I agree button.\nB: Oh, if you scroll to the end of the page, I think you can do it. If you don't properly read over the contractual terms and conditions, it can lead to trouble, so they've made it so that you can't just press the "I agree" button without reading everything.`,
     audio: "T86.mp3",
     topic: MiniStoryTopics.TECHNOLOGY,
@@ -3519,6 +4008,7 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
         secondary: true,
       }
     ],
+    kanjis: ["底", "性", "能", "関", "側", "逃", "構", "造", "発", "熱", "処", "理", "速"],
     translation: `Many laptop computers are designed to allow heat to escape from the sides and bottom. Heat build-up is related to the performance of the computer - for example, processing speed - so it's important to leave space between the computer and the desk.`,
     audio: "T87.mp3",
     topic: MiniStoryTopics.TECHNOLOGY,
@@ -3594,6 +4084,7 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
         secondary: true,
       },
     ],
+    kanjis: ["風", "景", "像", "背", "焦", "易", "加", "工"],
     translation: `For images where you want the people to stand out more than the scenery, you can blur the background focus. This can easily be processed using an app.`,
     audio: "T88.mp3",
     topic: MiniStoryTopics.TECHNOLOGY,
@@ -3651,6 +4142,7 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
         secondary: true,
       },
     ],
+    kanjis: ["盛", "支", "援", "命", "化", "粧", "像", "加", "工"],
     translation: `The term "enhance" refers to the process of improving one's appearance through cosmetics or image manipulation. Technology that supports this is called Cinderella technology.`,
     audio: "T89.mp3",
     topic: MiniStoryTopics.TECHNOLOGY,
@@ -3661,7 +4153,7 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
     rubyStory: [
       {
         character: "A",
-        dialogue: "印{いん}刷{さつ}された<活{かつ}字{じ}>資{し}料{りょう}を、データ化{か}してテキストファイルにしたいんだけど、どうするのがいいかな。",
+        dialogue: "[印{いん}刷{さつ}]された<活{かつ}字{じ}>資{し}料{りょう}を、データ化{か}してテキストファイルにしたいんだけど、どうするのがいいかな。",
       },
       {
         character: "B",
@@ -3712,12 +4204,19 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
         important: true,
       },
       {
+        kanji: "印{いん}刷{さつ} [する]",
+        english: "printing・to print",
+        type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
+        secondary: true,
+      },
+      {
         kanji: "編{へん}集{しゅう} [する]",
         english: "editing・to edit",
         type: [MiniStoryWordType.NOUN, MiniStoryWordType.IRREGULAR_TRANSITIVE],
         secondary: true,
       },
     ],
+    kanjis: ["活", "記", "号", "除", "印", "刷", "編", "集"],
     translation: `A: I'd like to convert typed, printed documents into data and text files. How can I do that?\nB: Well, to explain briefly, you scan the material first, and then use software to read the text. There will often be incorrect characters or unwanted symbols, but if you remove them using text editing software, you'll finally end up with clean data.`,
     audio: "T90.mp3",
     topic: MiniStoryTopics.TECHNOLOGY,
@@ -3799,6 +4298,7 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
         secondary: true,
       }
     ],
+    kanjis: ["速", "報", "沿", "顧", "客", "候", "補", "提", "案", "析", "効", "率"],
     translation: `A: Did you see the email with last week's sales bulletin?\nB: I just saw it. Ms. C was at the top of the list again.\nA: I often travel with Ms. C on the way to and from work, and she's a really good listener. I think shes good at recommending products in line with what the customer wants. Also, she gets AI analysis of customer data to make her sales more efficient.\nB: Sales tech, they call it. Now I know why shes a candidate for department manager.`,
     audio: "T91.mp3",
     topic: MiniStoryTopics.TECHNOLOGY,
@@ -3853,6 +4353,7 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
         secondary: true,
       }
     ],
+    kanjis: ["略", "太", "鼓"],
     translation: `Musical rhythm games, often abbreviated in Japanese as "otoge", are games in which players tap drums or buttons to a musical rhythm. They can be found in many game arcades. Recently, many games in which players tap to the rhythm have been released as smartphone apps.`,
     audio: "T92.mp3",
     topic: MiniStoryTopics.TRENDS,
@@ -3974,6 +4475,7 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
         secondary: true,
       },
     ],
+    kanjis: ["詰", "武", "器", "卑", "怯", "攻", "撃", "背", "斬"],
     translation: `A: I'm stuck in the first castle in this game.\nB: What weapon are you using? I think the first enemies are more vulnerable to swords than guns.\nA: That's their weakness, right. But when I get too close, I get hit by their attacks.\nB: There's a hole in the back wall of the castle, so I sneak in through there and stab them in the back with my sword.\nA: That's so cowardly...`,
     audio: "T93.mp3",
     topic: MiniStoryTopics.TRENDS,
@@ -3988,7 +4490,7 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
       },
       {
         character: "B",
-        dialogue: "分かる。[名{めい}作{さく}]ってだいたいライバルが<主{しゅ}人{じん}公{こう}>より人気あるよね。最初強かった[敵{てき}]が、<味{み}方{かた}>になる。まさかあのキャラクターが[仲間]になってくれるなんて！って<わくわくする>。",
+        dialogue: "分かる。[名{めい}作{さく}]ってだいたいライバルが<主{しゅ}人{じん}公{こう}>より人気あるよね。最初強かった[敵{てき}]が、<味{み}方{かた}>になる。[まさか]あのキャラクターが[仲間]になってくれるなんて！って<わくわくする>。",
       },
       {
         character: "A",
@@ -4045,12 +4547,19 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
         secondary: true,
       },
       {
+        kanji: "まさか",
+        english: "No way!・I never expected that!",
+        type: MiniStoryWordType.ADVERB,
+        secondary: true,
+      },
+      {
         kanji: "仲{なか}間{ま}",
         english: "companion・friend・ally",
         type: MiniStoryWordType.NOUN,
         secondary: true,
       }
     ],
+    kanjis: ["素", "公", "味", "仲", "間"],
     translation: `A: I think rivalry is a very important element.\nB: I agree. In lots of great movies, rivals are more popular than the main characters. Someone who was a powerful enemy at first later becomes an ally. And you never expect that character to become a friend! It's exciting!\nA: But it's also great when they fight to the very end as an enemy worthy of the main character.`,
     audio: "T94.mp3",
     topic: MiniStoryTopics.TRENDS,
@@ -4124,6 +4633,7 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
         secondary: true,
       },
     ],
+    kanjis: ["勇", "撃", "登", "場", "特", "徴", "必", "殺", "技", "叫"],
     translation: `Jumping down from somewhere high to make a dramatic entrance. Saying heroic lines before fighting. These are the characteristics of Japanese heroes. Even when fighting in a giant robot, the pilot has to shout the name of the technique when firing off a killer technique.`,
     audio: "T95.mp3",
     topic: MiniStoryTopics.TRENDS,
@@ -4175,6 +4685,7 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
         secondary: true,
       },
     ],
+    kanjis: ["王", "争", "治", "古", "代"],
     translation: `Himiko is the name of an ancient Japanese queen, and her name appears in various manga comics. When men were kings, there was constant conflict. However, it's said that when a queen ruled the land, the fighting ceased.`,
     audio: "T96.mp3",
     topic: MiniStoryTopics.TRENDS,
@@ -4262,6 +4773,7 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
         secondary: true,
       },
     ],
+    kanjis: ["役", "演", "技", "評", "論", "醜", "者", "絶", "賛"],
     translation: `The villain's performance in this film was excellent, which made for lots of great scenes. Critics also praised it. However, perhaps because the role was so unpleasant, the actor had passedaway.`,
     audio: "T97.mp3",
     topic: MiniStoryTopics.TRENDS,
@@ -4319,6 +4831,7 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
         secondary: true,
       },
     ],
+    kanjis: ["空", "想", "幼", "稚", "載", "才", "雑", "誌"],
     translation: `When I was in elementary school, I liked to fantasize about all kinds of things and draw manga comics. When I entered junior high school, my family told me it was silly and that I should stop doing such childish things. But I never stopped drawing manga, even in high school and in college. Finally, when I was 25, a magazine published a manga comic that I'd drawn.`,
     audio: "T98.mp3",
     topic: MiniStoryTopics.TRENDS,
@@ -4329,7 +4842,7 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
     rubyStory: [
       {
         character: "",
-        dialogue: "<演{えん}劇{げき}>の面白さは、<粗{あら}筋{すじ}>は同じでも、[演{えん}出{しゅつ}]によって全く[異{こと}なる]作品になることである。さらに、同じメンバーでも日{ひ}によって<芝{しば}居{い}>は少しずつ変化する。",
+        dialogue: "<演{えん}劇{げき}>の面白さは、<粗{あら}筋{すじ}>は同じでも、[演{えん}出{しゅつ}]によって全く[異{こと}なる]作品になることである。[さらに]、同じメンバーでも日{ひ}によって<芝{しば}居{い}>は少しずつ変化する。",
       },
     ],
     rubyWords: [
@@ -4363,7 +4876,14 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
         type: MiniStoryWordType.IRREGULAR_INTRANSITIVE,
         secondary: true,
       },
+      {
+        kanji: "さらに",
+        english: "furthermore・in addition",
+        type: MiniStoryWordType.ADVERB,
+        secondary: true,
+      }
     ],
+    kanjis: ["演", "劇", "粗", "筋", "芝", "居", "異"],
     translation: `The fascinating thing about theater is that even if the broad outline of a play stays the same, it can become a completely different work depending on how it's directed. Moreover, even with the same cast, the show will vary slghdly from day to day.`,
     audio: "T99.mp3",
     topic: MiniStoryTopics.TRENDS,
@@ -4421,6 +4941,7 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
         secondary: true,
       },
     ],
+    kanjis: ["脅", "謎", "展", "開", "議", "論"],
     translation: `At first, I thought this manga was simply a comic book about slaying giants that threaten the city. However, I later became aware of various mysteries and began to try to predict story developments through discussions on the Internet.`,
     audio: "T100.mp3",
     topic: MiniStoryTopics.TRENDS,
@@ -4478,6 +4999,7 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
         secondary: true,
       },
     ],
+    kanjis: ["刑", "殺", "批", "評", "制", "警", "察", "説", "当", "初"],
     translation: `A former detective comes to the police, claiming to have committed a murder. The novel, which begins with this scene, was not well received by critics at first. But it was very popular with readers, and a movie and drama series were later produced.`,
     audio: "T101.mp3",
     topic: MiniStoryTopics.TRENDS,
@@ -4571,6 +5093,7 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
         secondary: true,
       }
     ],
+    kanjis: ["娯", "探", "偵", "宝", "返", "却", "発", "射", "職", "業", "泥", "棒", "盗", "議"],
     translation: `In fictional works of entertainment, private investigators are popular characters, but thieves can also be popular. Thief characters steal diamonds and other riches, but they're often not interested in money and sometimes even return what they steal. It's odd when you think about it, but they often fight by firing playing cards from guns.`,
     audio: "T102.mp3",
     topic: MiniStoryTopics.TRENDS,
@@ -4639,6 +5162,7 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
         secondary: true,
       },
     ],
+    kanjis: ["翼", "奇", "妙", "実", "鑑", "超", "能"],
     translation: `The ability to produce flames, grow wings, and other supernatural powers often appear in manga comics and anime. There are also various ways to obtain these mysterious powers. In one well-known manga, powers are obtained by eating strangely shaped fruit. And what's more, there's even an illustrated book of these fruit, so you know what sort of power you'll get before you eat it.`,
     audio: "T103.mp3",
     topic: MiniStoryTopics.TRENDS,
@@ -4706,6 +5230,7 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
         secondary: true,
       },
     ],
+    kanjis: ["幽", "霊", "恐", "怖", "驚", "推"],
     translation: `A: I don't like horror movies. I'm not afraid of ghosts, but I don't like being startled by loud noises.\nB: I don't like to see dead bodies shown in thriller movies . It gives me a creepy feeling.`,
     audio: "T104.mp3",
     topic: MiniStoryTopics.TRENDS,
@@ -4750,6 +5275,7 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
         secondary: true,
       },
     ],
+    kanjis: ["巻", "再", "開", "途"],
     translation: `A certain popular manga has stopped at 36 volumes, and it's only partway through the story. However,its rumored that it wil resume soon.`,
     audio: "T105.mp3",
     topic: MiniStoryTopics.TRENDS,
@@ -4812,6 +5338,7 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
         secondary: true,
       },
     ],
+    kanjis: ["魔", "法", "冒", "険", "熱", "徹", "夜", "剣"],
     translation: `When role-playing games, or RPGs, were first released in Japan, there was a huge RPG boom. Many young people were absorbed in adventures in sword and magical worlds. At that time, many people stayed up all night to play.`,
     audio: "T106.mp3",
     topic: MiniStoryTopics.TRENDS,
@@ -4857,6 +5384,7 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
         important: true,
       },
     ],
+    kanjis: ["請", "求", "晝", "端", "末", "発"],
     translation: `The billing statement for this game can be viewed from any kind of device. You can also download a PDF file and print it out by clicking the “Issue" button.`,
     audio: "T107.mp3",
     topic: MiniStoryTopics.TRENDS,
@@ -4871,7 +5399,7 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
       },
       {
         character: "B",
-        dialogue: "どうせ上{じょう}映{えい}後{ご}1年したらテレビで見られるんだから、急{いそ}いで見る必要なくない？",
+        dialogue: "[どうせ]上{じょう}映{えい}後{ご}1年したらテレビで見られるんだから、急{いそ}いで見る必要なくない？",
       },
       {
         character: "A",
@@ -4932,7 +5460,14 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
         type: MiniStoryWordType.NOUN,
         secondary: true,
       },
+      {
+        kanji: "どうせ",
+        english: "anyway・in any case",
+        type: MiniStoryWordType.ADVERB,
+        secondary: true,
+      }
     ],
+    kanjis: ["映", "超", "券"],
     translation: `A: I heard that the latest movie in the series will screen in March. I'm really looking forward to it. I'll definitely buy a ticket in advance and see it on the first day.\nB: It'll be on TV a year after it screens anyway, so there's no rush to see it.\nA: It's better to see it on the big screen! Besides, I canit stand commercials.`,
     audio: "T108.mp3",
     topic: MiniStoryTopics.TRENDS,
@@ -4985,6 +5520,7 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
         secondary: true,
       },
     ],
+    kanjis: ["公", "式", "活", "躍"],
     translation: `A: My favorite manga cartoonist's social media site says "Official" but it's not actually him! I feel cheated.\nB: But what can you do? It's not easy for cartoonists to be on social media. People make requests to put in their own favorite characters.\nA: Really? Some people are shameless.`,
     audio: "T109.mp3",
     topic: MiniStoryTopics.TRENDS,
@@ -5030,6 +5566,7 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
         secondary: true,
       },
     ],
+    kanjis: ["貼"],
     translation: `In the past, after finishing a video game, people often sold them to used game stores. Used games sometimes had the name of the previous owner written on them or were covered in stickers.`,
     audio: "T110.mp3",
     topic: MiniStoryTopics.TRENDS,
@@ -5090,6 +5627,7 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
         important: true,
       },
     ],
+    kanjis: ["泉", "回", "復"],
     translation: `A: Whoa, I'm about to die. It's too difficult here.\nB: Why not try entering the fountain we just saw? You should recover.\nA: Hey, I did recover! There were no hints at all. How did you figure it out?\nB: I play a lot of these games, and they're usually quite similar.\nA: I knew it. That's just like you.`,
     audio: "T111.mp3",
     topic: MiniStoryTopics.TRENDS,
@@ -5127,6 +5665,7 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
         important: true,
       },
     ],
+    kanjis: ["視", "警", "告", "医", "者"],
     translation: `A: I think I play too many games. My doctor warned me that if my eyesight gets any worse, I'll have to get glasses or contact lenses. Which do you think would be more attractive?\nB: Either way, I don't think you'll be attractive.`,
     audio: "T112.mp3",
     topic: MiniStoryTopics.TRENDS,
@@ -5187,6 +5726,7 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
         secondary: true,
       },
     ],
+    kanjis: ["公", "表", "芸", "推", "薦", "役", "優", "務"],
     translation: `A: They've announced who's playing the guest character in the upcoming movie, but he's a comedian. I wish they get a professional voice actor.\nB: Well, I'm sure the agency recommended him.`,
     audio: "T113.mp3",
     topic: MiniStoryTopics.TRENDS,
@@ -5244,6 +5784,7 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
         secondary: true,
       },
     ],
+    kanjis: ["抽", "選", "魔", "呼"],
     translation: `The gacha system, in which players are awarded characters by random draw, has now spread widely to the majority of smartphone games. Even if you decide to stop playing because it costs money, the devil will still whisper in your ear, "Just one more time— you might win..."`,
     audio: "T114.mp3",
     topic: MiniStoryTopics.TRENDS,
@@ -5304,6 +5845,7 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
         secondary: true,
       },
     ],
+    kanjis: ["神", "話", "架", "空", "教", "養", "剣"],
     translation: `A: In the manga I read today, there was a sword named "Ameno" something, and I thought it was such a strange name.\nB: Isn't that Ame-no-Habakiri? It's a sword from Japanese mythology.\nA: What? Did it really exist?\nB: It's a myth. But it's harder to remember a fictional sword with an original name, isn't it? That's why swords and monsters often borrow names from mythology. If you watch manga and anime, you become more familiar with mythology.\nA: Wow. I suppose if you take it far enough, you can really gain an education.`,
     audio: "T115.mp3",
     topic: MiniStoryTopics.TRENDS,
@@ -5371,6 +5913,7 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
         secondary: true,
       },
     ],
+    kanjis: ["激", "裏", "切", "常", "載"],
     translation: `Working as a musical "idol" performer is not easy. The schedule is hard, and you have to constantly smile on stage while performing strenuous dance moves. And if you're ever spotted going on a date on your day off, your name will be in the headlines and fans will say that you've betrayed them. But precisely because it's so hard, they take pride in their work.`,
     audio: "T116.mp3",
     topic: MiniStoryTopics.TRENDS,
@@ -5446,6 +5989,7 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
         secondary: true,
       },
     ],
+    kanjis: ["広", "存", "在", "勝", "利", "進", "重", "装", "備", "移", "動", "魅"],
     translation: `So-called "open world" games are games that allow players to move freely through vast worlds. The player can proceed through the game however they like. Of course, enemies exist everywhere in the world, and the goal is to defeat them. As the story progresses, the main character, who initially had nothing, becomes more and more heavily equipped, which is one of the attractions of the game.`,
     audio: "T117.mp3",
     topic: MiniStoryTopics.TRENDS,
@@ -5551,6 +6095,7 @@ export const MINI_STORY_N2: Record<string, MiniStory> = {
         secondary: true,
       },
     ],
+    kanjis: ["及", "永", "遠", "解", "放", "想", "順", "序", "影", "響", "帝", "支", "民", "族", "反", "像", "進"],
     translation: `A: So should I watch the original trilogy?\nB: They're masterpieces whose influence has extended to lots of films. I think they'll go down forever in the history of cinema. The scenes showing the people once ruled by the Empire become liberated reflect the thinking of the time.\nA: But the original trilogy isn't the beginning of the story.\nB: The order of the story is different, but as for the images, you get more of a sense of how the technology progressed by watching the original trillogy first, then the new ones.`,
     audio: "T118.mp3",
     topic: MiniStoryTopics.TRENDS,
