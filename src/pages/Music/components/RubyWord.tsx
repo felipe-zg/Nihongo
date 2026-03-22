@@ -1,17 +1,16 @@
-import { Text, VStack } from "native-base";
+import { Box, Text } from "native-base";
 
 export const RubyWord = ({ kanji, furigana }: RubyPart) => (
-  <VStack alignItems="center">
+  <Box>
     <Text
-      fontSize={{base: "md", md: "3xl"}}
-      lineHeight="xs"
-      opacity={furigana ? 1 : 0} // Hide but keep space
-      color="red.500"
-      bold
-      my={5}
+      fontFamily="Klee One"
+      fontSize={{base: "md", md: "lg"}}
+      opacity={furigana ? 1 : 0}
+      color="pink.500"
+      my={2}
     >
-      {furigana || "あ"} {/* Filler kana for consistent height */}
+      {furigana || "あ"}
     </Text>
-    <Text color={furigana ? "red.500" : "black"} fontSize={{base: "2xl", md: "6xl"}}>{kanji}</Text>
-  </VStack>
+    <Text fontFamily="Klee One" color={furigana ? "yellow.500" : "white"} fontSize={{base: "2xl", md: "4xl"}}>{kanji}</Text>
+  </Box>
 );

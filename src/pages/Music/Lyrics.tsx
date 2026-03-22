@@ -9,7 +9,7 @@ interface LyricsProps {
 const Lyrics: React.FC<LyricsProps> = ({ lyric }) => {
 
   return (
-    <Box paddingY={50} paddingLeft={{base: 0, md: 50}} backgroundColor={"white"} flex={1} minHeight={"100vh"}>
+    <Box paddingY={50} paddingLeft={{base: 0, md: 50}} flex={1} minHeight={"100vh"}>
       <VStack space={2} p={4}>
         {lyric.map((line, i) => (
           <LyricLine key={i} rubyText={line} />
