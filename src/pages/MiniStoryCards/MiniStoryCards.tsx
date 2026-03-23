@@ -1,4 +1,5 @@
-import React, { useMemo, useRef, useState } from "react";
+/* eslint-disable no-useless-escape */
+import React, { useEffect, useMemo, useRef, useState } from "react";
 import { Box, Button, HStack, Text, Select } from "native-base";
 import FlipCard, { FlipCardHandle } from "../../components/FlipCard/FlipCard";
 import { parseRuby } from "../../utils/music/rubyParser";
@@ -27,7 +28,6 @@ const MiniStoryCards: React.FC<Props> = ({ vocabList, level }) => {
   const [startIndex, setStartIndex] = useState(0);
   const [endIndex, setEndIndex] = useState(vocabList.length - 1);
   const [isShuffled, setIsShuffled] = useState(false);
-  const [importantWords, setImportantWords] = useState<Vocab[]>([]);
   const [canAddAsImportant, setCanAddAsImportant] = useState(true);
   const flipCardRef = useRef<FlipCardHandle>(null);
 
@@ -75,28 +75,32 @@ const MiniStoryCards: React.FC<Props> = ({ vocabList, level }) => {
     !canAddAsImportant && setCanAddAsImportant(true);
   }
 
-  function downloadJSON(data: any, filename = "importantWords.json") {
-    const jsonStr = JSON.stringify(data, null, 2);
-    const blob = new Blob([jsonStr], { type: "application/json" });
-    const url = URL.createObjectURL(blob);
+  function handlePrev() {
+    if (!flipCardRef.current?.isFlipped()) {
+      flipCardRef.current?.flip();
+      return;
+    } else {
+      flipCardRef.current?.unflip();
+    }
+    setTimeout(() => {
+      setCurrentIndex((prevIndex) => (prevIndex - 1 + filteredVocabList.length) % filteredVocabList.length);
+    }, 200);
+    !canAddAsImportant && setCanAddAsImportant(true);
+  };
 
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = filename;
-    a.click();
-
-    URL.revokeObjectURL(url);
-  }
-
-  function markAsImportant(word: Vocab) {
-    setImportantWords((prevWords) => {
-      if (!prevWords.find(w => w.kanji === word.kanji && w.english === word.english)) {
-        return [...prevWords, word];
+  useEffect(() => {
+    function handleKeyDown(e: KeyboardEvent) {
+      if (e.key === "ArrowRight") handleNext();
+      if (e.key === "ArrowLeft") handlePrev();
+      if (e.key === "ArrowUp") {
+        e.preventDefault();
+        flipCardRef.current?.unflip();
       }
-      return prevWords;
-    });
-    setCanAddAsImportant(false);
-  }
+    }
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <Box alignItems="center" mt={10}>
@@ -105,13 +109,13 @@ const MiniStoryCards: React.FC<Props> = ({ vocabList, level }) => {
       {filteredVocabList.length > 0 && (
         <FlipCard
           ref={flipCardRef} 
-          CardFrontContent={<Text fontSize={"6xl"} color={"teal.500"} fontFamily="Klee One" >
-            {formattedKanji(currentCard.kanji.replace(/［.*?］/g, ""), true)}
+          CardFrontContent={<Text fontSize={"7xl"} color={"yellow.500"} fontFamily="Klee One" >
+            {formattedKanji(currentCard.kanji.replace(/[\[\［]する[\]\］]|（と）/g, ''), true)}
           </Text>}
           CardBackContent={
             <>
               <Text fontSize={"5xl"} color={"white"} fontFamily="Klee One">
-                {formattedKanji(currentCard.kanji, false, true)}
+                {formattedKanji(currentCard.kanji.replace(/[\[\［]する[\]\］]|（と）/g, ''), false, true)}
               </Text>
               <Text fontSize={"3xl"} color={"primary.500"} fontFamily="Klee One">{currentCard.english}</Text>
             </>
@@ -152,19 +156,6 @@ const MiniStoryCards: React.FC<Props> = ({ vocabList, level }) => {
           </Select>
         </Box>
         <button disabled={isShuffled} onClick={shuffleCards}>Shuffle ⇄</button>
-      </HStack>
-      <HStack my={12} paddingX={8} space={4} width={"100%"}>
-        <Button
-          disabled={!canAddAsImportant}
-          colorScheme={canAddAsImportant ? "pink" : "gray"}
-          variant={"subtle"}
-          onPress={() => markAsImportant(currentCard)}
-        >
-            Mark as important
-        </Button>
-        <Button colorScheme={"red"} variant={"outline"} onPress={() => downloadJSON(importantWords)}>
-            Download file
-        </Button>
       </HStack>
     </Box>
   );
