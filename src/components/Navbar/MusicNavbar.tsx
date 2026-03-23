@@ -6,6 +6,8 @@ import { useScreenWidth } from '../../hooks';
 const routes = [
   { name: 'Home', path: '/' },
   { name: 'Nostalgia', path: '/music?artist=Leina&song=nostalgia' },
+  { name: 'Moment', path: '/music?artist=Leina&song=moment' },
+  { name: 'Blue Age', path: '/music?artist=Leina&song=blue-age' },
   { name: 'ブルーライト', path: '/music?artist=Others&song=ブルーライト' },
   { name: '死ぬのがいいわ', path: '/music?artist=Others&song=死ぬのがいいわ' },
   { name: '東京', path: '/music?artist=Others&song=東京' },

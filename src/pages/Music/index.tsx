@@ -1,7 +1,7 @@
 import React, { useMemo } from "react";
 import { useSearchParams } from "react-router-dom";
 import Lyrics from "./Lyrics";
-import { LEINA_NOSTALGIA, OTHERS_ブルーライト, OTHERS_東京, OTHERS_死ぬのがいいわ, OTHERS_革命道中 } from "../../consts/music";
+import { LEINA_BLUE_AGE, LEINA_MOMENT, LEINA_NOSTALGIA, OTHERS_ブルーライト, OTHERS_東京, OTHERS_死ぬのがいいわ, OTHERS_革命道中 } from "../../consts/music";
 
 type ArtistNamme = "Leina" | "Ohers";
 
@@ -15,6 +15,10 @@ const LyricsPage: React.FC = () => {
     switch (song) {
       case "nostalgia":
         return LEINA_NOSTALGIA;
+      case "moment":
+        return LEINA_MOMENT;
+      case "blue-age":
+        return LEINA_BLUE_AGE;
       default:
         return [];
     }
