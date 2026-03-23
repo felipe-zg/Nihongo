@@ -149,8 +149,8 @@ const MiniStory: React.FC<MiniStoryProps> = ({
     )
   });
 
-  function goToCardsDeck(onlyMainWords = false) {
-    window.location.href = `/ministory-cards?level=${"n2"}&topic=${selectedTopic}&startPage=${selectedStartPage}&endPage=${selectedEndPage}&availablePages=${availablePages.join(",")}&onlyMainWords=${onlyMainWords}`;
+  function goToCardsDeck(onlyMainWords = false, secondaryWords = false) {
+    window.location.href = `/ministory-cards?level=${"n2"}&topic=${selectedTopic}&startPage=${selectedStartPage}&endPage=${selectedEndPage}&availablePages=${availablePages.join(",")}&onlyMainWords=${onlyMainWords}&secondaryWords=${secondaryWords}`;
   };
 
   function goToAudioFiles() {
@@ -272,7 +272,11 @@ const MiniStory: React.FC<MiniStoryProps> = ({
         </Button>
 
         <Button variant="outline" colorScheme="green" onPress={() => goToCardsDeck(true)}>
-          Marked Cards deck
+          Important Cards deck
+        </Button>
+
+        <Button variant="outline" colorScheme="red" onPress={() => goToCardsDeck(true, true)}>
+          Main Cards deck
         </Button>
 
         <Button variant="outline" colorScheme="secondary" onPress={goToAudioFiles}>
