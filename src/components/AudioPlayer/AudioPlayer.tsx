@@ -44,6 +44,30 @@ const AudioPlayer = ({ level, fileName, path }: { level?: 'N2' | 'N3'; fileName?
     };
   }, []);
 
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      const activeTag = (document.activeElement as HTMLElement)?.tagName;
+      if (activeTag === 'INPUT' || activeTag === 'TEXTAREA') return;
+
+      if (e.code === 'Enter') {
+        e.preventDefault();
+        restartAudio();
+      }
+
+      if (e.code === 'Space') {
+        e.preventDefault();
+        handleAudioPause();
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   return (
     <HStack>
       <audio 
