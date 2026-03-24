@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo } from "react";
+import React, { useEffect, useMemo, useCallback } from "react";
 import MiniStory from "./MiniStory";
 import { MINI_STORY_N2, MINI_STORY_N3, MiniStoryTopics } from "../../consts/MiniStory";
 import { useSearchParams } from "react-router-dom";
@@ -58,13 +58,30 @@ const MiniStoryPage: React.FC = () => {
     setSelectedEndPage(page);
   }
 
-  function nextStory() {
+  const nextStory = useCallback(() => {
     if (availableStories.length === 0) return;
     const currentIndex = availableStories.indexOf(selectedStory);
     const nextIndex = (currentIndex + 1) % availableStories.length;
-    const nextStory = availableStories[nextIndex];
-    setSelectedStory(nextStory);
-  }
+    const nextStoryId = availableStories[nextIndex];
+    setSelectedStory(nextStoryId);
+  }, [availableStories, selectedStory]);
+
+  const previousStory = useCallback(() => {
+    if (availableStories.length === 0) return;
+    const currentIndex = availableStories.indexOf(selectedStory);
+    const previousIndex = (currentIndex - 1 + availableStories.length) % availableStories.length;
+    const previousStoryId = availableStories[previousIndex];
+    setSelectedStory(previousStoryId);
+  }, [availableStories, selectedStory]);
+
+  useEffect(() => {
+    function handleKeyDown(e: KeyboardEvent) {
+      if (e.key === "ArrowRight") nextStory();
+      if (e.key === "ArrowLeft") previousStory();
+    }
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [nextStory, previousStory]);
 
   useEffect(() => {
 
