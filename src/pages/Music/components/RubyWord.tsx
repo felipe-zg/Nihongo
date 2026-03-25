@@ -1,11 +1,11 @@
 import { Box, Text } from "native-base";
 
-export const RubyWord = ({ kanji, furigana }: RubyPart) => (
+export const RubyWord = ({ kanji, furigana, showFurigana }: RubyPart & { showFurigana: boolean }) => (
   <Box>
     <Text
       fontFamily="Klee One"
       fontSize={{base: "md", md: "lg"}}
-      opacity={furigana ? 1 : 0}
+      opacity={showFurigana && furigana ? 1 : 0}
       color="pink.500"
       my={2}
     >
