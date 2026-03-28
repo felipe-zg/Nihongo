@@ -1,9 +1,9 @@
 import React, { useMemo } from "react";
 import { useSearchParams } from "react-router-dom";
 import Lyrics from "./Lyrics";
-import { LEINA_BLUE_AGE, LEINA_MOMENT, LEINA_NOSTALGIA, OTHERS_ブルーライト, OTHERS_東京, OTHERS_死ぬのがいいわ, OTHERS_革命道中 } from "../../consts/music";
+import { LEINA_BLUE_AGE, LEINA_MOMENT, LEINA_NOSTALGIA, NEMOPHILA_LIFE, NEMOPHILA_MONSTERS, OTHERS_ブルーライト, OTHERS_東京, OTHERS_死ぬのがいいわ, OTHERS_革命道中 } from "../../consts/music";
 
-type ArtistNamme = "Leina" | "Ohers";
+type ArtistNamme = "Leina" | "Nemophila" | "Ohers";
 
 
 const LyricsPage: React.FC = () => {
@@ -19,6 +19,17 @@ const LyricsPage: React.FC = () => {
         return LEINA_MOMENT;
       case "blue-age":
         return LEINA_BLUE_AGE;
+      default:
+        return [];
+    }
+  };
+
+  const getNemophilaLyrics = (song: string): string[] => {
+    switch (song) {
+      case "monsters":
+        return NEMOPHILA_MONSTERS;
+      case "life":
+        return NEMOPHILA_LIFE;
       default:
         return [];
     }
@@ -44,6 +55,8 @@ const LyricsPage: React.FC = () => {
     switch (artistParam) {
       case "Leina":
         return getLeinaLyrics(songParam);
+      case "Nemophila":
+        return getNemophilaLyrics(songParam);
       case "Ohers":
       default:
         return getOhersLyrics(songParam);
