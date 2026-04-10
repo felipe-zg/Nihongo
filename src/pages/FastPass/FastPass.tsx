@@ -78,13 +78,22 @@ const FastPass: React.FC<Props> = ({
             ))}
           </HStack>
         </HStack>
-        <ExamplePhrase example={word.example} textAlign="left"/>
-        <ExamplePhrase 
-          example={word.exampleMeaning}
-          baseColor={ShowInfo ? "gray.400" : "transparent"}
-          highlightColor={ShowInfo ? undefined : "transparent"}
-          textAlign="left" 
-        />
+        <HStack>
+            <Box flex={19}>
+              <ExamplePhrase example={word.example} textAlign="left"/>
+              <ExamplePhrase 
+                example={word.exampleMeaning}
+                baseColor={ShowInfo ? "gray.400" : "transparent"}
+                highlightColor={ShowInfo ? undefined : "transparent"}
+                textAlign="left" 
+              />
+            </Box>
+            <Box flex={1} alignItems={"flex-end"} justifyContent={"flex-end"}>
+              <Text fontFamily="Klee One" fontSize={"md"} color="orange.500">
+                {String(word.id).padStart(3, "0")}
+              </Text>
+            </Box>
+        </HStack>
         <Divider my={2} />
       </Pressable>
     );
