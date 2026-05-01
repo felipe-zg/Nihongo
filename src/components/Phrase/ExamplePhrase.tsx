@@ -6,10 +6,11 @@ type Props = {
   fontSize?: string;
   baseColor?: string;
   highlightColor?: string;
+  secondayHighlightColor?: string;
   textAlign?: "center" | "left" | "right";
 };
 
-const ExamplePhrase: React.FC<Props> = ({ example, fontSize = "md", baseColor = "white", highlightColor = "pink.500", textAlign = "center" }) => {
+const ExamplePhrase: React.FC<Props> = ({ example, fontSize = "md", baseColor = "white", highlightColor = "pink.500", secondayHighlightColor = "yellow.500", textAlign = "center" }) => {
     // Split by { } or [ ] or < >
     const parts = example.split(/(\{.*?\}|\[.*?\]|<.*?>)/g);
 
@@ -34,7 +35,7 @@ const ExamplePhrase: React.FC<Props> = ({ example, fontSize = "md", baseColor = 
           // [ ... ] → yellow
           if (part.startsWith("[") && part.endsWith("]")) {
             return (
-              <Text key={index} color="yellow.500">
+              <Text key={index} color={secondayHighlightColor}>
                 {part.slice(1, -1)}
               </Text>
             );
