@@ -80,11 +80,12 @@ const FastPass: React.FC<Props> = ({
         </HStack>
         <HStack>
             <Box flex={19}>
-              <ExamplePhrase example={word.example} textAlign="left"/>
+              <ExamplePhrase example={word.example} textAlign="left" secondayHighlightColor="tertiary.400"/>
               <ExamplePhrase 
                 example={word.exampleMeaning}
                 baseColor={ShowInfo ? "gray.400" : "transparent"}
                 highlightColor={ShowInfo ? undefined : "transparent"}
+                secondayHighlightColor={ShowInfo ? "tertiary.400" : "transparent"}
                 textAlign="left" 
               />
             </Box>
