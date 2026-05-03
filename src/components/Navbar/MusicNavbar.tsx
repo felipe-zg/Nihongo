@@ -10,6 +10,8 @@ const routes = [
   { name: 'Blue Age', path: '/music?artist=Leina&song=blue-age' },
   { name: 'Monsters', path: '/music?artist=Nemophila&song=monsters' },
   { name: 'Life', path: '/music?artist=Nemophila&song=life' },
+  { name: 'Sorai', path: '/music?artist=Nemophila&song=sorai' },
+  { name: 'Just Do It', path: '/music?artist=Nemophila&song=just-do-it' },
   { name: 'ブルーライト', path: '/music?artist=Others&song=ブルーライト' },
   { name: '死ぬのがいいわ', path: '/music?artist=Others&song=死ぬのがいいわ' },
   { name: '東京', path: '/music?artist=Others&song=東京' },
