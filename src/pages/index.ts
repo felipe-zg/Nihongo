@@ -25,6 +25,7 @@ export { default as RealJapaneseAudioPlayer } from "./AudioPlayers/RealJapanese"
 export { default as Nihongo500Mondai } from "./Nihongo500/Mondai";
 export { default as JLPTExamVocabs } from "./JLPT/ExamVocabs";
 export { default as FastPass } from "./FastPass";
+export { default as FastPassPrint } from "./Printable/NihongoNoMori/Fastpass";
 export { default as KanjiCreateForm } from "./M2/KanjiCreateForm/KanjiCreateForm";
 export { default as RealJapanese } from "./RealJapanese";
 export { default as Lyrics } from "./Music";
