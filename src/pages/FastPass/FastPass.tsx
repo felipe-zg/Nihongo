@@ -1,127 +1,89 @@
 import React from "react";
-import { Box, HStack, Text, Divider, Stack, Pressable } from "native-base";
-import { ExamplePhrase } from "../../components";
-import { parseRuby } from "../../utils/music/rubyParser";
+import { Box, HStack, Text, Stack, Input, Modal, Button, Select } from "native-base";
+import { WordsList } from "./components/WordsList/WordsList";
+import { VocabularyItem } from "./components/VocabularyItem/VocabularyItem";
 
 type Props = {
   tangoList: Record<string, TangoEntry>;
+  filteredWord: TangoWord | null;
+  availableIds: number[];
+  startId: number;
+  endId: number;
+  onStartIdChange(id: number): void;
+  onEndIdChange(id: number): void;
+  openPrintPage(): void;
+  runFilter(filter: string): boolean;
 };
 
 const FastPass: React.FC<Props> = ({
-  tangoList
+  tangoList,
+  filteredWord,
+  startId,
+  endId,
+  onStartIdChange,
+  onEndIdChange,
+  openPrintPage,
+  availableIds,
+  runFilter,
 }) => {
+  const [filter, setFilter] = React.useState("");
+  const [showModal, setShowModal] = React.useState(false);
 
-  const Word: React.FC<{ ruby: string, showFurigana: boolean }> = ({ ruby, showFurigana }) => {
-    const parts: RubyPart[] = parseRuby(ruby);
+  const onFilter = React.useCallback(() => {
+    const showResult = runFilter(filter);
+    if (showResult) {
+      setShowModal(true);
+    } else {
+      alert("No matching word found.");
+    }
+  }, [filter, runFilter]);
 
-    return (
-      <HStack>
-        <Box>
-          <Text
-            fontFamily="Klee One"
-            color="yellow.400"
-            fontSize="3xl"
-            lineHeight="32px"
-          >
-            {parts.map((part, index) => (
-              <Text key={index}>
-                {part.furigana ? (
-                  <ruby>
-                    {part.kanji}
-                    <rt
-                      style={{
-                        fontSize: "0.45em",
-                        lineHeight: "1",
-                        color: showFurigana ? undefined : "transparent",
-                      }}
-                    >
-                      {part.furigana}
-                    </rt>
-                  </ruby>
-                ) : (
-                  part.kanji
-                )}
-              </Text>
-            ))}
-          </Text>
-        </Box>
-      </HStack>
-    );
-  };
-
-  const VocabularyItem: React.FC<{ word: TangoWord }> = ({ word }) => {
-    const [ShowInfo, setInfo] = React.useState(false);
-
-    return (
-      <Pressable key={word.wordRuby} mb={2} onPress={() => setInfo((prev) => !prev)}>
-        <HStack>
-          <Box flex={1}>
-            <HStack alignItems={"end"}>
-              <Word ruby={word.wordRuby} showFurigana={ShowInfo} />
-              {word.connector && <Text fontFamily="Klee One" color={"white"} ml={2} mt={2}>{word.connector}</Text>}
-            </HStack>
-            <Text fontFamily="Klee One" color={ShowInfo ? "primary.500" : "transparent"}>
-              {word.meaning}
-            </Text>
-          </Box>
-          <HStack justifyContent={"flex-end"} flex={1} space={2}> 
-            {word.components?.map((component: any, index: number) => (
-              <HStack key={index}>
-                {index > 0 && <Text color={"white"} mr={2} mt={2}>＋</Text>}
-                <Box key={index}  mb={1} minW={"20"}>
-                  <Box borderColor={"red.500"} borderWidth={1} borderRadius={5} p={1} alignItems={"center"}>
-                    <Text fontFamily="Klee One" color={"white"} bold>{component.kanji}</Text>
-                  </Box>
-                  <Text textAlign={"center"} fontFamily="Klee One" color={"gray.400"}>{component.meaning}</Text>
-                </Box>
-              </HStack>
-            ))}
-          </HStack>
-        </HStack>
-        <HStack>
-            <Box flex={19}>
-              <ExamplePhrase example={word.example} textAlign="left" secondayHighlightColor="tertiary.400"/>
-              <ExamplePhrase 
-                example={word.exampleMeaning}
-                baseColor={ShowInfo ? "gray.400" : "transparent"}
-                highlightColor={ShowInfo ? undefined : "transparent"}
-                secondayHighlightColor={ShowInfo ? "tertiary.400" : "transparent"}
-                textAlign="left" 
-              />
-            </Box>
-            <Box flex={1} alignItems={"flex-end"} justifyContent={"flex-end"}>
-              <Text fontFamily="Klee One" fontSize={"md"} color="orange.500">
-                {String(word.id).padStart(3, "0")}
-              </Text>
-            </Box>
-        </HStack>
-        <Divider my={2} />
-      </Pressable>
-    );
-  }
+  const MemoizedWordsList = React.memo(() => WordsList({ wordsObjects: tangoList }));
 
   return (
     <Box alignItems="center" mt={10}>
       <Stack space={4} mb={6} alignItems="center" justifyContent={"space-between"} width="98%" direction={{ base: "column", lg: "row" }} >
         <Text fontSize={"xl"} bold color={"white"}>日本語の森 FAST PASS</Text>
+        <HStack space={2} alignItems={"center"} justifyContent={"center"}>
+          <Input placeholder="Filter by reading or ID" width={{ base: "100%", lg: "150px" }} bg="white" color="black" value={filter} onChangeText={setFilter} />
+          <Button colorScheme="blue" size={"xs"} variant="outline" onPress={onFilter}>
+            Find
+          </Button>
+        </HStack>
+        <HStack px={4} space={4}>
+          <Box>
+            <Select size={"xs"} color={"white"} selectedValue={String(startId)} onValueChange={(itemValue) => onStartIdChange(Number(itemValue))}>
+              <Select.Item label="-- Select a start index --" value="" />
+              {availableIds.map((key) => (
+                <Select.Item key={key} label={String(key)} value={String(key)} />
+              ))}
+            </Select>
+          </Box>
+          <Box>
+            <Select size={"xs"} color={"white"} selectedValue={String(endId)} onValueChange={(itemValue) => onEndIdChange(Number(itemValue))}>
+              <Select.Item label="-- Select an end index --" value="" />
+              {availableIds.map((key) => (
+                <Select.Item key={key} label={String(key)} value={String(key)} />
+              ))}
+            </Select>
+          </Box>
+        </HStack>
+        <Button onPress={openPrintPage} colorScheme="blue" size={"xs"} variant={"outline"}>
+          Print
+        </Button>
       </Stack>
       
-      {Object.entries(tangoList).map(([key, tangoItem]) => (
-        <Box key={key} borderWidth={1} borderColor="gray.300" borderRadius="md" mb={4} width="98%" overflow={"hidden"}>
-          {/* Main Entry Information */}
-          <Box bg="gray.600">
-            <Text px={4} py={2}>
-              <Text fontSize={"2xl"} color={"yellow.400"}>{key}</Text>
-              <Text color={"gray.400"}>&nbsp;&nbsp;{tangoItem.meaning}</Text>
-            </Text>
-          </Box>
-          <Box p={4}>
-            {tangoItem.words?.map((word) => (
-              <VocabularyItem word={word} />
-            ))}
-          </Box>
-        </Box>
-      ))}
+      <MemoizedWordsList />
+
+      <Modal isOpen={showModal} onClose={() => setShowModal(false)} size="lg">
+        <Modal.Content bg={"gray.900"} maxWidth="650" mt={0} mb={"auto"}>
+          <Modal.CloseButton />
+          <Modal.Header>{filteredWord?.meaning}</Modal.Header>
+          <Modal.Body>
+            <VocabularyItem key={filteredWord?.id} word={filteredWord!} />
+          </Modal.Body>
+        </Modal.Content>
+      </Modal>
     </Box>
   );
 };
