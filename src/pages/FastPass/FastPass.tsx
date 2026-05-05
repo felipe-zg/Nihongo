@@ -80,7 +80,7 @@ const FastPass: React.FC<Props> = ({
           <Modal.CloseButton />
           <Modal.Header>{filteredWord?.meaning}</Modal.Header>
           <Modal.Body>
-            <VocabularyItem key={filteredWord?.id} word={filteredWord!} />
+            {filteredWord && <VocabularyItem key={filteredWord?.id} word={filteredWord} />}
           </Modal.Body>
         </Modal.Content>
       </Modal>

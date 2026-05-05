@@ -17,11 +17,11 @@ const FastPassPage: React.FC = () => {
     }
   };
 
-  const handleStartIdChange = (id: number) => {
+  const handleStartIdChange = (id: number): void => {
     setStartId(id);
   };
 
-  const handleEndIdChange = (id: number) => {
+  const handleEndIdChange = (id: number): void => {
     setEndId(id);
   };
 
@@ -36,7 +36,6 @@ const FastPassPage: React.FC = () => {
 
         if (reading.includes(filter) || String(word.id).includes(filter)) {
           setFilteredWord(word);
-          // setShowModal(true);
           return true;
         }
       }
@@ -45,8 +44,10 @@ const FastPassPage: React.FC = () => {
   };
 
 
-  const availableIds = Object.values(JLPT_N2_FASTPASS_TANGO)
-    .flatMap(entry => entry.words.map(word => word.id));
+  const availableIds = React.useMemo(() => {
+    return Object.values(JLPT_N2_FASTPASS_TANGO)
+      .flatMap(entry => entry.words.map(word => word.id));
+  }, []);
 
   const tangoList = React.useMemo(() => {
     const filteredTango: Record<string, TangoEntry> = {};
