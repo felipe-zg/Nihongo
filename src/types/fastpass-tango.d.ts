@@ -1,3 +1,8 @@
+declare type VocabularyEntry = {
+  wordRuby: string;
+  meaning: string;
+};
+
 declare type TangoComponent = {
   kanji: string;
   meaning: string;
@@ -11,6 +16,7 @@ declare type TangoWord = {
   components: TangoComponent[];
   example: string;
   exampleMeaning: string;
+  extraVocabulary?: VocabularyEntry[];
 };
 
 declare type TangoEntry = {
