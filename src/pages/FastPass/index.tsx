@@ -5,7 +5,7 @@ import { parseRuby } from "../../utils/music/rubyParser";
 
 const FastPassPage: React.FC = () => {
   const [startId, setStartId] = React.useState(1);
-  const [endId, setEndId] = React.useState(10);
+  const [endId, setEndId] = React.useState(60);
   const [filteredWord, setFilteredWord] = React.useState<TangoWord | null>(null);
 
   const openPrintPage = () => {
@@ -18,10 +18,16 @@ const FastPassPage: React.FC = () => {
   };
 
   const handleStartIdChange = (id: number): void => {
+    if (id > endId) {
+      setEndId(id);
+    }
     setStartId(id);
   };
 
   const handleEndIdChange = (id: number): void => {
+    if (id < startId) {
+      setStartId(id);
+    }
     setEndId(id);
   };
 
