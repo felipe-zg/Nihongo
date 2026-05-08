@@ -42,6 +42,14 @@ export const VocabularyItem: React.FC<{ word: TangoWord }> = ({ word }) => {
               secondayHighlightColor={ShowInfo ? "tertiary.400" : "transparent"}
               textAlign="left" 
             />
+            {word.extraVocabulary?.map((vocab, index) => (
+              <HStack key={index} mt={2} space={4} alignItems={"center"} opacity={ShowInfo ? 1 : 0}>
+                <Word ruby={vocab.wordRuby} showFurigana fontSize="md" color="fuchsia.500" />
+                <Text fontFamily="Klee One" color={"fuchsia.300"}>
+                  {vocab.meaning}
+                </Text>
+              </HStack>
+            ))}
           </Box>
           <Box flex={1} alignItems={"flex-end"} justifyContent={"flex-end"}>
             <Text fontFamily="Klee One" fontSize={"md"} color="orange.500">
