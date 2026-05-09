@@ -115,8 +115,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "発", meaning: "Out" },
           { kanji: "言", meaning: "Speak" }
         ],
-        example: "手を挙げてから{発言}をしてください。",
-        exampleMeaning: "Please raise your hand before making a {statement}."
+        example: "手を[挙げて]から{発言}をしてください。",
+        exampleMeaning: "Please raise your hand before making a {statement}.",
+        extraVocabulary: [
+          { wordRuby: "挙{あ}げる", meaning: "Raise (bringing something forward publicly)" }
+        ]
       },
       {
         id: 11,
@@ -174,8 +177,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "発", meaning: "Out" },
           { kanji: "揮", meaning: "Wave" }
         ],
-        example: "試験で自分の実力を{発揮する}。",
-        exampleMeaning: "I'll {show} my {ability} in the exam."
+        example: "試験で自分の[実力]を{発揮する}。",
+        exampleMeaning: "I'll {show} my {ability} in the exam.",
+        extraVocabulary: [
+          { wordRuby: "実{じつ}力{りょく}", meaning: "Real ability・capability" }
+        ]
       },
       {
         id: 16,
@@ -198,8 +204,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "発", meaning: "Out" },
           { kanji: "展", meaning: "Expand" }
         ],
-        example: "技術が{発展する}ことで生活が変わった。",
-        exampleMeaning: "Technological {development} has changed our way of life."
+        example: "[技術]が{発展する}ことで生活が変わった。",
+        exampleMeaning: "Technological {development} has changed our way of life.",
+        extraVocabulary: [
+          { wordRuby: "技{ぎ}術{じゅつ}", meaning: "Technology" }
+        ]
       },
       {
         id: 18,
@@ -226,8 +235,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "取る", meaning: "Take" },
           { kanji: "組む", meaning: "Combine" }
         ],
-        example: "新しい本の制作に{取り組んでいる}。",
-        exampleMeaning: "I'm {working on} a new book."
+        example: "新しい本の[制作]に{取り組んでいる}。",
+        exampleMeaning: "I'm {working on} a new book.",
+        extraVocabulary: [
+          { wordRuby: "制{せい}作{さく}", meaning: "Production" }
+        ]
       },
       {
         id: 20,
@@ -237,8 +249,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "取る", meaning: "Take" },
           { kanji: "除く", meaning: "Remove" }
         ],
-        example: "不安や緊張を{取り除く}ことは難しい。",
-        exampleMeaning: "It is difficult to {get rid of} anxiety and tension."
+        example: "不安や[緊張]を{取り除く}ことは難しい。",
+        exampleMeaning: "It is difficult to {get rid of} anxiety and tension.",
+        extraVocabulary: [
+          { wordRuby: "緊{きん}張{ちょう}", meaning: "Tension・Nervousness" }
+        ],
       },
       {
         id: 21,
@@ -374,8 +389,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "気", meaning: "Spirit" },
           { kanji: "力", meaning: "Power" }
         ],
-        example: "最近、あまり{気力}が湧かない。",
-        exampleMeaning: "I haven't had much {energy} recently."
+        example: "最近、あまり{気力}が[湧かない]。",
+        exampleMeaning: "I haven't had much {energy} recently.",
+        extraVocabulary: [
+          { wordRuby: "湧{わ}く", meaning: "Well up・spring up・To arise naturally" }
+        ]
       },
       {
         id: 33,
@@ -396,8 +414,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "やる", meaning: "Do" },
           { kanji: "気", meaning: "Spirit" }
         ],
-        example: "先生に褒められて、{やる気}が出た。",
-        exampleMeaning: "I felt greater {motivation} after being praised by my teacher."
+        example: "先生に[褒められて]、{やる気}が出た。",
+        exampleMeaning: "I felt greater {motivation} after being praised by my teacher.",
+        extraVocabulary: [
+          { wordRuby: "褒{ほ}める", meaning: "To praise" }
+        ]
       },
       {
         id: 35,
@@ -407,8 +428,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "気", meaning: "air" },
           { kanji: "象", meaning: "image" }
         ],
-        example: "{気象}の変化が激しい。",
-        exampleMeaning: "There have been intense changes to {weather conditions}."
+        example: "{気象}の変化が[激しい]。",
+        exampleMeaning: "There have been intense changes to {weather conditions}.",
+        extraVocabulary: [
+          { wordRuby: "激{はげ}しい", meaning: "Intense・violent" }
+          ]
       },
     ],
   },
@@ -423,8 +447,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "ー", meaning: "One" },
           { kanji: "から", meaning: "From" }
         ],
-        example: "新しい環境で{一から}やり直すつもりだ。",
-        exampleMeaning: "I'm planning to start over {from zero} in a new environment."
+        example: "新しい[環境]で{一から}やり直すつもりだ。",
+        exampleMeaning: "I'm planning to start over {from zero} in a new environment.",
+        extraVocabulary: [
+          { wordRuby: "環{かん}境{きょう}", meaning: "Environment" }
+        ]
       },
       {
         id: 37,
@@ -445,8 +472,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "一", meaning: "One" },
           { kanji: "斉", meaning: "unify" }
         ],
-        example: "生徒が{一斉に}歌い始めた。",
-        exampleMeaning: "The students began to sing {all at once}."
+        example: "[生徒]が{一斉に}歌い始めた。",
+        exampleMeaning: "The students began to sing {all at once}.",
+        extraVocabulary: [
+          { wordRuby: "生{せい}徒{と}", meaning: "Student" }
+        ]
       },
       {
         id: 39,
@@ -468,8 +498,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "一", meaning: "One" },
           { kanji: "般", meaning: "Type" }
         ],
-        example: "{一般}の人はこの施設を利用できません。",
-        exampleMeaning: "This facility is not open for use by {ordinary} people.\n{General} public cannot use this facility."
+        example: "{一般}の人はこの[施設]を利用できません。",
+        exampleMeaning: "This facility is not open for use by {ordinary} people.\n{General} public cannot use this facility.",
+        extraVocabulary: [
+          { wordRuby: "施{し}設{せつ}", meaning: "Facility" }
+        ]
       },
       {
         id: 41,
@@ -496,7 +529,7 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
       {
         id: 43,
         wordRuby: "唯{ゆう}一{いつ}",
-        meaning: "only・sole",
+        meaning: "only・sole・unique",
         components: [
           { kanji: "唯", meaning: "Only" },
           { kanji: "一", meaning: "One" }
@@ -561,8 +594,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "物", meaning: "Thing" },
           { kanji: "事", meaning: "Thing" }
         ],
-        example: "{物事}が順調に進んでいる。",
-        exampleMeaning: "{Things} are proceeding smoothly."
+        example: "{物事}が[順調]に進んでいる。",
+        exampleMeaning: "{Things} are proceeding smoothly.",
+        extraVocabulary: [
+          { wordRuby: "順{じゅん}調{ちょう}", meaning: "Smooth・Favorable・Going well" }
+        ]
       },
       {
         id: 49,
@@ -594,8 +630,12 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "無", meaning: "No" },
           { kanji: "事", meaning: "Thing" }
         ],
-        example: "母の手術は{無事}に成功した。",
-        exampleMeaning: "My mother's surgery was completed {safely}."
+        example: "母の手術は{無事}に[成功]した。",
+        exampleMeaning: "My mother's surgery was completed {safely}.",
+        extraVocabulary: [
+          { wordRuby: "成{せい}功{こう}", meaning: "Success" },
+          { wordRuby: "成{せい}功{こう}する", meaning: "To succeed" }
+        ]
       },
     ]
   },
@@ -620,8 +660,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "現", meaning: "Appear" },
           { kanji: "場", meaning: "Place" }
         ],
-        example: "察が事故の{現場}を調査している。",
-        exampleMeaning: "The police are investigating the accident {site}."
+        example: "[警察]が事故の{現場}を調査している。",
+        exampleMeaning: "The [police] are investigating the accident {site}.",
+        extraVocabulary: [
+          { wordRuby: "警{けい}察{さつ}", meaning: "Police" }
+        ]
       },
       {
         id: 54,
@@ -653,8 +696,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "牧", meaning: "Pasture" },
           { kanji: "場", meaning: "Place" }
         ],
-        example: "子どもたちは{牧場}で動物と触れ合った。",
-        exampleMeaning: "The kids interacted with the animals at the {animal farm}."
+        example: "子どもたちは{牧場}で動物と[触れ合った]。",
+        exampleMeaning: "The kids [interacted] with the animals at the {animal farm}.",
+        extraVocabulary: [
+          { wordRuby: "触{ふ}れ合{あ}う", meaning: "To interact with・to have contact with" }
+        ]
       },
       {
         id: 57,
@@ -687,8 +733,12 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "場", meaning: "Situation" },
           { kanji: "面", meaning: "Face" }
         ],
-        example: "感動的な{場面}で涙が止まらなかった。",
-        exampleMeaning: "The {scene} was so emotional that I couldn't stop crying."
+        example: "[感動的な]{場面}で[涙]が止まらなかった。",
+        exampleMeaning: "The {scene} was so [emotional] that I couldn't stop crying.",
+        extraVocabulary: [
+          { wordRuby: "感{かん}動{どう}的{てき}な", meaning: "Emotional・Moving" },
+          { wordRuby: "涙{なみだ}", meaning: "Tears" }
+        ]
       },
     ],
   },
