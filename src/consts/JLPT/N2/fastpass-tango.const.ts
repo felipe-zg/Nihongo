@@ -764,8 +764,12 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "地", meaning: "Ground" },
           { kanji: "元", meaning: "Origin" }
         ],
-        example: "{地元}で採れた野菜が食べたい",
-        exampleMeaning: "I want to eat {locally} harvested vegetables."
+        example: "{地元}で[採れた]野菜が食べたい",
+        exampleMeaning: "I want to eat {locally} [harvested] vegetables.",
+        extraVocabulary: [
+          { wordRuby: "採{と}る", meaning: "To harvest・To pick" },
+          { wordRuby: "採{と}れる", meaning: "To be harvested・To be picked" }
+        ]
       },
       {
         id: 62,
@@ -775,8 +779,12 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "地", meaning: "Ground" },
           { kanji: "下", meaning: "Under" }
         ],
-        example: "ビルの{地下}に大きな駐車場がある。",
-        exampleMeaning: "This building has a large {underground} parking lot."
+        example: "ビルの{地下}に大きな[駐車場]がある。",
+        exampleMeaning: "This building has a large {underground} [parking lot].",
+        extraVocabulary: [
+          { wordRuby: "駐{ちゅう}車{しゃ}", meaning: "Parking" },
+          { wordRuby: "駐{ちゅう}車{しゃ}場{じょう}", meaning: "Parking lot" }
+        ]
       },
       {
         id: 63,
@@ -786,8 +794,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "地", meaning: "Ground" },
           { kanji: "球", meaning: "Ball" }
         ],
-        example: "宇宙から見る{地球}は美しいらしい。",
-        exampleMeaning: "I heard that the Earth looks beautiful from space."
+        example: "[宇宙]から見る{地球}は美しいらしい。",
+        exampleMeaning: "I heard that the {Earth} looks beautiful from [space].",
+        extraVocabulary: [
+          { wordRuby: "宇{う}宙{ちゅう}", meaning: "Space・Universe" }
+        ]
       },
       {
         id: 64,
@@ -797,8 +808,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "地", meaning: "Ground" },
           { kanji: "域", meaning: "Region" }
         ],
-        example: "{地域}の人がごみ拾い活動をしている。",
-        exampleMeaning: "The people of the {region} do volunteer street cleanup."
+        example: "{地域}の人がごみ[拾い]活動をしている。",
+        exampleMeaning: "The people of the {region} do volunteer street cleanup.",
+        extraVocabulary: [
+          { wordRuby: "拾{ひろ}う", meaning: "To pick up・To gather" }
+        ]
       },
       {
         id: 65,
@@ -808,8 +822,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "地", meaning: "Ground" },
           { kanji: "方", meaning: "Direction" }
         ],
-        example: "{地方}によって色々な方言がある。",
-        exampleMeaning: "Each {region} has its own unique dialect."
+        example: "{地方}によって色々な[方言]がある。",
+        exampleMeaning: "Each {region} has its own unique [dialect].",
+        extraVocabulary: [
+          { wordRuby: "方{ほう}言{げん}", meaning: "Dialect" }
+        ]
       },
       {
         id: 66,
@@ -819,8 +836,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "目的", meaning: "Goal" },
           { kanji: "地", meaning: "Place" }
         ],
-        example: "あと5分で{目的地}に到着する。",
-        exampleMeaning: "We'll reach our {destination} in five minutes."
+        example: "あと5分で{目的地}に[到着]する。",
+        exampleMeaning: "We'll [reach] our {destination} in five minutes.",
+        extraVocabulary: [
+          { wordRuby: "到{とう}着{ちゃく}", meaning: "Arrival" }
+        ]
       },
       {
         id: 67,
@@ -846,8 +866,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
         components: [
           { kanji: "定", meaning: "Set" }
         ],
-        example: "会社の方向性が{定まら}ない。",
-        exampleMeaning: "The company's path is not {set}."
+        example: "会社の[方向性]が{定まら}ない。",
+        exampleMeaning: "The company's [path] is not {set}.",
+        extraVocabulary: [
+          { wordRuby: "方{ほう}向{こう}性{せい}", meaning: "Direction" }
+        ]
       },
       {
         id: 69,
@@ -869,7 +892,7 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "年", meaning: "Age" }
         ],
         example: "父は来年{定年}する予定だ。",
-        exampleMeaning: "My father plans to go into {retirement} next year."
+        exampleMeaning: "My father plans to go into {retirement} next year.",
       },
       {
         id: 71,
@@ -880,8 +903,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "定", meaning: "Set" },
           { kanji: "着", meaning: "Arrive" }
         ],
-        example: "新しい制度が{定着して}きた。",
-        exampleMeaning: "A new system has been {established}."
+        example: "新しい[制度]が{定着して}きた。",
+        exampleMeaning: "A new [system] has been {established}.",
+        extraVocabulary: [
+          { wordRuby: "制{せい}度{ど}", meaning: "System" }
+        ]
       },
       {
         id: 72,
@@ -892,8 +918,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "設", meaning: "Establish" },
           { kanji: "定", meaning: "Set" }
         ],
-        example: "暗証番号を{設定}してください。",
-        exampleMeaning: "Please {set up} your PIN."
+        example: "[暗証番号]を{設定}してください。",
+        exampleMeaning: "Please {set up} your [PIN].",
+        extraVocabulary: [
+          { wordRuby: "暗{あん}証{しょう}番{ばん}号{ごう}", meaning: "PIN" }
+        ]
       },
       {
         id: 73,
@@ -904,8 +933,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "安", meaning: "Peaceful" },
           { kanji: "定", meaning: "Set" }
         ],
-        example: "運動をすると、精神が{安定する}。",
-        exampleMeaning: "When one exercises, their mind becomes {stable}."
+        example: "運動をすると、[精神]が{安定する}。",
+        exampleMeaning: "When one exercises, their [mind] becomes {stable}.",
+        extraVocabulary: [
+          { wordRuby: "精{せい}神{しん}", meaning: "Mind・Spirit" }
+        ]
       },
       {
         id: 74,
@@ -915,8 +947,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "一", meaning: "One" },
           { kanji: "定", meaning: "Set" }
         ],
-        example: "この部屋は{一定}の温度に保たれている。",
-        exampleMeaning: "This room is kept at a {constant} temperature."
+        example: "この部屋は{一定}の温度に[保たれて]いる。",
+        exampleMeaning: "This room is [kept] at a {constant} temperature.",
+        extraVocabulary: [
+          { wordRuby: "保{たも}つ", meaning: "To keep・To maintain" },
+        ]
       },
     ],
   },
@@ -965,8 +1000,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "語", meaning: "Language" },
           { kanji: "学", meaning: "Study" }
         ],
-        example: "彼は{語学}学校に通っている。",
-        exampleMeaning: "He attends a school for language study."
+        example: "彼は{語学}学校に[通っている]。",
+        exampleMeaning: "He [attends] a school for language study.",
+        extraVocabulary: [
+          { wordRuby: "通{かよ}う", meaning: "To commute・To attend・To go to" }
+        ]
       },
       {
         id: 79,
@@ -998,8 +1036,12 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "科学", meaning: "Science" },
           { kanji: "的", meaning: "Adj. suffix" }
         ],
-        example: "この薬の効果が{科学的に}証明された。",
-        exampleMeaning: "This medicine's effectiveness is scientifically proven."
+        example: "この薬の[効果]が{科学的に}[証明]された。",
+        exampleMeaning: "This medicine's [effectiveness] is {scientifically} [proven].",
+        extraVocabulary: [
+          { wordRuby: "効{こう}果{か}", meaning: "Effectiveness" },
+          { wordRuby: "証{しょう}明{めい}", meaning: "Proof" }
+        ]
       },
     ],
   },
@@ -1036,8 +1078,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "年", meaning: "Year" },
           { kanji: "度", meaning: "Occasion" }
         ],
-        example: "今{年度}の売り上げ目標を達成した。",
-        exampleMeaning: "We reached our sales goal for this year."
+        example: "今{年度}の売り上げ目標を[達成]した。",
+        exampleMeaning: "We [reached] our sales goal for this {year}.",
+        extraVocabulary: [
+          { wordRuby: "達{たっ}成{せい}", meaning: "Achievement" },
+        ]
       },
       {
         id: 85,
@@ -1058,8 +1103,12 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "近", meaning: "Near" },
           { kanji: "年", meaning: "Year" }
         ],
-        example: "{近年}、観光客が増加している。",
-        exampleMeaning: "The number of tourists has increased in {recent years}."
+        example: "{近年}、[観光客]が[増加]している。",
+        exampleMeaning: "The number of [tourists] has [increased] in {recent years}.",
+        extraVocabulary: [
+          { wordRuby: "観{かん}光{こう}客{きゃく}", meaning: "Tourist" },
+          { wordRuby: "増{ぞう}加{か}", meaning: "Increase" }
+        ]
       },
       {
         id: 87,
@@ -1096,8 +1145,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "理想", meaning: "Ideal" },
           { kanji: "的", meaning: "Adj. suffix" }
         ],
-        example: "私は{理想的な}環境で働いている。",
-        exampleMeaning: "I work in an {ideal} environment."
+        example: "私は{理想的な}[環境]で働いている。",
+        exampleMeaning: "I work in an {ideal} [environment].",
+        extraVocabulary: [
+          { wordRuby: "環{かん}境{きょう}", meaning: "Environment" }
+        ]
       },
       {
         id: 90,
@@ -1108,8 +1160,12 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "処", meaning: "Deal with" },
           { kanji: "理", meaning: "Logic" }
         ],
-        example: "機械が大量のデータを{処理する}。",
-        exampleMeaning: "Machines {process} large amounts of data."
+        example: "[機械]が[大量]のデータを{処理する}。",
+        exampleMeaning: "[Machines] {process} [large amounts] of data.",
+        extraVocabulary: [
+          { wordRuby: "機{き}械{かい}", meaning: "Machine" },
+          { wordRuby: "大{たい}量{りょう}", meaning: "Large amount" }
+        ]
       },
       {
         id: 91,
@@ -1131,8 +1187,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "管", meaning: "Control" },
           { kanji: "理", meaning: "Logic" }
         ],
-        example: "データを{管理する}重要性を学んだ。",
-        exampleMeaning: "I learned about the importance of data {management}."
+        example: "データを{管理する}[重要性]を学んだ。",
+        exampleMeaning: "I learned about the [importance] of data {management}.",
+        extraVocabulary: [
+          { wordRuby: "重{じゅう}要{よう}性{せい}", meaning: "Importance" }
+        ]
       },
       {
         id: 93,
@@ -1142,8 +1201,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "管理", meaning: "management" },
           { kanji: "人", meaning: "Person" }
         ],
-        example: "マンションの{管理人}に挨拶する。",
-        exampleMeaning: "I greet the building {manager}."
+        example: "マンションの{管理人}に[挨拶]する。",
+        exampleMeaning: "I [greet] the building {manager}.",
+        extraVocabulary: [
+          { wordRuby: "挨{あい}拶{さつ}", meaning: "Greeting" }
+        ]
       },
     ],
   },
@@ -1158,8 +1220,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "論", meaning: "Theory" },
           { kanji: "理", meaning: "Logic" }
         ],
-        example: "{論理}を立てて意見を述べる。",
-        exampleMeaning: "State the {logic} behind your opinion."
+        example: "{論理}を立てて意見を[述べる]。",
+        exampleMeaning: "State the {logic} behind your opinion.",
+        extraVocabulary: [
+          { wordRuby: "述{の}べる", meaning: "To state・To express" }
+        ]
       },
       {
         id: 95,
@@ -1169,8 +1234,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "論理", meaning: "Logic" },
           { kanji: "的", meaning: "Adj. suffix" }
         ],
-        example: "彼女は{論理的な}説明を求めた。",
-        exampleMeaning: "She requested a {logical} explanation."
+        example: "彼女は{論理的な}説明を[求めた]。",
+        exampleMeaning: "She requested a {logical} explanation.",
+        extraVocabulary: [
+          { wordRuby: "求{もと}める", meaning: "To request・To seek" }
+        ]
       },
       {
         id: 96,
@@ -1214,8 +1282,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "議", meaning: "Discussion" },
           { kanji: "論", meaning: "Theory" }
         ],
-        example: "政治問題について{議論する}。",
-        exampleMeaning: "We {discuss} political issues."
+        example: "[政治]問題について{議論する}。",
+        exampleMeaning: "We {discuss} political issues.",
+        extraVocabulary: [
+          { wordRuby: "政{せい}治{じ}", meaning: "Politics" }
+        ]
       },
     ],
   },
@@ -1273,8 +1344,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "本", meaning: "Original" },
           { kanji: "社", meaning: "Company" }
         ],
-        example: "最終面接は{本社}で行います。",
-        exampleMeaning: "The final interviews will be held at our {headquarters}."
+        example: "最終[面接]は{本社}で行います。",
+        exampleMeaning: "The final [interviews] will be held at our {headquarters}.",
+        extraVocabulary: [
+          { wordRuby: "面{めん}接{せつ}", meaning: "Interview" }
+        ]
       },
       {
         id: 105,
@@ -1302,8 +1376,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "実", meaning: "Actual" },
           { kanji: "現", meaning: "appear" }
         ],
-        example: "長年の夢がついに{実現した}。",
-        exampleMeaning: "My years-long dream was finally {actualized}."
+        example: "[長年]の夢がついに{実現した}。",
+        exampleMeaning: "My [years-long] dream was finally {actualized}.",
+        extraVocabulary: [
+          { wordRuby: "長{なが}年{ねん}", meaning: "Many years" }
+        ]
       },
       {
         id: 107,
@@ -1338,8 +1415,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "実", meaning: "Actual" },
           { kanji: "施", meaning: "Take action" }
         ],
-        example: "国が観光に関する調査を{実施した}。",
-        exampleMeaning: "The government {carried out} a survey on tourism."
+        example: "国が[観光]に関する調査を{実施した}。",
+        exampleMeaning: "The government {carried out} a survey on tourism.",
+        extraVocabulary: [
+          { wordRuby: "観{かん}光{こう}", meaning: "Tourism" }
+        ]
       },
       {
         id: 110,
@@ -1349,8 +1429,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "事", meaning: "Thing" },
           { kanji: "実", meaning: "Actual" }
         ],
-        example: "私が彼をたたいたのは{事実}だ。",
-        exampleMeaning: "It is a {fact} that I hit him."
+        example: "私が彼を[たたいた]のは{事実}だ。",
+        exampleMeaning: "It is a {fact} that I hit him.",
+        extraVocabulary: [
+          { wordRuby: "叩{たた}く", meaning: "To hit・To strike" }
+        ]
       },
       {
         id: 111,
@@ -1387,8 +1470,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "見る", meaning: "See" },
           { kanji: "直す", meaning: "To correct・redo" }
         ],
-        example: "学習計画をもう一度{見直します}。",
-        exampleMeaning: "I will {review} my study plan once more."
+        example: "学習[計画]をもう一度{見直します}。",
+        exampleMeaning: "I will {review} my study [plan] once more.",
+        extraVocabulary: [
+          { wordRuby: "計{けい}画{かく}", meaning: "Plan" }
+        ]
       },
       {
         id: 114,
@@ -1420,8 +1506,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "見る", meaning: "See" },
           { kanji: "通す", meaning: "Through" }
         ],
-        example: "問題解決の{見通し}がつきそうだ",
-        exampleMeaning: "The {outlook} for solving this problem is promising."
+        example: "問題[解決]の{見通し}がつきそうだ",
+        exampleMeaning: "The {outlook} for [solving] this problem is promising.",
+        extraVocabulary: [
+          { wordRuby: "解{かい}決{けつ}", meaning: "Solution" }
+        ]
       },
       {
         id: 117,
@@ -1446,8 +1535,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
         components: [
           { kanji: "前", meaning: "Before" }
         ],
-        example: "{前}町長・{前}社長",
-        exampleMeaning: "{Former} mayor・{former} CEO"
+        example: "{前}[町長]・{前}社長",
+        exampleMeaning: "{Former} mayor・{former} CEO",
+        extraVocabulary: [
+          { wordRuby: "町{ちょう}長{ちょう}", meaning: "Mayor" }
+        ]
       },
       {
         id: 119,
@@ -1468,8 +1560,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "大", meaning: "Big" },
           { kanji: "前提", meaning: "assumption" }
         ],
-        example: "何をするにも健康であることが{大前提}だ。",
-        exampleMeaning: "Good health is a {basic assumption} for doing anything."
+        example: "何をするにも[健康]であることが{大前提}だ。",
+        exampleMeaning: "Good [health] is a {basic assumption} for doing anything.",
+        extraVocabulary: [
+          { wordRuby: "健{けん}康{こう}", meaning: "Health" }
+        ]
       },
       {
         id: 121,
