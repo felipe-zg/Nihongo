@@ -1574,8 +1574,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "事", meaning: "Thing" },
           { kanji: "前", meaning: "Before" }
         ],
-        example: "{事前に}チケットを購入する。",
-        exampleMeaning: "I'll purchase tickets {in advance}."
+        example: "{事前に}チケットを[購入]する。",
+        exampleMeaning: "I'll [purchase] tickets {in advance}.",
+        extraVocabulary: [
+          { wordRuby: "購{こう}入{にゅう}", meaning: "Purchase" }
+        ]
       },
       {
         id: 122,
@@ -1658,8 +1661,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "出版", meaning: "Publish" },
           { kanji: "社", meaning: "Company" }
         ],
-        example: "{出版社}に原稿を送った。",
-        exampleMeaning: "I sent my manuscript to the {publisher}."
+        example: "{出版社}に[原稿]を送った。",
+        exampleMeaning: "I sent my [manuscript] to the {publisher}.",
+        extraVocabulary: [
+          { wordRuby: "原{げん}稿{こう}", meaning: "Manuscript" }
+        ]
       },
       {
         id: 129,
@@ -1670,8 +1676,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "提", meaning: "Present" },
           { kanji: "出", meaning: "Out" }
         ],
-        example: "先生に宿題を{提出する}。",
-        exampleMeaning: "I'll {submit} my homework to the teacher."
+        example: "先生に[宿題]を{提出する}。",
+        exampleMeaning: "I'll {submit} my [homework] to the teacher.",
+        extraVocabulary: [
+          { wordRuby: "宿{しゅく}題{だい}", meaning: "Homework" }
+        ]
       }
     ],
   },
@@ -1686,8 +1695,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "手", meaning: "Hand" },
           { kanji: "元", meaning: "Base" }
         ],  
-        example: "{手元}にある資料を確認してください。",
-        exampleMeaning: "Please refer to the materials {on hand}."
+        example: "{手元}にある[資料]を確認してください。",
+        exampleMeaning: "Please refer to the [materials] {on hand}.",
+        extraVocabulary: [
+          { wordRuby: "資{し}料{りょう}", meaning: "Materials" }
+        ]
       },
       {
         id: 131,
@@ -1709,8 +1721,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "手", meaning: "Hand" },
           { kanji: "入れる", meaning: "Put in" }
         ],
-        example: "毎日、庭を{手入れする}。",
-        exampleMeaning: "I do some {maintenance} on the garden daily."
+        example: "毎日、[庭]を{手入れする}。",
+        exampleMeaning: "I do some {maintenance} on the [garden] daily.",
+        extraVocabulary: [
+          { wordRuby: "庭{にわ}", meaning: "Garden" }
+        ]
       },
       {
         id: 133,
@@ -1902,8 +1917,12 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "対", meaning: "Opposite" },
           { kanji: "決", meaning: "Decision" }
         ],
-        example: "決勝戦で親友と{対決する}ことになった。",
-        exampleMeaning: "I ended up in a {showdown} with my best friend in the finals."
+        example: "[決勝戦]で親友と{対決する}ことになった。",
+        exampleMeaning: "I ended up in a {showdown} with my best friend in the finals.",
+        extraVocabulary: [
+          { wordRuby: "決{けっ}勝{しょう}", meaning: "Finals" },
+          { wordRuby: "決{けっ}勝{しょう}戦{せん}", meaning: "Final match" }
+        ]
       },
       {
         id: 149,
@@ -1914,8 +1933,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "対", meaning: "Versus" },
           { kanji: "抗", meaning: "Oppose" }
         ],
-        example: "新しい商品を作って他社に{対抗する}。",
-        exampleMeaning: "We will create a new product to {compete} with other companies."
+        example: "新しい商品を作って[他社]に{対抗する}。",
+        exampleMeaning: "We will create a new product to {compete} with [other companies].",
+        extraVocabulary: [
+          { wordRuby: "他{た}社{しゃ}", meaning: "Other companies" }
+        ]
       },
       {
         id: 150,
@@ -1937,8 +1959,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "対", meaning: "Versus" },
           { kanji: "話", meaning: "Talk" }
         ],
-        example: "生徒と{対話する}時間を大切にしている。",
-        exampleMeaning: "I value the time I had {dialogue} with students."
+        example: "[生徒]と{対話する}時間を大切にしている。",
+        exampleMeaning: "I value the time I had {dialogue} with students.",
+        extraVocabulary: [
+          { wordRuby: "生{せい}徒{と}", meaning: "Student" }
+        ]
       },
       {
         id: 152,
@@ -1959,8 +1984,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "対象", meaning: "Target" },
           { kanji: "外", meaning: "Outside" }
         ],
-        example: "こちらの商品は割引の{対象外}です。",
-        exampleMeaning: "This product is {not included} in the discount."
+        example: "こちらの商品は[割引]の{対象外}です。",
+        exampleMeaning: "This product is {not included} in the [discount].",
+        extraVocabulary: [
+          { wordRuby: "割{わり}引{びき}", meaning: "Discount" }
+        ]
       }
     ],
   },
@@ -1997,8 +2025,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "不", meaning: "Not" },
           { kanji: "良", meaning: "Good" }
         ],
-        example: "{不良な}部品がある場合は交換します。",
-        exampleMeaning: "We'll replace any {defective} parts for you."
+        example: "{不良な}部品がある場合は[交換]します。",
+        exampleMeaning: "We'll [replace] any {defective} parts for you.",
+        extraVocabulary: [
+          { wordRuby: "交{こう}換{かん}", meaning: "Exchange" }
+        ]
       },
       {
         id: 157,
@@ -2031,8 +2062,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "可", meaning: "Allow" },
           { kanji: "欠", meaning: "Lack" }
         ],
-        example: "信頼関係はビジネスに{不可欠}だ。",
-        exampleMeaning: "Relationships of trust are an {indispensable} part of business."
+        example: "[信頼]関係はビジネスに{不可欠}だ。",
+        exampleMeaning: "Relationships of [trust] are an {indispensable} part of business.",
+        extraVocabulary: [
+          { wordRuby: "信{しん}頼{らい}", meaning: "Trust" }
+        ]
       }
     ],
   },
@@ -2047,8 +2081,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "全", meaning: "Whole" },
           { kanji: "身", meaning: "Body" }
         ],
-        example: "この運動は{全身}の筋肉を使う。",
-        exampleMeaning: "This workout uses muscles throughout your {whole body}."
+        example: "この運動は{全身}の[筋肉]を使う。",
+        exampleMeaning: "This workout uses [muscles] throughout your {whole body}.",
+        extraVocabulary: [
+          { wordRuby: "筋{きん}肉{にく}", meaning: "Muscle" }
+        ]
       },
       {
         id: 161,
@@ -2058,8 +2095,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "全体", meaning: "Whole" },
           { kanji: "像", meaning: "Figure" }
         ],
-        example: "組織の{全体像}を理解することができた。",
-        exampleMeaning: "I've got the {whole picture} of how this organization operates."
+        example: "[組織]の{全体像}を理解することができた。",
+        exampleMeaning: "I've got the {whole picture} of how this [organization] operates.",
+        extraVocabulary: [
+          { wordRuby: "組{そ}織{しき}", meaning: "Organization" }
+        ]
       },
       {
         id: 162,
@@ -2069,8 +2109,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "全体", meaning: "Whole" },
           { kanji: "的", meaning: "Adj. suffix" }
         ],
-        example: "{全体的な}流れを確認した上で作業する。",
-        exampleMeaning: "Begin working after confirming the {overall} workflow."
+        example: "{全体的な}流れを確認した上で[作業]する。",
+        exampleMeaning: "Begin [working] after confirming the {overall} workflow.",
+        extraVocabulary: [
+          { wordRuby: "作{さ}業{ぎょう}", meaning: "Work" }
+        ]
       },
       {
         id: 163,
@@ -2080,8 +2123,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "完", meaning: "Complete" },
           { kanji: "全", meaning: "Whole" }
         ],
-        example: "パソコンからデータを{完全}に削除した。",
-        exampleMeaning: "I {completely} deleted all the data from my computer."
+        example: "パソコンからデータを{完全}に[削除]した。",
+        exampleMeaning: "I {completely} [deleted] all the data from my computer.",
+        extraVocabulary: [
+          { wordRuby: "削{さく}除{じょ}", meaning: "Delete" }
+        ]
       },
       {
         id: 164,
@@ -2091,8 +2137,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "不", meaning: "Not" },
           { kanji: "完全", meaning: "Complete" }
         ],
-        example: "{不完全な}書類を提出した。",
-        exampleMeaning: "I submitted {incomplete} documents."
+        example: "{不完全な}書類を[提出]した。",
+        exampleMeaning: "I [submitted] {incomplete} documents.",
+        extraVocabulary: [
+          { wordRuby: "提{てい}出{しゅつ}", meaning: "Submission" }
+        ]
       }
     ],
   },
@@ -2118,8 +2167,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "個", meaning: "Individual" },
           { kanji: "別", meaning: "Separate" }
         ],
-        example: "点数が低い学生を{個別}に指導する",
-        exampleMeaning: "I coach low-scoring students {individually}."
+        example: "点数が低い学生を{個別}に[指導]する",
+        exampleMeaning: "I [coach] low-scoring students {individually}.",
+        extraVocabulary: [
+          { wordRuby: "指{し}導{どう}", meaning: "Guidance" }
+        ]
       },
       {
         id: 167,
@@ -2129,8 +2181,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "個", meaning: "Individual" },
           { kanji: "性", meaning: "Nature" }
         ],
-        example: "子どもの{個性}を尊重する。",
-        exampleMeaning: "Respect children's {individuality}."
+        example: "子どもの{個性}を[尊重]する。",
+        exampleMeaning: "[Respect] children's {individuality}.",
+        extraVocabulary: [
+          { wordRuby: "尊{そん}重{ちょう}", meaning: "Respect" }
+        ]
       },
       {
         id: 168,
@@ -2151,8 +2206,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "個人", meaning: "Personal" },
           { kanji: "的", meaning: "Adj. suffix" }
         ],
-        example: "{個人的な}事情で休ませていただきます。",
-        exampleMeaning: "I'm taking the day off for {personal} reasons."
+        example: "{個人的な}[事情]で休ませていただきます。",
+        exampleMeaning: "I'm taking the day off for {personal} [reasons].",
+        extraVocabulary: [
+          { wordRuby: "事{じ}情{じょう}", meaning: "Circumstance" }
+        ]
       }
     ],
   },
@@ -2211,8 +2269,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "各", meaning: "Each" },
           { kanji: "自", meaning: "Self" }
         ],
-        example: "昼食は{各自}で用意しなければならない。",
-        exampleMeaning: "{Each person} must prepare {their own} lunch."
+        example: "[昼食]は{各自}で用意しなければならない。",
+        exampleMeaning: "{Each person} must prepare {their own} lunch.",
+        extraVocabulary: [
+          { wordRuby: "昼{ちゅう}食{しょく}", meaning: "Lunch" }
+        ]
       }
     ],
   },
@@ -2227,8 +2288,12 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "主", meaning: "Main" },
           { kanji: "役", meaning: "Role" }
         ],
-        example: "この映画の{主役}は新人の俳優だ。",
-        exampleMeaning: "A rookie actor plays the {main role} in this movie."
+        example: "この映画の{主役}は[新人]の[俳優]だ。",
+        exampleMeaning: "A [rookie] [actor] plays the {main role} in this movie.",
+        extraVocabulary: [
+          { wordRuby: "新{しん}人{じん}", meaning: "Rookie・Newcomer・Beginner member" },
+          { wordRuby: "俳{はい}優{ゆう}", meaning: "Actor" }
+        ]
       },
       {
         id: 176,
@@ -2250,8 +2315,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "主", meaning: "Main" },
           { kanji: "原料", meaning: "Ingredient" },
         ],
-        example: "この商品の{主原料}は大豆だ。",
-        exampleMeaning: "The {main ingredient} of this product is soybeans."
+        example: "この商品の{主原料}は[大豆]だ。",
+        exampleMeaning: "The {main ingredient} of this product is soybeans.",
+        extraVocabulary: [
+          { wordRuby: "大{だい}豆{ず}", meaning: "Soybean" }
+        ]
       },
       {
         id: 178,
@@ -2273,8 +2341,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "飼う", meaning: "To keep (a pet)" },
           { kanji: "主", meaning: "Owner" }
         ],
-        example: "{飼い主}として責任を持って育てる。",
-        exampleMeaning: "As a {pet owner}, I raise my pet responsibly."
+        example: "{飼い主}として[責任]を持って育てる。",
+        exampleMeaning: "As a {pet owner}, I raise my pet [responsibly].",
+        extraVocabulary: [
+          { wordRuby: "責{せき}任{にん}", meaning: "Responsibility" }
+        ]
       }
     ],
   },
