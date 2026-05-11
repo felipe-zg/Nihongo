@@ -4005,8 +4005,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "費", meaning: "Expense" },
           { kanji: "用", meaning: "Use" }
         ],
-        example: "予算を超える{費用}がかかってしまった。",
-        exampleMeaning: "The {costs} exceeded the budget."
+        example: "[予算]を超える{費用}がかかってしまった。",
+        exampleMeaning: "The {costs} exceeded the [budget].",
+        extraVocabulary: [
+          { wordRuby: "予{よ}算{さん}", meaning: "Budget" }
+        ]
       }
     ],
   },
@@ -4042,8 +4045,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "言", meaning: "Speak" },
           { kanji: "語", meaning: "Language" }
         ],
-        example: "彼は複数の{言語}を話すことができる。",
-        exampleMeaning: "He can speak multiple {languages}."
+        example: "彼は[複数]の{言語}を話すことができる。",
+        exampleMeaning: "He can speak [multiple] {languages}.",
+        extraVocabulary: [
+          { wordRuby: "複{ふく}数{すう}", meaning: "Multiple" }
+        ]
       },
       {
         id: 305,
@@ -4079,8 +4085,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "要", meaning: "Necessary" },
           { kanji: "素", meaning: "Element" }
         ],
-        example: "成功に必要な{要素}は何ですか。",
-        exampleMeaning: "What are the necessary {elements} for success?"
+        example: "[成功]に必要な{要素}は何ですか。",
+        exampleMeaning: "What are the necessary {elements} for [success]?",
+        extraVocabulary: [
+          { wordRuby: "成{せい}功{こう}", meaning: "Success" }
+        ]
       },
       {
         id: 308,
@@ -4090,8 +4099,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "概", meaning: "Outline" },
           { kanji: "要", meaning: "Necessary" }
         ],
-        example: "事業の{概要}を説明する。",
-        exampleMeaning: "I'll give you an {overview} of the business."
+        example: "[事業]の{概要}を説明する。",
+        exampleMeaning: "I'll give you an {overview} of the [business].",
+        extraVocabulary: [
+          { wordRuby: "事{じ}業{ぎょう}", meaning: "Business" }
+        ]
       },
       {
         id: 309,
@@ -4101,8 +4113,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "需", meaning: "Demand" },
           { kanji: "要", meaning: "Necessary" }
         ],
-        example: "{需要}に応じて生産を増やした。",
-        exampleMeaning: "We increased production according to {demand}."
+        example: "{需要}に応じて[生産]を増やした。",
+        exampleMeaning: "We increased [production] according to {demand}.",
+        extraVocabulary: [
+          { wordRuby: "生{せい}産{さん}", meaning: "Production" }
+        ]
       }
     ],
   },
@@ -4118,8 +4133,12 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "重", meaning: "Weight" },
           { kanji: "視", meaning: "View" }
         ],
-        example: "面接では能力の高さを{重視し}ます。",
-        exampleMeaning: "Ability level is {regarded as important} in job interviews."
+        example: "[面接]では[能力]の高さを{重視し}ます。",
+        exampleMeaning: "[Ability] level is {regarded as important} in [job interviews].",
+        extraVocabulary: [
+          { wordRuby: "面{めん}接{せつ}", meaning: "Job interview" },
+          { wordRuby: "能{のう}力{りょく}", meaning: "Ability" }
+        ]
       },
       {
         id: 311,
@@ -4130,8 +4149,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "点", meaning: "Point" },
           { kanji: "的", meaning: "Adj. suffix" }
         ],
-        example: "この地域を{重点的に}調査する。",
-        exampleMeaning: "Were going to {focus} our research on this area."
+        example: "この[地域]を{重点的に}調査する。",
+        exampleMeaning: "Were going to {focus} our research on this [area].",
+        extraVocabulary: [
+          { wordRuby: "地{ち}域{いき}", meaning: "Area" }
+        ]
       },
       {
         id: 312,
@@ -4168,8 +4190,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
         components: [
           { kanji: "積", meaning: "Stack" },
         ],
-        example: "机の上に本を{積む}。",
-        exampleMeaning: "I {pile up} the books on the desk."
+        example: "[机]の上に本を{積む}。",
+        exampleMeaning: "I {pile up} the books on the [desk].",
+        extraVocabulary: [
+          { wordRuby: "机{つくえ}", meaning: "Desk" }
+        ]
       },
       {
         id: 315,
@@ -4189,8 +4214,12 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "見", meaning: "Look" },
           { kanji: "積もる", meaning: "Pile up" }
         ],
-        example: "パソコン修理費用の{見積もり}をもらう。",
-        exampleMeaning: "I'll get a {estimate} of the cost for fixing my computer."
+        example: "パソコン[修理][費用]の{見積もり}をもらう。",
+        exampleMeaning: "I'll get a {estimate} of the [cost] for [fixing] my computer.",
+        extraVocabulary: [
+          { wordRuby: "修{しゅう}理{り}", meaning: "Repair" },
+          { wordRuby: "費{ひ}用{よう}", meaning: "Cost" }
+        ]
       },
       {
         id: 317,
@@ -4201,8 +4230,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "蓄", meaning: "Store" },
           { kanji: "積", meaning: "Stack" }
         ],
-        example: "研究のためにデータを{蓄積する}。",
-        exampleMeaning: "I {accumulate} data for my research."
+        example: "[研究]のためにデータを{蓄積する}。",
+        exampleMeaning: "I {accumulate} data for my research.",
+        extraVocabulary: [
+          { wordRuby: "研{けん}究{きゅう}", meaning: "Research" }
+        ]
       }
     ],
   },
@@ -4298,8 +4330,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "仕", meaning: "Work" },
           { kanji: "上げる", meaning: "Done" }
         ],
-        example: "今日中にレポートを{仕上げる}つもりだ。",
-        exampleMeaning: "I plan to {finish} writing my essay today."
+        example: "[今日中]にレポートを{仕上げる}つもりだ。",
+        exampleMeaning: "I plan to {finish} writing my essay [today].",
+        extraVocabulary: [
+          { wordRuby: "今{きょ}日{う}中{じゅう}", meaning: "by the end of today・Within today" }
+        ]
       }
     ],
   },
@@ -4363,8 +4398,12 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
         components: [
           { kanji: "備", meaning: "Prepare" },
         ],
-        example: "災害に{備えて}食料をたくさん買った。",
-        exampleMeaning: "I bought plenty of food in {preparation} for a disaster."
+        example: "[災害]に{備えて}[食料]をたくさん買った。",
+        exampleMeaning: "I bought plenty of [food] in {preparation} for a [disaster].",
+        extraVocabulary: [
+          { wordRuby: "災{さい}害{がい}", meaning: "Disaster" },
+          { wordRuby: "食{しょく}料{りょう}", meaning: "Food" }
+        ]
       },
       {
         id: 331,
@@ -4375,8 +4414,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "警", meaning: "Caution" },
           { kanji: "備", meaning: "Prepare" }
         ],
-        example: "警察官が会場を{警備する}。",
-        exampleMeaning: "The police officers are {on guard} at the venue."
+        example: "[警察官]が会場を{警備する}。",
+        exampleMeaning: "The [police officers] are {on guard} at the venue.",
+        extraVocabulary: [
+          { wordRuby: "警{けい}察{さつ}官{かん}", meaning: "Police officer" }
+        ]
       },
       {
         id: 332,
@@ -4386,8 +4428,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "設", meaning: "Establish" },
           { kanji: "備", meaning: "Prepare" }
         ],
-        example: "{設備}の点検は月に一度行われる。",
-        exampleMeaning: "{Equipment} inspections occur once a month."
+        example: "{設備}の[点検]は月に一度行われる。",
+        exampleMeaning: "{Equipment} [inspections] occur once a month.",
+        extraVocabulary: [
+          { wordRuby: "点{てん}検{けん}", meaning: "Inspection" }
+        ]
       },
       {
         id: 333,
@@ -4413,8 +4458,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
         components: [
           { kanji: "追", meaning: "Chase" },
         ],
-        example: "段階を{追って}練習する。",
-        exampleMeaning: "I practice {following} through each step."
+        example: "[段階]を{追って}練習する。",
+        exampleMeaning: "I practice {following} through each step.",
+        extraVocabulary: [
+          { wordRuby: "段{だん}階{かい}", meaning: "Step" }
+        ]
       },
       {
         id: 335,
@@ -4424,8 +4472,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "追う", meaning: "Chase" },
           { kanji: "かける", meaning: "To start" }
         ],
-        example: "普察が犯人を{追いかけて}いる。",
-        exampleMeaning: "The police are {chasing} the criminal."
+        example: "[警察]が犯人を{追いかけて}いる。",
+        exampleMeaning: "The [police] are {chasing} the criminal.",
+        extraVocabulary: [
+          { wordRuby: "警察", meaning: "Police" }
+        ]
       },
       {
         id: 336,
@@ -4447,8 +4498,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "追", meaning: "Follow" },
           { kanji: "加", meaning: "Add" }
         ],
-        example: "アプリに新しい機能を{追加する}。",
-        exampleMeaning: "We will add new {features} to the app."
+        example: "アプリに新しい[機能]を{追加する}。",
+        exampleMeaning: "We will {add new} [features] to the app.",
+        extraVocabulary: [
+          { wordRuby: "機{き}能{のう}", meaning: "Function・Feature" }
+        ]
       }
     ],
   },
@@ -4514,8 +4568,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
         components: [
           { kanji: "得", meaning: "Gain" },
         ],
-        example: "これは知っていると{得}をする知識だ。",
-        exampleMeaning: "Having this knowledge is {beneficial}."
+        example: "これは知っていると{得}をする[知識]だ。",
+        exampleMeaning: "Having this [knowledge] is {beneficial}.",
+        extraVocabulary: [
+          { wordRuby: "知{ち}識{しき}", meaning: "Knowledge" }
+        ]
       },
       {
         id: 343,
@@ -4524,8 +4581,13 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
         components: [
           { kanji: "得", meaning: "Gain" },
         ],
-        example: "頼を{得る}には時間がかかる。",
-        exampleMeaning: "It takes time to {gain} someone's trust."
+        example: "[信頼]を{得る}には時間がかかる。",
+        exampleMeaning: "It takes time to {gain} someone's trust.",
+        extraVocabulary: [
+          { wordRuby: "頼{たよ}る", meaning: "To rely on・To ask for help" },
+          { wordRuby: "頼{たの}む", meaning: "To ask・To request" },
+          { wordRuby: "信{しん}頼{らい}", meaning: "Trust" }
+        ]
       },
       {
         id: 344,
@@ -4575,8 +4637,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "有", meaning: "Exist" },
           { kanji: "料", meaning: "Fee" }
         ],
-        example: "この駐車場は{有料}です。",
-        exampleMeaning: "This is a {paid} parking lot."
+        example: "この[駐車場]は{有料}です。",
+        exampleMeaning: "This is a {paid} [parking lot].",
+        extraVocabulary: [
+          { wordRuby: "駐{ちゅう}車{しゃ}場{じょう}", meaning: "Parking lot" }
+        ]
       },
       {
         id: 348,
@@ -4638,8 +4703,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "作", meaning: "Make" },
           { kanji: "成", meaning: "Become" }
         ],
-        example: "プレゼンの資料を{作成して}ください。",
-        exampleMeaning: "Please {make} the materials for the presentation."
+        example: "プレゼンの[資料]を{作成して}ください。",
+        exampleMeaning: "Please {make} the [materials] for the presentation.",
+        extraVocabulary: [
+          { wordRuby: "資{し}料{りょう}", meaning: "Materials" }
+        ]
       },
       {
         id: 353,
@@ -4667,8 +4735,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "記", meaning: "Record" },
           { kanji: "憶", meaning: "Remember" }
         ],
-        example: "彼の言葉は今も{記憶}に残っている。",
-        exampleMeaning: "His words still remain in my {memory}."
+        example: "彼の言葉は今も{記憶}に[残って]いる。",
+        exampleMeaning: "His words still [remain] in my {memory}.",
+        extraVocabulary: [
+          { wordRuby: "残{のこ}る", meaning: "To remain" }
+        ]
       },
       {
         id: 355,
@@ -4717,8 +4788,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "書く", meaning: "Write" },
           { kanji: "換える", meaning: "Change" }
         ],
-        example: "書類の内容を{書き換える}。",
-        exampleMeaning: "I'm going to {rewrite} the contents of the document."
+        example: "[書類]の内容を{書き換える}。",
+        exampleMeaning: "I'm going to {rewrite} the contents of the [document].",
+        extraVocabulary: [
+          { wordRuby: "書{しょ}類{るい}", meaning: "Document" }
+        ]
       },
       {
         id: 359,
@@ -4739,8 +4813,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "文", meaning: "Text" },
           { kanji: "書", meaning: "Write" }
         ],
-        example: "重要な{文書}が会社に届いた。",
-        exampleMeaning: "An important {document} was delivered to our office."
+        example: "重要な{文書}が会社に[届いた]。",
+        exampleMeaning: "An important {document} was [delivered] to our office.",
+        extraVocabulary: [
+          { wordRuby: "届{とど}く", meaning: "To be delivered" }
+        ]
       },
       {
         id: 361,
