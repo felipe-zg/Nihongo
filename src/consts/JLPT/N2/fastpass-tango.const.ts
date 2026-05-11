@@ -4828,8 +4828,12 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "歴", meaning: "History" },
           { kanji: "書", meaning: "Write" }
         ],
-        example: "面接の前に{履歴書}を提出した。",
-        exampleMeaning: "I submitted my {resume} before the interview."
+        example: "[面接]の前に{履歴書}を[提出]した。",
+        exampleMeaning: "I [submitted] my {resume} before the [interview].",
+        extraVocabulary: [
+          { wordRuby: "面{めん}接{せつ}", meaning: "Job interview" },
+          { wordRuby: "提{てい}出{しゅつ}", meaning: "Submission" }
+        ]
       }
     ],
   },
@@ -4844,8 +4848,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "画", meaning: "Picture" },
           { kanji: "像", meaning: "Figure" }
         ],
-        example: "メールに{画像}を添付する。",
-        exampleMeaning: "I'll attach an {image} to the email."
+        example: "メールに{画像}を[添付]する。",
+        exampleMeaning: "I'll [attach] an {image} to the email.",
+        extraVocabulary: [
+          { wordRuby: "添{てん}付{ぷ}", meaning: "To attach" }
+        ]
       },
       {
         id: 363,
@@ -4855,8 +4862,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "画", meaning: "Picture" },
           { kanji: "面", meaning: "Surface" }
         ],
-        example: "{画面}が急に暗くなった。",
-        exampleMeaning: "The {screen} suddenly got dark."
+        example: "{画面}が急に[暗く]なった。",
+        exampleMeaning: "The {screen} suddenly got [dark].",
+        extraVocabulary: [
+          { wordRuby: "暗{くら}い", meaning: "Dark" }
+        ]
       },
       {
         id: 364,
@@ -4878,8 +4888,12 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "企画", meaning: "Plan" },
           { kanji: "書", meaning: "Write" }
         ],
-        example: "上司に{企画書}を提出した。",
-        exampleMeaning: "I submitted a {proposal} to my boss."
+        example: "[上司]に{企画書}を[提出]した。",
+        exampleMeaning: "I submitted a {proposal} to my boss.",
+        extraVocabulary: [
+          { wordRuby: "上{じょう}司{し}", meaning: "Boss" },
+          { wordRuby: "提{てい}出{しゅつ}", meaning: "Submission" }
+        ]
       }
     ],
   },
@@ -4895,8 +4909,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "証", meaning: "Proof" },
           { kanji: "明", meaning: "Bright" }
         ],
-        example: "これは卒業を{証明する}資料です。",
-        exampleMeaning: "This is a document that {proves} graduation."
+        example: "これは卒業を{証明する}[資料]です。",
+        exampleMeaning: "This is a [document] that {proves} graduation.",
+        extraVocabulary: [
+          { wordRuby: "資{し}料{りょう}", meaning: "Materials" }
+        ]
       },
       {
         id: 367,
@@ -4906,8 +4923,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "証明", meaning: "Proof" },
           { kanji: "書", meaning: "Write" }
         ],
-        example: "試験合格の{証明書}を提出した。",
-        exampleMeaning: "I submitted my {certificate} of passing the exam."
+        example: "試験合格の{証明書}を[提出]した。",
+        exampleMeaning: "I [submitted] my {certificate} of passing the exam.",
+        extraVocabulary: [
+          { wordRuby: "提{てい}出{しゅつ}", meaning: "Submission" }
+        ]
       },
       {
         id: 368,
@@ -4917,8 +4937,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "身分", meaning: "Status" },
           { kanji: "証明書", meaning: "Certificate" }
         ],
-        example: "{身分証明書}を提示してください。",
-        exampleMeaning: "Please present your {ID}."
+        example: "{身分証明書}を[提示]してください。",
+        exampleMeaning: "Please [present] your {ID}.",
+        extraVocabulary: [
+          { wordRuby: "提{てい}示{じ}", meaning: "Presentation" }
+        ]
       },
       {
         id: 369,
@@ -4928,8 +4951,12 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "学生", meaning: "Student" },
           { kanji: "証", meaning: "Proof" }
         ],
-        example: "手続きには{学生証}の提示が必要です。",
-        exampleMeaning: "You need to show your {student ID} for the procedure."
+        example: "[手続き]には{学生証}の[提示]が必要です。",
+        exampleMeaning: "You need to [show] your {student ID} for the [procedure].",
+        extraVocabulary: [
+          { wordRuby: "手{て}続{つづ}き", meaning: "Procedure" },
+          { wordRuby: "提{てい}示{じ}", meaning: "Presentation" }
+        ]
       }
     ],
   },
@@ -4979,8 +5006,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "指", meaning: "Point" },
           { kanji: "示", meaning: "Show" }
         ],
-        example: "先生の{指示}に従って行動する。",
-        exampleMeaning: "I follow the teacher's {instructions}."
+        example: "先生の{指示}に[従って]行動する。",
+        exampleMeaning: "I follow the teacher's {instructions}.",
+        extraVocabulary: [
+          { wordRuby: "従{したが}う", meaning: "To follow" }
+        ]
       }
     ],
   },
@@ -4996,8 +5026,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "開", meaning: "Open" },
           { kanji: "放", meaning: "Release" }
         ],
-        example: "週末は体育館を一般に{開放して}いる。",
-        exampleMeaning: "The gym is {open} to the public on weekends."
+        example: "週末は[体育館]を一般に{開放して}いる。",
+        exampleMeaning: "The gym is {open} to the public on weekends.",
+        extraVocabulary: [
+          { wordRuby: "体{たい}育{いく}館{かん}", meaning: "Gymnasium・Gym" }
+        ]
       },
       {
         id: 375,
@@ -5008,8 +5041,12 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "開", meaning: "Open" },
           { kanji: "催", meaning: "Hold an event" }
         ],
-        example: "市が国際交流イベントを{開催した}。",
-        exampleMeaning: "The city {held} an international exchange {event}."
+        example: "市が[国際][交流]イベントを{開催した}。",
+        exampleMeaning: "The city {held} an [international] [exchange] {event}.",
+        extraVocabulary: [
+          { wordRuby: "国{こく}際{さい}", meaning: "International" },
+          { wordRuby: "交{こう}流{りゅう}", meaning: "Exchange" }
+        ]
       },
       {
         id: 376,
@@ -5032,8 +5069,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "展", meaning: "Display" },
           { kanji: "開", meaning: "Open" }
         ],
-        example: "物語がどんどん{展開して}いった。",
-        exampleMeaning: "The story kept {developing} quickly."
+        example: "[物語]がどんどん{展開して}いった。",
+        exampleMeaning: "The [story] kept {developing} quickly.",
+        extraVocabulary: [
+          { wordRuby: "物{もの}語{がたり}", meaning: "Story" }
+        ]
       }
     ],
   },
@@ -5049,8 +5089,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "観", meaning: "See" },
           { kanji: "測", meaning: "Measure" }
         ],
-        example: "東京都で地震を{観測しました}。",
-        exampleMeaning: "We {observed} an earthquake in Tokyo."
+        example: "東京都で[地震]を{観測しました}。",
+        exampleMeaning: "We {observed} an [earthquake] in Tokyo.",
+        extraVocabulary: [
+          { wordRuby: "地{じ}震{しん}", meaning: "Earthquake" }
+        ]
       },
       {
         id: 379,
@@ -5083,8 +5126,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "価値", meaning: "Value" },
           { kanji: "観", meaning: "See" }
         ],
-        example: "{価値観}が似ている人と結婚したい。",
-        exampleMeaning: "I want to marry someone with similar {values}."
+        example: "{価値観}が[似て]いる人と結婚したい。",
+        exampleMeaning: "I want to marry someone with similar {values}.",
+        extraVocabulary: [
+          { wordRuby: "似{に}る", meaning: "To be similar to・To resemble" }
+        ]
       }
     ],
   },
