@@ -798,7 +798,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
         exampleMeaning: "I heard that the {Earth} looks beautiful from [space].",
         extraVocabulary: [
           { wordRuby: "宇{う}宙{ちゅう}", meaning: "Space・Universe" }
-        ]
+        ],
+        important: true
       },
       {
         id: 64,
@@ -893,6 +894,7 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
         ],
         example: "父は来年{定年}する予定だ。",
         exampleMeaning: "My father plans to go into {retirement} next year.",
+        important: true
       },
       {
         id: 71,
@@ -1380,7 +1382,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
         exampleMeaning: "My [years-long] dream was finally {actualized}.",
         extraVocabulary: [
           { wordRuby: "長{なが}年{ねん}", meaning: "Many years" }
-        ]
+        ],
+        important: true
       },
       {
         id: 107,
@@ -1404,7 +1407,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "践", meaning: "Practice" }
         ],
         example: "学んだことをすぐに{実践する}。",
-        exampleMeaning: "I put what I've learned {into practice} right away."
+        exampleMeaning: "I put what I've learned {into practice} right away.",
+        important: true
       },
       {
         id: 109,
@@ -2127,7 +2131,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
         exampleMeaning: "I {completely} [deleted] all the data from my computer.",
         extraVocabulary: [
           { wordRuby: "削{さく}除{じょ}", meaning: "Delete" }
-        ]
+        ],
+        important: true
       },
       {
         id: 164,
@@ -3050,7 +3055,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
         exampleMeaning: "I'll {express} my [feelings] in words.",
         extraVocabulary: [
           { wordRuby: "感{かん}情{じょう}", meaning: "Emotion・Feeling" }
-        ]
+        ],
+        important: true
       },
       {
         id: 233,
@@ -3121,7 +3127,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
         exampleMeaning: "You need to make a reservation to {take a course}.",
         extraVocabulary: [
           { wordRuby: "講{こう}座{ざ}", meaning: "Course・Lecture" }
-        ]
+        ],
+        important: true
       },
       {
         id: 238,
@@ -3812,7 +3819,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "目", meaning: "Eyes" }
         ],
         example: "親としての{役目}を果たすべきだ。",
-        exampleMeaning: "I have to fulfill my {duty} as a parent."
+        exampleMeaning: "I have to fulfill my {duty} as a parent.",
+        important: true
       },
       {
         id: 288,
@@ -4009,7 +4017,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
         exampleMeaning: "The {costs} exceeded the [budget].",
         extraVocabulary: [
           { wordRuby: "予{よ}算{さん}", meaning: "Budget" }
-        ]
+        ],
+        important: true
       }
     ],
   },
@@ -4418,7 +4427,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
         exampleMeaning: "The [police officers] are {on guard} at the venue.",
         extraVocabulary: [
           { wordRuby: "警{けい}察{さつ}官{かん}", meaning: "Police officer" }
-        ]
+        ],
+        important: true
       },
       {
         id: 332,
@@ -5291,6 +5301,7 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
         extraVocabulary: [
           { wordRuby: "意{い}識{しき}", meaning: "Consciousness" }
         ],
+        important: true
       }
     ],
   },
@@ -5465,7 +5476,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "常", meaning: "Usual" },
         ],
         example: "仕事のことを{常に}考えている。",
-        exampleMeaning: "I'm {always} thinking about work."
+        exampleMeaning: "I'm {always} thinking about work.",
+        important: true
       },
       {
         id: 407,
@@ -5846,7 +5858,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "略", meaning: "Shorten" }
         ],
         example: "筆要ではない部分を{省略して}説明した。",
-        exampleMeaning: "I explained while {omitting} the unimportant parts."
+        exampleMeaning: "I explained while {omitting} the unimportant parts.",
+        important: true
       },
       {
         id: 435,
@@ -6185,7 +6198,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "込む", meaning: "Into" }
         ],
         example: "彼のことを店員だと{思い込んで}いた。",
-        exampleMeaning: "I {assumed} that he was one of the shop employees."
+        exampleMeaning: "I {assumed} that he was one of the shop employees.",
+        important: true
       },
       {
         id: 460,
@@ -7105,6 +7119,7 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
         extraVocabulary: [
           { wordRuby: "環{かん}境{きょう}", meaning: "Environment" }
         ],
+        important: true
       },
       {
         id: 526,
@@ -7898,7 +7913,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "秀", meaning: "outstanding" }
         ],
         example: "会社に{優秀な}社員が入社した。",
-        exampleMeaning: "An {exceptional} employee has joined our company."
+        exampleMeaning: "An {exceptional} employee has joined our company.",
+        important: true,
       },
       {
         id: 583,
@@ -8071,7 +8087,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
         exampleMeaning: "It's not {just} a [coincidence].",
         extraVocabulary: [
           { wordRuby: "偶{ぐう}然{ぜん}", meaning: "Coincidence" }
-        ]
+        ],
+        important: true,
       },
       {
         id: 595,
@@ -9880,7 +9897,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
         extraVocabulary: [
           { wordRuby: "態{たい}度{ど}", meaning: "Attitude" },
           { wordRuby: "驚{おどろ}く", meaning: "To be surprised" }
-        ]
+        ],
+        important: true
       },
       {
         id: 720,
@@ -9937,7 +9955,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
         exampleMeaning: "I'll [submit] my paper after {revising} it.",
         extraVocabulary: [
           { wordRuby: "提{てい}出{しゅつ}", meaning: "Submission" }
-        ]
+        ],
+        important: true
       },
       {
         id: 724,
@@ -10057,7 +10076,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
         exampleMeaning: "I {criticized} the company's [policy].",
         extraVocabulary: [
           { wordRuby: "方{ほう}針{しん}", meaning: "Policy" }
-        ]
+        ],
+        important: true
       },
       {
         id: 732,
@@ -10807,7 +10827,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "近", meaning: "Near" }
         ],
         example: "道を歩いていると車が{接近して}きた。",
-        exampleMeaning: "A car {approached} me as I was walking down the street."
+        exampleMeaning: "A car {approached} me as I was walking down the street.",
+        important: true
       }
     ],
   },
@@ -11061,7 +11082,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
         exampleMeaning: "I'm planning to {finish} the [procedure] within today.",
         extraVocabulary: [
           { wordRuby: "手{て}続{つづ}き", meaning: "Procedure" }
-        ]
+        ],
+        important: true
       },
       {
         id: 802,
@@ -11089,7 +11111,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "実", meaning: "Actual" }
         ],
         example: "彼女のおかげで毎日が{充実して}いる。",
-        exampleMeaning: "Thanks to her, every day feels {fulfilling}."
+        exampleMeaning: "Thanks to her, every day feels {fulfilling}.",
+        important: true
       },
       {
         id: 804,
@@ -11928,7 +11951,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
         exampleMeaning: "The [memories] of that time still remain {clearly}.",
         extraVocabulary: [
           { wordRuby: "記{き}憶{おく}", meaning: "Memory" }
-        ]
+        ],
+        important: true
       }
     ],
   },
