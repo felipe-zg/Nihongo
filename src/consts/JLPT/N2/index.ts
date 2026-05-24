@@ -4,3 +4,4 @@ export * from "./vocabs.const";
 export * from "./exercises/grammar.const";
 export * from "./exercises/moji.const";
 export * from "./fastpass-tango.const";
+export * from "./words.const";
