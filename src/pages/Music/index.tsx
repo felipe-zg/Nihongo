@@ -1,7 +1,7 @@
 import React, { useMemo } from "react";
 import { useSearchParams } from "react-router-dom";
 import Lyrics from "./Lyrics";
-import { LEINA_BLUE_AGE, LEINA_MOMENT, LEINA_NOSTALGIA, NEMOPHILA_JUST_DO_IT, NEMOPHILA_LIFE, NEMOPHILA_MONSTERS, NEMOPHILA_SORAI, OTHERS_ブルーライト, OTHERS_東京, OTHERS_死ぬのがいいわ, OTHERS_革命道中 } from "../../consts/music";
+import { LEINA_BLUE_AGE, LEINA_MOMENT, LEINA_NOSTALGIA, NEMOPHILA_JUST_DO_IT, NEMOPHILA_LIFE, NEMOPHILA_MONSTERS, NEMOPHILA_RAITEI, NEMOPHILA_SORAI, OTHERS_ブルーライト, OTHERS_東京, OTHERS_死ぬのがいいわ, OTHERS_革命道中 } from "../../consts/music";
 
 type ArtistNamme = "Leina" | "Nemophila" | "Ohers";
 
@@ -34,6 +34,8 @@ const LyricsPage: React.FC = () => {
         return NEMOPHILA_SORAI;
       case "just-do-it":
         return NEMOPHILA_JUST_DO_IT;
+      case "raitei":
+        return NEMOPHILA_RAITEI;
       default:
         return [];
     }
