@@ -1,9 +1,15 @@
 import React from "react";
 import FastPass from "./FastPass";
-import { JLPT_N2_FASTPASS_TANGO } from "../../consts";
+import { JLPT_N2_FASTPASS_TANGO, N2ExtraWords } from "../../consts";
 import { parseRuby } from "../../utils/music/rubyParser";
+import { useSearchParams } from "react-router-dom";
+
+type VocabularySource = 'FASTPASS' | 'EXTRA';
 
 const FastPassPage: React.FC = () => {
+  const [searchParams] = useSearchParams();
+  const vocabularySourceParam: VocabularySource = (searchParams.get("source") as VocabularySource);
+  const vocabularyList = vocabularySourceParam === "EXTRA" ? N2ExtraWords : JLPT_N2_FASTPASS_TANGO;
   const [startId, setStartId] = React.useState(1);
   const [endId, setEndId] = React.useState(60);
   const [filteredWord, setFilteredWord] = React.useState<TangoWord | null>(null);
@@ -34,7 +40,7 @@ const FastPassPage: React.FC = () => {
   const runFilter = (filter: string): boolean => {
     if (!filter) return false;
     
-    for (const entry of Object.values(JLPT_N2_FASTPASS_TANGO)) {
+    for (const entry of Object.values(vocabularyList)) {
       for (const word of entry.words) {
         const reading = parseRuby(word.wordRuby)
           .map(part => part.kanji)
@@ -51,20 +57,20 @@ const FastPassPage: React.FC = () => {
 
 
   const availableIds = React.useMemo(() => {
-    return Object.values(JLPT_N2_FASTPASS_TANGO)
+    return Object.values(vocabularyList)
       .flatMap(entry => entry.words.map(word => word.id));
-  }, []);
+  }, [vocabularyList]);
 
   const tangoList = React.useMemo(() => {
     const filteredTango: Record<string, TangoEntry> = {};
-    for (const [key, entry] of Object.entries(JLPT_N2_FASTPASS_TANGO)) {
+    for (const [key, entry] of Object.entries(vocabularyList)) {
       const filteredWords = entry.words.filter(word => word.id >= startId && word.id <= endId);
       if (filteredWords.length > 0) {
         filteredTango[key] = { ...entry, words: filteredWords };
       }
     }
     return filteredTango;
-  }, [startId, endId]);
+  }, [vocabularyList, startId, endId]);
 
   return (
     <FastPass 
