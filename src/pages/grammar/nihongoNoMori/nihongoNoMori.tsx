@@ -224,7 +224,7 @@ const NihongoNoMoriGrammar: React.FC<Props> = ({ grammarList, mode }) => {
           </ContentBox>
           <Box opacity={showContent ? 1 : 0} alignItems={"center"} width={"100%"}>
             <ContentBox>
-              <Text fontSize={"lg"} color={"white"}>{currentItem.imi}</Text>
+              <Text fontSize={"lg"} color={currentItem.important ? "yellow.500" : "white"}>{currentItem.imi}</Text>
               <Divider mt={2} bg="gray.500" thickness={0.5}/>
               <Text fontSize={"md"} italic color={"white"} textAlign={"center"} my={2}>{currentItem.explanation}</Text>
               <Box borderColor={"pink.500"} borderWidth={1} borderRadius={5} px={4} py={1} mt={2}>

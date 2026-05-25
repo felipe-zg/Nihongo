@@ -766,7 +766,8 @@ export const NIHONGO_NO_MORI_GRAMMAR: GrammarEntry[] = [
     category: GrammarEntryCategory.POSITIONS_STANDARDS,
     newWords: [
       { kanji: "相談", kana: "そうだん", english: "consultation; discussion" },
-    ]
+    ],
+    important: true,
   },
   {
     id: 24,
@@ -866,7 +867,8 @@ export const NIHONGO_NO_MORI_GRAMMAR: GrammarEntry[] = [
     newWords: [
       { kanji: "悩み", kana: "なやみ", english: "worry・concern" },
       { kanji: "到着", kana: "とうちゃく", english: "arrival" },
-    ]
+    ],
+    important: true,
   },
   {
     id: 27,
@@ -1050,7 +1052,8 @@ export const NIHONGO_NO_MORI_GRAMMAR: GrammarEntry[] = [
       { kanji: "受け入れる", kana: "うけいれる", english: "to accept" },
       { kanji: "流れる", kana: "ながれる", english: "to flow・spread" },
       { kanji: "許す", kana: "ゆるす", english: "to allow; to forgive" },
-    ]
+    ],
+    important: true,
   },
   {
     id: 32,
@@ -1547,6 +1550,7 @@ export const NIHONGO_NO_MORI_GRAMMAR: GrammarEntry[] = [
       { kanji: "人口", kana: "じんこう", english: "population" },
       { kanji: "高齢", kana: "こうれい", english: "elderly" },
     ],
+    important: true,
   },
   {
     id: 46,
@@ -2022,6 +2026,7 @@ export const NIHONGO_NO_MORI_GRAMMAR: GrammarEntry[] = [
     newWords: [
       { kanji: "帰国", kana: "きこく", english: "Return to one's country" },
     ],
+    important: true,
   },
   {
     id: 61,
@@ -2358,6 +2363,7 @@ export const NIHONGO_NO_MORI_GRAMMAR: GrammarEntry[] = [
       { kanji: "書類", kana: "しょるい", english: "documents" },
     ],
     extraInfo: "からじゃないと is used in spoken language (Conversations).",
+    important: true,
   },
   {
     id: 70,
