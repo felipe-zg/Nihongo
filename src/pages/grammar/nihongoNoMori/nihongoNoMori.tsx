@@ -21,6 +21,7 @@ const NihongoNoMoriGrammar: React.FC<Props> = ({ grammarList, mode }) => {
   const [showContent, setShowContent] = React.useState(false);
   const [filterText, setFilterText] = React.useState("");
   const [categoryFilter, setCategoryFilter] = React.useState<GrammarCategory>();
+  const [importantOnly, setImportantOnly] = React.useState(false);
 
   const grammarCategoryOptions = Object.entries(GrammarEntryCategory).map(
     ([key, value]) => ({ key, label: value, value })
@@ -31,6 +32,8 @@ const NihongoNoMoriGrammar: React.FC<Props> = ({ grammarList, mode }) => {
     item.category.toLowerCase().includes(filterText.toLowerCase())
   ).filter(item =>
     categoryFilter ? item.category === categoryFilter : true
+  ).filter(item =>
+    importantOnly ? item.important : true
   );
 
   const currentItem = filteredList[currentIndex] || null;
@@ -196,10 +199,19 @@ const NihongoNoMoriGrammar: React.FC<Props> = ({ grammarList, mode }) => {
         justifyContent="space-between"
         direction={{ base: "column", sm: "row" }}
       >
-        <Box flex={1} display={{ base: "none", sm: "flex" }}>
+        <HStack flex={1} display={{ base: "none", sm: "flex" }}>
           {CategorySelect}
-        </Box>
-        <Box flex={2} alignItems="center">
+          <Button
+            variant={importantOnly ? "solid" : "outline"}
+            colorScheme="yellow"
+            size="sm"
+            ml={2}
+            onPress={() => setImportantOnly(!importantOnly)}
+          >
+            重要だけ
+          </Button>
+        </HStack>
+        <Box flex={1} alignItems="center">
           <Text fontFamily="Klee One" fontSize="xl" bold color="white">
             日本語の森・文法
           </Text>
