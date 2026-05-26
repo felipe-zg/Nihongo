@@ -9,6 +9,8 @@ type Props = {
   availableIds: number[];
   startId: number;
   endId: number;
+  importantOnly: boolean;
+  onImportantOnlyChange(): void;
   onStartIdChange(id: number): void;
   onEndIdChange(id: number): void;
   openPrintPage(): void;
@@ -20,6 +22,8 @@ const FastPass: React.FC<Props> = ({
   filteredWord,
   startId,
   endId,
+  importantOnly,
+  onImportantOnlyChange,
   onStartIdChange,
   onEndIdChange,
   openPrintPage,
@@ -47,7 +51,7 @@ const FastPass: React.FC<Props> = ({
         <HStack space={2} alignItems={"center"} justifyContent={"center"}>
           <Input placeholder="Filter by reading or ID" width={{ base: "100%", lg: "150px" }} bg="white" color="black" value={filter} onChangeText={setFilter} />
           <Button colorScheme="blue" size={"xs"} variant="outline" onPress={onFilter}>
-            Find
+            探す
           </Button>
         </HStack>
         <HStack px={4} space={4}>
@@ -68,8 +72,17 @@ const FastPass: React.FC<Props> = ({
             </Select>
           </Box>
         </HStack>
+        <Button
+          variant={importantOnly ? "solid" : "outline"}
+          colorScheme="yellow"
+          size="xs"
+          ml={2}
+          onPress={onImportantOnlyChange}
+        >
+          重要だけ
+        </Button>
         <Button onPress={openPrintPage} colorScheme="blue" size={"xs"} variant={"outline"}>
-          Print
+          印刷する
         </Button>
       </Stack>
       

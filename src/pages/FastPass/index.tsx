@@ -13,6 +13,7 @@ const FastPassPage: React.FC = () => {
   const [startId, setStartId] = React.useState(1);
   const [endId, setEndId] = React.useState(60);
   const [filteredWord, setFilteredWord] = React.useState<TangoWord | null>(null);
+  const [importantOnly, setImportantOnly] = React.useState(false);
 
   const openPrintPage = () => {
     const printWindow = window.open(`/printable/fastpass?startId=${startId}&endId=${endId}`, "_blank");
@@ -36,6 +37,10 @@ const FastPassPage: React.FC = () => {
     }
     setEndId(id);
   };
+
+  const handleImportantOnlyChange = (): void => {
+    setImportantOnly(prev => !prev);
+  }
 
   const runFilter = (filter: string): boolean => {
     if (!filter) return false;
@@ -61,16 +66,25 @@ const FastPassPage: React.FC = () => {
       .flatMap(entry => entry.words.map(word => word.id));
   }, [vocabularyList]);
 
+  const filterByIdRange = (words: TangoWord[], startdId: number, endId: number) => {
+    return words.filter(word => word.id >= startId && word.id <= endId);
+  }
+
+  const filterByIdImportance = (words: TangoWord[]) => {
+    return words.filter(word => word.important);
+  }
+
   const tangoList = React.useMemo(() => {
     const filteredTango: Record<string, TangoEntry> = {};
     for (const [key, entry] of Object.entries(vocabularyList)) {
-      const filteredWords = entry.words.filter(word => word.id >= startId && word.id <= endId);
+      const filteredWords = importantOnly ? filterByIdImportance(entry.words) : filterByIdRange(entry.words, startId, endId);
       if (filteredWords.length > 0) {
         filteredTango[key] = { ...entry, words: filteredWords };
       }
     }
     return filteredTango;
-  }, [vocabularyList, startId, endId]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [vocabularyList, importantOnly, startId, endId]);
 
   return (
     <FastPass 
@@ -79,6 +93,8 @@ const FastPassPage: React.FC = () => {
       openPrintPage={openPrintPage}
       startId={startId}
       endId={endId}
+      importantOnly={importantOnly}
+      onImportantOnlyChange={handleImportantOnlyChange}
       onStartIdChange={handleStartIdChange}
       onEndIdChange={handleEndIdChange}
       availableIds={availableIds}

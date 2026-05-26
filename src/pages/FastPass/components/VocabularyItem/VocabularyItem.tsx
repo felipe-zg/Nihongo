@@ -11,7 +11,7 @@ export const VocabularyItem: React.FC<{ word: TangoWord }> = ({ word }) => {
       <HStack>
         <Box flex={1}>
           <HStack alignItems={"end"}>
-            <Word ruby={word.wordRuby} showFurigana={ShowInfo} />
+            <Word ruby={word.wordRuby} showFurigana={ShowInfo} color={word.important ? "warning.500" : undefined} />
             {word.connector && <Text fontFamily="Klee One" color={"white"} ml={2} mt={2}>{word.connector}</Text>}
           </HStack>
           <Text fontFamily="Klee One" color={ShowInfo ? "primary.500" : "transparent"}>
@@ -43,9 +43,9 @@ export const VocabularyItem: React.FC<{ word: TangoWord }> = ({ word }) => {
               textAlign="left" 
             />
             {word.extraVocabulary?.map((vocab, index) => (
-              <HStack key={index} mt={2} space={4} alignItems={"center"} opacity={ShowInfo ? 1 : 0}>
-                <Word ruby={vocab.wordRuby} showFurigana fontSize="md" color="fuchsia.500" />
-                <Text fontFamily="Klee One" color={"fuchsia.300"}>
+              <HStack key={index} space={4} alignItems={"center"} opacity={ShowInfo ? 1 : 0}>
+                <Word ruby={vocab.wordRuby} showFurigana fontSize="md" color="lime.500" />
+                <Text fontFamily="Klee One" color={"lime.300"}>
                   {vocab.meaning}
                 </Text>
               </HStack>
