@@ -263,7 +263,10 @@ export const N2ExtraWords: Record<string, TangoEntry> = {
           { kanji: "喜ぶ", meaning: "to be delighted" }
         ],
         example: "タクシー会社を経営する青山氏は、インタビューで「お客様から感謝の言葉を[いただくたび]、人の役に立つ{喜び}を感じます。」と語った。",
-        exampleMeaning: "Mr. Aoyama, who runs a taxi company, said in an interview, 'Every time I receive words of gratitude from customers, I feel the joy of being helpful to people.'"
+        exampleMeaning: "Mr. Aoyama, who runs a taxi company, said in an interview, 'Every time I receive words of gratitude from customers, I feel the joy of being helpful to people.'",
+        extraVocabulary: [
+          { wordRuby: "喜{よろこ}ぶ", meaning: "to be delighted" },
+        ],
       },
       {
         id: 24,
@@ -379,7 +382,115 @@ export const N2ExtraWords: Record<string, TangoEntry> = {
         ],
         example: "古{ふる}い物語{ものがたり}には、{姫}が王子{おうし}に出会{であ}ったという話{はなし}がよくある。",
         exampleMeaning: "In old tales, there are often stories of a {princess} meeting a prince."
+      },
+      {
+        id: 33,
+        wordRuby: "農{のう}業{ぎょう}",
+        meaning: "agriculture",
+        components: [
+          { kanji: "農", meaning: "farming" },
+          { kanji: "業", meaning: "occupation・business" }
+        ],
+        example: "彼は{農業}に携わっている。",
+        exampleMeaning: "He is engaged in {agriculture}."
+      },
+      {
+        id: 34,
+        wordRuby: "想{そう}像{ぞう}",
+        meaning: "image・imagination",
+        components: [
+          { kanji: "想", meaning: "think" },
+          { kanji: "像", meaning: "image" }
+        ],
+        example: "彼女は{想像}力が豊かで、創造的な作品を生み出している。",
+        exampleMeaning: "She has a rich {imagination} and creates creative works."
+      },
+      {
+        id: 35,
+        wordRuby: "知{ち}識{しき}",
+        meaning: "knowledge",
+        components: [
+          { kanji: "知", meaning: "know" },
+          { kanji: "識", meaning: "discern" }
+        ],
+        example: "彼は{知識}が豊富で、多くのことを知っている。",
+        exampleMeaning: "He has a lot of {knowledge} and knows many things."
+      },
+      {
+        id: 36,
+        wordRuby: "具{ぐ}合{あい}",
+        meaning: "condition・state",
+        components: [
+          { kanji: "具", meaning: "tool・implement" },
+          { kanji: "合", meaning: "fit・match" }
+        ],
+        example: "最近、体の{具合}が悪い。",
+        exampleMeaning: "Recently, my body is not doing well."
+      },
+      {
+        id: 37,
+        wordRuby: "味{あじ}わう",
+        meaning: "to taste・to experience",
+        components: [
+          { kanji: "味", meaning: "taste" },
+        ],
+        example: "この料理は見た目はあまり良くないけど、{味わう}ととても美味しい。",
+        exampleMeaning: "This dish doesn't look very good, but when you {taste} it, it's very delicious."
+      },
+      {
+        id: 38,
+        wordRuby: "絡{から}まる",
+        meaning: "to get entangled・to get involved",
+        components: [
+          { kanji: "絡", meaning: "entangle" }
+        ],
+        example: "髪の毛がに{絡まって}しまった。",
+        exampleMeaning: "The hair got entangled."
+      },
+      {
+        id: 39,
+        wordRuby: "栽培{さいばい}",
+        meaning: "cultivation・growing",
+        components: [
+          { kanji: "栽", meaning: "plant" },
+          { kanji: "培", meaning: "cultivate" }
+        ],
+        example: "ここでは農薬をまったく使わずに野菜を{栽培して}いる。",
+        exampleMeaning: "This place grows vegetables without using any pesticides."
+      },
+      {
+        id: 40,
+        wordRuby: "眺{なが}める",
+        meaning: "to look out at・to gaze at",
+        components: [
+          { kanji: "眺", meaning: "overlook" }
+        ],
+        example: "山の{眺め}がとても美しかった。",
+        exampleMeaning: "The {view} of the mountains was very beautiful."
+      },
+      {
+        id: 41,
+        wordRuby: "散{ち}る",
+        meaning: "to scatter・to fall apart",
+        components: [
+          { kanji: "散", meaning: "scatter" }
+        ],
+        example: "桜の花が{散って}いくのを眺める。",
+        exampleMeaning: "Watching the cherry blossoms {scatter}."
+      },
+      {
+        id: 42,
+        wordRuby: "柔{やわ}らかい",
+        meaning: "soft",
+        components: [
+          { kanji: "柔", meaning: "soft" }
+        ],
+        example: "このセーターにはとても{柔らかい}[毛糸]が使われている。",
+        exampleMeaning: "This sweater is made of very {soft} yarn.",
+        extraVocabulary: [
+          { wordRuby: "毛{け}糸{いと}", meaning: "yarn" }
+        ]
       }
     ],
-  }
+  },
 };
