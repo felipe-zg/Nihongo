@@ -4034,7 +4034,8 @@ export const NIHONGO_NO_MORI_GRAMMAR_N2: GrammarEntry[] = [
       { kanji: "やらせる", kana: "", english: "to let someone do something" },
       { kanji: "症状", kana: "しょうじょう", english: "symptoms" },
       { kanji: "実力", kana: "じつりょく", english: "actual ability" },
-    ]
+    ],
+    important: true,
   },
   // SECTION 13: 列挙 - GRAMMAR 115 - 121
   {
@@ -4571,7 +4572,8 @@ export const NIHONGO_NO_MORI_GRAMMAR_N2: GrammarEntry[] = [
     category: GrammarEntryCategory.LEXICAL_GRAMMAR,
     newWords: [
       { kanji: "一枚", kana: "いちまい", english: "one slice" },
-    ]
+    ],
+    important: true
   },
   // SECTION 15: 丁寧な表現・その他 - GRAMMAR 130 - 135
   {
