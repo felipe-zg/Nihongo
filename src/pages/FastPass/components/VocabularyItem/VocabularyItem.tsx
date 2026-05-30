@@ -50,6 +50,11 @@ export const VocabularyItem: React.FC<{ word: TangoWord }> = ({ word }) => {
                 </Text>
               </HStack>
             ))}
+            {word.info && (
+              <Text fontFamily="Klee One" color={"fuchsia.400"} opacity={ShowInfo ? 1 : 0}>
+                {word.info}
+              </Text>
+            )}
           </Box>
           <Box flex={1} alignItems={"flex-end"} justifyContent={"flex-end"}>
             <Text fontFamily="Klee One" fontSize={"md"} color="orange.500">
