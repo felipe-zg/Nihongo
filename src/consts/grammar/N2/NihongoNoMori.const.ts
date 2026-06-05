@@ -247,7 +247,8 @@ export const NIHONGO_NO_MORI_GRAMMAR_N2: GrammarEntry[] = [
     category: GrammarEntryCategory.MONO,
     newWords: [
       { kanji: "課題", kana: "かだい", english: "homework・task" },
-    ]
+    ],
+    important: true,
   },
   {
     id: 8,
@@ -568,7 +569,8 @@ export const NIHONGO_NO_MORI_GRAMMAR_N2: GrammarEntry[] = [
       { kanji: "機械", kana: "きかい", english: "machine" },
       { kanji: "祝日", kana: "しゅくじつ", english: "holiday" },
       { kanji: "壊す", kana: "こわす", english: "to break" }
-    ]
+    ],
+    important: true
   },
   {
     id: 17,
@@ -1842,7 +1844,8 @@ export const NIHONGO_NO_MORI_GRAMMAR_N2: GrammarEntry[] = [
       { kanji: "痩せる", kana: "やせる", english: "to lose weight" },
       { kanji: "不安", kana: "ふあん", english: "anxiety" },
       { kanji: "壊れる", kana: "こわれる", english: "to break" }
-    ]
+    ],
+    important: true,
   },
   {
     id: 53,
@@ -3255,7 +3258,8 @@ export const NIHONGO_NO_MORI_GRAMMAR_N2: GrammarEntry[] = [
       { kanji: "深刻", kana: "しんこく", english: "serious・severe" },
       { kanji: "引き起こす", kana: "ひきおこす", english: "to cause・to bring about" },
       { kanji: "渋滞", kana: "じゅうたい", english: "traffic jam" }
-    ]
+    ],
+    important: true,
   },
   {
     id: 93,

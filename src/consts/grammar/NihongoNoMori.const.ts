@@ -1516,6 +1516,7 @@ export const NIHONGO_NO_MORI_GRAMMAR: GrammarEntry[] = [
       { kanji: "迷惑", kana: "めいわく", english: "nuisance" },
       { kanji: "似合う", kana: "にあう", english: "to suit・to look good on" },
     ],
+    important: true,
   },
   {
     id: 45,
@@ -1678,6 +1679,7 @@ export const NIHONGO_NO_MORI_GRAMMAR: GrammarEntry[] = [
     newWords: [
       { kanji: "直前", kana: "ちょくぜん", english: "just before" },
     ],
+    important: true,
   },
   // Number 50 is そう part 1
   {
