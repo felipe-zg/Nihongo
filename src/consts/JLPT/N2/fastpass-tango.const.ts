@@ -167,7 +167,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "想", meaning: "Think" }
         ],
         example: "彼の{発想}はいつも面白い。",
-        exampleMeaning: "His {ideas} are always interesting."
+        exampleMeaning: "His {ideas} are always interesting.",
+        important: true
       },
       {
         id: 15,
@@ -239,7 +240,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
         exampleMeaning: "I'm {working on} a new book.",
         extraVocabulary: [
           { wordRuby: "制{せい}作{さく}", meaning: "Production" }
-        ]
+        ],
+        important: true
       },
       {
         id: 20,
@@ -264,7 +266,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "扱う", meaning: "Handle" }
         ],
         example: "この店は海外の商品を{取り扱っている}。",
-        exampleMeaning: "This shop {deals in} foreign goods."
+        exampleMeaning: "This shop {deals in} foreign goods.",
+        important: true
       },
       {
         id: 22,
@@ -1278,7 +1281,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "論", meaning: "Theory" }
         ],
         example: "急いで{結論}を出すのは危険だ。",
-        exampleMeaning: "It is dangerous to rush to a {conclusion}."
+        exampleMeaning: "It is dangerous to rush to a {conclusion}.",
+        important: true
       },
       {
         id: 99,
@@ -1690,7 +1694,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
         exampleMeaning: "I'll {submit} my [homework] to the teacher.",
         extraVocabulary: [
           { wordRuby: "宿{しゅく}題{だい}", meaning: "Homework" }
-        ]
+        ],
+        important: true
       }
     ],
   },
@@ -2739,7 +2744,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "策", meaning: "Strategy" }
         ],
         example: "{解決策}が見つからず困っている。",
-        exampleMeaning: "I'm in trouble because I can't find a {solution}."
+        exampleMeaning: "I'm in trouble because I can't find a {solution}.",
+        important: true
       },
       {
         id: 208,
@@ -3263,7 +3269,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "度", meaning: "Level" },
         ],
         example: "{態度}が悪いと注意された。",
-        exampleMeaning: "I was told I have a bad {attitude}."
+        exampleMeaning: "I was told I have a bad {attitude}.",
+        important: true
       },
       {
         id: 247,
@@ -3373,7 +3380,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "的", meaning: "Adj. suffix" }
         ],
         example: "{定期的に}歯医者に行くようにしている。",
-        exampleMeaning: "I try to go to the dentist {regularly}."
+        exampleMeaning: "I try to go to the dentist {regularly}.",
+        important: true
       }
     ],
   },
@@ -4162,7 +4170,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
         extraVocabulary: [
           { wordRuby: "面{めん}接{せつ}", meaning: "Job interview" },
           { wordRuby: "能{のう}力{りょく}", meaning: "Ability" }
-        ]
+        ],
+        important: true
       },
       {
         id: 311,
@@ -4682,7 +4691,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "料", meaning: "Fee" }
         ],
         example: "17時までは{手数料}が無料です。",
-        exampleMeaning: "There's no {service fee} until 5 p.m."
+        exampleMeaning: "There's no {service fee} until 5 p.m.",
+        important: true
       },
       {
         id: 349,
@@ -4736,7 +4746,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
         exampleMeaning: "Please {make} the [materials] for the presentation.",
         extraVocabulary: [
           { wordRuby: "資{し}料{りょう}", meaning: "Materials" }
-        ]
+        ],
+        important: true
       },
       {
         id: 353,
@@ -6445,7 +6456,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
         exampleMeaning: "I received a noise {complaint} from my [neighbor].",
         extraVocabulary: [
           { wordRuby: "近{きん}所{じょ}", meaning: "Neighborhood" }
-        ]
+        ],
+        important: true
       },
     ],
   },
@@ -6582,7 +6594,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "支", meaning: "Support" },
         ],
         example: "家族がいつも私を{支えて}くれる。",
-        exampleMeaning: "My family always {supports} me."
+        exampleMeaning: "My family always {supports} me.",
+        important: true
       },
       {
         id: 486,
@@ -7279,7 +7292,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
         exampleMeaning: "We need to have a discussion to [resolve] the {assignment}.",
         extraVocabulary: [
           { wordRuby: "解{かい}決{けつ}", meaning: "Solution" }
-        ]
+        ],
+        important: true
       }
     ],
   },
@@ -8530,7 +8544,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "激", meaning: "Intense" },
         ],
         example: "{激しい}運動をして疲れてしまった。",
-        exampleMeaning: "I felt exhausted after doing {intense} exercise."
+        exampleMeaning: "I felt exhausted after doing {intense} exercise.",
+        important: true,
       },
       {
         id: 624,
@@ -9920,7 +9935,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "善", meaning: "Good" }
         ],
         example: "新商品の問題点を全て{改善した}。",
-        exampleMeaning: "We {fixed} our new product's problem areas."
+        exampleMeaning: "We {fixed} our new product's problem areas.",
+        important: true
       }
     ],
   },
@@ -10657,7 +10673,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "抱", meaning: "Hold" },
         ],
         example: "息子が大きな荷物を{抱えて}帰って来た。",
-        exampleMeaning: "My son came home {carrying} a large package."
+        exampleMeaning: "My son came home {carrying} a large package.",
+        important: true
       },
       {
         id: 770,
@@ -11249,7 +11266,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
         exampleMeaning: "I work to {build} a relationship of [trust].",
         extraVocabulary: [
           { wordRuby: "信{しん}頼{らい}", meaning: "Trust" }
-        ]
+        ],
+        important: true
       },
       {
         id: 810,
@@ -12831,7 +12849,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "送", meaning: "Send" }
         ],
         example: "明日、商品を{発送する}予定です。",
-        exampleMeaning: "Your product will be {shipped} out tomorrow."
+        exampleMeaning: "Your product will be {shipped} out tomorrow.",
+        important: true
       }
     ],
   },
@@ -12848,7 +12867,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "送", meaning: "Send" }
         ],
         example: "ご自宅に家具を{配送いたします}。",
-        exampleMeaning: "We'll {ship} the furniture to your home."
+        exampleMeaning: "We'll {ship} the furniture to your home.",
+        important: true
       },
       {
         id: 916,
