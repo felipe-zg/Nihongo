@@ -1440,7 +1440,8 @@ export const NIHONGO_NO_MORI_GRAMMAR_N2: GrammarEntry[] = [
       { kanji: "偉そう", kana: "えらそう", english: "arrogant" },
       { kanji: "算数", kana: "さんすう", english: "arithmetic"},
       { kanji: "解く", kana: "とく", english: "to solve" }
-    ]
+    ],
+    important: true,
   },
   {
     id: 42,
@@ -1619,7 +1620,8 @@ export const NIHONGO_NO_MORI_GRAMMAR_N2: GrammarEntry[] = [
       { kanji: "倒れる", kana: "たおれる", english: "to collapse" },
       { kanji: "さんざん", kana: "", english: "thoroughly・severely" },
       { kanji: "悩む", kana: "なやむ", english: "to worry" },
-    ]
+    ],
+    important: true,
   },
   {
     id: 47,
