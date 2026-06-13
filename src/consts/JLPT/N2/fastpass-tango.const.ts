@@ -376,7 +376,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "入る", meaning: "Enter" }
         ],
         example: "{お気に入り}の本を何度も読む。",
-        exampleMeaning: "I read my {favorite} book over and over."
+        exampleMeaning: "I read my {favorite} book over and over.",
+        important: true
       },
       {
         id: 31,
@@ -1207,7 +1208,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
         exampleMeaning: "I learned about the [importance] of data {management}.",
         extraVocabulary: [
           { wordRuby: "重{じゅう}要{よう}性{せい}", meaning: "Importance" }
-        ]
+        ],
+        important: true
       },
       {
         id: 93,
@@ -3425,7 +3427,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "能", meaning: "Ability" }
         ],
         example: "彼女には絵の{才能}がある。",
-        exampleMeaning: "She has {talent} for drawing."
+        exampleMeaning: "She has {talent} for drawing.",
+        important: true
       },
       {
         id: 257,
@@ -4011,7 +4014,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "用", meaning: "Use" },
         ],
         example: "簡単な言葉を{用いて}丁寧に説明した。",
-        exampleMeaning: "{Using} simple words, I explained politely."
+        exampleMeaning: "{Using} simple words, I explained politely.",
+        important: true
       },
       {
         id: 299,
@@ -4670,7 +4674,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "得", meaning: "Gain" }
         ],
         example: "日本語を{習得する}のは簡単ではない。",
-        exampleMeaning: "{Mastering} Japanese isn't easy."
+        exampleMeaning: "{Mastering} Japanese isn't easy.",
+        important: true
       }
     ],
   },
@@ -6077,7 +6082,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "頼", meaning: "Rely" },
         ],
         example: "彼は親に{頼って}ばかりいる。",
-        exampleMeaning: "He {relies} on his parents for everything."
+        exampleMeaning: "He {relies} on his parents for everything.",
+        important: true
       },
       {
         id: 447,
@@ -6087,7 +6093,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "頼", meaning: "Rely" },
         ],
         example: "彼はとても{頼もしい}存在だ。",
-        exampleMeaning: "He's very {reliable}"
+        exampleMeaning: "He's very {reliable}",
+        important: true
       },
       {
         id: 448,
@@ -6299,7 +6306,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "考", meaning: "Think" }
         ],
         example: "彼の意見を{参考}にする。",
-        exampleMeaning: "I'll use his thoughts for {reference}."
+        exampleMeaning: "I'll use his thoughts for {reference}.",
+        important: true
       },
       {
         id: 463,
@@ -6881,7 +6889,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
         exampleMeaning: "Please {pay} the [membership fee] by the deadline.",
         extraVocabulary: [
           { wordRuby: "会{かい}費{ひ}", meaning: "Membership fee" }
-        ]
+        ],
+        important: true
       },
       {
         id: 504,
@@ -6924,7 +6933,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
         exampleMeaning: "I {put away} lots of books into the [bookshelf].",
         extraVocabulary: [
           { wordRuby: "本{ほん}棚{だな}", meaning: "Bookshelf" }
-        ]
+        ],
+        important: true
       },
       {
         id: 507,
@@ -9328,7 +9338,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "勇", meaning: "Brave" },
         ],
         example: "彼は{勇ましい}人だ。",
-        exampleMeaning: "He is a {brave} person."
+        exampleMeaning: "He is a {brave} person.",
+        important: true,
       },
       {
         id: 676,
@@ -9339,7 +9350,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "気", meaning: "Spirit" }
         ],
         example: "{勇気}を出して彼女に話しかけた。",
-        exampleMeaning: "I gathered my {courage} and tried talking to her."
+        exampleMeaning: "I gathered my {courage} and tried talking to her.",
+        important: true,
       },
     ],
   },
@@ -9432,7 +9444,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
         exampleMeaning: "The old [system] is going to be {abolished}.",
         extraVocabulary: [
           { wordRuby: "制{せい}度{ど}", meaning: "System" }
-        ]
+        ],
+        important: true,
       }
     ],
   },
@@ -9789,7 +9802,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "市", meaning: "City" }
         ],
         example: "{都市}の発展が進む。",
-        exampleMeaning: "The {city} continues to develop."
+        exampleMeaning: "The {city} continues to develop.",
+        important: true,
       }
     ],
   },
@@ -9849,7 +9863,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "人", meaning: "Human" }
         ],
         example: "スーパーの{求人}のちらしを配る。",
-        exampleMeaning: "I pass out {recruitment} flyers for the supermarket."
+        exampleMeaning: "I pass out {recruitment} flyers for the supermarket.",
+        important: true,
       }
     ],
   },
@@ -10719,7 +10734,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
         exampleMeaning: "I {have} [doubts] about this new rules.",
         extraVocabulary: [
           { wordRuby: "疑{ぎ}問{もん}", meaning: "Doubt" }
-        ]
+        ],
+        important: true
       },
     ],
   },
@@ -11154,7 +11170,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "含", meaning: "Include" },
         ],
         example: "ここにいるのは私を{含めて}5人です。",
-        exampleMeaning: "There are five of us here, {including} me."
+        exampleMeaning: "There are five of us here, {including} me.",
+        important: true
       }
     ],
   },
