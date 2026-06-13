@@ -10,6 +10,7 @@ type Props = {
   startId: number;
   endId: number;
   importantOnly: boolean;
+  numberOfImportantWords: number;
   onImportantOnlyChange(): void;
   onStartIdChange(id: number): void;
   onEndIdChange(id: number): void;
@@ -23,6 +24,7 @@ const FastPass: React.FC<Props> = ({
   startId,
   endId,
   importantOnly,
+  numberOfImportantWords,
   onImportantOnlyChange,
   onStartIdChange,
   onEndIdChange,
@@ -85,6 +87,7 @@ const FastPass: React.FC<Props> = ({
           印刷する
         </Button>
       </Stack>
+      {importantOnly && <Text mb={4} color={"yellow.400"}>{numberOfImportantWords} words</Text>}
       
       <MemoizedWordsList />
 

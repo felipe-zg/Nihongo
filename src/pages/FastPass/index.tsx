@@ -14,6 +14,7 @@ const FastPassPage: React.FC = () => {
   const [endId, setEndId] = React.useState(60);
   const [filteredWord, setFilteredWord] = React.useState<TangoWord | null>(null);
   const [importantOnly, setImportantOnly] = React.useState(false);
+  const [numberOfImportantWords, setNumberOfImportantWords] = React.useState(0);
 
   const openPrintPage = () => {
     const printWindow = window.open(`/printable/fastpass?startId=${startId}&endId=${endId}`, "_blank");
@@ -76,12 +77,15 @@ const FastPassPage: React.FC = () => {
 
   const tangoList = React.useMemo(() => {
     const filteredTango: Record<string, TangoEntry> = {};
+    let _numberOfImportantWords = 0;
     for (const [key, entry] of Object.entries(vocabularyList)) {
       const filteredWords = importantOnly ? filterByIdImportance(entry.words) : filterByIdRange(entry.words, startId, endId);
       if (filteredWords.length > 0) {
         filteredTango[key] = { ...entry, words: filteredWords };
+        _numberOfImportantWords += filteredWords.length;
       }
     }
+    setNumberOfImportantWords(_numberOfImportantWords);
     return filteredTango;
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [vocabularyList, importantOnly, startId, endId]);
@@ -95,6 +99,7 @@ const FastPassPage: React.FC = () => {
       endId={endId}
       importantOnly={importantOnly}
       onImportantOnlyChange={handleImportantOnlyChange}
+      numberOfImportantWords={numberOfImportantWords}
       onStartIdChange={handleStartIdChange}
       onEndIdChange={handleEndIdChange}
       availableIds={availableIds}
