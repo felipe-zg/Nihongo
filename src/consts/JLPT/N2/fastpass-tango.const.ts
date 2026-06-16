@@ -11859,7 +11859,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "除", meaning: "Remove" }
         ],
         example: "大切なメールを{削除して}しまった。",
-        exampleMeaning: "I accidentally {deleted} an important email."
+        exampleMeaning: "I accidentally {deleted} an important email.",
+        important: true
       }
     ],
   },
