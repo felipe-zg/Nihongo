@@ -446,12 +446,17 @@ export const N2ExtraWords: Record<string, TangoEntry> = {
         id: 33,
         wordRuby: "農{のう}業{ぎょう}",
         meaning: "agriculture",
+        info: "Noun + 連れ means: along with ~・as ~ progresses・as N1 changes, N2 also changes [ Aに変化が起こると、それに伴ってBも変化する ] (used to express that as one thing changes or progresses, another thing also changes in response or in parallel.)\n\nMost commonlu Japanese people use につれて instead of 連れ, but they have the same meaning. 連れ is more formal and is often used in written language, while につれて is more common in spoken language.\n\n～とともに grammar focuses on 'together with', Very similar, but often sounds slightly more formal and objective.\n\n〜連れ can also mean 'together with' in the sense of accompanying someone, for example, 友達連れ、家族連れ、子供連れ、犬連れ.",
         components: [
           { kanji: "農", meaning: "farming" },
           { kanji: "業", meaning: "occupation・business" }
         ],
-        example: "彼は{農業}に携わっている。",
-        exampleMeaning: "He is engaged in {agriculture}."
+        example: "{農業}技術の発展[連れ]、収穫量も年々増加している。\n{農業}技術の発展[につれて]、収穫量も年々増加している。",
+        exampleMeaning: "[Along with] the development of {agricultural} technology, crop yields have been increasing year by year.",
+        extraVocabulary: [
+          { wordRuby: "収{しゅう}穫{かく}", meaning: "harvest" },
+          { wordRuby: "年{ねん}々{ねん}", meaning: "year by year" },
+        ],
       },
       {
         id: 34,
@@ -866,15 +871,16 @@ export const N2ExtraWords: Record<string, TangoEntry> = {
         id: 61,
         wordRuby: "運{うん}休{きゅう}",
         meaning: "Service suspension・Canceled operation",
-        info: "It is mainly used for: trains・buses・flights・transportation services",
+        info: "It is mainly used for: trains・buses・flights・transportation services\n\n〜においで is the same as particle で, is a formal expression often used in: news reports, business documents, academic writing, speeches.",
         components: [
           { kanji: "運", meaning: "Transport" },
           { kanji: "休", meaning: "Rest・Holiday" }
         ],
-        example: "台風で電車が{運休}になり、 通勤や通学で利用する人に[多大な]影響を与えた。",
-        exampleMeaning: "The typhoon caused train service to be {suspended}, greatly affecting people who use it for commuting and going to school.",
+        example: "大雪の影響[により]、多くの地域[において]電車の{運休}が相次いだ。",
+        exampleMeaning: "Due to heavy snowfall, train service suspensions occurred one after another in many regions.",
         extraVocabulary: [
           { wordRuby: "多{た}大{だい}", meaning: "considerable・great・Huge・Enormous" },
+          { wordRuby: "相{あい}次{つ}ぐ", meaning: "one after another・repeatedly・back-to-back" },
         ],
       },
       {
@@ -927,12 +933,13 @@ export const N2ExtraWords: Record<string, TangoEntry> = {
         id: 66,
         wordRuby: "威{い}張{ば}る",
         meaning: "to act arrogant・to act bossy・to behave proudly in an unpleasant way",
+        info: "〜すら means: even ~・not even ~ [ 〜でさえ ] (often emphasizes that N is the minimum or most basic thing one would expect.)\n\n〜すら and 〜でさえ are almost interchangeable, bot mean 'even' or 'not even'. ",
         components: [
           { kanji: "威", meaning: "authority・power" },
           { kanji: "張る", meaning: "stretch" }
         ],
-        example: "彼は{威張る}態度で人を扱うのが好きだ。",
-        exampleMeaning: "He likes to treat people with an {arrogant} attitude."
+        example: "彼は簡単な質問[すら]答えられ[ないのに]、いつも{威張って}いる。",
+        exampleMeaning: "He always {acts superior} [even though] he can't [even] answer simple questions."
       },
       {
         id: 67,
@@ -949,50 +956,63 @@ export const N2ExtraWords: Record<string, TangoEntry> = {
         id: 68,
         wordRuby: "不{ふ}平{へい}",
         meaning: "complaint",
+        info: "〜でさえ means: even ~・not even ~ [ 〜すら ] (often emphasizes that N is the minimum or most basic thing one would expect.)\n\n〜すら and 〜でさえ are almost interchangeable, bot mean 'even' or 'not even'. ",
         components: [
           { kanji: "不", meaning: "not" },
           { kanji: "平", meaning: "flat・peace" }
         ],
-        example: "横山さんは{不平}を言うことが多い。",
-        exampleMeaning: "Yokoyama often complains.",
+        example: "普段はほとんど{不平}を言わない彼[でさえ]、今回の決定には納得できなかった。",
+        exampleMeaning: "[Even] he, who almost never {complains}, couldn't accept this decision.",
         extraVocabulary: [
           { wordRuby: "文{もん}句{く}", meaning: "complaint" },
+          { wordRuby: "納{な}得{とく}", meaning: "agreement・acceptance・consent" }
         ],
       },
       {
         id: 69,
         wordRuby: "発{はっ}生{せい}",
         meaning: "occurrence・happening",
+        info: "〜こだわる　（こだわって） means: to be particular about ~・to be obsessed with ~・to place great importance on ~・to insist on ~ (used when you want to say that someone has a strong attachment or obsession with something, often to the point of being overly concerned or fixated on it.)\nIt emphasizes: a strong attachment, obsession, or fixation on something, often to the point of being excessive or unreasonable.\nCan be used in both positive and negative contexts, depending on what the person is particular about and how it affects their behavior or decisions.",
         components: [
           { kanji: "発", meaning: "emit" },
           { kanji: "生", meaning: "produce" }
         ],
-        example: "事故が{発生}した。",
-        exampleMeaning: "An accident {occurred}."
+        example: "{発生}件数の削減に[こだわる]だけでなく、問題が起きた後の対応体制も強化すべきだ。",
+        exampleMeaning: "Rather than [focusing] only on reducing the number of incidents, we should also strengthen the response system after problems occur.",
+        extraVocabulary: [
+          { wordRuby: "件{けん}数{すう}", meaning: "number of cases" },
+          { wordRuby: "削{さく}減{げん}", meaning: "reduction" },
+          { wordRuby: "対{たい}応{おう}体{たい}制{せい}", meaning: "response system" },
+          { wordRuby: "強{きょう}化{か}", meaning: "strengthen・reinforcement" }
+        ],
       },
       {
         id: 70,
         wordRuby: "鋭{するど}い",
         meaning: "sharp・keen",
-        info: "it’s used in both a physical and abstract sense. Physically sharp (Something with a sharp edge or point.)・Mentally sharp / perceptive",
+        info: "it’s used in both a physical and abstract sense. Physically sharp (Something with a sharp edge or point.)・Mentally sharp / perceptive\n\n〜にならない means: cannot compare to ~・is on a completely different level from ~・is nowhere near ~ [ 〜と比べ物にならない・～と比べることができないほど差がある ] (used to express that something is not comparable to something else, often because it is much better, worse, or different in some significant way.)\nIt emphasizes: a significant difference in quality, ability, or characteristics between two things, often suggesting that one is far superior or inferior to the other.\n\nThis grammar is most commonly seen as: AはBにならない・AはBの比にならない",
         components: [
           { kanji: "鋭", meaning: "sharp" },
           { kanji: "金 radical", meaning: "(metal) → related to blades/tools" },
           { kanji: "兑 radical", meaning: "phonetic component" }
         ],
-        example: "動物たちが自然界で生きていくためには、{鋭い}[感覚]が必要だ",
-        exampleMeaning: "Animals need {sharp} senses in order to survive in the natural world.",
+        example: "彼の{鋭い}観察力は私の比[にならず]、わずかな変化でもすぐに気付いてしまう。",
+        exampleMeaning: "His {keen} powers of observation are [nothing compared to] mine, he notices even the slightest changes immediately.",
         extraVocabulary: [
-          { wordRuby: "感{かん}覚{かく}", meaning: "senses・feelings" }
+          { wordRuby: "観{かん}察{さつ}力{りょく}", meaning: "powers of observation" },
+          { wordRuby: "わずかな", meaning: "slight" },
         ]
       },
       {
         id: 71,
         wordRuby: "はきはき",
         meaning: "speaking clearly・energetically・in a lively, straightforward way",
-        info: "commonly used to describe: speech・answers・attitude・behavior",
-        example: "その学生は、聞かれたことに{はきはき}と答えた。",
-        exampleMeaning: "The student answered the questions {clearly and confidently}."
+        info: "commonly used to describe: speech・answers・attitude・behavior\n\n〜あまり means: because of being too ~・due to excessive ~・so much that ~ [ とても〜で、その結果... ] ( used when a feeling, state, or action becomes excessive. That excess leads to an unexpected or undesirable result.)\nAが強すぎる --> その結果 B",
+        example: "面接では{はきはき}話そうとする[あまり]、かえって早口になってしまい、うまく伝えられなかった。",
+        exampleMeaning: "Because I [tried too hard] to {speak clearly} in the interview, I ended up talking too fast and couldn't express myself well.",
+        extraVocabulary: [
+          { wordRuby: "早{はや}口{くち}", meaning: "fast talk" },
+        ],
       },
       {
         id: 72,
@@ -1010,14 +1030,19 @@ export const N2ExtraWords: Record<string, TangoEntry> = {
         id: 73,
         wordRuby: "大{たい}会{かい}",
         meaning: "tournament・championship・convention",
+        info: "〜の際 means: on the occasion of ~・at the time of ~ [ 〜のとき ] (used to indicate that something happens at a specific time or during a particular event.)\nIt emphasizes: the timing of an action or event, often highlighting that it occurs during a significant or noteworthy occasion.",
         components: [
           { kanji: "大", meaning: "big" },
           { kanji: "会", meaning: "gathering" }
         ],
-        example: "卓球クラブの山谷さんは大きな{大会}で何度も[優勝]しているのに「[私なんか]まだまだですよ」といつも言っている。",
-        exampleMeaning: "Even though Mr./Ms. Yamatani has won {major tournaments} many times, they always say「I’m still not that good」.",
+        example: "全国{大会}[の際]に優勝した選手は、表彰式でこれまで支えてくれた家族や指導者への感謝の気持ちを述べた。",
+        exampleMeaning: "The athlete who won the national tournament expressed gratitude during the award ceremony to the family members and coaches who had supported them.",
         extraVocabulary: [
-          { wordRuby: "優{ゆう}勝{しょう}", meaning: "victory・winning a tournament" }
+          { wordRuby: "優{ゆう}勝{しょう}", meaning: "victory・winning a tournament" },
+          { wordRuby: "表{ひょう}彰{しょう}式{しき}", meaning: "award ceremony" },
+          { wordRuby: "指{し}導{どう}", meaning: "guidance・coaching" },
+          { wordRuby: "感{かん}謝{しゃ}", meaning: "gratitude" },
+          { wordRuby: "述{の}べる", meaning: "to express・to state・to say" }
         ],
       },
       {
@@ -1029,10 +1054,13 @@ export const N2ExtraWords: Record<string, TangoEntry> = {
           { kanji: "優", meaning: "excellent・superior" },
           { kanji: "勝", meaning: "win" }
         ],
-        example: "卓球クラブの山谷さんは大きな大会で何度も{優勝}しているのに「[私なんか]まだまだですよ」といつも言っている。",
-        exampleMeaning: "Even though Mr./Ms. Yamatani has {won} major tournaments many times, they always say「I’m still not that good」.",
+        example: "卓球クラブの山谷さんは、大きな大会での{優勝}[にあたって]も、「[私なんか]まだまだですよ」と謙虚な姿勢を崩さなかった。",
+        exampleMeaning: "Even upon winning a major tournament, Mr. Yamatani from the table tennis club did not abandon his humble attitude, saying, 'I'm still not that good.'",
         extraVocabulary: [
-          { wordRuby: "優{やさ}しい", meaning: "kind・gentle" }
+          { wordRuby: "卓{たっ}球{きゅう}", meaning: "table tennis" },
+          { wordRuby: "謙{けん}虚{きょ}", meaning: "humble・humility・modesty" },
+          { wordRuby: "姿{し}勢{せい}", meaning: "attitude・demeanor" },
+          { wordRuby: "崩{くず}す", meaning: "to break down・to abandon" }
         ],
       },
       {
@@ -1800,6 +1828,33 @@ export const N2ExtraWords: Record<string, TangoEntry> = {
       }
     ],
   },
+  // 握手   あくしゅ   handshake 握る   にぎる   to grasp・to hold    パン屋
+  // 無くなる なくなる   to be lost・to disappear・to run out of (e.g., supplies)s
+  // 伴う  ともなう   to accompany・to bring with・to involve 一緒に着いてくる
+  // 疑う うたがう   to doubt・to distrust・to be suspicious of あなたが言っていること本当かどうかわからないからとりあえず信じませんみたいな
+  // 破片 はへん   fragment・splinter・piece of something broken  破れる   やぶれる   to break・to tear
+  // 歯型 はがた   tooth mark・bite mark
+  // 敬う うやまう   to respect・to honor・to revere  敬語
+  // 尊い とうとい   precious・valuable・noble 尊敬 そんけい   respect 
+  // 命令 めいれい   order・command
+  // 意外 いがい   unexpected・surprising
+  // 羨ましい うらやましい   envious・jealous
+  // 厳重 げんじゅう   strict・severe・tight security   厳しい  きびしい   strict・severe
+  // 貴社 きしゃ   your company (used in business letters)  貴方 きしゃ   you (polite)
+  // 拝見 はいけん   to see・to look at (humble)  拝む おがむ   to worship・to pray
+  // 従う したがう   to obey・to follow・to comply with
+  // 立ち止まる たちどまる   to stop・to halt・to stand still
+  // 立派な りっぱな   splendid・fine・admirable
+  // 治める おさめる   to govern・to rule・to manage
+  // 修める おさめる   to master (a skill)・to complete (a course of study)
+  // 深刻な しんこくな   serious・grave  重大な じゅうだいな   serious・important 深い  刻む
+  // 複雑な ふくざつな   complicated・complex
+  // 真剣な しんけんな   serious・earnest 真面目なこと
+  // 冷静な れいせいな   calm・composed
+  // 通行   つうこう   passage・traffic  通る とおる   to pass through
+
+  //TODO: GRAMMAR
+  // 〜の際
 };
 
 // 誇る   ほこる   to be proud of
@@ -1850,3 +1905,4 @@ export const N2ExtraWords: Record<string, TangoEntry> = {
 // チラシ   ちらし   flyer・leaflet
 // 不動産屋 ふどうさんや   real estate agent
 // ものは考えようで it depends on how you look at it・it is all a matter of perspective
+// 交流 こうりゅう   exchange・interaction
