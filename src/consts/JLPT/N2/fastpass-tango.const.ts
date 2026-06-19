@@ -866,7 +866,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "地", meaning: "Place" }
         ],
         example: "職場の雰囲気が良くて{居心地}が良い。",
-        exampleMeaning: "My workplace is {comfortable} and has a nice atmosphere."
+        exampleMeaning: "My workplace is {comfortable} and has a nice atmosphere.",
+        important: true
       },
     ],
   },
@@ -1267,7 +1268,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "文", meaning: "Sentence" }
         ],
         example: "{論文}のテーマを決めた。",
-        exampleMeaning: "I decided on the theme for my {research paper}."
+        exampleMeaning: "I decided on the theme for my {research paper}.",
+        important: true
       },
       {
         id: 97,
@@ -1808,7 +1810,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "僚", meaning: "Colleague" }
         ],
         example: "仕事終わりに{同僚}と飲みに行く。",
-        exampleMeaning: "I go out for drinks with my {colleague} after work."
+        exampleMeaning: "I go out for drinks with my {colleague} after work.",
+        important: true
       },
       {
         id: 138,
@@ -3833,7 +3836,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
         extraVocabulary: [
           { wordRuby: "役{やく}割{わり}", meaning: "Role" },
           { wordRuby: "作{さ}業{ぎょう}", meaning: "Work" }
-        ]
+        ],
+        important: true
       }
     ],
   },
@@ -4475,7 +4479,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
         example: "[警察官]が会場を{警備する}。",
         exampleMeaning: "The [police officers] are {on guard} at the venue.",
         extraVocabulary: [
-          { wordRuby: "警{けい}察{さつ}官{かん}", meaning: "Police officer" }
+          { wordRuby: "警{けい}察{さつ}官{かん}", meaning: "Police officer" },
+          { wordRuby: "準{じゅん}備{び}", meaning: "Preparation" }
         ],
         important: true
       },
@@ -8038,7 +8043,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "化", meaning: "Transform" }
         ],
         example: "運動をして筋肉を{強化する}。",
-        exampleMeaning: "I exercise to {strengthen} my muscles."
+        exampleMeaning: "I exercise to {strengthen} my muscles.",
+        important: true,
       },
       {
         id: 586,
@@ -8271,8 +8277,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
         example: "[法律]について{賛否}が分かれている。",
         exampleMeaning: "There are {mixed opinions} about the [law].",
         extraVocabulary: [
-          { wordRuby: "法{ほう}律{りつ}", meaning: "Law" }
-        ]
+          { wordRuby: "法{ほう}律{りつ}", meaning: "Law" },
+          { wordRuby: "賛{さん}成{せい}", meaning: "Agreement" },
+          { wordRuby: "否{ひ}定{てい}", meaning: "Disapproval・Denial" }
+        ],
+        important: true,
       }
     ],
   },
@@ -8547,7 +8556,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "深", meaning: "Deep" },
         ],
         example: "資料を見て、もっと理解が{深まった}。",
-        exampleMeaning: "The documents helped {deepen} my understanding."
+        exampleMeaning: "The documents helped {deepen} my understanding.",
+        important: true,
       },
       {
         id: 621,
@@ -10012,7 +10022,12 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "厚", meaning: "Thick" }
         ],
         example: "彼は{温厚な}性格で、優しい人だ。",
-        exampleMeaning: "He's kind and has a {gentle} personality."
+        exampleMeaning: "He's kind and has a {gentle} personality.",
+        extraVocabulary: [
+          { wordRuby: "温{あたた}かい", meaning: "Warm" },
+          { wordRuby: "厚{あつ}い", meaning: "Thick" }
+        ],
+        important: true
       }
     ],
   },
@@ -10268,7 +10283,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
         exampleMeaning: "The brothers are {competing} for the [championship].",
         extraVocabulary: [
           { wordRuby: "優{ゆう}勝{しょう}", meaning: "Championship・Victory" }
-        ]
+        ],
+        important: true
       },
       {
         id: 738,
@@ -10294,7 +10310,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "戦", meaning: "War" },
         ],
         example: "強いチームと{戦う}ことになった。",
-        exampleMeaning: "We will {fight} against a strong team."
+        exampleMeaning: "We will {fight} against a strong team.",
+        important: true
       },
       {
         id: 740,
@@ -12263,8 +12280,10 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
         example: "この{素材}は[環境]にやさしい。",
         exampleMeaning: "This {material} is [environmentally] friendly.",
         extraVocabulary: [
-          { wordRuby: "環{かん}境{きょう}", meaning: "Environment" }
-        ]
+          { wordRuby: "環{かん}境{きょう}", meaning: "Environment" },
+          { wordRuby: "材{ざい}料{りょう}", meaning: "Material" }
+        ],
+        important: true
       }
     ],
   },
