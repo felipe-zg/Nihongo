@@ -885,7 +885,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
         exampleMeaning: "The company's [path] is not {set}.",
         extraVocabulary: [
           { wordRuby: "方{ほう}向{こう}性{せい}", meaning: "Direction" }
-        ]
+        ],
+        important: true
       },
       {
         id: 69,
@@ -6964,7 +6965,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "書", meaning: "Write" }
         ],
         example: "こちらが{領収書}でございます。",
-        exampleMeaning: "Here's your {receipt}."
+        exampleMeaning: "Here's your {receipt}.",
+        important: true
       }
     ],
   },
@@ -12153,7 +12155,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
         exampleMeaning: "The [view] from the {mountain peak} is very beautiful.",
         extraVocabulary: [
           { wordRuby: "景{け}色{しき}", meaning: "Scenery" }
-        ]
+        ],
+        important: true
       }
     ],
   },
@@ -13103,7 +13106,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
         exampleMeaning: "Taking [action] is the {first step} toward your dreams.",
         extraVocabulary: [
           { wordRuby: "行{こう}動{どう}", meaning: "Action" }
-        ]
+        ],
+        important: true
       },
     ],
   },
@@ -13312,6 +13316,2462 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
         example: "{空席}に荷物を置かないでください。",
         exampleMeaning: "Please don't leave your bags on {empty seats}."
       },
+    ],
+  },
+  "Unrelated kanji words" : {
+    meaning: "",
+    words: [
+      {
+        id: 941,
+        wordRuby: "曖{あい}昧{まい}な",
+        meaning: "Ambiguous・Vague",
+        components: [
+          { kanji: "曖", meaning: "Dark" },
+          { kanji: "昧", meaning: "Obscure" },
+          { kanji: "日", meaning: "sun" },
+          { kanji: "愛", meaning: "Love" },
+          { kanji: "末", meaning: "end" }
+        ],
+        example: "彼の返事はいつも{曖昧だ}。",
+        exampleMeaning: "His answers are always {vague}.",
+        important: true
+      },
+      {
+        id: 942,
+        wordRuby: "あえて",
+        meaning: "Intentionally・On purpose",
+        components: [
+          { kanji: "あえて", meaning: "Intentionally" }
+        ],
+        example: "{あえて}難しい道を[選択]した。",
+        exampleMeaning: "I {purposely} chose to do things the hard way.",
+        extraVocabulary: [
+          { wordRuby: "選{せん}択{たく}", meaning: "Choice・Selection" }
+        ]
+      },
+      {
+        id: 943,
+        wordRuby: "味{あじ}わう",
+        meaning: "To taste・To experience",
+        components: [
+          { kanji: "味", meaning: "Taste" },
+        ],
+        example: "有名なレストランの料理を{味わう}。",
+        exampleMeaning: "I {taste} the food at a famous restaurant."
+      },
+      {
+        id: 944,
+        wordRuby: "汗{あせ}",
+        meaning: "Sweat",
+        components: [
+          { kanji: "汗", meaning: "Sweat" }
+        ],
+        example: "暑くて大量の{汗}をかいた。",
+        exampleMeaning: "It was hot, so I {sweated} a lot.",
+        extraVocabulary: [
+          { wordRuby: "大{たい}量{りょう}", meaning: "Large amount" }
+        ]
+      },
+      {
+        id: 945,
+        wordRuby: "焦{あせ}る",
+        meaning: "To panic・To be anxious",
+        components: [
+          { kanji: "焦", meaning: "irritation" }
+        ],
+        example: "材布を忘れたことに気づいて{焦った}。",
+        exampleMeaning: "I {panicked} when I realized I'd forgotten my wallet."
+      },
+      {
+        id: 946,
+        wordRuby: "〜宛{あ}て",
+        meaning: "For ~・Addressed to ~",
+        components: [
+          { kanji: "宛", meaning: "address" }
+        ],
+        example: "私{宛て}に手紙が届いた。",
+        exampleMeaning: "A letter was delivered {to} me.",
+        important: true
+      },
+      {
+        id: 947,
+        wordRuby: "新{あら}たな",
+        meaning: "New",
+        components: [
+          { kanji: "新", meaning: "New" },
+        ],
+        example: "{新たな}メンバーがチームに入った。",
+        exampleMeaning: "A {new} member joined the team.",
+        important: true
+      },
+      {
+        id: 948,
+        wordRuby: "あらゆる",
+        meaning: "All・Every",
+        example: "{あらゆる}人に役立つ情報を[提供]する。",
+        exampleMeaning: "We provide information that's useful to {all} people.",
+        extraVocabulary: [
+          { wordRuby: "提{てい}供{きょう}", meaning: "Provide" },
+        ],
+        important: true
+      },
+      {
+        id: 949,
+        wordRuby: "ありがたい",
+        meaning: "Grateful・Appreciative",
+        example: "[応援]してもらえると{ありがたい}です。",
+        exampleMeaning: "I'd be {grateful} for your support.",
+        extraVocabulary: [
+          { wordRuby: "応{おう}援{えん}", meaning: "Support" }
+        ]
+      },
+      {
+        id: 950,
+        wordRuby: "あるいは",
+        meaning: "Or・Perhaps",
+        example: "土曜日、{あるいは}日曜日に伺います。",
+        exampleMeaning: "I will visit on Saturday {or} Sunday.",
+        important: true
+      },
+      {
+        id: 951,
+        wordRuby: "あれこれ",
+        connector: "と",
+        meaning: "This and that・Various things",
+        example: "{あれこれ}考えるより、まず行動しよう。",
+        exampleMeaning: "Rather than overthinking about {this and that}, let's act now."
+      },
+      {
+        id: 952,
+        wordRuby: "荒{あ}れる",
+        meaning: "Rough・To be turbulent",
+        components: [
+          { kanji: "荒", meaning: "Rough" }
+        ],
+        example: "今日はいつもより海が{荒れて}いる。",
+        exampleMeaning: "The sea is {rougher} than usual today."
+      },
+      {
+        id: 953,
+        wordRuby: "慌{あわ}ただしい",
+        meaning: "Busy・Hasty",
+        components: [
+          { kanji: "慌", meaning: "Panic" }
+        ],
+        example: "{慌ただしい}目々を送っている。",
+        exampleMeaning: "I have a {hectic} day-to-day life."
+      },
+      {
+        id: 954,
+        wordRuby: "いいかげんな",
+        meaning: "half-hearted・So-so・Average",
+        example: "息子が{いいかげんな}返事をした。",
+        exampleMeaning: "My son gave me a {half-hearted} reply.",
+        important: true
+      },
+      {
+        id: 955,
+        wordRuby: "怒{いか}り",
+        meaning: "Anger",
+        components: [
+          { kanji: "怒", meaning: "Anger" }
+        ],
+        example: "彼の言葉に強い{怒り}を感じた。",
+        exampleMeaning: "I sensed an intense anger behind his words."
+      },
+      {
+        id: 956,
+        wordRuby: "衣{い}装{しょう}",
+        meaning: "Clothing・Outfit・Costume",
+        components: [
+          { kanji: "衣", meaning: "Clothing" },
+          { kanji: "装", meaning: "Dress" }
+        ],
+        example: "エベント用の{衣装}を用意する。",
+        exampleMeaning: "I'll prepare {costumes} for the event.",
+        important: true
+      },
+      {
+        id: 957,
+        wordRuby: "いずれ",
+        meaning: "Someday・Eventually・Sometime",
+        example: "{いずれ}は日本で働きたいと思っている。",
+        exampleMeaning: "I'd like to work in Japan {someday}.",
+        important: true
+      },
+      {
+        id: 958,
+        wordRuby: "著{いちじる}しい",
+        meaning: "Considerable・Notable・Prominent",
+        components: [
+          { kanji: "著", meaning: "Well-known" },
+        ],
+        example: "スマホの利用者が{著しく}増加している。",
+        exampleMeaning: "The number of smartphone users has increased {considerably}."
+      },
+      {
+        id: 959,
+        wordRuby: "いまいち",
+        meaning: "Not great・so-so",
+        example: "見た目は良いが、味は{いまいち}だ。",
+        exampleMeaning: "It looks good, but the taste is {not great}.",
+        important: true
+      },
+      {
+        id: 960,
+        wordRuby: "承{うけたまわ}る",
+        meaning: "To receive・To accept (humble)",
+        example: "ご注文を{承り}ました。",
+        exampleMeaning: "We have {received} your order."
+      },
+      {
+        id: 961,
+        wordRuby: "薄{うす}める",
+        meaning: "To weaken・To dilute",
+        components: [
+          { kanji: "薄", meaning: "Thin" }
+        ],
+        example: "水を入れて、スープを{薄めた}。",
+        exampleMeaning: "I {diluted} the soup with water."
+      },
+      {
+        id: 962,
+        wordRuby: "嘘{うそ}",
+        meaning: "Lie・Liar",
+        components: [
+          { kanji: "嘘", meaning: "Lie" }
+        ],
+        example: "母に「[宿題]をやった」と{嘘}をついた。",
+        exampleMeaning: "I {lied} to my mother about finishing my [homework]."
+      },
+      {
+        id: 963,
+        wordRuby: "訴{うった}える",
+        meaning: "To complain・To sue",
+        components: [
+          { kanji: "訴", meaning: "Complain" }
+        ],
+        example: "不安な気持ちを家族に{訴えた}。",
+        exampleMeaning: "I {complained} to my family about my anxiety."
+      },
+      {
+        id: 964,
+        wordRuby: "うなずく",
+        meaning: "To nod",
+        example: "彼は話を{うなずき}ながら聞いている。",
+        exampleMeaning: "He listens to the story while {nodding}."
+      },
+      {
+        id: 965,
+        wordRuby: "奪{うば}う",
+        meaning: "To steal・To take away",
+        example: "成長の[機会]を{奪って}はいけない。",
+        exampleMeaning: "You shouldn't {take away} someone's opportunity for growth.",
+        extraVocabulary: [
+          { wordRuby: "機{き}会{かい}", meaning: "Opportunity" }
+        ],
+      },
+      {
+        id: 966,
+        wordRuby: "馬{うま}",
+        meaning: "Horse",
+        components: [
+          { kanji: "馬", meaning: "Horse" }
+        ],
+        example: "[牧場]に{馬}がたくさんいる。",
+        exampleMeaning: "There are many {horses} on the [animal farm].",
+        extraVocabulary: [
+          { wordRuby: "牧{ぼく}場{じょう}", meaning: "Animal farm" }
+        ]
+      },
+      {
+        id: 967,
+        wordRuby: "敬{うやま}う",
+        meaning: "To respect",
+        components: [
+          { kanji: "敬", meaning: "Respect" }
+        ],
+        example: "高齢者を{敬う}べきだ。",
+        exampleMeaning: "We should {respect} the elderly.",
+        extraVocabulary: [
+          { wordRuby: "敬{けい}語{ご}", meaning: "Honorific language" }
+        ],
+        important: true
+      },
+      {
+        id: 968,
+        wordRuby: "遠{えん}足{そく}",
+        meaning: "Field trip・Long-distance run",
+        components: [
+          { kanji: "遠", meaning: "Far" },
+          { kanji: "足", meaning: "Foot" }
+        ],
+        example: "雨で{遠足}が[延期]になった。",
+        exampleMeaning: "The {field trip} was [postponed] because of rain.",
+        extraVocabulary: [
+          { wordRuby: "延{えん}期{き}", meaning: "Postpone" }
+        ]
+      },
+      {
+        id: 969,
+        wordRuby: "終{お}える",
+        meaning: "To finish・To complete",
+        components: [
+          { kanji: "終", meaning: "Finish" }
+        ],
+        example: "仕事を{終えて}、家に帰った。",
+        exampleMeaning: "I {finished} my work and went back home."
+      },
+      {
+        id: 970,
+        wordRuby: "覆{おお}う",
+        meaning: "To cover・To wrap",
+        components: [
+          { kanji: "覆", meaning: "Cover" }
+        ],
+        example: "雪が山を{覆って}いる。",
+        exampleMeaning: "The mountain is {covered} in snow."
+      },
+      {
+        id: 971,
+        wordRuby: "おおよそ",
+        meaning: "Approximately・About",
+        example: "会議は{おおよそ}2時間かかるだろう。",
+        exampleMeaning: "The meeting will take {approximately} two hours.",
+        important: true
+      },
+      {
+        id: 972,
+        wordRuby: "抑{おさ}える",
+        meaning: "To suppress・To restrain",
+        components: [
+          { kanji: "抑", meaning: "Hold down" }
+        ],
+        example: "感情を{抑える}のは簡単ではない。",
+        exampleMeaning: "It's not easy to {suppress} your emotions.",
+        important: true
+      },
+      {
+        id: 973,
+        wordRuby: "伯{お}父{じ}",
+        meaning: "Uncle",
+        components: [
+          { kanji: "伯", meaning: "Parent's older sibling" },
+          { kanji: "父", meaning: "Father" }
+        ],
+        example: "{伯父}が家に遊びに来た。",
+        exampleMeaning: "My {uncle} came to visit my home."
+      },
+      {
+        id: 974,
+        wordRuby: "押{お}しつける",
+        meaning: "To force onto",
+        components: [
+          { kanji: "押す", meaning: "Push" },
+          { kanji: "つける", meaning: "Attach" },
+        ],
+        example: "自分の意見を人に{押しつけて}はいけない。",
+        exampleMeaning: "You shouldn't {force} your opinions {onto} others."
+      },
+      {
+        id: 975,
+        wordRuby: "雄{おす}",
+        meaning: "Male (animal)",
+        components: [
+          { kanji: "雄", meaning: "Male (animal)" }
+        ],
+        example: "動物園で{雄}のライオンを見た。",
+        exampleMeaning: "I saw a {male} lion at the zoo."
+      },
+      {
+        id: 976,
+        wordRuby: "おそらく",
+        meaning: "Most likely・Probably",
+        example: "{おそらく}彼は来ないだろう。",
+        exampleMeaning: "{Most likely}, he won't come.",
+        important: true
+      },
+      {
+        id: 977,
+        wordRuby: "恐{おそ}れる",
+        meaning: "To fear",
+        components: [
+          { kanji: "恐", meaning: "Fear" }
+        ],
+        example: "失敗を{恐れる}必要はない。",
+        exampleMeaning: "There's no need to {fear} failure.",
+      },
+      {
+        id: 978,
+        wordRuby: "穏{おだ}やかな",
+        meaning: "Calm・Peaceful",
+        components: [
+          { kanji: "穏", meaning: "Calm" },
+        ],
+        example: "今日は風もなく{穏やかな}天気だ。",
+        exampleMeaning: "There's no wind today, and the weather is {calm}.",
+        important: true
+      },
+      {
+        id: 979,
+        wordRuby: "訪{おとず}れる",
+        meaning: "To visit",
+        components: [
+          { kanji: "訪", meaning: "Visit" }
+        ],
+        example: "日本の有名な観光地を{訪れた}。",
+        exampleMeaning: "I {visited} famous tourist spots in Japan."
+      },
+      {
+        id: 980,
+        wordRuby: "劣{おと}る",
+        meaning: "To be inferior・To lag behind",
+        components: [
+          { kanji: "劣", meaning: "Inferior" }
+        ],
+        example: "この製品は[機能]が{劣って}いる。",
+        exampleMeaning: "This product has {inferior} [functionality].",
+        extraVocabulary: [
+          { wordRuby: "機{き}能{のう}", meaning: "Functionality" }
+        ],
+        important: true
+      },
+      {
+        id: 981,
+        wordRuby: "衰{おとろ}える",
+        meaning: "To weaken・To decline・To deteriorate",
+        components: [
+          { kanji: "衰", meaning: "Weaken" }
+        ],
+        example: "年を取ると、力が{衰える}。",
+        exampleMeaning: "As I get older, my strength {weakens}.",
+        important: true
+      },
+      {
+        id: 982,
+        wordRuby: "帯{おび}",
+        meaning: "Belt・Sash",
+        components: [
+          { kanji: "帯", meaning: "Belt" }
+        ],
+        example: "[浴衣]の{帯}をしっかり[結ぶ]。",
+        exampleMeaning: "[Tie] the {belt} of your [yukata] tightly.",
+        extraVocabulary: [
+          { wordRuby: "浴{ゆ}衣{かた}", meaning: "Yukata" },
+          { wordRuby: "結{むす}ぶ", meaning: "To tie" }
+        ]
+      },
+      {
+        id: 983,
+        wordRuby: "貝{かい}",
+        meaning: "Shellfish",
+        components: [
+          { kanji: "貝", meaning: "Shellfish" }
+        ],
+        example: "海で{貝}を[拾って]食べる。",
+        exampleMeaning: "We [collect] {shellfish} from the ocean to eat.",
+        extraVocabulary: [
+          { wordRuby: "拾{ひろ}う", meaning: "To pick up" }
+        ]
+      },
+      {
+        id: 984,
+        wordRuby: "海{かい}水{すい}",
+        meaning: "Seawater",
+        components: [
+          { kanji: "海", meaning: "Sea" },
+          { kanji: "水", meaning: "Water" }
+        ],
+        example: "{海水}は目に入ると痛い。",
+        exampleMeaning: "{Seawater} hurts your eyes if it gets in them."
+      },
+      {
+        id: 985,
+        wordRuby: "かがむ",
+        meaning: "To bend down・To stoop",
+        components: [
+          { kanji: "かがむ", meaning: "To bow down" }
+        ],
+        example: "落とした[鉛筆]を{かがんで}[拾った]。",
+        exampleMeaning: "I {bent down} and [picked up] the [pencil] I had dropped.",
+        extraVocabulary: [
+          { wordRuby: "鉛{えん}筆{ぴつ}", meaning: "Pencil" },
+          { wordRuby: "拾{ひろ}う", meaning: "To pick up" }
+        ]
+      },
+      {
+        id: 986,
+        wordRuby: "輝{かがや}く",
+        meaning: "To shine・To glitter",
+        components: [
+          { kanji: "輝", meaning: "Shine" }
+        ],
+        example: "仕事中の彼女は本当に{輝いて}いる。",
+        exampleMeaning: "She really {shines} when she's working."
+      },
+      {
+        id: 987,
+        wordRuby: "隠{かく}れる",
+        meaning: "To hide",
+        components: [
+          { kanji: "隠", meaning: "Hide" }
+        ],
+        example: "猫が机の下に{隠れて}いる。",
+        exampleMeaning: "The cat is {hiding} under the desk."
+      },
+      {
+        id: 988,
+        wordRuby: "かさかさ",
+        meaning: "Dry",
+        connector: "な・する",
+        example: "冬になると肌が{かさかさ}になる。",
+        exampleMeaning: "My skin gets {dry} in winter."
+      },
+      {
+        id: 989,
+        wordRuby: "歌{か}詞{し}",
+        meaning: "Lyrics",
+        components: [
+          { kanji: "歌", meaning: "Song" },
+          { kanji: "詞", meaning: "Words" }
+        ],
+        example: "この曲の{歌詞}が好きだ。",
+        exampleMeaning: "I like this song's {lyrics}."
+      },
+      {
+        id: 990,
+        wordRuby: "賢{かしこ}い",
+        meaning: "Clever・Smart・Wise",
+        components: [
+          { kanji: "賢", meaning: "Clever" }
+        ],
+        example: "犬はとても{賢い}動物だ。",
+        exampleMeaning: "Dogs are very {clever} animals."
+      },
+      {
+        id: 991,
+        wordRuby: "偏{かたま}る",
+        meaning: "Unbalanced・To be one-sided",
+        components: [
+          { kanji: "偏", meaning: "Unbalanced" }
+        ],
+        example: "食事の栄養が{偏らない}ようにする。",
+        exampleMeaning: "I try to avoid {unbalanced} nutrition meals."
+      },
+      {
+        id: 992,
+        wordRuby: "花{か}壇{だん}",
+        meaning: "Flower bed",
+        components: [
+          { kanji: "花", meaning: "Flower" },
+          { kanji: "壇", meaning: "Platform" }
+        ],
+        example: "母が自宅の{花壇}の手入れをしている。",
+        exampleMeaning: "My mother takes care of the {flower bed} at home."
+      },
+      {
+        id: 993,
+        wordRuby: "叶{かな}える",
+        meaning: "To come true・To fulfill",
+        components: [
+          { kanji: "叶", meaning: "Come true" }
+        ],
+        example: "夢を{叶える}ために努力する。",
+        exampleMeaning: "I work hard to make my dreams {come true}.",
+        important: true
+      },
+      {
+        id: 994,
+        wordRuby: "雷{かみなり}",
+        meaning: "Thunder・Lightning",
+        components: [
+          { kanji: "雷", meaning: "Thunder" }
+        ],
+        example: "空が暗くなって、{雷}が[鳴り]始めた。",
+        exampleMeaning: "The sky grew dark and began to {thunder}.",
+        extraVocabulary: [
+          { wordRuby: "鳴{な}る", meaning: "To ring・To sound" }
+        ]
+      },
+      {
+        id: 995,
+        wordRuby: "絡{から}まる",
+        meaning: "To get entangled・To be tangled",
+        components: [
+          { kanji: "絡", meaning: "Tangle" }
+        ],
+        example: "[布]が[機械]に{絡まって}しまった。",
+        exampleMeaning: "The [cloth] got {tangled} in the [machine].",
+        extraVocabulary: [
+          { wordRuby: "布{ぬの}", meaning: "Cloth" },
+          { wordRuby: "機{き}械{かい}", meaning: "Machine" }
+        ],
+        important: true
+      },
+      {
+        id: 996,
+        wordRuby: "仮{かり}～",
+        meaning: "Temporary ~",
+        components: [
+          { kanji: "仮", meaning: "Temporary" }
+        ],
+        example: "基本の情報を入力して{仮}登録をする。",
+        exampleMeaning: "Input my basic information for {temporary} registration."
+      },
+      {
+        id: 997,
+        wordRuby: "監{かん}督{とく}",
+        meaning: "Director",
+        connector: "する",
+        components: [
+          { kanji: "監", meaning: "Supervise" },
+          { kanji: "督", meaning: "Manage" }
+        ],
+        example: "皮は映画の{監督}をしている。",
+        exampleMeaning: "He's a movie {director}.",
+      },
+      {
+        id: 998,
+        wordRuby: "貴{き}～",
+        meaning: "Your ~ (respectful prefix)",
+        components: [
+          { kanji: "貴", meaning: "Your" }
+        ],
+        example: "{貴}社・{貴}店・{貴}[団体]",
+        exampleMeaning: "Your company・your store・your organization.",
+        extraVocabulary: [
+          { wordRuby: "団{だん}体{たい}", meaning: "Organization" }
+        ],
+      },
+      {
+        id: 999,
+        wordRuby: "聴{き}く",
+        meaning: "To listen",
+        components: [
+          { kanji: "聴", meaning: "Listen" }
+        ],
+        example: "部屋で音楽を{聴く}。",
+        exampleMeaning: "I {listen} to music in my room."
+      },
+      {
+        id: 1000,
+        wordRuby: "器{き}具{ぐ}",
+        meaning: "Equipment・Tool・Utensil",
+        components: [
+          { kanji: "器具", meaning: "Tool" }
+        ],
+        example: "運動に必要な{器具}を準備する。",
+        exampleMeaning: "I'll prepare the {equipment} needed for exercise."
+      },
+      {
+        id: 1001,
+        wordRuby: "きたえる",
+        meaning: "To strengthen・To train",
+        example: "スポーツジムで体を{きたえて}いる。",
+        exampleMeaning: "I {strengthen} my body at the gym.",
+        important: true
+      },
+      {
+        id: 1002,
+        wordRuby: "きっかけ",
+        meaning: "Trigger",
+        example: "病気を{きっかけ}にたばこをやめた。",
+        exampleMeaning: "Getting sick was the {trigger} for me to quit smoking.",
+        important: true
+      },
+      {
+        id: 1003,
+        wordRuby: "ぎっしり",
+        connector: "と",
+        meaning: "Densely packed・Tightly",
+        example: "箱にみかんが{ぎっしり}[詰まって]いる。",
+        exampleMeaning: "The box is {densely packed} with mandarin oranges.",
+        extraVocabulary: [
+          { wordRuby: "詰{つ}まる", meaning: "To be packed" }
+        ],
+        important: true
+      },
+      {
+        id: 1004,
+        wordRuby: "君{きみ}",
+        meaning: "You (informal)",
+        components: [
+          { kanji: "君", meaning: "You (informal)" }
+        ],
+        example: "{君}の帰りをずっと待っているよ。",
+        exampleMeaning: "I'll always be waiting for {you} to come back."
+      },
+      {
+        id: 1005,
+        wordRuby: "教{きょう}育{いく}",
+        connector: "する",
+        meaning: "Education",
+        components: [
+          { kanji: "教", meaning: "Teach" },
+          { kanji: "育", meaning: "Raise" }
+        ],
+        example: "彼女は{教育}の仕事に[就いて]いる。",
+        exampleMeaning: "She is working in {education}.",
+        extraVocabulary: [
+          { wordRuby: "就{つ}く", meaning: "To get (a job)" }
+        ],
+        important: true
+      },
+      {
+        id: 1006,
+        wordRuby: "ぎりぎりな",
+        meaning: "Just barely",
+        example: "電車の出発時間{ぎりぎりに}駅に着いた。",
+        exampleMeaning: "I arrived at the station {just barely} before the train departed."
+      },
+      {
+        id: 1007,
+        wordRuby: "金{きん}魚{ぎょ}",
+        meaning: "Goldfish",
+        components: [
+          { kanji: "金", meaning: "Gold" },
+          { kanji: "魚", meaning: "Fish" }
+        ],
+        example: "子どもが{金魚}にえさをあげている。",
+        exampleMeaning: "The kids are feeding their {goldfish}."
+      },
+      {
+        id: 1008,
+        wordRuby: "筋{きん}肉{にく}",
+        meaning: "Muscle",
+        components: [
+          { kanji: "筋", meaning: "Tendon" },
+          { kanji: "肉", meaning: "Meat" }
+        ],
+        example: "腕の{筋肉}を[きたえる]。",
+        exampleMeaning: "I [train to strengthen] my arm {muscles}."
+      },
+      {
+        id: 1009,
+        wordRuby: "偶{ぐう}然{ぜん}",
+        meaning: "Coincidence",
+        components: [
+          { kanji: "偶", meaning: "Chance" },
+          { kanji: "然", meaning: "State of ~" }
+        ],
+        example: "ここで会うなんて、{偶然}ですね。",
+        exampleMeaning: "What a {coincidence} that we'd run into each other here!",
+        important: true
+      },
+      {
+        id: 1010,
+        wordRuby: "ぐっすり",
+        connector: "と",
+        meaning: "Sleep deeply",
+        example: "昨日は暑くて{ぐっすり}眠れなかった。",
+        exampleMeaning: "I couldn't {sleep deeply} because it was so hot yesterday.",
+        important: true
+      },
+      {
+        id: 1011,
+        wordRuby: "暮{く}らす",
+        meaning: "To live",
+        components: [
+          { kanji: "暮", meaning: "Live" }
+        ],
+        example: "将来は田舎で{暮らし}たい。",
+        exampleMeaning: "In the future, I want to {live} in the countryside."
+      },
+      {
+        id: 1012,
+        wordRuby: "掲{けい}載{さい}",
+        connector: "する",
+        meaning: "To publish",
+        components: [
+          { kanji: "掲", meaning: "Display" },
+          { kanji: "載", meaning: "Post" }
+        ],
+        example: "ホームページにお知らせを{掲載する}。",
+        exampleMeaning: "I'll publish the notices on our homepage."
+      },
+      {
+        id: 1013,
+        wordRuby: "煙{けむり}",
+        meaning: "Smoke",
+        components: [
+          { kanji: "煙", meaning: "Smoke" }
+        ],
+        example: "たばこの{煙}が苦手な人が多い。",
+        exampleMeaning: "A lot of people dislike tobacco {smoke}.",
+        important: true
+      },
+      {
+        id: 1014,
+        wordRuby: "険{けわ}しい",
+        meaning: "Steep・Precipitous",
+        components: [
+          { kanji: "険", meaning: "Steep" }
+        ],
+        example: "山頂を目指して{険しい}山道を歩いた。",
+        exampleMeaning: "I walked up the {steep} mountain path toward the peak."
+      },
+      {
+        id: 1015,
+        wordRuby: "行{こう}為{い}",
+        meaning: "Action",
+        components: [
+          { kanji: "行", meaning: "Go" },
+          { kanji: "為", meaning: "Do" }
+        ],
+        example: "危険な{行為}をやめるように注意された。",
+        exampleMeaning: "I was warned to stop {acting} dangerously.",
+        important: true
+      },
+      {
+        id: 1016,
+        wordRuby: "豪{ごう}華{か}な",
+        meaning: "Luxurious",
+        components: [
+          { kanji: "豪", meaning: "Rich" },
+          { kanji: "華", meaning: "Gorgeous" }
+        ],
+        example: "ホテルで{豪華な}食事を楽しんだ。",
+        exampleMeaning: "We enjoyed a {luxurious} meal at the hotel."
+      },
+      {
+        id: 1017,
+        wordRuby: "校{こう}舎{しゃ}",
+        meaning: "School building",
+        components: [
+          { kanji: "校", meaning: "School" },
+          { kanji: "舎", meaning: "Building" }
+        ],
+        example: "ここに小学校の{校舎}があったらしい。",
+        exampleMeaning: "There used to be an elementary {school building} here."
+      },
+      {
+        id: 1018,
+        wordRuby: "交{こう}渉{しょう}",
+        connector: "する",
+        meaning: "Negotiation",
+        components: [
+          { kanji: "交", meaning: "Exchange" },
+          { kanji: "渉", meaning: "Cross" }
+        ],
+        example: "価格の{交渉}が続いている。",
+        exampleMeaning: "Price {negotiations} are still ongoing.",
+        important: true
+      },
+      {
+        id: 1019,
+        wordRuby: "興{こう}奮{ふん}",
+        connector: "する",
+        meaning: "Excitement",
+        components: [
+          { kanji: "興", meaning: "Interest" },
+          { kanji: "奮", meaning: "Excitement" }
+        ],
+        example: "緊張や{興奮}で、顔が赤くなる。",
+        exampleMeaning: "My face is red from nervousness and {excitement}."
+      },
+      {
+        id: 1020,
+        wordRuby: "超{こ}える",
+        meaning: "To exceed",
+        components: [
+          { kanji: "超", meaning: "Pass over" }
+        ],
+        example: "気温が30度を{超えた}。",
+        exampleMeaning: "The temperature has {exceeded} 30 degrees Celsius."
+      },
+      {
+        id: 1021,
+        wordRuby: "故{こ}郷{きょう}",
+        meaning: "Hometown",
+        components: [
+          { kanji: "故", meaning: "Origin" },
+          { kanji: "郷", meaning: "Hometown" }
+        ],
+        example: "10年ぶりに{故郷}に帰った。",
+        exampleMeaning: "I returned to my {hometown} after 10 years."
+      },
+      {
+        id: 1022,
+        wordRuby: "こそこそ",
+        connector: "と・する",
+        meaning: "Sneakily・Secretly",
+        example: "授業中に{こそこそ}話している。",
+        exampleMeaning: "We whisper to each other {sneakily} during class.",
+        important: true
+      },
+      {
+        id: 1023,
+        wordRuby: "こだわる",
+        meaning: "To be particular about",
+        example: "彼は料理に{こだわって}いる。",
+        exampleMeaning: "He is very {particular about} cooking.",
+        important: true
+      },
+      {
+        id: 1024,
+        wordRuby: "ごちゃごちゃ",
+        connector: "な・する",
+        meaning: "Messy",
+        example: "部屋の中が{ごちゃごちゃして}いる。",
+        exampleMeaning: "The room is {messy}."
+      },
+      {
+        id: 1025,
+        wordRuby: "異{こと}なる",
+        meaning: "Different",
+        components: [
+          { kanji: "異", meaning: "Different" }
+        ],
+        example: "彼とは{異なる}意見を持っている。",
+        exampleMeaning: "My opinion is {different} from his.",
+        important: true
+      },
+      {
+        id: 1026,
+        wordRuby: "困{こん}難{なん}",
+        meaning: "Difficult・Hardship",
+        components: [
+          { kanji: "困", meaning: "Trouble" },
+          { kanji: "難", meaning: "Difficult" }
+        ],
+        example: "みんなで協力して{国難}を[乗り越えた]。",
+        exampleMeaning: "We [overcame] our {difficulties} by working together.",
+        extraVocabulary: [
+          { wordRuby: "乗{の}り越{こ}える", meaning: "To overcome" }
+        ],
+        important: true
+      },
+      {
+        id: 1027,
+        wordRuby: "財{ざい}産{さん}",
+        meaning: "Property・Assets",
+        components: [
+          { kanji: "財", meaning: "Asset" },
+          { kanji: "産", meaning: "Property" }
+        ],
+        example: "父の{財産}を[兄弟]で分ける。",
+        exampleMeaning: "[Brothers] will divide up their father's {property}.",
+        extraVocabulary: [
+          { wordRuby: "兄{きょう}弟{だい}", meaning: "Brothers" },
+          { wordRuby: "分{わ}ける", meaning: "To divide" },
+          { wordRuby: "財{さい}布{ふ}", meaning: "Wallet" }
+        ],
+      },
+      {
+        id: 1028,
+        wordRuby: "栽{さい}培{ばい}",
+        connector: "する",
+        meaning: "Cultivation",
+        components: [
+          { kanji: "栽", meaning: "Plant" },
+          { kanji: "培", meaning: "Cultivate" }
+        ],
+        example: "家の[庭]で野菜を{栽培する}。",
+        exampleMeaning: "I {cultivate} vegetables in the [garden] at my house.",
+        extraVocabulary: [
+          { wordRuby: "庭{にわ}", meaning: "Garden" }
+        ],
+        important: true
+      },
+      {
+        id: 1029,
+        wordRuby: "幸{さいわ}いな",
+        meaning: "Fortunate・Appreciated",
+        components: [
+          { kanji: "幸", meaning: "Happiness" }
+        ],
+        example: "調査にご協力いただければ{幸い}です。",
+        exampleMeaning: "I would {appreciate} it if you can cooperate with this survey.",
+        extraVocabulary: [
+          { wordRuby: "幸{しあわ}せ", meaning: "Happiness" }
+        ],
+      },
+      {
+        id: 1030,
+        wordRuby: "避{さ}ける",
+        meaning: "To avoid",
+        components: [
+          { kanji: "避", meaning: "Avoid" }
+        ],
+        example: "[誤解]されるような発言は{避ける}べきだ。",
+        exampleMeaning: "We should {avoid} saying things that could be [misunderstood].",
+        extraVocabulary: [
+          { wordRuby: "誤{ご}解{かい}", meaning: "Misunderstanding" }
+        ],
+      },
+      {
+        id: 1031,
+        wordRuby: "撮{さつ}影{えい}",
+        connector: "する",
+        meaning: "Take a photo・Filming",
+        components: [
+          { kanji: "撮", meaning: "Film" },
+          { kanji: "影", meaning: "Shadow" }
+        ],
+        example: "旅行中、たくさん写真を{撮影した}。",
+        exampleMeaning: "I {took} lots of {photos} during my trip."
+      },
+      {
+        id: 1032,
+        wordRuby: "さっさと",
+        meaning: "Immediately・Promptly",
+        example: "{さっさと}部屋を片付けなさい！",
+        exampleMeaning: "Clean up your room {immediately}!",
+        important: true
+      },
+      {
+        id: 1033,
+        wordRuby: "妨{さまた}げる",
+        meaning: "To hinder・To obstruct",
+        components: [
+          { kanji: "妨", meaning: "Hinder" }
+        ],
+        example: "大雨が[作業]の[進行]を{妨げて}いる。",
+        exampleMeaning: "heavy rain is {hindering} the progress of the work.",
+        extraVocabulary: [
+          { wordRuby: "作{さ}業{ぎょう}", meaning: "Work" },
+          { wordRuby: "進{しん}行{こう}", meaning: "Progress" },
+        ],
+      },
+      {
+        id: 1034,
+        wordRuby: "さらに",
+        meaning: "Even further・Moreover",
+        example: "来月からは、{さらに}寒くなるだろう。",
+        exampleMeaning: "It's supposed to get {even} cold{er} starting next month.",
+        important: true
+      },
+      {
+        id: 1035,
+        wordRuby: "去{さ}る",
+        meaning: "To leave・To depart",
+        components: [
+          { kanji: "去", meaning: "Leave" }
+        ],
+        example: "彼は何も言わずにその場を{去った}。",
+        exampleMeaning: "He {left} the place without saying a word."
+      },
+      {
+        id: 1036,
+        wordRuby: "騒{さわ}がしい",
+        meaning: "Noisy・Loud",
+        components: [
+          { kanji: "騒", meaning: "Make noise" }
+        ],
+        example: "[隣]の部屋が{騒がしく}て寝られない。",
+        exampleMeaning: "The {noise} from [next door] is keeping me awake.",
+        extraVocabulary: [
+          { wordRuby: "隣{となり}", meaning: "Next door" }
+        ],
+        important: true
+      },
+      {
+        id: 1037,
+        wordRuby: "さわやかな",
+        meaning: "Refreshing・Invigorating",
+        example: "{さわやかな}風が[吹いて]気持ちがいい。",
+        exampleMeaning: "The {refreshing} breeze feels good.",
+        extraVocabulary: [
+          { wordRuby: "吹{ふ}く", meaning: "To blow" }
+        ],
+        important: true
+      },
+      {
+        id: 1038,
+        wordRuby: "～氏{し}",
+        meaning: "Mr.・Ms.",
+        components: [
+          { kanji: "氏", meaning: "Mr./Ms." }
+        ],
+        example: "田中{氏}にインタビューをした。",
+        exampleMeaning: "I interviewed {Mr.} Tanaka."
+      },
+      {
+        id: 1039,
+        wordRuby: "しかも",
+        meaning: "Moreover・Furthermore",
+        example: "あの店は安い。{しかも}おいしい。",
+        exampleMeaning: "That shop is cheap. {Moreover}, the food's delicious.",
+        important: true
+      },
+      {
+        id: 1040,
+        wordRuby: "しぐさ",
+        meaning: "Gesture・Manner",
+        example: "彼女の{しぐさ}はとても可愛い。",
+        exampleMeaning: "Her {gestures} are very cute.",
+        important: true
+      },
+      {
+        id: 1041,
+        wordRuby: "沈{しず}む",
+        meaning: "To sink・To go down",
+        components: [
+          { kanji: "沈", meaning: "Sink" }
+        ],
+        example: "太陽が海に{沈んで}いく。",
+        exampleMeaning: "The sun is {setting} into the sea.",
+        important: true
+      },
+      {
+        id: 1042,
+        wordRuby: "舌{した}",
+        meaning: "Tongue",
+        components: [
+          { kanji: "舌", meaning: "Tongue" }
+        ],
+        example: "舌をかまないようにゆっくり食べる。",
+        exampleMeaning: "I eat slowly to avoid biting my {tongue}."
+      },
+      {
+        id: 1043,
+        wordRuby: "従{したが}う",
+        meaning: "To follow・To obey",
+        components: [
+          { kanji: "従", meaning: "Follow" }
+        ],
+        example: "[黙って]上司の命令に{従った}。",
+        exampleMeaning: "I kept my mouth shut and {obeyed} the boss's orders.",
+        extraVocabulary: [
+          { wordRuby: "黙{だま}る", meaning: "To keep silent" }
+        ],
+        important: true
+      },
+      {
+        id: 1044,
+        wordRuby: "じっくり",
+        connector: "と",
+        meaning: "Carefully・Thoroughly",
+        example: "{じっくりと}[話し合う]必要がある。",
+        exampleMeaning: "We need to talk it over {carefully}.",
+        extraVocabulary: [
+          { wordRuby: "話{はな}し合{あ}う", meaning: "To talk it over・To discuss" }
+        ],
+        important: true
+      },
+      {
+        id: 1045,
+        wordRuby: "縛{しば}る",
+        meaning: "To bind・To tie up",
+        components: [
+          { kanji: "縛", meaning: "Bind" }
+        ],
+        example: "靴ひもを固く{縛って}から走る。",
+        exampleMeaning: "I start running after {tying up} my shoelaces tightly."
+      },
+      {
+        id: 1046,
+        wordRuby: "絞{しぼ}る",
+        meaning: "To narrow down",
+        components: [
+          { kanji: "絞", meaning: "Squeeze" }
+        ],
+        example: "答えを一つに{絞る}のが難しい。",
+        exampleMeaning: "It's difficult to {narrow} it {down} to just one answer."
+      },
+      {
+        id: 1047,
+        wordRuby: "柔{じゅう}軟{なん}な",
+        meaning: "Flexible・Adaptable",
+        components: [
+          { kanji: "柔", meaning: "Soft" },
+          { kanji: "軟", meaning: "Squishy" }
+        ],
+        example: "彼女は{柔軟に}考えることができる。",
+        exampleMeaning: "She can think in a {flexible} way.",
+        important: true
+      },
+      {
+        id: 1048,
+        wordRuby: "塾{じゅく}",
+        meaning: "Cram school",
+        components: [
+          { kanji: "塾", meaning: "Cram school" }
+        ],
+        example: "学校が終わってから、{塾}で勉強する。",
+        exampleMeaning: "After school, I study at {cram school}."
+      },
+      {
+        id: 1049,
+        wordRuby: "諸{しょ}～",
+        meaning: "Various ~・Many ~",
+        components: [
+          { kanji: "諸", meaning: "Various" }
+        ],
+        example: "{諸}手続き・{諸}外国",
+        exampleMeaning: "{Various} procedures・{Various} foreign countries",
+      },
+      {
+        id: 1050,
+        wordRuby: "詳{しょう}細{さい}",
+        connector: "な",
+        meaning: "Details・Specifics",
+        components: [
+          { kanji: "詳", meaning: "Detailed" },
+          { kanji: "細", meaning: "Fine" }
+        ],
+        example: "メールで{詳細}を確認してください。",
+        exampleMeaning: "Please check the email for {details}.",
+        extraVocabulary: [
+          { wordRuby: "詳{くわ}しい", meaning: "Detailed" },
+          { wordRuby: "細{こま}かい", meaning: "Fine・Detailed" }
+        ],
+        important: true
+      },
+      {
+        id: 1051,
+        wordRuby: "じろじろ",
+        connector: "と",
+        meaning: "To stare",
+        example: "{じろじろ}見ないでください。",
+        exampleMeaning: "Don't {stare} at me.",
+        important: true
+      },
+      {
+        id: 1052,
+        wordRuby: "真{しん}剣{けん}な",
+        meaning: "Serious",
+        components: [
+          { kanji: "真", meaning: "Real" },
+          { kanji: "剣", meaning: "Sword" }
+        ],
+        example: "彼の[表情]は{真剣}だった。",
+        exampleMeaning: "His facial expression was {serious}.",
+        extraVocabulary: [
+          { wordRuby: "表{ひょう}情{じょう}", meaning: "Facial expression" },
+          { wordRuby: "真{ま}面{じ}目{め}", meaning: "Serious" }
+        ],
+        important: true
+      },
+      {
+        id: 1053,
+        wordRuby: "睡{すい}眠{みん}",
+        meaning: "Sleep",
+        components: [
+          { kanji: "睡", meaning: "Sleep" },
+          { kanji: "眠", meaning: "Sleep" }
+        ],
+        example: "十分な{睡眠}をとる。",
+        exampleMeaning: "I should get enough {sleep}.",
+        important: true
+      },
+      {
+        id: 1054,
+        wordRuby: "ずうずうしい",
+        meaning: "Shameless",
+        example: "彼女は{ずうずうしく}部屋に入ってきた。",
+        exampleMeaning: "She {shamelessly} came into the room.",
+        important: true
+      },
+      {
+        id: 1055,
+        wordRuby: "姿{すがた}",
+        meaning: "Looking ~・Appearance・Form",
+        example: "子どもが[喜ぶ]{姿}を見ることができた。",
+        exampleMeaning: "I got to see my child {looking} happy.",
+        extraVocabulary: [
+          { wordRuby: "喜{よろこ}ぶ", meaning: "To be happy" }
+        ],
+      },
+      {
+        id: 1056,
+        wordRuby: "頭{ず}痛{つう}",
+        meaning: "Headache",
+        components: [
+          { kanji: "頭", meaning: "Head" },
+          { kanji: "痛", meaning: "Pain" }
+        ],
+        example: "{頭痛}がひどくて仕事を休んだ。",
+        exampleMeaning: "I took off from work because I had a terrible {headache}.",
+      },
+      {
+        id: 1057,
+        wordRuby: "すっきり",
+        connector: "と・する",
+        meaning: "Refreshing・Clear",
+        example: "運動して気分が{すっきりした}。",
+        exampleMeaning: "I felt {refreshed} after exercising.",
+        important: true
+      },
+      {
+        id: 1058,
+        wordRuby: "すでに",
+        meaning: "Already",
+        example: "{すでに}会議の準備は[整って]います。",
+        exampleMeaning: "I've {already} finished preparing for the meeting.",
+        extraVocabulary: [
+          { wordRuby: "整{ととの}う", meaning: "To be ready・To be in order" }
+        ],
+        important: true
+      },
+      {
+        id: 1059,
+        wordRuby: "すなわち",
+        meaning: "In other words・That is to say",
+        example: "結果が出なかった。{すなわち}失敗だ。",
+        exampleMeaning: "We didn't get results. {In other words}, we failed.",
+        important: true
+      },
+      {
+        id: 1060,
+        wordRuby: "済{す}ませる",
+        meaning: "To finish・To complete",
+        components: [
+          { kanji: "済", meaning: "Done" }
+        ],
+        example: "仕事を{済ませて}から家に帰った。",
+        exampleMeaning: "I {finished} work and went home.",
+      },
+      {
+        id: 1061,
+        wordRuby: "ずらす",
+        meaning: "To shift・To move",
+        example: "会議の[開始]時間を{ずらして}もらった。",
+        exampleMeaning: "I had the meeting's start time {shifted}.",
+        extraVocabulary: [
+          { wordRuby: "開{かい}始{し}", meaning: "Start" }
+        ],
+      },
+      {
+        id: 1062,
+        wordRuby: "鋭{するど}い",
+        meaning: "Sharp",
+        components: [
+          { kanji: "鋭", meaning: "Sharp" },
+          { kanji: "金 radical", meaning: "(metal) → related to blades/tools" },
+          { kanji: "兑 radical", meaning: "phonetic component" }
+        ],
+        example: "動物は[感覚]が{鋭い}。",
+        exampleMeaning: "Animals have {sharp} instincts.",
+        extraVocabulary: [
+          { wordRuby: "感{かん}覚{かく}", meaning: "Senses" }
+        ],
+        important: true
+      },
+      {
+        id: 1063,
+        wordRuby: "すれ違{ちが}う",
+        meaning: "To pass by each other",
+        components: [
+          { kanji: "すれる", meaning: "Rub against" },
+          { kanji: "違う", meaning: "Different" }
+        ],
+        example: "駅で先生と{すれ違った}。",
+        exampleMeaning: "My teacher and I {passed by each other} in the station.",
+      },
+      {
+        id: 1064,
+        wordRuby: "清{せい}掃{そう}",
+        connector: "する",
+        meaning: "Cleaning",
+        components: [
+          { kanji: "清", meaning: "Clean" },
+          { kanji: "掃", meaning: "Sweep" }
+        ],
+        example: "オフィスの{清掃}を担当する。",
+        exampleMeaning: "I'm in charge of {cleaning} the office.",
+      },
+      {
+        id: 1065,
+        wordRuby: "背{せ}骨{ぼね}",
+        meaning: "Spine",
+        components: [
+          { kanji: "背", meaning: "Back" },
+          { kanji: "骨", meaning: "Bone" }
+        ],
+        example: "事故で{背骨}が[折れて]しまった。",
+        exampleMeaning: "I broke my {spine} in an accident.",
+        extraVocabulary: [
+          { wordRuby: "折{お}れる", meaning: "To break" }
+        ],
+        important: true
+      },
+      {
+        id: 1066,
+        wordRuby: "迫{せま}る",
+        meaning: "To press against・To approach",
+        components: [
+          { kanji: "迫", meaning: "Approach" }
+        ],
+        example: "意見をはっきり言うよう{迫られた}。",
+        exampleMeaning: "I was {pressured} to state my opinion clearly.",
+        important: true
+      },
+      {
+        id: 1067,
+        wordRuby: "沿{そ}う",
+        meaning: "To follow・To run along",
+        components: [
+          { kanji: "沿", meaning: "Follow" }
+        ],
+        example: "川に{沿って}道が続いている。",
+        exampleMeaning: "The path continues {along} the riverside.",
+        important: true
+      },
+      {
+        id: 1068,
+        wordRuby: "遭{そう}遇{ぐう}",
+        connector: "する",
+        meaning: "Encounter・To run into",
+        example: "山で珍しい動物に{遭遇した}。",
+        exampleMeaning: "I {ran into} a strange animal in the mountains.",
+      },
+      {
+        id: 1069,
+        wordRuby: "そそっかしい",
+        meaning: "Careless・Thoughtless",
+        example: "彼は{そそっかしい}性格で、ミスが多い。",
+        exampleMeaning: "He is {careless}, so he makes a lot of mistakes.",
+        important: true
+      },
+      {
+        id: 1070,
+        wordRuby: "そろう",
+        meaning: "Gathered",
+        example: "書類が全て{そろって}いるか確認する。",
+        exampleMeaning: "I'll check if all the documents have been {gathered}.",
+      },
+      {
+        id: 1071,
+        wordRuby: "そろえる",
+        meaning: "To gather・To collect",
+        example: "会議のために必要な資料を{そろえる}。",
+        exampleMeaning: "I'll {gather} the necessary documents for the meeting.",
+      },
+      {
+        id: 1072,
+        wordRuby: "ぞろぞろ",
+        connector: "と",
+        meaning: "In a row・One after another",
+        example: "会場から{ぞろぞろ}人が出てきた。",
+        exampleMeaning: "People came out from the venue {in a row}.",
+        important: true
+      },
+      {
+        id: 1073,
+        wordRuby: "存{そん}在{ざい}",
+        connector: "する",
+        meaning: "Existence",
+        components: [
+          { kanji: "存", meaning: "Exist" },
+          { kanji: "在", meaning: "Exist" }
+        ],
+        example: "宇宙人は{存在する}と思いますか？",
+        exampleMeaning: "Do you think aliens {exist}?",
+        important: true
+      },
+      {
+        id: 1074,
+        wordRuby: "だいぶ",
+        meaning: "Quite・Very",
+        example: "皮は{だいぶ}疲れているようだ。",
+        exampleMeaning: "He seems {quite} exhausted.",
+        important: true
+      },
+      {
+        id: 1075,
+        wordRuby: "絶{た}えず",
+        meaning: "Without interruption・Continuously",
+        components: [
+          { kanji: "絶える", meaning: "Interrupted" },
+          { kanji: "~ず", meaning: "Without" }
+        ],
+        example: "川は{絶えず}流れている。",
+        exampleMeaning: "The river flows {without interruption}.",
+      },
+      {
+        id: 1076,
+        wordRuby: "耐{た}える",
+        meaning: "To endure・To withstand",
+        components: [
+          { kanji: "耐える", meaning: "Endure" }
+        ],
+        example: "泣くのを我慢して、痛みに{耐えた}。",
+        exampleMeaning: "I held back my tears and {endured} the pain.",
+      },
+      {
+        id: 1077,
+        wordRuby: "たくましい",
+        meaning: "Robust・Strong・Sturdy",
+        example: "彼の腕は{たくましい}。",
+        exampleMeaning: "He has {robust} arms.",
+      },
+      {
+        id: 1078,
+        wordRuby: "ただし",
+        meaning: "However・But",
+        example: "参加無料。{ただし}、予約は必要。",
+        exampleMeaning: "Participation is free. {However} a reservation is required.",
+        important: true
+      },
+      {
+        id: 1079,
+        wordRuby: "たっぷり",
+        connector: "と",
+        meaning: "Plentiful・Abundant",
+        example: "ケーキに果物が{たっぷ}り入っていた。",
+        exampleMeaning: "The cake is filled with {plenty} of fruit.",
+      },
+      {
+        id: 1080,
+        wordRuby: "縦{たて}",
+        meaning: "Vertical",
+        components: [
+          { kanji: "縦", meaning: "Vertical" }
+        ],
+        example: "{縦}に並べてください。",
+        exampleMeaning: "Please line them up {vertically}.",
+      },
+      {
+        id: 1081,
+        wordRuby: "種{たね}",
+        meaning: "Seed",
+        components: [
+          { kanji: "種", meaning: "Seed" }
+        ],
+        example: "花の{種}をたくさん[拾った]。",
+        exampleMeaning: "I picked up a lot of flower {seeds}.",
+        extraVocabulary: [
+          { wordRuby: "拾{ひろ}う", meaning: "To pick up" }
+        ],
+      },
+      {
+        id: 1082,
+        wordRuby: "たまたま",
+        meaning: "By chance・Accidentally",
+        example: "{たまたま}入った店で彼と出会った。",
+        exampleMeaning: "I met him at a shop I went into {by chance}.",
+        important: true
+      },
+      {
+        id: 1083,
+        wordRuby: "試{ため}す",
+        meaning: "To try・To test",
+        components: [
+          { kanji: "試", meaning: "Try" }
+        ],
+        example: "新しいやり方を{試して}みる。",
+        exampleMeaning: "We're {testing} out a new method.",
+      },
+      {
+        id: 1084,
+        wordRuby: "貯{た}める",
+        meaning: "To save up・To accumulate",
+        components: [
+          { kanji: "貯", meaning: "Save" }
+        ],
+        example: "お金を{貯めて}留学に行きたい。",
+        exampleMeaning: "I want to {save up} money to study abroad.",
+        extraVocabulary: [
+          { wordRuby: "貯{ちょ}金{きん}", meaning: "Savings" }
+        ],
+      },
+      {
+        id: 1085,
+        wordRuby: "ちなみに",
+        meaning: "By the way",
+        example: "{ちなみに}、彼はドイツ語も話せるんだ。",
+        exampleMeaning: "{By the way}, he can also speak German.",
+        important: true
+      },
+      {
+        id: 1086,
+        wordRuby: "着{ちゃく}々{ちゃく}と",
+        meaning: "Steadily・Step by step・Gradually",
+        components: [
+          { kanji: "着", meaning: "Arrive" },
+          { kanji: "々", meaning: "Repeat" }
+        ],
+        example: "{着々と}準備が進んでいる。",
+        exampleMeaning: "Preparations are progressing {steadily}.",
+        important: true
+      },
+      {
+        id: 1087,
+        wordRuby: "ちゃんと",
+        meaning: "Properly・Correctly",
+        example: "{ちゃんと}話を聞いてください。",
+        exampleMeaning: "Listen {properly} to what I say.",
+        important: true
+      },
+      {
+        id: 1088,
+        wordRuby: "散{ち}る",
+        meaning: "To scatter・To fall (petals, leaves)",
+        components: [
+          { kanji: "散", meaning: "Scatter" }
+        ],
+        example: "桜の花が全て{散って}しまった。",
+        exampleMeaning: "The cherry blossom petals have all {scattered}.",
+        important: true
+      },
+      {
+        id: 1089,
+        wordRuby: "つかむ",
+        meaning: "To grab・To catch",
+        example: "彼のスピーチはみんなの心を{つかんだ}。",
+        exampleMeaning: "His speech {grabbed} everyone's hearts.",
+      },
+      {
+        id: 1090,
+        wordRuby: "就{つ}く",
+        meaning: "To get (a job)・To take (a position)",
+        components: [
+          { kanji: "就", meaning: "Get a job" }
+        ],
+        example: "彼は4月から新しい仕事に{就いた}。",
+        exampleMeaning: "He {took up} a new job in April.",
+      },
+      {
+        id: 1091,
+        wordRuby: "繋{つな}がる",
+        meaning: "To be connected・To be linked・Lead to",
+        components: [
+          { kanji: "繋", meaning: "Connect" }
+        ],
+        example: "新しいアイデアが[成功]に{繋がる}。",
+        exampleMeaning: "New ideas {lead to} success.",
+        extraVocabulary: [
+          { wordRuby: "成{せい}功{こう}", meaning: "Success" }
+        ],
+      },
+      {
+        id: 1092,
+        wordRuby: "潰{つぶ}れる",
+        meaning: "To be crushed・To collapse",
+        components: [
+          { kanji: "潰", meaning: "Crush" }
+        ],
+        example: "かばんに入れたパンが{潰れて}しまった。",
+        exampleMeaning: "The bread I put in my bag got {crushed}.",
+      },
+      {
+        id: 1093,
+        wordRuby: "詰{つ}まる",
+        meaning: "To be packed tightly・To be crowded",
+        components: [
+          { kanji: "詰", meaning: "Packed" }
+        ],
+        example: "箱の中に服が[ぎっしり]{詰まって}いる。",
+        exampleMeaning: "The clothes are tightly {packed} inside the box.",
+        extraVocabulary: [
+          { wordRuby: "ぎっしり", meaning: "Tightly" }
+        ],
+      },
+      {
+        id: 1094,
+        wordRuby: "梅{つ}雨{ゆ}",
+        meaning: "Rainy season",
+        components: [
+          { kanji: "梅", meaning: "Plum" },
+          { kanji: "雨", meaning: "Rain" }
+        ],
+        example: "{梅雨}の[時期]は、[外出]するのが嫌になる。",
+        exampleMeaning: "I hate going outside during the {rainy season}.",
+        extraVocabulary: [
+          { wordRuby: "時{じ}期{き}", meaning: "Season" },
+          { wordRuby: "外{がい}出{しゅつ}", meaning: "Going out" }
+        ],
+      },
+      {
+        id: 1095,
+        wordRuby: "つられる",
+        meaning: "To be dragged along・To be drawn in",
+        example: "彼に{つられて}、みんな笑った。",
+        exampleMeaning: "{Drawn in} by his laughter, we all started laughing too.",
+      },
+      {
+        id: 1096,
+        wordRuby: "釣{つ}り",
+        meaning: "Fishing",
+        components: [
+          { kanji: "釣", meaning: "Fishing" }
+        ],
+        example: "川で{釣り}をするのが趣味だ。",
+        exampleMeaning: "My hobby is river {fishing}.",
+      },
+      {
+        id: 1097,
+        wordRuby: "弟{で}子{し}",
+        meaning: "Disciple・Apprentice",
+        components: [
+          { kanji: "弟", meaning: "Younger brother" },
+          { kanji: "子", meaning: "Child" }
+        ],
+        example: "有名な画家の{弟子}になる。",
+        exampleMeaning: "I'm going to be the {apprentice} of a famous painter.",
+      },
+      {
+        id: 1098,
+        wordRuby: "電{でん}源{げん}",
+        meaning: "Power source",
+        components: [
+          { kanji: "電", meaning: "Electricity" },
+          { kanji: "源", meaning: "Source" }
+        ],
+        example: "パソコンの{電源}が入らない。",
+        exampleMeaning: "The computer's {power} won't turn on.",
+        important: true
+      },
+      {
+        id: 1099,
+        wordRuby: "投{とう}票{ひょう}",
+        connector: "する",
+        meaning: "To vote",
+        components: [
+          { kanji: "投", meaning: "Throw" },
+          { kanji: "票", meaning: "Paper" }
+        ],
+        example: "まだ誰に{投票する}か決めていない。",
+        exampleMeaning: "I still haven't decided who I'm going to {vote} for.",
+      },
+      {
+        id: 1100,
+        wordRuby: "登{とう}録{ろく}",
+        connector: "する",
+        meaning: "To register",
+        components: [
+          { kanji: "登", meaning: "Up" },
+          { kanji: "録", meaning: "Record" }
+        ],
+        example: "会員の{登録}が必要だ。",
+        exampleMeaning: "You need to {register} for an account.",
+        important: true
+      },
+      {
+        id: 1101,
+        wordRuby: "歳{とし}",
+        meaning: "Age",
+        components: [
+          { kanji: "歳", meaning: "Age" }
+        ],
+        example: "彼女は{歳}を重ねて[魅力]が[増した]。",
+        exampleMeaning: "She has grown much lovelier with {age}.",
+        extraVocabulary: [
+          { wordRuby: "魅{み}力{りょく}", meaning: "Charm" },
+          { wordRuby: "増{ま}す", meaning: "To increase" }
+        ],
+      },
+      {
+        id: 1102,
+        wordRuby: "とにかく",
+        meaning: "Anyway・In any case",
+        example: "時間がないから、{とにかく}[急いで]！",
+        exampleMeaning: "There's no time, so hurry {anyway}!",
+        extraVocabulary: [
+          { wordRuby: "急{いそ}ぐ", meaning: "To hurry" }
+        ],
+        important: true
+      },
+      {
+        id: 1103,
+        wordRuby: "乏{とぼ}しい",
+        meaning: "Lacking・Scarce・Poor",
+        components: [
+          { kanji: "乏", meaning: "Lack" }
+        ],
+        example: "彼は[教師]としての経験が{乏しい}。",
+        exampleMeaning: "His experience as a teacher is {lacking}.",
+        extraVocabulary: [
+          { wordRuby: "教{きょう}師{し}", meaning: "Teacher" },
+          { wordRuby: "貧{びん}乏{ぼう}", meaning: "Poor" }
+        ],
+        important: true
+      },
+      {
+        id: 1104,
+        wordRuby: "捉{とら}える",
+        meaning: "To catch・To grasp",
+        components: [
+          { kanji: "捉", meaning: "Catch" }
+        ],
+        example: "問題を正しく{捉え}なければならない。",
+        exampleMeaning: "I need to get a proper {grasp} of the problem.",
+        important: true
+      },
+      {
+        id: 1105,
+        wordRuby: "とりあえず",
+        meaning: "For now",
+        example: "{とりあえず}上司に[報告]する。",
+        exampleMeaning: "{For now}, I'll report it to my supervisor.",
+        extraVocabulary: [
+          { wordRuby: "報{ほう}告{こく}", meaning: "Report" }
+        ],
+        important: true
+      },
+      {
+        id: 1106,
+        wordRuby: "摂{と}る",
+        meaning: "To take in・To absorb",
+        components: [
+          { kanji: "摂", meaning: "Take in" }
+        ],
+        example: "栄養を{摂る}ことを意識している。",
+        exampleMeaning: "I'm conscious of my nutritional {intake}.",
+      },
+      {
+        id: 1107,
+        wordRuby: "流{なが}す",
+        meaning: "To flow・To spread around",
+        components: [
+          { kanji: "流", meaning: "Flush" }
+        ],
+        example: "誰がその情報を{流した}んですか？",
+        exampleMeaning: "Who {spread} that information {around}?",
+      },
+      {
+        id: 1108,
+        wordRuby: "眺{なが}める",
+        meaning: "To gaze at・To look out",
+        components: [
+          { kanji: "眺", meaning: "Gaze" }
+        ],
+        example: "ホテルから海を{眺める}。",
+        exampleMeaning: "I {gaze} at the ocean from my hotel room.",
+        important: true
+      },
+      {
+        id: 1109,
+        wordRuby: "慰{なぐさ}める",
+        meaning: "To comfort・To console",
+        components: [
+          { kanji: "慰", meaning: "Console" }
+        ],
+        example: "試験に合格できなかった友達を{慰めた}。",
+        exampleMeaning: "I {consoled} my friend after they failed their test.",
+        important: true
+      },
+      {
+        id: 1110,
+        wordRuby: "亡{な}くなる",
+        meaning: "To die・To pass away",
+        components: [
+          { kanji: "亡", meaning: "Pass away" }
+        ],
+        example: "去年、[祖母]が{亡くなった}。",
+        exampleMeaning: "My grandmother {passed away} last year.",
+        extraVocabulary: [
+          { wordRuby: "祖{そ}母{ぼ}", meaning: "Grandmother" }
+        ],
+      },
+      {
+        id: 1111,
+        wordRuby: "涙{なみだ}",
+        meaning: "Tears",
+        components: [
+          { kanji: "涙", meaning: "Tears" }
+        ],
+        example: "彼はそのドラマに感動して{涙}を流した。",
+        exampleMeaning: "He was moved to {tears} by the drama.",
+      },
+      {
+        id: 1112,
+        wordRuby: "なんとか",
+        connector: "する",
+        meaning: "Somehow・In some way",
+        example: "{なんとか}レポートを[提出]した。",
+        exampleMeaning: "I {somehow} managed to submit my report.",
+        extraVocabulary: [
+          { wordRuby: "提{てい}出{しゅつ}", meaning: "To submit" }
+        ],
+        important: true
+      },
+      {
+        id: 1113,
+        wordRuby: "握{にぎ}る",
+        meaning: "Grip・To grasp・To hold",
+        components: [
+          { kanji: "握", meaning: "Grip" }
+        ],
+        example: "子どもの手をしっかり{握る}。",
+        exampleMeaning: "I {grip} tightly to my child's hand.",
+      },
+      {
+        id: 1114,
+        wordRuby: "濁{にご}る",
+        meaning: "Muddy・To become turbid",
+        components: [
+          { kanji: "濁", meaning: "Impure" }
+        ],
+        example: "大雨で川の水が{濁って}いる。",
+        exampleMeaning: "The river water became {muddy} after a heavy rain.",
+      },
+      {
+        id: 1115,
+        wordRuby: "抜{ぬ}く",
+        meaning: "To pull out・To extract",
+        components: [
+          { kanji: "抜", meaning: "Pull out" }
+        ],
+        example: "歯医者で虫歯を{抜いて}もらった。",
+        exampleMeaning: "I got a tooth {pulled out} at the dentist.",
+      },
+      {
+        id: 1116,
+        wordRuby: "布{ぬの}",
+        meaning: "Cloth・Fabric",
+        components: [
+          { kanji: "布", meaning: "Cloth" }
+        ],
+        example: "{布}を切って服を作った。",
+        exampleMeaning: "I cut a piece of {cloth} to make clothes.",
+      },
+      {
+        id: 1117,
+        wordRuby: "願{ねが}う",
+        meaning: "To wish for・To request",
+        components: [
+          { kanji: "願", meaning: "Wish" }
+        ],
+        example: "みんなが幸せになることを{願って}いる。",
+        exampleMeaning: "I {wish} for everyone to live happily.",
+        important: true
+      },
+      {
+        id: 1118,
+        wordRuby: "狙{ねら}う",
+        meaning: "To aim at・To target",
+        components: [
+          { kanji: "狙", meaning: "Aim" }
+        ],
+        example: "彼はテニスの大会で[優勝]を{狙って}いる。",
+        exampleMeaning: "He's {aiming} to win the tennis tournament.",
+        extraVocabulary: [
+          { wordRuby: "優{ゆう}勝{しょう}", meaning: "Victory" }
+        ],
+      },
+      {
+        id: 1119,
+        wordRuby: "脳{のう}",
+        meaning: "Brain",
+        components: [
+          { kanji: "脳", meaning: "Brain" }
+        ],
+        example: "{脳}はたくさんの情報を[処理]している。",
+        exampleMeaning: "The {brain} [processes] lots of information.",
+        extraVocabulary: [
+          { wordRuby: "処{しょ}理{り}", meaning: "To process" }
+        ],
+        important: true
+      },
+      {
+        id: 1120,
+        wordRuby: "延{の}びる",
+        meaning: "To stretch・To extend",
+        components: [
+          { kanji: "延", meaning: "Extend" }
+        ],
+        example: "この薬を飲むと[寿命]が{延びる}らしい。",
+        exampleMeaning: "Apparently, this medicine can {extend} your [lifespan].",
+        extraVocabulary: [
+          { wordRuby: "寿{じゅ}命{みょう}", meaning: "Lifespan" }
+        ],
+      },
+      {
+        id: 1121,
+        wordRuby: "述{の}べる",
+        meaning: "To State・To narrate",
+        components: [
+          { kanji: "述", meaning: "State" }
+        ],
+        example: "会議で自分の意見を{述べる}。",
+        exampleMeaning: "I'll {state} my opinion at the meeting.",
+      },
+      {
+        id: 1122,
+        wordRuby: "～倍{ばい}",
+        meaning: "～times",
+        components: [
+          { kanji: "倍", meaning: "Multiple" }
+        ],
+        example: "今年から、給料が2{倍}になった。",
+        exampleMeaning: "My salary got two {times} bigger this year.",
+        important: true
+      },
+      {
+        id: 1123,
+        wordRuby: "はきはき",
+        connector: "と・する",
+        meaning: "Clearly",
+        example: "先生の質問に{はきはきと}答えた。",
+        exampleMeaning: "I answered the teacher's questions {clearly}.",
+        important: true
+      },
+      {
+        id: 1124,
+        wordRuby: "はさむ",
+        meaning: "Sandwiched・To insert between",
+        example: "パンに肉や野菜を{はさんで}食べる。",
+        exampleMeaning: "I eat meat and vegetables {sandwiched} between bread.",
+      },
+      {
+        id: 1125,
+        wordRuby: "肌{はだ}",
+        meaning: "Skin",
+        components: [
+          { kanji: "肌", meaning: "Skin" }
+        ],
+        example: "赤ちゃんの{肌}はやわらかい。",
+        exampleMeaning: "Baby's {skin} is soft.",
+      },
+      {
+        id: 1126,
+        wordRuby: "幅{はば}",
+        meaning: "Width・Range",
+        components: [
+          { kanji: "幅", meaning: "Width" }
+        ],
+        example: "海外へ行って、経験の幅が広がった。",
+        exampleMeaning: "My {range} of experience widened after going abroad.",
+        important: true
+      },
+      {
+        id: 1127,
+        wordRuby: "破{は}片{へん}",
+        meaning: "Fragment・Broken piece",
+        components: [
+          { kanji: "破", meaning: "Break" },
+          { kanji: "片", meaning: "Piece" }
+        ],
+        example: "コップの{破片}を[拾う]。",
+        exampleMeaning: "I'll pick up the {broken pieces} of the cup.'",
+        extraVocabulary: [
+          { wordRuby: "拾{ひろ}う", meaning: "To pick up" },
+          { wordRuby: "破{やぶ}れる", meaning: "To break・to tear" }
+        ],
+        important: true
+      },
+      {
+        id: 1128,
+        wordRuby: "ひざ",
+        meaning: "Knee",
+        example: "年を取ると{ひざ}が痛くなる。",
+        exampleMeaning: "{Knees} start to hurt as people get older.",
+      },
+      {
+        id: 1129,
+        wordRuby: "ひどい",
+        meaning: "Terrible・Severe・Bad",
+        example: "{ひどい}[渋滞]で1時間も遅れた。",
+        exampleMeaning: "The traffic was {terrible}, so I was an hour late.",
+        extraVocabulary: [
+          { wordRuby: "渋{じゅう}滞{たい}", meaning: "Traffic jam" }
+        ],
+        important: true
+      },
+      {
+        id: 1130,
+        wordRuby: "等{ひと}しい",
+        meaning: "Equal",
+        components: [
+          { kanji: "等", meaning: "Equal" }
+        ],
+        example: "この2つのりんごの大きさは{等しい}。",
+        exampleMeaning: "These two apples are {equal} in size.",
+        important: true
+      },
+      {
+        id: 1131,
+        wordRuby: "便{びん}",
+        meaning: "Delivery・Mail",
+        components: [
+          { kanji: "便", meaning: "Delivery" }
+        ],
+        example: "午後の{便}で荷物が届いた。",
+        exampleMeaning: "My package came during afternoon {delivery}.",
+      },
+      {
+        id: 1132,
+        wordRuby: "普{ふ}及{きゅう}",
+        connector: "する",
+        meaning: "Popularization・Dissemination",
+        components: [
+          { kanji: "普", meaning: "Normalized" },
+          { kanji: "及", meaning: "Reach" }
+        ],
+        example: "世界中にスマートフォンが{普及した}。",
+        exampleMeaning: "Smartphones have become widely {popularized}.",
+        important: true
+      },
+      {
+        id: 1133,
+        wordRuby: "福{ふく}祉{し}",
+        meaning: "Welfare・Public benefit",
+        components: [
+          { kanji: "福", meaning: "Fortunate" },
+          { kanji: "祉", meaning: "Welfare" }
+        ],
+        example: "{福祉}の仕事に[就いて]人を助けたい。",
+        exampleMeaning: "I want to work in {welfare} so I can help people.",
+        extraVocabulary: [
+          { wordRuby: "就{つ}く", meaning: "To get (a job)" }
+        ],
+        important: true
+      },
+      {
+        id: 1134,
+        wordRuby: "舞{ぶ}台{たい}",
+        meaning: "Stage",
+        components: [
+          { kanji: "舞", meaning: "Dance" },
+          { kanji: "台", meaning: "Platform" }
+        ],
+        example: "{舞台}の真ん中でスピーチをした。",
+        exampleMeaning: "I gave a speech from the middle of the {stage}.",
+        important: true
+      },
+      {
+        id: 1135,
+        wordRuby: "ふもと",
+        meaning: "Base・Foot of the mountain",
+        example: "山の{ふもと}に村がある。",
+        exampleMeaning: "There's a small village at the {base of the mountain}.",
+      },
+      {
+        id: 1136,
+        wordRuby: "閉室{へいしつ}",
+        meaning: "Close",
+        components: [
+          { kanji: "閉", meaning: "Close" },
+          { kanji: "室", meaning: "Room" }
+        ],
+        example: "{閉室}の時間を確認する。",
+        exampleMeaning: "I'll check what time they {close}.",
+      },
+      {
+        id: 1137,
+        wordRuby: "変{へん}更{こう}",
+        connector: "する",
+        meaning: "Change",
+        components: [
+          { kanji: "変", meaning: "Change" },
+          { kanji: "更", meaning: "Renew" }
+        ],
+        example: "会議の開始時間を{変更する}。",
+        exampleMeaning: "I'm going to {change} the start time of the meeting.",
+      },
+      {
+        id: 1138,
+        wordRuby: "法{ほう}律{りつ}",
+        meaning: "Law",
+        components: [
+          { kanji: "法", meaning: "Law" },
+          { kanji: "律", meaning: "Rule" }
+        ],
+        example: "折しい{法律}が発表された。",
+        exampleMeaning: "A new {law} was announced to the public.",
+        important: true
+      },
+      {
+        id: 1139,
+        wordRuby: "ぼんやり",
+        connector: "と・する",
+        meaning: "Daydreaming・Absent-minded・Vaguely",
+        example: "将来のことを{ぼんやり}考えていた。",
+        exampleMeaning: "I was {vaguely} thinking about my future.",
+      },
+      {
+        id: 1140,
+        wordRuby: "まさか",
+        meaning: "No way・Impossible・Unthinkable",
+        example: "{まさか}合格するとは思わなかった。",
+        exampleMeaning: "I thought there was {no way} I'd pass.",
+        important: true
+      },
+      {
+        id: 1141,
+        wordRuby: "増{ま}す",
+        meaning: "To increase",
+        components: [
+          { kanji: "増", meaning: "Increase" }
+        ],
+        example: "卒業式が近づくにつれ、寂しさが{増す}。",
+        exampleMeaning: "My loneliness {increases} as graduation day gets closer.",
+      },
+      {
+        id: 1142,
+        wordRuby: "ますます",
+        meaning: "More and more",
+        example: "外国語[教育]が{ますます}重要になる。",
+        exampleMeaning: "Foreign language education is becoming {more and more} important.",
+        extraVocabulary: [
+          { wordRuby: "教{きょう}育{いく}", meaning: "Education" }
+        ],
+      },
+      {
+        id: 1143,
+        wordRuby: "まとめる",
+        meaning: "To gather・To collect",
+        example: "チームの意見を{まとめて}発表する。",
+        exampleMeaning: "We'll {gather} opinions from the team and present them.",
+      },
+      {
+        id: 1144,
+        wordRuby: "まねる",
+        meaning: "To imitate・To mimic",
+        example: "先生の発音を{まねて}練習する。",
+        exampleMeaning: "I practice pronunciation by {mimicking} a teacher.",
+      },
+      {
+        id: 1145,
+        wordRuby: "丸{まる}",
+        meaning: "Circle・Round",
+        components: [
+          { kanji: "丸", meaning: "Circle" }
+        ],
+        example: "正しい答えに{丸}をつけてください。",
+        exampleMeaning: "Please {circle} the correct answer.",
+      },
+      {
+        id: 1146,
+        wordRuby: "まれな",
+        meaning: "Rare",
+        example: "彼がこんな失敗をすることは{まれだ}。",
+        exampleMeaning: "It's {rare} for him to make a mistake like that.",
+      },
+      {
+        id: 1147,
+        wordRuby: "認{みと}める",
+        meaning: "To recognize・To acknowledge",
+        components: [
+          { kanji: "認", meaning: "Acknowledge" }
+        ],
+        example: "皮は自分の失敗をすぐに{認めた}。",
+        exampleMeaning: "He quickly {acknowledged} his mistake.",
+        important: true
+      },
+      {
+        id: 1148,
+        wordRuby: "迎{むか}える",
+        meaning: "To welcome・To reach (a milestone)",
+        components: [
+          { kanji: "迎", meaning: "Welcome" }
+        ],
+        example: "来週、娘が10歳の誕生日を{迎える}。",
+        exampleMeaning: "My daughter will {reach} her tenth birthday next week.",
+        important: true
+      },
+      {
+        id: 1149,
+        wordRuby: "結{むす}びつく",
+        meaning: "To lead to・To be connected・To be linked",
+        components: [
+          { kanji: "結ぶ", meaning: "Tied together" },
+          { kanji: "つく", meaning: "Attach" }
+        ],
+        example: "努力が[成功]に{結びつく}わけではない。",
+        exampleMeaning: "Effort doesn't necessarily {lead to} success.",
+        extraVocabulary: [
+          { wordRuby: "成{せい}功{こう}", meaning: "Success" }
+        ],
+      },
+      {
+        id: 1150,
+        wordRuby: "群{む}れ",
+        meaning: "Flock",
+        components: [
+          { kanji: "群", meaning: "Group" }
+        ],
+        example: "鳥の{群れ}が[鳴いて]いる。",
+        exampleMeaning: "A {flock} of birds is chirping.",
+        extraVocabulary: [
+          { wordRuby: "鳴{な}く", meaning: "To chirp" }
+        ],
+      },
+      {
+        id: 1151,
+        wordRuby: "名{めい}～",
+        meaning: "Famous ~・ Outstanding ~ ・Well-known",
+        components: [
+          { kanji: "名", meaning: "Outstanding" }
+        ],
+        example: "{名}選手・{名}所・{名}作",
+        exampleMeaning: "{Outstanding} player・{Famous} places・{Masterpiece}",
+      },
+      {
+        id: 1152,
+        wordRuby: "迷{めい}惑{わく}",
+        connector: "な・する",
+        meaning: "Bother・Trouble・Inconvenience",
+        components: [
+          { kanji: "迷", meaning: "Confuse" },
+          { kanji: "惑", meaning: "Confuse" }
+        ],
+        example: "大きな声で話すと周りの{迷惑}になる。",
+        exampleMeaning: "If you talk loudly, it'll {bother} the people around you.",
+        important: true
+      },
+      {
+        id: 1153,
+        wordRuby: "めくる",
+        meaning: "To turn (a page)・To flip (a page)",
+        example: "文章を読んだ後、ページを{めくった}。",
+        exampleMeaning: "I finished reading the paragraph and {turned} the page."
+      },
+      {
+        id: 1154,
+        wordRuby: "雌{めす}",
+        meaning: "Female (animal)",
+        components: [
+          { kanji: "雌", meaning: "Female (animal)" }
+        ],
+        example: "うちで飼っている猫は{雌}だ。",
+        exampleMeaning: "The cat we raise at home is a {female}."
+      },
+      {
+        id: 1155,
+        wordRuby: "燃{も}える",
+        meaning: "To burn",
+        components: [
+          { kanji: "燃", meaning: "Burn" }
+        ],
+        example: "家の横でごみが{燃えて}いる。",
+        exampleMeaning: "There's garbage {burning} next to my house."
+      },
+      {
+        id: 1156,
+        wordRuby: "もてなす",
+        meaning: "To entertain・To treat with hospitality",
+        example: "心を込めてお客様を{もてなした}。",
+        exampleMeaning: "I put my heart into {treating} our guests {with hospitality}.",
+        important: true
+      },
+      {
+        id: 1157,
+        wordRuby: "もともと",
+        meaning: "Originally・From the start",
+        example: "この建物は{もともと}病院だった。",
+        exampleMeaning: "This building was {originally} a hospital.",
+        important: true
+      },
+      {
+        id: 1158,
+        wordRuby: "雇{やと}う",
+        meaning: "To hire",
+        components: [
+          { kanji: "雇", meaning: "Hire" }
+        ],
+        example: "新しい社員を{雇う}予定だ。",
+        exampleMeaning: "We're planning to {hire} new employees."
+      },
+      {
+        id: 1159,
+        wordRuby: "やりがい",
+        meaning: "Sense of fulfillment・Rewarding",
+        components: [
+          { kanji: "やる", meaning: "Do" },
+          { kanji: "かい", meaning: "Value" }
+        ],
+        example: "{やりがい}を感じられる仕事がしたい。",
+        exampleMeaning: "I want to do a job that feels {rewarding}.",
+        important: true
+      },
+      {
+        id: 1160,
+        wordRuby: "やりとり",
+        connector: "する",
+        meaning: "Communication・Exchange (messages, opinions, etc.)",
+        components: [
+          { kanji: "やる", meaning: "Do" },
+          { kanji: "とる", meaning: "Take" }
+        ],
+        example: "お客さんと電話で{やりとりして}いる。",
+        exampleMeaning: "I {communicate} with customers over the phone.",
+        important: true
+      },
+      {
+        id: 1161,
+        wordRuby: "譲{ゆず}る",
+        meaning: "To yield・To give up",
+        components: [
+          { kanji: "譲", meaning: "Yield" }
+        ],
+        example: "電車でおじいさんに席を{譲った}。",
+        exampleMeaning: "On the train, I {yielded} my seat to an elderly man."
+      },
+      {
+        id: 1162,
+        wordRuby: "容{よう}易{い}な",
+        meaning: "Easy・Inexpensive",
+        components: [
+          { kanji: "容", meaning: "Take in" },
+          { kanji: "易", meaning: "Easy" }
+        ],
+        example: "彼の気持ちは{容易に}[想像]がつく。",
+        exampleMeaning: "It's {easy} to [imagine] what he's feeling.",
+        extraVocabulary: [
+          { wordRuby: "想{そう}像{ぞう}", meaning: "Imagination" }
+        ],
+        important: true
+      },
+      {
+        id: 1163,
+        wordRuby: "寄{よ}る",
+        meaning: "To stop by・To approach",
+        components: [
+          { kanji: "寄", meaning: "Get close" }
+        ],
+        example: "コンビニに{寄って}から家に帰る。",
+        exampleMeaning: "I'll {stop by} the convenience store on my way home.",
+        important: true
+      },
+      {
+        id: 1164,
+        wordRuby: "立{りっ}派{ぱ}な",
+        meaning: "Outstanding・Magnificent・Splendid",
+        components: [
+          { kanji: "立", meaning: "Stand" },
+          { kanji: "派", meaning: "Split off" }
+        ],
+        example: "彼は{立派な}作品をいくつも作っている。",
+        exampleMeaning: "He has made several {outstanding} works of art.",
+        important: true
+      },
+      {
+        id: 1165,
+        wordRuby: "礼{れい}儀{ぎ}",
+        meaning: "Etiquette・Manners",
+        components: [
+          { kanji: "礼", meaning: "Showing respect" },
+          { kanji: "儀", meaning: "Ritual" }
+        ],
+        example: "彼は{礼儀}正しい人だ。",
+        exampleMeaning: "He has good {etiquette}.",
+        important: true
+      },
+      {
+        id: 1166,
+        wordRuby: "わがままな",
+        meaning: "Self-centered・Selfish",
+        components: [
+          { kanji: "我", meaning: "My" },
+          { kanji: "儘", meaning: "As it is" }
+        ],
+        example: "弟は{わがままな}性格だ。",
+        exampleMeaning: "My younger brother is {self-centered}.",
+        important: true
+      },
+      {
+        id: 1167,
+        wordRuby: "湧{わ}く",
+        meaning: "To surge up・To spring up",
+        components: [
+          { kanji: "湧", meaning: "Spring" }
+        ],
+        example: "山から水が{湧いて}きた。",
+        exampleMeaning: "Water {sprang up} from the mountain.",
+      },
+      {
+        id: 1168,
+        wordRuby: "～割{わり}",
+        meaning: "～ percent・～ part・～ portion",
+        components: [
+          { kanji: "割", meaning: "Divide" }
+        ],
+        example: "テストで8{割}以上の点数がとれた。",
+        exampleMeaning: "I scored over 80{%} on the test.",
+      }
     ],
   },
 };
