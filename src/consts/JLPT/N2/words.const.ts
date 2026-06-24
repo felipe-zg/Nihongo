@@ -4,17 +4,18 @@ export const N2ExtraWords: Record<string, TangoEntry> = {
     words: [
       {
         id: 1,
-        wordRuby: "背{せ}骨{ぼね}",
-        meaning: "spine・backbone",
+        wordRuby: "握{あく}手{しゅ}",
+        meaning: "handshake",
         info: "N + に対して means: towards N・regarding N・concerning N・in response to N",
         components: [
-          { kanji: "背", meaning: "back" },
-          { kanji: "骨", meaning: "bone" }
+          { kanji: "握", meaning: "grasp・hold" },
+          { kanji: "手", meaning: "hand" },
         ],
-        example: "{背骨}の痛み[に対して]、医者は毎日軽い[体操]を続けるよう勧めた。",
-        exampleMeaning: "[To address] the pain in the {spine}, the doctor recommended continuing light [exercises] every day.",
+        example: "ファンは選手[に対して]感謝の気持ちを伝えようとし、試合後に{握手}をccた。",
+        exampleMeaning: "The fan tried to express gratitude [toward the] athlete and asked for a {handshake} after the match.",
         extraVocabulary: [
-          { wordRuby: "体{たい}操{そう}", meaning: "Gymnastics・stretching exercises" }
+          { wordRuby: "求{もと}める", meaning: "to seek・to request" },
+          { wordRuby: "握{にぎ}る", meaning: "to grasp・to hold" }
         ]
       },
       {
@@ -52,14 +53,15 @@ export const N2ExtraWords: Record<string, TangoEntry> = {
       },
       {
         id: 4,
-        wordRuby: "敬{うやま}う",
-        meaning: "to respect・to revere",
-        info: "It is used for showing deep respect toward someone, often elders, superiors, gods, traditions, or people worthy of admiration.\n〜のことだから means: knowing ~'s character・given that ~ (used to express that something is expected or likely to happen based on what is known about a person's character, behavior, or tendencies.)\nIt emphasizes: the speaker's confidence in their prediction or expectation based on their understanding of the person's nature or past actions.\nはずがない means: there's no way ~・it is impossible that ~ [Same as わけがない] (used to express strong certainty that something is not the case or will not happen.)\nIt emphasizes: the speaker's firm belief or conviction that the stated situation or outcome is highly unlikely or impossible based on logic, evidence, or common sense.",
+        wordRuby: "無{な}くなる",
+        meaning: "to disappear・to be lost・to be gone",
+        info: "〜のことだから means: knowing ~'s character・given that ~ (used to express that something is expected or likely to happen based on what is known about a person's character, behavior, or tendencies.)\nIt emphasizes: the speaker's confidence in their prediction or expectation based on their understanding of the person's nature or past actions.\n\n〜はずがない means: there's no way ~・it is impossible that ~ [Same as わけがない] (used to express strong certainty that something is not the case or will not happen.)\nIt emphasizes: the speaker's firm belief or conviction that the stated situation or outcome is highly unlikely or impossible based on logic, evidence, or common sense.\n\n〜からといって means: just because ~・even though ~・it does not necessarily mean that ~ [ 〜という理由だけでは判断できない ] (used to express that a certain reason or condition does not necessarily lead to a specific outcome or conclusion.)\nIt emphasizes: the idea that while a particular reason may exist, it does not guarantee or dictate the expected result, highlighting the potential for exceptions or alternative outcomes.",
         components: [
-          { kanji: "敬", meaning: "respect" }
+          { kanji: "無", meaning: "nothing・nonexistent" },
+          { kanji: "なる", meaning: "to become" }
         ],
-        example: "山田先生[のことだから]、長年お世話になった[恩師]を{敬う}気持ちを忘れる[はずがない]",
-        exampleMeaning: "Knowing Mr. Yamada's character, there's no way he would forget the respect he feels toward the mentor who guided him for many years.",
+        example: "真面目な田中さん[のことだから]、少しくらいやる気が{無くなった}[からといって]、仕事を途中で投げ出す[はずがない]。",
+        exampleMeaning: "[Knowing] how serious Tanaka is, [there's no way] he would abandon his work halfway [just because] he {lost} a bit of motivation.",
         extraVocabulary: [
           { wordRuby: "恩{おん}師{し}", meaning: "mentor・teacher" },
           { wordRuby: "先{せん}祖{ぞ}", meaning: "ancestor" },
@@ -67,64 +69,75 @@ export const N2ExtraWords: Record<string, TangoEntry> = {
       },
       {
         id: 5,
-        wordRuby: "宛{あ}て",
-        meaning: "Addressed to・Directed to",
-        info: "This is more formal/specific than just saying に. It is especially common with: letters・packages・emails・official documents・things meant for a particular person/group.\n〜に限って means: unlike the usual・of all times (used to express that something happens in a way that is different from what is usual or expected, often with a nuance of irony or frustration.)\nIt emphasizes: the contrast between the current situation and what is typically expected, often highlighting the inconvenience, irony, or bad timing of the event.",
+        wordRuby: "伴{ともな}う",
+        meaning: "to accompany・to bring with・to involve",
+        info: "〜に限って means: unlike the usual・of all times (used to express that something happens in a way that is different from what is usual or expected, often with a nuance of irony or frustration.)\nIt emphasizes: the contrast between the current situation and what is typically expected, often highlighting the inconvenience, irony, or bad timing of the event.",
         components: [
-          { kanji: "宛", meaning: "destination" }
+          { kanji: "伴", meaning: "accompany" }
         ],
-        example: "いつも時間どおりに届く私{宛て}の荷物[に限って]、昨日はなぜか一日遅れてしまった。",
-        exampleMeaning: "The package {addressed to me} that always arrives on time was delayed for some reason yesterday.",
+        example: "普段は慎重な彼[に限って]、危険を{伴う}計画に何の疑いもなく賛成するなんて信じられない。",
+        exampleMeaning: "Of all people, the normally cautious him agreeing to a {risky} plan without any doubts is hard to believe.",
+        extraVocabulary: [
+          { wordRuby: "慎{しん}重{ちょう}", meaning: "caution・prudence" },
+        ]
       },
       {
         id: 6,
-        wordRuby: "登{とう}録{ろく}",
-        meaning: "registration・enrollment",
+        wordRuby: "疑{うたが}う",
+        meaning: "to doubt・to question・to distrust",
         info: "〜ことは〜が means: it's true that ~, but ~ ・I did ~, but ~・although~ (used to acknowledge the truth of the first statement while introducing a contrasting or mitigating point in the second statement.)\nIt emphasizes: the speaker's recognition of the validity of the initial statement while also highlighting a contrasting aspect or concern that may temper or complicate the situation.\nこの～の部分は、同じ言葉が入るので注意してください。",
         components: [
-          { kanji: "登", meaning: "register" },
-          { kanji: "録", meaning: "record" }
+          { kanji: "疑", meaning: "doubt" }
         ],
-        example: "[会員]{登録}は完了[したことはしたが]、確認メールがまだ届いていないので少し不安だ。",
-        exampleMeaning: "[It's true that] I completed the membership {registration}, [but] since the confirmation email hasn't arrived yet, I'm a little worried.",
+        example: "その話を{疑う}[ことは]{疑う}[が]、完全に否定できる[わけでもない]。",
+        exampleMeaning: "I do have my {doubts} about that story, but I can't completely deny it either.",
         extraVocabulary: [
-          { wordRuby: "会{かい}員{いん}", meaning: "member" },
-          { wordRuby: "完{かん}了{りょう}", meaning: "completion" }
+          { wordRuby: "完{かん}全{ぜん}", meaning: "complete" },
+          { wordRuby: "否{ひ}定{てい}", meaning: "denial" }
         ],
       },
       {
         id: 7,
-        wordRuby: "衰{おとろ}える",
-        meaning: "to weaken・to deteriorate・to decline",
-        info: "It is used for things losing strength, energy, ability, influence, health, etc.\n〜とは限らない means: not necessarily ~・not always ~ [100%〜だと言えない] (used to express that something is not always the case or that there are exceptions to a general statement.)\nIt emphasizes: the possibility of exceptions or variations in a situation, suggesting that while something may be generally true, it is not guaranteed in every instance.",
+        wordRuby: "命{めい}令{れい}",
+        meaning: "order・command",
+        info: "〜とは限らない means: not necessarily ~・not always ~ [100%〜だと言えない] (used to express that something is not always the case or that there are exceptions to a general statement.)\nIt emphasizes: the possibility of exceptions or variations in a situation, suggesting that while something may be generally true, it is not guaranteed in every instance.",
         components: [
-          { kanji: "衰", meaning: "decline" }
+          { kanji: "命", meaning: "command" },
+          { kanji: "令", meaning: "Order" }
         ],
-        example: "年を取ると体力は{衰える}と言われているが、日頃から運動している人はそう[とは限らない]。",
-        exampleMeaning: "People say that physical strength {declines} with age, but [that is not necessarily true] for people who exercise regularly."
+        example: "社長の{命令}であっても、常に正しい[とは限らない]ため、社員も自分で判断する必要がある。",
+        exampleMeaning: "Even if it is the president's {order}, [it is not necessarily] always correct, so employees also need to make their own judgments."
       },
       {
         id: 8,
-        wordRuby: "詳{しょう}細{さい}な",
-        meaning: "details・specifics",
+        wordRuby: "複{ふく}雑{ざつ}な",
+        meaning: "complicated・complex",
+        info: "〜ものがある means: there is something that ~・one cannot help feeling ~ (used  to express one's feelings. It is used when you want to say that you feel a certain way, not when you want to say clearly that you have a specific feeling.)",
         components: [
-          { kanji: "詳", meaning: "detailed" },
-          { kanji: "細", meaning: "small・minute" }
+          { kanji: "複", meaning: "multiple" },
+          { kanji: "雑", meaning: "mixed" }
         ],
-        example: "会議時間が残り少なくなったので、 資料の{詳細な}説明は[省略]して、[要点]のみを説明した。",
-        exampleMeaning: "Since the meeting time was running short, I omitted the detailed explanation of the materials and only explained the key points.",
+        example: "その事件の背景は非常に{複雑}で、考えさせられる[ものがある]。",
+        exampleMeaning: "The background of this incident is extremely {complex} and gives one much to think about.",
         extraVocabulary: [
-          { wordRuby: "省{しょう}略{りゃく}", meaning: "omission・abbreviation" },
-          { wordRuby: "要{よう}点{てん}", meaning: "main point" }
+          { wordRuby: "事{じ}件{けん}", meaning: "incident・case" },
+          { wordRuby: "背{はい}景{けい}", meaning: "background" },
         ]
       },
       {
         id: 9,
-        wordRuby: "ずうずうしい",
-        meaning: "shameless・impudent・pushy",
+        wordRuby: "意{い}外{がい}な",
+        meaning: "unexpected・surprising",
         info: "〜にしても means: even if ~・even though ~ (It is used when you want to say that your opinion or the result does not change even if you consider it to be a certain way. It is often used when expressing your thoughts or opinions)",
-        example: "困っていた[にしても]、他人の許可なく物を使うのは{ずうずうしい}と思う。",
-        exampleMeaning: "[Even if] they were in trouble, I think it's {presumptuous} to use someone else's belongings without permission."
+        components: [
+          { kanji: "意", meaning: "thought" },
+          { kanji: "外", meaning: "outside" }
+        ],
+        example: "{意外な}結果だった[にしても]、最後まで冷静[に対応する]べきだった。",
+        exampleMeaning: "[Even though] the result was {unexpected}, we should have remained calm until the end.",
+        extraVocabulary: [
+          { wordRuby: "冷{れい}静{せい}", meaning: "calm" },
+        ],
       },
       {
         id: 10,
@@ -223,13 +236,22 @@ export const N2ExtraWords: Record<string, TangoEntry> = {
       },
       {
         id: 17,
-        wordRuby: "薄{うす}める",
-        meaning: "to make thiner・to make weaker",
+        wordRuby: "冷{れい}静{せい}な",
+        meaning: "calm・composed",
+        info: "〜まい means: probably not ~・I don't think ~・I doubt that ~ [① 〜ないだろう・② 絶対 〜 ない] (used to express negation, similar to 'ない', but it has two different usages. The first usage is to express a prediction or assumption that something will not happen, like saying 'It probably won't rain today' based on the situation. The second usage is to express a strong determination not to do something, like saying 'I will definitely not think about it anymore!' as a way of convincing oneself to stop thinking about something unpleasant.)\n\n来る = くるまい or こまい\nする = すまい or しまい\n\nこの2つめの意味の「まい」は自分の意志を表す文法ですから自分のことを言うと覚えておきましょう。",
         components: [
-          { kanji: "薄い", meaning: "thin" }
+          { kanji: "冷", meaning: "cold" },
+          { kanji: "静", meaning: "quiet" }
         ],
-        example: "スープがしょっぱかったので、水を加えて味を{薄めた}。",
-        exampleMeaning: "The soup was too salty, so I added water to make the flavor {weaker}."
+        example: "どんな緊急事態でも、彼ほど{冷静な}判断ができる人はいる[まい]。",
+        exampleMeaning: "Even in an emergency, there is [probably] no one who can make judgments as {calmly} as he can.",
+        extraVocabulary: [
+          { wordRuby: "緊{きん}急{きゅう}", meaning: "emergency" },
+          { wordRuby: "事{じ}態{たい}", meaning: "situation" },
+          { wordRuby: "判{はん}断{だん}", meaning: "judgment・decision" },
+          { wordRuby: "冷{つめ}たい", meaning: "cold" },
+          { wordRuby: "静{しず}か", meaning: "quiet" },
+        ]
       },
       {
         id: 18,
@@ -347,15 +369,16 @@ export const N2ExtraWords: Record<string, TangoEntry> = {
       },
       {
         id: 26,
-        wordRuby: "認{みと}める",
-        meaning: "to recognize・to acknowledge",
+        wordRuby: "羨{うら}ましい",
+        meaning: "envious・jealous",
+        info: "〜のかというような means: a kind of ~ that makes one wonder if ~・so ~ that you think 'is there really...?' (used to express a sense of disbelief or astonishment about something.)\nIt emphasizes: the strong impression or feeling that something is so extraordinary or surprising that it leads to a sense of wonder or skepticism about its reality.",
         components: [
-          { kanji: "認", meaning: "recognizing" },
+          { kanji: "羨", meaning: "envy" },
         ],
-        example: "この研究を始めたころは、そんなことを研究して意味が[あるのかというような]批判的な意見も多かったが、最近少しずつ{認めて}もらえるようになってきた。",
-        exampleMeaning: "When I started this research, there were many critical opinions like ‘Is there even any point in researching something like that?’, but recently it has gradually started to be {recognized}.",
+        example: "彼のギターの上達の速さは、本当に同じ人間な[のかというような]{羨ましさ}を感じさせる",
+        exampleMeaning: "The speed at which he improves on the guitar makes me feel a kind of {envy} that [makes me wonder whether] he's really human.",
         extraVocabulary: [
-          { wordRuby: "確{かく}認{にん}", meaning: "confirmation" }
+          { wordRuby: "上{じょう}達{たつ}", meaning: "improvement" },
         ],
       },
       {
@@ -371,29 +394,33 @@ export const N2ExtraWords: Record<string, TangoEntry> = {
       },
       {
         id: 28,
-        wordRuby: "山{さん}頂{ちょう}",
-        meaning: "mountain peak",
+        wordRuby: "厳{げん}重{じゅう}な",
+        meaning: "strict・rigorous",
         info: "Verb ます stem + がたい means: difficult to ~・hard to ~・not easy to ~ [〜するのが難しい] (used to express that something is difficult to do or achieve, often due to emotional, psychological, or situational reasons rather than physical difficulty.)\nIt emphasizes: the strong emotional or psychological challenge of doing something, often because it is deeply meaningful, significant, or impactful.",
         components: [
-          { kanji: "山", meaning: "mountain" },
-          { kanji: "頂", meaning: "summit・top" }
+          { kanji: "厳", meaning: "strict" },
+          { kanji: "重", meaning: "heavy・serious" }
         ],
-        example: "私は20年前に初めて富士山に登った。 {山頂}に立ったときの感動は今でも[忘れがたい]。",
-        exampleMeaning: "I climbed Mt. Fuji for the first time 20 years ago. The excitement I felt when I stood on the {mountain peak} is still unforgettable.",
+        example: "{厳重な}警備が敷かれていた[にもかかわらず]事件が起きたという事実は、[信じがたい]。",
+        exampleMeaning: "The fact that an incident occurred despite {tight} security [is hard to] believe.",
+        extraVocabulary: [
+          { wordRuby: "警{けい}備{び}", meaning: "security" },
+          { wordRuby: "敷{し}く", meaning: "to lay・to spread" },
+          { wordRuby: "厳{きび}しい", meaning: "strict・severe" }
+        ],
       },
       {
         id: 29,
-        wordRuby: "領{りょう}収{しゅう}書{しょ}",
-        meaning: "receipt",
+        wordRuby: "分{ぶん}割{かつ}",
+        meaning: "Division・Split",
+        info: "〜ところだった means: was just about to do・almost did (used to express that something almost happened or was on the verge of happening, often with a nuance of relief or narrowly avoiding a situation.)\nIt emphasizes: the closeness of the situation to occurring, highlighting how narrowly it was avoided or how close one came to taking a certain action.",
         components: [
-          { kanji: "領", meaning: "receive" },
-          { kanji: "収", meaning: "collect" },
-          { kanji: "書", meaning: "document" }
+          { kanji: "分", meaning: "divide" },
+          { kanji: "割", meaning: "split" }
         ],
-        example: "洗濯機に入れるときに[気づいた]からよかったが、 もう少しで大事な{領収書}をズボンのポケットに入れたまま洗濯する[ところだった]。",
-        exampleMeaning: "It was good that I noticed it when I put the laundry in, but I almost washed an important {receipt} while it was still in my pants pocket.",
+        example: "担当者の説明を聞かなければ、一括払いのつもりで{分割}払いを契約[するところだった]。",
+        exampleMeaning: "If I hadn't listened to the person in charge, I would have signed a contract for {installment} payments thinking it was a lump-sum payment.",
         extraVocabulary: [
-          { wordRuby: "気{き}づく", meaning: "to notice" },
           { wordRuby: "ところだった", meaning: "was just about to do・almost did" },
           { wordRuby: "～ところだ", meaning: "about to do" },
           { wordRuby: "もう少しで～ところだった", meaning: "almost did ~" }
@@ -505,64 +532,69 @@ export const N2ExtraWords: Record<string, TangoEntry> = {
       },
       {
         id: 37,
-        wordRuby: "味{あじ}わう",
-        meaning: "to taste・to experience",
+        wordRuby: "湿{しめ}る",
+        meaning: "to get wet・to be damp",
         info: "〜以来 means: since ~ [ 〜のときから、ずっと同じだ ] (used to express that something has been the case continuously since a certain action or event occurred.)\nIt emphasizes: the ongoing nature of a situation or condition that has persisted since the specified time, often suggesting that it has been a significant period of time.",
         components: [
-          { kanji: "味", meaning: "taste" },
+          { kanji: "湿", meaning: "moisture" },
         ],
-        example: "日本に来て[以来]、本場の和食を{味わう}機会が増えた。",
-        exampleMeaning: "[Since] coming to Japan, I've had more opportunities to {enjoy} authentic Japanese cuisine."
+        example: "引っ越して[以来]、この部屋は日当たりが悪いため、洗濯物がなかなか乾かず{湿り}がちだ。",
+        exampleMeaning: "[Ever since] I moved here, because this room gets little sunlight, the laundry doesn't dry easily and tends to stay {damp}.",
+        extraVocabulary: [
+          { wordRuby: "乾{かわ}く", meaning: "to dry" }
+        ],
       },
       {
         id: 38,
-        wordRuby: "絡{から}まる",
-        meaning: "to get entangled・to get involved",
-        info: "〜がる means: to feel ~・to show signs of ~ [ 〜と感じているようだ ] (used to express that someone is showing signs of feeling a certain way or has a certain emotion, often based on their behavior or expressions.)\nIt emphasizes: the observable signs or indications of someone's feelings or emotions, suggesting that they are displaying these feelings in a noticeable way.",
+        wordRuby: "溶{と}ける",
+        meaning: "to dissolve・to melt",
+        info: "〜がる means: to feel ~・to show signs of ~ [ 〜と感じているようだ ] (used to express that someone is showing signs of feeling a certain way or has a certain emotion, often based on their behavior or expressions.)\nIt emphasizes: the observable signs or indications of someone's feelings or emotions, suggesting that they are displaying these feelings in a noticeable way.\n\n～がる attaches to emotions and feelings, not to verbs like 溶ける.",
         components: [
-          { kanji: "絡", meaning: "entangle" }
+          { kanji: "溶", meaning: "dissolve" }
         ],
-        example: "イヤホンのコードが何度も{絡まる}ので、弟は新しいワイヤレスイヤホンを欲し[がって]いる。",
-        exampleMeaning: "Because his earphone cables keep {getting tangled}, my younger brother [seems to] want new wireless earphones."
+        example: "子どもはアイスが{溶ける}のを見て、とても残念[がって]いた。",
+        exampleMeaning: "The child saw the ice cream {melting} and [appeared] very disappointed.",
       },
       {
         id: 39,
-        wordRuby: "栽{さい}培{ばい}",
-        meaning: "cultivation・growing",
+        wordRuby: "叶{かな}う",
+        meaning: "to come true・to be realized",
         info: "〜あげく means: after ~・in the end after ~ [ 〜した結果 ] (used to express that after a long process or series of events, a certain outcome or result is reached, often with a nuance of frustration, disappointment, or unexpectedness.)\nThis grammar is used when the result is bad. Since it expresses the result, it is almost the same as the grammar '～末'. While both express results, the key difference is that '〜あげく' is used specifically to indicate bad outcomes. Therefore, it is used when you want to say that despite doing various things, the result was negative.",
         components: [
-          { kanji: "栽", meaning: "plant" },
-          { kanji: "培", meaning: "cultivate" }
+          { kanji: "叶", meaning: "to be fulfilled" }
         ],
-        example: "数年間にわたって果物を{栽培}した[あげく]、台風で収穫直前の作物をほとんど失ってしまった。",
-        exampleMeaning: "[After] spending years {cultivating} fruit, [they ended up] losing almost all of their crops just before harvest because of a typhoon."
+        example: "何年も努力した[あげく]、ようやく子どもの頃からの夢が{叶った}。",
+        exampleMeaning: "[After] years of hard work, my childhood dream finally {came true}."
       },
       {
         id: 40,
-        wordRuby: "眺{なが}める",
-        meaning: "to look out at・to gaze at",
+        wordRuby: "尽{つ}きる",
+        meaning: "to be exhausted・to run out",
         info: "〜末 (に) means: after ~ing for a long time・after a long period of ~ing・after much ~ing [ 〜した結果 ] (used to express that after a long time or many repetitions of an action, a certain result is achieved)\nIt emphasizes: the long duration or repeated nature of an action leading to a significant outcome, often highlighting the effort and perseverance involved.\nこの～末という表現は少しかたい表現なので日常生活で友達と使うことはほとんどない。",
         components: [
-          { kanji: "眺", meaning: "overlook" }
+          { kanji: "尽", meaning: "exhaust" }
         ],
-        example: "何時間も海を{眺めた}[末に]、自分が本当にやりたいことが[ようやく]見えてきた。",
-        exampleMeaning: "[After] spending hours {gazing} at the sea, I finally began to see what I truly want to do."
+        example: "何日も議論を重ねた[末に]、全員の意見が{尽きた}ところでようやく結論が出た。",
+        exampleMeaning: "[After] days of discussion, a conclusion was finally reached when everyone had {run out} of opinions.",
+        extraVocabulary: [
+          { wordRuby: "無{な}くなる", meaning: "to disappear・to be gone/・to run out" },
+        ],
       },
       {
         id: 41,
-        wordRuby: "散{ち}る",
-        meaning: "to scatter・to fall apart",
+        wordRuby: "噂{うわさ}",
+        meaning: "rumor・gossip",
         info: "〜くせに means: even though ~・despite the fact that ~ [ 〜なのに ] (used to express a contrast between two statements, often with a nuance of criticism, disappointment, or irony.)\nThis grammar is used to criticize someone's bad points or to express one's own dissatisfaction.",
         components: [
-          { kanji: "散", meaning: "scatter" }
+          { kanji: "噂", meaning: "rumor" }
         ],
-        example: "彼は桜が{散る}前に見に行きたいと言っていた[くせに]、結局家で寝ていた。",
-        exampleMeaning: "[Even though] he said he wanted to go see the cherry blossoms before they {fell}, [he ended up] staying home and sleeping.",
+        example: "{噂}の真偽も確かめていない[くせに]、彼はまるで事実である[かのように]話していた",
+        exampleMeaning: "[Even though] he hadn't even verified whether the {rumor} was true, he spoke as if it were a fact.",
         extraVocabulary: [
-          { wordRuby: "散{さん}歩{ぽ}", meaning: "walk" },
+          { wordRuby: "真{しん}偽{ぎ}", meaning: "truth or falsehood・authenticity" },
         ],
       },
-      {
+      { 
         id: 42,
         wordRuby: "柔{やわ}らかい",
         meaning: "soft",
@@ -665,20 +697,17 @@ export const N2ExtraWords: Record<string, TangoEntry> = {
       },
       {
         id: 48,
-        wordRuby: "困{こん}難{なん}",
-        meaning: "difficulty・hardship",
+        wordRuby: "挑{ちょう}戦{せん}",
+        meaning: "challenge・Attempt at something difficult",
         info: "〜だけあって means: precisely because ~・as one would expect from ~ [ 〜だから当然そうなる〜 ] (used to express that something is true or happens precisely because of a certain reason or condition, often highlighting the expected outcome based on that reason.)\nused to express a reason with 'because~', but it is used when the reason is special. It is often used when praising someone or saying something good.",
         components: [
-          { kanji: "困", meaning: "trouble" },
-          { kanji: "難", meaning: "difficult" }
+          { kanji: "挑", meaning: "challenge" },
+          { kanji: "戦", meaning: "battle" }
         ],
-        example: "彼は数々の{困難}を乗り越えてきた[だけあって]、少々の問題では動じない。",
-        exampleMeaning: "Having overcome numerous {hardships}, he isn't shaken by minor problems.",
+        example: "難しい目標に何年も{挑戦して}きた[だけあって]、彼は失敗しても簡単には諦めない",
+        exampleMeaning: "[Having] spent years {taking on difficult} goals, he doesn't give up easily when he fails, [as one would expect].",
         extraVocabulary: [
-          { wordRuby: "数{かず}々{かず}", meaning: "numerous" },
-          { wordRuby: "乗{の}り越{こ}える", meaning: "to overcome" },
-          { wordRuby: "少{しょう}々{しょう}", meaning: "a little・a few" },
-          { wordRuby: "動{どう}じる", meaning: "to be shaken・to be disturbed" },
+          { wordRuby: "諦{あきら}める", meaning: "to give up" },
         ],
       },
       {
@@ -712,21 +741,17 @@ export const N2ExtraWords: Record<string, TangoEntry> = {
       },
       {
         id: 51,
-        wordRuby: "曖{あい}昧{まい}",
-        meaning: "vague・ambiguous",
+        wordRuby: "賛{さん}成{せい}",
+        meaning: "approval・agreement",
         info: "〜をめぐって means: over ~・regarding ~・concerning ~ [ 〜について ] (used when a problem or dispute arises. It means 'about ~' and is used when you want to say that a dispute, disagreement, controversy, conflict or discussion arises centered around a certain topic)\nちょっとかたい表現なので日常的な話題に対してはあまり使うことはありません。",
         components: [
-          { kanji: "曖", meaning: "dim" },
-          { kanji: "昧", meaning: "ignorant" },
-          { kanji: "日", meaning: "sun" },
-          { kanji: "愛", meaning: "Love" },
-          { kanji: "末", meaning: "end" }
+          { kanji: "賛", meaning: "approve" },
+          { kanji: "成", meaning: "accomplish" }
         ],
-        example: "契約内容の{曖昧な}表現[をめぐって]、会社と顧客の間で意見が対立した。",
-        exampleMeaning: "Opinions clashed between the company and the customer over the {ambiguous} wording in the contract.",
+        example: "新しい駅の建設計画[をめぐって]、住民の間で{賛成}と反対の意見が対立している。",
+        exampleMeaning: "Opinions {for} and against the new station construction plan are divided among the residents.",
         extraVocabulary: [
-          { wordRuby: "契{けい}約{やく}", meaning: "contract" },
-          { wordRuby: "表{ひょう}現{げん}", meaning: "expression" },
+          { wordRuby: "建{けん}設{せつ}", meaning: "construction" },
           { wordRuby: "対{たい}立{りつ}", meaning: "conflict・confrontation" },
         ],
       },
@@ -895,24 +920,37 @@ export const N2ExtraWords: Record<string, TangoEntry> = {
       },
       {
         id: 63,
-        wordRuby: "そそっかしい",
-        meaning: "careless・absent-minded・prone to silly mistakes",
-        info: "It describes someone who: acts too quickly・forgets things easily・makes careless mistakes unintentionally\n〜てみせる means: I'll do it and prove it・I'll show you I can do it [ 〜できることを証明する ] (used when the speaker is strongly determined to accomplish something, often in response to: doubt, a challenge, a difficult situation, a promise)\n It shows determination, confidence, proving oneself.",
-        example: "{そそっかしい}性格はなかなか直らないが、重要な会議だけは絶対に遅刻せずに出席し[てみせる]。",
-        exampleMeaning: "My {careless} nature is hard to change, but I'll definitely attend this important meeting without being late [and prove that I can].",
+        wordRuby: "悪{あく}条{じょう}件{けん}",
+        meaning: "Unfavorable condition・bad term",
+        info: "〜てみせる means: I'll do it and prove it・I'll show you I can do it [ 〜できることを証明する ] (used when the speaker is strongly determined to accomplish something, often in response to: doubt, a challenge, a difficult situation, a promise)\n It shows determination, confidence, proving oneself.",
+        components: [
+          { kanji: "悪", meaning: "bad" },
+          { kanji: "条", meaning: "clause" },
+          { kanji: "件", meaning: "matter" }
+        ],
+        example: "周囲から無理だと言われても、{悪条件}をはね返して結果を[出してみせる]つもりだ。",
+        exampleMeaning: "Even if people around me say it's impossible, I intend to overcome the adverse conditions and produce results to prove them wrong.",
         extraVocabulary: [
-          { wordRuby: "遅{ち}刻{こく}", meaning: "being late" },
-          { wordRuby: "出{しゅっ}席{せき}", meaning: "attendance" },
+          { wordRuby: "周{しゅう}囲{い}", meaning: "surroundings・people around" },
         ],
       },
       {
         id: 64,
-        wordRuby: "おおよそ",
-        meaning: "approximately・roughly",
-        example: "出張の日程は{おおよそ}決まりました。",
-        exampleMeaning: "The business trip schedule has been {mostly/roughly} decided.",
+        wordRuby: "好{こう}条{じょう}件{けん}",
+        meaning: "Favorable condition・good term",
+        info: "〜一方だ means: continue to ~・become more and more ~ [ どんどん 〜 になる ] (used to express that a certain state or condition is continuously changing in a particular direction, often indicating a worsening or improving trend.)\nIt emphasizes: the ongoing nature of the change, suggesting that it is happening rapidly or significantly over time.",
+        components: [
+          { kanji: "好", meaning: "good" },
+          { kanji: "条", meaning: "clause" },
+          { kanji: "件", meaning: "matter" }
+        ],
+        example: "IT業界では{好条件}の求人が増える[一方で]、人材不足も深刻化している。",
+        exampleMeaning: "In the IT industry, while the number of job openings with {attractive conditions} [continues to] increase, the labor shortage is also becoming more severe.",
         extraVocabulary: [
-          { wordRuby: "だいたい", meaning: "roughly・generally" }
+          { wordRuby: "業{ぎょう}界{かい}", meaning: "industry・sector" },
+          { wordRuby: "求{きゅう}人{じん}", meaning: "job opening・Recruitment" },
+          { wordRuby: "人{じん}材{ざい}", meaning: "talent・human resources" },
+          { wordRuby: "深{しん}刻{こく}", meaning: "serious・severe" },
         ]
       },
       {
@@ -988,31 +1026,32 @@ export const N2ExtraWords: Record<string, TangoEntry> = {
       },
       {
         id: 70,
-        wordRuby: "鋭{するど}い",
-        meaning: "sharp・keen",
-        info: "it’s used in both a physical and abstract sense. Physically sharp (Something with a sharp edge or point.)・Mentally sharp / perceptive\n\n〜にならない means: cannot compare to ~・is on a completely different level from ~・is nowhere near ~ [ 〜と比べ物にならない・～と比べることができないほど差がある ] (used to express that something is not comparable to something else, often because it is much better, worse, or different in some significant way.)\nIt emphasizes: a significant difference in quality, ability, or characteristics between two things, often suggesting that one is far superior or inferior to the other.\n\nThis grammar is most commonly seen as: AはBにならない・AはBの比にならない",
+        wordRuby: "修{おき}める",
+        meaning: "to master (a skill)・to complete (a course of study)",
+        info: "〜にならない means: cannot compare to ~・is on a completely different level from ~・is nowhere near ~ [ 〜と比べ物にならない・～と比べることができないほど差がある ] (used to express that something is not comparable to something else, often because it is much better, worse, or different in some significant way.)\nIt emphasizes: a significant difference in quality, ability, or characteristics between two things, often suggesting that one is far superior or inferior to the other.\n\nThis grammar is most commonly seen as: AはBにならない・AはBの比にならない",
         components: [
-          { kanji: "鋭", meaning: "sharp" },
-          { kanji: "金 radical", meaning: "(metal) → related to blades/tools" },
-          { kanji: "兑 radical", meaning: "phonetic component" }
+          { kanji: "修", meaning: "discipline" },
         ],
-        example: "彼の{鋭い}観察力は私の比[にならず]、わずかな変化でもすぐに気付いてしまう。",
-        exampleMeaning: "His {keen} powers of observation are [nothing compared to] mine, he notices even the slightest changes immediately.",
+        example: "数年間独学で学んだ程度の知識は、大学で専門的に学問を{修めた}人の知識[にならない]。",
+        exampleMeaning: "The knowledge gained through a few years of self-study [is nowhere near that] of someone who has formally {mastered} an academic field at university.",
         extraVocabulary: [
-          { wordRuby: "観{かん}察{さつ}力{りょく}", meaning: "powers of observation" },
-          { wordRuby: "わずかな", meaning: "slight" },
+          { wordRuby: "数{すう}年{ねん}間{かん}", meaning: "for several years" },
+          { wordRuby: "独{どく}学{がく}", meaning: "self-study" },
+          { wordRuby: "学{がく}問{もん}", meaning: "academic field・study" },
+          { wordRuby: "程{てい}度{ど}", meaning: "level of mastery" }
         ]
       },
       {
         id: 71,
-        wordRuby: "はきはき",
-        meaning: "speaking clearly・energetically・in a lively, straightforward way",
-        info: "commonly used to describe: speech・answers・attitude・behavior\n\n〜あまり means: because of being too ~・due to excessive ~・so much that ~ [ とても〜で、その結果... ] ( used when a feeling, state, or action becomes excessive. That excess leads to an unexpected or undesirable result.)\nAが強すぎる --> その結果 B",
-        example: "面接では{はきはき}話そうとする[あまり]、かえって早口になってしまい、うまく伝えられなかった。",
-        exampleMeaning: "Because I [tried too hard] to {speak clearly} in the interview, I ended up talking too fast and couldn't express myself well.",
-        extraVocabulary: [
-          { wordRuby: "早{はや}口{くち}", meaning: "fast talk" },
+        wordRuby: "目{め}をとめる",
+        meaning: "To pay attention to・To take notice of",
+        info: "〜あまり means: because of being too ~・due to excessive ~・so much that ~ [ とても〜で、その結果... ] ( used when a feeling, state, or action becomes excessive. That excess leads to an unexpected or undesirable result.)\nAが強すぎる --> その結果 B",
+        components: [
+          { kanji: "目", meaning: "eye" },
+          { kanji: "止める", meaning: "to stop" }
         ],
+        example: "美しい景色に{目をとめた}[あまり]、電車を降りる駅を通り過ぎてしまった。",
+        exampleMeaning: "I became [so] {absorbed in} a beautiful view that caught my eye that I missed my station.",
       },
       {
         id: 72,
@@ -1101,15 +1140,21 @@ export const N2ExtraWords: Record<string, TangoEntry> = {
       },
       {
         id: 78,
-        wordRuby: "電{でん}源{げん}",
-        meaning: "power source・electricity",
+        wordRuby: "低{てい}価{か}格{かく}",
+        meaning: "low price",
         info: "～のであれば is a conditional expression meaning: if it is the case that…・if indeed…; It sounds: explanatory・cautious・softer than a direct conditional.・More analytical/explanatory",
         components: [
-          { kanji: "電", meaning: "electricity" },
-          { kanji: "源", meaning: "source" }
+          { kanji: "低", meaning: "low" },
+          { kanji: "価", meaning: "price" },
+          { kanji: "格", meaning: "standard" }
         ],
-        example: "客:「カメラを海に落としてしまって、 {電源}が入らないんです。 中に水が入ってしまったようなのですが...」。\n店員:「海水が入った[のであれば]、修理は難しいかもしれませんが、一応見てみますね」",
-        exampleMeaning: "I dropped my camera in the ocean, and now it won’t {turn on}. It seems like water got inside...\n[If] seawater got inside, repairing it might be difficult, but I’ll take a look at it anyway."
+        example: "{低価格}でありながら高品質な製品を求める[のであれば]、複数のメーカーを比較したほうがよい。",
+        exampleMeaning: "[If] you're looking for a product that is both {low-priced} and high-quality, you should compare several manufacturers.",
+        extraVocabulary: [
+          { wordRuby: "高{こう}品{ひん}質{しつ}", meaning: "high quality" },
+          { wordRuby: "複{ふく}数{すう}", meaning: "multiple・several" },
+          { wordRuby: "比{ひ}較{かく}", meaning: "comparison" },
+        ]
       },
       {
         id: 79,
@@ -1238,17 +1283,17 @@ export const N2ExtraWords: Record<string, TangoEntry> = {
       },
       {
         id: 89,
-        wordRuby: "迎{むか}える",
-        meaning: "to welcome・to receive・to meet (someone arriving)・to reach (a time, stage, or milestone)",
+        wordRuby: "乗{の}り越{こ}える",
+        meaning: "to overcome・to get over",
         info: "Vます stem + ようがない means: there’s no way to ~・it’s impossible to ~・have no means of ~ (used to express that there is no method, means, or possibility to do something)\nIt emphasizes: the complete lack of options or possibilities for achieving a certain action or outcome.",
         components: [
-          { kanji: "迎", meaning: "welcome" },
+          { kanji: "乗", meaning: "ride" },
+          { kanji: "越", meaning: "cross" },
         ],
-        example: "[締め切り]まで一週間しかないのに資料がまだ完成していないので、このままではプロジェクトの[開始日]を{迎え}[ようがない]。",
-        exampleMeaning: "There is only one week left until the [deadline] and the materials are still not finished, so at this rate [there's no way] we can {reach} the project's [start date].",
+        example: "一人で抱え込んでいては、この困難を{乗り越え}[ようがない]。",
+        exampleMeaning: "If you keep dealing with it all by yourself, [there's no way to] [overcome] this difficulty.",
         extraVocabulary: [
-          { wordRuby: "締{し}め切{き}り", meaning: "deadline" },
-          { wordRuby: "開{かい}始{し}日{び}", meaning: "start date" }
+          { wordRuby: "抱{かか}え込{こ}む", meaning: "to take on (a problem)・to shoulder (a burden)" },
         ],
       },
       {
@@ -1724,6 +1769,7 @@ export const N2ExtraWords: Record<string, TangoEntry> = {
           { wordRuby: "振{ふ}る舞{ま}い", meaning: "behavior・conduct" },
           { wordRuby: "マナー", meaning: "manners" },
         ],
+        important: true,
       },
       {
         id: 123,
@@ -1828,81 +1874,22 @@ export const N2ExtraWords: Record<string, TangoEntry> = {
       }
     ],
   },
-  // 握手   あくしゅ   handshake 握る   にぎる   to grasp・to hold    パン屋
-  // 無くなる なくなる   to be lost・to disappear・to run out of (e.g., supplies)s
-  // 伴う  ともなう   to accompany・to bring with・to involve 一緒に着いてくる
-  // 疑う うたがう   to doubt・to distrust・to be suspicious of あなたが言っていること本当かどうかわからないからとりあえず信じませんみたいな
-  // 破片 はへん   fragment・splinter・piece of something broken  破れる   やぶれる   to break・to tear
-  // 歯型 はがた   tooth mark・bite mark
-  // 敬う うやまう   to respect・to honor・to revere  敬語
-  // 尊い とうとい   precious・valuable・noble 尊敬 そんけい   respect 
-  // 命令 めいれい   order・command
-  // 意外 いがい   unexpected・surprising
-  // 羨ましい うらやましい   envious・jealous
-  // 厳重 げんじゅう   strict・severe・tight security   厳しい  きびしい   strict・severe
-  // 貴社 きしゃ   your company (used in business letters)  貴方 きしゃ   you (polite)
-  // 拝見 はいけん   to see・to look at (humble)  拝む おがむ   to worship・to pray
-  // 従う したがう   to obey・to follow・to comply with
-  // 立ち止まる たちどまる   to stop・to halt・to stand still
-  // 立派な りっぱな   splendid・fine・admirable
-  // 治める おさめる   to govern・to rule・to manage
-  // 修める おさめる   to master (a skill)・to complete (a course of study)
-  // 深刻な しんこくな   serious・grave  重大な じゅうだいな   serious・important 深い  刻む
-  // 複雑な ふくざつな   complicated・complex
-  // 真剣な しんけんな   serious・earnest 真面目なこと
-  // 冷静な れいせいな   calm・composed
-  // 通行   つうこう   passage・traffic  通る とおる   to pass through
-
-  //TODO: GRAMMAR
-  // 〜の際
 };
 
-// 誇る   ほこる   to be proud of
-// 衣装   いしょう   costume
-// 花嫁   はなよめ   bride
-// 瓶    びん   bottle
-// 詰める  つめる   to pack・to fill
-// 孫    まご   grandchild
-// 様子  ようす   state・situation
-// 囲む  かこむ   to surround
-// 睡眠 すいみん   sleep
-// 温暖化 おんだんか   global warming
-// 深刻 しんこく   serious・grave
-// 諸外国 しょがいこく   foreign countries・various foreign countries・other countries around the world
-// 昇進 しょうしん   promotion
-// 背景 はいけい   background
-// 張る はる   to stretch・to stick
-// なかなか   quite・considerably・not easily
-// 追い払う おいはらう   to drive away・to chase away
-// 拍手 はくしゅ   applause
-// 沸き起こる わきおこる   to arise suddenly・to break out (e.g., applause, laughter, etc.)
-// 倒産 とうさん   bankruptcy
-// 受け止める うけとめる   to receive and deal with something・to take something seriously・to accept something emotionally or mentally
-// 珍しい めずらしい   rare・unusual
-// 勘違い かんちがい   misunderstanding
-// 作法 さほう   manners・etiquette
-// 携わる たずさわる   to be involved in・to engage in
-// 従事 じゅうじ   to engage in・to be occupied with
-// 関心 かんしん   interest・concern
-// 一言 ひとこと   a few words・a brief comment
-// 何気ない なにげない   casual・unintentional
-// 水を差す みずをさす   to spoil the mood・to throw cold water on something
-// 賛成 さんせい   agreement・approval
-// 邪魔 じゃま   hindrance・obstacle
-// 邪魔する じゃまする   to disturb・to get in the way
-// 知識 ちしき   knowledge
-// 身に付ける みにつける   to acquire knowledge・to learn
-// 使命 しめい   mission・purpose
-// 集約する しゅうやくする   to summarize・to condense
-// 目をとめる めをとめる   to pay attention to・to take notice of
-// 右に出る みぎにでる (者はいない)   to surpass・to be second to none
-// しみ込む しみこむ   to soak into・to permeate
-// 泥棒 どろぼう   thief
-// 展覧会 てんらんかい   exhibition
-// 育児休暇 いくじきゅうか   childcare leave
-// すでに
-// わが家   わがや   our home・my home・one's own home
-// チラシ   ちらし   flyer・leaflet
-// 不動産屋 ふどうさんや   real estate agent
-// ものは考えようで it depends on how you look at it・it is all a matter of perspective
-// 交流 こうりゅう   exchange・interaction
+
+//TODO: trocar vocab id 65
+
+// GRAMMAR
+// にもなって     彼は大学生にもなってまだ親にお金をもらっている。(なのに)
+// にでもなって
+// にもなれば
+// にでもなれば
+// といっても
+
+
+
+//TODO: important 833
+
+
+
+
