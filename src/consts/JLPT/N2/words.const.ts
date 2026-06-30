@@ -151,7 +151,10 @@ export const N2ExtraWords: Record<string, TangoEntry> = {
         example: "部屋の荷物を{徐々に}減らしたいんだけど、この本を何冊か[もらってくれない？]",
         exampleMeaning: "I'd like to {gradually} reduce the amount of stuff in my room, so could you take a few of these books for me?",
         extraVocabulary: [
-          { wordRuby: "冊{さつ}", meaning: "volume・copy" }
+          { wordRuby: "冊{さつ}", meaning: "volume・copy" },
+          { wordRuby: "次{し}第{だい}に", meaning: "Gradually・little by little" },
+          { wordRuby: "だんだん", meaning: "gradually" },
+          { wordRuby: "少{すこ}しずつ", meaning: "little by little" }
         ]
       },
       {
@@ -867,12 +870,20 @@ export const N2ExtraWords: Record<string, TangoEntry> = {
       },
       {
         id: 59,
-        wordRuby: "もてなす",
-        meaning: "to treat someone hospitably・to entertain guests",
-        example: "両親はおいしい料理で客を{もてなす}のが好きだ。",
-        exampleMeaning: "To {treat} customers {hospitably}",
+        wordRuby: "損{そん}壊{かい}",
+        meaning: "damage・destruction",
+        info: "〜かねる means: cannot do ~・unable to do ~・find it difficult to do ~ [ 〜することができない ] (used to express that one is unable to do something, often due to a lack of ability, resources, or willingness.)\nIt emphasizes: the speaker's inability or unwillingness to perform a certain action, often suggesting that it is beyond their capacity or that they are reluctant to do so. Used for psychological or official inability to comply with a request.",
+        components: [
+          { kanji: "損", meaning: "loss" },
+          { kanji: "壊", meaning: "break" }
+        ],
+        example: "大地震[による]建物の{損壊}状況が深刻なため、これ以上の立ち入りは[認めかねます]。",
+        exampleMeaning: "Because the {damage} to the building [from the] earthquake is severe, [we are unable to] permit any further entry.",
         extraVocabulary: [
-          { wordRuby: "おもてなし", meaning: "hospitable treatment ( 日本のおもてなし文化 )" },
+          { wordRuby: "状{じょう}況{きょう}", meaning: "situation" },
+          { wordRuby: "深{しん}刻{こく}", meaning: "serious・severe" },
+          { wordRuby: "立{た}ち入{い}る", meaning: "to enter・to go into" },
+          { wordRuby: "認{みと}める", meaning: "to recognize・to admit" }
         ],
       },
       {
@@ -896,7 +907,7 @@ export const N2ExtraWords: Record<string, TangoEntry> = {
         id: 61,
         wordRuby: "運{うん}休{きゅう}",
         meaning: "Service suspension・Canceled operation",
-        info: "It is mainly used for: trains・buses・flights・transportation services\n\n〜においで is the same as particle で, is a formal expression often used in: news reports, business documents, academic writing, speeches.",
+        info: "It is mainly used for: trains・buses・flights・transportation services\n\n〜において is the same as particle で, is a formal expression often used in: news reports, business documents, academic writing, speeches.",
         components: [
           { kanji: "運", meaning: "Transport" },
           { kanji: "休", meaning: "Rest・Holiday" }
@@ -1055,15 +1066,19 @@ export const N2ExtraWords: Record<string, TangoEntry> = {
       },
       {
         id: 72,
-        wordRuby: "着{ちゃく}々{ちゃく}",
-        meaning: "steadily progressing・step by step・smoothly and consistently progressing",
-        connector: "と",
+        wordRuby: "被{ひ}災{さい}",
+        meaning: "to be affected by a disaster・to suffer damage from a disaster",
+        info: "〜に際して means: on the occasion of ~・at the time of ~ [ 〜のとき ] (used to indicate that something happens at a specific time or during a particular event.)\nIt emphasizes: the timing of important milestones, events, or official actions, often highlighting that it occurs during a significant or noteworthy occasion.",
         components: [
-          { kanji: "着", meaning: "arrive・wear" },
-          { kanji: "々", meaning: "kanji repetition" }
+          { kanji: "被", meaning: "Incur" },
+          { kanji: "災", meaning: "disaster" }
         ],
-        example: "来週のパーティーの準備は{着々と}進んでいるようだ。",
-        exampleMeaning: "It seems the preparations for next week’s party are {steadily} progressing."
+        example: "{被災}地の復興支援[に際して]、全国から多くのボランティアが集まった。",
+        exampleMeaning: "[On the occasion of] supporting the reconstruction of the {disaster-affected} areas, many volunteers gathered from all over the country.",
+        extraVocabulary: [
+          { wordRuby: "復{ふっ}興{こう}", meaning: "reconstruction・revival" },
+          { wordRuby: "支{し}援{えん}", meaning: "support・assistance" },
+        ],
       },
       {
         id: 73,
@@ -1088,7 +1103,7 @@ export const N2ExtraWords: Record<string, TangoEntry> = {
         id: 74,
         wordRuby: "優{ゆう}勝{しょう}",
         meaning: "victory・winning a tournament",
-        info: "It’s used when someone finishes in 1st place overall in a competition or tournament.",
+        info: "It’s used when someone finishes in 1st place overall in a competition or tournament. \n\n① ～にあたり means: on the occasion of ~・at the time of ~・upon ~ [ 〜のとき ] (used to indicate that something happens at a specific time or during a particular event.)\nIt emphasizes: the timing of an action or event, often highlighting that it occurs during a significant or noteworthy occasion.  \n\n② ～にあたって means: when beginning...・when undertaking...・in preparation for... - Used when someone is about to start an important action or phase.",
         components: [
           { kanji: "優", meaning: "excellent・superior" },
           { kanji: "勝", meaning: "win" }
@@ -1195,13 +1210,22 @@ export const N2ExtraWords: Record<string, TangoEntry> = {
       },
       {
         id: 82,
-        wordRuby: "慰{なぐさ}める",
-        meaning: "to comfort・to console",
+        wordRuby: "異{い}常{じょう}",
+        meaning: "abnormality・unusualness・strangeness",
+        info: "V. ます STEM + 〜得る means: can ~・be possible to ~・be able to ~ [〜の可能性がある] (used to express that something is possible or capable of happening)\nThe word '得る' means to obtain or acquire something. When a verb is attached before it, as in ～し得る, it means that there is a possibility of being able to do something.\n\n〜であっても means: even if it is ~・even though it is ~ (used to express that a certain condition or state does not change the outcome or situation)\nIt emphasizes: the persistence of a fact or situation despite a specific condition, highlighting that the stated condition does not alter the reality of what follows.",
         components: [
-          { kanji: "慰", meaning: "comfort" },
+          { kanji: "異", meaning: "different" },
+          { kanji: "常", meaning: "normal" }
         ],
-        example: "彼女は彼に{慰め}を与えた。",
-        exampleMeaning: "She {comforted} him."
+        example: "どんなに管理されたシステム[であっても]、機械である以上は{異常}が発生し[得る]。",
+        exampleMeaning: "No matter how well-managed a system is, as long as it is a machine, abnormalities can possibly occur.",
+        extraVocabulary: [
+          { wordRuby: "管{かん}理{り}", meaning: "management" },
+          { wordRuby: "機{き}械{かい}", meaning: "machine" },
+          { wordRuby: "発{はっ}生{せい}", meaning: "occurrence・happening" },
+          { wordRuby: "異{こと}なる", meaning: "different・unusual" },
+          { wordRuby: "常{つね}に", meaning: "common sense・general knowledge" }
+        ],
       },
       {
         id: 83,
@@ -1308,15 +1332,21 @@ export const N2ExtraWords: Record<string, TangoEntry> = {
       },
       {
         id: 91,
-        wordRuby: "乏{とぼ}しい",
-        meaning: "scarce・lacking・insufficient",
+        wordRuby: "汚{お}染{せん}",
+        meaning: "pollution・contamination",
+        info: "〜につき means: due to ~・because of ~・on account of ~ (A formal, written expression commonly used in notices or official explanations. Used to indicate the reason or cause for something)\nIt emphasizes: the cause or reason for a situation, often used in formal announcements or explanations.",
         components: [
-          { kanji: "乏", meaning: "scarcity" },
+          { kanji: "汚", meaning: "pollute" },
+          { kanji: "染", meaning: "stain" },
         ],
-        example: "この土地は自然が{乏しく}、人工的な雰囲気が強い地域である。",
-        exampleMeaning: "This land is lacking in natural resources and is a region with a strong artificial atmosphere.",
+        example: "工場排水による河川の{汚染}問題[につき]、来週、住民説明会が開催される。",
+        exampleMeaning: "[Due to] the issue of river {contamination} caused by factory wastewater, a briefing for residents will be held next week.",
         extraVocabulary: [
-          { wordRuby: "人{じん}工{こう}", meaning: "artificial" },
+          { wordRuby: "工{こう}場{じょう}", meaning: "factory" },
+          { wordRuby: "排{はい}水{すい}", meaning: "wastewater" },
+          { wordRuby: "河{か}川{せん}", meaning: "river" },
+          { wordRuby: "住{じゅう}民{みん}", meaning: "resident" },
+          { wordRuby: "開{かい}催{さい}", meaning: "holding an event" },
         ],
       },
       {
@@ -1705,18 +1735,20 @@ export const N2ExtraWords: Record<string, TangoEntry> = {
       },
       {
         id: 119,
-        wordRuby: "迎{むか}える",
-        meaning: "to welcome・to receive・to reach (a stage, age, anniversary, etc.)",
+        wordRuby: "深{しん}呼{こ}吸{きゅう}",
+        meaning: "deep breathing・taking a deep breath",
         info: "〜に先立って means: prior to ~・before ~ [ 〜の前に ] (used to express that something happens before a certain event or action takes place)\nIt emphasizes: the idea that one event occurs before another, often highlighting the importance of the first event in relation to the second.",
         components: [
-          { kanji: "迎", meaning: "welcome" },
+          { kanji: "深", meaning: "deep" },
+          { kanji: "呼吸", meaning: "breathing" }
         ],
-        example: "新年度を{迎える}[に先立って]、全社員を対象とした研修が行われた。",
-        exampleMeaning: "[Prior to] the {start of} the new fiscal year, training was conducted for all employees.",
+        example: "本番のステージに登壇する[に先立って]、舞台裏で一度{深呼吸}をして気持ちを落ち着かせた。",
+        exampleMeaning: "[Prior to] stepping onto the stage for the actual performance, I took a {deep breath} backstage to calm my nerves.",
         extraVocabulary: [
-          { wordRuby: "新{しん}年{ねん}度{ど}", meaning: "new fiscal year" },
-          { wordRuby: "対{たい}象{しょう}", meaning: "target・subject" },
-          { wordRuby: "研{けん}修{しゅう}", meaning: "training" },
+          { wordRuby: "本{ほん}番{ばん}", meaning: "actual performance・real thing" },
+          { wordRuby: "登{とう}壇{だん}", meaning: "stepping onto the stage" },
+          { wordRuby: "舞{ぶ}台{たい}裏{うら}", meaning: "backstage・behind the scenes" },
+          { wordRuby: "落{お}ち着{つ}く", meaning: "to calm down・to settle down" },
         ],
       },
       {
@@ -1734,23 +1766,20 @@ export const N2ExtraWords: Record<string, TangoEntry> = {
       },
       {
         id: 121,
-        wordRuby: "交{こう}渉{しょう}",
-        meaning: "negotiation",
+        wordRuby: "論{ろん}じる",
+        meaning: "to discuss・to argue・to debate",
         info: "〜抜きで means: without ~ing・without ~・leaving aside ~ [ 〜なしで ] (used to express that something is done without a certain element or factor, often highlighting the importance of that element in a situation)",
         components: [
-          { kanji: "交", meaning: "to meet" },
-          { kanji: "渉", meaning: "to involve" }
+          { kanji: "論", meaning: "argument・discussion" },
         ],
-        example: "感情論[抜きで]{交渉}を進めなければ、双方が納得する結論には至らない。",
-        exampleMeaning: "Unless {negotiations} proceed [without] emotional arguments, the two sides will not reach a mutually acceptable conclusion.",
+        example: "感情的な意見は[抜きで]、客観的なデータのみに基づいて今後の対策を{論じる}べきだ。",
+        exampleMeaning: "[Leaving aside] emotional opinions, we should {discuss} future countermeasures based solely on objective data.",
         extraVocabulary: [
-          { wordRuby: "感{かん}情{じょう}論{ろん}", meaning: "emotional argument" },
-          { wordRuby: "抜{ぬ}き", meaning: "without" },
-          { wordRuby: "双{そう}方{ほう}", meaning: "both sides" },
-          { wordRuby: "納{なっ}得{とく}", meaning: "consent" },
-          { wordRuby: "結{けつ}論{ろん}", meaning: "conclusion" },
-          { wordRuby: "至{いた}る", meaning: "to reach" },
+          { wordRuby: "感{かん}情{じょう}的{てき}な", meaning: "emotional" },
+          { wordRuby: "客{きゃっ}観{かん}", meaning: "objective" },
+          { wordRuby: "対{たい}策{さく}", meaning: "countermeasure・plan" },
         ],
+        
       },
       {
         id: 122,
@@ -1842,19 +1871,22 @@ export const N2ExtraWords: Record<string, TangoEntry> = {
       },
       {
         id: 128,
-        wordRuby: "劣{おと}る",
-        meaning: "to be inferior・be worse than・fall behind",
-        info: "〜反面 means: on the other hand・while ~ [ 〜なところがあるが、反対に。。。 ] (used to express a contrast between two aspects of a situation, where one aspect is positive and the other is negative)\nIt emphasizes: the idea that while one aspect of a situation may be true, there is also an opposite or contrasting aspect that should be considered.",
+        wordRuby: "涼{すず}しい",
+        meaning: "cool・refreshing",
+        info: "〜反面 means: on the other hand・while ~ [ 〜なところがあるが、反対に。。。 ] (used to express a contrast between two aspects of a situation, where one aspect is positive and the other is negative) It shows that while one side of a situation is true, the exact opposite is also true.\nIt emphasizes: the idea that while one aspect of a situation may be true, there is also an opposite or contrasting aspect that should be considered.",
         components: [
-          { kanji: "劣", meaning: "inferior" },
+          { kanji: "涼", meaning: "cool" },
         ],
-        example: "この製品は価格が安い[反面]、耐久性の面では競合製品に{劣っている}。",
-        exampleMeaning: "[While] this product is inexpensive, it is {inferior} to competing products in terms of durability.",
+        example: "高原の別荘地は、夏でも{涼しく}て快適である[反面]、冬の寒さは非常に厳しく暮らしにくい。",
+        exampleMeaning: "[While] the mountain resort area is {cool} and comfortable even in summer, on the other hand, the winter cold is extremely severe and makes it difficult to live.",
         extraVocabulary: [
-          { wordRuby: "反{はん}面{めん}", meaning: "on the other hand" },
-          { wordRuby: "耐{たい}久{きゅう}性{せい}", meaning: "durability" },
-          { wordRuby: "競{きょう}合{ごう}", meaning: "competition" },
+          { wordRuby: "高{こう}原{げん}", meaning: "plateau・highland・elevated flat area of land" },
+          { wordRuby: "別{べっ}荘{そう}地{ち}", meaning: "villa area・resort area・vacation-home area" },
+          { wordRuby: "快{かい}適{てき}", meaning: "comfortable・pleasant" },
+          { wordRuby: "非{ひ}常{じょう}に", meaning: "very・extremely" },
+          { wordRuby: "厳{きび}しい", meaning: "severe・strict" },
         ],
+        
       },
       {
         id: 129,
@@ -1871,25 +1903,290 @@ export const N2ExtraWords: Record<string, TangoEntry> = {
           { wordRuby: "求{もと}める", meaning: "to ask for・to seek" },
           { wordRuby: "黙{だま}る", meaning: "to be silent" },
         ],
+      },
+      {
+        id: 130,
+        wordRuby: "未{み}払{ばら}い",
+        meaning: "unpaid・outstanding balance",
+        info: "〜わりに means: considering ~・despite ~ (Used when the actual outcome does not match expectations. It is used to express that something is contrary to what one would expect based on a certain condition or factor.)\nIt emphasizes: the contrast between expectations and reality, often highlighting a surprising or unexpected result that goes against what was anticipated.",
+        components: [
+          { kanji: "未", meaning: "not yet" },
+          { kanji: "払", meaning: "pay" }
+        ],
+        example: "数ヶ月も給料が{未払い}である[わりに]、彼は悲観的な様子もなく、いつも通りに働いている。",
+        exampleMeaning: "[Considering] his salary has been {unpaid} for several months, he shows no signs of pessimism and is working just as usual.",
+        extraVocabulary: [
+          { wordRuby: "数{すう}ヶ{か}月{げつ}", meaning: "several months" },
+          { wordRuby: "悲{ひ}観{かん}的{てき}な", meaning: "pessimistic" },
+          { wordRuby: "様{よう}子{す}", meaning: "appearance・state" }
+        ],
+      },
+      {
+        id: 131,
+        wordRuby: "口{くち}癖{ぐせ}",
+        meaning: "catchphrase・Favorite phrase・habit of saying",
+        info: "〜にしては means: for a ~・considering that ~・for someone who is ~ (Points out a discrepancy based on a specific standard or fact.)",
+        components: [
+          { kanji: "口", meaning: "mouth" },
+          { kanji: "癖", meaning: "habit" }
+        ],
+        example: "「お金がない」が{口癖}である[にしては]、彼は毎週のように高級なレストランで外食をしている。",
+        exampleMeaning: "[Considering that] 'I have no money' is his {favorite phrase}, he dines out at expensive restaurants almost every week.",
+        extraVocabulary: [
+          { wordRuby: "高{こう}級{きゅう}", meaning: "high-class・luxury" },
+          { wordRuby: "外{がい}食{しょく}", meaning: "eating out・dining out" }
+        ],
+      },
+      {
+        id: 132,
+        wordRuby: "心{こころ}当{あ}たり",
+        meaning: "a clue・an idea of what might be causing something・a suspicion that 'this might be it'",
+        info: "〜にしても means: even if ~・even though ~ [ 〜でも ] (used to express that a certain condition or situation is true, even if another condition or situation is also true. Concedes a point but shows that the main opinion remains unchanged.)\n\n〜限り means: as long as you are in a certain state・while ~・to the extent that ~ (used when you want to say that as long as you are in a certain state, the same situation will continue. The word '限り' is used to set a limit or extent. Therefore, when you say '~限り', it means that as long as you are in the state of doing something, the same situation will continue within that limit.)",
+        components: [
+          { kanji: "心", meaning: "heart" },
+          { kanji: "当", meaning: "Hit" }
+        ],
+        example: "何か{心当たり}がある[にしても]、警察の捜査が始まらない[限り]、自分から動くべきではない。",
+        exampleMeaning: "[Even if] you have some {clue}, you shouldn't act on your own [until] the police investigation begins.",
+        extraVocabulary: [
+          { wordRuby: "捜{そう}査{さ}", meaning: "investigation" },
+        ],
+      },
+      {
+        id: 133,
+        wordRuby: "収{おさ}まる",
+        meaning: "To settle down・to subside・to be resolved",
+        info: "〜折に means: at the time of ~・on the occasion of ~ [ 〜のとき ] (used to indicate that something happens or is done at a specific time or occasion, often highlighting the timing or context of an action or event)\nA formal equivalent of 「とき」, used when a good opportunity arises.",
+        components: [
+          { kanji: "収", meaning: "to collect" },
+        ],
+        example: "今回の感染症の流行が{収まった}[折に]、改めて海外旅行の計画を立て直したい。",
+        exampleMeaning: "[When] this current infectious disease outbreak {subsides}, I want to re-plan my trip abroad.",
+        extraVocabulary: [
+          { wordRuby: "感{かん}染{せん}症{しょう}", meaning: "infectious disease" },
+          { wordRuby: "流{りゅう}行{こう}", meaning: "outbreak・epidemic・fashion" },
+          { wordRuby: "改{あらた}めて", meaning: "again・once more" },
+          { wordRuby: "計{けい}画{かく}", meaning: "plan" },
+        ],
+      },
+      {
+        id: 134,
+        wordRuby: "異{い}文{ぶん}化{か}",
+        meaning: "different culture・cross-cultural",
+        info: "〜を通して means: through ~・via ~・by means of ~ : Using something as a medium or channel to accomplish or experience something. (used to express that something is done or experienced by using a certain method, medium, or means)",
+        components: [
+          { kanji: "異", meaning: "different" },
+          { kanji: "文", meaning: "sentence" },
+          { kanji: "化", meaning: "change" }
+        ],
+        example: "留学先での生活を[通して]、さまざまな{異文化}に触れ、視野を広げることができた。",
+        exampleMeaning: "[Through] living at my study abroad destination, I was able to experience various {different cultures} and broaden my perspective.",
+        extraVocabulary: [
+          { wordRuby: "触{ふ}れる", meaning: "to touch・to experience" },
+          { wordRuby: "視{し}野{や}", meaning: "field of vision・perspective" },
+          { wordRuby: "異{こと}なる", meaning: "different" }
+        ],
+      },
+      {
+        id: 135,
+        wordRuby: "誓{ちか}う",
+        meaning: "to vow・to promise・to swear・to pledge",
+        info: "N + 〜を込めて means: with ~ ・putting feelings into (Channeling deep feelings, wishes, or effort into an action.) (used to express that something is done with a certain feeling, intention, or emotion in mind)\nIt emphasizes: the idea that the action is performed with a specific sentiment or purpose, often highlighting the emotional significance of the act.",
+        components: [
+          { kanji: "誓", meaning: "vow" },
+        ],
+        example: "彼は生涯の愛[を込めて]、彼女の前に跪き、永遠の愛を{誓った}。",
+        exampleMeaning: "[With] a heart full of lifelong love, he knelt before her and {pledged} his eternal love.",
+        extraVocabulary: [
+          { wordRuby: "生{しょう}涯{がい}", meaning: "lifetime" },
+          { wordRuby: "跪{ひざまづ}く", meaning: "to kneel" },
+          { wordRuby: "永{えい}遠{えん}", meaning: "eternity・forever" },
+          { wordRuby: "約{やく}束{そく}", meaning: "promise" }
+        ],
+      },
+      {
+        id: 136,
+        wordRuby: "たちまち",
+        meaning: "instantly・in a moment",
+        info: "〜だけに means: precisely because ~・all the more so because ~ [ 〜だからこそ ] (used to express that a certain situation or outcome is a direct result of a specific reason or condition, often emphasizing the cause-and-effect relationship between the two)",
+        example: "話題の有名シェフがプロデュースしたお菓子な[だけに]、発売されると{たちまち}売り切れてしまった。",
+        exampleMeaning: "[Precisely because] it was a sweet produced by a famous talked-about chef, it {instantly} sold out the moment it was released.",
+        extraVocabulary: [
+          { wordRuby: "話{わ}題{だい}", meaning: "topic・subject" },
+          { wordRuby: "すぐに", meaning: "instantly・right away" },
+        ],
+      },
+      {
+        id: 137,
+        wordRuby: "仰{あお}ぐ",
+        meaning: "to look up・to ask for (guidance)・to respect",
+        info: "～もしないで means: without even doing ~・without bothering to do ~ [ 〜せずに ] (used to express that someone does not take a certain action or make an effort to do something, often implying negligence or lack of consideration. Expresses strong criticism that someone skipped a fundamental step.)",
+        components: [
+          { kanji: "仰", meaning: "look up" },
+        ],
+        example: "先輩の指示を{仰ぎ}[もしないで]、独断で勝手に作業を進めるのは大きなトラブルの元になる。",
+        exampleMeaning: "Proceeding with the work arbitrarily on your own [without even] {seeking} your senior's {guidance} will become a source of major trouble.",
+        extraVocabulary: [
+          { wordRuby: "指{し}示{じ}", meaning: "instruction・guidance" },
+          { wordRuby: "独{どく}断{だん}", meaning: "arbitrary decision" },
+          { wordRuby: "勝{か}手{て}", meaning: "arbitrary・selfish" },
+          { wordRuby: "元{もと}になる", meaning: "source of trouble・to serve as the basis for" },
+        ],
+      },
+      {
+        id: 138,
+        wordRuby: "薄{うす}れる",
+        meaning: "to fade・to become thin・to weaken",
+        info: "〜ことで means: through ~・by doing ~・because of ~ (used to indicate the cause or reason for something, it indicates the direct method, means, or reason behind a result.)\n\n〜ものだ means: it is natural that ~・it is expected that ~・it is a fact that ~ [ 〜のは当然だ ] (used to express a general truth, natural occurrence, or common expectation about a situation or behavior)",
+        components: [
+          { kanji: "薄", meaning: "thin・weak" },
+        ],
+        example: "時間が経つ[ことで]、当時の辛い記憶も少しずつ{薄れて}いく[ものだ]。",
+        exampleMeaning: "[Through] the passage of time, the painful memories of those days are bound to {fade away} little by little.",
+        extraVocabulary: [
+          { wordRuby: "経{た}つ", meaning: "to pass (time)" },
+          { wordRuby: "記{き}憶{おく}", meaning: "memory" },
+        ],
+      },
+      {
+        id: 139,
+        wordRuby: "刻{きざ}む",
+        meaning: "to carve・to engrave・to mark・to etch into memory",
+        info: "N + 〜を基に・N + 〜をもとにして means: based on ~・using ~ as a foundation (used to indicate that something is created, developed, or derived from a certain source or reference point. Taking source material or historical facts to create something.)",
+        components: [
+          { kanji: "刻", meaning: "engrave" }
+        ],
+        example: "歴史的な事実[を基にした]小説のプロットを、彼は熱心にノートに{刻む}ように書き写した。",
+        exampleMeaning: "He copied down the plot of the novel [based on] historical facts into his notebook with intense focus, as if {engraving} it.",
+        extraVocabulary: [
+          { wordRuby: "歴{れき}史{し}", meaning: "history" },
+          { wordRuby: "事{じ}実{じつ}", meaning: "fact" },
+          { wordRuby: "熱{ねっ}心{しん}", meaning: "enthusiastic・ardent" },
+          { wordRuby: "書{か}き写{うつ}す", meaning: "to copy down・to write something down from another source" }
+        ],
+        
+      },
+      {
+        id: 140,
+        wordRuby: "儲{もう}ける",
+        meaning: "to make a profit・to gain money",
+        info: "〜までして means: going so far as to ~・even going to the extent of ~ [ 〜するほどのことをして ] (used to express that someone is willing to go to great lengths or take extreme measures to achieve a certain goal or outcome. Doing something extreme or beyond standard morals to achieve a goal.)",
+        components: [
+          { kanji: "儲", meaning: "profit" }
+        ],
+        example: "法律を破るような不正な手段[までして]お金を{儲ける}べきではない。",
+        exampleMeaning: "You shouldn't {make a profit} by [going so far as] to use illegal, fraudulent means that break the law.",
+        extraVocabulary: [
+          { wordRuby: "法{ほう}律{りつ}", meaning: "law" },
+          { wordRuby: "破{やぶ}る", meaning: "to break・to violate" },
+          { wordRuby: "不{ふ}正{せい}な", meaning: "fraudulent・illegal・improper" },
+          { wordRuby: "手{しゅ}段{だん}", meaning: "means・method" }
+        ],
+      },
+      {
+        id: 141,
+        wordRuby: "設{もう}ける",
+        meaning: "to establish・to set up・to create (a rule/opportunity)",
+        info: "〜に関して means: regarding ~・concerning ~・in relation to ~ (used to indicate that something is related to or about a specific topic, subject, or matter. It is often used in formal contexts to discuss matters of importance.)\nA formal way to introduce the specific topic being discussed or researched.",
+        components: [
+          { kanji: "設", meaning: "establish" },
+        ],
+        example: "新しいオフィスの利用規則[に関して]、社員が意見を述べるための場が{設けられた}。",
+        exampleMeaning: "[Regarding] the usage rules of the new office, a space was {established} for employees to express their opinions.",
+        extraVocabulary: [
+          { wordRuby: "利{り}用{よう}規{き}則{そく}", meaning: "usage rules" },
+          { wordRuby: "述{の}べる", meaning: "to express・to state" },
+        ],
+        
+      },
+      {
+        id: 142,
+        wordRuby: "稼{かせ}ぐ",
+        meaning: "to earn money・to make a living・to buy/gain (time)",
+        info: "〜上に means: in addition to ~・on top of ~・besides ~ [ 〜に加えて ] (used to express that something is added to an existing situation or condition, often highlighting the accumulation of factors or circumstances)\nLayering multiple positive or negative factors onto a single subject.",
+        components: [
+          { kanji: "稼", meaning: "earn" },
+        ],
+        example: "彼は本業で十分な収入を{稼いで}いる[上に]、投資による不労所得も得ている。",
+        exampleMeaning: "[On top of] {earning} a sufficient income from his main career, he also receives passive income through investments.",
+        extraVocabulary: [
+          { wordRuby: "本{ほん}業{ぎょう}", meaning: "main business・main occupation" },
+          { wordRuby: "収{しゅう}入{にゅう}", meaning: "income" },
+          { wordRuby: "投{とう}資{し}", meaning: "investment" },
+          { wordRuby: "不{ふ}労{ろう}所{しょ}得{とく}", meaning: "passive income" },
+          { wordRuby: "得{え}る", meaning: "to gain・to obtain" }
+        ],
+      },
+      {
+        id: 143,
+        wordRuby: "争{あらそ}い",
+        meaning: "dispute・conflict",
+        info: "N + 〜もかまわず means: without caring about ~・paying no attention to ~ [ 〜を気にせずに ] (used to express that someone does something without considering or being concerned about a certain factor or consequence. It emphasizes the disregard for a particular aspect while taking action.)\nActing completely oblivious to standard social boundaries or opinions.",
+        components: [
+          { kanji: "争", meaning: "dispute" }
+        ],
+        example: "二人の男は周囲の迷惑[もかまわず]、路上で激しい{争い}を続けていた。",
+        exampleMeaning: "The two men continued their fierce {dispute} on the street, [without caring about] the inconvenience caused to those around them.",
+        extraVocabulary: [
+          { wordRuby: "周{しゅう}囲{い}", meaning: "surroundings" },
+          { wordRuby: "迷{めい}惑{わく}", meaning: "inconvenience・trouble・bothersome" },
+          { wordRuby: "路{ろ}上{じょう}", meaning: "on the street" },
+          { wordRuby: "激{はげ}しい", meaning: "fierce・intense" }
+        ],
+      },
+      {
+        id: 144,
+        wordRuby: "共{きょう}感{かん}",
+        meaning: "sympathy・empathy・to relate to・to sympathize with",
+        info: "N + 〜はもとより means: let alone ~・not to mention ~・needless to say・Not only... but also... [ 〜はもちろん ] (used to emphasize that something is true or applicable, and then adds that it is even more so for another related thing. It highlights the idea that if the first statement is true, the second one is even more obvious or expected.)\nHighlights that X is natural/obvious, so Y is a given as well.",
+        components: [
+          { kanji: "共", meaning: "together" },
+          { kanji: "感", meaning: "feeling" }
+        ],
+        example: "彼女の書いた小説は、同世代の若者[はもとより]、多くのシニア層からも深い{共感}を得た。",
+        exampleMeaning: "Her novel gained deep {empathy} from many seniors, [let alone] the youth of her own generation.",
+        extraVocabulary: [
+          { wordRuby: "同{どう}世{せ}代{だい}", meaning: "same generation" },
+          { wordRuby: "層{そう}", meaning: "layer・class" },
+          { wordRuby: "得{え}る", meaning: "to gain・to obtain" }
+        ],
+      },
+      {
+        id: 145,
+        wordRuby: "準{じゅん}決{けっ}勝{しょう}",
+        meaning: "semi-final",
+        info: "～だけではだめで means: Just doing X is not enough. States that a baseline action or state is insufficient for the final goal.",
+        components: [
+          { kanji: "準", meaning: "semi・quasi" },
+          { kanji: "決", meaning: "decide" },
+          { kanji: "勝", meaning: "win" }
+        ],
+        example: "大会で優勝するためには、{準決勝}に進出する[だけではだめで]、決勝で強豪を破らなければならない。",
+        exampleMeaning: "In order to win the tournament, [just] advancing to the {semifinals} [is not enough], you must defeat a powerful opponent in the finals.",
+        extraVocabulary: [
+          { wordRuby: "優{ゆう}勝{しょう}", meaning: "victory・championship" },
+          { wordRuby: "進{しん}出{しゅつ}", meaning: "advance・progress" },
+          { wordRuby: "決{けっ}勝{しょう}", meaning: "finals" },
+          { wordRuby: "強{きょう}豪{ごう}", meaning: "powerful opponent" },
+          { wordRuby: "破{やぶ}る", meaning: "to defeat・to break" }
+        ],
+      },
+      {
+        id: 146,
+        wordRuby: "解{かい}読{どく}",
+        meaning: "decoding・deciphering",
+        info: "V. ます Stem + ～かけの・～かける・～かけだ means: in the middle of ~・halfway through ~・in the process of ~・unfinished [ 〜途中で ] (used to express that an action or state is ongoing or incomplete, often indicating that something is in progress or has not yet been finished.)",
+        components: [
+          { kanji: "解", meaning: "solve" },
+          { kanji: "読", meaning: "read" }
+        ],
+        example: "机の上には、彼が{解読し}[かけの]古代の古文書がそのまま残されていた。",
+        exampleMeaning: "Left directly on the desk was the ancient classical document that he [was in the middle of] {deciphering}.",
+        extraVocabulary: [
+          { wordRuby: "古{こ}代{だい}", meaning: "ancient times・antiquity" },
+          { wordRuby: "古{こ}文{もん}書{しょ}", meaning: "ancient records・old document" },
+        ],
       }
     ],
   },
 };
-
-
-//TODO: trocar vocab id 65
-
-// GRAMMAR
-// にもなって     彼は大学生にもなってまだ親にお金をもらっている。(なのに)
-// にでもなって
-// にもなれば
-// にでもなれば
-// といっても
-
-
-
-//TODO: important 833
-
-
-
-
