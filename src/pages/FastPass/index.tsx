@@ -43,20 +43,32 @@ const FastPassPage: React.FC = () => {
     setImportantOnly(prev => !prev);
   }
 
-  const runFilter = (filter: string): boolean => {
-    if (!filter) return false;
-    
-    for (const entry of Object.values(vocabularyList)) {
+  const checkIfItemExists = (itemsObject: Record<string, TangoEntry>, filter: string): TangoWord | null => {
+    for (const entry of Object.values(itemsObject)) {
       for (const word of entry.words) {
         const reading = parseRuby(word.wordRuby)
           .map(part => part.kanji)
           .join("");
 
         if (reading.includes(filter) || String(word.id).includes(filter)) {
-          setFilteredWord(word);
-          return true;
+          return word;
         }
       }
+    }
+    return null;
+  }
+
+  const runFilter = (filter: string): boolean => {
+    if (!filter) return false;
+    let foundWord = checkIfItemExists(vocabularyList, filter);
+    if (foundWord) {
+      setFilteredWord(foundWord);
+      return true;
+    }
+    foundWord = checkIfItemExists(N2ExtraWords, filter);
+    if (foundWord) {
+      setFilteredWord(foundWord);
+      return true;
     }
     return false;
   };
