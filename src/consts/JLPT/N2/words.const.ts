@@ -6,12 +6,12 @@ export const N2ExtraWords: Record<string, TangoEntry> = {
         id: 1,
         wordRuby: "握{あく}手{しゅ}",
         meaning: "handshake",
-        info: "N + に対して means: towards N・regarding N・concerning N・in response to N",
+        info: "N + に対して means: towards N・regarding N・concerning N・in response to N\n\n〜ようとする means `to try to do something` or `to be about to do something.`\nIt expresses that someone is making a visible effort, attempt, or move to do an action right at that moment. It's not just a vague future plan; it means the person is actively starting or attempting the physical action.",
         components: [
           { kanji: "握", meaning: "grasp・hold" },
           { kanji: "手", meaning: "hand" },
         ],
-        example: "ファンは選手[に対して]感謝の気持ちを伝えようとし、試合後に{握手}をccた。",
+        example: "ファンは選手[に対して]感謝の気持ちを伝え[ようとし]、試合後に{握手}を求めた。",
         exampleMeaning: "The fan tried to express gratitude [toward the] athlete and asked for a {handshake} after the match.",
         extraVocabulary: [
           { wordRuby: "求{もと}める", meaning: "to seek・to request" },
@@ -546,6 +546,7 @@ export const N2ExtraWords: Record<string, TangoEntry> = {
         extraVocabulary: [
           { wordRuby: "乾{かわ}く", meaning: "to dry" }
         ],
+        important: true
       },
       {
         id: 38,
@@ -557,6 +558,7 @@ export const N2ExtraWords: Record<string, TangoEntry> = {
         ],
         example: "子どもはアイスが{溶ける}のを見て、とても残念[がって]いた。",
         exampleMeaning: "The child saw the ice cream {melting} and [appeared] very disappointed.",
+        important: true
       },
       {
         id: 39,
@@ -1704,6 +1706,7 @@ export const N2ExtraWords: Record<string, TangoEntry> = {
           { wordRuby: "本{ほん}人{にん}", meaning: "the person in question" },
           { wordRuby: "納{なっ}得{とく}", meaning: "to be convinced・to be satisfied" },
         ],
+        important: true
       },
       {
         id: 117,
@@ -2186,7 +2189,489 @@ export const N2ExtraWords: Record<string, TangoEntry> = {
           { wordRuby: "古{こ}代{だい}", meaning: "ancient times・antiquity" },
           { wordRuby: "古{こ}文{もん}書{しょ}", meaning: "ancient records・old document" },
         ],
+      },
+      {
+        id: 147,
+        wordRuby: "拡{かく}充{じゅう}",
+        meaning: "expansion・enlargement・extension",
+        info: "V. ます Stem + 〜つつある means: in the process of doing ~・steadily moving toward ~ ( Used to show that a change is currently in progress. It is a formal expression frequently seen in reading sections regarding business, society, or trends. )",
+        components: [
+          { kanji: "拡", meaning: "expand" },
+          { kanji: "充", meaning: "fill" }
+        ],
+        example: "わが社は顧客のニーズに応えるために、サービスを{拡充し}[つつある]。",
+        exampleMeaning: "Our company is {expanding} its services in order to meet customer needs.",
+        extraVocabulary: [
+          { wordRuby: "顧{こ}客{きゃく}", meaning: "customer・client" },
+          { wordRuby: "応{こた}える", meaning: "to respond・to meet (needs)" },
+          { wordRuby: "応{おう}じる", meaning: "to comply with・respond to・accommodate" }
+        ],
+        important: true,
+      },
+      {
+        id: 148,
+        wordRuby: "拡{かく}張{ちょう}",
+        meaning: "expansion・extension",
+        info: "〜に伴って・〜に伴い (にともなって) means: As X happens, Y happens in parallel [ 〜とともに ] ( Used to show that when a change occurs in X, a corresponding change naturally happens in Y. It is often used for large-scale changes or trends. )",
+        components: [
+          { kanji: "拡", meaning: "expand" },
+          { kanji: "張", meaning: "stretch" }
+        ],
+        example: "事業の{拡張}[に伴って]、新しく優秀な人材を採用する必要が出てきた。",
+        exampleMeaning: "[Along with] the {expansion} of the business, a need to hire new, talented personnel has arisen.",
+        extraVocabulary: [
+          { wordRuby: "優{ゆう}秀{しゅうな}", meaning: "excellent・outstanding" },
+          { wordRuby: "人{じん}材{ざい}", meaning: "human resources・talent" },
+          { wordRuby: "採{さい}用{よう}", meaning: "recruitment・hiring" }
+        ],
+      },
+      {
+        id: 149,
+        wordRuby: "一{いっ}転{てん}",
+        meaning: "sudden change・complete reversal・すっかり変わること",
+        info: "N + 〜を契機に・〜を契機として means: Taking X as a turning point・Taking X as a good opportunity ( Similar to 〜をきっかけに, but more formal. It indicates that a major, often positive change or development happened because of a specific event. )",
+        components: [
+          { kanji: "一", meaning: "one" },
+          { kanji: "転", meaning: "turn・revolve" }
+        ],
+        example: "不採用だと思っていたが、あの面接[を契機に]事態が{一転}し、採用が決まった。",
+        exampleMeaning: "I thought I failed, but with that interview [as a turning point], things {completely changed} and my hiring was decided.",
+        extraVocabulary: [
+          { wordRuby: "不{ふ}採{さい}用{よう}", meaning: "not hired・not recruited・rejected" },
+          { wordRuby: "事{じ}態{たい}", meaning: "situation・circumstances" },
+          { wordRuby: "転{ころ}ぶ", meaning: "to fall down・to collapse" }
+        ],
+        important: true,
+      },
+      {
+        id: 150,
+        wordRuby: "やり抜{ぬ}く",
+        meaning: "to carry through・to see something through to the end・to accomplish・諦めずに最後までできること",
+        info: "V. ます Stem + 〜ぬく means: to do something to the end・to do something completely・to do something thoroughly ( Attaching 〜ぬく to a verb emphasizes doing something with great effort, facing hardships, but finishing it completely. )",
+        components: [
+          { kanji: "抜", meaning: "to pull out・to extract" }
+        ],
+        example: "どんなに困難な目標であっても、一度決めたことは最後まで{やり}[抜く]べきだ。",
+        exampleMeaning: "No matter how difficult the goal is, you should {carry through} with what you've decided [until the very end].",
+        extraVocabulary: [
+          { wordRuby: "困{こん}難{なん}", meaning: "difficulty・hardship" },
+          { wordRuby: "やり切{き}る", meaning: "to do something through to the end" },
+        ],
+        important: true,
+      },
+      {
+        id: 151,
+        wordRuby: "仮{かり}〜",
+        meaning: "temporary・provisional・tentative・本当ではない",
+        info: "〜にすぎない means: nothing more than ~・merely ~・only ~ [ 〜だけである ] ( Used to minimize the importance or scale of something, stating that it's 'nothing special' or 'only at that level.' )",
+        components: [
+          { kanji: "仮", meaning: "temporary" }
+        ],
+        example: "現時点では{仮}予約[にすぎない]ため、期日までに手続きをしなければ取り消されます。",
+        exampleMeaning: "Because it is [merely] a {tentative} reservation at this point, it will be canceled if you don't complete the procedures by the deadline.",
+        extraVocabulary: [
+          { wordRuby: "現{げん}時{じ}点{てん}", meaning: "at this point in time・as of now" },
+          { wordRuby: "期{き}日{じつ}", meaning: "deadline・due date" },
+          { wordRuby: "取{とり}消{けす}", meaning: "to cancel" }
+        ],
+        important: true,
+      },
+      {
+        id: 152,
+        wordRuby: "倒{たお}す",
+        meaning: "to knock down・to defeat・to overthrow",
+        info: "〜てはじめて means: only after ~ing did one realize...・not until ~ing [ 〜を経験したらわかる ] (used to express that something is realized or understood only after a certain action or experience occurs)\nIt emphasizes: the idea that a realization or understanding comes as a result of a specific experience or action, often highlighting the importance of that experience in gaining new insights.",
+        components: [
+          { kanji: "倒", meaning: "to knock down・to defeat" }
+        ],
+        example: "圧倒的な強さを誇る王者を{倒して}[はじめて]、本当のチャンピオンと言える。",
+        exampleMeaning: "[Only after] {defeating} the reigning champion, who boasts overwhelming strength, can you truly call yourself a champion.",
+        extraVocabulary: [
+          { wordRuby: "圧{あっ}倒{とう}的{てき}な", meaning: "overwhelming" },
+          { wordRuby: "誇{ほこ}る", meaning: "to boast・to be proud of" },
+          { wordRuby: "王{おう}者{じゃ}", meaning: "king・champion" }
+        ],
+        important: true,
+      },
+      {
+        id: 153,
+        wordRuby: "弱{じゃく}点{てん}",
+        meaning: "weak point・weakness・vulnerability",
+        info: "Noun + 〜さえ +  Verb 〜ば means: If only ~・As long as ~ ( Specifies the single, most important condition needed for a result to happen. If this one thing is true, the rest will follow. )",
+        components: [
+          { kanji: "弱", meaning: "weak" },
+          { kanji: "点", meaning: "point" }
+        ],
+        example: "自分の{弱点}[さえ]克服[すれば]、次の試験には必ず合格できるはずだ。",
+        exampleMeaning: "[If I can just] overcome my own {weakness}, I should definitely be able to pass the next exam.",
+        extraVocabulary: [
+          { wordRuby: "克{こく}服{ふく}", meaning: "overcome・conquer" },
+        ],
+      },
+      {
+        id: 154,
+        wordRuby: "確{かく}定{てい}",
+        meaning: "confirmation・decision・definiteness",
+        info: "V. ます Stem + 〜次第 means: as soon as ~・immediately after ~ ・As soon as X is done, immediately Y ( A very common business Japanese expression. It indicates that action Y will happen the very moment action X is completed. Note that the final clause (Y) is usually an intentional action or request. )",
+        components: [
+          { kanji: "確", meaning: "certain" },
+          { kanji: "定", meaning: "determine" }
+        ],
+        example: "来月のシフトが{確定し}[次第]、すぐにスケジュールをご連絡いたします。",
+        exampleMeaning: "[As soon as] next month's shift is {finalized}, I will contact you with the schedule immediately.",
+      },
+      {
+        id: 155,
+        wordRuby: "内{ない}定{てい}",
+        meaning: "unofficial job offer・internal appointment・unofficial decision",
+        info: "〜からといって means: Just because X it doesn't mean that Y・Even if X, it doesn't necessarily mean Y ( Usually followed by a negative expression (like 〜とは限らない, 〜わけではない, or 〜てはいけない). It warns that a reason which seems sufficient isn't an absolute guarantee. )",
+        components: [
+          { kanji: "内", meaning: "inside・within" },
+          { kanji: "定", meaning: "decide" }
+        ],
+        example: "企業から{内定}をもらった[からといって]、卒業できるまで油断し[てはいけない]。",
+        exampleMeaning: "[Just because] you received an {informal job offer} from a company, you shouldn't let your guard down until you can graduate.",
+        extraVocabulary: [
+          { wordRuby: "油{ゆ}断{だん}", meaning: "carelessness・laxness・negligence・overconfidence・letting one's guard down" },
+          { wordRuby: "油{あぶら}", meaning: "oil" },
+          { wordRuby: "断{ことわ}る", meaning: "to refuse・to decline・To inform or notify in advance" }
+        ],
+      },
+      {
+        id: 156,
+        wordRuby: "やり出{だ}す",
+        meaning: "to start doing・to begin doing something",
+        info: "V. ます Stem + 〜かけの・〜かける means: in the middle of ~・halfway through ~・in the process of ~・unfinished [ 〜途中で ] ( Indicates that an action was started but was cut short, paused, or is still incomplete. )",
+        components: [
+          { kanji: "出", meaning: "to come out" },
+        ],
+        example: "弟はいつも物事を{やり出し}[かけの]まま放置するので、部屋が片付かない。",
+        exampleMeaning: "My younger brother always leaves things abandoned right after he {starts doing} them, so the room never gets tidied up.",
+        extraVocabulary: [
+          { wordRuby: "物{もの}事{ごと}", meaning: "things・matters"  },
+          { wordRuby: "放{ほう}置{ち}", meaning: "neglect・leave alone・abandoned" },
+        ],
+      },
+      {
+        id: 157,
+        wordRuby: "途{と}端{たん}に",
+        meaning: "as soon as・the moment ~",
+        info: "V. た + 〜とたん means: Just as soon as X happened, Y unexpectedly happened ( Action Y happens almost instantaneously after action X. It usually describes something that surprised the speaker or was out of their control. )\n\nCrucial N2 Rule: You cannot use your own future intention, will, or a request in the second part (e.g., you can't say 'As soon as I get home, I will call you' using this grammar).",
+        components: [
+          { kanji: "途", meaning: "path・route" },
+          { kanji: "端", meaning: "end・edge" }
+        ],
+        example: "前を歩いていた人が急に立ち止まった{途端に}、後ろを歩いていた私がぶつかってしまった。",
+        exampleMeaning: "{The moment} the person walking in front of me suddenly stopped in their tracks, I, walking behind them, crashed into them.",
+        extraVocabulary: [
+          { wordRuby: "急{きゅう}に", meaning: "suddenly" },
+          { wordRuby: "立{た}ち止{ど}まる", meaning: "to stop・to halt" },
+        ],
+      },
+      {
+        id: 158,
+        wordRuby: "爽{さわ}やかな",
+        meaning: "refreshing・invigorating・cheerful",
+        info: "N + 〜を問わず (〜をとわず) means: regardless of ~・No matter the ~・without distinction [ 〜に関係なく ] ( Used to state that something applies universally, completely independent of a specific category like age, gender, nationality, or weather. )",
+        components: [
+          { kanji: "爽", meaning: "refreshing・invigorating" },
+        ],
+        example: "彼の{爽やかな}挨拶は、年齢[を問わず]、多くの社員から好感を持たれている。",
+        exampleMeaning: "His {refreshing} greeting is well-liked by many employees, [regardless] of their age.",
+        extraVocabulary: [
+          { wordRuby: "挨{あい}拶{さつ}", meaning: "greeting" },
+          { wordRuby: "好{こう}感{かん}", meaning: "liking・favorable impression" }
+        ],
+      },
+      {
+        id: 159,
+        wordRuby: "和{なご}やかな",
+        meaning: "calm・gentle・peaceful・friendly・harmonious",
+        info: "〜どころか means: far from ~・on the contrary・not just ~ but actually ~ [ 〜ではなく ] ( Used to strongly emphasize that the actual reality is the exact opposite of what was expected, or that the situation is much more extreme than stated. )",
+        components: [
+          { kanji: "和", meaning: "harmony・peace" }
+        ],
+        example: "話し合いは{和やかな}雰囲気で進む[どころか]、お互いに感情的になって激しい口論になってしまった。",
+        exampleMeaning: "[Far from] proceeding in a {harmonious} atmosphere, the discussion turned emotional and escalated into a fierce argument.",
+        extraVocabulary: [
+          { wordRuby: "話{はな}し合{あ}い", meaning: "discussion・talk" },
+          { wordRuby: "激{はげ}しい", meaning: "fierce・intense" },
+          { wordRuby: "感{かん}情{じょう}", meaning: "emotion・feeling" },
+          { wordRuby: "口{こう}論{ろん}", meaning: "argument・dispute" }
+        ],
+      },
+      {
+        id: 160,
+        wordRuby: "速{すみ}やかな",
+        meaning: "quickly・promptly・swiftly・immediately",
+        info: "〜ないことには means: Unless you do X, Y cannot happen ' States that condition X is absolutely mandatory. Without doing X first, the desired result Y is completely impossible. )",
+        components: [
+          { kanji: "速", meaning: "fast・quick" }
+        ],
+        example: "トラブルの原因を{速やかに}究明し[ないことには]、今後の対策が立てられない。",
+        exampleMeaning: "[Unless] we {promptly} investigate and determine the cause of the trouble, [we cannot] establish future countermeasures.",
+        extraVocabulary: [
+          { wordRuby: "原{げん}因{いん}", meaning: "cause・reason" },
+          { wordRuby: "究{きゅう}明{めい}", meaning: "Thorough investigation・inquiry" },
+          { wordRuby: "対{たい}策{さく}", meaning: "countermeasure・plan of action" }
+        ],
+      },
+      {
+        id: 161,
+        wordRuby: "べたべた",
+        meaning: "sticky・clingy・touchy・affectionate",
+        info: "Describes something covered in a sticky substance (like honey or sweat), or people acting overly physically affectionate in public.\n\nNoun + 〜だらけ means: full of ~・covered in ~・nothing but ~ [ 〜でいっぱい ] ( usually dirty or negative things. Used to show that a surface or object is completely covered in something messy, unpleasant, or bad. )",
+        example: "暑い中を歩き回ったせいで、体中が汗[だらけ]になり、肌が{べたべた}して気持ち悪い。",
+        exampleMeaning: "Because I walked around in the heat, my whole body became [covered in] sweat, and my skin feels {sticky} and uncomfortable."
+      },
+      {
+        id: 162,
+        wordRuby: "じめじめ",
+        meaning: "damp・humid・sticky",
+        info: "Describes unpleasant, heavy moisture in the air or a room (like during the rainy season), or a gloomy, depressed personality.\n\n〜に決まっている means: bound to ~・surely ~・definitely ~・there's no doubt that ~ [ 〜のは当然だ ] ( Expresses the speaker's absolute certainty about something, based on common sense, natural rules, or personal conviction. )",
+        example: "梅雨の時期は部屋が{じめじめする}[に決まっている]から、早く除湿機を買うべきだ。",
+        exampleMeaning: "Since rooms are [bound to] get {damp and humid} during the rainy season, you should buy a dehumidifier soon.",
+        extraVocabulary: [
+          { wordRuby: "時{じ}期{き}", meaning: "time・season" },
+          { wordRuby: "除{じょ}湿{しつ}機{き}", meaning: "dehumidifier" }
+        ],
+      },
+      {
+        id: 163,
+        wordRuby: "びしょびしょ",
+        meaning: "soaking wet・drenched",
+        info: "Describes a state where someone or something is completely saturated, dripping, or soaked through with water or another liquid (usually due to heavy rain, spilling something, or sweating\n\n〜のみならず means: not only ~ but also ~・in addition to ~ [ 〜だけでなく ] ( A formal grammar point used to express that a situation isn't limited to just one bad (or good) thing, but includes something else as well. It is often used to emphasize an escalating situation. )",
+        example: "突然の大雨に降られた[のみならず]、傘まで壊れてしまって、全身が{びしょびしょ}に濡れた。",
+        exampleMeaning: "[Not only] was I caught in a sudden heavy rain, [but even] my umbrella broke, and my entire body got {soaking wet}.",
+        extraVocabulary: [
+          { wordRuby: "壊{こわ}れる", meaning: "to break・to be broken" },
+          { wordRuby: "全{ぜん}身{しん}", meaning: "whole body" },
+          { wordRuby: "濡{ぬ}れる", meaning: "to get wet" }
+        ],
+      },
+      {
+        id: 164,
+        wordRuby: "ぐるぐる",
+        meaning: "round and round・spinning・circling",
+        info: "Describes something revolving repeatedly, being wrapped up tightly, or one's head spinning with dizziness.\n\n〜に相違ない means: there is no doubt that ~・certainly ~・must be ~ [ 〜のは間違いない ] ( Expresses the speaker's strong conviction or certainty about a situation, based on evidence, reasoning. to make a strong logical guess based on clear evidence. )",
+        example: "地図を{ぐるぐる}回しながら歩いている彼を見て、道に迷っている[に相違ない]と思った。",
+        exampleMeaning: "Watching him walk while spinning the map {round and round}, I thought [there was no doubt] he was lost.",
+      },
+      {
+        id: 165,
+        wordRuby: "とうとう",
+        meaning: "finally・at last・in the end",
+        info: "Describes the eventual occurrence of something after a long time, struggle, hard progression, or effort.\n\n〜あげく means: after ~ing for a long time・after much effort・after a long struggle・after a long process of ~ [ 〜の末に ] ( Used to express that after a prolonged period of time, effort, or struggle, a certain result or outcome is finally reached. It often implies that the result may not be favorable or expected.\nUsed when a long, exhausting, or troublesome process finally ends in a disappointing or negative result.)",
+        example: "何時間も激しい議論を重ねた[あげく]、二人の意見は{とうとう}一致しなかった。",
+        exampleMeaning: "[After] hours of intense discussion, {in the end}, their opinions never did align.",
+        extraVocabulary: [
+          { wordRuby: "激{はげ}しい", meaning: "intense・fierce" },
+          { wordRuby: "議{ぎ}論{ろん}", meaning: "discussion・debate" },
+          { wordRuby: "重{かさ}ねる", meaning: "to pile up・to accumulate" },
+          { wordRuby: "一{いっ}致{ち}", meaning: "agreement・match" }
+        ],
+      },
+      {
+        id: 166,
+        wordRuby: "むずむず",
+        meaning: "itchy・Itching to do something",
+        info: "A physical tickling or itching sensation. Idiomatically, it means feeling an uncontrollable urge to do an action because you've been held back.\n\n〜てたまらない means: can't help but ~・extremely ~・so ~ that one can't stand it・Unbearabl ~ [ 〜で我慢できない ] ( Used to express an intense feeling or sensation that is so strong it becomes unbearable. It emphasizes the overwhelming nature of the emotion or physical sensation.)",
+        example: "新しいゲームを買ったので、早くプレイしたくてウズウズ、手が{むずむず}[してたまらない]。",
+        exampleMeaning: "Since I bought a new game, I'm dying to play it early and my hands are just {itching} to do it.",
+        extraVocabulary: [
+          { wordRuby: "ウズウズ", meaning: "Raring to go・tching to do something" },
+        ],
+      },
+      {
+        id: 167,
+        wordRuby: "ひりひり",
+        meaning: "stinging・burning pain・tingling",
+        info: "A smarting, stinging pain on the skin (like a sunburn or cut) or in the mouth (from eating spicy food\n\n〜あまり means: due to ~ing too much・because of ~ing excessively [ 〜すぎるために ] ( Indicates that because a certain cause, emotion, or state was so extreme, it led to a negative or unexpected result. )",
+        example: "日焼け対策を怠った[あまり]、背中が{ひりひり}して服が擦れるだけでも痛い。",
+        exampleMeaning: "[Due to excessively] neglecting my sunburn protection, my back is {stinging} so much that even my clothes rubbing against it hurts.",
+        extraVocabulary: [
+          { wordRuby: "日{ひ}焼{や}け", meaning: "sunburn" },
+          { wordRuby: "対{たい}策{さく}", meaning: "countermeasure・plan of action" },
+          { wordRuby: "怠{おこた}る", meaning: "to neglect・to be lazy・to be careless" },
+          { wordRuby: "擦{す}れる", meaning: "to rub・to chafe" }
+        ],
+      },
+      {
+        id: 168,
+        wordRuby: "かさかさ",
+        meaning: "dry・rough・crunchy",
+        info: "Describes skin or surfaces dried out and losing moisture. It can also describe the rustling sound of dry leaves or paper.\n\n〜に際して（にさいして）means: upon ~ing・at the time of ~・on the occasion of ~ [ 〜の時に ] ( Used to indicate that something is done at a specific time or occasion, often with a sense of preparation or consideration for that event. )",
+        example: "冬の季節を迎える[に際して]、肌が{かさかさ}にならないよう保湿クリームを塗る。",
+        exampleMeaning: "[Upon] enter[ing] the winter season, I apply moisturizing cream so my skin doesn't become {dry and rough}.",
+        extraVocabulary: [
+          { wordRuby: "季{き}節{せつ}", meaning: "season" },
+          { wordRuby: "迎{むか}える", meaning: "to welcome・to meet" },
+          { wordRuby: "保{ほ}湿{しつ}", meaning: "moisturizing" },
+          { wordRuby: "塗{ぬ}る", meaning: "to apply (cream/ointment)" }
+        ],
+      },
+      {
+        id: 169,
+        wordRuby: "ずたずた",
+        meaning: "ripped to pieces・torn to shreds・in tatters",
+        info: "Describes paper or cloth physically cut up into ribbons, or metaphorically, a person's heart or pride completely ruined and broken by criticism or tragedy.\n\nV. ます Stem + 〜っぱなし means: Leaving a continuous state running or unresolved ( Used when an action or negative state keeps going continuously without a break, usually causing frustration or exhaustion. )",
+        example: "陰口を言われ[っぱなし]の状態で耐えていた彼女は、心が{ずたずた}になってしまった。",
+        exampleMeaning: "Having endured being constantly badmouthed [without a break], her heart was {torn to pieces}.",
+        extraVocabulary: [
+          { wordRuby: "陰{かげ}口{ぐち}", meaning: "badmouthing・gossip" },
+          { wordRuby: "状{じょう}態{たい}", meaning: "state・condition" },
+          { wordRuby: "耐{た}える", meaning: "to endure・to bear" }
+        ],
+      },
+      {
+        id: 170,
+        wordRuby: "なかなか",
+        meaning: "quite・fairly・considerably・not easily・by no means",
+        info: "When used with a positive verb, it means 'quite' or 'better than expected.' When paired with a negative verb, it means 'not easily' or 'taking a long time to happen.'\n\n〜反面（はんめん）means: on the other hand・in contrast・conversely・While it's true that ~ [ 〜の一方で ] ( Used to show two contrasting sides or characteristics of the exact same subject. )",
+        example: "日本語読解は面白い[反面]、漢字が難しくて{なかなか}スラスラ読めない。",
+        exampleMeaning: "While reading Japanese is interesting, [on the other hand], the kanji is difficult and I can't {easily} read it smoothly.",
+        extraVocabulary: [
+          { wordRuby: "読{どっ}解{かい}", meaning: "reading comprehension" },
+          { wordRuby: "スラスラ", meaning: "smoothly・fluently" }
+        ],
+      },
+      {
+        id: 171,
+        wordRuby: "ぎっしり",
+        info: "Describes a space that is completely filled up with objects or people, leaving absolutely no gaps, empty room, or extra space.\n\n〜ものだから・〜もんだから means; because ~・since ~・due to the fact that ~・Given that ~ [ 〜のために ] ( Used to give a reason or justification, especially when making an excuse for an inconvenient, accidental, or unexpected situation. It carries a nuance of 'it couldn't be helped because...' )",
+        meaning: "tightly packed・crammed・densely filled",
+        example: "この冷蔵庫は、中身が{ぎっしり}詰まっている[ものだから]、どこに何があるか全然わからない。",
+        exampleMeaning: "[Because] this refrigerator is so {tightly packed} with stuff, I have absolutely no idea what is where.",
+        extraVocabulary: [
+          { wordRuby: "冷{れい}蔵{ぞう}庫{こ}", meaning: "refrigerator" },
+          { wordRuby: "中{なか}身{み}", meaning: "contents・inside" },
+          { wordRuby: "詰{つ}まる", meaning: "to be packed・to be filled" }
+        ],
+      },
+      {
+        id: 172,
+        wordRuby: "がっしり",
+        info: "Describes a physical structure, building, or a person's body that is remarkably strong, muscular, thick-boned, and durable.\n\n〜だけに means: precisely because ~・being the case that ~ [ 〜のために ] ( Used to emphasize that a certain result or natural state is highly justified, expected, or intensified because of a specific, reliable reason. )",
+        meaning: "solidly built・sturdily made・substantially",
+        example: "彼は子供の頃からスポーツに励んできた[だけに]、{がっしり}としたたくましい体つきをしている。",
+        exampleMeaning: "[Precisely because] he has dedicated himself to sports since childhood, he has a {solidly built}, robust physique.",
+        extraVocabulary: [
+          { wordRuby: "励{はげ}む", meaning: "to strive・to endeavor" },
+          { wordRuby: "精{たくま}しい", meaning: "robust・vigorous" },
+          { wordRuby: "体{からだ}つき", meaning: "physique・build" }
+        ],
+      },
+      {
+        id: 173,
+        wordRuby: "がりがり",
+        meaning: "skinny・scraggy・gaunt",
+        info: "Most commonly describes a person or animal that is unhealthily thin, emaciated, or 'skin and bones.' It can also mimic a hard, crunchy chewing noise or a scraping/scratching sound.\n\n〜てばかりいる means: does nothing but ~・only does ~・always doing ~ ( Used to criticize or complain about a repetitive, continuous action that someone does to an excessive degree, ignoring other things they should be doing. )",
+        example: "最近の彼は、仕事が忙しすぎて食事を抜い[てばかりいる]せいで、すっかり{がりがり}に痩せてしまった。",
+        exampleMeaning: "Because he [does nothing but] skip meals lately due to being too busy with work, he has ended up looking completely {scrawny}.",
+        extraVocabulary: [
+          { wordRuby: "抜{ぬ}く", meaning: "to skip・to omit" },
+          { wordRuby: "痩{や}せる", meaning: "to lose weight・to become thin" }
+        ],
+      },
+      {
+        id: 174,
+        wordRuby: "刑{けい}事{じ}",
+        meaning: "detective・police officer",
+        info: "〜か〜ないか means: whether or not ~・if or not ~ ( Used to present two opposing possibilities (doing or not doing / existing or not existing) when the outcome or truth is uncertain. )\n\n V. る + か + V. ない + か",
+        components: [
+          { kanji: "刑", meaning: "punishment" },
+          { kanji: "事", meaning: "matter・thing" }
+        ],
+        example: "犯人がこの街に潜伏している[のか]いない[のか]、担当の{刑事}たちは必死に聞き込み捜査を続けている。",
+        exampleMeaning: "Whether the criminal is hiding in this city or not, the detectives in charge are desperately continuing their door-to-door investigation.",
+        extraVocabulary: [
+          { wordRuby: "犯{はん}人{にん}", meaning: "criminal・offender" },
+          { wordRuby: "潜{せん}伏{ぷく}", meaning: "to hide・to lie low" },
+          { wordRuby: "必{ひつ}死{し}", meaning: "desperately・frantically" },
+          { wordRuby: "聞{き}き込{こ}む", meaning: "to interview・to gather information" },
+          { wordRuby: "捜{そう}査{さ}", meaning: "investigation・search" }
+        ],
+      },
+      {
+        id: 175,
+        wordRuby: "欲{よく}",
+        meaning: "desire・greed・want",
+        info: "V. ます Stem・Noun + 〜さえ〜すれば means: If only ~・As long as ~ ( Specifies the single most crucial condition needed for a desired result to happen. Once that one condition is met, the rest automatically follows. )",
+        components: [
+          { kanji: "欲", meaning: "desire・want" }
+        ],
+        example: "無理に勝とうとせず、{欲}を捨てて目の前の試合に集中し[さえ]すれ[ば]、道は開ける。",
+        exampleMeaning: "[If you just] abandon your {greed}, stop trying to force a win, and focus entirely on the match in front of you, a path will open up.",
+        extraVocabulary: [
+          { wordRuby: "無理に勝{か}とう", meaning: "to try to win at all costs・to force a win" },
+          { wordRuby: "欲を捨{す}てる", meaning: "to abandon one's desires・to give up greed" },
+          { wordRuby: "食{しょく}欲{よく}", meaning: "appetite・desire to eat" },
+        ],
+      },
+      {
+        id: 176,
+        wordRuby: "望{のぞ}む",
+        meaning: "to wish for・to hope for・to desire",
+        info: "〜であればだけど means: If that's the case... but ~・If it's true... though ~ ( Used to express a condition that is uncertain or unlikely, often implying that the speaker is willing to accept the situation if it were true, but doubts it. )\n\nA highly tested N2 colloquial grammar combination of 〜であれば (if it is) + だけど (but). It means 'If [condition] is met, then Y is possible—but that condition is uncertain or unlikely.'",
+        components: [
+          { kanji: "望", meaning: "hope・wish" }
+        ],
+        example: "会社側が{望む}通りのスケジュール[であればだけど]、来月からの新規プロジェクトに参加できます。",
+        exampleMeaning: "[If it] matches the exact schedule that the company {wishes for}, [though] that's a big if, I can participate in the new project starting next month.",
+        extraVocabulary: [
+          { wordRuby: "新{しん}規{き}", meaning: "new" },
+        ],
+      },
+      {
+        id: 177,
+        wordRuby: "願{ねが}う",
+        meaning: "to wish for・to desire",
+        info: "〜につけても・〜につけて means: whenever ~・every time ~・no matter when ~ [ 〜の時はいつも ] ( Used when a specific thought, action, or event naturally triggers a deep emotional response or reflection in the speaker every single time it occurs. )",
+        components: [
+          { kanji: "願", meaning: "wish・desire" }
+        ],
+        example: "世界の平和を{願う}[につけても]、今なお続く紛争のニュースを見るのは胸が痛む。",
+        exampleMeaning: "[Whenever] I {wish for} world peace, it breaks my heart to see the news of conflicts that still continue today.",
+        extraVocabulary: [
+          { wordRuby: "今{いま}なお続{つづ}く", meaning: "still continuing・Continuing to this day" },
+          { wordRuby: "紛{ふん}争{そう}", meaning: "conflict・dispute" },
+          { wordRuby: "胸{むね}が痛{いた}む", meaning: "to feel heartbroken・to feel sad" }
+        ],
+      },
+      {
+        id: 178,
+        wordRuby: "主{しゅ}成{せい}分{ぶん}",
+        meaning: "main component・main ingredient",
+        info: "〜を〜とする means: to take ~ as ~・to consider ~ as ~・to regard ~ as ~ ( Used to define a specific role, purpose, or identity of an object, stating that X is actively functioning or serving as Y. )\n\nStructure: Noun + を + Noun + とする",
+        components: [
+          { kanji: "主", meaning: "main・primary" },
+          { kanji: "成分", meaning: "component・ingredient" }
+        ],
+        example: "この薬は植物から抽出した天然エキス[を]{主成分}[としている]ため、体に優しく副作用が少ない。",
+        exampleMeaning: "Because this medication takes a natural extract elements drawn from plants [as its] {main component}, it is gentle on the body and has few side effects.",
+        extraVocabulary: [
+          { wordRuby: "抽{ちゅう}出{しゅつ}", meaning: "extraction・drawing out" },
+          { wordRuby: "天{てん}然{ねん}", meaning: "natural" },
+          { wordRuby: "優しい", meaning: "gentle・kind" },
+          { wordRuby: "副{ふく}作{さ}用{よう}", meaning: "side effect" }
+        ],
+      },
+      {
+        id: 179,
+        wordRuby: "でたらめ",
+        meaning: "nonsense・random・irresponsible・unreasonable",
+        info: "〜からいうと・〜からいえば means: judging from ~・based on ~・from the perspective of ~ [ 〜の立場から考えると ] ( Used to state a logical conclusion or judgment based entirely on a specific perspective, piece of evidence, or standpoint. )\n\nStructure: Noun + からいうと",
+        example: "彼の言っていることは{でたらめ}だ。目撃者の証言[からいうと]、事件当夜、彼は現場にいたはずだ。",
+        exampleMeaning: "What he is saying is absolute {nonsense}. [Judging from] the eyewitness testimony, he should have been at the scene on the night of the incident.",
+        extraVocabulary: [
+          { wordRuby: "目{もく}撃{げき}者{しゃ}", meaning: "eyewitness" },
+          { wordRuby: "証{しょう}言{げん}", meaning: "testimony・statement" },
+          { wordRuby: "事{じ}件{けん}", meaning: "incident" },
+          { wordRuby: "当{とう}夜{や}", meaning: "that night・the night in question" },
+          { wordRuby: "現{げん}場{ば}", meaning: "scene・site" }
+        ],
       }
     ],
   },
 };
+
