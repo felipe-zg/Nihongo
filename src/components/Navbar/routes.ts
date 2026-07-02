@@ -22,6 +22,8 @@ export const routes: RouteItem[] = [
       { name: '日本語の森・文字・語彙', path: '/JLPT/ExamVocabs?source=MOJI_GOI&level=N2' },
       { name: '日本語の森・FAST PASS', path: '/JLPT/fastpass' },
       { name: '日本語の森・FAST PASS Extra', path: '/JLPT/fastpass?source=EXTRA' },
+      { name: '日本語の森・FAST PASS 文章', path: '/JLPT/fastpass-phrases' },
+      { name: '日本語の森・FAST PASS 文章 Extra', path: '/JLPT/fastpass-phrases?source=EXTRA' },
       { name: 'JLPT Grammar N2', path: '/JLPT/grammar/N2' },
       { name: 'JLPT Vocabs N2', path: '/JLPT/vocabs?level=N2' },
       { name: 'ミニストーリー', path: '/ministory?level=N2' },
