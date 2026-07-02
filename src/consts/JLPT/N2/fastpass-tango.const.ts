@@ -15022,6 +15022,7 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
         extraVocabulary: [
           { wordRuby: "ぎっしり", meaning: "Tightly" }
         ],
+        important: true
       },
       {
         id: 1094,
