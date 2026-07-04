@@ -288,7 +288,7 @@ export const N2ExtraWords: Record<string, TangoEntry> = {
       },
       {
         id: 20,
-        wordRuby: "規{そく}則{そく}",
+        wordRuby: "規{き}則{そく}",
         meaning: "rule・regulation",
         info: "〜てからでないと means: unless ~・until ~ (used to express that something cannot happen or be done until a certain action or condition is fulfilled.)\nIt emphasizes: the necessity of completing the first action or meeting the condition before the second action can occur or be allowed.\nからじゃないと is used in spoken language (Conversations).",
         components: [
@@ -327,7 +327,7 @@ export const N2ExtraWords: Record<string, TangoEntry> = {
       },
       {
         id: 23,
-        wordRuby: "喜び",
+        wordRuby: "喜{よろこ}び",
         meaning: "joy・happiness",
         info: "〜たびに means: every time ~・whenever ~ [～するとき、いつも] (used to express that something happens repeatedly or regularly whenever a certain action or event occurs.)\nIt emphasizes: the regularity or consistency of the action or event happening each time a specific condition is met.",
         components: [
@@ -372,7 +372,7 @@ export const N2ExtraWords: Record<string, TangoEntry> = {
       },
       {
         id: 26,
-        wordRuby: "羨{うら}ましい",
+        wordRuby: "羨{うらや}ましい",
         meaning: "envious・jealous",
         info: "〜のかというような means: a kind of ~ that makes one wonder if ~・so ~ that you think 'is there really...?' (used to express a sense of disbelief or astonishment about something.)\nIt emphasizes: the strong impression or feeling that something is so extraordinary or surprising that it leads to a sense of wonder or skepticism about its reality.",
         components: [
@@ -498,7 +498,7 @@ export const N2ExtraWords: Record<string, TangoEntry> = {
           { kanji: "像", meaning: "image" }
         ],
         example: "結果を{想像}[さえできれば]、今どうすべきかもっと判断しやすくなるのに。",
-        exampleMeaning: "She has a rich {imagination} and creates creative works.",
+        exampleMeaning: "[If only] I could {imagine} the outcome, it would be much easier to decide what to do right now.",
         extraVocabulary: [
           { wordRuby: "判{はん}断{だん}", meaning: "judgment" },
         ]
@@ -582,7 +582,7 @@ export const N2ExtraWords: Record<string, TangoEntry> = {
         example: "何日も議論を重ねた[末に]、全員の意見が{尽きた}ところでようやく結論が出た。",
         exampleMeaning: "[After] days of discussion, a conclusion was finally reached when everyone had {run out} of opinions.",
         extraVocabulary: [
-          { wordRuby: "無{な}くなる", meaning: "to disappear・to be gone/・to run out" },
+          { wordRuby: "結{けつ}論{ろん}", meaning: "conclusion" },
         ],
       },
       {
@@ -597,6 +597,7 @@ export const N2ExtraWords: Record<string, TangoEntry> = {
         exampleMeaning: "[Even though] he hadn't even verified whether the {rumor} was true, he spoke as if it were a fact.",
         extraVocabulary: [
           { wordRuby: "真{しん}偽{ぎ}", meaning: "truth or falsehood・authenticity" },
+          { wordRuby: "確{たし}かめる", meaning: "to verify・to confirm" },
         ],
       },
       { 
@@ -653,7 +654,7 @@ export const N2ExtraWords: Record<string, TangoEntry> = {
       },
       {
         id: 45,
-        wordRuby: "複{ふく}雑{ざつ}",
+        wordRuby: "複{ふく}雑{ざつ}", //TODO: Replace repeated vocab
         meaning: "complex・complicated",
         info: "V. ない STEM + ざるを得ない means: have no choice but to ~・cannot help but ~ [ 嫌だけど 〜 しなければならない ] (used to express that one has no choice but to do something, often because it is necessary, unavoidable, or the only option available.)\nThis grammar is used when you don't really want to do something, but you have to do it anyway, or when you don't want to do something, but you have no other option. It is used when you have to do something unpleasant.\n※しない → せざるを得ない",
         components: [
@@ -770,7 +771,7 @@ export const N2ExtraWords: Record<string, TangoEntry> = {
           { kanji: "傷", meaning: "wound" }
         ],
         example: "明らかに{負傷}している選手を無理に出場させるのは、責任ある指導とは言えない[というものだ]。",
-        exampleMeaning: "Forcing an obviously injured athlete to compete is something that can hardly be called responsible coaching.",
+        exampleMeaning: "Forcing an obviously {injured} athlete to compete is something that can hardly be called responsible coaching.",
         extraVocabulary: [
           { wordRuby: "明{あき}らかに", meaning: "obvious・evidently・clearly" },
           { wordRuby: "責{せき}任{にん}", meaning: "responsibility" },
@@ -836,7 +837,7 @@ export const N2ExtraWords: Record<string, TangoEntry> = {
           { kanji: "書", meaning: "write" }
         ],
         example: "彼は{読書}が趣味だと言う[にしては]、文学作品についてあまり詳しくない。",
-        exampleMeaning: "For someone who says {reading} is his hobby, he doesn't know much about literature.",
+        exampleMeaning: "[For someone who] says {reading} is his hobby, he doesn't know much about literature.",
       },
       {
         id: 57,
@@ -942,7 +943,7 @@ export const N2ExtraWords: Record<string, TangoEntry> = {
           { kanji: "件", meaning: "matter" }
         ],
         example: "周囲から無理だと言われても、{悪条件}をはね返して結果を[出してみせる]つもりだ。",
-        exampleMeaning: "Even if people around me say it's impossible, I intend to overcome the adverse conditions and produce results to prove them wrong.",
+        exampleMeaning: "Even if people around me say it's impossible, I intend to overcome the {adverse conditions} and produce results to [prove them wrong].",
         extraVocabulary: [
           { wordRuby: "周{しゅう}囲{い}", meaning: "surroundings・people around" },
         ],
@@ -984,7 +985,7 @@ export const N2ExtraWords: Record<string, TangoEntry> = {
         id: 66,
         wordRuby: "威{い}張{ば}る",
         meaning: "to act arrogant・to act bossy・to behave proudly in an unpleasant way",
-        info: "〜すら means: even ~・not even ~ [ 〜でさえ ] (often emphasizes that N is the minimum or most basic thing one would expect.)\n\n〜すら and 〜でさえ are almost interchangeable, bot mean 'even' or 'not even'. ",
+        info: "〜すら means: even ~・not even ~ [ 〜でさえ ] (often emphasizes that N is the minimum or most basic thing one would expect.)\n\n〜すら and 〜でさえ are almost interchangeable, both mean 'even' or 'not even'. ",
         components: [
           { kanji: "威", meaning: "authority・power" },
           { kanji: "張る", meaning: "stretch" }
@@ -1039,7 +1040,7 @@ export const N2ExtraWords: Record<string, TangoEntry> = {
       },
       {
         id: 70,
-        wordRuby: "修{おき}める",
+        wordRuby: "修{おさ}める",
         meaning: "to master (a skill)・to complete (a course of study)",
         info: "〜にならない means: cannot compare to ~・is on a completely different level from ~・is nowhere near ~ [ 〜と比べ物にならない・～と比べることができないほど差がある ] (used to express that something is not comparable to something else, often because it is much better, worse, or different in some significant way.)\nIt emphasizes: a significant difference in quality, ability, or characteristics between two things, often suggesting that one is far superior or inferior to the other.\n\nThis grammar is most commonly seen as: AはBにならない・AはBの比にならない",
         components: [
@@ -1103,7 +1104,7 @@ export const N2ExtraWords: Record<string, TangoEntry> = {
       },
       {
         id: 74,
-        wordRuby: "優{ゆう}勝{しょう}",
+        wordRuby: "優{ゆう}勝{しょう}",//TODO: fix grammar explanation
         meaning: "victory・winning a tournament",
         info: "It’s used when someone finishes in 1st place overall in a competition or tournament. \n\n① ～にあたり means: on the occasion of ~・at the time of ~・upon ~ [ 〜のとき ] (used to indicate that something happens at a specific time or during a particular event.)\nIt emphasizes: the timing of an action or event, often highlighting that it occurs during a significant or noteworthy occasion.  \n\n② ～にあたって means: when beginning...・when undertaking...・in preparation for... - Used when someone is about to start an important action or phase.",
         components: [
@@ -1111,7 +1112,7 @@ export const N2ExtraWords: Record<string, TangoEntry> = {
           { kanji: "勝", meaning: "win" }
         ],
         example: "卓球クラブの山谷さんは、大きな大会での{優勝}[にあたって]も、「[私なんか]まだまだですよ」と謙虚な姿勢を崩さなかった。",
-        exampleMeaning: "Even upon winning a major tournament, Mr. Yamatani from the table tennis club did not abandon his humble attitude, saying, 'I'm still not that good.'",
+        exampleMeaning: "Even [upon] {winning} a major tournament, Mr. Yamatani from the table tennis club did not abandon his humble attitude, saying, 'I'm still not that good.'",
         extraVocabulary: [
           { wordRuby: "卓{たっ}球{きゅう}", meaning: "table tennis" },
           { wordRuby: "謙{けん}虚{きょ}", meaning: "humble・humility・modesty" },
@@ -1220,7 +1221,7 @@ export const N2ExtraWords: Record<string, TangoEntry> = {
           { kanji: "常", meaning: "normal" }
         ],
         example: "どんなに管理されたシステム[であっても]、機械である以上は{異常}が発生し[得る]。",
-        exampleMeaning: "No matter how well-managed a system is, as long as it is a machine, abnormalities can possibly occur.",
+        exampleMeaning: "[No matter how] well-managed a system is, as long as it is a machine, {abnormalities} [can possibly] occur.",
         extraVocabulary: [
           { wordRuby: "管{かん}理{り}", meaning: "management" },
           { wordRuby: "機{き}械{かい}", meaning: "machine" },
@@ -1317,7 +1318,7 @@ export const N2ExtraWords: Record<string, TangoEntry> = {
           { kanji: "越", meaning: "cross" },
         ],
         example: "一人で抱え込んでいては、この困難を{乗り越え}[ようがない]。",
-        exampleMeaning: "If you keep dealing with it all by yourself, [there's no way to] [overcome] this difficulty.",
+        exampleMeaning: "If you keep dealing with it all by yourself, [there's no way to] {overcome} this difficulty.",
         extraVocabulary: [
           { wordRuby: "抱{かか}え込{こ}む", meaning: "to take on (a problem)・to shoulder (a burden)" },
         ],
@@ -1461,7 +1462,7 @@ export const N2ExtraWords: Record<string, TangoEntry> = {
       },
       {
         id: 100,
-        wordRuby: "驚{おどろ}く",
+        wordRuby: "驚{おどろ}く", //TODO: replace repeated word
         meaning: "to be surprised・to be shocked・to be amazed",
         info: "V. ます STEM + 〜かねない means: might end up ~・could possibly ~ (usually in a negative way) (used to express a potential negative outcome or risk associated with a certain action or situation)\nIt emphasizes: the potential danger or negative consequence of something, often used to warn or caution about a possible outcome.",
         components: [
