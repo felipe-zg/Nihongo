@@ -61,7 +61,14 @@ const FastPassPhrases: React.FC<Props> = ({
       <Box p={10}>
         {phrases.map((phrase, index) => (
           <Box>
-            <ExamplePhrase key={index} example={phrase} textAlign="left" secondayHighlightColor="tertiary.400" />
+            <HStack alignItems="center" mb={2}>
+              <Text flex={1} color="orange.400" fontSize="md" fontWeight="bold">
+                {index + 1}.
+              </Text>
+              <Box flex={19}>
+                <ExamplePhrase key={index} example={phrase} textAlign="left" secondayHighlightColor="tertiary.400" />
+              </Box>
+            </HStack>
             <Divider my={2} bg="gray.600" />
           </Box>
         ))}
