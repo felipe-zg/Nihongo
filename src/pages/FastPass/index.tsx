@@ -60,7 +60,7 @@ const FastPassPage: React.FC = () => {
 
   const runFilter = (filter: string): boolean => {
     if (!filter) return false;
-    let foundWord = checkIfItemExists(vocabularyList, filter);
+    let foundWord = checkIfItemExists(JLPT_N2_FASTPASS_TANGO, filter);
     if (foundWord) {
       setFilteredWord(foundWord);
       return true;
