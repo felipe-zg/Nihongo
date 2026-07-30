@@ -369,7 +369,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "楽", meaning: "Ease" }
         ],
         example: "休日は{気楽に}過ごしたい。",
-        exampleMeaning: "I want to spend my day off {relaxing}."
+        exampleMeaning: "I want to spend my day off {relaxing}.",
+        important: true
       },
       {
         id: 30,
@@ -3052,7 +3053,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "演", meaning: "Perform" }
         ],
         example: "友達が映画に{出演する}らしい。",
-        exampleMeaning: "Apparently, my friend is going to {appear in} a movie."
+        exampleMeaning: "Apparently, my friend is going to {appear in} a movie.",
+        important: true
       },
       {
         id: 229,
@@ -3536,7 +3538,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "力", meaning: "Power" }
         ],
         example: "誰にでも優しいのが彼女の{魅力}だ。",
-        exampleMeaning: "Being nice to everyone is part of her {charm}."
+        exampleMeaning: "Being nice to everyone is part of her {charm}.",
+        important: true
       },
       {
         id: 264,
@@ -3645,6 +3648,7 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
         extraVocabulary: [
           { wordRuby: "庭{にわ}", meaning: "Garden" }
         ],
+        important: true
       },
       {
         id: 271,
@@ -7833,7 +7837,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "裕", meaning: "Plenty" }
         ],
         example: "時間に{余裕}がないとミスが増える。",
-        exampleMeaning: "I make more mistakes when I don't have any {leeway} with time."
+        exampleMeaning: "I make more mistakes when I don't have any {leeway} with time.",
+        important: true,
       },
       {
         id: 568,
@@ -7844,7 +7849,11 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "計", meaning: "Measure" }
         ],
         example: "{余計な}物を買わないようにしている。",
-        exampleMeaning: "I try not to buy {unnecessary} things."
+        exampleMeaning: "I try not to buy {unnecessary} things.",
+        extraVocabulary: [
+          { wordRuby: "余{よ}計{けい}に", meaning: "Excessively・Even more" }
+        ],
+        important: true
       }
     ],
   },
@@ -10166,7 +10175,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
         extraVocabulary: [
           { wordRuby: "機{き}械{かい}", meaning: "Machine" },
           { wordRuby: "性{せい}能{のう}", meaning: "Performance" }
-        ]
+        ],
+        important: true
       }
     ],
   },
@@ -10737,7 +10747,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "囲", meaning: "Enclose" }
         ],
         example: "試験の{範囲}が発表された。",
-        exampleMeaning: "They announced the {range} of the exam."
+        exampleMeaning: "They announced the {range} of the exam.",
+        important: true
       },
       {
         id: 766,
@@ -11024,7 +11035,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "頼", meaning: "Rely" }
         ],
         example: "チームのメンバーを{信頼して}いる。",
-        exampleMeaning: "I {trust} my team members."
+        exampleMeaning: "I {trust} my team members.",
+        important: true
       },
       {
         id: 786,
@@ -13920,7 +13932,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "偏", meaning: "Unbalanced" }
         ],
         example: "食事の栄養が{偏らない}ようにする。",
-        exampleMeaning: "I try to avoid {unbalanced} nutrition meals."
+        exampleMeaning: "I try to avoid {unbalanced} nutrition meals.",
+        important: true
       },
       {
         id: 992,
@@ -14232,7 +14245,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "奮", meaning: "Excitement" }
         ],
         example: "緊張や{興奮}で、顔が赤くなる。",
-        exampleMeaning: "My face is red from nervousness and {excitement}."
+        exampleMeaning: "My face is red from nervousness and {excitement}.",
+        important: true
       },
       {
         id: 1020,
