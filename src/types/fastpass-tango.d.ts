@@ -18,6 +18,7 @@ declare type TangoWord = {
   components?: TangoComponent[];
   example: string;
   exampleMeaning: string;
+  grammarPoints?: string[];
   extraVocabulary?: VocabularyEntry[];
   important?: boolean;
 };
