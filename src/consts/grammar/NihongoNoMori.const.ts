@@ -369,12 +369,12 @@ export const NIHONGO_NO_MORI_GRAMMAR: GrammarEntry[] = [
   },
   {
     id: 13,
-    grammar: "〜つつめる",
+    grammar: "〜つつある",
     imi: "どんどん～になる",
     explanation: "少しずつ何かが変化している様子を表す時に使う",
     usage: {
       form: [{name: "V. ます STEM"}],
-      pattern: ["つつめる"]
+      pattern: ["つつある"]
     },
     examples: [
       {
