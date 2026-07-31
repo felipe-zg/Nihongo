@@ -54,7 +54,7 @@ const ExamplePhrase: React.FC<Props> = ({
           if (part.startsWith("[*")) {
             const match = part.match(/\[\*(\d+)\*(.*?)\]/);
             if (match) {
-              const [_, grammarId, displayText] = match;
+              const [, grammarId, displayText] = match;
               const explanation = grammarLookup?.[grammarId];
 
               return (
