@@ -48,8 +48,7 @@ const FastPass: React.FC<Props> = ({
 
   return (
     <Box alignItems="center" mt={10}>
-      <Stack space={4} mb={6} alignItems="center" justifyContent={"space-between"} width="98%" direction={{ base: "column", lg: "row" }} >
-        <Text fontSize={"xl"} bold color={"white"}>日本語の森 FAST PASS</Text>
+      <Stack space={4} mb={6} alignItems="center" justifyContent={"space-around"} width="98%" direction={{ base: "column", lg: "row" }} >
         <HStack space={2} alignItems={"center"} justifyContent={"center"}>
           <Input placeholder="Filter by reading or ID" width={{ base: "100%", lg: "150px" }} bg="white" color="black" value={filter} onChangeText={setFilter} />
           <Button colorScheme="blue" size={"xs"} variant="outline" onPress={onFilter}>
@@ -57,35 +56,31 @@ const FastPass: React.FC<Props> = ({
           </Button>
         </HStack>
         <HStack px={4} space={4}>
-          <Box>
-            <Select size={"xs"} color={"white"} selectedValue={String(startId)} onValueChange={(itemValue) => onStartIdChange(Number(itemValue))}>
-              <Select.Item label="-- Select a start index --" value="" />
-              {availableIds.map((key) => (
-                <Select.Item key={key} label={String(key)} value={String(key)} />
-              ))}
-            </Select>
-          </Box>
-          <Box>
-            <Select size={"xs"} color={"white"} selectedValue={String(endId)} onValueChange={(itemValue) => onEndIdChange(Number(itemValue))}>
-              <Select.Item label="-- Select an end index --" value="" />
-              {availableIds.map((key) => (
-                <Select.Item key={key} label={String(key)} value={String(key)} />
-              ))}
-            </Select>
-          </Box>
+          <Select w="100px" color={"white"} selectedValue={String(startId)} onValueChange={(itemValue) => onStartIdChange(Number(itemValue))}>
+            <Select.Item label="-- Select a start index --" value="" />
+            {availableIds.map((key) => (
+              <Select.Item key={key} label={String(key)} value={String(key)} />
+            ))}
+          </Select>
+          <Select w="100px" color={"white"} selectedValue={String(endId)} onValueChange={(itemValue) => onEndIdChange(Number(itemValue))}>
+            <Select.Item label="-- Select an end index --" value="" />
+            {availableIds.map((key) => (
+              <Select.Item key={key} label={String(key)} value={String(key)} />
+            ))}
+          </Select>
+          <Button
+            variant={importantOnly ? "solid" : "outline"}
+            colorScheme="yellow"
+            size="xs"
+            ml={2}
+            onPress={onImportantOnlyChange}
+          >
+            重要だけ
+          </Button>
+          <Button onPress={openPrintPage} colorScheme="blue" size={"xs"} variant={"outline"}>
+            印刷する
+          </Button>
         </HStack>
-        <Button
-          variant={importantOnly ? "solid" : "outline"}
-          colorScheme="yellow"
-          size="xs"
-          ml={2}
-          onPress={onImportantOnlyChange}
-        >
-          重要だけ
-        </Button>
-        <Button onPress={openPrintPage} colorScheme="blue" size={"xs"} variant={"outline"}>
-          印刷する
-        </Button>
       </Stack>
       {importantOnly && <Text mb={4} color={"yellow.400"}>{numberOfImportantWords} words</Text>}
       
