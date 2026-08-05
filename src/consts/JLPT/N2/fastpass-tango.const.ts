@@ -10720,7 +10720,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
         exampleMeaning: "I explain to the employees about the [evaluation] {standards}.",
         extraVocabulary: [
           { wordRuby: "評{ひょう}価{か}", meaning: "Evaluation" }
-        ]
+        ],
+        important: true
       },
       {
         id: 764,
@@ -12538,7 +12539,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "手", meaning: "Doer" }
         ],
         example: "{勝手な}行動をとらないでください。",
-        exampleMeaning: "Please don't act {selfishly}."
+        exampleMeaning: "Please don't act {selfishly}.",
+        important: true
       }
     ],
   },
