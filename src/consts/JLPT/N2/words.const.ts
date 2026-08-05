@@ -3614,7 +3614,117 @@ export const N2ExtraWords: Record<string, TangoEntry> = {
           { wordRuby: "記{き}者{しゃ}会{かい}見{けん}", meaning: "press conference" },
           { wordRuby: "事{じ}前{ぜん}", meaning: "prior・beforehand" }
         ]
+      },
+      {
+        id: 250,
+        wordRuby: "ガッツリ",
+        meaning: "thoroughly・heavily・intensely・to a great extent・heartily (when eating)",
+        example: "明日の重要なプレゼンを成功させるために、今夜は{ガッツリ}準備をし[*139*ぬく]つもりだ。",
+        exampleMeaning: "In order to make tomorrow's important presentation a success, I intend to {thoroughly} prepare [to the very end] tonight."
+      },
+      {
+        id: 251,
+        wordRuby: "きっと",
+        meaning: "surely・certainly・undoubtedly・without a doubt",
+        example: "これだけ毎日練習を<重ねて>きたのだから、彼女なら{きっと}試験に合格する[*92*に違いない]。",
+        exampleMeaning: "Since she has practiced this much every single day, she is bound to pass the exam [without a doubt].",
+        extraVocabulary: [
+          { wordRuby: "重{かさ}ねる", meaning: "to pile up・to accumulate" }
+        ]
+      },
+      {
+        id: 252,
+        wordRuby: "肉{にく}食{しょく}獣{じゅう}",
+        meaning: "carnivore・predatory animal",
+        example: "ドキュメンタリー映画[*122*を通して]、厳しい<自然界>で<生き抜く>{肉食獣}のリアルな<生態>を学ぶことができた。",
+        exampleMeaning: "Through the documentary film, I was able to learn about the realistic ecology of carnivores surviving in the harsh natural world.",
+        extraVocabulary: [
+          { wordRuby: "自{し}然{ぜん}界{かい}", meaning: "natural world・nature" },
+          { wordRuby: "生{い}き抜{ぬ}く", meaning: "to survive・to live through" },
+          { wordRuby: "生{せい}態{たい}", meaning: "ecology・habitat" }
+        ]
+      },
+      {
+        id: 253,
+        wordRuby: "温{おん}室{しつ}",
+        meaning: "greenhouse・hothouse・glasshouse",
+        example: "<異常><気象>による<農作物>の<不作>[*138*を契機に]、<天候>に<左右され>ない<最新式>の{温室}<栽培>を<導入>する<農家>が増えている。",
+        exampleMeaning: "[Triggered by] crop failures caused by abnormal weather, an increasing number of farms are adopting latest model {greenhouse} cultivation that is not at the mercy of the climate.",
+        extraVocabulary: [
+          { wordRuby: "異{い}常{じょう}", meaning: "abnormal・unusual" },
+          { wordRuby: "気{き}象{しょう}", meaning: "weather・atmosphere" },
+          { wordRuby: "農{のう}作{さく}物{ぶつ}", meaning: "agricultural products・crops" },
+          { wordRuby: "不{ふ}作{さく}", meaning: "poor harvest・crop failure" },
+          { wordRuby: "天{てん}候{こう}", meaning: "weather・climate" },
+          { wordRuby: "左{さ}右{ゆう}される", meaning: "to be influenced・to be affected" },
+          { wordRuby: "最{さい}新{しん}式{しき}", meaning: "latest model" },
+          { wordRuby: "栽{さい}培{ばい}", meaning: "cultivation・farming" },
+          { wordRuby: "導{どう}入{にゅう}", meaning: "introduction・implementation" },
+          { wordRuby: "農{のう}家{か}", meaning: "farmer・farmhouse" }
+        ]
+      },
+      {
+        id: 254,
+        wordRuby: "呑{の}む",
+        meaning: "to drink (alcohol)・to swallow・to gulp down",
+        example: "嫌な出来事を忘れるためにお酒を{呑める}[*100*ものなら]今すぐ{呑みたい}が、明日の仕事に<響く>ので<我慢>する。",
+        exampleMeaning: "[If I could] {drink} alcohol to forget this unpleasant event, I'd want to {drink} right now, but I'll hold back since it would affect tomorrow's work.",
+        extraVocabulary: [
+          { wordRuby: "響{ひび}く", meaning: "to affect・to have an impact・lingering effect on (negative consequence)" },
+          { wordRuby: "我{が}慢{まん}", meaning: "patience・endurance・self-control" }
+        ]
+      },
+      {
+        id: 255,
+        wordRuby: "改{かい}札{さつ}",
+        meaning: "ticket gate・ticket inspection",
+        example: "電車の{改札}を<抜けた>[*141*途端に]、外は<激しい>雨が降り始めた。",
+        exampleMeaning: "[The moment I] passed through the train {ticket gate}, heavy rain started falling outside.",
+        extraVocabulary: [
+          { wordRuby: "抜{ぬ}ける", meaning: "to pass through・to come out" },
+          { wordRuby: "激{はげ}しい", meaning: "intense・violent・severe" }
+        ]
+      },
+      {
+        id: 256,
+        wordRuby: "モテる",
+        meaning: "to be popular (especially with the opposite sex)・to be attractive・to be well-liked",
+        example: "<外見>が良くて<異性>に{モテる}[*7*からといって]、必ずしも他人の気持ちが理解できる[*29*わけではない]。",
+        exampleMeaning: "[Just because] someone is attractive and {popular} [doesn't necessarily mean] they can understand other people's feelings.",
+        extraVocabulary: [
+          { wordRuby: "外{がい}見{けん}", meaning: "appearance・looks" },
+          { wordRuby: "異{い}性{せい}", meaning: "opposite sex・different gender" }
+        ]
+      },
+      {
+        id: 257,
+        wordRuby: "縛{しば}る",
+        meaning: "to tie・to bind・to restrict・to restrain・to limit",
+        example: "社員を古い<規則>で<過剰>に{縛り}続けると、<優秀な>人材のモチベーションを<低下>させ[*96*かねない]。",
+        exampleMeaning: "If you continue to excessively {restrain} employees with old rules, [it could] very well lower the motivation of talented staff.",
+        extraVocabulary: [
+          { wordRuby: "規{き}則{そく}", meaning: "rule・regulation" },
+          { wordRuby: "過{か}剰{じょう}", meaning: "excessive・overly" },
+          { wordRuby: "優{ゆう}秀{しゅう}", meaning: "excellent・outstanding" },
+          { wordRuby: "低{てい}下{か}", meaning: "decline・reduction" }
+        ]
+      },
+      {
+        id: 258,
+        wordRuby: "通{つう}じる",
+        meaning: "to communicate・to understand each other・to be understood・to be effective",
+        example: "<誠意>を持って相手に<接して>いれば、言葉が違っても気持ちは<自ずと>{通じる}[*127*ものだ]。",
+        exampleMeaning: "As long as you treat others with sincerity, your feelings will naturally come through even if the language is different.",
+        extraVocabulary: [
+          { wordRuby: "誠{せい}意{い}", meaning: "sincerity・genuine intent" },
+          { wordRuby: "接{せっ}する", meaning: "to interact with・to deal with・to come into contact with" },
+          { wordRuby: "自{おの}ずと", meaning: "naturally・automatically・as a natural consequence" }
+        ]
       }
     ],
   },
 };
+
+// きっと --> きっと小さい頃から人の手で育てて訓練もしてるとは思うけど、やっぱり肉食獣なので怖いですよね
+// 肉食獣 --> 肉食獣は肉を食べる動物のこと。ライオンやトラなどが代表的な肉食獣です。
+// 温室 --> 温室は、植物を育てるための建物で、外気温や湿度を調整して植物が育ちやすい環境を作ることができます。
