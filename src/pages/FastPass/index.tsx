@@ -14,6 +14,7 @@ const FastPassPage: React.FC = () => {
   const [endId, setEndId] = React.useState(60);
   const [filteredWord, setFilteredWord] = React.useState<TangoWord | null>(null);
   const [importantOnly, setImportantOnly] = React.useState(false);
+  const [randomWords, setRandomWords] = React.useState(false);
   const [numberOfImportantWords, setNumberOfImportantWords] = React.useState(0);
 
   const openPrintPage = () => {
@@ -41,6 +42,10 @@ const FastPassPage: React.FC = () => {
 
   const handleImportantOnlyChange = (): void => {
     setImportantOnly(prev => !prev);
+  }
+
+  const handleRandomWordsChange = (): void => {
+    setRandomWords(prev => !prev);
   }
 
   const checkIfItemExists = (itemsObject: Record<string, TangoEntry>, filter: string): TangoWord | null => {
@@ -87,7 +92,33 @@ const FastPassPage: React.FC = () => {
     return words.filter(word => word.important);
   }
 
+  const getRandomWords = (words: TangoWord[], count: number) => {
+    const shuffled = [...words].sort(() => Math.random() - 0.5);
+    return shuffled.slice(0, count).sort((a, b) => a.id - b.id);
+  }
+
+  const setUpRandomWords = (shuffledWords: TangoWord[]) => {
+    const randomTango: Record<string, TangoEntry> = {};
+    for (const word of shuffledWords) {
+      const entryKey = Object.keys(vocabularyList).find(key =>
+        vocabularyList[key].words.some(w => w.id === word.id)
+      );
+      if (entryKey) {
+        if (!randomTango[entryKey]) {
+          randomTango[entryKey] = { ...vocabularyList[entryKey], words: [] };
+        }
+        randomTango[entryKey].words.push(word);
+      }
+    }
+    return randomTango;
+  }
+
   const tangoList = React.useMemo(() => {
+    if (randomWords) {
+      const allWords = Object.values(vocabularyList).flatMap(entry => entry.words);
+      const shuffledWords = getRandomWords(allWords, 10);
+      return setUpRandomWords(shuffledWords);
+    }
     const filteredTango: Record<string, TangoEntry> = {};
     let _numberOfImportantWords = 0;
     for (const [key, entry] of Object.entries(vocabularyList)) {
@@ -100,7 +131,7 @@ const FastPassPage: React.FC = () => {
     setNumberOfImportantWords(_numberOfImportantWords);
     return filteredTango;
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [vocabularyList, importantOnly, startId, endId]);
+  }, [vocabularyList, importantOnly, randomWords, startId, endId]);
 
   return (
     <FastPass 
@@ -111,6 +142,8 @@ const FastPassPage: React.FC = () => {
       endId={endId}
       importantOnly={importantOnly}
       onImportantOnlyChange={handleImportantOnlyChange}
+      randomWords={randomWords}
+      onRandomWordsChange={handleRandomWordsChange}
       numberOfImportantWords={numberOfImportantWords}
       onStartIdChange={handleStartIdChange}
       onEndIdChange={handleEndIdChange}

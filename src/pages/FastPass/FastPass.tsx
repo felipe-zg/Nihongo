@@ -11,7 +11,9 @@ type Props = {
   endId: number;
   importantOnly: boolean;
   numberOfImportantWords: number;
+  randomWords: boolean;
   onImportantOnlyChange(): void;
+  onRandomWordsChange(): void;
   onStartIdChange(id: number): void;
   onEndIdChange(id: number): void;
   openPrintPage(): void;
@@ -25,7 +27,9 @@ const FastPass: React.FC<Props> = ({
   endId,
   importantOnly,
   numberOfImportantWords,
+  randomWords,
   onImportantOnlyChange,
+  onRandomWordsChange,
   onStartIdChange,
   onEndIdChange,
   openPrintPage,
@@ -68,6 +72,15 @@ const FastPass: React.FC<Props> = ({
               <Select.Item key={key} label={String(key)} value={String(key)} />
             ))}
           </Select>
+          <Button
+            variant={randomWords ? "solid" : "outline"}
+            colorScheme="orange"
+            size="xs"
+            ml={2}
+            onPress={onRandomWordsChange}
+          >
+            ランダム
+          </Button>
           <Button
             variant={importantOnly ? "solid" : "outline"}
             colorScheme="yellow"
