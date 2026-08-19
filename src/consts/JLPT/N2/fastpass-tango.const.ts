@@ -6468,7 +6468,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
         exampleMeaning: "I {realized} that my Japanese has [improved].",
         extraVocabulary: [
           { wordRuby: "上{じょう}達{たつ}", meaning: "Improvement" }
-        ]
+        ],
+        important: true
       },
       {
         id: 472,
@@ -7245,7 +7246,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "整", meaning: "Arrange" }
         ],
         example: "スケジュールを{調整する}。",
-        exampleMeaning: "I'll {adjust} the schedule."
+        exampleMeaning: "I'll {adjust} the schedule.",
+        important: true
       }
     ]
   },
@@ -11774,7 +11776,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "案", meaning: "Idea" }
         ],
         example: "会議で新しい仕事のやり方を{提案した}。",
-        exampleMeaning: "I {suggested} a new work method at the meeting."
+        exampleMeaning: "I {suggested} a new work method at the meeting.",
+        important: true
       }
     ]
   },
