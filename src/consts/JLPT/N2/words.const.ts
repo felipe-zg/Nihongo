@@ -716,6 +716,7 @@ export const N2ExtraWords: Record<string, TangoEntry> = {
           { wordRuby: "建{けん}設{せつ}", meaning: "construction" },
           { wordRuby: "対{たい}立{りつ}", meaning: "conflict・confrontation" },
         ],
+        important: true
       },
       {
         id: 52,
@@ -3371,6 +3372,7 @@ export const N2ExtraWords: Record<string, TangoEntry> = {
         ],
         example: "業務の{都合}[*178*上]、明日の会議には出席できなくなりましたので、後ほど資料をお送りいたします。",
         exampleMeaning: "[In view of] operational {convenience}, I will be unable to attend tomorrow's meeting, so I will send you the materials later.",
+        important: true,
       },
       {
         id: 231,
@@ -3720,11 +3722,93 @@ export const N2ExtraWords: Record<string, TangoEntry> = {
           { wordRuby: "接{せっ}する", meaning: "to interact with・to deal with・to come into contact with" },
           { wordRuby: "自{おの}ずと", meaning: "naturally・automatically・as a natural consequence" }
         ]
+      },
+      {
+        id: 259,
+        wordRuby: "保{ほ}留{りゅう}",
+        connector: "する",
+        meaning: "to put on hold・to suspend・to reserve・to keep in storage",
+        example: "会議でその一件を{保留}にし[*222*ていては]、今日中に<結論>が出[*223*そうにない]。",
+        exampleMeaning: "[If we keep] {holding off} on that matter in the meeting, [it doesn't look like we'll] reach a conclusion by the end of the day.",
+        extraVocabulary: [
+          { wordRuby: "結{けつ}論{ろん}", meaning: "conclusion・final decision・bottom line" }
+        ]
+      },
+      {
+        id: 260,
+        wordRuby: "一{いっ}件{けん}",
+        meaning: "one case・one item・one matter",
+        example: "たった{一件}のミスがあった[*217*というだけで]、全ての努力が<否定>されるのは<納得>がいかない。",
+        exampleMeaning: "I can't accept that all my effort is dismissed [simply because of] {a single} mistake.",
+        extraVocabulary: [
+          { wordRuby: "否{ひ}定{てい}", meaning: "denial・negation" },
+          { wordRuby: "納{なっ}得{とく}", meaning: "consent・understanding・acceptance" }
+        ]
+      },
+      {
+        id: 261,
+        wordRuby: "サクッと",
+        meaning: "quickly・lightly・crisply",
+        example: "こんな<複雑な>タスクを{サクッと}終わらせられ[*221*っこない]から、もっと時間をかけるべきだ。",
+        exampleMeaning: "[There is absolutely no way] we can {quickly} wrap up such a complex task, so we should spend more time on it.",
+        extraVocabulary: [
+          { wordRuby: "複{ふく}雑{ざつ}", meaning: "complexity・complication" }
+        ]
+      },
+      {
+        id: 262,
+        wordRuby: "中{ちゅう}間{かん}地{ち}点{てん}",
+        meaning: "midpoint・halfway point",
+        example: "<暴風雨>である[*218*にもかかわらず]、彼らは約束通り{中間地点}で<合流>した。",
+        exampleMeaning: "[Despite] the severe storm, they met up at the {midpoint} as promised.",
+        extraVocabulary: [
+          { wordRuby: "暴{ぼう}風{ふう}雨{う}", meaning: "storm・tempest・windstorm with heavy rain" },
+          { wordRuby: "合{ごう}流{りゅう}", meaning: "to meet up・to converge" }
+        ]
+      },
+      {
+        id: 263,
+        wordRuby: "バッチリ",
+        meaning: "perfectly・flawlessly・spot on",
+        example: "事前準備を{バッチリ}<整えて>おいた[*224*だからこそ]、<想定外>のトラブルにも<焦らず><対応>できた。",
+        exampleMeaning: "It was [precisely because] we prepared so {perfectly} in advance that we were able to handle unexpected trouble without panicking.",
+        extraVocabulary: [
+          { wordRuby: "整{ととの}える", meaning: "to prepare・to arrange・to put in order・to organize" },
+          { wordRuby: "想{そう}定{てい}", meaning: "expectation・preconception・assumption" },
+          { wordRuby: "想{そう}定{てい}外{がい}", meaning: "unexpected・unforeseen・beyond what was anticipated" },
+          { wordRuby: "焦{あせ}る", meaning: "to panic・to be flustered" },
+          { wordRuby: "対{たい}応{おう}", meaning: "response・handling" }
+        ]
+      },
+      {
+        id: 264,
+        wordRuby: "終{しゅう}了{りょう}",
+        meaning: "end・completion・termination",
+        example: "イベントが{終了}した[*220*かというと]、実は<第二部>があるので<完全>に終わった[*226*なんてない]。",
+        exampleMeaning: "[If you ask whether] the event is {over}, there's actually a second part, so [it's not like] it's completely finished.",
+        extraVocabulary: [
+          { wordRuby: "第{だい}二{に}部{ぶ}", meaning: "second part・second section・Part 2" },
+          { wordRuby: "完{かん}全{ぜん}", meaning: "complete・perfect" }
+        ]
+      },
+      {
+        id: 265,
+        wordRuby: "ぶらぶらする",
+        meaning: "to stroll・to wander aimlessly・to dangle",
+        example: "休日は[*227*どちらかというと]、家で過ごすより街を{ぶらぶらする}方が好きだ。",
+        exampleMeaning: "[If I had to say, I prefer] {wandering around} town on weekends rather than staying at home.",
+      },
+      {
+        id: 266,
+        wordRuby: "特{とく}有{ゆう}",
+        meaning: "unique・characteristic・peculiar・distinctive",
+        example: "この地域{特有}の文化は、<不便さ>[*219*こそ]ある[*219*が]、<伝統>を守り続けている人々[*225*ならでは]の温かさがある。",
+        exampleMeaning: "[While] the culture {unique} to this region does have its inconveniences, [it] possesses a warmth that [is only possible with] people who continue to preserve tradition.",
+        extraVocabulary: [
+          { wordRuby: "不{ふ}便{べん}さ", meaning: "inconvenience・disadvantage" },
+          { wordRuby: "伝{でん}統{とう}", meaning: "tradition・custom・traditional culture or practices" }
+        ]
       }
     ],
   },
 };
-
-// きっと --> きっと小さい頃から人の手で育てて訓練もしてるとは思うけど、やっぱり肉食獣なので怖いですよね
-// 肉食獣 --> 肉食獣は肉を食べる動物のこと。ライオンやトラなどが代表的な肉食獣です。
-// 温室 --> 温室は、植物を育てるための建物で、外気温や湿度を調整して植物が育ちやすい環境を作ることができます。
