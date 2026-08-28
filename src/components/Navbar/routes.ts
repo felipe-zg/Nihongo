@@ -46,6 +46,12 @@ export const routes: RouteItem[] = [
     ],
   },
   {
+    name: 'IT',
+    children: [
+      { name: 'IT words', path: '/IT/words' },
+    ],
+  },
+  {
     name: 'Notes',
     children: [
       { name: 'Notes words', path: '/JLPT/ExamVocabs?source=NOTES_WORDS' },
@@ -69,7 +75,26 @@ export const routes: RouteItem[] = [
   { name: 'Words quizz', path: '/words-quizz' },
   { name: 'Verbs', path: '/verbs' },
   { name: 'Lessons', path: '/lessons' },
-  { name: 'Music', path: '/music/leina/nostalgia' },
+  { 
+    name: 'Music', 
+    children: [
+      { name: 'Home', path: '/' },
+      { name: 'Nostalgia', path: '/music?artist=Leina&song=nostalgia' },
+      { name: 'Moment', path: '/music?artist=Leina&song=moment' },
+      { name: 'Blue Age', path: '/music?artist=Leina&song=blue-age' },
+      { name: '君が死にたいって言うなら', path: '/music?artist=Leina&song=kimigashinitaitteiunara' },
+      { name: 'Monsters', path: '/music?artist=Nemophila&song=monsters' },
+      { name: 'Life', path: '/music?artist=Nemophila&song=life' },
+      { name: 'Sorai', path: '/music?artist=Nemophila&song=sorai' },
+      { name: 'Just Do It', path: '/music?artist=Nemophila&song=just-do-it' },
+      { name: 'God', path: '/music?artist=Nemophila&song=god' },
+      { name: 'Raitei', path: '/music?artist=Nemophila&song=raitei' },
+      { name: 'ブルーライト', path: '/music?artist=Others&song=ブルーライト' },
+      { name: '死ぬのがいいわ', path: '/music?artist=Others&song=死ぬのがいいわ' },
+      { name: '東京', path: '/music?artist=Others&song=東京' },
+      { name: '革命道中', path: '/music?artist=Others&song=革命道中' },
+    ]
+  },
   { name: 'Real Japanese Audio', path: '/audio/real-japanese' },
   { name: 'Kanji Create', path: '/kanji-create' },
   { name: 'Interview', path: '/interview' },
