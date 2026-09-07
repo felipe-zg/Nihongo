@@ -1,15 +1,20 @@
 import React from "react";
 import FastPass from "./FastPass";
-import { JLPT_N2_FASTPASS_TANGO, N2ExtraWords } from "../../consts";
+import { JLPT_N1_FASTPASS_TANGO, JLPT_N2_FASTPASS_TANGO, N1ExtraWords, N2ExtraWords } from "../../consts";
 import { parseRuby } from "../../utils/music/rubyParser";
 import { useSearchParams } from "react-router-dom";
+import { grammarPoints } from "../../consts/JLPT/N2/gammar-points.const";
 
 type VocabularySource = 'FASTPASS' | 'EXTRA';
+type VocabularyLevel = 'N1' | 'N2' | 'N3';
 
 const FastPassPage: React.FC = () => {
   const [searchParams] = useSearchParams();
   const vocabularySourceParam: VocabularySource = (searchParams.get("source") as VocabularySource);
-  const vocabularyList = vocabularySourceParam === "EXTRA" ? N2ExtraWords : JLPT_N2_FASTPASS_TANGO;
+  const vocabularyLevelParam: VocabularyLevel = (searchParams.get("level") as VocabularyLevel);
+  const vocabularyList = vocabularySourceParam === "EXTRA" 
+      ? (vocabularyLevelParam === "N1" ? N1ExtraWords : N2ExtraWords) 
+      : (vocabularyLevelParam === "N1" ? JLPT_N1_FASTPASS_TANGO : JLPT_N2_FASTPASS_TANGO);
   const [startId, setStartId] = React.useState(1);
   const [endId, setEndId] = React.useState(60);
   const [filteredWord, setFilteredWord] = React.useState<TangoWord | null>(null);
