@@ -8,3 +8,4 @@ export * from "./N3/exercises/grammar.const";
 export * from "./N3/exercises/moji.const";
 export * from "./N3/exercises/goi.const";
 export * from "./N2";
+export * from "./N1";
