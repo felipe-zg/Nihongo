@@ -14,44 +14,49 @@ export const VocabularyItem: React.FC<{ word: TangoWord }> = ({ word }) => {
     return (
       <Modal isOpen={isOpen} onClose={() => setSelectedGrammar(null)} size="lg" position={"fixed"} top={0} left={0} w={"100vw"} h={"100vh"} justifyContent={"center"} alignItems={"center"}>
         <Box>
-          <HStack space={2} mb={2} alignItems={"center"}>
-            <VStack>
-              {grammar?.rule.map((rule, index) => (
-                <Text key={index} fontFamily="Klee One" color={"red.500"} mb={1}>{rule}</Text>
-              ))}
-            </VStack>
-            <VStack>
-              <Text color={"white"}>+</Text>
-            </VStack>
-            <VStack>
-              {grammar?.pattern.map((pattern, index) => (
-                <Text key={index} fontFamily="Klee One" color={"tertiary.400"} mb={1}>{pattern}</Text>
-              ))}
-            </VStack>
-            {grammar?.rule2 && (
-              <>
-                <VStack>
-                  <Text color={"white"}>+</Text>
-                </VStack>
-                <VStack>
-                  {grammar?.rule2.map((rule, index) => (
-                    <Text key={index} fontFamily="Klee One" color={"red.500"} mb={1}>{rule}</Text>
-                  ))}
-                </VStack>
-              </>
-            )}
-            {grammar?.pattern2 && (
-              <>
-                <VStack>
-                  <Text color={"white"}>+</Text>
-                </VStack>
-                <VStack>
-                  {grammar?.pattern2.map((pattern, index) => (
-                <Text key={index} fontFamily="Klee One" color={"tertiary.400"} mb={1}>{pattern}</Text>
-              ))}
-                </VStack>
-              </>
-            )}
+          <HStack space={2} mb={2} alignItems={"center"} justifyContent={"space-between"}>
+            <HStack space={2} mb={2} alignItems={"center"}>
+              <VStack>
+                {grammar?.rule.map((rule, index) => (
+                  <Text key={index} fontFamily="Klee One" color={"red.500"} mb={1}>{rule}</Text>
+                ))}
+              </VStack>
+              <VStack>
+                <Text color={"white"}>+</Text>
+              </VStack>
+              <VStack>
+                {grammar?.pattern.map((pattern, index) => (
+                  <Text key={index} fontFamily="Klee One" color={"tertiary.400"} mb={1}>{pattern}</Text>
+                ))}
+              </VStack>
+              {grammar?.rule2 && (
+                <>
+                  <VStack>
+                    <Text color={"white"}>+</Text>
+                  </VStack>
+                  <VStack>
+                    {grammar?.rule2.map((rule, index) => (
+                      <Text key={index} fontFamily="Klee One" color={"red.500"} mb={1}>{rule}</Text>
+                    ))}
+                  </VStack>
+                </>
+              )}
+              {grammar?.pattern2 && (
+                <>
+                  <VStack>
+                    <Text color={"white"}>+</Text>
+                  </VStack>
+                  <VStack>
+                    {grammar?.pattern2.map((pattern, index) => (
+                  <Text key={index} fontFamily="Klee One" color={"tertiary.400"} mb={1}>{pattern}</Text>
+                ))}
+                  </VStack>
+                </>
+              )}
+            </HStack>
+            <Box alignItems={"center"} justifyContent={"center"} borderWidth={1} borderColor={"yellow.600"} borderRadius={5} p={1} minW={"20"}>
+              <Text fontFamily="Klee One" color={"white"}>{grammar?.level}</Text>
+            </Box>
           </HStack>
           {grammar?.extraPattern && (
             <>
@@ -133,14 +138,17 @@ export const VocabularyItem: React.FC<{ word: TangoWord }> = ({ word }) => {
     return (
       <Modal isOpen={isOpen} onClose={() => setShowExtraVocabulary(false)} size="lg" position={"fixed"} top={0} left={0} w={"100vw"} h={"100vh"} justifyContent={"center"} alignItems={"center"}>
         {extraVocabulary?.map((vocab, index) => (
-          <HStack key={index} space={4} alignItems={"center"}>
-            <Box flex={1}>
-              <Word ruby={vocab.wordRuby} showFurigana fontSize="md" color="lime.500" />
-            </Box>
-            <Text flex={9} fontFamily="Klee One" color={"lime.300"}>
-              {vocab.meaning}
-            </Text>
-          </HStack>
+          <>
+            <HStack key={index} space={4} alignItems={"center"}>
+              <Box flex={1}>
+                <Word ruby={vocab.wordRuby} showFurigana fontSize="md" color="orange.500" />
+              </Box>
+              <Text flex={9} fontFamily="Klee One" color={"orange.500"}>
+                {vocab.meaning}
+              </Text>
+            </HStack>
+            <Divider mt={1} mb={2} thickness={0.1} bg="gray.600"  />
+          </>
         ))}
       </Modal>
     );
