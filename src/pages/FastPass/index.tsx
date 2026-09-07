@@ -3,7 +3,6 @@ import FastPass from "./FastPass";
 import { JLPT_N1_FASTPASS_TANGO, JLPT_N2_FASTPASS_TANGO, N1ExtraWords, N2ExtraWords } from "../../consts";
 import { parseRuby } from "../../utils/music/rubyParser";
 import { useSearchParams } from "react-router-dom";
-import { grammarPoints } from "../../consts/JLPT/N2/gammar-points.const";
 
 type VocabularySource = 'FASTPASS' | 'EXTRA';
 type VocabularyLevel = 'N1' | 'N2' | 'N3';
