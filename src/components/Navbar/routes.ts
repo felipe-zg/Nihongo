@@ -12,6 +12,13 @@ type RouteItem = SimpleRoute | NestedRoute;
 
 export const routes: RouteItem[] = [
   {
+    name: 'N1',
+    children: [
+      { name: '日本語の森・FAST PASS', path: '/JLPT/fastpass?level=N1' },
+      { name: '日本語の森・FAST PASS Extra', path: '/JLPT/fastpass?level=N1&source=EXTRA' },
+    ],
+  },
+  {
     name: 'N2',
     children: [
       { name: '日本語の森・文法・N2', path: '/grammar/nihongo-no-mori?level=N2' },
@@ -20,8 +27,8 @@ export const routes: RouteItem[] = [
       { name: '日本語の森・復習・N2', path: '/JLPT/ExamVocabs?source=NIHONGO_NO_MORI&level=N2' },
       { name: '日本語の森・美味しい漢字・N2', path: '/kanji' },
       { name: '日本語の森・文字・語彙', path: '/JLPT/ExamVocabs?source=MOJI_GOI&level=N2' },
-      { name: '日本語の森・FAST PASS', path: '/JLPT/fastpass' },
-      { name: '日本語の森・FAST PASS Extra', path: '/JLPT/fastpass?source=EXTRA' },
+      { name: '日本語の森・FAST PASS', path: '/JLPT/fastpass?level=N2' },
+      { name: '日本語の森・FAST PASS Extra', path: '/JLPT/fastpass?level=N2&source=EXTRA' },
       { name: '日本語の森・FAST PASS 文章', path: '/JLPT/fastpass-phrases' },
       { name: '日本語の森・FAST PASS 文章 Extra', path: '/JLPT/fastpass-phrases?source=EXTRA' },
       { name: 'JLPT Grammar N2', path: '/JLPT/grammar/N2' },
