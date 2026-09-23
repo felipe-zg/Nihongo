@@ -1,1 +1,2 @@
-export * from './IT_words';
+export * from './IT_words.const';
+export * from './FE_words.const';

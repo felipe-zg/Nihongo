@@ -145,4 +145,39 @@ export const IT_words = [
       { wordRuby: "または", meaning: "or" },
     ]
   },
+  {
+    id: 16,
+    wordRuby: "端{たん}末{まつ}",
+    meaning: "terminal",
+    extraVocabulary: [
+      { wordRuby: "端{たん}末{まつ}処{しょ}理{り}", meaning: "terminal processing" },
+    ]
+  },
+  {
+    id: 17,
+    wordRuby: "固{こ}定{てい}する",
+    meaning: "To fix・To make constant",
+  },
+  {
+    id: 18,
+    wordRuby: "認{にん}識{しき}する",
+    meaning: "To recognize・To identify",
+  }
 ];
+
+// 統合
+// 切り替わって
+// 押さえる
+// 手元.    -    手元へピーエヌピーエムをグローバル導入してもよいですか。
+// 導入
+// 有効
+// 指定
+// 版
+// 安定版
+// 更新
+// 差分
+// 拡張機能
+// 五件表示
+
+
+// 三件
