@@ -701,6 +701,7 @@ export const N2ExtraWords: Record<string, TangoEntry> = {
           { wordRuby: "十{じゅう}分{ぶん}に", meaning: "thoroughly" },
           { wordRuby: "検{けん}証{しょう}", meaning: "verification" },
         ],
+        important: true
       },
       {
         id: 51,

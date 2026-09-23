@@ -931,7 +931,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
         exampleMeaning: "A new [system] has been {established}.",
         extraVocabulary: [
           { wordRuby: "制{せい}度{ど}", meaning: "System" }
-        ]
+        ],
+        important: true
       },
       {
         id: 72,
@@ -1192,7 +1193,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
         extraVocabulary: [
           { wordRuby: "機{き}械{かい}", meaning: "Machine" },
           { wordRuby: "大{たい}量{りょう}", meaning: "Large amount" }
-        ]
+        ],
+        important: true
       },
       {
         id: 91,
@@ -1451,7 +1453,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
         exampleMeaning: "The government {carried out} a survey on tourism.",
         extraVocabulary: [
           { wordRuby: "観{かん}光{こう}", meaning: "Tourism" }
-        ]
+        ],
+        important: true
       },
       {
         id: 110,
@@ -1986,7 +1989,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "策", meaning: "Strategy" }
         ],
         example: "風邪を引かないように{対策して}いる。",
-        exampleMeaning: "I'm taking {countermeasures} to avoid catching a cold."
+        exampleMeaning: "I'm taking {countermeasures} to avoid catching a cold.",
+        important: true
       },
       {
         id: 151,
@@ -3464,7 +3468,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
         exampleMeaning: "I choose things based on {function} rather than design.",
         extraVocabulary: [
           { wordRuby: "重{じゅう}視{し}", meaning: "Emphasis" }
-        ]
+        ],
+        important: true
       },
       {
         id: 258,
@@ -4165,7 +4170,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
         exampleMeaning: "What are the necessary {elements} for [success]?",
         extraVocabulary: [
           { wordRuby: "成{せい}功{こう}", meaning: "Success" }
-        ]
+        ],
+        important: true
       },
       {
         id: 308,
@@ -4179,7 +4185,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
         exampleMeaning: "I'll give you an {overview} of the [business].",
         extraVocabulary: [
           { wordRuby: "事{じ}業{ぎょう}", meaning: "Business" }
-        ]
+        ],
+        important: true
       },
       {
         id: 309,
@@ -4456,7 +4463,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "先", meaning: "Ahead" }
         ],
         example: "忙しいときは、重要な仕事を{優先する}。",
-        exampleMeaning: "I give {priority} to important tasks when I'm busy."
+        exampleMeaning: "I give {priority} to important tasks when I'm busy.",
+        important: true
       },
       {
         id: 329,
@@ -4972,7 +4980,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "画", meaning: "Picture" }
         ],
         example: "子ども向けのイベントを{企画する}。",
-        exampleMeaning: "I'm going to {plan} an event for kids."
+        exampleMeaning: "I'm going to {plan} an event for kids.",
+        important: true
       },
       {
         id: 365,
@@ -6060,6 +6069,7 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
         extraVocabulary: [
           { wordRuby: "消{しょう}費{ひ}者{しゃ}", meaning: "Consumer" }
         ],
+        important: true
       }
     ],
   },
@@ -7143,7 +7153,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "連", meaning: "Connect" }
         ],
         example: "この問題に{関連する}書類をまとめる。",
-        exampleMeaning: "I'll gather the documents {related} to this issue."
+        exampleMeaning: "I'll gather the documents {related} to this issue.",
+        important: true
       },
       {
         id: 520,
@@ -8214,7 +8225,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "単", meaning: "Single" },
         ],
         example: "{単に}運が良かっただけだ。",
-        exampleMeaning: "It was {only} luck."
+        exampleMeaning: "It was {only} luck.",
+        important: true,
       },
       {
         id: 594,
@@ -8693,7 +8705,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
         exampleMeaning: "I {utilize} apps to study more [effectively].",
         extraVocabulary: [
           { wordRuby: "有{ゆう}効{こう}", meaning: "Effective" }
-        ]
+        ],
+        important: true,
       },
       {
         id: 627,
@@ -10380,7 +10393,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "略", meaning: "Plan" }
         ],
         example: "売り上げを伸ばすために{戦略}を立てる。",
-        exampleMeaning: "We'll come up with a {strategy} to boost sales."
+        exampleMeaning: "We'll come up with a {strategy} to boost sales.",
+        important: true
       }
     ],
   },
@@ -10734,7 +10748,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "礎", meaning: "Foundation" }
         ],
         example: "日本語の{基礎}を[しっかり]学ぶ。",
-        exampleMeaning: "'I'm going to learn the {basics} of Japanese [properly]."
+        exampleMeaning: "'I'm going to learn the {basics} of Japanese [properly].",
+        important: true
       }
     ],
   },
@@ -11562,7 +11577,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "格", meaning: "Status" }
         ],
         example: "この仕事をするには{資格}が必要だ。",
-        exampleMeaning: "You need a {qualification} to do this job."
+        exampleMeaning: "You need a {qualification} to do this job.",
+        important: true
       }
     ],
   },
@@ -12453,7 +12469,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "用", meaning: "Use" }
         ],
         example: "新しく社員を{採用する}予定だ。",
-        exampleMeaning: "We're planning to {hire} some new employees."
+        exampleMeaning: "We're planning to {hire} some new employees.",
+        important: true
       }
     ],
   },
@@ -14170,7 +14187,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "載", meaning: "Post" }
         ],
         example: "ホームページにお知らせを{掲載する}。",
-        exampleMeaning: "I'll publish the notices on our homepage."
+        exampleMeaning: "I'll publish the notices on our homepage.",
+        important: true
       },
       {
         id: 1013,
