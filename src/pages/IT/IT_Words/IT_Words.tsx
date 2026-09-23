@@ -21,6 +21,21 @@ const ITWords: React.FC<Props> = ({ words, filteredWord, runFilter }) => {
     }
   }, [filter, runFilter]);
 
+  function WordModal({ word, show, onClose }: { word: any; show: boolean; onClose: () => void }) {
+    return (
+      <Modal isOpen={show} onClose={onClose} size="lg">
+        <Modal.Content bg={"gray.900"} maxWidth="650" mt={0} mb={"auto"}>
+          <Modal.CloseButton />
+          <Modal.Header>{word.meaning}</Modal.Header>
+          <Modal.Body>
+            <Word ruby={word.wordRuby} showFurigana={true} fontSize="2xl" color="yellow.400" />
+            {word.notes && <Text fontSize="sm" color="red.500">{word.notes}</Text>}
+          </Modal.Body>
+        </Modal.Content>
+      </Modal>
+    );
+  }
+  
   return (
     <Box>
       <HStack space={2} alignItems={"center"} justifyContent={"center"}>
@@ -52,17 +67,8 @@ const ITWords: React.FC<Props> = ({ words, filteredWord, runFilter }) => {
         ))}
       </Box>
 
-      <Modal isOpen={showModal} onClose={() => setShowModal(false)} size="lg">
-        <Modal.Content bg={"gray.900"} maxWidth="650" mt={0} mb={"auto"}>
-          <Modal.CloseButton />
-          <Modal.Header>{filteredWord?.meaning}</Modal.Header>
-          <Modal.Body>
-            <Word ruby={filteredWord?.wordRuby} showFurigana={true} fontSize="2xl" color="yellow.400" />
-            {filteredWord?.notes && <Text fontSize="sm" color="red.500">{filteredWord?.notes}</Text>}
-            {/* {filteredWord && <VocabularyItem key={filteredWord?.id} word={filteredWord} />} */}
-          </Modal.Body>
-        </Modal.Content>
-      </Modal>
+      { filteredWord && <WordModal word={filteredWord} show={showModal} onClose={() => setShowModal(false)} /> }
+
     </Box>
   );
 };
