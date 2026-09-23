@@ -39,7 +39,7 @@ const ITWords: React.FC<Props> = ({ words, filteredWord, runFilter }) => {
   return (
     <Box>
       <HStack space={2} alignItems={"center"} justifyContent={"center"}>
-        <Input placeholder="Filter by reading or ID" width={{ base: "100%", lg: "150px" }} bg="white" color="black" value={filter} onChangeText={setFilter} />
+        <Input placeholder="Filter by reading or ID" width={{ base: "70%", lg: "350px" }} bg="white" color="black" value={filter} onChangeText={setFilter} />
         <Button colorScheme="blue" size={"xs"} variant="outline" onPress={onFilter}>
           探す
         </Button>
