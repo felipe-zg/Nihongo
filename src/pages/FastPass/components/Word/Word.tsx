@@ -5,7 +5,7 @@ import { parseRuby } from "../../../../utils/music/rubyParser";
 type Props = {
   ruby: string;
   showFurigana: boolean;
-  fontSize?: 'sm' | 'md' | 'lg' | 'xl' | '2xl' | '3xl';
+  fontSize?: 'sm' | 'md' | 'lg' | 'xl' | '2xl' | '3xl' | '4xl' | '5xl' | '6xl' | '7xl' | '8xl';
   color?: string;
 };
 
