@@ -24,6 +24,5 @@ export { default as FastPass } from "./FastPass";
 export { default as FastPassPhrases } from "./FastPass/Phrases";
 export { default as FastPassPrint } from "./Printable/NihongoNoMori/Fastpass";
 export { default as RealJapanese } from "./RealJapanese";
-export { default as Lyrics } from "./Music";
 export { default as KeigoPage } from "./grammar/Keigo";
 export { default as ITWords } from "./IT/IT_Words";

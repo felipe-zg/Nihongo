@@ -1,8 +1,8 @@
 import React from 'react';
-import { DaysOfTheMonth, Deck, FastPass, FastPassPhrases, FastPassPrint, GrammarJLPTN2, GrammarMondai, ITWords, JLPTExamVocabs, JLPTExercisesPrint, JLPTVocabsPrint, Kanji, KeigoPage, Levels, Lyrics, MiniStory, MiniStoryAudioPlayer, MiniStoryCards, MojiGoiDeck, Nihongo500Mondai, Nihongo500N3, NihongoNoMoriGrammar, Periods, RealJapanese, RealJapaneseAudioPlayer, Verbs, VocabsJLPT, Words, WordsYDCQuizz } from './pages';
+import { DaysOfTheMonth, Deck, FastPass, FastPassPhrases, FastPassPrint, GrammarJLPTN2, GrammarMondai, ITWords, JLPTExamVocabs, JLPTExercisesPrint, JLPTVocabsPrint, Kanji, KeigoPage, Levels, MiniStory, MiniStoryAudioPlayer, MiniStoryCards, MojiGoiDeck, Nihongo500Mondai, Nihongo500N3, NihongoNoMoriGrammar, Periods, RealJapanese, RealJapaneseAudioPlayer, Verbs, VocabsJLPT, Words, WordsYDCQuizz } from './pages';
 import { Box, HStack, NativeBaseProvider } from "native-base";
 import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom';
-import { MusicNavbar, Navbar } from './components';
+import { Navbar } from './components';
 import Materials from './pages/Materials/Materials';
 import InterviewPage from './pages/Interview';
 
@@ -19,11 +19,10 @@ function App() {
 function AppContent() {
   const location = useLocation();
   const isKanjiPrintPage = location.pathname.startsWith("/printable");
-  const AppNavbar = location.pathname.startsWith("/music") ? MusicNavbar : Navbar;
 
   return (
     <HStack width="100%">
-      {!isKanjiPrintPage && <AppNavbar />}
+      {!isKanjiPrintPage && <Navbar />}
       <Box flex="1" height="100%">
         <Routes>
           <Route path="/" element={<Levels />} />
@@ -57,7 +56,6 @@ function AppContent() {
           <Route path="/real-japanese" element={<RealJapanese />} />
           <Route path="/IT/words" element={<ITWords />} />
           {/* Music */}
-          <Route path="/music" element={<Lyrics />} />
 
           
           <Route path="/interview" element={<InterviewPage />} />
