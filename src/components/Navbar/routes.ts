@@ -55,8 +55,10 @@ export const routes: RouteItem[] = [
   {
     name: 'IT',
     children: [
-      { name: 'IT words', path: '/IT/words?source=IT' },
-      { name: 'FE words', path: '/IT/words?source=FE' },
+      { name: 'IT words', path: '/IT/words?source=IT&mode=list' },
+      { name: 'FE words', path: '/IT/words?source=FE&mode=list' },
+      { name: 'IT words cards', path: '/IT/words?source=IT&mode=cards' },
+      { name: 'FE words cards', path: '/IT/words?source=FE&mode=cards' },
     ],
   },
   {

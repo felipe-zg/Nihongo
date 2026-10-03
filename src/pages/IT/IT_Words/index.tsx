@@ -3,12 +3,15 @@ import ITWords from "./IT_Words";
 import { FE_words, IT_words } from "../../../consts";
 import { useSearchParams } from "react-router";
 import { parseRuby } from "../../../utils/music/rubyParser";
+import  ITWordsCards  from "./IT_Words_Cards";
 
 type VocabularySource = 'FE' | 'IT';
+type Mode = 'list' | 'cards';
 
 const ITWordsPage: React.FC = () => {
   const [searchParams] = useSearchParams();
   const vocabularySourceParam: VocabularySource = (searchParams.get("source") as VocabularySource);
+  const modeParam: Mode = (searchParams.get("mode") as Mode);
   const vocabularyList = vocabularySourceParam === "IT" ? IT_words : FE_words;
   const [filteredWord, setFilteredWord] = React.useState<any | null>(null);
 
@@ -40,13 +43,13 @@ const ITWordsPage: React.FC = () => {
     return false;
   };
   
-  return (
-    <ITWords 
+  return modeParam === "cards" 
+  ? <ITWordsCards  words={vocabularyList} />
+  : <ITWords 
       words={vocabularyList}
       filteredWord={filteredWord}
       runFilter={runFilter}
-    />
-    );
+    />;
   };
 
 export default ITWordsPage;
