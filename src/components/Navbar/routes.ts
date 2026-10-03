@@ -84,6 +84,5 @@ export const routes: RouteItem[] = [
   { name: 'Verbs', path: '/verbs' },
   { name: 'Lessons', path: '/lessons' },
   { name: 'Real Japanese Audio', path: '/audio/real-japanese' },
-  { name: 'Interview', path: '/interview' },
   { name: 'Interview 単語', path: '/JLPT/ExamVocabs?source=INTERVIEW' },
 ];

@@ -4,7 +4,6 @@ import { Box, HStack, NativeBaseProvider } from "native-base";
 import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom';
 import { Navbar } from './components';
 import Materials from './pages/Materials/Materials';
-import InterviewPage from './pages/Interview';
 
 function App() {
   return (
@@ -55,10 +54,6 @@ function AppContent() {
           <Route path="/JLPT/ExamVocabs" element={<JLPTExamVocabs />} />
           <Route path="/real-japanese" element={<RealJapanese />} />
           <Route path="/IT/words" element={<ITWords />} />
-          {/* Music */}
-
-          
-          <Route path="/interview" element={<InterviewPage />} />
         </Routes> 
       </Box>
     </HStack>
