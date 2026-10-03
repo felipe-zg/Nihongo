@@ -1,9 +1,34 @@
 import React from 'react';
-import { DaysOfTheMonth, Deck, FastPass, FastPassPhrases, FastPassPrint, GrammarJLPTN2, GrammarMondai, ITWords, JLPTExamVocabs, JLPTExercisesPrint, JLPTVocabsPrint, Kanji, KeigoPage, Levels, MiniStory, MiniStoryAudioPlayer, MiniStoryCards, Nihongo500Mondai, Nihongo500N3, NihongoNoMoriGrammar, Periods, RealJapanese, RealJapaneseAudioPlayer, Verbs, VocabsJLPT, Words, WordsYDCQuizz } from './pages';
-import { Box, HStack, NativeBaseProvider } from "native-base";
+import { 
+  DaysOfTheMonth,
+  FastPass,
+  FastPassPhrases,
+  FastPassPrint,
+  GrammarJLPTN2,
+  GrammarMondai,
+  ITWords,
+  JLPTExamVocabs,
+  JLPTExercisesPrint,
+  JLPTVocabsPrint,
+  Kanji,
+  KeigoPage,
+  Levels,
+  MiniStory,
+  MiniStoryAudioPlayer,
+  MiniStoryCards,
+  Nihongo500Mondai,
+  Nihongo500N3,
+  NihongoNoMoriGrammar,
+  RealJapanese,
+  RealJapaneseAudioPlayer,
+  VocabsJLPT,
+} from './pages';
+import { Box,
+  HStack,
+  NativeBaseProvider 
+} from "native-base";
 import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom';
 import { Navbar } from './components';
-import Materials from './pages/Materials/Materials';
 
 function App() {
   return (
@@ -26,14 +51,7 @@ function AppContent() {
         <Routes>
           <Route path="/" element={<Levels />} />
           <Route path="/kanji" element={<Kanji />} />
-          <Route path="/words-ydc" element={<Words source='YDC' />} />
-          <Route path="/words-genki" element={<Words source='GENKI' />} />
-          <Route path="/periods" element={<Periods />} />
           <Route path="/days-of-the-month" element={<DaysOfTheMonth />} />
-          <Route path="/words-quizz" element={<WordsYDCQuizz />} />
-          <Route path="/potential-form" element={<Deck />} />
-          <Route path="/verbs" element={<Verbs />} />
-          <Route path="/lessons" element={<Materials />} />
           <Route path="/JLPT/N3" element={<Nihongo500N3 />} />
           <Route path="/JLPT/vocabs" element={<VocabsJLPT />} />
           <Route path="/JLPT/grammar/N2" element={<GrammarJLPTN2 />} />

@@ -1,10 +1,5 @@
-export { default as Deck } from "./Deck";
 export { default as Kanji } from "./Kanji";
-export { default as Words } from "./Words";
-export { default as WordsYDCQuizz } from "./WordsYDCQuizz";
 export { default as DaysOfTheMonth } from "./DaysOfTheMonth";
-export { default as Periods } from "./Periods";
-export { default as Verbs } from "./Verbs";
 export { default as Levels } from "./Levels";
 export { default as JLPTVocabsPrint } from "./Printable/JLPT/JLPTVocabsPrint";
 export { default as JLPTExercisesPrint } from "./Printable/JLPT/exercises/JLPTExercisesPrint";

@@ -67,21 +67,8 @@ export const routes: RouteItem[] = [
     ],
   },
   { name: '敬語', path: '/grammar/keigo' },
-  {
-    name: '横浜デザイン学院',
-    children: [
-      { name: 'Words (YDC)', path: '/words-ydc' },
-      { name: 'Words (Genki)', path: '/words-genki' },
-    ],
-  },
   { name: 'Real Japanese', path: '/real-japanese' },
-  { name: 'Levels', path: '/' },
-  { name: 'Periods', path: '/periods' },
   { name: 'Days of the month', path: '/days-of-the-month' },
-  { name: 'Potential form', path: '/potential-form' },
-  { name: 'Words quizz', path: '/words-quizz' },
-  { name: 'Verbs', path: '/verbs' },
-  { name: 'Lessons', path: '/lessons' },
   { name: 'Real Japanese Audio', path: '/audio/real-japanese' },
   { name: 'Interview 単語', path: '/JLPT/ExamVocabs?source=INTERVIEW' },
 ];
