@@ -8,7 +8,7 @@ type Props = {
 };
 
 const ITWordsCards: React.FC<Props> = ({ words }) => {
-  const [currentIndex, setCurrentIndex] = useState(31);
+  const [currentIndex, setCurrentIndex] = useState(0);
   const [isShuffled, setIsShuffled] = useState(false);
   const flipCardRef = useRef<FlipCardHandle>(null);
 
