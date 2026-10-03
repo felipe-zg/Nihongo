@@ -1,5 +1,5 @@
 import React from 'react';
-import { DaysOfTheMonth, Deck, FastPass, FastPassPhrases, FastPassPrint, GrammarJLPTN2, GrammarMondai, ITWords, JLPTExamVocabs, JLPTExercisesPrint, JLPTVocabsPrint, Kanji, KanjiCreateForm, KanjiM2, KanjiM2Cards, KanjiPractice, KanjiPrint, KeigoPage, Levels, Lyrics, MiniStory, MiniStoryAudioPlayer, MiniStoryCards, MojiGoiDeck, Nihongo500Mondai, Nihongo500N3, NihongoNoMoriGrammar, Periods, RealJapanese, RealJapaneseAudioPlayer, Verbs, VocabsJLPT, Words, WordsYDCQuizz } from './pages';
+import { DaysOfTheMonth, Deck, FastPass, FastPassPhrases, FastPassPrint, GrammarJLPTN2, GrammarMondai, ITWords, JLPTExamVocabs, JLPTExercisesPrint, JLPTVocabsPrint, Kanji, KeigoPage, Levels, Lyrics, MiniStory, MiniStoryAudioPlayer, MiniStoryCards, MojiGoiDeck, Nihongo500Mondai, Nihongo500N3, NihongoNoMoriGrammar, Periods, RealJapanese, RealJapaneseAudioPlayer, Verbs, VocabsJLPT, Words, WordsYDCQuizz } from './pages';
 import { Box, HStack, NativeBaseProvider } from "native-base";
 import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom';
 import { MusicNavbar, Navbar } from './components';
@@ -28,8 +28,6 @@ function AppContent() {
         <Routes>
           <Route path="/" element={<Levels />} />
           <Route path="/kanji" element={<Kanji />} />
-          <Route path="/kanji-practice" element={<KanjiPractice />} />
-          <Route path="/printable/kanji-print" element={<KanjiPrint />} />
           <Route path="/words-ydc" element={<Words source='YDC' />} />
           <Route path="/words-genki" element={<Words source='GENKI' />} />
           <Route path="/periods" element={<Periods />} />
@@ -53,15 +51,11 @@ function AppContent() {
           <Route path="/moji-goi-deck" element={<MojiGoiDeck />} />
           <Route path="/grammar/nihongo-no-mori" element={<NihongoNoMoriGrammar />} />
           <Route path="/grammar/mondai" element={<GrammarMondai />} />
-          <Route path="/kanji-m2" element={<KanjiM2 />} />
-          <Route path="/kanji-m2-cards" element={<KanjiM2Cards />} />
           <Route path="/audio/real-japanese" element={<RealJapaneseAudioPlayer />} />
           <Route path="/JLPT/Nihongo500Mondai" element={<Nihongo500Mondai />} />
           <Route path="/JLPT/ExamVocabs" element={<JLPTExamVocabs />} />
           <Route path="/real-japanese" element={<RealJapanese />} />
           <Route path="/IT/words" element={<ITWords />} />
-          {/* Private routes */}
-          <Route path="/kanji-create" element={<KanjiCreateForm />} />
           {/* Music */}
           <Route path="/music" element={<Lyrics />} />
 

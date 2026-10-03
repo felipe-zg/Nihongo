@@ -71,8 +71,6 @@ export const routes: RouteItem[] = [
   {
     name: '横浜デザイン学院',
     children: [
-      { name: '漢字 M2', path: '/kanji-m2' },
-      { name: 'Kanji practice', path: '/kanji-practice' },
       { name: 'Words (YDC)', path: '/words-ydc' },
       { name: 'Words (Genki)', path: '/words-genki' },
     ],
@@ -106,7 +104,6 @@ export const routes: RouteItem[] = [
     ]
   },
   { name: 'Real Japanese Audio', path: '/audio/real-japanese' },
-  { name: 'Kanji Create', path: '/kanji-create' },
   { name: 'Interview', path: '/interview' },
   { name: 'Interview 単語', path: '/JLPT/ExamVocabs?source=INTERVIEW' },
 ];
