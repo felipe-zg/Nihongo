@@ -43,6 +43,15 @@ const ITWordsCards: React.FC<Props> = ({ words }) => {
     }, 200);
   };
 
+  function onNextButtonClick(): void {
+    if (flipCardRef.current?.isFlipped()) {
+      flipCardRef.current?.unflip();
+      handleNext();
+    } else {
+      flipCardRef.current?.flip();
+    }
+  };
+
   return (
     <Box alignItems="center" mt={10}>
       <Text fontSize={"xl"} bold color={"white"}>漢字</Text>
@@ -77,7 +86,7 @@ const ITWordsCards: React.FC<Props> = ({ words }) => {
       )}
 
       <HStack mt={12} width={{base: "90vw", lg: "60vw"}}>
-        <Button onPress={handleNext} width={"full"}>
+        <Button onPress={onNextButtonClick} width={"full"}>
             Next
         </Button>
       </HStack>
