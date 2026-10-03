@@ -46,7 +46,6 @@ export const routes: RouteItem[] = [
       { name: 'トモ先生 JLPT', path: '/JLPT/ExamVocabs?source=TOMO_SENSEI' },
       { name: 'JLPT N3 Vocab review', path: '/JLPT/ExamVocabs?source=REVIEW' },
       { name: '日本語500・N3', path: '/JLPT/Nihongo500Mondai?level=N3' },
-      { name: '文字・語彙', path: '/moji-goi-deck' },
       { name: 'JLPT', path: '/JLPT/N3' },
       { name: 'JLPT Vocabs N3', path: '/JLPT/vocabs?level=N3' },
       { name: 'ミニストーリー', path: '/ministory?level=N3' },

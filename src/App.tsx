@@ -1,5 +1,5 @@
 import React from 'react';
-import { DaysOfTheMonth, Deck, FastPass, FastPassPhrases, FastPassPrint, GrammarJLPTN2, GrammarMondai, ITWords, JLPTExamVocabs, JLPTExercisesPrint, JLPTVocabsPrint, Kanji, KeigoPage, Levels, MiniStory, MiniStoryAudioPlayer, MiniStoryCards, MojiGoiDeck, Nihongo500Mondai, Nihongo500N3, NihongoNoMoriGrammar, Periods, RealJapanese, RealJapaneseAudioPlayer, Verbs, VocabsJLPT, Words, WordsYDCQuizz } from './pages';
+import { DaysOfTheMonth, Deck, FastPass, FastPassPhrases, FastPassPrint, GrammarJLPTN2, GrammarMondai, ITWords, JLPTExamVocabs, JLPTExercisesPrint, JLPTVocabsPrint, Kanji, KeigoPage, Levels, MiniStory, MiniStoryAudioPlayer, MiniStoryCards, Nihongo500Mondai, Nihongo500N3, NihongoNoMoriGrammar, Periods, RealJapanese, RealJapaneseAudioPlayer, Verbs, VocabsJLPT, Words, WordsYDCQuizz } from './pages';
 import { Box, HStack, NativeBaseProvider } from "native-base";
 import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom';
 import { Navbar } from './components';
@@ -46,7 +46,6 @@ function AppContent() {
           <Route path="/ministory" element={<MiniStory />} />
           <Route path="/ministory-cards" element={<MiniStoryCards />} />
           <Route path="/ministory-audioplayer" element={<MiniStoryAudioPlayer />} />
-          <Route path="/moji-goi-deck" element={<MojiGoiDeck />} />
           <Route path="/grammar/nihongo-no-mori" element={<NihongoNoMoriGrammar />} />
           <Route path="/grammar/mondai" element={<GrammarMondai />} />
           <Route path="/audio/real-japanese" element={<RealJapaneseAudioPlayer />} />
