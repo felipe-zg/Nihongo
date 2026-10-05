@@ -30,6 +30,16 @@ const ITWords: React.FC<Props> = ({ words, filteredWord, runFilter }) => {
           <Modal.Body>
             <Word ruby={word.wordRuby} showFurigana={true} fontSize="2xl" color="yellow.400" />
             {word.notes && <Text fontSize="sm" color="red.500">{word.notes}</Text>}
+            {word.extraVocabulary && word.extraVocabulary.length > 0 && (
+              <Box flex={2} mt={2}>
+                {word.extraVocabulary.map((extra: { wordRuby: string; meaning: string; }, index: React.Key | null | undefined) => (
+                  <HStack space={2} alignItems="center">
+                    <Word ruby={extra.wordRuby} showFurigana={true} fontSize="md" color="pink.500" />
+                    <Text fontSize="xs" color="pink.300">{extra.meaning}</Text>
+                  </HStack>
+                ))}
+              </Box>
+            )}
           </Modal.Body>
         </Modal.Content>
       </Modal>
