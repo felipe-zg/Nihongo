@@ -475,6 +475,9 @@ export const FE_words = [
     meaning: "each chapter・every chapter",
     extraVocabulary: [
       { wordRuby: "各{かく}章{しょう}を読{よ}む", meaning: "read each chapter" },
+      { wordRuby: "各{かく}章{しょう}の要{よう}点{てん}", meaning: "key points of each chapter" },
+      { wordRuby: "第{だい}一{いっ}章{しょう}", meaning: "Chapter 1" },
+      { wordRuby: "章{しょう}立{だ}て", meaning: "chapter structure・organization into chapters" },
     ]
   },
   {
@@ -525,6 +528,202 @@ export const FE_words = [
     meaning: "once・for the time being",
     extraVocabulary: [
       { wordRuby: "いったん読{よ}み終{お}えたら、～", meaning: "Once you've finished reading it, …" },
+    ]
+  },
+  {
+    id: 87,
+    wordRuby: "単{たん}位{い}",
+    meaning: "unit・quantity counted as one",
+    extraVocabulary: [
+      { wordRuby: "データの単{たん}位{い}", meaning: "unit of data" },
+    ]
+  },
+  {
+    id: 88,
+    wordRuby: "数{すう}値{ち}",
+    meaning: "numerical value・numerical data・figure",
+    extraVocabulary: [
+      { wordRuby: "数{すう}値{ち}表{ひょう}現{げん}", meaning: "numerical expression・numeric representation" },
+    ]
+  },
+  {
+    id: 89,
+    wordRuby: "盛{もり}",
+    meaning: "Size・Portion",
+  },
+  {
+    id: 90,
+    wordRuby: "見{み}慣{な}れる",
+    meaning: "get used to seeing・become familiar with the sight of something",
+  },
+  {
+    id: 91,
+    wordRuby: "難{なん}易{い}度{ど}",
+    meaning: "difficulty level・degree of difficulty",
+  },
+  {
+    id: 92,
+    wordRuby: "断{だん}念{ねん}する",
+    meaning: "give up on・abandon・decide to abandon an attempt/plan",
+    notes: "More formal than 諦める, usually given up a specific plan, goal, or attempt",
+  },
+  {
+    id: 93,
+    wordRuby: "念{ねん}頭{とう}に～",
+    meaning: "bearing in mind・keeping in mind・with something in mind",
+    extraVocabulary: [
+      { wordRuby: "～を念{ねん}頭{とう}に置{お}く", meaning: "keep ～ in mind・bear ～ in mind・take ～ into consideration" },
+    ]
+  },
+  {
+    id: 94,
+    wordRuby: "読{よ}み飛{と}ばす",
+    meaning: "skip while reading・skip over・skip a section/page",
+    extraVocabulary: [
+      { wordRuby: "難しいところは読み飛ばしてもいいです", meaning: "You can skip the difficult parts" },
+    ]
+  },
+  {
+    id: 95,
+    wordRuby: "読{よ}み返{かえ}す",
+    meaning: "read again・reread・read back over・go back and read again",
+    extraVocabulary: [
+      { wordRuby: "分からないところがあったので、前のページを読み返した。", meaning: "I went back and reread the previous page because there were parts I didn't understand." },
+    ]
+  },
+  {
+    id: 96,
+    wordRuby: "精{せい}神{しん}",
+    meaning: "Spirit・Mind・Mental state",
+    notes: "The exact meaning depends heavily on context. 精神 often refers to someone's inner mental/emotional state, mindset, or spirit, rather than the physical body. ",
+  },
+  {
+    id: 97,
+    wordRuby: "冒{ぼう}頭{とう}に～",
+    meaning: "at the beginning・at the outset・at the start・in the opening part",
+    notes: "冒頭 refers to the very beginning of a text, speech, meeting, article, story, etc. It is more formal than simply 「最初」",
+  },
+  {
+    id: 98,
+    wordRuby: "躓{つまず}く",
+    meaning: "to get stuck・to struggle with・to stumble on・to have difficulty with",
+  },
+  {
+    id: 99,
+    wordRuby: "取{と}り掛{か}かる",
+    meaning: "to start working on・to get started on・to begin tackling",
+    notes: "取る＝ take・掛かる＝ begin to work on・be engaged in - Together, 取り掛かる has the sense of “start taking on a task.”",
+  },
+  {
+    id: 100,
+    wordRuby: "闇{やみ}雲{くも}に",
+    meaning: "blindly・haphazardly・recklessly・without a clear plan・strategy",
+    notes: "It means doing something without knowing the best direction or without thinking/choosing a strategy first.",
+  },
+  {
+    id: 101,
+    wordRuby: "得{とく}策{さく}",
+    meaning: "A wise move・best course of action・wise strategy・advisable option・good way to proceed",
+  },
+  {
+    id: 102,
+    wordRuby: "進{しん}数{すう}",
+    meaning: "number base・numeral system・radix",
+    notes: "In IT・mathematics, 進数 is used when talking about how numbers are represented using a particular base. The term comes from the idea of a number system that progresses/counts by a particular base.",
+    extraVocabulary: [
+      { wordRuby: "2{に}進{しん}数{すう}", meaning: "binary・base 2" },
+      { wordRuby: "8{はっ}進{しん}数{すう}", meaning: "octal・base 8" },
+      { wordRuby: "10{じゅっ}進{しん}数{すう}", meaning: "decimal・base 10" },
+      { wordRuby: "16{じゅうろく}進{しん}数{すう}", meaning: "hexadecimal・base 16" },
+      { wordRuby: "10進数の10を2進数で表すと1010です。", meaning: "The decimal number 10 is represented as 1010 in binary." },
+      { wordRuby: "2進数を10進数に変換する。", meaning: "Convert binary to decimal." },
+    ]
+  },
+  {
+    id: 103,
+    wordRuby: "演{えん}算{ざん}式{しき}",
+    meaning: "arithmetic expression・mathematical expression・formula / calculation expression",
+    notes: "In IT・programming, 演算式 refers to an expression that performs a calculation using operators and values/variables.",
+  },
+  {
+    id: 104,
+    wordRuby: "直{ちょく}接{せつ}",
+    meaning: "directly・firsthand・in person",
+    notes: "The core idea is something happening without an intermediary or middle step.",
+  },
+  {
+    id: 105,
+    wordRuby: "前{ぜん}提{てい}",
+    meaning: "premise・assumption・prerequisite・presupposition",
+    notes: "The core idea is something that is assumed or established beforehand as the basis for thinking, discussing, or doing something.",
+  },
+  {
+    id: 106,
+    wordRuby: "最{さい}小{しょう}単{たん}位{い}",
+    meaning: "smallest unit・minimum unit・smallest indivisible/basic unit",
+    notes: "It refers to the smallest unit that something can be divided into or treated as a unit. コンピュータが扱うデータの最小単位です。",
+    extraVocabulary: [
+      { wordRuby: "コンピュータが扱うデータの最小単位です", meaning: "the smallest unit of data that a computer can handle" },
+    ]
+  },
+  {
+    id: 107,
+    wordRuby: "状{じょう}態{たい}",
+    meaning: "state・Situation・status・condition",
+    extraVocabulary: [
+      { wordRuby: "1ビットは2つの状態（または1）を表せる", meaning: "1 bit can represent 2 states (or 1)" },
+      { wordRuby: "1バイトでは2通り（256通り）の状態を表すことができます", meaning: "1 byte can represent 2 types (256 types) of states" },
+    ]
+  },
+  {
+    id: 108,
+    wordRuby: "大{おお}きな値{あたい}",
+    meaning: "large value・high value・a large number",
+    notes: "In an IT・mathematics・data context, 値（あたい） means a value, especially a numerical value.",
+    extraVocabulary: [
+      { wordRuby: "小{ちい}さな値{あたい}", meaning: "small value" },
+    ]
+  },
+  {
+    id: 109,
+    wordRuby: "扱{あつか}う",
+    meaning: "handle・deal with・work with",
+    notes: "The core idea is “handle or deal with something in a particular way.” The exact translation depends on context.",
+  },
+  {
+    id: 110,
+    wordRuby: "簡{かん}潔{けつ}",
+    meaning: "concise・succinct・brief・simple and to the point",
+    notes: "The core idea is expressing something clearly without unnecessary details or extra words.",
+    extraVocabulary: [
+      { wordRuby: "簡{かん}潔{けつ}な", meaning: "concise・succinct" },
+      { wordRuby: "簡{かん}潔{けつ}に", meaning: "concisely・briefly" },
+    ]
+  },
+  {
+    id: 111,
+    wordRuby: "表{ひょう}記{き}",
+    meaning: "notation・representation・written form・way something is written or displayed",
+  },
+  {
+    id: 112,
+    wordRuby: "累{るい}乗{じょう}",
+    meaning: "exponentiation・power・raising to a power",
+    notes: "同じ数を繰り返し掛ける計算を累乗という。",
+    extraVocabulary: [
+      { wordRuby: "同じ数を繰り返し掛ける計算を累乗という。", meaning: "a calculation that multiplies the same number repeatedly is called exponentiation" },
+      { wordRuby: "指{し}数{すう}", meaning: "exponent" },
+      { wordRuby: "底{てい}", meaning: "base" },
+      { wordRuby: "2{に}乗{じょう}", meaning: "square・second power" },
+      { wordRuby: "3{さん}乗{じょう}", meaning: "cube・third power" },
+    ]
+  },
+  {
+    id: 113,
+    wordRuby: "通{つう}信{しん}量{りょう}",
+    meaning: "data usage・amount of data transmitted・network traffic・communication volume",
+    extraVocabulary: [
+      { wordRuby: "通{つう}信{しん}量{りょう}を削{さく}減{げん}する", meaning: "reduce data usage" },
     ]
   },
 ];
