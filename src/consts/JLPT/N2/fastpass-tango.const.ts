@@ -1587,7 +1587,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "提", meaning: "Present" }
         ],
         example: "全員参加を{前提}にして計画を立てる。",
-        exampleMeaning: "I'll plan under the {assumption} that everyone participates."
+        exampleMeaning: "I'll plan under the {assumption} that everyone participates.",
+        important: true
       },
       {
         id: 120,
@@ -6420,7 +6421,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "神", meaning: "Spirit" }
         ],
         example: "スポーツではフェアの{精神}が大切だ。",
-        exampleMeaning: "The {spirit} of fairness is essential in sports."
+        exampleMeaning: "The {spirit} of fairness is essential in sports.",
+        important: true
       },
       {
         id: 468,
@@ -10174,7 +10176,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
         exampleMeaning: "I will explain about this [case] {again}.",
         extraVocabulary: [
           { wordRuby: "件{けん}", meaning: "Case・Matter" }
-        ]
+        ],
+        important: true
       },
       {
         id: 726,
@@ -12769,7 +12772,8 @@ export const JLPT_N2_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "潔", meaning: "Clean" }
         ],
         example: "もう少し{簡潔に}説明してください。",
-        exampleMeaning: "Please explain a bit more {concisely}."
+        exampleMeaning: "Please explain a bit more {concisely}.",
+        important: true
       }
     ]
   },
