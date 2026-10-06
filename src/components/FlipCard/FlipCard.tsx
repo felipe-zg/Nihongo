@@ -49,12 +49,10 @@ const FlipCard = forwardRef<FlipCardHandle, Props>(({ CardFrontContent, CardBack
 
   useEffect(() => {
     function handleKeyDown(e: KeyboardEvent) {
+      e.preventDefault();
       if (e.key === "ArrowRight") handleNext();
       if (e.key === "ArrowLeft") handlePrev();
-      if (e.key === "ArrowUp") {
-        e.preventDefault();
-        setFlipped(false);
-      }
+      if (e.key === "ArrowUp") setFlipped(false);
     }
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
