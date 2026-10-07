@@ -69,15 +69,19 @@ const ITWordsCards: React.FC<Props> = ({ words }) => {
               <Word ruby={currentCard.wordRuby} showFurigana={true} fontSize="5xl" color="primary.400" />
               <Text mt={5} fontSize="md" color="tertiary.400">{currentCard.meaning}</Text>
               {currentCard.notes && <Text fontSize="sm" color="red.500">{currentCard.notes}</Text>}
+              {currentCard.exampleSentence && <Text fontSize="md" color="violet.200">{currentCard.exampleSentence}</Text>}
               {currentCard.extraVocabulary && currentCard.extraVocabulary.length > 0 && (
-                <Box mt={2} borderWidth={1} borderColor="gray.500" p={2} borderRadius={8}>
-                  {currentCard.extraVocabulary.map((extra: { wordRuby: string; meaning: string; }, index: number) => (
-                    <Box key={index}>
-                      <Word ruby={extra.wordRuby} showFurigana={true} fontSize="md" color="pink.500" />
-                      <Text fontSize="xs" color="pink.400">{extra.meaning}</Text>
-                      { index < currentCard.extraVocabulary.length - 1 && <Divider mb={1} bg="gray.500" thickness={0.5}/> }
-                    </Box>
-                  ))}
+                <Box mt={2} w="100%" borderWidth={1} borderColor="gray.500" p={2} borderRadius={8}>
+                  {currentCard.extraVocabulary.map((extra: { wordRuby: string; meaning: string; }, index: number) => {
+                    const isLastItem = index === currentCard.extraVocabulary.length - 1;
+                    if (index >= 3) return null; // Limit to 3 extra vocabulary items
+                    return (
+                      <Box key={index}>
+                        <Word ruby={extra.wordRuby} showFurigana={true} fontSize="md" color="pink.500" />
+                        <Text fontSize="xs" color="pink.400">{extra.meaning}</Text>
+                        { !isLastItem && index < 2 && <Divider mb={1} bg="gray.500" thickness={0.5}/> }
+                      </Box>
+                    )})}
                 </Box>
               )}
             </Box>
