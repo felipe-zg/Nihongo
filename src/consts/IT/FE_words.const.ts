@@ -3,163 +3,279 @@ export const FE_words = [
     id: 1,
     wordRuby: "特{とく}徴{ちょう}",
     meaning: "characteristic・feature",
+    exampleSentence: "このシステムの特徴は、大量のデータを短時間で処理できる点にある",
+    extraVocabulary: [
+      { wordRuby: "処{しょ}理{り}", meaning: "processing・handling・disposal・treatment" },
+    ],
   },
   {
     id: 2,
     wordRuby: "踏{ふ}まえる",
     meaning: "take into account・consider・base something on",
+    exampleSentence: "過去の障害事例を踏まえて、システムの設計を見直す必要がある",
+    notes: "踏まえる is often used in the context of making decisions or taking actions based on prior knowledge, experience, or information. It implies that the past events or facts are being considered as a foundation for the current action or decision.\nFrequent pattern:〜を踏まえて、〜する",
+    extraVocabulary: [
+      { wordRuby: "障{しょう}害{がい}", meaning: "obstacle・impediment・problem・failure" },
+      { wordRuby: "事{じ}例{れい}", meaning: "case・example・precedent・actual instance" },
+    ],
   },
   {
     id: 3,
     wordRuby: "実{じっ}施{し}",
     meaning: "implementation・execution・conducting・carrying out",
+    exampleSentence: "セキュリティ対策の一環として、定期的に脆弱性診断を実施する",
+    extraVocabulary: [
+      { wordRuby: "対{たい}策{さく}", meaning: "countermeasure・response" },
+      { wordRuby: "一{いっ}環{かん}", meaning: "part of・one part of a larger whole・one component/element of an overall effort" },
+      { wordRuby: "脆{ぜい}弱{じゃく}性{せい}", meaning: "vulnerability・weakness・fragility" },
+      { wordRuby: "診{しん}断{だん}", meaning: "diagnosis・examination・assessment" },
+    ],
   },
   {
     id: 4,
     wordRuby: "確{かく}定{てい}する",
     meaning: "to confirm・to finalize・to determine・to be fixed",
+    notes: "Frequent pattern: 〜を〜として認定する",
+    exampleSentence: "テストの結果を確認した上で、本番環境へのリリース日を確定する。",
   },
   {
     id: 5,
     wordRuby: "認{にん}定{てい}する",
     meaning: "to certify・to officially recognize・to accredit・to designate",
+    exampleSentence: "この制度では、一定の基準を満たした企業をセキュリティ対策の優良企業として認定する",
+    extraVocabulary: [
+      { wordRuby: "制{せい}度{ど}", meaning: "system・institution・established rules/system" },
+      { wordRuby: "一{いっ}定{てい}", meaning: "a fixed amount・consistent・constant" },
+      { wordRuby: "満{み}たす", meaning: "to satisfy・to meet・to fulfill" },
+      { wordRuby: "対{たい}策{さく}", meaning: "Countermeasure・Response" },
+      { wordRuby: "優{ゆう}良{りょう}", meaning: "excellent・superior・outstanding・high-quality" },
+    ],
   },
   {
     id: 6,
     wordRuby: "産{さん}業{ぎょう}",
     meaning: "industry・industrial sector・industry as an economic activity",
+    exampleSentence: "AIやIoTの発展により、さまざまな産業でデジタル化が進んでいる",
+    extraVocabulary: [
+    ],
   },
   {
     id: 7,
     wordRuby: "基{き}礎{そ}",
     meaning: "Basis・Foundation",
+    exampleSentence: "プログラミングだけでなく、ネットワークやデータベースの基礎も身につける必要がある",
+    extraVocabulary: [
+    ],
   },
   {
     id: 8,
     wordRuby: "登{とう}竜{りゅう}門{もん}",
     meaning: "gateway to success・gateway to advancement・important stepping stone",
     notes: "is an idiom for an opportunity, competition, position, or experience that can lead to major success or advancement",
+    exampleSentence: "基本情報技術者試験は、ITエンジニアとしてキャリアを築くための登竜門の一つとされている",
+    extraVocabulary: [
+    ],
   },
   {
     id: 9,
     wordRuby: "資{し}格{かく}",
     meaning: "Qualification",
+    exampleSentence: "IT業界では、資格だけでなく、実務経験や技術力も重要視される",
+    extraVocabulary: [
+    ],
   },
   {
     id: 10,
     wordRuby: "甘{あま}く見{み}る",
     meaning: "To underestimate・to take lightly・to underestimate the difficulty or seriousness of something",
+    exampleSentence: "サイバー攻撃のリスクを甘く見て、十分なセキュリティ対策を講じなければ、重大な情報漏えいにつながる可能性がある",
+    extraVocabulary: [
+    ],
   },
   {
     id: 11,
     wordRuby: "出{しゅつ}題{だい}傾{けい}向{こう}",
     meaning: "question patterns・tendency in what is tested・exam question trends",
+    exampleSentence: "過去の問題を分析することで、基本情報技術者試験の出題傾向を把握できる",
+    extraVocabulary: [
+    ],
   },
   {
     id: 12,
     wordRuby: "傾{けい}向{こう}",
     meaning: "Tendency ・Trends",
+    notes: "This is a very useful formal pattern meaning 'to tend to' or 'there is a tendency to'\nUseful pattern: ～傾向にある",
+    exampleSentence: "近年は、クラウドやセキュリティに関する問題が増える傾向にある",
+    extraVocabulary: [
+    ],
   },
   {
     id: 13,
     wordRuby: "把{は}握{あく}",
     meaning: "understanding・grasp・comprehension・having a clear grasp of something ",
+    notes: "Think of 把握する = understand/grasp the current situation or details, rather than simply 'know.'\nUseful pattern: ～を把握する",
+    exampleSentence: "システムの現在の負荷状況を把握するために、監視ツールを導入した",
+    extraVocabulary: [
+    ],
   },
   {
     id: 14,
     wordRuby: "対{たい}策{さく}",
     meaning: "Countermeasure・Response",
+    note: "対策を講じる = to take countermeasures・to implement measures to address a problem or situation",
+    exampleSentence: "不正アクセスを防ぐため、適切なセキュリティ対策を講じる必要がある",
+    extraVocabulary: [
+    ],
   },
   {
     id: 15,
     wordRuby: "効{こう}率{りつ}",
     meaning: "efficiency・effectiveness・productivity",
+    exampleSentence: "アルゴリズムを改善することで、データ処理の効率を高めることができる",
+    extraVocabulary: [
+    ],
   },
   {
     id: 16,
     wordRuby: "効{こう}果{か}",
     meaning: "effectiveness・result",
+    notes: "This pattern is common in technical explanations: Xすることで、Yする効果が期待できる",
+    exampleSentence: "キャッシュを利用することで、サーバーの負荷を軽減する効果が期待できる",
+    extraVocabulary: [
+    ],
   },
   {
     id: 17,
     wordRuby: "項{こう}目{もく}",
     meaning: "item・category・entry・field",
+    exampleSentence: "システムの要件定義では、機能要件だけでなく、セキュリティに関する項目も確認する",
+    extraVocabulary: [
+    ],
   },
   {
     id: 18,
     wordRuby: "概{がい}要{よう}",
     meaning: "Overview・summary",
+    exampleSentence: "まずシステムの概要を説明した後、具体的な機能について詳しく説明する",
+    extraVocabulary: [
+    ],
   },
   {
     id: 19,
     wordRuby: "形{けい}式{しき}",
     meaning: "format・form・style・type・structure",
     notes: "refers to the form or format in which something is structured or presented",
+    exampleSentence: "この試験では、選択式の形式で出題される問題が多い",
+    extraVocabulary: [
+    ],
   },
   {
     id: 20,
     wordRuby: "随{ずい}時{じ}",
     meaning: "at any time・as needed・whenever necessary・on an ongoing basis",
+    notes: "随時 is slightly different from 定期的に:\n定期的に = at regular intervals\n随時 = whenever necessary / as needed / from time to time",
+    exampleSentence: "システムの稼働状況を随時確認し、異常が発生した場合は速やかに対応する",
+    extraVocabulary: [
+    ],
   },
   {
     id: 21,
     wordRuby: "満{み}たす",
     meaning: "to satisfy・to meet・to fulfill",
+    exampleSentence: "システムが定められた性能要件を満たしているかどうかを確認する",
+    extraVocabulary: [
+    ],
   },
   {
     id: 22,
     wordRuby: "時{じ}刻{こく}",
     meaning: "time・time of day・specific time・clock time",
+    exampleSentence: "サーバー間で時刻がずれていると、ログの解析に支障をきたす可能性がある",
+    extraVocabulary: [
+    ],
   },
   {
     id: 23,
     wordRuby: "参{さん}照{しょう}",
     meaning: "reference・refer to・consult・look up (actively look at/consult a specific source)",
+    exampleSentence: "データベースから必要な情報を参照し、画面に表示する",
+    extraVocabulary: [
+    ],
   },
   {
     id: 24,
     wordRuby: "参{さん}考{こう}",
     meaning: "reference・guidance・helpful information (use something as a reference when making a decision or forming an idea)",
+    exampleSentence: "詳細な設定方法については、公式のマニュアルを参考にしてください",
+    extraVocabulary: [
+    ],
   },
   {
     id: 25,
     wordRuby: "方{ほう}式{しき}",
     meaning: "method・system・procedure・format・way of doing something",
+    notes: "A very useful pattern is: ～方式を採用する",
+    exampleSentence: "このシステムでは、利用者を認証するために多要素認証方式を採用している",
+    extraVocabulary: [
+      { wordRuby: "認証方式", meaning: "authentication method" },//TODO:
+      { wordRuby: "通信方式", meaning: "communication method" },
+      { wordRuby: "暗号方式", meaning: "encryption method" },
+    ],
   },
   {
     id: 26,
     wordRuby: "採{さい}用{よう}される",
     meaning: "Be adopted",
+    exampleSentence: "大量のデータを効率的に処理するため、分散処理方式が採用されている",
+    extraVocabulary: [
+    ],
   },
   {
     id: 27,
     wordRuby: "解{かい}答{とう}",
     meaning: "answer・solution・answer to a question/problem",
+    exampleSentence: "問題文に示された条件を整理してから、適切な解答を選ぶ",
+    extraVocabulary: [
+    ],
   },
   {
     id: 28,
     wordRuby: "選{せん}択{たく}肢{し}",
     meaning: "choice・option・answer choice",
+    exampleSentence: "四つの選択肢の中から、正しいものを一つ選びなさい",
+    extraVocabulary: [
+    ],
   },
   {
     id: 29,
     wordRuby: "計{けい}算{さん}",
     meaning: "calculation・calculating・computation",
+    exampleSentence: "CPUの処理時間を求めるには、与えられた数値を使って計算する必要がある",
+    extraVocabulary: [
+    ],
   },
   {
     id: 30,
     wordRuby: "仕{し}組{く}み",
     meaning: "Structure",
+    notes: "仕組み is extremely useful for IT Japanese because it means how something works / mechanism / structure.",
+    exampleSentence: "暗号化の仕組みを理解するためには、公開鍵と秘密鍵の役割を知る必要がある",
+    extraVocabulary: [
+    ],
   },
   {
     id: 31,
     wordRuby: "要{よう}素{そ}",
     meaning: "Element・Factor・component・aspect",
+    exampleSentence: "システムの性能を左右する要素として、CPUの処理能力やメモリ容量が挙げられる",
+    extraVocabulary: [
+    ],
   },
   {
     id: 32,
     wordRuby: "戦{せん}略{りゃく}",
     meaning: "strategy・strategic plan・tactics for achieving a goal",
+    exampleSentence: "企業はデジタル技術を活用した事業戦略を策定し、競争力の向上を目指している",
     extraVocabulary: [
       { wordRuby: "経{けい}営{えい}戦{せん}略{りゃく}マネジメント", meaning: "business strategy management・corporate strategy management" },
       { wordRuby: "技{ぎ}術{じゅつ}戦{せん}略{りゃく}マネジメント", meaning: "technology strategy management・technology strategic management" },
@@ -170,41 +286,69 @@ export const FE_words = [
     id: 33,
     wordRuby: "法{ほう}務{む}",
     meaning: "legal affairs・legal matters・legal department",
+    exampleSentence: "IT企業では、個人情報保護や著作権などに関する法務上の問題にも注意する必要がある",
+    extraVocabulary: [
+    ],
   },
   {
     id: 34,
     wordRuby: "処{しょ}理{り}",
     meaning: "processing・handling・disposal・treatment",
+    exampleSentence: "大量のデータを効率よく処理するために、適切なアルゴリズムを選択する必要がある",
+    extraVocabulary: [
+      { wordRuby: "データを処{しょ}理{り}する", meaning: "to process data" },
+      { wordRuby: "情報を処{しょ}理{り}する", meaning: "to process information" },
+      { wordRuby: "並列処{しょ}理{り}", meaning: "parallel processing" },
+      { wordRuby: "分散処{しょ}理{り}", meaning: "distributed processing" },
+      { wordRuby: "例外処{しょ}理{り}", meaning: "exception handling" },
+    ],
   },
   {
     id: 35,
     wordRuby: "誤{あやま}り",
     meaning: "mistake・error・incorrectness・fault",
+    exampleSentence: "入力データに誤りがある場合、正しい計算結果が得られない可能性がある",
+    extraVocabulary: [
+    ],
   },
   {
     id: 36,
     wordRuby: "会{かい}計{けい}",
     meaning: "accounting・payment・checkout・bill",
+    exampleSentence: "ERPシステムを導入することで、販売管理や在庫管理だけでなく、会計業務も効率化できる",
+    extraVocabulary: [
+    ],
   },
   {
     id: 37,
     wordRuby: "一{いっ}見{けん}する",
     meaning: "to look at something at first glance・to appear at first sight・to seem on the surface",
+    exampleSentence: "一見すると単純なプログラムに見えるが、実際には複雑な処理が含まれている",
+    extraVocabulary: [
+    ],
   },
   {
     id: 38,
     wordRuby: "分{ぶん}類{るい}",
     meaning: "classification・categorization・category・classification system",
+    exampleSentence: "コンピュータウイルスは、その特徴や感染方法などに基づいて分類される",
+    extraVocabulary: [
+    ],
   },
   {
     id: 39,
     wordRuby: "算{さん}出{しゅつ}",
     meaning: "calculation・computation・derivation of a figure",
+    exampleSentence: "システムの稼働率は、稼働時間と停止時間から算出することができる",
+    extraVocabulary: [
+    ],
   },
   {
     id: 40,
     wordRuby: "昨{さっ}今{こん}",
     meaning: "nowadays・in recent years・these days・in recent times",
+    notes: "This sounds much more formal than: 最近...",
+    exampleSentence: "昨今、AI技術の急速な発展に伴い、さまざまな業界で業務のデジタル化が進んでいる",
     extraVocabulary: [
       { wordRuby: "昨{さっ}今{こん}急{きゅう}速{そく}に", meaning: "In recent years, ～ has rapidly..." },
     ]
@@ -213,6 +357,7 @@ export const FE_words = [
     id: 41,
     wordRuby: "急{きゅう}速{そく}",
     meaning: "rapid・rapidly・swift・at a fast pace",
+    exampleSentence: "",
     extraVocabulary: [
       { wordRuby: "昨{さっ}今{こん}急{きゅう}速{そく}に", meaning: "In recent years, ～ has rapidly..." },
     ]
@@ -221,6 +366,9 @@ export const FE_words = [
     id: 42,
     wordRuby: "突{とっ}出{しゅつ}する",
     meaning: "to protrude・stick out・stand out・be exceptionally prominent",
+    exampleSentence: "",
+    extraVocabulary: [
+    ],
   },
   {
     id: 43,
@@ -727,3 +875,5 @@ export const FE_words = [
     ]
   },
 ];
+
+// \n\n\n\n\n\n
