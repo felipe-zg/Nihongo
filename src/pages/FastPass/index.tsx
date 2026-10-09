@@ -69,12 +69,8 @@ const FastPassPage: React.FC = () => {
 
   const runFilter = (filter: string): boolean => {
     if (!filter) return false;
-    let foundWord = checkIfItemExists(JLPT_N2_FASTPASS_TANGO, filter);
-    if (foundWord) {
-      setFilteredWord(foundWord);
-      return true;
-    }
-    foundWord = checkIfItemExists(N2ExtraWords, filter);
+    let allSearchableItems = { ...JLPT_N1_FASTPASS_TANGO, ...JLPT_N2_FASTPASS_TANGO, ...N1ExtraWords, ...N2ExtraWords };
+    let foundWord = checkIfItemExists(allSearchableItems, filter);
     if (foundWord) {
       setFilteredWord(foundWord);
       return true;
