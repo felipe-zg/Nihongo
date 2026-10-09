@@ -958,5 +958,2019 @@ export const JLPT_N1_FASTPASS_TANGO: Record<string, TangoEntry> = {
         ]
       },
     ],
+  },
+  '取': {
+    meaning: "Take・Fetch",
+    words: [
+      {
+        id: 55,
+        wordRuby: "取{しゅ}得{とく}",
+        meaning: "To obtain・To acquire",
+        connector: "する",
+        components: [
+          { kanji: "取", meaning: "Take" },
+          { kanji: "得", meaning: "Gain" }
+        ],
+        example: "",
+        exampleMeaning: "",
+      },
+      {
+        id: 56,
+        wordRuby: "取{と}り戻{もど}す",
+        meaning: "To regain・To recover・To take back",
+        components: [
+          { kanji: "取る", meaning: "Take" },
+          { kanji: "戻す", meaning: "Return" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 57,
+        wordRuby: "取{と}り次{つ}ぐ",
+        meaning: "To put someone through・Connect someone to another person・Pass along a message・To act as an intermediary",
+        components: [
+          { kanji: "取る", meaning: "Take" },
+          { kanji: "次ぐ", meaning: "Come after" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 58,
+        wordRuby: "取{と}り引{ひ}き",
+        meaning: "To pull someone in・To bring someone in (for a deal)・To negotiate・To make a deal",
+        connector: "する",
+        components: [
+          { kanji: "取る", meaning: "Take" },
+          { kanji: "引く", meaning: "Pull" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 59,
+        wordRuby: "取{とり}引{ひき}先{さき}",
+        meaning: "Business partner・Trading partner・Client・Customer",
+        components: [
+          { kanji: "取引", meaning: "Business transaction" },
+          { kanji: "先", meaning: "Destination" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 60,
+        wordRuby: "取{と}り立{た}てる",
+        meaning: "Particularly・Single out・make special mention of",
+        info: "取り立てて～ない -> not particularly ~ / nothing special about ~\n取り立てて～する -> to single out / make special mention of ~",
+        components: [
+          { kanji: "取る", meaning: "Take" },
+          { kanji: "立てる", meaning: "Stand" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 61,
+        wordRuby: "取{と}り決{き}める",
+        meaning: "To decide on・To resolve・To agree upon",
+        info: "取り決める means to formally decide or agree on something, especially rules, conditions, procedures, or arrangements between people or organizations. So the literal image is roughly “take something and settle/decide it.”",
+        components: [
+          { kanji: "取る", meaning: "Take" },
+          { kanji: "決める", meaning: "Decide" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 62,
+        wordRuby: "取{と}り締{し}まる",
+        meaning: "To enforce・To implement・To carry out・To crack down on",
+        components: [
+          { kanji: "取る", meaning: "Take" },
+          { kanji: "締まる", meaning: "Tighten" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 63,
+        wordRuby: "摂{せっ}取{しゅ}",
+        meaning: "To ingest・To take in・To absorb・To consume",
+        connector: "する",
+        components: [
+          { kanji: "摂", meaning: "Take in" },
+          { kanji: "取", meaning: "Take" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+    ]
+  },
+  '分' : {
+    meaning: "Divide・Part・Portion",
+    words: [
+      {
+        id: 64,
+        wordRuby: "分{ぶん}割{かつ}",
+        meaning: "To divide・To split・To partition",
+        connector: "する",
+        components: [
+          { kanji: "分", meaning: "Divide" },
+          { kanji: "割", meaning: "Split" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 65,
+        wordRuby: "分{ぶん}配{ぱい}",
+        meaning: "To distribute・To allocate・To assign",
+        connector: "する",
+        components: [
+          { kanji: "分", meaning: "Divide" },
+          { kanji: "配", meaning: "Distribute" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 66,
+        wordRuby: "分{ぶん}業{ぎょう}",
+        meaning: "To divide work・To split up tasks・Division of labor",
+        connector: "する",
+        components: [
+          { kanji: "分", meaning: "Divide" },
+          { kanji: "業", meaning: "Work" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 67,
+        wordRuby: "処{しょ}分{ぶん}",
+        meaning: "To dispose of",
+        connector: "する",
+        components: [
+          { kanji: "処", meaning: "Deal with" },
+          { kanji: "分", meaning: "Divide" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 68,
+        wordRuby: "手{て}分{わ}けする",
+        meaning: "To divide up the work・To split up (tasks)・To share the work",
+        components: [
+          { kanji: "手", meaning: "Hand" },
+          { kanji: "分ける", meaning: "Divide" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 69,
+        wordRuby: "使{つか}い分{わ}ける",
+        meaning: "To use (something) for different purposes・To allocate (resources) for different uses",
+        components: [
+          { kanji: "使う", meaning: "Use" },
+          { kanji: "分ける", meaning: "Divide" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 70,
+        wordRuby: "分{ぶん}厚{あつ}い",
+        meaning: "Thick (in terms of a portion or amount)",
+        components: [
+          { kanji: "分", meaning: "Portion" },
+          { kanji: "厚", meaning: "Thick" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 71,
+        wordRuby: "水{すい}分{ぶん}",
+        meaning: "Moisture・Water content",
+        components: [
+          { kanji: "水", meaning: "Water" },
+          { kanji: "分", meaning: "Portion" },
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 72,
+        wordRuby: "言{い}い分{ぶん}",
+        meaning: "one's side of the story・excuse・justification",
+        components: [
+          { kanji: "言う", meaning: "Speak" },
+          { kanji: "分", meaning: "Portion" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+    ],
+  },
+  '說' : {
+    meaning: "Explain",
+    words: [
+      {
+        id: 73,
+        wordRuby: "説{せつ}",
+        meaning: "Theory・Hypothesis",
+        components: [
+          { kanji: "説", meaning: "Explain" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 74,
+        wordRuby: "説{と}く",
+        meaning: "To explain",
+        components: [
+          { kanji: "説", meaning: "Explain" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 75,
+        wordRuby: "説{せっ}教{きょう}",
+        meaning: "Sermon・Preaching・Lecture・Reprimand",
+        connector: "する",
+        components: [
+          { kanji: "説", meaning: "Explain" },
+          { kanji: "教", meaning: "Teach" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 76,
+        wordRuby: "説{せっ}得{とく}",
+        meaning: "Persuasion・Convincing・To persuade・To convince",
+        components: [
+          { kanji: "説", meaning: "Explain" },
+          { kanji: "得", meaning: "Gain" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 77,
+        wordRuby: "説{せっ}得{とく}力{りょく}",
+        meaning: "Persuasive power・Influence・Ability to convince・Power of persuasion",
+        components: [
+          { kanji: "説得", meaning: "Persuasion" },
+          { kanji: "力", meaning: "Power" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 78,
+        wordRuby: "仮{か}説{せつ}",
+        meaning: "Hypothesis",
+        components: [
+          { kanji: "仮", meaning: "Temporary" },
+          { kanji: "説", meaning: "Explain" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 79,
+        wordRuby: "演{えん}説{ぜつ}",
+        meaning: "Speech・Oration・Address・Public speaking",
+        connector: "する",
+        components: [
+          { kanji: "演", meaning: "Perform" },
+          { kanji: "説", meaning: "Explain" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 80,
+        wordRuby: "解{かい}説{せつ}",
+        meaning: "Explanation・Interpretation・Commentary",
+        connector: "する",
+        components: [
+          { kanji: "解", meaning: "Break into parts" },
+          { kanji: "説", meaning: "Explain" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 81,
+        wordRuby: "解{かい}説{せつ}者{しゃ}",
+        meaning: "Commentator・Interpreter・Explanator",
+        components: [
+          { kanji: "解説", meaning: "Explanation" },
+          { kanji: "者", meaning: "Person" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+    ],
+  },
+  '大' : {
+    meaning: "Big・Large",
+    words: [
+      {
+        id: 82,
+        wordRuby: "大{だい}臣{じん}",
+        meaning: "Minister・Secretary of state",
+        components: [
+          { kanji: "大", meaning: "Big" },
+          { kanji: "臣", meaning: "Retainer" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 83,
+        wordRuby: "大{たい}気{き}",
+        meaning: "Air・Atmosphere・Spirit・Mood",
+        components: [
+          { kanji: "大", meaning: "Big" },
+          { kanji: "気", meaning: "Air" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 84,
+        wordRuby: "大{おお}いに",
+        meaning: "Greatly・Very much・Extremely",
+        components: [
+          { kanji: "大", meaning: "Big" },
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 85,
+        wordRuby: "大{たい}して〜ない",
+        meaning: "Not very much・Not particularly",
+        components: [
+          { kanji: "大した", meaning: "Great" },
+          { kanji: "～ない", meaning: "Not" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 86,
+        wordRuby: "盛{せい}大{だい}な",
+        meaning: "Magnificent・Splendid・Grand・Lavish",
+        components: [
+          { kanji: "盛", meaning: "Prosper" },
+          { kanji: "大", meaning: "Big" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 87,
+        wordRuby: "巨{きょ}大{だい}な",
+        meaning: "Huge・Enormous・Gigantic",
+        components: [
+          { kanji: "巨", meaning: "Large" },
+          { kanji: "大", meaning: "Big" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 88,
+        wordRuby: "壮{そう}大{だい}な",
+        meaning: "Mighty・Epic・Grand",
+        components: [
+          { kanji: "壮", meaning: "Robust" },
+          { kanji: "大", meaning: "Big" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 89,
+        wordRuby: "ばく大{だい}な",
+        meaning: "Tremendous・Enormous・Colossal",
+        components: [
+          { kanji: "ばく", meaning: "Vast" },
+          { kanji: "大", meaning: "Big" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+    ],
+  },
+  '体' : {
+    meaning: "Body・Form",
+    words: [
+      {
+        id: 90,
+        wordRuby: "体{たい}制{せい}",
+        meaning: "System",
+        components: [
+          { kanji: "体", meaning: "Body" },
+          { kanji: "制", meaning: "System" }
+        ],
+        example: "",
+        exampleMeaning: "",
+        important: true,
+      },
+      {
+        id: 91,
+        wordRuby: "体{たい}質{しつ}",
+        meaning: "Physical constitution・Body type/nature",
+        components: [
+          { kanji: "体", meaning: "Body" },
+          { kanji: "質", meaning: "Quality" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 92,
+        wordRuby: "体{たい}格{かく}",
+        meaning: "Body build・Physique",
+        components: [
+          { kanji: "体", meaning: "Body" },
+          { kanji: "格", meaning: "Form" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 93,
+        wordRuby: "天{てん}体{たい}",
+        meaning: "Celestial body・Astronomical object",
+        components: [
+          { kanji: "天", meaning: "Heaven" },
+          { kanji: "体", meaning: "Body" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 94,
+        wordRuby: "肉{にく}体{たい}",
+        meaning: "Body・Physical form",
+        components: [
+          { kanji: "肉", meaning: "Meat" },
+          { kanji: "体", meaning: "Body" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 95,
+        wordRuby: "身{しん}体{たい}",
+        meaning: "Body",
+        components: [
+          { kanji: "身", meaning: "Body" },
+          { kanji: "体", meaning: "Body" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 96,
+        wordRuby: "身{しん}体{たい}的{てき}な",
+        meaning: "Physical",
+        components: [
+          { kanji: "身体", meaning: "Body" },
+          { kanji: "的", meaning: "Adj. suffix" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 97,
+        wordRuby: "立{りっ}体{たい}的{てき}な",
+        meaning: "Three-dimensional",
+        components: [
+          { kanji: "立", meaning: "Stand" },
+          { kanji: "体", meaning: "Body" },
+          { kanji: "的", meaning: "Adj. suffix" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+    ],
+  },
+  '手': {
+    meaning: "Hand",
+    words: [
+      {
+        id: 98,
+        wordRuby: "手{て}順{じゅん}",
+        meaning: "Procedure・Sequence・Order of steps",
+        components: [
+          { kanji: "手", meaning: "Hand" },
+          { kanji: "順", meaning: "Order" }
+        ],
+        example: "",
+        exampleMeaning: "",
+        important: true,
+      },
+      {
+        id: 99,
+        wordRuby: "手{て}際{ぎわ}",
+        meaning: "Dexterity",
+        info: "The ability to perform a difficult action quickly and skillfully with the hands, or to think and act with mental cleverness and quickness",
+        components: [
+          { kanji: "手", meaning: "Hand" },
+          { kanji: "際", meaning: "Occasion" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 100,
+        wordRuby: "手{しゅ}腕{わん}",
+        meaning: "Dexterity・Skill",
+        components: [
+          { kanji: "手", meaning: "Hand" },
+          { kanji: "腕", meaning: "Arm" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 101,
+        wordRuby: "手{て}書{が}き",
+        meaning: "Handwriting・Written by hand",
+        connector: "する",
+        components: [
+          { kanji: "手", meaning: "Hand" },
+          { kanji: "書き", meaning: "Write" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 102,
+        wordRuby: "手{て}厚{あつ}い",
+        meaning: "Warm (treatment)・Thoughtful・Considerate・Generous",
+        components: [
+          { kanji: "手", meaning: "Hand" },
+          { kanji: "厚い", meaning: "Thick" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 103,
+        wordRuby: "手{て}のひら",
+        meaning: "Palm of the hand",
+        components: [
+          { kanji: "手", meaning: "Hand" },
+          { kanji: "ひら", meaning: "Flat" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 104,
+        wordRuby: "手{て}がける",
+        meaning: "To be involved in・To handle・To take care of",
+        components: [
+          { kanji: "手", meaning: "Hand" },
+          { kanji: "かける", meaning: "Hang" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 105,
+        wordRuby: "厚{あつ}手{で}",
+        meaning: "Thick・made of thick material",
+        info: "厚手 describes something, especially clothing, fabric, paper, towels, etc., that is thicker than usual.",
+        components: [
+          { kanji: "厚", meaning: "Thick" },
+          { kanji: "手", meaning: "Hand" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+    ]
+  },
+  '目': {
+    meaning: "Eyes",
+    words: [
+      {
+        id: 106,
+        wordRuby: "目{め}線{せん}",
+        meaning: "Viewpoint/ perspective・eye level・line of sight",
+        info: "The exact meaning depends on context. The core idea is where someone is looking from, or the perspective from which they see something.",
+        components: [
+          { kanji: "目", meaning: "Eyes" },
+          { kanji: "線", meaning: "Line" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 107,
+        wordRuby: "目{め}先{さき}",
+        meaning: "Short-term future・what is immediately ahead・short-term concern",
+        info: "The core idea is something very close at hand, especially something that matters in the immediate future.",
+        components: [
+          { kanji: "目", meaning: "Eyes" },
+          { kanji: "先", meaning: "Ahead" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 108,
+        wordRuby: "目{もっ}下{か}",
+        meaning: "currently・at present・for now・at the moment",
+        info: "目下 is mainly used in formal or written Japanese to mean “at present / currently.”",
+        components: [
+          { kanji: "目", meaning: "Eyes" },
+          { kanji: "下", meaning: "Down" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 109,
+        wordRuby: "目{め}当{あ}て",
+        meaning: "purpose・objective・goal・target・what you are looking for / what you are after",
+        components: [
+          { kanji: "目", meaning: "Eyes" },
+          { kanji: "当てる", meaning: "Hit" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 110,
+        wordRuby: "目{め}を通{とお}す",
+        meaning: "look through・read through・glance over・skim/read something quickly to get the general idea",
+        info: "It means reading or looking over something from beginning to end, usually without studying every detail carefully.",
+        components: [
+          { kanji: "目", meaning: "Eyes" },
+          { kanji: "通す", meaning: "Through" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 111,
+        wordRuby: "目{め}をつぶる",
+        meaning: "to close one's eyes・to turn a blind eye to something / overlook something・ignore or tolerate a fault/problem",
+        info: "Literal: close your eyes\nFigurative: overlook / turn a blind eye",
+        components: [
+          { kanji: "目", meaning: "Eyes" },
+          { kanji: "つぶる", meaning: "To close eyes" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 112,
+        wordRuby: "着{ちゃく}目{もく}",
+        meaning: "Focus on・Pay attention to・Take notice of・Place emphasis on a particular point",
+        connector: "する",
+        info: "The core idea is directing your attention to a particular point or aspect that seems important.",
+        components: [
+          { kanji: "着", meaning: "Attach" },
+          { kanji: "目", meaning: "Eyes" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 113,
+        wordRuby: "項{こう}目{もく}",
+        meaning: "Item・Category・Point・Entry・Article",
+        info: "The core idea is one individual item or category within a list, document, form, set of requirements, etc.",
+        components: [
+          { kanji: "項", meaning: "Item" },
+          { kanji: "目", meaning: "Eyes" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+    ],
+  },
+  '入' : {
+    meaning: "Enter・Insert・Put in",
+    words: [
+      {
+        id: 114,
+        wordRuby: "入{にゅう}手{しゅ}",
+        meaning: "To obtain・To acquire",
+        connector: "する",
+        components: [
+          { kanji: "入", meaning: "Enter" },
+          { kanji: "手", meaning: "Hand" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 115,
+        wordRuby: "入{にゅう}浴{よく}",
+        meaning: "Bathe・To take a bath",
+        connector: "する",
+        components: [
+          { kanji: "入", meaning: "Enter" },
+          { kanji: "浴", meaning: "Bathe" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 116,
+        wordRuby: "導{どう}入{にゅう}",
+        meaning: "introduction・implementation・adoption・installation・bringing something into use",
+        connector: "する",
+        info: "The core idea is bringing something new into an existing environment and starting to use it.",
+        components: [
+          { kanji: "導", meaning: "Guide" },
+          { kanji: "入", meaning: "Enter" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 117,
+        wordRuby: "介{かい}入{にゅう}",
+        meaning: "Intervention・Involvement・Interference・Stepping into a situation",
+        connector: "する",
+        info: "The core idea is entering into a situation or process and influencing what happens, often when you were not originally directly involved.",
+        components: [
+          { kanji: "介", meaning: "Mediate" },
+          { kanji: "入", meaning: "Enter" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 118,
+        wordRuby: "先{せん}入{にゅう}観{かん}",
+        meaning: "Preconception・Prejudgment・Preconceived notion・Prejudiced view",
+        components: [
+          { kanji: "先", meaning: "Before" },
+          { kanji: "入", meaning: "Enter" },
+          { kanji: "観", meaning: "See" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 119,
+        wordRuby: "入{い}れ替{か}える",
+        meaning: "To exchange・To replace・To swap",
+        components: [
+          { kanji: "入れる", meaning: "Put in" },
+          { kanji: "替える", meaning: "Swap" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 120,
+        wordRuby: "仕{し}入{い}れる",
+        meaning: "To purchase for resale・To stock up on・To buy in bulk",
+        components: [
+          { kanji: "仕", meaning: "Work" },
+          { kanji: "入れる", meaning: "Put in" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 121,
+        wordRuby: "手{て}に入{い}れる",
+        meaning: "To obtain・To acquire・To get hold of・obtain something you wanted or needed",
+        info: "The core idea is successfully getting something into your possession.",
+        components: [
+          { kanji: "手", meaning: "Hand" },
+          { kanji: "入れる", meaning: "Put in" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+    ],
+  },
+  '要': {
+    meaning: "Essential・Necessary",
+    words: [
+      {
+        id: 122,
+        wordRuby: "要{よう}は",
+        meaning: "The point is・in short・in brief・the main point is",
+        components: [
+          { kanji: "要", meaning: "Essential" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 123,
+        wordRuby: "要{よう}約{やく}",
+        meaning: "Summary・Abstract・Concise description",
+        connector: "する",
+        components: [
+          { kanji: "要", meaning: "Essential" },
+          { kanji: "約", meaning: "Shorten" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 124,
+        wordRuby: "要{よう}項{こう}",
+        meaning: "Requirements・Essential point",
+        components: [
+          { kanji: "要", meaning: "Essential" },
+          { kanji: "項", meaning: "Item" }
+        ],
+        example: "",
+        exampleMeaning: "",
+        important: true,
+      },
+      {
+        id: 125,
+        wordRuby: "要{よう}点{てん}",
+        meaning: "Key point・Main point",
+        components: [
+          { kanji: "要", meaning: "Essential" },
+          { kanji: "点", meaning: "Point" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 126,
+        wordRuby: "要{よう}因{いん}",
+        meaning: "Key factor・Essential cause・Main reason",
+        components: [
+          { kanji: "要", meaning: "Essential" },
+          { kanji: "因", meaning: "Cause" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 127,
+        wordRuby: "要{よう}領{りょう}",
+        meaning: "knack・know-how",
+        info: "The core idea is the essential way or method of doing something efficiently.",
+        components: [
+          { kanji: "要", meaning: "Essential" },
+          { kanji: "領", meaning: "Territory" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 128,
+        wordRuby: "要{よう}望{ぼう}",
+        meaning: "Request・Demand・Wish・Desire",
+        info: "The core idea is something someone wants or hopes another person/organization will do or provide.",
+        components: [
+          { kanji: "要", meaning: "Necessary" },
+          { kanji: "望", meaning: "Hope" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 129,
+        wordRuby: "要{よう}請{せい}",
+        meaning: "Request・Demand",
+        connector: "する",
+        info: "The core idea is asking another person, organization, or authority to take a specific action, usually in a more formal or official way.",
+        components: [
+          { kanji: "要", meaning: "Necessary" },
+          { kanji: "請", meaning: "Request" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+    ]
+  },
+  '不': {
+    meaning: "Not・Un-",
+    words: [
+      {
+        id: 130,
+        wordRuby: "不{ふ}可{か}",
+        meaning: "Not allowed・Not permitted・Unacceptable",
+        components: [
+          { kanji: "不", meaning: "Not" },
+          { kanji: "可", meaning: "Allow" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 131,
+        wordRuby: "不{ふ}正{せい}",
+        meaning: "Wrongdoing・Improper・Unauthorized・Illicit・Dishonest・Fraudulent",
+        info: "The core idea is doing something in a way that violates rules, laws, or proper procedures.",
+        components: [
+          { kanji: "不", meaning: "Not" },
+          { kanji: "正", meaning: "Correct" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 132,
+        wordRuby: "不{ふ}況{きょう}",
+        meaning: "Economic downturn・Recession",
+        components: [
+          { kanji: "不", meaning: "Not" },
+          { kanji: "況", meaning: "Situation" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 133,
+        wordRuby: "不{ふ}明{めい}な",
+        meaning: "Unknown・Unclear・Uncertain",
+        components: [
+          { kanji: "不", meaning: "Not" },
+          { kanji: "明", meaning: "Clear" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 134,
+        wordRuby: "不{ふ}幸{こう}な",
+        meaning: "Unhappy・Unfortunate・Unfortunate circumstance/event",
+        info: "The meaning depends on context, but the core idea is lacking happiness or experiencing bad/unfortunate circumstances.",
+        components: [
+          { kanji: "不", meaning: "Not" },
+          { kanji: "幸", meaning: "Happy" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 135,
+        wordRuby: "不{ふ}用{よう}品{ひん}",
+        meaning: "Useless item・Discardable item・Unwanted item",
+        components: [
+          { kanji: "不用", meaning: "Unwanted" },
+          { kanji: "品", meaning: "Item" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 136,
+        wordRuby: "不{ふ}向{む}きな",
+        meaning: "Unsuitable・Inappropriate for a particular purpose or situation",
+        info: "The core idea is something or someone is not a good match for a particular purpose, task, or situation.",
+        components: [
+          { kanji: "不", meaning: "Not" },
+          { kanji: "向", meaning: "Toward" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 137,
+        wordRuby: "不{ふ}愉{ゆ}快{かい}な",
+        meaning: "Unpleasant・Uncomfortable",
+        components: [
+          { kanji: "不", meaning: "Not" },
+          { kanji: "愉快", meaning: "Pleasant" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+    ],
+  },
+  '成': {
+    meaning: "Become・Achieve・Accomplish",
+    words: [
+      {
+        id: 138,
+        wordRuby: "成{な}り立{た}つ",
+        meaning: "to be established・to hold true・to make sense",
+        info: "The exact meaning depends on context. The core idea is something being able to exist, work, or be valid based on certain conditions or relationships.",
+        components: [
+          { kanji: "成る", meaning: "Become" },
+          { kanji: "立つ", meaning: "Stand" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 139,
+        wordRuby: "成{な}り行{ゆ}き",
+        meaning: "Course of events・How things unfold・The way things develop or progress",
+        info: "The core idea is how a situation develops naturally, without necessarily being deliberately planned or controlled.",
+        components: [
+          { kanji: "成る", meaning: "Become" },
+          { kanji: "行く", meaning: "Go" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 140,
+        wordRuby: "結成{けっせい}",
+        meaning: "Formation・Establishment",
+        connector: "する",
+        info: "The core idea is bringing people together to create a group with a shared purpose.",
+        components: [
+          { kanji: "結", meaning: "Tie together" },
+          { kanji: "成", meaning: "Become" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 141,
+        wordRuby: "育{いく}成{せい}",
+        meaning: "Development・Nurturing・Cultivation",
+        connector: "する",
+        info: "The core idea is helping a person, group, or organism grow and develop their abilities over time.",
+        components: [
+          { kanji: "育", meaning: "Raise" },
+          { kanji: "成", meaning: "Become" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 142,
+        wordRuby: "形{けい}成{せい}",
+        meaning: "Shape・Formation・Molding",
+        connector: "する",
+        info: "The core idea is gradually forming or shaping something into a particular state, structure, or condition.",
+        components: [
+          { kanji: "形", meaning: "Form" },
+          { kanji: "成", meaning: "Become" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 143,
+        wordRuby: "熟{じゅく}成{せい}",
+        meaning: "Maturation・Aging・Ripening",
+        connector: "する",
+        info: "The core idea is something gradually developing or improving over time, often through a natural process.",
+        components: [
+          { kanji: "熟", meaning: "Mature" },
+          { kanji: "成", meaning: "Become" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 144,
+        wordRuby: "助{じょ}成{せい}",
+        meaning: "Subsidy・Funding・Financial assistance",
+        connector: "する",
+        info: "The core idea is providing money or other support to help an activity, project, research, or organization succeed.",
+        components: [
+          { kanji: "助", meaning: "Help" },
+          { kanji: "成", meaning: "Become" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 145,
+        wordRuby: "助{じょ}成{せい}金{きん}",
+        meaning: "Subsidy・Grant money・Financial aid",
+        info: "助成金 is money provided by a government, foundation, or other organization to support a particular activity, project, research, or business.",
+        components: [
+          { kanji: "助成", meaning: "Subsidize" },
+          { kanji: "金", meaning: "Money" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+    ],
+  },
+  '心': {
+    meaning: "Heart",
+    words: [
+      {
+        id: 146,
+        wordRuby: "心{しん}理{り}",
+        meaning: "Mental state・Psychology",
+        components: [
+          { kanji: "心", meaning: "Heart" },
+          { kanji: "理", meaning: "Reason" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 147,
+        wordRuby: "心{こころ}強{づよ}い",
+        meaning: "Reassuring・Heartfelt・Genuine・Encouraging",
+        components: [
+          { kanji: "心", meaning: "Heart" },
+          { kanji: "強い", meaning: "Strong" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 148,
+        wordRuby: "心{こころ}得{え}る",
+        meaning: "To understand or realize something deeply・To be well-informed・To be knowledgeable・To have a good grasp of something",
+        info: "means to understand something well enough to know how to act, especially when it involves rules, responsibilities, skills, or proper behavior.",
+        components: [
+          { kanji: "心", meaning: "Heart" },
+          { kanji: "得る", meaning: "To gain" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 149,
+        wordRuby: "心{こころ}遣{づか}い",
+        meaning: "Thoughtfulness・Consideration・Kindness・consideration for others' feelings or needs",
+        info: "It means being thoughtful about another person's feelings or situation and doing something considerate for them.",
+        components: [
+          { kanji: "心", meaning: "Heart" },
+          { kanji: "遣い", meaning: "Usage" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 150,
+        wordRuby: "心{こころ}がける",
+        meaning: "keep in mind・make an effort to・be mindful of",
+        info: "It means to consciously make an effort to do something or maintain a particular attitude or habit.",
+        components: [
+          { kanji: "心", meaning: "Heart" },
+          { kanji: "かける", meaning: "Hang" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 151,
+        wordRuby: "心{ここ}地{ち}よい",
+        meaning: "Comfortable・Pleasant・Agreeable`",
+        components: [
+          { kanji: "心", meaning: "Heart" },
+          { kanji: "地", meaning: "Ground" },
+          { kanji: "よい", meaning: "Good" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 152,
+        wordRuby: "肝{かん}心{じん}な",
+        meaning: "Essential・Crucial・Very important・Of vital importance",
+        info: "肝心な + noun means something is particularly important or essential to the success of something.",
+        components: [
+          { kanji: "肝", meaning: "Liver" },
+          { kanji: "心", meaning: "Heart" },
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 153,
+        wordRuby: "好{こう}奇{き}心{しん}",
+        meaning: "Curiosity・Interest・Inquisitiveness・Desire to learn or discover something",
+        info: "The core idea is a strong desire to know, learn, or experience something new, having an interest in things that are unfamiliar or unusual.",
+        components: [
+          { kanji: "好", meaning: "Like" },
+          { kanji: "奇", meaning: "Strange" },
+          { kanji: "心", meaning: "Heart" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+    ]
+  },
+  '業': {
+    meaning: "Work・Business・Industry",
+    words: [
+      {
+        id: 154,
+        wordRuby: "業{ぎょう}者{しゃ}",
+        meaning: "Contractor・Business operator・Professional",
+        info: "refers to a person or company that conducts a particular type of business or provides a specific service.",
+        components: [
+          { kanji: "業", meaning: "Work" },
+          { kanji: "者", meaning: "Person" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 155,
+        wordRuby: "業{ぎょう}績{せき}",
+        meaning: "Business performance・Work achievements",
+        info: "Refers to the results or accomplishments of a business or individual's work.",
+        components: [
+          { kanji: "業", meaning: "Work" },
+          { kanji: "績", meaning: "Achievement" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 156,
+        wordRuby: "起{き}業{ぎょう}",
+        meaning: "Starting a business・Entrepreneurship",
+        connector: "する",
+        components: [
+          { kanji: "起", meaning: "Happen" },
+          { kanji: "業", meaning: "Business" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 157,
+        wordRuby: "漁{ぎょ}業{ぎょう}",
+        meaning: "Fishing industry・Fishing business",
+        components: [
+          { kanji: "漁", meaning: "Fishing" },
+          { kanji: "業", meaning: "Business" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 158,
+        wordRuby: "家{か}業{ぎょう}",
+        meaning: "Family business・Hereditary profession",
+        components: [
+          { kanji: "家", meaning: "House" },
+          { kanji: "業", meaning: "Business" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 159,
+        wordRuby: "従{じゅう}業{ぎょう}員{いん}",
+        meaning: "Employee・Staff member",
+        components: [
+          { kanji: "従", meaning: "Follow" },
+          { kanji: "業", meaning: "Work" },
+          { kanji: "員", meaning: "Member" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 160,
+        wordRuby: "観{かん}光{こう}業{ぎょう}",
+        meaning: "Tourism industry",
+        components: [
+          { kanji: "観光", meaning: "Tourism" },
+          { kanji: "業", meaning: "Business" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+    ]
+  },
+  '一': {
+    meaning: "One",
+    words: [
+      {
+        id: 161,
+        wordRuby: "一{いっ}切{さい}",
+        meaning: "Not at all・Absolutely・Entirely・Without exception",
+        info: "一切 has two main uses: it can mean “not at all” with a negative expression, or “everything / entirely” depending on context.\n一切～ない = not at all / absolutely not\n一切～ = everything / entirely",
+        components: [
+          { kanji: "一", meaning: "One" },
+          { kanji: "切", meaning: "Cut" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 162,
+        wordRuby: "一{いっ}種{しゅ}",
+        meaning: "A kind of・A type of",
+        info: "refers to one particular type or category of something.",
+        components: [
+          { kanji: "一", meaning: "One" },
+          { kanji: "種", meaning: "Kind" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 163,
+        wordRuby: "一{いっ}瞬{しゅん}",
+        meaning: "A moment・An instant",
+        components: [
+          { kanji: "一", meaning: "One" },
+          { kanji: "瞬", meaning: "Moment" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 164,
+        wordRuby: "一{いっ}層{そう}",
+        meaning: "Even more・Still more・All the more・Further・To a greater degree",
+        info: "The image is of adding another layer, so something becomes greater or more intense.",
+        components: [
+          { kanji: "一", meaning: "One" },
+          { kanji: "層", meaning: "Layer" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 165,
+        wordRuby: "一{いっ}帯{たい}",
+        meaning: "The entire region・The entire area",
+        info: "It refers to an entire area or region, including the surrounding area.",
+        components: [
+          { kanji: "一", meaning: "One" },
+          { kanji: "帯", meaning: "Belt" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 166,
+        wordRuby: "一{いっ}見{けん}",
+        meaning: "At first glance・At first sight",
+        connector: "する",
+        components: [
+          { kanji: "一", meaning: "One" },
+          { kanji: "見", meaning: "Look" }
+        ],
+        example: "",
+        exampleMeaning: "",
+        important: true
+      },
+      {
+        id: 167,
+        wordRuby: "一{いち}覧{らん}",
+        meaning: "List・Catalog・Overview・Summary",
+        connector: "する",
+        info: "It refers to a collection of items displayed or organized together so you can see and check them at a glance.",
+        components: [
+          { kanji: "一", meaning: "One" },
+          { kanji: "覧", meaning: "Look" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+    ]
+  },
+  '度': {
+    meaning: "Level・Degree・Occasion",
+    words: [
+      {
+        id: 168,
+        wordRuby: "度{ど}合{ど}い",
+        meaning: "Degree of something・Extent・Level・Amount",
+        info: "refers to the degree or intensity of a quality, condition, or state. It emphasizes how much or how strongly something is present.",
+        components: [
+          { kanji: "度", meaning: "Level" },
+          { kanji: "合う", meaning: "Fit" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 169,
+        wordRuby: "角{かく}度{ど}",
+        meaning: "Angle",
+        info: "Refers to the angle between two lines or surfaces. It can also be used figuratively to mean a perspective or approach to a situation.",
+        components: [
+          { kanji: "角", meaning: "Angle" },
+          { kanji: "度", meaning: "Level" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 170,
+        wordRuby: "速{そく}度{ど}",
+        meaning: "Speed",
+        components: [
+          { kanji: "速", meaning: "Fast" },
+          { kanji: "度", meaning: "Level" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 171,
+        wordRuby: "密{みつ}度{ど}",
+        meaning: "Density・Concentration・Amount of something within a given space or area",
+        info: "describes how much of something exists within a certain space or volume. So, 密度 means density / degree of compactness.",
+        components: [
+          { kanji: "密", meaning: "Dense" },
+          { kanji: "度", meaning: "Level" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 172,
+        wordRuby: "頻{ひん}度{ど}",
+        meaning: "Frequency・How often something happens・Rate of occurrence",
+        info: "Refers to how often something happens, occurs or is repeated within a certain period of time.",
+        components: [
+          { kanji: "頻", meaning: "Frequent" },
+          { kanji: "度", meaning: "Level" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 173,
+        wordRuby: "再{さい}度{ど}",
+        meaning: "Again・Once more・A second time",
+        components: [
+          { kanji: "再", meaning: "Again" },
+          { kanji: "度", meaning: "Occasion" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 174,
+        wordRuby: "都{つ}度{ど}",
+        meaning: "Every time・Each time・Whenever something happens",
+        info: "means doing something each time a particular event or situation occurs. It is common in business, instructions, and IT documentation.",
+        components: [
+          { kanji: "都", meaning: "Each" },
+          { kanji: "度", meaning: "Occasion" }
+        ],
+        example: "",
+        exampleMeaning: "",
+        important: true
+      },
+    ]
+  },
+  '視': {
+    meaning: "Look",
+    words: [
+      {
+        id: 175,
+        wordRuby: "視{し}線{せん}",
+        meaning: "Line of sight・Gaze・Where someone is looking",
+        info: "refers to the direction in which someone is looking, or the act of looking at someone or something.",
+        components: [
+          { kanji: "視", meaning: "Look" },
+          { kanji: "線", meaning: "Line" }
+        ],
+        example: "",
+        exampleMeaning: "",
+        important: true
+      },
+      {
+        id: 176,
+        wordRuby: "視{し}野{や}",
+        meaning: "Field of view・Range of vision・Perspective・Breadth of one's thinking",
+        info: "視野 has two main meanings: the area you can physically see and the range of things you can consider or understand.",
+        components: [
+          { kanji: "視", meaning: "Look" },
+          { kanji: "野", meaning: "Field" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 177,
+        wordRuby: "視{し}聴{ちょう}",
+        meaning: "Watching and listening・Visual and auditory perception・The act of seeing and hearing",
+        connector: "する",
+        components: [
+          { kanji: "視", meaning: "Look" },
+          { kanji: "聴", meaning: "Listen" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 178,
+        wordRuby: "視{し}聴{ちょう}者{しゃ}",
+        meaning: "Viewer・Audience",
+        components: [
+          { kanji: "視聴", meaning: "watch and listen" },
+          { kanji: "者", meaning: "Person" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 179,
+        wordRuby: "監{かん}視{し}",
+        meaning: "Surveillance・Monitoring・Keeping watch",
+        connector: "する",
+        info: "The core idea is continuously watching a person, system, or situation to detect changes, problems, or suspicious activity.",
+        components: [
+          { kanji: "監", meaning: "Supervise" },
+          { kanji: "視", meaning: "Look" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 180,
+        wordRuby: "無{む}視{し}",
+        meaning: "Ignore・Disregard・Pay no attention to・Take no notice of",
+        connector: "する",
+        info: "The core idea is choosing not to pay attention to something or treating it as if it does not exist.",
+        components: [
+          { kanji: "無", meaning: "No" },
+          { kanji: "視", meaning: "Look" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 181,
+        wordRuby: "可{か}視{し}化{か}",
+        meaning: "Visualization・Making something visible・Visual representation",
+        info: "In IT, 可視化 means representing data, information, or processes in a way that makes them easier to understand, often using graphs, charts, dashboards, or diagrams. So, 可視化 literally means “making something able to be seen.”",
+        components: [
+          { kanji: "可", meaning: "Allow" },
+          { kanji: "視", meaning: "Look" },
+          { kanji: "化", meaning: "Transform" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+    ]
+  },
+  '立': {
+    meaning: "Stand",
+    words: [
+      {
+        id: 182,
+        wordRuby: "対{たい}立{りつ}",
+        meaning: "Conflict・Confrontation・Disagreement between opposing sides",
+        connector: "する",
+        info: "The core idea is two people, groups, or opinions standing against each other because they have different positions, interests, or beliefs.",
+        components: [
+          { kanji: "対", meaning: "Versus" },
+          { kanji: "立", meaning: "Stand" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 183,
+        wordRuby: "独{どく}立{りつ}",
+        meaning: "Independence・Self-reliance・Being free from control or influence of others",
+        info: "The core idea is being separate from others and not depending on them, or operating on your own.",
+        connector: "する",
+        components: [
+          { kanji: "独", meaning: "Alone" },
+          { kanji: "立", meaning: "Stand" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 184,
+        wordRuby: "孤{こ}立{りつ}",
+        meaning: "Isolation・Being alone・Lacking support or connection・Being cut off from others",
+        connector: "する",
+        info: "The core idea is being separated from others and having little or no connection or support from them.",
+        components: [
+          { kanji: "孤", meaning: "Lonely" },
+          { kanji: "立", meaning: "Stand" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 185,
+        wordRuby: "確{かく}立{りつ}",
+        meaning: "Establishment・Foundation・Setting up",
+        connector: "する",
+        info: "The core idea is making something solid, reliable, and well-established so that it can function or be relied on.",
+        components: [
+          { kanji: "確", meaning: "Certain" },
+          { kanji: "立", meaning: "Stand" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 186,
+        wordRuby: "自{じ}立{りつ}",
+        meaning: "Independence・Self-reliance・Be independent",
+        connector: "する",
+        components: [
+          { kanji: "自", meaning: "Self" },
+          { kanji: "立", meaning: "Stand" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 187,
+        wordRuby: "設{せつ}立{りつ}",
+        meaning: "Establishment・Foundation・Setting up an organization or institution",
+        connector: "する",
+        info: "The core idea is creating a new organization, company, institution, or formal body.",
+        components: [
+          { kanji: "設", meaning: "Establish" },
+          { kanji: "立", meaning: "Stand" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 188,
+        wordRuby: "埋{う}め立{た}てる",
+        meaning: "To reclaim land・To fill in an area of water with earth・To fill in a space with soil or other material to create new land",
+        info: "It means to fill an area such as a sea, lake, or marsh with soil or other materials to create usable land.",
+        components: [
+          { kanji: "埋める", meaning: "Fill in" },
+          { kanji: "立てる", meaning: "Stand" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+    ]
+  },
+  '作': {
+    meaning: "Make・Create",
+    words: [
+      {
+        id: 189,
+        wordRuby: "作{さく}戦{せん}",
+        meaning: "Tactic・Strategy・Plan of action",
+        components: [
+          { kanji: "作", meaning: "Make" },
+          { kanji: "戦", meaning: "Fight" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 190,
+        wordRuby: "作{さ}用{よう}",
+        meaning: "Effect・Influence・Action・The way something works or produces a result",
+        connector: "する",
+        info: "The core idea is something acting on another thing and producing a change or influence.",
+        components: [
+          { kanji: "作", meaning: "Make" },
+          { kanji: "用", meaning: "Use" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 191,
+        wordRuby: "作{つく}り上{あ}げる",
+        meaning: "To complete・Develop something from start to finish・Accomplish something through effort",
+        info: "It emphasizes putting effort into creating something until it is complete.",
+        components: [
+          { kanji: "作る", meaning: "Make" },
+          { kanji: "上げる", meaning: "Done" },
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 192,
+        wordRuby: "物{もの}作{づく}り",
+        meaning: "Making things・Manufacturing・Craftsmanship・Creating physical products",
+        info: "refers to the process of making or manufacturing things, often emphasizing the skill, care, and techniques involved in creating high-quality products.",
+        components: [
+          { kanji: "物", meaning: "Thing" },
+          { kanji: "作る", meaning: "Make" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 193,
+        wordRuby: "新{しん}作{さく}",
+        meaning: "New creation・New release・Newly released product or work",
+        components: [
+          { kanji: "新", meaning: "New" },
+          { kanji: "作", meaning: "Make" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 194,
+        wordRuby: "試{し}作{さく}",
+        meaning: "Prototype・Mock-up・Pre-production model",
+        connector: "する",
+        components: [
+          { kanji: "試", meaning: "Try" },
+          { kanji: "作", meaning: "Make" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 195,
+        wordRuby: "試{し}作{さく}品{ひん}",
+        meaning: "Prototype・Mock-up・Pre-production model",
+        components: [
+          { kanji: "試作", meaning: "Prototype" },
+          { kanji: "品", meaning: "Goods" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+    ]
+  },
+  '感': {
+    meaning: "Feeling・Emotion・Sensation",
+    words: [
+      {
+        id: 196,
+        wordRuby: "感{かん}性{せい}",
+        meaning: "sensibility・Sensitivity・Ability to perceive and appreciate things",
+        info: "refers to the ability to sense, feel, and appreciate things in an individual way, especially beauty, art, design, emotions, and subtle impressions.",
+        components: [
+          { kanji: "感", meaning: "Feeling" },
+          { kanji: "性", meaning: "Nature" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 197,
+        wordRuby: "感{かん}染{せん}",
+        meaning: "Infection・Contamination・Becoming infected・Infecting someone or something",
+        connector: "する",
+        info: "The core idea is a virus, bacterium, or other infectious agent entering and spreading within a living organism. In IT, it can also refer to a computer becoming infected with malware.",
+        components: [
+          { kanji: "感", meaning: "Feeling" },
+          { kanji: "染", meaning: "Dye" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 198,
+        wordRuby: "直{ちょっ}感{かん}",
+        meaning: "Intuition・Instinct・Intuitive judgment・Instant understanding",
+        info: "直感 is the ability to understand, judge, or sense something immediately, without consciously reasoning through it.",
+        components: [
+          { kanji: "直", meaning: "Direct" },
+          { kanji: "感", meaning: "Feeling" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 199,
+        wordRuby: "共{きょう}感{かん}",
+        meaning: "Empathy・Mutual understanding",
+        connector: "する",
+        components: [
+          { kanji: "共", meaning: "Together" },
+          { kanji: "感", meaning: "Feeling" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 200,
+        wordRuby: "充{じゅう}実{じつ}感{かん}",
+        meaning: "Satisfaction・Contentment・Feeling of fulfillment",
+        components: [
+          { kanji: "充実", meaning: "Fullfilment" },
+          { kanji: "感", meaning: "Feeling" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 201,
+        wordRuby: "不{ふ}信{しん}感{かん}",
+        meaning: "Distrust・Suspicion・Lack of trust or confidence in someone or something",
+        components: [
+          { kanji: "不", meaning: "Not" },
+          { kanji: "信", meaning: "Believe" },
+          { kanji: "感", meaning: "Feeling" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+    ]
+  },
+  '気': {
+    meaning: "Feeling・Spirit・Energy",
+    words: [
+      {
+        id: 202,
+        wordRuby: "気{き}ままな",
+        meaning: "Freely・Doing as one pleases・Doing whatever one wants",
+        info: "気ままな + noun describes someone or something that acts or proceeds according to its own wishes, without being restricted by rules, schedules, or other people's expectations.",
+        components: [
+          { kanji: "気", meaning: "Feeling" },
+          { kanji: "まま", meaning: "As it is" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 203,
+        wordRuby: "気{き}まぐれな",
+        meaning: "Capricious・Unpredictable・Changeable・Changing one's mind or mood frequently",
+        info: "気まぐれな + noun describes someone or something whose behavior, decisions, or mood changes unpredictably, often depending on the momentary mood or impulse.",
+        components: [
+          { kanji: "気", meaning: "Feeling" },
+          { kanji: "まぐれ", meaning: "By accident" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 204,
+        wordRuby: "気{き}がかりな",
+        meaning: "Worrying・Causing concern・Making one anxious",
+        info: "気がかりな + noun describes something that makes you feel worried or uneasy because you don't know how it will turn out. The image is something that stays on your mind and makes you feel concerned.",
+        components: [
+          { kanji: "気", meaning: "Feeling" },
+          { kanji: "かかる", meaning: "Hang" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 205,
+        wordRuby: "何{なに}気{げ}ない",
+        meaning: "Casual・Unconcerned・Not taking it seriously・Without any particular intention",
+        info: "何気ない + noun describes something done or said casually, without a particular intention or without seeming especially important.",
+        components: [
+          { kanji: "何", meaning: "What" },
+          { kanji: "気", meaning: "Feeling" },
+          { kanji: "ない", meaning: "Not" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 206,
+        wordRuby: "意{い}気{き}込{ご}む",
+        meaning: "Be eager to do something・To become enthusiastic・To get excited about something",
+        info: "It describes being full of enthusiasm and determination when preparing to do something or take on a challenge.",
+        components: [
+          { kanji: "意", meaning: "Thought" },
+          { kanji: "気", meaning: "Feeling" },
+          { kanji: "込む", meaning: "To get into" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 207,
+        wordRuby: "無{む}邪{じゃ}気{き}な",
+        meaning: "Innocent・Naive・Simple-minded",
+        info: "無邪気な + noun describes someone or something that is innocent, straightforward, and free from malicious intentions.",
+        components: [
+          { kanji: "無", meaning: "No" },
+          { kanji: "邪", meaning: "Evil" },
+          { kanji: "気", meaning: "Feeling" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+    ]
+  },
+  '学': {
+    meaning: "Study・Learning・Knowledge",
+    words: [
+      {
+        id: 208,
+        wordRuby: "学{がく}者{しゃ}",
+        meaning: "Scholar・Academician・Expert in a particular field of study",
+        components: [
+          { kanji: "学", meaning: "Study" },
+          { kanji: "者", meaning: "Person" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 209,
+        wordRuby: "学{がく}内{ない}",
+        meaning: "Within the school or academic institution・Inside the campus",
+        components: [
+          { kanji: "学", meaning: "Study" },
+          { kanji: "内", meaning: "Inside" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 210,
+        wordRuby: "在学{ざいがく}",
+        meaning: "Being enrolled at・Being a student at・Currently attending an educational institution",
+        connector: "する",
+        components: [
+          { kanji: "在", meaning: "Exist" },
+          { kanji: "学", meaning: "Study" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 211,
+        wordRuby: "教{きょう}育{いく}学{がく}",
+        meaning: "Pedagogy・The study of education・Educational science",
+        components: [
+          { kanji: "教育", meaning: "Education" },
+          { kanji: "学", meaning: "Study" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 212,
+        wordRuby: "心{しん}理{り}学{がく}",
+        meaning: "Psychology・The study of the human mind and behavior",
+        components: [
+          { kanji: "心理", meaning: "Psychology" },
+          { kanji: "学", meaning: "Study" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 213,
+        wordRuby: "脳{のう}科{か}学{がく}",
+        meaning: "Neuroscience・The study of the nervous system and the brain",
+        components: [
+          { kanji: "脳", meaning: "Brain" },
+          { kanji: "科学", meaning: "Science" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+    ]
+  },
+  '存': {
+    meaning: "Exist・Preserve・Maintain",
+    words: [
+      {
+        id: 214,
+        wordRuby: "存{ぞん}じる",
+        meaning: "To know (humble form)・To think (humble form)",
+        components: [
+          { kanji: "存", meaning: "Exist" },
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 215,
+        wordRuby: "存{そん}続{ぞく}",
+        meaning: "Continuation・Survival・Maintaining existence",
+        connector: "する",
+        info: "The core idea is something continuing to exist or remain in operation over time, even when it faces difficulties or changes. So, 存続 means 'continuing to exist'.",
+        components: [
+          { kanji: "存", meaning: "Exist" },
+          { kanji: "続", meaning: "Continue" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+      {
+        id: 216,
+        wordRuby: "依{い}存{ぞん}",
+        meaning: "To depend on or rely on something or someone・Dependence・Reliance",
+        connector: "する",
+        components: [
+          { kanji: "依", meaning: "Lean on" },
+          { kanji: "存", meaning: "Exist" }
+        ],
+        example: "",
+        exampleMeaning: ""
+      },
+    ]
   }
 };
