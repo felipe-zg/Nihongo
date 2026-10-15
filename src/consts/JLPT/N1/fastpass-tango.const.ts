@@ -971,8 +971,14 @@ export const JLPT_N1_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "取", meaning: "Take" },
           { kanji: "得", meaning: "Gain" }
         ],
-        example: "",
-        exampleMeaning: "",
+        example: "{取得}が難しいとされるこの<国家>資格は、<一流>ホテル[*225*ならではの]<徹底した>実務<研修>があってこそ初めて合格できる。",
+        exampleMeaning: "This <national> certification, which is said to be difficult to {acquire}, can only be passed thanks to the <thorough> practical <training> [characteristic of] a <top-tier> hotel.",
+        extraVocabulary: [
+          { wordRuby: "国{こっ}家{か}", meaning: "National・Nation・Country as a political entity" },
+          { wordRuby: "一{いち}流{りゅう}", meaning: "First-class・Top-notch・High-quality・Excellent" },
+          { wordRuby: "徹{てっ}底{てい}する", meaning: "Carry out thoroughly・Do something completely・Enforce strictly・Make sure something is fully implemented" },
+          { wordRuby: "研{けん}修{しゅう}", meaning: "Training・Practical training・On-the-job training" }
+        ]
       },
       {
         id: 56,
@@ -982,8 +988,8 @@ export const JLPT_N1_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "取る", meaning: "Take" },
           { kanji: "戻す", meaning: "Return" }
         ],
-        example: "",
-        exampleMeaning: ""
+        example: "長年の付き合いがある[*279*手前]、失われた信用を今さら{取り戻す}のは不可能だと諦める[*47*わけにはいかない]。",
+        exampleMeaning: "[Given that] we have had a relationship for many years, [I cannot simply] give up and say it is impossible to {regain} the lost trust now."
       },
       {
         id: 57,
@@ -993,8 +999,11 @@ export const JLPT_N1_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "取る", meaning: "Take" },
           { kanji: "次ぐ", meaning: "Come after" }
         ],
-        example: "",
-        exampleMeaning: ""
+        example: "新人の電話対応の遅さには<頭を痛める>[*277*といえども]、ベテランの社員がすべてを{取り次ぐ}[*47*わけにもいかない]。",
+        exampleMeaning: "[Even though] we are <troubled by> the new employee's slowness in answering calls, a veteran staff member [cannot] {put through} every single call for them.",
+        extraVocabulary: [
+          { wordRuby: "頭{あたま}を痛{いた}める", meaning: "To be troubled・To be worried・To have a headache over something" }
+        ]
       },
       {
         id: 58,
@@ -1005,8 +1014,13 @@ export const JLPT_N1_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "取る", meaning: "Take" },
           { kanji: "引く", meaning: "Pull" }
         ],
-        example: "",
-        exampleMeaning: ""
+        example: "今回の<交渉>が<決裂した>場合は、他の<事業体>と新たに{取引}を始める[*283*までのことだ]。",
+        exampleMeaning: "If the current <negotiations> <fall through>, [I'll just have to] start {making deals} with another <business entity>.",
+        extraVocabulary: [
+          { wordRuby: "交{こう}渉{しょう}", meaning: "Negotiation・Bargaining・Discussion" },
+          { wordRuby: "決{けつ}裂{れつ}する", meaning: "To break down・To collapse・To fail (negotiations, talks, etc.)" },
+          { wordRuby: "事{じ}業{ぎょう}体{たい}", meaning: "Business entity・Business organization・Company" }
+        ]
       },
       {
         id: 59,
@@ -1016,8 +1030,13 @@ export const JLPT_N1_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "取引", meaning: "Business transaction" },
           { kanji: "先", meaning: "Destination" }
         ],
-        example: "",
-        exampleMeaning: ""
+        example: "<創業>以来の重要な{取引先}からの<依頼>[*278*こととて]、できる限りのご<要望>にはお応えしたいと考えております。",
+        exampleMeaning: "[Given that] this is a <request> from an important {client} since our <founding>, we would like to accommodate your <requests> as much as possible.",
+        extraVocabulary: [
+          { wordRuby: "創{そう}業{ぎょう}", meaning: "Founding a business・Establishing a company" },
+          { wordRuby: "依{い}頼{らい}", meaning: "Request・Commission・Entrustment・Asking someone to do something" },
+          { wordRuby: "要{よう}望{ぼう}", meaning: "Request・Demand・Wish・Desire・Request for a change or improvement" }
+        ]
       },
       {
         id: 60,
@@ -1028,8 +1047,15 @@ export const JLPT_N1_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "取る", meaning: "Take" },
           { kanji: "立てる", meaning: "Stand" }
         ],
-        example: "",
-        exampleMeaning: ""
+        example: "経営状態が<悪化して>いる今、{取り立てて}<強調す>べき<朗報>は[*280*ただ]<一筋>の希望[*280*のみ]である。",
+        exampleMeaning: "Now that the financial and operational situation is <deteriorating>, the <good news> worth {singling out} is [nothing but] a <single ray of> hope.",
+        extraVocabulary: [
+          { wordRuby: "経{けい}営{えい}状{じょう}態{たい}", meaning: "Business condition・State of management・financial and operational conditions" },
+          { wordRuby: "悪{あっ}化{か}", meaning: "Deterioration・Worsening・Decline" },
+          { wordRuby: "強{きょう}調{ちょう}する", meaning: "To emphasize・To stress・To highlight" },
+          { wordRuby: "朗{ろう}報{ほう}", meaning: "Good news・Glad tidings" },
+          { wordRuby: "一{ひと}筋{すじ}", meaning: "A single line・A single thread・A single ray (of hope, light, etc.)" }
+        ]
       },
       {
         id: 61,
@@ -1040,8 +1066,13 @@ export const JLPT_N1_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "取る", meaning: "Take" },
           { kanji: "決める", meaning: "Decide" }
         ],
-        example: "",
-        exampleMeaning: ""
+        example: "<法律家>[*284*すら]<頭を悩ませる>複雑な問題だが、<両国間>で新たな基準を{取り決める}必要がある。",
+        exampleMeaning: "It is a complex issue that [even] <legal experts> <struggle with>, but it is necessary to {agree upon} new standards <between both countries>.",
+        extraVocabulary: [
+          { wordRuby: "法{ほう}律{りつ}家{か}", meaning: "Legal expert・Lawyer・Person specializing in law・Jurist" },
+          { wordRuby: "頭{あたま}を悩{なや}ませる", meaning: "To be troubled by something・To struggle with a problem・To rack one's brains over something" },
+          { wordRuby: "両{りょう}国{こく}間{かん}", meaning: "Between two countries・Bilateral・Relations or interactions between two nations" },
+        ]
       },
       {
         id: 62,
@@ -1051,8 +1082,15 @@ export const JLPT_N1_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "取る", meaning: "Take" },
           { kanji: "締まる", meaning: "Tighten" }
         ],
-        example: "",
-        exampleMeaning: ""
+        example: "<違法な><取引>を<徹底的に>{取り締まる}体制が<崩壊する>事態など、想像する[*281*だに]<恐ろしい>。",
+        exampleMeaning: "A situation where the system to <thoroughly> {crack down on} <illegal> <transactions> <collapses> is <terrifying> [even to imagine].",
+        extraVocabulary: [
+          { wordRuby: "違{い}法{ほう}な", meaning: "Illegal・Unlawful・Against the law" },
+          { wordRuby: "取{とり}引{ひき}", meaning: "Transaction・Deal・Business deal" },
+          { wordRuby: "徹{てっ}底{てい}的{てき}に", meaning: "Thoroughly・Completely・Exhaustively・Down to the last detail" },
+          { wordRuby: "崩{ほう}壊{かい}する", meaning: "To collapse・To break down・To crumble・To fall apart" },
+          { wordRuby: "恐{おそ}ろしい", meaning: "Terrifying・Frightening・Dreadful" }
+        ]
       },
       {
         id: 63,
@@ -1063,8 +1101,14 @@ export const JLPT_N1_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "摂", meaning: "Take in" },
           { kanji: "取", meaning: "Take" }
         ],
-        example: "",
-        exampleMeaning: ""
+        example: "<多忙>を<極める>現代社会[*63*において]、必要な<栄養>をバランスよく{摂取}すること[*284*すら]<容易>ではない。",
+        exampleMeaning: "[In] modern society, which is <extremely busy>, [even] {ingesting} necessary <nutrients> in a balanced way is not <easy>.",
+        extraVocabulary: [
+          { wordRuby: "多{た}忙{ぼう}", meaning: "Being very busy・Extremely occupied・Having a lot of work to do・Hectic" },
+          { wordRuby: "極{きわ}める", meaning: "To reach the extreme・To go to the utmost limit・To achieve/pursue something to the highest level" },
+          { wordRuby: "栄{えい}養{よう}", meaning: "Nutrition・Nourishment・Nutrients" },
+          { wordRuby: "容{よう}易{い}な", meaning: "Easy・Simple・Effortless" }
+        ]
       },
     ]
   },
@@ -1080,8 +1124,12 @@ export const JLPT_N1_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "分", meaning: "Divide" },
           { kanji: "割", meaning: "Split" }
         ],
-        example: "",
-        exampleMeaning: ""
+        example: "担当者としての立場[*279*手前]、<大規模な>プロジェクトを安全に{分割}して<進行>させる義務がある。",
+        exampleMeaning: "[Given my] position as the person in charge, I have an obligation to safely {divide} and <proceed with> the <large-scale> project.",
+        extraVocabulary: [
+          { wordRuby: "大{だい}規{き}模{ぼ}な", meaning: "Large-scale・On a grand scale・Extensive・Massive" },
+          { wordRuby: "進{しん}行{こう}する", meaning: "To proceed・To advance・To progress・To advance" },
+        ]
       },
       {
         id: 65,
@@ -1092,8 +1140,16 @@ export const JLPT_N1_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "分", meaning: "Divide" },
           { kanji: "配", meaning: "Distribute" }
         ],
-        example: "",
-        exampleMeaning: ""
+        example: "<予算>の<引き下げ>が決まった[*278*こととて]、<限られた><資源>を<各部署>にどう{分配}すべきか<再検討>をお願いいたします。",
+        exampleMeaning: "[Since] the <budget> <reduction> has been decided, please <reconsider> how we should {allocate} the <limited> <resources> to <each department>.",
+        extraVocabulary: [
+          { wordRuby: "予{よ}算{さん}", meaning: "Budget・Planned expenditure・Amount of money allocated for a purpose" },
+          { wordRuby: "引{ひ}き下{さ}げる", meaning: "To lower・To reduce・To decrease・To cut/bring something down" },
+          { wordRuby: "限{かぎ}られる", meaning: "Be limited・Be restricted・Be confined to・Be available only to a certain extent" },
+          { wordRuby: "資{し}源{げん}", meaning: "Resources・Means・Source・Available assets or materials" },
+          { wordRuby: "各{かく}部{ぶ}署{しょ}", meaning: "Each department・Every division・All sections・The respective departments" },
+          { wordRuby: "再{さい}検{けん}討{とう}", meaning: "Reconsideration・Reexamination・Reviewing something again before deciding" }
+        ]
       },
       {
         id: 66,
@@ -1104,8 +1160,14 @@ export const JLPT_N1_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "分", meaning: "Divide" },
           { kanji: "業", meaning: "Work" }
         ],
-        example: "",
-        exampleMeaning: ""
+        example: "大企業[*277*といえども]、<効率的な>{分業}体制が<構築>されていなければ<生産性>は<向上>しない。",
+        exampleMeaning: "[Even though] it is a large corporation, <productivity> will not <improve> unless an <efficient> {division of labor} system is <built>.",
+        extraVocabulary: [
+          { wordRuby: "効{こう}率{りつ}的{てき}な", meaning: "Efficient・Effective・Productive" },
+          { wordRuby: "構{こう}築{ちく}", meaning: "Construction・Building・Establishment・Building up a system or framework" },
+          { wordRuby: "生{せい}産{さん}性{せい}", meaning: "Productivity・Efficiency in production・The ability to produce results relative to the resources used" },
+          { wordRuby: "向{こう}上{じょう}", meaning: "Improvement・Enhancement・increase・Advancement to a higher level" }
+        ]
       },
       {
         id: 67,
@@ -1116,8 +1178,13 @@ export const JLPT_N1_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "処", meaning: "Deal with" },
           { kanji: "分", meaning: "Divide" }
         ],
-        example: "",
-        exampleMeaning: ""
+        example: "長年<愛用した>研究用<機材>を{処分}しなければならない日が来よう[*246*とは]、当時は想像する[*281*だに]しなかった。",
+        exampleMeaning: "Back then, I didn't [even] imagine that the day would come when I would have to {dispose of} the research <equipment> I had <cherished> for many years.",
+        extraVocabulary: [
+          { wordRuby: "愛{あい}用{よう}する", meaning: "To cherish・To use regularly and with affection・To be fond of using・Use something as one's favorite" },
+          { wordRuby: "研{けん}究{きゅう}用{よう}", meaning: "For research purposes・Used for research" },
+          { wordRuby: "機{き}材{ざい}", meaning: "Equipment・Machinery and materials used for a specific purpose" }
+        ]
       },
       {
         id: 68,
@@ -1127,8 +1194,11 @@ export const JLPT_N1_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "手", meaning: "Hand" },
           { kanji: "分ける", meaning: "Divide" }
         ],
-        example: "",
-        exampleMeaning: ""
+        example: "<人手不足>の状況[*278*こととて]、スタッフ全員で{手分けして}作業を進める以外に方法はございません。",
+        exampleMeaning: "[Given the circumstance of] a <staff shortage>, there is no other way than for all staff members to {divide up the work} and proceed.",
+        extraVocabulary: [
+          { wordRuby: "人{ひと}手{で}不{ぶ}足{そく}", meaning: "Labor shortage・Insufficient workforce" },
+        ]
       },
       {
         id: 69,
@@ -1138,8 +1208,12 @@ export const JLPT_N1_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "使う", meaning: "Use" },
           { kanji: "分ける", meaning: "Divide" }
         ],
-        example: "",
-        exampleMeaning: ""
+        example: "プロの翻訳者[*284*すら]<文脈>に応じて<類語>を{使い分ける}ことには苦労する場合がある。",
+        exampleMeaning: "[Even] professional translators sometimes struggle to {use} <synonyms> {differently} depending on the <context>.",
+        extraVocabulary: [
+          { wordRuby: "文{ぶん}脈{みゃく}", meaning: "Textual context・Context of conversation・The surrounding text or situation that gives meaning to a word or phrase" },
+          { wordRuby: "類{るい}語{ご}", meaning: "Synonym・Word with similar meaning・Related vocabulary" }
+        ]
       },
       {
         id: 70,
@@ -1149,8 +1223,12 @@ export const JLPT_N1_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "分", meaning: "Portion" },
           { kanji: "厚", meaning: "Thick" }
         ],
-        example: "",
-        exampleMeaning: ""
+        example: "これほど{分厚い}専門書を一日で読み切るなど、<優秀な>研究者[*284*すら]不可能な話だ。",
+        exampleMeaning: "Reading through such a {thick} specialized book in a single day is impossible [even for] an <excellent> researcher.",
+        extraVocabulary: [
+          { wordRuby: "読{よ}み切{き}る", meaning: "To read through completely・To finish reading" },
+          { wordRuby: "優{ゆう}秀{しゅう}な", meaning: "Excellent・Outstanding・Of superior quality・Highly capable" }
+        ]
       },
       {
         id: 71,
@@ -1160,8 +1238,15 @@ export const JLPT_N1_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "水", meaning: "Water" },
           { kanji: "分", meaning: "Portion" },
         ],
-        example: "",
-        exampleMeaning: ""
+        example: "<猛暑>の中での<野外>作業[*278*こととて]、<こまめに>{水分}を<補給する>ようご<留意>ください。",
+        exampleMeaning: "[Given that] this is <outdoor> work in <extreme heat>, please <be careful> to <frequently> <replenish> your {moisture} levels.",
+        extraVocabulary: [
+          { wordRuby: "猛{もう}暑{しょ}", meaning: "Extreme heat・Scorching heat・Intense summer heat" },
+          { wordRuby: "野{や}外{がい}", meaning: "Outdoors・Open air・Outside" },
+          { wordRuby: "こまめに", meaning: "Frequently・Diligently・Regularly・In small, repeated actions・At frequent intervals" },
+          { wordRuby: "補{ほ}給{きゅう}する", meaning: "To replenish depleted resources・To resupply・To provide what is needed" },
+          { wordRuby: "留{りゅう}意{い}", meaning: "Attention・Caution・Keeping something in mind・Being mindful of something・Paying particular attention to a point" }
+        ]
       },
       {
         id: 72,
@@ -1171,8 +1256,16 @@ export const JLPT_N1_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "言う", meaning: "Speak" },
           { kanji: "分", meaning: "Portion" }
         ],
-        example: "",
-        exampleMeaning: ""
+        example: "相手にも<相応>の{言い分}がある[*277*といえども]、今回の<契約><違反>を<不問に付す>ことはできない。",
+        exampleMeaning: "[Even though] the other party has <their own> {side of the story}, we cannot <overlook> this <breach> of <contract>.",
+        extraVocabulary: [
+          { wordRuby: "相{そう}応{おう}", meaning: "Appropriate・Suitable・Corresponding to the situation・Matching" },
+          { wordRuby: "契{けい}約{やく}", meaning: "Contract・Agreement・Legal agreement between parties" },
+          { wordRuby: "違{い}反{はん}", meaning: "Violation・Breach・Contravention of rules or laws" },
+          { wordRuby: "不{ふ}問{もん}", meaning: "No questions asked・Not questioning・Leaving something unexamined・Not holding someone accountable for something" },
+          { wordRuby: "付{ふ}す", meaning: "To attach・To append・To add to・To submit or refer something for consideration・To impose or assign (depending on the expression)" },
+          { wordRuby: "不{ふ}問{もん}に付{ふ}す", meaning: "To overlook・To disregard・To let something pass・To refrain from holding someone accountable for something" }
+        ]
       },
     ],
   },
@@ -1186,8 +1279,14 @@ export const JLPT_N1_FASTPASS_TANGO: Record<string, TangoEntry> = {
         components: [
           { kanji: "説", meaning: "Explain" }
         ],
-        example: "",
-        exampleMeaning: ""
+        example: "<従来><提示>されてきた有名な{説}が<覆される>事態など、<かつて>は考える[*281*だに]しなかったことだ。",
+        exampleMeaning: "A situation where a famous, <conventionally> <presented> {theory} is <overturned> is something that was <previously> unthought of [even for a moment].",
+        extraVocabulary: [
+          { wordRuby: "従{じゅう}来{らい}", meaning: "Conventional・Traditional・Existing・Previously・Up to now" },
+          { wordRuby: "提{てい}示{じ}", meaning: "Presentation・Showing or providing information・Offering or putting something forward" },
+          { wordRuby: "覆{くつがえ}す", meaning: "To overturn・To overthrow・To reverse" },
+          { wordRuby: "かつて", meaning: "Once・Formerly・At one time・In the past" }
+        ]
       },
       {
         id: 74,
@@ -1196,8 +1295,14 @@ export const JLPT_N1_FASTPASS_TANGO: Record<string, TangoEntry> = {
         components: [
           { kanji: "説", meaning: "Explain" }
         ],
-        example: "",
-        exampleMeaning: ""
+        example: "<自ら>がリーダーである[*279*手前]、<組織><改革>の必要性を社員の前で<熱心>に{説か}なければならない。",
+        exampleMeaning: "[Given that] I am the leader, I must <passionately> {advocate} the necessity of <organizational> <reform> in front of the employees.",
+        extraVocabulary: [
+          { wordRuby: "自{みずか}ら", meaning: "Oneself・Personally・By oneself・On one's own initiative" },
+          { wordRuby: "組{そ}織{しき}", meaning: "Organization・Organized group・Organizational structure・System・Tissue (in biology)" },
+          { wordRuby: "改{かい}革{かく}", meaning: "Reform・Restructuring・Improvement・Change for the better・Making significant changes to an existing system" },
+          { wordRuby: "熱{ねっ}心{しん}", meaning: "Enthusiasm・Zeal・Passion・Deeply committed" }
+        ]
       },
       {
         id: 75,
@@ -1208,8 +1313,12 @@ export const JLPT_N1_FASTPASS_TANGO: Record<string, TangoEntry> = {
           { kanji: "説", meaning: "Explain" },
           { kanji: "教", meaning: "Teach" }
         ],
-        example: "",
-        exampleMeaning: ""
+        example: "失敗した部下に<延々と>{説教}を続けた[*233*ところで]、不満が<募る>[*280*ただ]それ[*280*のみ]である。",
+        exampleMeaning: "<Continuously> {reprimanding} a failed subordinate [will result] in [nothing but] <growing> dissatisfaction.",
+        extraVocabulary: [
+          { wordRuby: "延{えん}々{えん}と", meaning: "Endlessly・Continuously・on and on・Without end・For a very long time" },
+          { wordRuby: "募{つの}る", meaning: "To grow stronger・To increase・To intensify・To become more severe" }
+        ]
       },
       {
         id: 76,
